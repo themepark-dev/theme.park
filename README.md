@@ -260,6 +260,7 @@ sub_filter_once on;
 # Monitorg
 
 Custom [Monitorr](https://github.com/Monitorr/Monitorr) CSS for [Organizr](https://github.com/causefx/Organizr) homepage integration.
+
 ![](/Screenshots/monitorg/1.jpg)
 
 ## Custom CSS for Organizr
