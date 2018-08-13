@@ -6,13 +6,13 @@ A collection of themes/skins for use in conjunction with [Organizr](https://gith
 Custom [Grafana](https://github.com/grafana/grafana) CSS for [Organizr](https://github.com/causefx/Organizr) homepage integration.
 ![](/Screenshots/graforg/3.jpg)
 ## Custom CSS for Organizr
-#### The graforg.css theme will mess with your Grafana base theme. And it will hide the side menu. Go to https://graforg.domain.com/datasources for settings.
+#### The `graforg.css` theme will mess with your Grafana base theme. And it will hide the side menu. Go to https://graforg.domain.com/datasources for settings.
 
-#### graforg.css is created purely for use with Organizr.
+#### `graforg.css` is created purely for use with Organizr.
 **NOTE:** When viewing Grafana in Organizr iframe it will follow the Organizr theme. When viewing it outside of Organizr iframe the background will be white ect.
 
-#### grafblur.css
-If you want a regular Plex theme for your Grafana setup, use the **grafblur.css** instead.
+#### `grafblur.css`
+If you want a regular Plex theme for your Grafana setup, use the **`grafblur.css`** instead.
 
 ## Setup
 <details><summary>Expand</summary>
@@ -194,13 +194,13 @@ Custom [Netdata](https://github.com/firehol/netdata) CSS for consistent UI in [O
 ![](/Screenshots/netorg/2.jpg)
 
 ## Custom CSS for Organizr
-#### The netorg.css theme will mess with your Netdata base theme.
+#### The `netorg.css` theme will mess with your Netdata base theme.
 
-#### netorg.css is created purely for use with Organizr.
+#### `netorg.css` is created purely for use with Organizr.
 **NOTE:** When viewing Netdata in Organizr iframe it will follow the Organizr theme. When viewing it outside of Organizr iframe the background will be white ect.
 
-#### netblur.css
-If you want a regular Plex theme for your Netdata setup, use the **netblur.css** instead.
+#### `netblur.css`
+If you want a regular Plex theme for your Netdata setup, use the **`netblur.css`** instead.
 
 ## Setup
 <details><summary>Expand</summary>
@@ -275,7 +275,6 @@ Custom [Monitorr](https://github.com/Monitorr/Monitorr) CSS for [Organizr](https
 ### Screenshots
 <details><summary>Expand</summary>
 <p>
-<img src="/Screenshots/monitorg/1.jpg"></img>
 <img src="/Screenshots/monitorg/2.jpg"></img>
 <img src="/Screenshots/monitorg/3.jpg"></img>
 <img src="/Screenshots/monitorg/4.jpg"></img>
