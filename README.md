@@ -1,6 +1,14 @@
 # theme.park
 A collection of themes/skins for use in conjunction with [Organizr](https://github.com/causefx/Organizr)
 
+### Honourable mentions: 
+
+[leram84/layer.Cake/](https://github.com/leram84/layer.Cake/)
+
+[rg9400/Cloud-Tautulli-Theme](https://github.com/rg9400/Cloud-Tautulli-Theme)
+
+[Burry/organizr-v2-plex-theme](https://github.com/Burry/organizr-v2-plex-theme)
+
 # GrafOrg
 
 Custom [Grafana](https://github.com/grafana/grafana) CSS for [Organizr](https://github.com/causefx/Organizr) homepage integration.
