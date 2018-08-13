@@ -1,0 +1,153 @@
+/* GRAFANA ORG THEME */
+body {
+    color: #FFFFFF !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+.main-view {
+    background: linear-gradient(180deg,#ffffff00 10px,#ffffff00 100px) !important;
+}
+
+/* Hide sidemenu */
+.sidemenu {
+    display: none !important;
+}
+
+/* Dashboard dropdown menu */
+.search-dropdown__col_1 {
+    background: rgba(0, 0, 0, 0) !important;
+}
+.search-container {
+    left: 0px !important;
+}
+.navbar-page-btn {
+    color: #FFFFFF !important;
+}
+
+/* Panel fullscreen navbar */
+.panel-in-fullscreen .navbar {
+    background: linear-gradient(90deg,rgba(0, 0, 0, .15),rgba(0, 0, 0, 0.25));
+}
+
+/* Dashboard search menu */
+.search-field-wrapper {
+	background-image: url("https://cdn.rawgit.com/gilbN/GrafOrg/master/Resources/blur-noise.png"), url("https://cdn.rawgit.com/gilbN/GrafOrg/master/Resources/blur-light.png");
+	background-repeat: repeat, no-repeat; 
+	background-attachment: fixed, fixed;
+	background-position: center center, center center;
+	background-size: auto, cover;
+	-webkit-background-size: auto, cover;
+	-moz-background-size: auto, cover;
+	-o-background-size: auto, cover;
+	background-color: rgba(0,0,0,.0);
+	box-shadow: none !important;
+}
+.search-field-wrapper>input {
+	height: 55px !important;
+    background-color: rgba(0, 0, 0, 0.25) !important;
+}
+.search-field-icon {
+    background-color: rgba(0, 0, 0, .25) !important;
+}
+
+/* Dashboard settings menu */
+.dashboard-settings__aside {
+    background: rgba(0, 0, 0, .25) !important;
+}
+.dashboard-page--settings-open .navbar {
+    background: linear-gradient(90deg,rgba(0, 0, 0, .15),rgba(0, 0, 0, 0.25));
+}
+.navbar-button--primary {
+    border-color: #ffffff00 !important;
+}
+.dashboard-settings__aside-header {
+    color: #ffffff !important;
+}
+.dashboard-settings__nav-item {
+    color: #ffffff !important;
+}
+.bootstrap-tagsinput {
+    background-color: #09090b;
+}
+.gf-form-select-wrapper .gf-form-input {
+    background-color: #393a3b !important;
+}
+
+/* Variable label color */
+.template-variable {
+    color: #FFFFFF !important;
+}
+
+/* Variable label box */
+.gf-form-label {
+    background-color: rgba(0, 0, 0, 0.25) !important;
+	border: none !important;
+}
+
+/* Variable dashboard dropdown */
+.variable-value-link {
+    padding: 7.4px 10px !important;
+    background-color: rgba(0, 0, 0, 0.25) !important;
+    border: none !important;
+    color: #FFFFFF !important;
+}
+
+/* Variable input box */
+.gf-form-input {
+	color: #FFFFFF !important;
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    border: 0px solid #262628 !important;
+
+}
+
+/* NAVBAR BUTTONS */
+.navbar-button {
+    color: #FFFFFF !important;
+    background-color: #00000040 !important;
+    background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)) !important;
+}
+
+/* Custom Range Refreshing every X Dropdown */
+.gf-timepicker-absolute-section select {
+    background-color: #393a3b !important;
+}
+.gf-form-input:focus {
+    box-shadow: none !important;
+}
+
+/* PANEL BACKGROUND COLOR*/
+.panel-container {
+    background-color: rgba(0, 0, 0, .25) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+.panel-container.panel-transparent {
+	background-color: rgba(0, 0, 0, .25) !important;
+}
+.panel-header:hover {
+    background-color: rgba(0, 0, 0, 0.25) !important;
+}
+/* ////PANEL BACKGROUND COLOR//// */
+
+.graph-legend-table .graph-legend-series:nth-child(odd) {
+    background: rgba(0, 0, 0, 0) !important;
+}
+
+/* Panel text color*/
+div.flot-text {
+    color: #ffffff!important;
+}
+
+/* panel loading circle*/
+.panel-loading {
+    color: #ffffff!important;
+}
+
+/* panel resize arrow */
+.theme-dark .react-grid-item>.react-resizable-handle:after {
+    border-right: 2px solid #fff !important;
+    border-bottom: 2px solid #fff !important;
+}
+
+/* table panel background color */
+.table-panel-container {
+    background-color: rgba(0, 0, 0, .25) !important;
+}
