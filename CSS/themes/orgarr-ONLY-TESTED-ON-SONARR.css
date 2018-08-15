@@ -94,13 +94,13 @@ body {
 .series-item a {
     color: #FFF !important;
 }
-.series-posters .series-posters-item {
+.series-posters .series-posters-item, .movie-posters-item {
     background-color: rgba(0, 0, 0, .25) !important;
     color: #444;
     box-shadow: 0 0 10px 1px #000000 !important;
 }
 .backdrop .navbar-nzbdrone {
-    background-color: #272727;
+    background-color: #1f1f1f;
     opacity: 0.98;
     box-shadow: 0 0 10px 1px #000;
     border-radius: 3px;
@@ -113,8 +113,9 @@ body {
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;*/
 }
-.series-page-header {
-  background-color: #272727;
+
+.series-page-header, .movie-page-header {
+  background-color: #1f1f1f;
   opacity: 0.98;
   box-shadow: 0 0 10px 1px #000;
   color: #ffffff;
@@ -127,8 +128,8 @@ body {
   -moz-background-size: auto, cover;
   -o-background-size: auto, cover;*/
 }
-.series-season {
-  background-color: #272727;
+.series-season, .movie-tabs-card {
+  background-color: #1f1f1f;
   opacity: 0.98;
   box-shadow: 0 0 10px 1px #000;
   color: #ffffff;
@@ -192,6 +193,7 @@ div.form-group > label {
     border: 0px solid rgba(0, 0, 0, .25) !important;
 }
 
+
 /* Calendar page */
 .calendar .primary {
     border-color: rgba(0, 0, 0, .25) !important;
@@ -216,6 +218,9 @@ a:focus, a:hover {
     color: #ffffff !important;
 }
 .event p {
+    color: #FFF;
+}
+.fc-title {
     color: #FFF;
 }
 /* calendar month */
