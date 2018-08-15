@@ -44,15 +44,14 @@ body {
     height: 40px !important;
 }
 .search .input-group .input-group-addon, .search .input-group input:focus {
-    color: #000 !important;
+    color: #FFF !important;
 }
 .tt-suggestion.tt-cursor {
-    background-color: #191a1c !important;
-    color: #ffffff !important;
+    background-color: #191a1c;
+    color: #ffffff;
 }
-
-.input-group .form-control:focus {
-    background-color: white !important;
+.search .tt-dropdown-menu {
+    background-color: #1f1f1f;
 }
 .fa-search {
     color: white !important;
@@ -65,7 +64,7 @@ body {
 
 .form-control {
     color: #FFF;
-    background-color: rgba(0, 0, 0, .25) !important;
+    background-color: #1f1f1f;
     border: 1px solid rgba(0, 0, 0, .25);
 }
 
