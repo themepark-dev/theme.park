@@ -1,14 +1,14 @@
 body {
-   # background: url(../Content/Images/background/logo.png) 50px 75px no-repeat;
-  #  background-color: darkgrey !important;
-    background-image: url(https://cdn.rawgit.com/gilbN/NetOrg/master/Resources/blur-noise.png), url(https://cdn.rawgit.com/gilbN/NetOrg/master/Resources/blur-light.png);
+    background: url(../Content/Images/background/logo.png) 50px 75px no-repeat;
+    background-color: rgba(0, 0, 0, .25) !important;
+  /*background-image: url(https://cdn.rawgit.com/gilbN/NetOrg/master/Resources/blur-noise.png), url(https://cdn.rawgit.com/gilbN/NetOrg/master/Resources/blur-light.png);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover;
+    -o-background-size: auto, cover;*/
 }
 
 .modal-content {
@@ -237,7 +237,25 @@ a:focus, a:hover {
 }
 
 /* Activity Page */
-
+.popover.in {
+    opacity: .9;
+}
+.popover {
+    background-color: #000;
+    color: #fff;
+}
+.popover > .popover-title {
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+.popover.left > .arrow,
+.popover.left > .arrow:after {
+    border-left-color: #000;
+}
+.popover.right > .arrow:after {
+    border-right-color: #000;
+}
 .backgrid-paginator ul .active span {
     background-color: rgba(0, 0, 0, 0);
 }
