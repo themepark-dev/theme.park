@@ -1,0 +1,438 @@
+body {
+   # background: url(../Content/Images/background/logo.png) 50px 75px no-repeat;
+  #  background-color: darkgrey !important;
+    background-image: url(https://cdn.rawgit.com/gilbN/NetOrg/master/Resources/blur-noise.png), url(https://cdn.rawgit.com/gilbN/NetOrg/master/Resources/blur-light.png);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+
+.modal-content {
+    background-color: #2d2d2d;
+}
+
+/* scroller */
+::-webkit-scrollbar-corner {
+    background-color: #333333;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: #333333;
+}
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background: #555555;
+}
+
+/* navbar and searchbar */
+.navbar-nzbdrone li a {
+    color: hsla(0,0%,100%,.7) !important;
+}
+.navbar-nzbdrone li a:hover {
+    background-color: hsla(0,0%,100%,.08) !important;
+    color: #ffffff !important;
+}
+.search .input-group .input-group-addon, .search .input-group input {
+    background-color: rgba(0, 0, 0, .25) !important;
+    color: #FFF !important;
+    border-color: rgba(0, 0, 0, .25);
+    height: 40px !important;
+}
+.search .input-group .input-group-addon, .search .input-group input:focus {
+    color: #000 !important;
+}
+.tt-suggestion.tt-cursor {
+    background-color: #191a1c !important;
+    color: #ffffff !important;
+}
+
+.input-group .form-control:focus {
+    background-color: white !important;
+}
+.fa-search {
+    color: white !important;
+}
+.input-group-lg>.form-control, .input-group-lg>.input-group-addon, .input-group-lg>.input-group-btn>.btn {
+    height: 50px !important;
+}
+
+/* Form Stuff */
+
+.form-control {
+    color: #FFF;
+    background-color: rgba(0, 0, 0, .25) !important;
+    border: 1px solid rgba(0, 0, 0, .25);
+}
+
+.form-control:focus {
+    border-color: rgba(0, 0, 0, 0.51) !important;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 0, 0, 0.6) !important;
+}
+
+.bootstrap-tagsinput {
+    background-color: var(--color-Grey);
+    border: 1px solid var(--color-Grey);
+    color: var(--color-White);
+}
+.form-group i {
+    color: #ffffff;
+}
+
+/* Series/Season page */
+.started #page {
+    background-color: rgba(0, 0, 0, .25) !important;
+    color: White !important;
+    box-shadow: none !important;
+    max-width: 1280px !important;
+}
+.series-item a {
+    color: #FFF !important;
+}
+.series-posters .series-posters-item {
+    background-color: rgba(0, 0, 0, .25) !important;
+    color: #444;
+    box-shadow: 0 0 10px 1px #000000 !important;
+}
+.backdrop .navbar-nzbdrone {
+    background-color: #272727;
+    opacity: 0.98;
+    box-shadow: 0 0 10px 1px #000;
+    border-radius: 3px;
+    /*background-image: url(https://cdn.rawgit.com/gilbN/NetOrg/master/Resources/blur-noise.png), url(https://cdn.rawgit.com/gilbN/NetOrg/master/Resources/blur-light.png);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;*/
+}
+.series-page-header {
+  background-color: #272727;
+  opacity: 0.98;
+  box-shadow: 0 0 10px 1px #000;
+  color: #ffffff;
+  /*background-image: url(https://cdn.rawgit.com/gilbN/NetOrg/master/Resources/blur-noise.png), url(https://cdn.rawgit.com/gilbN/NetOrg/master/Resources/blur-light.png);
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  background-size: auto, cover;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover;*/
+}
+.series-season {
+  background-color: #272727;
+  opacity: 0.98;
+  box-shadow: 0 0 10px 1px #000;
+  color: #ffffff;
+  /*background-image: url(https://cdn.rawgit.com/gilbN/NetOrg/master/Resources/blur-noise.png), url(https://cdn.rawgit.com/gilbN/NetOrg/master/Resources/blur-light.png);
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  background-size: auto, cover;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover;*/
+}
+.episode-title-cell {
+    color: #ffffff !important;
+}
+a, .episode-title-cell {
+    color: #FFFFFF !important;
+    text-decoration: none;
+}
+th.sortable:hover, .table-hover > tbody > tr:hover {
+    background-color: rgba(0, 0, 0, .25) !important;
+    color: #ffffff;
+}
+.progress.episode-progress .progressbar-back-text {
+    color: #000 !important;
+}
+
+/* SEARCH */
+#add-series-screen .new-series .search-item,
+#add-movies-screen .new-movies .search-item {
+    background-color: rgba(0, 0, 0, .25) !important;
+    color: #FFFFFF !important;
+    box-shadow: none;
+}
+div.form-group > label {
+    font-weight: 500;
+}
+#add-series-screen .add-series-search > input.form-control.x-series-search,
+#add-movies-screen .add-movies-search > input.form-control.x-movies-search {
+    background-color: rgba(0, 0, 0, .25) !important;
+    color: #FFFFFF !important;
+    border: none;
+    box-shadow: none;
+}
+#add-series-screen .search-item select.form-control,
+#add-movies-screen .search-item select.form-control {
+    background-color: #1f1f1f !important;
+    color: #FFFFFF !important;
+}
+#add-series-screen .search-item a,
+#add-movies-screen .search-item a {
+    color: #FFFFFF;
+}
+.dropdown-menu>li>a {
+      color: #ffffff !important;
+}
+.dropdown-menu>li>a:hover {
+    color: #000 !important;
+}
+
+.input-group.input-group-lg.add-series-search > .input-group-addon,
+.input-group.input-group-lg.add-movies-search > .input-group-addon {
+    color: #FFFFFF !important;
+    background-color: rgba(0, 0, 0, .25) !important;
+    border: 0px solid rgba(0, 0, 0, .25) !important;
+}
+
+/* Calendar page */
+.calendar .primary {
+    border-color: rgba(0, 0, 0, .25) !important;
+    background-color: rgba(0, 0, 0, .10) !important;
+}
+.event .primary {
+    border-color: rgba(0, 0, 0, .25) !important;
+}
+    /* upcoming panel */
+.event h4, .date h4, .event .episode-title {
+    color: #FFFFFF !important;
+}
+.event .episode-title {
+    color: #f9be03 !important;
+}
+.event .episode-title:focus, .event .episode-title:hover {
+    color: #f9be03;
+    text-decoration: underline;
+    background-color: transparent;
+}
+a:focus, a:hover {
+    color: #ffffff !important;
+}
+.event p {
+    color: #FFF;
+}
+/* calendar month */
+
+.calendar th {
+    background-color: hsla(0,0%,100%,.08) !important;
+    color: #FFFFFF !important;
+}
+.fc-day.fc-today.fc-state-highlight,
+.fc-day-number.fc-today.fc-state-highlight,
+.fc-day-top.fc-today.fc-state-highlight {
+    background-color: hsla(0,0%,100%,.08) !important;
+    color: #f9be03 !important
+}
+
+/* Activity Page */
+
+.backgrid-paginator ul .active span {
+    background-color: rgba(0, 0, 0, 0);
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    background-color: hsla(0,0%,100%,.08);
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: hsla(0,0%,100%,.08);
+}
+
+/* Season Pass */
+.alert-info {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+/* Settings Page */
+legend {
+    color: #FFFFFF;
+}
+
+/* Settings Page - Profile */
+/*thingy*/
+
+.thingy {
+    background-color: rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.add-card .center {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.metadata-item {
+    background-color: rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    box-shadow: none;
+}
+
+/* Settings add thingy*/
+
+.add-thingy {
+    background-color: rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    box-shadow: none;
+}
+
+.add-thingy > div > .btn-default,
+.add-thingy > div > div > .btn.btn-xs.btn-default.dropdown-toggle {
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-color: #FFFFFF;
+    outline-style: none;
+}
+
+.add-thingy > div > .btn-default:hover,
+.add-thingy > div > div > .btn.btn-xs.btn-default.dropdown-toggle:hover {
+    color: var(--color-DarkBG);
+    background-color: blue;
+    border-color: var(--color-White);
+    outline-style: none;
+}
+li.save-and-add {
+    color: #ffffff;
+}
+
+/* Settings qualities*/
+ul.qualities li {
+    border: 1px solid rgba(0, 0, 0, .25);
+    background: rgba(0, 0, 0, .25);
+}
+ul.qualities li:hover {
+    border: 1px solid rgba(0, 0, 0, .25);
+    background: rgba(255, 255, 255, .25);
+}
+ul.qualities li.selected .quality-label {
+    color: #ffffff;
+}
+
+/* Settings Quality sliders */
+#quality-definition-list .rows .row .ui-slider .ui-slider-range {
+    background-color: rgb(46, 47, 49);
+}
+#quality-definition-list .rows .row .ui-slider .ui-slider-handle {
+    background-color: #f5f5f5;
+    border: 1px solid #c7c7c7;
+}
+#quality-definition-list .rows .row .ui-slider {
+    border: 1px solid #2e2f31;
+}
+.label-warning {
+    background-color: #d58512;
+}
+.label-info {
+    background-color: #337ab7;
+}
+
+/* SYSTEM logs */
+pre {
+    color: #fff;
+    background-color: rgba(0, 0, 0, .25);
+}
+
+/* BUTTONS */
+  /* YES/NO Switch */
+.well {
+    background-color: rgba(0, 0, 0, .25);
+    border: 1px solid rgba(0, 0, 0, .25);
+}
+.toggle p span {
+    color: rgba(0, 0, 0, 0);
+}
+
+.toggle input:checked ~ p span:nth-child(1) {
+    color: #FFFFFF;
+}
+
+.toggle input:not(:checked) ~ p span:nth-child(2) {
+    color: #FFFFFF;
+}
+
+.btn-default {
+    color: hsla(0,0%,100%,.7);
+    background-color: rgba(0, 0, 0, .25);
+    border-color: none;
+    outline-style: none;
+}
+.btn-default:hover, .btn-default.active, .btn-default.active:hover {
+    color: #FFFFFF;
+    background-color: hsla(0,0%,100%,.08);
+    border-color: none;
+    outline-style: none;
+}
+.fc-state-default {
+    color: #FFF;
+    background-color: rgba(0, 0, 0, .25);
+    border-color: #FFF;
+    outline-style: none;
+    background-image: none;
+    text-shadow: none;
+}
+.fc-state-default:hover {
+  background-color: hsla(0,0%,100%,.08);
+}
+.input-group-btn > button.btn.btn-icon-only.dropdown-toggle,
+.btn.btn-icon-only.x-copy-api-key.hidden-xs {
+    color: #FFFFFF;
+    background-color: #5cb85c;
+}
+.input-group-btn > button.btn.btn-icon-only.dropdown-toggle:hover {
+    color: #FFFFFF;
+    background-color: #449d44;
+}
+
+.btn {
+    color: #FFF;
+}
+.btn.focus, .btn:focus, .btn:hover {
+    color: #fff;
+}
+.modal-footer > button:not([class*="btn-primary"]):not([class*="btn-danger"]):not([class*="btn-success"]) {
+    color: #FFF;
+    background-color: #2d2d2d;
+    border-color: #FFFFFF;
+    outline-style: none;
+}
+.modal-footer > button:hover:not([class*="btn-primary"]):not([class*="btn-danger"]):not([class*="btn-success"]) {
+    color: #FFF;
+    background-color: rgba(255, 255, 255, .25);
+    border-color: #FFF;
+    outline-style: none;
+}
+/* blue,green,red button */
+.btn-primary, .btn-success, .btn-danger {
+  color: #FFF;
+}
+/* blue button */
+.btn-primary.focus, .btn-primary:focus, .btn-primary:hover {
+    color: #fff;
+    background-color: #286090;
+}
+.btn-success.focus, .btn-success:focus, .btn-success:hover {
+    color: #fff;
+    background-color: #449d44;
+}
+.dropdown-menu {
+      background-color: #1f1f1f !important;
+}
+.dropdown-menu>li>a {
+      color: #ffffff !important;
+}
+.dropdown-menu>li>a:hover {
+    color: #000 !important;
+}
