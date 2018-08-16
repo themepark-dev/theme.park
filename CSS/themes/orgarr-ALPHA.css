@@ -55,33 +55,33 @@ body {
 
 /* navbar and searchbar */
 .navbar-nzbdrone li a {
-    color: hsla(0,0%,100%,.7) !important;
+    color: hsla(0,0%,100%,.7);
 }
 .navbar-nzbdrone li a:hover {
-    background-color: hsla(0,0%,100%,.08) !important;
-    color: #ffffff !important;
+    background-color: hsla(0,0%,100%,.08);
+    color: #ffffff;
 }
 .search .input-group .input-group-addon, .search .input-group input {
     background-color: rgba(0, 0, 0, .25) !important;
-    color: #FFF !important;
+    color: #FFF;
     border-color: rgba(0, 0, 0, .25);
-    height: 40px !important;
+    height: 40px;
 }
 .search .input-group .input-group-addon, .search .input-group input:focus {
-    color: #FFF !important;
+    color: #FFF;
 }
 .tt-suggestion.tt-cursor {
-    background-color: #191a1c;
-    color: #ffffff;
+    background-color: #191a1c !important;
+    color: #ffffff !important;
 }
 .search .tt-dropdown-menu {
     background-color: #1f1f1f;
 }
 .fa-search {
-    color: white !important;
+    color: white;
 }
 .input-group-lg>.form-control, .input-group-lg>.input-group-addon, .input-group-lg>.input-group-btn>.btn {
-    height: 50px !important;
+    height: 50px;
 }
 .navbar-inverse, .navbar-toggle {
     background-color: rgba(0, 0, 0, .25);
@@ -101,39 +101,42 @@ body {
 
 .form-control {
     color: #FFF;
-    background-color: #1f1f1f;
+    background-color: #1f1f1f !important;
     border: 1px solid rgba(0, 0, 0, .25);
 }
 
 .form-control:focus {
-    border-color: rgba(0, 0, 0, 0.51) !important;
+    border-color: rgba(0, 0, 0, 0.51);
     outline: 0;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 0, 0, 0.6) !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 0, 0, 0.6);
 }
 
 .bootstrap-tagsinput {
-    background-color: var(--color-Grey);
-    border: 1px solid var(--color-Grey);
-    color: var(--color-White);
+    background-color: #1f1f1f;
+    border: 1px solid #1f1f1f;
+    color: #FFF;
 }
 .form-group i {
     color: #ffffff;
 }
 
-/* Series/Season page */
+/* /Movies/Series/Season page */
 .started #page {
-    background-color: rgba(0, 0, 0, .25) !important;
-    color: White !important;
-    box-shadow: none !important;
-    max-width: 1280px !important;
+    background-color: rgba(0, 0, 0, .25);
+    color: White;
+    box-shadow: none;
+    max-width: 1280px;
 }
 .series-item a {
-    color: #FFF !important;
+    color: #FFF;
 }
 .series-posters .series-posters-item, .movie-posters-item {
     background-color: rgba(0, 0, 0, .25) !important;
     color: #444;
     box-shadow: 0 0 10px 1px #000000 !important;
+}
+.movie-posters-item {
+    min-height: 302px !important;
 }
 .backdrop .navbar-nzbdrone {
     background-color: #1f1f1f;
@@ -179,14 +182,14 @@ body {
   -o-background-size: auto, cover;*/
 }
 .episode-title-cell {
-    color: #ffffff !important;
+    color: #ffffff;
 }
 a, .episode-title-cell {
     color: #FFFFFF !important;
     text-decoration: none;
 }
 th.sortable:hover, .table-hover > tbody > tr:hover {
-    background-color: rgba(0, 0, 0, .25) !important;
+    background-color: rgba(0, 0, 0, .25);
     color: #ffffff;
 }
 .progress.episode-progress .progressbar-back-text {
@@ -212,31 +215,39 @@ div.form-group > label {
 }
 #add-series-screen .search-item select.form-control,
 #add-movies-screen .search-item select.form-control {
-    background-color: #1f1f1f !important;
-    color: #FFFFFF !important;
+    background-color: #1f1f1f ;
+    color: #FFFFFF;
 }
 .dropdown-menu>li>a {
-      color: #ffffff !important;
+      color: #ffffff;
 }
 .dropdown-menu>li>a:hover {
-    color: #000 !important;
+    color: #000;
 }
 
 .input-group.input-group-lg.add-series-search > .input-group-addon,
 .input-group.input-group-lg.add-movies-search > .input-group-addon {
-    color: #FFFFFF !important;
-    background-color: rgba(0, 0, 0, .25) !important;
-    border: 0px solid rgba(0, 0, 0, .25) !important;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, .25);
+    border: 0px solid rgba(0, 0, 0, .25);
 }
-
+/* Add Movies */
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: hsla(0,0%,100%,.08);
+    border-color: #FFF;
+}
+.discoverable-list-item:hover {
+    background-color: #1f1f1f;
+    color: white;
+}
 
 /* Calendar page */
 .calendar .primary {
-    border-color: rgba(0, 0, 0, .25) !important;
-    background-color: rgba(0, 0, 0, .10) !important;
+    border-color: rgba(0, 0, 0, .25);
+    background-color: rgba(0, 0, 0, .10);
 }
 .event .primary {
-    border-color: rgba(0, 0, 0, .25) !important;
+    border-color: rgba(0, 0, 0, .25);
 }
     /* upcoming panel */
 .event h4, .date h4, .event .episode-title {
@@ -251,7 +262,7 @@ div.form-group > label {
     background-color: transparent;
 }
 a:focus, a:hover {
-    color: #ffffff !important;
+    color: #ffffff;
 }
 .event p {
     color: #FFF;
@@ -262,14 +273,14 @@ a:focus, a:hover {
 /* calendar month */
 
 .calendar th {
-    background-color: hsla(0,0%,100%,.08) !important;
-    color: #FFFFFF !important;
+    background-color: hsla(0,0%,100%,.08);
+    color: #FFFFFF;
 }
 .fc-day.fc-today.fc-state-highlight,
 .fc-day-number.fc-today.fc-state-highlight,
 .fc-day-top.fc-today.fc-state-highlight {
-    background-color: hsla(0,0%,100%,.08) !important;
-    color: #f9be03 !important
+    background-color: hsla(0,0%,100%,.08);
+    color: #f9be03;
 }
 
 /* Activity Page */
@@ -354,9 +365,9 @@ legend {
 
 .add-thingy > div > .btn-default:hover,
 .add-thingy > div > div > .btn.btn-xs.btn-default.dropdown-toggle:hover {
-    color: var(--color-DarkBG);
-    background-color: blue;
-    border-color: var(--color-White);
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-color: #FFF;
     outline-style: none;
 }
 li.save-and-add {
@@ -417,7 +428,13 @@ pre {
 .toggle input:not(:checked) ~ p span:nth-child(2) {
     color: #FFFFFF;
 }
-
+  /* Close X button */
+.close,
+.close:hover,
+.close:focus {
+    color: #FFF !important;
+    opacity: 1;
+}
 .btn-default {
     color: hsla(0,0%,100%,.7);
     background-color: rgba(0, 0, 0, .25);
@@ -429,6 +446,11 @@ pre {
     background-color: hsla(0,0%,100%,.08);
     border-color: none;
     outline-style: none;
+}
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
+    color: #fff;
+    background-color: hsla(0,0%,100%,.08);
+    border-color: #FFF;
 }
 .fc-state-default {
     color: #FFF;
@@ -453,6 +475,7 @@ pre {
 
 .btn {
     color: #FFF;
+    outline: 0 !important;
 }
 .btn.focus, .btn:focus, .btn:hover {
     color: #fff;
@@ -469,10 +492,12 @@ pre {
     border-color: #FFF;
     outline-style: none;
 }
-/* blue,green,red button */
-.btn-primary, .btn-success, .btn-danger {
+/* green button */
+ .btn-success, {
   color: #FFF;
+  border-color: #FFF;
 }
+
 /* blue button */
 .btn-primary.focus, .btn-primary:focus, .btn-primary:hover {
     color: #fff;
@@ -482,11 +507,23 @@ pre {
     color: #fff;
     background-color: #449d44;
 }
+.btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default {
+    background-color: hsla(0,0%,100%,.08);
+    border-color: #FFF;
+}
+.btn-danger:hover {
+    color: #fff;
+    background-color: #c9302c;
+    border-color: #ac2925;
+}
+.btn-primary, .btn-danger {
+    border-color: transparent;
+}
 .dropdown-menu {
-      background-color: #1f1f1f !important;
+      background-color: #1f1f1f;
 }
 .dropdown-menu>li>a {
-      color: #ffffff !important;
+      color: #ffffff;
 }
 .dropdown-menu>li>a:hover {
     color: #000 !important;
