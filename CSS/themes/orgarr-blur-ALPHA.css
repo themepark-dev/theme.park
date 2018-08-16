@@ -105,11 +105,12 @@ body {
 
 .form-control {
     color: #FFF;
-    background-color: #1f1f1f !important;
+    background-color: rgba(0, 0, 0, .25) !important;
     border: 1px solid rgba(0, 0, 0, .25);
 }
 
 .form-control:focus {
+    background-color: #1f1f1f !important;
     border-color: rgba(0, 0, 0, 0.51);
     outline: 0;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 0, 0, 0.6);
