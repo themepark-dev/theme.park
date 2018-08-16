@@ -1,13 +1,5 @@
 body {
   background-color: transparent;
-  /*background-image: url("https://cdn.rawgit.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://cdn.rawgit.com/gilbN/theme.park/master/Resources/blur-light.png");
-  background-repeat: repeat, no-repeat;
-  background-attachment: fixed, fixed;
-  background-position: center center, center center;
-  background-size: auto, cover;
-  -webkit-background-size: auto, cover;
-  -moz-background-size: auto, cover;
-  -o-background-size: auto, cover;*/
 }
 
 /* VERSION */
@@ -148,14 +140,6 @@ body {
     opacity: 0.98;
     box-shadow: 0 0 10px 1px #000;
     border-radius: 3px;
-    /*background-image: url("https://cdn.rawgit.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://cdn.rawgit.com/gilbN/theme.park/master/Resources/blur-light.png");
-    background-repeat: repeat, no-repeat;
-    background-attachment: fixed, fixed;
-    background-position: center center, center center;
-    background-size: auto, cover;
-    -webkit-background-size: auto, cover;
-    -moz-background-size: auto, cover;
-    -o-background-size: auto, cover;*/
 }
 
 .series-page-header, .movie-page-header {
@@ -163,28 +147,12 @@ body {
   opacity: 0.98;
   box-shadow: 0 0 10px 1px #000;
   color: #ffffff;
-  /*background-image: url("https://cdn.rawgit.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://cdn.rawgit.com/gilbN/theme.park/master/Resources/blur-light.png");
-  background-repeat: repeat, no-repeat;
-  background-attachment: fixed, fixed;
-  background-position: center center, center center;
-  background-size: auto, cover;
-  -webkit-background-size: auto, cover;
-  -moz-background-size: auto, cover;
-  -o-background-size: auto, cover;*/
 }
 .series-season, .movie-tabs-card {
   background-color: #1f1f1f;
   opacity: 0.98;
   box-shadow: 0 0 10px 1px #000;
   color: #ffffff;
-  /*background-image: url("https://cdn.rawgit.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://cdn.rawgit.com/gilbN/theme.park/master/Resources/blur-light.png");
-  background-repeat: repeat, no-repeat;
-  background-attachment: fixed, fixed;
-  background-position: center center, center center;
-  background-size: auto, cover;
-  -webkit-background-size: auto, cover;
-  -moz-background-size: auto, cover;
-  -o-background-size: auto, cover;*/
 }
 .episode-title-cell {
     color: #ffffff;
