@@ -10,6 +10,12 @@ body {
   -o-background-size: auto, cover;*/
 }
 
+/* VERSION */
+
+#footer-region::after {
+    content: "\A Orgarr V.1";
+    white-space: pre;
+}
 
 @media (max-width: 991px) {
     .toolbar .page-toolbar .x-toolbar-left-1 {
@@ -33,11 +39,9 @@ body {
     }
 }
 
-
 .modal-content {
     background-color: #2d2d2d;
 }
-
 /* scroller */
 ::-webkit-scrollbar-corner {
     background-color: #333333;
