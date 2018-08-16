@@ -199,6 +199,9 @@ th.sortable:hover, .table-hover > tbody > tr:hover {
 .progress.episode-progress .progressbar-back-text {
     color: #000 !important;
 }
+.text-warning {
+    color: #ffffff;
+}
 
 /* SEARCH */
 #add-series-screen .new-series .search-item,
