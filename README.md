@@ -9,6 +9,11 @@ A collection of themes/skins for use in conjunction with [Organizr](https://gith
 
 [Burry/organizr-v2-plex-theme](https://github.com/Burry/organizr-v2-plex-theme)
 
+[iFelix18/Darkerr](https://github.com/iFelix18/Darkerr)
+
+[ydkmlt84/DarkerNZBget](https://github.com/ydkmlt84/DarkerNZBget)
+
+
 # GrafOrg
 
 Custom [Grafana](https://github.com/grafana/grafana) CSS for [Organizr](https://github.com/causefx/Organizr) homepage integration.
