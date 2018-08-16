@@ -242,9 +242,24 @@ div.form-group > label {
 }
 
 /* Calendar page */
+
+.calendar .success {
+    border-color: rgba(25, 255, 0, .15);
+    background-color: rgba(25, 255, 0, .15);
+    color: #FFF;
+}
+.calendar .premiere {
+    border-color: rgba(45, 66, 85, 100);
+    background-color: rgba(45, 66, 85, 100);
+}
 .calendar .primary {
     border-color: rgba(0, 0, 0, .25);
     background-color: rgba(0, 0, 0, .10);
+}
+.calendar .danger {
+    border-color: rgba(171, 0, 0, .50);
+    background-color: rgba(171, 0, 0, .50);
+    color: #fff;
 }
 .event .primary {
     border-color: rgba(0, 0, 0, .25);
@@ -476,6 +491,14 @@ pre {
 .btn {
     color: #FFF;
     outline: 0 !important;
+}
+.btn.btn-lg.btn-block.x-search-auto {
+    color: #FFF;
+    background-color: rgba(0, 0, 0, .25);
+}
+.btn.btn-lg.btn-block.x-search-auto:hover {
+    color: #FFF;
+    background-color: rgba(255, 255, 255, 0.05);
 }
 .btn.focus, .btn:focus, .btn:hover {
     color: #fff;
