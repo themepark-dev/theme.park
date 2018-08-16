@@ -39,7 +39,16 @@ body {
 }
 
 .modal-content {
-    background-color: #2d2d2d;
+      box-shadow: 0 0 10px 1px #000;
+      border-radius: 3px;
+      background-image: url("https://cdn.rawgit.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://cdn.rawgit.com/gilbN/theme.park/master/Resources/blur-light.png");
+      background-repeat: repeat, no-repeat;
+      background-attachment: fixed, fixed;
+      background-position: center center, center center;
+      background-size: auto, cover;
+      -webkit-background-size: auto, cover;
+      -moz-background-size: auto, cover;
+      -o-background-size: auto, cover;*/
 }
 /* scroller */
 ::-webkit-scrollbar-corner {
