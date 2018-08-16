@@ -10,6 +10,30 @@ body {
   -o-background-size: auto, cover;*/
 }
 
+
+@media (max-width: 991px) {
+    .toolbar .page-toolbar .x-toolbar-left-1 {
+        display: block;
+    }
+    .toolbar .page-toolbar .btn-group {
+        display: block;
+    }
+    .btn-group.btn-group-collapse > .btn {
+        margin: 2px;
+        display: block;
+        float: none;
+        border-radius: 4px!important;
+        word-wrap: normal;
+        white-space: normal;
+    }
+}
+@media screen and (max-width: 767px) {
+    .table-responsive {
+        border: none;
+    }
+}
+
+
 .modal-content {
     background-color: #2d2d2d;
 }
@@ -58,6 +82,20 @@ body {
 }
 .input-group-lg>.form-control, .input-group-lg>.input-group-addon, .input-group-lg>.input-group-btn>.btn {
     height: 50px !important;
+}
+.navbar-inverse, .navbar-toggle {
+    background-color: rgba(0, 0, 0, .25);
+    border-color: rgba(0, 0, 0, .25);
+    color: #FFF;
+}
+.navbar-nzbdrone .navbar-toggle:focus, .navbar-nzbdrone .navbar-toggle:hover {
+    color: #FFF;
+    background-color: hsla(0,0%,100%,.08);
+}
+@media (max-width: 767px) {
+.navbar-nzbdrone .navbar-collapse .navbar-nav li:focus, .navbar-nzbdrone .navbar-collapse .navbar-nav li:hover {
+    background-color: hsla(0,0%,100%,.08);
+}
 }
 
 /* Form Stuff */
