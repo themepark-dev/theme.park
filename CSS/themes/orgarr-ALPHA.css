@@ -95,9 +95,8 @@ body {
 @media (max-width: 767px) {
 .navbar-nzbdrone .navbar-collapse .navbar-nav li:focus, .navbar-nzbdrone .navbar-collapse .navbar-nav li:hover {
     background-color: hsla(0,0%,100%,.08);
+    }
 }
-}
-
 /* Form Stuff */
 
 .form-control {
