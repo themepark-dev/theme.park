@@ -1,13 +1,12 @@
 body {
-  background-color: transparent;
-  /*background-image: url("https://cdn.rawgit.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://cdn.rawgit.com/gilbN/theme.park/master/Resources/blur-light.png");
+  background-image: url("https://cdn.rawgit.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://cdn.rawgit.com/gilbN/theme.park/master/Resources/blur-light.png");
   background-repeat: repeat, no-repeat;
   background-attachment: fixed, fixed;
   background-position: center center, center center;
   background-size: auto, cover;
   -webkit-background-size: auto, cover;
   -moz-background-size: auto, cover;
-  -o-background-size: auto, cover;*/
+  -o-background-size: auto, cover;
 }
 
 /* VERSION */
