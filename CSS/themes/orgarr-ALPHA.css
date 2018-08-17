@@ -622,13 +622,14 @@ pre {
 }
 
 /* Sidebar */
-@media only screen and (max-width: 768px)
-.PageSidebar-sidebar-2UXc0 .PageSidebarItem-isActiveLink-1JpOZ {
-    background-color: #0c1218 !important;
+@media only screen and (max-width: 768px) {
+.PageSidebar-sidebar-2UXc0 {
     position: fixed;
     top: 0;
     z-index: 2;
     height: 100vh;
+    background-color: #0c1218 !important;
+}
 }
 .PageSidebar-sidebarContainer-2kLcI {
   background: transparent;
