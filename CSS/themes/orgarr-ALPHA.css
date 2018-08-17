@@ -217,6 +217,10 @@ div.form-group > label {
     background-color: #1f1f1f;
     color: white;
 }
+.btn-group-vertical>.btn.active, .btn-group-vertical>.btn:active, .btn-group-vertical>.btn:focus, .btn-group-vertical>.btn:hover, .btn-group>.btn.active,
+.btn-group>.btn:active, .btn-group>.btn:focus, .btn-group>.btn:hover {
+    background-color: hsla(0,0%,100%,.08);
+}
 
 /* Calendar page */
 
