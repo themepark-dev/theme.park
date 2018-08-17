@@ -17,7 +17,7 @@ A collection of themes/skins for use in conjunction with [Organizr](https://gith
 # OrgArr
 
 Custom [Sonarr](https://github.com/Sonarr/Sonarr)/[Radarr](https://github.com/Radarr/Radarr)/[Lidarr](https://github.com/Sonarr/Sonarr) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr) homepage integration.
-![](/Screenshots/graforg/3.jpg)
+![](/Screenshots/orgarr/5.jpg)
 
 #### The `orgarr.css` theme will mess with your Xarr base theme. 
 
