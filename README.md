@@ -14,6 +14,81 @@ A collection of themes/skins for use in conjunction with [Organizr](https://gith
 [ydkmlt84/DarkerNZBget](https://github.com/ydkmlt84/DarkerNZBget)
 
 
+# OrgArr
+
+Custom [Sonarr](https://github.com/Sonarr/Sonarr)/[Radarr](https://github.com/Radarr/Radarr)/[Lidarr](https://github.com/Sonarr/Sonarr) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr) homepage integration.
+![](/Screenshots/graforg/3.jpg)
+
+#### The `orgarr.css` theme will mess with your Xarr base theme. 
+
+#### `graforg.css` is created purely for use with Organizr.
+**NOTE:** When viewing Xarr in Organizr iframe it will follow the Organizr theme. When viewing it outside of Organizr iframe the background will be white ect.
+
+#### `orgarr-blur.css`
+If you want a regular Plex theme for your *arr setup, use the **`orgarr-blur.css`** instead.
+
+## Setup
+<details><summary>Expand</summary>
+
+### Screenshots
+<details><summary>Expand</summary>
+<p>
+<img src="/Screenshots/orgarr/1.jpg"></img>
+<img src="/Screenshots/orgarr/2.jpg"></img>
+<img src="/Screenshots/orgarr/3.jpg"></img>
+<img src="/Screenshots/orgarr/4.jpg"></img>
+</p>
+</details>
+
+### Subfilter
+As the arr's doesn't have support for custom CSS you can get around that by using [subfilter](http://nginx.org/en/docs/http/ngx_http_sub_module.html) in Nginx.
+
+Add this to your location context/block:
+```nginx
+proxy_set_header Accept-Encoding "";
+sub_filter
+'</head>'
+'<link rel="stylesheet" type="text/css" href="https://rawgit.com/gilbN/theme.park/CSS/themes/orgarr.css">
+</head>';
+sub_filter_once on;
+```
+### Here is a complete example:
+```nginx
+#GRAFANA CONTAINER
+
+# REDIRECT HTTP TRAFFIC TO https://[domain.com]
+server {
+  listen 80;
+  server_name orgarr.domain.com;
+  return 301 https://$server_name$request_uri;
+  }
+
+server {
+  listen 443 ssl http2;
+  server_name graforg.domain.com;
+
+include /config/nginx/ssl.conf;
+
+location / {
+  proxy_pass http://192.168.1.34:3000;
+  proxy_set_header Accept-Encoding "";
+  sub_filter
+  '</head>'
+  '<link rel="stylesheet" type="text/css" href="https://rawgit.com/gilbN/theme.park/CSS/themes/orgarr.css">
+  </head>';
+  sub_filter_once on;
+  proxy_hide_header X-Frame-Options;
+  proxy_set_header X-Forwarded-Host $host;
+  proxy_set_header X-Forwarded-Server $host;
+  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+  proxy_http_version 1.1;
+  proxy_pass_request_headers on;
+  proxy_set_header Connection "keep-alive";
+  proxy_store off;
+  }
+}
+```
+
 # GrafOrg
 
 Custom [Grafana](https://github.com/grafana/grafana) CSS for [Organizr](https://github.com/causefx/Organizr) homepage integration.
