@@ -1,7 +1,7 @@
 # theme.park
 A collection of themes/skins for use in conjunction with [Organizr](https://github.com/causefx/Organizr)
 
-### Honourable mentions: 
+### Honourable mentions:
 
 [leram84/layer.Cake/](https://github.com/leram84/layer.Cake/)
 
@@ -17,9 +17,9 @@ A collection of themes/skins for use in conjunction with [Organizr](https://gith
 # OrgArr
 
 Custom [Sonarr](https://github.com/Sonarr/Sonarr)/[Radarr](https://github.com/Radarr/Radarr)/[Lidarr](https://github.com/Sonarr/Sonarr) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr) homepage integration.
-![](/Screenshots/orgarr/5.jpg)
+![](/Screenshots/orgarr/4.jpg)
 
-#### The `orgarr.css` theme will mess with your Xarr base theme. 
+#### The `orgarr.css` theme will mess with your Xarr base theme.
 
 #### `graforg.css` is created purely for use with Organizr.
 **NOTE:** When viewing Xarr in Organizr iframe it will follow the Organizr theme. When viewing it outside of Organizr iframe the background will be white ect.
