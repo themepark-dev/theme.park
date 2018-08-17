@@ -110,8 +110,8 @@ body {
 }
 
 .bootstrap-tagsinput {
-    background-color: #1f1f1f;
-    border: 1px solid #1f1f1f;
+    background-color: rgba(0, 0, 0, .25);
+    border: 1px solid rgba(0, 0, 0, .25);
     color: #FFF;
 }
 .form-group i {
