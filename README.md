@@ -95,7 +95,7 @@ location / {
 
 # GrafOrg
 
-Custom [Grafana](https://github.com/grafana/grafana) CSS for [Organizr](https://github.com/causefx/Organizr) homepage integration.
+Custom [Grafana](https://github.com/grafana/grafana) CSS for [Organizr](https://github.com/causefx/Organizr) homepage integration and consistent UI.
 ![](/Screenshots/graforg/3.jpg)
 ## Custom CSS for Organizr
 #### The `graforg.css` theme will mess with your Grafana base theme. And it will hide the side menu. Go to https://graforg.domain.com/datasources for settings.
