@@ -553,14 +553,14 @@ pre {
 .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus,
 .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
     color: #fff;
-    background-color: #204d74;
+    background-color: #286090 !important;
     border-color: transparent;
 }
 
 /* blue button */
 .btn-primary.focus, .btn-primary:focus, .btn-primary:hover {
     color: #fff;
-    background-color: #286090;
+    background-color: #286090 !important;
 }
 .btn-success.focus, .btn-success:focus, .btn-success:hover {
     color: #fff;
