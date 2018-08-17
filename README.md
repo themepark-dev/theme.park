@@ -88,6 +88,9 @@ location / {
   }
 }
 ```
+</details>
+
+***
 
 # GrafOrg
 
