@@ -522,14 +522,14 @@ pre {
 }
 .modal-footer > button:not([class*="btn-primary"]):not([class*="btn-danger"]):not([class*="btn-success"]) {
     color: #FFF;
-    background-color: #2d2d2d;
-    border-color: #FFFFFF;
+    background-color: rgba(0, 0, 0, .25);
+    border-color: rgba(0, 0, 0, .25);
     outline-style: none;
 }
 .modal-footer > button:hover:not([class*="btn-primary"]):not([class*="btn-danger"]):not([class*="btn-success"]) {
     color: #FFF;
     background-color: rgba(255, 255, 255, .25);
-    border-color: #FFF;
+    border-color: rgba(255, 255, 255, .25);
     outline-style: none;
 }
 /* green button */
