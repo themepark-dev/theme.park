@@ -262,6 +262,13 @@ div.form-group > label {
     background-color: hsla(0,0%,100%,.08);
 }
 
+/* Add Series */
+#add-series-screen .existing-series {
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    box-shadow: 0 0 10px 1px #000000;
+}
+
 /* Calendar page */
 
 .calendar .success {
@@ -557,7 +564,7 @@ pre {
 }
 .btn-success.focus, .btn-success:focus, .btn-success:hover {
     color: #fff;
-    background-color: #449d44;
+    background-color: #449d44 !important;
 }
 .btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default {
     background-color: hsla(0,0%,100%,.08);
