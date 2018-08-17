@@ -30,7 +30,7 @@ body {
 
 /* Dashboard search menu */
 .search-field-wrapper {
-	background-color: rgba(0,0,0,.0);
+	background-color: rgba(0, 0, 0, 0.25);
 	box-shadow: none !important;
 }
 .search-field-wrapper>input {
