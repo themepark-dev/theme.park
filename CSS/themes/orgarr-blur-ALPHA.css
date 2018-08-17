@@ -664,6 +664,7 @@ pre {
 /* Sidebar */
 @media only screen and (max-width: 768px)
 .PageSidebar-sidebar-2UXc0 .PageSidebarItem-isActiveLink-1JpOZ {
+    background-color: #0c1218 !important;
     position: fixed;
     top: 0;
     z-index: 2;
