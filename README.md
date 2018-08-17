@@ -37,7 +37,7 @@ If you want a regular Plex theme for your *arr setup, use the **`orgarr-blur.css
 <img src="/Screenshots/orgarr/1.jpg"></img>
 <img src="/Screenshots/orgarr/2.jpg"></img>
 <img src="/Screenshots/orgarr/3.jpg"></img>
-<img src="/Screenshots/orgarr/4.jpg"></img>
+<img src="/Screenshots/orgarr/5.png"></img>
 </p>
 </details>
 
