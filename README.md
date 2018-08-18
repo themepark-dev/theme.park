@@ -353,7 +353,7 @@ sub_filter_once on;
 
 Custom [Monitorr](https://github.com/Monitorr/Monitorr) CSS for [Organizr](https://github.com/causefx/Organizr) homepage integration.
 
-![](/Screenshots/monitorg/1.jpg)
+![](/Screenshots/monitorg/1-flat.jpg)
 
 ## Custom CSS for Organizr
 #### This theme will mess with your Monitorr base theme. And it will hide the settings button. Go to /monitorr/settings.php for settings.
