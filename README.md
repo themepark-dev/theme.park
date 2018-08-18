@@ -13,6 +13,8 @@ A collection of themes/skins for use in conjunction with [Organizr](https://gith
 
 [ydkmlt84/DarkerNZBget](https://github.com/ydkmlt84/DarkerNZBget)
 
+[Archmonger/Blackberry-OG-Ombi](https://github.com/Archmonger/Blackberry-OG-Ombi)
+
 
 # OrgArr
 
