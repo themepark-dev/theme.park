@@ -1,26 +1,26 @@
 /* GRAFANA ORG THEME */
 body {
-    color: #FFFFFF !important;
-    background-color: rgba(0, 0, 0, 0) !important;
+    color: #FFFFFF;
+    background-color: transparent;
 }
 .main-view {
-    background: linear-gradient(180deg,#ffffff00 10px,#ffffff00 100px) !important;
+    background: linear-gradient(180deg,#ffffff00 10px,#ffffff00 100px);
 }
 
 /* Hide sidemenu */
 .sidemenu {
-    display: none !important;
+    display: none;
 }
 
 /* Dashboard dropdown menu */
 .search-dropdown__col_1 {
-    background: rgba(0, 0, 0, 0) !important;
+    background: transparent;
 }
 .search-container {
-    left: 0px !important;
+    left: 0px;
 }
 .navbar-page-btn {
-    color: #FFFFFF !important;
+    color: #FFF;
 }
 
 /* Panel fullscreen navbar */
@@ -31,37 +31,37 @@ body {
 /* Dashboard search menu */
 .search-field-wrapper {
 	background-color: #1f1f1f;
-	box-shadow: none !important;
+	box-shadow: none;
 }
 .search-field-wrapper>input {
-	height: 55px !important;
-    background-color: rgba(0, 0, 0, 0.25) !important;
+	height: 55px;
+    background-color: rgba(0, 0, 0, 0.25);
 }
 .search-field-icon {
-    background-color: rgba(0, 0, 0, .25) !important;
+    background-color: rgba(0, 0, 0, .25);
 }
 
 /* Dashboard settings menu */
 .dashboard-settings__aside {
-    background: rgba(0, 0, 0, .25) !important;
+    background: rgba(0, 0, 0, .25);
 }
 .dashboard-page--settings-open .navbar {
     background: linear-gradient(90deg,rgba(0, 0, 0, .15),rgba(0, 0, 0, 0.25));
 }
 .navbar-button--primary {
-    border-color: #ffffff00 !important;
+    border-color: #ffffff00;
 }
 .dashboard-settings__aside-header {
-    color: #ffffff !important;
+    color: #ffffff;
 }
 .dashboard-settings__nav-item {
-    color: #ffffff !important;
+    color: #ffffff;
 }
 .bootstrap-tagsinput {
     background-color: #09090b;
 }
 .gf-form-select-wrapper .gf-form-input {
-    background-color: #393a3b !important;
+    background-color: #393a3b;
 }
 
 /* Variable label color */
@@ -71,16 +71,21 @@ body {
 
 /* Variable label box */
 .gf-form-label {
-    background-color: rgba(0, 0, 0, 0.25) !important;
-	border: none !important;
+    background-color: rgba(0, 0, 0, 0.25);
+	   border: none;
+}
+.gf-form-input:focus {
+    color: #FFF !important;
+    background-color: #262626 !important;
+    border: none !important;
 }
 
 /* Variable dashboard dropdown */
 .variable-value-link {
-    padding: 7.4px 10px !important;
-    background-color: rgba(0, 0, 0, 0.25) !important;
-    border: none !important;
-    color: #FFFFFF !important;
+    padding: 7.4px 10px;
+    background-color: rgba(0, 0, 0, 0.25);
+    border: none;
+    color: #FFFFFF;
 }
 
 /* Variable input box */
@@ -93,53 +98,50 @@ body {
 
 /* NAVBAR BUTTONS */
 .navbar-button {
-    color: #FFFFFF !important;
-    background-color: #00000040 !important;
-    background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)) !important;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25));
 }
 
 /* Custom Range Refreshing every X Dropdown */
 .gf-timepicker-absolute-section select {
-    background-color: #393a3b !important;
-}
-.gf-form-input:focus {
-    box-shadow: none !important;
+    background-color: #393a3b;
 }
 
 /* PANEL BACKGROUND COLOR*/
 .panel-container {
-    background-color: rgba(0, 0, 0, .25) !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    background-color: rgba(0, 0, 0, .25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .panel-container.panel-transparent {
-	background-color: rgba(0, 0, 0, .25) !important;
+	background-color: rgba(0, 0, 0, .25);
 }
 .panel-header:hover {
-    background-color: rgba(0, 0, 0, 0.25) !important;
+    background-color: rgba(0, 0, 0, 0.25);
 }
 /* ////PANEL BACKGROUND COLOR//// */
 
 .graph-legend-table .graph-legend-series:nth-child(odd) {
-    background: rgba(0, 0, 0, 0) !important;
+    background: transparent;
 }
 
 /* Panel text color*/
 div.flot-text {
-    color: #ffffff!important;
+    color: #FFF;
 }
 
 /* panel loading circle*/
 .panel-loading {
-    color: #ffffff!important;
+    color: #FFF;
 }
 
 /* panel resize arrow */
 .theme-dark .react-grid-item>.react-resizable-handle:after {
-    border-right: 2px solid #fff !important;
-    border-bottom: 2px solid #fff !important;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
 }
 
 /* table panel background color */
 .table-panel-container {
-    background-color: rgba(0, 0, 0, .25) !important;
+    background-color: rgba(0, 0, 0, .25);
 }
