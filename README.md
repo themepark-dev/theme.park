@@ -16,14 +16,14 @@ A collection of themes/skins for use in conjunction with [Organizr](https://gith
 
 # OrgArr
 
-Custom [Sonarr](https://github.com/Sonarr/Sonarr)/[Radarr](https://github.com/Radarr/Radarr)/[Lidarr](https://github.com/Sonarr/Sonarr) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr) homepage integration.
+Custom [Sonarr](https://github.com/Sonarr/Sonarr)/[Radarr](https://github.com/Radarr/Radarr)/[Lidarr](https://github.com/Lidarr/Lidarr) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr)
 ![](/Screenshots/orgarr/4.jpg)
 Thank you iFelix18 for doing all the hard work! :)
 
 #### The `orgarr.css` theme will mess with your Xarr base theme.
 
 #### `graforg.css` is created purely for use with Organizr.
-**NOTE:** When viewing Xarr in Organizr iframe it will follow the Organizr theme. When viewing it outside of Organizr iframe the background will be white ect.
+**NOTE:** When viewing orgarr in Organizr iframe it will follow the Organizr theme. When viewing it outside of Organizr iframe the background will be white ect.
 
 #### `orgarr-blur.css`
 If you want a regular Plex theme for your *arr setup, use the **`orgarr-blur.css`** instead.
