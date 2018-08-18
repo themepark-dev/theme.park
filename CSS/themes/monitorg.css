@@ -4,27 +4,28 @@ body {
 
 .container {
     max-width: 100% !important;
-    padding-right: 2rem !important;	
+    padding-right: 2rem !important;
 }
 #stats {
      background-color: rgba(0,0,0,.15) !important;
      padding-left: .0rem !important;
      padding-right: 1.11rem !important;
+	 box-shadow: none;
 }
 #hd {
     padding-left: 0.8rem !important;
 }
 .double-val-label>span.success {
     background-color: #28a745 !important;
-}	
+}
 .servicetile:hover, .servicetile:focus {
      text-shadow: 0 0 20px #000;
 }
 #servicetitle:hover, #servicetitle:focus {
-    text-shadow: 0 0 20px #000;     
+    text-shadow: 0 0 20px #000;
 }
 #servicetitle {
-    color: #fff !important;     
+    color: #fff !important;
 }
 .btnoffline, .btnunknown, .btnonline  {
     box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.9) !important;
@@ -36,18 +37,20 @@ body {
 #time {
     background-color: rgba(0,0,0,.15) !important;
     color: #fff !important;
+	box-shadow: none;
 }
 #slidertable {
-background-color: rgba(0,0,0,.15) !important
+background-color: rgba(0,0,0,.15) !important;
+box-shadow: none;
 }
 #textslider {
     color: #fff !important;
 }
 .dtg {
-   color: #fff !important; 
+   color: #fff !important;
 }
 .datemin {
-   color: #fff !important; 
+   color: #fff !important;
 }
 #center {
     background-color: rgba(0,0,0,.0) !important;
@@ -56,14 +59,15 @@ background-color: rgba(0,0,0,.15) !important
 .col-lg-4 {
     background-color: rgba(0,0,0,.15) !important;
     margin: 1rem .1rem 1.5rem 1rem !important;
-    width: 9rem !important;	
+    width: 9rem !important;
+	box-shadow: none;
 }
 #clock {
     background-color: rgba(0,0,0,.15) !important;
     color: #fff !important;
 }
 .date {
-    color: #fff !important; 
+    color: #fff !important;
 }
 #summary {
     background-color: #e84242 !important;
@@ -97,13 +101,19 @@ background-color: rgba(0,0,0,.15) !important
 #colorkey {
     color: #000000 !important;
 }
+
+/* ButtonShadow */
+.btnoffline, .btnunknown, .btnonline {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
 @media only screen and (max-width: 775px) {
     #slidertable {
         display: none !important;
     }
-    
+
     #time {
         display: none !important;
     }
 }
-
