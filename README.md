@@ -16,7 +16,7 @@ A collection of themes/skins for use in conjunction with [Organizr](https://gith
 
 # OrgArr
 
-Custom [Sonarr](https://github.com/Sonarr/Sonarr)/[Radarr](https://github.com/Radarr/Radarr)/[Lidarr](https://github.com/Sonarr/Sonarr) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr)
+Custom [Sonarr](https://github.com/Sonarr/Sonarr)/[Radarr](https://github.com/Radarr/Radarr)/[Lidarr](https://github.com/Lidarr/Lidarr) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr)
 ![](/Screenshots/orgarr/4.jpg)
 Thank you iFelix18 for doing all the hard work! :)
 
