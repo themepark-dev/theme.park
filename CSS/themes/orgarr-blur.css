@@ -729,6 +729,13 @@ pre {
     border-top: none;
     background-color: rgba(0, 0, 0, .25);
 }
+.ArtistIndexOverview-container-3_iEh:hover .ArtistIndexOverview-content-3zZhb {
+    background-color: hsla(0,0%,100%,.08);
+}
+.ArtistIndexBanner-title-3TKM6 {
+    background-color: rgba(0, 0, 0, .25);
+    color: #fff;
+}
 
 
   /* Table view*/
