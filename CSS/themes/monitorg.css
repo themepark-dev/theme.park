@@ -65,6 +65,7 @@ box-shadow: none;
 #clock {
     background-color: rgba(0,0,0,.15) !important;
     color: #fff !important;
+    box-shadow: none;
 }
 .date {
     color: #fff !important;
