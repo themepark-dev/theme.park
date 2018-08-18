@@ -729,7 +729,7 @@ pre {
     border-top: none;
     background-color: rgba(0, 0, 0, .25);
 }
-.ArtistIndexOverview-container-3_iEh:hover .ArtistIndexOverview-content-3zZhb {
+.ArtistIndexOverview-container-3_iEh:hover .ArtistIndexOverview-content-3zZhb, .ArtistIndexProgressBar-progress-3DLoM  {
     background-color: hsla(0,0%,100%,.08);
 }
 .ArtistIndexBanner-title-3TKM6 {
@@ -792,9 +792,12 @@ pre {
     border-color: transparent;
 }
 
-.Button-default-1X0nf, .AddNewArtist-noResults-L1xcp, .AddNewArtist-message-c33sh {
+.Button-default-1X0nf {
     color: #FFF;
     background-color: rgba(0, 0, 0, .25);
+}
+.AddNewArtist-noResults-L1xcp, .AddNewArtist-message-c33sh {
+    color: #FFF;
 }
 .Button-default-1X0nf:hover {
     background-color: hsla(0,0%,100%,.08);
