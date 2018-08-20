@@ -177,7 +177,7 @@ Change the ***Panel name*** to what you want and the ***src*** to the panel URL.
   <div class="overflowhider"><embed id="grafanadwidget1" src='https://graforg.domain.com/panel-embed-link'/>**
 ```
 The URL can be found by clicking **share** on the panel you want to add.
-![](/Screenshots/graforg/4.jpg)
+![](https://raw.githubusercontent.com/gilbN/GrafOrg/master/Screenshots/4.png)
 
 If you dont want the ***Panel name*** text, just remove the `<h5><span>` line entirely.
 
