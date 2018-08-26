@@ -24,7 +24,7 @@ Thank you iFelix18 for doing all the hard work! :)
 
 #### The `orgarr.css` theme will mess with your Xarr base theme.
 
-#### `graforg.css` is created purely for use with Organizr.
+#### `orgarrg.css` is created purely for use with Organizr.
 **NOTE:** When viewing orgarr in Organizr iframe it will follow the Organizr theme. When viewing it outside of Organizr iframe the background will be white ect.
 
 #### `orgarr-blur.css`
@@ -100,7 +100,7 @@ location / {
 Custom [Grafana](https://github.com/grafana/grafana) CSS for [Organizr](https://github.com/causefx/Organizr) homepage integration and consistent UI.
 ![](/Screenshots/graforg/3.jpg)
 ## Custom CSS for Organizr
-#### The `graforg.css` theme will mess with your Grafana base theme. And it will hide the side menu. Go to https://graforg.domain.com/datasources for settings.
+#### The `graforg.css` theme will mess with your Grafana base theme. And it will hide the side menu. Go to https://graforg.domain.com/login for settings.
 
 #### `graforg.css` is created purely for use with Organizr.
 **NOTE:** When viewing Grafana in Organizr iframe it will follow the Organizr theme. When viewing it outside of Organizr iframe the background will be white ect.
