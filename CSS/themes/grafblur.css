@@ -149,7 +149,7 @@ body {
 
 /* Panel text color*/
 div.flot-text {
-    color: #ffffff;
+    color: #fff !important;
 }
 
 /* panel loading circle*/
