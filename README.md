@@ -27,7 +27,7 @@ Thank you iFelix18 for doing all the hard work! :)
 #### `orgarrg.css` is created purely for use with Organizr.
 **NOTE:** When viewing orgarr in Organizr iframe it will follow the Organizr theme. When viewing it outside of Organizr iframe the background will be white ect.
 
-#### `orgarr-blur.css`
+#### `orgarr-plex.css`
 If you want a regular Plex theme for your *arr setup, use the **`orgarr-blur.css`** instead.
 
 ## Setup
@@ -105,7 +105,7 @@ Custom [Grafana](https://github.com/grafana/grafana) CSS for [Organizr](https://
 #### `graforg.css` is created purely for use with Organizr.
 **NOTE:** When viewing Grafana in Organizr iframe it will follow the Organizr theme. When viewing it outside of Organizr iframe the background will be white ect.
 
-#### `grafblur.css`
+#### `grafplex.css`
 If you want a regular Plex theme for your Grafana setup, use the **`grafblur.css`** instead.
 
 ## Setup
@@ -293,7 +293,7 @@ Custom [Netdata](https://github.com/firehol/netdata) CSS for consistent UI in [O
 #### `netorg.css` is created purely for use with Organizr.
 **NOTE:** When viewing Netdata in Organizr iframe it will follow the Organizr theme. When viewing it outside of Organizr iframe the background will be white ect.
 
-#### `netblur.css`
+#### `netplex.css`
 If you want a regular Plex theme for your Netdata setup, use the **`netblur.css`** instead.
 
 ## Setup
