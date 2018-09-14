@@ -1,5 +1,5 @@
 body {
-  background-image: url("https://cdn.rawgit.com/gilbN/NetOrg/master/Resources/blur-noise.png"), url("https://cdn.rawgit.com/gilbN/NetOrg/master/Resources/blur-light.png");
+  background-image: url("https://cdn.rawgit.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://cdn.rawgit.com/gilbN/theme.park/master/Resources/blur-light.png");
   background-repeat: repeat, no-repeat;
   background-attachment: fixed, fixed;
   background-position: center center, center center;
@@ -11,7 +11,7 @@ body {
 }
 /* Navbar */
 .navbar-default {
-  background-image: url("https://cdn.rawgit.com/gilbN/NetOrg/master/Resources/blur-noise.png"), url("https://cdn.rawgit.com/gilbN/NetOrg/master/Resources/blur-light-dark.png");
+  background-image: url("https://cdn.rawgit.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://cdn.rawgit.com/gilbN/theme.park/master/Resources/blur-light-dark.png");
   background-repeat: repeat, no-repeat;
   background-attachment: fixed, fixed;
   background-position: center center, center center;
