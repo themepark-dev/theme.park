@@ -1,6 +1,6 @@
 /* GRAFANA BLUR THEME */
 body {
-	background-image: url("https://cdn.rawgit.com/gilbN/theme.park/f19b85d9/Resources/blur-noise.png"), url("https://cdn.rawgit.com/gilbN/theme.park/f19b85d9/Resources/blur-light.png");
+	background-image: url("https://cdn.rawgit.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://cdn.rawgit.com/gilbN/theme.park/master/Resources/blur-light.png");
 	background-repeat: repeat, no-repeat;
 	background-attachment: fixed, fixed;
 	background-position: center center, center center;
