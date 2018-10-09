@@ -43,24 +43,8 @@ body {
 }
 
 /* Dashboard search menu */
-.search-field-wrapper {
-	background-image: url("https://cdn.rawgit.com/gilbN/GrafOrg/master/Resources/blur-noise.png"), url("https://cdn.rawgit.com/gilbN/GrafOrg/master/Resources/blur-light.png");
-	background-repeat: repeat, no-repeat;
-	background-attachment: fixed, fixed;
-	background-position: center center, center center;
-	background-size: auto, cover;
-	-webkit-background-size: auto, cover;
-	-moz-background-size: auto, cover;
-	-o-background-size: auto, cover;
-	background-color: rgba(0,0,0,.0);
-	box-shadow: none;
-}
 .search-field-wrapper>input {
 	height: 55px;
-    background-color: rgba(0, 0, 0, 0.25);
-}
-.search-field-icon {
-    background-color: rgba(0, 0, 0, .25);
 }
 
 /* Dashboard settings menu */
