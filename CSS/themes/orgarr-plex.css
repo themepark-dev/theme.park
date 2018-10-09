@@ -1,5 +1,5 @@
 body {
-  background-image: url("https://cdn.rawgit.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://cdn.rawgit.com/gilbN/theme.park/master/Resources/blur-light.png");
+  background-image: url("https://cdn.jsdelivr.net/gh/gilbN/theme.park@de2024ba0794e71eb80c1b66b37820e66d944ded/Resources/blur-noise.png"), url("https://cdn.jsdelivr.net/gh/gilbN/theme.park@de2024ba0794e71eb80c1b66b37820e66d944ded/Resources/blur-light.png");
   background-repeat: repeat, no-repeat;
   background-attachment: fixed, fixed;
   background-position: center center, center center;
@@ -41,7 +41,7 @@ body {
 .modal-content {
       box-shadow: 0 0 10px 1px #000;
       border-radius: 3px;
-      background-image: url("https://cdn.rawgit.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://cdn.rawgit.com/gilbN/theme.park/master/Resources/blur-light.png");
+      background-image: url("https://cdn.jsdelivr.net/gh/gilbN/theme.park@de2024ba0794e71eb80c1b66b37820e66d944ded/Resources/blur-noise.png"), url("https://cdn.jsdelivr.net/gh/gilbN/theme.park@de2024ba0794e71eb80c1b66b37820e66d944ded/Resources/blur-light.png");
       background-repeat: repeat, no-repeat;
       background-attachment: fixed, fixed;
       background-position: center center, center center;
@@ -159,7 +159,7 @@ body {
     opacity: 0.98;
     box-shadow: 0 0 10px 1px #000;
     border-radius: 3px;
-    background-image: url("https://cdn.rawgit.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://cdn.rawgit.com/gilbN/theme.park/master/Resources/blur-light.png");
+    background-image: url("https://cdn.jsdelivr.net/gh/gilbN/theme.park@de2024ba0794e71eb80c1b66b37820e66d944ded/Resources/blur-noise.png"), url("https://cdn.jsdelivr.net/gh/gilbN/theme.park@de2024ba0794e71eb80c1b66b37820e66d944ded/Resources/blur-light.png");
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -173,7 +173,7 @@ body {
   opacity: 0.98;
   box-shadow: 0 0 10px 1px #000;
   color: #ffffff;
-  background-image: url("https://cdn.rawgit.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://cdn.rawgit.com/gilbN/theme.park/master/Resources/blur-light.png");
+  background-image: url("https://cdn.jsdelivr.net/gh/gilbN/theme.park@de2024ba0794e71eb80c1b66b37820e66d944ded/Resources/blur-noise.png"), url("https://cdn.jsdelivr.net/gh/gilbN/theme.park@de2024ba0794e71eb80c1b66b37820e66d944ded/Resources/blur-light.png");
   background-repeat: repeat, no-repeat;
   background-attachment: fixed, fixed;
   background-position: center center, center center;
@@ -186,7 +186,7 @@ body {
   opacity: 0.98;
   box-shadow: 0 0 10px 1px #000;
   color: #ffffff;
-  background-image: url("https://cdn.rawgit.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://cdn.rawgit.com/gilbN/theme.park/master/Resources/blur-light.png");
+  background-image: url("https://cdn.jsdelivr.net/gh/gilbN/theme.park@de2024ba0794e71eb80c1b66b37820e66d944ded/Resources/blur-noise.png"), url("https://cdn.jsdelivr.net/gh/gilbN/theme.park@de2024ba0794e71eb80c1b66b37820e66d944ded/Resources/blur-light.png");
   background-repeat: repeat, no-repeat;
   background-attachment: fixed, fixed;
   background-position: center center, center center;
@@ -665,7 +665,7 @@ pre {
 @media only screen and (max-width: 768px) {
 .PageSidebar-sidebar-2UXc0 {
   background: rgba(0, 0, 0, .25);
-  background-image: url("https://cdn.rawgit.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://cdn.rawgit.com/gilbN/theme.park/master/Resources/blur-light.png");
+  background-image: url("https://cdn.jsdelivr.net/gh/gilbN/theme.park@de2024ba0794e71eb80c1b66b37820e66d944ded/Resources/blur-noise.png"), url("https://cdn.jsdelivr.net/gh/gilbN/theme.park@de2024ba0794e71eb80c1b66b37820e66d944ded/Resources/blur-light.png");
   background-repeat: repeat, no-repeat;
   background-attachment: fixed, fixed;
   background-position: center center, center center;
