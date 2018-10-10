@@ -28,7 +28,7 @@ Thank you iFelix18 for doing all the hard work! :)
 **NOTE:** When viewing orgarr in Organizr iframe it will follow the Organizr theme. When viewing it outside of Organizr iframe the background will be white ect.
 
 #### `orgarr-plex.css`
-If you want a regular Plex theme for your *arr setup, use the **`orgarr-plex.css`** instead.
+##### If you want a regular Plex theme for your *arr setup, use the **`orgarr-plex.css`** instead.
 
 ## Setup
 <details><summary>Expand</summary>
