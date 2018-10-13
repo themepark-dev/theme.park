@@ -54,6 +54,12 @@ color:#FFFFFF !important;
 .filter-table tbody tr:nth-child(odd) {
     background: hsla(0,0%,100%,.08) !important;
 }
+.cta-form {
+    background-color: rgba(0, 0, 0, 0.25) !important;
+}
+.empty-list-cta {
+    background-color: rgba(0, 0, 0, .25) !important;
+}
 
 /* sidemenu */
 .sidemenu-open .sidemenu {
@@ -107,7 +113,10 @@ color:#FFFFFF !important;
     background-color: #09090b !important;
 }
 .gf-form-select-wrapper .gf-form-input {
-    background-color: #393a3b !important;
+    background-color: #00000000 !important;
+}
+.gf-form-select-wrapper {
+    background-color: hsla(0,0%,100%,.08) !important;
 }
 
 /* Variable label color */
