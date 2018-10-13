@@ -12,7 +12,7 @@ body {
 	background-color: rgba(0,0,0,.0) !important;
 	color:#FFFFFF !important;
 }
-.theme-dark, .preloader {
+.theme-dark, .theme-light, .preloader {
 	background-image: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"),
 	url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-light.png") !important;
 	background-repeat: repeat, no-repeat!important;
@@ -30,6 +30,10 @@ body {
 }
 .main-view {
     background: linear-gradient(180deg,#ffffff00 10px,#ffffff00 100px) !important;
+}
+.footer, .footer a {
+    color: #FFF;
+		content: "\A Grafplex V.1.1";
 }
 /* login page */
 .login {
