@@ -4,64 +4,64 @@ body {
     background-color: transparent !important;
 }
 .main-view {
-    background: linear-gradient(180deg,#ffffff00 10px,#ffffff00 100px);
+    background: linear-gradient(180deg,#ffffff00 10px,#ffffff00 100px) !important;
 }
 
 /* Hide sidemenu */
 .sidemenu {
-    display: none;
+    display: none !important;
 }
 
 /* Dashboard dropdown menu */
 .search-dropdown__col_1 {
-    background: transparent;
+    background: transparent !important;
 }
 .search-container {
-    left: 0px;
+    left: 0px !important;
 }
 .navbar-page-btn {
-    color: #FFF;
+    color: #FFF !important;
 }
 
 /* Panel fullscreen navbar */
 .panel-in-fullscreen .navbar {
-    background: linear-gradient(90deg,rgba(0, 0, 0, .15),rgba(0, 0, 0, 0.25));
+    background: linear-gradient(90deg,rgba(0, 0, 0, .15),rgba(0, 0, 0, 0.25)) !important;
 }
 
 /* Dashboard search menu */
 .search-field-wrapper {
-	background-color: #1f1f1f;
-	box-shadow: none;
+	background-color: #1f1f1f !important;
+	box-shadow: none !important;
 }
 .search-field-wrapper>input {
-	height: 55px;
-    background-color: rgba(0, 0, 0, 0.25);
+	height: 55px !important;
+    background-color: rgba(0, 0, 0, 0.25) !important;
 }
 .search-field-icon {
-    background-color: rgba(0, 0, 0, .25);
+    background-color: rgba(0, 0, 0, .25) !important;
 }
 
 /* Dashboard settings menu */
 .dashboard-settings__aside {
-    background: rgba(0, 0, 0, .25);
+    background: rgba(0, 0, 0, .25) !important;
 }
 .dashboard-page--settings-open .navbar {
-    background: linear-gradient(90deg,rgba(0, 0, 0, .15),rgba(0, 0, 0, 0.25));
+    background: linear-gradient(90deg,rgba(0, 0, 0, .15),rgba(0, 0, 0, 0.25)) !important;
 }
 .navbar-button--primary {
-    border-color: #ffffff00;
+    border-color: #ffffff00 !important;
 }
 .dashboard-settings__aside-header {
-    color: #ffffff;
+    color: #ffffff !important;
 }
 .dashboard-settings__nav-item {
-    color: #ffffff;
+    color: #ffffff !important;
 }
 .bootstrap-tagsinput {
-    background-color: #09090b;
+    background-color: #09090b !important;
 }
 .gf-form-select-wrapper .gf-form-input {
-    background-color: #393a3b;
+    background-color: #393a3b !important;
 }
 
 /* Variable label color */
@@ -71,8 +71,8 @@ body {
 
 /* Variable label box */
 .gf-form-label {
-    background-color: rgba(0, 0, 0, 0.25);
-	   border: none;
+    background-color: rgba(0, 0, 0, 0.25) !important;
+	   border: none !important;
 }
 .gf-form-input:focus {
     color: #FFF !important;
@@ -82,10 +82,10 @@ body {
 
 /* Variable dashboard dropdown */
 .variable-value-link {
-    padding: 7.4px 10px;
-    background-color: rgba(0, 0, 0, 0.25);
-    border: none;
-    color: #FFFFFF;
+    padding: 7.4px 10px !important;
+    background-color: rgba(0, 0, 0, 0.25) !important;
+    border: none !important;
+    color: #FFFFFF !important;
 }
 
 /* Variable input box */
@@ -98,31 +98,31 @@ body {
 
 /* NAVBAR BUTTONS */
 .navbar-button {
-    color: #FFF;
-    background-color: rgba(0, 0, 0, 0.25);
-    background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25));
+    color: #FFF !important;
+    background-color: rgba(0, 0, 0, 0.25) !important;
+    background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)) !important;
 }
 
 /* Custom Range Refreshing every X Dropdown */
 .gf-timepicker-absolute-section select {
-    background-color: #393a3b;
+    background-color: #393a3b !important;
 }
 
 /* PANEL BACKGROUND COLOR*/
 .panel-container {
-    background-color: rgba(0, 0, 0, .25);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, .25) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
 .panel-container.panel-transparent {
-	background-color: rgba(0, 0, 0, .25);
+	background-color: rgba(0, 0, 0, .25) !important;
 }
 .panel-header:hover {
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.25) !important;
 }
 /* ////PANEL BACKGROUND COLOR//// */
 
 .graph-legend-table .graph-legend-series:nth-child(odd) {
-    background: transparent;
+    background: transparent !important;
 }
 
 /* Panel text color*/
@@ -132,16 +132,16 @@ div.flot-text {
 
 /* panel loading circle*/
 .panel-loading {
-    color: #FFF;
+    color: #FFF !important;
 }
 
 /* panel resize arrow */
 .theme-dark .react-grid-item>.react-resizable-handle:after {
-    border-right: 2px solid #fff;
-    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff !important;
+    border-bottom: 2px solid #fff !important;
 }
 
 /* table panel background color */
 .table-panel-container {
-    background-color: rgba(0, 0, 0, .25);
+    background-color: rgba(0, 0, 0, .25) !important;
 }
