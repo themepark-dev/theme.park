@@ -122,12 +122,12 @@ If you want a regular Plex theme for your Grafana setup, use the **`grafplex.css
 ### Subfilter
 As Grafana doesn't have support for custom CSS you can get around that by using [subfilter](http://nginx.org/en/docs/http/ngx_http_sub_module.html) in Nginx.
 
-Create **another** reverse proxy for monitorr and add this:
+Create **another** reverse proxy for Grafana and add this:
 ```nginx
 proxy_set_header Accept-Encoding "";
 sub_filter
 '</head>'
-'<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/gilbN/theme.park@3db036653b3ad8303a5202c553ec8f5e47a46514/CSS/themes/graforg.css">
+'<link rel="stylesheet" type="text/css" href="https://gitcdn.link/cdn/gilbN/theme.park/b87404b8688702dbe6e7c52049268c07a551800f/CSS/themes/graforg.css">
 </head>';
 sub_filter_once on;
 ```
@@ -153,7 +153,7 @@ location / {
   proxy_set_header Accept-Encoding "";
   sub_filter
   '</head>'
-  '<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/gilbN/theme.park@3db036653b3ad8303a5202c553ec8f5e47a46514/CSS/themes/graforg.css">
+  '<link rel="stylesheet" type="text/css" href="https://gitcdn.link/cdn/gilbN/theme.park/b87404b8688702dbe6e7c52049268c07a551800f/CSS/themes/graforg.css">
   </head>';
   sub_filter_once on;
   proxy_hide_header X-Frame-Options;
