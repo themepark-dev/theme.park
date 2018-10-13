@@ -127,7 +127,7 @@ Create **another** reverse proxy for Grafana and add this:
 proxy_set_header Accept-Encoding "";
 sub_filter
 '</head>'
-'<link rel="stylesheet" type="text/css" href="https://gitcdn.link/cdn/gilbN/theme.park/b87404b8688702dbe6e7c52049268c07a551800f/CSS/themes/graforg.css">
+'<link rel="stylesheet" type="text/css" href="https://rawgit.com/gilbN/theme.park/master/CSS/themes/graforg.css">
 </head>';
 sub_filter_once on;
 ```
@@ -153,7 +153,7 @@ location / {
   proxy_set_header Accept-Encoding "";
   sub_filter
   '</head>'
-  '<link rel="stylesheet" type="text/css" href="https://gitcdn.link/cdn/gilbN/theme.park/b87404b8688702dbe6e7c52049268c07a551800f/CSS/themes/graforg.css">
+  '<link rel="stylesheet" type="text/css" href="https://rawgit.com/gilbN/theme.park/master/CSS/themes/graforg.css">
   </head>';
   sub_filter_once on;
   proxy_hide_header X-Frame-Options;
