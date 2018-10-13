@@ -1,6 +1,7 @@
 /* GRAFANA BLUR THEME */
 body {
-	background-image: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-light.png");
+	background-image: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"),
+	url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-light.png") !important;
 	background-repeat: repeat, no-repeat;
 	background-attachment: fixed, fixed;
 	background-position: center center, center center;
@@ -21,7 +22,8 @@ body {
 }
 /* login page */
 .login {
-	background-image: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-light.png");
+	background-image: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"),
+	url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-light.png") !important;
 background-repeat: repeat, no-repeat;
 background-attachment: fixed, fixed;
 background-position: center center, center center;
