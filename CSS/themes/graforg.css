@@ -1,7 +1,7 @@
 /* GRAFANA ORG THEME */
 body {
-    color: #FFFFFF;
-    background-color: transparent;
+    color: #FFFFFF !important;
+    background-color: transparent !important;
 }
 .main-view {
     background: linear-gradient(180deg,#ffffff00 10px,#ffffff00 100px);
