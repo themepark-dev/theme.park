@@ -6,6 +6,9 @@ body {
 .main-view {
     background: linear-gradient(180deg,#ffffff00 10px,#ffffff00 100px) !important;
 }
+div.flot-text {
+  color: #FFF !important;
+}
 
 /* Hide sidemenu */
 .sidemenu {
@@ -73,6 +76,7 @@ body {
 .gf-form-label {
     background-color: rgba(0, 0, 0, 0.25) !important;
 	   border: none !important;
+     color: #FFF !important;
 }
 .gf-form-input:focus {
     color: #FFF !important;
