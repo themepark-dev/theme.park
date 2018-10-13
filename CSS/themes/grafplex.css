@@ -1,6 +1,6 @@
 /* GRAFANA BLUR THEME */
 body {
-	background-image: url("https://rawcdn.githack.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://cdn.jsdelivr.net/gh/gilbN/theme.park@de2024ba0794e71eb80c1b66b37820e66d944ded/Resources/blur-light.png");
+	background-image: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-light.png");
 	background-repeat: repeat, no-repeat;
 	background-attachment: fixed, fixed;
 	background-position: center center, center center;
@@ -11,8 +11,48 @@ body {
 	background-color: rgba(0,0,0,.0) !important;
 	color:#FFFFFF !important;
 }
+.page-header-canvas {
+    background: rgba(0, 0, 0, 0.25) !important;
+    box-shadow: none !important;
+    border-bottom: none !important;
+}
 .main-view {
     background: linear-gradient(180deg,#ffffff00 10px,#ffffff00 100px) !important;
+}
+/* login page */
+.login {
+	background-image: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-light.png");
+background-repeat: repeat, no-repeat;
+background-attachment: fixed, fixed;
+background-position: center center, center center;
+background-size: auto, cover;
+-webkit-background-size: auto, cover;
+-moz-background-size: auto, cover;
+-o-background-size: auto, cover;
+background-color: rgba(0,0,0,.0) !important;
+color:#FFFFFF !important;
+}
+.login-branding {
+    border-right: none !important;
+}
+/* Configuration menu */
+.card-item {
+    background: rgba(0, 0, 0, .25) !important;
+}
+.card-item:hover {
+    background: hsla(0,0%,100%,.08) !important;
+}
+.card-item-sub-name, .card-item-type {
+    color: #FFF !important;
+}
+.gf-form--has-input-icon .gf-form-input-icon {
+    color: #fff !important;
+}
+.gf-tabs-link.active, .gf-tabs-link.active:focus, .gf-tabs-link.active:hover {
+    background: rgba(0, 0, 0, 0.25) !important;
+}
+.filter-table tbody tr:nth-child(odd) {
+    background: hsla(0,0%,100%,.08) !important;
 }
 
 /* sidemenu */
