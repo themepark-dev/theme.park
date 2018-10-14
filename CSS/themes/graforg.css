@@ -84,6 +84,9 @@ div.flot-text {
     border: none !important;
     box-shadow: none !important;
 }
+.variable-option.highlighted, .variable-option:hover {
+    background-color: hsla(0,0%,100%,.1) !important;
+}
 
 /* Variable dashboard dropdown */
 .variable-value-link {
