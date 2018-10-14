@@ -9,7 +9,10 @@ body {
 div.flot-text {
   color: #FFF !important;
 }
-
+/* Loading page */
+.theme-dark, .preloader {
+    background: transparent !important;
+}
 /* Hide sidemenu */
 .sidemenu {
     display: none !important;
