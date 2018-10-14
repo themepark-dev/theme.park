@@ -31,10 +31,7 @@ body {
 .main-view {
     background: linear-gradient(180deg,#ffffff00 10px,#ffffff00 100px) !important;
 }
-.footer, .footer a {
-    color: #FFF;
-		content: "\A Grafplex V.1.1";
-}
+
 /* login page */
 .login {
 background-image: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"),
@@ -150,6 +147,10 @@ color:#FFFFFF !important;
     color: #FFF !important;
     background-color: #262626 !important;
     border: none !important;
+		box-shadow: none !important;
+}
+.variable-option.highlighted, .variable-option:hover {
+    background-color: hsla(0,0%,100%,.1) !important;
 }
 
 /* Variable dashboard dropdown */
@@ -199,7 +200,7 @@ color:#FFFFFF !important;
 
 /* Panel text color*/
 div.flot-text {
-    color: #fff !important;
+    color: #ffffff !important;
 }
 
 /* panel loading circle*/

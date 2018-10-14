@@ -82,6 +82,7 @@ div.flot-text {
     color: #FFF !important;
     background-color: #262626 !important;
     border: none !important;
+    box-shadow: none !important;
 }
 
 /* Variable dashboard dropdown */
@@ -105,6 +106,7 @@ div.flot-text {
     color: #FFF !important;
     background-color: rgba(0, 0, 0, 0.25) !important;
     background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)) !important;
+    border: none !important;
 }
 
 /* Custom Range Refreshing every X Dropdown */
