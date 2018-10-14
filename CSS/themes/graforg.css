@@ -10,7 +10,7 @@ div.flot-text {
   color: #FFF !important;
 }
 /* Loading page */
-.theme-dark, .preloader {
+.theme-dark, .theme-light, .preloader {
     background: transparent !important;
 }
 /* Hide sidemenu */
