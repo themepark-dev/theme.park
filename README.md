@@ -3,7 +3,7 @@ A collection of themes/skins for use in conjunction with [Organizr](https://gith
 
 ### Honourable mentions:
 
-[leram84/layer.Cake/](https://github.com/leram84/layer.Cake/)
+[leram84/layer.Cake](https://github.com/leram84/layer.Cake/)
 
 [rg9400/Cloud-Tautulli-Theme](https://github.com/rg9400/Cloud-Tautulli-Theme)
 
