@@ -36,10 +36,10 @@ If you want a regular Plex theme for your *arr setup, use the **`orgarr-plex.css
 ### Screenshots
 <details><summary>Expand</summary>
 <p>
-<img src="/Screenshots/orgarr/1.jpg"></img>
-<img src="/Screenshots/orgarr/2.jpg"></img>
-<img src="/Screenshots/orgarr/3.jpg"></img>
-<img src="/Screenshots/orgarr/5.png"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/orgarr/1.jpg"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/orgarr/2.jpg"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/orgarr/3.jpg"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/orgarr/5.png"></img>
 </p>
 </details>
 
@@ -98,7 +98,7 @@ location / {
 # GrafOrg
 
 Custom [Grafana](https://github.com/grafana/grafana) CSS for [Organizr](https://github.com/causefx/Organizr) homepage integration and consistent UI.
-![](/Screenshots/graforg/3.jpg)
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/graforg/3.jpg)
 ## Custom CSS for Organizr
 #### The `graforg.css` theme will mess with your Grafana base theme. And it will hide the side menu. Go to https://graforg.domain.com/login for settings.
 
@@ -114,8 +114,8 @@ If you want a regular Plex theme for your Grafana setup, use the **`grafplex.css
 ### Screenshots
 <details><summary>Expand</summary>
 <p>
-<img src="/Screenshots/graforg/1.jpg"></img>
-<img src="/Screenshots/graforg/2.jpg"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/graforg/1.jpg"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/graforg/2.jpg"></img>
 </p>
 </details>
 
@@ -285,7 +285,7 @@ If you dont want the ***Panel name*** text, just remove the `<h5><span>` line en
 
 Custom [Netdata](https://github.com/firehol/netdata) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr)
 
-![](/Screenshots/netorg/2.jpg)
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/netorg/2.jpg)
 
 ## Custom CSS for Organizr
 #### The `netorg.css` theme will mess with your Netdata base theme.
@@ -302,7 +302,7 @@ If you want a regular Plex theme for your Netdata setup, use the **`netplex.css`
 ### Screenshots
 <details><summary>Expand</summary>
 <p>
-<img src="/Screenshots/netorg/1.jpg"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/netorg/1.jpg"></img>
 </p>
 </details>
 
@@ -355,7 +355,7 @@ sub_filter_once on;
 
 Custom [Monitorr](https://github.com/Monitorr/Monitorr) CSS for [Organizr](https://github.com/causefx/Organizr) homepage integration.
 
-![](/Screenshots/monitorg/1-flat.jpg)
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/monitorg/1-flat.jpg)
 
 ## Custom CSS for Organizr
 #### This theme will mess with your Monitorr base theme. And it will hide the settings button. Go to /monitorr/settings.php for settings.
@@ -369,9 +369,9 @@ Custom [Monitorr](https://github.com/Monitorr/Monitorr) CSS for [Organizr](https
 ### Screenshots
 <details><summary>Expand</summary>
 <p>
-<img src="/Screenshots/monitorg/2.jpg"></img>
-<img src="/Screenshots/monitorg/3.jpg"></img>
-<img src="/Screenshots/monitorg/4.jpg"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/monitorg/2.jpg"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/monitorg/3.jpg"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/monitorg/4.jpg"></img>
 </p>
 </details>
 
