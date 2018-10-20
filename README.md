@@ -51,7 +51,7 @@ Add this to your location context/block:
 proxy_set_header Accept-Encoding "";
 sub_filter
 '</head>'
-'<link rel="stylesheet" type="text/css" href="https://rawgit.com/gilbN/theme.park/master/CSS/themes/orgarr.css">
+'<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/orgarr.css">
 </head>';
 sub_filter_once on;
 ```
@@ -77,7 +77,7 @@ location / {
   proxy_set_header Accept-Encoding "";
   sub_filter
   '</head>'
-  '<link rel="stylesheet" type="text/css" href="https://rawgit.com/gilbN/theme.park/master/CSS/themes/orgarr.css">
+  '<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/orgarr.css">
   </head>';
   sub_filter_once on;
   proxy_hide_header X-Frame-Options;
@@ -127,7 +127,7 @@ Create **another** reverse proxy for Grafana and add this:
 proxy_set_header Accept-Encoding "";
 sub_filter
 '</head>'
-'<link rel="stylesheet" type="text/css" href="https://rawgit.com/gilbN/theme.park/master/CSS/themes/graforg.css">
+'<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/graforg.css">
 </head>';
 sub_filter_once on;
 ```
@@ -153,7 +153,7 @@ location / {
   proxy_set_header Accept-Encoding "";
   sub_filter
   '</head>'
-  '<link rel="stylesheet" type="text/css" href="https://rawgit.com/gilbN/theme.park/master/CSS/themes/graforg.css">
+  '<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/graforg.css">
   </head>';
   sub_filter_once on;
   proxy_hide_header X-Frame-Options;
@@ -315,7 +315,7 @@ Create **another** reverse proxy for netdata and add this:
 proxy_set_header Accept-Encoding "";
 sub_filter
 '</head>'
-'<link rel="stylesheet" type="text/css" href="https://rawgit.com/gilbN/theme.park/master/CSS/themes/netorg.css">
+'<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/netorg.css">
 </head>';
 sub_filter_once on;
 ```
@@ -339,7 +339,7 @@ sub_filter_once on;
 		proxy_set_header Accept-Encoding "";
 		sub_filter
 		'</head>'
-		'<link rel="stylesheet" type="text/css" href="https://rawgit.com/gilbN/theme.park/master/CSS/themes/netorg.css">
+		'<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/netorg.css">
 		</head>';
 		sub_filter_once on;
 	}
@@ -393,7 +393,7 @@ Create another reverse proxy for monitorr and add this:
 		proxy_set_header Accept-Encoding "";
 		sub_filter
 		'</head>'
-		'<link rel="stylesheet" type="text/css" href="https://rawgit.com/gilbN/theme.park/master/CSS/themes/monitorg.css">
+		'<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/monitorg.css">
 		</head>';
 		sub_filter_once on;
 ```
@@ -421,7 +421,7 @@ location / {
 		proxy_set_header Accept-Encoding "";
 		sub_filter
 		'</head>'
-		'<link rel="stylesheet" type="text/css" href="https://rawgit.com/gilbN/theme.park/master/CSS/themes/monitorg.css">
+		'<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/monitorg.css">
 		</head>';
 		sub_filter_once on;
   }
