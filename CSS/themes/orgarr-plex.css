@@ -588,7 +588,105 @@ pre {
     color: #000 !important;
 }
 
+/* -------------------------SONARR V3------------------------------*/
 
+/* Error/loading page */
+
+.Page-page-10MZd, .ErrorPage-version-1NWV-, .LoadingMessage-loadingMessage-2gMqW {
+    color: white !important;
+}
+
+/* Series Overview page */
+.SeriesIndexPoster-title-1LWvk, .SeriesIndexPoster-nextAiring-2dTrg, .SeriesIndexPosterInfo-info-URLdY {
+	background-color: rgba(0, 0, 0, .25) !important;
+}
+
+.SeriesIndexOverview-container-2zNbo:hover .SeriesIndexOverview-content-3ZT3A {
+    background-color: hsla(0,0%,100%,.08) !important;
+}
+
+/* Series X page */
+.SeriesDetailsSeason-season-1YnGm, .SeriesDetailsSeason-collapseButtonContainer-3XxzX {
+    border: none !important;
+    background-color: rgba(0, 0, 0, .25) !important;
+}
+/* Search page */
+.AddNewSeriesSearchResult-searchResult-30ozE {
+    background-color: rgba(0, 0, 0, .25) !important;
+}
+.AddNewSeriesSearchResult-searchResult-30ozE:hover {
+    background-color: hsla(0,0%,100%,.08) !important;
+}
+.AddNewSeries-searchIconContainer-3iiEV {
+    border: none !important;
+    background-color: rgba(0, 0, 0, .25) !important;
+}
+.SeriesSearchInput-containerOpen-3CRkE .SeriesSearchInput-seriesContainer-3lxJI {
+    border: none !important;
+    background-color: #12181d !important;
+}
+
+.SeriesSearchInput-sectionTitle-3he-k {
+    color: #fff !important;
+}
+/* Import page page */
+.ImportSeriesSelectSeries-button-AkdHs {
+    border: none !important;
+    background-color: rgba(0, 0, 0, .25) !important;
+}
+.ImportSeriesSelectSeries-content-2AQQa, .ImportSeriesSelectSeries-searchIconContainer-WJlHu {
+    border: none !important;
+    background-color: #323232 !important;
+	color: white !important;
+}
+.ImportSeriesSearchResult-series-wStU8:hover {
+    background-color: hsla(0,0%,100%,.08) !important;
+}
+.ImportSeriesTitle-year-29XGK {
+	color: white !important;
+}
+/* Season pass page */
+.SeasonPassSeason-season-3Lc-4 {
+    border: none;
+    background-color: rgba(0, 0, 0, .25) !important;
+}
+.SeasonPassSeason-allEpisodes-vxHTz {
+    background-color: #5cb85c;
+}
+/* Calendar page */
+.CalendarEvent-seriesTitle-1JEPE {
+    color: #ffffff !important;
+
+}
+.CalendarEvent-downloaded-1wXUG {
+    border-left-color: #5cb85c!important;
+}
+.CalendarEvent-event-27nY_ {
+    border-bottom: none !important;
+}
+.CalendarEvent-event-27nY_:hover {
+    background-color: hsla(0,0%,100%,.08) !important;
+	    border-bottom: none !important;
+}
+.AgendaEvent-event-1-I4T:hover {
+    background-color: hsla(0,0%,100%,.08) !important;
+}
+/* Activity page */
+.EpisodeTitleLink-link-1ZCTO:hover {
+    color: #f9be03 !important;
+}
+/* Settings page */
+.FormLabel-label-33NSU {
+    font-weight: normal !important;
+}
+.FormInputHelpText-helpText-1p8aX {
+    color: #ffffff !important;
+}
+/* Settings language modal */
+.LanguageProfileItem-languageProfileItem-1lE9m {
+    border: none !important;
+    background: #1e1e1e !important;
+}
 /* -------------------------LIDARR STUFF------------------------------*/
 
 .LoadingIndicator-ripple-1264V {
