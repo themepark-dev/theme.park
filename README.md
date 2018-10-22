@@ -57,7 +57,7 @@ sub_filter_once on;
 ```
 ### Here is a complete example:
 ```nginx
-#GRAFANA CONTAINER
+#ARR CONTAINER
 
 # REDIRECT HTTP TRAFFIC TO https://[domain.com]
 server {
@@ -68,7 +68,7 @@ server {
 
 server {
   listen 443 ssl http2;
-  server_name graforg.domain.com;
+  server_name orgarr.domain.com;
 
 include /config/nginx/ssl.conf;
 
