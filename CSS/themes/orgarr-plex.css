@@ -620,6 +620,9 @@ pre {
 .SeriesDetailsSeason-actionButton-3v1uD {
     color: hsla(0,0%,100%,.7) !important;
 }
+.SeriesDetailsSeason-actionButton-3v1uD:hover {
+    color: #FFF !important;
+}
 .fa-search {
     color: hsla(0,0%,100%,.7) !important;
 }
