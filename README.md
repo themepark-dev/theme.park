@@ -3,7 +3,7 @@ A collection of themes/skins for use in conjunction with [Organizr](https://gith
 
 ### Honourable mentions:
 
-[leram84/layer.Cake/](https://github.com/leram84/layer.Cake/)
+[leram84/layer.Cake](https://github.com/leram84/layer.Cake/)
 
 [rg9400/Cloud-Tautulli-Theme](https://github.com/rg9400/Cloud-Tautulli-Theme)
 
@@ -13,7 +13,7 @@ A collection of themes/skins for use in conjunction with [Organizr](https://gith
 
 [ydkmlt84/DarkerNZBget](https://github.com/ydkmlt84/DarkerNZBget)
 
-[Archmonger/Blackberry-OG-Ombi](https://github.com/Archmonger/Blackberry-OG-Ombi)
+[Archmonger/Blackberry-Flat](https://github.com/Archmonger/Blackberry-Flat)
 
 
 # OrgArr
