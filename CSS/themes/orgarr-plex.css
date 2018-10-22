@@ -610,6 +610,13 @@ pre {
     border: none !important;
     background-color: rgba(0, 0, 0, .25) !important;
 }
+.SeriesDetails-seriesNavigationButton-1lMzE {
+    margin-right: 8px !important;
+    color: hsla(0,0%,100%,.7) !important;
+}
+.SeriesDetails-seriesNavigationButton-1lMzE:hover {
+    color: #FFF !important;
+}
 /* Search page */
 .AddNewSeriesSearchResult-searchResult-30ozE {
     background-color: rgba(0, 0, 0, .25) !important;
@@ -693,6 +700,10 @@ pre {
 .OverlayScroller-thumb-1hKLj:hover {
     background-color: hsla(0,0%,100%,.08) !important;
 }
+/* Modal table options */
+.TableOptionsColumn-column-2z0me {
+    border: none;
+}
 /* -------------------------LIDARR STUFF------------------------------*/
 
 .LoadingIndicator-ripple-1264V {
@@ -701,7 +712,7 @@ pre {
   /* Popup modal */
 .Modal-large-I2McN, .Modal-modal-3oHjA, .ModalContent-modalContent-1B9AX {
     background-color: #282828;
-    color: #999;
+    color: #FFF;
 }
 .ModalHeader-modalHeader-P3MTG, .ModalFooter-modalFooter-3izCM {
     background-color: #323232;
