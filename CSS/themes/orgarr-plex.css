@@ -687,6 +687,12 @@ pre {
     border: none !important;
     background: #1e1e1e !important;
 }
+.OverlayScroller-thumb-1hKLj {
+    background-color: hsla(0,0%,100%,.08) !important;
+}
+.OverlayScroller-thumb-1hKLj:hover {
+    background-color: hsla(0,0%,100%,.08) !important;
+}
 /* -------------------------LIDARR STUFF------------------------------*/
 
 .LoadingIndicator-ripple-1264V {
