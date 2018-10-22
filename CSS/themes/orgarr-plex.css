@@ -617,6 +617,15 @@ pre {
 .SeriesDetails-seriesNavigationButton-1lMzE:hover {
     color: #FFF !important;
 }
+.SeriesDetailsSeason-actionButton-3v1uD {
+    color: hsla(0,0%,100%,.7) !important;
+}
+.fa-search {
+    color: hsla(0,0%,100%,.7) !important;
+}
+.fa-search:hover {
+    color: #FFF !important;
+}
 /* Search page */
 .AddNewSeriesSearchResult-searchResult-30ozE {
     background-color: rgba(0, 0, 0, .25) !important;
