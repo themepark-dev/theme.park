@@ -16,7 +16,7 @@ A collection of themes/skins for use in conjunction with [Organizr](https://gith
 [Archmonger/Blackberry-Flat](https://github.com/Archmonger/Blackberry-Flat)
 
 
-# OrgArr
+# OrgArr - Sonarr v2/v3 - Radarr - Lidarr
 
 Custom [Sonarr V2 and V3](https://github.com/Sonarr/Sonarr)/[Radarr](https://github.com/Radarr/Radarr)/[Lidarr](https://github.com/Lidarr/Lidarr) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr)
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/orgarr/4.jpg)
@@ -95,7 +95,7 @@ location / {
 
 ***
 
-# GrafOrg
+# GrafOrg - Grafana
 
 Custom [Grafana](https://github.com/grafana/grafana) CSS for [Organizr](https://github.com/causefx/Organizr) homepage integration and consistent UI.
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/graforg/3.jpg)
@@ -282,7 +282,7 @@ If you dont want the ***Panel name*** text, just remove the `<h5><span>` line en
 
 ***
 
-# NetOrg
+# NetOrg - Netdata
 
 Custom [Netdata](https://github.com/firehol/netdata) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr)
 
@@ -352,7 +352,7 @@ sub_filter_once on;
 
 ***
 
-# Monitorg
+# Monitorg - Monitorr
 
 Custom [Monitorr](https://github.com/Monitorr/Monitorr) CSS for [Organizr](https://github.com/causefx/Organizr) homepage integration.
 
