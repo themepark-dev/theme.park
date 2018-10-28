@@ -98,7 +98,7 @@ location / {
 # Nzbget Plex Theme
 
 Custom CSS for [Nzbget](https://github.com/nzbget/nzbget) 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbget/nzbget1.jpg.jpg)
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbget/nzbget1.jpg)
 
 ## Setup
 <details><summary>Expand</summary>
