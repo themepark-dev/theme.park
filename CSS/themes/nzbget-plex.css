@@ -82,6 +82,17 @@ tr.checked, tr.checked td, tr.checked:nth-child(odd) .progress {
 	border: none;
 }
 
+.pagination a {
+    border: none;
+    background: rgba(0, 0, 0, .25);
+}
+.pagination a:hover, .pagination .active a {
+    background-color: hsla(0,0%,100%,.08);
+}
+.pagination .active a {
+    color: #ffffff;
+}
+
 /* PROGRESS BAR */
 .progress {
     background: hsla(0,0%,100%,.08);
