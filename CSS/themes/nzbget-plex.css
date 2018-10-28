@@ -392,3 +392,6 @@ a:hover {
 .label-warning, .badge-warning {
     background-color: #cc7b19;
 }
+.caret {
+    border-top: 4px solid #ffffff;
+}
