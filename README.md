@@ -99,6 +99,7 @@ location / {
 
 Custom CSS for [Nzbget](https://github.com/nzbget/nzbget) 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbget/nzbget1.jpg)
+Thank you [ydkmlt84](https://github.com/ydkmlt84) for making the job easier :)
 
 ## Setup
 <details><summary>Expand</summary>
