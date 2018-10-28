@@ -95,6 +95,75 @@ location / {
 
 ***
 
+# Nzbget Plex Theme
+
+Custom CSS for [Nzbget](https://github.com/nzbget/nzbget) 
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbget/nzbget1.jpg)
+
+## Setup
+<details><summary>Expand</summary>
+
+### Screenshots
+<details><summary>Expand</summary>
+<p>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbget/nzbget1.jpg"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbget/nzbget2.jpg"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbget/nzbget3.png"></img>
+</p>
+</details>
+
+### Subfilter
+Since Nzbget doesn't have support for custom CSS you can get around that by using [subfilter](http://nginx.org/en/docs/http/ngx_http_sub_module.html) in Nginx.
+
+Add this to your location context/block:
+```nginx
+proxy_set_header Accept-Encoding "";
+sub_filter
+'</head>'
+'<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/nzbget-plex.css">
+</head>';
+sub_filter_once on;
+```
+### Here is a complete example:
+```nginx
+#ARR CONTAINER
+
+# REDIRECT HTTP TRAFFIC TO https://[domain.com]
+server {
+  listen 80;
+  server_name nzbget.domain.com;
+  return 301 https://$server_name$request_uri;
+  }
+
+server {
+  listen 443 ssl http2;
+  server_name nzbget.domain.com;
+
+include /config/nginx/ssl.conf;
+
+location / {
+  proxy_pass http://192.168.1.34:3000;
+  proxy_set_header Accept-Encoding "";
+  sub_filter
+  '</head>'
+  '<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/nzbget-plex.css">
+  </head>';
+  sub_filter_once on;
+  proxy_hide_header X-Frame-Options;
+  proxy_set_header X-Forwarded-Host $host;
+  proxy_set_header X-Forwarded-Server $host;
+  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+  proxy_http_version 1.1;
+  proxy_pass_request_headers on;
+  proxy_set_header Connection "keep-alive";
+  proxy_store off;
+  }
+}
+```
+</details>
+
+***
+
 # GrafOrg - Grafana
 
 Custom [Grafana](https://github.com/grafana/grafana) CSS for [Organizr](https://github.com/causefx/Organizr) homepage integration and consistent UI.
