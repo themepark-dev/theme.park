@@ -448,7 +448,7 @@ Custom [Monitorr](https://github.com/Monitorr/Monitorr) CSS for [Organizr](https
 
 Add this in the custom css box:
 ```css
-@import "https://rawgit.com/gilbN/theme.park/master/CSS/themes/monitorg.css";
+@import "https://gilbn.github.io/theme.park/CSS/themes/monitorg.css";
 ```
 And add this in custom HTML in Organizr:
 ```css
