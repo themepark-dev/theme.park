@@ -363,6 +363,17 @@ a:focus, a:hover {
     border-color: #ffffff;
     color: #ffffff;
 }
+/* alerts */
+.alert-warning {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-color: transparent;
+    color: #f0ad4e;
+}
+.alert-danger, .manual-import-error {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-color: transparent;
+    color: #d9534f;
+}
 
 /* Settings Page */
 legend {
