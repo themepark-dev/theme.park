@@ -122,11 +122,11 @@ div.flot-text {
 
 /* PANEL BACKGROUND COLOR*/
 .panel-container {
-    background-color: rgba(0, 0, 0, .25) !important;
+    background-color: rgba(0, 0, 0, .25);
     border: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
 .panel-container.panel-transparent {
-	background-color: rgba(0, 0, 0, .25) !important;
+	background-color: rgba(0, 0, 0, .25);
 }
 .panel-header:hover {
     background-color: rgba(0, 0, 0, 0.25) !important;
