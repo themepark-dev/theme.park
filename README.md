@@ -24,7 +24,7 @@ Thank you iFelix18 for doing all the hard work! :)
 
 #### The `orgarr.css` theme will mess with your Xarr base theme.
 
-#### `orgarrg.css` is created purely for use with Organizr.
+#### `orgarr.css` is created purely for use with Organizr.
 **NOTE:** When viewing orgarr in Organizr iframe it will follow the Organizr theme. When viewing it outside of Organizr iframe the background will be white ect.
 
 #### `orgarr-plex.css`
@@ -97,7 +97,7 @@ location / {
 
 # Nzbget Plex Theme
 
-Custom CSS for [Nzbget](https://github.com/nzbget/nzbget) 
+Custom CSS for [Nzbget](https://github.com/nzbget/nzbget)
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbget/nzbget1.jpg)
 Thank you [ydkmlt84](https://github.com/ydkmlt84) for making the job easier :)
 
@@ -498,8 +498,3 @@ location / {
 }
 ```
 </details>
-
-## Support on Beerpay
-Hey dude! Help me out for a couple of :beers:!
-
-[![Beerpay](https://beerpay.io/gilbN/theme.park/badge.svg?style=beer-square)](https://beerpay.io/gilbN/theme.park)  [![Beerpay](https://beerpay.io/gilbN/theme.park/make-wish.svg?style=flat-square)](https://beerpay.io/gilbN/theme.park?focus=wish)

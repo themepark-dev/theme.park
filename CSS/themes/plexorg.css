@@ -1,0 +1,16 @@
+/* PLEX ORGANIZR THEME */
+  body {
+    background-color: #1f1f1f;
+  }
+
+.background,.background-container {
+  opacity: 0;
+  transition: opacity .5s;
+  }
+.MetadataPosterCardOverlay-isActionsMenuOpen-AvHIX .MetadataPosterCardOverlay-background-2EwyB,
+.MetadataPosterCardOverlay-overlay-1uMpL:hover .MetadataPosterCardOverlay-background-2EwyB {
+  background: -webkit-radial-gradient(50% 50% farthest-corner,rgba(0, 0, 0, 0.5) 0,#000000 100%) !important;
+  background: radial-gradient(farthest-corner at 50% 50%,rgba(0, 0, 0, 0.5) 50%,#000000 100%) !important;
+  }
+
+/* This was a tough one :D */
