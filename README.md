@@ -15,6 +15,60 @@ A collection of themes/skins for use in conjunction with [Organizr](https://gith
 
 [Archmonger/Blackberry-Flat](https://github.com/Archmonger/Blackberry-Flat)
 
+# Plex Organizr Theme
+
+Custom [Plex](https://plex.tv) CSS to match the [Organizr](https://github.com/causefx/Organizr) theme.
+
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/plexorg/plexorg.png)
+
+## Setup
+<details><summary>Expand</summary>
+
+### Subfilter
+As the plex doesn't have support for custom CSS you can get around that by using [subfilter](http://nginx.org/en/docs/http/ngx_http_sub_module.html) in Nginx.
+
+Add this to your plex reverse proxy:
+```nginx
+		proxy_set_header Accept-Encoding "";
+		sub_filter
+		'</head>'
+		'<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/plexorg.css">
+		</head>';
+		sub_filter_once on;
+```
+Here is a complete example:
+```nginx
+#MONITORR CONTAINER
+
+# REDIRECT HTTP TRAFFIC TO https://[domain.com]
+server {
+ 	listen 80;
+ 	server_name plex.domain.com;
+ 	return 301 https://$server_name$request_uri;
+}
+
+server {  
+    listen 443 ssl http2;
+    server_name plex.domain.com;
+
+	#SSL settings
+	include /config/nginx/ssl.conf
+
+location / {
+    proxy_pass http://192.168.1.2:8701;
+    include /config/nginx/proxy.conf;
+		proxy_set_header Accept-Encoding "";
+		sub_filter
+		'</head>'
+		'<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/plexorg.css">
+		</head>';
+		sub_filter_once on;
+  }
+}
+```
+</details>
+
+***
 
 # OrgArr - Sonarr v2/v3 - Radarr - Lidarr
 
