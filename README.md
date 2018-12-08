@@ -88,7 +88,7 @@ Custom [Plex](https://plex.tv) CSS to match the [Organizr](https://github.com/ca
 <details><summary>Expand</summary>
 
 ### Subfilter
-As the plex doesn't have support for custom CSS you can get around that by using [subfilter](http://nginx.org/en/docs/http/ngx_http_sub_module.html) in Nginx.
+As Plex doesn't have support for custom CSS you can get around that by using [subfilter](http://nginx.org/en/docs/http/ngx_http_sub_module.html) in Nginx.
 
 Add this to your plex reverse proxy:
 ```nginx
