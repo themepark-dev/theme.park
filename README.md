@@ -139,13 +139,9 @@ Custom [Sonarr V2 and V3](https://github.com/Sonarr/Sonarr)/[Radarr](https://git
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/orgarr/4.jpg)
 Thank you iFelix18 for doing all the hard work! :)
 
-#### The `orgarr.css` theme will mess with your Xarr base theme.
+#### The `orgarr.css` theme is a dark theme that matches the Organizr dark theme.
 
-#### `orgarr.css` is created purely for use with Organizr.
-**NOTE:** When viewing orgarr in Organizr iframe it will follow the Organizr theme. When viewing it outside of Organizr iframe the background will be white ect.
-
-#### `orgarr-plex.css`
-If you want a regular Plex theme for your *arr setup, use the **`orgarr-plex.css`** instead.
+#### `orgarr-plex.css` If you want a regular Plex theme for your *arr setup, use the **`orgarr-plex.css`** instead.
 
 ## Setup
 <details><summary>Expand</summary>
