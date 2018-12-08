@@ -15,7 +15,7 @@ A collection of themes/skins for use in conjunction with [Organizr](https://gith
 
 [Archmonger/Blackberry-Flat](https://github.com/Archmonger/Blackberry-Flat)
 
-# Guacamole Dark/Plex theme Theme
+# Guacamole Dark/Plex Theme
 
 Custom [Guacamole](https://guacamole.apache.org/) CSS to match the [Organizr](https://github.com/causefx/Organizr) theme.
 
