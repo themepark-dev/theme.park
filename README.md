@@ -286,7 +286,6 @@ Custom [Grafana](https://github.com/grafana/grafana) CSS for [Organizr](https://
 #### The `graforg.css` theme will mess with your Grafana base theme. And it will hide the side menu. Go to https://graforg.domain.com/login for settings.
 
 #### `graforg.css` is created purely for use with Organizr.
-**NOTE:** When viewing Grafana in Organizr iframe it will follow the Organizr theme. When viewing it outside of Organizr iframe the background will be white ect.
 
 #### `grafplex.css`
 If you want a regular Plex theme for your Grafana setup, use the **`grafplex.css`** instead.
