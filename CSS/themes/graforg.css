@@ -1,7 +1,7 @@
 /* GRAFANA ORG THEME */
 body {
     color: #FFFFFF !important;
-    background-color: transparent !important;
+    background-color: #1f1f1f !important;
 }
 .main-view {
     background: linear-gradient(180deg,#ffffff00 10px,#ffffff00 100px) !important;
@@ -11,7 +11,7 @@ div.flot-text {
 }
 /* Loading page */
 .theme-dark, .theme-light, .preloader {
-    background: transparent !important;
+    background: #1f1f1f !important;
 }
 /* Hide sidemenu */
 .sidemenu {
