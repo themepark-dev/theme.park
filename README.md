@@ -24,7 +24,8 @@ Custom [Guacamole](https://guacamole.apache.org/) CSS to match the [Organizr](ht
 #### `guacorg.css` is a dark theme that matches Organizr.
 
 #### `guacplex.css`
-If you want a regular Plex theme for your *arr setup, use the **`orgarr-plex.css`** instead.
+
+If you want a regular Plex theme for your *arr setup, use the **`guacplex.css`** instead.
 
 ## Setup
 <details><summary>Expand</summary>
