@@ -28,7 +28,23 @@ input[type="submit"], button, a.button {
 input[type="submit"]:hover, button:hover, a.button:hover {
     background-color: #e59029;
 }
-
+.login-ui .login-fields .labeled-field input:focus {
+    background: #1f1f1f !important;
+}
+.login-ui .login-fields .labeled-field.empty input {
+    background: rgba(0,0,0,0.25) !important;
+}
+.login-ui .login-dialog .login-fields input {
+    background-color: #1f1f1f !important;
+}
+div.location, input[type=text], input[type=email], input[type=number], input[type=password], textarea {
+    color: white !important;
+    background: rgba(0, 0, 0, 0.25) !important;
+}
+input[type=checkbox], input[type=number], input[type=text], input[type=email], input[type=radio], label, textarea {
+    color: white !important;
+    background: rgba(0, 0, 0, 0.25);
+}
 
 /* HOME MENU */
 .header h2 {
@@ -132,9 +148,16 @@ table.sorted th.sort-primary:after {
 	background-color: rgba(0, 0, 0, 0.25);
 }
 .filter .search-string {
-    background-image: url(/magnifier.png);
-	background-color: rgba(0, 0, 0, 0.25);
-	border: 0;
+  background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/guacamole/magnifier.png) !important;
+  background-repeat: no-repeat !important;
+  background-size: 1.75em !important;
+  background-position: .25em center !important;
+  padding: .5em !important;
+  padding-left: 2.25em !important;
+  width: 100%;
+  max-width: none;
+  background-color: rgba(0, 0, 0, 0.25);
+  border: 0;
 }
 div.location, input[type=text], input[type=email], input[type=number], input[type=password], textarea {
     color: white;
