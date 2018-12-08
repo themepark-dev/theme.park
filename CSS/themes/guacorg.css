@@ -10,7 +10,6 @@ div.login-ui {
 .login-ui div.login-dialog {
     background: rgba(0, 0, 0, .25);
 }
-
 input[type="submit"], button, a.button {
     background-color: #cc7b19;
 }
@@ -22,6 +21,9 @@ input[type="submit"]:hover, button:hover, a.button:hover {
 }
 .login-ui .login-fields .labeled-field.empty input {
     background: rgba(0,0,0,0.25) !important;
+}
+.login-ui .login-fields .labeled-field.empty input:focus {
+    background: #1f1f1f !important;
 }
 .login-ui .login-dialog .login-fields input {
     background-color: #1f1f1f !important;
