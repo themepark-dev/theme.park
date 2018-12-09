@@ -730,6 +730,22 @@ pre {
 .TableOptionsColumn-column-2z0me {
     border: none;
 }
+/* File Name Tokens */
+.NamingOption-option-33lWx {
+    border: 0px;
+}
+.NamingOption-token-1veip {
+    background-color: #1f1f1f;
+}
+.NamingOption-example-2-1sK {
+    background-color: #333333;
+}
+.NamingOption-option-33lWx:hover .NamingOption-token-1veip:hover {
+    background-color: #383838;
+}
+.NamingOption-option-33lWx:hover .NamingOption-example-2-1sK {
+    background-color: #4e4e4e;
+}
 /* -------------------------LIDARR STUFF------------------------------*/
 
 .LoadingIndicator-ripple-1264V {
