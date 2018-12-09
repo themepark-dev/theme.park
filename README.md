@@ -15,6 +15,61 @@ A collection of themes/skins for use in conjunction with [Organizr](https://gith
 
 [Archmonger/Blackberry-Flat](https://github.com/Archmonger/Blackberry-Flat)
 
+# PHP Library Presenter Dark/Plex Theme
+
+Custom [PLPP](https://github.com/Tensai75/plpp) CSS to match the [Organizr](https://github.com/causefx/Organizr) theme.
+
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/plpp/plpp.png)
+
+#### `plpporg.css` is a dark theme that matches Organizr.
+
+#### `plpp-plex.css` is a Plex theme for PLPP 
+
+## Setup
+<details><summary>Expand</summary>
+
+### Subfilter
+As  PLPP doesn't have support for custom CSS you can get around that by using [subfilter](http://nginx.org/en/docs/http/ngx_http_sub_module.html) in Nginx.
+
+Add this to your plex reverse proxy:
+```nginx
+		proxy_set_header Accept-Encoding "";
+		sub_filter
+		'</head>'
+		'<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/plpporg.css">
+		</head>';
+		sub_filter_once on;
+```
+Here is a complete example:
+```nginx
+# REDIRECT HTTP TRAFFIC TO https://[domain.com]
+server {
+ 	listen 80;
+ 	server_name plpp.domain.com;
+ 	return 301 https://$server_name$request_uri;
+}
+server {  
+    listen 443 ssl http2;
+    server_name plpp.domain.com;
+
+	#SSL settings
+	include /config/nginx/ssl.conf
+
+location / {
+    proxy_pass http://192.168.1.2:8701;
+    include /config/nginx/proxy.conf;
+		proxy_set_header Accept-Encoding "";
+		sub_filter
+		'</head>'
+		'<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/plpporg.css">
+		</head>';
+		sub_filter_once on;
+  }
+}
+```
+</details>
+
+***
 # Guacamole Dark/Plex Theme
 
 Custom [Guacamole](https://guacamole.apache.org/) CSS to match the [Organizr](https://github.com/causefx/Organizr) theme.
@@ -23,13 +78,11 @@ Custom [Guacamole](https://guacamole.apache.org/) CSS to match the [Organizr](ht
 
 #### `guacorg.css` is a dark theme that matches Organizr.
 
-#### `guacplex.css`
-
-If you want a regular Plex theme for your *arr setup, use the **`guacplex.css`** instead.
+#### `guacplex.css` is a Plex theme for Guacamole
 
 ## Setup
 <details><summary>Expand</summary>
-	
+
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/guacorg/guacorg2.png)
 
 ### Subfilter
@@ -46,8 +99,6 @@ Add this to your plex reverse proxy:
 ```
 Here is a complete example:
 ```nginx
-#MONITORR CONTAINER
-
 # REDIRECT HTTP TRAFFIC TO https://[domain.com]
 server {
  	listen 80;
