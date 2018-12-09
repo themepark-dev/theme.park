@@ -136,7 +136,9 @@ location / {
 # OrgArr - Sonarr v2/v3 - Radarr - Lidarr
 
 Custom [Sonarr V2 and V3](https://github.com/Sonarr/Sonarr)/[Radarr](https://github.com/Radarr/Radarr)/[Lidarr](https://github.com/Lidarr/Lidarr) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr)
+
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/orgarr/4.jpg)
+
 Thank you iFelix18 for doing all the hard work! :)
 
 #### The `orgarr.css` theme is a dark theme that matches the Organizr dark theme.
@@ -211,7 +213,9 @@ location / {
 # Nzbget Plex Theme
 
 Custom CSS for [Nzbget](https://github.com/nzbget/nzbget)
+
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbget/nzbget1.jpg)
+
 Thank you [ydkmlt84](https://github.com/ydkmlt84) for making the job easier :)
 
 ## Setup
@@ -281,7 +285,9 @@ location / {
 # GrafOrg - Grafana
 
 Custom [Grafana](https://github.com/grafana/grafana) CSS for [Organizr](https://github.com/causefx/Organizr) homepage integration and consistent UI.
+
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/graforg/3.jpg)
+
 ## Custom CSS for Organizr
 #### The `graforg.css` theme will mess with your Grafana base theme. And it will hide the side menu. Go to https://graforg.domain.com/login for settings.
 
