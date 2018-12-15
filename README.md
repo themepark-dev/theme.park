@@ -90,7 +90,7 @@ Custom [Plex](https://plex.tv) CSS to match the [Organizr](https://github.com/ca
 
 Custom [Sonarr V2 and V3](https://github.com/Sonarr/Sonarr)/[Radarr](https://github.com/Radarr/Radarr)/[Lidarr](https://github.com/Lidarr/Lidarr) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr)
 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/orgarr/4.jpg)
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/orgarr/sonarrv3.png)
 
 Thank you iFelix18 for doing all the hard work! :)
 
