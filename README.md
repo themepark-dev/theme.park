@@ -15,32 +15,27 @@ A collection of themes/skins for use in conjunction with [Organizr](https://gith
 
 [Archmonger/Blackberry-Flat](https://github.com/Archmonger/Blackberry-Flat)
 
-# PHP Library Presenter Dark/Plex Theme
-
-Custom [PLPP](https://github.com/Tensai75/plpp) CSS to match the [Organizr](https://github.com/causefx/Organizr) theme.
-
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/plpp/plpp.png)
-
-#### `plpporg.css` is a dark theme that matches Organizr.
-
-#### `plpp-plex.css` is a Plex theme for PLPP 
-
 ## Setup
-<details><summary>Expand</summary>
 
 ### Subfilter
-As  PLPP doesn't have support for custom CSS you can get around that by using [subfilter](http://nginx.org/en/docs/http/ngx_http_sub_module.html) in Nginx.
+
+As  most of these apps doesn't have support for custom CSS you can get around that by using [subfilter](http://nginx.org/en/docs/http/ngx_http_sub_module.html) in Nginx.
 
 Add this to your plex reverse proxy:
+
 ```nginx
 		proxy_set_header Accept-Encoding "";
 		sub_filter
 		'</head>'
-		'<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/plpporg.css">
+		'<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/CUSTOM_CSS.css">
 		</head>';
 		sub_filter_once on;
 ```
+Where `CUSTOM_CSS` is the name of the theme css. 
+
 Here is a complete example:
+
+<details><summary>Expand</summary>
 ```nginx
 # REDIRECT HTTP TRAFFIC TO https://[domain.com]
 server {
@@ -67,7 +62,22 @@ location / {
   }
 }
 ```
+
+
 </details>
+
+***
+
+# PHP Library Presenter Dark/Plex Theme
+
+Custom [PLPP](https://github.com/Tensai75/plpp) CSS to match the [Organizr](https://github.com/causefx/Organizr) theme.
+
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/plpp/plpp.png)
+
+#### `plpporg.css` is a dark theme that matches Organizr.
+
+#### `plpp-plex.css` is a Plex theme for PLPP 
+
 
 ***
 # Guacamole Dark/Plex Theme
