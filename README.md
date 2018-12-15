@@ -24,18 +24,18 @@ As  most of these apps doesn't have support for custom CSS you can get around th
 Add this to your plex reverse proxy:
 
 ```nginx
-		proxy_set_header Accept-Encoding "";
-		sub_filter
-		'</head>'
-		'<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/CUSTOM_CSS.css">
-		</head>';
-		sub_filter_once on;
+proxy_set_header Accept-Encoding "";
+sub_filter
+'</head>'
+'<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/CUSTOM_CSS.css">
+</head>';
+sub_filter_once on;
 ```
 Where `CUSTOM_CSS` is the name of the theme css. 
-
 Here is a complete example:
-
 <details><summary>Expand</summary>
+
+	
 ```nginx
 # REDIRECT HTTP TRAFFIC TO https://[domain.com]
 server {
@@ -46,24 +46,22 @@ server {
 server {  
     listen 443 ssl http2;
     server_name plpp.domain.com;
-
-	#SSL settings
+    
+#SSL settings
 	include /config/nginx/ssl.conf
 
 location / {
     proxy_pass http://192.168.1.2:8701;
     include /config/nginx/proxy.conf;
-		proxy_set_header Accept-Encoding "";
-		sub_filter
-		'</head>'
-		'<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/plpporg.css">
-		</head>';
-		sub_filter_once on;
+	proxy_set_header Accept-Encoding "";
+	sub_filter
+	'</head>'
+	'<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/plpporg.css">
+	</head>';
+	sub_filter_once on;
   }
 }
 ```
-
-
 </details>
 
 ***
@@ -90,53 +88,6 @@ Custom [Guacamole](https://guacamole.apache.org/) CSS to match the [Organizr](ht
 
 #### `guacplex.css` is a Plex theme for Guacamole
 
-## Setup
-<details><summary>Expand</summary>
-
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/guacorg/guacorg2.png)
-
-### Subfilter
-As the Guacamole doesn't have support for custom CSS you can get around that by using [subfilter](http://nginx.org/en/docs/http/ngx_http_sub_module.html) in Nginx.
-
-Add this to your plex reverse proxy:
-```nginx
-		proxy_set_header Accept-Encoding "";
-		sub_filter
-		'</head>'
-		'<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/guacorg.css">
-		</head>';
-		sub_filter_once on;
-```
-Here is a complete example:
-```nginx
-# REDIRECT HTTP TRAFFIC TO https://[domain.com]
-server {
- 	listen 80;
- 	server_name guac.domain.com;
- 	return 301 https://$server_name$request_uri;
-}
-
-server {  
-    listen 443 ssl http2;
-    server_name guac.domain.com;
-
-	#SSL settings
-	include /config/nginx/ssl.conf
-
-location / {
-    proxy_pass http://192.168.1.2:8701;
-    include /config/nginx/proxy.conf;
-		proxy_set_header Accept-Encoding "";
-		sub_filter
-		'</head>'
-		'<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/guacorg.css">
-		</head>';
-		sub_filter_once on;
-  }
-}
-```
-</details>
-
 ***
 
 # Plex Organizr Theme
@@ -145,52 +96,7 @@ Custom [Plex](https://plex.tv) CSS to match the [Organizr](https://github.com/ca
 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/plexorg/plexorg.png)
 
-## Setup
-<details><summary>Expand</summary>
-
-### Subfilter
-As Plex doesn't have support for custom CSS you can get around that by using [subfilter](http://nginx.org/en/docs/http/ngx_http_sub_module.html) in Nginx.
-
-Add this to your plex reverse proxy:
-```nginx
-		proxy_set_header Accept-Encoding "";
-		sub_filter
-		'</head>'
-		'<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/plexorg.css">
-		</head>';
-		sub_filter_once on;
-```
-Here is a complete example:
-```nginx
-#MONITORR CONTAINER
-
-# REDIRECT HTTP TRAFFIC TO https://[domain.com]
-server {
- 	listen 80;
- 	server_name plex.domain.com;
- 	return 301 https://$server_name$request_uri;
-}
-
-server {  
-    listen 443 ssl http2;
-    server_name plex.domain.com;
-
-	#SSL settings
-	include /config/nginx/ssl.conf
-
-location / {
-    proxy_pass http://192.168.1.2:8701;
-    include /config/nginx/proxy.conf;
-		proxy_set_header Accept-Encoding "";
-		sub_filter
-		'</head>'
-		'<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/plexorg.css">
-		</head>';
-		sub_filter_once on;
-  }
-}
-```
-</details>
+#### `plexorg.css` is a dark theme that matches Organizr.
 
 ***
 
@@ -206,9 +112,6 @@ Thank you iFelix18 for doing all the hard work! :)
 
 #### `orgarr-plex.css` If you want a regular Plex theme for your *arr setup, use the **`orgarr-plex.css`** instead.
 
-## Setup
-<details><summary>Expand</summary>
-
 ### Screenshots
 <details><summary>Expand</summary>
 <p>
@@ -217,56 +120,6 @@ Thank you iFelix18 for doing all the hard work! :)
 <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/orgarr/3.jpg"></img>
 <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/orgarr/5.png"></img>
 </p>
-</details>
-
-### Subfilter
-As the arr's doesn't have support for custom CSS you can get around that by using [subfilter](http://nginx.org/en/docs/http/ngx_http_sub_module.html) in Nginx.
-
-Add this to your location context/block:
-```nginx
-proxy_set_header Accept-Encoding "";
-sub_filter
-'</head>'
-'<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/orgarr.css">
-</head>';
-sub_filter_once on;
-```
-### Here is a complete example:
-```nginx
-#ARR CONTAINER
-
-# REDIRECT HTTP TRAFFIC TO https://[domain.com]
-server {
-  listen 80;
-  server_name orgarr.domain.com;
-  return 301 https://$server_name$request_uri;
-  }
-
-server {
-  listen 443 ssl http2;
-  server_name orgarr.domain.com;
-
-include /config/nginx/ssl.conf;
-
-location / {
-  proxy_pass http://192.168.1.34:3000;
-  proxy_set_header Accept-Encoding "";
-  sub_filter
-  '</head>'
-  '<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/orgarr.css">
-  </head>';
-  sub_filter_once on;
-  proxy_hide_header X-Frame-Options;
-  proxy_set_header X-Forwarded-Host $host;
-  proxy_set_header X-Forwarded-Server $host;
-  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-  proxy_http_version 1.1;
-  proxy_pass_request_headers on;
-  proxy_set_header Connection "keep-alive";
-  proxy_store off;
-  }
-}
-```
 </details>
 
 ***
@@ -279,9 +132,6 @@ Custom CSS for [Nzbget](https://github.com/nzbget/nzbget)
 
 Thank you [ydkmlt84](https://github.com/ydkmlt84) for making the job easier :)
 
-## Setup
-<details><summary>Expand</summary>
-
 ### Screenshots
 <details><summary>Expand</summary>
 <p>
@@ -289,56 +139,6 @@ Thank you [ydkmlt84](https://github.com/ydkmlt84) for making the job easier :)
 <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbget/nzbget2.jpg"></img>
 <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbget/nzbget3.png"></img>
 </p>
-</details>
-
-### Subfilter
-Since Nzbget doesn't have support for custom CSS you can get around that by using [subfilter](http://nginx.org/en/docs/http/ngx_http_sub_module.html) in Nginx.
-
-Add this to your location context/block:
-```nginx
-proxy_set_header Accept-Encoding "";
-sub_filter
-'</head>'
-'<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/nzbget-plex.css">
-</head>';
-sub_filter_once on;
-```
-### Here is a complete example:
-```nginx
-#ARR CONTAINER
-
-# REDIRECT HTTP TRAFFIC TO https://[domain.com]
-server {
-  listen 80;
-  server_name nzbget.domain.com;
-  return 301 https://$server_name$request_uri;
-  }
-
-server {
-  listen 443 ssl http2;
-  server_name nzbget.domain.com;
-
-include /config/nginx/ssl.conf;
-
-location / {
-  proxy_pass http://192.168.1.34:3000;
-  proxy_set_header Accept-Encoding "";
-  sub_filter
-  '</head>'
-  '<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/nzbget-plex.css">
-  </head>';
-  sub_filter_once on;
-  proxy_hide_header X-Frame-Options;
-  proxy_set_header X-Forwarded-Host $host;
-  proxy_set_header X-Forwarded-Server $host;
-  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-  proxy_http_version 1.1;
-  proxy_pass_request_headers on;
-  proxy_set_header Connection "keep-alive";
-  proxy_store off;
-  }
-}
-```
 </details>
 
 ***
@@ -357,9 +157,6 @@ Custom [Grafana](https://github.com/grafana/grafana) CSS for [Organizr](https://
 #### `grafplex.css`
 If you want a regular Plex theme for your Grafana setup, use the **`grafplex.css`** instead.
 
-## Setup
-<details><summary>Expand</summary>
-
 ### Screenshots
 <details><summary>Expand</summary>
 <p>
@@ -368,56 +165,9 @@ If you want a regular Plex theme for your Grafana setup, use the **`grafplex.css
 </p>
 </details>
 
-### Subfilter
-As Grafana doesn't have support for custom CSS you can get around that by using [subfilter](http://nginx.org/en/docs/http/ngx_http_sub_module.html) in Nginx.
-
-Create **another** reverse proxy for Grafana and add this:
-```nginx
-proxy_set_header Accept-Encoding "";
-sub_filter
-'</head>'
-'<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/graforg.css">
-</head>';
-sub_filter_once on;
-```
-### Here is a complete example:
-```nginx
-#GRAFANA CONTAINER
-
-# REDIRECT HTTP TRAFFIC TO https://[domain.com]
-server {
-  listen 80;
-  server_name graforg.domain.com;
-  return 301 https://$server_name$request_uri;
-  }
-
-server {
-  listen 443 ssl http2;
-  server_name graforg.domain.com;
-
-include /config/nginx/ssl.conf;
-
-location / {
-  proxy_pass http://192.168.1.34:3000;
-  proxy_set_header Accept-Encoding "";
-  sub_filter
-  '</head>'
-  '<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/graforg.css">
-  </head>';
-  sub_filter_once on;
-  proxy_hide_header X-Frame-Options;
-  proxy_set_header X-Forwarded-Host $host;
-  proxy_set_header X-Forwarded-Server $host;
-  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-  proxy_http_version 1.1;
-  proxy_pass_request_headers on;
-  proxy_set_header Connection "keep-alive";
-  proxy_store off;
-  }
-}
-```
 ### Custom HTML for Organizr Homepage
-Thank you [Fma965](https://gist.github.com/Fma965) for the [code](https://gist.github.com/Fma965/d30ac1fa5695304a7d6dcdc748220027)
+<details><summary>Expand</summary>
+Thank you [Fma965](https://gist.github.com/Fma965) for the base [code](https://gist.github.com/Fma965/d30ac1fa5695304a7d6dcdc748220027)
 
 Change the ***Panel name*** to what you want and the ***src*** to the panel URL.
 
@@ -546,9 +296,6 @@ Custom [Netdata](https://github.com/firehol/netdata) CSS for consistent UI in [O
 #### `netplex.css`
 If you want a regular Plex theme for your Netdata setup, use the **`netplex.css`** instead.
 
-## Setup
-<details><summary>Expand</summary>
-
 ### Screenshots
 <details><summary>Expand</summary>
 <p>
@@ -556,48 +303,7 @@ If you want a regular Plex theme for your Netdata setup, use the **`netplex.css`
 </p>
 </details>
 
-### Subfilter
-As Netdata doesn't have support for custom CSS you can get around that by using [subfilter](http://nginx.org/en/docs/http/ngx_http_sub_module.html) in Nginx.
-
-Create **another** reverse proxy for netdata and add this:
-```nginx
-proxy_set_header Accept-Encoding "";
-sub_filter
-'</head>'
-'<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/netorg.css">
-</head>';
-sub_filter_once on;
-```
-### Here is a complete example:
-```nginx
-	# NETDATA CONTAINER
-	location ~ /netdata/(?<ndpath>.*) {
-		#auth_request /auth-user;
-		auth_request /auth-4;   #=User
-		proxy_set_header X-Forwarded-Host $host;
-		proxy_set_header X-Forwarded-Server $host;
-		proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-		proxy_pass http://192.168.1.34:19999/$ndpath$is_args$args;
-		proxy_http_version 1.1;
-		proxy_pass_request_headers on;
-		proxy_set_header Connection “keep-alive”;
-		proxy_store off;
-		gzip on;
-    gzip_proxied any;
-    gzip_types *;
-		proxy_set_header Accept-Encoding "";
-		sub_filter
-		'</head>'
-		'<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/netorg.css">
-		</head>';
-		sub_filter_once on;
-	}
-```
 ### Custom HTML for Organizr Homepage
-
-```css
-```
-</details>
 
 ***
 
@@ -613,9 +319,6 @@ Custom [Monitorr](https://github.com/Monitorr/Monitorr) CSS for [Organizr](https
 #### It is created purely for use with Organizr.
 **NOTE:** When viewing /monitorr in Organizr iframe it will follow the Organizr theme. When viewing it outside of Organizr iframe the background will be white ect.
 
-## Setup
-<details><summary>Expand</summary>
-
 ### Screenshots
 <details><summary>Expand</summary>
 <p>
@@ -625,7 +328,7 @@ Custom [Monitorr](https://github.com/Monitorr/Monitorr) CSS for [Organizr](https
 </p>
 </details>
 
-Add this in the custom css box:
+Add this in the Monitorr custom css box:
 ```css
 @import "https://gilbn.github.io/theme.park/CSS/themes/monitorg.css";
 ```
@@ -635,45 +338,3 @@ And add this in custom HTML in Organizr:
 <embed style="height:calc(100% + 50px)" width='100%' src='https://domain.com/monitorr/index.min.php' />
 </div>
 ```
-### Subfilter
-As this theme will change the base theme, you can get around that by using [subfilter](http://nginx.org/en/docs/http/ngx_http_sub_module.html) in Nginx.
-Create another reverse proxy for monitorr and add this:
-```nginx
-		proxy_set_header Accept-Encoding "";
-		sub_filter
-		'</head>'
-		'<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/monitorg.css">
-		</head>';
-		sub_filter_once on;
-```
-Here is a complete example:
-```nginx
-#MONITORR CONTAINER
-
-# REDIRECT HTTP TRAFFIC TO https://[domain.com]
-server {
- 	listen 80;
- 	server_name monitorg.domain.com;
- 	return 301 https://$server_name$request_uri;
-}
-
-server {  
-    listen 443 ssl http2;
-    server_name monitorg.domain.com;
-
-	#SSL settings
-	include /config/nginx/ssl.conf
-
-location / {
-    proxy_pass http://192.168.1.2:8701;
-    include /config/nginx/proxy.conf;
-		proxy_set_header Accept-Encoding "";
-		sub_filter
-		'</head>'
-		'<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/monitorg.css">
-		</head>';
-		sub_filter_once on;
-  }
-}
-```
-</details>
