@@ -153,6 +153,7 @@ If you want a regular Plex theme for your Grafana setup, use the **`grafplex.css
 
 ### Custom HTML for Organizr Homepage
 <details><summary>Expand</summary>
+	
 Thank you [Fma965](https://gist.github.com/Fma965) for the base [code](https://gist.github.com/Fma965/d30ac1fa5695304a7d6dcdc748220027)
 
 Change the ***Panel name*** to what you want and the ***src*** to the panel URL.
