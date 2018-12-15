@@ -1,20 +1,6 @@
 # theme.park
 A collection of themes/skins for use in conjunction with [Organizr](https://github.com/causefx/Organizr)
 
-### Honourable mentions:
-
-[leram84/layer.Cake](https://github.com/leram84/layer.Cake/)
-
-[rg9400/Cloud-Tautulli-Theme](https://github.com/rg9400/Cloud-Tautulli-Theme)
-
-[Burry/organizr-v2-plex-theme](https://github.com/Burry/organizr-v2-plex-theme)
-
-[iFelix18/Darkerr](https://github.com/iFelix18/Darkerr)
-
-[ydkmlt84/DarkerNZBget](https://github.com/ydkmlt84/DarkerNZBget)
-
-[Archmonger/Blackberry-Flat](https://github.com/Archmonger/Blackberry-Flat)
-
 ## Setup
 
 ### Subfilter
@@ -338,3 +324,17 @@ And add this in custom HTML in Organizr:
 <embed style="height:calc(100% + 50px)" width='100%' src='https://domain.com/monitorr/index.min.php' />
 </div>
 ```
+***
+### Honourable mentions:
+
+[leram84/layer.Cake](https://github.com/leram84/layer.Cake/)
+
+[rg9400/Cloud-Tautulli-Theme](https://github.com/rg9400/Cloud-Tautulli-Theme)
+
+[Burry/organizr-v2-plex-theme](https://github.com/Burry/organizr-v2-plex-theme)
+
+[iFelix18/Darkerr](https://github.com/iFelix18/Darkerr)
+
+[ydkmlt84/DarkerNZBget](https://github.com/ydkmlt84/DarkerNZBget)
+
+[Archmonger/Blackberry-Flat](https://github.com/Archmonger/Blackberry-Flat)
