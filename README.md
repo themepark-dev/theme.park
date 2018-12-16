@@ -101,10 +101,12 @@ Thank you iFelix18 for doing all the hard work! :)
 ### Screenshots
 <details><summary>Expand</summary>
 <p>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/orgarr/sonarrv3-2.png"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/orgarr/sonarrv3-3.png"></img>
 <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/orgarr/1.jpg"></img>
 <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/orgarr/2.jpg"></img>
 <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/orgarr/3.jpg"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/orgarr/5.png"></img>
+
 </p>
 </details>
 
