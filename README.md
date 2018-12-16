@@ -7,7 +7,7 @@ A collection of themes/skins for use in conjunction with [Organizr](https://gith
 
 As  most of these apps doesn't have support for custom CSS you can get around that by using [subfilter](http://nginx.org/en/docs/http/ngx_http_sub_module.html) in Nginx.
 
-Add this to your plex reverse proxy:
+Add this to your reverse proxy:
 
 ```nginx
 proxy_set_header Accept-Encoding "";
