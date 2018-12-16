@@ -112,7 +112,7 @@ Thank you iFelix18 for doing all the hard work! :)
 
 ***
 
-# NZBGet Plex Theme
+# NZBGet Dark/Plex Theme
 
 Custom CSS for [Nzbget](https://github.com/nzbget/nzbget)
 
