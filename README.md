@@ -82,7 +82,7 @@ Custom [Plex](https://plex.tv) CSS to match the [Organizr](https://github.com/ca
 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/plexorg/plexorg.png)
 
-#### `plexorg.css` is a dark theme that matches Organizr.
+#### The `plexorg.css` theme is a dark theme that matches Organizr.
 
 ***
 
@@ -139,11 +139,9 @@ Custom [Grafana](https://github.com/grafana/grafana) CSS for [Organizr](https://
 
 
 ## Custom CSS for Organizr
-#### The `graforg.css` theme will mess with your Grafana base theme. And it will hide the side menu. Go to https://graforg.domain.com/login for settings.
+#### The `graforg.css` theme is a dark theme that matches the Organizr dark theme. NOTE: The `graforg.css` theme will hide the side menu. Go to https://graforg.domain.com/login for settings. 
 
-#### The `graforg.css` theme is a dark theme that matches the Organizr dark theme.
-
-#### `grafplex.css` If you want a regular Plex theme for your Grafana setup, use the **`grafplex.css`** instead.
+#### `grafplex.css` If you want a regular Plex theme for your Grafana setup, use the **`grafplex.css`** theme instead.
 
 ### Screenshots
 <details><summary>Expand</summary>
@@ -280,13 +278,9 @@ Custom [Netdata](https://github.com/firehol/netdata) CSS for consistent UI in [O
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/netorg/2.jpg)
 
 ## Custom CSS for Organizr
-#### The `netorg.css` theme will mess with your Netdata base theme.
+#### The `netorg.css` theme is a dark theme that matches Organizr.
 
-#### `netorg.css` is created purely for use with Organizr.
-**NOTE:** When viewing Netdata in Organizr iframe it will follow the Organizr theme. When viewing it outside of Organizr iframe the background will be white ect.
-
-#### `netplex.css`
-If you want a regular Plex theme for your Netdata setup, use the **`netplex.css`** instead.
+#### `netplex.css` If you want a regular Plex theme for your Netdata setup, use the **`netplex.css`** instead.
 
 ### Screenshots
 <details><summary>Expand</summary>
