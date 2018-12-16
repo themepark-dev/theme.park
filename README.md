@@ -17,7 +17,7 @@ sub_filter
 </head>';
 sub_filter_once on;
 ```
-Where `CUSTOM_CSS` is the name of the theme. i.e `nzbget-plex.css`
+Where `CUSTOM_CSS` is the name of the theme. e.g. `nzbget-plex.css`
 
 Here is a complete example:
 
