@@ -75,6 +75,14 @@ Custom [Guacamole](https://guacamole.apache.org/) CSS to match the [Organizr](ht
 
 #### `guacplex.css` is a Plex theme for Guacamole
 
+### Screenshots
+<details><summary>Expand</summary>
+<p>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/guacorg/guac-1.png.png"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/guacorg/guac-2.png.png"></img>
+</p>
+</details>
+
 ***
 
 # Plex Organizr Theme
