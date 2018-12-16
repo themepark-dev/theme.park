@@ -78,8 +78,8 @@ Custom [Guacamole](https://guacamole.apache.org/) CSS to match the [Organizr](ht
 ### Screenshots
 <details><summary>Expand</summary>
 <p>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/guacorg/guac-1.png.png"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/guacorg/guac-2.png.png"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/guacorg/guac-1.png"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/guacorg/guac-2.png"></img>
 </p>
 </details>
 
