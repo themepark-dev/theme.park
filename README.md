@@ -116,7 +116,9 @@ Thank you iFelix18 for doing all the hard work! :)
 
 Custom CSS for [Nzbget](https://github.com/nzbget/nzbget)
 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbget/nzbget1.jpg)
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbget/nzbget-split.png)
+
+#### The `nzborg.css` theme is a dark theme that matches the Organizr dark theme.
 
 #### The `nzbget-plex.css` theme is a plex theme for NZBGet.
 
