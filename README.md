@@ -275,7 +275,8 @@ If you dont want the ***Panel name*** text, just remove the `<h5><span>` line en
 
 Custom [Netdata](https://github.com/firehol/netdata) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr)
 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/netorg/2.jpg)
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/netorg/netdata-1.png)
+
 
 ## Custom CSS for Organizr
 #### The `netorg.css` theme is a dark theme that matches Organizr.
@@ -286,6 +287,7 @@ Custom [Netdata](https://github.com/firehol/netdata) CSS for consistent UI in [O
 <details><summary>Expand</summary>
 <p>
 <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/netorg/1.jpg"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/netorg/2.jpg"></img>
 </p>
 </details>
 
