@@ -135,7 +135,8 @@ Thank you [ydkmlt84](https://github.com/ydkmlt84) for making the job easier :)
 
 Custom [Grafana](https://github.com/grafana/grafana) CSS for [Organizr](https://github.com/causefx/Organizr) homepage integration and consistent UI.
 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/graforg/3.jpg)
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/graforg/grafana-1.png)
+
 
 ## Custom CSS for Organizr
 #### The `graforg.css` theme will mess with your Grafana base theme. And it will hide the side menu. Go to https://graforg.domain.com/login for settings.
@@ -154,6 +155,9 @@ If you want a regular Plex theme for your Grafana setup, use the **`grafplex.css
 </details>
 
 ### Custom HTML for Organizr Homepage
+
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/graforg/3.jpg)
+
 <details><summary>Expand</summary>
 	
 Thank you [Fma965](https://gist.github.com/Fma965) for the base [code](https://gist.github.com/Fma965/d30ac1fa5695304a7d6dcdc748220027)
