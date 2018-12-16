@@ -112,11 +112,13 @@ Thank you iFelix18 for doing all the hard work! :)
 
 ***
 
-# Nzbget Plex Theme
+# NZBGet Plex Theme
 
 Custom CSS for [Nzbget](https://github.com/nzbget/nzbget)
 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbget/nzbget1.jpg)
+
+The `nzbget-plex.css` theme is a plex theme for NZBGet.
 
 Thank you [ydkmlt84](https://github.com/ydkmlt84) for making the job easier :)
 
