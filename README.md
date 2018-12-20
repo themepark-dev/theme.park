@@ -95,7 +95,7 @@ Custom [Plex](https://plex.tv) CSS to match the [Organizr](https://github.com/ca
 
 ***
 
-# OrgArr - Sonarr v2/v3 - Radarr - Lidarr
+# OrgArr - Sonarr v2/v3 - Radarr - Lidarr Dark/Plex Theme
 
 Custom [Sonarr V2 and V3](https://github.com/Sonarr/Sonarr)/[Radarr](https://github.com/Radarr/Radarr)/[Lidarr](https://github.com/Lidarr/Lidarr) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr)
 
@@ -145,7 +145,7 @@ Thank you [ydkmlt84](https://github.com/ydkmlt84) for making the job easier :)
 
 ***
 
-# GrafOrg - Grafana
+# GrafOrg - Grafana Dark/Plex
 
 Custom [Grafana](https://github.com/grafana/grafana) CSS for [Organizr](https://github.com/causefx/Organizr) homepage integration and consistent UI.
 
@@ -285,7 +285,7 @@ If you dont want the ***Panel name*** text, just remove the `<h5><span>` line en
 
 ***
 
-# NetOrg - Netdata
+# NetOrg - Netdata Dark/Plex Theme
 
 Custom [Netdata](https://github.com/firehol/netdata) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr)
 
@@ -309,7 +309,7 @@ Custom [Netdata](https://github.com/firehol/netdata) CSS for consistent UI in [O
 
 ***
 
-# Monitorg - Monitorr
+# Monitorg - Monitorr Dark/Plex Theme
 
 Custom [Monitorr](https://github.com/Monitorr/Monitorr) CSS for [Organizr](https://github.com/causefx/Organizr) homepage integration.
 
