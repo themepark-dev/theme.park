@@ -584,7 +584,7 @@ pre {
 .btn-danger:hover {
     color: #fff;
     background-color: #c9302c;
-    border-color: #ac2925;
+    border-color: transparent;
 }
 .btn-primary, .btn-danger {
     border-color: transparent;
