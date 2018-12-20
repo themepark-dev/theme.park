@@ -79,7 +79,7 @@ div.flot-text {
 .gf-form-label {
     background-color: rgba(0, 0, 0, 0.25) !important;
 	   border: none !important;
-     color: #FFF !important;
+     color: #FFF;
 }
 .gf-form-input:focus {
     color: #FFF !important;
