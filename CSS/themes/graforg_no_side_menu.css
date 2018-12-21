@@ -13,16 +13,9 @@ div.flot-text {
 .theme-dark, .theme-light, .preloader {
     background: #1f1f1f !important;
 }
-
-/* sidemenu */
-.sidemenu-open .sidemenu {
-    background: rgba(0, 0, 0, .25) !important;
-}
-.sidemenu__logo:hover {
-    background: rgba(0, 0, 0, .25) !important;
-}
-.sidemenu-item.active, .sidemenu-item:hover {
-    background-color: rgba(0, 0, 0, .25) !important;
+/* Hide sidemenu */
+.sidemenu {
+    display: none !important;
 }
 
 /* Dashboard dropdown menu */
