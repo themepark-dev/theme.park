@@ -13,6 +13,12 @@ div.flot-text {
 .theme-dark, .theme-light, .preloader {
     background: #1f1f1f !important;
 }
+
+/* login page */
+.login-branding {
+    border-right: none !important;
+}
+
 /* Hide sidemenu */
 .sidemenu {
     display: none !important;
