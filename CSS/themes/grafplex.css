@@ -217,3 +217,12 @@ div.flot-text {
     border-bottom: 1px solid #171819;
     border-right: 1px solid #171819;
 }
+/* Edit panel tabs  */
+.tabbed-view-header {
+    box-shadow: none;
+    background: rgba(0, 0, 0, 0.25);
+    border-bottom: none;
+}
+.tabbed-view-panel-title {
+    padding-left: 10px;
+}
