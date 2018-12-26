@@ -226,3 +226,18 @@ div.flot-text {
 .tabbed-view-panel-title {
     padding-left: 10px;
 }
+/* buttons  */
+.btn-inverse {
+border-color: #b56d16;
+    color: #fff;
+    background-color: #cc7b19;
+    -webkit-transition: background-color .1s;
+    transition: background-color .1s;
+	}
+	.btn-inverse.active, .btn-inverse.disabled, .btn-inverse:active, .btn-inverse:focus, .btn-inverse:hover, .btn-inverse[disabled] {
+		color: #fff;
+    background-color: #e59029;
+}
+.btn-outline-disabled {
+    color: #fff;
+}
