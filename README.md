@@ -22,7 +22,7 @@ Where `CUSTOM_CSS` is the name of the theme. e.g. `nzbget-plex.css`
 Here is a complete example:
 
 <details><summary>Expand</summary>
-	
+
 ```nginx
 # REDIRECT HTTP TRAFFIC TO https://[domain.com]
 server {
@@ -33,7 +33,7 @@ server {
 server {  
     listen 443 ssl http2;
     server_name plpp.domain.com;
-    
+
 #SSL settings
     include /config/nginx/ssl.conf
 
@@ -61,7 +61,7 @@ Custom [PLPP](https://github.com/Tensai75/plpp) CSS to match the [Organizr](http
 
 #### `plpporg.css` is a dark theme that matches Organizr.
 
-#### `plpp-plex.css` is a Plex theme for PLPP 
+#### `plpp-plex.css` is a Plex theme for PLPP
 
 
 ***
@@ -95,9 +95,9 @@ Custom [Plex](https://plex.tv) CSS to match the [Organizr](https://github.com/ca
 
 ***
 
-# OrgArr - Sonarr v2/v3 - Radarr - Lidarr Dark/Plex Theme
+# OrgArr - Sonarr v2/v3 - Radarr - Lidarr - Bazarr Dark/Plex Theme
 
-Custom [Sonarr V2 and V3](https://github.com/Sonarr/Sonarr)/[Radarr](https://github.com/Radarr/Radarr)/[Lidarr](https://github.com/Lidarr/Lidarr) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr)
+Custom [Sonarr V2 and V3](https://github.com/Sonarr/Sonarr)/[Radarr](https://github.com/Radarr/Radarr)/[Lidarr](https://github.com/Lidarr/Lidarr)/[Bazarr](https://github.com/morpheus65535/bazarr) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr)
 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/orgarr/sonarrv3.png)
 
@@ -153,10 +153,10 @@ Custom [Grafana](https://github.com/grafana/grafana) CSS for [Organizr](https://
 
 
 ## Custom CSS for Organizr
-#### The `graforg.css` theme is a dark theme that matches the Organizr dark theme. 
+#### The `graforg.css` theme is a dark theme that matches the Organizr dark theme.
 #### `grafplex.css` If you want a regular Plex theme for your Grafana setup, use the **`grafplex.css`** theme instead.
 
-### **TIP:** 
+### **TIP:**
 Click the `kiosk` button and use that link if you don't want to show the top bar and side bar inside Organizr! There are two modes, one where the side menu and variables ect disappear and one where just the panels are visible.
 
 https://grafana.technicalramblings.com/d/nLJXnLJiz/unraid-ups-dashboard?refresh=10s&orgId=1&kiosk=tv
@@ -177,7 +177,7 @@ Check out my Varken dashboard here: https://grafana.com/dashboards/9558
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/graforg/3.jpg)
 
 <details><summary>Expand</summary>
-	
+
 Thank you [Fma965](https://gist.github.com/Fma965) for the base [code](https://gist.github.com/Fma965/d30ac1fa5695304a7d6dcdc748220027)
 
 Change the ***Panel name*** to what you want and the ***src*** to the panel URL.
