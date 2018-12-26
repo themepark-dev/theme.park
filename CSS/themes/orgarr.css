@@ -999,3 +999,277 @@ pre {
 .QualityProfileItemGroup-qualityProfileItemGroup-3SvgI.QualityProfileItemGroup-editGroups-19C_2 {
     background: #323232;
 }
+
+/* -------------------------BAZARR------------------------------*/
+  /* TOP MENU */
+#divmenu {
+    background-color: #171717 !important;
+	box-shadow: none !important;
+	opacity: .95 !important;
+}
+#divdetails {
+    background-color: #171717;
+	opacity: .95;
+	box-shadow: none;
+}
+#fondblanc {
+    background-color: #171717 !important;
+	opacity: .95 !important;
+	box-shadow: none;
+	color: #FFF !important;
+}
+a.ui.labels .label:hover, a.ui.label:hover {
+    background-color: #bbbbbb;
+}
+
+.ui.label {
+    color: black !important;
+}
+.ui.inverted.menu {
+    border: 0 solid transparent;
+    background: transparent !important;
+}
+
+  /* SEARCH BAR */
+.prompt {
+background-color: rgba(0, 0, 0, .25) !important;
+color: #FFF;
+border-color: rgba(0, 0, 0, .25);
+}
+.ui.input>input {
+    background: rgba(0, 0, 0, 0.25) !important;
+    border: none;
+    color: #FFF !important;
+}
+.ui.input.focus>input, .ui.input>input:focus {
+    border-color: transparent;
+}
+
+ /* OVERVIEW */
+.ui.table thead th {
+    color: #ffffff;
+}
+.ui.table {
+    color: #ffffff;
+}
+.ui.table tr td {
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+.ui.selectable.table tbody tr:hover, .ui.table tbody tr td.selectable:hover {
+    background: hsla(0,0%,100%,.08) !important;
+    color: #ffffff!important;
+}
+.ui[class*="very basic"].table:not(.sortable):not(.striped) td:last-child, .ui[class*="very basic"].table:not(.sortable):not(.striped) th:last-child {
+    background-color: transparent !important;
+}
+i.black.icon {
+    color: #ffffff !important;
+}
+
+ /* MOVIES EDITOR */
+
+.ui.sortable.table thead th.sorted {
+    background: rgba(0,0,0,.05);
+    color: #ffffff;
+}
+.ui.sortable.table thead th.sorted:hover {
+    background: hsla(0,0%,100%,.08);
+    color: #FFF;
+}
+.ui.sortable.table thead th {
+    color: #ffffff;
+}
+.ui.sortable.table thead th:hover {
+    background: hsla(0,0%,100%,.08);
+    color: #FFF;
+}
+.ui.menu .ui.dropdown .menu>.item {
+    background: #191a1c!important;
+    color: #FFF!important;
+}
+.ui.menu .ui.dropdown .menu>.item:hover {
+    color: #FFF !important;
+    background-color: hsla(0, 0%, 0%, 0.8) !important;
+}
+
+ /* EDIT SERIES/MOVIE MODAL */
+.ui.modal>.header {
+    background: #323232;
+    color: #ffffff;
+}
+.ui.modal>.content {
+    background: #282828;
+    color: white;
+}
+.ui.modal>.actions {
+    background: #323232;
+}
+.ui.modal .actions>.button {
+    margin-left: .75em;
+    font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+	transition: background-color .1s;
+}
+ /* CANCEL BUTTON */
+.ui.button {
+	background: hsla(0,0%,100%,.25) !important;
+    color: #ffffff;
+	transition: background-color .1s;
+}
+.ui.button:hover, .ui.button:focus {
+    background-color: hsla(0,0%,100%,.3) !important;
+    color: #FFF;
+}
+.ui.active.button:active, .ui.button:active {
+    background-color: hsla(0,0%,100%,.2) !important;
+    color: #ffffff;
+}
+ /* SAVE BUTTON */
+.ui.blue.button, .ui.blue.buttons .button {
+    background-color: #cc7b19 !important;
+    color: #fff;
+    font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    transition: background-color .1s;
+}
+.ui.blue.button:hover, .ui.blue.buttons .button:hover {
+    background-color: #e59029 !important;
+}
+.ui.blue.button:active, .ui.blue.buttons .button:active {
+    background-color: #955a12 !important;
+}
+
+ /* DROPDOWN */
+.ui.default.dropdown:not(.button)>.text, .ui.dropdown:not(.button)>.default.text {
+    color: rgba(191,191,191,.80);
+    color: #FFF;
+}
+.ui.modal>.content>.ui.selection.dropdown {
+    background: #555;
+
+}
+.ui.selection.active.dropdown {
+    border-color: transparent;
+	border: none;
+}
+.ui.selection.dropdown:focus {
+    border-color: transparent;
+}
+.ui.selection.dropdown:focus .menu {
+    border-color: #282828;
+}
+.ui.selection.dropdown .menu>.item {
+    background-color: #191a1c;
+	color: #FFF;
+	border-top: none;
+}
+.ui.selection.active.dropdown .menu {
+    border: none;
+}
+.ui.selection.active.dropdown:hover {
+    border-color: transparent;
+}
+.ui.dropdown .menu>.item:hover {
+    color: #FFF;
+    background-color: hsla(0, 0%, 0%, 0.8) !important;
+}
+.ui.toggle.checkbox .box:before, .ui.toggle.checkbox label:before {
+    background: hsla(0,0%,100%,.3);
+}
+.ui.toggle.checkbox .box:hover::before, .ui.toggle.checkbox label:hover::before {
+    border-color: hsla(0,0%,100%,.3);
+}
+.ui.toggle.checkbox .box:hover::before, .ui.toggle.checkbox label:hover::before {
+    background-color: hsla(0,0%,100%,.3);
+}
+.ui.toggle.checkbox input:focus~.box:before, .ui.toggle.checkbox input:focus~label:before {
+    background-color: hsla(0,0%,100%,.3);
+}
+.ui.checkbox input:focus~label {
+    color: hsla(0,0%,100%,.3);
+}
+.ui.toggle.checkbox input:checked~.box:before, .ui.toggle.checkbox input:checked~label:before {
+    background-color: #cc7b19 !important;
+}
+.ui.toggle.checkbox input:checked~.box:before, .ui.toggle.checkbox input:checked~label:before {
+    background-color: #cc7b19!important;
+}
+.ui.toggle.checkbox input:focus:checked~.box:before, .ui.toggle.checkbox input:focus:checked~label:before {
+	background-color: #cc7b19!important;
+}
+
+.ui.multiple.dropdown>.label {
+    background: #323232;
+}
+a.ui.active.label:hover, a.ui.labels .active.label:hover {
+    background-color: #323232;
+    border-color: #323232;
+}
+
+ /* EDITOR BUTTON */
+.ui.basic.button, .ui.basic.buttons .button {
+    background: rgba(0, 0, 0, 0.25) none!important;
+    color: rgb(255, 255, 255)!important;
+}
+
+.ui.basic.button:hover, .ui.basic.buttons .button:hover {
+    background: hsla(0,0%,100%,.08) !IMPORTANT;
+    color: #fff!important;
+}
+
+ /* HISTORY PAGE */
+ #bottommenu {
+    background-color: #323232 !important;
+}
+ .ui.tabular.menu .active.item, .ui.segment {
+    background: none rgba(255,255,255,.08);
+}
+.ui.tabular.menu .item:hover {
+    background-color: rgba(255,255,255,.08) !important;
+}
+.ui.tabular.menu .item:visited {
+    background-color: rgba(255,255,255,.08) !important;
+}
+.ui.attached:not(.message)+.ui.attached.segment:not(.top) {
+    background-color: transparent;
+	border: none;
+}
+.ui.header {
+    color: #ffffff;
+}
+.ui.dividing.header {
+    border-bottom: none;
+}
+.ui.selection.dropdown {
+    color: #FFF;
+	background: rgba(0, 0, 0, .25);
+}
+
+ /* SETTINGS PAGE */
+
+.ui.list .list>.item .header, .ui.list>.item .header {
+    color: #FFF;
+}
+.ui.checkbox label, .ui.checkbox+label {
+    color: #ffffff;
+}
+.ui.selection.visible.dropdown>.text:not(.default) {
+    color: #fff;
+}
+.ui.checkbox label:hover, .ui.checkbox+label:hover {
+    color: #db2828;
+}
+.ui.attached.info.message, .ui.info.message {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.ui.info.message {
+    background-color: rgba(255,255,255,.08);
+    color: #00c1ff;
+}
+.ui.input {
+    color: #FFF;
+}
+.ui.form input:not([type]):focus, .ui.form input[type=date]:focus, .ui.form input[type=datetime-local]:focus, .ui.form input[type=email]:focus, .ui.form input[type=file]:focus, .ui.form input[type=number]:focus, .ui.form input[type=password]:focus, .ui.form input[type=search]:focus, .ui.form input[type=tel]:focus, .ui.form input[type=text]:focus, .ui.form input[type=time]:focus, .ui.form input[type=url]:focus {
+    border-color: #fff;
+}
