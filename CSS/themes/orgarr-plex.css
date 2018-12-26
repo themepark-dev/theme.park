@@ -1046,9 +1046,15 @@ pre {
 
 /* -------------------------BAZARR------------------------------*/
   /* TOP MENU */
-#divmenu {
-    background-color: transparent !important;
-}
+  #divmenu {
+      background-color: rgba(0, 0, 0, .25) !important;
+  	box-shadow: none !important;
+  	opacity: 1;
+  }
+  #divdetails {
+      background-color: rgba(0, 0, 0, .25);
+  	box-shadow: none;
+  }
 .ui.inverted.menu {
     border: 0 solid transparent;
     background: transparent !important;
@@ -1301,6 +1307,9 @@ a.ui.active.label:hover, a.ui.labels .active.label:hover {
 }
 .ui.checkbox label, .ui.checkbox+label {
     color: #ffffff;
+}
+.ui.selection.visible.dropdown>.text:not(.default) {
+    color: #fff;
 }
 .ui.checkbox label:hover, .ui.checkbox+label:hover {
     color: #db2828;
