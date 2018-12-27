@@ -1110,6 +1110,10 @@ i.black.icon {
     text-transform: uppercase;
 	transition: background-color .1s;
 }
+.ui.modal > .close {
+    top: .7rem;
+    right: .4rem;
+}
  /* CANCEL BUTTON */
 .ui.button {
 	background: hsla(0,0%,100%,.25) !important;
