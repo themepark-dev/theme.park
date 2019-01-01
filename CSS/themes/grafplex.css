@@ -241,3 +241,16 @@ border-color: #b56d16;
 .btn-outline-disabled {
     color: #fff;
 }
+/* New Dashboard */
+.add-panel__item {
+    background: linear-gradient(135deg,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.25));
+    box-shadow: -1px -1px 0 0 hsla(0,0%,100%,.1), 1px 1px 0 0 rgba(0, 0, 0, 0);
+}
+.add-panel__item.active, .add-panel__item:hover {
+    background: linear-gradient(135deg,rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25));
+}
+.add-panel__header {
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: none;
+    border-bottom: 0px;
+}
