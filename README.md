@@ -334,10 +334,8 @@ Custom [Monitorr](https://github.com/Monitorr/Monitorr) CSS for [Organizr](https
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/monitorg/1-flat.jpg)
 
 ## Custom CSS for Organizr
-#### This theme will mess with your Monitorr base theme. And it will hide the settings button. Go to /monitorr/settings.php for settings.
+#### The `monitorg.css` theme will mess with your Monitorr base theme. And it will hide the settings button. Go to /monitorr/settings.php for settings.  It is created purely for use with "minimum" version of the index.php `https://domain.com/monitorr/index.min.php`
 
-#### It is created purely for use with Organizr.
-**NOTE:** When viewing /monitorr in Organizr iframe it will follow the Organizr theme. When viewing it outside of Organizr iframe the background will be white ect.
 
 ### Screenshots
 <details><summary>Expand</summary>
@@ -358,6 +356,9 @@ And add this in custom HTML in Organizr:
 <embed style="height:calc(100% + 50px)" width='100%' src='https://domain.com/monitorr/index.min.php' />
 </div>
 ```
+**NOTE:**
+When viewing /monitorr in Organizr iframe it will follow the Organizr theme. When viewing it outside of Organizr iframe the background will be white ect. If you don't want this you can create two reverse proxies. One for monitorg and one for the monitorr dark/plex theme. And use subfilter on both instead of adding `@import "https://gilbn.github.io/theme.park/CSS/themes/monitorg.css";` in custom css. 
+
 ***
 ### Honourable mentions:
 
