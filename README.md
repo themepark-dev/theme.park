@@ -334,8 +334,11 @@ Custom [Monitorr](https://github.com/Monitorr/Monitorr) CSS for [Organizr](https
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/monitorg/1-flat.jpg)
 
 ## Custom CSS for Organizr
+
 #### The `monitorg.css` theme will mess with your Monitorr base theme. And it will hide the settings button. Go to /monitorr/settings.php for settings.  It is created purely for use with "minimum" version of the index.php `https://domain.com/monitorr/index.min.php`
 
+#### For the dark theme use `monitorg-dark.css`
+#### For the Plex theme use `monitorg-plex.css`
 
 ### Screenshots
 <details><summary>Expand</summary>
