@@ -11,9 +11,91 @@
 /*		   								              Made by @gilbN								                     */
 /*							            https://github.com/gilbN/theme.park						               */
 
-body {
-    background-color: transparent !important;
+#footer:after {
+    color: grey;
+    content: "Monitorg-dark v1";
 }
+body {
+    background-color: #1f1f1f !important;
+	color: white;
+}
+
+/* Settings */
+	/* Text Color */
+.alpaca-control-label, .alpaca-control.radio {
+    color: white !important;
+}
+.Rtable-cell {
+    color: white !important;
+}
+#colorkey {
+    color: white !important;
+}
+.settingstitle {
+    text-shadow: none !important;
+}
+#reginfo {
+    color: white !important;
+}
+/* Sidebar */
+#sidebar-wrapper {
+    box-shadow: none !important;
+}
+.sidebar-nav li:hover:before {
+    -webkit-transition: none !important;
+    transition: none !important;
+    background-color: rgba(0, 0, 0, 0.07);
+}
+.sidebar-nav li:before {
+    background-color: rgba(0, 0, 0, 0.07);
+    transition: none !important;
+	-webkit-transition: none !important;
+}
+    .sidebar-nav li:first-child a {
+        background-color: rgba(0, 0, 0, 0.07);
+    }
+    .sidebar-nav li:nth-child(2):before {
+        background-color: rgba(0, 0, 0, 0.07);
+    }
+    .sidebar-nav li:nth-child(3):before {
+        background-color: rgba(0, 0, 0, 0.07);
+    }
+    .sidebar-nav li:nth-child(4):before {
+        background-color: rgba(0, 0, 0, 0.07);
+    }
+    .sidebar-nav li:nth-child(5):before {
+        background-color: rgba(0, 0, 0, 0.07);
+    }
+    .sidebar-nav li:nth-child(6):before {
+        background-color: rgba(0, 0, 0, 0.07);
+    }
+    .sidebar-nav li:nth-child(7):before {
+        background-color: rgba(0, 0, 0, 0.07);
+    }
+    .sidebar-nav li:nth-child(8):before {
+        background-color: rgba(0, 0, 0, 0.07);
+    }
+    .sidebar-nav li:nth-child(9):before {
+        background-color: rgba(0, 0, 0, 0.07);
+    }
+
+#modalloading {
+	position: fixed;
+    width: 24rem;
+    left: calc(50% - 12rem);
+    top: 25%;
+    margin: 0 auto;
+    padding: 1rem;
+    color: black;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.750);
+    box-shadow: .5rem .5rem 1rem rgb(15, 15, 15);
+    border: 1px solid #888;
+    border-radius: 4px;
+    z-index: 2000;
+    cursor: wait;
+    }
 
 .container {
     max-width: 100% !important;
@@ -95,7 +177,7 @@ box-shadow: none;
     box-shadow: 0 0 10px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.15) !important;
 }
 .footer {
-    color: transparent !important;
+    color: white !important;
 }
 .footer:hover {
     text-shadow: 0 0 15px transparent !important;
@@ -103,18 +185,10 @@ box-shadow: none;
 #footer {
     color: transparent !important;
 }
-.alpaca-control-label, .alpaca-control.radio {
-    color: black !important;
-}
+
 .navbar-brand {
     text-shadow: 0 0 15px #000000 !important;
 	}
-.Rtable-cell {
-    color: #000000 !important;
-}
-#colorkey {
-    color: #000000 !important;
-}
 
 /* ButtonShadow */
 .btnoffline, .btnunknown, .btnonline {
