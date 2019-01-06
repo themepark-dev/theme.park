@@ -6,8 +6,8 @@
 		  88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"  
 		  88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.
 		  dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP
-					                        									88                                 
-																										dP                                 
+					                        88                                 
+								dP                                 
 ```
 #
 A collection of themes/skins for use in conjunction with [Organizr](https://github.com/causefx/Organizr)
