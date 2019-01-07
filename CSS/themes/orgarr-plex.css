@@ -759,7 +759,11 @@ pre {
 .NamingOption-option-33lWx:hover .NamingOption-example-2-1sK {
     background-color: #4e4e4e;
 }
-
+/* Release Profiles */
+.ReleaseProfiles-center-2y1r9 {
+    border: none;
+    background-color: rgba(0, 0, 0, .25);
+}
 /* -------------------------LIDARR STUFF------------------------------*/
 
 .LoadingIndicator-ripple-1264V {
