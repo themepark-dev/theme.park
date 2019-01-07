@@ -764,6 +764,11 @@ pre {
     border: none;
     background-color: rgba(0, 0, 0, .25);
 }
+.KeyValueListInputItem-keyInput-13ATg, .KeyValueListInputItem-valueInput-2LjJ5 {
+    border: none;
+    color: white;
+    background: transparent;
+}
 /* -------------------------LIDARR STUFF------------------------------*/
 
 .LoadingIndicator-ripple-1264V {
