@@ -162,8 +162,6 @@ Custom [Grafana](https://github.com/grafana/grafana) CSS for [Organizr](https://
 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/graforg/grafana-1.png)
 
-
-## Custom CSS for Organizr
 #### The `graforg.css` theme is a dark theme that matches the Organizr dark theme.
 #### `grafplex.css` If you want a regular Plex theme for your Grafana setup, use the **`grafplex.css`** theme instead.
 
@@ -309,8 +307,6 @@ Custom [Netdata](https://github.com/firehol/netdata) CSS for consistent UI in [O
 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/netorg/netdata-1.png)
 
-
-## Custom CSS for Organizr
 #### The `netorg.css` theme is a dark theme that matches Organizr.
 
 #### `netplex.css` If you want a regular Plex theme for your Netdata setup, use the **`netplex.css`** instead.
@@ -332,8 +328,6 @@ Custom [Netdata](https://github.com/firehol/netdata) CSS for consistent UI in [O
 Custom [Monitorr](https://github.com/Monitorr/Monitorr) CSS for [Organizr](https://github.com/causefx/Organizr) homepage integration.
 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/monitorg/1-flat.jpg)
-
-## Custom CSS for Organizr
 
 #### The `monitorg.css` theme will mess with your Monitorr base theme. And it will hide the settings button. Go to /monitorr/settings.php for settings.  It is created purely for use with "minimum" version of the index.php `https://domain.com/monitorr/index.min.php`
 
