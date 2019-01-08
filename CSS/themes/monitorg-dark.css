@@ -37,6 +37,10 @@ body {
 #reginfo {
     color: white !important;
 }
+#infodata {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
 /* Sidebar */
 #sidebar-wrapper {
     box-shadow: none !important;
