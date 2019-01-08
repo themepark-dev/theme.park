@@ -1,16 +1,16 @@
-
-```
-		  dP   dP                                                                  dP      
-		  88   88                                                                  88      
-		d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP
-		  88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"  
-		  88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.
-		  dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP
-					                        88                                 
-								dP                                 
-```
-#
-A collection of themes/skins for use in conjunction with [Organizr](https://github.com/causefx/Organizr)
+<h1 align="center">
+    <img src="https://i.imgur.com/nXhejME.png">
+</h1>
+<p align="center">
+  A collection of themes/skins for use in conjunction with <a href="https://github.com/causefx/Organizr/" target="_blank">Organizr</a>
+<p align="center">
+    <br />
+    <br />
+    <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/orgarr/sonarrv3.png" alt="Screen Shot 1" width="49.15%" />
+    <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/graforg/grafana-1.png" alt="Screen Shot 2" width="49.15%" />
+    <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/plexorg/plexorg.png" alt="Screen Shot 3" width="49.15%" />
+    <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/plpp/plpp.png" alt="Screen Shot 4" width="49.15%" />
+</p>
 
 ## Setup
 
@@ -162,8 +162,6 @@ Custom [Grafana](https://github.com/grafana/grafana) CSS for [Organizr](https://
 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/graforg/grafana-1.png)
 
-
-## Custom CSS for Organizr
 #### The `graforg.css` theme is a dark theme that matches the Organizr dark theme.
 #### `grafplex.css` If you want a regular Plex theme for your Grafana setup, use the **`grafplex.css`** theme instead.
 
@@ -309,8 +307,6 @@ Custom [Netdata](https://github.com/firehol/netdata) CSS for consistent UI in [O
 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/netorg/netdata-1.png)
 
-
-## Custom CSS for Organizr
 #### The `netorg.css` theme is a dark theme that matches Organizr.
 
 #### `netplex.css` If you want a regular Plex theme for your Netdata setup, use the **`netplex.css`** instead.
@@ -332,8 +328,6 @@ Custom [Netdata](https://github.com/firehol/netdata) CSS for consistent UI in [O
 Custom [Monitorr](https://github.com/Monitorr/Monitorr) CSS for [Organizr](https://github.com/causefx/Organizr) homepage integration.
 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/monitorg/1-flat.jpg)
-
-## Custom CSS for Organizr
 
 #### The `monitorg.css` theme will mess with your Monitorr base theme. And it will hide the settings button. Go to /monitorr/settings.php for settings.  It is created purely for use with "minimum" version of the index.php `https://domain.com/monitorr/index.min.php`
 
