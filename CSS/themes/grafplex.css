@@ -239,6 +239,11 @@ div.flot-text {
 .tabbed-view-panel-title {
     padding-left: 10px;
 }
+/* worldmap zoom buttons and leaflet  */
+.leaflet-touch .leaflet-control-attribution, .leaflet-touch .leaflet-control-layers,
+.leaflet-touch .leaflet-bar {
+    display: none;
+}
 /* buttons  */
 .btn-inverse {
 border-color: #b56d16;

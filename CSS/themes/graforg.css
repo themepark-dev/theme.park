@@ -198,6 +198,11 @@ div.flot-text {
 .tabbed-view-panel-title {
     padding-left: 10px;
 }
+/* worldmap zoom buttons and leaflet  */
+.leaflet-touch .leaflet-control-attribution, .leaflet-touch .leaflet-control-layers,
+.leaflet-touch .leaflet-bar {
+    display: none;
+}
 /* New Dashboard */
 .add-panel__item {
     background: linear-gradient(135deg,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.25));
