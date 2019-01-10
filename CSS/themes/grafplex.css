@@ -192,7 +192,7 @@ color:#FFFFFF !important;
     border: transparent;
 }
 .panel-container.panel-transparent {
-	background-color: rgba(0, 0, 0, .25);
+	background-color: transparent;
 	border: transparent;
 }
 .panel-header:hover {
