@@ -240,8 +240,15 @@ div.flot-text {
     padding-left: 10px;
 }
 /* worldmap zoom buttons and leaflet  */
-.leaflet-touch .leaflet-control-attribution, .leaflet-touch .leaflet-control-layers,
-.leaflet-touch .leaflet-bar {
+.leaflet-bar a, .leaflet-bar a:hover {
+    background-color: #1f1f1f;
+    border-bottom: 1px solid #1f1f1f;
+    color: white;
+}
+.leaflet-bar a:hover {
+    background-color: #1b1b1b;
+}
+.leaflet-container .leaflet-control-attribution {
     display: none;
 }
 /* buttons  */
