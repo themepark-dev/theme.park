@@ -241,12 +241,12 @@ div.flot-text {
 }
 /* worldmap zoom buttons and leaflet  */
 .leaflet-bar a, .leaflet-bar a:hover {
-    background-color: #1f1f1f;
-    border-bottom: 1px solid #1f1f1f;
-    color: white;
+    background-color: #1f1f1f !important;
+    border-bottom: 1px solid #1f1f1f !important;
+    color: white !important;
 }
 .leaflet-bar a:hover {
-    background-color: #1b1b1b;
+    background-color: #1b1b1b !important;
 }
 .leaflet-container .leaflet-control-attribution {
     display: none;
