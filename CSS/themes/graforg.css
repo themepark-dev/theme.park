@@ -207,7 +207,7 @@ div.flot-text {
 .leaflet-bar a:hover {
     background-color: #1b1b1b !important;
 }
-.leaflet-container .leaflet-control-attribution {
+.leaflet-control-attribution {
     display: none;
 }
 /* New Dashboard */
