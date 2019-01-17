@@ -155,11 +155,42 @@ box-shadow: none;
     background-color: rgba(0,0,0,.0) !important;
         box-shadow: 0px 0px 0px 0px #ffffff00, 0px 0px 0px 0px #ffffff00, 10px 0px 10px 0px #ffffff00, -10px 0px 10px 2px #ffffff00 !important;
 }
+/*Service tile*/
 .col-lg-4 {
     background-color: rgba(0,0,0,.15) !important;
     margin: 1rem .1rem 1.5rem 1rem !important;
     width: 9rem !important;
 	box-shadow: none;
+}
+.col-lg-4:hover {
+    background-color: hsla(0,0%,100%,.08) !important;
+    margin: 1rem .1rem 1.5rem 1rem !important;
+    width: 9rem !important;
+    box-shadow: none;
+}
+.servicetile, .servicetile:hover, .servicetile:focus {
+    color: #ffffff;
+    text-shadow: none !important;
+    text-decoration: none !important;
+    outline: 0;
+    font-weight: inherit !important;
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
+.servicetile {
+    color: #ffffff;
+    text-shadow: none !important;
+    text-decoration: none !important;
+    outline: 0;
+    font-weight: inherit !important;
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
 }
 #clock {
     background-color: rgba(0,0,0,.15) !important;
