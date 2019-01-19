@@ -163,7 +163,9 @@ Custom [Grafana](https://github.com/grafana/grafana) CSS for [Organizr](https://
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/graforg/grafana-1.png)
 
 #### The `graforg.css` theme is a dark theme that matches the Organizr dark theme.
-#### `grafplex.css` If you want a regular Plex theme for your Grafana setup, use the **`grafplex.css`** theme instead.
+#### `grafplex.css`: If you want a regular Plex theme for your Grafana setup, use the **`grafplex.css`** theme instead.
+#### For panel integration on the Organizr homepage you can use `graforg-dashboard.css` if you use the Plex theme in Organizr. 
+### Check out https://technicalramblings.com/blog/spice-up-your-homepage-part-ii/
 
 ### **TIP:**
 Click the `kiosk` button and use that link if you don't want to show the top bar and side bar inside Organizr! There are two modes, one where the side menu and variables ect disappear and one where just the panels are visible.
@@ -183,7 +185,6 @@ Check out my Varken dashboard here: https://grafana.com/dashboards/9558
 
 ### Custom HTML for Organizr Homepage
 
-Check out https://technicalramblings.com/blog/spice-up-your-homepage-part-ii/
 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/graforg/3.jpg)
 
