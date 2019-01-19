@@ -183,6 +183,8 @@ Check out my Varken dashboard here: https://grafana.com/dashboards/9558
 
 ### Custom HTML for Organizr Homepage
 
+Check out https://technicalramblings.com/blog/spice-up-your-homepage-part-ii/
+
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/graforg/3.jpg)
 
 <details><summary>Expand</summary>
@@ -349,8 +351,9 @@ Add this in the Monitorr custom css box:
 ```
 And add this in custom HTML in Organizr:
 ```css
+<div id="announcementRow" class="row"><h4 class="pull-left"><span>Monitorr</span></h4><hr class="hidden-xs"></div>
 <div style="overflow:hidden; height:260px">
-<embed style="height:calc(100% + 50px)" width='100%' src='https://domain.com/monitorr/index.min.php' />
+<iframe class="iframe" frameborder="0" src="https://monitorr.domain.com/index.min.php"></iframe>
 </div>
 ```
 **NOTE:**
