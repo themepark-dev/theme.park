@@ -157,6 +157,9 @@ div.flot-text {
 .panel-header:hover {
     background-color: rgba(0, 0, 0, 0.25) !important;
 }
+.panel-loading {
+    color: transparent;
+}
 /* ////PANEL BACKGROUND COLOR//// */
 
 .graph-legend-table .graph-legend-series:nth-child(odd) {
