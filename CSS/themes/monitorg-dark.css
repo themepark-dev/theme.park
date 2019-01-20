@@ -199,6 +199,10 @@ box-shadow: none;
     -o-transition: none !important;
     transition: none !important;
 }
+#servicetitle:hover, #servicetitle:focus {
+    text-shadow: none !important;
+    font-weight: inherit !important;
+}
 #clock {
     background-color: rgba(0,0,0,.15) !important;
     color: #fff !important;
