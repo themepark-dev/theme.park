@@ -244,32 +244,32 @@ div.location, input[type=text], input[type=email], input[type=number], input[typ
 }
 /* DUA 2FA PAGE */
 .duo-signature-response-field {
-    background: #1f1f1f;
+    background: #1f1f1f !important;
 }
 .base-wrapper {
-    border: 1px solid #1B1B1B;
-    background: #1B1B1B;
+    border: 1px solid #1b1b1b !important;
+    background: #1b1b1b !important;
 }
 .base-body {
-    background-color: #333;
+    background-color: #333 !important;
 }
 h1.spacious-frame-view {
-    color: white;
+    color: white !important;
 }
 @media screen and (-webkit-max-device-pixel-ratio: 1.25), screen and (max-resolution: 120dpi)
 h1, .h1 {
-    color: white;
+    color: white !important;
 }
 .white-wrapper {
-    background-color: #333;
-    color: white;
+    background-color: #333 !important;
+    color: white !important;
 }
 form:not(.inline) fieldset {
-    background-color: #333;
+    background-color: #333 !important;
 }
 label span {
-    color: white;
+    color: white !important;
 }
 input[type=radio] {
-    border: 1px solid #fff;
+    border: 1px solid #fff !important;
 }
