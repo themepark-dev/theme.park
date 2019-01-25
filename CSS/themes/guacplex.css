@@ -59,7 +59,7 @@ div.location, input[type=text], input[type=email], input[type=number], input[typ
 }
 input[type=checkbox], input[type=number], input[type=text], input[type=email], input[type=radio], label, textarea {
     color: white !important;
-    background: rgba(0, 0, 0, 0.25);
+    background: transparent;
 }
 
 /* HOME MENU */
@@ -237,4 +237,20 @@ div.location, input[type=text], input[type=email], input[type=number], input[typ
 }
 .location-chooser .dropdown {
     background: #666;
+}
+/* USER SETTINGS */
+.page-tabs .page-list li a[href], .section-tabs li a {
+    color: white;
+}
+.page-tabs .page-list li a[href]:hover, .section-tabs li a:hover {
+    background-color: hsla(0, 0%, 100%, 0.07);
+}
+.manage-user .page-tabs .page-list li.linked a[href]:before {
+    background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/guacamole/checkmark.png);
+}
+.manage-user .page-tabs .page-list li.read-only a[href]:before {
+    background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/guacamole/lock.png);
+}
+.manage-user .notice.read-only {
+    background: hsla(0, 0%, 100%, 0.07);
 }
