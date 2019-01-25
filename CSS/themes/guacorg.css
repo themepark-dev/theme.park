@@ -242,3 +242,34 @@ div.location, input[type=text], input[type=email], input[type=number], input[typ
 .manage-user .notice.read-only {
     background: hsla(0, 0%, 100%, 0.07);
 }
+/* DUA 2FA PAGE */
+.duo-signature-response-field {
+    background: #1f1f1f;
+}
+.base-wrapper {
+    border: 1px solid #1B1B1B;
+    background: #1B1B1B;
+}
+.base-body {
+    background-color: #333;
+}
+h1.spacious-frame-view {
+    color: white;
+}
+@media screen and (-webkit-max-device-pixel-ratio: 1.25), screen and (max-resolution: 120dpi)
+h1, .h1 {
+    color: white;
+}
+.white-wrapper {
+    background-color: #333;
+    color: white;
+}
+form:not(.inline) fieldset {
+    background-color: #333;
+}
+label span {
+    color: white;
+}
+input[type=radio] {
+    border: 1px solid #fff;
+}
