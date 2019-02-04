@@ -1145,7 +1145,12 @@ i.black.icon {
 .ui.label {
     color: rgb(0, 0, 0) !important;
 }
-
+.ui.progress .bar>.progress {
+    color: white !important;
+}
+.ui.inverted.menu .dropdown.item:hover, .ui.inverted.menu .link.item:hover, .ui.inverted.menu a.item:hover, .ui.link.inverted.menu .item:hover {
+    border-radius: 6px;
+}
  /* MOVIES EDITOR */
 
 .ui.sortable.table thead th.sorted {
