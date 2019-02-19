@@ -28,7 +28,7 @@ body {
 }
 /* scroller */
 ::-webkit-scrollbar-corner {
-    background-color: hsla(0,0%,100%,.08) !important;
+    background-color:  hsla(0,0%,100%,.08) !important;
 }
 ::-webkit-scrollbar {
     width: 10px !important;
