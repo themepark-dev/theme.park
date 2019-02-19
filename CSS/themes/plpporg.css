@@ -19,18 +19,18 @@ body {
 }
 /* scroller */
 ::-webkit-scrollbar-corner {
-    background-color: rgba(0, 0, 0, .25) !important;
+    background-color: hsla(0,0%,100%,.08) !important;
 }
 ::-webkit-scrollbar {
     width: 10px !important;
     height: 10px !important;
-    background: hsla(0,0%,100%,.08) !important;
+    background: rgba(0, 0, 0, .25) !important;
 
 }
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 2px !important;
     border-radius: 2px !important;
-    background-color: rgba(0, 0, 0, .25) !important;
+    background-color: hsla(0,0%,100%,.08) !important;
 }
 .navbar-inverse {
     background-color: rgba(0, 0, 0, 0.6);
