@@ -49,18 +49,18 @@ body {
 }
 /* scroller */
 ::-webkit-scrollbar-corner {
-    background-color: rgba(0, 0, 0, .25);
+    background-color:  hsla(0,0%,100%,.08);
 }
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
-    background: hsla(0,0%,100%,.08);
+    background: rgba(0, 0, 0, .25);
 
 }
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 2px;
     border-radius: 2px;
-    background-color: rgba(0, 0, 0, .25);
+    background-color: hsla(0,0%,100%,.08);
 }
 
 /* navbar and searchbar */
