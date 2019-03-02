@@ -334,7 +334,7 @@ Custom [Monitorr](https://github.com/Monitorr/Monitorr) CSS for [Organizr](https
 
 #### The `monitorg.css` theme will mess with your Monitorr base theme. And it will hide the settings button. Go to /monitorr/settings.php for settings.  It is created purely for use with "minimum" version of the index.php `https://domain.com/monitorr/index.min.php` for Organizr homepage integration. 
 **NOTE:**
-When viewing monitorr in Organizr iframe using `monitorg.css` it will follow the Organizr theme. When viewing it outside of Organizr iframe the background will be white ect. If you don't want this you can create two reverse proxies. One for monitorg and one for the monitorr dark/plex theme. And use subfilter on both instead of adding `@import "https://gilbn.github.io/theme.park/CSS/themes/monitorg.css";` in custom css. 
+When viewing monitorr in Organizr iframe using `monitorg.css` it will follow the Organizr theme. When viewing it outside of Organizr iframe the background will be white ect. If you don't want this you can create two reverse proxies. One for monitorr organizr homepage integration and one for the monitorr dark/plex theme. And use subfilter on both instead of adding `@import "https://gilbn.github.io/theme.park/CSS/themes/monitorg.css";` in the monitorr custom css. 
 
 #### For the dark theme use `monitorg-dark.css`
 #### For the Plex theme use `monitorg-plex.css`
