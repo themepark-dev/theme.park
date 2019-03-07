@@ -156,6 +156,24 @@ Thank you [ydkmlt84](https://github.com/ydkmlt84) for making the job easier :)
 
 ***
 
+# SABnzbd Dark Theme
+
+Custom CSS for [SABnzbd](https://github.com/sabnzbd/sabnzbd)
+
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/sabnzbd/sabnzbd_dark.png)
+
+#### Use the `sabnzbd_dark.css` for a dark theme that matches the Organizr dark theme.
+
+### Screenshots
+<details><summary>Expand</summary>
+<p>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/sabnzbd/sabnzbd_dark_2.png"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/sabnzbd/sabnzbd_dark_3.png"></img>
+</p>
+</details>
+
+***
+
 # GrafOrg - Grafana Dark/Plex
 
 Custom [Grafana](https://github.com/grafana/grafana) CSS for [Organizr](https://github.com/causefx/Organizr) homepage integration and consistent UI.
