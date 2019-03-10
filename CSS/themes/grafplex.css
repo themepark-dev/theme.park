@@ -239,6 +239,54 @@ div.flot-text {
 .tabbed-view-panel-title {
     padding-left: 10px;
 }
+/* panel query settings  */
+.panel-editor__right, .toolbar {
+    background: rgba(0, 0, 0, 0.25);
+}
+.query-editor-row__header {
+    background: rgba(0, 0, 0, 0.25);
+}
+.query-editor-row__body {
+    background: rgba(0, 0, 0, 0.15);
+}
+.panel-options-group {
+    background: rgba(0, 0, 0, 0.15);
+}
+.gf-form-input {
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+.gf-form-switch {
+    background: rgba(0, 0, 0, 0.25);
+    border: transparent;
+}
+.viz-picker__item {
+    background: rgba(0, 0, 0, 0.25);
+    border: transparent;
+}
+.viz-picker__item--current {
+    box-shadow: 0 0 6px #eb7b18!important;
+    border: 1px solid #eb7b18!important;
+    background: rgba(0, 0, 0, 0.4)!important;
+}
+.viz-picker__item:hover {
+    box-shadow: 0 0 6px #eb7b18!important;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid #eb7b18!important;
+}
+.panel-options-group__header {
+    background: rgba(0, 0, 0, 0.25);
+}
+.custom-scrollbars .thumb-vertical {
+    background-color: rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25));
+}
+.toolbar__main {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.15);
+    border: transparent;
+}
+
 /* worldmap zoom buttons and leaflet  */
 .leaflet-bar a, .leaflet-bar a:hover {
     background-color: #1f1f1f !important;
@@ -253,15 +301,15 @@ div.flot-text {
 }
 /* buttons  */
 .btn-inverse {
-border-color: #b56d16;
-    color: #fff;
-    background-color: #cc7b19;
-    -webkit-transition: background-color .1s;
-    transition: background-color .1s;
+border-color: #b56d16 !important;
+    color: #fff !important;
+    background-color: #cc7b19 !important;
+    -webkit-transition: background-color .1s !important;
+    transition: background-color .1s !important;
 	}
 	.btn-inverse.active, .btn-inverse.disabled, .btn-inverse:active, .btn-inverse:focus, .btn-inverse:hover, .btn-inverse[disabled] {
 		color: #fff;
-    background-color: #e59029;
+    background-color: #e59029 !important;
 }
 .btn-outline-disabled {
     color: #fff;
