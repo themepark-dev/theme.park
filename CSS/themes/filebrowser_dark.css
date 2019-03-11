@@ -99,6 +99,10 @@ header>div:first-child{
 body{
     padding-top: 60px;
 }
+.input {
+    background: #2d2d2d;
+    color: #fff;
+}
 #search #input {
     background-color: #f5f5f5;
     display: flex;
