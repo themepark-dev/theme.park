@@ -1,0 +1,225 @@
+
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+
+/*		   		        Made by @gilbN					 */
+/*			      https://github.com/gilbN/theme.park			 */
+
+/* FILEBROWSER DARK THEME */
+/* Based on https://github.com/Archmonger/Blackberry-Themes/blob/master/Themes/Blackberry-Flat/bbf_filebrowser.css */
+
+/* scroller */
+::-webkit-scrollbar-corner {
+    background-color:  hsla(0,0%,100%,.08);
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background: rgba(0, 0, 0, .25);
+
+}
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background-color: hsla(0,0%,100%,.08);
+}
+.message {
+    color: #FFF;
+}
+#login {
+    min-height: 100%;
+    height: auto;
+    background-color: #1f1f1f;
+}
+body {
+    color: #FFFFFF;
+    font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+#login input[type=password], #login input[type=text] {
+    color: white !important;
+    background-color: rgba(0,0,0,0.15) !important;
+    border: none;
+}
+#loading {
+background-color: #1f1f1f;
+}
+
+#loading .spinner * {
+  background-color: #f4dbb0f2 !important;
+}
+button:hover, input[type=submit]:hover{
+    background: rgba(255, 255, 255, 0.1);
+    color: #FFF;
+}
+.button--flat:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+html {
+    min-height: 100%;
+    height: auto;
+    background-color: #1f1f1f;
+}
+body{
+    background-color: #1f1f1f;
+}
+nav {
+    background-color: rgba(0,0,0,.15);
+    height: 100%;
+    top: 60px;
+    width: 240px;
+}
+nav .action{
+    color:rgba(255, 255, 255, 0.737);
+    font-size: 13px;
+    font-family: Open Sans Semibold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+nav .action:hover{
+    background-color:rgba(255, 255, 255, 0.05);
+}
+nav>div{
+    border-top: none;
+}
+header{
+    background-color: #1b1a1a;
+    height: 60px;
+}
+header>div:first-child{
+    height: 60px;
+}
+body{
+    padding-top: 60px;
+}
+#search #input {
+    background-color: #f5f5f5;
+    display: flex;
+    padding: 10px;
+}
+.action{
+    color: #FFF;
+}
+#listing.list .item{
+    background-color: rgba(0,0,0,.15);
+    color:rgb(238, 238, 238);
+    border: none;
+}
+#listing.list .item:hover{
+    background-color:rgba(255, 255, 255, 0.08);
+    color:rgb(238, 238, 238);
+    border: none;
+    transition: .4s;
+}
+#listing.list .item.header{
+    background-color: #1b1a1a;
+    color:rgb(238, 238, 238);
+    border-bottom: none;
+    right: auto;
+}
+.material-icons, .prompt .file-list ul li:before{
+    color: #f4dbb0f2;
+}
+#listing .item[aria-selected=true]{
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+#listing h2{
+    color: rgb(238, 238, 238);
+}
+#breadcrumbs span a{
+    color: rgb(238, 238, 238);
+}
+#listing .item{
+    background-color: rgba(0,0,0,.15);
+    color:rgb(238, 238, 238);
+    border: none;
+}
+#search #result{
+    background-color: #1f1f1f;
+    color: rgb(238, 238, 238);
+}
+#search .boxes{
+    background-color: rgba(0,0,0,.15);
+    padding: 15px;
+}
+#search .boxes h3{
+    color: rgb(238, 238, 238);
+}
+#search .boxes>div>div{
+    background-color: rgba(0,0,0,.10);
+}
+#search.active #input{
+    background-color: #2d2d2d;
+    height: 60px;
+    color: white;
+}
+#search.active i, #search.active input{
+    color: rgba(255, 255, 255, 0.85);
+}
+#search #result>div>:first-child{
+    margin-top: 10px;
+}
+.card{
+    background-color: rgba(0,0,0,.15);
+}
+.card h3{
+    color: rgb(238, 238, 238);
+}
+select {
+    color: rgb(238, 238, 238);
+}
+input, textarea, select, button{
+    color: rgb(238, 238, 238);
+}
+.collapsible>label *{
+    color: rgb(238, 238, 238);
+}
+a{
+    color: rgba(255, 255, 255, 0.85);
+}
+table th{
+    color: rgba(255, 255, 255, 0.85);
+}
+.card.floating{
+    background-color: #1b1a1a;
+}
+#search #input {
+    background-color:rgba(255, 255, 255, 0.08);
+}
+
+#listing.mosaic .item{
+    box-shadow: none !important;
+}
+#listing.mosaic .item:hover{
+    box-shadow: none !important;
+    background-color: rgba(255,255,255,0.08);
+}
+.dashboard p label {
+    color: rgb(255, 255, 255);
+}
+@media (max-width: 736px){
+nav{
+    background-color: black;
+}
+#dropdown.active{
+    background-color: black;
+}
+}
+
+@media (min-width: 1024px){
+    main{
+        margin-left: 270px;
+    }
+}
+@media (max-width: 1024px){
+    nav{
+        width: 175px;
+    }
+}
