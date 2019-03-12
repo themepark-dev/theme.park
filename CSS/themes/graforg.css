@@ -54,6 +54,11 @@ div.flot-text {
     color: #FFF !important;
 }
 
+/* Dashboard row  */
+.dashboard-row--collapsed {
+    background: rgba(0, 0, 0, 0.25);
+}
+
 /* Panel fullscreen navbar */
 .panel-in-fullscreen .navbar {
     background: linear-gradient(90deg,rgba(0, 0, 0, .15),rgba(0, 0, 0, 0.25)) !important;
