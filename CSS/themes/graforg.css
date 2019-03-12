@@ -267,11 +267,16 @@ div.flot-text {
     background: rgba(0, 0, 0, 0.25);
 }
 .custom-scrollbars .thumb-vertical {
-    background-color: rgba(0, 0, 0, 0.25);
-    background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25));
+    background-color: rgba(0, 0, 0, 0.15);
+    background-image: none;
 }
 .toolbar__main {
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.15);
     border: transparent;
+}
+
+/* Explore */
+.query-transaction {
+    color: #fff;
 }
