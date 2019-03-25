@@ -402,13 +402,13 @@ Based on https://github.com/Archmonger/Blackberry-Themes/blob/master/Themes/Blac
 
 ***
 
-# HTML5 Speedtest - Dark Theme
+# HTML5 Speedtest Dark/Plex Theme
 
 Custom [HTML5 Speedtest](https://github.com/adolfintel/speedtest) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr).
 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/html5speedtest/html5speedtest.png)
 
-#### The css is named `html5speedtest_dark.css`
+#### The css files are named `html5speedtest_dark.css` and `html5speedtest_plex.css` 
 
 ### Screenshots
 <details><summary>Expand</summary>
