@@ -401,6 +401,24 @@ Based on https://github.com/Archmonger/Blackberry-Themes/blob/master/Themes/Blac
 </details>
 
 ***
+
+# HTML5 Speedtest - Dark Theme
+
+Custom [HTML5 Speedtest](https://github.com/adolfintel/speedtest) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr).
+
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/html5speedtest/html5speedtest.png)
+
+#### The css is named `html5speedtest_dark.css`
+
+### Screenshots
+<details><summary>Expand</summary>
+<p>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/html5speedtest/html5speedtest_dark.png"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/html5speedtest/html5speedtest_plex.png"></img>
+</p>
+</details>
+
+***
 ### Honourable mentions:
 
 [leram84/layer.Cake](https://github.com/leram84/layer.Cake/)
