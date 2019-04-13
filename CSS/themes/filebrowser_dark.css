@@ -129,7 +129,13 @@ body{
     right: auto;
 }
 .material-icons, .prompt .file-list ul li:before{
-    color: #f4dbb0f2;
+    color: white;
+}
+#listing.list .item div:first-of-type i {
+    color: #2cabe3;
+}
+#listing .item i {
+    color: #2cabe3;
 }
 #listing .item[aria-selected=true]{
     background-color: rgba(255, 255, 255, 0.2) !important;
@@ -139,6 +145,9 @@ body{
 }
 #breadcrumbs span a{
     color: rgb(238, 238, 238);
+}
+#breadcrumbs {
+    border-bottom: 1px solid #2196f3;
 }
 #listing .item{
     background-color: rgba(0,0,0,.15);
