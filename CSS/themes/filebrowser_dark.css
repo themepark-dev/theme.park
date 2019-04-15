@@ -131,6 +131,14 @@ body{
 .material-icons, .prompt .file-list ul li:before{
     color: white;
 }
+.share__box__info {
+    background: #2d2c2c;
+}
+.share__box__download {
+    background: #2cabe3;
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid #2cabe3;
+}
 #listing.list .item div:first-of-type i {
     color: #2cabe3;
 }
@@ -189,7 +197,7 @@ select {
     color: rgb(238, 238, 238);
 }
 input, textarea, select, button{
-    color: rgb(238, 238, 238);
+    color: rgb(0, 0, 0);
 }
 .collapsible>label *{
     color: rgb(238, 238, 238);
