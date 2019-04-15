@@ -332,9 +332,11 @@ Custom [Netdata](https://github.com/firehol/netdata) CSS for consistent UI in [O
 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/netorg/netdata-1.png)
 
-#### The `netorg.css` theme is a dark theme that matches Organizr.
+#### The `netorg.css` theme is an "internal" theme that is meant to be used in an Organizr iframe as the background is set to transparent. [The theme can be used to integrate Netadata on the Organizr Homepage](https://technicalramblings.com/blog/spice-up-your-homepage/)
 
 #### `netplex.css` If you want a regular Plex theme for your Netdata setup, use the **`netplex.css`** instead.
+
+#### The `netorg-dark.css` theme is a dark theme that matches Organizr. 
 
 ### Screenshots
 <details><summary>Expand</summary>
