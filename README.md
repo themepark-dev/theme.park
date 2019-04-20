@@ -189,6 +189,8 @@ Custom [Grafana](https://github.com/grafana/grafana) CSS for [Organizr](https://
 #### For panel integration on the Organizr homepage you can use `graforg-dashboard.css` if you use the Plex theme in Organizr.
 ### Check out https://technicalramblings.com/blog/spice-up-your-homepage-part-ii/
 
+![](https://technicalramblings.com/wp-content/uploads/2019/01/orgdash.jpg)
+
 ### **TIP:**
 Click the `kiosk` button and use that link if you don't want to show the top bar and side bar inside Organizr! There are two modes, one where the side menu and variables ect disappear and one where just the panels are visible.
 
