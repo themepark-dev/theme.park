@@ -33,7 +33,7 @@ div.flot-text {
 }
 
 /* sidemenu */
-.sidemenu-open .sidemenu {
+.sidemenu-open, .sidemenu {
     background: rgba(0, 0, 0, .25) !important;
 }
 .sidemenu__logo:hover {
