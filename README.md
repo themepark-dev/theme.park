@@ -381,7 +381,7 @@ Add this in the Monitorr custom css box:
 And add this in custom HTML in Organizr:
 ```css
 <div id="announcementRow" class="row"><h4 class="pull-left"><span>Monitorr</span></h4><hr class="hidden-xs"></div>
-<div style="overflow:hidden; height:260px; -webkit-overflow-scrolling: touch; overflow-y: scroll;">
+<div style="overflow:hidden; height:260px; width:calc(100% + 39px); -webkit-overflow-scrolling: touch; overflow-y: scroll;">
 <iframe class="iframe" frameborder="0" src="https://monitorr.domain.com/index.min.php"></iframe>
 </div>
 ```
