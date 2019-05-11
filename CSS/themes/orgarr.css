@@ -1052,7 +1052,10 @@ a.ui.labels .label:hover, a.ui.label:hover {
     border: 0 solid transparent;
     background: transparent !important;
 }
-
+.ui.segment {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
   /* SEARCH BAR */
 .prompt {
 background-color: rgba(0, 0, 0, .25) !important;
@@ -1118,6 +1121,9 @@ i.black.icon {
 .ui.menu .ui.dropdown .menu>.item:hover {
     color: #FFF !important;
     background-color: hsla(0, 0%, 0%, 0.8) !important;
+}
+.ui.menu {
+    background: rgba(0, 0, 0, 0.25);
 }
 
  /* EDIT SERIES/MOVIE MODAL */
@@ -1307,17 +1313,25 @@ a.ui.active.label:hover, a.ui.labels .active.label:hover {
 }
  /* LOGS PAGE */
 table.dataTable.stripe tbody tr.odd, table.dataTable.display tbody tr.odd {
-    background-color: hsla(0, 0%, 100%, 0.15);
+    background-color: transparent;
 }
 table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
     background-color: hsla(0, 0%, 100%, .25);
 }
+table.dataTable tbody tr {
+    background-color: transparent;
+}
 .dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate {
     color: #ffffff;
 }
+table.dataTable.no-footer {
+    border-bottom: none;
+}
+table.dataTable thead th, table.dataTable thead td {
+    border-bottom: none;
+}
 /* SCAN POPUP */
 .noty_theme__semanticui.noty_type__info, .noty_theme__semanticui.noty_type__information {
-    background-color: #191a1c;
-    color: #FFF;
-    box-shadow: 0 0 0 1px #00000000 inset, 0 0 0 0 transparent;
+    background-color: #191a1c !important;
+    color: #FFF !important;
 }
