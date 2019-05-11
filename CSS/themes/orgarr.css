@@ -1334,4 +1334,5 @@ table.dataTable thead th, table.dataTable thead td {
 .noty_theme__semanticui.noty_type__info, .noty_theme__semanticui.noty_type__information {
     background-color: #191a1c !important;
     color: #FFF !important;
+    box-shadow: transparent !important;
 }
