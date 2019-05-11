@@ -1300,8 +1300,24 @@ a.ui.active.label:hover, a.ui.labels .active.label:hover {
     color: #00c1ff;
 }
 .ui.input {
-    color: #FFF;
+    color: #FFF !important;
 }
 .ui.form input:not([type]):focus, .ui.form input[type=date]:focus, .ui.form input[type=datetime-local]:focus, .ui.form input[type=email]:focus, .ui.form input[type=file]:focus, .ui.form input[type=number]:focus, .ui.form input[type=password]:focus, .ui.form input[type=search]:focus, .ui.form input[type=tel]:focus, .ui.form input[type=text]:focus, .ui.form input[type=time]:focus, .ui.form input[type=url]:focus {
     border-color: #fff;
+}
+ /* LOGS PAGE */
+table.dataTable.stripe tbody tr.odd, table.dataTable.display tbody tr.odd {
+    background-color: hsla(0, 0%, 100%, 0.15);
+}
+table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
+    background-color: hsla(0, 0%, 100%, .25);
+}
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate {
+    color: #ffffff;
+}
+/* SCAN POPUP */
+.noty_theme__semanticui.noty_type__info, .noty_theme__semanticui.noty_type__information {
+    background-color: #191a1c;
+    color: #FFF;
+    box-shadow: 0 0 0 1px #00000000 inset, 0 0 0 0 transparent;
 }
