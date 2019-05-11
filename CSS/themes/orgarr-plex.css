@@ -1297,7 +1297,7 @@ i.black.icon {
 }
 
 .ui.multiple.dropdown>.label {
-    background: #323232;
+    background: #f8f8f8;
 }
 a.ui.active.label:hover, a.ui.labels .active.label:hover {
     background-color: #323232;
