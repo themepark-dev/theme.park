@@ -1125,6 +1125,9 @@ i.black.icon {
 .ui.menu {
     background: rgba(0, 0, 0, 0.25);
 }
+.ui.menu .dropdown.item .menu {
+        background: #191a1c!important;
+}
 
  /* EDIT SERIES/MOVIE MODAL */
 .ui.modal>.header {
@@ -1334,5 +1337,15 @@ table.dataTable thead th, table.dataTable thead td {
 .noty_theme__semanticui.noty_type__info, .noty_theme__semanticui.noty_type__information {
     background-color: #191a1c !important;
     color: #FFF !important;
-    box-shadow: transparent !important;
+    box-shadow: none !important;
+}
+/* TOOLTIP */
+[data-tooltip]:after {
+    border: 1px solid #1b1c1d;
+    background: #1b1c1d;
+    color: rgb(255, 255, 255);
+}
+[data-tooltip]:before {
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
