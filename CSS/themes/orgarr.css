@@ -1252,7 +1252,9 @@ a.ui.active.label:hover, a.ui.labels .active.label:hover {
     background: rgba(0, 0, 0, 0.25) none!important;
     color: rgb(255, 255, 255)!important;
 }
-
+.ui.basic.active.button, .ui.basic.buttons .active.button {
+    color: rgb(255, 255, 255)!important;
+}
 .ui.basic.button:hover, .ui.basic.buttons .button:hover {
     background: hsla(0,0%,100%,.08) !IMPORTANT;
     color: #fff!important;
@@ -1348,4 +1350,7 @@ table.dataTable thead th, table.dataTable thead td {
 [data-tooltip]:before {
     -webkit-box-shadow: none;
     box-shadow: none;
+}
+[data-tooltip]:not([data-position]):before {
+    background: #1b1c1d !important;
 }
