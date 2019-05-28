@@ -123,7 +123,7 @@ tr.checked, tr.checked td, tr.checked:nth-child(odd) .progress {
 
 }
 .navbar-search .search-query:focus, .navbar-search .search-query.focused {
-    color: #000;
+    color: #000 !important;
     text-shadow: none;
     background-color: white !important;
 }
