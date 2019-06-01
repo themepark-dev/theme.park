@@ -575,161 +575,328 @@ pre {
 
 /* -------------------------SONARR V3------------------------------*/
 
-/* Error/loading page */
+/* Sonarr v3 Dark theme */
 
-.Page-page-10MZd, .ErrorPage-version-1NWV-, .LoadingMessage-loadingMessage-2gMqW {
-    color: white !important;
+/* VERSION 2 */
+
+/* LINKS */
+.Link-to-6fmSq {
+    color: #FFF;
+}
+.Link-to-6fmSq:hover {
+    color: #FFF;
+    text-decoration: underline;
 }
 
-/* Series Overview page */
-.SeriesIndexPoster-title-1LWvk, .SeriesIndexPoster-nextAiring-2dTrg, .SeriesIndexPosterInfo-info-URLdY {
-	background-color: rgba(0, 0, 0, .25) !important;
+/* LOADING PAGE */
+.ErrorPage-page-3GptQ, .ErrorPage-version-3txe6, .LoadingMessage-loadingMessage-1gR5r {
+    color: #FFF;
+}
+.LoadingIndicator-ripple-358v5 {
+  border: 2px solid #fff;
 }
 
-.SeriesIndexOverview-container-2zNbo:hover .SeriesIndexOverview-content-3ZT3A {
+/* MODAL */
+.ModalHeader-modalHeader-gpcvG {
+    background-color: #323232;
+    color: #FFF;
+}
+.ModalContent-modalContent--txrl {
+    background-color: #282828;
+    color: #999;
+}
+.ModalFooter-modalFooter-1N5Ku {
+    background-color: #323232;
+    color: #FFF;
+}
+
+/* INPUT */
+	.TagInput-internalInput-Jbb1T {
+	background-color: transparent;
+	color: #fff;
+	}
+	.AutoSuggestInput-suggestionsList-_bVXO, .AutoSuggestInput-suggestionsContainerOpen-3TAB7, .AutoSuggestInput-suggestionsContainer-3MmlD {
+	background-color: #323232 !important;
+	color: white;
+	border: none !important;
+	}
+	.AutoSuggestInput-suggestionHighlighted-2BWyt {
+	background-color: hsla(0,0%,100%,.08);
+	}
+
+/* HEADER */
+
+	.PageHeader-header-1IhlM {
+		background-color: rgba(0, 0, 0, .7);
+	}
+
+	/* SEARCH DROPDOWN HEADER */
+	.SeriesSearchInput-containerOpen-3F8xe, .SeriesSearchInput-seriesContainer-2yDTR {
+		border: 1px solid #000000 !important;
+		background-color: #1f1f1f !important;
+	}
+	.SeriesSearchInput-highlighted-15xAK {
+		background-color: hsla(0,0%,100%,.08);
+	}
+	.PageHeader-donate-ZT-3N {
+    color: #c4273c !important;
+	}
+
+/* SIDE MENU */
+	.PageSidebar-sidebar-2UXc0 {
+		background-color: rgba(0, 0, 0, .45);
+	}
+	.PageSidebar-sidebarContainer-3Hxpq {
+		background-color: rgba(0, 0, 0, .45) !important;
+	}
+	.PageSidebar-sidebar-3IOcI {
+		background-color: transparent;
+	}
+	.PageSidebarItem-link-TuHn2:hover, .PageSidebarItem-link-TuHn2:focus {
+		color: #FFF !important;
+		background-color: hsla(0,0%,100%,.08);
+		text-decoration: none;
+	}
+	.PageSidebarItem-isActiveLink-1Hupc {
+		color: #FFF;
+		background-color: hsla(0,0%,100%,.08);
+	}
+	.PageSidebarItem-isActiveParentLink-2uxKf {
+		background-color: transparent;
+	}
+
+	@media only screen and (max-width: 768px) {
+	.PageSidebar-sidebarContainer-3Hxpq {
+		background-color: rgba(15, 15, 15, .95) !important;
+	}
+	}
+
+/* SERIES PAGE */
+
+	/* SHOW PAGE */
+	.SeriesDetailsSeason-season-3XIYa, .SeriesDetailsSeason-collapseButtonContainer-3XxzX {
+    border: none !important;
+    background-color: rgba(0, 0, 0, .25) !important;
+	}
+	.SeriesDetailsSeason-actionButton-3BQuA  {
+    color: hsla(0,0%,100%,.7) !important;
+	}
+
+	.fa-search:hover {
+    color: #FFF !important;
+	}
+	.Icon-default-3C-KJ:hover {
+    color: #fff;
+	}
+	.MonitorToggleButton-toggleButton-3CcN9 {
+    color: #dadada;
+	}
+	.SeriesDetailsSeason-seasonNumber-FL7Dt {
+    color: #fff;
+	}
+	.Table-table-2C3O8 {
+    color: #fff;
+	}
+	.SeriesDetailsSeason-collapseButtonContainer-trs6s {
+	border: none !important;
+    background-color: rgba(0, 0, 0, .25) !important;
+	}
+	.Popover-title-326tA, .SeasonInfo-title-1tid_, .Popover-body-10Yh7 {
+		background-color: #1f1f1f !important;
+	}
+	.Tooltip-tooltipContainer-2693s {
+	color: #fff;
+	}
+
+
+	/* TOP MENU SERIES */
+	.PageToolbar-toolbar-1Lo1N {
+		background-color: rgba(0, 0, 0, .25);
+		color: hsla(0,0%,100%,.7);
+	}
+	/* POSTERS */
+	.SeriesIndexPoster-title-263Pq, .SeriesIndexPoster-nextAiring-1FZy6 {
+		background-color: rgba(0, 0, 0, .25);
+			color: #fff;
+	}
+	/* HOVEL LABELS */
+	.Label-default-2zdw6 {
+		border-color: #1b1b1b;
+		background-color: #1b1b1b;
+	}
+	/* SERIES TOP HEADER DROPDOWN */
+	.MenuItem-menuItem-zB-Up, .MenuContent-menuContent-3Zkj4 {
+    background-color: #191a1c;
+    color: #e1e2e3;
+	}
+	.MenuItem-menuItem-zB-Up:hover, .MenuItem-menuItem-zB-Up:focus {
+		background-color: hsla(0,0%,100%,.08) !important;
+		color: #fbfcfc;
+		text-decoration: none;
+	}
+	/* SERIES TOP HEADER HOVER */
+	.PageToolbarButton-toolbarButton-QiQEt:hover {
+    color: #FFF;
+	}
+	.MenuButton-menuButton-3nh0N:hover {
+    color: #FFF;
+	}
+	/* ALPHABET JUMP BAR */
+	.PageJumpBar-jumpBar-3owcF {
+    color: #FFF;
+	}
+	/* MINI RIGHT SCROLL BAR */
+	.OverlayScroller-thumb-1Lhfi {
     background-color: hsla(0,0%,100%,.08) !important;
 }
 
-/* Series X page */
-.SeriesDetailsSeason-season-1YnGm, .SeriesDetailsSeason-collapseButtonContainer-3XxzX {
-    border: none !important;
-    background-color: rgba(0, 0, 0, .25) !important;
-}
-.SeriesDetails-seriesNavigationButton-1lMzE {
-    margin-right: 8px !important;
-    color: hsla(0,0%,100%,.7) !important;
-}
-.SeriesDetails-seriesNavigationButton-1lMzE:hover {
-    color: #FFF !important;
-}
-.SeriesDetailsSeason-actionButton-3v1uD {
-    color: hsla(0,0%,100%,.7) !important;
-}
-.SeriesDetailsSeason-actionButton-3v1uD:hover {
-    color: #FFF !important;
-}
-.IconButton-button-20Niq:hover {
-    color: #fff !important;
-}
-.fa-search {
-    color: hsla(0,0%,100%,.7) !important;
-}
-.fa-search:hover {
-    color: #FFF !important;
-}
-/* Search page */
-.AddNewSeriesSearchResult-searchResult-30ozE {
-    background-color: rgba(0, 0, 0, .25) !important;
-}
-.AddNewSeriesSearchResult-searchResult-30ozE:hover {
-    background-color: hsla(0,0%,100%,.08) !important;
-}
-.AddNewSeries-searchIconContainer-3iiEV {
-    border: none !important;
-    background-color: rgba(0, 0, 0, .25) !important;
-}
-.SeriesSearchInput-containerOpen-3CRkE .SeriesSearchInput-seriesContainer-3lxJI {
-    border: none !important;
-    background-color: #12181d !important;
-}
+/* ADD NEW */
 
-.SeriesSearchInput-sectionTitle-3he-k {
-    color: #fff !important;
-}
-/* Import page page */
-.ImportSeriesSelectSeries-button-AkdHs {
+	/* SEARCH BAR */
+	.Input-input-2YWzR, .AddNewSeries-searchIconContainer-3QAm8, .AddNewSeries-clearLookupButton-1dKG7 {
+		border: none;
+		background-color: rgba(0, 0, 0, .25);
+		color: #FFF
+	}
+	.Input-input-2YWzR:focus {
+    outline: 0;
+    border-color: transparent;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 8px rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, .25);
+	}
+	.Button-default-2uiHU:hover {
+    border-color: transparent;
+    background-color: hsla(0,0%,100%,.3) !important;
+    color: #fff;
+	}
+	/* TEXT COLOR */
+	.PageContentBody-innerContentBody-tEszh {
+    color: #fff;
+	}
+	/* SEARCH RESULTS */
+	.AddNewSeriesSearchResult-searchResult-xR8dj {
+    background-color: rgba(0, 0, 0, .25) !important;
+	}
+	.AddNewSeriesSearchResult-searchResult-xR8dj:hover {
+    background-color: hsla(0,0%,100%,.08) !important;
+	}
+
+/* IMPORT */
+
+	.FieldSet-legend-3x6NF {
+    color: #FFF;
+	}
+	.TableRow-row-33xJE:hover {
+    background-color: hsla(0,0%,100%,.08);
+    color: #FFF;
+	}
+	.VirtualTableRow-row-2-JS9:hover {
+    background-color: hsla(0,0%,100%,.08);
+	}
+	.ImportSeriesSelectSeries-button-3CL3L {
     border: none !important;
     background-color: rgba(0, 0, 0, .25) !important;
-}
-.ImportSeriesSelectSeries-content-2AQQa, .ImportSeriesSelectSeries-searchIconContainer-WJlHu {
+	}
+	.ImportSeriesSelectSeries-content-3oSDj, .ImportSeriesSelectSeries-searchIconContainer-1wOES {
     border: none !important;
     background-color: #323232 !important;
-	color: white !important;
-}
-.ImportSeriesSearchResult-series-wStU8:hover {
-    background-color: hsla(0,0%,100%,.08) !important;
-}
-.ImportSeriesTitle-year-29XGK {
-	color: white !important;
-}
-/* Season pass page */
-.SeasonPassSeason-season-3Lc-4 {
-    border: none;
-    background-color: rgba(0, 0, 0, .25) !important;
-}
-.SeasonPassSeason-allEpisodes-vxHTz {
-    background-color: #5cb85c;
-}
-/* Calendar page */
-.CalendarEvent-seriesTitle-1JEPE {
-    color: #ffffff !important;
+    color: white !important;
+	}
 
-}
-.CalendarEvent-downloaded-1wXUG {
-    border-left-color: #5cb85c!important;
-}
-.CalendarEvent-event-27nY_ {
-    border-bottom: none !important;
-}
-.CalendarEvent-event-27nY_:hover {
-    background-color: hsla(0,0%,100%,.08) !important;
-	    border-bottom: none !important;
-}
-.AgendaEvent-event-1-I4T:hover {
-    background-color: hsla(0,0%,100%,.08) !important;
-}
-/* Activity page */
-.EpisodeTitleLink-link-1ZCTO:hover {
-    color: #f9be03 !important;
-}
-/* Settings page */
-.FormLabel-label-33NSU {
-    font-weight: normal !important;
-}
-.FormInputHelpText-helpText-1p8aX {
-    color: #ffffff !important;
-}
-/* Settings language modal */
-.LanguageProfileItem-languageProfileItem-1lE9m {
-    border: none !important;
-    background: #1e1e1e !important;
-}
-.OverlayScroller-thumb-1hKLj {
-    background-color: hsla(0,0%,100%,.08) !important;
-}
-.OverlayScroller-thumb-1hKLj:hover {
-    background-color: hsla(0,0%,100%,.08) !important;
-}
-/* Modal table options */
-.TableOptionsColumn-column-2z0me {
-    border: none;
-}
-/* File Name Tokens */
-.NamingOption-option-33lWx {
-    border: 0px;
-}
-.NamingOption-token-1veip {
-    background-color: #1f1f1f;
-}
-.NamingOption-example-2-1sK {
-    background-color: #333333;
-}
-.NamingOption-option-33lWx:hover .NamingOption-token-1veip {
-    background-color: #383838;
-}
-.NamingOption-option-33lWx:hover .NamingOption-example-2-1sK {
-    background-color: #4e4e4e;
-}
-/* Release Profiles */
-.ReleaseProfiles-center-2y1r9 {
+/* MASS EDITOR */
+	/* FOOTER */
+	.PageContentFooter-contentFooter-3ODMj {
     border: none;
     background-color: rgba(0, 0, 0, .25);
-}
-.KeyValueListInputItem-keyInput-13ATg, .KeyValueListInputItem-valueInput-2LjJ5 {
+    color: #FFF;
+	}
+
+/* SEASON PASS */
+
+	.SeasonPassSeason-season-2FWuT {
+		border: none;
+		background-color: rgba(0, 0, 0, .25) !important;
+	}
+	.SeasonPassSeason-allEpisodes-1zGja {
+		background-color: #5cb85c;
+	}
+
+/* CALENDAR */
+	.Button-default-2uiHU {
+		color: #FFF;
+		background-color: rgba(0, 0, 0, .25);
+		border-color: transparent;
+	}
+	.DayOfWeek-dayOfWeek-1iw4D {
+		background-color: hsla(0,0%,100%,.08);
+	}
+
+	.CalendarDay-day-2TMXA {
+		-webkit-box-flex: 1;
+		-webkit-flex: 1 0 14.28%;
+		flex: 1 0 14.28%;
+		overflow: hidden;
+		min-height: 70px;
+		border-bottom: 1px solid hsla(0,0%,100%,.08);
+		border-left: 1px solid hsla(0,0%,100%,.08);
+		border-right: 1px solid hsla(0,0%,100%,.08);
+	}
+	.CalendarEvent-seriesTitle-3sg1o {
+		color: #ffffff !important;
+	}
+	.CalendarEvent-event-3Uyb9 {
+		border-bottom: none !important;
+	}
+	.CalendarEvent-event-3Uyb9:hover {
+		background-color: hsla(0,0%,100%,.08) !important;
+		border-bottom: none !important;
+	}
+
+/* SETTINGS */
+
+	.Settings-summary-3KPAv {
+		color: #fff;
+	}
+
+	/* PROFILES */
+	.Card-card-1iGZk, .QualityProfiles-addQualityProfile-2U2Io {
+    background-color: rgba(0,0,0,.45);
+    box-shadow: 0 0 10px 1px #000000;
+    color: #fff;
+	}
+	.QualityProfiles-center-1iiKm, .LanguageProfiles-center-7EV_2, .ReleaseProfiles-center-114Qx {
+	background-color: rgba(0, 0, 0, .25);
     border: none;
-    color: white;
-    background: transparent;
+    color: #c2c6c8;
+	}
+
+	/* PROFILES */
+	.Indexers-center-11Csq {
+	background-color: rgba(0, 0, 0, .25);
+    border: none;
+    color: #c2c6c8;
+	}
+
+	/* DOWNLOAD CLIENTS */
+	.DownloadClients-center-FvACx {
+	background-color: rgba(0, 0, 0, .25);
+    border: none;
+    color: #c2c6c8;
+	}
+
+	/* CONNECTIONS */
+	.Notifications-center-8iwmy {
+	background-color: rgba(0, 0, 0, .25);
+    border: none;
+    color: #c2c6c8;
+	}
+
+	/* LOG */
+	.Alert-info-1J8mE {
+    border-color: transparent;
+    background-color: rgba(0, 0, 0, 0.25);
 }
+
 /* -------------------------LIDARR STUFF------------------------------*/
 
 .LoadingIndicator-ripple-1264V {
