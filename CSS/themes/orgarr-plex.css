@@ -25,7 +25,7 @@ body {
 /* VERSION */
 
 #footer-region::after {
-    content: "\A Orgarr V.1.1";
+    content: "\A Orgarr V.1.5";
     white-space: pre;
 }
 
