@@ -675,14 +675,13 @@ pre {
 
   /* OVERVIEW PAGE */
   .SeriesIndexOverview-container-4LMzH, .SeriesIndexOverview-container-4LMzH:hover {
-  background-color: transparent !important;
+    background-color: transparent !important;
   }
-  .SeriesIndexOverview-content-3GKJk:hover
-  {
-  background-color: hsla(0,0%,100%,.08) !important;
+  .SeriesIndexOverview-content-3GKJk:hover{
+    background-color: hsla(0,0%,100%,.08) !important;
   }
   .SeriesIndexOverview-container-4LMzH:hover .SeriesIndexOverview-content-3GKJk {
-  background-color: transparent;
+    background-color: transparent;
   }
   .SeriesIndexOverview-link-1i54B:hover {
   text-decoration: none;
@@ -722,9 +721,6 @@ pre {
 	.Tooltip-tooltipContainer-2693s {
 	color: #fff;
 	}
-  .SeriesIndexOverview-container-4LMzH:hover, .SeriesIndexOverview-content-3GKJk {
-      background-color: hsla(0,0%,100%,.08);
-  }
 
 	/* TOP MENU SERIES */
 	.PageToolbar-toolbar-1Lo1N {
