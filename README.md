@@ -112,8 +112,7 @@ Custom [Sonarr V2 and V3](https://github.com/Sonarr/Sonarr)/[Radarr](https://git
 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/orgarr/sonarrv3.png)
 
-
-## NOTE: Sonarr v3 and Lidarr have recently updated all their css selectors and I havent't had time to fix this yet, so the theme will be broken on those apps. 
+ 
 
 Thank you iFelix18 for doing all the hard work! :)
 
