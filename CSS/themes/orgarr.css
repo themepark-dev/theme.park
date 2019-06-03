@@ -528,7 +528,7 @@ pre {
     outline-style: none;
 }
 /* green button */
- .btn-success, {
+ .btn-success {
   color: #FFF;
   border-color: #FFF;
 }
@@ -1082,7 +1082,7 @@ text-decoration: none;
   .VirtualTableRow-row-2osBd:hover, .ArtistIndexHeader-sortName-3sIoX:hover, .ArtistIndexHeader-artistType-1bUEX:hover, .ArtistIndexHeader-trackCount-2fAYt:hover,
   .ArtistIndexHeader-qualityProfileId-33lgF:hover, .ArtistIndexHeader-languageProfileId-F8uCr:hover, .ArtistIndexHeader-metadataProfileId-258c_:hover,
   .ArtistIndexHeader-nextAlbum-2P-CJ:hover, .ArtistIndexHeader-lastAlbum-18Y9w:hover, .ArtistIndexHeader-added-z5UiU:hover, .ArtistIndexHeader-genres-3YVsn:hover, .ArtistIndexHeader-albumCount-1CnIC:hover,
-  .ArtistIndexHeader-trackProgress-5psBe:hover, .ArtistIndexHeader-latestAlbum-KzyAA:hover, .ArtistIndexHeader-actions-KjYeY:hover, {
+  .ArtistIndexHeader-trackProgress-5psBe:hover, .ArtistIndexHeader-latestAlbum-KzyAA:hover, .ArtistIndexHeader-actions-KjYeY:hover {
     background-color: rgba(0, 0, 0, .25);
     color: #FFF;
 }
@@ -1219,13 +1219,13 @@ text-decoration: none;
     background-color: #f05050;
 }
   /* EDIT QUALITY PROFILES */
-.QualityProfileItem-qualityProfileItem-2Xr42, .QualityProfileItemGroup-qualityProfileItemGroup-3SvgI {
+  .QualityProfileItem-qualityProfileItem-VFp-W, .QualityProfileItemGroup-qualityProfileItemGroup-2U1l5 {
     border: none;
-    background: #1e1e1e;
+    background-color: rgba(0, 0, 0, .25);
     color: #FFF;
 }
-.QualityProfileItemGroup-qualityProfileItemGroup-3SvgI.QualityProfileItemGroup-editGroups-19C_2 {
-    background: #323232;
+.QualityProfileItemGroup-qualityProfileItemGroup-2U1l5.QualityProfileItemGroup-editGroups-2KzDp {
+    background: rgba(0, 0, 0, 0.25);
 }
 
 /* -------------------------BAZARR------------------------------*/
