@@ -1200,11 +1200,16 @@ text-decoration: none;
 }
 
 /* ALBUM STUDIO */
-.AlbumStudioAlbum-season-24TO6, .AlbumStudioAlbum-tracks-2V7st {
+.AlbumStudioAlbum-album-mOsjl, .AlbumStudioAlbum-tracks-14O0r {
     border: none;
     background-color: rgba(0, 0, 0, 0.25);
     color: #fff;
-
+}
+.AlbumStudioAlbum-missingWanted-1jEbu {
+    background-color: #f05050;
+}
+.AlbumStudioAlbum-allTracks-1KGPc {
+    background-color: #0b8750;
 }
 
   /* CALENDAR */
