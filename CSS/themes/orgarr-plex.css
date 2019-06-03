@@ -983,7 +983,7 @@ pre {
     background-color: hsla(0,0%,100%,.3) !important;
     color: #fff;
 }
-.TagInput-input-2UK6_ {
+.TagInput-input-3E1DX {
     background-color: transparent;
     color: #FFF;
 }
@@ -1062,17 +1062,20 @@ pre {
     color: hsla(0,0%,100%,.7) !important;
 }
 /*ARTIST PAGE*/
-.ArtistIndexPoster-title-3bXfu {
+.ArtistIndexPoster-title-38afV {
     background-color: rgba(0, 0, 0, .25);
 }
-.ArtistDetailsSeason-albumType-23-Z4 {
+.ArtistDetailsSeason-albumType-3aBd- {
     border: none;
     background-color: rgba(0, 0, 0, .25);
+}
+.ArtistDetailsSeason-header-2GIDr {
+    color: #fff;
 }
 .ArtistDetailsSeason-albumCount-14dOS {
     color: #ffffff;
 }
-.ArtistDetailsSeason-collapseButtonContainer-3EuJ8 {
+.ArtistDetailsSeason-collapseButtonContainer-1c4Kb {
     border: none;
     background-color: rgba(0, 0, 0, .25);
 }
@@ -1096,7 +1099,19 @@ pre {
     background-color: rgba(0, 0, 0, .25);
     color: #fff;
 }
-
+/* OVERVIEW PAGE */
+.ArtistIndexOverview-container-29HZM, .ArtistIndexOverview-container-29HZM:hover {
+  background-color: transparent !important;
+}
+.ArtistIndexOverview-content-hiNUl:hover{
+  background-color: hsla(0,0%,100%,.08) !important;
+}
+.ArtistIndexOverview-container-29HZM:hover .ArtistIndexOverview-content-hiNUl {
+  background-color: transparent;
+}
+.ArtistIndexOverview-content-hiNUl:hover {
+text-decoration: none;
+}
 
   /* Table view*/
 .VirtualTableRow-row-2osBd:hover {
@@ -1221,7 +1236,7 @@ pre {
 }
 
 .QualityProfiles-addQualityProfile-2q4Re, .QualityProfiles-center-3qTb_, .LanguageProfiles-center-18sh2,
-.MetadataProfiles-center-3V4Ro, .Indexers-center-3HUez, .Restrictions-center-3cS8T, .DownloadClients-center-30cx9, .ImportLists-center-3IXCL, .Notifications-center-13jM2 {
+.MetadataProfiles-center-3V4Ro, .Indexers-center-3HUez, .Restrictions-center-3cS8T, .DownloadClients-center-30cx9, .ImportLists-center-17Qdu, .Notifications-center-13jM2 {
     background-color: rgba(0, 0, 0, .25);
     border: none;
     color: #c2c6c8;
