@@ -1083,12 +1083,14 @@ pre {
     color: #ffffff;
 }
     /*ARTIST ALBUM PAGE*/
-
-.AlbumDetailsMedium-medium-3pu-U {
+.AlbumDetailsMedium-mediumNumber-3ZUko {
+    color: #fff;
+}
+.AlbumDetailsMedium-medium-dqPTF {
     border: none;
     background-color: rgba(0, 0, 0, .25);
 }
-.AlbumDetailsMedium-collapseButtonContainer-2MSYO {
+.AlbumDetailsMedium-collapseButtonContainer-33Y3Z {
     border-top: none;
     background-color: rgba(0, 0, 0, .25);
 }
@@ -1141,7 +1143,7 @@ text-decoration: none;
     border-top: 1px solid #eee !important;
 }
 /* ADD NEW ARTIST */
-.AddNewArtist-searchIconContainer-3iE_u, .Input-input-dS7Oc, .AddNewArtist-clearLookupButton-2ym1-, .AddNewArtistSearchResult-searchResult-3_U8e,
+.AddNewArtist-searchIconContainer-7ygSM, .Input-input-dS7Oc, .AddNewArtist-clearLookupButton-2ym1-, .AddNewArtistSearchResult-searchResult-3_U8e,
 .ImportArtistSelectArtist-button-WUML4, .PageContentFooter-contentFooter-1t6xx {
     border: none;
     background-color: rgba(0, 0, 0, .25);
