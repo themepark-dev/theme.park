@@ -614,7 +614,10 @@ pre {
 	.TagInput-internalInput-Jbb1T {
 	background-color: transparent;
 	color: #fff;
-	}
+    }
+    .SelectInput-select-1qCdc {
+        background-color: #323232 !important;
+    }
 	.AutoSuggestInput-suggestionsList-_bVXO, .AutoSuggestInput-suggestionsContainerOpen-3TAB7, .AutoSuggestInput-suggestionsContainer-3MmlD {
 	background-color: #323232 !important;
 	color: white;
