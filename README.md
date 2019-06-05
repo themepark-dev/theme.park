@@ -12,7 +12,6 @@
     <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/plpp/plpp.png" alt="Screen Shot 4" width="49.15%" />
 </p>
 
-[![Feature Requests](http://feathub.com/gilbN/theme.park?format=svg)](http://feathub.com/gilbN/theme.park)
 ## Setup
 
 ### Subfilter
@@ -62,6 +61,9 @@ location / {
 }
 ```
 </details>
+
+## [Feature requests](http://feathub.com/gilbN/theme.park)
+[![Feature Requests](http://feathub.com/gilbN/theme.park?format=svg)](http://feathub.com/gilbN/theme.park)
 
 ***
 
