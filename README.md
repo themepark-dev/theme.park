@@ -62,6 +62,9 @@ location / {
 ```
 </details>
 
+## [Feature requests](http://feathub.com/gilbN/theme.park)
+[![Feature Requests](http://feathub.com/gilbN/theme.park?format=svg)](http://feathub.com/gilbN/theme.park)
+
 ***
 
 # PHP Library Presenter Dark/Plex Theme
