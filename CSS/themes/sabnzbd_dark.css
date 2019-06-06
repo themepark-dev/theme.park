@@ -116,7 +116,7 @@ table {
     background-color: #2d2c2c !important
 }
 table:hover {
-    background-color: #2d2c2c !important
+    background-color: #2d2c2c !important;
 	color: white !important;
 }
 .table-hover>tbody>tr:hover {
