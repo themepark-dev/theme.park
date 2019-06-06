@@ -165,7 +165,7 @@ Thank you [ydkmlt84](https://github.com/ydkmlt84) for making the job easier :)
 
 Custom CSS for [SABnzbd](https://github.com/sabnzbd/sabnzbd)
 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/sabnzbd/sabnzbd_dark.png)
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/sabnzbd/sabnzbd.png)
 
 #### Use the `sabnzbd_dark.css` for a dark theme that matches the Organizr dark theme.
 **Note: SABnzbd theme must be set to `Glitter`**
