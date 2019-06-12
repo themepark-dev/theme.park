@@ -261,15 +261,15 @@
       background: var(--modal-bg-color) !important;
       border-bottom: transparent;
   }
-  .iziToast.update-notify>.iziToast-body .iziToast-icon {
-      color: var(--link-color) !important;
-  }
-  .iziToast:after {
-      background: var(--modal-bg-color) !important;
-  }
-  .update-notify .iziToast-progressbar div {
-      background: var(--notification-box-line) !important;
-  }
+  .iziToast.update-notify>.iziToast-body .iziToast-icon, .iziToast.success-notify>.iziToast-body .iziToast-icon {
+    color: var(--link-color) !important;
+}
+.iziToast:after {
+    background: var(--modal-bg-color) !important;
+}
+.update-notify .iziToast-progressbar div, .success-notify {
+    background: var(--notification-box-line) !important;
+}
   .btn-link, a {
       color: var(--link-color);
       text-decoration: none;
