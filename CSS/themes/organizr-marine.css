@@ -256,7 +256,7 @@
       -webkit-box-shadow: none;
       box-shadow: none;
   }
-  .iziToast.update-notify.iziToast-layout2 {
+  .iziToast.update-notify.iziToast-layout2, .iziToast.success-notify.iziToast-layout2 {
       border: none;
       background: var(--modal-bg-color) !important;
       border-bottom: transparent;
