@@ -234,9 +234,9 @@
       text-transform: uppercase;
   }
    /* Homepage ombi - request triangle */
-  .inside-request-div{
-      background: var(--ombi-request-triangle) !important;
-  }
+   #homepage-items .bg-info, .badge .inside-request-div, .plyr input[type=radio]:checked+span {
+    background: #ffeb3b !important;
+}
   /* Homepage ombi - dropdown */
   #homepage-items .btn-group .btn {
       background: 0 0!important;
