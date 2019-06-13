@@ -104,7 +104,12 @@
   }
    .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover {
       background-color: rgba(0, 0, 0, 0.25);
-  }	
+  }
+  /* Settings - custom css */
+   .ace_gutter {
+    background: rgba(0,0,0,.3) !important;
+    color: #fff !important;
+}	
    /* Settings - image manager */
   .el-element-overlay .white-box {
       background: transparent !important;
