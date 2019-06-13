@@ -27,8 +27,8 @@
   .panel .panel-heading .panel-title {
       color: #ffffff;
   }
-  .text-info {
-      color: #ffffff;
+  .text-info, .text-dark {
+      color: #ffffff !important;
   }
   /* Header */
   .navbar-header {
