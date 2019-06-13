@@ -296,7 +296,10 @@
   .progress-bar-inverse, .progress {
       background: rgba(0, 0, 0, 0.25) !important;
   }
-  
+  /* Homepage health checks */
+    .bg-org-alt {
+    background: var(--custom-buttons-color) !important;
+    }
   /* loginpage sidemenu */
   .login-box {
       background: var(--main-bg-color);
