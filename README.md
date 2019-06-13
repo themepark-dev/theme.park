@@ -78,7 +78,7 @@ Custom [Organizr](https://github.com/causefx/Organizr/) themes.
     <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/organizr-themes/organizr-marine-theme2.png" alt="Screen Shot 2" width="49.15%" />
 </p>
 
-These theme are still a WIP so bugs may occur. Please make an issue if you find one. 
+These themes are still a WIP so bugs may occur. Please make an issue if you find one. 
 
 #### `organizr-hotline.css` is the red and blue colored theme.
 
