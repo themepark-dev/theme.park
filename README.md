@@ -68,6 +68,34 @@ location / {
 
 ***
 
+# Organizr Hotline and Marine theme
+
+Custom [Organizr](https://github.com/causefx/Organizr/) themes.
+<p align="center">
+    <br />
+    <br />
+    <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/organizr-themes/organizr-hotline-theme2.png" alt="Screen Shot 1" width="49.15%" />
+    <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/organizr-themes/organizr-marine-theme2.png" alt="Screen Shot 2" width="49.15%" />
+</p>
+
+These theme are still a WIP so bugs may occur. Please make an issue if you find one. 
+
+#### `organizr-hotline.css` is the red and blue colored theme.
+
+#### `organizr-marine.css` is the aqua marine colored theme.
+
+### Screenshots
+<details><summary>Expand</summary>
+<p>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/organizr-themes/organizr-hotline-theme.png"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/organizr-themes/organizr-hotline-theme-login.png"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/organizr-themes/organizr-marine-theme.png"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/organizr-themes/organizr-marine-theme-login.png"></img>
+</p>
+</details>
+
+***
+
 # PHP Library Presenter Dark/Plex Theme
 
 Custom [PLPP](https://github.com/Tensai75/plpp) CSS to match the [Organizr](https://github.com/causefx/Organizr) theme.
