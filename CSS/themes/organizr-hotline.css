@@ -66,8 +66,8 @@
       background: rgba(0, 0, 0, 0.15);
   }
   .content-wrap, .bg-org {
-      background: rgba(0, 0, 0, 0.15) !important;
-  }
+    background: var(--main-bg-color) !important;
+}
   .panel-blue .panel-heading, .panel-info .panel-heading {
       border-color: #ffffff;
       color: #fff;
@@ -76,6 +76,9 @@
   .panel {
       background: transparent;
   }
+  .panel-body {
+    background: rgba(0, 0, 0, 0.15);
+}
   .nav-tabs>li>a:hover {
       background: rgba(0, 0, 0, 0.15);
   }
