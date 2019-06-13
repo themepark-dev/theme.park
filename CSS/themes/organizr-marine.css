@@ -194,15 +194,11 @@
       background-color: rgba(255, 255, 255, 0.25) !important;
       }
    /* Homepage Now playing card */
-  .el-element-overlay .el-card-item .el-card-content {
-      background: rgba(0, 0, 0, 0.15) !important;
-      -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-  }
-  .el-element-overlay .el-card-item .el-overlay-1 {
-      -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-  }
+   .nowPlayingItem > .white-box > .el-card-item  {
+    background: rgba(0, 0, 0, 0.15) !important;
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+	}
   .label-info {
       background: var(--custom-buttons-color);
   }
