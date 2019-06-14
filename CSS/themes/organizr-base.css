@@ -1,0 +1,317 @@
+  body {
+      color: white;
+  }
+  .panel .panel-heading .panel-title {
+      color: #ffffff;
+  }
+  .text-info, .text-dark {
+      color: #ffffff !important;
+  }
+  @media (max-width: 480px)
+      login-sidebar {
+       margin-top: auto;
+       height: 100%;
+  }
+  /* Header */
+  .navbar-header {
+      background: var(--main-bg-color) !important;
+  }
+  .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+      background: transparent;
+  }
+  
+  /* Background */
+  #page-wrapper {
+  background: var(--main-bg-color) !important;
+  
+  }
+  /* Sidebar/settings */
+  #internal-Settings, .active-tab-Settings, .sidebar body[data-active-tab=""], .sidebar {
+      background: var(--main-bg-color) !important;
+  }
+  .sidebar, .sidebar {
+      background: transparent;
+      box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.6);
+  }
+   .sidebar-head {
+      background: transparent !important;
+   }
+  #side-menu li a {
+      color: #ffffff;
+  }
+  #side-menu li a:focus, #side-menu li a:hover {
+      color: #fff;
+      background: rgba(255,255,255,.08)!important;
+  }
+  /* Settings */
+  .bg-title {
+      background: rgba(0, 0, 0, 0.15);
+  }
+  .content-wrap, .bg-org {
+    background: var(--main-bg-color) !important;
+}
+  .panel-blue .panel-heading, .panel-info .panel-heading {
+      border-color: #ffffff;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.15);
+  }
+  .panel {
+      background: transparent;
+  }
+  .panel-body {
+    background: rgba(0, 0, 0, 0.15);
+}
+  .nav-tabs>li>a:hover {
+      background: rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Settings - menu tabs */
+  .sttabs nav {
+      background: rgba(0, 0, 0, 0.15);
+  }
+  .tabs-style-flip nav li.tab-current a::after {
+      background-color: rgba(0,0,0,.25) !important;
+      -webkit-transform: none !important;
+      transform: none !important;
+      border-radius: 0px !important;
+  }
+  .tabs-style-flip nav a::after {
+      background: rgba(0,0,0,.15)!important;
+      transition: none;
+      -webkit-transform: none;
+      transform: none;
+  }
+  .tabs-style-flip nav a:hover {
+      background: rgba(255,255,255,.05)!important;
+  }
+   .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover {
+      background-color: rgba(0, 0, 0, 0.25);
+  }
+    /* Settings - custom css */
+   .ace_gutter {
+    background: rgba(0,0,0,.3) !important;
+    color: #fff !important;
+  }		
+   /* Settings - image manager */
+  .el-element-overlay .white-box {
+      background: transparent !important;
+  }
+   /* Settings - news panel */
+  #organizrNewsPanel .panel-body {
+      background: rgba(0, 0, 0, 0.15);
+  }
+   /* Settings - tab editor panel */
+   .table-hover>tbody>tr:hover, .table-striped>tbody>tr:nth-of-type(odd), .table>tbody>tr.active>td, .table>tbody>tr.active>th, .table>tbody>tr>td.active, .table>tbody>tr>th.active, .table>tfoot>tr.active>td, .table>tfoot>tr.active>th, .table>tfoot>tr>td.active, .table>tfoot>tr>th.active, .table>thead>tr.active>td, .table>thead>tr.active>th, .table>thead>tr>td.active, .table>thead>tr>th.active {
+      background-color: rgba(0, 0, 0, 0.15)!important;
+  }
+   /* Settings - popup modal */
+  .white-popup .panel-heading, .white-popup>.col-md-6>.white-box:first-child {
+      background: var(--modal-bg-color)!important;
+      box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  }
+  .white-popup .panel-body, .white-popup>.col-md-6>.white-box:nth-child(2) {
+      background: var(--modal-bg-color) !important;
+      box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  }
+  .panel-blue a:hover, .panel-info a:hover {
+      color: #ffffff;
+  }
+  .customtab li.active a, .customtab li.active a:focus, .customtab li.active a:hover, .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+      background: rgba(0, 0, 0, 0.25);	
+  }
+  .white-popup-block {
+      background: var(--modal-bg-color)!important;
+  }
+  .nav-tabs>li>a {
+      color: #ffffff;
+  }
+   /* Settings - save button */
+  .btn-info, .btn-info.disabled {
+      background: rgba(0, 0, 0, 0.25);
+      border: none;
+  }
+  .btn-info.disabled.focus, .btn-info.disabled:focus, .btn-info.disabled:hover, .btn-info.focus, .btn-info:focus, .btn-info:hover {
+      background: rgba(0, 0, 0, 0.45);
+      border: none;
+  }
+  .btn-info.active, .btn-info:active, .open>.dropdown-toggle.btn-info, .btn-info:active:hover {
+      background-color: #1b1a1a;
+      border-color: #1b1a1a;
+  }
+   /* Settings - custom CSS */
+  .ace-idle-fingers {
+       background-color: rgba(0, 0, 0, 0.15) !important;
+       background: rgba(0, 0, 0, 0.15) !important;
+  }
+  .ace_gutter {
+      background: rgba(0,0,0,.3)!important;
+      color: #eee!important;
+  }
+   /* custom buttons */
+  .cbutton {
+      border: none;
+      background: var(--custom-buttons-color);
+  }
+  
+   /* Calendar */
+   .fc-day-header a, .fc-day-number, .fc-list-heading-main {
+      color: #FFF;
+      cursor: pointer!important;
+      transition: color .2s ease;
+  }
+  .fc-unthemed th, .fc-unthemed td, .fc-unthemed thead, .fc-unthemed tbody, .fc-unthemed .fc-divider, .fc-unthemed .fc-row, .fc-unthemed .fc-popover {
+      border-color: transparent;
+      background: rgba(0, 0, 0, 0.05);
+  }
+  .bg-theme, .fc-day-header, .table-striped>tbody>tr:nth-of-type(odd) {
+      background: rgba(0,0,0,.3) !important;
+  }
+  .bg-theme, .fc th.fc-sun, .fc th.fc-tue, .fc th.fc-thu, .fc th.fc-sat, .fc th.fc-mon, .fc th.fc-wed, .fc th.fc-fri, .fc-button {
+      background-color: rgba(0, 0, 0, 0.25) !important;
+  }
+  th.fc-day-header.fc-widget-header.fc-today {
+      background-color:rgba(255, 255, 255, 0.25) !important;
+      }
+  .fc-widget-content.fc-today {
+      background-color: rgba(255, 255, 255, 0.25) !important;
+      }
+   /* Homepage Now playing card */
+   .nowPlayingItem > .white-box > .el-card-item  {
+    background: rgba(0, 0, 0, 0.15) !important;
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+	}
+  .label-info {
+      background: var(--custom-buttons-color);
+  }
+  .white-box	{
+      background: var(--main-bg-color);
+  }
+   /* Homepage headers */
+  .panel-default .panel-heading, .fc-toolbar {
+          background: transparent !important;
+  }
+   /* Homepage buttons */
+  #homepage-items .btn-group .btn {
+      background: 0 0!important;
+      color: rgba(255,255,255,.7)!important;
+      padding: 6px 12px;
+      margin: 0 12.5px;
+      transition: color .2s ease;
+  }
+   /* Homepage calendar buttons */
+  .fc-next-button, .fc-prev-button {
+      background: 0 0!important;
+      color: rgba(255,255,255,.7)!important;
+      border: 0!important;
+  }
+  .btn-group.open .dropdown-toggle, .fc-state-default {
+      text-shadow: none;
+      box-shadow: none;
+  }
+  .fc-button:hover {
+      background: rgba(255,255,255,.08)!important;
+  }
+  .fc-button {
+      background: rgba(0, 0, 0, 0)!important;
+      color: #fff;
+      border-radius: 0!important;
+      border: 0!important;
+      text-transform: uppercase;
+  }
+   /* Homepage ombi - request triangle */
+   #homepage-items .bg-info, .badge .inside-request-div, .plyr input[type=radio]:checked+span {
+    background: #ffeb3b !important;
+}
+  /* Homepage ombi - dropdown */
+  #homepage-items .btn-group .btn {
+      background: 0 0!important;
+      color: rgba(255,255,255,.7)!important;
+      padding: 6px 12px;
+      margin: 0 12.5px;
+      transition: color .2s ease;
+  }
+  .btn-group.open, .dropdown-toggle, .fc-state-default {
+      text-shadow: none !important;
+      box-shadow: none !important;
+  }
+  .btn-info:active:focus, .btn-info:active:hover, .btn-info:focus {
+      border: none !important;
+  }
+  .btn.active, .btn:active {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+  }
+  .iziToast.update-notify.iziToast-layout2, .iziToast.success-notify.iziToast-layout2 {
+      border: none;
+      background: var(--modal-bg-color) !important;
+      border-bottom: transparent;
+  }
+  .iziToast.update-notify>.iziToast-body .iziToast-icon, .iziToast.success-notify>.iziToast-body .iziToast-icon {
+    color: var(--link-color) !important;
+}
+.iziToast:after {
+    background: var(--modal-bg-color) !important;
+}
+.update-notify .iziToast-progressbar div, .success-notify {
+    background: var(--notification-box-line) !important;
+}
+  .btn-link, a {
+      color: var(--link-color);
+      text-decoration: none;
+  }
+  /* Homepage cover - hover */
+  .hover-homepage-item:hover {
+      background: var(--hompage-item-hover);
+      opacity: 1;
+      transition: linear .2s;
+  }
+  /* Homepage streams- hover */
+  .el-card-avatar a {
+      color: rgba(255,255,255,.7)!important;
+      border: white;
+  }
+  .el-element-overlay .el-card-item .el-overlay-1 .el-info>li a:hover {
+      background: transparent;
+      color: white !important;
+      border: white !important; 
+  }
+  .progress-bar-info {
+      background: rgba(0, 0, 0, 0.25) !important;
+  }
+  .progress-bar-inverse, .progress {
+      background: rgba(0, 0, 0, 0.25) !important;
+  }
+    /* Homepage health checks */
+    .bg-org-alt {
+      background: var(--custom-buttons-color) !important;
+    }
+  /* loginpage sidemenu */
+  .login-box {
+    background: var(--main-bg-color);
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.login-box .panel-body {
+    background: var(--main-bg-color) !important;
+}
+.login-register {
+    background: var(--main-bg-color)!important;
+    height: 100%;
+    position: fixed;
+}
+.login-sidebar {
+    position: relative;
+    right: 0;
+    margin-top: 300px;
+    height: auto;
+}
+.bounceInDown, .flipInX, .flipInY, .hvr-wobble-bottom:hover, .revealIn, .rubberBand, .showSweetAlert[data-animation=pop], .slideIn, .slideInDown, .slideInRight, .tada {
+    -webkit-animation-name: none;
+    animation-name: none;
+}
+.loginLogo {
+    max-width: 100%;
+    max-height: 250px;
+    width: auto;
+}
