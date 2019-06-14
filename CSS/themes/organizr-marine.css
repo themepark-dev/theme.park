@@ -350,3 +350,12 @@
     max-height: 250px;
     width: auto;
 }
+  /* loginpage reset passwd */
+  .btn-primary, .btn-primary.disabled {
+    background: var(--modal-bg-color);
+    border: 1px solid transparent;
+}
+.btn-primary:hover {
+    background: rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(0, 0, 0, 0);
+}
