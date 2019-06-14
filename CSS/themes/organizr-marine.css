@@ -153,11 +153,9 @@
    /* Settings - popup modal */
   .white-popup .panel-heading, .white-popup>.col-md-6>.white-box:first-child {
       background: var(--modal-bg-color)!important;
-      box-shadow: 0 5px 15px rgba(0,0,0,.5);
   }
   .white-popup .panel-body, .white-popup>.col-md-6>.white-box:nth-child(2) {
       background: var(--modal-bg-color) !important;
-      box-shadow: 0 5px 15px rgba(0,0,0,.5);
   }
   .panel-blue a:hover, .panel-info a:hover {
       color: #ffffff;
