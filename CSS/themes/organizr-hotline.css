@@ -30,11 +30,12 @@
   .text-info, .text-dark {
       color: #ffffff !important;
   }
-  @media (max-width: 480px)
-      .login-sidebar {
+  @media (max-width: 480px) {
+      .login-box {
        margin-top: auto !important;
        height: 100% !important;
   }
+}
   /* Header */
   .navbar-header {
       background: var(--main-bg-color) !important;
