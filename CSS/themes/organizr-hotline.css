@@ -57,7 +57,7 @@
       box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.6);
   }
    .sidebar-head {
-      background: transparent !important;
+      background: var(--main-bg-color) !important;
    }
   #side-menu li a {
       color: #ffffff;
