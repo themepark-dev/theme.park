@@ -31,7 +31,7 @@
       color: #ffffff !important;
   }
   @media (max-width: 480px)
-      login-sidebar {
+      login-box {
        margin-top: auto !important;
        height: 100% !important;
   }
