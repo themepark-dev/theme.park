@@ -56,6 +56,10 @@
   #page-wrapper {
   background: var(--main-bg-color) !important;
   }
+  /* Update bar */
+  .progress-bar-primary {
+	background: var(--modal-bg-color);
+  }  
   /* Lockscreen */
   .lock-screen {
     background: var(--main-bg-color) !important;
