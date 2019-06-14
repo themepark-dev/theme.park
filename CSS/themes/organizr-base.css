@@ -9,8 +9,8 @@
   }
   @media (max-width: 480px)
       login-sidebar {
-       margin-top: auto;
-       height: 100%;
+       margin-top: auto !important;
+       height: 100% !important;
   }
   /* Header */
   .navbar-header {
