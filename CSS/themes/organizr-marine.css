@@ -352,6 +352,9 @@
 	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
+.login-register > .login-box > .white-box {
+    background: var(--main-bg-color) !important;
+}
 .login-box .panel-body {
     background: var(--main-bg-color) !important;
 }
