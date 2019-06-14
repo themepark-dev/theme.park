@@ -55,8 +55,22 @@
   /* Background */
   #page-wrapper {
   background: var(--main-bg-color) !important;
-  
   }
+  /* Lockscreen */
+  .lock-screen {
+    background: var(--main-bg-color) !important;
+  }
+  .form-material .form-control, .form-material .form-control:focus   {
+	background: #1f1f1f;
+    border-radius: 3px;
+	padding: inherit;
+  }
+  .lock-screen > .login-box {
+	width: 400px;
+    margin: 10% auto 0;
+	height: initial;
+    position: initial;
+  }  
   /* Sidebar/settings */
   #internal-Settings, .active-tab-Settings, .sidebar body[data-active-tab=""], .sidebar {
       background: var(--main-bg-color) !important;
