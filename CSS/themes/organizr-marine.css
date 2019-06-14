@@ -30,7 +30,7 @@
   .panel .panel-heading .panel-title {
       color: #ffffff;
   }
-  .drop-title, .tabs-style-flip nav a, .text-info, .text-dark .bg-title .breadcrumb a, .daterangepicker .input-mini, .dd-handle, .dd3-content, .dropify-wrapper, .form-control, .panel-default .panel-heading, .panel-white .panel-heading, .select2-container .select2-choice, .steamline .sl-right div>a, .white-box .box-title, a.list-group-item, button.list-group-item, h1, h2, h3, h4, h5, h6, .panel-default .panel-body, .panel-white .panel-body {
+  .text-dark, .drop-title, .tabs-style-flip nav a, .text-info, .text-dark .bg-title .breadcrumb a, .daterangepicker .input-mini, .dd-handle, .dd3-content, .dropify-wrapper, .form-control, .panel-default .panel-heading, .panel-white .panel-heading, .select2-container .select2-choice, .steamline .sl-right div>a, .white-box .box-title, a.list-group-item, button.list-group-item, h1, h2, h3, h4, h5, h6, .panel-default .panel-body, .panel-white .panel-body {
     color: #ffffff !important;
   }
   @media (max-width: 480px) {
