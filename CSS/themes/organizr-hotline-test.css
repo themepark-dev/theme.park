@@ -21,4 +21,4 @@
     --hompage-item-hover: radial-gradient(ellipse at center, rgba(0, 150, 136, 0.33) 0%, #b53f3f73 100%) center center/cover no-repeat fixed; 
     --notification-box-line: #F44336;  
   }
-  @import https://gilbn.github.io/theme.park/CSS/themes/organizr-base.css;
+  @import url("https://gilbn.github.io/theme.park/CSS/themes/organizr-base.css");
