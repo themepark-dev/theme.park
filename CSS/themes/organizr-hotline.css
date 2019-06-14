@@ -21,6 +21,9 @@
     --hompage-item-hover: radial-gradient(ellipse at center, rgba(0, 150, 136, 0.33) 0%, #b53f3f73 100%) center center/cover no-repeat fixed; 
     --notification-box-line: #F44336;  
   }
+  html {
+    background: var(--main-bg-color);
+}
   body {
       color: white;
   }
@@ -43,7 +46,12 @@
   .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
       background: transparent;
   }
-  
+  .dropdown-menu {
+    background: var(--modal-bg-color);
+  }
+  .chat-list .odd .chat-text {
+    background: var(--custom-buttons-color);
+  }
   /* Background */
   #page-wrapper {
   background: var(--main-bg-color) !important;
@@ -199,12 +207,15 @@
   .fc-widget-content.fc-today {
       background-color: rgba(255, 255, 255, 0.25) !important;
       }
+   .fc-popover {
+        background: var(--modal-bg-color);
+   }      
    /* Homepage Now playing card */
    .nowPlayingItem > .white-box > .el-card-item  {
     background: rgba(0, 0, 0, 0.15) !important;
 	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-	}
+  }
   .label-info {
       background: var(--custom-buttons-color);
   }
