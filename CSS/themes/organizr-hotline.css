@@ -127,9 +127,6 @@
     display: block;
     background: var(--main-bg-color);
 }
-.fade {
-    background: var(--main-bg-color);
-}
 /* iframe sandbox */
 .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
     color: #ffffff;
