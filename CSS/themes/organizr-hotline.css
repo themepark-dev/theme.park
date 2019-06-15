@@ -133,6 +133,15 @@
 .fade {
     background: var(--main-bg-color);
 }
+/* iframe sandbox */
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    color: #ffffff;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #00000094;
+    border: 1px solid #00000000;
+    color: #ffffff;
+}
   /* error page */
 .error-box {
 	top: 10%;
