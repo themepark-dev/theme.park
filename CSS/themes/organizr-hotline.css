@@ -280,8 +280,8 @@
       text-transform: uppercase;
   }
    /* Homepage ombi - request triangle */
-   #homepage-items .bg-info, .badge .inside-request-div, .plyr input[type=radio]:checked+span {
-    background: #ffeb3b !important;
+   .inside-request-div {
+    background-color: var(--link-color) !important;
 }
   /* Homepage ombi - dropdown */
   #homepage-items .btn-group .btn {
