@@ -280,7 +280,7 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
       border-color: transparent;
       background: rgba(0, 0, 0, 0.05);
   }
-  .bg-theme, .fc-day-header, .table-striped>tbody>tr:nth-of-type(odd) {
+  .bg-theme, .fc-day-header {
       background: rgba(0,0,0,.3) !important;
   }
   .bg-theme, .fc th.fc-sun, .fc th.fc-tue, .fc th.fc-thu, .fc th.fc-sat, .fc th.fc-mon, .fc th.fc-wed, .fc th.fc-fri, .fc-button {
