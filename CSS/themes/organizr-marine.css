@@ -103,6 +103,9 @@
   .content-wrap {
     background: var(--main-bg-color) !important;
   }
+  .panel-wrapper > .bg-org .tab-content {
+    background-color: transparent !important;
+  }
   .panel-blue .panel-heading, .panel-info .panel-heading {
     border-color: #ffffff;
     color: #fff;
