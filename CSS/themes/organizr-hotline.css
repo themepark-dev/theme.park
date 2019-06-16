@@ -284,7 +284,7 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
    /* custom buttons */
   .cbutton {
       border: none;
-      background: var(--custom-buttons-color);
+      background-color: rgba(255, 255, 255, 0.2) !important;
   }
   
    /* Calendar */
@@ -422,7 +422,7 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
   }
   /* Homepage health checks */
     .bg-org-alt {
-    background: var(--custom-buttons-color) !important;
+    background: var(--modal-bg-color) !important;
     }
   /* loginpage sidemenu */
   @media (max-width: 480px) {
