@@ -216,6 +216,9 @@
   .modal-content, .modal-header, .modal-footer, .modal-body {
     background: var(--main-bg-color)!important;
   }
+  .close:focus, .close:hover {
+    color: #fff;
+  }
    /* Settings - save button */
   .btn-info, .btn-info.disabled {
       background: rgba(0, 0, 0, 0.25);
