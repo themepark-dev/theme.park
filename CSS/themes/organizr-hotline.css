@@ -16,7 +16,6 @@
     --main-bg-color: radial-gradient(ellipse at center, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
     --modal-bg-color: radial-gradient(ellipse at top, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed; 
     --link-color: #FFEB3B; 
-    --ombi-request-triangle: radial-gradient(ellipse at top, #FFEB3B 0%, #FF9800 100%) center center/cover no-repeat fixed;
     --custom-buttons-color: radial-gradient(ellipse at center, #F44336 0%, #3F51B5 100%) center center/cover no-repeat fixed;
     --hompage-item-hover: radial-gradient(ellipse at center, rgba(0, 150, 136, 0.33) 0%, #b53f3f73 100%) center center/cover no-repeat fixed; 
     --notification-box-line: #F44336;  
@@ -218,6 +217,9 @@
   }
   .close:focus, .close:hover {
     color: #fff;
+  }
+  .has-success .control-label {
+    color: var(--link-color);
   } 
    /* Settings - save button */
   .btn-info, .btn-info.disabled {
