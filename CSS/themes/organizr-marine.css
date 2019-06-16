@@ -249,9 +249,10 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
     margin: 0!important;
     transition: none;
 }
-.dataTables_wrapper .dataTables_paginate .paginate_button:hover, .nav-tabs li a:focus, .nav-tabs li a:hover {
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover, .nav-tabs li a:hover {
     background: rgba(255,255,255,.08)!important;
     color: #eee!important;
+    border-radius: 20px;
 }  
    /* Settings - custom CSS */
   .ace-idle-fingers {
