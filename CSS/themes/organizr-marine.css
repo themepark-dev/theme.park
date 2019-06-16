@@ -426,7 +426,7 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
     }
   /* loginpage sidemenu */
   @media (max-width: 480px) {
-    login-box {
+    .login-box {
      margin-top: auto !important;
      height: 100% !important;
      width: 100% !important;
