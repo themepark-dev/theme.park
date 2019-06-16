@@ -127,7 +127,7 @@
     background: var(--main-bg-color);
   }
 /* Settings - tables */
-  .table {
+ .panel .table {
    background: var(--main-bg-color) !important;
   }
 /* iframe sandbox */
