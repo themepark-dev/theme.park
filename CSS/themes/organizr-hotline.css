@@ -147,26 +147,33 @@
 }
   /* Settings - menu tabs */
   .sttabs nav {
-      background: rgba(0, 0, 0, 0.15);
-  }
-  .tabs-style-flip nav li.tab-current a::after {
-      background-color: rgba(0,0,0,.25) !important;
-      -webkit-transform: none !important;
-      transform: none !important;
-      border-radius: 0px !important;
-  }
-  .tabs-style-flip nav a::after {
-      background: rgba(0,0,0,.15)!important;
-      transition: none;
-      -webkit-transform: none;
-      transform: none;
-  }
-  .tabs-style-flip nav a:hover {
-      background: rgba(255,255,255,.05)!important;
-  }
-   .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover {
-      background-color: rgba(0, 0, 0, 0.25);
-  }
+    background: rgba(0, 0, 0, 0.15);
+}
+.tabs-style-flip nav li.tab-current a::after {
+  background-color: rgba(0,0,0,.25) !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+  border-radius: 0px !important;
+}
+.tabs-style-flip nav a::after {
+  background: rgba(0,0,0,.15)!important;
+  transition: none;
+  -webkit-transform: none;
+  transform: none;
+}
+.tabs-style-flip nav a:hover {
+  background: rgba(255,255,255,.05)!important;  
+} 
+ .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover {
+  background-color: none !important;
+} 
+.tabs-style-flip nav li.tab-current a:hover {
+  color: #ffffff;
+  background: rgba(0,0,0,0)!important;  
+} 
+.tabs-style-flip nav li.tab-current a {
+  color: var(--link-color) !important;
+}
   /* Settings - custom css */
    .ace_gutter {
     background: rgba(0,0,0,.3) !important;
@@ -252,8 +259,11 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
 .dataTables_wrapper .dataTables_paginate .paginate_button:hover, .nav-tabs li a:hover {
     background: rgba(255,255,255,.08)!important;
     color: #eee!important;
-    border-radius: 20px;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover {
+    background: rgba(0, 0, 0, 0.25) !important;	
 }  
+
    /* Settings - custom CSS */
   .ace-idle-fingers {
        background-color: rgba(0, 0, 0, 0.15) !important;
