@@ -78,9 +78,7 @@ Custom [Organizr](https://github.com/causefx/Organizr/) themes.
 
 These themes are still a WIP so bugs may occur. Please make an issue if you find one. 
 
-#### `organizr-hotline.css` is the red and blue colored theme.
-
-#### `organizr-marine.css` is the aqua marine colored theme.
+#### Installation: Themes can be found in the "Theme Marketplace" in Organizr.
 
 ### Screenshots
 <details><summary>Expand</summary>
