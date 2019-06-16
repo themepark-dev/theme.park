@@ -454,7 +454,7 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
     margin-top: 300px;
     height: auto;
 }
-.bounceInDown, .flipInX, .flipInY, .hvr-wobble-bottom:hover, .revealIn, .rubberBand, .showSweetAlert[data-animation=pop], .slideIn, .slideInDown, .slideInRight, .tada {
+.slideInRight {
     -webkit-animation-name: none;
     animation-name: none;
 }
