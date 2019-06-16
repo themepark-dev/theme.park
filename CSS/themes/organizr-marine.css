@@ -213,6 +213,9 @@
   .nav-tabs>li>a {
       color: #ffffff;
   }
+  .modal-content, .modal-header, .modal-footer, .modal-body {
+    background: var(--main-bg-color)!important;
+  }
    /* Settings - save button */
   .btn-info, .btn-info.disabled {
       background: rgba(0, 0, 0, 0.25);
