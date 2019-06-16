@@ -285,7 +285,7 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
       cursor: pointer!important;
       transition: color .2s ease;
   }
-  .fc-unthemed th, .fc-unthemed td, .fc-unthemed thead, .fc-unthemed tbody, .fc-unthemed .fc-divider, .fc-unthemed .fc-row, .fc-unthemed .fc-popover {
+  .fc-unthemed th, .fc-unthemed td, .fc-unthemed thead, .fc-unthemed .fc-divider, .fc-unthemed .fc-row, .fc-unthemed .fc-popover {
       border-color: transparent;
       background: rgba(0, 0, 0, 0.05);
   }
