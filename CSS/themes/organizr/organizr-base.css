@@ -73,6 +73,18 @@ html {
       color: #fff;
       background: rgba(255,255,255,.08)!important;
   }
+  /*input form control dropdown*/
+.form-control, select {
+    background: rgba(0,0,0,.25);
+    color: #fff;
+    border: 1px transparent;
+  }
+  .form-control:focus, select:focus {
+      color: #fff !important;
+      background: #1f1f1f;
+      border: 1px transparent;
+      transition: all 0ms linear 0s;
+  } 
   /* Settings */
   .bg-title {
       background: rgba(0, 0, 0, 0.15);
@@ -172,6 +184,7 @@ html {
    .table-hover>tbody>tr:hover, .table-striped>tbody>tr:nth-of-type(odd), .table>tbody>tr.active>td, .table>tbody>tr.active>th, .table>tbody>tr>td.active, .table>tbody>tr>th.active, .table>tfoot>tr.active>td, .table>tfoot>tr.active>th, .table>tfoot>tr>td.active, .table>tfoot>tr>th.active, .table>thead>tr.active>td, .table>thead>tr.active>th, .table>thead>tr>td.active, .table>thead>tr>th.active {
       background-color: rgba(0, 0, 0, 0.15)!important;
   }
+
   .table-hover>tbody>tr:hover {
     background: rgba(0,0,0,.15)!important;
   }  
