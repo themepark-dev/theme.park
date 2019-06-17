@@ -92,7 +92,7 @@ html {
     background: transparent;
   }
   .panel-body {
-    background: rgba(0, 0, 0, 0.15);
+    background: transparent !important;
   }
   .nav-tabs>li>a:hover {
     background: rgba(0, 0, 0, 0.15);
