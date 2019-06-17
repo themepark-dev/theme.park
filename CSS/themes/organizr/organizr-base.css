@@ -21,7 +21,7 @@ html {
     background: var(--modal-bg-color);
   }
   .chat-list .odd .chat-text {
-    background: var(--custom-buttons-color);
+    background: rgba(255, 255, 255, 0.15);
   }
   /* Background */
   #page-wrapper {
