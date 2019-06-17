@@ -138,7 +138,15 @@ html {
 #internal-Settings, #preloader, .active-tab-Settings, .error-page {
     background: var(--main-bg-color);
 }
-  /* Settings - menu tabs */
+/*Speed test footer and circles*/
+.white-popup .panel-footer {
+    background: var(--main-bg-color);
+    border-top: 1px solid #fff;
+}
+.css-bar-lg:after {
+    background: #1f1f1f !important;
+}
+/* Settings - menu tabs */
   .sttabs nav {
     background: rgba(0, 0, 0, 0);
 }
@@ -184,7 +192,6 @@ html {
    .table-hover>tbody>tr:hover, .table-striped>tbody>tr:nth-of-type(odd), .table>tbody>tr.active>td, .table>tbody>tr.active>th, .table>tbody>tr>td.active, .table>tbody>tr>th.active, .table>tfoot>tr.active>td, .table>tfoot>tr.active>th, .table>tfoot>tr>td.active, .table>tfoot>tr>th.active, .table>thead>tr.active>td, .table>thead>tr.active>th, .table>thead>tr>td.active, .table>thead>tr>th.active {
       background-color: rgba(0, 0, 0, 0.15)!important;
   }
-
   .table-hover>tbody>tr:hover {
     background: rgba(0,0,0,.15)!important;
   }  
