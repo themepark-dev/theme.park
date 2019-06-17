@@ -122,6 +122,10 @@ html {
 	top: 10%;
     background: var(--main-bg-color);
 }
+/*error page background */
+#internal-Settings, #preloader, .active-tab-Settings, .error-page {
+    background: var(--main-bg-color);
+}
   /* Settings - menu tabs */
   .sttabs nav {
     background: rgba(0, 0, 0, 0);
