@@ -317,6 +317,63 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
   .fc-popover {
         background: var(--modal-bg-color);
     }   
+/*TV Missing icon and status*/
+#calendar .fa.fa-tv.text-danger,
+#calendar .fc-time.tv.text-danger {
+    color: var(--calendar-tv-missing);
+}
+/*TV Available icon and status*/
+#calendar .fa.fa-tv.text-success,
+#calendar .fc-time.tv.text-success {
+    color: var(--calendar-tv-available);
+}
+/*TV Unreleased icon and status*/
+#calendar .fa.fa-tv.text-info,
+#calendar .fc-time.tv.text-info {
+    color: var(--calendar-tv-unreleased);
+}
+/*TV Premier icon and status*/
+#calendar .fa.fa-tv.text-primary,
+#calendar .fc-time.tv.text-primary,
+#calendar .fa.fa-tv.text-purple,
+#calendar .fc-time.tv.text-purple {
+    color: var(--calendar-tv-premier);
+}
+
+/*Movie Missing icon and status*/
+#calendar .fa.fa-film.text-danger:before {
+    color: var(--calendar-movie-missing);
+}
+#calendar .fa.fa-film.text-danger:after {
+    content:" Missing";
+    font-family: Rubik,sans-serif;
+    font-weight: 500;
+    color: var(--calendar-movie-missing);
+}
+
+/*Movie Available icon and status*/
+#calendar .fa.fa-film.text-success:before {
+    color: var(--calendar-movie-available);
+}
+#calendar .fa.fa-film.text-success:after {
+    content:" Available";
+    font-family: Rubik,sans-serif;
+    font-weight: 500;
+    color: var(--calendar-movie-available);
+}
+
+/*Movie Unreleased icon and status*/
+#calendar .fa.fa-film.text-info:before {
+    color: var(--calendar-movie-unreleased);
+}
+#calendar .fa.fa-film.text-info:after {
+    content:" Unreleased";
+    font-family: Rubik,sans-serif;
+    font-weight: 500;
+    color: var(--calendar-movie-unreleased);
+}
+
+
    /* Homepage Now playing card */
    .nowPlayingItem > .white-box > .el-card-item  {
     background: rgba(0, 0, 0, 0.15) !important;
