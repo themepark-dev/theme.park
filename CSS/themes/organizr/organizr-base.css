@@ -451,7 +451,6 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
     border: 0;
     margin-top: -60%;
     transform: translateY(-10%);
-	width: auto;
 	}
 	@media (max-width: 480px) {
 		.loginLogo {
