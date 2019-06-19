@@ -7,7 +7,7 @@ html {
   .panel .panel-heading .panel-title {
       color: #ffffff;
   }
-  .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper, .dataTables_info, .text-dark, .drop-title, .tabs-style-flip nav a, .text-info, .text-dark .bg-title .breadcrumb a, .daterangepicker .input-mini, .dd-handle, .dd3-content, .dropify-wrapper, .form-control, .panel-default .panel-heading, .panel-white .panel-heading, .select2-container .select2-choice, .steamline .sl-right div>a, .white-box .box-title, a.list-group-item, button.list-group-item, h1, h2, h3, h4, h5, h6, .panel-default .panel-body, .panel-white .panel-body {
+  .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper, .dataTables_info, .text-dark, .drop-title, .tabs-style-flip nav a, .text-dark .bg-title .breadcrumb a, .daterangepicker .input-mini, .dd-handle, .dd3-content, .dropify-wrapper, .form-control, .panel-default .panel-heading, .panel-white .panel-heading, .select2-container .select2-choice, .steamline .sl-right div>a, .white-box .box-title, a.list-group-item, button.list-group-item, h1, h2, h3, h4, h5, h6, .panel-default .panel-body, .panel-white .panel-body {
     color: #ffffff !important;
   }
   /* Header */
@@ -322,7 +322,10 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
     background: rgba(0, 0, 0, 0.15) !important;
 	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-	}
+    }
+    .icon-control-play, .icon-screen-desktop {
+        color: white !important;
+    }
   .label-info {
       background: var(--custom-buttons-color);
   }
