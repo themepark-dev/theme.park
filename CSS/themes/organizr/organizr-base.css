@@ -426,48 +426,95 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
     .bg-org-alt {
       background: var(--modal-bg-color) !important;
     }
-  /* loginpage sidemenu */
-  @media (max-width: 480px) {
-    .login-box {
+    
+/* loginpage sidemenu */ 
+@media (max-width: 480px) {
+    .login-register > .login-box > .white-box {
      margin-top: auto !important;
-     height: 100% !important;
      width: 100% !important;
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0) !important; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0) !important;   
    }
-   }  
-  .login-box {
-    background: var(--main-bg-color);
+   }
+   
+/* logo */ 
+	.white-box .visible-xs {
+		display: block!important;
+	}
+	.loginLogo {
+    border: 0;
+    margin-top: -60%;
+    transform: translateY(-10%);
+	width: auto;
+	}
+	@media (max-width: 480px) {
+		.loginLogo {
+		margin-top: -10% !important;  
+		}
+	}	
+	.blockUI {
+		opacity: 1 !important;
+		background-color: transparent !important;
+	}
+	.blockMsg {
+		background: rgba(0, 0, 0, 0.9) !important;
+		border: none !important;
+	}
+	
+    .login-register > .login-box > .white-box {
+    background: transparent !important;
 	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     }
-    .login-register > .login-box > .white-box {
-        background: var(--main-bg-color) !important;
-    }
-    .login-box .panel-body {
-        background: var(--main-bg-color) !important;
-    }
+   
     .login-register {
         background: var(--main-bg-color)!important;
         height: 100%;
         position: fixed;
     }
-    .login-sidebar {
-        position: relative;
-        right: 0;
-        margin-top: 300px;
-        height: auto;
+
+	.slideInRight {
+		-webkit-animation-name: none;
+		animation-name: none;
+	}
+
+	.login-register  .login-box  .white-box  .bg-org {
+		background-color: transparent !important;
+	}
+
+	/*Login sidebar*//*Login sidebar*//*Login sidebar*/
+	.login-box.login-sidebar,
+	#login-panels .panel-body,
+	#login-panels .panel {
+		background: transparent !important;
+	}
+
+	/*Center login Box*/
+	.login-sidebar {
+		position: relative;
+		right: initial;
+	}
+
+	#lockScreen .white-box {
+		width: 400px;
+		height: 345px;
+	}
+	.login-sidebar .white-box {
+		width: 100%;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	#lockScreen .white-box {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		background: transparent;
+		-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     }
-.slideInRight {
-    -webkit-animation-name: none;
-    animation-name: none;
-}
-.loginLogo {
-    max-width: 100%;
-    max-height: 250px;
-    width: auto;
-}
-.login-register  .login-box  .white-box  .bg-org {
-    background-color: transparent !important;
-}
+    
   /* Splash screen */
   .p-20 {
     padding: 0px!important;
