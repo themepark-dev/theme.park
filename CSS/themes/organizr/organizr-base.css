@@ -73,6 +73,9 @@ html {
       color: #fff;
       background: rgba(255,255,255,.08)!important;
   }
+  #side-menu li a.active {
+    box-shadow: inset 4px 0 0 0 var(--link-color);
+}
   /*input form control dropdown*/
 .form-control, select {
     background: rgba(0,0,0,.25);
@@ -426,7 +429,7 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
     .bg-org-alt {
       background: var(--modal-bg-color) !important;
     }
-    
+
 /* loginpage sidemenu */ 
 @media (max-width: 480px) {
     .login-register > .login-box > .white-box {
