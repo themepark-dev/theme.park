@@ -14,7 +14,7 @@
 /* FILEBROWSER DARK THEME */
 /* Based on https://github.com/Archmonger/Blackberry-Themes/blob/master/Themes/Blackberry-Flat/bbf_filebrowser.css */
 
-/* scroller */
+/* scroller  */
 ::-webkit-scrollbar-corner {
     background-color:  hsla(0,0%,100%,.08);
 }
