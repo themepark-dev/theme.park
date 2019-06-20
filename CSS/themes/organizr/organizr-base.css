@@ -542,8 +542,32 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
 
 	.login-register  .login-box  .white-box  .bg-org {
 		background-color: transparent !important;
-	}
-
+    }
+    
+	/*2FA login button*/
+	.panel-wrapper .panel-body > .btn-warning, .btn-warning.disabled {
+        background: hsla(0, 0%, 0%, 0.25) !important;
+        border: 1px solid #ffc36d00 !important;
+        }
+        
+        /*2FA animation header*/
+        .panel-warning .panel-heading, .panel-yellow .panel-heading {
+        color: #fff;
+        border-radius: 3px;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-color: #00000000;
+        }
+        
+        /*oAuth Successful*/
+        .panel-green .panel-heading, .panel-success .panel-heading {
+        color: #53e69d;
+        text-align: center;
+        text-transform: uppercase;
+        border-radius: 3px;
+        background-color: transparent;
+        border-color: transparent;
+        }
+        
 	/*Login sidebar*//*Login sidebar*//*Login sidebar*/
 	.login-box.login-sidebar,
 	#login-panels .panel-body,
