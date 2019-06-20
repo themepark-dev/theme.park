@@ -380,7 +380,7 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
 	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     }
-    .icon-control-play, .icon-screen-desktop {
+    .icon-control-play, .icon-screen-desktop, .icon-control-pause {
         color: white !important;
     }
   .label-info {
