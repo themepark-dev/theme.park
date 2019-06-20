@@ -255,7 +255,7 @@ div.form-group > label {
 }
 .calendar .primary {
     border-color: rgba(0, 0, 0, .25);
-    background-color: rgba(0, 0, 0, .10);
+    background-color: #d58512;
 }
 .calendar .danger {
     border-color: rgba(171, 0, 0, .50);
