@@ -1123,15 +1123,22 @@ text-decoration: none;
     background-color: rgb(30, 30, 30);
 }
     /* IMPORT ARTIST */
-.ImportArtistSelectArtist-content-15Mcv {
+.ImportArtistSelectArtist-content-qicZY {
     background-color: #1e1e1e;
     color: #FFF;
+    border: 1px solid #00000000;
 }
-.ImportArtistSelectArtist-searchIconContainer-27n_z {
-    background-color: #656565;
+.ImportArtistSelectArtist-button-1zPPw {
+    border: 1px solid #00000000;
+    background-color: #1f1f1f;
+}
+.ImportArtistSelectArtist-searchIconContainer-3YJva {
+    background-color: rgba(0, 0, 0, .25);
     border-color: transparent;
 }
-
+.ImportArtistSearchResult-artist-11vxQ:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
 .Button-default-1X0nf {
     color: #FFF;
     background-color: rgba(0, 0, 0, .25);
