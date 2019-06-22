@@ -392,7 +392,7 @@ And add this in custom HTML in Organizr:
 
 Custom [Logarr](https://github.com/Monitorr/logarr/tree/alpha) CSS for consisten UI in [Organizr](https://github.com/causefx/Organizr).
 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots//logarr-plex.png)
+![](https://raw.githubusercontent.com/goldenpipes/theme.park/master/Screenshots/logarr-plex.png)
 
 Can be installed via subfilter, or by over writing the default 'logarr.css' in your logarr/css folder.
 
