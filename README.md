@@ -418,6 +418,18 @@ And add this in custom HTML in Organizr:
 
 ***
 
+# Logarr (alpha only) (WIP)
+
+Custom [Logarr](https://github.com/Monitorr/logarr/tree/alpha) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr).
+
+![](https://raw.githubusercontent.com/goldenpipes/theme.park/master/Screenshots/logarr-plex.png)
+
+Install via subfilter, logarr custom css, or by over writing the default 'logarr.css' in your `webserver/logarr/css` directory.
+
+#### the css is named `logarr-plex.css`
+
+***
+
 # Filebrowser - Dark Theme
 
 Custom [Filebrowser](https://github.com/filebrowser/filebrowser) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr).
