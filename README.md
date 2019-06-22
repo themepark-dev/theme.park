@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src="https://i.imgur.com/nXhejME.png">
+    <img src="https://i.imgur.com/q9kUcF0.png">
 </h1>
 <p align="center">
   A collection of themes/skins for use in conjunction with <a href="https://github.com/causefx/Organizr/" target="_blank">Organizr</a>
