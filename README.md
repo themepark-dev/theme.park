@@ -2,7 +2,7 @@
     <img src="https://i.imgur.com/OkX6Zup.png">
 </h1>
 <p align="center">
-  A collection of themes/skins for use in conjunction with <a href="https://github.com/causefx/Organizr/" target="_blank">Organizr</a>
+  A collection of themes/skins for use in conjunction with <a href="https://github.com/causefx/Organizr/" target="_blank">Organizr</a> or standalone.
 <p align="center">
 <a href="https://www.buymeacoffee.com/oY5Nk8GHK" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" >   </a><a href="https://discord.gg/HM5uUKU" rel="noopener"><img class="alignnone" title="theme.park!" src="https://img.shields.io/discord/591352397830553601.svg?style=for-the-badge&logo=discord" alt="" height="37" /></a>	
     <br />
