@@ -923,6 +923,7 @@ input[type=search]::-webkit-search-cancel-button {
     font-size: 2em;
     font-weight: 300;
     text-shadow: 0 0 10px #FF0104;
+    height: 67px;
     width: auto;
     width: -webkit-fill-available;
     width: -moz-available;
