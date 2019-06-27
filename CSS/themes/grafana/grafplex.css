@@ -1,0 +1,338 @@
+
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+
+/*		   		        Made by @gilbN					 */
+/*			      https://github.com/gilbN/theme.park			 */
+
+/* GRAFANA BLUR THEME */
+body {
+	color:#FFFFFF !important;
+	background-color: #333333 !important;
+}
+.theme-dark, .theme-light, .preloader {
+	background-image: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"),
+	url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-light.png") !important;
+	background-repeat: repeat, no-repeat!important;
+	background-attachment: fixed, fixed!important;
+	background-position: center center, center center!important;
+	background-size: auto, cover!important;
+	-webkit-background-size: auto, cover!important;
+	-moz-background-size: auto, cover!important;
+	-o-background-size: auto, cover!important;
+}
+.page-header-canvas {
+    background: rgba(0, 0, 0, 0.25) !important;
+    box-shadow: none !important;
+    border-bottom: none !important;
+}
+.main-view {
+    background: linear-gradient(180deg,#ffffff00 10px,#ffffff00 100px) !important;
+}
+
+/* login page */
+.login {
+background-image: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"),
+url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-light.png") !important;
+background-repeat: repeat, no-repeat!important;
+background-attachment: fixed, fixed!important;
+background-position: center center, center center!important;
+background-size: auto, cover!important;
+-webkit-background-size: auto, cover!important;
+-moz-background-size: auto, cover!important;
+-o-background-size: auto, cover!important;
+background-color: rgba(0,0,0,.0) !important;
+color:#FFFFFF !important;
+}
+.login-branding {
+    border-right: none !important;
+}
+/* Configuration menu */
+.card-item {
+    background: rgba(0, 0, 0, .25) !important;
+}
+.card-item:hover {
+    background: hsla(0,0%,100%,.08) !important;
+}
+.card-item-sub-name, .card-item-type {
+    color: #FFF !important;
+}
+.gf-form--has-input-icon .gf-form-input-icon {
+    color: #fff !important;
+}
+.gf-tabs-link.active, .gf-tabs-link.active:focus, .gf-tabs-link.active:hover {
+    background: rgba(0, 0, 0, 0.25) !important;
+}
+.filter-table tbody tr:nth-child(odd) {
+    background: hsla(0,0%,100%,.08) !important;
+}
+.cta-form {
+    background-color: rgba(0, 0, 0, 0.25) !important;
+}
+.empty-list-cta {
+    background-color: rgba(0, 0, 0, .25) !important;
+}
+
+/* sidemenu */
+.sidemenu-open, .sidemenu {
+    background: rgba(0, 0, 0, .25) !important;
+}
+.sidemenu__logo:hover {
+    background: rgba(0, 0, 0, .25) !important;
+}
+.sidemenu-item.active, .sidemenu-item:hover {
+    background-color: rgba(0, 0, 0, .25) !important;
+}
+
+/* Dashboard dropdown menu */
+.search-dropdown__col_1 {
+    background: transparent !important;
+}
+.search-container {
+    left: 0px !important;
+}
+.navbar-page-btn {
+    color: #FFFFFF !important;
+}
+
+/* Dashboard row  */
+.dashboard-row--collapsed {
+    background: rgba(0, 0, 0, 0.25);
+}
+
+/* Panel fullscreen navbar */
+.panel-in-fullscreen .navbar {
+    background: linear-gradient(90deg,rgba(0, 0, 0, .15),rgba(0, 0, 0, 0.25)) !important;
+}
+
+/* Dashboard search menu */
+.search-field-wrapper>input {
+	height: 55px !important;
+}
+
+/* Dashboard settings menu */
+.dashboard-settings__aside {
+    background: rgba(0, 0, 0, .25) !important;
+}
+.dashboard-page--settings-open .navbar {
+    background: linear-gradient(90deg,rgba(0, 0, 0, .15),rgba(0, 0, 0, 0.25)) !important;
+}
+.navbar-button--primary {
+    border-color: #ffffff00 !important;
+}
+.dashboard-settings__aside-header {
+    color: #ffffff !important;
+}
+.dashboard-settings__nav-item {
+    color: #ffffff !important;
+}
+.bootstrap-tagsinput {
+    background-color: #09090b !important;
+}
+.gf-form-select-wrapper .gf-form-input {
+    background-color: #00000000 !important;
+}
+.gf-form-select-wrapper {
+    background-color: hsla(0,0%,100%,.08) !important;
+}
+
+/* Variable label color */
+.template-variable {
+    color: #f79520 !important;
+}
+
+/* Variable label box */
+.gf-form-label {
+    background-color: rgba(0, 0, 0, 0.25) !important;
+	border: none !important;
+}
+.gf-form-input:focus {
+    color: #FFF !important;
+    background-color: #262626 !important;
+    border: none !important;
+		box-shadow: none !important;
+}
+.variable-option.highlighted, .variable-option:hover {
+    background-color: hsla(0,0%,100%,.1) !important;
+}
+
+/* Variable dashboard dropdown */
+.variable-value-link {
+    padding: 7.4px 10px !important;
+    background-color: rgba(0, 0, 0, 0.25) !important;
+    border: none !important;
+    color: #FFFFFF !important;
+}
+
+/* Variable input box */
+.gf-form-input {
+	color: #FFFFFF !important;
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    border: 0px solid #262628 !important;
+
+}
+
+/* NAVBAR BUTTONS */
+.navbar-button {
+    color: #FFF !important;
+    background-color: rgba(0, 0, 0, 0.25) !important;
+    background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)) !important;
+    border: none !important;
+}
+
+/* Custom Range Refreshing every X Dropdown */
+.gf-timepicker-absolute-section select {
+    background-color: #393a3b !important;
+}
+
+/* PANEL BACKGROUND COLOR*/
+.panel-container {
+    background-color: rgba(0, 0, 0, .25);
+    border: transparent;
+}
+.panel-container.panel-transparent {
+	background-color: transparent;
+	border: transparent;
+}
+.panel-header:hover {
+    background-color: rgba(0, 0, 0, 0.25) !important;
+}
+/* ////PANEL BACKGROUND COLOR//// */
+
+.graph-legend-table .graph-legend-series:nth-child(odd) {
+    background: transparent !important;
+}
+
+/* Panel text color*/
+div.flot-text {
+    color: #FFF !important;
+}
+
+/* panel loading circle*/
+.panel-loading {
+    color: #FFF !important;
+}
+
+/* panel resize arrow */
+.theme-dark .react-grid-item>.react-resizable-handle:after {
+    border-right: 2px solid #fff !important;
+    border-bottom: 2px solid #fff !important;
+}
+
+/* table panel background color */
+.table-panel-container {
+    background-color: rgba(0, 0, 0, .25) !important;
+}
+/* table panel border size */
+.table-panel-table td {
+    padding: .45em 0 .45em 1.1em;
+    border-bottom: 1px solid #171819;
+    border-right: 1px solid #171819;
+}
+/* Edit panel tabs  */
+.tabbed-view-header {
+    box-shadow: none;
+    background: rgba(0, 0, 0, 0.25);
+    border-bottom: none;
+}
+.tabbed-view-panel-title {
+    padding-left: 10px;
+}
+/* panel query settings  */
+.panel-editor__right, .toolbar {
+    background: rgba(0, 0, 0, 0.25);
+}
+.query-editor-row__header {
+    background: rgba(0, 0, 0, 0.25);
+}
+.query-editor-row__body {
+    background: rgba(0, 0, 0, 0.15);
+}
+.panel-options-group {
+    background: rgba(0, 0, 0, 0.15);
+}
+.gf-form-input {
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+.gf-form-switch {
+    background: rgba(0, 0, 0, 0.25);
+    border: transparent;
+}
+.viz-picker__item {
+    background: rgba(0, 0, 0, 0.25);
+    border: transparent;
+}
+.viz-picker__item--current {
+    box-shadow: 0 0 6px #eb7b18!important;
+    border: 1px solid #eb7b18!important;
+    background: rgba(0, 0, 0, 0.4)!important;
+}
+.viz-picker__item:hover {
+    box-shadow: 0 0 6px #eb7b18!important;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid #eb7b18!important;
+}
+.panel-options-group__header {
+    background: rgba(0, 0, 0, 0.25);
+}
+.custom-scrollbars .thumb-vertical {
+    background-color: rgba(0, 0, 0, 0.15);
+    background-image: none;
+}
+.toolbar__main {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.15);
+    border: transparent;
+}
+
+/* worldmap zoom buttons and leaflet  */
+.leaflet-bar a, .leaflet-bar a:hover {
+    background-color: #1f1f1f !important;
+    border-bottom: 1px solid #1f1f1f !important;
+    color: white !important;
+}
+.leaflet-bar a:hover {
+    background-color: #1b1b1b !important;
+}
+.leaflet-control-attribution {
+    display: none;
+}
+/* buttons  */
+.btn-inverse {
+border-color: #b56d16 !important;
+    color: #fff !important;
+    background-color: #cc7b19 !important;
+    -webkit-transition: background-color .1s !important;
+    transition: background-color .1s !important;
+	}
+	.btn-inverse.active, .btn-inverse.disabled, .btn-inverse:active, .btn-inverse:focus, .btn-inverse:hover, .btn-inverse[disabled] {
+		color: #fff;
+    background-color: #e59029 !important;
+}
+.btn-outline-disabled {
+    color: #fff;
+}
+/* New Dashboard */
+.add-panel__item {
+    background: linear-gradient(135deg,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.25));
+    box-shadow: -1px -1px 0 0 hsla(0,0%,100%,.1), 1px 1px 0 0 rgba(0, 0, 0, 0);
+}
+.add-panel__item.active, .add-panel__item:hover {
+    background: linear-gradient(135deg,rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25));
+}
+.add-panel__header {
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: none;
+    border-bottom: 0px;
+}
+/* Explore */
+.query-transaction {
+    color: #fff;
+}
