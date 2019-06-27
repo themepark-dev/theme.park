@@ -9,24 +9,21 @@
 /*                                                  dP					 */
 
 /*		   		        Made by @gilbN					 */
-/*			      https://github.com/gilbN/theme.park			 */
+/* 			      https://github.com/gilbN/theme.park			 */
 
-/* SONARR DARK THEME */
-@import url(https://gilbn.github.io/theme.park/CSS/themes/sonarr/sonarr-base.css);
+/* RADARR PLEX THEME */
+@import url(https://gilbn.github.io/theme.park/CSS/themes/radarr/radarr-base.css);
 :root {
-    --main-bg-color: #1f1f1f;
+    --main-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-light2.png");
+
     --modal-bg-color: radial-gradient(ellipse at top, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed; 
     --link-color: #FFEB3B; 
     --custom-buttons-color: radial-gradient(ellipse at center, #F44336 0%, #3F51B5 100%) center center/cover no-repeat fixed;
     --hompage-item-hover: radial-gradient(ellipse at center, rgba(0, 150, 136, 0.33) 0%, #b53f3f73 100%) center center/cover no-repeat fixed; 
     --notification-box-line: #F44336;
 
-
-    --calendar-tv-Unaired-Premiere: #FFEB3B;
-    --calendar-tv-Downloaded: #eeeeee; 
-    --calendar-tv-Unmonitored: #eeeeee;
-    --calendar-tv-Unaired: #eeeeee;  
+    --calendar-tv-premier: #FFEB3B;
     --calendar-tv-missing: #ff7676;
-    --calendar-tv-On-Air: #eeeeee; 
     --calendar-tv-available: #53e69d;
+    --calendar-tv-unreleased: #eeeeee;
   }
