@@ -711,7 +711,7 @@ pre {
 
 	@media only screen and (max-width: 768px) {
 	.PageSidebar-sidebarContainer-3Hxpq {
-		background-color: rgba(15, 15, 15, .95) !important;
+		background: var(--main-bg-color) !important;
 	}
 	}
 
