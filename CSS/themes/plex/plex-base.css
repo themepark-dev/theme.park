@@ -13,7 +13,7 @@
 
 /* PLEX ORGANIZR THEME */
   body {
-    background-color: var(--main-bg-color);
+    background: var(--main-bg-color);
   }
 
 .background,.background-container {
