@@ -10,10 +10,10 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
-/* PLEX HOTLINE THEME */
+/* PLEX DARK THEME */
 @import url(https://gilbn.github.io/theme.park/CSS/themes/plex/plex-base.css);
 :root {
-    --main-bg-color: radial-gradient(ellipse at center, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
+    --main-bg-color: #1f1f1f;
     --modal-bg-color: radial-gradient(ellipse at top, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed; 
     --link-color: #FFEB3B; 
     --custom-buttons-color: radial-gradient(ellipse at center, #F44336 0%, #3F51B5 100%) center center/cover no-repeat fixed;
