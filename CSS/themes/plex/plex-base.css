@@ -74,7 +74,7 @@ a {
   background-color: var(--link-color-hover);
 }
 .NavBarActivityButton-isHighlighted-27qlko:hover .NavBarActivityButton-label-2ZN0gQ {
-  background-color: var(--link-color-hover);
+  color: var(--link-color-hover);
 }
 
 /* This was a tough one :D */
