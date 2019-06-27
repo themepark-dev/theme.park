@@ -15,7 +15,6 @@
 @import url(https://gilbn.github.io/theme.park/CSS/themes/sonarr/sonarr-base.css);
 :root {
     --main-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-light2.png");
-
     --modal-bg-color: radial-gradient(ellipse at top, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed; 
     --link-color: #FFEB3B; 
     --custom-buttons-color: radial-gradient(ellipse at center, #F44336 0%, #3F51B5 100%) center center/cover no-repeat fixed;
