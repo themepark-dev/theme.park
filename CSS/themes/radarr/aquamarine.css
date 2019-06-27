@@ -11,21 +11,21 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
-/* SONARR HOTLINE THEME */
-@import url(https://gilbn.github.io/theme.park/CSS/themes/sonarr/sonarr-base.css);
+/* RADARR AQUAMARINE THEME */
+@import url(https://gilbn.github.io/theme.park/CSS/themes/radar/radarr-base.css);
 :root {
-  --main-bg-color: radial-gradient(ellipse at center, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
-  --modal-bg-color: radial-gradient(ellipse at top, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed; 
-  --link-color: #FFEB3B; 
-  --custom-buttons-color: radial-gradient(ellipse at center, #F44336 0%, #3F51B5 100%) center center/cover no-repeat fixed;
+  --main-bg-color: radial-gradient(ellipse at center, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
+  --modal-bg-color: radial-gradient(ellipse at top, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
+  --link-color: #FFEB3B;
+  --custom-buttons-color: radial-gradient(ellipse at center, #3F51B5 0%, #009688 100%) center center/cover no-repeat fixed;
   --hompage-item-hover: radial-gradient(ellipse at center, rgba(0, 150, 136, 0.33) 0%, #b53f3f73 100%) center center/cover no-repeat fixed; 
-  --notification-box-line: #F44336;
+  --notification-box-line: #009688;
 
-  --calendar-tv-Unaired-Premiere: #FFEB3B;
-  --calendar-tv-Downloaded: #eeeeee; 
-  --calendar-tv-Unmonitored: #eeeeee;
-  --calendar-tv-Unaired: #eeeeee;  
-  --calendar-tv-missing: #ff7676;
-  --calendar-tv-On-Air: #eeeeee; 
-  --calendar-tv-available: #53e69d;
+  --calendar-Unaired-Premiere: #FFEB3B;
+  --calendar-Downloading: #ff7676;
+  --calendar-Unmonitored: #53e69d;
+  --calendar-Unaired: #eeeeee;
+  --calendar-Missing: #eeeeee;
+  --calendar-On-Air: #eeeeee;
+  --calendar-Downloaded: #eeeeee;
 }
