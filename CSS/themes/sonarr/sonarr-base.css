@@ -147,6 +147,9 @@ body {
     color: #ffffff;
 }
 
+.FormInputHelpText-helpText-3_AVV {
+    color: #ffffff;
+}
 /* /Movies/Series/Season page */
 .started #page {
     background-color: rgba(0, 0, 0, .25);
@@ -636,16 +639,16 @@ pre {
 
 /* MODAL */
 .ModalHeader-modalHeader-gpcvG {
-    background-color: #323232;
-    color: #FFF;
+    background: var(--main-bg-color);
+    color: #fff;
 }
 .ModalContent-modalContent--txrl {
-    background-color: #282828;
-    color: #999;
+    background: var(--main-bg-color);
+    color: #fff;
 }
 .ModalFooter-modalFooter-1N5Ku {
-    background-color: #323232;
-    color: #FFF;
+    background: var(--main-bg-color);
+    color: #fff;
 }
 
 /* INPUT */
