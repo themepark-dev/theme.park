@@ -12,7 +12,7 @@
 /* 			      https://github.com/gilbN/theme.park			 */
 
 /* LIDARR PLEX THEME */
-@import url(https://gilbn.github.io/theme.park/CSS/themes/sonarr/sonarr-base.css);
+@import url(https://gilbn.github.io/theme.park/CSS/themes/lidarr/lidarr-base.css);
 :root {
   --main-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-light2.png");
   --modal-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-light2.png") center center/cover no-repeat fixed; 

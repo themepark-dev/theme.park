@@ -12,7 +12,7 @@
 /*			      https://github.com/gilbN/theme.park			 */
 
 /* LIDARR DARK THEME */
-@import url(https://gilbn.github.io/theme.park/CSS/themes/sonarr/sonarr-base.css);
+@import url(https://gilbn.github.io/theme.park/CSS/themes/lidarr/lidarr-base.css);
 :root {
   --main-bg-color: #1f1f1f;
   --modal-bg-color: radial-gradient(ellipse at top, #1f1f1f 0%, #1f1f1f 100%) center center/cover no-repeat fixed; 
