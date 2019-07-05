@@ -267,6 +267,25 @@ body {
           background-color: hsla(0,0%,100%,.08) !important;
           border-bottom: none !important;
       }
+        /* CALENDAR COLORS */
+      .CalendarEvent-downloading-1kwSO {
+        border-left-color: var(--calendar-Downloading);
+      }
+      .CalendarEvent-downloaded-2vSrJ {
+        border-left-color: var(--calendar-Downloaded);
+      }
+      .CalendarEvent-unreleased-mSAoI {
+        border-left-color: var(--calendar-Unreleased);
+      }
+      .CalendarEvent-partial-2_4q1 {
+        border-left-color: var(--calendar-Partial);
+      }
+      .CalendarEvent-unmonitored-Zvc-m {
+        border-left-color: var(--calendar-Unmonitored);
+      }
+      .CalendarEvent-missing-1y6vZ {
+        border-left-color: var(--calendar-Missing);
+      }
   
   /* SETTINGS */
   

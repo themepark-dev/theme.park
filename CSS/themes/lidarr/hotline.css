@@ -21,11 +21,10 @@
   --hompage-item-hover: radial-gradient(ellipse at center, rgba(0, 150, 136, 0.33) 0%, #b53f3f73 100%) center center/cover no-repeat fixed; 
   --notification-box-line: #F44336;
 
-  --calendar-tv-Unaired-Premiere: #FFEB3B;
-  --calendar-tv-Downloaded: #eeeeee; 
-  --calendar-tv-Unmonitored: #eeeeee;
-  --calendar-tv-Unaired: #eeeeee;  
-  --calendar-tv-missing: #ff7676;
-  --calendar-tv-On-Air: #eeeeee; 
-  --calendar-tv-available: #53e69d;
+  --calendar-Downloading: #7a43b6;
+  --calendar-Downloaded: #27c24c; 
+  --calendar-Unreleased: #06f;
+  --calendar-Partial: orange;  
+  --calendar-Unmonitored: #adadad;
+  --calendar-Missing: #f05050; 
 }
