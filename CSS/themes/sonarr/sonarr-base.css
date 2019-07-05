@@ -798,7 +798,7 @@ pre {
 	}
 	/* SERIES TOP HEADER DROPDOWN */
 	.MenuItem-menuItem-zB-Up, .MenuContent-menuContent-3Zkj4 {
-    background-color: #191a1c;
+    background-color: var(--modal-bg-color);
     color: #e1e2e3;
 	}
 	.MenuItem-menuItem-zB-Up:hover, .MenuItem-menuItem-zB-Up:focus {
