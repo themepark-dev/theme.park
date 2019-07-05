@@ -675,7 +675,7 @@ pre {
 	}
 
 	/* SEARCH DROPDOWN HEADER */
-	.SeriesSearchInput-containerOpen-3F8xe, .SeriesSearchInput-seriesContainer-2yDTR {
+	.SeriesSearchInput-seriesContainer-2yDTR {
 		border: none !important;
         background: var(--modal-bg-color);
         color: #fff !important;
