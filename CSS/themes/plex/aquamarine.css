@@ -16,8 +16,5 @@
     --main-bg-color: radial-gradient(ellipse at center, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
     --modal-bg-color: radial-gradient(ellipse at top, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
     --link-color: #FFEB3B;
-    --link-color-hover: rgba(255, 235, 61, 0.7); 
-    --custom-buttons-color: radial-gradient(ellipse at center, #3F51B5 0%, #009688 100%) center center/cover no-repeat fixed;
-    --hompage-item-hover: radial-gradient(ellipse at center, rgba(0, 150, 136, 0.33) 0%, #b53f3f73 100%) center center/cover no-repeat fixed; 
-    --notification-box-line: #009688;
+    --link-color-hover: rgba(255, 235, 61, 0.7);
   }
