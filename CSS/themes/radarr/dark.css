@@ -15,7 +15,7 @@
 @import url(https://gilbn.github.io/theme.park/CSS/themes/radarr/radarr-base.css);
 :root {
   --main-bg-color: #1f1f1f;
-  --modal-bg-color: radial-gradient(ellipse at top, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
+  --modal-bg-color: radial-gradient(ellipse at top, #1f1f1f 0%, #1f1f1f 100%) center center/cover no-repeat fixed;
 
   --calendar-Unaired-Premiere: #FFEB3B;
   --calendar-Downloading: #ff7676;
