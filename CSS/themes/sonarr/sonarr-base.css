@@ -679,6 +679,7 @@ pre {
 		border: none !important;
         background: var(--modal-bg-color);
         color: #fff !important;
+        box-shadow: 0 0 10px 1px #000000 !important;
 	}
 	.SeriesSearchInput-highlighted-15xAK {
 		background-color: hsla(0,0%,100%,.08);
