@@ -676,9 +676,9 @@ pre {
 
 	/* SEARCH DROPDOWN HEADER */
 	.SeriesSearchInput-containerOpen-3F8xe, .SeriesSearchInput-seriesContainer-2yDTR {
-		border: none;
+		border: none !important;
         background: var(--modal-bg-color);
-        color: #fff;
+        color: #fff !important;
 	}
 	.SeriesSearchInput-highlighted-15xAK {
 		background-color: hsla(0,0%,100%,.08);
