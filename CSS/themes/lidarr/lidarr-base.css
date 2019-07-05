@@ -671,6 +671,10 @@ body {
       box-shadow: 0 0 10px 1px #000000;
       color: #fff;
   }
+  .LanguageProfileItem-languageProfileItem-18XGg {
+    border: none;
+    background: rgba(0, 0, 0, 0.25);
+}
   
   .QualityProfiles-addQualityProfile-2q4Re, .QualityProfiles-center-3qTb_, .LanguageProfiles-center-18sh2,
   .MetadataProfiles-center-dOatB, .Indexers-center-3HUez, .Restrictions-center-3cS8T, .DownloadClients-center-30cx9, .ImportLists-center-17Qdu, .Notifications-center-13jM2 {
