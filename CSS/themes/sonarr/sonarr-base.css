@@ -676,15 +676,19 @@ pre {
 
 	/* SEARCH DROPDOWN HEADER */
 	.SeriesSearchInput-containerOpen-3F8xe, .SeriesSearchInput-seriesContainer-2yDTR {
-		border: 1px solid #000000 !important;
-		background-color: #1f1f1f !important;
+		border: none;
+        background: var(--modal-bg-color);
+        color: #fff;
 	}
 	.SeriesSearchInput-highlighted-15xAK {
 		background-color: hsla(0,0%,100%,.08);
 	}
 	.PageHeader-donate-ZT-3N {
     color: #c4273c !important;
-	}
+    }
+    .SeriesSearchInput-seriesContainer-2yDTR::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 255, 255, 0.25);
+    }
 
 /* SIDE MENU */
 	.PageSidebar-sidebar-2UXc0 {
