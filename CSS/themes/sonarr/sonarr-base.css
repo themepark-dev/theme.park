@@ -771,7 +771,12 @@ pre {
 	.Tooltip-tooltipContainer-2693s {
 	color: #fff;
 	}
-
+  /* Table options*/
+  .TableOptionsColumn-column-2H7ic {
+    background: rgba(0, 0, 0, .25);
+    color: #FFF;
+	border: none;
+    }
 
 	/* TOP MENU SERIES */
 	.PageToolbar-toolbar-1Lo1N {
