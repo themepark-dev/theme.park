@@ -964,3 +964,6 @@ table.dataTable thead th, table.dataTable thead td {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+[data-tooltip]:not([data-position]):before {
+  background: #1b1c1d;
+}
