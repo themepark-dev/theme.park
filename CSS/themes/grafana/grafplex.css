@@ -306,7 +306,7 @@ div.flot-text {
 }
 /* buttons  */
 .btn-inverse {
-border-color: #b56d16 !important;
+    border-color: #b56d16 !important;
     color: #fff !important;
     background-color: #cc7b19 !important;
     -webkit-transition: background-color .1s !important;

@@ -15,7 +15,7 @@
 @import url(https://gilbn.github.io/theme.park/CSS/themes/lidarr/lidarr-base.css);
 :root {
   --main-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-light2.png") center center/cover no-repeat fixed;
-  --modal-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-light2.png") center center/cover no-repeat fixed;
+  --modal-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-dark2.png") center center/cover no-repeat fixed;
 
   --calendar-Downloading: #7a43b6;
   --calendar-Downloaded: #27c24c; 
