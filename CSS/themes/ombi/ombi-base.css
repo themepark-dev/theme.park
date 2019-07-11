@@ -18,7 +18,7 @@ body {
     background-color: rgba(0, 0, 0, 0.25);
     color: #fff;
 }
-.navbar-default .navbar-nav>.open>a {
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
     background-color: rgba(0, 0, 0, 0.25);
 }
 .navbar-default .navbar-toggle:hover {
@@ -125,6 +125,7 @@ hr {
 }
 .nav>li>a:focus, .nav>li>a:hover {
     background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 3px;
 }
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
     background-color: rgba(0, 0, 0, 0.25);
