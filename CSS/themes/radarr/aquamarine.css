@@ -17,11 +17,10 @@
   --main-bg-color: radial-gradient(ellipse at center, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
   --modal-bg-color: radial-gradient(ellipse at top, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
 
-  --calendar-Unaired-Premiere: #FFEB3B;
-  --calendar-Downloading: #ff7676;
-  --calendar-Unmonitored: #53e69d;
-  --calendar-Unaired: #eeeeee;
-  --calendar-Missing: #eeeeee;
-  --calendar-On-Air: #eeeeee;
-  --calendar-Downloaded: #eeeeee;
+  --calendar-in-cinemas: #35c5f4;
+  --calendar-missing: #d9534f;
+  --calendar-announced: #337ab7;
+  --calendar-downloaded: #5cb85c;
+  --calendar-downloading: #7932ea;
+  --calendar-unmonitored: grey;
 }

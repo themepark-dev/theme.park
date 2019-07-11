@@ -283,28 +283,42 @@ div.form-group > label {
 }
 
 /* Calendar page */
+    /* In Cinemas */
+    .calendar .premiere {
+        border-color: var(--calendar-in-cinemas);
+        background-color: var(--calendar-in-cinemas);
+    }
+    /* Missing */
+    .calendar .danger {
+        border-color: var(--calendar-missing);
+        background-color: var(--calendar-missing);
+        color: #fff;
+    }
+    /* Announced */
+    .calendar .primary {
+        border-color: var(--calendar-announced);
+        background-color: var(--calendar-announced);
+    }
+    /* Downloaded */
+    .calendar .success {
+        border-color: var(--calendar-downloaded);
+        background-color: var(--calendar-downloaded);
+    }
+    /* Downloading */
+    .calendar .purple {
+        border-color: var(-calendar-downloading);
+        background-color: var(-calendar-downloading);
+    }
+    /* Unmonitored */
+    .calendar .unmonitored {
+        border-color: var(--calendar-unmonitored);
+        background-color: var(--calendar-unmonitored);
+    }
 
-.calendar .success {
-    border-color: rgba(25, 255, 0, .15);
-    background-color: rgba(25, 255, 0, .15);
-    color: #FFF;
-}
-.calendar .premiere {
-    border-color: rgba(45, 66, 85, 100);
-    background-color: rgba(45, 66, 85, 100);
-}
-.calendar .primary {
-    border-color: rgba(0, 0, 0, .25);
-    background-color: rgba(0, 0, 0, .10);
-}
-.calendar .danger {
-    border-color: rgba(171, 0, 0, .50);
-    background-color: rgba(171, 0, 0, .50);
-    color: #fff;
-}
-.event .primary {
-    border-color: rgba(0, 0, 0, .25);
-}
+    .event .primary {
+        border-color: rgba(0, 0, 0, .25);
+    }
+
     /* upcoming panel */
 .event h4, .date h4, .event .episode-title {
     color: #FFFFFF !important;
