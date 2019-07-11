@@ -21,6 +21,9 @@ body {
 .navbar-default .navbar-nav>.open>a {
     background-color: rgba(0, 0, 0, 0.25);
 }
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
 @media (max-width: 924px) {
 .navbar-collapse.collapse {
     display: none!important;
