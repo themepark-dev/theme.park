@@ -33,6 +33,8 @@ body {
 /* Search bar */
 .search-bar-background[_ngcontent-c1] {
     background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 3px;
+    margin-top: 3px;
 }
 .form-control-custom {
     background-color: rgba(0, 0, 0, 0.25) !important;
@@ -112,6 +114,7 @@ hr {
 .nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:focus, .nav-tabs.nav-justified>.active>a:hover {
     background-color: rgba(0, 0, 0, 0.45) !important;
     border: 1px solid #00000000 !important;
+    border-radius: 3px;
 }
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
     background-color: rgba(0, 0, 0, 0.45) !important;
