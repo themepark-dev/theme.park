@@ -285,25 +285,42 @@ div.form-group > label {
 }
 
 /* Calendar page */
+    /* Unaired Premiere */
+    .calendar .premiere {
+        border-color: var(--calendar-tv-Unaired-Premiere);
+        background-color: var(--calendar-tv-Unaired-Premiere);
+    }
+    /* Downloading */
+    .calendar .purple {
+        border-color: var(--calendar-tv-Downloading);
+        background-color: var(--calendar-tv-Downloading);
+    }
+    /* Downloading */
+    .calendar .unmonitored {
+        border-color: var(--calendar-tv-Unmonitored);
+        background-color: var(--calendar-tv-Unmonitored);
+    }
+    /* Unaired */
+    .calendar .primary {
+        border-color: var(--calendar-tv-Unaired);
+        background-color: var(--calendar-tv-Unaired);
+    }
+    /* Missing */
+    .calendar .danger {
+        border-color: var(--calendar-tv-missing);
+        background-color: var(--calendar-tv-missing);
+    }
+    /* On Air */
+    .calendar .warning {
+        border-color: var(--calendar-tv-On-Air);
+        background-color: var(--calendar-tv-On-Air);
+    }
+    /* Downloaded*/
+    .calendar .success {
+        border-color: var(--calendar-tv-available);
+        background-color: var(--calendar-tv-available);
+    }
 
-.calendar .success {
-    border-color: rgba(25, 255, 0, .15);
-    background-color: rgba(25, 255, 0, .15);
-    color: #FFF;
-}
-.calendar .premiere {
-    border-color: rgba(45, 66, 85, 100);
-    background-color: rgba(45, 66, 85, 100);
-}
-.calendar .primary {
-    border-color: rgba(0, 0, 0, .25);
-    background-color: rgba(0, 0, 0, .10);
-}
-.calendar .danger {
-    border-color: rgba(171, 0, 0, .50);
-    background-color: rgba(171, 0, 0, .50);
-    color: #fff;
-}
 .event .primary {
     border-color: rgba(0, 0, 0, .25);
 }

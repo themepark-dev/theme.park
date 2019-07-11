@@ -17,11 +17,11 @@
   --main-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-light2.png") center center/cover no-repeat fixed;
   --modal-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-dark2.png") center center/cover no-repeat fixed;
 
-  --calendar-tv-Unaired-Premiere: #FFEB3B;
-  --calendar-tv-Downloaded: #eeeeee; 
-  --calendar-tv-Unmonitored: #eeeeee;
-  --calendar-tv-Unaired: #eeeeee;  
-  --calendar-tv-missing: #ff7676;
-  --calendar-tv-On-Air: #eeeeee; 
-  --calendar-tv-available: #53e69d;
+  --calendar-tv-Unaired-Premiere: #35c5f4;
+  --calendar-tv-Downloading: #7932ea; 
+  --calendar-tv-Unmonitored: grey;
+  --calendar-tv-Unaired: #337ab7;  
+  --calendar-tv-missing: #d9534f;
+  --calendar-tv-On-Air: #f0ad4e; 
+  --calendar-tv-available: #5cb85c;
   }
