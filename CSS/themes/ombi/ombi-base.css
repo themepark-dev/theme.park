@@ -1,0 +1,143 @@
+body {
+    background: var(--main-bg-color);
+}
+/* Navbar */
+.navbar-default {
+    background: var(--main-bg-color);
+    border-color: #FFF;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+.navbar-default .navbar-nav>.open>a {
+    background-color: #df691a;
+    color: #fff;
+}
+.navbar-default .navbar-nav>.open>a {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 924px) {
+.navbar-collapse.collapse {
+    display: none!important;
+}
+}
+
+/* Search bar */
+.search-bar-background[_ngcontent-c1] {
+    background-color: rgba(0, 0, 0, 0.45);
+}
+.form-control-custom {
+    background-color: rgba(0, 0, 0, 0.25) !important;
+}
+.input-group-addon {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 978px) {
+.form-control-search[_ngcontent-c1] {
+    width: -webkit-fill-available !important;
+}
+}
+
+@media (min-width: 768px) {
+.nav-tabs.nav-justified>li>a {
+    border-bottom: none;
+}
+}
+@media (min-width: 979px) {
+.form-control-search[_ngcontent-c1] {
+    width: 100%;
+}
+}
+
+/* Expand season request */
+.content-space[_ngcontent-c3] {
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.25);
+}
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.table-hover>tbody>tr:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+
+
+.dropdown-menu {
+    background: var(--modal-bg-color);
+}
+.dropdown-menu>li>a:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+.navbar-nav>li>.dropdown-menu {
+    width: 163.5px;
+}
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+/* Settings */
+hr {
+    border: 1px dashed #d7d7d7;
+}
+
+/* Buttons */
+.btn-primary-outline, .btn-primary-outline.active, .btn-primary-outline.focus, .btn-primary-outline:active, .btn-primary-outline:focus, .btn-primary-outline:hover, .open>.btn-primary-outline.dropdown-toggle {
+    color: #ffffff!important;
+    background-color: rgba(0, 0, 0, 0.45) !important;
+    border-color: rgba(0, 0, 0, 0)!important;
+}
+
+.btn-primary-outline:hover {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+	border-color: #00000000!important;
+}
+.btn-link {
+    color: #ffffff;
+}
+.btn-link:focus, .btn-link:hover {
+    color: #ddd;
+}
+
+/* Settings menu */
+
+.nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:focus, .nav-tabs.nav-justified>.active>a:hover {
+    background-color: rgba(0, 0, 0, 0.45) !important;
+    border: 1px solid #00000000 !important;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    background-color: rgba(0, 0, 0, 0.45) !important;
+    border: 1px solid #00000000 !important;
+}
+.nav-tabs>li>a:hover {
+    border-color: transparent;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-color: #00000000;
+}
+.panel {
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.card-header {
+    background-color: rgba(0, 0, 0, 0.25);
+    color: #ebebeb;
+    padding: 10px 15px;
+    border-bottom: 1px solid #00000000;
+}
+a.active {
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.ui-state-highlight {
+background: var(--modal-bg-color);
+}
