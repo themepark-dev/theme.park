@@ -28,7 +28,6 @@ body {
 
 /* Search bar */
 .search-bar-background[_ngcontent-c1] {
-    background-color: rgba(0, 0, 0, 0.45);
     border-radius: 3px;
 }
 .form-control-custom {
