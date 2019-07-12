@@ -24,7 +24,9 @@ body {
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
     background-color: transparent;
 }
-
+.ui-tooltip .ui-tooltip-text{
+background-color:var(--modal-bg-color) !important;
+}
 
 /* Search bar */
 .search-bar-background[_ngcontent-c1] {
