@@ -37,6 +37,9 @@ body {
 .input-group-addon {
     background-color: rgba(0, 0, 0, 0.25);
 }
+.nav-tabs.nav-justified {
+    margin-bottom: 3px;
+}
 @media (max-width: 978px) {
 .form-control-search[_ngcontent-c1] {
     width: -webkit-fill-available !important;
