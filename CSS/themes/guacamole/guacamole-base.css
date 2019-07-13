@@ -1,0 +1,336 @@
+
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+
+/*		   		        Made by @gilbN					 */
+/*			      https://github.com/gilbN/theme.park			 */
+
+:root {
+    --main-bg-color: radial-gradient(ellipse at center, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
+    --modal-bg-color: radial-gradient(ellipse at top, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
+    
+    --button-color: rgba(0,0,0,.25);
+    --button-color-hover: rgba(0,0,0,.45);
+  }
+  /* plex buttons 
+      --button-color: #cc7b19;
+    --button-color-hover: #e59029;
+  }
+  */
+  
+  body {
+    background: var(--main-bg-color) !important;
+      background-repeat: repeat, no-repeat;
+      background-attachment: fixed, fixed;
+      background-position: center center, center center;
+      background-size: auto, cover;
+      -webkit-background-size: auto, cover;
+      -moz-background-size: auto, cover;
+      -o-background-size: auto, cover;
+      background-color: rgba(0,0,0,.0) !important;
+      color:#FFFFFF !important;
+  }
+  div.displayMiddle {
+      background: var(--modal-bg-color);
+  }
+    /* Scrollbar */  
+    @media only screen and (min-width: 768px) {  
+      html {
+          height: 100%;
+          width: 100%;
+          overflow: hidden;
+      }
+      body {
+          overflow-y: auto;
+          height: 100%;
+          background: var(--main-bg-color)
+      }
+  }
+      ::-webkit-scrollbar {
+          width: 14px;
+      }
+      ::-webkit-scrollbar-thumb {
+          min-height: 50px;
+          border: 3px solid transparent;
+          border-radius: 8px;
+          background-color: hsla(0,0%,100%,.2);
+          background-clip: padding-box;
+      }
+      ::-webkit-scrollbar-track {
+          background-color: transparent;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+          min-height: 50px;
+          border: 3px solid transparent;
+          border-radius: 8px;
+          background-color: hsla(0,0%,100%,.5);
+          background-clip: padding-box;
+      }  
+  /* LOGIN MENU */
+  div.login-ui {
+      background: inherit;
+  }
+  .login-ui div.login-dialog {
+      background: rgba(0, 0, 0, .25);
+      border: none;
+  }
+  input[type="submit"], button, a.button {
+      background-color: var(--button-color);
+      border: none;
+  }
+  input[type="submit"]:hover, button:hover, a.button:hover {
+      background-color: var(--button-color-hover);
+      border: none;
+  }
+  .login-ui .login-fields .labeled-field input:focus {
+      background: #1f1f1f !important;
+  }
+  .login-ui .login-fields .labeled-field.empty input {
+      background: rgba(0,0,0,0.25) !important;
+  }
+  .login-ui .login-fields .labeled-field.empty input:focus {
+      background: #1f1f1f !important;
+  }
+  .login-ui .login-dialog .login-fields input {
+      background-color: #1f1f1f !important;
+  }
+  div.location, input[type=text], input[type=email], input[type=number], input[type=password], textarea {
+      color: white !important;
+      background: rgba(0, 0, 0, 0.25) !important;
+  }
+  input[type=checkbox], input[type=number], input[type=text], input[type=email], input[type=radio], label, textarea {
+      color: white !important;
+      background: transparent;
+  }
+  
+  /* HOME MENU */
+  .header h2 {
+      color: white;
+      background-color: rgba(0, 0, 0, 0.25);
+  }
+  
+  .connection .icon.vnc, .connection .icon.rdp {
+      background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/guacamole/guac-monitor.png);
+  }
+  .connection .icon.ssh, .connection .icon.telnet {
+      background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/guacamole/guac-text.png);
+  }
+  
+  .user-menu .menu-dropdown .menu-title  {
+      background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/guacamole/guac-user.png);
+      background-color: transparent;
+  }
+  .user-menu .menu-dropdown .menu-contents li a[href="#/"] {
+      background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/guacamole/guac-home-dark.png);
+  }
+  .user-menu .menu-dropdown .menu-contents li a[href="#/settings/users"], .user-menu .menu-dropdown .menu-contents li a[href="#/settings/connections"], .user-menu .menu-dropdown .menu-contents li a[href="#/settings/sessions"], .user-menu .menu-dropdown .menu-contents li a[href="#/settings/preferences"] {
+      background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/guacamole/guac-config-dark.png);
+  }
+  .user-menu .menu-dropdown .menu-contents li a.logout {
+      background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/guacamole/guac-logout-dark.png);
+  }
+  .icon.user {
+      background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/guacamole/guac-user.png);
+  }
+  .pager .icon.first-page {
+      background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/guacamole/guac-first-page.png);
+  }
+  .pager .icon.prev-page {
+      background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/guacamole/guac-prev-page.png);
+  }
+  .pager .icon.next-page {
+      background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/guacamole/guac-next-page.png);
+  }
+  .pager .icon.last-page {
+      background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/guacamole/guac-last-page.png);
+  }
+  .loading::before{
+      background-image:url('https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/guacamole/cog.png');
+  }
+  table.sorted th.sort-primary.sort-descending:after {
+      background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/guacamole/up.png);
+  }
+  
+  .menu-dropdown .menu-indicator {
+      background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/guacamole/down.png);
+  }
+  .menu-dropdown .menu-indicator:hover {
+      background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/guacamole/down.png);
+      color: #f9be03;
+  }
+  table.sorted th.sort-primary:after {
+      background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/guacamole/down.png);
+  }
+  .menu-dropdown.open, .menu-dropdown.open:hover {
+      background: rgba(0, 0, 0, 0.25);
+  }
+  .menu-dropdown {
+      border-left: none;
+      background: rgba(0, 0, 0, 0.25);
+  }
+  .menu-dropdown .menu-contents li a {
+      display: block;
+      cursor: pointer;
+      color: white;
+      text-decoration: none;
+      padding: .75em;
+      background: #1f1f1f;
+  }
+  .menu-dropdown .menu-contents li a.current, .menu-dropdown .menu-contents li a.current:hover {
+      background-color: rgba(0,0,0,.25);
+      opacity: .9;
+  }
+  .menu-dropdown .menu-contents li a:hover {
+      background-color: rgba(0,0,0,.25);
+  }
+  .menu-dropdown:hover {
+      background: rgba(0, 0, 0, 0.25);
+  }
+  
+  .menu-dropdown .menu-contents {
+      background: #1f1f1f;
+  
+  }
+  .header .filter input {
+      -moz-border-radius: 0;
+      -webkit-border-radius: 0;
+      -khtml-border-radius: 0;
+      border-radius: 0;
+      border: 0;
+      border-left: 1px solid rgba(0,0,0,0.125);
+      background-color: transparent;
+      color: white;
+  }
+  .header .filter {
+      background-color: rgba(0, 0, 0, 0.25);
+  }
+  .filter .search-string {
+    background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/guacamole/magnifier.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: 1.75em !important;
+    background-position: .25em center !important;
+    padding: .5em !important;
+    padding-left: 2.25em !important;
+    width: 100%;
+    max-width: none;
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 0;
+  }
+  div.location, input[type=text], input[type=email], input[type=number], input[type=password], textarea {
+      color: white;
+  }
+  
+  
+  .user a:visited, .connection a:visited, .connection-group a:visited {
+      text-decoration: none;
+      color: white;
+  }
+  .recent-connections .connection:hover {
+      background: hsla(0, 0%, 100%, 0.08);
+  }
+  .list-item:not(.selected) .caption:hover {
+      background: hsla(0, 0%, 100%, 0.07);
+  }
+  .list-item .name {
+      color: white;
+  }
+  
+  /* SIDE MENU */
+  
+  .menu-content {
+      background: var(--modal-bg-color);
+  }
+  .clipboard, .clipboard-service-target {
+      background: rgba(0, 0, 0, 0.25);
+      color: white;
+  }
+  /* NOTIFICATION BOX */
+  .notification.error {
+      background: var(--modal-bg-color);
+      color: white;
+  }
+  .notification {
+      background: var(--modal-bg-color);
+      color: white;
+  }
+  
+  /* SETTINGS */
+  .page-tabs .page-list li a[href]:visited {
+      color: white;
+  }
+  .page-tabs .page-list li a[href] {
+      color: white;
+  }
+  .page-tabs .page-list li a[href]:hover {
+      background-color: rgba(0, 0, 0, 0.25);
+  }
+  .user a:visited, .connection a:visited, .connection-group a:visited {
+      text-decoration: none;
+      color: white;
+  }
+  .user a, .connection a, .connection-group a {
+      text-decoration: none;
+      color: white;
+  }
+  div.location, input[type=text], input[type=email], input[type=number], input[type=password], textarea {
+      border: 0;
+      background: rgba(0, 0, 0, .25);
+  }
+  .location-chooser .dropdown {
+      background: #666;
+  }
+  /* USER SETTINGS */
+  .page-tabs .page-list li a[href], .section-tabs li a {
+      color: white;
+  }
+  .page-tabs .page-list li a[href]:hover, .section-tabs li a:hover {
+      background-color: hsla(0, 0%, 100%, 0.07);
+  }
+  .manage-user .page-tabs .page-list li.linked a[href]:before {
+      background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/guacamole/checkmark.png);
+  }
+  .manage-user .page-tabs .page-list li.read-only a[href]:before {
+      background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/guacamole/lock.png);
+  }
+  .manage-user .notice.read-only {
+      background: hsla(0, 0%, 100%, 0.07);
+  }
+  /* DUA 2FA PAGE */
+  .duo-signature-response-field {
+      background: var(--modal-bg-color) !important;
+  }
+  .base-wrapper {
+      border: 1px solid transparent !important;
+      background: var(--modal-bg-color) !important;
+  }
+  .base-body {
+      background-color: #333 !important;
+  }
+  h1.spacious-frame-view {
+      color: white !important;
+  }
+  @media screen and (-webkit-max-device-pixel-ratio: 1.25), screen and (max-resolution: 120dpi) {
+  h1, .h1 {
+      color: white !important;
+  }
+  }
+  .white-wrapper {
+      background-color: #333 !important;
+      color: white !important;
+  }
+  form:not(.inline) fieldset {
+      background-color: #333 !important;
+  }
+  label span {
+      color: white !important;
+  }
+  input[type=radio] {
+      border: 1px solid #fff !important;
+  }
+  
