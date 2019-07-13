@@ -90,6 +90,7 @@
   }
   .login-ui .login-fields .labeled-field input:focus {
       background: #1f1f1f !important;
+      outline: none;
   }
   .login-ui .login-fields .labeled-field.empty input {
       background: rgba(0,0,0,0.25) !important;
@@ -97,6 +98,7 @@
   }
   .login-ui .login-fields .labeled-field.empty input:focus {
       background: #1f1f1f !important;
+      outline: none;
   }
   .login-ui .login-dialog .login-fields input {
       background-color: #1f1f1f !important;
