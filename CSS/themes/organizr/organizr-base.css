@@ -111,7 +111,7 @@ html {
 }
   /*input form control dropdown*/
 .form-control, select {
-    background: rgba(0,0,0,.25) !important;
+    background: rgba(0,0,0,.25);
     color: #fff;
     border: 1px transparent;
   }
