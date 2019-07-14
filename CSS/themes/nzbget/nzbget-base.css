@@ -12,8 +12,7 @@
 /*			      https://github.com/gilbN/theme.park			 */
 
 body {
-	background-image: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"),
-	url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-light.png") !important;
+	background: var(--main-bg-color) !important;
 	background-repeat: repeat, no-repeat;
 	background-attachment: fixed, fixed;
 	background-position: center center, center center;
@@ -21,7 +20,7 @@ body {
 	-webkit-background-size: auto, cover;
 	-moz-background-size: auto, cover;
 	-o-background-size: auto, cover;
-	background-color: rgba(0,0,0,.0) !important;
+	background-color: rgba(0,0,0,.0);
 	color:#FFFFFF !important;
 }
 
@@ -41,8 +40,7 @@ body {
     background-color: hsla(0,0%,100%,.08);
 }
 .modal {
-	background-image: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"),
-	url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-light.png") !important;
+	background: var(--modal-bg-color) !important;
 	background-repeat: repeat, no-repeat;
 	background-attachment: fixed, fixed;
 	background-position: center center, center center;
@@ -121,16 +119,19 @@ tr.checked, tr.checked td, tr.checked:nth-child(odd) .progress {
 .navbar-fixed-top .navbar-inner {
     color: #fff !important;
 }
-.navbar-inner {
-    background-color: rgba(0,0,0,.7);
-	    background-image: none;
+.navbar-inner {  
+	background-image: none;
+	background-color: transparent;
+}
+.navbar-container {
+    background: var(--main-bg-color);
 }
 .navbar .nav > li > a:hover {
-    color: #f9be03;
+    color: var(--accent-color);
 }
 .navbar .nav .active > a, .navbar .nav .active > a:hover {
     background: hsla(0,0%,100%,.08);
-    color: #f9be03;
+    color: var(--accent-color);
 }
 
 [class^="icon-"], [class*=" icon-"], [class^="img-"], [class*=" img-"] {
@@ -138,17 +139,25 @@ tr.checked, tr.checked td, tr.checked:nth-child(odd) .progress {
 }
 .navbar-search .search-query {
     color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.25) !important;
     border: 0px solid #151515;
 
 }
 .navbar-search .search-query:focus, .navbar-search .search-query.focused {
-    color: #fff;
+    color: #000 !important;
     text-shadow: none;
     background-color: white !important;
 }
+.search-caret-button {
+    outline: none;
+}
+.menu-header {
+    color: #ffffff;
+}
 .dropdown-menu {
     background-color: #191a1c;
+	background: var(--modal-bg-color);
+	color: #FFF;
 }
 .dropdown-menu a {
     color: #ffffff;
@@ -224,7 +233,7 @@ tr.checked, tr.checked td, tr.checked:nth-child(odd) .progress {
   color:white;
 }
 #ConfigData input.btn.btn-primary{
-  background:#cc7b19 !important;
+  background: var(--button-color) !important;
   text-shadow:unset;
   color:white;
 }
@@ -284,7 +293,7 @@ tr.checked, tr.checked td, tr.checked:nth-child(odd) .progress {
 input, textarea, select, .uneditable-input {
     color: #ffffff;
     background-color: rgb(0, 0, 0);
-    background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png), url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-light-dark.png) !important;
+    background-image: var(main-bg-color) !important;
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -292,9 +301,13 @@ input, textarea, select, .uneditable-input {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
-    background-color: #191a1c !important;
+    background-color: rgba(0, 0, 0, 0.25) !important;
     color: #FFFFFF !important;
     border: none;
+}
+select:focus {
+	background: #191a1c !important;
+	color: #FFF !important;
 }
 input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus, select:focus {
     outline: thin dotted #333;
@@ -322,7 +335,7 @@ input:focus, textarea:focus {
 }
 .alert-inverse {
 	background-color: #414141;
-    background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png), url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-light-dark.png) !important;
+    background-image: var(--main-bg-color) !important;
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -358,7 +371,7 @@ label {
     background-color: #0088cc;
 }
 .nav-list > .active > a, .nav-list > .active > a:hover {
-    color: #f9be03 !important;
+    color: var(--accent-color) !important;
     background-color: transparent;
 }
 .nav > li > a:hover {
@@ -378,7 +391,7 @@ span.help-option-title {
 }
 .input-prepend .add-on, .input-append .add-on {
     background-color: rgba(0, 0, 0, 0.25);
-    background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png), url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-light-dark.png) !important;
+    background-image: var(--main-bg-color) !important;
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -395,7 +408,7 @@ span.help-option-title {
     border-bottom: none;
 }
 a {
-    color: #f9be03;
+    color: var(--accent-color);
     text-decoration: none;
 }
 a:hover {
@@ -403,7 +416,7 @@ a:hover {
     text-decoration: underline;
 }
 .label-warning, .badge-warning {
-    background-color: #cc7b19;
+    background-color: var(--button-color);
 }
 .caret {
     border-top: 4px solid #ffffff;

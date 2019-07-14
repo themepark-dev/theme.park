@@ -16,6 +16,6 @@
 :root {
   --main-bg-color: #1f1f1f;
   --modal-bg-color: radial-gradient(ellipse at top, #1f1f1f 0%, #1f1f1f 100%) center center/cover no-repeat fixed;
-
-  --accent-color: #FFCC00;
+  --accent-color: #f9be03;
+  --button-color: #cc7b19;
   }
