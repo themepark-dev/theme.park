@@ -789,7 +789,11 @@ pre {
 	}
 	.Tooltip-tooltipContainer-2693s {
 	color: #fff;
-	}
+    }
+    .EpisodeTitleLink-link-3ynTw:hover {
+        color: #ffffff;
+        text-decoration: none;
+    }
   /* Table options*/
   .TableOptionsColumn-column-2H7ic {
     background: rgba(0, 0, 0, .25);
