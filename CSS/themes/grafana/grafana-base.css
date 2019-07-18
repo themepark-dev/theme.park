@@ -302,6 +302,12 @@ div.flot-text {
     border-bottom: 1px solid #171819;
     border-right: 1px solid #171819;
 }
+.table-panel-header-bg {
+    background: rgba(0, 0, 0, 0.25);
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+
+}
 /* Edit panel tabs  */
 .tabbed-view-header {
     box-shadow: none;
