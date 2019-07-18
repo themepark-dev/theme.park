@@ -113,6 +113,15 @@ color:#FFFFFF !important;
 .dropdown-menu--menu>li>a:hover, .dropdown-menu--navbar>li>a:hover, .dropdown-menu--sidemenu>li>a:hover {
     background: rgba(0, 0, 0, 0.25)!important;
 }
+.dropdown-menu>li>a {
+    color: #ffffff;
+}
+.dropdown-menu-item-shortcut {
+    color: #ffffff;
+}
+.dropdown-submenu:hover>a {
+    Background-color: rgba(0, 0, 0, 0.25)!important;
+}
 .icon-circle:hover .fa:hover, .icon-circle:hover .gicon:hover, .icon-circle:hover .icon-gf:hover {
     color: #ffffff;
     opacity: 1;
