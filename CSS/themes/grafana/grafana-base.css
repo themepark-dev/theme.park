@@ -452,11 +452,12 @@ border-color: #b56d16 !important;
 }
 
 .modal-header {
-    background: -webkit-gradient(linear,left top,right top,from(#292a2d),to(#000));
-    background: -webkit-linear-gradient(left,#292a2d,#000);
-    background: -o-linear-gradient(left,#292a2d,#000);
-    background: var(--main-bg-color);
+    background: var(--modal-bg-color);
     -webkit-box-shadow: none;
     box-shadow: none;
-    border-bottom: 1px solid #343436;
+    border-bottom: 1px solid #d8d9da;
+}
+.modal-body {
+    position: relative;
+    background: var(--modal-bg-color);
 }
