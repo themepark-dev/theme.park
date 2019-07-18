@@ -114,10 +114,10 @@ color:#FFFFFF !important;
     background: rgba(0, 0, 0, 0.25)!important;
 }
 .dropdown-menu>li>a {
-    color: #ffffff;
+    color: #ffffff!important;
 }
 .dropdown-menu-item-shortcut {
-    color: #ffffff;
+    color: #ffffff!important;
 }
 .dropdown-submenu:hover>a {
     Background-color: rgba(0, 0, 0, 0.25)!important;
