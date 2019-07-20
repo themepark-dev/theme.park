@@ -763,7 +763,10 @@ pre {
 	}
 	.SeriesDetailsSeason-actionButton-3BQuA  {
     color: hsla(0,0%,100%,.7) !important;
-	}
+    }
+    .SeriesDetailsSeason-collapseButtonIcon-17xZI {
+        color: #bac5cc;
+    }
 
 	.fa-search:hover {
     color: #FFF !important;
@@ -793,6 +796,10 @@ pre {
     .EpisodeTitleLink-link-3ynTw:hover {
         color: #ffffff;
         text-decoration: none;
+    }
+    .IconButton-button-2qiGi:hover {
+        background-color: transparent;
+        color: #fff;
     }
   /* Table options*/
   .TableOptionsColumn-column-2H7ic {
