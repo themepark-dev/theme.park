@@ -112,6 +112,9 @@ hr {
 .btn-link:focus, .btn-link:hover {
     color: #ddd;
 }
+.input-group-addon .btn-group .btn {
+    outline: none;
+}
 
 /* Settings menu */
 
