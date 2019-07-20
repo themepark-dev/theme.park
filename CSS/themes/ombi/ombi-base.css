@@ -33,6 +33,9 @@ background-color:var(--modal-bg-color) !important;
     border-radius: 3px;
     background-color: transparent !important;
 }
+.search-bar-background[_ngcontent-c2] {
+    background-color: transparent;
+}
 .form-control-custom {
     background-color: rgba(0, 0, 0, 0.25) !important;
 }
@@ -96,6 +99,7 @@ hr {
     color: #ffffff!important;
     background-color: rgba(0, 0, 0, 0.45) !important;
     border-color: rgba(0, 0, 0, 0)!important;
+    outline: none !important; 
 }
 
 .btn-primary-outline:hover {
