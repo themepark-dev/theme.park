@@ -320,7 +320,7 @@ background-color: hsla(0,0%,100%,.25) !important;
       color: #fff;
       }
       .QualityProfiles-center-1iiKm, .LanguageProfiles-center-7EV_2, .ReleaseProfiles-center-114Qx {
-      background-color: rgba(0, 0, 0, .25);
+      background-color: transparent;
       border: none;
       color: #c2c6c8;
       }
@@ -334,21 +334,21 @@ background-color: hsla(0,0%,100%,.25) !important;
       }
       /* PROFILES */
       .Indexers-center-11Csq {
-      background-color: rgba(0, 0, 0, .25);
+      background-color: transparent;
       border: none;
       color: #c2c6c8;
       }
   
       /* DOWNLOAD CLIENTS */
       .DownloadClients-center-FvACx {
-      background-color: rgba(0, 0, 0, .25);
+      background-color: transparent;
       border: none;
       color: #c2c6c8;
       }
   
       /* CONNECTIONS */
       .Notifications-center-8iwmy {
-      background-color: rgba(0, 0, 0, .25);
+      background-color: transparent;
       border: none;
       color: #c2c6c8;
       }
@@ -696,9 +696,14 @@ background-color: hsla(0,0%,100%,.25) !important;
     background: rgba(0, 0, 0, 0.25);
 }
   
-  .QualityProfiles-addQualityProfile-2q4Re, .QualityProfiles-center-3qTb_, .LanguageProfiles-center-18sh2,
-  .MetadataProfiles-center-dOatB, .Indexers-center-3HUez, .Restrictions-center-3cS8T, .DownloadClients-center-30cx9, .ImportLists-center-17Qdu, .Notifications-center-13jM2 {
+  .QualityProfiles-addQualityProfile-2q4Re {
       background-color: rgba(0, 0, 0, .25);
+      border: none;
+      color: #c2c6c8;
+  }
+  .QualityProfiles-center-3qTb_, .LanguageProfiles-center-18sh2,
+  .MetadataProfiles-center-dOatB, .Indexers-center-3HUez, .Restrictions-center-3cS8T, .DownloadClients-center-30cx9, .ImportLists-center-17Qdu, .Notifications-center-13jM2 {
+      background-color: transparent;
       border: none;
       color: #c2c6c8;
   }
