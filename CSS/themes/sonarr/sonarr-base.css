@@ -964,7 +964,7 @@ pre {
     color: #fff;
 	}
 	.QualityProfiles-center-1iiKm, .LanguageProfiles-center-7EV_2, .ReleaseProfiles-center-114Qx {
-	background-color: rgba(0, 0, 0, .25);
+	background-color: transparent;
     border: none;
     color: #c2c6c8;
 	}
@@ -979,21 +979,21 @@ pre {
    
 	/* PROFILES */
 	.Indexers-center-11Csq {
-	background-color: rgba(0, 0, 0, .25);
+	background-color: transparent;
     border: none;
     color: #c2c6c8;
 	}
 
 	/* DOWNLOAD CLIENTS */
 	.DownloadClients-center-FvACx {
-	background-color: rgba(0, 0, 0, .25);
+	background-color: transparent;
     border: none;
     color: #c2c6c8;
 	}
 
 	/* CONNECTIONS */
 	.Notifications-center-8iwmy {
-	background-color: rgba(0, 0, 0, .25);
+	background-color: transparent;
     border: none;
     color: #c2c6c8;
 	}
