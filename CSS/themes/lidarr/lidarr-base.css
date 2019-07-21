@@ -668,7 +668,7 @@ background-color: hsla(0,0%,100%,.25) !important;
   }
   
     /* CALENDAR */
-  .CalendarDay-day-3WaqW, .CalendarDays-days-287Rk {
+  .CalendarDay-day-2TMXA, .CalendarDays-days-girjM {
       -webkit-box-flex: 1;
       -webkit-flex: 1 0 14.28%;
       flex: 1 0 14.28%;
@@ -678,14 +678,14 @@ background-color: hsla(0,0%,100%,.25) !important;
       border-left: 1px solid hsla(0,0%,100%,.08);
       border-right: 1px solid hsla(0,0%,100%,.08);
   }
-  .CalendarDay-dayOfMonth-3ZysC {
+  .CalendarDay-dayOfMonth-2CzdW {
       border-bottom: 1px solid hsla(0,0%,100%,.08);
       background-color: rgba(0, 0, 0, .25);
   }
   .DayOfWeek-dayOfWeek--jS1P {
       background-color: hsla(0,0%,100%,.08);
   }
-  .CalendarDay-isToday-1ZMWk {
+  .CalendarDay-isToday-1rFJO {
       background-color: hsla(0,0%,100%,.08) !important;
   }
   
