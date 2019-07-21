@@ -656,6 +656,7 @@ pre {
 .ModalHeader-modalHeader-gpcvG {
     background: var(--main-bg-color);
     color: #fff;
+    border-bottom: 1px solid hsla(0,0%,100%,.08);
 }
 .ModalContent-modalContent--txrl {
     background: var(--main-bg-color);
@@ -664,6 +665,7 @@ pre {
 .ModalFooter-modalFooter-1N5Ku {
     background: var(--main-bg-color);
     color: #fff;
+    border-bottom: 1px solid hsla(0,0%,100%,.08);
 }
 .ModalContent-closeButton-37Puk:hover {
     color: #fff;
@@ -887,6 +889,7 @@ pre {
 
 	.FieldSet-legend-3x6NF {
     color: #FFF;
+    border-top: 1px solid hsla(0,0%,100%,.08);
 	}
 	.TableRow-row-33xJE:hover {
     background-color: hsla(0,0%,100%,.08);
