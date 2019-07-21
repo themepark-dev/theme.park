@@ -375,6 +375,9 @@ background-color: hsla(0,0%,100%,.25) !important;
       background-color: #323232;
       color: #FFF;
   }
+  .ModalContent-closeButton-37Puk:hover {
+    color: #fff;
+}
   .ModalFooter-modalFooter-3izCM a:first-child, .ModalFooter-modalFooter-3izCM button:first-child {
       background-color: #656565 !important;
       border-color: transparent;
