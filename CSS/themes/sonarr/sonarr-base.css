@@ -102,9 +102,7 @@ body {
 .search .tt-dropdown-menu {
     background-color: #1f1f1f;
 }
-.fa-search {
-    color: white;
-}
+
 .input-group-lg>.form-control, .input-group-lg>.input-group-addon, .input-group-lg>.input-group-btn>.btn {
     height: 50px;
 }
