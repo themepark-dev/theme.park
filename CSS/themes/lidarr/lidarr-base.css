@@ -68,6 +68,7 @@ background-color: hsla(0,0%,100%,.25) !important;
   .ModalHeader-modalHeader-gpcvG {
       background: var(--main-bg-color);
       color: #fff;
+      border-bottom: 1px solid hsla(0,0%,100%,.08);
   }
   .ModalContent-modalContent--txrl {
       background: var(--main-bg-color);
@@ -76,6 +77,7 @@ background-color: hsla(0,0%,100%,.25) !important;
   .ModalFooter-modalFooter-1N5Ku {
       background: var(--main-bg-color);
       color: #fff;
+      border-top: 1px solid hsla(0,0%,100%,.08);
   }
   
   /* INPUT */
@@ -233,6 +235,7 @@ background-color: hsla(0,0%,100%,.25) !important;
   
       .FieldSet-legend-3x6NF {
       color: #FFF;
+      border-bottom: 1px solid hsla(0,0%,100%,.08);
       }
       .TableRow-row-33xJE:hover {
       background-color: hsla(0,0%,100%,.08);
