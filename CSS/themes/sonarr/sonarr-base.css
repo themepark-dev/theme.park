@@ -931,7 +931,14 @@ pre {
 	}
 	.DayOfWeek-dayOfWeek-1iw4D {
 		background-color: hsla(0,0%,100%,.08);
-	}
+    }
+    .CalendarDay-dayOfMonth-2CzdW {
+        border-bottom: 1px solid hsla(0,0%,100%,.08);
+        background-color: rgba(0, 0, 0, .25);
+    }
+    .CalendarDay-isToday-1rFJO {
+        background-color: hsla(0,0%,100%,.08) !important;
+    }
 
 	.CalendarDay-day-2TMXA, .CalendarDays-days-girjM {
 		-webkit-box-flex: 1;
