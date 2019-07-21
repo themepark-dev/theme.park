@@ -567,8 +567,12 @@ background-color: hsla(0,0%,100%,.25) !important;
       background-color: rgba(0, 0, 0, .25);
       color: #FFF;
   }
-  .IconButton-button-20Niq:hover {
+  .IconButton-button-2qiGi:hover {
       color: #fff;
+      background-color: transparent;
+  }
+  .IconButton-button-2qiGi {
+      color: #bac5cc;
   }
     /* Table options*/
   .TableOptionsColumn-column-2H7ic {
