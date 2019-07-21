@@ -53,6 +53,7 @@ background-color: hsla(0,0%,100%,.25) !important;
   }
   .Link-to-6fmSq:hover {
       color: #FFF;
+      text-decoration: none;
   }
   
   /* LOADING PAGE */
