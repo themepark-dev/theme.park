@@ -357,6 +357,7 @@ background-color: hsla(0,0%,100%,.25) !important;
       /* LOG */
       .Alert-info-1J8mE {
       border-color: transparent;
+      color: #FFC107;
       background-color: rgba(0, 0, 0, 0.25);
   }
   
@@ -569,7 +570,7 @@ background-color: hsla(0,0%,100%,.25) !important;
       color: #FFF;
   }
   .IconButton-button-2qiGi:hover {
-      color: #fff;
+      color: #fff !important;
       background-color: transparent;
   }
   .IconButton-button-2qiGi {
