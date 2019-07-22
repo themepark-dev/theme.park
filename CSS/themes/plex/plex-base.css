@@ -32,10 +32,6 @@
   .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
     background-color: rgba(0, 0, 0, 0.25);
 }
-/*Side menu active color*/ 
-.Link-isActiveRoute-2N5cgE, .Link-isSelected-IRm9uM {
-  color: var(--link-color);
-}
 
 /*Modal*/ 
 .modal-header, .modal-footer, .modal-body-with-panes {
