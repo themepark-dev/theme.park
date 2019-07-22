@@ -30,7 +30,6 @@
 }
 /*Agents*/ 
   .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-    color: var(--link-color);
     background-color: rgba(0, 0, 0, 0.25);
 }
 /*Side menu active color*/ 
@@ -48,33 +47,8 @@
 .modal-footer {
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
-/*Modal icon color active*/ 
-.edit-section-modal .wizard-blocks-group>.wizard-block.selected, .edit-section-modal .wizard-blocks-group>.wizard-block.selected:hover {
-  color: var(--link-color);
-}
 /*Modal icon color*/ 
 .edit-section-modal .wizard-blocks-group>.wizard-block {
   color: #ffffff;
 }
-/*Button*/
-.btn-gray.selected {
-  color: var(--link-color);
-}
-/*Links*/
-a {
-  color: var(--link-color);
-}
-.NavBarActivityButton-isHighlighted-27qlko .NavBarActivityButton-label-2ZN0gQ {
-  color: var(--link-color);
-}
-.NavBarActivityButton-isHighlighted-27qlko .NavBarActivityButton-activityIcon-1Db2GP {
-  background-color: var(--link-color);
-}
-.NavBarActivityButton-isHighlighted-27qlko:hover .NavBarActivityButton-activityIcon-1Db2GP {
-  background-color: var(--link-color-hover);
-}
-.NavBarActivityButton-isHighlighted-27qlko:hover .NavBarActivityButton-label-2ZN0gQ {
-  color: var(--link-color-hover);
-}
-
 /* This was a tough one :D */
