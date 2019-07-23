@@ -77,7 +77,9 @@ Custom [Organizr](https://github.com/causefx/Organizr/) themes.
     <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/organizr-themes/organizr-marine-theme-login.png" alt="Screen Shot 4" width="49.15%" />	
 </p>
 
-These themes are still a WIP so bugs may occur. Please make an issue if you find one. 
+These themes are still a WIP so bugs may occur. Please make an issue if you find one.
+Aquamarine is the colors from the https://heimdall.site that I fell in love with.
+All themes are highly customizable in regards of which radial gradient color combination you want. 
 
 #### Installation: Themes can be found in the "Theme Marketplace" in Organizr.
 
