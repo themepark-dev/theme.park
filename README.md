@@ -219,7 +219,10 @@ Custom [Grafana](https://github.com/grafana/grafana) CSS for [Organizr](https://
 
 #### The `graforg.css` theme is a dark theme that matches the Organizr dark theme.
 #### `grafplex.css`: If you want a regular Plex theme for your Grafana setup, use the **`grafplex.css`** theme instead.
+
 #### For panel integration on the Organizr homepage you can use `graforg-dashboard.css` if you use the Plex theme in Organizr. The theme is an "internal" theme that is meant to be used in an Organizr iframe as the background is set to transparent.
+NOTE: When viewing Grafana in Organizr iframe using `graforg-dashboard.css` it will follow the Organizr theme. When viewing it outside of Organizr iframe the background will be white ect. If you don't want this you can create two reverse proxies. One for grafana organizr homepage integration and one for the regular grafana theme. 
+
 ### Check out https://technicalramblings.com/blog/spice-up-your-homepage-part-ii/
 
 ![](https://technicalramblings.com/wp-content/uploads/2019/01/orgdash.jpg)
