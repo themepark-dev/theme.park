@@ -355,7 +355,10 @@ a:focus, a:hover {
     background-color: hsla(0,0%,100%,.08);
     color: #f9be03;
 }
-
+/* calendar agenda */
+.AgendaEvent-event-2a83A:hover {
+    background-color: hsla(0,0%,100%,.08) !important;
+}
 /* Activity Page */
 .popover.in {
     opacity: .9;
