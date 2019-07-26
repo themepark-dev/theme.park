@@ -160,6 +160,9 @@ color:#FFFFFF !important;
 .search-section__header {
     color: #ffffff !important;
 }
+.navbar-page-btn__folder {
+    color: #d8d9da;
+}
 /* Panel fullscreen navbar */
 .panel-in-fullscreen .navbar {
     background: linear-gradient(90deg,rgba(0, 0, 0, .15),rgba(0, 0, 0, 0.25)) !important;
