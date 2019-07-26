@@ -157,6 +157,9 @@ color:#FFFFFF !important;
 .search-item.selected, .search-item:hover {
     background: rgba(0, 0, 0, 0.25);
 }
+.search-section__header {
+    color: #ffffff;
+}
 /* Panel fullscreen navbar */
 .panel-in-fullscreen .navbar {
     background: linear-gradient(90deg,rgba(0, 0, 0, .15),rgba(0, 0, 0, 0.25)) !important;
