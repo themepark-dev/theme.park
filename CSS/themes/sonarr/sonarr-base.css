@@ -966,7 +966,14 @@ pre {
 	.CalendarEvent-event-3Uyb9:hover {
 		background-color: hsla(0,0%,100%,.08) !important;
 		border-bottom: none !important;
-	}
+    }
+    .CalendarEventGroup-eventGroup-gWPtK {
+        border-bottom: 1px solid hsla(0,0%,100%,.08) !important;
+    }
+    
+    .CalendarEventGroup-seriesTitle-ThqKe {
+        color: #ffffff !important;
+    }
 
 /* SETTINGS */
 
