@@ -779,7 +779,7 @@ pre {
     color: #FFF !important;
 	}
 	.Icon\/default\/3C-KJ:hover {
-    color: #fff;
+    color: #fff !important;
 	}
 	.MonitorToggleButton\/toggleButton\/3CcN9 {
     color: #dadada;
