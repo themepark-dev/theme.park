@@ -352,10 +352,6 @@ a:focus, a:hover {
     background-color: hsla(0,0%,100%,.08);
     color: #f9be03;
 }
-/* calendar agenda */
-.AgendaEvent-event-2a83A:hover {
-    background-color: hsla(0,0%,100%,.08) !important;
-}
 /* Activity Page */
 .popover.in {
     opacity: .9;
@@ -965,7 +961,7 @@ pre {
 		border-left: 1px solid hsla(0,0%,100%,.08);
 		border-right: 1px solid hsla(0,0%,100%,.08);
 	}
-	.CalendarEvent\/seriesTitle\/3sg1o {
+	.CalendarEvent\/seriesTitle\/3sg1o, .CalendarEvent\/episodeInfo\/IWdbW, .CalendarEvent\/airTime\/3Wzho {
 		color: #ffffff !important;
 	}
 	.CalendarEvent\/event\/3Uyb9 {
@@ -981,6 +977,10 @@ pre {
     
     .CalendarEventGroup\/seriesTitle\/ThqKe {
         color: #ffffff !important;
+    }
+    /* calendar agenda */
+    .AgendaEvent\/event\/2a83A:hover {
+        background-color: hsla(0,0%,100%,.08) !important;
     }
 
 /* SETTINGS */
