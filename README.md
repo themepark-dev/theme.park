@@ -511,7 +511,7 @@ And add this in custom HTML in Organizr:
 
 ***
 
-# Logarr (alpha only) (WIP)
+# Logarr alpha version Themes 
 
 Custom [Logarr](https://github.com/Monitorr/logarr/tree/alpha) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr).
 
@@ -527,7 +527,7 @@ plex.css
 
 ***
 
-# Filebrowser - Dark Theme
+# Filebrowser Themes
 
 Custom [Filebrowser](https://github.com/filebrowser/filebrowser) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr).
 
@@ -554,7 +554,7 @@ plex.css
 
 ***
 
-# HTML5 Speedtest Dark/Plex Theme
+# HTML5 Speedtest Themes
 
 Custom [HTML5 Speedtest](https://github.com/adolfintel/speedtest) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr).
 
