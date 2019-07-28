@@ -26,9 +26,45 @@ body {
 	-webkit-background-size: auto, cover;
 	-moz-background-size: auto, cover;
 	-o-background-size: auto, cover;
-	background-color: rgba(0,0,0,.0) !important;
 	color:#FFFFFF !important;
 }
+ /* Scrollbar */  
+
+    body::-webkit-scrollbar-track {
+        background-color: transparent !important;
+		-webkit-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+	    body::-webkit-scrollbar {
+        background-color: transparent !important;
+    }
+		body::-webkit-scrollbar-thumb {
+        background-color: hsla(0,0%,100%,.2) !important;
+		-webkit-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+	  body::-webkit-scrollbar-thumb:hover {
+        background-color: hsla(0,0%,100%,.5) !important;
+    } 
+	
+	
+	
+     #myModal3::-webkit-scrollbar-track {
+        background-color: transparent !important;
+		-webkit-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+	     #myModal3::-webkit-scrollbar {
+        background-color: transparent !important;
+    }
+		 #myModal3::-webkit-scrollbar-thumb {
+        background-color: hsla(0,0%,100%,.2) !important;
+		-webkit-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+	   #myModal3::-webkit-scrollbar-thumb:hover {
+        background-color: hsla(0,0%,100%,.5) !important;
+    }  	
 
 #includedContent {
 background-color: transparent;
@@ -162,6 +198,12 @@ background: transparent;
 .btn-primary,.btn-primary:hover {
     border-color: transparent;
 }
+.btn-group>.btn-group:not(:first-child)>.btn, .btn-group>.btn:not(:first-child) {
+    color: white !important;
+}
+.btn-group>.btn:first-child {
+    color: white !important;
+}
 #time {
     background-color: rgba(0,0,0,.15) !important;
     color: #fff !important;
@@ -268,7 +310,21 @@ box-shadow: none;
     box-shadow: none !important;
     -webkit-box-shadow: none !important;
 }
-
+#myModal3 {
+    background: var(--modal-bg-color) !important;
+	border: 1px solid transparent !important;
+}
+.modalimgpath, .modaltext, #uploadbutton {
+    color: #fff !important;
+}
+.file-upload {
+    background-color: var(--button-color) !important;
+    color: white !important;
+}
+.file-upload:hover {
+    background-color: var(--button-color-hover) !important;
+    color: white !important;
+}
 @media only screen and (max-width: 775px) {
     #slidertable {
         display: none !important;
