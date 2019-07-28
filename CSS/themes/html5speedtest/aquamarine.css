@@ -16,5 +16,5 @@
 :root {
   --main-bg-color: radial-gradient(ellipse at center, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
   --start-button-color:  radial-gradient(ellipse at center, #3F51B5 0%, #009688 100%) center center/cover no-repeat fixed;
-  --start-button-color-hover: radial-gradient(ellipse at center, #3F51B5 0%, #009688 100%) center center/cover no-repeat fixed;
+  --start-button-color-hover: radial-gradient(ellipse at center, #5066e0 0%, #01ccb9 100%) center center/cover no-repeat fixed;
 }
