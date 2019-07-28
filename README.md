@@ -116,6 +116,19 @@ All themes are highly customizable in regards of which radial gradient color com
 </details>
 
 ***
+# Ombi Themes
+
+**Install by adding `@import "https://gilbn.github.io/theme.park/CSS/themes/ombi/THEME_NAME.css";` in custom css**
+
+```
+https://gilbn.github.io/theme.park/CSS/themes/ombi/XXX.css
+aquamarine.css
+hotline.css
+dark.css
+plex.css
+```
+
+***
 
 # PHP Library Presenter Themes
 
