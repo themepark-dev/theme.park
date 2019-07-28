@@ -145,7 +145,7 @@ plex.css
 ```
 
 ***
-# Guacamole Dark/Plex Theme
+# Guacamole Themes
 
 Custom [Guacamole](https://guacamole.apache.org/) CSS to match the [Organizr](https://github.com/causefx/Organizr) theme.
 
