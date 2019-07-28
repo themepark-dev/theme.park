@@ -232,7 +232,7 @@ Thank you [ydkmlt84](https://github.com/ydkmlt84) for making the job easier :)
 
 ***
 
-# SABnzbd Dark/Plex Theme
+# SABnzbd Themes
 
 Custom CSS for [SABnzbd](https://github.com/sabnzbd/sabnzbd)
 
