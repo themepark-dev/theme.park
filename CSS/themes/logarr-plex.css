@@ -593,10 +593,7 @@ mark.current {
     border: none;
     background-color: hsla(0,0%,100%,.25);
 }
-;
-    font-size: .85rem;
-    width: 5.5em;
-}
+
 
 .marksearchInput {
     color: #fff;
@@ -604,7 +601,7 @@ mark.current {
 }
 
 .search-button {
-    background-color: hsla(0,0%,100%,.25));
+    background-color: hsla(0,0%,100%,.25);
     font-size: .757rem;
 }
 
