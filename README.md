@@ -129,7 +129,17 @@ plex.css
 ```
 
 ***
+# Jackett Themes
 
+```
+https://gilbn.github.io/theme.park/CSS/themes/jackett/XXX.css
+aquamarine.css
+hotline.css
+dark.css
+plex.css
+```
+
+***
 # PHP Library Presenter Themes
 
 Custom [PLPP](https://github.com/Tensai75/plpp) CSS to match the [Organizr](https://github.com/causefx/Organizr) theme.
