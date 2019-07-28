@@ -69,24 +69,24 @@ location / {
 
 ## Current themes in the repo: 
 <ul>
-<li>Sonarr</li>
-<li>Radarr</li>
-<li>Lidarr</li>
-<li>Bazarr</li>
-<li>Plex</li>
-<li>Ombi</li>
-<li>Organizr</li>
-<li>Grafana</li>
-<li>Sabnzbd</li>
-<li>Nzbget</li>
-<li>Guacamole</li>
-<li>Netdata</li>
-<li>Jackett</li>
-<li>html5speedtest</li>
-<li>Filebrowser</li>
-<li>Monitorr</li>
-<li>Logarr</li>
-<li>PLPP</li>	
+<li><a href="https://github.com/gilbN/theme.park#sonarr-v2v3---radarr---lidarr---bazarr-themes">Sonarr</a></li>
+<li><a href="https://github.com/gilbN/theme.park#sonarr-v2v3---radarr---lidarr---bazarr-themes">Radarr</a></li>
+<li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#sonarr-v2v3---radarr---lidarr---bazarr-themes">Lidarr</a></li>
+<li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#sonarr-v2v3---radarr---lidarr---bazarr-themes">Bazarr</a></li>
+<li><a href="https://github.com/gilbN/theme.park#plex-themes">Plex</a></li>
+<li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#ombi-themes">Ombi</a></li>
+<li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#organizr-hotline-and-marine-theme">Organizr</a></li>
+<li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#grafana-themes">Grafana</a></li>
+<li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#sabnzbd-themes">Sabnzbd</a></li>
+<li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#nzbget-themes">Nzbget</a></li>
+<li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#guacamole-themes">Guacamole</a></li>
+<li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#netdata-themes">Netdata</a></li>
+<li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#jackett-themes">Jackett</a></li>
+<li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#html5-speedtest-themes">html5speedtest</a></li>
+<li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#filebrowser-themes">Filebrowser</a></li>
+<li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#monitorr-themes">Monitorr</a></li>
+<li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#logarr-alpha-version-themes">Logarr</a></li>
+<li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#php-library-presenter-themes">PLPP</a></li>
 </ul>
 
 ***
