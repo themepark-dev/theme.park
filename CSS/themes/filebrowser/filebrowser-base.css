@@ -1,0 +1,304 @@
+
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+
+/*		   		        Made by @gilbN					 */
+/*			      https://github.com/gilbN/theme.park			 */
+
+/* FILEBROWSER DARK THEME */
+/* Based on https://github.com/Archmonger/Blackberry-Themes/blob/master/Themes/Blackberry-Flat/bbf_filebrowser.css */
+
+ /* Scrollbar */  
+ @media only screen and (min-width: 768px) {  
+    html {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    body {
+        overflow-y: auto;
+        height: 100%;
+        background: var(--main-bg-color)
+    }
+}
+    ::-webkit-scrollbar {
+        width: 14px;
+    }
+    ::-webkit-scrollbar-thumb {
+        min-height: 50px;
+        border: 3px solid transparent;
+        border-radius: 8px;
+        background-color: hsla(0,0%,100%,.2);
+        background-clip: padding-box;
+    }
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        min-height: 50px;
+        border: 3px solid transparent;
+        border-radius: 8px;
+        background-color: hsla(0,0%,100%,.5);
+        background-clip: padding-box;
+    }   
+.message {
+    color: #FFF;
+}
+#login {
+    min-height: 100%;
+    height: auto;
+    background: var(--main-bg-color);
+}
+body {
+    color: #FFFFFF;
+    font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+#login input[type=password], #login input[type=text] {
+    color: white !important;
+    background-color: rgba(0,0,0,0.15) !important;
+    border: none;
+}
+#loading {
+background: var(--main-bg-color);
+}
+
+#loading .spinner * {
+  background-color: #FFF !important;
+}
+button:hover, input[type=submit]:hover{
+    color: #FFF;
+}
+.button--flat:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+html {
+    min-height: 100%;
+    background: var(--main-bg-color);
+}
+body{
+    background: var(--main-bg-color);
+}
+nav {
+    background-color: rgba(0,0,0,.45);
+    height: 100%;
+    top: 60px;
+    width: 240px;
+}
+nav .action{
+    color:rgba(255, 255, 255, 0.737);
+    font-size: 13px;
+    font-family: Open Sans Semibold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+nav .action:hover{
+    background-color:rgba(255, 255, 255, 0.05);
+}
+nav>div{
+    border-top: none;
+}
+header{
+    background: var(--modal-bg-color);
+	border-bottom: transparent;
+	box-shadow: 0 3px 6px 0 rgba(0,0,0,.15);
+}
+header>div:first-child{
+    height: 60px;
+}
+body{
+    padding-top: 60px;
+}
+.shell {
+    background: var(--modal-bg-color);
+	color: #FFF;
+}
+.shell__prompt i {
+    color: var(--accent-color);
+}
+.action{
+    color: #FFF;
+}
+#listing.list .item{
+    background-color: rgba(0,0,0,.15);
+    color:rgb(238, 238, 238);
+    border: none;
+}
+#listing.list .item:hover{
+    background-color:rgba(255, 255, 255, 0.08);
+    color:rgb(238, 238, 238);
+    border: none;
+    transition: .4s;
+}
+#listing.list .item.header{
+    background-color: rgba(0,0,0,.45);
+    color:rgb(238, 238, 238);
+    border-bottom: none;
+    right: auto;
+}
+.material-icons, .prompt .file-list ul li:before{
+    color: white;
+}
+.share__box__info {
+    background: var(--modal-bg-color);
+}
+.share__box__download {
+    background: var(--accent-color);
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid var(--accent-color);
+}
+svg {
+    fill: var(--accent-color) !important;
+}
+#listing.list .item div:first-of-type i {
+    color: var(--accent-color);
+}
+#listing .item i {
+    color: var(--accent-color);
+}
+#listing.mosaic:hover .item:hover i:hover {
+    color: var(--accent-color-hover);
+}
+#listing .item[aria-selected=true]{
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+#listing h2{
+    color: rgb(238, 238, 238);
+}
+#listing #multiple-selection {
+    background: var(--modal-bg-color);
+}
+#breadcrumbs span a{
+    color: rgb(238, 238, 238);
+}
+#breadcrumbs {
+    border-bottom: 1px solid var(--accent-color);
+}
+#listing .item{
+    background-color: rgba(0,0,0,.15);
+    color:rgb(238, 238, 238);
+    border: none;
+}
+.input {
+    background: #FFF;
+    color: #000;
+}
+#search #input {
+    background: #fff;
+    display: flex;
+    padding: 10px;
+}
+#search #result{
+    background: var(--modal-bg-color);
+    color: rgb(238, 238, 238);
+}
+#search .boxes{
+    background-color: rgba(0,0,0,.15);
+    padding: 15px;
+}
+#search .boxes h3{
+    color: rgb(238, 238, 238);
+}
+#search .boxes>div>div{
+    background-color: rgba(0,0,0,.10);
+}
+#search .boxes>div>div:hover{
+    background-color: rgba(255,255,255,.08);
+}
+#search.active #input{
+    background: var(--main-bg-color);
+    height: 60px;
+    color: black;
+}
+#search.active i, #search.active input{
+    color: rgba(255, 255, 255, 0.85);
+}
+#search #result>div>:first-child{
+    margin-top: 10px;
+}
+.card{
+    background-color: rgba(0,0,0,.15);
+}
+.card h3{
+    color: rgb(238, 238, 238);
+}
+.card#share ul li a {
+    color: var(--accent-color);
+}
+select {
+    color: rgb(238, 238, 238);
+}
+input, textarea, select, button{
+    color: rgb(0, 0, 0);
+}
+.collapsible>label *{
+    color: rgb(238, 238, 238);
+}
+a{
+    color: rgba(255, 255, 255, 0.85);
+}
+table th{
+    color: rgba(255, 255, 255, 0.85);
+}
+.card.floating{
+    background: var(--modal-bg-color);
+}
+#search #input {
+    background-color:rgba(255, 255, 255, 0.08);
+}
+
+#listing.mosaic .item{
+    box-shadow: none !important;
+}
+#listing.mosaic .item:hover{
+    box-shadow: none !important;
+    background-color: rgba(255,255,255,0.08);
+}
+.dashboard p label {
+    color: rgb(255, 255, 255);
+}
+.dashboard #nav li.active {
+    border-color: var(--accent-color);
+}
+.link {
+    color: var(--accent-color);
+}
+@media (max-width: 736px){
+nav{
+    background-color: black;
+}
+#dropdown.active{
+    background-color: black;
+}
+}
+
+@media (min-width: 1024px){
+    main{
+        margin-left: 270px;
+    }
+}
+@media (max-width: 1024px){
+    nav{
+        width: 175px;
+    }
+}
+
+/* Buttons */
+.button {
+    background: var(--button-color);
+	color: #FFF;
+}
+.button:hover {
+    background: var(--button-color-hover);
+}
+.button--flat.button--grey {
+    color: #fff;
+	margin-right: 5px;
+}
