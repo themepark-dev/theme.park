@@ -321,8 +321,9 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
   }
    /* custom buttons */
   .cbutton {
-      border: none;
       background-color: rgba(255, 255, 255, 0.2) !important;
+      border-radius: 3px !important;
+      border-color: transparent !important;
   }
   
    /* Calendar */
