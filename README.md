@@ -64,8 +64,8 @@ location / {
 ```
 </details>
 
-## [Feature requests](http://feathub.com/gilbN/theme.park)
-[![Feature Requests](http://feathub.com/gilbN/theme.park?format=svg)](http://feathub.com/gilbN/theme.park)
+## [Feature requests](https://feathub.com/gilbN/theme.park)
+[![Feature Requests](https://feathub.com/gilbN/theme.park?format=svg)](http://feathub.com/gilbN/theme.park)
 
 ## Current themes in the repo: 
 <ul>
@@ -293,6 +293,7 @@ aquamarine.css
 hotline.css
 dark.css
 plex.css
+organizr-dashboard.css
 ```
 
 #### For panel integration on the Organizr homepage you can use `organizr-dashboard.css` if you use the Plex theme in Organizr. The theme is an "internal" theme that is meant to be used in an Organizr iframe as the background is set to transparent.
@@ -305,8 +306,7 @@ NOTE: When viewing Grafana in Organizr iframe using `organizr-dashboard.css` it 
 ### **TIP:**
 Click the `kiosk` button and use that link if you don't want to show the top bar and side bar inside Organizr! There are two modes, one where the side menu and variables ect disappear and one where just the panels are visible.
 
-https://grafana.technicalramblings.com/d/nLJXnLJiz/unraid-ups-dashboard?refresh=10s&orgId=1&kiosk=tv
-https://grafana.technicalramblings.com/d/nLJXnLJiz/unraid-ups-dashboard?refresh=10s&orgId=1&kiosk
+![](https://i.imgur.com/pVSKUzi.png)
 
 Check out my Varken dashboard here: https://grafana.com/dashboards/9558
 
