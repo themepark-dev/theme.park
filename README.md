@@ -24,7 +24,7 @@ hotline.css
 dark.css
 plex.css
 ```
-`https://gilbn.github.io/theme.park/CSS/themes/sonarr/dark.css`
+Example: `https://gilbn.github.io/theme.park/CSS/themes/sonarr/dark.css`
 
 ### Subfilter method
 
