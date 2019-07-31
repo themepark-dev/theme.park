@@ -16,10 +16,21 @@
 
 ## Setup
 
-### Subfilter
+All apps have 4 themes to choose from. 
+`https://gilbn.github.io/theme.park/CSS/themes/<APP_NAME>/<THEME_NAME>.css`
+```
+aquamarine.css
+hotline.css
+dark.css
+plex.css
+```
+`https://gilbn.github.io/theme.park/CSS/themes/sonarr/dark.css`
 
-As  most of these apps doesn't have support for custom CSS you can get around that by using [subfilter](http://nginx.org/en/docs/http/ngx_http_sub_module.html) in Nginx.
+### Subfilter method
 
+As  most of these apps doesn't have support for custom CSS you can get around that by using [subfilter](http://nginx.org/en/docs/http/ngx_http_sub_module.html) in Nginx or a browser addon called Stylus.
+
+## nginx
 Add this to your reverse proxy:
 
 ```nginx
@@ -63,6 +74,18 @@ location / {
 }
 ```
 </details>
+
+## Stylus method
+
+Add this in the style page:
+
+```css
+@import "https://gilbn.github.io/theme.park/CSS/themes/<APP_NAME>/THEME.css";
+```
+Example:  `@import "https://gilbn.github.io/theme.park/CSS/themes/sonarr/dark.css";`
+
+Link to Chrome extention: https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en
+Link to Firefox extention: https://addons.mozilla.org/en-US/firefox/addon/styl-us/
 
 ## [Feature requests](https://feathub.com/gilbN/theme.park)
 [![Feature Requests](https://feathub.com/gilbN/theme.park?format=svg)](http://feathub.com/gilbN/theme.park)
