@@ -14,7 +14,7 @@
     <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/plpp/plpp.png" alt="Screen Shot 4" width="49.15%" />
 </p>
 
-## Setup
+# Setup
 
 All apps have 4 themes to choose from. 
 `https://gilbn.github.io/theme.park/CSS/themes/<APP_NAME>/<THEME_NAME>.css`
@@ -26,11 +26,11 @@ plex.css
 ```
 Example: `https://gilbn.github.io/theme.park/CSS/themes/sonarr/dark.css`
 
-### Subfilter method
+## Subfilter method
 
 As  most of these apps doesn't have support for custom CSS you can get around that by using [subfilter](http://nginx.org/en/docs/http/ngx_http_sub_module.html) in Nginx or a browser addon called Stylus.
 
-## nginx
+### nginx
 Add this to your reverse proxy:
 
 ```nginx
@@ -75,7 +75,7 @@ location / {
 ```
 </details>
 
-## Stylus method
+### Stylus method
 
 Add this in the style page:
 
