@@ -33,7 +33,59 @@ body {
 .main-view {
     background: linear-gradient(180deg,#ffffff00 10px,#ffffff00 100px) !important;
 }
-
+/* Scrollbar */
+.no-overlay-scrollbar ::-webkit-scrollbar-thumb:vertical{
+    min-height: 50px;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    background: hsla(0,0%,100%,.2) !important;
+}
+/* Variable Dropdown Menu */
+.variable-value-dropdown {
+background: var(--modal-bg-color);
+border: 1px solid #00000000;
+}
+.variable-value-dropdown.single .selected {
+background-color: rgba(0, 0, 0, 0.25);
+}
+.css-0.gf-form-select-box__menu {
+background: #FFF !important;
+-webkit-box-shadow:5px 5px 20px -5px #000;
+box-shadow:5px 5px 20px -5px #000;
+position:absolute;
+z-index:1000;
+min-width:100%
+}
+/* time picker Menu */
+.time-picker-popover {
+border: 1px solid #00000000;
+background: var(--modal-bg-color);
+}
+.time-picker-calendar .react-calendar__navigation, .time-picker-calendar .react-calendar__navigation__arrow, .time-picker-calendar .react-calendar__navigation__label {
+background-color: rgba(0, 0, 0, 0.25);
+}
+.time-picker-calendar .react-calendar__month-view__weekdays {
+background-color: rgba(0, 0, 0, 0.6);
+}
+.time-picker-calendar .react-calendar__tile--active, .time-picker-calendar .react-calendar__tile--active:hover {
+background: rgba(255, 255, 255, 0.08);
+border: 1px solid rgba(0,0,0,0);
+}
+.time-picker-calendar .time-picker-calendar-tile:hover {
+-webkit-box-shadow: 0 0 4px rgba(255, 255, 255, 0.08);
+box-shadow: 0 0 4px #ffffff00;
+background: rgba(255, 255, 255, 0.08);
+border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.time-picker-calendar .react-calendar__month-view__days {
+background-color: rgba(0, 0, 0, 0.15);
+}
+.time-picker-calendar .time-picker-calendar-tile {
+border-radius: 0px;
+}
+.time-picker-calendar {
+border: 1px solid #00000000;
+}
 /* login page */
 .login {
 background-image: var(--main-bg-color) !important;
@@ -142,6 +194,9 @@ color:#FFFFFF !important;
 }
 .search-filter-box {
     background: var(--modal-bg-color);
+}
+.search-filter-box__header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 /* Dashboard row  */
 .dashboard-row--collapsed {
