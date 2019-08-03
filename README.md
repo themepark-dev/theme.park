@@ -26,10 +26,9 @@ plex.css
 ```
 Example: `https://gilbn.github.io/theme.park/CSS/themes/sonarr/dark.css`
 
-## Subfilter method
-
 As  most of these apps doesn't have support for custom CSS you can get around that by using [subfilter](http://nginx.org/en/docs/http/ngx_http_sub_module.html) in Nginx or a browser addon called Stylus.
 
+## Subfilter method
 ### nginx
 Add this to your reverse proxy:
 
@@ -76,6 +75,7 @@ location / {
 </details>
 
 ### Stylus method
+Stylus is a browser extention that can inject custom css to the webpage of your choosing. 
 
 Add this in the style page:
 
