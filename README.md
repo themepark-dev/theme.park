@@ -538,7 +538,7 @@ And add this in custom HTML in Organizr:
 
 Custom [Logarr](https://github.com/Monitorr/logarr/tree/alpha) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr).
 
-![](https://raw.githubusercontent.com/goldenpipes/theme.park/master/Screenshots/logarr/logarr.gif)
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/logarr/logarr.gif)
 
 ```
 https://gilbn.github.io/theme.park/CSS/themes/logarr/XXX.css
