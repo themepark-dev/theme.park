@@ -29,7 +29,7 @@ Example: `https://gilbn.github.io/theme.park/CSS/themes/sonarr/dark.css`
 As  most of these apps doesn't have support for custom CSS you can get around that by using [subfilter](http://nginx.org/en/docs/http/ngx_http_sub_module.html) in Nginx or a browser addon called Stylus.
 
 ## Subfilter method
-### nginx
+### Nginx
 Add this to your reverse proxy:
 
 ```nginx
@@ -42,37 +42,38 @@ sub_filter_once on;
 ```
 Where `APP_NAME` is the app you want to theme and `THEME.css` is the name of the theme. e.g. `aquamarine.css`
 
-Here is a complete example:
-
-<details><summary>Expand</summary>
-
+#### Example:
 ```nginx
-# REDIRECT HTTP TRAFFIC TO https://[domain.com]
-server {
-    listen 80;
-    server_name ombi.domain.com;
-    return 301 https://$server_name$request_uri;
-}
-server {  
-    listen 443 ssl http2;
-    server_name ombi.domain.com;
-
-#SSL settings
-    include /config/nginx/ssl.conf
-
-location / {
-    proxy_pass http://192.168.1.2:8701;
+location /sonarr {
+    proxy_pass http://localhost:8989/sonarr;
     include /config/nginx/proxy.conf;
 	proxy_set_header Accept-Encoding "";
 	sub_filter
 	'</head>'
-	'<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/ombi/plex.css">
+	'<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/sonarr/plex.css">
 	</head>';
 	sub_filter_once on;
   }
 }
 ```
-</details>
+
+### Apache (Untested)
+```apache
+AddOutputFilterByType SUBSTITUTE text/html 
+   Substitute 's|</head> '<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/<APP_NAME>/THEME.css">
+</head>';|'
+  ```
+  
+#### Example:
+```apache
+<Location /sonarr>
+    ProxyPass http://localhost:8989/sonarr
+    ProxyPassReverse http://localhost:8989/sonarr
+AddOutputFilterByType SUBSTITUTE text/html 
+   Substitute 's|</head> '<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/sonarr/plex.css">
+</head>';|'
+  </Location>
+  ```
 
 ## Stylus method
 Stylus is a browser extention that can inject custom css to the webpage of your choosing. 
@@ -167,7 +168,7 @@ plex.css
 
 Custom [PLPP](https://github.com/Tensai75/plpp) CSS to match the [Organizr](https://github.com/causefx/Organizr) theme.
 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/plpp/plpp.png)
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/plpp/plpp.gif)
 
 ```
 https://gilbn.github.io/theme.park/CSS/themes/plpp/XXX.css
@@ -182,7 +183,7 @@ plex.css
 
 Custom [Guacamole](https://guacamole.apache.org/) CSS to match the [Organizr](https://github.com/causefx/Organizr) theme.
 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/guacorg/guacorg.png)
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/guacorg/guacamole.gif)
 
 ```
 https://gilbn.github.io/theme.park/CSS/themes/guacamole/XXX.css
@@ -206,7 +207,7 @@ plex.css
 
 Custom [Plex](https://plex.tv) CSS to match the [Organizr](https://github.com/causefx/Organizr) theme.
 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/plexorg/plexorg.png)
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/plexorg/plex.gif)
 
 ```
 https://gilbn.github.io/theme.park/CSS/themes/plex/XXX.css
@@ -221,7 +222,7 @@ dark.css
 
 Custom [Sonarr V2 and V3](https://github.com/Sonarr/Sonarr)/[Radarr](https://github.com/Radarr/Radarr)/[Lidarr](https://github.com/Lidarr/Lidarr)/[Bazarr](https://github.com/morpheus65535/bazarr) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr)
 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/orgarr/sonarrv3.png)
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/orgarr/orgarr.gif)
 
 ```
 https://gilbn.github.io/theme.park/CSS/themes/sonarr/XXX.css
@@ -254,7 +255,7 @@ Thank you iFelix18 for doing all the hard work on v2! :)
 
 Custom CSS for [Nzbget](https://github.com/nzbget/nzbget)
 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbget/nzbget-split.png)
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbget/nzbget.gif)
 
 ```
 https://gilbn.github.io/theme.park/CSS/themes/nzbget/XXX.css
@@ -282,7 +283,7 @@ Thank you [ydkmlt84](https://github.com/ydkmlt84) for making the job easier :)
 
 Custom CSS for [SABnzbd](https://github.com/sabnzbd/sabnzbd)
 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/sabnzbd/sabnzbd.png)
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/sabnzbd/sabnzbd.gif)
 
 ```
 https://gilbn.github.io/theme.park/CSS/themes/sabnzbd/XXX.css
@@ -308,7 +309,7 @@ plex.css
 
 Custom [Grafana](https://github.com/grafana/grafana) CSS for [Organizr](https://github.com/causefx/Organizr) homepage integration and consistent UI.
 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/graforg/grafana-1.png)
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/graforg/grafana.gif)
 
 ```
 https://gilbn.github.io/theme.park/CSS/themes/grafana/XXX.css
@@ -466,7 +467,7 @@ If you dont want the ***Panel name*** text, just remove the `<h5><span>` line en
 
 Custom [Netdata](https://github.com/firehol/netdata) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr)
 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/netorg/netdata-1.png)
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/netorg/netdata.gif)
 
 ```
 https://gilbn.github.io/theme.park/CSS/themes/netdata/XXX.css
@@ -495,7 +496,7 @@ organizr-dashboard.css
 
 Custom [Monitorr](https://github.com/Monitorr/Monitorr) CSS for [Organizr](https://github.com/causefx/Organizr) homepage integration.
 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/monitorg/1-flat.jpg)
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/monitorg/monitorr.gif)
 
 ```
 https://gilbn.github.io/theme.park/CSS/themes/monitorr/XXX.css
@@ -538,7 +539,7 @@ And add this in custom HTML in Organizr:
 
 Custom [Logarr](https://github.com/Monitorr/logarr/tree/alpha) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr).
 
-![](https://raw.githubusercontent.com/goldenpipes/theme.park/master/Screenshots/logarr-plex.png)
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/logarr/logarr.gif)
 
 ```
 https://gilbn.github.io/theme.park/CSS/themes/logarr/XXX.css
@@ -554,7 +555,7 @@ plex.css
 
 Custom [Filebrowser](https://github.com/filebrowser/filebrowser) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr).
 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/filebrowser/filebrowser.png)
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/filebrowser/filebrowser.gif)
 
 Based on https://github.com/Archmonger/Blackberry-Themes/blob/master/Themes/Blackberry-Flat/bbf_filebrowser.css
 **https://github.com/Archmonger/Blackberry-Themes**
@@ -581,7 +582,7 @@ plex.css
 
 Custom [HTML5 Speedtest](https://github.com/adolfintel/speedtest) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr).
 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/html5speedtest/html5speedtest.png)
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/html5speedtest/speedtest.gif)
 
 ```
 https://gilbn.github.io/theme.park/CSS/themes/html5speedtest/XXX.css
