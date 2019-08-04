@@ -150,7 +150,7 @@ hotline.css
 dark.css
 plex.css
 ```
-
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/ombi/ombi.gif)
 ***
 # Jackett Themes
 
@@ -161,7 +161,7 @@ hotline.css
 dark.css
 plex.css
 ```
-
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/jackett/jackett.gif)
 ***
 # PHP Library Presenter Themes
 
