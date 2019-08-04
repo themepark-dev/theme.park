@@ -105,7 +105,7 @@ body {
       background-color: transparent !important;
   }
   table {
-      background: var(--modal-bg-color) !important;
+      background: transparent !important;
   }
   .table-hover > tbody > tr:hover {
       background-color: rgba(255, 255, 255, 0.08) !important;
@@ -131,7 +131,12 @@ body {
       color: var(--accent-color) !important;
       border-left: 2px solid var(--accent-color)  !important;
   }
-  
+
+  /*code*/
+  code {
+    color: #fff !important;
+    background-color: rgba(255, 255, 255, 0.15) !important;
+}
   /* System Overview metrics */
   .gaugeChartTitle, .gaugeChartUnits, .gaugeChartMax, .gaugeChartMin, .gaugeChartLabel, .easyPieChartTitle, .easyPieChartLabel, .easyPieChartUnits {
       color: #ffffff !important;
