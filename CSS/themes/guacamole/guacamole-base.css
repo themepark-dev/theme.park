@@ -10,20 +10,6 @@
 
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
-
-:root {
-    --main-bg-color: radial-gradient(ellipse at center, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
-    --modal-bg-color: radial-gradient(ellipse at top, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
-    
-    --button-color: rgba(0,0,0,.25);
-    --button-color-hover: rgba(0,0,0,.45);
-  }
-  /* plex buttons 
-      --button-color: #cc7b19;
-    --button-color-hover: #e59029;
-  }
-  */
-  
   body {
     background: var(--main-bg-color) !important;
       background-repeat: repeat, no-repeat;
