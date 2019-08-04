@@ -29,7 +29,7 @@ Example: `https://gilbn.github.io/theme.park/CSS/themes/sonarr/dark.css`
 As  most of these apps doesn't have support for custom CSS you can get around that by using [subfilter](http://nginx.org/en/docs/http/ngx_http_sub_module.html) in Nginx or a browser addon called Stylus.
 
 ## Subfilter method
-### nginx
+### Nginx
 Add this to your reverse proxy:
 
 ```nginx
@@ -42,37 +42,38 @@ sub_filter_once on;
 ```
 Where `APP_NAME` is the app you want to theme and `THEME.css` is the name of the theme. e.g. `aquamarine.css`
 
-Here is a complete example:
-
-<details><summary>Expand</summary>
-
+#### Example:
 ```nginx
-# REDIRECT HTTP TRAFFIC TO https://[domain.com]
-server {
-    listen 80;
-    server_name ombi.domain.com;
-    return 301 https://$server_name$request_uri;
-}
-server {  
-    listen 443 ssl http2;
-    server_name ombi.domain.com;
-
-#SSL settings
-    include /config/nginx/ssl.conf
-
-location / {
-    proxy_pass http://192.168.1.2:8701;
+location /sonarr {
+    proxy_pass http://localhost:8989/sonarr;
     include /config/nginx/proxy.conf;
 	proxy_set_header Accept-Encoding "";
 	sub_filter
 	'</head>'
-	'<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/ombi/plex.css">
+	'<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/sonarr/plex.css">
 	</head>';
 	sub_filter_once on;
   }
 }
 ```
-</details>
+
+### Apache (Untested)
+```apache
+AddOutputFilterByType SUBSTITUTE text/html 
+   Substitute 's|</head> '<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/<APP_NAME>/THEME.css">
+</head>';|'
+  ```
+  
+#### Example:
+```apache
+<Location /sonarr>
+    ProxyPass http://localhost:8989/sonarr
+    ProxyPassReverse http://localhost:8989/sonarr
+AddOutputFilterByType SUBSTITUTE text/html 
+   Substitute 's|</head> '<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/sonarr/plex.css">
+</head>';|'
+  </Location>
+  ```
 
 ## Stylus method
 Stylus is a browser extention that can inject custom css to the webpage of your choosing. 
