@@ -40,7 +40,7 @@ sub_filter
 </head>';
 sub_filter_once on;
 ```
-Where `THEME.css` is the name of the theme. e.g. `aquamarine.css`
+Where `APP_NAME` is the app you want to theme and `THEME.css` is the name of the theme. e.g. `aquamarine.css`
 
 Here is a complete example:
 
@@ -74,7 +74,7 @@ location / {
 ```
 </details>
 
-### Stylus method
+## Stylus method
 Stylus is a browser extention that can inject custom css to the webpage of your choosing. 
 
 Add this in the style page:
