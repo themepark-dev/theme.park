@@ -31,7 +31,9 @@ body {
 .footer {
     color: #fff;
 }
-
+#scroll-up {
+    color: white;
+}
 @media (max-width: 991px) {
     .toolbar .page-toolbar .x-toolbar-left-1 {
         display: block;
