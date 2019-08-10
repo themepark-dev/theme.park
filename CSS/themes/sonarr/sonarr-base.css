@@ -26,7 +26,13 @@ body {
 
 #footer-region::after {
     content: "\A theme.park 2.0";
-    white-space: pre;
+    font-size: 20px;
+}
+.footer {
+    color: #fff;
+}
+#scroll-up {
+    color: white;
 }
 
 @media (max-width: 991px) {
