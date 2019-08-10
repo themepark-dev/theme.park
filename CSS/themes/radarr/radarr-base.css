@@ -528,6 +528,9 @@ pre {
     border-color: transparent;
     outline-style: none;
 }
+.btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default {
+    color: #fff;
+}
 .btn-group .btn+.btn, .btn-group .btn+.btn-group, .btn-group .btn-group+.btn, .btn-group .btn-group+.btn-group {
     margin-left: 0px;
 }
