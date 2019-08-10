@@ -96,6 +96,10 @@ body {
 .search .input-group .input-group-addon, .search .input-group input:focus {
     color: #FFF;
 }
+.input-group-addon {
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 1px solid transparent;
+}
 .tt-suggestion.tt-cursor {
     background-color: #191a1c !important;
     color: #ffffff !important;
@@ -387,7 +391,7 @@ a:focus, a:hover {
 /* Season Pass */
 .alert-info {
     background-color: rgba(255, 255, 255, 0.25);
-    border-color: #ffffff;
+    border-color: transparent;
     color: #ffffff;
 }
 /* alerts */
