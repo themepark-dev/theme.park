@@ -528,6 +528,7 @@ pre {
 .close:focus {
     color: #FFF !important;
     opacity: 1;
+    outline: none;
 }
 .btn-default {
     color: hsla(0,0%,100%,.7);
