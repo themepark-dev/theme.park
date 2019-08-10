@@ -519,14 +519,17 @@ pre {
 .btn-default {
     color: hsla(0,0%,100%,.7);
     background-color: rgba(0, 0, 0, .25);
-    border-color: none;
+    border-color: transparent;
     outline-style: none;
 }
-.btn-default:hover, .btn-default.active, .btn-default.active:hover {
+.btn-default:hover {
     color: #FFFFFF;
     background-color: hsla(0,0%,100%,.08);
-    border-color: none;
+    border-color: transparent;
     outline-style: none;
+}
+.btn-group .btn+.btn, .btn-group .btn+.btn-group, .btn-group .btn-group+.btn, .btn-group .btn-group+.btn-group {
+    margin-left: 0px;
 }
 .btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
     color: #fff;
@@ -568,6 +571,7 @@ pre {
 }
 .btn.focus, .btn:focus, .btn:hover {
     color: #fff;
+    border-color: transparent;
 }
 .modal-footer > button:not([class*="btn-primary"]):not([class*="btn-danger"]):not([class*="btn-success"]) {
     color: #FFF;
@@ -605,7 +609,6 @@ pre {
 }
 .btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default {
     background-color: hsla(0,0%,100%,.08);
-    border-color: #FFF;
 }
 .btn-danger:hover {
     color: #fff;
