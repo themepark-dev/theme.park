@@ -143,7 +143,7 @@ body {
 
 .bootstrap-tagsinput {
     background-color: rgba(0, 0, 0, .25);
-    border: 1px solid rgba(0, 0, 0, .25);
+    border: 1px solid transparent;
     color: #FFF;
 }
 .form-group i {
@@ -392,7 +392,7 @@ a:focus, a:hover {
 /* Season Pass */
 .alert-info {
     background-color: rgba(255, 255, 255, 0.25);
-    border-color: #ffffff;
+    border-color: transparent;
     color: #ffffff;
 }
 /* alerts */
@@ -606,10 +606,12 @@ pre {
 .btn-primary.focus, .btn-primary:focus, .btn-primary:hover {
     color: #fff;
     background-color: #286090 !important;
+    border-color: transparent;
 }
 .btn-success.focus, .btn-success:focus, .btn-success:hover {
     color: #fff;
     background-color: #449d44 !important;
+    border-color: transparent;
 }
 .btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default {
     background-color: hsla(0,0%,100%,.08);
