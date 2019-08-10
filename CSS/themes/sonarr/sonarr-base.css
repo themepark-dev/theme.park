@@ -95,7 +95,7 @@ body {
 .search .input-group .input-group-addon, .search .input-group input {
     background-color: rgba(0, 0, 0, .25) !important;
     color: #FFF;
-    border-color: rgba(0, 0, 0, .25);
+    border-color: transparent;
     height: 40px;
 }
 .search .input-group .input-group-addon, .search .input-group input:focus {
