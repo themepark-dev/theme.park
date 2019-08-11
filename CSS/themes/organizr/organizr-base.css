@@ -514,7 +514,7 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
       border: white !important; 
   }
   .progress-bar-info {
-      background: rgba(0, 0, 0, 0.25) !important;
+      background: rgba(255, 255, 255, 0.25) !important;
   }
   .progress-bar-inverse, .progress {
       background: rgba(0, 0, 0, 0.25) !important;
