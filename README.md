@@ -601,6 +601,20 @@ plex.css
 </details>
 
 ***
+# Tautulli Themes
+
+Custom [Tautulli](https://github.com/Tautulli/Tautulli) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr).
+
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/tautulli/tautulli.gif)
+
+```
+https://gilbn.github.io/theme.park/CSS/themes/tautulli/XXX.css
+aquamarine.css
+hotline.css
+dark.css
+plex.css
+```
+
 ### Honourable mentions:
 
 [leram84/layer.Cake](https://github.com/leram84/layer.Cake/)
