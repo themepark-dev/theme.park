@@ -99,6 +99,7 @@ Link to Firefox extention: https://addons.mozilla.org/en-US/firefox/addon/styl-u
 <li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#sonarr-v2v3---radarr---lidarr---bazarr-themes">Bazarr</a></li>
 <li><a href="https://github.com/gilbN/theme.park#plex-themes">Plex</a></li>
 <li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#ombi-themes">Ombi</a></li>
+<li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#tautulli-themes">Tautulli</a></li>
 <li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#organizr-hotline-and-marine-theme">Organizr</a></li>
 <li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#grafana-themes">Grafana</a></li>
 <li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#sabnzbd-themes">Sabnzbd</a></li>
