@@ -623,6 +623,7 @@ Custom [Tautulli](https://github.com/deluge-torrent/deluge) CSS for consistent U
 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/deluge/deluge.gif)
 
+Based on https://github.com/halianelf/deluge-dark @halianelf Thanks for making the job easier!
 ```
 https://gilbn.github.io/theme.park/CSS/themes/deluge/XXX.css
 aquamarine.css
