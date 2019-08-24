@@ -250,6 +250,9 @@ span > a.active, .stacked-configs > li > span > span.active {
       background-color: rgba(0, 0, 0, 0.45);
   }
   /* Modal */
+  .modal-content {
+	border: none;
+  }
   .modal-body li {
       color: #fff;
   }
