@@ -822,7 +822,7 @@
   }
   
   .x-toolbar .xtb-sep {
-      background: linear-gradient(to right, transparent 45%, #666 45%, #666 55%,  transparent 55%);
+      background: linear-gradient(to right, transparent 45%, rgba(255, 255, 255, .08) 45%, rgba(255, 255, 255, 0.08) 55%,  transparent 55%);
       width: 10px
   }
   
@@ -1088,8 +1088,7 @@
   }
   
   .x-grid3-hd-btn, a.x-grid3-hd-btn:hover {
-      background: linear-gradient(116deg, transparent 0%, transparent 0%, transparent 60%, #252525 60%), linear-gradient(244deg, #666 0%, #666 0%, #666 60%, transparent 60%);
-      //background-color:#333333;
+      background: linear-gradient(116deg, transparent 0%, transparent 0%, transparent 60%, #252525 60%), linear-gradient(244deg, #fff 0%, #fff 0%, #fff 60%, transparent 60%);
       height: 6px !important;
       width: 8px;
       padding: 7px 2px;
@@ -2090,9 +2089,9 @@
   .x-progress-bar {
       background-color:var(--progress-color);
       background-image: none;
-      border-top-color:var(--progress-color);
-      border-bottom-color:var(--progress-color);
-      border-right-color:var(--progress-color);
+      border-top-color:transparent;
+      border-bottom-color:transparent;
+      border-right-color:transparent;
   }
   
   .x-progress-text {
