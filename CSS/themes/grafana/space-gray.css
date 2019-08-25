@@ -11,11 +11,10 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
-/* NZBGET HOTLINE THEME */
-@import url(https://gilbn.github.io/theme.park/CSS/themes/nzbget/nzbget-base.css);
+/* GRAFANA SPACE GRAY THEME */
+@import url(https://gilbn.github.io/theme.park/CSS/themes/grafana/grafana-base.css);
 :root {
-  --main-bg-color: radial-gradient(ellipse at center, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
-  --modal-bg-color: radial-gradient(ellipse at top, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
-  --accent-color: #FFEB3B;
-  --button-color: #F44336;
+  --main-bg-color: radial-gradient(ellipse at center, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
+  --modal-bg-color: radial-gradient(ellipse at top, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
+  --accent-color: #fff;
 }

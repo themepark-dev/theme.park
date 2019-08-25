@@ -11,11 +11,16 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
-/* NZBGET HOTLINE THEME */
-@import url(https://gilbn.github.io/theme.park/CSS/themes/nzbget/nzbget-base.css);
+/* LIDARR SPACE GRAY THEME */
+@import url(https://gilbn.github.io/theme.park/CSS/themes/lidarr/lidarr-base.css);
 :root {
-  --main-bg-color: radial-gradient(ellipse at center, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
-  --modal-bg-color: radial-gradient(ellipse at top, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
-  --accent-color: #FFEB3B;
-  --button-color: #F44336;
+  --main-bg-color:  radial-gradient( ellipse at center,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed;
+  --modal-bg-color: radial-gradient( ellipse at top,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed;
+
+  --calendar-Downloading: #7a43b6;
+  --calendar-Downloaded: #27c24c; 
+  --calendar-Unreleased: #06f;
+  --calendar-Partial: orange;  
+  --calendar-Unmonitored: #adadad;
+  --calendar-Missing: #f05050; 
 }

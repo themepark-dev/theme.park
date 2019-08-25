@@ -663,16 +663,16 @@ pre {
 
 /* MODAL */
 .ModalHeader\/modalHeader\/gpcvG {
-    background: var(--main-bg-color);
+    background: var(--modal-bg-color);
     color: #fff;
     border-bottom: 1px solid hsla(0,0%,100%,.08);
 }
 .ModalContent\/modalContent\/-txrl {
-    background: var(--main-bg-color);
+    background: var(--modal-bg-color);
     color: #fff;
 }
 .ModalFooter\/modalFooter\/1N5Ku {
-    background: var(--main-bg-color);
+    background: var(--modal-bg-color);
     color: #fff;
     border-top: 1px solid hsla(0,0%,100%,.08);
 }

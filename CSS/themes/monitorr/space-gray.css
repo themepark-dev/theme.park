@@ -11,11 +11,11 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
-/* NZBGET HOTLINE THEME */
-@import url(https://gilbn.github.io/theme.park/CSS/themes/nzbget/nzbget-base.css);
+/* MONIITORR AQUAMARINE THEME */
+@import url(https://gilbn.github.io/theme.park/CSS/themes/monitorr/monitorr-base.css);
 :root {
-  --main-bg-color: radial-gradient(ellipse at center, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
-  --modal-bg-color: radial-gradient(ellipse at top, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
-  --accent-color: #FFEB3B;
-  --button-color: #F44336;
+  --main-bg-color:  radial-gradient( ellipse at center,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed;
+  --modal-bg-color: radial-gradient( ellipse at top,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed; 
+  --button-color: #607D8B;
+  --button-color-hover: #81a6b7;
 }

@@ -95,6 +95,20 @@ div.flot-text {
     background-color: #393a3b !important;
 }
 
+/*Datasources Menu*/
+
+.add-data-source-item {
+    background: rgba(255, 255, 255, 0.08);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.add-data-source-item:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid #00000000;
+    color: #fff;
+}
 /* Variable label color */
 .template-variable {
     color: #f79520 !important;

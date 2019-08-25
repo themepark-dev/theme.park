@@ -34,17 +34,30 @@
 }
 
 /*Modal*/ 
-.modal-header, .modal-footer, .modal-body-with-panes {
+.modal-header, .modal-footer, .modal-body-with-panes, .ModalHeader-modalHeader-1Kf9RW, .EditHomeModalContent-modalBody-2rHN2d, .EditHomeModalContent-footer-10Ix6N {
   background: var(--modal-bg-color);
 }
-.modal-header {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+.modal-header, .ModalHeader-modalHeader-1Kf9RW {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
-.modal-footer {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+.modal-footer, .EditHomeModalContent-footer-10Ix6N {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 /*Modal icon color*/ 
 .edit-section-modal .wizard-blocks-group>.wizard-block {
   color: #ffffff;
+}
+
+.edit-lock-addon {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-color: #32323200;
+}
+.well {
+  background-color: rgba(0, 0, 0, 0.25);
+  border: 1px solid transparent;
+}
+.files ul li {
+  color: #fff;
 }
 /* This was a tough one :D */
