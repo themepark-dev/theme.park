@@ -11,10 +11,10 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
-/* RADARR AQUAMARINE THEME */
-@import url(https://gilbn.github.io/theme.park/CSS/themes/radarr/radarr-base.css);
+/* QBITTORRENT HOTLINE THEME */
+@import url(https://gilbn.github.io/theme.park/CSS/themes/qbittorrent/qbittorrent-base.css);
 :root {
-  --main-bg-color: radial-gradient(ellipse at center, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
-  --modal-bg-color: radial-gradient(ellipse at top, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
+  --main-bg-color: radial-gradient(ellipse at center, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
+  --modal-bg-color: radial-gradient(ellipse at top, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
   --progress-color: #607D8B;
 }
