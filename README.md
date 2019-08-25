@@ -152,6 +152,7 @@ aquamarine.css
 hotline.css
 dark.css
 plex.css
+space-gray.css
 ```
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/ombi/ombi.gif)
 ***
@@ -163,6 +164,7 @@ aquamarine.css
 hotline.css
 dark.css
 plex.css
+space-gray.css
 ```
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/jackett/jackett.gif)
 ***
@@ -178,6 +180,7 @@ aquamarine.css
 hotline.css
 dark.css
 plex.css
+space-gray.css
 ```
 
 ***
@@ -193,6 +196,7 @@ aquamarine.css
 hotline.css
 dark.css
 plex.css
+space-gray.css
 ```
 
 ### Screenshots
@@ -216,6 +220,7 @@ https://gilbn.github.io/theme.park/CSS/themes/plex/XXX.css
 aquamarine.css
 hotline.css
 dark.css
+space-gray.css
 ```
 
 ***
@@ -235,6 +240,7 @@ aquamarine.css
 hotline.css
 plex.css
 dark.css
+space-gray.css
 ```
 
 Thank you iFelix18 for doing all the hard work on v2! :)
@@ -265,6 +271,7 @@ aquamarine.css
 hotline.css
 plex.css
 dark.css
+space-gray.css
 ```
 
 Thank you [ydkmlt84](https://github.com/ydkmlt84) for making the job easier :)
@@ -293,6 +300,7 @@ aquamarine.css
 hotline.css
 dark.css
 plex.css
+space-gray.css
 ```
 
 **Note: SABnzbd theme must be set to `Glitter`**
@@ -319,6 +327,7 @@ aquamarine.css
 hotline.css
 dark.css
 plex.css
+space-gray.css
 organizr-dashboard.css
 ```
 
@@ -477,6 +486,7 @@ aquamarine.css
 hotline.css
 dark.css
 plex.css
+space-gray.css
 organizr-dashboard.css
 ```
 
@@ -506,6 +516,7 @@ aquamarine.css
 hotline.css
 dark.css
 plex.css
+space-gray.css
 organizr-dashboard.css
 ```
 
@@ -549,6 +560,7 @@ aquamarine.css
 hotline.css
 dark.css
 plex.css
+space-gray.css
 ```
 
 ***
@@ -568,6 +580,7 @@ aquamarine.css
 hotline.css
 dark.css
 plex.css
+space-gray.css
 ```
 
 
@@ -592,6 +605,7 @@ aquamarine.css
 hotline.css
 dark.css
 plex.css
+space-gray.css
 ```
 
 ### Screenshots
@@ -615,6 +629,7 @@ aquamarine.css
 hotline.css
 dark.css
 plex.css
+space-gray.css
 ```
 ***
 # Deluge Themes
