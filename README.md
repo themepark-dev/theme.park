@@ -16,13 +16,14 @@
 
 # Setup
 
-All apps have 4 themes to choose from. 
+All apps have 5 themes to choose from. 
 `https://gilbn.github.io/theme.park/CSS/themes/<APP_NAME>/<THEME_NAME>.css`
 ```
 aquamarine.css
 hotline.css
 dark.css
 plex.css
+space-gray.css
 ```
 Example: `https://gilbn.github.io/theme.park/CSS/themes/sonarr/dark.css`
 
