@@ -294,6 +294,10 @@ tbody>tr:last-child td {
 .history-table, tr td.status, .history-table, tr td.history-completedon, .history-table, tr td.row-extra-text, .history-table tr td.status, .history-table tr td.history-completedon, .history-table tr td.row-extra-text {
   color: #fff;
 }
+.table-messages .table-messages-remove {
+  border-bottom: 1px solid transparent!important;
+  background: rgba(255, 255, 255, 0.25);
+}
 
 
 .multioperations-selector {
