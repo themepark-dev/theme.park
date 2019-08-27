@@ -334,6 +334,29 @@ tbody>tr:last-child td {
   background-color: #1b1a1a;
 }
 
+/*Tabbed sorting */
+
+.history-queue-swicher .nav-tabs>li>a, .history-queue-swicher .nav-tabs>li.active>a {
+  border-bottom: 1px solid transparent;
+  border: 1px solid transparent;
+  color: #fff !important;
+}
+.history-queue-swicher .nav {
+  border-bottom: 1px solid transparent;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+  color: #555;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.nav>li>a:hover, .nav>li>a:focus {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+.badge {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
 /*Settings*/
 .navbar-default {
   background: var(--main-bg-color);
