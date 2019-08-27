@@ -301,7 +301,7 @@ tbody>tr:last-child td {
 
 
 .multioperations-selector {
-  border: 1px solid rgba(0, 0, 0, 0.25) !important;
+  border: 1px solid transparent !important;
   background-color: rgba(0, 0, 0, 0.25) !important;
 }
 #history-options .hover-button {
