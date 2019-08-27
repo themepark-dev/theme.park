@@ -402,7 +402,17 @@ table {
   border-color: rgba(255, 255, 255, 0.3);
   border-radius: 3px !important;
 }
-.form-control::-moz-placeholder{color:#fff;opacity:1}.form-control:-ms-input-placeholder{color:#fff}.form-control::-webkit-input-placeholder{color:#fff}
+
+.form-control::-moz-placeholder {
+  color:#fff !important;
+  opacity:1
+}
+.form-control:-ms-input-placeholder {
+  color:#fff !important;
+}
+.form-control::-webkit-input-placeholder {
+  color:#fff !important;
+}
 .col2 p, .col2-cats {
   color: #fff;
 }
@@ -413,11 +423,13 @@ input[type="text"], input[type="email"], input[type="url"], input[type="number"]
   background-color: rgba(255, 255, 255, 0.25);
   border-radius: 3px !important;
   color: #fff !important;
+  outline: none;
 }
 input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="number"]:focus, input[type="password"]:focus, textarea:focus, select:focus {
   border: none;
   background-color: rgb(25, 26, 28);
   border-radius: 3px !important;
+  outline: none;
 }
 
 textarea:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, textarea:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus {
