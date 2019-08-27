@@ -105,10 +105,18 @@ body {
 }
 
 /* BUTTONS */
+.form-signin .btn {
+  background: var(--default-button-color) !important;
+  outline: none !important;
+}
+.text-center a {
+  color: #ffffff;
+}
 .btn-default {
   color: #fff;
   background: var(--default-button-color);
   border-color: #00000000 !important;
+  outline: none !important;
 }
 .btn-default:focus, .btn-default.focus {
   color: #fff;
@@ -394,6 +402,7 @@ table {
   border-color: rgba(255, 255, 255, 0.3);
   border-radius: 3px !important;
 }
+.form-control::-moz-placeholder{color:#fff;opacity:1}.form-control:-ms-input-placeholder{color:#fff}.form-control::-webkit-input-placeholder{color:#fff}
 .col2 p, .col2-cats {
   color: #fff;
 }
@@ -414,6 +423,8 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, in
 textarea:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, textarea:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus {
   background-color: rgba(255, 255, 255, 0.25);
   border: none;
+  -webkit-box-shadow: none !important;
+   box-shadow: none !important;
 }
 
 /*Servers*/
@@ -535,4 +546,8 @@ legend {
 /* Scheduling */
 .time {
   color: #fff;
+}
+
+label {
+  color: #ffffff;
 }
