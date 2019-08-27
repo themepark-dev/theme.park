@@ -286,7 +286,7 @@ table:hover {
   background-color: rgba(0, 0, 0, 0.25) !important;
 }
 .table-hover>tbody>tr:hover {
-  background-color: rgba(0, 0, 0, 0.1) !important
+  background-color: rgba(255, 255, 255, 0.07) !important
 }
 tbody>tr:last-child td {
   border-bottom: 1px solid transparent !important;
