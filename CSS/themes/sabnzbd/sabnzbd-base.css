@@ -91,6 +91,9 @@ body {
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.08);
 }
+.dropdown-header {
+  color: #fff;
+}
 .menu-options .form-control {
   background: var(--modal-bg-color);
   background-color: rgb(25, 26, 28);
@@ -105,10 +108,18 @@ body {
 }
 
 /* BUTTONS */
+.form-signin .btn {
+  background: var(--default-button-color) !important;
+  outline: none !important;
+}
+.text-center a {
+  color: #ffffff;
+}
 .btn-default {
   color: #fff;
   background: var(--default-button-color);
   border-color: #00000000 !important;
+  outline: none !important;
 }
 .btn-default:focus, .btn-default.focus {
   color: #fff;
@@ -278,7 +289,7 @@ table:hover {
   background-color: rgba(0, 0, 0, 0.25) !important;
 }
 .table-hover>tbody>tr:hover {
-  background-color: rgba(0, 0, 0, 0.1) !important
+  background-color: rgba(255, 255, 255, 0.07) !important
 }
 tbody>tr:last-child td {
   border-bottom: 1px solid transparent !important;
@@ -286,10 +297,14 @@ tbody>tr:last-child td {
 .history-table, tr td.status, .history-table, tr td.history-completedon, .history-table, tr td.row-extra-text, .history-table tr td.status, .history-table tr td.history-completedon, .history-table tr td.row-extra-text {
   color: #fff;
 }
+.table-messages .table-messages-remove {
+  border-bottom: 1px solid transparent!important;
+  background: rgba(255, 255, 255, 0.25);
+}
 
 
 .multioperations-selector {
-  border: 1px solid rgba(0, 0, 0, 0.25) !important;
+  border: 1px solid transparent !important;
   background-color: rgba(0, 0, 0, 0.25) !important;
 }
 #history-options .hover-button {
@@ -320,6 +335,29 @@ tbody>tr:last-child td {
 .form-control {
   color: white;
   background-color: #1b1a1a;
+}
+
+/*Tabbed sorting */
+
+.history-queue-swicher .nav-tabs>li>a, .history-queue-swicher .nav-tabs>li.active>a {
+  border-bottom: 1px solid transparent;
+  border: 1px solid transparent;
+  color: #fff !important;
+}
+.history-queue-swicher .nav {
+  border-bottom: 1px solid transparent;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+  color: #555;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.nav>li>a:hover, .nav>li>a:focus {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+.badge {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 /*Settings*/
@@ -394,6 +432,17 @@ table {
   border-color: rgba(255, 255, 255, 0.3);
   border-radius: 3px !important;
 }
+
+.form-control::-moz-placeholder {
+  color:#fff !important;
+  opacity:1
+}
+.form-control:-ms-input-placeholder {
+  color:#fff !important;
+}
+.form-control::-webkit-input-placeholder {
+  color:#fff !important;
+}
 .col2 p, .col2-cats {
   color: #fff;
 }
@@ -404,16 +453,20 @@ input[type="text"], input[type="email"], input[type="url"], input[type="number"]
   background-color: rgba(255, 255, 255, 0.25);
   border-radius: 3px !important;
   color: #fff !important;
+  outline: none;
 }
 input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="number"]:focus, input[type="password"]:focus, textarea:focus, select:focus {
   border: none;
   background-color: rgb(25, 26, 28);
   border-radius: 3px !important;
+  outline: none;
 }
 
 textarea:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, textarea:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus {
   background-color: rgba(255, 255, 255, 0.25);
   border: none;
+  -webkit-box-shadow: none !important;
+   box-shadow: none !important;
 }
 
 /*Servers*/
@@ -535,4 +588,8 @@ legend {
 /* Scheduling */
 .time {
   color: #fff;
+}
+
+label {
+  color: #ffffff;
 }

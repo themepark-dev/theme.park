@@ -11,16 +11,10 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
-/* RADARR AQUAMARINE THEME */
-@import url(https://gilbn.github.io/theme.park/CSS/themes/radarr/radarr-base.css);
+  /* QBITTORRENT SPACE GRAY THEME */
+@import url(https://gilbn.github.io/theme.park/CSS/themes/qbittorrent/qbittorrent-base.css);
 :root {
-  --main-bg-color: radial-gradient(ellipse at center, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
-  --modal-bg-color: radial-gradient(ellipse at top, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
-  
-  --calendar-in-cinemas: #35c5f4;
-  --calendar-missing: #d9534f;
-  --calendar-announced: #337ab7;
-  --calendar-downloaded: #5cb85c;
-  --calendar-downloading: #7932ea;
-  --calendar-unmonitored: grey;
+  --main-bg-color:  radial-gradient( ellipse at center,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed;
+  --modal-bg-color: radial-gradient( ellipse at top,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed; 
+  --progress-color: #607D8B;
 }
