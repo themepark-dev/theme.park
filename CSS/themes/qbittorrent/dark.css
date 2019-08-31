@@ -16,5 +16,5 @@
 :root {
   --main-bg-color: #1f1f1f;
   --modal-bg-color: radial-gradient(ellipse at top, #272727 50%, #1f1f1f 100%) center center/cover no-repeat fixed;
-  --progress-color: #607D8B;
+  --progress-color: #3d3d3d;
   }

@@ -635,7 +635,7 @@ space-gray.css
 ***
 # Deluge Themes
 
-Custom [Tautulli](https://github.com/deluge-torrent/deluge) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr).
+Custom [Deluge](https://github.com/deluge-torrent/deluge) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr).
 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/deluge/deluge.gif)
 
@@ -648,6 +648,33 @@ dark.css
 plex.css
 space-gray.css
 ```
+***
+# qBittorrent Themes
+
+Custom [qBitorrent](https://github.com/qbittorrent/qBittorrent) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr).
+
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/qbittorrent/qbittorrent.gif)
+
+
+```
+https://gilbn.github.io/theme.park/CSS/themes/qbittorrent/XXX.css
+aquamarine.css
+hotline.css
+dark.css
+plex.css
+space-gray.css
+```
+### Screenshots
+<details><summary>Expand</summary>
+<p>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/qbittorrent/qbit1.png"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/qbittorrent/qbit2.png"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/qbittorrent/qbit3.png"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/qbittorrent/qbit4.png"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/qbittorrent/qbit5.png"></img>
+</p>
+</details>
+
 ### Honourable mentions:
 
 [leram84/layer.Cake](https://github.com/leram84/layer.Cake/)
