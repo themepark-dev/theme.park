@@ -10,16 +10,9 @@
 
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
-
+/* Based on https://github.com/themightykitten/ruTorrent-MaterialDesign */
 @import url(https://use.fontawesome.com/releases/v5.0.7/css/all.css);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,600,700,300);
-
-:root {
-    --main-bg-color: radial-gradient(ellipse at center, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
-    --modal-bg-color: radial-gradient(ellipse at top, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
-    --default-button-color: #009688;
-    --default-button-color-hover:  #12afa0;
-}
 
 @font-face
 {
@@ -401,9 +394,9 @@ div#t div#go:hover
 
 div select {
     -webkit-appearance:none !important;
-    background:#6f6f6f url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/dropdown.png) no-repeat 0 0;
+    background:#1f1f1f  url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/dropdown.png) no-repeat 0 0;
     background-position: right;
-    border: 1px solid #6f6f6f;
+    border: 1px solid #1f1f1f ;
     padding-right: 15px !important;
 }
 
@@ -431,10 +424,15 @@ div select {
 
 a
 {
-	color:#686868;
+	color:#fff;
 	font-family:'Roboto'
 }
-
+.flot-text {
+    color: #fff !important;
+}
+.flot-overlay{
+    border:none !important;
+}
 div#stg-header
 {
 	background:#273238 url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/dlg-toolbars.gif) no-repeat scroll 0 -72px;
@@ -737,7 +735,7 @@ div#stg .lm
 
 .lm li a:hover
 {
-	color:#80cbc4;
+	color:#fff;
 	transition:all .5s
 }
 
@@ -794,10 +792,18 @@ div#HDivider
 	padding:0;
 	width:5px
 }
-
+div#RSSList {
+    border: none !important;
+    background-color: rgba(0, 0, 0, 0.25) !important;
+    overflow: hidden;
+    display: block;
+    -moz-user-select: none;
+    -moz-user-focus: normal;
+    -moz-user-input: enabled;
+}
 div#HDivider:hover,div#VDivider:hover
 {
-	background:#334550
+	background:rgba(255, 255, 255, 0.08);
 }
 
 div#tcreate textarea#trackers
@@ -1023,7 +1029,7 @@ div.dlg-window {
 
 div#yesnoDlg div.dlg-header
 {
-	background:#181818 url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/dlg-toolbars.gif) no-repeat 0 -120px;
+	background:rgba(0, 0, 0, 0.25);
 	text-shadow:0 -1px 0 #000
 }
 
@@ -1126,44 +1132,27 @@ span#loadimg
 	background-color:#8FBC00
 }
 
-::-webkit-scrollbar
-{
-	width:12px;
-	height:12px;
-	padding:0;
-	margin:0
-}
 
-::-webkit-scrollbar-button:start:decrement
-{
-	height:23px;
-	display:block;
-	background-color:transparent
-}
-
-::-webkit-scrollbar-button:end:increment
-{
-	height:23px;
-	display:block;
-	background-color:transparent
-}
-
-::-webkit-scrollbar-corner
-{
-	background:#1b1b1b
-}
-
-::-webkit-scrollbar-track-piece
-{
-	background-color:transparent;
-	border:1px solid transparent;
-}
-
-::-webkit-scrollbar-thumb:vertical,::-webkit-scrollbar-thumb:horizontal
-{
-	height:50px;
-	background-color:#343434
-}
+    ::-webkit-scrollbar {
+        width: 14px;
+    }
+    ::-webkit-scrollbar-thumb {
+        min-height: 50px;
+        border: 3px solid transparent;
+        border-radius: 8px;
+        background-color: hsla(0,0%,100%,.2);
+        background-clip: padding-box;
+    }
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        min-height: 50px;
+        border: 3px solid transparent;
+        border-radius: 8px;
+        background-color: hsla(0,0%,100%,.5);
+        background-clip: padding-box;
+    }
 
 input#clear_log,input#add_url,input#add_button
 {
