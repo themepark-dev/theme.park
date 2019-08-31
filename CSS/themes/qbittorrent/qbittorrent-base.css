@@ -10,385 +10,1313 @@
 
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
-  
-  ::-webkit-scrollbar {
-      width: 10px;
-      height: 10px;
-  }
-  ::-webkit-scrollbar-corner {
-      background-color: hsla(0,0%,100%,.08);
-  }
-  ::-webkit-scrollbar-thumb {
-      -webkit-border-radius: 5px;
-      border-radius: 5px;
-      background-color: hsla(0,0%,100%,.08);
-  }
-  
-  html, body {
-      color: #FFF;
-  }
-  body {
-      background: var(--main-bg-color);
-  }
-  #desktop {
-      background: var(--main-bg-color);
-  }
-  input:disabled {
-      color: rgb(84, 84, 84);
-      cursor: default;
-      background-color: rgb(255, 255, 255, .05) !important;
-      border: none !important;
-  }
-  input[type="text" i] {
-      color: #FFF;
-      background-color: rgba(0,0,0,.25);
-      border-width: 0px;
-      outline: none;
-      border: none;
-  }
-  input[type="password" i] {
-      color: #FFF;
-      background-color: rgba(0,0,0,.25);
-      border-width: 0px;
-      outline: none;
-      border: none;
-  }
-  input[type="number" i] {
-      color: #FFF;
-      background-color: rgba(0,0,0,.25);
-      border-width: 0px;
-      outline: none;
-      border: none;
-  }
-  input[type="file" i] {
-      color: #FFF;
-      background-color: rgba(0,0,0,.25);
-      border-width: 0px;
-      outline: none;
-      border: none;
-  }
-  input[name="category" i] {
-      color: #000;
-      background-color: #fff;
-      border-width: 0px;
-      outline: none;
-      border: none;
-  }
-  input[type="file" i] {
+
+@import url(https://use.fontawesome.com/releases/v5.0.7/css/all.css);
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-corner {
+  background-color: hsla(0,0%,100%,.08);
+}
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: hsla(0,0%,100%,.08);
+}
+
+html, body {
+  color: #FFF;
+  background: transparent;
+}
+body {
+  background: var(--main-bg-color);
+}
+#desktop {
+  background: var(--main-bg-color);
+}
+input:disabled {
+  color: rgb(84, 84, 84);
+  cursor: default;
+  background-color: rgb(255, 255, 255, .05) !important;
+  border: none !important;
+}
+input[type="text" i] {
+  color: #FFF;
+  background-color: rgba(0,0,0,.25);
+  border-width: 0px;
+  outline: none;
   border: none;
-  }
-  select {
-      border: none !important;
-  }
-  
-  a, h2, h3, h4, .mochaTitlebar h3 {
-      color: #fff;
-  }
-  /* Login */
-  #main {
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      -webkit-transform: translate(-50%, -50%);
-      padding-top: 0;
-      /* background: rgba(0, 0, 0, 0.25); */
-      width: 400px;
-      height: 350px;
-      -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-  }
-  
-  #logo img {
-      height: 11em;
-      position: absolute;
-      left: 50%;
-      /* top: 50%; */
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      -webkit-transform: translate(-50%, -160%);
-  }
-  
-  #formplace {
-      text-align: left;
-      padding: 10px;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      -webkit-transform: translate(-50%, -50%);
-      zoom: 1.5;
-  }
-  
-  
-  #desktopNavbar {
-      background: rgba(0, 0, 0, 0.25);
-      height: 20px;
-      border-bottom: 1px solid transparent;
-  }
-  #desktopNavbar ul li a {
-      color: #fff;
-  }
-  #desktopNavbar ul li a:hover {
-      color: #fff;
-      background-color: rgba(255, 255, 255, 0.08);
-  }
-  #desktopNavbar li ul li a:hover {
-      background: rgba(255, 255, 255, .08);
-      color: #fff;
-  }
-  #desktopNavbar li ul {
-      border: 1px solid transparent;
-      background: var(--modal-bg-color);
-  }
-  #desktopNavbar li ul li a {
-      color: #fff;
-  }
-  #desktopHeader {
-      background: var(--main-bg-color);
-  }
-  #desktopFooter {
-      background: transparent;
-  }
-  #mochaToolbar .divider {
-      background-image: none;
-  }
-  
-  .dynamicTable th {
-      background-color: rgba(0, 0, 0, 0.25) !important;
-      border-right-color: rgba(255, 255, 255, .08) !important;
-  }
-  
-  .dynamicTable thead tr {
-      background-color: transparent !important;
-  }
-  .dynamicTable thead tr {
-      background-color: transparent !important;
-  }
-  .dynamicTable {
-      background: rgba(0, 0, 0, 0.25);
-  }
-  .dynamicTable tbody tr {
-      background-color: rgba(0, 0, 0, 0.08) !important;
-  }
-  .dynamicTable tbody tr:nth-child(even), .dynamicTable tbody tr.alt {
-      background-color: rgba(255, 255, 255, 0.08) !important;
-  }
-  .dynamicTable tbody tr:hover {
-      background-color: rgba(255, 255, 255, 0.15) !important;
-  }
-  .dynamicTable tbody tr.selected {
-      background-color: rgba(0, 0, 0, 0.45) !important;
-  }
-  .panel {
-      background: var(--main-bg-color);
-      border-bottom: 1px solid transparent;
-  }
-  #pageWrapper {
-      border-top: 1px solid transparent;
-      border-bottom: 1px solid transparent;
-  }
-  li.divider {
-      border-top: 1px solid rgba(255, 255, 255, .25) !important;
-  }
-  
-  /*right click menu */
-  .contextMenu {
-      border: 1px solid transparent;
-      background: var(--modal-bg-color);
-  }
-  .contextMenu li a {
-      color: #fff;
-  }
-  .contextMenu li a:hover {
-      background-color: rgba(255, 255, 255, .08) !important;
-  }
-  .contextMenu li ul {
-      border: 1px solid transparent;
-      background: var(--modal-bg-color);
-  }
-  .contextMenu .separator {
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-  }
-  /* Sidemenu */
-  .selectedFilter {
-      background-color: rgba(0, 0, 0, 0.25);
-      color: #FFF;
-  }
-  ul.filterList li:hover {
-      background-color: rgba(255, 255, 255, 0.08);
-  }
-  .columnHandle {
-      background: rgba(0, 0, 0, 0.45);
-      border: 1px solid transparent;
-  }
-  #filtersColumn_handle {
-      margin-left: 0;
-  }
-  
-  /*Sidemenu - Bottom menu*/
-  .bottomPanel {
-      background: rgba(0, 0, 0, 0.25) !important;
-  }
-  
-  /* Bottom menu */
-  .panel-headerContent.tabs {
-      background: none !important;
-  }
-  .panel-header {
-      background: rgba(0, 0, 0, 0.25) !important;
-      border-bottom: 1px solid transparent !important;
-  }
-  .horizontalHandle {
-      background: none !important;
-  }
-  .tab-menu li.selected a {
-      color: #fff !important;
-      background: transparent !important;
-      font-weight: normal !important;
-  }
-  .tab-menu li a {
-      color: #fff !important;
-      background: transparent !important;
-  }
-  .tab-menu li.selected {
-      background: none !important;
-  }
-  .tab-menu li {
-      background: none !important;
-  }
-  .tab-menu li a:hover {
-      background: rgba(255, 255, 255, 0.08) !important;
-  }
-  .toolbarTabs {
-      background: rgba(0, 0, 0, 0.25) !important;
-  }
-  .progressbar_dark {
-      background: var(--progress-color) !important;
-  }
-  .progressbar_light {
-      background: rgba(0, 0, 0, 0.25) !important;
-      color: #fff !important;
-  }
-  .progressbar_wrapper {
-      border: 1px solid transparent!important;
-  }		
-  .stateIcon {
-      background-image: red !important;
-  }
-  .panel-collapse {
-     background: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/qbittorrent/collapse-expand.gif) left top no-repeat;
-  }
-  .panel-expand {
-     background: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/qbittorrent/collapse-expand.gif) left -16px no-repeat;
-  }
-  fieldset {
-      border-width: 1px !important;
-      border-style: solid !important;
-      border-color: rgba(255, 255, 255, 0.25) !important;
-  
-  }
-  /*Modal */
-  .mochaTitlebar {
-      width: 100%;
-      overflow: hidden;
-      background: none  !important;
-  }
-  .mochaToolButton {
-      margin-right: 10px;
-      background: rgba(0, 0, 0, .25);
-      border-radius: 5px;
-  }
-  .mochaToolButton:hover {
-      margin-right: 10px;
-      background: rgba(255, 255, 255, .25);
-      border-radius: 5px;
-  }
-  .mochaOverlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      background: var(--modal-bg-color) !important;
-  }
-  .mochaToolbarWrapper {
-      width: 100%;
-      position: relative;
-      height: 29px;
-      background: rgba(0, 0, 0, 0.25) !important;
-      overflow: hidden;
-      border-top: none !important;
-  }
-  
-  .mochaToolbar {
-      width: 100%;
-      border-top: none !important;
-  }
-  .mochaContentBorder {
-      border-top: 1px solid rgba(255, 255, 255, .25) !important;
-      border-bottom: 1px solid rgba(255, 255, 255, .25) !important;
-  }
-  .mocha.isFocused .mochaTitlebar h3 {
-      color: #fff;
-  }
-  .mochaContentWrapper {
-      font-size: 12px;
-      overflow: auto;
-      background: transparent !important;
-  }
-  fieldset.settings {
-      border: solid 1px rgba(255, 255, 255, 0.25) !important;
-      border-radius: 8px;
-      -webkit-border-radius: 8px;
-      -moz-border-radius: 8px;
-      padding: 4px 4px 4px 10px;
-  }
-  textarea:disabled {
-      color: rgb(84, 84, 84);
-      cursor: default;
-      background-color: rgb(255, 255, 255, .05) !important;
-      border: none !important;
-  }
-  textarea {
-      color: #fff !important;
-      cursor: default;
-      background-color: rgb(0, 0, 0, .25) !important;
-      border: none !important;
-  }
-  #watched_folders_tab td, #watched_folders_tab th {
-      padding: 2px 4px;
-      border: 1px solid rgba(255, 255, 255, 0.25) !important;
-  }
-  input[type="button" i]:hover {
-      background-color: rgb(255, 255, 255, .05) !important;
-      padding: 6px 15px;
-      cursor: pointer;
-  }
-  input[type="button" i] {
-      padding: 6px 15px !important;
-  }
-  input[type="submit" i] {
-      padding: 6px 15px !important;
-      width: 100%;
-      margin-top: 15px;
-      background-color: rgba(0, 0, 0, 0.25) !important;
-      border: none;
-      color: #fff;
-      outline: none;
-      text-transform: uppercase;
-  }
-  input[type="submit" i]:hover {
-      padding: 6px 15px !important;
-      background-color: rgba(0, 0, 0, 0.45) !important;
-      width: 100%;
-      cursor: pointer;
-      border: none;
-      color: #fff;
-      outline: none;
-      text-transform: uppercase;
-  }
-  
+  border-radius: 3px;
+}
+input[type="password" i] {
+  color: #FFF;
+  background-color: rgba(0,0,0,.25);
+  border-width: 0px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+}
+input[type="number" i] {
+  color: #FFF;
+  background-color: rgba(0,0,0,.25);
+  border-width: 0px;
+  outline: none;
+  border: none;
+}
+input[type="file" i] {
+  color: #FFF;
+  background-color: rgba(0,0,0,.25);
+  border-width: 0px;
+  outline: none;
+  border: none;
+}
+input[name="category" i] {
+  color: #000;
+  background-color: #fff;
+  border-width: 0px;
+  outline: none;
+  border: none;
+}
+input[type="file" i] {
+border: none;
+}
+select {
+  border: none !important;
+}
+
+a, h2, h3, h4, .mochaTitlebar h3 {
+  color: #fff;
+}
+/* Login */
+#main {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  padding-top: 0;
+  /* background: rgba(0, 0, 0, 0.25); */
+  width: 400px;
+  height: 350px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+#logo img {
+  height: 11em;
+  position: absolute;
+  left: 50%;
+  /* top: 50%; */
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -160%);
+}
+
+#formplace {
+  text-transform: uppercase;	
+  text-align: left;
+  font-size: 12px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+      font-weight: 300 !important;
+  padding: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  zoom: 1.5;
+}
+label {
+    cursor: default;
+	  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+      font-weight: 300 !important;
+}
+
+.horizontalHandle .handleIcon {
+    margin: 0 auto;
+    height: 4px;
+    line-height: 1px;
+    font-size: 1px;
+    overflow: hidden;
+    background: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/qbittorrent/dots.png) center center no-repeat;
+}
+#desktopNavbar {
+  background: rgba(0, 0, 0, 0.25);
+  height: 20px;
+  border-bottom: 1px solid transparent;
+}
+#desktopNavbar ul li a {
+  color: #fff;
+}
+#desktopNavbar ul li a:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+#desktopNavbar li ul li a:hover {
+  background: rgba(255, 255, 255, .08);
+  color: #fff;
+}
+#desktopNavbar li ul {
+  border: 1px solid transparent;
+  background: var(--modal-bg-color);
+}
+#desktopNavbar li ul li a {
+  color: #fff;
+}
+#desktopHeader {
+  background: var(--main-bg-color);
+}
+#desktopFooter {
+  background: transparent;
+}
+#mochaToolbar .divider {
+  background-image: none;
+  padding-left: 0px;
+}
+#mochaToolbar {
+    margin-bottom: 5px;
+}
+
+.dynamicTable th {
+  background-color: rgba(0, 0, 0, 0.25) !important;
+  border-right-color: rgba(255, 255, 255, .08) !important;
+}
+
+.dynamicTable thead tr {
+  background-color: transparent !important;
+}
+.dynamicTable thead tr {
+  background-color: transparent !important;
+}
+.dynamicTable {
+  background: rgba(0, 0, 0, 0.25);
+}
+.dynamicTable tbody tr {
+  background-color: rgba(0, 0, 0, 0.08) !important;
+}
+.dynamicTable tbody tr:nth-child(even), .dynamicTable tbody tr.alt {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
+.dynamicTable tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+}
+.dynamicTable tbody tr.selected {
+  background-color: rgba(0, 0, 0, 0.45) !important;
+}
+.panel {
+  background: var(--main-bg-color);
+  border-bottom: 1px solid transparent;
+}
+#pageWrapper {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+li.divider {
+  border-top: 1px solid rgba(255, 255, 255, .25) !important;
+}
+
+/*right click menu */
+.contextMenu {
+  border: 1px solid transparent;
+  background: var(--modal-bg-color);
+}
+.contextMenu li a {
+  color: #fff;
+}
+.contextMenu li a:hover {
+  background-color: rgba(255, 255, 255, .08) !important;
+}
+.contextMenu li ul {
+  border: 1px solid transparent;
+  background: var(--modal-bg-color);
+}
+.contextMenu .separator {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+/* Sidemenu */
+.selectedFilter {
+  background-color: rgba(0, 0, 0, 0.25);
+  color: #FFF;
+}
+ul.filterList li:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+.columnHandle {
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid transparent;
+}
+#filtersColumn_handle {
+  margin-left: 0;
+}
+
+/*Sidemenu - Bottom menu*/
+.bottomPanel {
+  background: rgba(0, 0, 0, 0.25) !important;
+}
+
+/* Bottom menu */
+.panel-headerContent.tabs {
+  background: none !important;
+}
+.panel-header {
+  background: rgba(0, 0, 0, 0.25) !important;
+  border-bottom: 1px solid transparent !important;
+}
+.horizontalHandle {
+  background: none !important;
+}
+.tab-menu li.selected a {
+  color: #fff !important;
+  background: transparent !important;
+  font-weight: normal !important;
+}
+.tab-menu li a {
+  color: #fff !important;
+  background: transparent !important;
+}
+.tab-menu li.selected {
+  background: none !important;
+}
+.tab-menu li {
+  background: none !important;
+}
+.tab-menu li a:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+.toolbarTabs {
+  background: rgba(0, 0, 0, 0.25) !important;
+}
+.progressbar_dark {
+  background: var(--progress-color) !important;
+}
+.progressbar_light {
+  background: rgba(0, 0, 0, 0.25) !important;
+  color: #fff !important;
+}
+.progressbar_wrapper {
+  border: 1px solid transparent!important;
+}		
+.stateIcon {
+  background-image: red !important;
+}
+.panel-collapse {
+ background: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/qbittorrent/collapse-expand.gif) left top no-repeat;
+}
+.panel-expand {
+ background: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/qbittorrent/collapse-expand.gif) left -16px no-repeat;
+}
+fieldset {
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: rgba(255, 255, 255, 0.25) !important;
+}
+
+/*Modal */
+
+.mochaTitlebar {
+  width: 100%;
+  overflow: hidden;
+  background: none  !important;
+}
+.mochaToolButton {
+  margin-right: 10px;
+  background: rgba(0, 0, 0, .25);
+  border-radius: 5px;
+}
+.mochaToolButton:hover {
+  margin-right: 10px;
+  background: rgba(255, 255, 255, .25);
+  border-radius: 5px;
+}
+.mochaOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--modal-bg-color) !important;
+}
+.mochaToolbarWrapper {
+  width: 100%;
+  position: relative;
+  height: 29px;
+  background: rgba(0, 0, 0, 0.25) !important;
+  overflow: hidden;
+  border-top: none !important;
+}
+
+.mochaToolbar {
+  width: 100%;
+  border-top: none !important;
+}
+.mochaContentBorder {
+  border-top: 1px solid rgba(255, 255, 255, .25) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, .25) !important;
+}
+.mocha.isFocused .mochaTitlebar h3 {
+  color: #fff;
+}
+.mochaContentWrapper {
+  font-size: 12px;
+  overflow: auto;
+  background: transparent !important;
+}
+fieldset.settings {
+  border: solid 1px rgba(255, 255, 255, 0.25) !important;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  padding: 4px 4px 4px 10px;
+}
+textarea:disabled {
+  color: rgb(84, 84, 84);
+  cursor: default;
+  background-color: rgb(255, 255, 255, .05) !important;
+  border: none !important;
+}
+textarea {
+  color: #fff !important;
+  cursor: default;
+  background-color: rgb(0, 0, 0, .25) !important;
+  border: none !important;
+}
+#watched_folders_tab td, #watched_folders_tab th {
+  padding: 2px 4px;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+}
+input[type="button" i]:hover {
+  background-color: rgb(255, 255, 255, .15) !important;
+  padding: 6px 15px;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+}
+input[type="button" i] {
+  padding: 6px 15px !important;
+  background-color: rgb(255, 255, 255, .08) !important;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+}
+input[type="submit" i] {
+  padding: 6px 15px !important;
+  width: 100%;
+  margin-top: 15px;
+  background-color: rgba(0, 0, 0, 0.25) !important;
+  border: none;
+  color: #fff;
+  outline: none;
+  text-transform: uppercase;
+}
+input[type="submit" i]:hover {
+  padding: 6px 15px !important;
+  background-color: rgba(0, 0, 0, 0.45) !important;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  outline: none;
+  text-transform: uppercase;
+}
+
+/* Icons */ 
+
+#downloadButton > img.mochaToolButton {
+    display: none;
+}
+#downloadButton:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 24px;
+    content: "\f0c1";
+	font-weight: 900;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+	color: rgba(255, 255, 255, 0.7);
+	margin-top: 5px;
+}
+
+#downloadButton:hover:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 24px;
+    content: "\f0c1";
+	font-weight: 900;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+	color:white;
+}
+
+#uploadButton > img.mochaToolButton {
+    display: none;
+}
+#uploadButton:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 24px;
+    content: "\f067";
+	font-weight: 900;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+#uploadButton:hover:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 24px;
+    content: "\f067";
+	font-weight: 900;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+	color:white;
+}
+
+#deleteButton > img.mochaToolButton {
+    display: none;
+}
+#deleteButton:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 24px;
+    content: "\f068";
+	font-weight: 900;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+#deleteButton:hover:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 24px;
+    content: "\f068";
+	font-weight: 900;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+	color:white;
+}
+
+#resumeButton > img.mochaToolButton {
+    display: none;
+}
+#resumeButton:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 24px;
+    content: "\f04b";
+	font-weight: 900;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+#resumeButton:hover:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 24px;
+    content: "\f04b";
+	font-weight: 900;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+	color:white;
+}
+
+#pauseButton > img.mochaToolButton {
+    display: none;
+}
+#pauseButton:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 24px;
+    content: "\f04c";
+	font-weight: 900;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+#pauseButton:hover:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 24px;
+    content: "\f04c";
+	font-weight: 900;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+	color:white;
+}
+
+#topPrioButton > img.mochaToolButton {
+    display: none;
+}
+#topPrioButton:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 24px;
+    content: "\f102";
+	font-weight: 900;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+#topPrioButton:hover:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 24px;
+    content: "\f102";
+	font-weight: 900;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+	color:white;
+}
+
+#increasePrioButton > img.mochaToolButton {
+    display: none;
+}
+#increasePrioButton:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 24px;
+    content: "\f106";
+	font-weight: 900;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+#increasePrioButton:hover:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 24px;
+    content: "\f106";
+	font-weight: 900;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+	color:white;
+}
+
+#decreasePrioButton > img.mochaToolButton {
+    display: none;
+}
+#decreasePrioButton:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 24px;
+    content: "\f107";
+	font-weight: 900;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+#decreasePrioButton:hover:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 24px;
+    content: "\f107";
+	font-weight: 900;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+	color:white;
+}
+
+#bottomPrioButton > img.mochaToolButton {
+    display: none;
+}
+#bottomPrioButton:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 24px;
+    content: "\f103";
+	font-weight: 900;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+#bottomPrioButton:hover:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 24px;
+    content: "\f103";
+	font-weight: 900;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+	color:white;
+}
+
+#preferencesButton > img.mochaToolButton {
+    display: none;
+}
+#preferencesButton:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 24px;
+    content: "\f013";
+	font-weight: 900;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+#preferencesButton:hover:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 24px;
+    content: "\f013";
+	font-weight: 900;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+	color:white;
+}
+
+/*Top menu icons*/
+
+#desktopNavbar li ul li a {
+    position: relative;
+    /* padding: 1px 9px 1px 25px; */
+    min-width: 120px;
+    font-weight: normal;
+    padding: 5px 10px 1px 1px;
+}
+
+.MyMenuIcon {
+    margin-left: 0px;
+}
+
+	/* File */
+	
+#uploadLink > img.MyMenuIcon {
+	display: none;
+}
+#uploadLink:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f067";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 5px;
+}
+
+#downloadLink > img.MyMenuIcon {
+	display: none;
+}
+#downloadLink:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f0c1";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 5px;
+}	
+
+#logoutLink > img.MyMenuIcon {
+	display: none;
+}
+#logoutLink:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f2f5";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 5px;
+}
+ 
+#shutdownLink > img.MyMenuIcon {
+	display: none;
+}
+#shutdownLink:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f00d";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 5px;
+}
+
+	/* Edit */
+		
+#resumeAllLink > img.MyMenuIcon {
+	display: none;
+}
+#resumeAllLink:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f04b";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 5px;
+}
+	
+#pauseAllLink > img.MyMenuIcon {
+	display: none;
+}
+#pauseAllLink:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f04c";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 5px;
+}
+	
+#resumeLink > img.MyMenuIcon {
+	display: none;
+}
+#resumeLink:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f04b";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 5px;
+}
+	
+#pauseLink > img.MyMenuIcon {
+	display: none;
+}
+#pauseLink:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f04c";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 5px;
+}	
+		 
+#deleteLink > img.MyMenuIcon {
+	display: none;
+}
+#deleteLink:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f068";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 5px;
+}
+		 
+#topPrioLink > img.MyMenuIcon {
+	display: none;
+}
+#topPrioLink:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f102";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 5px;
+}	
+	 
+#increasePrioLink > img.MyMenuIcon {
+	display: none;
+}
+#increasePrioLink:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f106";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 5px;
+}	
+	 
+#decreasePrioLink > img.MyMenuIcon {
+	display: none;
+}
+#decreasePrioLink:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f107";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 5px;
+}	
+	 
+#bottomPrioLink > img.MyMenuIcon {
+	display: none;
+}
+#bottomPrioLink:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f103";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 5px;
+}	
+	 
+#recheckLink > img.MyMenuIcon {
+	display: none;
+}
+#recheckLink:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f002";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 5px;
+}	
+
+	/* View */
+	
+#showTopToolbarLink > img.MyMenuIcon {
+	display: none;
+}
+
+
+#showTopToolbarLink:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f00c";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 5px;
+}
+#showTopToolbarLink:active:focus:visited:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f00c";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color:white;
+	opacity: 0;
+}
+
+#showStatusBarLink > img.MyMenuIcon {
+	display: none;
+}
+
+
+#showStatusBarLink:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f00c";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 5px;
+
+}
+
+#showStatusBarLink:active:focus:visited:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f00c";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color:white;
+	opacity: 0;
+}
+
+#speedInBrowserTitleBarLink > img.MyMenuIcon {
+	display: none;
+}
+
+
+#speedInBrowserTitleBarLink:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f00c";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 5px;
+
+}
+
+#speedInBrowserTitleBarLink:active:focus:visited:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f00c";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color:white;
+	opacity: 0;
+}
+
+#showSearchEngineLink > img.MyMenuIcon {
+	display: none;
+}
+
+
+#showSearchEngineLink:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f00c";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 5px;
+
+}
+
+#showSearchEngineLink:active:focus:visited:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f00c";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color:white;
+	opacity: 0;
+}
+
+#StatisticsLink > img.MyMenuIcon {
+	display: none;
+}
+
+
+#StatisticsLink:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f080";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 5px;
+
+}
+
+#StatisticsLink:active:focus:visited:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f080";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color:white;
+	opacity: 0;
+}
+
+	/*Tools*/
+	
+	
+#preferencesLink > img.MyMenuIcon {
+	display: none;
+}
+
+
+#preferencesLink:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f013";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 5px;
+}
+
+	/* Help */
+	
+#docsLink > img.MyMenuIcon {
+	display: none;
+}
+
+#docsLink:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f013";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 5px;
+}	
+ 
+#bugLink > img.MyMenuIcon {
+	display: none;
+}
+
+#bugLink:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f09d";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 5px;
+}	
+ 
+#aboutLink > img.MyMenuIcon {
+	display: none;
+}
+
+#aboutLink:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f05a";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 5px;
+}	
+	
+/*Status images on sidemenu*/
+
+ul.filterList a {
+    display: inline;
+}
+
+#all_filter > a img {
+	display: none;
+}
+#all_filter:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f0b0";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 5px;
+}
+ 
+#downloading_filter > a img {
+	display: none;
+}
+#downloading_filter:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f063";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 5px;
+}
+
+#seeding_filter > a img {
+	display: none;
+}
+#seeding_filter:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f062";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 5px;
+}
+ 
+#completed_filter > a img {
+	display: none;
+}
+#completed_filter:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f00c";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 5px;
+}
+
+#resumed_filter > a img {
+	display: none;
+}
+#resumed_filter:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f04b";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 5px;
+}
+ 
+#paused_filter > a img {
+	display: none;
+}
+#paused_filter:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f04c";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 5px;
+}
+
+#active_filter > a img {
+	display: none;
+}
+#active_filter:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f0b0";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.9);
+	padding-left: 5px;
+}
+
+#inactive_filter > a img {
+	display: none;
+}
+#inactive_filter:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f0b0";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.4);
+	padding-left: 5px;
+}
+ 
+#errored_filter > a img {
+	display: none;
+}
+#errored_filter:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f06a";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 5px;
+}
+
+/* Categories */
+
+.filterTitle img {
+display: none;
+}
+.filterTitle:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f0d7";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 5px;
+}
+
+/* Categories Right Click Menu */
+
+#categoriesFilterMenu > li img {
+	display: none;
+}
+.contextMenu li > #CreateCategory:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f06a";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 5px;
+}
+
+/* Torrent right clkick menu */
+
+#torrentsTableMenu > li img {
+	display: none;
+}
+.contextMenu, #contextCategoryList {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+/* Filter torrents */
+
+#torrentsFilterInput {
+    width: 160px;
+    padding-left: 2em;
+    background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/qbittorrent/search-solid.png);
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: left;
+}
+.contextMenu li a.arrow-right, .contextMenu li a:hover.arrow-right {
+    background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/qbittorrent/arrow-right.gif);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+/* Footer */
+
+#alternativeSpeedLimits td img {
+	display: none;
+}
+#alternativeSpeedLimits:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f00c";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 5px;
+}
