@@ -1035,13 +1035,13 @@ div#yesnoDlg div.dlg-header
 
 div#stg-header
 {
-	background:#181818 url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/dlg-toolbars.gif) no-repeat 0 -72px;
+	background:rgba(0, 0, 0, 0.25);
 	text-shadow:0 -1px 0 #000
 }
 
 div#dlgHelp-header,div#dlgHelp div.dlg-header
 {
-	background:#181818 url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/dlg-toolbars.gif) no-repeat 0 -96px;
+	background:rgba(0, 0, 0, 0.25);
 	text-shadow:0 -1px 0 #000
 }
 
@@ -1381,10 +1381,10 @@ div.stable-body table tbody tr.even:nth-child(2n+1) td { background: #181818 url
 #meter-cpu-holder { width: 100px; height: 16px; line-height: 16px; border-right: none; margin-left: 0px; padding-left: 25px; background: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/status_icons.png) no-repeat 3px -320px; }
 #meter-cpu-td {}
 
-div.graph_tab { color: #FFF; border-color: #000; }
-div#tcreate div.dlg-header { background: #181818 url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/dlg-toolbars.gif) no-repeat 0px -24px; border-bottom: 1px solid #333333; text-shadow: 0px -1px 0px #000; }
-div#dlgAddRSS { background-color: #222222; border-top: 1px solid #333; border-right: 1px solid #1b1b1b; border-left: 1px solid #1b1b1b; border-bottom: 1px solid #000000; }
-div#dlgAddRSS-header, div#dlgAddRSS div.dlg-header { background: #181818 url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/dlg-toolbars.gif) no-repeat 0px -48px; border-bottom: 1px solid #333333; text-shadow: 0px -1px 0px #000; }
+div.graph_tab { color: #FFF; border-color: transparent; }
+div#tcreate div.dlg-header { background: rgba(0, 0, 0, 0.25); border-bottom: 1px solid transparent; text-shadow: 0px -1px 0px #000; background-image: none !important; }
+div#dlgAddRSS { background-color: #222222; border-top: 1px solid transparent; border-right: 1px solid transparent; border-left: 1px solid transparent; border-bottom: 1px solid transparent; }
+div#dlgAddRSS-header, div#dlgAddRSS div.dlg-header { background: rgba(0, 0, 0, 0.25); border-bottom: 1px solid transparent; text-shadow: 0px -1px 0px #000; background-image: none !important; }
 
 
 
