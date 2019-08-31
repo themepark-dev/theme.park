@@ -106,6 +106,7 @@ Link to Firefox extention: https://addons.mozilla.org/en-US/firefox/addon/styl-u
 <li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#sabnzbd-themes">Sabnzbd</a></li>
 <li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#nzbget-themes">Nzbget</a></li>
 <li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#deluge-themes">Deluge</a></li>	
+<li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#qbittorrent-themes">qBittorrent</a></li>	
 <li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#guacamole-themes">Guacamole</a></li>
 <li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#netdata-themes">Netdata</a></li>
 <li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#jackett-themes">Jackett</a></li>
