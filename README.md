@@ -105,6 +105,7 @@ Link to Firefox extention: https://addons.mozilla.org/en-US/firefox/addon/styl-u
 <li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#grafana-themes">Grafana</a></li>
 <li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#sabnzbd-themes">Sabnzbd</a></li>
 <li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#nzbget-themes">Nzbget</a></li>
+<li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#nzbhydra2-themes">NZBHydra2</a></li>
 <li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#deluge-themes">Deluge</a></li>	
 <li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#qbittorrent-themes">qBittorrent</a></li>	
 <li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#guacamole-themes">Guacamole</a></li>
@@ -675,7 +676,32 @@ space-gray.css
 <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/qbittorrent/qbit5.png"></img>
 </p>
 </details>
+***
+# NZBhydra2 Themes
 
+Custom [NZBHydra](https://github.com/theotherp/nzbhydra2) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr).
+
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbhydra2/nzbhydra2.gif)
+
+
+```
+https://gilbn.github.io/theme.park/CSS/themes/nzbhydra2/XXX.css
+aquamarine.css
+hotline.css
+dark.css
+plex.css
+space-gray.css
+```
+### Screenshots
+<details><summary>Expand</summary>
+<p>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbhydra2/nabhydra1.png"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbhydra2/nabhydra2.png"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbhydra2/nabhydra3.png"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbhydra2/nabhydra4.png"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbhydra2/nabhydra5.png"></img>
+</p>
+</details>
 ### Honourable mentions:
 
 [leram84/layer.Cake](https://github.com/leram84/layer.Cake/)
