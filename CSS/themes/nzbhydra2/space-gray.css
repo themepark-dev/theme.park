@@ -12,7 +12,7 @@
 /*			      https://github.com/gilbN/theme.park			 */
 
 /* NZBHYDRA2 SPACE GRAY THEME */
-@import url(https://gilbn.github.io/theme.park/CSS/themes/nzbhydra2/nzbhydra2-base.css);
+@import url(https://gilbn.github.io/theme.park/CSS/themes/nzbhydra2/nzbhydra-base.css);
 :root {
   --main-bg-color:  radial-gradient( ellipse at center,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed;
   --modal-bg-color: radial-gradient( ellipse at top,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed;
