@@ -696,11 +696,11 @@ space-gray.css
 ### Screenshots
 <details><summary>Expand</summary>
 <p>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbhydra2/nabhydra1.png"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbhydra2/nabhydra2.png"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbhydra2/nabhydra3.png"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbhydra2/nabhydra4.png"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbhydra2/nabhydra5.png"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbhydra2/nzbhydra1.png"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbhydra2/nzbhydra2.png"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbhydra2/nzbhydra3.png"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbhydra2/nzbhydra4.png"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbhydra2/nzbhydra5.png"></img>
 </p>
 </details>
 ### Honourable mentions:
