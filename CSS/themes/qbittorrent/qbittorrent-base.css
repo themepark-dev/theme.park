@@ -403,6 +403,18 @@ input[type="button" i] {
   border: none;
   color: #fff;
 }
+button {
+  background-color: rgb(255, 255, 255, .08) !important;
+  cursor: pointer;
+  border: 2px solid transparent;
+  color: #fff;
+}	
+button:hover {
+  background-color: rgb(255, 255, 255, .15) !important;
+  cursor: pointer;
+  border: 2px solid transparent;
+  color: #fff;
+}
 input[type="submit" i] {
   padding: 6px 15px !important;
   width: 100%;
