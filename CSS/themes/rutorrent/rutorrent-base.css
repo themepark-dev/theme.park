@@ -1174,9 +1174,9 @@ div#lcont div.std:nth-child(2n+1)
 
 #StatusBar
 {
-	border-top:1px solid #333;
-	background:#000 url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/headers.png) repeat-x 0 0;
-	color:#888;
+	border-top:1px solid transparent;
+	background:rgba(0, 0, 0, 0.45);
+	color:#ccc;
 	font-family:Roboto
 }
 
