@@ -109,6 +109,7 @@ Link to Firefox extention: https://addons.mozilla.org/en-US/firefox/addon/styl-u
 <li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#deluge-themes">Deluge</a></li>	
 <li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#qbittorrent-themes">qBittorrent</a></li>	
 <li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#guacamole-themes">Guacamole</a></li>
+<li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#rutorrent-themes">ruTorrent</a></li>
 <li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#netdata-themes">Netdata</a></li>
 <li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#jackett-themes">Jackett</a></li>
 <li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#html5-speedtest-themes">html5speedtest</a></li>
@@ -678,6 +679,32 @@ space-gray.css
 </details>
 ***
 
+# ruTorrent Themes
+
+Custom [ruTorrent](https://github.com/Novik/ruTorrent) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr).
+
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/rutorrent/rutorrent.gif)
+
+
+```
+https://gilbn.github.io/theme.park/CSS/themes/rutorrent/XXX.css
+aquamarine.css
+hotline.css
+dark.css
+plex.css
+space-gray.css
+```
+### Screenshots
+<details><summary>Expand</summary>
+<p>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/rutorrent/rutorrent1.png"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/rutorrent/rutorrent2.png"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/rutorrent/rutorrent3.png"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/rutorrent/rutorrent4.png"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/rutorrent/rutorrent5.png"></img>
+</p>
+</details>
+***
 # NZBhydra2 Themes
 
 Custom [NZBHydra](https://github.com/theotherp/nzbhydra2) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr).
