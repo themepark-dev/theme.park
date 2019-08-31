@@ -1349,7 +1349,13 @@ div.stable-body table tbody tr.even:nth-child(2n+1) td { background: #181818 url
 .stable-scrollpos { background: #181818 url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/headers.png) repeat-x 0px -37px; height: 17px; line-height: 17px; border-bottom: 1px solid #333333; }
 .stable-scrollpos:nth-child(2n+1) { background: #181818 url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/headers.png) repeat-x 0px -64px; }
 
-.meter-value { float: left; border: 1px inset transparent; border-bottom: none; background: var(--default-button-color) !important; }
+.meter-value {
+    float: left;
+    border: 1px inset transparent !important;
+    border-bottom: none !important;
+    background: var(--default-button-color) !important;
+}
+
 .stable-body tr.selected span.meter-value { color: #fff; }
 .meter-text { line-height: 16px; position: relative; text-align: left; float: left; width: 0px; height: 0px; overflow: visible; left: 40%; font-size: 11px; font-family: Ubuntu; z-index: 1; text-shadow: 0px 0px 2px #000; color: #fff; }
 
