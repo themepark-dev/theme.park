@@ -467,7 +467,7 @@ div#CatList ul li
 div#CatList ul li.sel
 {
 	background-color:transparent;
-	color:#009DDD;
+	color:var(--default-button-color);
 	text-shadow:0 -1px 0 #000;
 	border:none
 }
@@ -562,7 +562,7 @@ div#CatList ul li.disRSS
 
 div#CatList ul li.sel span
 {
-	color:#009DDD
+	color:var(--default-button-color)
 }
 
 div#flabel_cont ul li
