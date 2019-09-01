@@ -10,6 +10,22 @@
 
 /*		   		        Made by @gilbN					 */
 /* 			      https://github.com/gilbN/theme.park			 */
+:root {
+    --body-bg-color: radial-gradient(ellipse at center, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
+    --window-bg-color: radial-gradient(ellipse at top, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
+    --button-color: #009688;
+    --theme-accent: #009688;
+    --date-marker-color: #FFC107;
+
+    --body-color: #f3f3f3;
+    --body-color-muted: #dedede;
+    --link-color: #77abd9;
+    --button-text-color-hover: #fff;
+    --upload-progressbar-color: var(--button-color);
+    --unread-marker-color: #f92772;
+    --highlight-bg-color: #4d4332;
+    --highlight-border-color: #b08c4f;
+    }
 
 #chat .userlist .names {
     background: rgba(0, 0, 0, 0.25);
@@ -17,9 +33,23 @@
 #chat .user-mode:before {
     background: rgba(0, 0, 0, 0.25);
 }
+@media (max-width: 768px) {
+    #chat .userlist .names {
+        box-shadow: 0 0 25px 0 rgba(0,0,0,.5);
+        background: var(--window-bg-color);
+    }
+    }
+
+@media (max-width: 768px) {
+    #viewport.menu-dragging #sidebar, #viewport.menu-open #sidebar {
+        box-shadow: 0 0 25px 0 rgba(0,0,0,.5);
+        background: rgba(0, 0, 0, 0.85);
+    }
+}
 #chat .chan .notice .user, #chat .notice .content, #chat .notice .time {
     color: var(--date-marker-color) !important;
 }
+
 #form #nick {
     background: var(--theme-accent);
     color: #f3f3f3;
@@ -84,3 +114,4 @@
 .btn {
     color: inherit;
 }
+
