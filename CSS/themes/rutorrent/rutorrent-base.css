@@ -82,21 +82,22 @@ div#lng
 	border:1px solid #333
 }
 
-ul.CMenu
-{
-	opacity:.98;
-	border:1px solid #333;
-	border-right:1px solid #070707;
-	border-left:1px solid #1b1b1b;
-	border-bottom:1px solid #000;
-	background:#000;
-	padding:0;
-	border-radius:5px
+ul.CMenu {
+    opacity: .98;
+    border: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    background: var(--modal-bg-color);
+    padding: 0;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 
 ul.CMenu li
 {
-	background:#181818
+	background:var(--modal-bg-color);
 }
 
 ul.CMenu li.menuitem:first-child
@@ -113,45 +114,43 @@ ul.CMenu li.menuitem:last-child
 
 ul.CMenu li a
 {
-	color:#757571;
-	background:transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/menus.png) no-repeat 0 0
+	color:#fff;
+	background:transparent;
 }
 
 ul.CMenu li a.dis
 {
-	color:#333
+	color:#fff
 }
 
 ul.CMenu li a.dis:hover
 {
-	color:#333
+	color:#fff
 }
 
-ul.CMenu li hr
-{
-	background-color:#000;
-	height:1px;
-	border-width:0;
-	border-bottom:1px solid #1b1b1b;
-	padding:0;
-	margin:0;
-	width:100%
+ul.CMenu li hr {
+    background-color: rgba(255, 255, 255, .08);
+    height: 1px;
+    border-width: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .08);
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
 ul.CMenu li a.exp
 {
-	background:transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/menus.png) no-repeat right -22px
+	background: transparent;
 }
 
 ul.CMenu li a.exp:hover
 {
-	background:transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/menus.png) no-repeat right -44px
+	background:rgba(255, 255, 255, .08);;
 }
 
-ul.CMenu li a.sel
-{
-	color:#178FD1;
-	background:transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/menus.png) no-repeat 0 -66px
+ul.CMenu li a.sel {
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.15);
 }
 
 ul.CMenu li ul li a.sel
@@ -159,28 +158,26 @@ ul.CMenu li ul li a.sel
 	color:#178FD1
 }
 
-ul.CMenu li a:hover
-{
-	background-color:#888;
-	color:#fff;
-	text-shadow:0 -1px 0 #000
+ul.CMenu li a:hover {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    color: #fff;
+    text-shadow: 0 -1px 0 #000;
 }
 
-ul.CMenu li:hover ul li a
-{
-	background-color:#181818;
-	color:#666
+ul.CMenu li:hover ul li a {
+    background-color: transparent;
+    color: #fff;
 }
 
 ul.CMenu li:hover ul li a:hover
 {
 	color:#fff;
-	text-shadow:0 -1px 0 #000
+	text-shadow:0 -1px 0 transparent
 }
 
 ul.CMenu li ul li a.dis
 {
-	color:#333
+	color:#fff
 }
 
 ul.CMenu li ul li a.dis:hover
