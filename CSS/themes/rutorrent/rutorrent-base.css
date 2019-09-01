@@ -81,7 +81,9 @@ div#lng
 	background-color:#181818;
 	border:1px solid #333
 }
-
+.rmenuitem {
+    color: #fff !important;
+}
 ul.CMenu {
     opacity: .98;
     border: 1px solid transparent;
