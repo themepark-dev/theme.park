@@ -817,7 +817,8 @@ input[type="text"],input[type="password"],select
 	color:#fff;
 	border:none;
 	background:rgba(0, 0, 0, 0.25) url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/headers.png) repeat-x scroll 0 -138px;
-	border-radius:2px
+	border-radius:2px;
+	outline: none;
 }
 
 input[type="text"][disabled],input[type="password"][disabled],input[type="file"][disabled],select[disabled]
