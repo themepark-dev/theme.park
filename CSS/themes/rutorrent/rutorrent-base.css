@@ -1333,7 +1333,7 @@ div#tdcont .stable { border: none; }
 .stable-body tr.even td { background: #191919 }
 .stable-body tr { height: 22px; }
 .stable-body { background: transparent }
-.stable-body tr.selected td{ background: rgba(0, 0, 0, 0.25); color: #fff; text-shadow: 0px -1px 0px #000; }
+.stable-body tr.selected td{ background: rgba(255, 255, 255, 0.25); color: #fff; text-shadow: 0px -1px 0px #000; }
 div.stable-body table tbody tr.even td {    background: rgba(0, 0, 0, 0.08); }
 div.stable-body table tbody tr.even td:nth-child(2n+1) { color: #ffffff; }
 div.stable-body table tbody tr.even:nth-child(2n+1) td { background: #181818 url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/headers.png) repeat-x 0px -64px; }

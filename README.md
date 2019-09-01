@@ -677,8 +677,8 @@ space-gray.css
 <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/qbittorrent/qbit5.png"></img>
 </p>
 </details>
-***
 
+***
 # ruTorrent Themes
 
 Custom [ruTorrent](https://github.com/Novik/ruTorrent) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr).
@@ -704,8 +704,8 @@ space-gray.css
 <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/rutorrent/rutorrent5.png"></img>
 </p>
 </details>
-***
 
+***
 # NZBhydra2 Themes
 
 Custom [NZBHydra](https://github.com/theotherp/nzbhydra2) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr).
