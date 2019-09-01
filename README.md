@@ -117,6 +117,7 @@ Link to Firefox extention: https://addons.mozilla.org/en-US/firefox/addon/styl-u
 <li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#monitorr-themes">Monitorr</a></li>
 <li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#logarr-alpha-version-themes">Logarr</a></li>
 <li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#php-library-presenter-themes">PLPP</a></li>
+<li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#synclounge-themes">Synclounge</a></li>
 </ul>
 
 ***
@@ -733,6 +734,34 @@ space-gray.css
 <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbhydra2/nzbhydra5.png"></img>
 </p>
 </details>
+
+***
+# Synclounge Themes
+
+Custom [Synclounge](https://github.com/samcm/SyncLounge) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr).
+
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/synclounge/synclounge.gif)
+
+
+```
+https://gilbn.github.io/theme.park/CSS/themes/synclounge/XXX.css
+aquamarine.css
+hotline.css
+dark.css
+plex.css
+space-gray.css
+```
+### Screenshots
+<details><summary>Expand</summary>
+<p>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/synclounge/synclounge1.png"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/synclounge/synclounge2.png"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/synclounge/synclounge3.png"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/synclounge/synclounge4.png"></img>
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/synclounge/synclounge5.png"></img>
+</p>
+</details>
+
 ### Honourable mentions:
 
 [leram84/layer.Cake](https://github.com/leram84/layer.Cake/)
