@@ -84,6 +84,10 @@ div#lng
 .rmenuitem {
     color: #fff !important;
 }
+iframe {
+	border-width: 0px !important;
+	border: none !important;
+}
 ul.CMenu {
     opacity: .98;
     border: 1px solid transparent;
