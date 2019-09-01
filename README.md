@@ -686,6 +686,8 @@ Custom [ruTorrent](https://github.com/Novik/ruTorrent) CSS for consistent UI in 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/rutorrent/rutorrent.gif)
 
 
+**Theme needs to be `Standard` in settings!**
+
 ```
 https://gilbn.github.io/theme.park/CSS/themes/rutorrent/XXX.css
 aquamarine.css
