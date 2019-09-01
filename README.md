@@ -130,7 +130,7 @@ Custom [Organizr](https://github.com/causefx/Organizr/) themes.
     <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/organizr-themes/organizr-marine-theme-login.png" alt="Screen Shot 4" width="49.15%" />	
 </p>
 
-These themes are still a WIP so bugs may occur. Please make an issue if you find one.
+
 Aquamarine are the colors from https://heimdall.site that I fell in love with.
 All themes are highly customizable in regards of which radial gradient color combination you want. 
 
@@ -149,6 +149,8 @@ All themes are highly customizable in regards of which radial gradient color com
 ***
 # Ombi Themes
 
+Custom [Ombi](https://github.com/tidusjar/Ombi) CSS.
+
 **Install by adding `@import "https://gilbn.github.io/theme.park/CSS/themes/ombi/THEME_NAME.css";` in custom css**
 
 ```
@@ -163,6 +165,8 @@ space-gray.css
 ***
 # Jackett Themes
 
+Custom [Jackett](https://github.com/Jackett/Jackett) CSS.
+
 ```
 https://gilbn.github.io/theme.park/CSS/themes/jackett/XXX.css
 aquamarine.css
@@ -175,7 +179,7 @@ space-gray.css
 ***
 # PHP Library Presenter Themes
 
-Custom [PLPP](https://github.com/Tensai75/plpp) CSS to match the [Organizr](https://github.com/causefx/Organizr) theme.
+Custom [PLPP](https://github.com/Tensai75/plpp) CSS.
 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/plpp/plpp.gif)
 
@@ -191,7 +195,7 @@ space-gray.css
 ***
 # Guacamole Themes
 
-Custom [Guacamole](https://guacamole.apache.org/) CSS to match the [Organizr](https://github.com/causefx/Organizr) theme.
+Custom [Guacamole](https://guacamole.apache.org/) CSS.
 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/guacorg/guacamole.gif)
 
@@ -216,7 +220,7 @@ space-gray.css
 
 # Plex Themes
 
-Custom [Plex](https://plex.tv) CSS to match the [Organizr](https://github.com/causefx/Organizr) theme.
+Custom [Plex](https://plex.tv) CSS.
 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/plexorg/plex.gif)
 
@@ -232,7 +236,7 @@ space-gray.css
 
 # Sonarr v2/v3 - Radarr - Lidarr - Bazarr Themes
 
-Custom [Sonarr V2 and V3](https://github.com/Sonarr/Sonarr)/[Radarr](https://github.com/Radarr/Radarr)/[Lidarr](https://github.com/Lidarr/Lidarr)/[Bazarr](https://github.com/morpheus65535/bazarr) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr)
+Custom [Sonarr V2 and V3](https://github.com/Sonarr/Sonarr)/[Radarr](https://github.com/Radarr/Radarr)/[Lidarr](https://github.com/Lidarr/Lidarr)/[Bazarr](https://github.com/morpheus65535/bazarr) CSS.
 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/orgarr/orgarr.gif)
 
@@ -481,7 +485,7 @@ If you dont want the ***Panel name*** text, just remove the `<h5><span>` line en
 
 # Netdata Themes
 
-Custom [Netdata](https://github.com/firehol/netdata) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr)
+Custom [Netdata](https://github.com/firehol/netdata) CSS.
 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/netorg/netdata.gif)
 
@@ -555,7 +559,7 @@ And add this in custom HTML in Organizr:
 
 # Logarr alpha version Themes 
 
-Custom [Logarr](https://github.com/Monitorr/logarr/tree/alpha) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr).
+Custom [Logarr](https://github.com/Monitorr/logarr/tree/alpha) CSS.
 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/logarr/logarr.gif)
 
@@ -572,7 +576,7 @@ space-gray.css
 
 # Filebrowser Themes
 
-Custom [Filebrowser](https://github.com/filebrowser/filebrowser) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr).
+Custom [Filebrowser](https://github.com/filebrowser/filebrowser) CSS.
 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/filebrowser/filebrowser.gif)
 
@@ -600,7 +604,7 @@ space-gray.css
 
 # HTML5 Speedtest Themes
 
-Custom [HTML5 Speedtest](https://github.com/adolfintel/speedtest) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr).
+Custom [HTML5 Speedtest](https://github.com/adolfintel/speedtest) CSS.
 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/html5speedtest/speedtest.gif)
 
@@ -624,7 +628,7 @@ space-gray.css
 ***
 # Tautulli Themes
 
-Custom [Tautulli](https://github.com/Tautulli/Tautulli) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr).
+Custom [Tautulli](https://github.com/Tautulli/Tautulli) CSS.
 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/tautulli/tautulli.gif)
 
@@ -639,7 +643,7 @@ space-gray.css
 ***
 # Deluge Themes
 
-Custom [Deluge](https://github.com/deluge-torrent/deluge) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr).
+Custom [Deluge](https://github.com/deluge-torrent/deluge) CSS.
 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/deluge/deluge.gif)
 
@@ -655,7 +659,7 @@ space-gray.css
 ***
 # qBittorrent Themes
 
-Custom [qBitorrent](https://github.com/qbittorrent/qBittorrent) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr).
+Custom [qBitorrent](https://github.com/qbittorrent/qBittorrent) CSS.
 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/qbittorrent/qbittorrent.gif)
 
@@ -682,7 +686,7 @@ space-gray.css
 ***
 # ruTorrent Themes
 
-Custom [ruTorrent](https://github.com/Novik/ruTorrent) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr).
+Custom [ruTorrent](https://github.com/Novik/ruTorrent) CSS.
 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/rutorrent/rutorrent.gif)
 
@@ -711,7 +715,7 @@ space-gray.css
 ***
 # NZBhydra2 Themes
 
-Custom [NZBHydra](https://github.com/theotherp/nzbhydra2) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr).
+Custom [NZBHydra](https://github.com/theotherp/nzbhydra2) CSS.
 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbhydra2/nzbhydra2.gif)
 
@@ -738,7 +742,7 @@ space-gray.css
 ***
 # Synclounge Themes
 
-Custom [Synclounge](https://github.com/samcm/SyncLounge) CSS for consistent UI in [Organizr](https://github.com/causefx/Organizr).
+Custom [Synclounge](https://github.com/samcm/SyncLounge) CSS.
 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/synclounge/synclounge.gif)
 
