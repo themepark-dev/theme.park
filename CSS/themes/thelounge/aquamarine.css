@@ -13,7 +13,7 @@
 /* THE LOUNGE AQUAMARINE THEME */
 @import url(https://gilbn.github.io/theme.park/CSS/themes/thelounge/thelounge-base.css);
 :root {
-    --body-bg-color:: radial-gradient(ellipse at center, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
+    --body-bg-color: radial-gradient(ellipse at center, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
     --window-bg-color: radial-gradient(ellipse at top, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
     --button-color: #009688;
     --theme-accent: #009688;
