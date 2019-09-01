@@ -1,0 +1,86 @@
+
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+
+/*		   		        Made by @gilbN					 */
+/* 			      https://github.com/gilbN/theme.park			 */
+
+#chat .userlist .names {
+    background: rgba(0, 0, 0, 0.25);
+}
+#chat .user-mode:before {
+    background: rgba(0, 0, 0, 0.25);
+}
+#chat .chan .notice .user, #chat .notice .content, #chat .notice .time {
+    color: var(--date-marker-color) !important;
+}
+#form #nick {
+    background: var(--theme-accent);
+    color: #f3f3f3;
+}
+#form {
+    background-color: rgba(0, 0, 0, 0.45);
+    border-color: #0086ff00;
+    color: var(--body-color);
+}
+#sidebar .active, #sidebar .active:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+#chat .msg.motd .text, code, .irc-monospace {
+    background: rgba(0, 0, 0, 0.45);
+    color: #f3f3f3;
+}
+#chat .content, #windows #chat .header, #chat .user-mode::before, #chat .userlist {
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Dropdown menu */
+#context-menu, .textcomplete-menu {
+    background: var(--body-bg-color);
+    /* color: white !important; */
+}
+.context-menu-item, .textcomplete-item {
+    color: var(--body-color);
+}
+#chat .userlist .user.active, .context-menu-item:focus, .context-menu-item:hover, .textcomplete-item:focus, .textcomplete-item:hover, .textcomplete-menu .active {
+    background-color: rgba(255, 255, 255, 0.08);
+    transition: none;
+    outline: 0;
+}
+#chat.table.ignore-list td, #chat table.ban-list td, #chat table.ban-list th, #chat table.channel-list td, #chat table.channel-list th, #chat table.ignore-list th, #chat table.invite-list td, #chat table.invite-list th {
+    padding: 5px;
+    vertical-align: top;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+#chat .userlist .count {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#footer button:hover, #sidebar .chan:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+#settings .extra-help:before {
+    content: "\F059";
+    color: var(--body-color);
+}
+#windows .window h2 {
+    color: var(--body-color);
+}
+#windows .window h2 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+.input:not(:disabled):focus, .input:not(:disabled):hover {
+    border-color: #ffffff;
+}
+.btn:active, .btn:focus, .input:focus {
+    outline: 0;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+}
+.btn {
+    color: inherit;
+}

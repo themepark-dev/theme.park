@@ -663,6 +663,13 @@ Custom [qBitorrent](https://github.com/qbittorrent/qBittorrent) CSS.
 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/qbittorrent/qbittorrent.gif)
 
+You need to change or remove the CSP header if you want to use the plex theme. 
+
+Add this in your reverse proxy:
+```nginx
+        proxy_hide_header   "x-webkit-csp";
+        proxy_hide_header   "content-security-policy";
+```
 
 ```
 https://gilbn.github.io/theme.park/CSS/themes/qbittorrent/XXX.css
