@@ -18,4 +18,5 @@
   --modal-bg-color: radial-gradient(ellipse at top, #1f1f1f 0%, #1f1f1f 100%) center center/cover no-repeat fixed;
   --default-button-color: #cc7b19;
   --default-button-color-hover: #e59029;
+  --accent-color: #e59029; 
   }
