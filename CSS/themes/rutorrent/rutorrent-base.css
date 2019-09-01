@@ -1389,7 +1389,7 @@ div.stable-body table tbody tr.even:nth-child(2n+1) td { background: #181818 url
 
 #meter-cpu-text { position: absolute; left: 65px; top: 0px; color: #fff; text-shadow: 0px 0px 2px #000; font-size: 11px; font-family: Ubuntu; }
 #meter-cpu-holder { width: 100px; height: 16px; line-height: 16px; border-right: none; margin-left: 0px; padding-left: 25px; background: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/status_icons.png) no-repeat 3px -320px; }
-#meter-cpu-td {}
+/* #meter-cpu-td {}*/
 
 div.graph_tab { color: #FFF; border-color: transparent; }
 div#tcreate div.dlg-header { background: rgba(0, 0, 0, 0.25); border-bottom: 1px solid transparent; text-shadow: 0px -1px 0px #000; background-image: none !important; }
