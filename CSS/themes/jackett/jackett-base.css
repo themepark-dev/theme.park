@@ -140,3 +140,8 @@ table.dataTable thead th, table.dataTable thead td {
     border: 1px solid #0000;
 
 }
+.alert-info {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: transparent;
+}
