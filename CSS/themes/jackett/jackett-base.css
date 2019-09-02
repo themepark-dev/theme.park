@@ -142,6 +142,6 @@ table.dataTable thead th, table.dataTable thead td {
 }
 .alert-info {
     color: #ffffff;
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: var(--modal-bg-color);
     border-color: transparent;
 }
