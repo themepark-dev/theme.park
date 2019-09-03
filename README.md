@@ -55,7 +55,6 @@ location /sonarr {
 	</head>';
 	sub_filter_once on;
   }
-}
 ```
 
 ### Apache (Untested)
