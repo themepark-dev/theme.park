@@ -55,7 +55,6 @@ location /sonarr {
 	</head>';
 	sub_filter_once on;
   }
-}
 ```
 
 ### Apache (Untested)
@@ -663,7 +662,7 @@ Custom [qBitorrent](https://github.com/qbittorrent/qBittorrent) CSS.
 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/qbittorrent/qbittorrent.gif)
 
-You need to change or remove the CSP header if you want to use the plex theme. 
+NOTE: You need to change or remove the CSP header. 
 
 Add this in your reverse proxy:
 ```nginx
