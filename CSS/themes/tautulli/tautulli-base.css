@@ -322,3 +322,8 @@ span > a.active, .stacked-configs > li > span > span.active {
   .navbar-toggle {
       background-color: rgba(255, 255, 255, 0.08);
   }
+  @media (max-width: 768px) {
+  .navbar-collapse.in {
+    box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.7);
+  }
+}
