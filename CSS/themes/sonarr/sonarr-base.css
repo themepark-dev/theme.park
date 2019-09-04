@@ -20,6 +20,8 @@ body {
   -webkit-background-size: auto, cover;
   -moz-background-size: auto, cover;
   -o-background-size: auto, cover;
+  color: #ffffff;
+
 }
 
 /* VERSION */
@@ -1050,4 +1052,17 @@ pre {
     border-color: transparent;
     background-color: rgba(0, 0, 0, 0.25);
     color: #FFC107;
+}
+
+/* Login Page */
+
+.panel-body {
+    background-color: rgba(0, 0, 0, 0.25);
+    color: white;
+}
+.panel-header {
+    background-color: rgba(0, 0, 0, 0.45);
+}
+.forgot-password {
+    color: #656565 !important;
 }
