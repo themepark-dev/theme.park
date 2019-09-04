@@ -58,6 +58,9 @@ body {
 a {
     color: #ffffff;
 }
+a:focus, a:hover {
+    color: #f1f1f1;
+}
 .dataTables_wrapper .dataTables_filter input {
     background: rgba(255, 255, 255, 0.08);
     border: none;
