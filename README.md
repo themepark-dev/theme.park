@@ -778,7 +778,7 @@ space-gray.css
 
 Custom [The Lounge](https://github.com/thelounge/thelounge) CSS.
 
-![](https://cdn.discordapp.com/attachments/591352398375682092/617748654433894485/unknown.png)
+![](/Screenshots/thelounge/thelounge.gif)
 
 
 ```
@@ -792,6 +792,11 @@ space-gray.css
 ### Screenshots
 <details><summary>Expand</summary>
 <p>
+<img src="/Screenshots/thelounge/thelounge1.png"></img>
+<img src="/Screenshots/thelounge/thelounge2.png"></img>
+<img src="/Screenshots/thelounge/thelounge3.png"></img>
+<img src="/Screenshots/thelounge/thelounge4.png"></img>
+<img src="/Screenshots/thelounge/thelounge5.png"></img>
 </p>
 </details>
 
