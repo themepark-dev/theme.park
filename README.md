@@ -772,6 +772,28 @@ space-gray.css
 </p>
 </details>
 
+***
+# The Lounge Themes
+
+Custom [The Lounge](https://github.com/thelounge/thelounge) CSS.
+
+![](https://cdn.discordapp.com/attachments/591352398375682092/617748654433894485/unknown.png)
+
+
+```
+https://gilbn.github.io/theme.park/CSS/themes/thelounge/XXX.css
+aquamarine.css
+hotline.css
+dark.css
+plex.css
+space-gray.css
+```
+### Screenshots
+<details><summary>Expand</summary>
+<p>
+</p>
+</details>
+
 ### Honourable mentions:
 
 [leram84/layer.Cake](https://github.com/leram84/layer.Cake/)
