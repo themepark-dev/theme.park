@@ -117,6 +117,7 @@ Link to Firefox extention: https://addons.mozilla.org/en-US/firefox/addon/styl-u
 <li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#logarr-alpha-version-themes">Logarr</a></li>
 <li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#php-library-presenter-themes">PLPP</a></li>
 <li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#synclounge-themes">Synclounge</a></li>
+<li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#the-lounge-themes">The Lounge</a></li>
 </ul>
 
 ***
