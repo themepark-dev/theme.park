@@ -10,7 +10,18 @@
 
 /*		   		        Made by @gilbN					 */
 /* 			      https://github.com/gilbN/theme.park			 */
-
+:root {
+    /* --main-bg-color:radial-gradient(ellipse, #1f1f1f, #191919, #131313, #0b0b0b, #000000) center center/cover no-repeat fixed; */
+    --modal-bg-color: radial-gradient(circle , #3a3a3a, #2d2d2d, #202020, #141414, #000000) center center/cover no-repeat fixed;
+    --main-bg-color: radial-gradient(circle, #3a3a3a, #2d2d2d, #202020, #141414, #000000) center center/cover no-repeat fixed;
+    --calendar-tv-Unaired-Premiere: #35c5f4;
+    --calendar-tv-Downloading: #7932ea; 
+    --calendar-tv-Unmonitored: grey;
+    --calendar-tv-Unaired: #337ab7;  
+    --calendar-tv-missing: #d9534f;
+    --calendar-tv-On-Air: #f0ad4e; 
+    --calendar-tv-available: #5cb85c;
+    }
 body {
   background: var(--main-bg-color);
   background-repeat: repeat, no-repeat;

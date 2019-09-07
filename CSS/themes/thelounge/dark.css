@@ -13,10 +13,10 @@
 /* THE LOUNGE DARK THEME */
 @import url(https://gilbn.github.io/theme.park/CSS/themes/thelounge/thelounge-base.css);
 :root {
-  --body-bg-color: radial-gradient(ellipse at center, #292929 0%, #000000 100%) center center/cover no-repeat fixed;
-  --window-bg-color: radial-gradient(ellipse at top, #2b2b2b 0%, #000000 100%) center center/cover no-repeat fixed;
-  --button-color: #cc7b19;
-  --theme-accent: #cc7b19; 
+  --body-bg-color: radial-gradient(circle , #3a3a3a, #2d2d2d, #202020, #141414, #000000) center center/cover no-repeat fixed;
+  --window-bg-color: radial-gradient(circle, #3a3a3a, #2d2d2d, #202020, #141414, #000000) center center/cover no-repeat fixed;
+  --button-color: #3d3d3d;
+  --theme-accent: #3d3d3d; 
   --date-marker-color: #e59029; 
 
   --body-color: #f3f3f3;
