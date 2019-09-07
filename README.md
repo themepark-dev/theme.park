@@ -5,7 +5,7 @@
   A collection of themes/skins for use in conjunction with <a href="https://github.com/causefx/Organizr/" target="_blank">Organizr</a> or standalone.
 <p align="center">
 <a href="https://www.buymeacoffee.com/oY5Nk8GHK" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" >   </a><a href="https://discord.gg/HM5uUKU" rel="noopener"><img class="alignnone" title="theme.park!" src="https://img.shields.io/badge/chat-Discord-blue.svg?style=for-the-badge&logo=discord" alt="" height="37" /></a>
- </a><a href="https://technicalramblings.com/" rel="noopener"><img class="alignnone" title="technicalramblings!" src="https://img.shields.io/badge/blog-technicalramblings.com-informational.svg?style=for-the-badge" alt="" height="37" /></a>	
+ </a><a href="https://technicalramblings.com/" rel="noopener"><img class="alignnone" title="technicalramblings!" src="https://img.shields.io/badge/blog-technicalramblings.com-informational.svg?style=for-the-badge" alt="" height="37" /></a>
     <br />
     <br />
     <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/orgarr/sonarrv3.png" alt="Screen Shot 1" width="49.15%" />
@@ -16,7 +16,7 @@
 
 # Setup
 
-All apps have 5 themes to choose from. 
+All apps have 5 themes to choose from.
 `https://gilbn.github.io/theme.park/CSS/themes/<APP_NAME>/<THEME_NAME>.css`
 ```
 aquamarine.css
@@ -59,24 +59,24 @@ location /sonarr {
 
 ### Apache (Untested)
 ```apache
-AddOutputFilterByType SUBSTITUTE text/html 
+AddOutputFilterByType SUBSTITUTE text/html
    Substitute 's|</head> '<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/<APP_NAME>/THEME.css">
 </head>';|'
   ```
-  
+
 #### Example:
 ```apache
 <Location /sonarr>
     ProxyPass http://localhost:8989/sonarr
     ProxyPassReverse http://localhost:8989/sonarr
-AddOutputFilterByType SUBSTITUTE text/html 
+AddOutputFilterByType SUBSTITUTE text/html
    Substitute 's|</head> '<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/sonarr/plex.css">
 </head>';|'
   </Location>
   ```
 
 ## Stylus method
-Stylus is a browser extention that can inject custom css to the webpage of your choosing. 
+Stylus is a browser extention that can inject custom css to the webpage of your choosing.
 
 Add this in the style page:
 
@@ -91,7 +91,7 @@ Link to Firefox extention: https://addons.mozilla.org/en-US/firefox/addon/styl-u
 ## [Feature requests](https://feathub.com/gilbN/theme.park)
 [![Feature Requests](https://feathub.com/gilbN/theme.park?format=svg)](http://feathub.com/gilbN/theme.park)
 
-## Current themes in the repo: 
+## Current themes in the repo:
 <ul>
 <li><a href="https://github.com/gilbN/theme.park#sonarr-v2v3---radarr---lidarr---bazarr-themes">Sonarr</a></li>
 <li><a href="https://github.com/gilbN/theme.park#sonarr-v2v3---radarr---lidarr---bazarr-themes">Radarr</a></li>
@@ -105,8 +105,8 @@ Link to Firefox extention: https://addons.mozilla.org/en-US/firefox/addon/styl-u
 <li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#sabnzbd-themes">Sabnzbd</a></li>
 <li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#nzbget-themes">Nzbget</a></li>
 <li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#nzbhydra2-themes">NZBHydra2</a></li>
-<li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#deluge-themes">Deluge</a></li>	
-<li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#qbittorrent-themes">qBittorrent</a></li>	
+<li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#deluge-themes">Deluge</a></li>
+<li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#qbittorrent-themes">qBittorrent</a></li>
 <li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#guacamole-themes">Guacamole</a></li>
 <li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#rutorrent-themes">ruTorrent</a></li>
 <li><a href="https://github.com/gilbN/theme.park/blob/master/README.md#netdata-themes">Netdata</a></li>
@@ -127,12 +127,12 @@ Custom [Organizr](https://github.com/causefx/Organizr/) themes.
     <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/organizr-themes/organizr-hotline-theme2.png" alt="Screen Shot 1" width="49.15%" />
     <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/organizr-themes/organizr-marine-theme2.png" alt="Screen Shot 2" width="49.15%" />
     <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/organizr-themes/organizr-hotline-theme-login.png" alt="Screen Shot 3" width="49.15%" />
-    <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/organizr-themes/organizr-marine-theme-login.png" alt="Screen Shot 4" width="49.15%" />	
+    <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/organizr-themes/organizr-marine-theme-login.png" alt="Screen Shot 4" width="49.15%" />
 </p>
 
 
 Aquamarine are the colors from https://heimdall.site that I fell in love with.
-All themes are highly customizable in regards of which radial gradient color combination you want. 
+All themes are highly customizable in regards of which radial gradient color combination you want.
 
 #### Installation: Themes can be found in the "Theme Marketplace" in Organizr.
 
@@ -341,7 +341,7 @@ organizr-dashboard.css
 ```
 
 #### For panel integration on the Organizr homepage you can use `organizr-dashboard.css` if you use the Plex theme in Organizr. The theme is an "internal" theme that is meant to be used in an Organizr iframe as the background is set to transparent.
-NOTE: When viewing Grafana in Organizr iframe using `organizr-dashboard.css` it will follow the Organizr theme. When viewing it outside of Organizr iframe the background will be white ect. If you don't want this you can create two reverse proxies. One for grafana organizr homepage integration and one for the regular grafana theme. 
+NOTE: When viewing Grafana in Organizr iframe using `organizr-dashboard.css` it will follow the Organizr theme. When viewing it outside of Organizr iframe the background will be white ect. If you don't want this you can create two reverse proxies. One for grafana organizr homepage integration and one for the regular grafana theme.
 
 ### Check out https://technicalramblings.com/blog/spice-up-your-homepage-part-ii/
 
@@ -499,7 +499,7 @@ space-gray.css
 organizr-dashboard.css
 ```
 
-#### The `organizr-dashboard.css` theme is an "internal" theme that is meant to be used in an Organizr iframe as the background is set to transparent. [The theme can be used to integrate Netadata on the Organizr Homepage](https://technicalramblings.com/blog/spice-up-your-homepage/) 
+#### The `organizr-dashboard.css` theme is an "internal" theme that is meant to be used in an Organizr iframe as the background is set to transparent. [The theme can be used to integrate Netadata on the Organizr Homepage](https://technicalramblings.com/blog/spice-up-your-homepage/)
 
 ### Screenshots
 <details><summary>Expand</summary>
@@ -557,7 +557,7 @@ And add this in custom HTML in Organizr:
 
 ***
 
-# Logarr alpha version Themes 
+# Logarr alpha version Themes
 
 Custom [Logarr](https://github.com/Monitorr/logarr/tree/alpha) CSS.
 
@@ -663,7 +663,7 @@ Custom [qBitorrent](https://github.com/qbittorrent/qBittorrent) CSS.
 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/qbittorrent/qbittorrent.gif)
 
-NOTE: You need to change or remove the CSP header. 
+NOTE: You need to change or remove the CSP header.
 
 Add this in your reverse proxy:
 ```nginx
@@ -812,4 +812,4 @@ space-gray.css
 
 [ydkmlt84/DarkerNZBget](https://github.com/ydkmlt84/DarkerNZBget)
 
-[Archmonger/Blackberry-Flat](https://github.com/Archmonger/Blackberry-Flat)
+[Archmonger/Blackberry-Themes](https://github.com/Archmonger/Blackberry-Themes)
