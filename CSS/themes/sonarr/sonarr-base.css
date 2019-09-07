@@ -645,6 +645,9 @@ pre {
 .FormInputHelpText\/helpText\/3_AVV {
     color: #ffffff;
 }
+.FormInputGroup\/inputUnit\/19QXo {
+    color: #eee !important;
+  }
 
 /* LINKS */
 .Link\/to\/6fmSq {
@@ -724,6 +727,8 @@ pre {
     .SeriesSearchInput\/sectionTitle\/jIgg0 {
         color: #fff;
     }
+
+    
 
 /* SIDE MENU */
 	.PageSidebar\/sidebar\/2UXc0 {
@@ -808,11 +813,14 @@ pre {
     background-color: rgba(0, 0, 0, .25) !important;
 	}
 	.Popover\/title\/326tA, .SeasonInfo\/title\/1tid_, .Popover\/body\/10Yh7 {
-		background-color: #1f1f1f !important;
+		background-color: #232323 !important;
 	}
 	.Tooltip\/tooltipContainer\/2693s {
 	color: #fff;
     }
+    .Tooltip\/bottom\/3Ewbi.Tooltip\/default\/2NTKh {
+        border-bottom-color: #232323;
+      }
     .EpisodeTitleLink\/link\/3ynTw:hover {
         color: #ffffff;
         text-decoration: none;
@@ -838,7 +846,7 @@ pre {
 	}
 	/* POSTERS */
 	.SeriesIndexPoster\/title\/263Pq, .SeriesIndexPoster\/nextAiring\/1FZy6, .SeriesIndexPosterInfo\/info\/2JsCg {
-		background-color: rgba(0, 0, 0, .25);
+		background-color: rgba(255, 255, 255, 0.08);
 			color: #fff;
 	}
 	/* HOVEL LABELS */
@@ -880,15 +888,27 @@ pre {
 	/* SEARCH BAR */
 	.Input\/input\/2YWzR, .AddNewSeries\/searchIconContainer\/3QAm8, .AddNewSeries\/clearLookupButton\/1dKG7 {
 		border: none;
-		background-color: rgba(0, 0, 0, .25);
+		background-color: rgba(255, 255, 255, 0.08);
 		color: #FFF
-	}
-	.Input\/input\/2YWzR:focus {
-    outline: 0;
-    border-color: transparent;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 8px rgba(0, 0, 0, 0);
-    background-color: rgba(0, 0, 0, .25);
-	}
+    }
+    .SeriesSearchResult\/alternateTitle\/21CfS {
+        color: #ffffff;
+        font-size: 12px;
+      }
+    .AddNewSeriesSearchResult\/year\/2jW2b {
+        color: #fff;
+    }
+	 .Input\/input\/2YWzR:focus {
+        outline: 0;
+        border-color: #fff;
+        box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.25);
+    } 
+    .TagInput\/input\/3E1DX.TagInput\/isFocused\/13j-F {
+        outline: 0;
+        border-color: #fff;
+        box-shadow: none;
+    }
 	.Button\/default\/2uiHU:hover {
     border-color: transparent;
     background-color: hsla(0,0%,100%,.3) !important;
@@ -904,7 +924,13 @@ pre {
 	}
 	.AddNewSeriesSearchResult\/searchResult\/xR8dj:hover {
     background-color: hsla(0,0%,100%,.08) !important;
-	}
+    }
+    .AddNewSeriesModalContent\/year\/t7IIJ {
+        color: #fff;
+    }
+    .RootFolderSelectInputSelectedValue\/seriesFolder\/a7chC, .RootFolderSelectInputSelectedValue\/freeSpace\/1Irwm {
+        color: #fff;
+    }
 
 /* IMPORT */
 
@@ -1064,5 +1090,10 @@ pre {
     background-color: rgba(0, 0, 0, 0.45);
 }
 .forgot-password {
-    color: #656565 !important;
+    color: #eee !important;
+}
+
+/* Custom filter */
+.FilterBuilderRow\/filterRow\/1ozij:hover {
+    background-color: transparent;
 }
