@@ -8,10 +8,10 @@
  </a><a href="https://technicalramblings.com/" rel="noopener"><img class="alignnone" title="technicalramblings!" src="https://img.shields.io/badge/blog-technicalramblings.com-informational.svg?style=for-the-badge" alt="" height="37" /></a>	
     <br />
     <br />
-    <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/orgarr/sonarrv3.png" alt="Screen Shot 1" width="49.15%" />
-    <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/graforg/grafana-1.png" alt="Screen Shot 2" width="49.15%" />
-    <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/plexorg/plexorg.png" alt="Screen Shot 3" width="49.15%" />
-    <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/plpp/plpp.png" alt="Screen Shot 4" width="49.15%" />
+    <img src="/Screenshots/orgarr/sonarrv3.png" alt="Screen Shot 1" width="49.15%" />
+    <img src="/Screenshots/graforg/grafana-1.png" alt="Screen Shot 2" width="49.15%" />
+    <img src="/Screenshots/plexorg/plexorg.png" alt="Screen Shot 3" width="49.15%" />
+    <img src="/Screenshots/plpp/plpp.png" alt="Screen Shot 4" width="49.15%" />
 </p>
 
 # Setup
@@ -124,10 +124,10 @@ Link to Firefox extention: https://addons.mozilla.org/en-US/firefox/addon/styl-u
 # Organizr Hotline and Marine theme
 Custom [Organizr](https://github.com/causefx/Organizr/) themes.
 <p align="center">
-    <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/organizr-themes/organizr-hotline-theme2.png" alt="Screen Shot 1" width="49.15%" />
-    <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/organizr-themes/organizr-marine-theme2.png" alt="Screen Shot 2" width="49.15%" />
-    <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/organizr-themes/organizr-hotline-theme-login.png" alt="Screen Shot 3" width="49.15%" />
-    <img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/organizr-themes/organizr-marine-theme-login.png" alt="Screen Shot 4" width="49.15%" />	
+    <img src="/Screenshots/organizr-themes/organizr-hotline-theme2.png" alt="Screen Shot 1" width="49.15%" />
+    <img src="/Screenshots/organizr-themes/organizr-marine-theme2.png" alt="Screen Shot 2" width="49.15%" />
+    <img src="/Screenshots/organizr-themes/organizr-hotline-theme-login.png" alt="Screen Shot 3" width="49.15%" />
+    <img src="/Screenshots/organizr-themes/organizr-marine-theme-login.png" alt="Screen Shot 4" width="49.15%" />	
 </p>
 
 
@@ -139,10 +139,10 @@ All themes are highly customizable in regards of which radial gradient color com
 ### Screenshots
 <details><summary>Expand</summary>
 <p>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/organizr-themes/organizr-hotline-theme.png"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/organizr-themes/organizr-hotline-theme-login.png"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/organizr-themes/organizr-marine-theme.png"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/organizr-themes/organizr-marine-theme-login.png"></img>
+<img src="/Screenshots/organizr-themes/organizr-hotline-theme.png"></img>
+<img src="/Screenshots/organizr-themes/organizr-hotline-theme-login.png"></img>
+<img src="/Screenshots/organizr-themes/organizr-marine-theme.png"></img>
+<img src="/Screenshots/organizr-themes/organizr-marine-theme-login.png"></img>
 </p>
 </details>
 
@@ -161,7 +161,7 @@ dark.css
 plex.css
 space-gray.css
 ```
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/ombi/ombi.gif)
+![](/Screenshots/ombi/ombi.gif)
 ***
 # Jackett Themes
 
@@ -175,13 +175,13 @@ dark.css
 plex.css
 space-gray.css
 ```
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/jackett/jackett.gif)
+![](/Screenshots/jackett/jackett.gif)
 ***
 # PHP Library Presenter Themes
 
 Custom [PLPP](https://github.com/Tensai75/plpp) CSS.
 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/plpp/plpp.gif)
+![](/Screenshots/plpp/plpp.gif)
 
 ```
 https://gilbn.github.io/theme.park/CSS/themes/plpp/XXX.css
@@ -197,7 +197,7 @@ space-gray.css
 
 Custom [Guacamole](https://guacamole.apache.org/) CSS.
 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/guacorg/guacamole.gif)
+![](/Screenshots/guacorg/guacamole.gif)
 
 ```
 https://gilbn.github.io/theme.park/CSS/themes/guacamole/XXX.css
@@ -211,8 +211,8 @@ space-gray.css
 ### Screenshots
 <details><summary>Expand</summary>
 <p>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/guacorg/guac-1.png"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/guacorg/guac-2.png"></img>
+<img src="/Screenshots/guacorg/guac-1.png"></img>
+<img src="/Screenshots/guacorg/guac-2.png"></img>
 </p>
 </details>
 
@@ -222,7 +222,7 @@ space-gray.css
 
 Custom [Plex](https://plex.tv) CSS.
 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/plexorg/plex.gif)
+![](/Screenshots/plexorg/plex.gif)
 
 ```
 https://gilbn.github.io/theme.park/CSS/themes/plex/XXX.css
@@ -257,11 +257,11 @@ Thank you iFelix18 for doing all the hard work on v2! :)
 ### Screenshots
 <details><summary>Expand</summary>
 <p>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/orgarr/sonarrv3-2.png"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/orgarr/sonarrv3-3.png"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/orgarr/1.jpg"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/orgarr/2.jpg"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/orgarr/3.jpg"></img>
+<img src="/Screenshots/orgarr/sonarrv3-2.png"></img>
+<img src="/Screenshots/orgarr/sonarrv3-3.png"></img>
+<img src="/Screenshots/orgarr/1.jpg"></img>
+<img src="/Screenshots/orgarr/2.jpg"></img>
+<img src="/Screenshots/orgarr/3.jpg"></img>
 
 </p>
 </details>
@@ -272,7 +272,7 @@ Thank you iFelix18 for doing all the hard work on v2! :)
 
 Custom CSS for [Nzbget](https://github.com/nzbget/nzbget)
 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbget/nzbget.gif)
+![](/Screenshots/nzbget/nzbget.gif)
 
 ```
 https://gilbn.github.io/theme.park/CSS/themes/nzbget/XXX.css
@@ -288,10 +288,10 @@ Thank you [ydkmlt84](https://github.com/ydkmlt84) for making the job easier :)
 ### Screenshots
 <details><summary>Expand</summary>
 <p>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbget/nzbget1.jpg"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbget/nzbget2.jpg"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbget/nzbget-split-2.png"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbget/nzbget3.png"></img>
+<img src="/Screenshots/nzbget/nzbget1.jpg"></img>
+<img src="/Screenshots/nzbget/nzbget2.jpg"></img>
+<img src="/Screenshots/nzbget/nzbget-split-2.png"></img>
+<img src="/Screenshots/nzbget/nzbget3.png"></img>
 </p>
 </details>
 
@@ -301,7 +301,7 @@ Thank you [ydkmlt84](https://github.com/ydkmlt84) for making the job easier :)
 
 Custom CSS for [SABnzbd](https://github.com/sabnzbd/sabnzbd)
 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/sabnzbd/sabnzbd.gif)
+![](/Screenshots/sabnzbd/sabnzbd.gif)
 
 ```
 https://gilbn.github.io/theme.park/CSS/themes/sabnzbd/XXX.css
@@ -317,8 +317,8 @@ space-gray.css
 ### Screenshots
 <details><summary>Expand</summary>
 <p>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/sabnzbd/sabnzbd_dark_2.png"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/sabnzbd/sabnzbd_dark_3.png"></img>
+<img src="/Screenshots/sabnzbd/sabnzbd_dark_2.png"></img>
+<img src="/Screenshots/sabnzbd/sabnzbd_dark_3.png"></img>
 </p>
 </details>
 
@@ -328,7 +328,7 @@ space-gray.css
 
 Custom [Grafana](https://github.com/grafana/grafana) CSS for [Organizr](https://github.com/causefx/Organizr) homepage integration and consistent UI.
 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/graforg/grafana.gif)
+![](/Screenshots/graforg/grafana.gif)
 
 ```
 https://gilbn.github.io/theme.park/CSS/themes/grafana/XXX.css
@@ -357,15 +357,15 @@ Check out my Varken dashboard here: https://grafana.com/dashboards/9558
 ### Screenshots
 <details><summary>Expand</summary>
 <p>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/graforg/1.jpg"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/graforg/2.jpg"></img>
+<img src="/Screenshots/graforg/1.jpg"></img>
+<img src="/Screenshots/graforg/2.jpg"></img>
 </p>
 </details>
 
 ### Custom HTML for Organizr Homepage
 
 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/graforg/3.jpg)
+![](/Screenshots/graforg/3.jpg)
 
 <details><summary>Expand</summary>
 
@@ -379,7 +379,7 @@ Change the ***Panel name*** to what you want and the ***src*** to the panel URL.
 ```
 The URL can be found by clicking **share** on the panel you want to add.
 
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/graforg/4.png"></img>
+<img src="/Screenshots/graforg/4.png"></img>
 
 If you dont want the ***Panel name*** text, just remove the `<h5><span>` line entirely.
 
@@ -487,7 +487,7 @@ If you dont want the ***Panel name*** text, just remove the `<h5><span>` line en
 
 Custom [Netdata](https://github.com/firehol/netdata) CSS.
 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/netorg/netdata.gif)
+![](/Screenshots/netorg/netdata.gif)
 
 ```
 https://gilbn.github.io/theme.park/CSS/themes/netdata/XXX.css
@@ -504,8 +504,8 @@ organizr-dashboard.css
 ### Screenshots
 <details><summary>Expand</summary>
 <p>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/netorg/1.jpg"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/netorg/2.jpg"></img>
+<img src="/Screenshots/netorg/1.jpg"></img>
+<img src="/Screenshots/netorg/2.jpg"></img>
 </p>
 </details>
 
@@ -517,7 +517,7 @@ organizr-dashboard.css
 
 Custom [Monitorr](https://github.com/Monitorr/Monitorr) CSS for [Organizr](https://github.com/causefx/Organizr) homepage integration.
 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/monitorg/monitorr.gif)
+![](/Screenshots/monitorg/monitorr.gif)
 
 ```
 https://gilbn.github.io/theme.park/CSS/themes/monitorr/XXX.css
@@ -537,9 +537,9 @@ When viewing monitorr in Organizr iframe using `organizr-dashboard.css` it will 
 ### Screenshots
 <details><summary>Expand</summary>
 <p>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/monitorg/2.jpg"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/monitorg/3.jpg"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/monitorg/4.jpg"></img>
+<img src="/Screenshots/monitorg/2.jpg"></img>
+<img src="/Screenshots/monitorg/3.jpg"></img>
+<img src="/Screenshots/monitorg/4.jpg"></img>
 </p>
 </details>
 
@@ -561,7 +561,7 @@ And add this in custom HTML in Organizr:
 
 Custom [Logarr](https://github.com/Monitorr/logarr/tree/alpha) CSS.
 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/logarr/logarr.gif)
+![](/Screenshots/logarr/logarr.gif)
 
 ```
 https://gilbn.github.io/theme.park/CSS/themes/logarr/XXX.css
@@ -578,7 +578,7 @@ space-gray.css
 
 Custom [Filebrowser](https://github.com/filebrowser/filebrowser) CSS.
 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/filebrowser/filebrowser.gif)
+![](/Screenshots/filebrowser/filebrowser.gif)
 
 Based on https://github.com/Archmonger/Blackberry-Themes/blob/master/Themes/Blackberry-Flat/bbf_filebrowser.css
 **https://github.com/Archmonger/Blackberry-Themes**
@@ -596,7 +596,7 @@ space-gray.css
 ### Screenshots
 <details><summary>Expand</summary>
 <p>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/filebrowser/filebrowser2.png"></img>
+<img src="/Screenshots/filebrowser/filebrowser2.png"></img>
 </p>
 </details>
 
@@ -606,7 +606,7 @@ space-gray.css
 
 Custom [HTML5 Speedtest](https://github.com/adolfintel/speedtest) CSS.
 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/html5speedtest/speedtest.gif)
+![](/Screenshots/html5speedtest/speedtest.gif)
 
 ```
 https://gilbn.github.io/theme.park/CSS/themes/html5speedtest/XXX.css
@@ -620,8 +620,8 @@ space-gray.css
 ### Screenshots
 <details><summary>Expand</summary>
 <p>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/html5speedtest/html5speedtest_dark.png"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/html5speedtest/html5speedtest_plex.png"></img>
+<img src="/Screenshots/html5speedtest/html5speedtest_dark.png"></img>
+<img src="/Screenshots/html5speedtest/html5speedtest_plex.png"></img>
 </p>
 </details>
 
@@ -630,7 +630,7 @@ space-gray.css
 
 Custom [Tautulli](https://github.com/Tautulli/Tautulli) CSS.
 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/tautulli/tautulli.gif)
+![](/Screenshots/tautulli/tautulli.gif)
 
 ```
 https://gilbn.github.io/theme.park/CSS/themes/tautulli/XXX.css
@@ -645,7 +645,7 @@ space-gray.css
 
 Custom [Deluge](https://github.com/deluge-torrent/deluge) CSS.
 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/deluge/deluge.gif)
+![](/Screenshots/deluge/deluge.gif)
 
 Based on https://github.com/halianelf/deluge-dark @halianelf Thanks for making the job easier!
 ```
@@ -661,7 +661,7 @@ space-gray.css
 
 Custom [qBitorrent](https://github.com/qbittorrent/qBittorrent) CSS.
 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/qbittorrent/qbittorrent.gif)
+![](/Screenshots/qbittorrent/qbittorrent.gif)
 
 NOTE: You need to change or remove the CSP header. 
 
@@ -682,11 +682,11 @@ space-gray.css
 ### Screenshots
 <details><summary>Expand</summary>
 <p>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/qbittorrent/qbit1.png"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/qbittorrent/qbit2.png"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/qbittorrent/qbit3.png"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/qbittorrent/qbit4.png"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/qbittorrent/qbit5.png"></img>
+<img src="/Screenshots/qbittorrent/qbit1.png"></img>
+<img src="/Screenshots/qbittorrent/qbit2.png"></img>
+<img src="/Screenshots/qbittorrent/qbit3.png"></img>
+<img src="/Screenshots/qbittorrent/qbit4.png"></img>
+<img src="/Screenshots/qbittorrent/qbit5.png"></img>
 </p>
 </details>
 
@@ -695,7 +695,7 @@ space-gray.css
 
 Custom [ruTorrent](https://github.com/Novik/ruTorrent) CSS.
 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/rutorrent/rutorrent.gif)
+![](/Screenshots/rutorrent/rutorrent.gif)
 
 
 **Theme needs to be `Standard` in settings!**
@@ -711,11 +711,11 @@ space-gray.css
 ### Screenshots
 <details><summary>Expand</summary>
 <p>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/rutorrent/rutorrent1.png"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/rutorrent/rutorrent2.png"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/rutorrent/rutorrent3.png"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/rutorrent/rutorrent4.png"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/rutorrent/rutorrent5.png"></img>
+<img src="/Screenshots/rutorrent/rutorrent1.png"></img>
+<img src="/Screenshots/rutorrent/rutorrent2.png"></img>
+<img src="/Screenshots/rutorrent/rutorrent3.png"></img>
+<img src="/Screenshots/rutorrent/rutorrent4.png"></img>
+<img src="/Screenshots/rutorrent/rutorrent5.png"></img>
 </p>
 </details>
 
@@ -724,7 +724,7 @@ space-gray.css
 
 Custom [NZBHydra](https://github.com/theotherp/nzbhydra2) CSS.
 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbhydra2/nzbhydra2.gif)
+![](/Screenshots/nzbhydra2/nzbhydra2.gif)
 
 
 ```
@@ -738,11 +738,11 @@ space-gray.css
 ### Screenshots
 <details><summary>Expand</summary>
 <p>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbhydra2/nzbhydra1.png"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbhydra2/nzbhydra2.png"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbhydra2/nzbhydra3.png"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbhydra2/nzbhydra4.png"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/nzbhydra2/nzbhydra5.png"></img>
+<img src="/Screenshots/nzbhydra2/nzbhydra1.png"></img>
+<img src="/Screenshots/nzbhydra2/nzbhydra2.png"></img>
+<img src="/Screenshots/nzbhydra2/nzbhydra3.png"></img>
+<img src="/Screenshots/nzbhydra2/nzbhydra4.png"></img>
+<img src="/Screenshots/nzbhydra2/nzbhydra5.png"></img>
 </p>
 </details>
 
@@ -751,7 +751,7 @@ space-gray.css
 
 Custom [Synclounge](https://github.com/samcm/SyncLounge) CSS.
 
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/synclounge/synclounge.gif)
+![](/Screenshots/synclounge/synclounge.gif)
 
 
 ```
@@ -765,11 +765,11 @@ space-gray.css
 ### Screenshots
 <details><summary>Expand</summary>
 <p>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/synclounge/synclounge1.png"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/synclounge/synclounge2.png"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/synclounge/synclounge3.png"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/synclounge/synclounge4.png"></img>
-<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/synclounge/synclounge5.png"></img>
+<img src="/Screenshots/synclounge/synclounge1.png"></img>
+<img src="/Screenshots/synclounge/synclounge2.png"></img>
+<img src="/Screenshots/synclounge/synclounge3.png"></img>
+<img src="/Screenshots/synclounge/synclounge4.png"></img>
+<img src="/Screenshots/synclounge/synclounge5.png"></img>
 </p>
 </details>
 
