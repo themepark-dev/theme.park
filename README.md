@@ -124,7 +124,6 @@ Link to Firefox extention: https://addons.mozilla.org/en-US/firefox/addon/styl-u
 # Organizr Hotline and Marine theme
 Custom [Organizr](https://github.com/causefx/Organizr/) themes.
 <p align="center">
-<<<<<<< HEAD
     <img src="/Screenshots/organizr-themes/organizr-hotline-theme2.png" alt="Screen Shot 1" width="49.15%" />
     <img src="/Screenshots/organizr-themes/organizr-marine-theme2.png" alt="Screen Shot 2" width="49.15%" />
     <img src="/Screenshots/organizr-themes/organizr-hotline-theme-login.png" alt="Screen Shot 3" width="49.15%" />
