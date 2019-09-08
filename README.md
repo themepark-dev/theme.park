@@ -95,7 +95,7 @@ Link to Firefox extention: https://addons.mozilla.org/en-US/firefox/addon/styl-u
 <ul>
 <li><a href="#sonarr-v2v3---radarr---lidarr---bazarr-themes">Sonarr</a></li>
 <li><a href="#sonarr-v2v3---radarr---lidarr---bazarr-themes">Radarr</a></li>
-<li><a href="d#sonarr-v2v3---radarr---lidarr---bazarr-themes">Lidarr</a></li>
+<li><a href="#sonarr-v2v3---radarr---lidarr---bazarr-themes">Lidarr</a></li>
 <li><a href="#sonarr-v2v3---radarr---lidarr---bazarr-themes">Bazarr</a></li>
 <li><a href="#plex-themes">Plex</a></li>
 <li><a href="#ombi-themes">Ombi</a></li>
