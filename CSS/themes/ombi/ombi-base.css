@@ -53,7 +53,9 @@ body {
         box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.7);
     }
     }
-
+.navbar-default .navbar-brand {
+    color: var(--accent-color);
+}
 .navbar-default {
     background: var(--main-bg-color);
     border-color: #FFF;
