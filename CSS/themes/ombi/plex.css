@@ -16,4 +16,8 @@
 :root {
   --main-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-light2.png") center center/cover no-repeat fixed;
   --modal-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-dark2.png") center center/cover no-repeat fixed;
-  }
+  --request-button:#cc7b19;
+  --request-button-hover: #e59029;
+  --loading-bar: #cc7b19 ; 
+  --accent-color: #f9be03;
+}
