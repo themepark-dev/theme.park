@@ -18,6 +18,6 @@
   --modal-bg-color: radial-gradient( ellipse at top,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed;
   --request-button:#81a6b7;
   --request-button-hover: #607D8B;
-  --loading-bar: #81a6b7 ; 
+  --loading-bar: #81a6b7; 
   --accent-color: #c3dde8;
 }
