@@ -153,6 +153,9 @@ background-color:var(--modal-bg-color) !important;
 .refine-option[_ngcontent-c1] {
     box-shadow: none;
 }
+#movieTabButton:hover, #tvTabButton:hover {
+    border: 1px solid transparent;
+}
 
 /* Expand season request */
 .content-space[_ngcontent-c3] {
@@ -293,6 +296,7 @@ hr {
     text-align: center !important;
     height: 29.45px;
     font-size: 12px;
+    padding: 5px 10px;
 }
 .btn-info-outline.active, .btn-info-outline.focus, .btn-info-outline:active, .btn-info-outline:focus, .btn-info-outline:hover, .open>.btn-info-outline.dropdown-toggle {
     color: #fff!important;
@@ -331,7 +335,6 @@ hr {
 .nav>li>a:focus, .nav>li>a:hover {
     background-color: rgba(255, 255, 255, 0.08);
     border-radius: 3px;
-    border: 1px solid transparent;
 }
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
     background-color: rgba(0, 0, 0, 0.25);
