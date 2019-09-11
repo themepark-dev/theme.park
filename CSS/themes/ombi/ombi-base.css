@@ -298,6 +298,49 @@ hr {
     font-size: 12px;
     padding: 5px 10px;
 }
+
+ .btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle) {
+    -o-transition: all .8s;
+    -moz-transition: all .8s;
+    -webkit-transition: all .8s;
+    transition: all .8s;
+    color: #ffffff!important;
+    background-color: rgba(255, 255, 255, 0.35);
+    background-image: none;
+    border-color: transparent !important;
+    width: 137.28px;
+    text-transform: uppercase;
+    text-align: center !important;
+    height: 29.45px;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: .25rem!important;
+} 
+.btn-split .btn.dropdown-toggle {
+    border-radius: 0 .25rem .25rem 0!important;
+    padding: 3.5px 10px;
+    border: none;
+}
+.btn-split .btn.dropdown-toggle:hover, .btn-split .btn.dropdown-toggle:active, .btn-split .btn.dropdown-toggle:focus, .btn-split .btn.dropdown-toggle.active {
+background: none !important;
+}
+.btn-warning-outline {
+    -o-transition: all .8s;
+    -moz-transition: all .8s;
+    -webkit-transition: all .8s;
+    transition: all .8s;
+    color: #fff!important;
+    background-color: transparent;
+    background-image: none;
+    border-color: transparent !important;
+}
+.btn-warning-outline.active, .btn-warning-outline.focus, .btn-warning-outline:active, .btn-warning-outline:focus, .btn-warning-outline:hover, .open>.btn-warning-outline.dropdown-toggle,.btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle):hover {
+    color: #fff!important;
+    background-color: rgba(196, 134, 42, 0.75)!important;
+    border-color: transparent!important;
+}
+
+
 .btn-info-outline.active, .btn-info-outline.focus, .btn-info-outline:active, .btn-info-outline:focus, .btn-info-outline:hover, .open>.btn-info-outline.dropdown-toggle {
     color: #fff!important;
     background-color: rgba(91, 192, 222, 0.75)!important;
@@ -305,7 +348,7 @@ hr {
 }
 
 @media (max-width: 1090px) {
-    .btn-danger-outline, .btn-info-outline, .btn-primary-outline, .btn-success-outline, .fa-eye:before, .fa-check:before,.fa-plus:before   {
+    .btn-danger-outline, .btn-info-outline, .btn-primary-outline, .btn-success-outline, .fa-eye:before, .fa-check:before,.fa-plus:before, .btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle)   {
         width: 104.61px !important; 
         content: "";
     }
@@ -316,6 +359,12 @@ hr {
         display: none;
     }
     }     
+    @media (max-width: 1090px) {
+
+    .btn-split .btn.dropdown-toggle {
+        padding: 14px 8px;
+    }
+    }
 
 /* Settings menu */
 
