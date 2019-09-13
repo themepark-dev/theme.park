@@ -94,7 +94,15 @@ a, h2, h3, h4, .mochaTitlebar h3 {
   color: #fff;
 }
 /* Login */
-
+#main h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 2em;
+  margin-block-end: -.9em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
  #error_msg {
   text-transform: uppercase;
   color: #D8000C;
