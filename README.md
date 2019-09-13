@@ -120,6 +120,8 @@ Link to Firefox extention: https://addons.mozilla.org/en-US/firefox/addon/styl-u
 <li><a href="#the-lounge-themes">The Lounge</a></li>
 </ul>
 
+
+## Wiki [Adding your own theme colors](https://github.com/gilbN/theme.park/wiki/Creating-your-own-themes)
 ***
 # Organizr Hotline and Marine theme
 Custom [Organizr](https://github.com/causefx/Organizr/) themes.
