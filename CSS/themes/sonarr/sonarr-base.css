@@ -1,4 +1,3 @@
-
 /*    dP   dP                                                                  dP        */
 /*    88   88                                                                  88        */
 /*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
@@ -658,6 +657,31 @@ pre {
     text-decoration: underline;
 }
 
+/* Buttons */
+
+.Button\/default\/2uiHU {
+    color: #FFF;
+    background-color: var(--button-color);
+    border-color: transparent;
+}
+.Button\/default\/2uiHU:hover {
+    border-color: transparent;
+    background-color: var(--button-color-hover) !important;
+    color: #fff;
+    }
+
+.Button\/primary\/1F1YL {
+    border-color: transparent;
+    background-color: var(--button-color);
+    color: #fff;
+    }
+      
+.Button\/primary\/1F1YL:hover {
+    border-color: transparent;
+    background-color: var(--button-color-hover) !important;
+    color: #fff;
+}
+
 /* LOADING PAGE */
 .ErrorPage\/page\/3GptQ, .ErrorPage\/version\/3txe6, .LoadingMessage\/loadingMessage\/1gR5r {
     color: #FFF;
@@ -702,6 +726,10 @@ pre {
 	background-color: hsla(0,0%,100%,.08);
 	}
 
+    .CheckInput\/primaryIsChecked\/3mVN0 {
+        border-color: transparent;
+        background-color: var(--accent-color);
+    }
 /* HEADER */
 
 	.PageHeader\/header\/1IhlM {
@@ -713,7 +741,7 @@ pre {
 		border: none !important;
         background: var(--modal-bg-color);
         color: #fff !important;
-        box-shadow: 0 0 10px 1px #000000 !important;
+        box-shadow: 0 0 10px 1px transparent !important;
 	}
 	.SeriesSearchInput\/highlighted\/15xAK {
 		background-color: hsla(0,0%,100%,.08);
@@ -922,11 +950,7 @@ pre {
         border-color: #fff;
         box-shadow: none;
     }
-	.Button\/default\/2uiHU:hover {
-    border-color: transparent;
-    background-color: hsla(0,0%,100%,.3) !important;
-    color: #fff;
-	}
+	
 	/* TEXT COLOR */
 	.PageContentBody\/innerContentBody\/tEszh {
     color: #fff;
@@ -987,11 +1011,7 @@ pre {
 	}
 
 /* CALENDAR */
-	.Button\/default\/2uiHU {
-		color: #FFF;
-		background-color: rgba(0, 0, 0, .25);
-		border-color: transparent;
-	}
+
 	.DayOfWeek\/dayOfWeek\/1iw4D {
 		background-color: hsla(0,0%,100%,.08);
     }
