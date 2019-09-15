@@ -884,6 +884,19 @@ pre {
 }
 
 /* ADD NEW */
+    div[class*='EnhancedSelectInputOption'] { 
+    background-color: #1e1e1e;
+    color: #fff;
+    }
+    div[class*='EnhancedSelectInputOption']:hover { 
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    }
+    .EnhancedSelectInput\/options\/3yy65 {
+    border: 1px solid #dde6e9;
+    border-radius: 4px;
+    background-color: #1e1e1e;
+    }
 
 	/* SEARCH BAR */
 	.Input\/input\/2YWzR, .AddNewSeries\/searchIconContainer\/3QAm8, .AddNewSeries\/clearLookupButton\/1dKG7 {
