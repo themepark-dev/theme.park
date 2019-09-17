@@ -11,7 +11,7 @@
     <img src="/Screenshots/ombi/ombi1.png" alt="Screen Shot 1" width="49.15%" />
     <img src="/Screenshots/sonarr/sonarr2.jpg" alt="Screen Shot 2" width="49.15%" />
     <img src="/Screenshots/deluge/deluge1.png" alt="Screen Shot 3" width="49.15%" />
-    <img src="/Screenshots/plexorg/plex1.png" alt="Screen Shot 4" width="49.15%" />
+    <img src="/Screenshots/plexorg/plex1.jpg" alt="Screen Shot 4" width="49.15%" />
 </p>
 
 # Setup
