@@ -255,10 +255,10 @@ space-gray.css
 <details><summary>Expand</summary>
 <p>
 <img src="/Screenshots/jellyfin/jellyfin1.jpg"></img>
-<img src="/Screenshots/jellyfin/jellyfin2.jpg"></img>
+<img src="/Screenshots/jellyfin/jellyfin2.png"></img>
 <img src="/Screenshots/jellyfin/jellyfin3.jpg"></img>
-<img src="/Screenshots/jellyfin/jellyfin4.jpg"></img>
-<img src="/Screenshots/jellyfin/jellyfin5.jpg"></img>
+<img src="/Screenshots/jellyfin/jellyfin4.png"></img>
+<img src="/Screenshots/jellyfin/jellyfin5.png"></img>
 </p>
 </details>
 
