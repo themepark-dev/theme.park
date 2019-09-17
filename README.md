@@ -98,6 +98,7 @@ Link to Firefox extention: https://addons.mozilla.org/en-US/firefox/addon/styl-u
 <li><a href="#sonarr-v2v3---radarr---lidarr---bazarr-themes">Lidarr</a></li>
 <li><a href="#sonarr-v2v3---radarr---lidarr---bazarr-themes">Bazarr</a></li>
 <li><a href="#plex-themes">Plex</a></li>
+<li><a href="#jellyfin-themes">Jellyfin</a></li>
 <li><a href="#ombi-themes">Ombi</a></li>
 <li><a href="#tautulli-themes">Tautulli</a></li>
 <li><a href="#organizr-hotline-and-marine-theme">Organizr</a></li>
@@ -233,6 +234,33 @@ hotline.css
 dark.css
 space-gray.css
 ```
+
+***
+
+# Jellyfin Themes
+
+Custom [Jellyfin](https://github.com/jellyfin/jellyfin) CSS.
+
+![](/Screenshots/jellyfin/jellyfin.gif)
+
+```
+https://gilbn.github.io/theme.park/CSS/themes/jellyfin/XXX.css
+aquamarine.css
+hotline.css
+dark.css
+space-gray.css
+```
+
+### Screenshots
+<details><summary>Expand</summary>
+<p>
+<img src="/Screenshots/jellyfin/jellyfin1.jpg"></img>
+<img src="/Screenshots/jellyfin/jellyfin2.jpg"></img>
+<img src="/Screenshots/jellyfin/jellyfin3.jpg"></img>
+<img src="/Screenshots/jellyfin/jellyfin4.jpg"></img>
+<img src="/Screenshots/jellyfin/jellyfin5.jpg"></img>
+</p>
+</details>
 
 ***
 

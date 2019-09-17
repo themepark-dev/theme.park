@@ -10,7 +10,15 @@
 
 /*		   		        Made by @gilbN					 */
 /* 			      https://github.com/gilbN/theme.park			 */
-  
+:root {
+    --main-bg-color:  radial-gradient( ellipse at center,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed;
+    --modal-bg-color: radial-gradient( ellipse at top,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed; 
+    --button-color: #607D8B;
+    --button-color-hover: #81a6b7;
+    --accent-color: #607D8B;
+    --accent-color-hover: #81a6b7;
+  }
+
   .skinHeader,
   html {
       color: #ddd;
@@ -137,6 +145,35 @@
   .defaultCardBackground5 {
       background-color: #5ccea9;
   }
+  .cardOverlayContainer {
+    background: radial-gradient(farthest-corner at 50% 50%,rgba(50,50,50,.5) 50%,#323232 100%);
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    user-select: none;
+    box-shadow: 0 0 0 2px var(--button-color);
+}
+.cardOverlayFab-primary i:hover {
+    border: .07em solid var(--button-color);
+    color: #fff;
+    background: var(--button-color);
+}
+.cardOverlayButtonIcon:hover {
+    background-color: rgba(0,0,0,.7) !important;
+background: var(--button-color) !important;
+border: var(--button-color);
+}
+.selectionCommandsPanel {
+    background: var(--button-color) !important;
+    color: #fff;
+}
+.itemSelectionPanel {
+    border: 1px solid var(--button-color) !important;
+}
   
   .cardText-secondary,
   .fieldDescription,
@@ -232,6 +269,9 @@
   .button-link {
       color: var(--accent-color) !important;
   }
+  .button-link:hover {
+    color: var(--accent-color-hover) !important;
+}
   
   .mediaInfoText {
       color: #ddd;
@@ -303,11 +343,35 @@
   .fullSyncIndicator {
       color: #fff;
   }
-  
-  .mainDrawer {
-    background-color: rgba(0, 0, 0, 0.75) !important;
+
+  @media (min-width: 84em){
+.dashboardDocument .mainDrawer-scrollContainer {
+    margin: auto;
+    background: var(--main-bg-color);
 }
-  
+}
+
+@media (min-width: 40em){
+.dashboardDocument .mainDrawer-scrollContainer {
+    margin-top: 5em !important;
+    background: rgba(0, 0, 0, 0.25);
+}
+}
+@media (min-width: 40em) {
+.dashboardDocument .mainDrawer {
+    background: var(--main-bg-color);
+}
+}
+  .mainDrawer {
+    background-color: rgba(0, 0, 0, 0.95) !important;
+}
+.mainDrawer-scrollContainer {
+    height: 100%;
+}
+.tmla-mask, .touch-menu-la {
+    background: var(--main-bg-color) !important;
+    width: 320px !important;
+}
   .navMenuOption:hover {
       background: rgba(255 ,255 ,255 ,0.08) !important;
   }
