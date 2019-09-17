@@ -247,6 +247,7 @@ Custom [Jellyfin](https://github.com/jellyfin/jellyfin) CSS.
 https://gilbn.github.io/theme.park/CSS/themes/jellyfin/XXX.css
 aquamarine.css
 hotline.css
+plex.css
 dark.css
 space-gray.css
 ```
