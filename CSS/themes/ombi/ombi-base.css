@@ -239,6 +239,9 @@ hr {
 .input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
     margin-left: 3px;
 }
+i.fa.fa-minus, i.fa.fa-plus {
+    display:none;
+}
 
 
 
