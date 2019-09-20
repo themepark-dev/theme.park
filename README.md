@@ -88,6 +88,18 @@ Example:  `@import "https://gilbn.github.io/theme.park/CSS/themes/sonarr/dark.cs
 Link to Chrome extention: https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en
 Link to Firefox extention: https://addons.mozilla.org/en-US/firefox/addon/styl-us/
 
+## Blackberry Theme Installer method
+[Blackberry Themes](https://github.com/Archmonger/Blackberry-Themes) provides a easy to use method of using JS to theme your Organizr tabs. This will only work if your Organizr tab is on a subdirectory (does not work with subdomains). These themes will only be applied when viewed within Organizr.
+```js
+$.getScript('https://archmonger.github.io/Blackberry-Themes/Extras/theme_installer.js', function(){
+    // First variable is your Organizr tab name. Second variable is a link to the theme you want to apply.
+    themeInstaller("<TAB_NAME>","https://gilbn.github.io/theme.park/CSS/themes/<APP_NAME>/<THEME_NAME>.css");
+
+    // You can also use this for multiple themes at once by simply calling themeInstaller again!
+    themeInstaller("<TAB_NAME>","https://gilbn.github.io/theme.park/CSS/themes/<APP_NAME>/<THEME_NAME>.css");
+});
+```
+
 ## [Feature requests](https://feathub.com/gilbN/theme.park)
 [![Feature Requests](https://feathub.com/gilbN/theme.park?format=svg)](http://feathub.com/gilbN/theme.park)
 
@@ -130,7 +142,7 @@ Custom [Organizr](https://github.com/causefx/Organizr/) themes.
     <img src="/Screenshots/organizr-themes/organizr-hotline-theme2.png" alt="Screen Shot 1" width="49.15%" />
     <img src="/Screenshots/organizr-themes/organizr-marine-theme2.png" alt="Screen Shot 2" width="49.15%" />
     <img src="/Screenshots/organizr-themes/organizr-hotline-theme-login.png" alt="Screen Shot 3" width="49.15%" />
-    <img src="/Screenshots/organizr-themes/organizr-marine-theme-login.png" alt="Screen Shot 4" width="49.15%" />	
+    <img src="/Screenshots/organizr-themes/organizr-marine-theme-login.png" alt="Screen Shot 4" width="49.15%" />
 </p>
 
 
