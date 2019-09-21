@@ -303,7 +303,7 @@ nav{
 .button:hover {
     background: var(--button-color-hover);
 }
-.button--flat.button--grey {
+.button--flat, .button--grey {
     color: #fff;
 	margin-right: 5px;
 }
