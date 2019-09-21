@@ -145,8 +145,11 @@ body{
 .material-icons, .prompt .file-list ul li:before{
     color: white;
 }
+.share__box {
+    background: transparent;
+}
 .share__box__info {
-    background: var(--modal-bg-color);
+    background: rgba(0, 0, 0, 0.25);
 }
 .share__box__download {
     background: var(--accent-color);

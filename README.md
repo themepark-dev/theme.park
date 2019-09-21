@@ -626,6 +626,10 @@ Custom [Filebrowser](https://github.com/filebrowser/filebrowser) CSS.
 Based on https://github.com/Archmonger/Blackberry-Themes/blob/master/Themes/Blackberry-Flat/bbf_filebrowser.css
 **https://github.com/Archmonger/Blackberry-Themes**
 
+Can also be installed locally: https://filebrowser.xyz/configuration/custom-branding
+
+In the `custom.css` file add `@import "https://gilbn.github.io/theme.park/CSS/themes/filebrowser/<THEME-NAME>.css";`
+
 ```
 https://gilbn.github.io/theme.park/CSS/themes/filebrowser/XXX.css
 aquamarine.css
