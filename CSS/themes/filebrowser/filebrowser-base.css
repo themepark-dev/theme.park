@@ -272,6 +272,9 @@ table th{
 .link {
     color: var(--accent-color);
 }
+.link:hover {
+    color: var(--accent-color-hover);
+}
 @media (max-width: 736px){
 nav{
     background-color: black;
