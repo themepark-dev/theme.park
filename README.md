@@ -105,7 +105,7 @@ $.getScript('https://archmonger.github.io/Blackberry-Themes/Extras/theme_install
 
 ## Current themes in the repo:
 <ul>
-<li><a href="#sonarr-v2v3---radarr---lidarr---bazarr-themes">Sonarr</a></li>
+<li><a href="/wiki/Themes#sonarr-v2v3---radarr---lidarr---bazarr-themes">Sonarr</a></li>
 <li><a href="#sonarr-v2v3---radarr---lidarr---bazarr-themes">Radarr</a></li>
 <li><a href="#sonarr-v2v3---radarr---lidarr---bazarr-themes">Lidarr</a></li>
 <li><a href="#sonarr-v2v3---radarr---lidarr---bazarr-themes">Bazarr</a></li>
