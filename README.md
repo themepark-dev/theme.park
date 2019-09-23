@@ -14,7 +14,7 @@
     <a href="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/lidarr/plex.jpg" rel="noopener"><img src="/Screenshots/lidarr/plex.jpg" alt="Screen Shot 4" width="49.15%" /></a>
 </p>
 
-# Themes
+# [Themes](https://github.com/gilbN/theme.park/wiki/Themes)
 
 ![](/Screenshots/aquamarine_banner.png)
 ![](/Screenshots/hotline_banner.png)
