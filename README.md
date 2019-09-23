@@ -108,9 +108,6 @@ $.getScript('https://archmonger.github.io/Blackberry-Themes/Extras/theme_install
 });
 ```
 
-## [Feature requests](https://feathub.com/gilbN/theme.park)
-[![Feature Requests](https://feathub.com/gilbN/theme.park?format=svg)](http://feathub.com/gilbN/theme.park)
-
 ## Current themes in the repo:
 <ul>
 <li><a href="https://github.com/gilbN/theme.park/wiki/Themes#sonarr-v2v3---radarr---lidarr---bazarr-themes">Sonarr</a></li>
@@ -141,9 +138,11 @@ $.getScript('https://archmonger.github.io/Blackberry-Themes/Extras/theme_install
 <li><a href="https://github.com/gilbN/theme.park/wiki/Themes#the-lounge-themes">The Lounge</a></li>
 </ul>
 
-
 ## Wiki [Adding your own theme colors](https://github.com/gilbN/theme.park/wiki/Creating-your-own-themes)
 ***
+
+## [Feature requests](https://feathub.com/gilbN/theme.park)
+[![Feature Requests](https://feathub.com/gilbN/theme.park?format=svg)](http://feathub.com/gilbN/theme.park)
 
 ### Honourable mentions:
 
