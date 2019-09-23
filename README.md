@@ -8,10 +8,10 @@
  </a><a href="https://technicalramblings.com/" rel="noopener"><img class="alignnone" title="technicalramblings!" src="https://img.shields.io/badge/blog-technicalramblings.com-informational.svg?style=for-the-badge" alt="" height="37" /></a>
     <br />
     <br />
-    <a href="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/ombi/space-gray.png" rel="noopener"><img src="/Screenshots/ombi/space-gray.png" alt="Screen Shot 1" width="49.15%" /></a>
+    <a href="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/ombi/ombi1.png" rel="noopener"><img src="/Screenshots/ombi/ombi1.png" alt="Screen Shot 1" width="49.15%" /></a>
     <a href="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/sonarr/aquamarine.jpg" rel="noopener"><img src="/Screenshots/sonarr/aquamarine.jpg" alt="Screen Shot 2" width="49.15%" /></a>
-    <a href="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/deluge/dark.png" rel="noopener"><img src="/Screenshots/deluge/dark.png" alt="Screen Shot 3" width="49.15%" /></a>
-    <a href="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/radarr/plex.jpg" rel="noopener"><img src="/Screenshots/radarr/plex.jpg" alt="Screen Shot 4" width="49.15%" /></a>
+    <a href="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/sabnzbd/dark.png" rel="noopener"><img src="/Screenshots/sabnzbd/dark.png" alt="Screen Shot 3" width="49.15%" /></a>
+    <a href="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/lidarr/plex.jpg" rel="noopener"><img src="/Screenshots/lidarr/plex.jpg" alt="Screen Shot 4" width="49.15%" /></a>
 </p>
 
 # Themes
