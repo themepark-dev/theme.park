@@ -24,8 +24,8 @@
   --calendar-tv-On-Air: #f0ad4e; 
   --calendar-tv-available: #5cb85c;
 
-  --button-color: hsla(0,0%,100%,.15);
-  --button-color-hover: hsla(0,0%,100%,.30);
-  --accent-color:  hsla(0,0%,100%,.85);
-  --accent-color-hover: hsla(0,0%,100%,.95);
+  --button-color: #009688;
+  --button-color-hover: #12afa0;
+  --accent-color:  #009688;
+  --accent-color-hover: #12afa0;
 }
