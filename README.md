@@ -9,12 +9,12 @@
     <br />
     <br />
     <a href="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/ombi/ombi1.png" rel="noopener"><img src="/Screenshots/ombi/ombi1.png" alt="Screen Shot 1" width="49.15%" /></a>
-    <a href="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/sonarr/sonarr2.jpg" rel="noopener"><img src="/Screenshots/sonarr/sonarr2.jpg" alt="Screen Shot 2" width="49.15%" /></a>
-    <a href="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/deluge/deluge1.png" rel="noopener"><img src="/Screenshots/deluge/deluge1.png" alt="Screen Shot 3" width="49.15%" /></a>
-    <a href="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/plexorg/plex1.jpg" rel="noopener"><img src="/Screenshots/plexorg/plex1.jpg" alt="Screen Shot 4" width="49.15%" /></a>
+    <a href="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/sonarr/aquamarine.jpg" rel="noopener"><img src="/Screenshots/sonarr/aquamarine.jpg" alt="Screen Shot 2" width="49.15%" /></a>
+    <a href="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/sabnzbd/dark.png" rel="noopener"><img src="/Screenshots/sabnzbd/dark.png" alt="Screen Shot 3" width="49.15%" /></a>
+    <a href="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/lidarr/plex.jpg" rel="noopener"><img src="/Screenshots/lidarr/plex.jpg" alt="Screen Shot 4" width="49.15%" /></a>
 </p>
 
-# Themes
+# [Themes](https://github.com/gilbN/theme.park/wiki/Themes)
 
 ![](/Screenshots/aquamarine_banner.png)
 ![](/Screenshots/hotline_banner.png)
@@ -22,91 +22,7 @@
 ![](/Screenshots/dark_banner.png)
 ![](/Screenshots/plex_banner.png)
 
-# Setup
-
-All apps have 5 themes to choose from.
-`https://gilbn.github.io/theme.park/CSS/themes/<APP_NAME>/<THEME_NAME>.css`
-```css
-aquamarine.css
-hotline.css
-dark.css
-plex.css
-space-gray.css
-```
-Example: `https://gilbn.github.io/theme.park/CSS/themes/sonarr/dark.css`
-
-As  most of these apps doesn't have support for custom CSS you can get around that by using [subfilter](http://nginx.org/en/docs/http/ngx_http_sub_module.html) in Nginx or a browser addon called Stylus.
-
-## Subfilter method
-### Nginx
-Add this to your reverse proxy:
-
-```nginx
-proxy_set_header Accept-Encoding "";
-sub_filter
-'</head>'
-'<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/<APP_NAME>/THEME.css">
-</head>';
-sub_filter_once on;
-```
-Where `APP_NAME` is the app you want to theme and `THEME.css` is the name of the theme. e.g. `aquamarine.css`
-
-#### Example:
-```nginx
-location /sonarr {
-    proxy_pass http://localhost:8989/sonarr;
-    include /config/nginx/proxy.conf;
-	proxy_set_header Accept-Encoding "";
-	sub_filter
-	'</head>'
-	'<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/sonarr/plex.css">
-	</head>';
-	sub_filter_once on;
-  }
-```
-
-### Apache (Untested)
-```apache
-AddOutputFilterByType SUBSTITUTE text/html
-   Substitute 's|</head> '<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/<APP_NAME>/THEME.css">
-</head>';|'
-  ```
-
-#### Example:
-```apache
-<Location /sonarr>
-    ProxyPass http://localhost:8989/sonarr
-    ProxyPassReverse http://localhost:8989/sonarr
-AddOutputFilterByType SUBSTITUTE text/html
-   Substitute 's|</head> '<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/sonarr/plex.css">
-</head>';|'
-  </Location>
-  ```
-
-## Stylus method
-Stylus is a browser extention that can inject custom css to the webpage of your choosing.
-
-Add this in the style page:
-
-```css
-@import "https://gilbn.github.io/theme.park/CSS/themes/<APP_NAME>/THEME.css";
-```
-Example:  `@import "https://gilbn.github.io/theme.park/CSS/themes/sonarr/dark.css";`
-
-Link to Chrome extention: https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en
-Link to Firefox extention: https://addons.mozilla.org/en-US/firefox/addon/styl-us/
-
-## Blackberry Theme Installer method
-[Blackberry Themes](https://github.com/Archmonger/Blackberry-Themes) provides a easy to use method of using JS to theme your Organizr tabs. This will only work if your Organizr tab is on a subdirectory (does not work with subdomains). These themes will only be applied when viewed within Organizr.
-```js
-$.getScript('https://archmonger.github.io/Blackberry-Themes/Extras/theme_installer.js', function(){
-    // First variable is your Organizr tab name. Second variable is a link to the theme you want to apply.
-    themeInstaller("<TAB_NAME>","https://gilbn.github.io/theme.park/CSS/themes/<APP_NAME>/<THEME_NAME>.css");
-
-    // You can also use this for multiple themes at once by simply calling themeInstaller again!
-    themeInstaller("<TAB_NAME>","https://gilbn.github.io/theme.park/CSS/themes/<APP_NAME>/<THEME_NAME>.css");
-});
-```
+# [Installation](https://github.com/gilbN/theme.park/wiki/Setup)
 
 ## Current themes in the repo:
 <ul>
@@ -138,7 +54,7 @@ $.getScript('https://archmonger.github.io/Blackberry-Themes/Extras/theme_install
 <li><a href="https://github.com/gilbN/theme.park/wiki/Themes#the-lounge-themes">The Lounge</a></li>
 </ul>
 
-## Wiki [Adding your own theme colors](https://github.com/gilbN/theme.park/wiki/Creating-your-own-themes)
+## [Adding your own theme colors](https://github.com/gilbN/theme.park/wiki/Creating-your-own-themes)
 ***
 
 ## [Feature requests](https://feathub.com/gilbN/theme.park)
