@@ -681,6 +681,16 @@ pre {
     background-color: var(--button-color-hover) !important;
     color: #fff;
 }
+.Button\/success\/36KsU {
+    border-color: var(--button-color);
+    background-color: var(--button-color);
+    color: #fff;
+}
+.Button\/success\/36KsU:hover {
+    border-color: var(--button-color-hover);
+    background-color: var(--button-color-hover);
+    color: #fff;
+}
 
 /* LOADING PAGE */
 .ErrorPage\/page\/3GptQ, .ErrorPage\/version\/3txe6, .LoadingMessage\/loadingMessage\/1gR5r {
@@ -785,7 +795,10 @@ pre {
 	.PageSidebar\/sidebarContainer\/3Hxpq {
 		background: var(--main-bg-color) !important;
 	}
-	}
+    }
+    .PageSidebarItem\/isActiveItem\/bUesh {
+        border-left: 3px solid var(--accent-color);
+    }
 
 /* SERIES PAGE */
 
