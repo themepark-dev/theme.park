@@ -529,7 +529,15 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
     .bg-org-alt {
       background: var(--modal-bg-color) !important;
     }
-
+    /* Homepage Unifi cards */
+    .unifiCards .panel-heading {
+        background: rgba(255, 255, 255, 0.2) !important;
+        color: #fff !important;
+        border-color: transparent !important;
+    }
+    .unifiCards .panel-wrapper.collapse.in {
+        background:rgba(0, 0, 0, 0.15);
+    }
 /* loginpage sidemenu */ 
 @media (max-width: 480px) {
     .login-register > .login-box > .white-box {
