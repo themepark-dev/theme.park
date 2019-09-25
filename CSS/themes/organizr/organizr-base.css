@@ -131,6 +131,9 @@ html {
   .content-wrap {
     background: var(--main-bg-color) !important;
   }
+  .swal-modal.bg-org {
+    background: var(--main-bg-color);
+}
   .panel-wrapper > .bg-org .tab-content {
     background-color: transparent !important;
   }
