@@ -534,7 +534,7 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
         background: rgba(255, 255, 255, 0.2) !important;
         color: #fff !important;
         border-color: transparent !important;
-        text-align: inherit;
+        text-align: inherit !important;
     }
     .unifiCards .panel-wrapper.collapse.in {
         background:rgba(0, 0, 0, 0.15);
