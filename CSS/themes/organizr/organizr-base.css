@@ -485,20 +485,70 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
       -webkit-box-shadow: none;
       box-shadow: none;
   }
+
+/* Notification Popups */
+  /* Izi */
   .iziToast.update-notify.iziToast-layout2, .iziToast.success-notify.iziToast-layout2 {
-      border: none;
-      background: var(--modal-bg-color) !important;
-      border-bottom: transparent;
+    border: none;
+    background: var(--modal-bg-color) !important;
+    border-bottom: transparent;
   }
   .iziToast.update-notify>.iziToast-body .iziToast-icon, .iziToast.success-notify>.iziToast-body .iziToast-icon {
     color: var(--link-color) !important;
-}
-.iziToast:after {
+  }
+  .iziToast:after {
     background: var(--modal-bg-color) !important;
-}
-.update-notify .iziToast-progressbar div, .success-notify {
+  }
+  .update-notify .iziToast-progressbar div, .success-notify {
     background: var(--notification-box-line) !important;
+  }
+  /* Alertify */
+.ajs-message.ajs-error-alertify.ajs-visible {
+    color: #f44336;
+    background: var(--modal-bg-color);
+    border-color: transparent;
 }
+.ajs-message.ajs-warning-alertify {
+    color: #ffeb3b;
+    background: var(--modal-bg-color);
+    border-color: transparent;
+}
+.ajs-message.ajs-info-alertify {
+    color: #6da8ff;
+    background: var(--modal-bg-color);
+    border-color: transparent;
+}
+.ajs-message.ajs-success-alertify {
+    color: #00ffb8;
+    background: var(--modal-bg-color);
+    border-color: transparent;
+}
+/* Noty */
+.noty_type__error-noty .noty_body {
+    background: var(--modal-bg-color);
+    color: #f44336;
+    border: 1px solid transparent;
+    border-bottom: transparent;
+}
+.noty_type__warning-noty .noty_body {
+    background: var(--modal-bg-color);
+    color: #ffeb3b;
+    border: 1px solid transparent;
+    border-bottom: transparent;
+}
+.noty_type__info-noty .noty_body {
+    background: var(--modal-bg-color);
+    color: #3a83f0;
+    border: 1px solid transparent;
+    border-bottom: transparent;
+}
+.noty_type__success-noty .noty_body {
+    background: var(--modal-bg-color);
+    color: #00ffb8;
+    border: 1px solid transparent;
+    border-bottom: transparent;
+}
+
   .btn-link, a {
       color: var(--link-color);
       text-decoration: none;
