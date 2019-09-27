@@ -33,7 +33,7 @@
 <li><a href="https://github.com/gilbN/theme.park/wiki/Themes#sonarr-v2v3---radarr---lidarr---bazarr-themes">Lidarr</a></li>
 <li><a href="https://github.com/gilbN/theme.park/wiki/Themes#sonarr-v2v3---radarr---lidarr---bazarr-themes">Bazarr</a></li>
 <li><a href="https://github.com/gilbN/theme.park/wiki/Themes#plex-themes">Plex</a></li>
-<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#jellyfin-themes">Jellyfin</a></li>
+<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#jellyfinemby-themes">Jellyfin/Emby</a></li>
 <li><a href="https://github.com/gilbN/theme.park/wiki/Themes#ombi-themes">Ombi</a></li>
 <li><a href="https://github.com/gilbN/theme.park/wiki/Themes#tautulli-themes">Tautulli</a></li>
 <li><a href="https://github.com/gilbN/theme.park/wiki/Themes#organizr-hotline-and-marine-theme">Organizr</a></li>
