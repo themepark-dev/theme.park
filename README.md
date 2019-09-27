@@ -25,6 +25,7 @@
 # [Installation](https://github.com/gilbN/theme.park/wiki/Setup)
 
 ## Current themes in the repo:
+
 <ul>
 <li><a href="https://github.com/gilbN/theme.park/wiki/Themes#sonarr-v2v3---radarr---lidarr---bazarr-themes">Sonarr</a></li>
 <li><a href="https://github.com/gilbN/theme.park/wiki/Themeshttps://github.com/gilbN/theme.park/wiki/Themes#sonarr-v2v3---radarr---lidarr---bazarr-themes">Radarr</a></li>
@@ -59,6 +60,7 @@
 ***
 
 ## [Feature requests](https://feathub.com/gilbN/theme.park)
+
 [![Feature Requests](https://feathub.com/gilbN/theme.park?format=svg)](http://feathub.com/gilbN/theme.park)
 
 ### Honourable mentions:
