@@ -1,6 +1,7 @@
 <h1 align="center">
     <img src="https://i.imgur.com/OkX6Zup.png">
 </h1>
+
 <p align="center">
   A collection of themes/skins for use in conjunction with <a href="https://github.com/causefx/Organizr/" target="_blank">Organizr</a> or standalone.
 <p align="center">
@@ -16,11 +17,11 @@
 
 # [Themes](https://github.com/gilbN/theme.park/wiki/Themes)
 
-![](/Screenshots/aquamarine_banner.png)
-![](/Screenshots/hotline_banner.png)
-![](/Screenshots/spacegray_banner.png)
-![](/Screenshots/dark_banner.png)
-![](/Screenshots/plex_banner.png)
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/aquamarine_banner.png)
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/hotline_banner.png)
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/spacegray_banner.png)
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/dark_banner.png)
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/plex_banner.png)
 
 # [Installation](https://github.com/gilbN/theme.park/wiki/Setup)
 
