@@ -174,7 +174,10 @@ background-color: hsla(0,0%,100%,.25) !important;
       .Tooltip-tooltipContainer-2693s {
       color: #fff;
       }
-  
+      .Tooltip-right-2MxTa, .Tooltip-default-2NTKh  {
+        border-right-color: #1f1f1f !important;
+      }
+
   
       /* TOP MENU  */
       .PageToolbar-toolbar-1Lo1N {
@@ -317,6 +320,11 @@ background-color: hsla(0,0%,100%,.25) !important;
       .CalendarEvent-missing-1y6vZ {
         border-left-color: var(--calendar-Missing);
       }
+
+  /* ACTIVITY */
+  .ProgressBar-primary-3YDfb {
+    background-color: var(--accent-color);
+}    
   
   /* SETTINGS */
   
