@@ -99,7 +99,7 @@ background-color: hsla(0,0%,100%,.25) !important;
       .FormInputHelpText-helpText-3_AVV {
       color: #fff;
       }
-      .CheckInput\/primaryIsChecked\/3mVN0 {
+      .CheckInput-primaryIsChecked-3mVN0 {
         border-color: transparent;
         background-color: var(--accent-color);
     }
@@ -149,7 +149,7 @@ background-color: hsla(0,0%,100%,.25) !important;
           background: var(--main-bg-color) !important;
       }
       }
-      .PageSidebarItem\/isActiveItem\/bUesh {
+      .PageSidebarItem-isActiveItem-bUesh {
         border-left: 3px solid var(--accent-color);
     }  
   
@@ -375,34 +375,34 @@ background-color: hsla(0,0%,100%,.25) !important;
 
   /* Buttons */
 
-.Button\/default\/2uiHU {
+.Button-default-2uiHU {
     color: #FFF;
     background-color: var(--button-color);
     border-color: transparent;
 }
-.Button\/default\/2uiHU:hover {
+.Button-default-2uiHU:hover {
     border-color: transparent;
     background-color: var(--button-color-hover) !important;
     color: #fff;
     }
 
-.Button\/primary\/1F1YL {
+.Button-primary-1F1YL {
     border-color: transparent;
     background-color: var(--button-color);
     color: #fff;
     }
       
-.Button\/primary\/1F1YL:hover {
+.Button-primary-1F1YL:hover {
     border-color: transparent;
     background-color: var(--button-color-hover) !important;
     color: #fff;
 }
-.Button\/success\/36KsU {
+.Button-success-36KsU {
     border-color: var(--button-color);
     background-color: var(--button-color);
     color: #fff;
 }
-.Button\/success\/36KsU:hover {
+.Button-success-36KsU:hover {
     border-color: var(--button-color-hover);
     background-color: var(--button-color-hover);
     color: #fff;
