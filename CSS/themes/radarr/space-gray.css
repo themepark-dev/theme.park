@@ -17,13 +17,12 @@
   --main-bg-color:  radial-gradient( ellipse at center,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed;
   --modal-bg-color: radial-gradient( ellipse at top,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed;
 
-  --calendar-tv-Unaired-Premiere: #35c5f4;
-  --calendar-tv-Downloading: #7932ea; 
-  --calendar-tv-Unmonitored: grey;
-  --calendar-tv-Unaired: #337ab7;  
-  --calendar-tv-missing: #d9534f;
-  --calendar-tv-On-Air: #f0ad4e; 
-  --calendar-tv-available: #5cb85c;
+  --calendar-in-cinemas: #35c5f4;
+  --calendar-missing: #d9534f;
+  --calendar-announced: #337ab7;
+  --calendar-downloaded: #5cb85c;
+  --calendar-downloading: #7932ea;
+  --calendar-unmonitored: grey;
 
   --button-color: #607D8B;
   --button-color-hover: #81a6b7;
