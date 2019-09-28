@@ -324,7 +324,11 @@ background-color: hsla(0,0%,100%,.25) !important;
   /* ACTIVITY */
   .ProgressBar-primary-3YDfb {
     background-color: var(--accent-color);
-}    
+    }    
+.Label-info-3YD3Y {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+    }   
   
   /* SETTINGS */
   
@@ -598,7 +602,7 @@ background-color: hsla(0,0%,100%,.25) !important;
       color: #fff;
   }
   .ProgressBar-container-14z4A {
-      background-color: rgba(255, 255, 255, 0.25);
+      background-color: rgba(0, 0, 0, 0.25);
   }
   /* OVERVIEW PAGE */
   .ArtistIndexOverview-container-29HZM, .ArtistIndexOverview-container-29HZM:hover {

@@ -820,7 +820,13 @@ pre {
   text-decoration: none;
   }
   .ProgressBar\/container\/14z4A {
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.ProgressBar\/primary\/3YDfb {
+    background-color: var(--accent-color);
+}
+.ProgressBar\/purple\/3DlHm {
+    background-color: var(--accent-color);
 }
 	/* SHOW PAGE */
 	.SeriesDetailsSeason\/season\/3XIYa, .SeriesDetailsSeason\/collapseButtonContainer\/3XxzX {
@@ -872,6 +878,15 @@ pre {
     }
     .IconButton\/button\/2qiGi {
         color: #bac5cc;
+    }
+    .Label\/default\/2AF1C {
+        border-color: var(--accent-color);
+        background-color: var(--accent-color);
+    }
+    .Label\/info\/3YD3Y {
+        border-color: var(--accent-color);
+        background-color: var(--accent-color);
+        color: #fff;
     }
   /* Table options*/
   .TableOptionsColumn\/column\/2H7ic {
