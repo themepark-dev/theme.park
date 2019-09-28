@@ -23,4 +23,9 @@
   --calendar-downloaded: #5cb85c;
   --calendar-downloading: #7932ea;
   --calendar-unmonitored: grey;
+
+  --button-color: #cc7b19;
+  --button-color-hover: #e59029;
+  --accent-color:  #e5a00d;
+  --accent-color-hover: #ffc107;
   }
