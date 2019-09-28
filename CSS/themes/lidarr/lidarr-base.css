@@ -99,6 +99,10 @@ background-color: hsla(0,0%,100%,.25) !important;
       .FormInputHelpText-helpText-3_AVV {
       color: #fff;
       }
+      .CheckInput\/primaryIsChecked\/3mVN0 {
+        border-color: transparent;
+        background-color: var(--accent-color);
+    }
   
   /* HEADER */
   
@@ -145,7 +149,9 @@ background-color: hsla(0,0%,100%,.25) !important;
           background: var(--main-bg-color) !important;
       }
       }
-  
+      .PageSidebarItem\/isActiveItem\/bUesh {
+        border-left: 3px solid var(--accent-color);
+    }  
   
       .fa-search:hover {
       color: #FFF !important;
@@ -366,6 +372,41 @@ background-color: hsla(0,0%,100%,.25) !important;
   }
   
   /* -------------------------LIDARR STUFF------------------------------*/
+
+  /* Buttons */
+
+.Button\/default\/2uiHU {
+    color: #FFF;
+    background-color: var(--button-color);
+    border-color: transparent;
+}
+.Button\/default\/2uiHU:hover {
+    border-color: transparent;
+    background-color: var(--button-color-hover) !important;
+    color: #fff;
+    }
+
+.Button\/primary\/1F1YL {
+    border-color: transparent;
+    background-color: var(--button-color);
+    color: #fff;
+    }
+      
+.Button\/primary\/1F1YL:hover {
+    border-color: transparent;
+    background-color: var(--button-color-hover) !important;
+    color: #fff;
+}
+.Button\/success\/36KsU {
+    border-color: var(--button-color);
+    background-color: var(--button-color);
+    color: #fff;
+}
+.Button\/success\/36KsU:hover {
+    border-color: var(--button-color-hover);
+    background-color: var(--button-color-hover);
+    color: #fff;
+}
   
   .LoadingIndicator-ripple-1264V {
       border: 2px solid #FFFFFF;
@@ -503,7 +544,7 @@ background-color: hsla(0,0%,100%,.25) !important;
   }
   /*ARTIST PAGE*/
   .ArtistIndexPoster-title-38afV {
-      background-color: rgba(0, 0, 0, .25);
+      background-color: rgba(255, 255, 255, 0.08);
   }
   .ArtistDetailsSeason-albumType-3aBd- {
       border: none;
@@ -664,6 +705,11 @@ background-color: hsla(0,0%,100%,.25) !important;
       background-color: rgba(0, 0, 0, 0.25);
       color: #fff;
   }
+  .AlbumStudioAlbum-albumType-3QdT4, .AlbumStudioAlbum-tracks-14O0r {
+    padding: 0 4px;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: #fff;
+}
   .AlbumStudioAlbum-missingWanted-1jEbu {
       background-color: #f05050;
   }

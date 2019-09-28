@@ -23,4 +23,9 @@
   --calendar-Partial: orange;  
   --calendar-Unmonitored: #adadad;
   --calendar-Missing: #f05050; 
+
+  --button-color: #607D8B;
+  --button-color-hover: #81a6b7;
+  --accent-color: #607D8B;
+  --accent-color-hover: #81a6b7;
 }
