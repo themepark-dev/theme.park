@@ -574,6 +574,10 @@ background-color: hsla(0,0%,100%,.25) !important;
   .ArtistDetailsSeason-albumCount-36Ow9 {
       color: #ffffff;
   }
+  .Label-default-2AF1C {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+}
       /*ARTIST ALBUM PAGE*/
   .AlbumDetailsMedium-mediumNumber-3ZUko {
       color: #fff;
