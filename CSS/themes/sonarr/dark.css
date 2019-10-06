@@ -28,4 +28,5 @@
   --button-color-hover: hsla(0,0%,100%,.30);
   --accent-color:  rgba(255, 255, 255, 0.25);
   --accent-color-hover: rgba(255, 255, 255, 0.45);
+  --queue-color: #6b5;
   }

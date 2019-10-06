@@ -822,9 +822,11 @@ pre {
   .ProgressBar\/container\/14z4A {
     background-color: rgba(0, 0, 0, 0.25);
 }
-.ProgressBar\/primary\/3YDfb {
-    background-color: var(--accent-color);
+
+.TableRow\/row\/33xJE .ProgressBar\/primary\/3YDfb {
+    background-color: var(--accent-color) !important;
 }
+
 .ProgressBar\/purple\/3DlHm {
     background-color: var(--accent-color);
 }
@@ -866,11 +868,11 @@ pre {
 	color: #fff;
     }
     .Tooltip\/bottom\/3Ewbi.Tooltip\/default\/2NTKh {
-        border-bottom-color: #232323;
+        border-bottom-color: #232323 !important;
       }
       Tooltip\/right\/2MxTa.Tooltip\/default\/2NTKh {
-        border-right-color: #232323;
-    }
+        border-right-color: #232323 !important;
+    }    
     .EpisodeTitleLink\/link\/3ynTw:hover {
         color: #ffffff;
         text-decoration: none;
@@ -891,6 +893,20 @@ pre {
         background-color: var(--accent-color);
         color: #fff;
     }
+    .PageSidebarItem\/status\/34pTa > .Label\/info\/3YD3Y {
+        border-color: transparent;
+        background-color: var(--queue-color);
+        color: #fff;
+    }
+    .ProtocolLabel\/torrent\/3aqvR {
+        border-color: #00853d !important;
+        background-color: #00853d !important;
+    }
+    .ProtocolLabel\/usenet\/3qKV1 {
+
+        border-color: #17b1d9 !;
+        background-color: #17b1d9 !;
+      }
   /* Table options*/
   .TableOptionsColumn\/column\/2H7ic {
     background: rgba(0, 0, 0, .25);
