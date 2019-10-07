@@ -263,7 +263,7 @@
       color: white;
   }
   .user a:hover, .user-group a:hover, .connection a:hover, .connection-group a:hover {
-    color: #ffffff;
+    color: #ffffff !important;
 }
   .user a, .connection a, .connection-group a {
       text-decoration: none;
