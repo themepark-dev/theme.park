@@ -262,6 +262,9 @@
       text-decoration: none;
       color: white;
   }
+  .user a:hover, .user-group a:hover, .connection a:hover, .connection-group a:hover {
+    color: #ffffff;
+}
   .user a, .connection a, .connection-group a {
       text-decoration: none;
       color: white;
@@ -321,4 +324,10 @@
   input[type=radio] {
       border: 1px solid #fff !important;
   }
+  /* Connection */
+
+  #connection-warning {
+    background: var(--modal-bg-color);
+    color: #FFF;
+}
   
