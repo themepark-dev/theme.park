@@ -904,8 +904,8 @@ pre {
     }
     .ProtocolLabel\/usenet\/3qKV1 {
 
-        border-color: #17b1d9 !;
-        background-color: #17b1d9 !;
+        border-color: #17b1d9 !important;
+        background-color: #17b1d9 !important;
       }
   /* Table options*/
   .TableOptionsColumn\/column\/2H7ic {
