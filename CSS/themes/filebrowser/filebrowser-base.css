@@ -14,15 +14,16 @@
 /* Based on https://github.com/Archmonger/Blackberry-Themes/blob/master/Themes/Blackberry-Flat/bbf_filebrowser.css */
 
  /* Scrollbar */  
- @media only screen and (min-width: 768px) {  
+/*  @media only screen and (min-width: 768px) {  
     html {
-        height: 100%;
-        width: 100%;
+        height: 100% !important;
+        width: 100% !important;
+        overflow: hidden !important;
     }
     body {
-        overflow-y: auto;
-        height: 100%;
-        background: var(--main-bg-color)
+        overflow-y: auto !important;
+        height: 100% !important;
+        background: var(--main-bg-color) !important;
     }
 }
     ::-webkit-scrollbar {
@@ -44,7 +45,7 @@
         border-radius: 8px;
         background-color: hsla(0,0%,100%,.5);
         background-clip: padding-box;
-    }   
+    }  */  
 .message {
     color: #FFF;
 }
@@ -54,6 +55,7 @@
     background: var(--main-bg-color);
 }
 body {
+    
     color: #FFFFFF;
     font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
