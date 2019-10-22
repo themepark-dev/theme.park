@@ -653,8 +653,8 @@ pre {
 
 
 
-/* -------------------------Radarr V3------------------------------*/
-/* Radarr v3 theme */
+/* -------------------------Radarr V2------------------------------*/
+/* Radarr v2 theme */
 
 /* Froms */
 .FormInputHelpText\/helpText\/3_AVV {
@@ -821,12 +821,18 @@ pre {
 
   /* OVERVIEW PAGE */
   
-  .MovieIndexPoster\/controls\/prEIO {
+  .MovieIndexPoster\/controls\/COwa9 {
     background-color: #000 !important;
 }
   .MovieIndexOverview\/container\/4LMzH, .MovieIndexOverview\/container\/4LMzH:hover {
   background-color: transparent !important;
   }
+  .AddListMovieOverview\/container\/1O7bo:hover .AddListMovieOverview\/content\/1orZ3 {
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+  .AddListMoviePoster\/title\/13ogN {
+    background-color: rgba(255, 255, 255, 0.08);
+}
   .MovieIndexOverview\/content\/3GKJk:hover {
   background-color: hsla(0,0%,100%,.08) !important;
   }
@@ -1093,9 +1099,12 @@ pre {
 		border-left: 1px solid hsla(0,0%,100%,.08);
 		border-right: 1px solid hsla(0,0%,100%,.08);
 	}
-	.CalendarEvent\/movieTitle\/3sg1o, .CalendarEvent\/episodeInfo\/IWdbW, .CalendarEvent\/airTime\/3Wzho {
+	.CalendarEvent\/movieTitle\/2-WAP, .CalendarEvent\/episodeInfo\/IWdbW, .CalendarEvent\/airTime\/3Wzho {
 		color: #ffffff !important;
-	}
+    }
+    .CalendarEvent\/movieInfo\/2LF5- {
+        color: #eee;
+    }
 	.CalendarEvent\/event\/3Uyb9 {
 		border-bottom: none !important;
 	}
@@ -1120,6 +1129,7 @@ pre {
     .AgendaEvent\/event\/2a83A:hover {
         background-color: hsla(0,0%,100%,.08) !important;
     }
+
 
 /* SETTINGS */
 
@@ -1150,6 +1160,10 @@ pre {
         border: none;
         background: transparent;
         color: white;
+    }
+    .QualityProfileFormatItem\/qualityProfileFormatItem\/19XrK {
+        border: 1px solid transparent;
+        background: rgba(0, 0, 0, .25);
     }
 	/* PROFILES */
 	.Indexers\/center\/11Csq {
