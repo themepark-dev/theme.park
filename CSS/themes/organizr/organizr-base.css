@@ -112,6 +112,10 @@ html {
 .label-inverse {
     background: var(--custom-buttons-color);
 }
+.tabLoaded {
+    -webkit-filter: drop-shadow(0 0 5px var(--link-color));
+    filter: drop-shadow(0 0 5px var(--link-color));
+}
   /*input form control dropdown*/
 .form-control, select {
     background: rgba(0,0,0,.25);
@@ -576,8 +580,14 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
       background: rgba(0, 0, 0, 0.25) !important;
   }
     /* Homepage health checks */
-    .bg-org-alt {
-      background: var(--modal-bg-color) !important;
+    .bg-inverse > .healthPosition {
+        background: var(--custom-buttons-color) !important;
+    }
+    .card, .card-body {
+        background: transparent !important;
+    }
+    .bg-inverse {
+        background: rgba(255, 255, 255, 0.15) !important;
     }
     /* Homepage Unifi cards */
     .unifiCards .panel-heading {
@@ -816,3 +826,24 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
     position: absolute !important;
     left: -2px !important;
 }
+
+/* Google auth settings modal*/
+
+.color-table.info-table thead th {
+    background-color: rgba(0, 0, 0, 0.25);
+    color: #fff;
+}
+.bg-success.text-inverse {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    color: #FFF;
+}
+.panel-blue a, .panel-info a {
+    color: var(--link-color);
+}
+.color-bordered-table.purple-bordered-table {
+    border: 2px solid var(--notification-box-line);
+}
+.white-box .bg-info {
+    background: var(--link-color) !important;
+}
+
