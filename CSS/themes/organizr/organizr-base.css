@@ -593,7 +593,7 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
 .bg-inverse {
     background: transparent !important;
     }
-    .animated-3 {
+    .left-health {
     border-radius: 3px 0 0 3px;
     }
     /* Homepage Unifi cards */
