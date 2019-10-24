@@ -580,14 +580,17 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
       background: rgba(0, 0, 0, 0.25) !important;
   }
     /* Homepage health checks */
-    .bg-inverse > .healthPosition {
-        background: var(--custom-buttons-color) !important;
+.bg-inverse .healthPosition {
+    background: rgba(255, 255, 255, 0.08) !important;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(10px);
+    border-radius: 3px;
     }
-    .card, .card-body {
+.card, .card-body {
+    background: transparent !important;
+    }
+.bg-inverse {
         background: transparent !important;
-    }
-    .bg-inverse {
-        background: rgba(255, 255, 255, 0.15) !important;
     }
     /* Homepage Unifi cards */
     .unifiCards .panel-heading {
