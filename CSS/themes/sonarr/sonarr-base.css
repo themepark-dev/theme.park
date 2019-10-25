@@ -1113,7 +1113,22 @@ pre {
 	.Settings\/summary\/3KPAv {
 		color: #fff;
 	}
-
+	/* MEDIA MANAGEMENT - FILE NAME TOKENS */
+	.NamingOption\/option\/giCGd {
+	    border: 1px solid transparent;
+	}
+	.NamingOption\/token\/1y5bz {
+	    background-color: rgba(255, 255, 255, 0.15);
+	}
+	.NamingOption\/example\/RNR6x {
+	    background-color: rgba(255, 255, 255, 0.25);
+	}
+	.NamingOption\/option\/giCGd:hover .NamingOption\/token\/1y5bz  {
+	    background-color: rgba(255, 255, 2550, 0.25);
+	}
+	.NamingOption\/option\/giCGd:hover .NamingOption\/example\/RNR6x {
+	    background-color: rgba(255, 255, 2550, 0.35);
+	}
 	/* PROFILES */
 	.Card\/card\/1iGZk, .QualityProfiles\/addQualityProfile\/2U2Io {
     background-color: rgba(0,0,0,.45);
