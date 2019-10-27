@@ -181,7 +181,7 @@ html {
     background: var(--main-bg-color);
 }
 /*error page background */
-#internal-Settings, #preloader, .active-tab-Settings, .error-page {
+#internal-Settings, #preloader, .preloader, .active-tab-Settings, .error-page {
     background: var(--main-bg-color);
 }
 /*Speed test footer and circles*/
