@@ -24,8 +24,9 @@ Set the Organizr theme to either Aquamarine or Hotline.
 ```
 
 
-Replace the variables if you have a dark background.
-  Light colors for dark backgrounds.
+### Replace the variables if you have a dark background.
+
+* Light blur colors for dark backgrounds.
 
 ```css
     --div-background-color-10: rgba(255, 255, 255, 0.1);
@@ -34,7 +35,7 @@ Replace the variables if you have a dark background.
     --div-background-color-35: rgba(255, 255, 255, 0.35);
 ```
 
-Dark blur colors for bright backgrounds
+* Dark blur colors for bright backgrounds
 ```css
     --div-background-color-10: rgba(0, 0, 0, 0.15);
     --div-background-color-15: rgba(0, 0, 0, 0.25);
