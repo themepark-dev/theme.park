@@ -640,7 +640,7 @@
 #debugPreInfo .slimScrollDiv, #debugResults .slimScrollDiv {
 	background: var(--div-background-color-15);
 }
-/Swal popup */
+/* Swal popup */
 .swal-overlay--show-modal .swal-modal {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
