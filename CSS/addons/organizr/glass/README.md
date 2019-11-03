@@ -8,7 +8,7 @@ Set the Organizr theme to either Aquamarine or Hotline.
 ```css
 @import "https://gilbn.github.io/theme.park/CSS/addons/organizr/glass/glass-base.css"; 
 :root {
-    --main-bg-color: url(https://domain.com/your/hosted/wallpaper.jpg) center center/cover no-repeat fixed;
+    --main-bg-color: url(https://gilbn.github.io/theme.park/CSS/addons/organizr/glass/example.jpg) center center/cover no-repeat fixed;
     --mobile-bg-color: radial-gradient(circle, #3a3a3a, #2d2d2d, #202020, #141414, #000000) center center/cover no-repeat fixed;
 
     --link-color: #fff;
