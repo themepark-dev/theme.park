@@ -23,6 +23,7 @@ Set the Organizr theme to either Aquamarine or Hotline.
 }
 ```
 
+On mobile the background is replaced with `--mobile-bg-color`. Find a background you like here https://cssgradient.io/gradient-backgrounds/ or just set it to a regualar color e.g. `#1f1f1f`
 
 ### Replace the variables if you have a dark background.
 
