@@ -155,10 +155,7 @@
 .sidebar-head {
     background: transparent !important;
 }
-#internal-Settings, .active-tab-Settings, .sidebar body[data-active-tab=""], .sidebar {
-    -webkit-backdrop-filter: blur(10px) !important;
-    backdrop-filter: blur(10px) !important;
-}
+
 /*Calendar */
  .fc-toolbar {
     -webkit-backdrop-filter: blur(10px);
@@ -388,7 +385,8 @@
         backdrop-filter: blur(10px);
         background: var(--div-background-color-15);
         border-radius: 15px;
-        padding: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
         margin-bottom: 5px;
     }    
 /* Invite */
