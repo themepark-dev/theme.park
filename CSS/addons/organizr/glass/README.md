@@ -43,3 +43,10 @@ On mobile the background is replaced with `--mobile-bg-color`. Find a background
     --div-background-color-25: rgba(0, 0, 0, 0.35);
     --div-background-color-35: rgba(0, 0, 0, 0.45);
 ```
+
+# Screenshots
+
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/CSS/addons/organizr/glass/screenshots/login.png)
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/CSS/addons/organizr/glass/screenshots/lockscreen.png)
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/CSS/addons/organizr/glass/screenshots/homepage.jpg)
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/CSS/addons/organizr/glass/screenshots/settings.jpg)
