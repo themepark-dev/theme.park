@@ -109,7 +109,6 @@
 }
 
 .user-bg {
-    background: ;
 	border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -382,7 +381,16 @@
 	font-family: FontAwesome;
 	font-size: 20px;
 	color: rgba(40, 205, 65, 1);
-	}
+    }
+/* Custom HTML */    
+    #homepageOrdercustomhtmlTwo, #homepageOrdercustomhtml {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background: var(--div-background-color-15);
+        border-radius: 15px;
+        padding: 10px;
+        margin-bottom: 5px;
+    }    
 /* Invite */
 #invite-area .bg-org {
     background: var(--div-background-color-15) !important;
