@@ -29,23 +29,23 @@ Here are the other theme colors if you want to use that instead:
 
 * Aquamarine
 ```css 
-radial-gradient(ellipse at center, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
+--main-bg-color: radial-gradient(ellipse at center, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
 ```
 * Hotline
 ```css 
-radial-gradient(ellipse at center, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
+--main-bg-color: radial-gradient(ellipse at center, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
 ```
 * Space Gray
 ```css 
-radial-gradient( ellipse at center,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed;
+--main-bg-color: radial-gradient( ellipse at center,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed;
 ```
 * Dark
 ```css
-radial-gradient(circle, #3a3a3a, #2d2d2d, #202020, #141414, #000000) center center/cover no-repeat fixed;
+--main-bg-color: radial-gradient(circle, #3a3a3a, #2d2d2d, #202020, #141414, #000000) center center/cover no-repeat fixed;
 ```
 * Plex
 ```css
-url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-light2.png") center center/cover no-repeat fixed;
+--main-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-light2.png") center center/cover no-repeat fixed;
 ```
 
 ### Replace the variables if you have a dark background.
