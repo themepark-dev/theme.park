@@ -63,7 +63,7 @@ Here are the other theme colors if you want to use that instead:
 
 ## Login - Lockscreen
 
-If you just want the login and lockscreen css simply add this in custom CSS:
+If you just want the login and lockscreen css, just add this in custom CSS:
 
 ```css
 @import "https://gilbn.github.io/theme.park/CSS/addons/organizr/glass/glass-login.css"; 
