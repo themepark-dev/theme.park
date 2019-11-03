@@ -61,6 +61,14 @@ Here are the other theme colors if you want to use that instead:
     --div-background-color-35: rgba(0, 0, 0, 0.45);
 ```
 
+## Login - Lockscreen
+
+If you just want the login and lockscreen css simply add this in custom CSS:
+
+```css
+@import "https://gilbn.github.io/theme.park/CSS/addons/organizr/glass/glass-login.css"; 
+```
+
 # Screenshots
 
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/CSS/addons/organizr/glass/screenshots/login.png)
