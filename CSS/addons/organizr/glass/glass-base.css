@@ -156,10 +156,6 @@
 .sidebar-head {
     background: transparent !important;
 }
-#side-menu {
-    -webkit-backdrop-filter: blur(10px) !important;
-    backdrop-filter: blur(10px) !important;
-}
 #internal-Settings, .active-tab-Settings, .sidebar body[data-active-tab=""], .sidebar {
     -webkit-backdrop-filter: blur(10px) !important;
     backdrop-filter: blur(10px) !important;
@@ -644,7 +640,19 @@
 #debugPreInfo .slimScrollDiv, #debugResults .slimScrollDiv {
 	background: var(--div-background-color-15);
 }
-
+/Swal popup */
+.swal-overlay--show-modal .swal-modal {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background: var(--div-background-color-25);
+    border-radius: 15px;
+}
+.swal-title {
+    color: white;
+}
+.swal-overlay--show-modal {
+    background: var(--main-bg-color);
+}
 
 /* Mobile*/
 @media (max-width: 480px) {
@@ -654,8 +662,11 @@
   background-repeat: no-repeat;
     width: 100%;
   height: 100%;
-
 }
+#side-menu {
+    -webkit-backdrop-filter: blur(10px) !important;
+    backdrop-filter: blur(10px) !important;
+}	
 .navbar-header {
     background: var(--div-background-color-25)    !important;
 	    -webkit-backdrop-filter: blur(10px) !important;
