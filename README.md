@@ -24,6 +24,7 @@
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/plex_banner.png)
 
 # [Installation](https://github.com/gilbN/theme.park/wiki/Setup)
+# [Addons](https://github.com/gilbN/theme.park/tree/master/CSS/addons)
 
 ## Current themes in the repo:
 

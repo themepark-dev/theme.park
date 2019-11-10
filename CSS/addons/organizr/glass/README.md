@@ -1,8 +1,21 @@
 ## Installation
 
-Set the Organizr theme to either Aquamarine or Hotline.
+* [Full](https://github.com/gilbN/theme.park/tree/master/CSS/addons/organizr/glass#Full)
+* [Login - Lockscreen only](https://github.com/gilbN/theme.park/tree/master/CSS/addons/organizr/glass#login---lockscreen)
 
-  Import the `glass-base.css` and root variables in the Custom Theme CSS box like below.
+
+
+***
+### `Tip!` 
+ If you're on Docker use the `php-fpm` tag to speed up load times, like so: `organizrtools/organizr-v2:php-fpm` 
+
+***
+
+## Full
+
+1. Set the Organizr theme to either Aquamarine or Hotline.
+
+2. Import the `glass-base.css` and root variables in the Custom Theme CSS box like below.
   Replace `--main-bg-color` with a wallpaper you have uploaded to Organizr
  
 ```css
@@ -27,19 +40,24 @@ On mobile the background is replaced with `--mobile-bg-color`. Find a background
 
 Here are the other theme colors if you want to use that instead:
 
-* Aquamarine
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/aquamarine_banner.png" width="600px" />
+
 `--mobile-bg-color: radial-gradient(ellipse at center, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;`
 
-* Hotline
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/hotline_banner.png" width="600px" />
+
 ` --mobile-bg-color: radial-gradient(ellipse at center, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;`
 
-* Space Gray
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/spacegray_banner.png" width="600px" />
+
 `--mobile-bg-color: radial-gradient( ellipse at center,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed;`
 
-* Dark
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/dark_banner.png" width="600px" />
+
 `--mobile-bg-color: radial-gradient(circle, #3a3a3a, #2d2d2d, #202020, #141414, #000000) center center/cover no-repeat fixed;`
 
-* Plex
+<img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/plex_banner.png" width="600px" />
+
 `--mobile-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-light2.png") center center/cover no-repeat fixed;`
 
 ### Replace the variables if you have a dark background.
@@ -67,6 +85,17 @@ If you just want the login and lockscreen css, just add this in custom CSS:
 
 ```css
 @import "https://gilbn.github.io/theme.park/CSS/addons/organizr/glass/glass-login.css"; 
+```
+
+You can change the blur background color by adding the variables above. The default is dark.
+```css
+@import "https://gilbn.github.io/theme.park/CSS/addons/organizr/glass/glass-login.css";
+:root {
+    --div-background-color-10: rgba(255, 255, 255, 0.10);
+    --div-background-color-15: rgba(255, 255, 255, 0.15);
+    --div-background-color-25: rgba(255, 255, 255, 0.25);
+    --div-background-color-35: rgba(255, 255, 255, 0.35);
+}
 ```
 
 # Screenshots
