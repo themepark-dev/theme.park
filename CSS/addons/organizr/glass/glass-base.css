@@ -305,7 +305,7 @@
     background: var(--div-background-color-25);
 }
 
-#plexRecent, #homepageOrderplexplaylist, #homepageOrdercalendar, #homepageOrderembyrecent, #ombi-requests, #homepageOrderdeluge, #homepageOrdernzbget, #homepageOrdertransmission, #homepageOrderrTorrent, #homepageOrderjdownloader, #homepageOrdersabnzbd  {
+#plexRecent, #homepageOrderplexplaylist, #homepageOrdercalendar, #homepageOrderembyrecent, #ombi-requests, #homepageOrderdeluge, #homepageOrdernzbget, #homepageOrdertransmission, #homepageOrderrTorrent, #homepageOrderjdownloader, #homepageOrdersabnzbd,#homepageOrderqBittorrent  {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background: var(--div-background-color-15);
