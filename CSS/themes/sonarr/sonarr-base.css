@@ -997,6 +997,9 @@ pre {
         border-color: #fff;
         box-shadow: none;
     }
+    ::placeholder {color: #eee;}
+    :-ms-input-placeholder {color: #eee;}
+    ::-webkit-input-placeholder {color: #eee ;}
 	
 	/* TEXT COLOR */
 	.PageContentBody\/innerContentBody\/tEszh {
