@@ -1003,10 +1003,10 @@ pre {
     color: #fff;
 	}
 	/* SEARCH RESULTS */
-	.AddNewSeriesSearchResult\/searchResult\/xR8dj {
-    background-color: rgba(0, 0, 0, .25) !important;
-	}
-	.AddNewSeriesSearchResult\/searchResult\/xR8dj:hover {
+    .AddNewSeriesSearchResult\/underlay\/11FBP {
+    background-color: rgba(0, 0, 0, .0) !important;
+    }
+    .AddNewSeriesSearchResult\/underlay\/11FBP:hover {
     background-color: hsla(0,0%,100%,.08) !important;
     }
     .AddNewSeriesModalContent\/year\/t7IIJ {
