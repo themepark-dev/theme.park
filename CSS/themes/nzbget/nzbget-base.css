@@ -251,6 +251,11 @@ tr.checked, tr.checked td, tr.checked:nth-child(odd) .progress {
   background: hsla(0,0%,100%,.08);
   color:#FFF;
 }
+#DownloadsEditDialog input.btn.btn-primary{
+    background: var(--button-color) !important;
+    text-shadow:unset;
+    color:white;
+}
 
 	.btn {
     color: #ffffff;
