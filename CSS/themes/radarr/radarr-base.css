@@ -70,7 +70,7 @@ body {
       -o-background-size: auto, cover;
 }
 /* scroller */
-::-webkit-scrollbar-corner, .MovieSearchInput\/movieContainer\/3FWAq::-webkit-scrollbar-thumb, .Scroller\/scroller\/26MBT::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-corner, .MovieSearchInput-movieContainer-3FWAq::-webkit-scrollbar-thumb, .Scroller-scroller-26MBT::-webkit-scrollbar-thumb {
     background-color:  hsla(0,0%,100%,.08);
 }
 ::-webkit-scrollbar {
@@ -657,163 +657,163 @@ pre {
 /* Radarr v2 theme */
 
 /* Froms */
-.FormInputHelpText\/helpText\/3_AVV {
+.FormInputHelpText-helpText-3_AVV {
     color: #ffffff;
 }
-.FormInputGroup\/inputUnit\/19QXo {
+.FormInputGroup-inputUnit-19QXo {
     color: #eee !important;
   }
 
 /* LINKS */
-.Link\/to\/6fmSq {
+.Link-to-6fmSq {
     color: #FFF;
 }
-.Link\/to\/6fmSq:hover {
+.Link-to-6fmSq:hover {
     color: #FFF;
     text-decoration: none;
 }
 
 /* Buttons */
 
-.Button\/default\/2uiHU {
+.Button-default-2uiHU {
     color: #FFF;
     background-color: var(--button-color);
     border-color: transparent;
 }
-.Button\/default\/2uiHU:hover {
+.Button-default-2uiHU:hover {
     border-color: transparent;
     background-color: var(--button-color-hover) !important;
     color: #fff;
     }
 
-.Button\/primary\/1F1YL {
+.Button-primary-1F1YL {
     border-color: transparent;
     background-color: var(--button-color);
     color: #fff;
     }
       
-.Button\/primary\/1F1YL:hover {
+.Button-primary-1F1YL:hover {
     border-color: transparent;
     background-color: var(--button-color-hover) !important;
     color: #fff;
 }
-.Button\/success\/36KsU {
+.Button-success-36KsU {
     border-color: var(--button-color);
     background-color: var(--button-color);
     color: #fff;
 }
-.Button\/success\/36KsU:hover {
+.Button-success-36KsU:hover {
     border-color: var(--button-color-hover);
     background-color: var(--button-color-hover);
     color: #fff;
 }
 
 /* LOADING PAGE */
-.ErrorPage\/page\/3GptQ, .ErrorPage\/version\/3txe6, .LoadingMessage\/loadingMessage\/1gR5r {
+.ErrorPage-page-3GptQ, .ErrorPage-version-3txe6, .LoadingMessage-loadingMessage-1gR5r {
     color: #FFF;
 }
-.LoadingIndicator\/ripple\/358v5 {
+.LoadingIndicator-ripple-358v5 {
   border: 2px solid #fff;
 }
 
 /* MODAL */
-.ModalHeader\/modalHeader\/gpcvG {
+.ModalHeader-modalHeader-gpcvG {
     background: var(--modal-bg-color);
     color: #fff;
     border-bottom: 1px solid hsla(0,0%,100%,.08);
 }
-.ModalContent\/modalContent\/-txrl {
+.ModalContent-modalContent--txrl {
     background: var(--modal-bg-color);
     color: #fff;
 }
-.ModalFooter\/modalFooter\/1N5Ku {
+.ModalFooter-modalFooter-1N5Ku {
     background: var(--modal-bg-color);
     color: #fff;
     border-top: 1px solid hsla(0,0%,100%,.08);
 }
-.ModalContent\/closeButton\/37Puk:hover {
+.ModalContent-closeButton-37Puk:hover {
     color: #fff;
 }
 
 /* INPUT */
-	.TagInput\/internalInput\/Jbb1T {
+	.TagInput-internalInput-Jbb1T {
 	background-color: transparent;
 	color: #fff;
     }
-    .SelectInput\/select\/1qCdc {
+    .SelectInput-select-1qCdc {
         background-color: #1e1e1e !important;
     }
-	.AutoSuggestInput\/suggestionsList\/_bVXO, .AutoSuggestInput\/suggestionsContainerOpen\/3TAB7, .AutoSuggestInput\/suggestionsContainer\/3MmlD {
+	.AutoSuggestInput-suggestionsList-_bVXO, .AutoSuggestInput-suggestionsContainerOpen-3TAB7, .AutoSuggestInput-suggestionsContainer-3MmlD {
 	background-color: #323232 !important;
 	color: white;
 	border: none !important;
 	}
-	.AutoSuggestInput\/suggestionHighlighted\/2BWyt {
+	.AutoSuggestInput-suggestionHighlighted-2BWyt {
 	background-color: hsla(0,0%,100%,.08);
 	}
 
-    .CheckInput\/primaryIsChecked\/3mVN0 {
+    .CheckInput-primaryIsChecked-3mVN0 {
         border-color: transparent;
         background-color: var(--accent-color);
     }
 /* HEADER */
 
-	.PageHeader\/header\/1IhlM {
+	.PageHeader-header-1IhlM {
 		background-color: rgba(0, 0, 0, .7);
 	}
 
     /* SEARCH DROPDOWN HEADER */
     
-	.MovieSearchInput\/containerOpen\/3c93F .MovieSearchInput\/movieContainer\/3FWAq {
+	.MovieSearchInput-containerOpen-3c93F .MovieSearchInput-movieContainer-3FWAq {
 		border: none !important;
         background: var(--modal-bg-color);
         color: #fff !important;
         box-shadow: 0 0 10px 1px transparent !important;
 	}
-	.MovieSearchInput\/highlighted\/1ACUC {
+	.MovieSearchInput-highlighted-1ACUC {
 		background-color: hsla(0,0%,100%,.08);
 	}
-	.PageHeader\/donate\/ZT-3N {
+	.PageHeader-donate-ZT-3N {
     color: #c4273c !important;
     }
-    .MovieSearchInput\/movieContainer\/2yDTR::-webkit-scrollbar-thumb {
+    .MovieSearchInput-movieContainer-2yDTR::-webkit-scrollbar-thumb {
         background-color: rgba(255, 255, 255, 0.25);
     }
-    .MovieSearchInput\/sectionTitle\/1j29e {
+    .MovieSearchInput-sectionTitle-1j29e {
         color: #fff;
     }
 
     
 
 /* SIDE MENU */
-	.PageSidebar\/sidebar\/2UXc0 {
+	.PageSidebar-sidebar-2UXc0 {
 		background-color: rgba(0, 0, 0, .45);
 	}
-	.PageSidebar\/sidebarContainer\/3Hxpq {
+	.PageSidebar-sidebarContainer-3Hxpq {
 		background-color: rgba(0, 0, 0, .45) !important;
 	}
-	.PageSidebar\/sidebar\/3IOcI {
+	.PageSidebar-sidebar-3IOcI {
 		background-color: transparent;
 	}
-	.PageSidebarItem\/link\/TuHn2:hover, .PageSidebarItem\/link\/TuHn2:focus {
+	.PageSidebarItem-link-TuHn2:hover, .PageSidebarItem-link-TuHn2:focus {
 		color: #FFF !important;
 		background-color: hsla(0,0%,100%,.08);
 		text-decoration: none;
 	}
-	.PageSidebarItem\/isActiveLink\/1Hupc {
+	.PageSidebarItem-isActiveLink-1Hupc {
 		color: #FFF;
 		background-color: hsla(0,0%,100%,.08);
 	}
-	.PageSidebarItem\/isActiveParentLink\/2uxKf {
+	.PageSidebarItem-isActiveParentLink-2uxKf {
 		background-color: transparent;
 	}
 
 	@media only screen and (max-width: 768px) {
-	.PageSidebar\/sidebarContainer\/3Hxpq {
+	.PageSidebar-sidebarContainer-3Hxpq {
 		background: var(--main-bg-color) !important;
 	}
     }
-    .PageSidebarItem\/isActiveItem\/bUesh {
+    .PageSidebarItem-isActiveItem-bUesh {
         border-left: 3px solid var(--accent-color);
     }
 
@@ -821,159 +821,159 @@ pre {
 
   /* OVERVIEW PAGE */
   
-  .MovieIndexPoster\/controls\/COwa9 {
+  .MovieIndexPoster-controls-COwa9 {
     background-color: #000 !important;
 }
-  .MovieIndexOverview\/container\/4LMzH, .MovieIndexOverview\/container\/4LMzH:hover {
+  .MovieIndexOverview-container-4LMzH, .MovieIndexOverview-container-4LMzH:hover {
   background-color: transparent !important;
   }
-  .AddListMovieOverview\/container\/1O7bo:hover .AddListMovieOverview\/content\/1orZ3 {
+  .AddListMovieOverview-container-1O7bo:hover .AddListMovieOverview-content-1orZ3 {
     background-color: rgba(255, 255, 255, 0.08);
   }
-  .AddListMoviePoster\/title\/13ogN {
+  .AddListMoviePoster-title-13ogN {
     background-color: rgba(255, 255, 255, 0.08);
 }
-  .MovieIndexOverview\/content\/3GKJk:hover {
+  .MovieIndexOverview-content-3GKJk:hover {
   background-color: hsla(0,0%,100%,.08) !important;
   }
-  .MovieIndexOverview\/container\/4LMzH:hover .MovieIndexOverview\/content\/3GKJk {
+  .MovieIndexOverview-container-4LMzH:hover .MovieIndexOverview-content-3GKJk {
   background-color: transparent;
   }
-  .MovieIndexOverview\/link\/1i54B:hover {
+  .MovieIndexOverview-link-1i54B:hover {
   text-decoration: none;
   }
-  .ProgressBar\/container\/14z4A {
+  .ProgressBar-container-14z4A {
     background-color: rgba(0, 0, 0, 0.25);
 }
-.ProgressBar\/primary\/3YDfb {
+.ProgressBar-primary-3YDfb {
     background-color: var(--accent-color);
 }
-.ProgressBar\/purple\/3DlHm {
+.ProgressBar-purple-3DlHm {
     background-color: var(--accent-color);
 }
 	/* MOVIE PAGE */
-	.MovieDetailsSeason\/season\/3XIYa, .MovieDetailsSeason\/collapseButtonContainer\/3XxzX {
+	.MovieDetailsSeason-season-3XIYa, .MovieDetailsSeason-collapseButtonContainer-3XxzX {
     border: none !important;
     background-color: rgba(0, 0, 0, .25) !important;
 	}
-	.MovieDetailsSeason\/actionButton\/3BQuA  {
+	.MovieDetailsSeason-actionButton-3BQuA  {
     color: hsla(0,0%,100%,.7) !important;
     }
-    .MovieDetailsSeason\/collapseButtonIcon\/17xZI {
+    .MovieDetailsSeason-collapseButtonIcon-17xZI {
         color: #bac5cc;
     }
 
 	.fa-search:hover {
     color: #FFF !important;
 	}
-	.Icon\/default\/3C-KJ:hover {
+	.Icon-default-3C-KJ:hover {
     color: #fff !important;
 	}
-	.MonitorToggleButton\/toggleButton\/3CcN9 {
+	.MonitorToggleButton-toggleButton-3CcN9 {
     color: #dadada;
 	}
-	.MovieDetailsSeason\/seasonNumber\/FL7Dt {
+	.MovieDetailsSeason-seasonNumber-FL7Dt {
     color: #fff;
 	}
-	.Table\/table\/2C3O8 {
+	.Table-table-2C3O8 {
     color: #fff;
 	}
-	.MovieDetailsSeason\/collapseButtonContainer\/trs6s {
+	.MovieDetailsSeason-collapseButtonContainer-trs6s {
 	border: none !important;
     background-color: rgba(0, 0, 0, .25) !important;
 	}
-	.Popover\/title\/326tA, .SeasonInfo\/title\/1tid_, .Popover\/body\/10Yh7 {
+	.Popover-title-326tA, .SeasonInfo-title-1tid_, .Popover-body-10Yh7 {
 		background-color: #232323 !important;
 	}
-	.Tooltip\/tooltipContainer\/2693s {
+	.Tooltip-tooltipContainer-2693s {
 	color: #fff;
     }
-    .Tooltip\/bottom\/3Ewbi.Tooltip\/default\/2NTKh {
+    .Tooltip-bottom-3Ewbi.Tooltip-default-2NTKh {
         border-bottom-color: #232323;
       }
-      Tooltip\/right\/2MxTa.Tooltip\/default\/2NTKh {
+      Tooltip-right-2MxTa.Tooltip-default-2NTKh {
         border-right-color: #232323;
     }
-    .EpisodeTitleLink\/link\/3ynTw:hover {
+    .EpisodeTitleLink-link-3ynTw:hover {
         color: #ffffff;
         text-decoration: none;
     }
-    .IconButton\/button\/2qiGi:hover {
+    .IconButton-button-2qiGi:hover {
         background-color: transparent;
         color: #fff;
     }
-    .IconButton\/button\/2qiGi {
+    .IconButton-button-2qiGi {
         color: #bac5cc;
     }
-    .Label\/default\/2AF1C {
+    .Label-default-2AF1C {
         border-color: var(--accent-color);
         background-color: var(--accent-color);
     }
-    .ProtocolLabel\/usenet\/3qKV1 {
+    .ProtocolLabel-usenet-3qKV1 {
         border-color: #17b1d9 !important;
         background-color: #17b1d9 !important;
     }
-    .ProtocolLabel\/torrent\/3aqvR {
+    .ProtocolLabel-torrent-3aqvR {
         border-color: #00853d !important;
         background-color: #00853d !important;
       }
       
-    .Label\/info\/3YD3Y {
+    .Label-info-3YD3Y {
         border-color: var(--accent-color);
         background-color: var(--accent-color);
         color: #fff;
     }
-    .MovieDetails\/selectedTab\/3hMLN {
+    .MovieDetails-selectedTab-3hMLN {
         border-bottom: 4px solid var(--accent-color);
     }
   /* Table options*/
-  .TableOptionsColumn\/column\/2H7ic {
+  .TableOptionsColumn-column-2H7ic {
     background: rgba(0, 0, 0, .25);
     color: #FFF;
 	border: none;
     }
 
 	/* TOP MENU SERIES */
-	.PageToolbar\/toolbar\/1Lo1N {
+	.PageToolbar-toolbar-1Lo1N {
 		background-color: rgba(0, 0, 0, .25);
 		color: hsla(0,0%,100%,.7);
 	}
 	/* POSTERS */
-	.MovieIndexPoster\/title\/Umirt, .MovieIndexPoster\/nextAiring\/1FZy6, .MovieIndexPosterInfo\/info\/2JsCg {
+	.MovieIndexPoster-title-Umirt, .MovieIndexPoster-nextAiring-1FZy6, .MovieIndexPosterInfo-info-2JsCg {
 		background-color: rgba(255, 255, 255, 0.08);
 			color: #fff;
 	}
 	/* HOVEL LABELS */
-	.Label\/default\/2zdw6 {
+	.Label-default-2zdw6 {
 		border-color: #1b1b1b;
 		background-color: #1b1b1b;
 	}
 	/* SERIES TOP HEADER DROPDOWN */
-	.MenuItem\/menuItem\/zB-Up, .MenuContent\/menuContent\/3Zkj4 {
+	.MenuItem-menuItem-zB-Up, .MenuContent-menuContent-3Zkj4 {
     background: var(--modal-bg-color);
     color: #e1e2e3;
 	}
-	.MenuItem\/menuItem\/zB-Up:hover, .MenuItem\/menuItem\/zB-Up:focus {
+	.MenuItem-menuItem-zB-Up:hover, .MenuItem-menuItem-zB-Up:focus {
 		background: hsla(0,0%,100%,.08) !important;
 		color: #fbfcfc;
 		text-decoration: none;
 	}
-	.MenuItemSeparator\/separator\/1ayq0 {
+	.MenuItemSeparator-separator-1ayq0 {
     background-color: hsla(0,0%,100%,.08) !important;
 	}
 	/* SERIES TOP HEADER HOVER */
-	.PageToolbarButton\/toolbarButton\/QiQEt:hover {
+	.PageToolbarButton-toolbarButton-QiQEt:hover {
     color: #FFF;
 	}
-	.MenuButton\/menuButton\/3nh0N:hover {
+	.MenuButton-menuButton-3nh0N:hover {
     color: #FFF;
 	}
 	/* ALPHABET JUMP BAR */
-	.PageJumpBar\/jumpBar\/3owcF {
+	.PageJumpBar-jumpBar-3owcF {
     color: #FFF;
 	}
 	/* MINI RIGHT SCROLL BAR */
-	.OverlayScroller\/thumb\/1Lhfi {
+	.OverlayScroller-thumb-1Lhfi {
     background-color: hsla(0,0%,100%,.08) !important;
 }
 
@@ -986,73 +986,75 @@ pre {
     background-color: rgba(255, 255, 255, 0.08);
     color: #fff;
     }
-    .EnhancedSelectInput\/options\/3yy65 {
+    .EnhancedSelectInput-options-3yy65 {
     border: 1px solid #dde6e9;
     border-radius: 4px;
     background-color: #1e1e1e;
     }
 
 	/* SEARCH BAR */
-	.Input\/input\/2YWzR, .AddNewMovie\/searchIconContainer\/zNKEC, .AddNewmovie\/clearLookupButton\/1dKG7 {
+	.Input-input-2YWzR, .AddNewMovie-searchIconContainer-zNKEC, .AddNewmovie-clearLookupButton-1dKG7 {
 		border: none;
 		background-color: rgba(255, 255, 255, 0.08);
 		color: #FFF
     }
-    .MovieSearchResult\/alternateTitle\/21CfS {
+    .MovieSearchResult-alternateTitle-21CfS {
         color: #ffffff;
         font-size: 12px;
       }
-    .AddNewmovieSearchResult\/year\/2jW2b {
+    .AddNewmovieSearchResult-year-2jW2b {
         color: #fff;
     }
-	 .Input\/input\/2YWzR:focus {
+	 .Input-input-2YWzR:focus {
         outline: 0;
         border-color: #fff;
         box-shadow: none;
     background-color: rgba(255, 255, 255, 0.25);
     } 
-    .TagInput\/input\/3E1DX.TagInput\/isFocused\/13j-F {
+    .TagInput-input-3E1DX.TagInput-isFocused-13j-F {
         outline: 0;
         border-color: #fff;
         box-shadow: none;
     }
 	
 	/* TEXT COLOR */
-	.PageContentBody\/innerContentBody\/tEszh {
+	.PageContentBody-innerContentBody-tEszh {
     color: #fff;
 	}
 	/* SEARCH RESULTS */
-	.AddNewmovieSearchResult\/searchResult\/xR8dj {
-    background-color: rgba(0, 0, 0, .25) !important;
+	.AddNewMovieSearchResult-searchResult-1FdVg {
+    background-color: rgba(0, 0, 0, 0) !important;
 	}
-	.AddNewmovieSearchResult\/searchResult\/xR8dj:hover {
+	.AddNewMovieSearchResult-searchResult-1FdVg:hover {
     background-color: hsla(0,0%,100%,.08) !important;
     }
-    .AddNewmovieModalContent\/year\/t7IIJ {
+    .AddNewmovieModalContent-year-t7IIJ {
         color: #fff;
     }
-    .RootFolderSelectInputSelectedValue\/movieFolder\/a7chC, .RootFolderSelectInputSelectedValue\/freeSpace\/1Irwm {
+    .RootFolderSelectInputSelectedValue-movieFolder-a7chC, .RootFolderSelectInputSelectedValue-freeSpace-1Irwm {
         color: #fff;
     }
-
+    ::placeholder {color: #eee;}
+    :-ms-input-placeholder {color: #eee;}
+    ::-webkit-input-placeholder {color: #eee ;}
 /* IMPORT */
 
-	.FieldSet\/legend\/3x6NF {
+	.FieldSet-legend-3x6NF {
     color: #FFF;
     border-bottom: 1px solid hsla(0,0%,100%,.08);
 	}
-	.TableRow\/row\/33xJE:hover {
+	.TableRow-row-33xJE:hover {
     background-color: hsla(0,0%,100%,.08);
     color: #FFF;
 	}
-	.VirtualTableRow\/row\/2-JS9:hover {
+	.VirtualTableRow-row-2-JS9:hover {
     background-color: hsla(0,0%,100%,.08);
 	}
-	.ImportMovieSelectMovie\/button\/3CL3L {
+	.ImportMovieSelectMovie-button-3CL3L {
     border: none !important;
     background-color: rgba(0, 0, 0, .25) !important;
 	}
-	.ImportMovieSelectMovie\/content\/3oSDj, .ImportMovieSelectMovie\/searchIconContainer\/1wOES {
+	.ImportMovieSelectMovie-content-3oSDj, .ImportMovieSelectMovie-searchIconContainer-1wOES {
     border: none !important;
     background-color: #323232 !important;
     color: white !important;
@@ -1060,7 +1062,7 @@ pre {
 
 /* MASS EDITOR */
 	/* FOOTER */
-	.PageContentFooter\/contentFooter\/3ODMj {
+	.PageContentFooter-contentFooter-3ODMj {
     border: none;
     background-color: rgba(0, 0, 0, .25);
     color: #FFF;
@@ -1068,28 +1070,28 @@ pre {
 
 /* SEASON PASS */
 
-	.SeasonPassSeason\/season\/2FWuT {
+	.SeasonPassSeason-season-2FWuT {
 		border: none;
 		background-color: rgba(0, 0, 0, .25) !important;
 	}
-	.SeasonPassSeason\/allEpisodes\/1zGja {
+	.SeasonPassSeason-allEpisodes-1zGja {
 		background-color: #5cb85c;
 	}
 
 /* CALENDAR */
 
-	.DayOfWeek\/dayOfWeek\/1iw4D {
+	.DayOfWeek-dayOfWeek-1iw4D {
 		background-color: hsla(0,0%,100%,.08);
     }
-    .CalendarDay\/dayOfMonth\/2CzdW {
+    .CalendarDay-dayOfMonth-2CzdW {
         border-bottom: 1px solid hsla(0,0%,100%,.08);
         background-color: rgba(0, 0, 0, .25);
     }
-    .CalendarDay\/isToday\/1rFJO {
+    .CalendarDay-isToday-1rFJO {
         background-color: hsla(0,0%,100%,.08) !important;
     }
 
-	.CalendarDay\/day\/2TMXA, .CalendarDays\/days\/girjM {
+	.CalendarDay-day-2TMXA, .CalendarDays-days-girjM {
 		-webkit-box-flex: 1;
 		-webkit-flex: 1 0 14.28%;
 		flex: 1 0 14.28%;
@@ -1099,111 +1101,111 @@ pre {
 		border-left: 1px solid hsla(0,0%,100%,.08);
 		border-right: 1px solid hsla(0,0%,100%,.08);
 	}
-	.CalendarEvent\/movieTitle\/2-WAP, .CalendarEvent\/episodeInfo\/IWdbW, .CalendarEvent\/airTime\/3Wzho {
+	.CalendarEvent-movieTitle-2-WAP, .CalendarEvent-episodeInfo-IWdbW, .CalendarEvent-airTime-3Wzho {
 		color: #ffffff !important;
     }
-    .CalendarEvent\/movieInfo\/2LF5- {
+    .CalendarEvent-movieInfo-2LF5- {
         color: #eee;
     }
-	.CalendarEvent\/event\/3Uyb9 {
+	.CalendarEvent-event-3Uyb9 {
 		border-bottom: none !important;
 	}
-	.CalendarEvent\/event\/3Uyb9:hover {
+	.CalendarEvent-event-3Uyb9:hover {
 		background-color: hsla(0,0%,100%,.08) !important;
 		border-bottom: none !important;
     }
-    .CalendarEventGroup\/eventGroup\/gWPtK {
+    .CalendarEventGroup-eventGroup-gWPtK {
         border-bottom: 1px solid hsla(0,0%,100%,.08) !important;
     }
     
-    .CalendarEventGroup\/movieTitle\/ThqKe {
+    .CalendarEventGroup-movieTitle-ThqKe {
         color: #ffffff !important;
     }
-    .CalendarEventGroup\/airTime\/1Z6G9 {
+    .CalendarEventGroup-airTime-1Z6G9 {
         color: #eee;
     }
-    .CalendarEventGroup\/episodeInfo\/vfg0M {
+    .CalendarEventGroup-episodeInfo-vfg0M {
         color: #eee;
     }
     /* calendar agenda */
-    .AgendaEvent\/event\/2a83A:hover {
+    .AgendaEvent-event-2a83A:hover {
         background-color: hsla(0,0%,100%,.08) !important;
     }
 
 
 /* SETTINGS */
 
-	.Settings\/summary\/3KPAv {
+	.Settings-summary-3KPAv {
 		color: #fff;
 	}
 
 	/* PROFILES */
-	.Card\/card\/1iGZk, .QualityProfiles\/addQualityProfile\/2U2Io {
+	.Card-card-1iGZk, .QualityProfiles-addQualityProfile-2U2Io {
     background-color: rgba(0,0,0,.45);
     box-shadow: 0 0 10px 1px #000000;
     color: #fff;
 	}
-	.QualityProfiles\/center\/1iiKm, .LanguageProfiles\/center\/7EV_2, .ReleaseProfiles\/center\/114Qx {
+	.QualityProfiles-center-1iiKm, .LanguageProfiles-center-7EV_2, .ReleaseProfiles-center-114Qx {
 	background-color: transparent;
     border: none;
     color: #c2c6c8;
 	}
-    .QualityProfileItem\/qualityProfileItem\/VFp-W, .QualityProfileItemGroup\/qualityProfileItemGroup\/2U1l5, .LanguageProfileItem\/languageProfileItem\/18XGg {
+    .QualityProfileItem-qualityProfileItem-VFp-W, .QualityProfileItemGroup-qualityProfileItemGroup-2U1l5, .LanguageProfileItem-languageProfileItem-18XGg {
     border: none;
     background-color: rgba(0, 0, 0, .25);
     color: #FFF;
     }
-    .QualityProfileItemGroup\/qualityProfileItemGroup\/2U1l5.QualityProfileItemGroup\/editGroups\/2KzDp {
+    .QualityProfileItemGroup-qualityProfileItemGroup-2U1l5.QualityProfileItemGroup-editGroups-2KzDp {
     background: rgba(0, 0, 0, 0.25);
     }
-    .KeyValueListInputItem\/keyInput\/3YYEs, .KeyValueListInputItem\/valueInput\/3zlQA {
+    .KeyValueListInputItem-keyInput-3YYEs, .KeyValueListInputItem-valueInput-3zlQA {
         border: none;
         background: transparent;
         color: white;
     }
-    .QualityProfileFormatItem\/qualityProfileFormatItem\/19XrK {
+    .QualityProfileFormatItem-qualityProfileFormatItem-19XrK {
         border: 1px solid transparent;
         background: rgba(0, 0, 0, .25);
     }
 	/* PROFILES */
-	.Indexers\/center\/11Csq {
+	.Indexers-center-11Csq {
 	background-color: transparent;
     border: none;
     color: #c2c6c8;
 	}
 
 	/* DOWNLOAD CLIENTS */
-	.DownloadClients\/center\/FvACx {
+	.DownloadClients-center-FvACx {
 	background-color: transparent;
     border: none;
     color: #c2c6c8;
 	}
 
 	/* CONNECTIONS */
-	.Notifications\/center\/8iwmy {
+	.Notifications-center-8iwmy {
 	background-color: transparent;
     border: none;
     color: #c2c6c8;
 	}
 
 	/* LOG */
-	.Alert\/info\/1J8mE {
+	.Alert-info-1J8mE {
     border-color: transparent;
     background-color: rgba(0, 0, 0, 0.25);
     color: #FFC107;
 }
     /* INDEXER */
-    .Restrictions\/center\/3ngzk {
+    .Restrictions-center-3ngzk {
         border: 1px solid transparent;
         background-color: transparent;
     }
     /* LISTS */
-    .NetImports\/center\/3otL- {
+    .NetImports-center-3otL- {
         border: 1px solid transparent;
         background-color: transparent;
     }
     /* CUSTOM FORMAT */
-    .CustomFormats\/center\/1w6Bw {
+    .CustomFormats-center-1w6Bw {
         border: 1px solid transparent;
         background-color: transparent;
     }
@@ -1221,6 +1223,6 @@ pre {
 }
 
 /* Custom filter */
-.FilterBuilderRow\/filterRow\/1ozij:hover {
+.FilterBuilderRow-filterRow-1ozij:hover {
     background-color: transparent;
 }
