@@ -11,6 +11,10 @@
 
 ***
 
+### NOTE 
+**Firefox:** `From version 70: this feature is behind the layout.css.backdrop-filter.enabled preference (needs to be set to true). To change preferences in Firefox, visit about:config.`
+
+
 ## Full
 
 1. Set the Organizr theme to either Aquamarine or Hotline.
