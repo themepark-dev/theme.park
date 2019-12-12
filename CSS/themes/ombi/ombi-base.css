@@ -368,7 +368,12 @@ background: none !important;
         padding: 14px 8px;
     }
     }
-
+    #profiles .btn {
+        width: auto;
+    }
+    .form-group .btn {
+        width: auto;
+    }
 /* Settings menu */
 
 .nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:focus, .nav-tabs.nav-justified>.active>a:hover {
