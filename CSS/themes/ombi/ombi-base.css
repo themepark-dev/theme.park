@@ -352,23 +352,12 @@ background: none !important;
 
 @media (max-width: 1090px) {
     .btn-danger-outline, .btn-info-outline, .btn-primary-outline, .btn-success-outline, .fa-eye:before, .fa-check:before,.fa-plus:before, .btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle)   {
-        width: 104.61px !important; 
         content: "";
     }
     }
-
-@media (max-width: 1090px) {
-    .caret {
-        display: none;
-    }
-    }     
-    @media (max-width: 1090px) {
-
-    .btn-split .btn.dropdown-toggle {
-        padding: 14px 8px;
-    }
-    }
-
+.btn-group .btn+.btn, .btn-group .btn+.btn-group, .btn-group .btn-group+.btn, .btn-group .btn-group+.btn-group {
+    margin-left: -25px;
+}
 /* Settings menu */
 
 .nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:focus, .nav-tabs.nav-justified>.active>a:hover {
