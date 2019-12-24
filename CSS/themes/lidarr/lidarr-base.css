@@ -240,7 +240,10 @@ background-color: hsla(0,0%,100%,.25) !important;
       color: #fff;
       }
   
-  
+    ::placeholder {color: #eee;}
+    :-moz-placeholder {color: #eee;}
+    :-ms-input-placeholder {color: #eee;}
+    ::-webkit-input-placeholder {color: #eee ;}
   /* IMPORT */
   
       .FieldSet-legend-3x6NF {
@@ -651,17 +654,29 @@ background-color: hsla(0,0%,100%,.25) !important;
       border-top: 1px solid #eee !important;
   }
   /* ADD NEW ARTIST */
-  .AddNewArtist-searchIconContainer-7ygSM, .Input-input-dS7Oc, .AddNewArtist-clearLookupButton-2ym1-, .AddNewArtistSearchResult-searchResult-N5Vx4,
+  .AddNewArtist-searchIconContainer-7ygSM, .Input-input-dS7Oc, .AddNewArtist-clearLookupButton-2ym1,
   .ImportArtistSelectArtist-button-WUML4, .PageContentFooter-contentFooter-1t6xx {
       border: none;
       background-color: rgba(0, 0, 0, .25);
       color: #FFF;
   }
-  .AddNewArtistSearchResult-searchResult-N5Vx4:hover {
+  .AddNewArtistSearchResult-year-3Ziif {
+    color: #ccc;
+}
+  .AddNewArtistSearchResult-searchResult-fxW3m, .AddNewAlbumSearchResult-searchResult-XtaL3 {
+      background-color: transparent;
+  }
+
+  .AddNewArtistSearchResult-searchResult-fxW3m:hover ,.AddNewAlbumSearchResult-searchResult-XtaL3:hover {
       background-color: hsla(0,0%,100%,.08);
       color: inherit;
       text-decoration: none;
   }
+  .AddNewItem-searchIconContainer-2CBFJ {
+    border: none;
+    border-right: none;
+    background-color: rgba(255, 255, 255, 0.08);
+}
   .ImportArtistSearchResult-artist-IVs0T:hover {
       background-color: hsla(0,0%,100%,.08);
   }
