@@ -55,6 +55,8 @@
 <li><a href="https://github.com/gilbN/theme.park/wiki/Themes#php-library-presenter-themes">PLPP</a></li>
 <li><a href="https://github.com/gilbN/theme.park/wiki/Themes#synclounge-themes">Synclounge</a></li>
 <li><a href="https://github.com/gilbN/theme.park/wiki/Themes#the-lounge-themes">The Lounge</a></li>
+<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#portainer-themes">Portainer</a></li>
+
 </ul>
 
 ## [Adding your own theme colors](https://github.com/gilbN/theme.park/wiki/Creating-your-own-themes)

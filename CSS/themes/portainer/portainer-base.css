@@ -93,6 +93,7 @@
   }
   ul.sidebar .sidebar-list a.active {
       background: rgba(255, 255, 255, 0.1);
+      border-left: 3px solid var(--accent-color);
   }
   #page-wrapper:not(.open) ul.sidebar .sidebar-title.separator, .sidebar-footer, ul.sidebar .sidebar-list a:hover, ul.sidebar .sidebar-main a {
       background: rgba(255, 255, 255, 0.15);
