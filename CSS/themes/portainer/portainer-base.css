@@ -1,0 +1,264 @@
+
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+
+/*		   		        Made by @gilbN					 */
+/* 			      https://github.com/gilbN/theme.park			 */
+ 
+    /* Scrollbar */  
+    @media only screen and (min-width: 768px) {  
+      html {
+          height: 100%;
+          width: 100%;
+          overflow: hidden;
+      }
+      body {
+          overflow-y: auto;
+          height: 100%;
+          background: var(--main-bg-color)
+      }
+  }
+      ::-webkit-scrollbar {
+          width: 14px;
+      }
+      ::-webkit-scrollbar-thumb {
+          min-height: 50px;
+          border: 3px solid transparent;
+          border-radius: 8px;
+          background-color: hsla(0,0%,100%,.2);
+          background-clip: padding-box;
+      }
+      ::-webkit-scrollbar-track {
+          background-color: transparent;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+          min-height: 50px;
+          border: 3px solid transparent;
+          border-radius: 8px;
+          background-color: hsla(0,0%,100%,.5);
+          background-clip: padding-box;
+      } 
+    
+  body {
+    background: var(--main-bg-color);
+    color: #cccccc !important;
+  }
+  a {
+      color: #ccc;
+  }
+  a:focus, a:hover {
+      color: #bbb;
+      text-decoration: none;
+  }
+  .text-danger {
+      color: #f44336;
+  }
+  .fa.red-icon {
+      color: #f44336;
+  }
+  .text-muted {
+      color: #bbb;
+  }
+  .form-section-title {
+      color: #ccc;
+  }
+  ul.sidebar .sidebar-list a {
+      color: #ccc;
+  }
+  /* LOGIN */
+  
+  /* SIDEBAR */
+  #sidebar-wrapper {
+  background: rgba(0, 0, 0, 0.25);
+  }
+  .sidebar-header {
+      background: rgba(0, 0, 0, 0.25);
+  }
+  ul.sidebar .sidebar-list a.active {
+      background: rgba(255, 255, 255, 0.1);
+  }
+  #page-wrapper:not(.open) ul.sidebar .sidebar-title.separator, .sidebar-footer, ul.sidebar .sidebar-list a:hover, ul.sidebar .sidebar-main a {
+      background: rgba(255, 255, 255, 0.15);
+  }
+  ul.sidebar .sidebar-list a:hover {
+      border-left: 3px solid var(--accent-color);
+  }
+  ul.sidebar .sidebar-title {
+      color: var(--accent-color);
+  }
+  ul.sidebar .sidebar-list .sidebar-sublist a.active {
+      border-left: 3px solid var(--accent-color);
+      background: rgba(255, 255, 255, .08);
+  }
+  ul.sidebar .sidebar-title {
+      color: #eee;
+  }
+  /* Header */
+  .row.header {
+      background: var(--main-bg-color);
+  }
+  
+  /* WIDGETS */
+  .widget {
+      background: rgba(0, 0, 0, 0.25);
+      border-color: transparent;
+  }
+  .widget .widget-body table thead {
+      background: rgba(0, 0, 0, 0.25);
+  }
+  .widget .widget-header {
+      color: #ccc;
+      background-color: rgba(0, 0, 0, .25);
+      border-bottom: 1px solid transparent;
+  }
+  
+  /* DATATABLES */
+  .datatable .toolBar {
+      background: rgba(0, 0, 0, 0.25);
+  }
+  .datatable .footer {
+      background: rgba(0, 0, 0, 0.25);
+      color: #ccc;
+  }
+  .blocklist-item--selected, .blocklist-item:hover {
+      background-color: rgba(255, 255, 255, 0.15);
+      color: #ccc;
+  }
+  .datatable .actionBar, .datatable .toolBar {
+      color: #ccc;
+  }
+  .datatable .searchIcon {
+      color: #ccc;
+  }
+  
+  
+  /* TABLE */
+  
+  .table-hover>tbody>tr:hover, .table>tbody>tr.active>td, .table>tbody>tr.active>th, .table>tbody>tr>td.active, .table>tbody>tr>th.active, .table>tfoot>tr.active>td, .table>tfoot>tr.active>th, .table>tfoot>tr>td.active, .table>tfoot>tr>th.active, .table>thead>tr.active>td, .table>thead>tr.active>th, .table>thead>tr>td.active, .table>thead>tr>th.active {
+      background-color: rgba(255, 255, 255, 0.1);
+  }
+  .table-hover>tbody>tr.active:hover>td, .table-hover>tbody>tr.active:hover>th, .table-hover>tbody>tr:hover>.active, .table-hover>tbody>tr>td.active:hover, .table-hover>tbody>tr>th.active:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+  }
+  .table .table {
+      background-color: rgba(255, 255, 255, 0.08);
+  }
+  .label-default {
+      background-color: var(--button-color);
+  }
+  /* BUTTONS */
+  .btn-primary {
+      color: #fff;
+      background-color: var(--button-color);
+      border-color: var(--button-color);
+  }
+  .btn-link {
+      font-weight: 400;
+      color: var(--button-color);
+      border-radius: 0;
+  }
+  .btn-primary:hover {
+      color: #fff;
+      background-color: var(--button-color-hover);
+      border-color: transparent;
+  }
+  .btn-primary.disabled.focus, .btn-primary.disabled:focus, .btn-primary.disabled:hover, .btn-primary[disabled].focus, .btn-primary[disabled]:focus, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:hover {
+      background-color: var(--button-color-hover);
+      border-color: transparent;
+  }
+  /* PAGINATION */
+  .pagination>.disabled>a, .pagination>.disabled>a:focus, .pagination>.disabled>a:hover, .pagination>.disabled>span, .pagination>.disabled>span:focus, .pagination>.disabled>span:hover {
+      color: #ccc;
+      cursor: not-allowed;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-color: transparent;
+  }
+  .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+      z-index: 2;
+      color: #fff;
+      cursor: default;
+      background-color: var(--accent-color);
+      border-color: transparent;
+  }
+  .pagination>li>a, .pagination>li>span {
+      color: #ccc;
+      text-decoration: none;
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  /* FORM CONTROL */
+  
+  .form-control {
+      background-color: rgba(255, 255, 255, 0.15);
+      border: 1px solid transparent;
+  }
+  
+  .form-control, output {
+      color: #ccc;
+  }
+  .form-control:focus {
+      border-color: transparent;
+      outline: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+  }
+  .input-group-addon {
+      color: #eee;
+      background-color: rgba(255, 255, 255, 0.15);
+      border: 1px solid transparent;
+  }
+  /* DROPDOWN MENU */
+  
+  .dropdown-menu {
+      background: var(--modal-bg-color);
+      color: #ccc;
+  }
+  .dropdown-menu>li>a {
+      color: #ccc;
+  }
+  .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+      background-color: var(--accent-color);
+  }
+  
+  /* APP TEMPLATES */
+  
+  .blocklist-item {
+      border: 1px solid transparent;
+      -webkit-box-shadow: 0 3px 10px -2px hsla(0, 0%, 0%, 0.5);
+      box-shadow: 0 3px 10px -2px hsla(0, 0%, 0%, 0.5);
+  }
+  
+  /* ADD NETWORK */
+  
+  .boxselector_wrapper input[type=radio]:checked+label {
+      background: rgba(255, 255, 255, .15);
+      color: #fff;
+      border-color: transparent;
+  }
+  
+  .boxselector_wrapper label {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      background: rgba(0, 0, 0, 0.15);
+      border: 1px solid transparent;
+  }
+  /* PLACEHOLDER TEXT */
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #bbb;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: #bbb;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #bbb;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: #bbb;
+  }
