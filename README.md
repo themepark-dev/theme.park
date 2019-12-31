@@ -56,6 +56,7 @@
 <li><a href="https://github.com/gilbN/theme.park/wiki/Themes#synclounge-themes">Synclounge</a></li>
 <li><a href="https://github.com/gilbN/theme.park/wiki/Themes#the-lounge-themes">The Lounge</a></li>
 <li><a href="https://github.com/gilbN/theme.park/wiki/Themes#portainer-themes">Portainer</a></li>
+<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#lazylibrarian-themes">Lazylibrarian</a></li>
 
 </ul>
 
