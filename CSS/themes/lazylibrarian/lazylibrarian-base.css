@@ -177,20 +177,20 @@
   }
   
   .form-control {
-      color: #ffffff;
+      color: #fff;
       background-color: rgba(0, 0, 0, 0.25);
       background-image: none;
       border: 1px solid transparent;
   }
   .form-control:active, .form-control:focus {
       color: #272b30;
-      background-color: #fff;
+      background-color: #fff !important;
       background-image: none;
       border: 1px solid transparent;  
   }
   #subhead_menu .input-group .form-control:active ,.input-group .form-control:focus {
       color: #272b30;
-      background-color: #ffffff;
+      background-color: #fff !important;
       height: 30px !important;
   }
   .configtable .input-group .form-control:active ,.configtable .input-group .form-control:focus {
@@ -201,9 +201,9 @@
       font-size: 14px;
       line-height: 1.42857143;
       color: #272b30;
-      background-color: #ffffff;
+      background-color: #fff !important;
       background-image: none;
-      border: 1px solid #cccccc;
+      border: 1px solid #ccc;
       border-radius: 4px;
       -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
       box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
