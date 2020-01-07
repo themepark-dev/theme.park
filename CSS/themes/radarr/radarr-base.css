@@ -1022,10 +1022,10 @@ pre {
     color: #fff;
 	}
 	/* SEARCH RESULTS */
-	.AddNewMovieSearchResult-searchResult-1FdVg {
+	.AddNewMovieSearchResult-searchResult-1FdVg, .AddNewMovieSearchResult-underlay-1h0bG {
     background-color: rgba(0, 0, 0, 0) !important;
 	}
-	.AddNewMovieSearchResult-searchResult-1FdVg:hover {
+	.AddNewMovieSearchResult-searchResult-1FdVg:hover, .AddNewMovieSearchResult-underlay-1h0bG:hover {
     background-color: hsla(0,0%,100%,.08) !important;
     }
     .AddNewmovieModalContent-year-t7IIJ {
