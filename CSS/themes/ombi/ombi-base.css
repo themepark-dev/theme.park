@@ -279,7 +279,7 @@ i.fa.fa-minus, i.fa.fa-plus {
     background: rgba(255, 255, 255, 0.35);
     font-size: 12px;
     height: 29.45px;
-    width: 137.28px;
+    min-width: 137.28px;
     padding: 5px 10px;
     text-align: center !important;
 
@@ -298,6 +298,7 @@ i.fa.fa-minus, i.fa.fa-plus {
     text-transform: uppercase;
     text-align: center !important;
     height: 29.45px;
+    min-width: fit-content;
     font-size: 12px;
     padding: 5px 10px;
 }
