@@ -906,7 +906,7 @@ pre {
         color: #bac5cc;
     }
     .Label-default-2AF1C {
-        border-color: var(--accent-color);
+        border-color: transparent;
         background-color: var(--accent-color);
     }
     .ProtocolLabel-usenet-3qKV1 {
@@ -919,8 +919,13 @@ pre {
       }
       
     .Label-info-3YD3Y {
-        border-color: var(--accent-color);
+        border-color: transparent;
         background-color: var(--accent-color);
+        color: #fff;
+    }
+    .PageSidebarItem-status-34pTa > .Label-info-3YD3Y {
+        border-color: transparent;
+        background-color: var(--queue-color);
         color: #fff;
     }
     .MovieDetails-selectedTab-3hMLN {

@@ -885,11 +885,11 @@ pre {
         color: #bac5cc;
     }
     .Label\/default\/2AF1C {
-        border-color: var(--accent-color);
+        border-color: transparent;
         background-color: var(--accent-color);
     }
     .Label\/info\/3YD3Y {
-        border-color: var(--accent-color);
+        border-color: transparent;
         background-color: var(--accent-color);
         color: #fff;
     }
