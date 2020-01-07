@@ -503,7 +503,7 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
   .iziToast:after {
     background: var(--modal-bg-color) !important;
   }
-  .update-notify .iziToast-progressbar div, .success-notify {
+  .update-notify .iziToast-progressbar div, .success-notify .iziToast-progressbar div {
     background: var(--notification-box-line) !important;
   }
   .iziToast>.iziToast-close {
