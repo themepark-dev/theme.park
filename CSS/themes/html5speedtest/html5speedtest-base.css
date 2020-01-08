@@ -62,4 +62,21 @@ div.meterText:empty:before {
 a:-webkit-any-link {
 	color: white;
 }
+#privacyPolicy {
+    background: var(--main-bg-color);
+}
+input {
+    font-family: "Roboto",sans-serif;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.25) !important;
+    -webkit-rtl-ordering: logical;
+    Font-size: 16px;
+    padding: 10px;
+    border: none;
+    padding-left: 10px;
+    max-width: -webkit-fill-available;
+    border-radius: 3px;
+    margin-bottom: 5px !important;
+    outline: none;
+}
 
