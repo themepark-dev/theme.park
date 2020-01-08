@@ -85,6 +85,9 @@ tr.checked, tr.checked td, tr.checked:nth-child(odd) .progress {
 .table tbody tr.checked:hover, .table tbody tr.checked:hover td {
     background-color: hsla(0,0%,100%,.08);
 }
+.table.check-simple tbody tr.checked:hover, .table.check-simple tbody tr.checked:hover td {
+    background-color: hsla(0,0%,100%,.08);
+}
 .table th, .table td {
     border-top: none;
 }
