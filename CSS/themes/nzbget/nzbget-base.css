@@ -69,6 +69,9 @@ body {
 .table-striped tbody tr:nth-child(odd) td, .table-striped tbody tr:nth-child(odd) th {
     background-color: transparent;
 }
+.table-striped tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.08);
+}
 .table tbody tr:hover, .table tbody tr:hover td, .table tbody tr:hover a  {
     color: white;
 	background-color: hsla(0,0%,100%,.08);
