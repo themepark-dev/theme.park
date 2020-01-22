@@ -53,6 +53,9 @@
 #chat .content, #windows #chat .header, #chat .user-mode::before, #chat .userlist {
     border-color: rgba(255, 255, 255, 0.08);
 }
+#chat .msg[data-type=motd] .text {
+    background: rgba(255, 255, 255, 0.08);
+}
 
 /* Dropdown menu */
 #context-menu, .textcomplete-menu {
