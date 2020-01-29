@@ -333,10 +333,11 @@ color:#FFFFFF !important;
     background-color: rgba(0, 0, 0, .25);
     border: transparent;
 }
-.panel-container.panel-transparent {
+.panel-container.panel-transparent, .panel-container--transparent {
 	background-color: transparent;
 	border: transparent;
 }
+
 .panel-header:hover {
     background-color: rgba(0, 0, 0, 0.25) !important;
 }

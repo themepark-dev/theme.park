@@ -164,8 +164,8 @@ div.flot-text {
     background-color: rgba(0, 0, 0, .25);
     border: transparent;
 }
-.panel-container.panel-transparent {
-	background-color: transparent;
+.panel-container.panel-transparent, .panel-container--transparent {
+background-color: transparent;
   border: transparent;
 }
 .panel-header:hover {
