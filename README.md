@@ -57,6 +57,7 @@
 <li><a href="https://github.com/gilbN/theme.park/wiki/Themes#the-lounge-themes">The Lounge</a></li>
 <li><a href="https://github.com/gilbN/theme.park/wiki/Themes#portainer-themes">Portainer</a></li>
 <li><a href="https://github.com/gilbN/theme.park/wiki/Themes#lazylibrarian-themes">Lazylibrarian</a></li>
+<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#calibre-web-themes">Calibre-Web</a></li>
 
 </ul>
 
