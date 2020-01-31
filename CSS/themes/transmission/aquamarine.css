@@ -11,12 +11,12 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
-/* RUTORRENT AQUAMARINE THEME */
-@import url(https://gilbn.github.io/theme.park/CSS/themes/rutorrent/rutorrent-base.css);
+/* TRANSMISSION AQUAMARINE THEME */
+@import url(https://gilbn.github.io/theme.park/CSS/themes/transmission/transmission-base.css);
 :root {
-  --main-bg-color: radial-gradient(ellipse at center, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
-  --modal-bg-color: radial-gradient(ellipse at top, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
-  --default-button-color: #009688;
-  --default-button-color-hover:  #12afa0;
-  --progress-color: #009688;
+    --main-bg-color: radial-gradient(ellipse at center, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
+    --modal-bg-color: radial-gradient(ellipse at top, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
+    --default-button-color: #009688;
+    --default-button-color-hover:  #12afa0;
+    --progress-color: #009688;
 }
