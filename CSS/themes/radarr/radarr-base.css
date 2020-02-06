@@ -1055,15 +1055,18 @@ pre {
 	.VirtualTableRow-row-2-JS9:hover {
     background-color: hsla(0,0%,100%,.08);
 	}
-	.ImportMovieSelectMovie-button-3CL3L {
+	.ImportMovieSelectMovie-button-3CL3L, .ImportMovieSelectMovie-button-1dL1Z {
     border: none !important;
-    background-color: rgba(0, 0, 0, .25) !important;
+    background-color: rgba(255, 255, 255, 0.08) !important;
 	}
-	.ImportMovieSelectMovie-content-3oSDj, .ImportMovieSelectMovie-searchIconContainer-1wOES {
+	.ImportMovieSelectMovie-content-3oSDj, .ImportMovieSelectMovie-searchIconContainer-1wOES, .ImportMovieSelectMovie-content-fSTb8, .ImportMovieSelectMovie-searchIconContainer-2yf6b {
     border: none !important;
-    background-color: #323232 !important;
+    background: var(--modal-bg-color) !important;
     color: white !important;
-	}
+    }
+    .ImportMovieSearchResult-movie-2kMrG:hover {
+        background-color: rgba(0, 0, 0, 0.25);
+    }
 
 /* MASS EDITOR */
 	/* FOOTER */
