@@ -66,9 +66,6 @@
 
 ***
 
-## [Feature requests](https://feathub.com/gilbN/theme.park)
-
-[![Feature Requests](https://feathub.com/gilbN/theme.park?format=svg)](http://feathub.com/gilbN/theme.park)
 
 ### Honourable mentions:
 
