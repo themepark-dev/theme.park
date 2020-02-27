@@ -73,7 +73,7 @@
   }
   /* NEWS */
   .motd-body {
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.15) !important;
 }
   /* LOGIN */
   .panel-default {
@@ -188,6 +188,12 @@
       background-color: var(--button-color-hover);
       border-color: transparent;
   }
+  .bootbox-form .checkbox i, .switch i {
+    background: rgba(255, 255, 255, 0.15);
+}
+.btn.focus, .btn:focus, .btn:hover {
+    color: #fff;
+}
   /* PAGINATION */
   .pagination>.disabled>a, .pagination>.disabled>a:focus, .pagination>.disabled>a:hover, .pagination>.disabled>span, .pagination>.disabled>span:focus, .pagination>.disabled>span:hover {
       color: #ccc;
@@ -278,3 +284,61 @@
   :-moz-placeholder { /* Firefox 18- */
     color: #bbb;
   }
+    /* STACKS */
+    .CodeMirror {
+        background: rgba(255, 255, 255, 0.10);
+        color: white;
+    }
+    .CodeMirror-gutters {
+        border-right: 1px solid rgba(255, 255, 255, 0.25);
+        background-color: rgba(0, 0, 0, 0.25);
+        caret-color: white;
+    }
+    .CodeMirror-linenumber {
+        color: var(--accent-color);
+    }
+    .CodeMirror-line::selection, .CodeMirror-line>span::selection, .CodeMirror-line>span>span::selection {
+        background: #d7d4f0;
+    }
+    .cm-s-default .cm-atom {
+        color: var(--accent-color);
+    }
+    /* NAVIGATION */
+    .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+        color: #fff;
+        cursor: default;
+        background-color: rgba(255, 255, 255, 0.15);
+        border: 1px solid #ddd0;
+        border-bottom-color: transparent;
+    }
+    .nav-tabs>li>a:hover {
+        border-color: transparent;
+    }
+    
+    .nav>li>a:focus, .nav>li>a:hover {
+        text-decoration: none;
+        background-color: rgba(0, 0, 0, 0.25);
+    }
+    .nav-tabs>li>a {
+        border: 1px solid rgba(0, 0, 0, 0);
+        background: rgba(0, 0, 0, 0.15);
+    }
+    /* LOGS */
+    .log_viewer {
+        color: #fff;
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 1px solid transparent;
+    }
+    /* JSON TREE */
+    json-tree {
+        color: #eee;
+    }
+    json-tree .key {
+        color: var(--accent-color);
+        padding-right: 5px;
+    }
+    pre {
+        color: #fff;
+        background-color: rgba(255, 255, 255, .1);
+        border: 1px solid transparent;
+    }
