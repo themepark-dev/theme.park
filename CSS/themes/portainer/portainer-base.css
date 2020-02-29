@@ -202,6 +202,12 @@
 .btn.focus, .btn:focus, .btn:hover {
     color: #fff;
 }
+.ui-select-bootstrap>.ui-select-match>.btn:hover, .ui-select-bootstrap>.ui-select-match>.btn:focus {
+    text-align: left!important;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: #00000000;
+}
   /* PAGINATION */
   .pagination>.disabled>a, .pagination>.disabled>a:focus, .pagination>.disabled>a:hover, .pagination>.disabled>span, .pagination>.disabled>span:focus, .pagination>.disabled>span:hover {
       color: #ccc;
@@ -360,3 +366,29 @@
     .modal-footer {
         border-top: 1px solid rgba(255, 255, 255, .20);
     }
+    /* STACKS / SERVICES TABLES */
+    .widget .widget-body table tbody {
+        background-color:transparent !important;
+        background:transparent !important;
+    }
+    .widget .widget-body table .ng-scope tr {
+        background: rgba(0, 0, 0, .25) !important;
+        background-color: rgba(0, 0, 0, .25) !important;
+    }
+    .widget .widget-body table thead {
+        background-color:rgba(0, 0, 0, .25) !important;
+        background:rgba(0, 0, 0, .25) !important;
+    }
+    .widget .widget-body table tbody  .ng-isolate-scope  div {
+        background-color: rgba(0, 0, 0, .25) !important;
+        background: rgba(0, 0, 0, 0) !important;
+    }
+    .widget .widget-body table tbody tr:hover {
+        background-color:#0000 !important;
+        background:rgba(0, 0, 0, 0) !important;
+    }
+    .widget .widget-body table thead tr:hover {
+        background-color:rgba(0, 0, 0, .35) !important;
+        background:rgba(0, 0, 0, .35) !important;
+    }
+    
