@@ -363,6 +363,18 @@ a:focus, a:hover {
     color: #f9be03;
 }
 
+/* Calendar List */
+
+.fc-list-item:hover td {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+.fc-unthemed .fc-divider, .fc-unthemed .fc-list-heading td, .fc-unthemed .fc-popover .fc-header {
+    background: rgba(0, 0, 0, 0.1) !important;
+}
+.fc-unthemed .fc-list-view {
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
 /* Activity Page */
 .popover.in {
     opacity: .9;
