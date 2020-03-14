@@ -56,7 +56,9 @@ body {
     color: var(--text-color) !important;
 }
 }
-
+#sidenav-main > div > div > ul.mb-md-3.navbar-nav > li:nth-child(3) > a > i {
+    color: white !important;
+}
 
 .fade {
     -webkit-transition: opacity .15s linear;
