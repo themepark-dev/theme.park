@@ -59,6 +59,7 @@
 <li><a href="https://github.com/gilbN/theme.park/wiki/Themes#lazylibrarian-themes">Lazylibrarian</a></li>
 <li><a href="https://github.com/gilbN/theme.park/wiki/Themes#calibre-web-themes">Calibre-Web</a></li>
 <li><a href="https://github.com/gilbN/theme.park/wiki/Themes#transmission-themes">Transmission</a></li>
+<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#requestrr-themes">Requestrr</a></li>
 
 </ul>
 
