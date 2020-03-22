@@ -874,6 +874,14 @@ pre {
     .MovieDetailsSeason-collapseButtonIcon-17xZI {
         color: #bac5cc;
     }
+    .MovieFileEditorTable-container-3VYDG {
+        border: 1px solid transparent;
+        background-color: rgba(0, 0, 0, 0.25);
+    }
+    .ExtraFileTable-container-1NM2r {
+        border: 1px solid transparent;
+        background-color: rgba(0, 0, 0, .25);
+    }
 
 	.fa-search:hover {
     color: #FFF !important;
