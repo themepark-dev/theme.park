@@ -330,9 +330,6 @@ ul.filterList li:hover {
   background: rgba(0, 0, 0, 0.45);
   border: 1px solid transparent;
 }
-#filtersColumn_handle {
-  margin-left: 0;
-}
 
 /*Sidemenu - Bottom menu*/
 .bottomPanel {
