@@ -60,8 +60,11 @@
 body > div.user-select-modal.modal.modal-transparent.fade.in > div > div.modal-content > div > div.modal-body {
   background: none;
 }
-modal-list {
-  background-color: rgba(0, 0, 0, 0.25) !important;
+#pin-form > div {
+  background: none;
+}
+.modal-list {
+background-color: rgba(0, 0, 0, 0.25);
 }
 .match-result-list-item>.match-result .match-score-info {
   color: #eee;
