@@ -57,10 +57,16 @@
 .modal-body {
   background: var(--modal-bg-color);
 }
+body > div.user-select-modal.modal.modal-transparent.fade.in > div > div.modal-content > div > div.modal-body {
+  background: none;
+}
 modal-list {
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.25) !important;
 }
 .match-result-list-item>.match-result .match-score-info {
+  color: #eee;
+}
+.fix-incorrect-match-modal .match-location {
   color: #eee;
 }
 /*Modal icon color*/ 
