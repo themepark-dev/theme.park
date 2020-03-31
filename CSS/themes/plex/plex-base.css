@@ -54,6 +54,15 @@
 .modal-footer, .EditHomeModalContent-footer-10Ix6N {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
+.modal-body {
+  background: var(--modal-bg-color);
+}
+modal-list {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.match-result-list-item>.match-result .match-score-info {
+  color: #eee;
+}
 /*Modal icon color*/ 
 .edit-section-modal .wizard-blocks-group>.wizard-block {
   color: #ffffff;
