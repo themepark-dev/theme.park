@@ -1,0 +1,38 @@
+/* Desttop */
+@media (min-width: 752px) {
+    .navbar-brand>img {
+        display:none !important; 
+        }
+    .navbar > .container-fluid .navbar-brand:before {
+        background-image: url("https://gilbn.github.io/theme.park/CSS/addons/radarr/radarr4k.png");
+        display: inline-block;
+        width: 128px; 
+        height: 128px;
+        content:"";
+        background-size:  cover;
+        -webkit-background-size:  cover;
+        -moz-background-size:  cover;
+        -o-background-size: cover;
+        }
+    }
+    /* Mobile */
+    @media (max-width: 767px) {
+    .navbar-brand  .visible-xs img {
+        display: none !important;
+        } 
+    .navbar-brand .visible-xs  {
+        display: inline !important;
+        }     
+    .navbar > .container-fluid .navbar-brand:before {
+        background-image: url("https://gilbn.github.io/theme.park/CSS/addons/radarr/radarr4k.png");
+        display: inline-block;
+        width: 32px; 
+        height: 32px;
+        content:"";
+        background-size:  cover;
+        -webkit-background-size:  cover;
+        -moz-background-size:  cover;
+        -o-background-size: cover;
+        margin-bottom: -12px;
+        }
+    }
