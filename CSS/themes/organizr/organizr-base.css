@@ -610,6 +610,26 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
     .unifiCards .panel-wrapper.collapse.in {
         background:rgba(0, 0, 0, 0.15);
     }
+
+    /*Homepage WeatherAndAir Cards*/
+    #homepageOrderWeatherAndAir .tabs-style-iconbox nav ul li.tab-current a {
+        background: rgba(0, 0, 0, .2);
+    }
+    .health-and-pollutant-section .content-current {
+        background: rgba(255, 255, 255, .2);
+    }
+    #homepageOrderWeatherAndAir .tabs-style-iconbox nav ul li.tab-current a::after {
+        border-top-color: var(--link-color);
+    }
+    #homepageOrderWeatherAndAir .text-info {
+        color: var(--link-color);
+    }
+    #homepageOrderWeatherAndAir .tabs-style-iconbox nav ul li a {
+        color: #ddd;
+    }
+    #homepageOrderWeatherAndAir .white-box {
+        background: rgba(255, 255, 255, .1);
+    }
 /* loginpage sidemenu */ 
 @media (max-width: 480px) {
     .login-register > .login-box > .white-box {
