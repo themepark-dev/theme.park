@@ -604,8 +604,8 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
     }
 
     /* Homepage Tautulli Cards*/
-    #homepageOrdertautulli .card-body {
-        background: rgba(255, 255, 255, 0.2);
+    #homepageOrdertautulli  .library-card .card-body, #homepageOrdertautulli div:nth-child(8) .card-body  {
+        background: rgba(255, 255, 255, .2);
     }
     .homepage-tautulli-card .cardCountType {
         color: #eee;
