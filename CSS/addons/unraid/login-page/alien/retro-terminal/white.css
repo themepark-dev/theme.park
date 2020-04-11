@@ -1,0 +1,31 @@
+/*_____________________WHITE_THEME______________________*/
+/*--body-before:#70d7f61a; /* This is the background that flickers, background uses a transparency of 10%, SET IT TO BLACK TO REMOVE FLICKER! */
+/*--body-after: #70d7f61a; /* This is the background that creates the crt lines, background uses a transparency of 20% */
+/*--custom-text-header-animation: textflicker; /* SET TO NONE TO REMOVE THE FLICKER ANIMATION! */
+
+@import url(https://gflix.app/theme.park/CSS/addons/unraid/login-page/alien/retro-terminal/retro-terminal-base.css);
+:root {
+--main-bg-color:black;
+--body-before:#70d7f61a;
+--body-after: #70d7f633;
+--logo: url(https://gflix.app/theme.park/CSS/addons/unraid/login-page/alien/logo/nostromo3.png) center no-repeat;
+--text-color: #ffffff;
+--input-color: #ffffff;
+--link-color: #ffffff;
+--link-color-hover: #8f2809;
+--case-color: #ffffff;
+--button-text-color: #ffffff;
+--button-text-color-hover: #000;
+--button-color: #ffffff;
+--button-color-hover: #af0606;
+--selection-color: #8f2809;
+--custom-text-header:#ffffff;
+--custom-text-header-shadow:#ffffff;
+--custom-text-header-animation: textflicker;
+--input-font: 'Share Tech Mono', monospace;
+--text-font: 'Share Tech Mono', monospace;
+--loginbox-background-color: transparent;
+--text-shadow: 0 0 8px;
+--text-shadow-color: #ffffff;
+--box-shadow: 0 0 15px;
+}
