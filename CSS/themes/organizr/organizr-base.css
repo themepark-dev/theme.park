@@ -582,15 +582,18 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
   .progress-bar-inverse, .progress {
       background: rgba(0, 0, 0, 0.25) !important;
   }
+  
     /* Homepage health checks */
-.bg-inverse .healthPosition {
-    background: rgba(255, 255, 255, 0.2) !important;
-    -webkit-backdrop-filter: saturate(180%) blur(30px);
-    backdrop-filter: saturate(180%) blur(30px);
-    border-radius: 3px;
+    .bg-inverse .healthPosition {
+        background: rgba(255, 255, 255, 0.2) !important;
+        -webkit-backdrop-filter: saturate(180%) blur(30px);
+        backdrop-filter: saturate(180%) blur(30px);
+        border-radius: 3px;
     }
+    #homepageOrderhealthchecks .card-body {
+        background: rgba(255, 255, 255, 0.2);
+    } 
 .card, .card-body {
-    background: rgba(255, 255, 255, 0.2);
     border-radius: 3px;
     } 
 .bg-inverse {
@@ -600,15 +603,48 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
     border-radius: 3px 0 0 3px;
     }
 
+    /* Homepage Tautulli Cards*/
+    #homepageOrdertautulli .card-body {
+        background: rgba(255, 255, 255, 0.2);
+    }
+    .homepage-tautulli-card .cardCountType {
+        color: #eee;
+    }
+    .homepage-tautulli-card .tautulliRank, .homepage-tautulli-card .tautulliSeparator {
+        color: #eee;
+    }
+    .homepage-tautulli-card .bg-img-cont {
+        border-radius: 3px;
+        border: .0001px solid #00000000;
+    }
+
     /* Homepage Unifi cards */
     .unifiCards .panel-heading {
         background: rgba(255, 255, 255, 0.2) !important;
         color: #fff !important;
         border-color: transparent !important;
         text-align: inherit !important;
+        border-radius: 3px 3px 0 0 !important;
     }
     .unifiCards .panel-wrapper.collapse.in {
         background:rgba(0, 0, 0, 0.15);
+    }
+
+    /* Homepage Monitor Cards */
+    #homepageOrderMonitorr .card-body {
+        background: rgba(255, 255, 255, 0.2);
+    }
+    #homepageOrderMonitorr .col-lg-2 {
+        width: 170px;
+    }
+    #homepageOrderMonitorr .badge {
+       border-radius: 3px;
+    }
+    #homepageOrderMonitorr .bg-success {
+        background-color: #47bb62 !important;
+    }
+    #homepageOrderMonitorr .col-lg-3 .bg-success {
+        background-color: #53e69d !important;
     }
 
     /*Homepage WeatherAndAir Cards*/
@@ -629,6 +665,7 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
     }
     #homepageOrderWeatherAndAir .white-box {
         background: rgba(255, 255, 255, .1);
+        border-radius: 3px;
     }
 /* loginpage sidemenu */ 
 @media (max-width: 480px) {
