@@ -234,6 +234,11 @@
   .menu-content {
       background: var(--modal-bg-color);
   }
+  .menu {
+    background: var(--modal-bg-color) !important;
+    box-shadow: none;
+
+}
   .clipboard, .clipboard-service-target {
       background: rgba(0, 0, 0, 0.25);
       color: white;
