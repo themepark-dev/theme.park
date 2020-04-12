@@ -230,14 +230,12 @@
   }
   
   /* SIDE MENU */
-  
-  .menu-content {
-      background: var(--modal-bg-color);
-  }
-  .menu {
+  .menu, .menu .header {
     background: var(--modal-bg-color) !important;
     box-shadow: none;
-
+}
+.menu-content, .menu-content .header, .menu-body {
+    background: var(--modal-bg-color) !important;
 }
   .clipboard, .clipboard-service-target {
       background: rgba(0, 0, 0, 0.25);
