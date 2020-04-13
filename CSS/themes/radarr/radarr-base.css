@@ -1172,7 +1172,10 @@ pre {
     background-color: rgba(0,0,0,.45);
     box-shadow: 0 0 10px 1px #000000;
     color: #c2c6c8;
-	}
+    }
+    .Card-card-1iGZk:hover {
+        color: white;
+    }
 	.QualityProfiles-center-1iiKm, .LanguageProfiles-center-7EV_2, .ReleaseProfiles-center-114Qx {
 	background-color: transparent;
     border: none;
