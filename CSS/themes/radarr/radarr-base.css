@@ -1171,7 +1171,7 @@ pre {
 	.Card-card-1iGZk, .QualityProfiles-addQualityProfile-2U2Io {
     background-color: rgba(0,0,0,.45);
     box-shadow: 0 0 10px 1px #000000;
-    color: #fff;
+    color: #c2c6c8;
 	}
 	.QualityProfiles-center-1iiKm, .LanguageProfiles-center-7EV_2, .ReleaseProfiles-center-114Qx {
 	background-color: transparent;
@@ -1233,7 +1233,7 @@ pre {
         background-color: transparent;
     }
     /* CUSTOM FORMAT */
-    .CustomFormats-center-1w6Bw {
+    .CustomFormats-center-1w6Bw, .EditCustomFormatModalContent-center-3QU87 {
         border: 1px solid transparent;
         background-color: transparent;
     }
