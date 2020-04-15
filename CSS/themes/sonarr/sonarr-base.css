@@ -1035,7 +1035,10 @@ pre {
 	.ImportSeriesSelectSeries\/button\/3CL3L {
     border: none !important;
     background-color: rgba(0, 0, 0, .25) !important;
-	}
+    }
+    .ImportSeriesSearchResult\/series\/2BXMC:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+    }
 	.ImportSeriesSelectSeries\/content\/3oSDj, .ImportSeriesSelectSeries\/searchIconContainer\/1wOES {
     border: none !important;
     background-color: #323232 !important;
@@ -1110,7 +1113,11 @@ pre {
     .AgendaEvent\/event\/2a83A:hover {
         background-color: hsla(0,0%,100%,.08) !important;
     }
-
+/*QUEUE PAGE */
+    /* Manual Import*/
+.SelectEpisodeModalContent\/path\/1Okqk {
+    color: #eee;
+}
 /* SETTINGS */
 
 	.Settings\/summary\/3KPAv {
