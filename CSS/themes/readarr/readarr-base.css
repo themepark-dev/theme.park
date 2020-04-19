@@ -20,6 +20,7 @@ body {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
+    color: #fff !important;
   }
   /* scroller */
 ::-webkit-scrollbar-corner {
@@ -826,6 +827,37 @@ background-color: hsla(0,0%,100%,.25) !important;
         background-color: hsla(0,0%,100%,.08);
         color: inherit;
         text-decoration: none;
+    }
+    /*Author Page*/
+    .ArtistDetails-tab-lWaPK {
+        color: #FFF;
+    }
+        /*Books Tab*/
+        .ArtistDetailsSeason-albums-1kcYI {
+            border: none;
+        }
+        /*Series Tab*/
+        .AuthorDetailsSeries-albumType-sjbM4 {
+            border: none;
+            background-color:  rgba(0, 0, 0, .25);
+        }
+        .AuthorDetailsSeries-collapseButtonContainer-2gS_Y {
+            border: none;
+            background-color:  rgba(0, 0, 0, .25);
+        }
+        .AuthorDetailsSeries-albumTypeLabel-27tss {
+            color: #FFF;    
+        }
+        .AuthorDetailsSeries-albumCount-KYhiA {
+            color: #FFF;    
+        }
+        /*Search Tab*/
+        .MenuButton-menuButton-3nh0N {
+            color: #FFF;
+        }
+    /*Specific Book Page*/
+    .AlbumDetails-tab-1Ax0D {
+        color: #FFF;
     }
     /*Settings*/
         /*Media Management - Root Folders*/
