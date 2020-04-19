@@ -68,6 +68,7 @@
   input[type="submit"], button, a.button {
       background-color: var(--button-color);
       border: none;
+      outline: none;
   }
   input[type="submit"]:hover, button:hover, a.button:hover {
       background-color: var(--button-color-hover);
@@ -333,4 +334,16 @@
     background: var(--modal-bg-color);
     color: #FFF;
 }
-  
+/* File Transfer */
+#file-transfer-dialog .transfer-manager {
+    background: var(--modal-bg-color) ;
+}
+.transfer.error {
+    background: rgba(244, 67, 54, 0.5) ;
+}
+.transfer-manager .header h2 {
+    background-color: transparent ;
+}
+.transfer .in-progress .progress {
+    background-color: var(--modal-bg-color) ;
+}
