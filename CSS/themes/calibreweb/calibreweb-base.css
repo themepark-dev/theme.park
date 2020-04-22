@@ -21,6 +21,9 @@ body:not(.read-frame) {
 .blur-wrapper:after {
     background: var(--modal-bg-color) !important;
 }
+body>.container-fluid {
+    background: var(--main-bg-color);
+}
 body.login:not(.read-frame), body.shelfcreate, body.shelfedit {
     background: var(--color-background) !important;
 }
