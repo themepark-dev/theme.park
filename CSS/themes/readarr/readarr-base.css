@@ -865,3 +865,18 @@ background-color: hsla(0,0%,100%,.25) !important;
             border: 1px solid transparent;
             background-color: transparent;
         }
+        /* General - Log Level*/
+        .EnhancedSelectInput-options-3yy65 {
+            border: 1px solid #dde6e9;
+            border-radius: 4px;
+            background-color: #1e1e1e;
+        }
+        div[class*='EnhancedSelectInputOption']:hover {
+            background-color: rgba(255, 255, 255, 0.08);
+            color: #fff;
+        }
+        div[class*='EnhancedSelectInputOption'] {
+            background-color: #1e1e1e;
+            color: #fff;
+        }
+    
