@@ -671,7 +671,7 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
     #allSpeedtest .speedtest-card {
         background-color: rgba(255, 255, 255, .1);
     }
-    .speedtest-card .text-muted, .speedtest-card h5 {
+    #allSpeedtest .speedtest-card .text-muted, #allSpeedtest .speedtest-card h5 {
         color: #d6d6d6 !important;
     }
     #allSpeedtest .shadow-sm {
