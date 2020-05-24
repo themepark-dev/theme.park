@@ -967,3 +967,7 @@ table.dataTable thead th, table.dataTable thead td {
 [data-tooltip]:not([data-position]):before {
   background: #1b1c1d;
 }
+/* SEARCH MODAL */
+.ui.inverted.dimmer {
+  background-color: transparent;
+}
