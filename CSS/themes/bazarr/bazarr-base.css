@@ -887,6 +887,15 @@ a.ui.active.label:hover, a.ui.labels .active.label:hover {
   background-color: transparent;
   border: none;
 }
+table.dataTable.display tbody tr.odd>.sorting_1, table.dataTable.order-column.stripe tbody tr.odd>.sorting_1 {
+  background-color: transparent;
+}
+table.dataTable.display tbody tr.even>.sorting_1, table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
+  background-color: transparent;
+}
+table.dataTable.display tbody tr:hover>.sorting_1, table.dataTable.order-column.hover tbody tr:hover>.sorting_1 {
+  background-color: transparent;
+}
 .ui.header {
   color: #ffffff;
 }
