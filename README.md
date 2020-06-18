@@ -28,40 +28,67 @@
 
 ## Current themes in the repo:
 
-<ul>
-<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#sonarr-v2v3---radarr---lidarr---bazarr-themes">Sonarr</a></li>
-<li><a href="https://github.com/gilbN/theme.park/wiki/Themeshttps://github.com/gilbN/theme.park/wiki/Themes#sonarr-v2v3---radarr---lidarr---bazarr-themes">Radarr</a></li>
-<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#sonarr-v2v3---radarr---lidarr---bazarr-themes">Lidarr</a></li>
-<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#sonarr-v2v3---radarr---lidarr---bazarr-themes">Bazarr</a></li>
-<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#plex-themes">Plex</a></li>
-<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#jellyfinemby-themes">Jellyfin/Emby</a></li>
-<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#ombi-themes">Ombi</a></li>
-<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#tautulli-themes">Tautulli</a></li>
-<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#organizr-hotline-and-marine-theme">Organizr</a></li>
-<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#grafana-themes">Grafana</a></li>
-<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#sabnzbd-themes">Sabnzbd</a></li>
-<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#nzbget-themes">Nzbget</a></li>
-<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#nzbhydra2-themes">NZBHydra2</a></li>
-<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#deluge-themes">Deluge</a></li>
-<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#qbittorrent-themes">qBittorrent</a></li>
-<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#guacamole-themes">Guacamole</a></li>
-<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#rutorrent-themes">ruTorrent</a></li>
-<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#netdata-themes">Netdata</a></li>
-<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#jackett-themes">Jackett</a></li>
-<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#html5-speedtest-themes">html5speedtest</a></li>
-<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#filebrowser-themes">Filebrowser</a></li>
-<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#monitorr-themes">Monitorr</a></li>
-<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#logarr-alpha-version-themes">Logarr</a></li>
-<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#php-library-presenter-themes">PLPP</a></li>
-<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#synclounge-themes">Synclounge</a></li>
-<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#the-lounge-themes">The Lounge</a></li>
-<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#portainer-themes">Portainer</a></li>
-<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#lazylibrarian-themes">Lazylibrarian</a></li>
-<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#calibre-web-themes">Calibre-Web</a></li>
-<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#transmission-themes">Transmission</a></li>
-<li><a href="https://github.com/gilbN/theme.park/wiki/Themes#requestrr-themes">Requestrr</a></li>
+  - [Sonarr][arr]
+  - [Radarr][arr]
+  - [Lidarr][arr]
+  - [Bazarr][arr]
+  - [Plex][plex]
+  - [Jellyfin/Emby][jelly]
+  - [Ombi][ombi]
+  - [Tautulli][tautulli]
+  - [Organizr][organizr]
+  - [Grafana][grafana]
+  - [SABnzbd][sabnzbd]
+  - [NZBGet][nzbget]
+  - [NZBHydra 2][nzbhydra2]
+  - [Deluge][deluge]
+  - [qBittorrent][qbit]
+  - [Guacamole][guacamole]
+  - [ruTorrent][rutorrent]
+  - [Netdata][netdata]
+  - [Jackett][jackett]
+  - [html5speedtest][html5speedtest]
+  - [Filebrowser][filebrowser]
+  - [Monitorr][monitorr]
+  - [Logarr][logarr]
+  - [PLPP][plpp]
+  - [Synclounge][synclounge]
+  - [The Lounge][thelounge]
+  - [Portainer][portainer]
+  - [Lazylibrarian][lazylibrarian]
+  - [Calibre-web][calibreweb]
+  - [Transmission][transmission]
+  - [Requestrr][requestrr]
 
-</ul>
+
+[arr]: https://github.com/gilbN/theme.park/wiki/Sonarr---Radarr---Lidarr---Bazarr-Themes
+[plex]: https://github.com/gilbN/theme.park/wiki/Plex
+[jelly]: https://github.com/gilbN/theme.park/wiki/Jellyfin-Emby
+[ombi]: https://github.com/gilbN/theme.park/wiki/Ombi
+[tautulli]: https://github.com/gilbN/theme.park/wiki/Tautulli
+[organizr]: https://github.com/gilbN/theme.park/wiki/Organizr
+[grafana]: https://github.com/gilbN/theme.park/wiki/Grafana
+[sabnzbd]: https://github.com/gilbN/theme.park/wiki/SABnzbd
+[nzbget]: https://github.com/gilbN/theme.park/wiki/NZBGet
+[nzbhydra2]: https://github.com/gilbN/theme.park/wiki/NZBHydra-2
+[deluge]: https://github.com/gilbN/theme.park/wiki/Deluge
+[qbit]: https://github.com/gilbN/theme.park/wiki/qBittorrent
+[guacamole]: https://github.com/gilbN/theme.park/wiki/Guacamole
+[rutorrent]: https://github.com/gilbN/theme.park/wiki/ruTorrent
+[netdata]: https://github.com/gilbN/theme.park/wiki/Netdata
+[jackett]: https://github.com/gilbN/theme.park/wiki/Jackett
+[html5speedtest]: https://github.com/gilbN/theme.park/wiki/html5speedtest
+[filebrowser]: https://github.com/gilbN/theme.park/wiki/Filebrowser
+[monitorr]: https://github.com/gilbN/theme.park/wiki/Monitorr
+[logarr]: https://github.com/gilbN/theme.park/wiki/Logarr
+[plpp]: https://github.com/gilbN/theme.park/wiki/PLPP
+[Synclounge]: https://github.com/gilbN/theme.park/wiki/Synclounge
+[theLounge]: https://github.com/gilbN/theme.park/wiki/The-Lounge
+[portainer]: https://github.com/gilbN/theme.park/wiki/Portainer
+[lazylibrarian]: https://github.com/gilbN/theme.park/wiki/Lazylibrarian
+[calibreweb]: https://github.com/gilbN/theme.park/wiki/Calibre-Web
+[transmission]: https://github.com/gilbN/theme.park/wiki/Transmission
+[requestrr]: https://github.com/gilbN/theme.park/wiki/Requestrr
 
 ## [Adding your own theme colors](https://github.com/gilbN/theme.park/wiki/Creating-your-own-themes)
 
