@@ -45,10 +45,13 @@ html {
     }    
   /* Header */
   .navbar-header {
-      background: var(--main-bg-color) !important;
+      background: transparent !important;
   }
   .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
       background: transparent;
+  }
+  .navbar-default {
+    background-color: transparent;
   }
   .dropdown-menu {
     background: var(--modal-bg-color);
