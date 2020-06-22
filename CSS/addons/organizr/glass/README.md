@@ -85,7 +85,7 @@ Here are the other theme colors if you want to use that instead:
     --div-background-color-35: rgba(0, 0, 0, 0.45);
 ```
 
-## Login - Lockscreen
+## Login - Lockscreen only
 
 If you just want the login and lockscreen css, just add this in custom CSS:
 
