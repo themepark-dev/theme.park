@@ -829,26 +829,26 @@ background-color: hsla(0,0%,100%,.25) !important;
         text-decoration: none;
     }
     /*Author Page*/
-    .ArtistDetails-tab-lWaPK {
+    .AuthorDetails-tab-eL4hG {
         color: #FFF;
     }
         /*Books Tab*/
-        .ArtistDetailsSeason-albums-1kcYI {
+        .AuthorDetailsSeason-books-11bVF {
             border: none;
         }
         /*Series Tab*/
-        .AuthorDetailsSeries-albumType-sjbM4 {
+        .AuthorDetailsSeries-bookType-2OKXb{
             border: none;
             background-color:  rgba(0, 0, 0, .25);
         }
-        .AuthorDetailsSeries-collapseButtonContainer-2gS_Y {
+        .AuthorDetailsSeries-collapseButtonContainer-3Ir3l {
             border: none;
             background-color:  rgba(0, 0, 0, .25);
         }
-        .AuthorDetailsSeries-albumTypeLabel-27tss {
+        AuthorDetailsSeries-bookTypeLabel-2WwAO {
             color: #FFF;    
         }
-        .AuthorDetailsSeries-albumCount-KYhiA {
+        .AuthorDetailsSeries-bookCount-2OuhM {
             color: #FFF;    
         }
         /*Search Tab*/
@@ -856,7 +856,7 @@ background-color: hsla(0,0%,100%,.25) !important;
             color: #FFF;
         }
     /*Specific Book Page*/
-    .AlbumDetails-tab-1Ax0D {
+    .BookDetails-tab-3ODdT {
         color: #FFF;
     }
     /*Settings*/
