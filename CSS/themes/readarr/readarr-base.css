@@ -820,10 +820,10 @@ background-color: hsla(0,0%,100%,.25) !important;
 
 /* Readarr */
     /* Add New*/
-    .AddNewArtistSearchResult-underlay-3aVNi, .AddNewAlbumSearchResult-underlay-2Egnf {
+    .AddNewAuthorSearchResult-underlay-snqgD, .AddNewBookSearchResult-underlay-2zx_k {
         background-color: transparent;
     }
-    .AddNewAlbumSearchResult-underlay-2Egnf:hover, .AddNewArtistSearchResult-underlay-3aVNi:hover {
+    .AddNewAuthorSearchResult-underlay-snqgD:hover, .AddNewBookSearchResult-underlay-2zx_k:hover {
         background-color: hsla(0,0%,100%,.08);
         color: inherit;
         text-decoration: none;
@@ -833,8 +833,9 @@ background-color: hsla(0,0%,100%,.25) !important;
         color: #FFF;
     }
         /*Books Tab*/
-        .AuthorDetailsSeason-books-11bVF {
+        .AuthorDetailsSeason-bookType-4wzA5 {
             border: none;
+            background-color: rgba(0, 0, 0, .25);
         }
         /*Series Tab*/
         .AuthorDetailsSeries-bookType-2OKXb{
