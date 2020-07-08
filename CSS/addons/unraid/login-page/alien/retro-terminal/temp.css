@@ -1,31 +1,31 @@
-/*_____________________AMBER_THEME______________________*/
-/*--body-before:#ffb52a1a; /* This is the background that flickers, background uses a transparency of 10%, SET IT TO BLACK TO REMOVE FLICKER! */
-/*--body-after: #ffb52a33; /* This is the background that creates the crt lines, background uses a transparency of 20% */
+/*_____________________WHITE_THEME______________________*/
+/*--body-before:#70d7f61a; /* This is the background that flickers, background uses a transparency of 10%, SET IT TO BLACK TO REMOVE FLICKER! */
+/*--body-after: #70d7f61a; /* This is the background that creates the crt lines, background uses a transparency of 20% */
 /*--custom-text-header-animation: textflicker; /* SET TO NONE TO REMOVE THE FLICKER ANIMATION! */
 
 @import url(https://gflix.app/theme.park/CSS/addons/unraid/login-page/alien/retro-terminal/retro-terminal-base.css);
 :root {
 --main-bg-color:black;
---body-before:#ffb52a1a;
---body-after: #ffb52a33;
---logo: url(https://gflix.app/theme.park/CSS/addons/unraid/login-page/alien/logo/nostromoyellow.png) center no-repeat;
---text-color: #ffb52a;
---input-color: #ffb52a;
---link-color: #ffb52a;
---link-color-hover: #ff6868;
---case-color: #ffb52a;
---button-text-color: #ffb52a;
+--body-before:#70d7f61a;
+--body-after: #70d7f633;
+--logo: url(https://gflix.app/theme.park/CSS/addons/unraid/login-page/alien/logo/nostromo3.png) center no-repeat;
+--text-color: #ffffff;
+--input-color: #ffffff;
+--link-color: #ffffff;
+--link-color-hover: #8f2809;
+--case-color: #ffffff;
+--button-text-color: #ffffff;
 --button-text-color-hover: #000;
---button-color: #ffb52a;
---button-color-hover: #ff6868;
---selection-color: #ff6868;
---custom-text-header:#ffb52a;
---custom-text-header-shadow:#ffb52a;
+--button-color: #ffffff;
+--button-color-hover: #af0606;
+--selection-color: #8f2809;
+--custom-text-header:#ffffff;
+--custom-text-header-shadow:#ffffff;
 --custom-text-header-animation: textflicker;
 --input-font: 'Share Tech Mono', monospace;
 --text-font: 'Share Tech Mono', monospace;
 --loginbox-background-color: transparent;
 --text-shadow: 0 0 8px;
---text-shadow-color: #ffb52a;
+--text-shadow-color: #ffffff;
 --box-shadow: 0 0 15px;
 }

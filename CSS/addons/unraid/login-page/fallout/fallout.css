@@ -30,10 +30,12 @@
     https://www.colourlovers.com/palette/3428762/Fallout?widths=1
     */
     /*
-    #!/bin/bash
-    sed -i -e '\@<style>@i\    <link rel="stylesheet" href="https:\/\/gflix.app\/customfiles\/fallout.css">' /usr/local/emhttp/login.php
-    # add video background
-    sed -i -e '\@<body>@a\ div class="background-wrap"><video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted"> <source src="https:\/\/gflix.app\/customfiles\/VaultTecCRTLoop.mp4" type="video\/mp4">Video not supported<\/video><\/div>' /usr/local/emhttp/login.php
+#!/bin/bash \
+sed -i -e '\@<style>@i\    <link rel="stylesheet" href="https:\/\/gflix.app\/customfiles\/fallout.css">' /usr/local/emhttp/login.php
+
+# add video background
+#!/bin/bash \
+sed -i -e '\@<body>@a\ div class="background-wrap"><video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted"> <source src="https:\/\/gflix.app\/customfiles\/VaultTecCRTLoop.mp4" type="video\/mp4">Video not supported<\/video><\/div>' /usr/local/emhttp/login.php
     */
 }
 
