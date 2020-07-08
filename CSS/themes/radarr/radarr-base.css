@@ -665,8 +665,8 @@ pre {
 
 
 
-/* -------------------------Radarr V2------------------------------*/
-/* Radarr v2 theme */
+/* -------------------------Radarr V3------------------------------*/
+/* Radarr v3 theme */
 
 /* Froms */
 .FormInputHelpText-helpText-3_AVV {
@@ -1036,6 +1036,9 @@ pre {
         box-shadow: none;
     background-color: rgba(255, 255, 255, 0.25);
     } 
+    .RootFolderSelectInputSelectedValue-movieFolder-2UNu1 {
+        color: #fff;
+    }
     .TagInput-input-3E1DX.TagInput-isFocused-13j-F {
         outline: 0;
         border-color: #fff;
@@ -1053,7 +1056,7 @@ pre {
 	.AddNewMovieSearchResult-searchResult-1FdVg:hover, .AddNewMovieSearchResult-underlay-1h0bG:hover {
     background-color: hsla(0,0%,100%,.08) !important;
     }
-    .AddNewmovieModalContent-year-t7IIJ {
+    .AddNewmovieModalContent-year-2NWV9 {
         color: #fff;
     }
     .RootFolderSelectInputSelectedValue-movieFolder-a7chC, .RootFolderSelectInputSelectedValue-freeSpace-1Irwm {
@@ -1088,6 +1091,22 @@ pre {
         background-color: rgba(0, 0, 0, 0.25);
     }
 
+/* DISCOVER */
+/*Title*/
+.AddListMovieOverview-link-3_RaH {
+    color: #eee;
+}
+.AddListMovieOverview-link-3_RaH:hover {
+    color: #fff;
+}
+
+.AddListMovieOverview-content-2dBtg:hover {
+    background-color: hsla(0,0%,100%,.08) !important;
+}
+.PageJumpBarItem-jumpBarItem-3F58I:hover {
+    color: #fff;
+    background: hsla(0,0%,100%,.08);
+}
 /* MASS EDITOR */
 	/* FOOTER */
 	.PageContentFooter-contentFooter-3ODMj {
