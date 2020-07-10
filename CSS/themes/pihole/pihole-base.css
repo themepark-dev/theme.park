@@ -80,6 +80,12 @@
       .skin-blue .treeview-menu>li>a {
           color: #eee;
       }
+      /* Collapsed menu hover*/
+      @media (min-width: 768px) {
+        .sidebar-mini.sidebar-collapse .sidebar-menu>li:hover>a>span:not(.pull-right), .sidebar-mini.sidebar-collapse .sidebar-menu>li:hover>.treeview-menu {
+            background: var(--main-bg-color);
+            }
+        }
   /* Pages */
       /*Background*/
       .content-wrapper, .right-side {
