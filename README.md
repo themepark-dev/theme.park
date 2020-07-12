@@ -59,6 +59,7 @@
   - [Calibre-web][calibreweb]
   - [Transmission][transmission]
   - [Requestrr][requestrr]
+  - [Pi-hole][pihole]
 
 
 [arr]: https://github.com/gilbN/theme.park/wiki/Sonarr---Radarr---Lidarr---Bazarr-Themes
@@ -89,6 +90,7 @@
 [calibreweb]: https://github.com/gilbN/theme.park/wiki/Calibre-Web
 [transmission]: https://github.com/gilbN/theme.park/wiki/Transmission
 [requestrr]: https://github.com/gilbN/theme.park/wiki/Requestrr
+[pihole]: https://github.com/gilbN/theme.park/wiki/Pi-hole
 
 ## [Adding your own theme colors](https://github.com/gilbN/theme.park/wiki/Creating-your-own-themes)
 
