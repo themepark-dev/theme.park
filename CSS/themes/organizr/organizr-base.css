@@ -929,3 +929,25 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
     background: var(--link-color) !important;
 }
 
+/* Email Center*/
+
+.ms-container .ms-selectable, .ms-container .ms-selection {
+    background: rgba(0, 0, 0, 0.25);
+}
+.ms-container .ms-list { 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.ms-container .ms-selectable li.ms-elem-selectable, .ms-container .ms-selection li.ms-elem-selection {
+    border-bottom: 1px rgba(238, 238, 238, .2) solid;
+}
+
+.ms-container .ms-selectable li.ms-hover,
+.ms-container .ms-selection li.ms-hover {
+    background: rgba(255, 255, 255, .08)
+}
+.ms-container .ms-list.ms-focus{
+  border-color: rgba(255, 255, 255, .5);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 255, 255, .6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 255, 255, .6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 255, 255, .6);
+}
