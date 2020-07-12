@@ -12,203 +12,203 @@
 
   body {
       background: var(--main-bg-color) !important;
-      color: #eee;
+      color: #eee !important;
   }
   a {
-      color: var(--link-color);
+      color: var(--link-color) !important;
       }
   a:hover, a:active, a:focus {
       color: var(--accent-color) !important;
       }
   /* Donate dropdown */
       .skin-blue .main-header li.user-header {
-          background: var(--modal-bg-color);
+          background: var(--modal-bg-color) !important;
       }
       .dropdown-menu {
-          box-shadow: none;
-          border-color: rgba(0, 0, 0, .25);
+          box-shadow: none !important;
+          border-color: rgba(0, 0, 0, .25) !important;
           background: var(--modal-bg-color)
       }
       .navbar-nav>.user-menu>.dropdown-menu>.user-body {
-          padding: 15px;
-          border-bottom: 1px solid rgba(255, 255, 255, .25);
-          border-top: 1px solid rgba(255, 255, 255, .25);
+          padding: 15px !important;
+          border-bottom: 1px solid rgba(255, 255, 255, .25) !important;
+          border-top: 1px solid rgba(255, 255, 255, .25) !important;
           background-color: rgba(255, 255, 255, .2) !important;
       }
       .navbar-nav>.user-menu>.dropdown-menu>.user-body a {
           color: white !important;
       }
       .navbar-nav>.user-menu>.dropdown-menu>.user-footer {
-          background-color: transparent;
+          background-color: transparent !important;
       }
   /* Header */
       .skin-blue .main-header .navbar, .skin-blue .main-header .logo {
-          background-color: rgba(0, 0, 0, .25);
+          background-color: rgba(0, 0, 0, .25) !important;
       }
       .skin-blue .main-header .logo:hover, .skin-blue .main-header .navbar .sidebar-toggle:hover {
-          background-color: rgba(255, 255, 255, .05);
+          background-color: rgba(255, 255, 255, .05) !important;
       }
    /* Footer */
       .main-footer {
-          background: rgba(0, 0, 0, .25);
-          color: #eee;
-          border-top: 1px solid #eee;
+          background: rgba(0, 0, 0, .25) !important;
+          color: #eee !important;
+          border-top: 1px solid #eee !important;
       }
   /* Side bar */
       .skin-blue .sidebar a {
-          color: #eee;
+          color: #eee !important;
       }
       .skin-blue .sidebar a:hover {
           color: white !important;
       }
       .skin-blue .wrapper, .skin-blue .main-sidebar, .skin-blue .left-side {
-          background-color: rgba(0, 0, 0, .25);
+          background-color: rgba(0, 0, 0, .25) !important;
       }
       .skin-blue .sidebar-menu>li.header {
-          color: white;
-          background: rgba(0, 0, 0, .2);
+          color: white !important;
+          background: rgba(0, 0, 0, .2) !important;
       }
           /* Menus */
       .skin-blue .sidebar-menu>li:hover>a, .skin-blue .sidebar-menu>li.active>a {
-          color: #fff;
-          background: rgba(0, 0, 0, .1);
-          border-left-color: var(--accent-color);
+          color: #fff !important;
+          background: rgba(0, 0, 0, .1) !important;
+          border-left-color: var(--accent-color) !important;
       }
       .skin-blue .sidebar-menu>li>.treeview-menu {
-          background: rgba(0, 0, 0, .25);
+          background: rgba(0, 0, 0, .25) !important;
       }
       .skin-blue .treeview-menu>li>a {
-          color: #eee;
+          color: #eee !important;
       }
       /* Collapsed menu hover*/
       @media (min-width: 768px) {
         .sidebar-mini.sidebar-collapse .sidebar-menu>li:hover>a>span:not(.pull-right), .sidebar-mini.sidebar-collapse .sidebar-menu>li:hover>.treeview-menu {
-            background: var(--main-bg-color);
+            background: var(--main-bg-color) !important;
             }
         }
   /* Pages */
       /*Background*/
       .content-wrapper, .right-side {
-          background-color: var(--main-bg-color);
+          background-color: var(--main-bg-color) !important;
       }
       /* Dashboard */
           /*Total Queries box */
           .box-header {
-              color: white;
+              color: white !important;
           }
           .box {
-              background: rgba(0, 0, 0, .24);
-              border-top: 3px solid #0000;
-              box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+              background: rgba(0, 0, 0, .24) !important;
+              border-top: 3px solid #0000 !important;
+              box-shadow: 0 1px 1px rgba(0,0,0,0.1) !important;
           }
           .chart svg, .chart canvas, .chartjs-render-monitor, .chart-legend {
-              -webkit-filter: invert(100%);
-              filter: invert(100%); 
+              -webkit-filter: invert(100%) !important;
+              filter: invert(100%) !important; 
           }
           #chartjs-tooltip {
-              filter: invert(100%);
+              filter: invert(100%) !important;
           }
           .chart-legend ul {
-              -webkit-filter: invert(100%);
-              filter: invert(100%);
+              -webkit-filter: invert(100%) !important;
+              filter: invert(100%) !important;
           }
           /* Total queries box*/
           .small-box.bg-green {
               background-color: rgba(0, 166, 90, .45) !important;
-              border-top: 3px solid var(--accent-color);
+              border-top: 3px solid var(--accent-color) !important;
           }
           /* Queries blocked box*/
           .small-box.bg-aqua {
               background-color: rgba(0, 192, 239, .45) !important;
-              border-top: 3px solid var(--accent-color);
+              border-top: 3px solid var(--accent-color) !important;
           }
           /* Percent blocked box */
           .small-box.bg-yellow {
               background-color: rgba(243, 156, 18, .45) !important;
-              border-top: 3px solid var(--accent-color);
+              border-top: 3px solid var(--accent-color) !important;
           }
           /*Blocklist box*/
           .small-box.bg-red {
               background-color: rgba(221, 75, 57, .45) !important;
-              border-top: 3px solid var(--accent-color);
+              border-top: 3px solid var(--accent-color) !important;
           }
           .table-bordered {
               border: 1px solid #f4f4f41a !important;
-              background: rgba(0, 0, 0, .1);
+              background: rgba(0, 0, 0, .1) !important;
           }
           .table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td {
-              border: 1px solid rgba(255, 255, 255, 0.15);
+              border: 1px solid rgba(255, 255, 255, 0.15) !important;
           }
           .table-striped>tbody>tr:nth-of-type(odd) {
-              background-color:rgba(255, 255, 255, .1);
+              background-color:rgba(255, 255, 255, .1) !important;
           }
       /* Query Log */
           .text-black {
               color: #eee!important;
           }
           .pagination>.disabled>a, .pagination>.disabled>a:focus, .pagination>.disabled>a:hover, .pagination>.disabled>span, .pagination>.disabled>span:focus, .pagination>.disabled>span:hover {
-              color: rgba(238, 238, 238, .5);
-              background-color: rgba(255, 255, 255, .1);
-              border-color: #ddd0;
-          }
-          .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
-              color: #fff;
-              background-color: var(--button-color);
-              border-color: var(--button-color);
+              color: rgba(238, 238, 238, .5) !important;
+              background-color: rgba(255, 255, 255, .1) !important;
+              border-color: #ddd0 !important;
           }
           .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
               color: #fff !important;
-              background-color: var(--button-color-hover);
-              border-color: var(--button-color-hover);
+              background-color: var(--button-color) !important;
+              border-color: var(--button-color) !important;
+          }
+          .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+              color: #fff !important;
+              background-color: var(--button-color-hover) !important;
+              border-color: var(--button-color-hover) !important;
           }
           .pagination>li>a {
-              background: rgba(0, 0, 0, 0.25);
-              color: #eee;
-              border: 1px solid rgba(255, 255, 255, 0.07);
+              background: rgba(0, 0, 0, 0.25) !important;
+              color: #eee !important;
+              border: 1px solid rgba(255, 255, 255, 0.07) !important;
           }
           .pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
               color: rgb(255, 255, 255) !important;
-              background-color: rgba(255, 255, 255, .25);
-              border-color: rgba(255, 255, 255, 0.07);
+              background-color: rgba(255, 255, 255, .25) !important;
+              border-color: rgba(255, 255, 255, 0.07) !important;
           }
       /* Login */
           .panel-default {
-              border-color: transparent;
-              background: rgba(0, 0, 0, 0.25);
+              border-color: transparent !important;
+              background: rgba(0, 0, 0, 0.25) !important;
           }
           .panel-default>.panel-heading {
-              color: #eee;
-              background-color: transparent;
+              color: #eee !important;
+              background-color: transparent !important;
               border-color: rgba(255, 255, 255, .25)
           }
       /* Blacklist */
          .nav-tabs-custom {
-              background: rgba(0, 0, 0, 0.25);
+              background: rgba(0, 0, 0, 0.25) !important;
           }
           .nav-tabs-custom>.tab-content {
-              background: transparent;
+              background: transparent !important;
           }
           .nav-tabs-custom>.nav-tabs>li.active {
-              border-top-color: var(--accent-color);
+              border-top-color: var(--accent-color) !important;
           }
           .nav-tabs-custom>.nav-tabs>li.active>a {
-              border-top-color: transparent;
-              border-left-color: rgba(255, 255, 255, 0.1);
-              border-right-color: rgba(255, 255, 255, 0.1);
+              border-top-color: transparent !important;
+              border-left-color: rgba(255, 255, 255, 0.1) !important;
+              border-right-color: rgba(255, 255, 255, 0.1) !important;
           }
           .nav-tabs-custom>.nav-tabs>li.active>a, .nav-tabs-custom>.nav-tabs>li.active:hover>a {
-              background-color: rgba(255, 255, 255, .15);
+              background-color: rgba(255, 255, 255, .15) !important;
               color: #eee !important;
           }
           .nav-tabs-custom>.nav-tabs>li>a {
               color: #eee !important;
-              border-radius: 0;
+              border-radius: 0 !important;
           }
           .input-group .input-group-addon {
-              border-radius: 0;
-              border-color: #d2d6de00;
-              background-color: var(--accent-color);
-              color: #eee;
+              border-radius: 0 !important;
+              border-color: #d2d6de00 !important;
+              background-color: var(--accent-color) !important;
+              color: #eee !important;
           }
   
       /* Network */
@@ -219,7 +219,7 @@
       background-color:rgba(0, 0, 0, .5) !important;
       }
       .text-center {
-          text-align: center;
+          text-align: center !important;
           color: #000 !important;
       }
   /* Buttons */
@@ -261,9 +261,9 @@
         }
   /* Input */
       input,.form-control,pre,.box-footer,.datatables_processing {
-          background:#080909;
-          border:1px solid #666;
-          color:#b2b2b2;
+          background:#080909 !important;
+          border:1px solid #666 !important;
+          color:#b2b2b2 !important;
       }
   /* Scrollbar */  
   @media only screen and (min-width: 768px) {  
