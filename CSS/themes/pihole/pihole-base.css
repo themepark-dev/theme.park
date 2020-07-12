@@ -223,26 +223,42 @@
           color: #000 !important;
       }
   /* Buttons */
-      button,.btn-default {
-          background-color:var(--button-color) !important;
-          border:1px solid var(--button-color) !important;
-          color: white !important;
-      }
-      .btn-primary:hover, .btn-primary:active, .btn-primary.hover {
-          background-color: var(--button-color-hover) !important;
-      }
-      .btn-default:hover, .btn-default:active, .btn-default.hover {
-          background-color: var(--button-color-hover) !important;
-      }
-      .box.box-solid>.box-header .btn:hover, .box.box-solid>.box-header a:hover {
-          background: var(--button-color-hover) !important;
-          border: 1px solid transparent !important
-      }
-      .box.box-solid.box-info>.box-header, .box.box-solid.box-info {
-          color: #fff;
-          background: var(--button-color) !important;
-          border: 1px solid var(--button-color) !important;
-      }
+        button,.btn-default {
+            background-color:var(--button-color) !important;
+            border:1px solid var(--button-color) !important;
+            color: white !important;
+        }
+        .btn-primary:hover, .btn-primary:active, .btn-primary.hover {
+            background-color: var(--button-color-hover) !important;
+        }
+        .btn-default:hover, .btn-default:active, .btn-default.hover {
+            background-color: var(--button-color-hover) !important;
+        }
+        .box.box-solid>.box-header .btn:hover, .box.box-solid>.box-header a:hover {
+            background: var(--button-color-hover) !important;
+            border: 1px solid transparent !important
+        }
+        .box.box-solid.box-info>.box-header, .box.box-solid.box-info {
+            color: #fff;
+            background: var(--button-color) !important;
+            border: 1px solid var(--button-color) !important;
+        }
+        .btn-danger {
+        background-color: #dd4b39 !important;
+        border-color: #d73925 !important;
+        }
+        .btn-danger:hover, .btn-danger:active, .btn-danger.hover {
+            background-color: #d73925 !important;
+        }
+        .btn-warning {
+            background-color: #f39c12 !important;
+            border-color: #e08e0b !important;
+        }
+        .btn-warning:hover {
+            color: #fff;
+            background-color: #ec971f  !important;
+            border-color: #d58512 !important;
+        }
   /* Input */
       input,.form-control,pre,.box-footer,.datatables_processing {
           background:#080909;
