@@ -449,6 +449,64 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
       margin: 0 12.5px;
       transition: color .2s ease;
   }
+    #homepageOrderdeluge .mailbox-widget .customtab li.active a,
+    #homepageOrderqBittorrent .mailbox-widget .customtab li.active a,
+    #homepageOrderrTorrent .mailbox-widget .customtab li.active a,
+    #homepageOrdertransmission .mailbox-widget .customtab li.active a{
+        height: auto;
+        padding: 5px 5px 0px 5px;
+        cursor: pointer;
+        font-weight: 400;
+    }
+
+    #homepageOrderdeluge .ti-download:before,
+    #homepageOrderqBittorrent .ti-download:before,
+    #homepageOrderrTorrent .ti-download:before,
+    #homepageOrdertransmission .ti-download:before{
+        display:none;
+    }
+    #homepageOrderdeluge .white-box,
+    #homepageOrderqBittorrent .white-box, 
+    #homepageOrderrTorrent .white-box,
+    #homepageOrdertransmission .white-box {
+        padding-right: 0px !important;
+    }
+    #homepage-items .white-box {
+        padding-left: 0px !important;
+    }
+    #homepage-items .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover {
+        cursor: pointer;
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.25) !important;
+    }
+    #homepageOrderdownloader .nav-tabs>li.active>a, .nav-tabs>li.active .nav>li>a,
+    #homepageOrderdownloader .nav-tabs>li>a, .nav-tabs>li .nav>li>a{
+        padding: 10px 12.5px;
+    }
+    #homepageOrderdownloader .nav-tabs>li.active>a, .nav-tabs>li.active .nav>li>a .customtab,
+    #homepageOrderdownloader .nav-tabs {
+        padding: 10px 12.5px;
+    }
+    #homepageOrderdownloader ul.nav.customtab.nav-tabs.m-t-5.nav-tabs>li.active>a,#homepageOrderdownloader ul.nav.customtab.nav-tabs.m-t-5.nav-tabs>li>a {
+        padding: 10px 11.5px !important;
+    }
+    #homepageOrderdownloader .nav-tabs>li.active>a:hover, .nav-tabs>li.active:hover {
+    background: rgba(0, 0, 0, 0.25) !important;
+    opacity: 1;
+    }
+    #homepageOrderdownloader .downloaderCount {
+        margin-top: -20px !important;
+    }
+    #homepageOrderdownloader .mailbox-widget .customtab li a {
+        padding: 20px 15px 5px 15px;
+    }
+    #homepageOrderdownloader  .customtab li a  {
+        padding: 20px 15px 5px 15px !important;
+    }
+
+    #homepageOrderdownloader .mailbox-widget .customtab li a:hover {
+        opacity: 1;
+    }
    /* Homepage calendar buttons */
   .fc-next-button, .fc-prev-button {
       background: 0 0!important;
