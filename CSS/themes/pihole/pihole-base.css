@@ -21,6 +21,9 @@ a:hover, a:active, a:focus,
 .treeview-menu > li.active > a, .treeview-menu > li > a:hover {
     color: var(--accent-color) !important;
     }
+    h4 {
+        color: var(--accent-color);
+    }
 /* Donate dropdown */
     .skin-blue .main-header li.user-header {
         background: var(--modal-bg-color);
