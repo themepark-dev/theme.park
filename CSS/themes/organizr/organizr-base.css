@@ -47,6 +47,11 @@ html {
   .navbar-header {
       background: transparent !important;
   }
+  @media (max-width: 480px) {
+    .navbar-header {
+        background: var(--main-bg-color) !important;
+    }
+   }
   .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
       background: transparent;
   }
@@ -490,7 +495,7 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
     #homepageOrderdownloader ul.nav.customtab.nav-tabs.m-t-5.nav-tabs>li.active>a,#homepageOrderdownloader ul.nav.customtab.nav-tabs.m-t-5.nav-tabs>li>a {
         padding: 10px 11.5px !important;
     }
-    #homepageOrderdownloader .nav-tabs>li.active>a:hover, .nav-tabs>li.active:hover {
+    #homepageOrderdownloader .nav-tabs>li.active>a:hover, #homepageOrderdownloader .nav-tabs>li.active:hover {
     background: rgba(0, 0, 0, 0.25) !important;
     opacity: 1;
     }
