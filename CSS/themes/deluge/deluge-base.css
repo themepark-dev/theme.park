@@ -677,22 +677,22 @@
       font:normal 11px 'Roboto', tahoma, verdana, helvetica;
   }
   .x-window-bc .x-window-footer .x-btn {
-      background-color: rgba(255, 255, 255, 0.08);
+      background-color: var(--button-color);
   }
   .x-window-bc .x-window-footer .x-btn:hover {
-      background-color: rgba(255, 255, 255, 0.15);
+      background-color: var(--button-color-hover);
   }
   .x-form-file-wrap .x-btn {
       position: absolute;
       right: 0;
       z-index: 1;
-      background: rgba(255, 255, 255, 0.08);
+      background: var(--button-color);
   }
   .x-form-file-wrap:hover .x-form-file-btn:hover .x-btn:hover {
       position: absolute;
       right: 0;
       z-index: 1;
-      background: rgba(255, 255, 255, 0.15);
+      background: var(--button-color-hover);
   }
   
   .x-btn button{

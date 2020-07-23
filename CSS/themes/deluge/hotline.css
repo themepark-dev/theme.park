@@ -16,5 +16,7 @@
 :root {
   --main-bg-color: radial-gradient(ellipse at center, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
   --modal-bg-color: radial-gradient(ellipse at center, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
-  --progress-color: #df6c4c; 
+  --progress-color: #df6c4c;
+  --button-color: hsla(0,0%,100%,.15);
+  --button-color-hover: hsla(0,0%,100%,.30);
 }

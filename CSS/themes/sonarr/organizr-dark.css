@@ -1,4 +1,3 @@
-
 /*    dP   dP                                                                  dP        */
 /*    88   88                                                                  88        */
 /*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
@@ -11,14 +10,23 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
-/* BAZARR HOTLINE THEME */
-@import url(https://gilbn.github.io/theme.park/CSS/themes/bazarr/bazarr-base.css);
+/* SONARR ORGANIZR-DARK THEME */
+@import url(https://gilbn.github.io/theme.park/CSS/themes/sonarr/sonarr-base.css);
 :root {
-  --main-bg-color: radial-gradient(ellipse at center, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
-  --modal-bg-color: radial-gradient(ellipse at top, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
+  --main-bg-color: #1f1f1f;
+  --modal-bg-color: #333;
 
-  --button-color: hsla(0,0%,100%,.15);
-  --button-color-hover: hsla(0,0%,100%,.30);
-  --accent-color:  #F44336;
-  --accent-color-hover: #0b3161;
-}
+  --calendar-tv-Unaired-Premiere: #707cd2;
+  --calendar-tv-Downloading: #7932ea; 
+  --calendar-tv-Unmonitored: grey;
+  --calendar-tv-Unaired: #2cabe3;  
+  --calendar-tv-missing: #ff7676;
+  --calendar-tv-On-Air: #f0ad4e; 
+  --calendar-tv-available: #53e69d;
+
+  --button-color: #2cabe3;
+  --button-color-hover: rgb(44 171 227 / .8);
+  --accent-color:  #2cabe3;
+  --accent-color-hover: white;
+  --queue-color: #2cabe3;
+  }

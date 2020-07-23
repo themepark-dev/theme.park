@@ -22,6 +22,7 @@
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/spacegray_banner.png)
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/dark_banner.png)
 ![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/plex_banner.png)
+![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/organizr_dark_banner.png)
 
 # [Installation](https://github.com/gilbN/theme.park/wiki/Setup)
 # [Addons](https://github.com/gilbN/theme.park/tree/master/CSS/addons)

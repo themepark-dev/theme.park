@@ -15,6 +15,49 @@
   body {
     background: var(--main-bg-color);
   }
+  .Link-primary-1vcAGA {
+    color: var(--link-color) !important;
+}
+.DisclosureArrow-isSelected-QMJhDY {
+border-color: var(--link-color);
+}
+.Link-isSelected-IRm9uM   {
+  -webkit-filter: drop-shadow(0 0 5px var(--link-color)) !important;
+  filter: drop-shadow(0 0 5px var(--link-color)) !important;
+  color: white;
+}
+.ServerSettingsServerMenuButton-button-24D7lE {
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+.NavBarActivityButton-isHighlighted-27qlko:hover .NavBarActivityButton-label-2ZN0gQ {
+  color: rgb(44 171 227 / .8);
+}
+.NavBarActivityButton-isHighlighted-27qlko .NavBarActivityButton-activityIcon-1Db2GP {
+  background-color: var(--link-color);
+}
+.NavBarActivityButton-isHighlighted-27qlko .NavBarActivityButton-label-2ZN0gQ {
+  color: var(--link-color);
+}
+.NavBarActivityButton-isHighlighted-27qlko:hover .NavBarActivityButton-activityIcon-1Db2GP {
+  background-color: var(--button-color-hover);
+}
+.PageHeaderTabButton-isSelected-25CIS7 {
+  background-color: rgba(0,0,0,.15);
+  color: var(--link-color);
+}
+.btn-primary, .Button-primary-3fwLzo {
+  border-color: var(--button-color);
+  background-color: var(--button-color);
+
+}
+.btn-primary:focus, .btn-primary:hover, .Button-primary-3fwLzo:hover {
+  color: #fff;
+  background-color: var( --button-color-hover);
+}
+.Button-primary-3fwLzo.isDisabled, .btn-primary.disabled, .btn-primary.disabled.active, .btn-primary.disabled:active, .btn-primary.disabled:focus, .btn-primary.disabled:hover, .btn-primary[disabled], .btn-primary[disabled].active, .btn-primary[disabled]:active, .btn-primary[disabled]:focus, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary.active, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:hover {
+  background-color: var(--button-color);
+}
   .background,.background-container {
     opacity: 0;
     transition: opacity .5s;
@@ -34,6 +77,9 @@
 /* Navbar */
 .NavBar-container-1T0BJz {
   background: rgba(0, 0, 0, 0.45);
+}
+.Menu-menu-3XnN6J {
+  background-color: var(--modal-bg-color);
 }
 /*Text*/  
   .help-block, .ClaimedServer-messageHeader-3uzatL, .btn-gray, .text-muted label  {
@@ -88,5 +134,31 @@ background-color: rgba(0, 0, 0, 0.25);
 }
 .files ul li {
   color: #fff;
+}
+.MetadataPosterCardOverlay-unplayedBadge-2hKHo5 {
+  background-color: var(--accent-color);
+}
+.MetadataPosterCardFace-face--dz_Dx:hover {
+  box-shadow: 0 0 0 2px var(--accent-color);
+}
+.PlayButton-playButton-3WX8X-:hover .PlayButton-playCircle-3Evfdw {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+}
+.PageHeaderTabDropdown-isSelected-FK5pDv {
+  border-color: var(--accent-color);
+}
+.SelectedMenuItem-isSelected-178xe1, .SelectedMenuItem-isSelected-178xe1 .SelectedMenuItem-selectedIcon-20Yx1_ {
+  color: var(--accent-color);
+}
+.Badge-primary-3suJx3,.alert-bar.notify {
+  background-color: var(--accent-color);
+}
+.PrePlayCastCell-posterCardLinkContainer-27hxZ8:hover {
+  box-shadow: 0 0 0 2px var(--accent-color);
+}
+.SourceSidebarServerHeader-title-3zMGa0 {
+  color: var(--accent-color);
+
 }
 /* This was a tough one :D */

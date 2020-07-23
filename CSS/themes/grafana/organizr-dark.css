@@ -11,14 +11,13 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
-/* BAZARR HOTLINE THEME */
-@import url(https://gilbn.github.io/theme.park/CSS/themes/bazarr/bazarr-base.css);
+/* GRAFANA ORGANIZR-DARK THEME */
+@import url(https://gilbn.github.io/theme.park/CSS/themes/grafana/grafana-base.css);
 :root {
-  --main-bg-color: radial-gradient(ellipse at center, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
-  --modal-bg-color: radial-gradient(ellipse at top, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
-
-  --button-color: hsla(0,0%,100%,.15);
-  --button-color-hover: hsla(0,0%,100%,.30);
-  --accent-color:  #F44336;
-  --accent-color-hover: #0b3161;
-}
+  --main-bg-color: #1f1f1f;
+  --modal-bg-color: #333;
+  --button-color: #2cabe3;
+  --button-color-hover: rgb(44 171 227 / .8);
+  --accent-color:  #2cabe3;
+  --accent-color-hover: white;
+  }

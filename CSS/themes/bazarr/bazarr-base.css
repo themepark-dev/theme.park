@@ -777,17 +777,17 @@ i.black.icon {
 }
 /* SAVE BUTTON */
 .ui.blue.button, .ui.blue.buttons .button {
-  background-color: #cc7b19 !important;
+  background-color: var(--button-color) !important;
   color: #fff;
   font-family: Open Sans Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
   text-transform: uppercase;
   transition: background-color .1s;
 }
 .ui.blue.button:hover, .ui.blue.buttons .button:hover {
-  background-color: #e59029 !important;
+  background-color: var(--button-color-hover) !important;
 }
 .ui.blue.button:active, .ui.blue.buttons .button:active {
-  background-color: #955a12 !important;
+  background-color: var(--button-color-hover) !important;
 }
 
 /* DROPDOWN */
@@ -840,13 +840,13 @@ i.black.icon {
   color: hsla(0,0%,100%,.3);
 }
 .ui.toggle.checkbox input:checked~.box:before, .ui.toggle.checkbox input:checked~label:before {
-  background-color: #cc7b19 !important;
+  background-color: var(--accent-color) !important;
 }
 .ui.toggle.checkbox input:checked~.box:before, .ui.toggle.checkbox input:checked~label:before {
-  background-color: #cc7b19!important;
+  background-color: var(--accent-color) !important;
 }
 .ui.toggle.checkbox input:focus:checked~.box:before, .ui.toggle.checkbox input:focus:checked~label:before {
-  background-color: #cc7b19!important;
+  background-color: var(--accent-color) !important;
 }
 
 .ui.multiple.dropdown>.label {
@@ -927,7 +927,7 @@ table.dataTable.display tbody tr:hover>.sorting_1, table.dataTable.order-column.
 }
 .ui.info.message {
   background-color: rgba(255,255,255,.08);
-  color: #00c1ff;
+  color: var(--accent-color);
 }
 .ui.input {
   color: #FFF !important;
