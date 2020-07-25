@@ -79,7 +79,7 @@ border-color: var(--link-color);
   background: rgba(0, 0, 0, 0.45);
 }
 .Menu-menu-3XnN6J {
-  background-color: var(--modal-bg-color);
+  background: var(--modal-bg-color);
 }
 /*Text*/  
   .help-block, .ClaimedServer-messageHeader-3uzatL, .btn-gray, .text-muted label  {
@@ -161,4 +161,7 @@ background-color: rgba(0, 0, 0, 0.25);
   color: var(--accent-color);
 
 }
-/* This was a tough one :D */
+.SourceSidebarLink-isSelected-27-9-6 {
+  box-shadow: inset 4px 0 0 0 var(--accent-color);
+}
+
