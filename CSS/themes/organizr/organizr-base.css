@@ -249,6 +249,13 @@ html {
   .table-hover>tbody>tr:hover {
     background: rgba(0,0,0,.15)!important;
   }  
+  #tabEditorTable .btn-info.btn-outline {
+    color: var(--custom-buttons-color);
+}
+#tabEditorTable .btn-info.btn-outline:hover,#tabEditorTable .btn-info.btn-outline:focus {
+    color: white;
+    background: var(--custom-buttons-color);
+}
    /* Settings - popup modal */
   .white-popup .panel-heading, .white-popup>.col-md-6>.white-box:first-child {
       background: var(--main-bg-color)!important;
