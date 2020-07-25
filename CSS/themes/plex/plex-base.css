@@ -22,13 +22,9 @@
 border-color: var(--link-color);
 }
 .Link-isSelected-IRm9uM   {
-  -webkit-filter: drop-shadow(0 0 5px var(--link-color)) !important;
-  filter: drop-shadow(0 0 5px var(--link-color)) !important;
   color: white;
 }
-#preplayDetailsContainer .Link-isSelected-IRm9uM   {
-  color: white;
-}
+
 .ServerSettingsServerMenuButton-button-24D7lE {
   -webkit-filter: none !important;
   filter: none !important;
@@ -170,13 +166,30 @@ background-color: rgba(0, 0, 0, 0.25);
 .PosterCardOverlayProgress-progressBar-3k291O {
   background-color: var(--accent-color);
 }
-.PrePlayDetailsGroupItem-content-1aRNUU .Link-isSelected-IRm9uM  {
-  -webkit-filter: none!important;
-  filter: none!important;
-}
 .Spinner-spinner-Niere7 {
   border-color: var(--accent-color) transparent transparent var(--accent-color);
 }
 .loading {
   border-color: var(--accent-color) transparent transparent var(--accent-color);
+}
+.PlayPauseOverlay-playCircle-3ydPYX {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+}
+.SeekBar-seekBarFill-1Lcu0w {
+  background-color: var(--accent-color);
+}
+.SeekBar-seekBarBuffer-3bUz95 {
+  background-color: var(--accent-color);
+  opacity: .2;
+}
+.VolumeSlider-fill-3XkYyD {
+  background-color: var(--accent-color);
+}
+.IconButton-isActive-1_AJJ- {
+  color: var(--accent-color);
+}
+.IconButton-isActive-1_AJJ-:hover {
+  color: var(--accent-color);
+  opacity: .7
 }
