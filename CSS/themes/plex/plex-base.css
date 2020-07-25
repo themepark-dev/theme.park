@@ -164,4 +164,6 @@ background-color: rgba(0, 0, 0, 0.25);
 .SourceSidebarLink-isSelected-27-9-6 {
   box-shadow: inset 4px 0 0 0 var(--accent-color);
 }
-
+.PosterCardOverlayProgress-progressBar-3k291O {
+  background-color: var(--accent-color);
+}
