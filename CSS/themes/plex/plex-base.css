@@ -22,9 +22,8 @@
 border-color: var(--link-color);
 }
 .Link-isSelected-IRm9uM   {
-  color: white;
+  color: var(--accent-color);
 }
-
 .ServerSettingsServerMenuButton-button-24D7lE {
   -webkit-filter: none !important;
   filter: none !important;
