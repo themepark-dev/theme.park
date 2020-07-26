@@ -157,8 +157,7 @@
 <p><a href="https://github.com/gilbN/theme.park/wiki/Filebrowser">Filebrowser</a></p>
 </td>
 <td style="width: 160px; height: 40px; text-align: center;">
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<p><a href="https://github.com/gilbN/theme.park/wiki/PLPP"><img src="https://cdn.discordapp.com/attachments/374757488005873667/620267729726734336/plpp.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://github.com/gilbN/theme.park/wiki/PLPP">PLPP</a></p>
 </td>
 <td style="width: 10px; height: 40px; text-align: center;">
