@@ -115,6 +115,11 @@ background-color:var(--modal-bg-color) !important;
 .search-bar-background[_ngcontent-c2] {
     background-color: transparent;
 }
+@media (min-width: 979px) {
+.form-control-search[_ngcontent-c2] {
+    width: 100%;
+}
+}
 .form-control-custom {
     background-color: rgba(0, 0, 0, 0.25) !important;
 	border-radius: 0px;
