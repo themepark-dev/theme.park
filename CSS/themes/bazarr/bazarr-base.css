@@ -70,12 +70,12 @@ body {
   ::-webkit-scrollbar {
       width: 10px;
       height: 10px;
-      background: rgba(0, 0, 0, .25);
+      background: #1f1f1f;
   }
   ::-webkit-scrollbar-thumb {
-      -webkit-border-radius: 2px;
-      border-radius: 2px;
-      background-color: rgba(255, 255, 255, 0.25) !important;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.35) !important;
   }
   
   /* navbar and searchbar */
@@ -1036,7 +1036,7 @@ table.dataTable tr.dtrg-group td {
   background-color: rgba(0, 0, 0, .7);
 }
 .page-titles {
-  background: var(--main-bg-color);
+  background: rgb(0 0 0 / 25%);
   box-shadow: 0px 5px 20px rgb(0 0 0 / 20%);
 }
 .form-material .form-control, .form-material .form-control.focus, .form-material .form-control:focus {
@@ -1067,6 +1067,9 @@ table.dataTable tr.dtrg-group td {
 }
 .topbar ul.dropdown-user li a:hover {
   background: rgb(255 255 255 / 7%);
+}
+.buttons_bars {
+  position: absolute;
 }
 
 
@@ -1386,4 +1389,8 @@ button.dt-button.disabled, div.dt-button.disabled, a.dt-button.disabled {
 /* Chart */
 .chartjs-render-monitor {
   filter: invert(1);
+}
+.highlight pre code {
+  font-size: inherit;
+  color: #eee;
 }
