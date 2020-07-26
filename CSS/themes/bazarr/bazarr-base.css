@@ -1348,8 +1348,9 @@ button.dt-button.disabled, div.dt-button.disabled, a.dt-button.disabled {
 }
 
 /* Settings */
-  .dropdown-menu {
+  .dropdown-menu, .topbar .dropdown-menu {
   background: var(--modal-bg-color);
+  cursor: pointer;
   }
   .dropdown-item.active, .dropdown-item:active {
       color: #fff;
