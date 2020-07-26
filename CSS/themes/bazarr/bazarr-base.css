@@ -563,6 +563,7 @@ body {
       background-color: var(--button-color);
       border-color: var(--button-color);
       outline-style: none;
+      box-shadow: none;
   }
   .modal-footer > button:hover:not([class*="btn-primary"]):not([class*="btn-danger"]):not([class*="btn-success"]) {
       color: #FFF;
