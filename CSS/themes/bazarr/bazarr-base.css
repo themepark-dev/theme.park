@@ -1395,3 +1395,32 @@ button.dt-button.disabled, div.dt-button.disabled, a.dt-button.disabled {
   font-size: inherit;
   color: #eee;
 }
+/* Mobile */
+@media (max-width: 767px) {
+  .mini-sidebar .left-sidebar {
+      background: var(--modal-bg-color);
+  }
+  
+  #buttons_bars .col-8 {
+      -ms-flex: none !important;
+      flex: none !important; 
+      max-width: none !important;
+      padding-left: 5px;
+      padding-right: 5px;
+  }
+      
+  .page-titles .btn {
+      height: 50px !important;
+      width: 55px !important;
+      padding: 0 0;
+  }
+      
+  #buttons_bars .col-4 {
+      -ms-flex: none !important;
+      flex: none !important;
+      max-width: 100% !important;
+      position: inherit !important;
+      padding-right: 5px !important;
+      padding-bottom: 5px !important;
+  }
+  }
