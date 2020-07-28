@@ -1395,6 +1395,10 @@ button.dt-button.disabled, div.dt-button.disabled, a.dt-button.disabled {
   font-size: inherit;
   color: #eee;
 }
+.highlight {
+    background-color: rgb(255 255 255 / 0.08);
+    border-radius: 3px;
+}
 /* Mobile */
 @media (max-width: 767px) {
   .mini-sidebar .left-sidebar {
