@@ -1071,7 +1071,17 @@ table.dataTable tr.dtrg-group td {
 .buttons_bars {
   position: absolute;
 }
-
+.nav-item .typeahead__dropdown, .typeahead__list {
+  background-color: var(--modal-bg-color);
+  border: 1px solid transparent;
+  box-shadow: 0 0 10px 1px #000;
+}
+.nav-item .typeahead__list>li {
+  border-top: solid 1px rgba(255, 255, 255, .25);
+}
+.typeahead__dropdown .typeahead__dropdown-item:not([disabled]).active>a, .typeahead__dropdown .typeahead__dropdown-item:not([disabled])>a:focus, .typeahead__dropdown .typeahead__dropdown-item:not([disabled])>a:hover, .typeahead__list .typeahead__item:not([disabled]).active>a, .typeahead__list .typeahead__item:not([disabled])>a:focus, .typeahead__list .typeahead__item:not([disabled])>a:hover {
+  background-color: rgb(255 255 255 / .07);
+}
 
 /* Sidebar */
 .left-sidebar {
@@ -1165,6 +1175,7 @@ table.dataTable tr.dtrg-group td {
 .card-no-border .card {
   background: var(--modal-bg-color);
   border: solid 1px transparent;
+  box-shadow: 0 0 10px 1px #000;
 }
 
 #seriesDetails .badge-secondary {
