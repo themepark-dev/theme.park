@@ -1072,7 +1072,7 @@ table.dataTable tr.dtrg-group td {
   position: absolute;
 }
 .nav-item .typeahead__dropdown, .typeahead__list {
-  background-color: var(--modal-bg-color);
+  background: var(--modal-bg-color);
   border: 1px solid transparent;
   box-shadow: 0 0 10px 1px #000;
 }
