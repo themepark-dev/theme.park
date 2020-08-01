@@ -436,6 +436,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child:before 
 .btn-info.disabled {
   background: var(--button-color);
   border: 1px solid var(--button-color);
+  box-shadow: none;
 }
 
 .btn-info:hover,
@@ -489,6 +490,17 @@ a.dt-button.disabled {
   opacity: .5;
 }
 
+button.dt-button.disabled:hover,
+div.dt-button.disabled:hover,
+a.dt-button.disabled:hover {
+  color: #eee;
+  border: 1px solid var(--button-color);
+  background-color: var(--button-color);
+  background-image: none !important;
+  opacity: .5;
+  cursor: not-allowed !important;
+}
+
 .btn-light:not(:disabled):not(.disabled).active,
 .btn-light:not(:disabled):not(.disabled):active,
 .show>.btn-light.dropdown-toggle {
@@ -531,7 +543,12 @@ a.dt-button.disabled {
   border: 1px solid var(--button-color);
 }
 
-.btn-secondary:hover,
+.btn-secondary:hover {
+  background: var(--button-color-hover);
+  opacity: 1;
+  border: 1px solid var(--button-color-hover);
+}
+
 .btn-secondary.disabled:hover {
   background: var(--button-color-hover);
   opacity: 0.7;
@@ -693,9 +710,7 @@ a.dt-button.disabled {
 }
 
 /* General */
-#settings_form .restart {
-  color: var(--accent-color);
-}
+
 
 /* Notifications */
 .alert-secondary {
