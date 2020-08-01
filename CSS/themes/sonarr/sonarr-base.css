@@ -747,7 +747,7 @@ pre {
 	}
 
 	/* SEARCH DROPDOWN HEADER */
-	.SeriesSearchInput\/seriesContainer\/2yDTR {
+	.SeriesSearchInput\/containerOpen\/3F8xe .SeriesSearchInput\/seriesContainer\/2yDTR {
 		border: none !important;
         background: var(--modal-bg-color);
         color: #fff !important;
