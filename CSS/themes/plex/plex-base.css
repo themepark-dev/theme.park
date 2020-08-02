@@ -267,3 +267,7 @@ a:hover {
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
   color: var(--accent-color);
 }
+.edit-lock-addon.locked {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
