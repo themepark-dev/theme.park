@@ -230,6 +230,9 @@ a:hover {
 .Link-isSelected-1XdDvu {
   color: var(--accent-color);
 }
+.Link-link-2n0yJn:hover {
+  color: #fff !important;
+}
 .SessionTile-playProgressPercent-1_FcEg {
   background-color: var(--accent-color);
 }
@@ -256,5 +259,11 @@ a:hover {
   box-shadow: 0 2px 0 0 var(--accent-color);
 }
 .MultiSelectPageHeader-selectedTitle-1kn-xo {
+  color: var(--accent-color);
+}
+.PlexPassUpsell-icon-1r94uI {
+  color: var(--accent-color);
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
   color: var(--accent-color);
 }
