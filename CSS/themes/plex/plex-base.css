@@ -237,3 +237,24 @@ a:hover {
   background-color: var(--accent-color);
   opacity: .3;
 }
+.edit-section-modal .wizard-blocks-group>.wizard-block.selected, .edit-section-modal .wizard-blocks-group>.wizard-block.selected:hover {
+  color: var(--accent-color);
+}
+.ServerMenuItem-selectedServerMenuItem-jaUTXA {
+  color: var(--accent-color);
+}
+.ServerMenuItem-selectedIcon-dhK05- {
+  color: var(--accent-color);
+}
+.NavBarActivityMenuStatusItem-statusButtonIndicator-3D2d1i {
+  color: var(--accent-color);
+}
+.MetadataTitleProgress-unwatchedCircle-25KKnh {
+  background-color: var(--accent-color);
+}
+.MultiSelectPageHeader-multiSelectPageHeader-MIQA1B {
+  box-shadow: 0 2px 0 0 var(--accent-color);
+}
+.MultiSelectPageHeader-selectedTitle-1kn-xo {
+  color: var(--accent-color);
+}
