@@ -271,3 +271,6 @@ a:hover {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
 }
+.media-poster-container.selected .media-poster:after {
+  color: #eee;
+}
