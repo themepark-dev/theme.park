@@ -445,3 +445,172 @@ a>h4 {
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 3px #000;
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 3px #000;
 }
+
+
+
+/* OMBI V4*/
+ 
+  
+  body {
+      background: var(--main-bg-color);
+  }
+  a {
+      color: var(--accent-color);
+  }
+  a:hover {
+      color: var(--accent-color-hover);
+  }
+  
+  .mat-drawer-container, .dark .mat-drawer-container {
+      background: var(--main-bg-color);
+      color: var(--text);
+  }
+  
+  
+  /* HEADER */
+  
+  .mat-toolbar.mat-primary, .dark .mat-toolbar.mat-primary {
+      background: rgba(0, 0, 0, .25);
+      color: var(--text);
+  }
+  .dark .mat-toolbar, .mat-toolbar,.mat-list-base .mat-list-item, .mat-list-base .mat-list-option {
+      color: var(--text);
+  }
+  
+      /* SEARCH */
+      .dark .mat-autocomplete-panel, .mat-autocomplete-panel {
+      background: var(--modal-bg-color);
+      color: var(--text);
+      }
+  
+  
+  
+  /* SIDEBAR */
+  .dark .mat-drawer, .dark .mat-drawer.mat-drawer-push, .mat-drawer, .mat-drawer.mat-drawer-push {
+      background-color: rgba(0, 0, 0, .25);
+      color: var(--text)
+  }
+  .dark .mat-drawer-side {
+      border-right: 1px solid transparent;
+  }
+  .dark .active-list-item, .active-list-item, .active-list-item {
+      background: var(--accent-color) !important;
+      background-color: var(--accent-color) !important;
+      color: var(--text)!important;
+      font-weight: 500;
+  }
+  
+  /* CARDS */
+  .mat-card, .dark .mat-card {
+      background: rgb(0 0 0 / 25%);
+      color: var(--text);
+  }
+  .grow:hover {
+      transform: scale(1.1);
+      color: var(--text-hover)
+  }
+  .notrequested {
+      border-bottom: 3px solid var(--accent-color) !important;
+  }
+  
+  /* BUTTONS */
+  .mat-fab.mat-accent, .mat-flat-button.mat-accent, .mat-mini-fab.mat-accent, .mat-raised-button.mat-accent,
+  .dark .mat-fab.mat-accent, .dark .mat-flat-button.mat-accent, .dark .mat-mini-fab.mat-accent, .dark .mat-raised-button.mat-accent {
+      background-color: var(--button-color);
+      color: var(--text)
+  }
+  
+  .dark .mat-fab.mat-primary, .dark .mat-flat-button.mat-primary, .dark .mat-mini-fab.mat-primary, .dark .mat-raised-button.mat-primary,
+  .mat-fab.mat-primary, .mat-flat-button.mat-primary, .mat-mini-fab.mat-primary, .mat-raised-button.mat-primary {
+      background: rgba(255, 255, 255, .1);
+  }
+  
+  .btn-group-vertical>.btn.active, .btn-group-vertical>.btn:active, .btn-group-vertical>.btn:focus, .btn-group-vertical>.btn:hover, .btn-group>.btn.active, .btn-group>.btn:active, .btn-group>.btn:focus, .btn-group>.btn:hover {
+      z-index: 1;
+      background: var(--button-color-hover) !important;
+  }
+  .btn-group>.btn-group:not(:first-child), .btn-group>.btn:not(:first-child) {
+      margin-left: 0px;
+  }
+  .mat-raised-button:not([class*=mat-elevation-z]), .dark .mat-raised-button:not([class*=mat-elevation-z]) {
+      box-shadow: none;
+  }
+  button:focus {
+      outline: 1px dotted;
+      outline: none;
+  }
+  /* MODAL */
+  .dark .mat-dialog-container,.mat-dialog-container {
+      background: var(--modal-bg-color);
+      color: var(--text);
+  }
+  
+  div.dark .details, .details {
+     background: transparent !important;
+  }
+  
+  
+  /* SETTINGS */
+      /* Table */
+          .mat-table, .dark .mat-table {
+              background: #0000002e;
+              color: var(--text)
+          }
+          .mat-cell, .mat-footer-cell,.dark .mat-cell, .dark .mat-footer-cell {
+              color: var(--text)
+          }
+      /* Drop down menu*/
+          .dark .mat-menu-panel,.mat-menu-panel {
+              background: var(--modal-bg-color);
+          }
+  
+  /* MOVEI TV PAGE*/
+  
+  .dark .mat-chip.mat-standard-chip.mat-chip-selected.mat-accent, .mat-chip.mat-standard-chip.mat-chip-selected.mat-accent {
+      background-color: var(--accent-color);
+      color: var(--text);
+  }
+  .mat-expansion-panel, .dark .mat-expansion-panel {
+      background: rgb(0 0 0 / 25%);
+      color: var(--text) !important;
+  }
+  .mat-expansion-panel-header-title {
+      color: var(--text);
+  }
+  #info-wrapper .sidebar .poster {
+      border: 3px solid rgb(255 255 255 / 10%);
+      box-shadow: none;
+  }
+  .ui-carousel-next, body .ui-carousel .ui-carousel-content .ui-carousel-prev {
+      background-color: var(--accent-color);
+      border: 1px solid var(--accent-color);
+      border-radius: 50%;
+      margin: .2em;
+      color: #fff;
+      transition: color .2s;
+  }
+  body .ui-carousel .ui-carousel-dots-container .ui-carousel-dot-item.ui-state-highlight .ui-carousel-dot-icon {
+      background-color: var(--accent-color);
+  }
+  #summary-wrapper .grey-text {
+      color: var(--text);
+  }
+  #info-wrapper .media-icons {
+      color: var(--text)!important;
+  }
+  #info-wrapper .media-icons:hover {
+      color: var(--text-hover)!important;
+  }
+  #info-wrapper .grow-social:hover {
+      color: var(--text-hover)!important;
+  }
+  
+  #info-wrapper .dark .mat-fab, .dark .mat-flat-button, .dark .mat-mini-fab, .dark .mat-raised-button,#info-wrapper .mat-fab, .mat-flat-button, .mat-mini-fab, .mat-raised-button {
+      color: #fff;
+      background-color: var(--button-color);
+  }
+  #info-wrapper .dark .mat-mini-fab:hover, #info-wrapper .mat-raised-button:hover {
+      color: #fff;
+      background-color: var(--button-color-hover);
+  }
+  
