@@ -192,3 +192,48 @@ background-color: rgba(0, 0, 0, 0.25);
   color: var(--accent-color);
   opacity: .7
 }
+.MetadataPosterCardFace-isSelected-1XUgkl {
+  box-shadow: 0 0 0 2px var(--accent-color);
+}
+.SelectButton-isSelected-3mX245 .SelectButton-selectCircle-3tdvGt {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  color: #eee;
+}
+.btn-gray.selected {
+  color: var(--accent-color);
+}
+a {
+  color: var(--link-color);
+}
+a:hover {
+  color: #eee;
+}
+.media-poster-container.selected .media-poster {
+  -webkit-box-shadow: 0 0 4px rgba(0,0,0,.3), inset 0 0 0 3px var(--accent-color);
+  box-shadow: 0 0 4px rgba(0,0,0,.3), inset 0 0 0 3px var(--accent-color);
+}
+.media-poster-container.selected .media-poster:before {
+  border-color: var(--accent-color) var(--accent-color) transparent transparent;
+}
+.force-hover .media-poster-container .media-poster, .force-hover .media-poster-container .media-poster-fade, .media-poster-container:focus .media-poster, .media-poster-container:focus .media-poster-fade, .media-poster-container:hover .media-poster, .media-poster-container:hover .media-poster-fade {
+  -webkit-box-shadow: 0 0 4px rgba(0,0,0,.3), inset 0 0 0 2px var(--accent-color);
+  box-shadow: 0 0 4px rgba(0,0,0,.3), inset 0 0 0 2px var(--accent-color);
+}
+.label-primary {
+  background-color: var(--button-color);
+}
+.label-primary[href]:focus, .label-primary[href]:hover {
+  background-color: var(--button-color-hover);
+  background-color: var(--button-color-hover);
+}
+.Link-isSelected-1XdDvu {
+  color: var(--accent-color);
+}
+.SessionTile-playProgressPercent-1_FcEg {
+  background-color: var(--accent-color);
+}
+.SessionTile-transcodeProgressPercent-K1k4ZQ {
+  background-color: var(--accent-color);
+  opacity: .3;
+}
