@@ -732,7 +732,7 @@ pre {
 .ModalHeader-modalHeader-gpcvG {
     background: var(--modal-bg-color);
     color: #fff;
-    border-bottom: 1px solid hsla(0,0%,100%,.08);
+    border-bottom: 1px solid var(--accent-color);
 }
 .ModalContent-modalContent--txrl {
     background: var(--modal-bg-color);
@@ -741,7 +741,7 @@ pre {
 .ModalFooter-modalFooter-1N5Ku {
     background: var(--modal-bg-color);
     color: #fff;
-    border-top: 1px solid hsla(0,0%,100%,.08);
+    border-top: 1px solid var(--accent-color);
 }
 .ModalContent-closeButton-37Puk:hover {
     color: #fff;
@@ -945,7 +945,7 @@ pre {
     }
     .PageSidebarItem-status-34pTa > .Label-info-3YD3Y {
         border-color: transparent;
-        background-color: var(--queue-color);
+        background-color: var(--accent-color);
         color: #fff;
     }
     .MovieDetails-selectedTab-3hMLN {
@@ -1069,7 +1069,7 @@ pre {
 
 	.FieldSet-legend-3x6NF {
     color: #FFF;
-    border-bottom: 1px solid hsla(0,0%,100%,.08);
+    border-bottom: 1px solid var(--accent-color);
 	}
 	.TableRow-row-33xJE:hover {
     background-color: hsla(0,0%,100%,.08);
