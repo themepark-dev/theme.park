@@ -842,6 +842,12 @@ background-color: hsla(0,0%,100%,.25) !important;
   }
 
 /* Readarr */
+
+    /* Library */
+
+    .AuthorIndexPoster-link-2tsK2, .AuthorIndexPoster-title-10O0m {
+        background-color: rgba(255, 255, 255, 0.08);
+    }
     /* Add New*/
     .AddNewAuthorSearchResult-underlay-snqgD, .AddNewBookSearchResult-underlay-2zx_k {
         background-color: transparent;
