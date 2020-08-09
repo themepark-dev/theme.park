@@ -964,9 +964,9 @@ pre {
 		color: hsla(0,0%,100%,.7);
 	}
 	/* POSTERS */
-	.MovieIndexPoster-title-Umirt, .MovieIndexPoster-nextAiring-1FZy6, .MovieIndexPosterInfo-info-2JsCg, .MovieIndexPosterInfo-info-2Oh-5, .MovieCreditPoster-title-EGksL {
+	.MovieIndexPoster-title-Umirt, .MovieIndexPoster-nextAiring-1FZy6, .MovieIndexPosterInfo-info-2JsCg, .MovieIndexPosterInfo-info-2Oh-5, .MovieCreditPoster-title-EGksL, .AddListMoviePoster-title-2qKvg {
 		background-color: rgba(255, 255, 255, 0.08);
-			color: #fff;
+		color: #fff;
 	}
 	/* HOVEL LABELS */
 	.Label-default-2zdw6 {
