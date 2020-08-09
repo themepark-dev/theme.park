@@ -748,7 +748,13 @@ a.dt-button.disabled:hover {
   -moz-background-size: auto, cover;
   -o-background-size: auto, cover;
 }
+.modal-header {
+  border-bottom: 1px solid var(--accent-color);
 
+}
+.modal-footer {
+  border-top: 1px solid var(--accent-color);
+}
 .modal-content .badge-secondary {
   color: #fff;
   background-color: var(--accent-color);
@@ -780,13 +786,16 @@ a.dt-button.disabled:hover {
     background: var(--modal-bg-color);
   }
 
-  #buttons_bars .col-8 {
+#buttons_bars .col-8 {
     -ms-flex: none !important;
-    flex: none !important;
-    max-width: none !important;
+    flex: auto;
+    max-width: fit-content;
     padding-left: 5px;
     padding-right: 5px;
-  }
+    display: inline-grid;
+    position: absolute;
+    z-index: 11;
+}
 
   .page-titles .btn {
     height: 50px !important;
@@ -794,12 +803,14 @@ a.dt-button.disabled:hover {
     padding: 0 0;
   }
 
-  #buttons_bars .col-4 {
+#buttons_bars .col-4 {
     -ms-flex: none !important;
-    flex: none !important;
-    max-width: 100% !important;
-    position: inherit !important;
+    flex: auto;
+    display: grid;
     padding-right: 5px !important;
     padding-bottom: 5px !important;
-  }
+    position: inherit;
+    z-index: 10;
+    padding-left: 85%;
+}
 }
