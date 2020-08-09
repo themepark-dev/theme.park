@@ -33,24 +33,24 @@
 <tbody>
 <tr style="height: 98px;">
 <td style="width: 110px; height: 98px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Sonarr---Radarr---Lidarr---Bazarr-Themes"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://raw.githubusercontent.com/Sonarr/Sonarr/phantom-develop/Logo/sonarr-simple.svg" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Sonarr---Radarr---Lidarr---Bazarr-Themes">Sonarr</a></p>
+<p><a href="https://github.com/gilbN/theme.park/wiki/Sonarr---Radarr---Lidarr---Bazarr-Readarr-Themes"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://raw.githubusercontent.com/Sonarr/Sonarr/phantom-develop/Logo/sonarr-simple.svg" alt="" width="48" height="48" /></a></p>
+<p><a href="https://github.com/gilbN/theme.park/wiki/Sonarr---Radarr---Lidarr---Bazarr-Readarr-Themes">Sonarr</a></p>
 </td>
 <td style="width: 160px; height: 98px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Sonarr---Radarr---Lidarr---Bazarr-Themes"><img src="https://raw.githubusercontent.com/Radarr/Radarr/aphrodite/Logo/Radarr.svg" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Sonarr---Radarr---Lidarr---Bazarr-Themes">Radarr</a></p>
+<p><a href="https://github.com/gilbN/theme.park/wiki/Sonarr---Radarr---Lidarr---Bazarr-Readarr-Themes"><img src="https://raw.githubusercontent.com/Radarr/Radarr/aphrodite/Logo/Radarr.svg" width="48" height="48" /></a></p>
+<p><a href="https://github.com/gilbN/theme.park/wiki/Sonarr---Radarr---Lidarr---Bazarr-Readarr-Themes">Radarr</a></p>
 </td>
 <td style="width: 10px; height: 98px; text-align: center;">
-<p style="text-align: center;"><a href="https://github.com/gilbN/theme.park/wiki/Sonarr---Radarr---Lidarr---Bazarr-Themes"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-develop/plugins/images/tabs/lidarr.png" width="48" height="48" /></a></p>
-<p style="text-align: center;"><a href="https://github.com/gilbN/theme.park/wiki/Sonarr---Radarr---Lidarr---Bazarr-Themes">Lidarr</a></p>
+<p style="text-align: center;"><a href="https://github.com/gilbN/theme.park/wiki/Sonarr---Radarr---Lidarr---Bazarr-Readarr-Themes"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-develop/plugins/images/tabs/lidarr.png" width="48" height="48" /></a></p>
+<p style="text-align: center;"><a href="https://github.com/gilbN/theme.park/wiki/Sonarr---Radarr---Lidarr---Bazarr-Readarr-Themes">Lidarr</a></p>
 </td>
 <td style="width: 90px; height: 98px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Sonarr---Radarr---Lidarr---Bazarr-Themes"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-develop/plugins/images/tabs/bazarr.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Sonarr---Radarr---Lidarr---Bazarr-Themes">Bazarr</a></p>
+<p><a href="https://github.com/gilbN/theme.park/wiki/Sonarr---Radarr---Lidarr---Bazarr-Readarr-Themes"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-develop/plugins/images/tabs/bazarr.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://github.com/gilbN/theme.park/wiki/Sonarr---Radarr---Lidarr---Bazarr-Readarr-Themes">Bazarr</a></p>
 </td>
 <td style="width: 136px; height: 98px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Lazylibrarian"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-develop/plugins/images/tabs/lazylibrarian.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Lazylibrarian">Lazylibrarian</a></p>
+<p><a href="https://github.com/gilbN/theme.park/wiki/Sonarr---Radarr---Lidarr---Bazarr-Readarr-Themes"><img src="https://raw.githubusercontent.com/Readarr/Readarr/develop/Logo/256.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://github.com/gilbN/theme.park/wiki/Sonarr---Radarr---Lidarr---Bazarr-Readarr-Themes">Readarr</a></p>
 </td>
 <td style="width: 140px; height: 98px; text-align: center;">
 <p><a href="https://github.com/gilbN/theme.park/wiki/Plex"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-master/plugins/images/tabs/plex.png" alt="" width="48" height="48" /></a></p>
@@ -169,8 +169,8 @@
 <p><a href="https://github.com/gilbN/theme.park/wiki/The-Lounge">The Lounge</a></p>
 </td>
 <td style="width: 90px; height: 40px; text-align: center;">
-<p><a href="https://github.com/Readarr/Readarr"><img src="https://raw.githubusercontent.com/Readarr/Readarr/develop/Logo/256.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Readarr">Readarr</a></p>
+<p><a href="https://github.com/gilbN/theme.park/wiki/Lazylibrarian"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-develop/plugins/images/tabs/lazylibrarian.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://github.com/gilbN/theme.park/wiki/Lazylibrarian">Lazylibrarian</a></p>
 </td>
 <td style="width: 140px; height: 40px; text-align: center;">&nbsp;</td>
 <td style="width: 109px; height: 40px; text-align: center;">&nbsp;</td>
