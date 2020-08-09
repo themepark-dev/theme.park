@@ -69,7 +69,7 @@ background-color: hsla(0,0%,100%,.25) !important;
   .ModalHeader-modalHeader-gpcvG {
       background: var(--main-bg-color);
       color: #fff;
-      border-bottom: 1px solid hsla(0,0%,100%,.08);
+      border-bottom: 1px solid var(--accent-color);
   }
   .ModalContent-modalContent--txrl {
       background: var(--main-bg-color);
@@ -78,7 +78,7 @@ background-color: hsla(0,0%,100%,.25) !important;
   .ModalFooter-modalFooter-1N5Ku {
       background: var(--main-bg-color);
       color: #fff;
-      border-top: 1px solid hsla(0,0%,100%,.08);
+      border-top: 1px solid var(--accent-color);
   }
   
   /* INPUT */
@@ -86,7 +86,7 @@ background-color: hsla(0,0%,100%,.25) !important;
       background-color: transparent;
       color: #fff;
       }
-      .SelectInput-select-1qCdc {
+      .SelectInput-select-1qCdc:focus {
           background-color: #1e1e1e !important;
       }
       .AutoSuggestInput-suggestionsList-_bVXO, .AutoSuggestInput-suggestionsContainerOpen-3TAB7, .AutoSuggestInput-suggestionsContainer-3MmlD {
@@ -226,7 +226,7 @@ background-color: hsla(0,0%,100%,.25) !important;
           color: #FFF
       }
       .Input-input-2YWzR:focus {
-      outline: 0;
+      outline: none;
       border-color: transparent;
       box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 8px rgba(0, 0, 0, 0);
       background-color: rgba(0, 0, 0, .25);
@@ -249,7 +249,7 @@ background-color: hsla(0,0%,100%,.25) !important;
   
       .FieldSet-legend-3x6NF {
       color: #FFF;
-      border-bottom: 1px solid hsla(0,0%,100%,.08);
+      border-bottom: 1px solid var(--accent-color);
       }
       .TableRow-row-33xJE:hover {
       background-color: hsla(0,0%,100%,.08);
@@ -365,20 +365,37 @@ background-color: hsla(0,0%,100%,.25) !important;
       border: none;
       color: #c2c6c8;
       }
-  
+
+      /* INDEXERS */
+      .Indexer-enabled-1kjis .Label-success-1pfcC {
+        border-color: var(--accent-color);
+        background-color: var(--accent-color);
+      }     
       /* DOWNLOAD CLIENTS */
       .DownloadClients-center-FvACx {
       background-color: transparent;
       border: none;
       color: #c2c6c8;
       }
-  
+      .DownloadClient-enabled-h2UaL .Label-success-1pfcC {
+        border-color: var(--accent-color);
+        background-color: var(--accent-color);
+      } 
+      /* IMPORT LISTS */
+      .ImportList-enabled-3lfv- .Label-success-1pfcC {
+        border-color: var(--accent-color);
+        background-color: var(--accent-color);
+      } 
       /* CONNECTIONS */
       .Notifications-center-8iwmy {
       background-color: transparent;
       border: none;
       color: #c2c6c8;
       }
+      .Card-overlay-3Uxw8 .Label-success-1pfcC {
+        border-color: var(--accent-color);
+        background-color: var(--accent-color);
+      } 
   
       /* LOG */
       .Alert-info-1J8mE {
@@ -517,6 +534,7 @@ background-color: hsla(0,0%,100%,.25) !important;
   .ArtistSearchInput-highlighted-2oxYA {
       background-color: hsla(0,0%,100%,.08)
   }
+
   
   /* Sidebar */
   @media only screen and (max-width: 768px) {
@@ -798,6 +816,11 @@ background-color: hsla(0,0%,100%,.25) !important;
       border: none;
       color: #c2c6c8;
   }
+  .KeyValueListInputItem-keyInput-3YYEs, .KeyValueListInputItem-valueInput-3zlQA {
+    border: none;
+    background: transparent;
+    color: #FFF;
+}
   .Indexers-center-3HUez, .Restrictions-center-3cS8T, .DownloadClients-center-30cx9, .ImportLists-center-17Qdu, .Notifications-center-13jM2 {
       display: inline-block;
       padding: 15px 20px 15px;
@@ -837,6 +860,9 @@ background-color: hsla(0,0%,100%,.25) !important;
             border: none;
             background-color: rgba(0, 0, 0, .25);
         }
+        .BookDetails-selectedTab-3h-l9 {
+            border-bottom: 4px solid var(--accent-color);
+        }
         /*Series Tab*/
         .AuthorDetailsSeries-bookType-2OKXb{
             border: none;
@@ -846,7 +872,7 @@ background-color: hsla(0,0%,100%,.25) !important;
             border: none;
             background-color:  rgba(0, 0, 0, .25);
         }
-        AuthorDetailsSeries-bookTypeLabel-2WwAO {
+        .AuthorDetailsSeries-bookTypeLabel-2WwAO {
             color: #FFF;    
         }
         .AuthorDetailsSeries-bookCount-2OuhM {
@@ -855,6 +881,18 @@ background-color: hsla(0,0%,100%,.25) !important;
         /*Search Tab*/
         .MenuButton-menuButton-3nh0N {
             color: #FFF;
+        }
+        .AuthorDetails-selectedTab-V9sSh {
+            border-bottom: 4px solid var(--accent-color);
+        }
+        .AuthorDetails-metadataMessage-oxZc8 {
+            color: #eee;
+        }
+        .AuthorDetails-metadataMessage-oxZc8 .Link-to-6fmSq {
+            color: var(--accent-color);
+        }
+        .AuthorDetails-metadataMessage-oxZc8 .Link-to-6fmSq:hover {
+          color: var(--accent-color-hover);
         }
     /*Specific Book Page*/
     .BookDetails-tab-3ODdT {
@@ -865,10 +903,11 @@ background-color: hsla(0,0%,100%,.25) !important;
         .RootFolders-center-XcFPy {
             border: 1px solid transparent;
             background-color: transparent;
+            color: #c2c6c8;
         }
         /* General - Log Level*/
         .EnhancedSelectInput-options-3yy65 {
-            border: 1px solid #dde6e9;
+            border: 1px solid transparent;
             border-radius: 4px;
             background-color: #1e1e1e;
         }
