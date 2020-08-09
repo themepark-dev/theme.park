@@ -68,7 +68,7 @@ background-color: hsla(0,0%,100%,.25) !important;
   .ModalHeader-modalHeader-gpcvG {
       background: var(--main-bg-color);
       color: #fff;
-      border-bottom: 1px solid hsla(0,0%,100%,.08);
+      border-bottom: 1px solid var(--accent-color);
   }
   .ModalContent-modalContent--txrl {
       background: var(--main-bg-color);
@@ -77,7 +77,7 @@ background-color: hsla(0,0%,100%,.25) !important;
   .ModalFooter-modalFooter-1N5Ku {
       background: var(--main-bg-color);
       color: #fff;
-      border-top: 1px solid hsla(0,0%,100%,.08);
+      border-top: 1px solid var(--accent-color);
   }
   
   /* INPUT */
@@ -248,7 +248,7 @@ background-color: hsla(0,0%,100%,.25) !important;
   
       .FieldSet-legend-3x6NF {
       color: #FFF;
-      border-bottom: 1px solid hsla(0,0%,100%,.08);
+      border-bottom: 1px solid var(--accent-color);
       }
       .TableRow-row-33xJE:hover {
       background-color: hsla(0,0%,100%,.08);
@@ -364,19 +364,39 @@ background-color: hsla(0,0%,100%,.25) !important;
       border: none;
       color: #c2c6c8;
       }
-  
+      /* INDEXERS */
+      .Indexer-enabled-1kjis .Label-success-1pfcC {
+        border-color: transparent;
+        background-color: var(--accent-color);
+        color: #fff;  
+      }
       /* DOWNLOAD CLIENTS */
       .DownloadClients-center-FvACx {
       background-color: transparent;
       border: none;
       color: #c2c6c8;
       }
-  
+      .DownloadClient-enabled-h2UaL .Label-success-1pfcC {
+        border-color: transparent;
+        background-color: var(--accent-color);
+        color: #fff;  
+      }
+      /* IMPORT LISTS */
+      .ImportList-enabled-3lfv- .Label-success-1pfcC {
+        border-color: transparent;
+        background-color: var(--accent-color);
+        color: #fff;  
+      }
       /* CONNECTIONS */
       .Notifications-center-8iwmy {
       background-color: transparent;
       border: none;
       color: #c2c6c8;
+      }
+      .Card-overlay-3Uxw8 .Label-success-1pfcC {
+        border-color: transparent;
+        background-color: var(--accent-color);
+        color: #fff;  
       }
   
       /* LOG */
