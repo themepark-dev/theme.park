@@ -168,7 +168,10 @@
 <p><a href="https://github.com/gilbN/theme.park/wiki/The-Lounge"><img src="https://raw.githubusercontent.com/thelounge/thelounge/master/client/img/logo-grey-bg-152x152px.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://github.com/gilbN/theme.park/wiki/The-Lounge">The Lounge</a></p>
 </td>
-<td style="width: 136px; height: 40px; text-align: center; vertical-align: middle;">&nbsp;</td>
+<td style="width: 90px; height: 40px; text-align: center;">
+<p><a href="https://github.com/Readarr/Readarr"><img src="https://raw.githubusercontent.com/Readarr/Readarr/develop/Logo/256.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://github.com/gilbN/theme.park/wiki/Readarr">Readarr</a></p>
+</td>
 <td style="width: 140px; height: 40px; text-align: center;">&nbsp;</td>
 <td style="width: 109px; height: 40px; text-align: center;">&nbsp;</td>
 </tr>
