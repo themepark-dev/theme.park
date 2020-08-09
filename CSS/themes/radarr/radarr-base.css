@@ -925,7 +925,7 @@ pre {
     .IconButton-button-2qiGi {
         color: #bac5cc;
     }
-    .Label-default-2AF1C, .Label-success-1pfcC {
+    .Label-default-2AF1C {
         border-color: transparent;
         background-color: var(--accent-color);
     }
@@ -1261,6 +1261,10 @@ pre {
     .Restrictions-center-3ngzk {
         border: 1px solid transparent;
         background-color: transparent;
+    }
+    .Indexer-enabled-1kjis .Label-success-1pfcC {
+        border-color: transparent;
+        background-color: var(--accent-color);
     }
     /* LISTS */
     .NetImports-center-3otL- {
