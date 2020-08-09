@@ -861,6 +861,12 @@ background-color: hsla(0,0%,100%,.25) !important;
     .AuthorDetails-tab-eL4hG {
         color: #FFF;
     }
+    .AuthorIndexBanner-title-1PHcC {
+        background-color: hsla(0,0%,100%,.08);
+    }
+    .AuthorIndexOverview-container-3t7QV:hover .AuthorIndexOverview-content-1v93V {
+        background-color: hsla(0,0%,100%,.08);
+    }
         /*Books Tab*/
         .AuthorDetailsSeason-bookType-4wzA5 {
             border: none;
@@ -868,6 +874,14 @@ background-color: hsla(0,0%,100%,.25) !important;
         }
         .BookDetails-selectedTab-3h-l9 {
             border-bottom: 4px solid var(--accent-color);
+        }
+        .BookshelfBook-book-3kzwe {
+            border: 1px solid transparent;
+            background-color: rgba(0, 0, 0, .25) !important;;
+        }
+        .BookshelfBook-missingWanted-QRmah {
+            background-color: #f05050;
+            color: #fff;
         }
         /*Series Tab*/
         .AuthorDetailsSeries-bookType-2OKXb{
