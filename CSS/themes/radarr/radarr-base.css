@@ -903,7 +903,7 @@ pre {
     background-color: rgba(0, 0, 0, .25) !important;
 	}
 	.Popover-title-326tA, .SeasonInfo-title-1tid_, .Popover-body-10Yh7 {
-		background-color: #232323 !important;
+		background-color: var(--modal-bg-color) !important;
 	}
 	.Tooltip-tooltipContainer-2693s {
 	color: #fff;
@@ -1247,14 +1247,24 @@ pre {
 	background-color: transparent;
     border: none;
     color: #c2c6c8;
-	}
+    }
+    .DownloadClient-enabled-h2UaL .Label-success-1pfcC {
+    border-color: transparent;
+    background-color: var(--accent-color);
+    color: #fff;
+    }
 
 	/* CONNECTIONS */
 	.Notifications-center-8iwmy {
 	background-color: transparent;
     border: none;
     color: #c2c6c8;
-	}
+    }
+    .Card-overlay-3Uxw8 .Label-success-1pfcC {
+    border-color: transparent;
+    background-color: var(--accent-color);
+    color: #fff;  
+    }
 
 	/* LOG */
 	.Alert-info-1J8mE {
