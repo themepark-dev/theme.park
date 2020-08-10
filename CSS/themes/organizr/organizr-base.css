@@ -873,9 +873,6 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
     width: calc(100% - 40px);
     margin: auto;
 }
-#splashScreen .flexbox {
-    margin: 0;
-}
  @media (max-width: 375px) {
 #splashScreen div[id^=menu-] {
     max-width: 88px !important;
@@ -897,42 +894,53 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
 #splashScreen div[id^=menu-] {
     background: transparent;
     border-radius: 3px;
-    max-width: 100px;
-    height: 155px;
+    max-width: 115px;
     margin: 24px 20px 0 0!important;
-    padding: 0;
+    padding: 25px;
 }
 #splashScreen .bg-org.fc-event {
     background-color: transparent !important;
     border-radius: 1000px;
     height: 80px!important;
-    width: 80px!important;
-    margin: 25px auto 0;
-    padding: 0;
+    width: 80px !important;
+    background-position: center;
 }
 
 #splashScreen .homepage-text {
-    width: 120px;
-    background: transparent;
-    color: #FFF;
-    font-size: 14px;
-    text-align: center;
-    margin: 0;
-    position: absolute;
-    padding: 5px;
-    bottom: -50px;
-    left: -20px;
+    display: none;
 } 
 
 #splashScreen .flexbox:last-of-type .bg-danger {
-    background: rgba(255,255,255,.25) !important;
+    background: transparent !important;
     color: #fff!important;
     border: 0!important;
-    height: auto;
-    padding: 12px;
 	border-radius: 100px;
-	height: 80px!important;
-    width: 80px!important;
+	height: 0px!important;
+    text-align: center;
+    
+}
+#splashScreen .bottom-close-splash {
+    position: relative !important;
+    width: 0px ;
+    right: 0px ;
+    bottom: 0px ;
+}
+
+#splashScreen .flexbox:last-of-type .bg-danger:before {
+	font-family: "FontAwesome";
+	font-size: 40px;
+    content: "\f00d";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.7);
+    -webkit-transform: scale(1.1) !important;
+    transform: scale(1.1) !important;
+	-webkit-animation-name: none; 
+    animation-name: none;
+    text-align: center;
+    padding-top: inherit;
+
 }
 #splashScreen .flexbox:last-of-type {
     padding: 0!important;
@@ -960,11 +968,9 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
     transition-property: transform;
 	-webkit-transform-origin: center;
     transform-origin: center;
-	height: 130px;
 }
 .splash-badge {
     color: #fff;
-    background: #cc7b19;
     width: 80px!important;
     height: 80px;
     font-size: 60px;
@@ -972,7 +978,10 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
 }
 .splash-badge i {
     position: absolute;
-    left: 15px;
+    left: 10px;
+    top: 10px;
+    margin: 0px;
+    padding: 0px;
 }
 .splash-badge i.fa-home:before {
     position: absolute !important;
