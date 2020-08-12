@@ -903,7 +903,7 @@ pre {
     background-color: rgba(0, 0, 0, .25) !important;
 	}
 	.Popover-title-326tA, .SeasonInfo-title-1tid_, .Popover-body-10Yh7 {
-		background-color: var(--modal-bg-color) !important;
+		background: var(--modal-bg-color) !important;
 	}
 	.Tooltip-tooltipContainer-2693s {
 	color: #fff;
