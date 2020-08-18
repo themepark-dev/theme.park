@@ -405,6 +405,9 @@ a:focus, a:hover {
 .nav>li>a:focus, .nav>li>a:hover {
     background-color: hsla(0,0%,100%,.08);
 }
+.TableRowCell-cell-2fbg4 .ProgressBar-primary-3YDfb {
+    background-color: var(--accent-color);
+}
 
 /* Season Pass */
 .alert-info {
@@ -857,9 +860,7 @@ pre {
   .TableRowCell-cell-2fbg4 .ProgressBar-container-14z4A {
     background-color: rgba(0, 0, 0, 0.25);
 }
-.ProgressBar-primary-3YDfb {
-    background-color: var(--accent-color);
-}
+
 .ProgressBar-purple-3DlHm {
     background-color: var(--accent-color);
 }
