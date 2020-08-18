@@ -365,28 +365,16 @@ background-color: hsla(0,0%,100%,.25) !important;
       color: #c2c6c8;
       }
       /* INDEXERS */
-      .Indexer-enabled-1kjis .Label-success-1pfcC {
-        border-color: transparent;
-        background-color: var(--accent-color);
-        color: #fff;  
-      }
+
       /* DOWNLOAD CLIENTS */
       .DownloadClients-center-FvACx {
       background-color: transparent;
       border: none;
       color: #c2c6c8;
       }
-      .DownloadClient-enabled-h2UaL .Label-success-1pfcC {
-        border-color: transparent;
-        background-color: var(--accent-color);
-        color: #fff;  
-      }
+
       /* IMPORT LISTS */
-      .ImportList-enabled-3lfv- .Label-success-1pfcC {
-        border-color: transparent;
-        background-color: var(--accent-color);
-        color: #fff;  
-      }
+
       /* CONNECTIONS */
       .Notifications-center-8iwmy {
       background-color: transparent;

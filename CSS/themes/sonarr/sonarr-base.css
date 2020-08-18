@@ -1168,11 +1168,7 @@ pre {
     }
     
     /* INDEXERS */
-    .Indexer\/enabled\/1kjis .Label\/success\/1pfcC{
-        border-color: transparent;
-        background-color: var(--accent-color);
-        color: #fff;
-    }
+
 
 	/* DOWNLOAD CLIENTS */
 	.DownloadClients\/center\/FvACx {
@@ -1180,11 +1176,7 @@ pre {
     border: none;
     color: #c2c6c8;
     }
-    .DownloadClient\/enabled\/h2UaL .Label\/success\/1pfcC {
-        border-color: transparent;
-        background-color: var(--accent-color);
-        color: #fff;
-    }
+
 
 	/* CONNECTIONS */
 	.Notifications\/center\/8iwmy {

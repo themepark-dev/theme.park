@@ -367,25 +367,16 @@ background-color: hsla(0,0%,100%,.25) !important;
       }
 
       /* INDEXERS */
-      .Indexer-enabled-1kjis .Label-success-1pfcC {
-        border-color: var(--accent-color);
-        background-color: var(--accent-color);
-      }     
+   
       /* DOWNLOAD CLIENTS */
       .DownloadClients-center-FvACx {
       background-color: transparent;
       border: none;
       color: #c2c6c8;
       }
-      .DownloadClient-enabled-h2UaL .Label-success-1pfcC {
-        border-color: var(--accent-color);
-        background-color: var(--accent-color);
-      } 
+
       /* IMPORT LISTS */
-      .ImportList-enabled-3lfv- .Label-success-1pfcC {
-        border-color: var(--accent-color);
-        background-color: var(--accent-color);
-      } 
+
       /* CONNECTIONS */
       .Notifications-center-8iwmy {
       background-color: transparent;

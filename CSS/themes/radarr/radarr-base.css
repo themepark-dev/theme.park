@@ -1249,11 +1249,7 @@ pre {
     border: none;
     color: #c2c6c8;
     }
-    .DownloadClient-enabled-h2UaL .Label-success-1pfcC {
-    border-color: transparent;
-    background-color: var(--accent-color);
-    color: #fff;
-    }
+
 
 	/* CONNECTIONS */
 	.Notifications-center-8iwmy {
@@ -1273,10 +1269,7 @@ pre {
         border: 1px solid transparent;
         background-color: transparent;
     }
-    .Indexer-enabled-1kjis .Label-success-1pfcC {
-        border-color: transparent;
-        background-color: var(--accent-color);
-    }
+
     /* LISTS */
     .NetImports-center-3otL- {
         border: 1px solid transparent;
