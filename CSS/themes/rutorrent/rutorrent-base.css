@@ -864,11 +864,6 @@ input.Button
 	cursor:pointer;
 	display:inline;
 	font-weight:700;
-	text-transform:uppercase;
-	height:21px;
-	line-height:2px;
-	margin:0 10px 0 5px;
-	padding:0;
 	text-shadow:none
 }
 
@@ -1505,4 +1500,32 @@ div#logoffDlg div.dlg-header { background-image: url(https://raw.githubuserconte
     background: rgba(0, 0, 0, 0.25) !important;
     color: #fff !important;
     outline: none !important;
+}
+
+
+#dlgEditRatioRules .rf_rru, #dlgEditRules .rf_rur {
+    background-color: transparent;
+}
+
+
+#dlgEditRatioRules .lf_rru li input.TextboxFocus, #dlgEditRules .lf_rur li input.TextboxFocus {
+	background-color: rgb(255 255 255 / 25%);
+	color: #FFF;
+}
+
+ #dlgEditRatioRules .lf_rru li input.TextboxNormal, #dlgEditRules .lf_rur li input.TextboxNormal {
+	background-color: rgb(255 255 255 / .08) !important;
+	color: #FFF;
+}
+
+.autodl-listbox {
+    border: 1px solid rgb(255 255 255 / 8%);
+    background-color: transparent;
+}
+
+#autodl-filters {
+    width: 800px !important;
+}
+div#dlgEditRules-header, #dlgEditRatioRules-header, div#dlgEditRules div.dlg-header {
+    background: rgba(0, 0, 0, 0.25) !important;
 }
