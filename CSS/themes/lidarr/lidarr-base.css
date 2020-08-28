@@ -666,11 +666,11 @@ background-color: hsla(0,0%,100%,.25) !important;
   .AddNewArtistSearchResult-year-3Ziif {
     color: #ccc;
 }
-  .AddNewArtistSearchResult-searchResult-fxW3m, .AddNewAlbumSearchResult-searchResult-XtaL3, .AddNewArtistSearchResult-searchResult-N5Vx4 {
+  .AddNewArtistSearchResult-searchResult-fxW3m, .AddNewAlbumSearchResult-searchResult-XtaL3, .AddNewArtistSearchResult-searchResult-N5Vx4,.AddNewArtistSearchResult-underlay-3aVNi {
       background-color: transparent;
   }
 
-  .AddNewArtistSearchResult-searchResult-fxW3m:hover ,.AddNewAlbumSearchResult-searchResult-XtaL3:hover, .AddNewArtistSearchResult-searchResult-N5Vx4:hover {
+  .AddNewArtistSearchResult-searchResult-fxW3m:hover ,.AddNewAlbumSearchResult-searchResult-XtaL3:hover, .AddNewArtistSearchResult-searchResult-N5Vx4:hover, .AddNewArtistSearchResult-underlay-3aVNi:hover {
       background-color: hsla(0,0%,100%,.08);
       color: inherit;
       text-decoration: none;
