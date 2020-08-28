@@ -172,7 +172,10 @@
 <p><a href="https://github.com/gilbN/theme.park/wiki/Lazylibrarian"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-develop/plugins/images/tabs/lazylibrarian.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://github.com/gilbN/theme.park/wiki/Lazylibrarian">Lazylibrarian</a></p>
 </td>
-<td style="width: 140px; height: 40px; text-align: center;">&nbsp;</td>
+<td style="width: 90px; height: 40px; text-align: center;">
+<p><a href="https://github.com/gilbN/theme.park/wiki/Adguard"><img src="https://github.com/causefx/Organizr/blob/v2-master/plugins/images/tabs/AdGuardHome.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://github.com/gilbN/theme.park/wiki/Adguard">Adguard</a></p>
+</td>
 <td style="width: 109px; height: 40px; text-align: center;">&nbsp;</td>
 </tr>
 </tbody>

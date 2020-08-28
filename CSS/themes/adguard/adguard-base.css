@@ -1,0 +1,323 @@
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+
+/*		   		        Made by @gilbN					 */
+/* 			      https://github.com/gilbN/theme.park			 */
+
+body {
+    background: var(--main-bg-color);
+    color: var(--text) !important;
+}
+  /* Scrollbar */  
+  @media only screen and (min-width: 768px) {  
+    html {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    body {
+        overflow-y: auto;
+        height: 100%;
+        background: var(--main-bg-color)
+    }
+}
+    ::-webkit-scrollbar {
+        width: 14px;
+    }
+    ::-webkit-scrollbar-thumb {
+        min-height: 50px;
+        border: 3px solid transparent;
+        border-radius: 8px;
+        background-color: hsla(0,0%,100%,.2);
+        background-clip: padding-box;
+    }
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        min-height: 50px;
+        border: 3px solid transparent;
+        border-radius: 8px;
+        background-color: hsla(0,0%,100%,.5);
+        background-clip: padding-box;
+    }   
+/* TEXT */
+
+a {
+    color: var(--text)
+}
+a:hover {
+    color: var(--accent-color-hover);
+}
+a:-webkit-any-link:focus {
+    outline: none;
+}
+
+/* LOGIN PAGE */
+
+.login .login__form .text-center .h-6 {
+    filter: invert(1);
+}
+
+.login__form .card {
+    background: rgba(0, 0, 0, 0.08);
+    border: 1px solid rgb(0 0 0 / 0.08);
+}
+
+.login .btn-success:hover {
+    background-color: var(--button-color-hover);
+    border-color: var(--button-color-hover);
+    color: var(--text-hover);
+}
+
+.login .btn-link {
+    color: var(--text);
+}
+.login .btn-link:hover {
+    color: var(--text-hover);
+}
+.form__message--error {
+    color: #F44336;
+}
+
+/* HEADER */
+.header {
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+.header-brand-img {
+    filter: invert(1);
+}
+.header .btn-outline-secondary {
+    color: var(--button-color);
+    border-color: var(--button-color);
+}
+.header .btn-outline-secondary:hover {
+    color: var(--text);
+    background-color: var(--button-color-hover);
+}
+.nav-tabs .nav-link.active {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    background: transparent;
+}
+.header .nav-tabs .nav-link.active:hover {
+    border-color: var(--accent-color-hover) !important;
+    color: var(--accent-color-hover) !important;
+}
+.header a:not([href]):not([tabindex]) {
+    color: var(--text);
+    text-decoration: none;
+}
+.header .nav-tabs {
+    color: var(--text);
+}
+.header .nav-tabs .nav-link:hover:not(.disabled) {
+    border-color: var(--text-hover);
+    color: var(--text-hover);
+}
+/* FOOTER */
+.footer {
+    background: rgba(0, 0, 0, 0.08);
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+    color: var(--text);
+}
+.footer a:not(.btn) {
+    color: var(--text);
+}
+.footer .btn-outline-primary {
+    color: var(--button-color);
+    background-color: transparent;
+    background-image: none;
+    border-color: var(--button-color);
+}
+
+.footer .btn-outline-primary:hover {
+    color: var(--text);
+    background-color: var(--button-color-hover);
+    border-color: var(--button-color-hover); 
+}
+
+/* MAIN PAGE */
+.mobile-menu {
+    background-color: transparent;
+}
+    /* BUTTONS */
+    .container .btn-outline-primary {
+        color: var(--button-color);
+        background-color: transparent;
+        background-image: none;
+        border-color: var(--button-color);
+    }
+    .container .btn-outline-primary:hover {
+        color: var(--text);
+        background-color: var(--button-color-hover);
+        border-color: var(--button-color-hover); 
+    }
+    .tooltip-container {
+        background: var(--modal-bg-color);
+      }
+    /* CARDS*/
+    .card {
+        background-color: rgb(255 255 255 / 8%);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: var(--text);
+    }
+    .card-wrap, .card-title-stats {
+        color: inherit;
+    }
+    .card-title-stats a {
+        text-decoration: underline;
+    }
+    .card-title-stats a:hover {
+        text-decoration: underline;
+        color: var(--accent-color-hover);
+    }
+    .card .icon--lightgray {
+        color: var(--text);
+    }
+    .card .logs__text {
+        color: var(--text);
+    }
+    .card .button__action {
+        background-color:transparent;
+    }
+    .card .btn-outline-danger {
+        color: #F44336;
+        background-color: transparent;
+        background-image: none;
+        border-color: #F44336;
+    }
+    .btn-outline-danger:hover {
+        color: #fff;
+        background-color: #F44336;
+        border-color: #F44336;
+    }
+/* DROPDOWNS */
+.dropdown-menu {
+    color: var(--text);
+    background: var(--modal-bg-color);
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 40, 100, 0.12);
+    border-radius: 3px;
+}
+.dropdown-item {
+    color: var(--text);
+}
+.dropdown-item:hover, .dropdown-item:focus {
+    color: var(--text-hover);
+    text-decoration: none;
+    background-color: rgb(255 255 255 / 0.08);
+}
+
+
+/* SETTINGS */
+.checkbox__label-subtitle, .form__desc, .page-subtitle, .card-title small, .card-subtitle {
+    color: var(--text);
+}
+.dropdown-item.active, .dropdown-item:active {
+    background-color: rgb(0 0 0 / 25%);
+}
+.service__icon {
+    color: #eee;
+}
+    /* LOGS */
+    .logs__table {
+        background-color: rgb(255 255 255 / 8%);
+    }
+    .logs__text, .logs__row .list-unstyled li, .detailed-info, .icon--lightgray, .icon--gray, .loading__text {
+        color: var(--text)
+    }
+    .rt-tr-group.red {
+        background-color: rgb(244 67 54 / 30%);
+    }
+    .ReactTable .rt-noData {
+        background: transparent;
+    }
+    .ReactTable .-loading, .ReactTable .-loading > div {
+        background: rgba(255, 255, 255, 0.5);
+    }
+    .loading:before {
+        background-color: transparent;
+    }
+    .custom-select:focus {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    /* FORMS */
+    .form-control--transparent {
+        color: var(--text);
+    }
+    .form-control--search {
+        outline: none;
+    }
+    .form-control:focus {
+        border-color: transparent;
+       -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+.icon--selected {
+    background-color: rgb(255 255 255 / 15%);
+    border: solid 1px transparent;
+}
+.tab__control, .tab__control--active {
+    color: var(--text);
+}
+/* BUTTONS */
+.btn-outline-secondary {
+    color: #c9c9c9;
+    border-color: #c9c9c9;
+}
+.btn-success,.btn-success.disabled, .btn-success:disabled {
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+    color: var(--text);
+}
+.btn-success:hover {
+    color: var(--text-hover);
+    background-color: var(--button-color-hover);
+    border-color: var(--button-color-hover);
+}
+.btn-success:focus, .btn-success.focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn-secondary {
+    color: var(--text);
+    background-color: rgb(255 255 255 / 25%);
+    border-color: rgb(255 255 255 / 0%);
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+}
+.btn-secondary:hover {
+    color: var(--text-hover);
+    background-color: var(--button-color-hover);
+    border-color: transparent;
+}
+
+/* MODALS */
+.modal-content {
+    background: var(--modal-bg-color);
+}
+.ReactModal__Overlay--after-open {
+    background-color: rgb(0 0 0 / 0.7) !important;
+}
+/* MOBILE */
+@media (max-width: 767px) {
+.mobile-menu  {
+    background: var(--main-bg-color);
+}
+}
+
+/* PLACEHOLDER TEXT */
+::placeholder {color: var(--text);}
+:-moz-placeholder {color: var(--text);}
+:-ms-input-placeholder {color: var(--text);}
+::-webkit-input-placeholder {color: var(--text) ;}
