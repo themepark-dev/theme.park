@@ -177,6 +177,13 @@ background-color: hsla(0,0%,100%,.25) !important;
       .Tooltip-right-2MxTa, .Tooltip-default-2NTKh  {
         border-right-color: #1f1f1f !important;
       }
+      .Tooltip-tooltip-3HJXy.Tooltip-inverse-yMvcm {
+        background: var(--modal-bg-color);
+        box-shadow: 0 5px 10px rgba(0,0,0,.2)
+      }
+      .Tooltip-bottom-3Ewbi.Tooltip-inverse-yMvcm {
+        border-bottom-color: #eee;
+      }
 
   
       /* TOP MENU  */

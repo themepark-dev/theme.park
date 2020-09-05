@@ -910,10 +910,10 @@ pre {
 	color: #fff;
     }
     .Tooltip-bottom-3Ewbi.Tooltip-default-2NTKh {
-        border-bottom-color: #232323;
+        border-bottom-color: #eee;
       }
-      Tooltip-right-2MxTa.Tooltip-default-2NTKh {
-        border-right-color: #232323;
+      .Tooltip-right-2MxTa.Tooltip-default-2NTKh {
+        border-right-color: #eee;
     }
     .EpisodeTitleLink-link-3ynTw:hover {
         color: #ffffff;

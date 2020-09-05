@@ -859,16 +859,23 @@ pre {
     background-color: rgba(0, 0, 0, .25) !important;
 	}
 	.Popover\/title\/326tA, .SeasonInfo\/title\/1tid_, .Popover\/body\/10Yh7 {
-		background-color: #232323 !important;
+		background: var(--modal-bg-color) !important;
 	}
 	.Tooltip\/tooltipContainer\/2693s {
 	color: #fff;
     }
+    .Tooltip\/tooltip\/3HJXy.Tooltip\/inverse\/yMvcm {
+        background: var(--modal-bg-color);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    .Tooltip\/bottom\/3Ewbi.Tooltip\/inverse\/yMvcm {
+        border-bottom-color: #fff;
+    }
     .Tooltip\/bottom\/3Ewbi.Tooltip\/default\/2NTKh {
-        border-bottom-color: #232323 !important;
-      }
-      Tooltip\/right\/2MxTa.Tooltip\/default\/2NTKh {
-        border-right-color: #232323 !important;
+        border-bottom-color: #fff !important;
+    }
+    .Tooltip\/right\/2MxTa.Tooltip\/default\/2NTKh {
+        border-right-color: #fff !important;
     }    
     .EpisodeTitleLink\/link\/3ynTw:hover {
         color: #ffffff;
