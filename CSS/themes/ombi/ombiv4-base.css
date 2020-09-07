@@ -53,7 +53,6 @@ a:hover, b:hover {
     html {
         height: 100%;
         width: 100%;
-        overflow: hidden;
     }
     body {
         overflow-y: auto;
