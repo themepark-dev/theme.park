@@ -44,44 +44,6 @@ a:hover, b:hover {
     color: var(--text);
     }
 
-  /* Scrollbar */  
-::-webkit-scrollbar {
-    width: 7px;
-    background: hsl(0deg 0% 0% / 0%);
-}
-  @media only screen and (min-width: 768px) {  
-    html {
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-    }
-    body {
-        overflow-y: auto;
-        height: 100%;
-        background: var(--main-bg-color)
-    }
-}
-    ::-webkit-scrollbar {
-        width: 14px;
-    }
-    ::-webkit-scrollbar-thumb {
-        min-height: 50px;
-        border: 3px solid transparent;
-        border-radius: 8px;
-        background-color: hsla(0,0%,100%,.2);
-        background-clip: padding-box;
-    }
-    ::-webkit-scrollbar-track {
-        background-color: transparent;
-    }
-    ::-webkit-scrollbar-thumb:hover {
-        min-height: 50px;
-        border: 3px solid transparent;
-        border-radius: 8px;
-        background-color: hsla(0,0%,100%,.5);
-        background-clip: padding-box;
-    }   
-
 
 /* SIDEBAR */
 .dark .mat-drawer, .dark .mat-drawer.mat-drawer-push, .mat-drawer, .mat-drawer.mat-drawer-push {
