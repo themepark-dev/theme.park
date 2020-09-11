@@ -176,7 +176,10 @@
 <p><a href="https://github.com/gilbN/theme.park/wiki/Adguard"><img src="https://github.com/causefx/Organizr/blob/v2-master/plugins/images/tabs/AdGuardHome.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://github.com/gilbN/theme.park/wiki/Adguard">Adguard</a></p>
 </td>
-<td style="width: 109px; height: 40px; text-align: center;">&nbsp;</td>
+<td style="width: 90px; height: 40px; text-align: center;">
+<p><a href="https://github.com/gilbN/theme.park/wiki/Gaps"><img src="https://raw.githubusercontent.com/JasonHHouse/gaps/master/images/Final-Black.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://github.com/gilbN/theme.park/wiki/Gaps">Gaps</a></p>
+</td>
 </tr>
 </tbody>
 </table>

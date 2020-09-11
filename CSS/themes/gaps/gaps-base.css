@@ -1,0 +1,199 @@
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+
+/*		   		        Made by @gilbN					 */
+/* 			      https://github.com/gilbN/theme.park			 */
+
+body {
+    background: var(--main-bg-color);
+    color: var(--text);
+}
+/* Scrollbar */  
+  @media only screen and (min-width: 768px) {  
+    html {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    body {
+        overflow-y: auto;
+        height: 100%;
+        background: var(--main-bg-color)
+    }
+}
+    ::-webkit-scrollbar {
+        width: 14px;
+    }
+    ::-webkit-scrollbar-thumb {
+        min-height: 50px;
+        border: 3px solid transparent;
+        border-radius: 8px;
+        background-color: hsla(0,0%,100%,.2);
+        background-clip: padding-box;
+    }
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        min-height: 50px;
+        border: 3px solid transparent;
+        border-radius: 8px;
+        background-color: hsla(0,0%,100%,.5);
+        background-clip: padding-box;
+    }   
+a {
+    color: var(--accent-color);
+
+}
+a:hover {
+    color: var(--accent-color-hover);
+    text-decoration: underline;
+}
+.text-primary {
+    color: var(--text)!important;
+}
+.text-muted {
+    color: var(--text)!important;
+    opacity: .8;
+}
+ /* Header */
+.bg-primary {
+    background-color: transparent !important;
+    background: rgba(0, 0, 0, .25) !important;
+}
+.navbar .list-ul-active,.info-circle-active, .arrow-clockwise-active, .gear-active, .rss-active, .exclamation-triangle-active, .collection-fill-active  {
+    background-color: var(--accent-color);
+}
+.bg-primary .navbar-nav .active>.nav-link {
+    color: var(--accent-color) !important;
+}
+
+/* Tables */
+table.dataTable.stripe tbody tr.odd, table.dataTable.display tbody tr.odd, table.dataTable tbody tr {
+    background-color: rgba(0, 0, 0, .25);
+}
+table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
+    background-color: rgba(0, 0, 0, .25);
+}
+
+table.dataTable thead th, table.dataTable thead td {
+    border-bottom: 1px solid #00000000;
+}
+table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.dataTable.display tbody th, table.dataTable.display tbody td {
+    border-top: 1px solid rgb(255 255 255 / 10%);
+}
+
+    /* Pagination */
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    color: var(--text) !important;
+    border: 1px solid transparent;
+    background: rgba(0, 0, 0, .25);
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover, .dataTables_wrapper .dataTables_paginate .paginate_button:active {
+    color: var(--text-hover) !important;
+    border: 1px solid transparent;
+    background: rgba(255, 255, 255, .08);
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:active {
+    outline: none;
+}
+/* Cards */
+.card {
+    background: transparent;
+    color: var(--text);
+    border: 1px solid rgba(0,0,0,0);
+}
+.card .text-muted {
+    color: var(--text) !important;
+}
+#movies .card img {
+    height: 200px !important;
+    width: auto !important;
+}
+.card-text .text-info {
+    color: var(--accent-color) !important;
+} 
+
+/* Buttons */
+.btn-primary, .btn-info {
+    color: #fff;
+    background-color: var(--button-color) !important;
+    border-color: var(--button-color) !important;
+}
+.btn-primary:active, .btn-info:active {
+    box-shadow: none !important;
+}
+.btn-primary:hover, .btn-info:hover {
+    background-color: var(--button-color-hover) !important;
+    border-color: var(--button-color-hover) !important;
+}
+.btn-secondary {
+    color: #fff;
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+}
+.btn-secondary:hover {
+    color: #fff;
+    background-color: var(--button-color-hover);
+    border-color: var(--button-color-hover);
+}
+/* Settings */
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: var(--text);
+    background-color: rgba(255, 255, 255, .1);
+    border-color: transparent;
+}
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+    background-color: rgba(0, 0, 0, .25);
+    border-color: transparent;
+}
+.nav-tabs .nav-link.active:hover {
+    background-color: rgba(255, 255, 255, .1);
+}
+.badge-primary {
+    color: var(--text);
+    background-color: var(--accent-color);
+}
+#plexServers .card-header {
+    background-color: rgba(255, 255, 255, .1);
+}
+#plexServers .border-secondary {
+    border-color: #0000 !important;
+}
+#plexServers .list-group-item {
+    background-color: rgba(0, 0, 0, .25);
+    border: none;
+}
+#plexServers  .card-footer {
+    background-color: rgb(0 0 0 / 25%);
+}
+.dropdown-menu {
+    color: var(--text);
+    background: var(--modal-bg-color);
+    border: 1px solid transparent;
+     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+}
+.dropdown-item:hover, .dropdown-item:focus {
+    color: var(--text-hover);
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, .08);
+}
+
+/* Input */
+[type="search"] {
+    outline-offset: -2px;
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+button, select {
+    text-transform: none;
+    outline: none;
+}
