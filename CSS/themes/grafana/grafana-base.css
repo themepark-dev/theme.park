@@ -171,6 +171,9 @@ color:#FFFFFF !important;
 .dropdown-menu-item-shortcut {
     color: #ffffff!important;
 }
+.dropdown-menu {
+    border: 1px solid transparent;
+}
 .dropdown-submenu:hover>a {
     Background-color: rgba(0, 0, 0, 0.25)!important;
 }
@@ -380,6 +383,31 @@ div.flot-text {
     border-bottom: 2px solid transparent;
 
 }
+/* Panel tables */
+.css-58bavm-thead {
+    background: rgba(0, 0, 0, .25);
+}
+.css-sq6g4h-row {
+    border-bottom: 1px solid rgb(255 255 255 / 10%);
+}
+.css-11m63ae {
+    border-right: 1px solid rgb(255 255 255 / 10%);
+}
+.css-2n373z {
+    border-right: 1px solid rgb(255 255 255 / 25%);
+}
+.css-sq6g4h-row:hover {
+    background-color: rgb(255 255 255 / 0.08);
+}
+.css-3o5ryu {
+    background: rgb(0 0 0 / 45%);
+}
+.css-1n8kpcb-activeTabStyle,.css-dnqfjg-activeTabStyle {
+    background: rgb(0 0 0 / 35%);
+}
+.css-1n8kpcb-activeTabStyle::before, .css-dnqfjg-activeTabStyle::before {
+    background: var(--accent-color);
+}
 /* Edit panel tabs  */
 .tabbed-view-header {
     box-shadow: none;
@@ -523,15 +551,16 @@ border-color: #b56d16 !important;
     border: none;
 }
 
-.modal-header {
+.modal-header, .css-1z13zsv-modalHeader {
     background: var(--modal-bg-color);
     -webkit-box-shadow: none;
     box-shadow: none;
     border-bottom: 1px solid #d8d9da;
+    color: #eee;
 }
-.modal-body {
-    position: relative;
+.modal-body, .css-111908g {
     background: var(--modal-bg-color);
+    color: #eee;
 }
 
 
@@ -554,6 +583,12 @@ border-color: #b56d16 !important;
 .css-370vzt-button,
 .css-msayan-button,
 .css-19kbjxc-button,
+.css-n4gkqg-button,
+.css-u6ysb0-button,
+.css-ak0gkt-button,
+.css-1pa3vaj-button,
+.css-g7zx83-button,
+.css-1pcbsvw-button,
 .gf-form-button-row a, .gf-form-button-row button,
 .page-action-bar>a, .page-action-bar>button,
 .btn-primary{ 
@@ -579,6 +614,18 @@ border-color: var(--button-color);
 .css-msayan-button:focus,
 .css-19kbjxc-button:hover,
 .css-19kbjxc-button:focus,
+.css-n4gkqg-button:hover,
+.css-n4gkqg-button:focus,
+.css-u6ysb0-button:hover,
+.css-u6ysb0-button:focus,
+.css-ak0gkt-button:hover,
+.css-ak0gkt-button:focus,
+.css-1pa3vaj-button:hover,
+.css-1pa3vaj-button:focus,
+.css-g7zx83-button:hover,
+.css-g7zx83-button:focus,
+.css-1pcbsvw-button:hover,
+.css-1pcbsvw-button:focus,
 .gf-form-button-row a, .gf-form-button-row button:hover,
 .btn-primary:hover{
 color: rgb(255, 255, 255);
@@ -646,9 +693,9 @@ outline: transparent dotted 2px;
 transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1) 0s;
 }
 .css-1m6pigl:checked + label {
-color: var(--accent-color) !important;
-border-color: rgba(255, 255, 255, .1);
-background: rgba(0, 0, 0, .5);
+    color: #eee !important;
+    border-color: rgba(255, 255, 255, .1);
+    background: var(--button-color);
 }
 .css-b40tk8:focus + label {
 box-shadow: rgba(20, 22, 25, 0) 0px 0px 0px 2px, rgba(31, 97, 196, 0) 0px 0px 0px 4px !important;
@@ -715,6 +762,9 @@ body > grafana-app > div > div > react-container > div > div > div.view > div > 
 
 /*PANEL EDIT*/
 
+.css-cxwxzk-Label-description,.css-n370st {
+    color: #eee;
+}
 /*Header*/
 .css-1marj6o {
 display: flex;
@@ -802,6 +852,12 @@ background: var(--accent-color);
 .css-1emhacm-currentVisualizationItem > div:first-child {
     outline-offset: 2px;
     box-shadow: rgb(20, 22, 25) 0px 0px 0px 2px, var(--accent-color) 0px 0px 0px 4px;
+}
+.css-mgq0xs-currentVisualizationItem > div:first-child {
+    outline: transparent dotted 2px;
+    outline-offset: 1px;
+    box-shadow: var(--accent-color) 0px 0px 0px 2px, #607D8B 0px 0px 0px 2px;
+    transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1) 0s;
 }
 /*Old stat panel unit dropdown */
 body > grafana-app > div > div > react-container > div > div.css-azp59k > div.css-1bd2u9 > div > div.Pane.vertical.Pane2 > div > div > div.css-1xj5tuf > div > div.view > div:nth-child(3) > div:nth-child(1) > div.panel-options-group__body > panel-editor-tab > panel-editor-tab-singlestatoptions > div > div:nth-child(2) > div:nth-child(6) > unit-picker > div > div > div > div > input {
