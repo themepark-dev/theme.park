@@ -98,6 +98,29 @@ body {
     color: #fff;
 }
 
+.TagInput-input-3E1DX {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #FFF;
+}
+
+.TagInput-input-3E1DX.TagInput-isFocused-13j-F {
+    outline: 0;
+    border-color: #fff;
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.TagInput-suggestion-3jRkQ,
+.TagInput-containerOpen-2g0Wc,
+.TagInput-suggestionsContainer-1vjHY {
+    background-color: #1e1e1e !important;
+}
+
+.TagInput-suggestion-3jRkQ:hover {
+    background-color: hsla(0, 0%, 100%, .3) !important;
+}
+
 .SelectInput-select-1qCdc {
     background-color: #1e1e1e !important;
 }
@@ -270,15 +293,15 @@ body {
 /* SEARCH BAR */
 .Input-input-2YWzR {
     border: none;
-    background-color: rgba(0, 0, 0, .25);
-    color: #FFF
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #FFF;
 }
 
 .Input-input-2YWzR:focus {
     outline: 0;
-    border-color: transparent;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 8px rgba(0, 0, 0, 0);
-    background-color: rgba(0, 0, 0, .25);
+    border-color: #fff;
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 .Button-default-2uiHU:hover {
@@ -569,21 +592,6 @@ body {
 
 .Button-primary-1F1YL:hover {
     border-color: transparent;
-}
-
-.TagInput-input-3E1DX {
-    background-color: transparent;
-    color: #FFF;
-}
-
-.TagInput-suggestion-3jRkQ,
-.TagInput-containerOpen-2g0Wc,
-.TagInput-suggestionsContainer-1vjHY {
-    background-color: #1e1e1e !important;
-}
-
-.TagInput-suggestion-3jRkQ:hover {
-    background-color: hsla(0, 0%, 100%, .3) !important;
 }
 
 /* Main Menu Header */
@@ -983,6 +991,20 @@ body {
 }
 
 /* MEDIA MANAGEMENT */
+/* DROPDOWNS SELECT */
+div[class*='EnhancedSelectInputOption'] { 
+    background-color: #1e1e1e;
+    color: #fff;
+    }
+    div[class*='EnhancedSelectInputOption']:hover { 
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    }
+    .EnhancedSelectInput-options-3yy65 {
+    border: 1px solid #1e1e1e;
+    border-radius: 4px;
+    background-color: #1e1e1e;
+    }
 /* FILE NAME TOKENS */
 .NamingOption-token-1y5bz {
     background-color: rgba(255, 255, 255, 0.15);
