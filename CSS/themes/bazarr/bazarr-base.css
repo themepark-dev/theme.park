@@ -703,7 +703,9 @@ a.dt-button.disabled:hover {
   text-decoration: none;
   background-color: rgb(255 255 255 / 0.25);
 }
-
+.dropdown-item:focus, .dropdown-item:hover {
+  background-color: rgb(255 255 255 / 7%);
+}
 .dropdown-menu>li>a:hover {
   color: white !important;
   background-color: rgb(255 255 255 / 35%);
