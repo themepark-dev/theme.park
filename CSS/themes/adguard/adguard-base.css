@@ -95,11 +95,12 @@ a:-webkit-any-link:focus {
     filter: invert(1);
 }
 .header .btn-outline-secondary {
-    color: var(--button-color);
+    color: var(--text);
+    background: var(--button-color);
     border-color: var(--button-color);
 }
 .header .btn-outline-secondary:hover {
-    color: var(--text);
+    color: var(--text-hover);
     background-color: var(--button-color-hover);
 }
 .nav-tabs .nav-link.active {
@@ -150,24 +151,30 @@ a:-webkit-any-link:focus {
 }
     /* BUTTONS */
     .container .btn-outline-primary {
-        color: var(--button-color);
-        background-color: transparent;
+        color: var(--text);
+        background-color: var(--button-color);
         background-image: none;
         border-color: var(--button-color);
     }
     .container .btn-outline-primary:hover {
-        color: var(--text);
+        color: var(--text-hover);
         background-color: var(--button-color-hover);
         border-color: var(--button-color-hover); 
     }
     .tooltip-container {
-        background: var(--modal-bg-color);
+        background: var(--tooltip-bg);
       }
     /* CARDS*/
     .card {
         background-color: rgb(255 255 255 / 8%);
         border: 1px solid rgba(255, 255, 255, 0.1);
         color: var(--text);
+    }
+    .tooltip-custom__container {
+        background: var(--tooltip-bg);
+    }
+    .tooltip-custom__content-link {
+        color: var(--tooltip-link-color);
     }
     .card-wrap, .card-title-stats {
         color: inherit;
@@ -237,6 +244,9 @@ a:-webkit-any-link:focus {
     .rt-tr-group.red {
         background-color: rgb(244 67 54 / 30%);
     }
+    .rt-tr-group.blue {
+        background-color: rgb(54 146 244 / 30%);
+    }
     .ReactTable .rt-noData {
         background: transparent;
     }
@@ -254,13 +264,14 @@ a:-webkit-any-link:focus {
     .form-control--transparent {
         color: var(--text);
     }
-    .form-control--search {
+     .form-control--search {
         outline: none;
     }
     .form-control:focus {
         border-color: transparent;
        -webkit-box-shadow: none;
         box-shadow: none;
+        background: #ffffff !important;
     }
 .icon--selected {
     background-color: rgb(255 255 255 / 15%);

@@ -21,7 +21,8 @@
   --button-color-hover: hsla(0,0%,100%,.30);
   --accent-color:  rgba(255, 255, 255, 0.25);
   --accent-color-hover: rgba(255, 255, 255, 0.45);
-
+  --tooltip-bg: #1f1f1f;
+  --tooltip-link-color: #f1c40f;
   --text: #eee;
   --text-hover: #fff;
 }

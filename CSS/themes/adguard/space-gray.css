@@ -21,7 +21,8 @@
   --button-color-hover: #81a6b7;
   --accent-color: #607D8B;
   --accent-color-hover: #81a6b7;
-
+  --tooltip-bg: #607D8B;
+  --tooltip-link-color: #f1c40f;
   --text: #eee;
   --text-hover: #fff;
 }
