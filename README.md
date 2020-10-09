@@ -181,6 +181,12 @@
 <p><a href="https://github.com/gilbN/theme.park/wiki/Gaps">Gaps</a></p>
 </td>
 </tr>
+<tr>
+<td style="width: 90px; height: 40px; text-align: center;">
+<p><a href="https://github.com/gilbN/theme.park/wiki/Bitwarden"><img src="https://raw.githubusercontent.com/bitwarden/brand/master/icons/256x256.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://github.com/gilbN/theme.park/wiki/Bitwarden">Bitwarden</a></p>
+</td>
+</tr>
 </tbody>
 </table>
 
