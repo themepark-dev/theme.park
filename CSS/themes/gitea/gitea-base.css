@@ -1,0 +1,534 @@
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+
+/*		   		        Made by @gilbN					 */
+/* 			      https://github.com/gilbN/theme.park			 */
+
+body {
+    background: var(--main-bg-color);
+}
+
+a,
+.home a {
+    color: var(--link-color);
+}
+
+a:hover {
+    color: #fff;
+}
+
+/* Scrollbar */
+@media only screen and (min-width: 768px) {
+    html {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    body {
+        overflow-y: auto;
+        height: 100%;
+        background: var(--main-bg-color)
+    }
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+    min-height: 50px;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    background-color: hsla(0, 0%, 100%, .2);
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    min-height: 50px;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    background-color: hsla(0, 0%, 100%, .5);
+    background-clip: padding-box;
+}
+
+/* TEXT */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+b,
+strong,
+footer,
+.ui.list>.item .description,
+.ui.form .inline.field>label,
+.ui.accordion .title:not(.ui),
+.ui.checkbox label,
+.form .help,
+.ui.header,
+.ui.form .field>label {
+    color: var(--text) !important;
+}
+
+/* NAVBAR */
+.following.bar.light {
+    background-color: transparent;
+    border-bottom: 1px solid transparent;
+    box-shadow: none;
+}
+
+.ui.menu .item {
+    color: var(--text)
+}
+
+.ui.secondary.menu .active.item,
+.ui.secondary.menu .active.item:hover {
+    box-shadow: none;
+    background: rgba(0, 0, 0, .05);
+    color: var(--accent-color);
+}
+
+.ui.secondary.menu .dropdown.item:hover,
+.ui.secondary.menu .link.item:hover,
+.ui.secondary.menu a.item:hover {
+    background: rgb(255 255 255 / 0.08);
+    color: var(--text-hover);
+}
+
+/* UI */
+
+.ui.attached.segment {
+    border: 1px solid transparent;
+}
+
+.ui.segment {
+    background: rgb(255 255 255 / 8%);
+}
+
+.ui.attached.header {
+    background: rgb(0 0 0 / 25%);
+    border: 1px solid transparent;
+}
+
+.explore .navbar {
+    background-color: rgb(0 0 0 / 25%) !important;
+
+}
+
+.ui .warning.header {
+    background-color: #f9edbe !important;
+    color: black !important;
+}
+
+.ui.red.message p,
+.ui.red.message strong {
+    color: #db2828 !important;
+}
+
+/* SIGN IN NAV BAR*/
+.ui.menu.new-menu {
+    background: rgb(0 0 0 / 25%);
+}
+
+.ui.secondary.pointing.menu .active.item,
+.ui.secondary.pointing.menu .active.item:hover {
+    border-color: currentColor;
+    color: var(--accent-color);
+}
+
+.ui.tabular.menu .item {
+    color: var(--text);
+}
+
+.ui.secondary.pointing.menu .dropdown.item:hover,
+.ui.secondary.pointing.menu .link.item:hover,
+.ui.secondary.pointing.menu a.item:hover {
+    background-color: transparent;
+    color: var(--text-hover);
+}
+
+/* DROPDOWN MENU */
+.item:focus {
+    outline: none;
+}
+
+.ui.menu .dropdown.item .menu {
+    background: var(--modal-bg-color);
+}
+
+.ui.menu .ui.dropdown .menu>.item {
+    color: var(--text) !important;
+}
+
+.ui.menu .ui.dropdown .menu>.active.item {
+    background: rgb(0 0 0 / 10%) !important;
+    color: var(--accent-color) !important;
+}
+
+.ui.menu .ui.dropdown .menu>.item:hover,
+.ui.menu .ui.dropdown .menu>.selected.item {
+    background: rgb(255 255 255 / 0.07) !important;
+    color: var(--text-hover) !important;
+}
+
+.ui.dropdown .menu {
+    background: var(--modal-bg-color);
+}
+
+.ui.dropdown .menu>.item:hover {
+    background: rgb(255 255 255 / 0.07);
+}
+
+.ui.dropdown .menu .active.item {
+    color: var(--accent-color);
+    outline: none !important;
+}
+
+.ui.dropdown .menu>.item {
+    color: var(--text);
+}
+
+.ui.dropdown .menu>.item:hover {
+    color: var(--text-hover);
+}
+
+.ui.selection.dropdown .menu>.item {
+    border-top: 1px solid rgb(255 255 255 / 20%);
+}
+
+.ui.selection.dropdown {
+    background: rgb(0 0 0 / .25);
+    color: #fff;
+}
+
+.ui.selection.dropdown:focus {
+    border-color: rgba(255, 255, 255, .08);
+    box-shadow: none;
+}
+
+.ui.selection.active.dropdown,
+.ui.selection.active.dropdown .menu {
+    border-color: transparent;
+}
+
+.ui.selection.active.dropdown:hover,
+.ui.selection.active.dropdown:hover .menu {
+    border-color: transparent;
+}
+
+.ui.selection.visible.dropdown>.text:not(.default) {
+    color: var(--text);
+}
+
+.ui.default.dropdown:not(.button)>.text,
+.ui.dropdown:not(.button)>.default.text {
+    color: var(--text);
+    opacity: .7;
+}
+
+/* MESSAGES */
+.ui.negative.message {
+    background-color: currentColor;
+    color: #9f3a38;
+    box-shadow: none !important;
+}
+
+/* DASHBOARD */
+.vch__wrapper {
+    filter: invert(100);
+}
+
+svg.vch__wrapper .vch__days__labels__wrapper text.vch__day__label[data-v-a9cfea66],
+svg.vch__wrapper .vch__legend__wrapper text[data-v-a9cfea66],
+svg.vch__wrapper .vch__months__labels__wrapper text.vch__month__label[data-v-a9cfea66] {
+    fill: #000000;
+}
+
+#app .ui.item.menu,
+.ui.item.menu .item {
+    background: rgb(255 255 255 / 8%);
+}
+
+#app .ui.menu .active.item {
+    background: rgb(0 0 0 / 25%) !important;
+    color: var(--text);
+}
+
+#app .ui.link.menu .item:hover,
+.ui.menu .dropdown.item:hover,
+.ui.menu .link.item:hover,
+.ui.menu a.item:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, .03);
+    color: var(--text-hover);
+}
+
+#app .ui.secondary.segment {
+    background: rgb(255 255 255 / 8%);
+    color: rgba(0, 0, 0, .6);
+}
+
+/* REPOSITORY */
+.repository .header-wrapper {
+    background-color: rgb(0 0 0 / 24%);
+}
+
+.repo-header .ui.breadcrumb a {
+    color: var(--accent-color);
+}
+
+.repo-header .ui.breadcrumb .divider {
+    color: rgb(255 255 255 / 40%);
+}
+
+.ui.tabular.menu .item.active {
+    color: var(--text);
+}
+
+.ui.tabular.menu .active.item {
+    background: none rgb(0 0 0 / 0.25);
+    color: var(--text);
+    border-color: transparent;
+}
+
+.ui.tabular.menu .item:hover {
+    color: var(--text-hover);
+    background: rgba(255, 255, 255, .07);
+    border-radius: .28571429rem .28571429rem 0 0 !important;
+}
+
+.repository .ui.menu {
+    background: rgb(0 0 0 / 0%);
+    border: 1px solid rgba(34, 36, 38, .15);
+    box-shadow: 0 1px 2px 0 rgba(34, 36, 38, .15);
+}
+
+.repository .ui.menu .active.item {
+    background: rgb(0 0 0 / 25%);
+    color: var(--text);
+    font-weight: 400;
+    box-shadow: none;
+}
+
+.repository .ui.segment.sub-menu .list .item a,
+.repository .ui.segment.sub-menu .list .item span.ui {
+    color: var(--text);
+}
+
+.ui.blue.labels .label,
+.ui.ui.ui.blue.label {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--text-hover);
+}
+
+/* TABLE */
+.ui.table>thead>tr>th {
+    background: rgb(0 0 0 / 50%);
+    color: var(--text);
+    border-bottom: 1px solid rgba(34, 36, 38, .1);
+}
+
+.ui.table {
+    background: rgb(255 255 255 / 8%);
+    border: 1px solid rgba(34, 36, 38, .15);
+    color: var(--text);
+}
+
+.repository.file.list #repo-files-table tr:hover {
+    background-color: rgb(255 255 255 / 8%);
+}
+
+/* FOOTER */
+footer {
+    background-color: rgb(0 0 0 / 25%);
+    border-top: 1px solid rgb(255 255 255 / 25%);
+}
+
+/* BUTTONS / CHECKBOXES */
+.btn:active,
+.btn:focus {
+    outline: none !important;
+}
+
+.ui.checkbox input:checked~label:after {
+    color: #fff !important;
+    background: var(--accent-color);
+}
+
+.ui.green.button,
+.ui.green.buttons .button {
+    background-color: var(--button-color);
+    color: var(--text);
+}
+
+.ui.green.button:hover,
+.ui.green.buttons .button:hover {
+    background-color: var(--button-color-hover);
+    color: var(--text-hover);
+}
+
+.ui.blue.button,
+.ui.blue.buttons .button {
+    background-color: var(--button-color);
+    color: var(--text);
+}
+
+.ui.blue.button:hover,
+.ui.blue.buttons .button:hover {
+    background-color: var(--button-color-hover);
+    color: var(--text-hover);
+}
+
+.ui.active.button,
+.ui.active.button:hover {
+    color: var(--text-hover);
+}
+
+.ui.active.button,
+.ui.active.button:active,
+.ui.active.button:hover {
+    background-color: var(--button-color-hover);
+
+}
+
+.ui.button {
+    background: var(--button-color);
+    color: var(--text);
+}
+
+.ui.button:hover {
+    background: var(--button-color-hover);
+    color: var(--text-hover);
+}
+
+.ui.basic.blue.button,
+.ui.basic.blue.buttons .button {
+    box-shadow: inset 0 0 0 1px var(--accent-color) !important;
+    color: var(--accent-color) !important;
+}
+
+.ui.basic.blue.button:hover,
+.ui.basic.blue.buttons .button:hover {
+    background: var(--button-color) !important;
+    color: var(--text-hover) !important;
+}
+
+.ui.basic.button,
+.ui.basic.buttons .button {
+    color: var(--text);
+    box-shadow: inset 0 0 0 1px rgb(255 255 255 / 15%);
+}
+
+.ui.basic.button:focus,
+.ui.basic.button:hover,
+.ui.basic.buttons .button:focus,
+.ui.basic.buttons .button:hover {
+    background: rgb(0 0 0 / 25%);
+    color: var(--text);
+    box-shadow: inset 0 0 0 1px rgba(34, 36, 38, .35), inset 0 0 0 0 rgba(34, 36, 38, .15);
+}
+
+/* FORMS */
+.ui.form input:not([type]),
+.ui.form input[type=date],
+.ui.form input[type=datetime-local],
+.ui.form input[type=email],
+.ui.form input[type=file],
+.ui.form input[type=number],
+.ui.form input[type=password],
+.ui.form input[type=search],
+.ui.form input[type=tel],
+.ui.form input[type=text],
+.ui.form input[type=time],
+.ui.form input[type=url] {
+    background: rgb(0 0 0 / 25%);
+    border: 1px solid transparent;
+    color: var(--text);
+    border-radius: .28571429rem;
+    box-shadow: inset 0 0 0 0 transparent;
+    transition: color .1s ease, border-color .1s ease;
+}
+
+.ui.form textarea:focus {
+    color: var(--text);
+    border-color: transparent;
+    background: rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 0 0 rgba(34, 36, 38, .35);
+    -webkit-appearance: none;
+}
+
+.ui.form textarea,
+.ui.input textarea {
+    background: rgb(0 0 0 / .25);
+    border: 1px solid rgba(34, 36, 38, .15);
+    color: var(--text);
+}
+
+.ui.form input:not([type]):focus,
+.ui.form input[type=date]:focus,
+.ui.form input[type=datetime-local]:focus,
+.ui.form input[type=email]:focus,
+.ui.form input[type=file]:focus,
+.ui.form input[type=number]:focus,
+.ui.form input[type=password]:focus,
+.ui.form input[type=search]:focus,
+.ui.form input[type=tel]:focus,
+.ui.form input[type=text]:focus,
+.ui.form input[type=time]:focus,
+.ui.form input[type=url]:focus {
+    color: var(--text);
+    border-color: rgb(255 255 255 / 8%);
+    border-radius: .28571429rem;
+    background: rgb(0 0 0 / 50%);
+    box-shadow: inset 0 0 0 0 rgba(34, 36, 38, .35);
+}
+
+.ui.input.focus>input,
+.ui.input>input:focus {
+    border-color: transparent;
+    background: rgb(0 0 0 / 50%);
+    color: var(--text);
+    box-shadow: none;
+}
+
+.ui.input>input {
+    background: rgb(0 0 0 / 25%);
+    border: 1px solid rgba(34, 36, 38, .15);
+    color: var(--text);
+}
+
+/* PLACEHOLDER TEXT */
+::placeholder {
+    color: var(--text) !important;
+    opacity: .7;
+}
+
+:-moz-placeholder {
+    color: var(--text) !important;
+    opacity: .7;
+}
+
+:-ms-input-placeholder {
+    color: var(--text) !important;
+    opacity: .7;
+}
+
+::-webkit-input-placeholder {
+    color: var(--text) !important;
+    opacity: .7;
+}
