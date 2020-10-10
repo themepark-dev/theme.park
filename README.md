@@ -186,6 +186,10 @@
 <p><a href="https://github.com/gilbN/theme.park/wiki/Bitwarden"><img src="https://raw.githubusercontent.com/bitwarden/brand/master/icons/256x256.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://github.com/gilbN/theme.park/wiki/Bitwarden">Bitwarden</a></p>
 </td>
+<td style="width: 90px; height: 40px; text-align: center;">
+<p><a href="https://github.com/gilbN/theme.park/wiki/Bitwarden"><img src="https://avatars1.githubusercontent.com/u/10550069?s=400&u=4c3068cced0cb7b005bdbe2c4061a93c61b1a8e0&v=4" alt="" width="48" height="48" /></a></p>
+<p><a href="https://github.com/gilbN/theme.park/wiki/Duplicacy">Duplicacy</a></p>
+</td>
 </tr>
 </tbody>
 </table>

@@ -1,0 +1,357 @@
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+
+/*		   		        Made by @gilbN					 */
+/* 			      https://github.com/gilbN/theme.park			 */
+
+
+body {
+    background: var(--main-bg-color);
+}
+
+a {
+    color: var(--link-color);
+}
+
+a:hover {
+    color: #fff;
+}
+
+/* Scrollbar */
+@media only screen and (min-width: 768px) {
+    html {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    body {
+        overflow-y: auto;
+        height: 100%;
+        background: var(--main-bg-color)
+    }
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+    min-height: 50px;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    background-color: hsla(0, 0%, 100%, .2);
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    min-height: 50px;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    background-color: hsla(0, 0%, 100%, .5);
+    background-clip: padding-box;
+}
+
+/* TEXT */
+body,
+.card,
+.category,
+.card label,
+.card .title,
+.card .stats,
+.vis-time-axis .vis-text,
+.footer .copyright,
+.navbar-default .navbar-brand {
+    color: var(--text);
+}
+
+.main-panel {
+    background: var(--main-bg-color);
+}
+
+.content .card {
+    box-shadow: none;
+}
+
+/* CARDS */
+.card {
+    background: rgb(255 255 255 / 8%);
+}
+
+/* TIMELINE */
+.vis-timeline {
+    border: 1px solid rgb(255 255 255 / 20%);
+}
+
+/* CHARTS */
+#chartStorages,
+#chartBackups {
+    filter: invert(100);
+}
+
+.ct-label {
+    fill: #000;
+    color: #000;
+}
+
+/* NAVBAR */
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: var(--text);
+}
+
+.navbar-default {
+    background-color: rgb(0 0 0 / 26%);
+    border-bottom: 1px solid rgb(255 255 255 / 25%);
+}
+
+/* SIDEBAR */
+.sidebar[data-background-color="black"]:after,
+.sidebar[data-background-color="black"]:before,
+.off-canvas-sidebar[data-background-color="black"]:after,
+.off-canvas-sidebar[data-background-color="black"]:before {
+    background: rgb(0 0 0 / 10%);
+}
+
+.sidebar .nav li.active>a:before,
+.off-canvas-sidebar .nav li.active>a:before,
+.sidebar .nav li.active>a:after,
+.off-canvas-sidebar .nav li.active>a:after {
+    border-right: 17px solid var(--accent-color);
+}
+
+.sidebar[data-active-color="success"] .nav li.active>a,
+.off-canvas-sidebar[data-active-color="success"] .nav li.active>a {
+    color: var(--accent-color);
+}
+
+.sidebar .sidebar-wrapper {
+    box-shadow: none;
+}
+
+/* MODAL */
+.modal-content {
+    background: var(--modal-bg-color);
+    border: 1px solid transparent;
+}
+
+.modal-header {
+    border-bottom: 1px solid rgb(255 255 255 / 25%);
+}
+
+.modal-footer {
+    border-top: 1px solid rgb(255 255 255 / 25%);
+}
+
+.modal-body .nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+    color: var(--text);
+    cursor: default;
+    background-color: rgba(0, 0, 0, .25);
+    border: 1px solid transparent;
+    border-bottom-color: transparent;
+}
+
+.modal-body .nav>li>a:hover,
+.nav>li>a:focus {
+    background-color: transparent;
+}
+
+.modal-body .nav-tabs>li.active>a:hover {
+    background-color: rgba(0, 0, 0, .25);
+    border: 1px solid transparent;
+}
+
+.modal-body .nav-tabs>li>a:hover {
+    border-color: #fff3 #fff3 #fff3;
+    color: var(--text-hover)
+}
+
+.modal-body .nav-tabs>li>a {
+    color: var(--text)
+}
+
+#modal_storage_info_tab_content {
+    border: none !important;
+}
+
+.modal-body .nav .open>a,
+.nav .open>a:focus,
+.nav .open>a:hover {
+    background-color: rgb(0 0 0 / 25%);
+    border-color: transparent;
+}
+
+/* DROPDOWN */
+.dropdown-menu {
+    background: var(--modal-bg-color);
+}
+
+.dropdown a {
+    color: var(--text) !important;
+}
+
+.dropdown a:hover {
+    color: var(--text-hover) !important;
+}
+
+/* FORMS */
+.form-control.border-input {
+    border: 1px solid transparent;
+}
+
+.form-control {
+    background-color: rgba(0, 0, 0, .25);
+    color: var(--text);
+}
+
+.form-control:focus {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+#input_s3_provider:focus,
+#schedule_frequency:focus,
+#modal_restore_storage:focus,
+#modal_restore_id:focus,
+#modal_restore_revision:focus {
+    background: white;
+    color: black;
+}
+
+/* BUTTONS */
+.btn {
+    color: var(--text);
+}
+
+.timepicker-spinner .btn:hover,
+.timepicker-spinner .btn:focus {
+    background-color: rgba(255, 255, 255, .08);
+    color: var(--text-hover);
+    border: 1px solid transparent;
+}
+
+.timepicker-spinner .btn {
+    border: 1px solid transparent;
+}
+
+.timepicker-spinner .input-group-btn-vertical {
+    border-left: 1px solid transparent;
+}
+
+.btn-info.btn-fill {
+    color: var(--text);
+    background-color: var(--button-color);
+    border: var(--button-color);
+}
+
+.btn-info.btn-fill:hover,
+.btn-info.btn-fill:active,
+.btn-info.btn-fill.active,
+.btn-info.btn-fill:focus {
+    background: var(--button-color-hover);
+    border: var(--button-color-hover);
+}
+
+.btn-primary {
+    border-color: var(--button-color);
+    color: var(--button-color);
+}
+
+.btn-primary:hover {
+    border-color: var(--button-color-hover);
+    color: var(--text-hover);
+    background-color: var(--button-color-hover);
+}
+
+.btn-primary.btn-fill {
+    color: var(--text);
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+}
+
+.btn-primary.btn-fill:hover {
+    color: var(--text-hover);
+    background-color: var(--button-color-hover);
+    border-color: var(--button-color-hover);
+
+}
+
+div>div>div.modal-footer>button.btn.btn-default.pull-left {
+    border-color: #F44336;
+    color: #F44336;
+}
+
+div>div>div.modal-footer>button.btn.btn-default.pull-left:hover {
+    border-color: #F44336;
+    color: var(--text-hover);
+    background-color: #F44336;
+}
+
+.navbar .navbar-nav>li>a.btn-success,
+.btn-success {
+    border-color: var(--button-color);
+    color: var(--button-color);
+}
+
+.navbar .navbar-nav>li>a.btn-success:hover,
+.navbar .navbar-nav>li>a.btn-success:focus,
+.navbar .navbar-nav>li>a.btn-success:active,
+.navbar .navbar-nav>li>a.btn-success.active,
+.open>.navbar .navbar-nav>li>a.btn-success.dropdown-toggle,
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.open>.btn-success.dropdown-toggle {
+    background-color: var(--button-color-hover);
+    color: var(--text-hover);
+    border-color: var(--button-color-hover);
+}
+
+/* TABLES */
+.table>tbody>tr.active>td,
+.table>tbody>tr.active>th,
+.table>tbody>tr>td.active,
+.table>tbody>tr>th.active,
+.table>tfoot>tr.active>td,
+.table>tfoot>tr.active>th,
+.table>tfoot>tr>td.active,
+.table>tfoot>tr>th.active,
+.table>thead>tr.active>td,
+.table>thead>tr.active>th,
+.table>thead>tr>td.active,
+.table>thead>tr>th.active {
+    background-color: rgb(0 0 0 / 25%);
+}
+
+.table thead tr>th,
+.table thead tr>td,
+.table tbody tr>th,
+.table tbody tr>td,
+.table tfoot tr>th,
+.table tfoot tr>td {
+    border-top: 1px solid rgb(255 255 255 / 20%);
+}
+
+/* FOOTER */
+.main-panel>.footer {
+    background: rgb(0 0 0 / 0.25);
+}
+
+/* MOBILE */
+@media (max-width: 991px) {
+    .off-canvas-sidebar .sidebar-wrapper {
+        box-shadow: 0 0 10px 0px #000000;
+        background: var(--modal-bg-color);
+    }
+}
