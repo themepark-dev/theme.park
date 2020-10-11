@@ -95,14 +95,21 @@ body,
 }
 
 /* CHARTS */
-#chartStorages,
-#chartBackups {
-    filter: invert(100);
+.ct-label {
+    fill: var(--text);
+    color: var(--text);
 }
 
-.ct-label {
-    fill: #000;
-    color: #000;
+.ct-grid {
+    stroke: #777;
+}
+
+.tab-content {
+    border-color: transparent !important;
+}
+
+.vis-labelset .vis-label .vis-inner {
+    color: var(--text);
 }
 
 /* NAVBAR */
@@ -125,9 +132,14 @@ body,
 
 .sidebar .nav li.active>a:before,
 .off-canvas-sidebar .nav li.active>a:before,
-.sidebar .nav li.active>a:after,
-.off-canvas-sidebar .nav li.active>a:after {
+.sidebar .nav li.active>a:after {
     border-right: 17px solid var(--accent-color);
+}
+
+@media (min-width: 992px) {
+    .off-canvas-sidebar .nav li.active>a:after {
+        border-right: 17px solid var(--accent-color);
+    }
 }
 
 .sidebar[data-active-color="success"] .nav li.active>a,
@@ -232,6 +244,10 @@ textarea {
 #modal_restore_revision:focus {
     background: white;
     color: black;
+}
+
+.form-check-label{
+    word-break: break-word;
 }
 
 /* BUTTONS */
@@ -342,7 +358,8 @@ div>div>div.modal-footer>button.btn.btn-default.pull-left:hover,
 .table>thead>tr.active>th,
 .table>thead>tr>td.active,
 .table>thead>tr>th.active,
-.fixed-header th {
+.fixed-header th,
+row-clickable.active {
     background-color: rgb(0 0 0 / 25%);
 }
 
@@ -356,10 +373,6 @@ hr {
     border-top: 1px solid rgb(255 255 255 / 20%);
 }
 
-.row-clickable.active {
-    background-color: hsla(0,0%,100%,.08);
-}
-
 .list-group-item{
     background-color: transparent;
 }
@@ -367,6 +380,17 @@ hr {
 .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
     background-color: var(--accent-color);
     border-color: var(--accent-color);
+}
+
+/* PROGRESS BARS */
+.progress {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.progress-bar {
+    background-color: var(--accent-color);
+}
+.progress span {
+color: var(--text);
 }
 
 /* FOOTER */
@@ -379,5 +403,8 @@ hr {
     .off-canvas-sidebar .sidebar-wrapper {
         box-shadow: 0 0 10px 0px #000000;
         background: var(--modal-bg-color);
+    }
+    .off-canvas-sidebar .nav > li.active > a:after {
+        border-left: 17px solid var(--accent-color);
     }
 }
