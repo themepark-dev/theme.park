@@ -84,6 +84,27 @@ body,
     box-shadow: none;
 }
 
+/* PLACEHOLDER TEXT */
+::placeholder {
+    color: var(--text) !important;
+    opacity: .5!important;
+}
+
+:-moz-placeholder {
+    color: var(--text) !important;
+    opacity: .5!important;
+}
+
+:-ms-input-placeholder {
+    color: var(--text) !important;
+    opacity: .5!important;
+}
+
+::-webkit-input-placeholder {
+    color: var(--text) !important;
+    opacity: .5;
+}
+
 /* CARDS */
 .card {
     background: rgb(255 255 255 / 8%);
