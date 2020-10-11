@@ -131,12 +131,12 @@ body,
 }
 
 .sidebar .nav li.active>a:before,
-.off-canvas-sidebar .nav li.active>a:before,
 .sidebar .nav li.active>a:after {
     border-right: 17px solid var(--accent-color);
 }
 
 @media (min-width: 992px) {
+    .off-canvas-sidebar .nav li.active>a:before,
     .off-canvas-sidebar .nav li.active>a:after {
         border-right: 17px solid var(--accent-color);
     }
@@ -289,6 +289,12 @@ textarea {
     color: var(--button-color);
 }
 
+.btn-primary:focus {
+    border-color: var(--button-color);
+    color: var(--button-color);
+    background-color: transparent;
+}
+
 .btn-primary:hover {
     border-color: var(--button-color-hover);
     color: var(--text-hover);
@@ -358,9 +364,12 @@ div>div>div.modal-footer>button.btn.btn-default.pull-left:hover,
 .table>thead>tr.active>th,
 .table>thead>tr>td.active,
 .table>thead>tr>th.active,
-.fixed-header th,
 .row-clickable.active {
     background-color: rgb(0 0 0 / 25%);
+}
+
+.fixed-header th {
+    background: var(--main-bg-color);
 }
 
 .table thead tr>th,
@@ -404,6 +413,7 @@ color: var(--text);
         box-shadow: 0 0 10px 0px #000000;
         background: var(--modal-bg-color);
     }
+    .off-canvas-sidebar .nav li.active>a:before,
     .off-canvas-sidebar .nav > li.active > a:after {
         border-left: 17px solid var(--accent-color);
     }
