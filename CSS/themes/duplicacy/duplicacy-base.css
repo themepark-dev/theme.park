@@ -132,9 +132,14 @@ body,
 
 .sidebar .nav li.active>a:before,
 .off-canvas-sidebar .nav li.active>a:before,
-.sidebar .nav li.active>a:after,
-.off-canvas-sidebar .nav li.active>a:after {
+.sidebar .nav li.active>a:after {
     border-right: 17px solid var(--accent-color);
+}
+
+@media (min-width: 992px) {
+    .off-canvas-sidebar .nav li.active>a:after {
+        border-right: 17px solid var(--accent-color);
+    }
 }
 
 .sidebar[data-active-color="success"] .nav li.active>a,
@@ -239,6 +244,10 @@ textarea {
 #modal_restore_revision:focus {
     background: white;
     color: black;
+}
+
+.form-check-label{
+    word-break: break-word;
 }
 
 /* BUTTONS */
@@ -373,6 +382,17 @@ hr {
     border-color: var(--accent-color);
 }
 
+/* PROGRESS BARS */
+.progress {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.progress-bar {
+    background-color: var(--accent-color);
+}
+.progress span {
+color: var(--text);
+}
+
 /* FOOTER */
 .main-panel>.footer {
     background: rgb(0 0 0 / 0.25);
@@ -383,5 +403,8 @@ hr {
     .off-canvas-sidebar .sidebar-wrapper {
         box-shadow: 0 0 10px 0px #000000;
         background: var(--modal-bg-color);
+    }
+    .off-canvas-sidebar .nav > li.active > a:after {
+        border-left: 17px solid var(--accent-color);
     }
 }
