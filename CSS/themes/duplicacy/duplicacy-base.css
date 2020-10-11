@@ -433,7 +433,21 @@ div>div>div.modal-footer>button.btn.btn-default.pull-left:hover,
     color: var(--text-hover);
     background-color: #ec2626;
 }
+div.bootbox.modal.fade.bootbox-confirm.in > div > div > div.modal-footer > button.btn.btn-default {
+    border-color: #f05050;
+    background-color: #f05050;
+    color: var(--text);
+}
 
+div.bootbox.modal.fade.bootbox-confirm.in > div > div > div.modal-footer > button.btn.btn-default:hover {
+    border-color: #ec2626;
+    color: var(--text-hover);
+    background-color: #ec2626;
+}
+
+.close {
+    color: #fff
+}
 .navbar .navbar-nav>li>a.btn-success,
 .btn-success {
     border-color: var(--button-color);
