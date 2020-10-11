@@ -268,6 +268,15 @@ color:#FFFFFF !important;
     border: none;
     background: #ffffff;
 }
+.gf-form-select-box__option {
+    background: var(--modal-bg-color) !important;
+}
+.gf-form-select-box__option.gf-form-select-box__option--is-focused {
+    color: #fff;
+    -o-border-image: -o-linear-gradient(var(--accent-color) 30%,var(--accent-color) 99%);
+    border-image: -webkit-gradient(linear,left top,left bottom,color-stop(30%,var(--accent-color)),color-stop(99%,var(--accent-color)));
+    border-image: -webkit-linear-gradient(var(--accent-color) 30%,var(--accent-color) 99%);
+}
 .filter-table td.filter-table__switch-cell {
     border-right: none;
 }

@@ -12,7 +12,7 @@
 /*			      https://github.com/gilbN/theme.park			 */
 
 /* DUPLICACY AQUAMARINE THEME */
-@import url(https://gilbn.github.io/theme.park/CSS/themes/duplicacy/duplicacy-base.css);
+@import url(https://gflix.app/theme.park/CSS/themes/duplicacy/duplicacy-base.css);
 :root {
   --main-bg-color: radial-gradient(ellipse at center, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
   --modal-bg-color: radial-gradient(ellipse at top, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
