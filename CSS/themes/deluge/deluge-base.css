@@ -671,6 +671,9 @@
       font-size: 16px;
       font-weight: normal;
   }
+  #tbar-deluge-text * {
+    color: white !important;
+  }
   
   /* Buttons hover */
   .x-btn{
