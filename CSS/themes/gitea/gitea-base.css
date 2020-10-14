@@ -373,7 +373,7 @@ svg.vch__wrapper .vch__months__labels__wrapper text.vch__month__label[data-v-a9c
 }
 
 .repository .ui.menu .active.item {
-    background: var(--main-bg-color);
+    background: var(--main-bg-color) !important;
     color: var(--text);
     font-weight: 400;
     box-shadow: none;
