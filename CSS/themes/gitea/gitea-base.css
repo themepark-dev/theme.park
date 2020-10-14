@@ -362,7 +362,7 @@ svg.vch__wrapper .vch__months__labels__wrapper text.vch__month__label[data-v-a9c
 
 .ui.tabular.menu .item:hover {
     color: var(--text-hover);
-    background: rgba(255, 255, 255, .07);
+    //background: rgba(255, 255, 255, .07);
     border-radius: .28571429rem .28571429rem 0 0 !important;
 }
 
@@ -374,7 +374,7 @@ svg.vch__wrapper .vch__months__labels__wrapper text.vch__month__label[data-v-a9c
 
 .repository .ui.menu .active.item {
     background: var(--main-bg-color) !important;
-    color: var(--text);
+    color: var(--text-hover);
     font-weight: 400;
     box-shadow: none;
 }
@@ -661,6 +661,14 @@ footer {
 
 .markdown:not(code) table tr:nth-child(2n) {
     background-color: rgba(0, 0, 0, .45);
+}
+.chroma {
+    filter: invert(1);
+}
+.repository.file.list .non-diff-file-content pre {
+    overflow: auto;
+    color: #695d4b;
+    background: rgba(0, 0, 0, .5);
 }
 
 /* PLACEHOLDER TEXT */
