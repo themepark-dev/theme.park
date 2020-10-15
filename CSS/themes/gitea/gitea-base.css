@@ -17,13 +17,15 @@ body {
 a,
 .home a,
 .ui.user.list .item .description a,
-.ui.breadcrumb a {
+.ui.breadcrumb a,
+.repository .labelspage .item a {
     color: var(--link-color);
 }
 
 a:hover,
 .ui.user.list .item .description a:hover,
-.ui.breadcrumb a:hover {
+.ui.breadcrumb a:hover,
+.repository .labelspage .item a:hover {
     color: #fff;
 }
 
@@ -82,13 +84,14 @@ p,
 /*strong,*/
 footer,
 .ui.list>.item .description,
-.ui.form .inline.field>label,
+.issue.list>.item .title,
 .ui.accordion .title:not(.ui),
 .ui.checkbox label,
-.form .help,
 .ui.header,
 .ui .text.black,
 .ui.header .sub.header,
+.ui.form .inline.field>label,
+.form .help,
 .ui.form .field>label,
 .ui.form .inline.field>label,
 .ui.form .inline.field>p,
@@ -96,10 +99,11 @@ footer,
 .ui.form .inline.fields .field>p,
 .ui.form .inline.fields>label,
 .ui.dropdown .menu>.message:not(.ui) {
-    color: var(--text) !important;
+    color: var(--text);
 }
-
-b:hover {
+/* TEXT HOVER */
+b:hover,
+.issue.list>.item .title:hover {
     color: var(--text-hover);
 }
 
@@ -313,16 +317,22 @@ svg.vch__wrapper .vch__months__labels__wrapper text.vch__month__label[data-v-a9c
 }
 
 .ui.menu .active.item {
-    background: rgba(0, 0, 0, .05) !important;
+    background: rgba(0, 0, 0, .25);
     color: var(--text);
     font-weight: 400;
     box-shadow: none;
 }
-
+.ui.menu .active.item:hover, .ui.vertical.menu .active.item:hover {
+    background-color: rgba(0, 0, 0, .25);
+    color: var(--text-hover);
+}
+.ui.menu a.item:hover {
+    color: var(--text-hover);
+    background: rgb(255 255 255 / 8%);
+}
 #app .ui.link.menu .item:hover,
 .ui.menu .dropdown.item:hover,
-.ui.menu .link.item:hover,
-.ui.menu a.item:hover {
+.ui.menu .link.item:hover {
     cursor: pointer;
     background: rgba(0, 0, 0, .03);
     color: var(--text-hover);
@@ -355,7 +365,7 @@ svg.vch__wrapper .vch__months__labels__wrapper text.vch__month__label[data-v-a9c
 }
 
 .ui.tabular.menu .active.item {
-    background: none rgb(0 0 0 / 0.25);
+    background: none var(--main-bg-color) !important;
     color: var(--text);
     border-color: transparent;
 }
@@ -367,10 +377,10 @@ svg.vch__wrapper .vch__months__labels__wrapper text.vch__month__label[data-v-a9c
 
 .repository .ui.menu {
     background: rgb(0 0 0 / 0%);
-    border: 1px solid transparent;
+    border: 1px solid rgba(255, 255, 255, 0.11);
     box-shadow: 0 1px 2px 0 rgba(34, 36, 38, .15);
 }
-
+/*
 .repository .ui.menu .active.item {
     background: var(--main-bg-color) !important;
     color: var(--text-hover);
@@ -569,11 +579,11 @@ footer {
 .ui.basic.button:hover,
 .ui.basic.buttons .button:focus,
 .ui.basic.buttons .button:hover {
-    background: rgb(0 0 0 / 25%);
+    background: rgb(255 255 255 / 8%);
     color: var(--button-text);
 }
     /* LABELS */
-    .ui.label {
+    .ui.label, .ui.menu .item>.label {
         background-color: var(--button-color);
         color: var(--button-text);
     }
@@ -672,6 +682,9 @@ footer {
 
 .markdown:not(code) table tr:nth-child(2n) {
     background-color: rgba(0, 0, 0, .45);
+}
+.markdown:not(code) code, .markdown:not(code) tt {
+    background-color: rgb(0 0 0 / 0.25);
 }
 .chroma {
     filter: invert(1);
