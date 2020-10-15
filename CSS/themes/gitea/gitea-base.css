@@ -79,7 +79,7 @@ h4,
 h5,
 h6,
 p,
-strong,
+/*strong,*/
 footer,
 .ui.list>.item .description,
 .ui.form .inline.field>label,
@@ -362,7 +362,6 @@ svg.vch__wrapper .vch__months__labels__wrapper text.vch__month__label[data-v-a9c
 
 .ui.tabular.menu .item:hover {
     color: var(--text-hover);
-    //background: rgba(255, 255, 255, .07);
     border-radius: .28571429rem .28571429rem 0 0 !important;
 }
 
@@ -572,7 +571,6 @@ footer {
 .ui.basic.buttons .button:hover {
     background: rgb(0 0 0 / 25%);
     color: var(--button-text);
-    box-shadow: inset 0 0 0 1px rgba(34, 36, 38, .35), inset 0 0 0 0 rgba(34, 36, 38, .15);
 }
     /* LABELS */
     .ui.label {
