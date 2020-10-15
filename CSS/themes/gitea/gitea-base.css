@@ -293,14 +293,14 @@ b:hover {
 }
 
 /* DASHBOARD */
-.vch__wrapper {
-    filter: invert(100);
+.vue-tooltip-theme.tooltip .tooltip-inner {
+    background: rgb(0 0 0 / 95%);
+    color: var(--text);
 }
-
 svg.vch__wrapper .vch__days__labels__wrapper text.vch__day__label[data-v-a9cfea66],
 svg.vch__wrapper .vch__legend__wrapper text[data-v-a9cfea66],
 svg.vch__wrapper .vch__months__labels__wrapper text.vch__month__label[data-v-a9cfea66] {
-    fill: #000000;
+    fill: var(--text);
 }
 
 #app .ui.item.menu,
@@ -444,12 +444,11 @@ svg.vch__wrapper .vch__months__labels__wrapper text.vch__month__label[data-v-a9c
 .ui.table {
     width: 100%;
     background: rgb(255 255 255 / 0.0);
-    border: 1px solid rgba(34, 36, 38, .15);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     color: var(--text);
 }
 
 .ui.table>tbody {
-    background: rgb(255 255 255 / 8%);
     border: 1px solid rgba(34, 36, 38, .15);
     color: var(--text);
 }
