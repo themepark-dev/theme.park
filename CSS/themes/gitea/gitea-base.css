@@ -114,10 +114,10 @@ b:hover {
     color: var(--text)
 }
 
-.ui.secondary.menu .active.item,
-.ui.secondary.menu .active.item:hover {
+.following.bar.light.ui.secondary.menu .active.item,
+.following.bar.lightui.secondary.menu .active.item:hover {
     box-shadow: none;
-    background: rgba(0, 0, 0, .05);
+    background: rgba(0, 0, 0, .25) !important;
     color: var(--accent-color);
 }
 
