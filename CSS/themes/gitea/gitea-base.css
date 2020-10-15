@@ -586,6 +586,9 @@ footer {
     .repository #commits-table td.sha .sha.label, .repository #repo-files-table .sha.label, .repository .timeline-item.commits-list .singular-commit .sha.label {
         border: 1px solid transparent;
     }
+    .repository.file.list #repo-files-table tbody .svg.octicon-file-directory, .repository.file.list #repo-files-table tbody .svg.octicon-file-submodule {
+        color: var(--accent-color);
+    }
 /* FORMS */
 .ui.form input:not([type]),
 .ui.form input[type=date],
