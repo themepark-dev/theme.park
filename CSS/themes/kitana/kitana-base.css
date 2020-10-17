@@ -31,7 +31,8 @@ a:hover {
 }
 
 /* TEXT */
-body {
+body,
+.navbar-dark .navbar-text {
     color: var(--text);
 }
 
