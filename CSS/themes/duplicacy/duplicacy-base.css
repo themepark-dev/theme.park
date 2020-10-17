@@ -101,10 +101,6 @@ body,
     color: var(--accent-color-hover);
 }
 
-.status-success {
-    color: var(--link-color);
-}
-
 /* PLACEHOLDER TEXT */
 ::placeholder {
     color: var(--text) !important;
