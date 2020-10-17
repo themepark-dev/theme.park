@@ -72,7 +72,8 @@ body,
 .card .stats,
 .vis-time-axis .vis-text,
 .footer .copyright,
-.navbar-default .navbar-brand {
+.navbar-default .navbar-brand,
+.sidebar .nav li > a, .off-canvas-sidebar .nav li > a {
     color: var(--text) !important;
 }
 
@@ -240,7 +241,10 @@ body,
 
 .sidebar[data-active-color="success"] .nav li.active>a,
 .off-canvas-sidebar[data-active-color="success"] .nav li.active>a {
-    color: var(--accent-color);
+    color: var(--accent-color) !important;
+}
+.sidebar .nav li > a:hover {
+    color: var(--text-hover) !important;
 }
 
 .sidebar .sidebar-wrapper {
@@ -350,7 +354,7 @@ fieldset[disabled] .form-control {
 
 /* BUTTONS */
 .btn {
-    color: var(--text);
+    color: var(--button-text);
     border-width: 1px;
     border-radius: 4px;
 }
@@ -376,7 +380,7 @@ fieldset[disabled] .form-control {
 }
 
 .btn-info.btn-fill {
-    color: var(--text);
+    color: var(--button-text);
     background-color: var(--button-color);
     border: var(--button-color);
 }
@@ -392,13 +396,13 @@ fieldset[disabled] .form-control {
 .btn-primary {
     border-color: var(--button-color);
     background: var(--button-color);
-    color: var(--text);
+    color: var(--button-text);
 }
 
-.btn-primary:focus {
-    border-color: var(--button-color);
-    color: var(--button-color);
-    background-color: transparent;
+.btn-primary:focus,.btn-primary:active:focus {
+    border-color: var(--button-color-hover);
+    color: var(--text-hover);
+    background-color: var(--button-color-hover);
 }
 
 .btn-primary:hover {
@@ -408,7 +412,7 @@ fieldset[disabled] .form-control {
 }
 
 .btn-primary.btn-fill {
-    color: var(--text);
+    color: var(--button-text);
     background-color: var(--button-color);
     border-color: var(--button-color);
 }
@@ -420,15 +424,20 @@ fieldset[disabled] .form-control {
 
 }
 
-div>div>div.modal-footer>button.btn.btn-default.pull-left {
+div>div>div.modal-footer>button.btn.btn-default.pull-left,
+.navbar .navbar-nav>li>a.btn-danger.btn-fill,
+.btn-danger.btn-fill {
     border-color: #f05050;
     background-color: #f05050;
-    color: var(--text);
+    color: var(--button-text);
 }
 
 div>div>div.modal-footer>button.btn.btn-default.pull-left:hover,
-.navbar .navbar-nav>li>a.btn-danger.btn-fill,
-.btn-danger.btn-fill {
+div>div>div.modal-footer>button.btn.btn-default.pull-left:focus,
+.navbar .navbar-nav>li>a.btn-danger.btn-fill:hover,
+.navbar .navbar-nav>li>a.btn-danger.btn-fill:focus,
+.btn-danger.btn-fill:hover,
+.btn-danger.btn-fill:focus {
     border-color: #ec2626;
     color: var(--text-hover);
     background-color: #ec2626;
@@ -436,10 +445,11 @@ div>div>div.modal-footer>button.btn.btn-default.pull-left:hover,
 div.bootbox.modal.fade.bootbox-confirm.in > div > div > div.modal-footer > button.btn.btn-default {
     border-color: #f05050;
     background-color: #f05050;
-    color: var(--text);
+    color: var(--button-text);
 }
 
-div.bootbox.modal.fade.bootbox-confirm.in > div > div > div.modal-footer > button.btn.btn-default:hover {
+div.bootbox.modal.fade.bootbox-confirm.in > div > div > div.modal-footer > button.btn.btn-default:hover,
+div.bootbox.modal.fade.bootbox-confirm.in > div > div > div.modal-footer > button.btn.btn-default:focus {
     border-color: #ec2626;
     color: var(--text-hover);
     background-color: #ec2626;

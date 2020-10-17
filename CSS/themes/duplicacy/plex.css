@@ -18,6 +18,7 @@
   --modal-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-dark2.png") center center/cover no-repeat fixed;
   --button-color: #cc7b19;
   --button-color-hover: #e59029;
+  --button-text: #eee;
   --accent-color:  #e5a00d;
   --accent-color-hover: #ffc107;
   --text: #eee;
