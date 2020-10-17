@@ -24,7 +24,7 @@ a:hover {
 }
 
 a.disabled-link {
-    color: var(--text);
+    color: #666;
 }
 
 /* Scrollbar */
@@ -535,7 +535,7 @@ hr {
 }
 
 .progress span {
-    color: var(--text);
+    color: var(--text-hover);
 }
 
 /* FOOTER */
