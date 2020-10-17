@@ -23,6 +23,10 @@ a:hover {
     color: #fff;
 }
 
+a.disabled-link {
+    color: var(--text);
+}
+
 /* Scrollbar */
 @media only screen and (min-width: 768px) {
     html {
