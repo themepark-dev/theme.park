@@ -98,6 +98,12 @@ content-loading .contentLoading {
     border: #f05050 5px solid;
 }
 
+.fm .settings {
+    background: var(--modal-bg-color);
+    color: var(--text);
+    Border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
 /* PAGES */
 .sub .settings {
     background: rgb(255 255 255 / 25%);
@@ -159,12 +165,50 @@ label {
     background: var(--accent-color);
 }
 
+.sub .rowShow .lineShow .contentShow .tvshow {
+    background-color: rgb(255 255 255 / 8%);
+    color: var(--button-text);
+}
+
+.sub .rowShow .lineShow .contentShow .tvshow:hover {
+    background-color: rgb(255 255 255 / 16%);
+
+}
+
+.sub .rowShow .lineShow .contentShow .loadmore {
+    background: var(--button-color);
+    border: solid 6px var(--button-color);
+    color: var(--button-text);
+}
+
+.sub .rowShow .lineShow .contentShow .tvshowheader div {
+    background: var(--button-color);
+    color: var(--button-text);
+}
+
+.sub .rowShow .lineShow .contentShow .tvshowheader div:hover {
+    background: var(--button-color-hover);
+    color: var(--button-text);
+    border: transparent;
+}
+
+.sub .rowShow .lineShow .contentShow .loadmore:hover {
+    background: var(--button-color-hover);
+    color: var(--button-text);
+    border: solid 6px transparent;
+}
+
 .logs .logDetails {
     background-color: rgb(255 255 255 / 14%);
 }
 
 .logs .search {
     background-color: rgb(255 255 255 / 8%);
+}
+
+.logs .logDetails table tr.danger {
+    background-color: rgb(244 67 54 / 50%) !important;
+    color: #fff;
 }
 
 .uas .repoContainer .repo .details .row,
@@ -186,7 +230,8 @@ label {
 .playlists .playlistBtn,
 .language .languageActions .langBtn,
 .fr .reset,
-.logs .search .btnSearch {
+.logs .search .btnSearch,
+.fm button {
     border-color: var(--button-color);
     background: var(--button-color);
     color: var(--button-text);
@@ -219,7 +264,9 @@ label {
 .language .languageActions .langBtn:hover,
 .fr .reset:hover,
 .logs .search .btnSearch:hover,
-.logs .search .btnSearch:focus {
+.logs .search .btnSearch:focus,
+.fm button:hover,
+.fm button:focus {
     border-color: var(--button-color-hover);
     color: var(--text-hover);
     background-color: var(--button-color-hover);
