@@ -194,6 +194,10 @@
 <p><a href="https://github.com/gilbN/theme.park/wiki/Kitana"><img src="https://raw.githubusercontent.com/pannal/Kitana/master/static/img/android-icon-48x48.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://github.com/gilbN/theme.park/wiki/Kitana">Kitana</a></p>
 </td>
+<td style="width: 90px; height: 40px; text-align: center;">
+<p><a href="https://github.com/gilbN/theme.park/wiki/Webtools"><img src="https://raw.githubusercontent.com/ukdtom/WebTools.bundle/master/Wiki/WebTools/Logos/WebTools-48.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://github.com/gilbN/theme.park/wiki/Webtools">Webtools</a></p>
+</td>
 </tr>
 </tbody>
 </table>
