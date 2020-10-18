@@ -163,6 +163,41 @@ UL.jqueryFileTree A,
     -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
     box-shadow: 0 6px 12px rgba(0,0,0,.175);
 }
+.dropdown-menu {
+    background: var(--modal-bg-color);
+    border: 1px solid rgba(255, 255, 255, .1);
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .2);
+}
+
+.sync-level .add-folder-mode .option-text {
+    color: var(--text-hover);
+}
+.sync-level .add-folder-mode .option-description {
+    color: var(--text);
+    white-space: normal;
+}
+.sync-level .add-folder-mode li.selected a {
+    background-color: rgb(0 0 0 / 25%);
+}
+.sync-level .add-folder-mode li:not(.selected) a:focus, .sync-level .add-folder-mode li:not(.selected) a:hover {
+    background-color: rgb(255 255 255 / .08);
+}
+.sync-level .add-folder-mode .btn-group {
+    background-color: transparent !important;
+}
+button.selectpicker.btn-default {
+    border-color: #ccc0!important;
+    color: var(--text)!important;
+    background-color: rgb(0 0 0 / 25%)!important;
+}
+
+.btn-group.open .dropdown-toggle {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: none;
+    background: rgb(0 0 0 / 50%) !important;
+}
 /* ICONS */
 .mycon.mycon-folder-rw,
 .mycon.mycon-folder-owner,
@@ -451,7 +486,17 @@ ul.jqueryFileTree a:hover {
     border-right: 1px solid rgb(255 255 255 / 10%);
     background: rgb(0 0 0 / 25%);
 }
-
+    /* IDENTITY */
+    #my-devices .my-devices .single-my-device:hover:not(.disabled) {
+        background-color: rgb(255 255 255 / 8%);
+    }
+    #my-devices .my-devices .link-device-block #device-to-qr .device-link {
+        color: var(--accent-color);
+    }
+    #my-devices .my-devices .link-device-block #device-to-qr:hover:not(:disabled) .device-link-text {
+        text-decoration: underline;
+        color: var(--text-hover);
+    }
 /* BUTTONS */
 .btn {
     border-color: var(--button-color);
