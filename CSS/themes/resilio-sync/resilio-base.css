@@ -133,7 +133,7 @@ UL.jqueryFileTree A,
 }
 
 .bt-navbar .btn:hover {
-    background-color: var(--button-color-hover);
+    background-color: rgb(255 255 255 / 8%) !important;
 }
 
 .bt-navbar .btn#try-pro-button {
@@ -142,7 +142,11 @@ UL.jqueryFileTree A,
 }
 
 .bt-navbar .btn#try-pro-button:hover {
-    background-color: var(--button-color-hover);
+    background-color: rgb(255 255 255 / 8%);
+}
+
+.bt-navbar .btn.btn-tab {
+    background: transparent;
 }
 
 /* SIDE MENU */
