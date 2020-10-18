@@ -95,7 +95,8 @@ UL.jqueryFileTree A,
 #support-tab #page-menu .support-content>button h5,
 #support-tab #page-menu .support-content>a p,
 .modal-header .transfer-path .labelContainer .secondaryLine,
-.transfer-table .transfer-row .nameLabel {
+.transfer-table .transfer-row .nameLabel,
+.dropdown-menu li a {
     color: var(--text);
 }
 
@@ -172,7 +173,10 @@ UL.jqueryFileTree A,
     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .2);
     box-shadow: 0 6px 12px rgba(0, 0, 0, .2);
 }
-
+.dropdown-menu li a:focus, .dropdown-menu li a:hover {
+    background-color: rgb(255 255 255 / 8%);
+    color: var(--text-hover);
+}
 .sync-level .add-folder-mode .option-text {
     color: var(--text-hover);
 }
@@ -529,7 +533,8 @@ ul.jqueryFileTree a:hover {
     color: var(--button-text);
 }
 /* BUTTONS */
-.btn {
+.btn,
+#support-tab #page-feedback-form .back-button {
     border-color: var(--button-color);
     background: var(--button-color);
     color: var(--button-text);
@@ -543,7 +548,8 @@ ul.jqueryFileTree a:hover {
 .btn:focus,
 .btn:active,
 .btn-primary:not(:disabled):not(.disabled):active,
-.btn-primary:not(:disabled):not(.disabled).active {
+.btn-primary:not(:disabled):not(.disabled).active,
+#support-tab #page-feedback-form .back-button:hover {
     border-color: var(--button-color-hover);
     color: var(--text-hover);
     background-color: var(--button-color-hover);
@@ -587,7 +593,18 @@ ul.jqueryFileTree a:hover {
     background-color: rgb(255 255 255 / 8%);
     color: var(--text-hover);
 }
+.table>thead>tr>th {
+    vertical-align: bottom;
+    border-bottom: 1px solid rgb(255 255 255 / 10%);
 
+}
+.table.table-bordered-header thead tr th {
+    background-color: #fff;
+    border-right: 1px solid rgb(255 255 255 / 0.1) !important;
+}
+.tableScrollContainer .table thead tr th {
+    background: var(--main-bg-color) !important;
+}
 /* PLACEHOLDER TEXT */
 ::placeholder {
     color: var(--text) !important;
