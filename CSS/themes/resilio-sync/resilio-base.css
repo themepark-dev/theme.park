@@ -173,10 +173,13 @@ UL.jqueryFileTree A,
     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .2);
     box-shadow: 0 6px 12px rgba(0, 0, 0, .2);
 }
-.dropdown-menu li a:focus, .dropdown-menu li a:hover {
+
+.dropdown-menu li a:focus,
+.dropdown-menu li a:hover {
     background-color: rgb(255 255 255 / 8%);
     color: var(--text-hover);
 }
+
 .sync-level .add-folder-mode .option-text {
     color: var(--text-hover);
 }
@@ -210,6 +213,10 @@ button.selectpicker.btn-default {
     box-shadow: none !important;
     border: none;
     background: rgb(0 0 0 / 50%) !important;
+}
+
+.animating {
+    background-color: transparent;
 }
 
 /* ICONS */
@@ -433,9 +440,11 @@ ul.jqueryFileTree a:hover {
     background-color: rgb(0 0 0 / 25%);
     border-bottom: 1px solid rgb(255 255 255 / 10%);
 }
+
 .section-header {
     border-bottom: 1px solid rgb(255 255 255 / .1);
 }
+
 /* FOOTER */
 #sync-core-state {
     background-color: rgb(0 0 0 / 50%);
@@ -480,9 +489,21 @@ ul.jqueryFileTree a:hover {
     background: var(--modal-bg-color);
 }
 
-.c3 {
-    filter: invert(1) !important;
+#statusPanel .chart-c3 .c3-tooltip {
+    background-color: #000;
+    opacity: .7;
+    border-radius: 4px;
+    box-shadow: none;
 }
+
+.c3-grid line {
+    stroke: var(--text);
+}
+
+.c3 text {
+    fill: var(--text);
+}
+
 
 /* SETTINGS */
 .settings-tabs-wrapper .settings-tabs-buttons .left-nav-button.active {
@@ -528,10 +549,12 @@ ul.jqueryFileTree a:hover {
     text-decoration: underline;
     color: var(--text-hover);
 }
+
 #my-devices .my-devices .info-button:hover {
     background-color: var(--button-color-hover);
     color: var(--button-text);
 }
+
 /* BUTTONS */
 .btn,
 #support-tab #page-feedback-form .back-button {
@@ -593,18 +616,22 @@ ul.jqueryFileTree a:hover {
     background-color: rgb(255 255 255 / 8%);
     color: var(--text-hover);
 }
+
 .table>thead>tr>th {
     vertical-align: bottom;
     border-bottom: 1px solid rgb(255 255 255 / 10%);
 
 }
+
 .table.table-bordered-header thead tr th {
     background-color: #fff;
     border-right: 1px solid rgb(255 255 255 / 0.1) !important;
 }
+
 .tableScrollContainer .table thead tr th {
     background: var(--main-bg-color) !important;
 }
+
 /* PLACEHOLDER TEXT */
 ::placeholder {
     color: var(--text) !important;
