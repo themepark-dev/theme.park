@@ -216,7 +216,7 @@ button.selectpicker.btn-default {
 }
 
 .animating {
-    background-color: transparent;
+    background-color: transparent !important;
 }
 
 /* ICONS */
