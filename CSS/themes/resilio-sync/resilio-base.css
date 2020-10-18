@@ -11,6 +11,7 @@
 /* 			      https://github.com/gilbN/theme.park			 */
 
 @import url(https://use.fontawesome.com/releases/v5.15.1/css/all.css);
+
 body,
 .tableScrollContainer,
 .settings-tabs-wrapper .settings-tabs-container {
@@ -155,41 +156,49 @@ UL.jqueryFileTree A,
 .bt-navbar .choose-dropdown-menu {
     background: var(--modal-bg-color);
 }
+
 .dropdown-menu {
     background-color: var(--modal-bg-color);
     border: 1px solid #ccc;
-    border: 1px solid rgba(0,0,0,.15);
+    border: 1px solid rgba(0, 0, 0, .15);
     border-radius: 2px;
-    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
-    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
 }
+
 .dropdown-menu {
     background: var(--modal-bg-color);
     border: 1px solid rgba(255, 255, 255, .1);
-    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .2);
     box-shadow: 0 6px 12px rgba(0, 0, 0, .2);
 }
 
 .sync-level .add-folder-mode .option-text {
     color: var(--text-hover);
 }
+
 .sync-level .add-folder-mode .option-description {
     color: var(--text);
     white-space: normal;
 }
+
 .sync-level .add-folder-mode li.selected a {
     background-color: rgb(0 0 0 / 25%);
 }
-.sync-level .add-folder-mode li:not(.selected) a:focus, .sync-level .add-folder-mode li:not(.selected) a:hover {
+
+.sync-level .add-folder-mode li:not(.selected) a:focus,
+.sync-level .add-folder-mode li:not(.selected) a:hover {
     background-color: rgb(255 255 255 / .08);
 }
+
 .sync-level .add-folder-mode .btn-group {
     background-color: transparent !important;
 }
+
 button.selectpicker.btn-default {
-    border-color: #ccc0!important;
-    color: var(--text)!important;
-    background-color: rgb(0 0 0 / 25%)!important;
+    border-color: #ccc0 !important;
+    color: var(--text) !important;
+    background-color: rgb(0 0 0 / 25%) !important;
 }
 
 .btn-group.open .dropdown-toggle {
@@ -198,6 +207,7 @@ button.selectpicker.btn-default {
     border: none;
     background: rgb(0 0 0 / 50%) !important;
 }
+
 /* ICONS */
 .mycon.mycon-folder-rw,
 .mycon.mycon-folder-owner,
@@ -323,6 +333,7 @@ button.selectpicker.btn-default {
     color: var(--text);
     background: var(--modal-bg-color);
 }
+
 .modal-body .horizontal-separator .horizontal-separator-text {
     background-color: var(--modal-bg-color);
     color: var(--text);
@@ -378,21 +389,32 @@ ul.jqueryFileTree a:hover {
 .nav-tabs.nav-sub-tabs>li.active a:focus,
 .nav-tabs.nav-sub-tabs>li.active a:hover {
     background: var(--button-color-hover) !important;
-    border:  1px solid var(--button-color-hover);
+    border: 1px solid var(--button-color-hover);
     color: var(--button-text)
 }
-.activity-filter.open, .main-filter.open, .modal-filter.open, .modal-input.open {
+
+.activity-filter.open,
+.main-filter.open,
+.modal-filter.open,
+.modal-input.open {
     background: var(--main-bg-color) !important;
 }
+
 .modal-header .transfer-path .labelContainer {
     border-left: 1px solid rgb(255 255 255 / .1);
 }
-.modal-filter .btn, .modal-input .btn {
+
+.modal-filter .btn,
+.modal-input .btn {
     background: transparent;
 }
-.modal-filter .btn:hover,.modal-input .btn:focus, .modal-filter animating {
+
+.modal-filter .btn:hover,
+.modal-input .btn:focus,
+.modal-filter animating {
     background: rgb(255 255 255 / .08) !important;
 }
+
 /* PAGES */
 #archive-onboarding.fixed .tutorial-background,
 #onboarding-dark.fixed .tutorial-background,
@@ -407,7 +429,9 @@ ul.jqueryFileTree a:hover {
     background-color: rgb(0 0 0 / 25%);
     border-bottom: 1px solid rgb(255 255 255 / 10%);
 }
-
+.section-header {
+    border-bottom: 1px solid rgb(255 255 255 / .1);
+}
 /* FOOTER */
 #sync-core-state {
     background-color: rgb(0 0 0 / 50%);
@@ -486,17 +510,21 @@ ul.jqueryFileTree a:hover {
     border-right: 1px solid rgb(255 255 255 / 10%);
     background: rgb(0 0 0 / 25%);
 }
-    /* IDENTITY */
-    #my-devices .my-devices .single-my-device:hover:not(.disabled) {
-        background-color: rgb(255 255 255 / 8%);
-    }
-    #my-devices .my-devices .link-device-block #device-to-qr .device-link {
-        color: var(--accent-color);
-    }
-    #my-devices .my-devices .link-device-block #device-to-qr:hover:not(:disabled) .device-link-text {
-        text-decoration: underline;
-        color: var(--text-hover);
-    }
+
+/* IDENTITY */
+#my-devices .my-devices .single-my-device:hover:not(.disabled) {
+    background-color: rgb(255 255 255 / 8%);
+}
+
+#my-devices .my-devices .link-device-block #device-to-qr .device-link {
+    color: var(--accent-color);
+}
+
+#my-devices .my-devices .link-device-block #device-to-qr:hover:not(:disabled) .device-link-text {
+    text-decoration: underline;
+    color: var(--text-hover);
+}
+
 /* BUTTONS */
 .btn {
     border-color: var(--button-color);
