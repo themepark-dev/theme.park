@@ -524,7 +524,10 @@ ul.jqueryFileTree a:hover {
     text-decoration: underline;
     color: var(--text-hover);
 }
-
+#my-devices .my-devices .info-button:hover {
+    background-color: var(--button-color-hover);
+    color: var(--button-text);
+}
 /* BUTTONS */
 .btn {
     border-color: var(--button-color);
