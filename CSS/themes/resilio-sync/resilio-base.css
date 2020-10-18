@@ -10,7 +10,7 @@
 /*		   		        Made by @gilbN					 */
 /* 			      https://github.com/gilbN/theme.park			 */
 
-
+@import url(https://use.fontawesome.com/releases/v5.15.1/css/all.css);
 body,
 .tableScrollContainer,
 .settings-tabs-wrapper .settings-tabs-container {
@@ -155,7 +155,14 @@ UL.jqueryFileTree A,
 .bt-navbar .choose-dropdown-menu {
     background: var(--modal-bg-color);
 }
-
+.dropdown-menu {
+    background-color: var(--modal-bg-color);
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 2px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
 /* ICONS */
 .mycon.mycon-folder-rw,
 .mycon.mycon-folder-owner,
@@ -270,15 +277,20 @@ UL.jqueryFileTree A,
 /* MODALS */
 .modal-header,
 .modal-footer {
-    background-color: rgba(0, 0, 0, 0);
+    background: var(--modal-bg-color);
     color: var(--text);
 }
 
 .modal-content,
 .modal-body,
-.modal-body .fileTreeContainer {
+.modal-body .fileTreeContainer,
+.modal-page {
     color: var(--text);
     background: var(--modal-bg-color);
+}
+.modal-body .horizontal-separator .horizontal-separator-text {
+    background-color: var(--modal-bg-color);
+    color: var(--text);
 }
 
 #choose-product-dialog .product-container .product {
@@ -318,7 +330,7 @@ ul.jqueryFileTree a:hover {
 }
 
 #sharing-content .nav-tabs.nav-sub-tabs>li {
-    background-color: transparent;
+    background-color: var(--modal-bg-color);
 }
 
 #sharing-content .nav-tabs.nav-sub-tabs>li>a {
@@ -331,10 +343,21 @@ ul.jqueryFileTree a:hover {
 .nav-tabs.nav-sub-tabs>li.active a:focus,
 .nav-tabs.nav-sub-tabs>li.active a:hover {
     background: var(--button-color-hover) !important;
-    border: transparent;
+    border:  1px solid var(--button-color-hover);
     color: var(--button-text)
 }
-
+.activity-filter.open, .main-filter.open, .modal-filter.open, .modal-input.open {
+    background: var(--main-bg-color) !important;
+}
+.modal-header .transfer-path .labelContainer {
+    border-left: 1px solid rgb(255 255 255 / .1);
+}
+.modal-filter .btn, .modal-input .btn {
+    background: transparent;
+}
+.modal-filter .btn:hover,.modal-input .btn:focus, .modal-filter animating {
+    background: rgb(255 255 255 / .08) !important;
+}
 /* PAGES */
 #archive-onboarding.fixed .tutorial-background,
 #onboarding-dark.fixed .tutorial-background,
@@ -444,9 +467,7 @@ ul.jqueryFileTree a:hover {
 .btn:focus,
 .btn:active,
 .btn-primary:not(:disabled):not(.disabled):active,
-.btn-primary:not(:disabled):not(.disabled).active,
-.modal-filter .btn:hover,
-.modal-input .btn:focus {
+.btn-primary:not(:disabled):not(.disabled).active {
     border-color: var(--button-color-hover);
     color: var(--text-hover);
     background-color: var(--button-color-hover);
@@ -454,13 +475,13 @@ ul.jqueryFileTree a:hover {
 }
 
 .transfer-table .transfer-row .optionsColumn .options-button {
-    background-color: var(--button-color);
+    background-color: transparent;
     color: var(--button-text);
 }
 
 .transfer-table .transfer-row .optionsColumn .options-button.active,
 .transfer-table .transfer-row .optionsColumn .options-button:hover {
-    background-color: var(--button-color-hover);
+    background-color: rgb(255 255 255 / 8%);
 }
 
 /* FORMS */
