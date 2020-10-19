@@ -428,11 +428,6 @@ body {
     background-color: var(--accent-color);
 }
 
-.Label-info-3YD3Y {
-    border-color: var(--accent-color);
-    background-color: var(--accent-color);
-}
-
 /* SETTINGS */
 
 .Settings-summary-3KPAv {
@@ -934,7 +929,10 @@ body {
     background-color: hsla(0, 0%, 100%, .08);
     color: #FFF;
 }
-
+.ExpandingFileDetails-fileDetails-ja8Cz {
+    border: 1px solid rgb(255 255 255 / .1);
+    background-color: rgb(255 255 255 / 8%);
+}
 /* ALBUM STUDIO */
 .AlbumStudioAlbum-album-mOsjl,
 .AlbumStudioAlbum-tracks-14O0r {
