@@ -1,0 +1,757 @@
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+
+/*		   		        Made by @gilbN					 */
+/* 			      https://github.com/gilbN/theme.park			 */
+
+body {
+    background: var(--main-bg-color);
+}
+
+a,
+.home a,
+.ui.user.list .item .description a,
+.ui.breadcrumb a,
+.repository .labelspage .item a {
+    color: var(--link-color);
+}
+
+a:hover,
+.ui.user.list .item .description a:hover,
+.ui.breadcrumb a:hover,
+.repository .labelspage .item a:hover {
+    color: #fff;
+}
+
+* {
+    outline: none;
+}
+
+/* Scrollbar */
+@media only screen and (min-width: 768px) {
+    html {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    body {
+        overflow-y: auto;
+        height: 100%;
+        background: var(--main-bg-color)
+    }
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+    min-height: 50px;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    background-color: hsla(0, 0%, 100%, .2);
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    min-height: 50px;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    background-color: hsla(0, 0%, 100%, .5);
+    background-clip: padding-box;
+}
+
+/* TEXT */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+/*strong,*/
+footer,
+.ui.list>.item .description,
+.issue.list>.item .title,
+.ui.accordion .title:not(.ui),
+.ui.checkbox label,
+.ui.header,
+.ui .text.black,
+.ui.header .sub.header,
+.ui.form .inline.field>label,
+.form .help,
+.ui.form .field>label,
+.ui.form .inline.field>label,
+.ui.form .inline.field>p,
+.ui.form .inline.fields .field>label,
+.ui.form .inline.fields .field>p,
+.ui.form .inline.fields>label,
+.ui.dropdown .menu>.message:not(.ui) {
+    color: var(--text);
+}
+/* TEXT HOVER */
+b:hover,
+.issue.list>.item .title:hover {
+    color: var(--text-hover);
+}
+
+/* NAVBAR */
+.following.bar.light {
+    background-color: transparent;
+    border-bottom: 1px solid transparent;
+    box-shadow: none;
+}
+
+.ui.menu .item {
+    color: var(--text)
+}
+
+.following.bar.light.ui.secondary.menu .active.item,
+.following.bar.lightui.secondary.menu .active.item:hover {
+    box-shadow: none;
+    background: rgba(0, 0, 0, .25) !important;
+    color: var(--accent-color);
+}
+
+.ui.secondary.menu .dropdown.item:hover,
+.ui.secondary.menu .link.item:hover,
+.ui.secondary.menu a.item:hover {
+    background: rgb(255 255 255 / 0.08);
+    color: var(--text-hover);
+}
+
+/* UI */
+
+.ui.attached.segment {
+    border: 1px solid transparent;
+}
+
+.ui.segment {
+    background: rgb(255 255 255 / 8%) !important;
+}
+
+.ui.attached.header {
+    background: rgb(0 0 0 / 25%);
+    border: 1px solid transparent;
+}
+
+.explore .navbar {
+    background-color: rgb(0 0 0 / 25%) !important;
+
+}
+
+.ui .warning.header {
+    background-color: #f9edbe !important;
+    color: black !important;
+}
+
+.ui.red.message p,
+.ui.red.message strong {
+    color: #db2828 !important;
+}
+
+/* SIGN IN NAV BAR*/
+.ui.menu.new-menu {
+    background: rgb(0 0 0 / 25%);
+}
+
+@media only screen and (max-width: 1200px) {
+    .ui.menu.new-menu:after {
+        background-image: inherit;
+    }
+}
+
+.ui.secondary.pointing.menu .active.item,
+.ui.secondary.pointing.menu .active.item:hover {
+    border-color: currentColor;
+    color: var(--accent-color);
+}
+
+.ui.tabular.menu .item {
+    color: var(--text);
+}
+
+.ui.secondary.pointing.menu .dropdown.item:hover,
+.ui.secondary.pointing.menu .link.item:hover,
+.ui.secondary.pointing.menu a.item:hover {
+    background-color: transparent;
+    color: var(--text-hover);
+}
+
+/* DROPDOWN MENU */
+.item:focus {
+    outline: none;
+}
+
+.ui.menu .dropdown.item .menu {
+    background: var(--modal-bg-color);
+}
+
+.ui.menu .ui.dropdown .menu>.item {
+    color: var(--text) !important;
+}
+
+.ui.menu .ui.dropdown .menu>.active.item {
+    background: rgb(0 0 0 / 10%) !important;
+    color: var(--accent-color) !important;
+}
+
+.ui.menu .ui.dropdown .menu>.item:hover,
+.ui.menu .ui.dropdown .menu>.selected.item {
+    background: rgb(255 255 255 / 0.07) !important;
+    color: var(--text-hover) !important;
+}
+
+.ui.dropdown .menu {
+    background: var(--modal-bg-color);
+}
+
+.ui.dropdown .menu>.item:hover {
+    background: rgb(255 255 255 / 0.07);
+}
+
+.ui.dropdown .menu .selected.item,
+.ui.dropdown.selected {
+    background: rgb(0 0 0 / 0.25);
+    color: var(--text-hover);
+}
+
+.ui.dropdown .menu .active.item {
+    color: var(--accent-color);
+    outline: none !important;
+}
+
+.ui.dropdown .menu>.item {
+    color: var(--text);
+}
+
+.ui.dropdown .menu>.item:hover {
+    color: var(--text-hover);
+}
+
+.ui.selection.dropdown .menu>.item {
+    border-top: 1px solid rgb(255 255 255 / 20%);
+}
+
+.ui.selection.dropdown {
+    background: rgb(0 0 0 / .25);
+    color: #fff;
+}
+
+.ui.selection.dropdown:focus {
+    border-color: rgba(255, 255, 255, .08);
+    background: rgb(0 0 0 / 50%);
+    box-shadow: none;
+}
+
+.ui.selection.active.dropdown,
+.ui.selection.active.dropdown .menu {
+    border-color: transparent;
+}
+
+.ui.selection.active.dropdown:hover,
+.ui.selection.active.dropdown:hover .menu {
+    border-color: transparent;
+}
+
+.ui.selection.visible.dropdown>.text:not(.default) {
+    color: var(--text);
+}
+
+.ui.default.dropdown:not(.button)>.text,
+.ui.dropdown:not(.button)>.default.text {
+    color: var(--text);
+    opacity: .7;
+}
+
+/* MESSAGES */
+.ui.negative.message {
+    background-color: #F44336;
+    box-shadow: none !important;
+}
+
+.ui.negative.message p {
+    color: white !important;
+    box-shadow: none !important;
+}
+
+.ui.positive.message {
+    background-color: #4CAF50;
+    box-shadow: none !important;
+}
+
+.ui.positive.message p {
+    color: white !important;
+}
+
+/* DASHBOARD */
+.vue-tooltip-theme.tooltip .tooltip-inner {
+    background: rgb(0 0 0 / 95%);
+    color: var(--text);
+}
+svg.vch__wrapper .vch__days__labels__wrapper text.vch__day__label[data-v-a9cfea66],
+svg.vch__wrapper .vch__legend__wrapper text[data-v-a9cfea66],
+svg.vch__wrapper .vch__months__labels__wrapper text.vch__month__label[data-v-a9cfea66] {
+    fill: var(--text);
+}
+
+#app .ui.item.menu,
+.ui.item.menu .item {
+    background: rgb(255 255 255 / 8%);
+}
+
+#app .ui.menu .active.item {
+    color: var(--text);
+}
+
+.ui.menu .active.item {
+    background: rgba(0, 0, 0, .25);
+    color: var(--text);
+    font-weight: 400;
+    box-shadow: none;
+}
+.ui.menu .active.item:hover, .ui.vertical.menu .active.item:hover {
+    background-color: rgba(0, 0, 0, .25);
+    color: var(--text-hover);
+}
+.ui.menu a.item:hover {
+    color: var(--text-hover);
+    background: rgb(255 255 255 / 8%);
+}
+#app .ui.link.menu .item:hover,
+.ui.menu .dropdown.item:hover,
+.ui.menu .link.item:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, .03);
+    color: var(--text-hover);
+}
+
+#app .ui.secondary.segment {
+    background: rgb(255 255 255 / 8%);
+    color: rgba(0, 0, 0, .6);
+}
+
+/* REPOSITORY */
+.repository .header-wrapper {
+    background-color: rgb(0 0 0 / 24%);
+}
+
+.repo-header .ui.breadcrumb a {
+    color: var(--accent-color);
+}
+
+.repo-header .ui.breadcrumb a:hover {
+    color: var(--accent-color-hover);
+}
+
+.repo-header .ui.breadcrumb .divider {
+    color: rgb(255 255 255 / 40%);
+}
+
+.ui.tabular.menu .item.active {
+    color: var(--text);
+}
+
+.ui.tabular.menu .active.item {
+    background: none var(--main-bg-color) !important;
+    color: var(--text);
+    border-color: transparent;
+}
+
+.ui.tabular.menu .item:hover {
+    color: var(--text-hover);
+    border-radius: .28571429rem .28571429rem 0 0 !important;
+}
+
+.repository .ui.menu {
+    background: rgb(0 0 0 / 0%);
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    box-shadow: 0 1px 2px 0 rgba(34, 36, 38, .15);
+}
+/*
+.repository .ui.menu .active.item {
+    background: var(--main-bg-color) !important;
+    color: var(--text-hover);
+    font-weight: 400;
+    box-shadow: none;
+}
+
+/* COMMIT STUFF */
+#git-graph-container li a {
+    color: var(--link-color);
+}
+
+#git-graph-container li a:hover {
+    color: var(--text-hover);
+}
+
+#git-graph-container #rev-list li.highlight,
+#git-graph-container #rev-list li.hover {
+    background-color: rgba(255, 255, 255, .05);
+}
+
+#git-graph-container #rev-list li.highlight.hover {
+    background-color: rgba(255, 255, 255, .05);
+}
+
+#git-graph-container li .author {
+    color: var(--accent-color);
+}
+
+.repository .ui.segment.sub-menu .list .item a,
+.repository .ui.segment.sub-menu .list .item span.ui {
+    color: var(--text);
+}
+
+.repository .ui.segment.sub-menu .list .item a:hover,
+.repository .ui.segment.sub-menu .list .item b:hover {
+    color: var(--text-hover) !important;
+}
+
+.repository .ui.segment.sub-menu .list .item.active {
+    background: rgba(255, 255, 255, 0.07);
+}
+
+.repository.file.list #repo-files-table tbody .svg {
+    color: var(--text);
+}
+
+.ui.blue.labels .label,
+.ui.ui.ui.blue.label {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--text-hover);
+}
+
+.repository #commits-table.ui.basic.striped.table tbody tr:nth-child(2n) {
+    background-color: rgba(0, 0, 0, 0.15) !important;
+}
+
+.repository #commits-table.ui.table>tbody {
+    background-color: transparent !important;
+}
+
+/* TABLE */
+.ui.table>thead>tr>th {
+    background: rgb(0 0 0 / 25%);
+    color: var(--text);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ui.table {
+    width: 100%;
+    background: rgb(255 255 255 / 0.0);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text);
+}
+
+.ui.table>tbody {
+    border: 1px solid rgba(34, 36, 38, .15);
+    color: var(--text);
+}
+
+.ui.table>tbody>tr>td,
+.ui.table>tr>td {
+    border-top: 1px solid rgb(255 255 255 / 10%);
+}
+
+.repository.file.list #repo-files-table thead tr:hover {
+    background-color: rgba(0, 0, 0, 0.0) !important;
+}
+
+.repository.file.list #repo-files-table tr:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* FOOTER */
+footer {
+    background-color: rgb(0 0 0 / 25%);
+    border-top: 1px solid rgb(255 255 255 / 25%);
+}
+
+/* BUTTONS / CHECKBOXES */
+.btn:active,
+.btn:focus {
+    outline: none !important;
+}
+
+.ui.checkbox input:checked~label:after {
+    color: #fff !important;
+    background: var(--accent-color);
+}
+
+.ui.primary.button,
+.ui.primary.buttons .button {
+    background-color: var(--button-color);
+    color: var(--button-text);
+}
+
+.ui.primary.button:hover,
+.ui.primary.buttons .button:hover {
+    background-color: var(--button-color-hover);
+    color: var(--button-text);
+}
+
+.ui.green.button,
+.ui.green.buttons .button {
+    background-color: var(--button-color);
+    color: var(--button-text);
+}
+
+.ui.green.button:focus,
+.ui.green.buttons .button:focus {
+    background-color: var(--button-color-hover);
+    color: var(--button-text);
+    text-shadow: none;
+}
+
+.ui.green.button:hover,
+.ui.green.buttons .button:hover {
+    background-color: var(--button-color-hover);
+    color: var(--button-text);
+}
+
+.ui.blue.button,
+.ui.blue.buttons .button {
+    background-color: var(--button-color);
+    color: var(--button-text);
+}
+
+.ui.blue.button:hover,
+.ui.blue.buttons .button:hover {
+    background-color: var(--button-color-hover);
+    color: var(--button-text);
+}
+
+.ui.active.button,
+.ui.active.button:hover {
+    color: var(--button-text);
+}
+
+.ui.active.button,
+.ui.active.button:active,
+.ui.active.button:hover {
+    background-color: var(--button-color-hover);
+
+}
+
+.ui.button {
+    background: var(--button-color);
+    color: var(--button-text);
+}
+
+.ui.button:hover {
+    background: var(--button-color-hover);
+    color: var(--button-text);
+}
+
+.ui.basic.blue.button,
+.ui.basic.blue.buttons .button {
+    box-shadow: inset 0 0 0 1px var(--accent-color) !important;
+    color: var(--accent-color) !important;
+}
+
+.ui.basic.blue.button:hover,
+.ui.basic.blue.buttons .button:hover {
+    background: var(--button-color) !important;
+    color: var(--button-text) !important;
+}
+
+.ui.basic.button,
+.ui.basic.buttons .button {
+    color: var(--button-text);
+    box-shadow: inset 0 0 0 1px rgb(255 255 255 / 15%);
+}
+
+.ui.basic.button:focus,
+.ui.basic.button:hover,
+.ui.basic.buttons .button:focus,
+.ui.basic.buttons .button:hover {
+    background: rgb(255 255 255 / 8%);
+    color: var(--button-text);
+}
+    /* LABELS */
+    .ui.label, .ui.menu .item>.label {
+        background-color: var(--button-color);
+        color: var(--button-text);
+    }
+    .ui.labels a.label:hover, a.ui.label:hover {
+        background-color: #ffffff;
+        color: rgba(0,0,0,.8);
+    }
+    .repository #commits-table td.sha .sha.label, .repository #repo-files-table .sha.label, .repository .timeline-item.commits-list .singular-commit .sha.label {
+        border: 1px solid transparent;
+    }
+    .repository.file.list #repo-files-table tbody .svg.octicon-file-directory, .repository.file.list #repo-files-table tbody .svg.octicon-file-submodule {
+        color: var(--accent-color);
+    }
+/* FORMS */
+.ui.form input:not([type]),
+.ui.form input[type=date],
+.ui.form input[type=datetime-local],
+.ui.form input[type=email],
+.ui.form input[type=file],
+.ui.form input[type=number],
+.ui.form input[type=password],
+.ui.form input[type=search],
+.ui.form input[type=tel],
+.ui.form input[type=text],
+.ui.form input[type=time],
+.ui.form input[type=url] {
+    background: rgb(0 0 0 / 25%);
+    border: 1px solid transparent;
+    color: var(--text);
+    border-radius: .28571429rem;
+    box-shadow: inset 0 0 0 0 transparent;
+    transition: color .1s ease, border-color .1s ease;
+}
+
+.ui.form textarea:focus {
+    color: var(--text);
+    border-color: transparent;
+    background: rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 0 0 rgba(34, 36, 38, .35);
+    -webkit-appearance: none;
+}
+
+.ui.form textarea,
+.ui.input textarea {
+    background: rgb(0 0 0 / .25);
+    border: 1px solid rgba(34, 36, 38, .15);
+    color: var(--text);
+}
+
+.ui.form input:not([type]):focus,
+.ui.form input[type=date]:focus,
+.ui.form input[type=datetime-local]:focus,
+.ui.form input[type=email]:focus,
+.ui.form input[type=file]:focus,
+.ui.form input[type=number]:focus,
+.ui.form input[type=password]:focus,
+.ui.form input[type=search]:focus,
+.ui.form input[type=tel]:focus,
+.ui.form input[type=text]:focus,
+.ui.form input[type=time]:focus,
+.ui.form input[type=url]:focus {
+    color: var(--text);
+    border-color: rgb(255 255 255 / 8%);
+    border-radius: .28571429rem;
+    background: rgb(0 0 0 / 50%);
+    box-shadow: inset 0 0 0 0 rgba(34, 36, 38, .35);
+}
+
+.ui.input.focus>input,
+.ui.input>input:focus {
+    border-color: transparent;
+    background: rgb(0 0 0 / 50%);
+    color: var(--text);
+    box-shadow: none;
+}
+
+.ui.input>input {
+    background: rgb(0 0 0 / 25%);
+    border: 1px solid rgba(34, 36, 38, .15);
+    color: var(--text);
+}
+
+.ui.icon.input>i.icon {
+    color: var(--text);
+}
+
+/* MARKDOWN */
+.markdown tbody {
+    background: #f000 !important;
+}
+
+.markdown:not(code) table tr {
+    background-color: rgba(0, 0, 0, .26);
+    border-top: 1px solid #ccc;
+}
+
+.markdown:not(code) table tr:nth-child(2n) {
+    background-color: rgba(0, 0, 0, .45);
+}
+.markdown:not(code) code, .markdown:not(code) tt {
+    background-color: rgb(0 0 0 / 0.25);
+}
+.chroma {
+    filter: invert(1);
+}
+.repository.file.list .non-diff-file-content pre {
+    overflow: auto;
+    color: #695d4b;
+    background: rgba(0, 0, 0, .5);
+}
+
+/* PLACEHOLDER TEXT */
+::placeholder {
+    color: var(--text) !important;
+    opacity: .5;
+}
+
+:-moz-placeholder {
+    color: var(--text) !important;
+    opacity: .5;
+}
+
+:-ms-input-placeholder {
+    color: var(--text) !important;
+    opacity: .5;
+}
+
+::-webkit-input-placeholder {
+    color: var(--text) !important;
+    opacity: .5;
+}
+
+/* HIGHLIGHTING */
+::-webkit-selection {
+    background-color: var(--accent-color);
+    color: var(--text-hover);
+}
+
+::-moz-selection {
+    background-color: var(--accent-color);
+    color: var(--text-hover);
+}
+
+::selection {
+    background-color: var(--accent-color);
+    color: var(--text-hover);
+}
+
+textarea::-webkit-selection,
+input::-webkit-selection {
+    background-color: var(--accent-color);
+    color: var(--text-hover);
+}
+
+textarea::-moz-selection,
+input::-moz-selection {
+    background-color: var(--accent-color);
+    color: var(--text-hover);
+}
+
+textarea::-moz-selection,
+input::-moz-selection {
+    background-color: var(--accent-color);
+    color: var(--text-hover);
+}
+
+textarea::selection,
+input::selection {
+    background-color: var(--accent-color);
+    color: var(--text-hover);
+}
