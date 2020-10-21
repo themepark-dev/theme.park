@@ -345,7 +345,11 @@ fieldset[disabled] .form-control {
 #schedule_frequency:focus,
 #modal_restore_storage:focus,
 #modal_restore_id:focus,
-#modal_restore_revision:focus {
+#modal_restore_revision:focus,
+#job_type:focus,
+#job_repository:focus,
+#backup_storage:focus,
+#administration_expiration:focus {
     background: white;
     color: black;
 }
