@@ -29,10 +29,10 @@
     background-color: rgba(255, 255, 255, 0.08);
 }
 .growl-container>.alert-info.icon {
-    background: var(--modal-bg-color);
+    background: var(--accent-color);
 }
 .alert-info {
-    background: var(--modal-bg-color);
+    background: var(--accent-color);
     border-color: transparent;
     color: #fff;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);

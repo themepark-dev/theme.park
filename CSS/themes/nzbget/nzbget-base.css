@@ -48,7 +48,7 @@ body {
 	-webkit-background-size: auto, cover;
 	-moz-background-size: auto, cover;
 	-o-background-size: auto, cover;
-	background-color: rgba(0,0,0,.0) !important;
+	background-color: var(--modal-bg-color) !important;
 	color:#FFFFFF !important;
 }
 .modal-footer {

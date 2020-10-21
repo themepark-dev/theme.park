@@ -1,7 +1,9 @@
+# Organizr - Glass addon
+
 ## Installation
 
 * [Full](https://github.com/gilbN/theme.park/tree/master/CSS/addons/organizr/glass#Full)
-* [Login - Lockscreen only](https://github.com/gilbN/theme.park/tree/master/CSS/addons/organizr/glass#login---lockscreen)
+* [Login - Lockscreen only](https://github.com/gilbN/theme.park/tree/master/CSS/addons/organizr/glass#login---lockscreen-only)
 
 
 
@@ -17,7 +19,7 @@
 
 ## Full
 
-1. Set the Organizr theme to either Aquamarine or Hotline.
+1. Set the Organizr theme to either Aquamarine, Hotline or Space Gray
 
 2. Import the `glass-base.css` and root variables in the Custom Theme CSS box like below.
   Replace `--main-bg-color` with a wallpaper you have uploaded to Organizr
@@ -83,7 +85,7 @@ Here are the other theme colors if you want to use that instead:
     --div-background-color-35: rgba(0, 0, 0, 0.45);
 ```
 
-## Login - Lockscreen
+## Login - Lockscreen only
 
 If you just want the login and lockscreen css, just add this in custom CSS:
 

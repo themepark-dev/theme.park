@@ -17,4 +17,12 @@
   --main-bg-color: radial-gradient(ellipse at center, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
   --modal-bg-color: radial-gradient(ellipse at top, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
   --progress-color: #4c95af;
+  --button-color: #009688;
+  --button-color-hover: #12afa0;
+  --button-text: #eee;
+  --accent-color:  #12afa0;
+  --accent-color-hover: #fff;
+  --text: #eee;
+  --text-hover: #fff;
+  --link-color: #12afa0;
 }

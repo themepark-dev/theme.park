@@ -15,6 +15,47 @@
   body {
     background: var(--main-bg-color);
   }
+  .Link-primary-1vcAGA {
+    color: var(--link-color) !important;
+}
+.DisclosureArrow-isSelected-QMJhDY {
+border-color: var(--link-color);
+}
+.Link-isSelected-IRm9uM   {
+  color: var(--accent-color);
+}
+.ServerSettingsServerMenuButton-button-24D7lE {
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+.NavBarActivityButton-isHighlighted-27qlko:hover .NavBarActivityButton-label-2ZN0gQ {
+  color: var(--button-color-hover);
+}
+.NavBarActivityButton-isHighlighted-27qlko .NavBarActivityButton-activityIcon-1Db2GP {
+  background-color: var(--link-color);
+}
+.NavBarActivityButton-isHighlighted-27qlko .NavBarActivityButton-label-2ZN0gQ {
+  color: var(--link-color);
+}
+.NavBarActivityButton-isHighlighted-27qlko:hover .NavBarActivityButton-activityIcon-1Db2GP {
+  background-color: var(--button-color-hover);
+}
+.PageHeaderTabButton-isSelected-25CIS7 {
+  background-color: rgba(0,0,0,.15);
+  color: var(--link-color);
+}
+.btn-primary, .Button-primary-3fwLzo {
+  border-color: var(--button-color);
+  background-color: var(--button-color);
+
+}
+.btn-primary:focus, .btn-primary:hover, .Button-primary-3fwLzo:hover {
+  color: #fff;
+  background-color: var( --button-color-hover);
+}
+.Button-primary-3fwLzo.isDisabled, .btn-primary.disabled, .btn-primary.disabled.active, .btn-primary.disabled:active, .btn-primary.disabled:focus, .btn-primary.disabled:hover, .btn-primary[disabled], .btn-primary[disabled].active, .btn-primary[disabled]:active, .btn-primary[disabled]:focus, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary.active, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:hover {
+  background-color: var(--button-color);
+}
   .background,.background-container {
     opacity: 0;
     transition: opacity .5s;
@@ -35,6 +76,9 @@
 .NavBar-container-1T0BJz {
   background: rgba(0, 0, 0, 0.45);
 }
+.Menu-menu-3XnN6J {
+  background: var(--modal-bg-color);
+}
 /*Text*/  
   .help-block, .ClaimedServer-messageHeader-3uzatL, .btn-gray, .text-muted label  {
     color: #fff;
@@ -54,6 +98,24 @@
 .modal-footer, .EditHomeModalContent-footer-10Ix6N {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
+.modal-body {
+  background: var(--modal-bg-color);
+}
+body > div.user-select-modal.modal.modal-transparent.fade.in > div > div.modal-content > div > div.modal-body {
+  background: none;
+}
+#pin-form > div {
+  background: none;
+}
+.modal-list {
+background-color: rgba(0, 0, 0, 0.25);
+}
+.match-result-list-item>.match-result .match-score-info {
+  color: #eee;
+}
+.fix-incorrect-match-modal .match-location {
+  color: #eee;
+}
 /*Modal icon color*/ 
 .edit-section-modal .wizard-blocks-group>.wizard-block {
   color: #ffffff;
@@ -71,4 +133,144 @@
 .files ul li {
   color: #fff;
 }
-/* This was a tough one :D */
+.MetadataPosterCardOverlay-unplayedBadge-2hKHo5 {
+  background-color: var(--accent-color);
+}
+.MetadataPosterCardFace-face--dz_Dx:hover {
+  box-shadow: 0 0 0 2px var(--accent-color);
+}
+.PlayButton-playButton-3WX8X-:hover .PlayButton-playCircle-3Evfdw {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+}
+.PageHeaderTabDropdown-isSelected-FK5pDv {
+  border-color: var(--accent-color);
+}
+.SelectedMenuItem-isSelected-178xe1, .SelectedMenuItem-isSelected-178xe1 .SelectedMenuItem-selectedIcon-20Yx1_ {
+  color: var(--accent-color);
+}
+.Badge-primary-3suJx3,.alert-bar.notify {
+  background-color: var(--accent-color);
+}
+.PrePlayCastCell-posterCardLinkContainer-27hxZ8:hover {
+  box-shadow: 0 0 0 2px var(--accent-color);
+}
+.SourceSidebarServerHeader-title-3zMGa0 {
+  color: var(--accent-color);
+
+}
+.SourceSidebarLink-isSelected-27-9-6 {
+  box-shadow: inset 4px 0 0 0 var(--accent-color);
+}
+.PosterCardOverlayProgress-progressBar-3k291O {
+  background-color: var(--accent-color);
+}
+.Spinner-spinner-Niere7 {
+  border-color: var(--accent-color) transparent transparent var(--accent-color);
+}
+.loading {
+  border-color: var(--accent-color) transparent transparent var(--accent-color);
+}
+.PlayPauseOverlay-playCircle-3ydPYX {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+}
+.SeekBar-seekBarFill-1Lcu0w {
+  background-color: var(--accent-color);
+}
+.SeekBar-seekBarBuffer-3bUz95 {
+  background-color: var(--accent-color);
+  opacity: .2;
+}
+.VolumeSlider-fill-3XkYyD {
+  background-color: var(--accent-color);
+}
+.IconButton-isActive-1_AJJ- {
+  color: var(--accent-color);
+}
+.IconButton-isActive-1_AJJ-:hover {
+  color: var(--accent-color);
+  opacity: .7
+}
+.MetadataPosterCardFace-isSelected-1XUgkl {
+  box-shadow: 0 0 0 2px var(--accent-color);
+}
+.SelectButton-isSelected-3mX245 .SelectButton-selectCircle-3tdvGt {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  color: #eee;
+}
+.btn-gray.selected {
+  color: var(--accent-color);
+}
+a {
+  color: var(--link-color);
+}
+a:hover {
+  color: #eee;
+}
+.media-poster-container.selected .media-poster {
+  -webkit-box-shadow: 0 0 4px rgba(0,0,0,.3), inset 0 0 0 3px var(--accent-color);
+  box-shadow: 0 0 4px rgba(0,0,0,.3), inset 0 0 0 3px var(--accent-color);
+}
+.media-poster-container.selected .media-poster:before {
+  border-color: var(--accent-color) var(--accent-color) transparent transparent;
+}
+.force-hover .media-poster-container .media-poster, .force-hover .media-poster-container .media-poster-fade, .media-poster-container:focus .media-poster, .media-poster-container:focus .media-poster-fade, .media-poster-container:hover .media-poster, .media-poster-container:hover .media-poster-fade {
+  -webkit-box-shadow: 0 0 4px rgba(0,0,0,.3), inset 0 0 0 2px var(--accent-color);
+  box-shadow: 0 0 4px rgba(0,0,0,.3), inset 0 0 0 2px var(--accent-color);
+}
+.label-primary {
+  background-color: var(--button-color);
+}
+.label-primary[href]:focus, .label-primary[href]:hover {
+  background-color: var(--button-color-hover);
+  background-color: var(--button-color-hover);
+}
+.Link-isSelected-1XdDvu {
+  color: var(--accent-color);
+}
+.Link-link-2n0yJn:hover {
+  color: #fff !important;
+}
+.SessionTile-playProgressPercent-1_FcEg {
+  background-color: var(--accent-color);
+}
+.SessionTile-transcodeProgressPercent-K1k4ZQ {
+  background-color: var(--accent-color);
+  opacity: .3;
+}
+.edit-section-modal .wizard-blocks-group>.wizard-block.selected, .edit-section-modal .wizard-blocks-group>.wizard-block.selected:hover {
+  color: var(--accent-color);
+}
+.ServerMenuItem-selectedServerMenuItem-jaUTXA {
+  color: var(--accent-color);
+}
+.ServerMenuItem-selectedIcon-dhK05- {
+  color: var(--accent-color);
+}
+.NavBarActivityMenuStatusItem-statusButtonIndicator-3D2d1i {
+  color: var(--accent-color);
+}
+.MetadataTitleProgress-unwatchedCircle-25KKnh {
+  background-color: var(--accent-color);
+}
+.MultiSelectPageHeader-multiSelectPageHeader-MIQA1B {
+  box-shadow: 0 2px 0 0 var(--accent-color);
+}
+.MultiSelectPageHeader-selectedTitle-1kn-xo {
+  color: var(--accent-color);
+}
+.PlexPassUpsell-icon-1r94uI {
+  color: var(--accent-color);
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+  color: var(--accent-color);
+}
+.edit-lock-addon.locked {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.media-poster-container.selected .media-poster:after {
+  color: #eee;
+}

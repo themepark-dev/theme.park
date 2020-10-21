@@ -15,14 +15,17 @@
 /* "Re-skin" of CaliBlur https://github.com/leram84/layer.Cake/tree/master/caliBlur */
 /* Set theme to CaliBlur in UI Configuration -> View Configuration -> Theme -> CaliBlur -> Submit */
 body:not(.read-frame) {
-    background: var(--color-background) !important;
+    background: var(--main-bg-color) !important;
     background-image: none;
 }
 .blur-wrapper:after {
     background: var(--modal-bg-color) !important;
 }
+body>.container-fluid {
+    background: var(--main-bg-color);
+}
 body.login:not(.read-frame), body.shelfcreate, body.shelfedit {
-    background: var(--color-background) !important;
+    background: var(--main-bg-color) !important;
 }
 @media only screen and (max-width: 767px) {
     .navbar-collapse.collapse {

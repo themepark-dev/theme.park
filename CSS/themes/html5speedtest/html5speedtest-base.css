@@ -42,12 +42,12 @@ div.meterText:empty:before {
 }
 #startStopBtn {
     color: #ffffff;
-    background: var(--start-button-color);
-    border: 0.15em solid var(--start-button-color);
+    background: var(--button-color);
+    border: 0.15em solid var(--button-color);
 }
 #startStopBtn:hover {
-	border: 0.15em solid var(--start-button-color-hover);
-	background: var(--start-button-color-hover);
+	border: 0.15em solid var(--button-color-hover);
+	background: var(--button-color-hover);
 }
 #startStopBtn.running {
     background: #FF3030 !important;

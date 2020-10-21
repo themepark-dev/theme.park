@@ -261,11 +261,11 @@ span > a.active, .stacked-configs > li > span > span.active {
   }
   .modal-header {
       background: var(--modal-bg-color);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      border-bottom: 1px solid var(--accent-color);
   }
   .modal-footer {
       background: var(--modal-bg-color);
-      border-top: 1px solid rgba(255, 255, 255, 0.15);	
+      border-top: 1px solid var(--accent-color);	
   }
   .modal-config-section {
       border-top: 1px solid rgba(255, 255, 255, .08);
@@ -326,4 +326,151 @@ span > a.active, .stacked-configs > li > span > span.active {
   .navbar-collapse.in {
     box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.7);
   }
+}
+#login-methods .submenu {
+    background: transparent;
+}
+.login-container .remember-group {
+    color: #eee;
+}
+#login-methods > li.open > div {
+    color: var(--accent-color);
+}
+
+/* Buttons */
+.btn-bright {
+    color: #fff;
+    background-color: var(--button-color);
+    box-shadow: inset 0 1px 0 var(--button-color);
+}
+.btn-bright:hover {
+    color: #fff;
+    background-color: var(--button-color-hover);
+    box-shadow: inset 0 1px 0 var(--button-color-hover);
+}
+.btn-bright:active, .btn-bright.active, .open > .dropdown-toggle.btn-bright, #menu_link_show_advanced_settings.active {
+    color: #fff;
+    background-color: var(--button-color-hover);
+    box-shadow: inset 0 1px 0 var(--button-color-hover);
+}
+.btn-bright:active:hover, .btn-bright.active:hover, .open > .dropdown-toggle.btn-bright:hover, .btn-bright:active:focus, .btn-bright.active:focus, .open > .dropdown-toggle.btn-bright:focus, .btn-bright:active.focus, .btn-bright.active.focus, .open > .dropdown-toggle.btn-bright.focus {
+    color: #fff;
+    background-color: var(--button-color-hover);
+    box-shadow: inset 0 1px 0 var(--button-color-hover);
+}
+.btn:focus, .btn.focus, .btn-dark:focus, .btn-dark.focus, .btn-dark:active:focus {
+    color: #fff;
+    background-color: var(--button-color-hover) !important;
+    opacity: .8;
+}
+.btn-bright.disabled, .btn-bright[disabled], fieldset[disabled] .btn-bright, .btn-bright.disabled:hover, .btn-bright[disabled]:hover, fieldset[disabled] .btn-bright:hover, .btn-bright.disabled:focus, .btn-bright[disabled]:focus, fieldset[disabled] .btn-bright:focus, .btn-bright.disabled.focus, .btn-bright[disabled].focus, fieldset[disabled] .btn-bright.focus, .btn-bright.disabled:active, .btn-bright[disabled]:active, fieldset[disabled] .btn-bright:active, .btn-bright.disabled.active, .btn-bright[disabled].active, fieldset[disabled] .btn-bright.active {
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+}
+
+/* Accents */
+.nav > li.active > a, .nav > li.active > a:hover, .nav > li.active > a:focus {
+    color: var(--accent-color);
+}
+.dashboard-activity-progress .progress-bar {
+    background-color: var(--accent-color);
+    background-image: -moz-linear-gradient(top, var(--accent-color-hover), var(--accent-color));
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(var(--accent-color-hover)), to(var(--accent-color)));
+    background-image: -webkit-linear-gradient(top, var(--accent-color-hover, var(--accent-color)));
+    background-image: -o-linear-gradient(top, var(--accent-color-hover, var(--accent-color)));
+    background-image: linear-gradient(to bottom, var(--accent-color-hover, var(--accent-color)));
+
+}
+.dashboard-stats-info-item .sub-count {
+    color: var(--accent-color);
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+a:hover, a:focus {
+    color: var(--accent-color);
+}
+table.display td:hover a {
+    color: var(--accent-color);
+}
+.user-overview-stats-instance h3, .user-player-instance-playcount h3, .summary-content-title h1, .summary-content-title h1 a {
+    color: var(--accent-color);
+}
+.user-info-nav > .active > a {
+    color: var(--accent-color);
+}
+a:hover .dashboard-recent-media-poster, a:hover .dashboard-recent-media-cover {
+    webkit-box-shadow: inset 0 0 0 2px var(--accent-color);
+    -moz-box-shadow: inset 0 0 0 2px var(--accent-color);
+    box-shadow: inset 0 0 0 2px var(--accent-color);
+}
+.nav-settings > .active > a, .nav-settings > .active > a:hover, .nav-settings > .active > a:focus {
+    color: var(--accent-color);
+}
+div.advanced-setting {
+    border-left: 1px solid var(--accent-color);
+}
+.docker-setting {
+    color: var(--accent-color);
+}
+.modal-body strong, .modal-body strong i.fa {
+    color:  var(--accent-color);
+}
+.user-info-nav a:hover {
+    color: var(--accent-color-hover)
+}
+a:hover .dashboard-activity-poster, a:hover .dashboard-activity-cover {
+    -webkit-box-shadow: inset 0 0 0 2px var(--accent-color);
+    -moz-box-shadow: inset 0 0 0 2px var(--accent-color);
+    box-shadow: inset 0 0 0 2px var(--accent-color);
+}
+a:hover .dashboard-stats-poster, a:hover .dashboard-stats-cover, a:hover .dashboard-stats-circle, a:hover .dashboard-stats-square {
+    -webkit-box-shadow: inset 0 0 0 2px var(--accent-color);
+    -moz-box-shadow: inset 0 0 0 2px var(--accent-color);
+    box-shadow: inset 0 0 0 2px var(--accent-color);
+}
+a:hover .item-children-poster {
+    webkit-box-shadow: inset 0 0 0 2px var(--accent-color);
+    -moz-box-shadow: inset 0 0 0 2px var(--accent-color);
+    box-shadow: inset 0 0 0 2px var(--accent-color);
+}
+.dashboard-activity-terminate-session:hover {
+    color: var(--accent-color);
+}
+a .dashboard-activity-metadata-user-thumb:hover {
+    -webkit-box-shadow: inset 0 0 0 2px var(--accent-color);
+    -moz-box-shadow: inset 0 0 0 2px var(--accent-color);
+    box-shadow: inset 0 0 0 2px var(--accent-color);
+}
+.stream-info .heading {
+    color: var(--accent-color);
+}
+a .library-user-instance-box:hover {
+    -webkit-box-shadow: inset 0 0 0 2px var(--accent-color);
+    -moz-box-shadow: inset 0 0 0 2px var(--accent-color);
+    box-shadow: inset 0 0 0 2px var(--accent-color);
+}
+.summary-navbar-list .breadcrumb a:hover {
+    color: var(--accent-color);
+}
+.dashboard-recent-media-metacontainer h3.text-muted a:hover {
+    color: var(--accent-color);
+}
+a .poster-face:hover, a .cover-face:hover, a .users-poster-face:hover {
+    -webkit-box-shadow: inset 0 0 0 2px var(--accent-color);
+    -moz-box-shadow: inset 0 0 0 2px var(--accent-color);
+    box-shadow: inset 0 0 0 2px var(--accent-color);
+}
+.submenu li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+span > a.active, .stacked-configs > li > span > span.active {
+    color: var(--accent-color);
+}
+.accordion li.open .link, .accordion li.open .link i.fa {
+    color: var(--accent-color);
+}
+.news-body a:hover {
+    color: var(--accent-color);
 }

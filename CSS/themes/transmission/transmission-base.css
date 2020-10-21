@@ -158,14 +158,14 @@ div#toolbar {
     #statusbar #speed-info #speed-dn-icon:before {
     font-family: "Font Awesome 5 Free";
     font-size: 10px;
-    content: "\f0d8";
+    content: "\f0d7";
     font-weight: 900;   
     }
     #statusbar #speed-info #speed-up-icon {background: none;}
     #statusbar #speed-info #speed-up-icon:before {
     font-family: "Font Awesome 5 Free";
     font-size: 10px;
-    content: "\f0d7";
+    content: "\f0d8";
     font-weight: 900;   
     }
     ul.torrent_list,ul.torrent_list li.torrent.even {background: rgba(0, 0, 0, 0.25);}

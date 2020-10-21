@@ -704,7 +704,7 @@ pre {
 .ModalHeader\/modalHeader\/gpcvG {
     background: var(--modal-bg-color);
     color: #fff;
-    border-bottom: 1px solid hsla(0,0%,100%,.08);
+    border-bottom: var(--accent-color);
 }
 .ModalContent\/modalContent\/-txrl {
     background: var(--modal-bg-color);
@@ -713,7 +713,7 @@ pre {
 .ModalFooter\/modalFooter\/1N5Ku {
     background: var(--modal-bg-color);
     color: #fff;
-    border-top: 1px solid hsla(0,0%,100%,.08);
+    border-top: 1px solid var(--accent-color);
 }
 .ModalContent\/closeButton\/37Puk:hover {
     color: #fff;
@@ -747,7 +747,7 @@ pre {
 	}
 
 	/* SEARCH DROPDOWN HEADER */
-	.SeriesSearchInput\/seriesContainer\/2yDTR {
+	.SeriesSearchInput\/containerOpen\/3F8xe .SeriesSearchInput\/seriesContainer\/2yDTR {
 		border: none !important;
         background: var(--modal-bg-color);
         color: #fff !important;
@@ -769,11 +769,8 @@ pre {
     
 
 /* SIDE MENU */
-	.PageSidebar\/sidebar\/2UXc0 {
-		background-color: rgba(0, 0, 0, .45);
-	}
 	.PageSidebar\/sidebarContainer\/3Hxpq {
-		background-color: rgba(0, 0, 0, .45) !important;
+		background-color: rgba(0, 0, 0, .25);
 	}
 	.PageSidebar\/sidebar\/3IOcI {
 		background-color: transparent;
@@ -862,16 +859,23 @@ pre {
     background-color: rgba(0, 0, 0, .25) !important;
 	}
 	.Popover\/title\/326tA, .SeasonInfo\/title\/1tid_, .Popover\/body\/10Yh7 {
-		background-color: #232323 !important;
+		background: var(--modal-bg-color) !important;
 	}
 	.Tooltip\/tooltipContainer\/2693s {
 	color: #fff;
     }
+    .Tooltip\/tooltip\/3HJXy.Tooltip\/inverse\/yMvcm {
+        background: var(--modal-bg-color);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    .Tooltip\/bottom\/3Ewbi.Tooltip\/inverse\/yMvcm {
+        border-bottom-color: #fff;
+    }
     .Tooltip\/bottom\/3Ewbi.Tooltip\/default\/2NTKh {
-        border-bottom-color: #232323 !important;
-      }
-      Tooltip\/right\/2MxTa.Tooltip\/default\/2NTKh {
-        border-right-color: #232323 !important;
+        border-bottom-color: #fff !important;
+    }
+    .Tooltip\/right\/2MxTa.Tooltip\/default\/2NTKh {
+        border-right-color: #fff !important;
     }    
     .EpisodeTitleLink\/link\/3ynTw:hover {
         color: #ffffff;
@@ -968,7 +972,7 @@ pre {
     color: #fff;
     }
     .EnhancedSelectInput\/options\/3yy65 {
-    border: 1px solid #dde6e9;
+    border: 1px solid #1e1e1e;
     border-radius: 4px;
     background-color: #1e1e1e;
     }
@@ -1023,7 +1027,7 @@ pre {
 
 	.FieldSet\/legend\/3x6NF {
     color: #FFF;
-    border-bottom: 1px solid hsla(0,0%,100%,.08);
+    border-bottom: 1px solid var(--accent-color);
 	}
 	.TableRow\/row\/33xJE:hover {
     background-color: hsla(0,0%,100%,.08);
@@ -1035,7 +1039,10 @@ pre {
 	.ImportSeriesSelectSeries\/button\/3CL3L {
     border: none !important;
     background-color: rgba(0, 0, 0, .25) !important;
-	}
+    }
+    .ImportSeriesSearchResult\/series\/2BXMC:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+    }
 	.ImportSeriesSelectSeries\/content\/3oSDj, .ImportSeriesSelectSeries\/searchIconContainer\/1wOES {
     border: none !important;
     background-color: #323232 !important;
@@ -1110,7 +1117,11 @@ pre {
     .AgendaEvent\/event\/2a83A:hover {
         background-color: hsla(0,0%,100%,.08) !important;
     }
-
+/*QUEUE PAGE */
+    /* Manual Import*/
+.SelectEpisodeModalContent\/path\/1Okqk {
+    color: #eee;
+}
 /* SETTINGS */
 
 	.Settings\/summary\/3KPAv {
@@ -1161,14 +1172,23 @@ pre {
 	background-color: transparent;
     border: none;
     color: #c2c6c8;
-	}
+    }
+    
+    /* INDEXERS */
 
 	/* DOWNLOAD CLIENTS */
 	.DownloadClients\/center\/FvACx {
 	background-color: transparent;
     border: none;
     color: #c2c6c8;
-	}
+    }
+
+    /*INPORT LISTS */
+    .ImportLists\/center\/17Qdu{
+        background-color: transparent;
+        border: none;
+        color: #c2c6c8;
+    }
 
 	/* CONNECTIONS */
 	.Notifications\/center\/8iwmy {
@@ -1182,7 +1202,7 @@ pre {
     border-color: transparent;
     background-color: rgba(0, 0, 0, 0.25);
     color: #FFC107;
-}
+    }
 
 /* Login Page */
 
@@ -1200,4 +1220,7 @@ pre {
 /* Custom filter */
 .FilterBuilderRow\/filterRow\/1ozij:hover {
     background-color: transparent;
+}
+.CustomFilter\/customFilter\/zBSMd:hover {
+    background-color: hsla(0,0%,100%,.08);
 }

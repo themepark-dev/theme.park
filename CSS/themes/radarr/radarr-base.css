@@ -363,6 +363,18 @@ a:focus, a:hover {
     color: #f9be03;
 }
 
+/* Calendar List */
+
+.fc-list-item:hover td {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+.fc-unthemed .fc-divider, .fc-unthemed .fc-list-heading td, .fc-unthemed .fc-popover .fc-header {
+    background: rgba(0, 0, 0, 0.1) !important;
+}
+.fc-unthemed .fc-list-view {
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
 /* Activity Page */
 .popover.in {
     opacity: .9;
@@ -392,6 +404,9 @@ a:focus, a:hover {
 }
 .nav>li>a:focus, .nav>li>a:hover {
     background-color: hsla(0,0%,100%,.08);
+}
+.TableRowCell-cell-2fbg4 .ProgressBar-primary-3YDfb {
+    background-color: var(--accent-color);
 }
 
 /* Season Pass */
@@ -653,8 +668,8 @@ pre {
 
 
 
-/* -------------------------Radarr V2------------------------------*/
-/* Radarr v2 theme */
+/* -------------------------Radarr V3------------------------------*/
+/* Radarr v3 theme */
 
 /* Froms */
 .FormInputHelpText-helpText-3_AVV {
@@ -720,7 +735,7 @@ pre {
 .ModalHeader-modalHeader-gpcvG {
     background: var(--modal-bg-color);
     color: #fff;
-    border-bottom: 1px solid hsla(0,0%,100%,.08);
+    border-bottom: 1px solid var(--accent-color);
 }
 .ModalContent-modalContent--txrl {
     background: var(--modal-bg-color);
@@ -729,7 +744,7 @@ pre {
 .ModalFooter-modalFooter-1N5Ku {
     background: var(--modal-bg-color);
     color: #fff;
-    border-top: 1px solid hsla(0,0%,100%,.08);
+    border-top: 1px solid var(--accent-color);
 }
 .ModalContent-closeButton-37Puk:hover {
     color: #fff;
@@ -842,12 +857,10 @@ pre {
   .MovieIndexOverview-link-1i54B:hover {
   text-decoration: none;
   }
-  .ProgressBar-container-14z4A {
+  .TableRowCell-cell-2fbg4 .ProgressBar-container-14z4A {
     background-color: rgba(0, 0, 0, 0.25);
 }
-.ProgressBar-primary-3YDfb {
-    background-color: var(--accent-color);
-}
+
 .ProgressBar-purple-3DlHm {
     background-color: var(--accent-color);
 }
@@ -861,6 +874,14 @@ pre {
     }
     .MovieDetailsSeason-collapseButtonIcon-17xZI {
         color: #bac5cc;
+    }
+    .MovieFileEditorTable-container-3VYDG {
+        border: 1px solid transparent;
+        background-color: rgba(0, 0, 0, 0.25);
+    }
+    .ExtraFileTable-container-1NM2r {
+        border: 1px solid transparent;
+        background-color: rgba(0, 0, 0, .25);
     }
 
 	.fa-search:hover {
@@ -882,17 +903,17 @@ pre {
 	border: none !important;
     background-color: rgba(0, 0, 0, .25) !important;
 	}
-	.Popover-title-326tA, .SeasonInfo-title-1tid_, .Popover-body-10Yh7 {
-		background-color: #232323 !important;
+	.Popover-title-326tA, .SeasonInfo-title-1tid_, .Popover-body-10Yh7,.Tooltip-body-kGG0h {
+		background: var(--modal-bg-color) !important;
 	}
 	.Tooltip-tooltipContainer-2693s {
 	color: #fff;
     }
     .Tooltip-bottom-3Ewbi.Tooltip-default-2NTKh {
-        border-bottom-color: #232323;
+        border-bottom-color: #eee;
       }
-      Tooltip-right-2MxTa.Tooltip-default-2NTKh {
-        border-right-color: #232323;
+      .Tooltip-right-2MxTa.Tooltip-default-2NTKh {
+        border-right-color: #eee;
     }
     .EpisodeTitleLink-link-3ynTw:hover {
         color: #ffffff;
@@ -925,7 +946,7 @@ pre {
     }
     .PageSidebarItem-status-34pTa > .Label-info-3YD3Y {
         border-color: transparent;
-        background-color: var(--queue-color);
+        background-color: var(--accent-color);
         color: #fff;
     }
     .MovieDetails-selectedTab-3hMLN {
@@ -944,7 +965,7 @@ pre {
 		color: hsla(0,0%,100%,.7);
 	}
 	/* POSTERS */
-	.MovieIndexPoster-title-Umirt, .MovieIndexPoster-nextAiring-1FZy6, .MovieIndexPosterInfo-info-2JsCg {
+	.MovieIndexPoster-title-Umirt, .MovieIndexPoster-nextAiring-1FZy6, .MovieIndexPosterInfo-info-2JsCg, .MovieIndexPosterInfo-info-2Oh-5, .MovieCreditPoster-title-EGksL {
 		background-color: rgba(255, 255, 255, 0.08);
 			color: #fff;
 	}
@@ -1016,6 +1037,9 @@ pre {
         box-shadow: none;
     background-color: rgba(255, 255, 255, 0.25);
     } 
+    .RootFolderSelectInputSelectedValue-movieFolder-2UNu1 {
+        color: #fff;
+    }
     .TagInput-input-3E1DX.TagInput-isFocused-13j-F {
         outline: 0;
         border-color: #fff;
@@ -1033,7 +1057,7 @@ pre {
 	.AddNewMovieSearchResult-searchResult-1FdVg:hover, .AddNewMovieSearchResult-underlay-1h0bG:hover {
     background-color: hsla(0,0%,100%,.08) !important;
     }
-    .AddNewmovieModalContent-year-t7IIJ {
+    .AddNewmovieModalContent-year-2NWV9 {
         color: #fff;
     }
     .RootFolderSelectInputSelectedValue-movieFolder-a7chC, .RootFolderSelectInputSelectedValue-freeSpace-1Irwm {
@@ -1046,7 +1070,7 @@ pre {
 
 	.FieldSet-legend-3x6NF {
     color: #FFF;
-    border-bottom: 1px solid hsla(0,0%,100%,.08);
+    border-bottom: 1px solid var(--accent-color);
 	}
 	.TableRow-row-33xJE:hover {
     background-color: hsla(0,0%,100%,.08);
@@ -1057,7 +1081,7 @@ pre {
 	}
 	.ImportMovieSelectMovie-button-3CL3L, .ImportMovieSelectMovie-button-1dL1Z {
     border: none !important;
-    background-color: rgba(255, 255, 255, 0.08) !important;
+    background-color: rgba(0, 0, 0, 0.25) !important;
 	}
 	.ImportMovieSelectMovie-content-3oSDj, .ImportMovieSelectMovie-searchIconContainer-1wOES, .ImportMovieSelectMovie-content-fSTb8, .ImportMovieSelectMovie-searchIconContainer-2yf6b {
     border: none !important;
@@ -1068,6 +1092,27 @@ pre {
         background-color: rgba(0, 0, 0, 0.25);
     }
 
+/* DISCOVER */
+/*Title*/
+.AddListMovieOverview-link-3_RaH {
+    color: #eee;
+}
+.AddListMovieOverview-link-3_RaH:hover {
+    color: #fff;
+}
+
+.AddListMovieOverview-content-2dBtg:hover {
+    background-color: hsla(0,0%,100%,.08) !important;
+}
+.PageJumpBarItem-jumpBarItem-3F58I:hover {
+    color: #fff;
+    background: hsla(0,0%,100%,.08);
+}
+/*Posters*/
+.AddListMoviePoster-title-2qKvg {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #fff;
+}
 /* MASS EDITOR */
 	/* FOOTER */
 	.PageContentFooter-contentFooter-3ODMj {
@@ -1147,12 +1192,28 @@ pre {
 		color: #fff;
 	}
 
+	/* MEDIA MANGEMENT */
+	.NamingOption-small-2nxIl {
+		border: 1px solid transparent;
+	}
+	
+	.NamingOption-token-1y5bz  {
+		background-color: rgba(255, 255, 255, 0.15);
+	}
+
+	.NamingOption-example-RNR6x {
+		background-color: rgba(255, 255, 255, 0.25);
+	}
+
 	/* PROFILES */
 	.Card-card-1iGZk, .QualityProfiles-addQualityProfile-2U2Io {
     background-color: rgba(0,0,0,.45);
     box-shadow: 0 0 10px 1px #000000;
-    color: #fff;
-	}
+    color: #c2c6c8;
+    }
+    .Card-card-1iGZk:hover {
+        color: white;
+    }
 	.QualityProfiles-center-1iiKm, .LanguageProfiles-center-7EV_2, .ReleaseProfiles-center-114Qx {
 	background-color: transparent;
     border: none;
@@ -1187,33 +1248,42 @@ pre {
 	background-color: transparent;
     border: none;
     color: #c2c6c8;
-	}
+    }
 
 	/* CONNECTIONS */
 	.Notifications-center-8iwmy {
 	background-color: transparent;
     border: none;
     color: #c2c6c8;
-	}
+    }
+
+    /* LISTS */
+    .ImportLists-center-17Qdu{
+        background-color: transparent;
+        border: none;
+        color: #c2c6c8;
+    }
 
 	/* LOG */
 	.Alert-info-1J8mE {
     border-color: transparent;
     background-color: rgba(0, 0, 0, 0.25);
     color: #FFC107;
-}
+    }
+    
     /* INDEXER */
     .Restrictions-center-3ngzk {
         border: 1px solid transparent;
         background-color: transparent;
     }
+
     /* LISTS */
     .NetImports-center-3otL- {
         border: 1px solid transparent;
         background-color: transparent;
     }
     /* CUSTOM FORMAT */
-    .CustomFormats-center-1w6Bw {
+    .CustomFormats-center-1w6Bw, .EditCustomFormatModalContent-center-3QU87 {
         border: 1px solid transparent;
         background-color: transparent;
     }
@@ -1233,4 +1303,11 @@ pre {
 /* Custom filter */
 .FilterBuilderRow-filterRow-1ozij:hover {
     background-color: transparent;
+}
+.CustomFilter-customFilter-zBSMd:hover {
+    background-color: hsla(0,0%,100%,.08);	
+}
+
+.SelectMovieModalContent-path-32FI- {
+    color: #eee;	
 }

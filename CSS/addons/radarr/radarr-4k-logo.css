@@ -1,0 +1,73 @@
+/* Desktop */
+@media (min-width: 752px) {
+    .navbar-brand>img {
+        display:none !important; 
+        }
+    .navbar > .container-fluid .navbar-brand:before {
+        background-image: url("https://gilbn.github.io/theme.park/CSS/addons/radarr/radarr4k.png");
+        display: inline-block;
+        width: 128px; 
+        height: 128px;
+        content:"";
+        background-size:  cover;
+        -webkit-background-size:  cover;
+        -moz-background-size:  cover;
+        -o-background-size: cover;
+        }
+    }
+    /* Mobile */
+    @media (max-width: 767px) {
+    .navbar-brand  .visible-xs img {
+        display: none !important;
+        } 
+    .navbar-brand .visible-xs  {
+        display: inline !important;
+        }     
+    .navbar > .container-fluid .navbar-brand:before {
+        background-image: url("https://gilbn.github.io/theme.park/CSS/addons/radarr/radarr4k.png");
+        display: inline-block;
+        width: 32px; 
+        height: 32px;
+        content:"";
+        background-size:  cover;
+        -webkit-background-size:  cover;
+        -moz-background-size:  cover;
+        -o-background-size: cover;
+        margin-bottom: -12px;
+        }
+    }
+
+/* Radarr V3*/
+@media (min-width: 752px) {
+    .PageHeader-logoFull-2z6pD  {
+        display: none !important;
+    }
+    .PageHeader-logoContainer-3bOb3:before {
+        background-image: url("https://gilbn.github.io/theme.park/CSS/addons/radarr/radarr4k-v3.png");
+        display: inline-block;
+        width: 148px; 
+        height: 48px;
+        content:"";
+        background-size:  cover;
+        -webkit-background-size:  cover;
+        -moz-background-size:  cover;
+        -o-background-size: cover;
+    }    
+} 
+
+@media (max-width: 767px) {
+    .PageHeader-logo-2y8vm  {
+        display: none !important;
+    }   
+    .PageHeader-logoContainer-3bOb3:before {
+        background-image: url("https://gilbn.github.io/theme.park/CSS/addons/radarr/radarr-v3-mobile.png");
+        display: inline-block;
+        width: 32px; 
+        height: 32px;
+        content:"";
+        background-size:  cover;
+        -webkit-background-size:  cover;
+        -moz-background-size:  cover;
+        -o-background-size: cover;
+    } 
+}
