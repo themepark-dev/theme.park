@@ -3,12 +3,12 @@
 /*--body-after: #70d7f61a; /* This is the background that creates the crt lines, background uses a transparency of 20% */
 /*--custom-text-header-animation: textflicker; /* SET TO NONE TO REMOVE THE FLICKER ANIMATION! */
 
-@import url(https://gflix.app/theme.park/CSS/addons/unraid/login-page/alien/retro-terminal/retro-terminal-base.css);
+@import url(https://gilbn.github.io/theme.park/CSS/addons/unraid/login-page/alien/retro-terminal/retro-terminal-base.css);
 :root {
 --main-bg-color:black;
 --body-before:#70d7f61a;
 --body-after: #70d7f633;
---logo: url(https://gflix.app/theme.park/CSS/addons/unraid/login-page/alien/logo/nostromo3.png) center no-repeat;
+--logo: url(https://gilbn.github.io/theme.park/CSS/addons/unraid/login-page/alien/logo/nostromo3.png) center no-repeat;
 --text-color: #ffffff;
 --input-color: #ffffff;
 --link-color: #ffffff;
