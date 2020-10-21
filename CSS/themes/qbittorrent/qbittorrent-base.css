@@ -275,14 +275,14 @@ li.divider {
 #main input[type="password" i] {
   background-color: rgba(0,0,0,.45);
 }
-#main input[type="submit" i] {
+#loginform #login {
   padding: 6px 15px !important;
   width: 100%;
   margin-top: 35px;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: var(--button-color) !important;
   border: none;
   border-radius: 4px;
-  color: #fff;
+  color: var(--button-text) !important;
   outline: none;
   text-transform: uppercase;
   font-size: 18px;
@@ -290,13 +290,13 @@ li.divider {
   height: 44px;
   line-height: 1.3333333;
 }
-#loginform input[type="submit" i]:hover {
-  background-color: rgb(0, 0, 0, .45) !important;
+#loginform #login:hover {
+  background-color: var(--button-color-hover) !important;
   padding: 6px 15px;
   border-radius: 4px;
   cursor: pointer;
   border: none;
-  color: #fff;
+  color: var(--button-text) !important;
 }
 
 
@@ -465,53 +465,54 @@ textarea {
   border: 1px solid rgba(255, 255, 255, 0.25) !important;
 }
 input[type="button" i]:hover {
-  background-color: rgb(255, 255, 255, .15) !important;
+  background-color: var(--button-color-hover);
   padding: 6px 15px;
   cursor: pointer;
   border: none;
-  color: #fff;
+  color: var(--button-text);
 }
 input[type="button" i] {
   padding: 6px 15px !important;
-  background-color: rgb(255, 255, 255, .08) !important;
+  background-color: var(--button-color);
   cursor: pointer;
   border: none;
-  color: #fff;
+  color:var(--button-text);
 }
 button {
-  background-color: rgb(255, 255, 255, .08) !important;
+  background-color: var(--button-color) !important;
   cursor: pointer;
   border: 2px solid transparent;
-  color: #fff;
+  color: var(--button-text);
 }	
 button:hover {
-  background-color: rgb(255, 255, 255, .15) !important;
+  background-color: var(--button-color-hover) !important;
   cursor: pointer;
   border: 2px solid transparent;
-  color: #fff;
+  color: var(--button-text);
 }
 input[type="submit" i] {
   padding: 6px 15px !important;
   width: 100%;
   margin-top: 15px;
-  background-color: rgba(0, 0, 0, 0.25) !important;
+  background-color: var(--button-color) !important;
   border: none;
-  color: #fff;
+  color: var(--button-text);
   outline: none;
   text-transform: uppercase;
 }
 input[type="submit" i]:hover {
   padding: 6px 15px !important;
-  background-color: rgba(0, 0, 0, 0.45) !important;
+  background-color: var(--button-color-hover) !important;
   width: 100%;
   cursor: pointer;
   border: none;
-  color: #fff;
+  color: var(--button-text);
   outline: none;
   text-transform: uppercase;
 }
 
 /* Icons */ 
+
 
 #downloadButton > img.mochaToolButton {
     display: none;
@@ -1099,6 +1100,22 @@ input[type="submit" i]:hover {
 
 }
 
+#showRssReaderLink > img.MyMenuIcon {
+	display: none;
+}
+
+#showRssReaderLink:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f00c";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	padding-left: 5px;
+
+}
+
 #showSearchEngineLink:active:focus:visited:before {
 	font-family: "Font Awesome 5 Free";
 	font-size: 14px;
@@ -1109,7 +1126,16 @@ input[type="submit" i]:hover {
 	color:white;
 	opacity: 0;
 }
-
+#showRssReaderLink:active:focus:visited:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f00c";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color:white;
+	opacity: 0;
+}
 #StatisticsLink > img.MyMenuIcon {
 	display: none;
 }
@@ -1321,7 +1347,90 @@ ul.filterList a {
 	color: rgba(255, 255, 255, 0.4);
 	padding-left: 5px;
 }
- 
+
+#stalled_filter > a img {
+	display: none;
+}
+#stalled_filter:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f0b0";
+	font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.4);
+	padding-left: 5px;
+}
+
+#stalled_uploading_filter > a img {
+	display: none;
+}
+#stalled_uploading_filter:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f093";
+	font-weight: 900;
+    display: inline-block !important;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.4);
+	padding-left: 5px;
+}
+
+#stalled_downloading_filter > a img {
+	display: none;
+}
+#stalled_downloading_filter:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 14px;
+    content: "\f019";
+	font-weight: 900;
+    display: inline-block !important;
+    margin-right: 5px;
+	color: rgba(255, 255, 255, 0.4);
+	padding-left: 5px;
+}
+img[src="icons/inode-directory.svg"] {
+  background: url(https://gilbn.github.io/theme.park/Resources/qbittorrent/folder-open-solid.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  object-position: -999999px 999999px;
+  filter: invert(79%) sepia(20%) saturate(0%) hue-rotate(135deg) brightness(87%) contrast(108%);
+}
+img[src="icons/network-server.svg"] {
+  background: url(https://gilbn.github.io/theme.park/Resources/qbittorrent/network-wired-solid.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  object-position: -999999px 999999px;
+  filter: invert(79%) sepia(20%) saturate(0%) hue-rotate(135deg) brightness(87%) contrast(108%);
+}
+img[src="icons/mail-folder-inbox.svg"] {
+  background: url(https://gilbn.github.io/theme.park/Resources/qbittorrent/inbox-solid.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  object-position: -999999px 999999px;
+  filter: invert(79%) sepia(20%) saturate(0%) hue-rotate(135deg) brightness(87%) contrast(108%);
+}
+
+img[src="icons/downloading_small.svg"],
+img[src="icons/seeding.svg"]  {
+  filter: invert(79%) sepia(20%) saturate(0%) hue-rotate(135deg) brightness(87%) contrast(108%);
+}
+#searchPattern {
+  width: 300px;
+  line-height: 2em;
+  padding: 1px 5px 1px 2em;
+  filter: invert(79%) sepia(20%) saturate(0%) hue-rotate(135deg) brightness(87%) contrast(108%);
+  background-repeat: no-repeat;
+  background-size: 1.5em;
+  background-position: left;
+}
+#connectionStatus,
+#alternativeSpeedLimits {
+  filter: invert(79%) sepia(20%) saturate(0%) hue-rotate(135deg) brightness(87%) contrast(108%);
+}
 #errored_filter > a img {
 	display: none;
 }
