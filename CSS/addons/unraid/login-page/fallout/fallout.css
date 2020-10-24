@@ -2,8 +2,8 @@
 @import "https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap";
 @import "https://fonts.googleapis.com/css?family=VT323";
 :root {
-    --main-bg-color: url(https://gilbn.github.io/customfiles/rocky-wall.png), url(https://gilbn.github.io/customfiles/6Ua3u8.jpg) center center/cover no-repeat fixed;
-    --logo: url(https://gilbn.github.io/customfiles/vault.png) center no-repeat;
+    --main-bg-color: url(https://gilbn.github.io/theme.park/CSS/addons/unraid/login-page/fallout/wallpaper/rocky-wall.png), url(https://gilbn.github.io/theme.park/CSS/addons/unraid/login-page/fallout/wallpaper/6Ua3u8.jpg) center center/cover no-repeat fixed;
+    --logo: url(https://gilbn.github.io/theme.park/CSS/addons/unraid/login-page/fallout/logo/vault.png) center no-repeat;
     --text-color: #14F074;
     --input-color: #14F074;
     --link-color: #14F074;
