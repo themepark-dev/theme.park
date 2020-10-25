@@ -1,4 +1,3 @@
-
 /*    dP   dP                                                                  dP        */
 /*    88   88                                                                  88        */
 /*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
@@ -22,10 +21,19 @@ body {
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
     color: #ffffff !important;
-  }
-  
-  /* Navbar */
-  .navbar-default {
+}
+
+* {
+    outline: none;
+}
+
+.loadOverlay {
+    color: #eee !important;
+    background: var(--main-bg-color) !important;
+}
+
+/* Navbar */
+.navbar-default {
     background: var(--main-bg-color) !important;
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
@@ -34,157 +42,263 @@ body {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
-  }
-  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-      background-color: rgba(0, 0, 0, .25) !important;
-      color: #ffffff !important;
-  }
-  .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-      background-color: rgba(0, 0, 0, .25) !important;
-  }
-  .navbar-default, .navbar-inverse {
-      border: 0px solid rgba(0, 0, 0, 0.6) !important;
-      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3) !important;
-  }
-  .navbar-default .navbar-brand {
-      color: #ffffff !important;
-  }
-  .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-      color: #ffffff !important;
-      background-color: rgba(0, 0, 0, .25) !important;
-  }
-  .navbar-default .navbar-nav > li > a, .navbar-inverse .navbar-nav > li > a {
-      border-right: 1px solid rgba(0, 0, 0, 0) !important;
-      border-left: 1px solid rgba(0, 0, 0, 0) !important;
-      color: #ffffff !important;
-  }
-  .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-      background-color: rgba(0, 0, 0, 0.45) !important;
-      border: 1px solid #00000000 !important;
-  }
-  .nav > li > a:hover, .nav > li > a:focus {
-      text-decoration: none;
-      background-color: #3e444c;
-  }
-  .nav > li > a:hover, .nav > li > a:focus {
-      background-color: rgba(255, 255, 255, 0.08) !important;
-      border-color: transparent !important;
-  }
-  .nav-tabs {
-      border-bottom: 1px 1px 1px rgba(0, 0, 0, 0.3);
-  }
-  #my-netdata-dropdown-content .agent-item:hover {
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+    background-color: rgba(0, 0, 0, .25) !important;
+    color: #ffffff !important;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+    background-color: rgba(0, 0, 0, .25) !important;
+}
+
+.navbar-default,
+.navbar-inverse {
+    border: 0px solid rgba(0, 0, 0, 0.6) !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3) !important;
+}
+
+.navbar-default .navbar-brand {
+    color: #ffffff !important;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #ffffff !important;
+    background-color: rgba(0, 0, 0, .25) !important;
+}
+
+.navbar-default .navbar-nav>li>a,
+.navbar-inverse .navbar-nav>li>a {
+    border-right: 1px solid rgba(0, 0, 0, 0) !important;
+    border-left: 1px solid rgba(0, 0, 0, 0) !important;
+    color: #ffffff !important;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li.active>a:focus {
+    background-color: rgba(0, 0, 0, 0.45) !important;
+    border: 1px solid #00000000 !important;
+}
+
+.nav>li>a:hover,
+.nav>li>a:focus {
+    text-decoration: none;
+    background-color: #3e444c;
+}
+
+.nav>li>a:hover,
+.nav>li>a:focus {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    border-color: transparent !important;
+}
+
+.nav-tabs {
+    border-bottom: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+#my-netdata-dropdown-content .agent-item:hover {
     background-color: rgba(255, 255, 255, 0.08);
 }
-  .sign-in-btn {
-      background: var(--main-bg-color);
-  }
-  .dropdown-menu {
-      background: var(--modal-bg-color) !important;
-      border: 0px !important;
-  }
-  .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
-      background-color: rgba(0, 0, 0, 0.25) !important;
-  }
-  .modal-content {
-      background: var(--modal-bg-color) !important;
-  }
-  .modal-header {
-      border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
-  }
-  .modal-footer {
-      border-top: 1px solid rgba(255, 255, 255, 0.3) !important;
-  }
-  .nav-tabs {
-      border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
-  }
-  .panel {
-      background: rgba(0, 0, 0, 0.45) !important;
-  }
-  .panel-default > .panel-heading {
-      background-color: transparent !important;
-  }
-  table {
-      background: transparent !important;
-  }
-  .table-hover > tbody > tr:hover {
-      background-color: rgba(255, 255, 255, 0.08) !important;
-  }
-  .table > thead > tr > th {
-      border-bottom: 2px solid rgba(255, 255, 255, 0.3) !important;
-  }
-  #my-netdata-dropdown-content hr {
-      border-top: 1px solid rgba(255, 255, 255, 0.3);
-  }
-  .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
-      background-color: var(--modal-bg-color) !important;
-      border-top: 1px solid #00000000 !important;
-  }
-  .multi-column-dropdown li a:hover {
-      background-color: var(--modal-bg-color) !important;
-  }
-  .close, .close:hover, .close:focus {
-      color: #ffffff !important;
-  }
-  /* System Overview */
-  .dashboard-sidebar .nav > .active > a, .dashboard-sidebar .nav > .active:hover > a, .dashboard-sidebar .nav > .active:focus > a {
-      color: var(--accent-color) !important;
-      border-left: 2px solid var(--accent-color)  !important;
-  }
 
-  /*code*/
-  code {
+.sign-in-btn {
+    background: var(--main-bg-color);
+}
+
+.dropdown-menu {
+    background: var(--modal-bg-color) !important;
+    border: 0px !important;
+}
+
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+    background-color: rgba(0, 0, 0, 0.25) !important;
+}
+
+.modal-content {
+    background: var(--modal-bg-color) !important;
+}
+
+.modal-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.modal-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.panel {
+    background: rgba(0, 0, 0, 0.45) !important;
+}
+
+.panel-default>.panel-heading {
+    background-color: transparent !important;
+}
+
+table {
+    background: transparent !important;
+}
+
+.table-hover>tbody>tr:hover {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.table>thead>tr>th {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+#my-netdata-dropdown-content hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.table>thead>tr>th,
+.table>tbody>tr>th,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>tbody>tr>td,
+.table>tfoot>tr>td {
+    background-color: var(--modal-bg-color) !important;
+    border-top: 1px solid #00000000 !important;
+}
+
+.multi-column-dropdown li a:hover {
+    background-color: var(--modal-bg-color) !important;
+}
+
+.close,
+.close:hover,
+.close:focus {
+    color: #ffffff !important;
+}
+
+/* System Overview */
+.dashboard-sidebar .nav>.active>a,
+.dashboard-sidebar .nav>.active:hover>a,
+.dashboard-sidebar .nav>.active:focus>a {
+    color: var(--accent-color) !important;
+    border-left: 2px solid var(--accent-color) !important;
+}
+
+/*code*/
+code {
     color: #fff !important;
     background-color: rgba(255, 255, 255, 0.15) !important;
 }
-  /* System Overview metrics */
-  .gaugeChartTitle, .gaugeChartUnits, .gaugeChartMax, .gaugeChartMin, .gaugeChartLabel, .easyPieChartTitle, .easyPieChartLabel, .easyPieChartUnits {
-      color: #ffffff !important;
-  }
-  .netdata-legend-value, .netdata-legend-toolbox, .netdata-legend-toolbox-button, .dygraph-axis-label {
-      background-color: rgba(0, 0, 0, 0) !important;
-      color: #ffffff !important;
-  }
-  .netdata-legend-resize-handler {
-      background-color: rgba(0, 0, 0, 0) !important;
-      color: #ffffff !important;
-  }
-  .netdata-legend-name-table-line {
-      border-bottom-width: 0px !important;
-  }
-  /* Sidebar */
-  .dashboard-sidebar .nav > li > a {
-      color: #ffffff !important;
-  }
-  .dashboard-sidebar .nav > li > a:hover, .dashboard-sidebar .nav > li > a:focus {
-      color: var(--accent-color) !important;
-      border-left: 1px solid var(--accent-color) !important;
-  }
-  small, .small {
-      font-size: 85%;
-      color: white;
-  }
-  .action-button {
-      color: white !important;
-  }
-  hr {
-      border-top: 1px solid rgba(255, 255, 255, 0.3);
-  }
-  .pagination > li > a, .pagination > li > span {
-      background-color: rgba(0, 0, 0, 0.25) !important;
-      border: 1px solid transparent !important;
-  }
-  .pagination > li > a:hover {
-      background-color: rgba(255, 255, 255, 0.08) !important;	
-  }
-  /* Buttons */
-  .btn-default {
-      background-color: rgba(0, 0, 0, 0.25) !important;
-  }
-  .btn-default:hover {
-      background-color: rgba(255, 255, 255, 0.08) !important;
-  }
-  .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
-      background-color: rgba(0, 0, 0, 0.45);
-      border-color: rgba(0, 0, 0, 0.45) !important;
-  }
+
+/* System Overview metrics */
+.gaugeChartTitle,
+.gaugeChartUnits,
+.gaugeChartMax,
+.gaugeChartMin,
+.gaugeChartLabel,
+.easyPieChartTitle,
+.easyPieChartLabel,
+.easyPieChartUnits {
+    color: #ffffff !important;
+}
+
+.netdata-legend-value,
+.netdata-legend-toolbox,
+.netdata-legend-toolbox-button,
+.dygraph-axis-label {
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: #ffffff !important;
+}
+
+.netdata-legend-resize-handler {
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: #ffffff !important;
+}
+
+.netdata-legend-name-table-line {
+    border-bottom-width: 0px !important;
+}
+
+/* Sidebar */
+.dashboard-sidebar .nav>li>a {
+    color: #ffffff !important;
+}
+
+.dashboard-sidebar .nav>li>a:hover,
+.dashboard-sidebar .nav>li>a:focus {
+    color: var(--accent-color) !important;
+    border-left: 1px solid var(--accent-color) !important;
+}
+
+small,
+.small {
+    font-size: 85%;
+    color: white;
+}
+
+.action-button {
+    color: white !important;
+}
+
+hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.pagination>li>a,
+.pagination>li>span {
+    background-color: rgba(0, 0, 0, 0.25) !important;
+    border: 1px solid transparent !important;
+}
+
+.pagination>li>a:hover {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Buttons */
+.btn-default {
+    background-color: rgba(0, 0, 0, 0.25) !important;
+}
+
+.btn-default:hover {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.btn-default:active,
+.btn-default.active,
+.open>.dropdown-toggle.btn-default {
+    background-color: rgba(0, 0, 0, 0.45);
+    border-color: rgba(0, 0, 0, 0.45) !important;
+}
+
+/* NAV */
+[class^="with-panel"] {
+    background: var(--main-bg-color) !important;
+}
+
+[class^="styled__ListContainer"] {
+    background: var(--main-bg-color);
+    color: white;
+}
+
+[class^="styled__PanelContainer"] {
+    background: var(--modal-bg-color);
+    color: white;
+}
+
+[class^="styled__StyledHeader"] {
+    background: var(--main-bg-color);
+    color: white;
+}
+
+[class^="styled__BottomPanel"] {
+    background: #0000;
+}
+
+[class^=".styled__StyledSpaceBarPlus"] {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+}
