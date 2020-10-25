@@ -774,6 +774,9 @@ body > grafana-app > div > div > react-container > div > div > div.view > div > 
 .css-cxwxzk-Label-description,.css-n370st {
     color: #eee;
 }
+.css-1pziiev {
+    background: rgb(0 0 0 / 50%);
+}
 /*Header*/
 .css-1marj6o {
 display: flex;
