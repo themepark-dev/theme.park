@@ -9,31 +9,56 @@
 
 /*		   		        Made by @gilbN					 */
 /* 			      https://github.com/gilbN/theme.park			 */
+@import url(https://gilbn.github.io/theme.park/CSS/themes/gitea/chroma.css);
 
 body {
     background: var(--main-bg-color);
-}
-
-a,
-.home a,
-.ui.user.list .item .description a,
-.ui.breadcrumb a,
-.repository .labelspage .item a {
-    color: var(--link-color);
-}
-
-a:hover,
-.ui.user.list .item .description a:hover,
-.ui.breadcrumb a:hover,
-.repository .labelspage .item a:hover {
-    color: #fff;
 }
 
 * {
     outline: none;
 }
 
-/* Scrollbar */
+/* LINKS */
+a,
+.home a,
+.ui.user.list .item .description a,
+.ui.breadcrumb a,
+.repository .labelspage .item a,
+.repository .milestone.list>.item>a,
+.repository .milestone.list>.item .operate>a,
+.ui.card>.content>a.header,
+.ui.cards>.card>.content>a.header,
+.ui.card>.extra a:not(.ui),
+.ui.cards>.card>.extra a:not(.ui) {
+    color: var(--link-color);
+}
+
+/* LINK HOVER */
+a:hover,
+.ui.user.list .item .description a:hover,
+.ui.breadcrumb a:hover,
+.repository .labelspage .item a:hover,
+.repository .milestone.list>.item>a:hover,
+.repository .milestone.list>.item .operate>a:hover,
+.ui.card>.content>a.header:hover,
+.ui.cards>.card>.content>a.header:hover,
+.ui.card>.extra a:not(.ui):hover,
+.ui.cards>.card>.extra a:not(.ui):hover {
+    color: #fff;
+}
+
+/* LINKS IMPORTANT */
+.ui .text.blue a {
+    color: var(--link-color) !important;
+}
+
+/* LINKS HOVER IMPORTANT */
+.ui .text.blue a:hover {
+    color: #fff !important;
+}
+
+/* SCROLLBAR */
 @media only screen and (min-width: 768px) {
     html {
         height: 100%;
@@ -100,6 +125,10 @@ footer,
 .ui.form .inline.fields>label,
 .ui.dropdown .menu>.message:not(.ui),
 .ui.dropdown .menu>.header:not(.ui),
+.ui.card>.content>.description,
+.ui.cards>.card>.content>.description,
+.ui.checkbox input[disabled]~label,
+.ui.disabled.checkbox label,
 .repository.view.issue .comment-list .comment .tag,
 .repository .metas .ui.list a .text,
 .CodeMirror {
@@ -119,7 +148,8 @@ b:hover,
 .ui.checkbox label:hover,
 .ui.checkbox input:focus~label,
 .ui.checkbox input:focus~label:after,
-.repository .metas .ui.list a .text:hover {
+.repository .metas .ui.list a .text:hover,
+.ui .text.black:hover {
     color: var(--text-hover);
 }
 
@@ -153,6 +183,13 @@ b:hover,
     color: var(--text-hover);
 }
 
+.ui.secondary.menu .active.item,
+.ui.secondary.menu .active.item:hover {
+    box-shadow: none;
+    background: rgba(0, 0, 0, .05);
+    color: var(--text-hover);
+}
+
 /* UI */
 
 .ui.attached.segment {
@@ -161,6 +198,10 @@ b:hover,
 
 .ui.segment {
     background: rgb(255 255 255 / 8%) !important;
+}
+
+.ui .info.segment.top {
+    background-color: rgb(0 0 0 / 15%) !important;
 }
 
 .ui.attached.header {
@@ -181,6 +222,59 @@ b:hover,
 .ui.red.message p,
 .ui.red.message strong {
     color: #db2828 !important;
+}
+
+.ui.progress {
+    background: rgb(255 255 255 / 10%);
+}
+
+.ui.progress[data-percent="0"] .bar .progress {
+    color: var(--text-hover);
+}
+
+.ui.list .list>.item .header,
+.ui.list>.item .header {
+    color: var(--text);
+}
+
+/* MODAL */
+.ui.basic.modal,
+.ui.basic.modal>.actions,
+.ui.basic.modal>.content,
+.ui.basic.modal>.header {
+    background-color: var(--modal-bg-color);
+}
+
+.ui.modal>.header {
+    display: block;
+    font-family: Roboto, Helvetica Neue, Arial, Helvetica, sans-serif;
+    background: var(--modal-bg-color);
+    margin: 0;
+    padding: 1.25rem 1.5rem;
+    box-shadow: none;
+    color: var(--text);
+    border-bottom: 1px solid rgb(255 255 255 / 0.1);
+}
+
+.ui.modal>.content {
+    display: block;
+    width: 100%;
+    font-size: 1em;
+    line-height: 1.4;
+    padding: 1.5rem;
+    background: var(--modal-bg-color);
+}
+
+.ui.modal>.actions {
+    background: var(--modal-bg-color);
+    padding: 1rem;
+    border-top: 1px solid rgb(255 255 255 / 0.1);
+    text-align: right;
+}
+
+.ui .error.header {
+    background-color: #F44336 !important;
+    color: white !important;
 }
 
 /* SIGN IN NAV BAR*/
@@ -378,6 +472,14 @@ svg.vch__wrapper .vch__months__labels__wrapper text.vch__month__label[data-v-a9c
     background-color: rgb(0 0 0 / 24%);
 }
 
+.repository .diff-detail-box {
+    background: transparent;
+}
+
+.repository .diff-detail-box.sticky {
+    border-bottom: 1px solid rgb(255 255 255 / .1);
+}
+
 .repo-header .ui.breadcrumb a {
     color: var(--accent-color);
 }
@@ -397,7 +499,11 @@ svg.vch__wrapper .vch__months__labels__wrapper text.vch__month__label[data-v-a9c
 .ui.tabular.menu .active.item {
     background: none var(--main-bg-color) !important;
     color: var(--text);
-    border-color: transparent;
+    border-color: rgb(255 255 255 / 10%);
+}
+
+.ui.tabular.menu {
+    border-bottom: 1px solid rgb(255 255 255 / 10%);
 }
 
 .ui.tabular.menu .item:hover {
@@ -405,10 +511,39 @@ svg.vch__wrapper .vch__months__labels__wrapper text.vch__month__label[data-v-a9c
     border-radius: .28571429rem .28571429rem 0 0 !important;
 }
 
+.ui.card,
+.ui.cards>.card {
+    background: rgb(255 255 255 / 8%);
+    box-shadow: none;
+}
+
 .repository .ui.menu {
     background: rgb(0 0 0 / 0%);
-    border: 1px solid rgba(255, 255, 255, 0.11);
     box-shadow: 0 1px 2px 0 rgba(34, 36, 38, .15);
+}
+
+.repository.file.editor .commit-form-wrapper .commit-form {
+    position: relative;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(255 255 255 / .1);
+    border-radius: 3px;
+}
+
+.repository.release #release-list {
+    border-top: 1px solid rgb(255 255 255 / 0.1);
+}
+
+.repository.release #release-list>li .detail {
+    border-left: 1px solid rgb(255 255 255 / 0.1);
+}
+
+.repository.release #release-list>li .detail .download .list {
+    border-top: 1px solid rgb(255 255 255 / .1);
+}
+
+.repository.release #release-list>li .detail .download .list li {
+    border-bottom: 1px solid rgb(255 255 255 / .1);
 }
 
 /*
@@ -417,6 +552,18 @@ svg.vch__wrapper .vch__months__labels__wrapper text.vch__month__label[data-v-a9c
     color: var(--text-hover);
     font-weight: 400;
     box-shadow: none;
+}
+
+    /* WIKI */
+.repository.wiki.pages .ui.ui.table td.grey:not(.marked),
+.repository.wiki.pages .ui.ui.ui.ui.table tr.grey:not(.marked) {
+    background: rgb(255 255 255 / 0.08);
+    ;
+}
+
+.editor-preview,
+.editor-preview-side {
+    background: var(--modal-bg-color) !important;
 }
 
 /* COMMIT STUFF */
@@ -558,6 +705,10 @@ svg.vch__wrapper .vch__months__labels__wrapper text.vch__month__label[data-v-a9c
     color: #fff;
 }
 
+.issue.list>.item .desc .overdue {
+    color: #ec2626;
+}
+
 /* TABLE */
 .ui.table>thead>tr>th {
     background: rgb(0 0 0 / 25%);
@@ -619,6 +770,7 @@ footer {
     color: var(--button-text);
 }
 
+/*
 .ui.green.button,
 .ui.green.buttons .button {
     background-color: var(--button-color);
@@ -637,7 +789,7 @@ footer {
     background-color: var(--button-color-hover);
     color: var(--button-text);
 }
-
+*/
 .ui.blue.button,
 .ui.blue.buttons .button {
     background-color: var(--button-color);
@@ -712,17 +864,62 @@ footer {
     color: var(--button-text);
 }
 
+.ui.inverted.red.basic.button:hover,
+.ui.inverted.red.basic.buttons .button:hover,
+.ui.inverted.red.buttons .basic.button:hover {
+    box-shadow: inset 0 0 0 2px #ec2626;
+    color: var(--button-text);
+}
+
+.repo-buttons .ui.basic.label,
+.ui.basic.labels .label {
+    background: none var(--button-color);
+    border: 1px solid rgba(34, 36, 38, .15);
+    color: var(--button-text);
+}
+
+.repo-buttons .ui.basic.labels a.label:hover,
+a.ui.basic.label:hover {
+    text-decoration: none;
+    background: none var(--button-color-hover);
+    color: var(--button-text);
+    box-shadow: none;
+}
+
+.repo-buttons .disabled-repo-button a.button:hover {
+    background: none !important;
+    color: rgb(255 255 255 / 60%) !important;
+    box-shadow: inset 0 0 0 1px rgba(34, 36, 38, .15) !important;
+}
+
 /* LABELS */
+/*
 .ui.label,
 .ui.menu .item>.label {
     background-color: var(--button-color);
     color: var(--button-text);
+}
+*/
+.ui.label {
+    background-color: rgb(255 255 255 / 10%);
+    color: #fff;
 }
 
 .ui.labels a.label:hover,
 a.ui.label:hover {
     background-color: #ffffff;
     color: rgba(0, 0, 0, .8);
+}
+
+.ui .sha.label {
+    background: var(--button-color);
+    color: var(--button-text);
+}
+
+a.ui.label:hover,
+a.ui.labels .label:hover {
+    background: var(--button-color-hover);
+    color: var(--button-text);
 }
 
 .repository #commits-table td.sha .sha.label,
@@ -828,14 +1025,389 @@ a.ui.label:hover {
     background-color: rgb(0 0 0 / 0.25);
 }
 
-.chroma {
-    filter: invert(1);
+/* CHROMA */
+/* Background */
+.chroma,
+.markdown:not(code) .highlight pre,
+.markdown:not(code) pre {
+    background-color: var(--code-background);
+    color: var(--code-color);
 }
 
-.repository.file.list .non-diff-file-content pre {
+/* Error */
+.chroma .err {
+    background-color: var(--code-err-background);
+    color: var(--code-err-color);
+}
+
+/* LineTableTD */
+.chroma .lntd {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+
+/* LineTable */
+.chroma .lntable {
+    width: auto;
+
+    border: 0;
+    border-spacing: 0;
+    display: block;
+    margin: 0;
     overflow: auto;
-    color: #695d4b;
-    background: rgba(0, 0, 0, .5);
+    padding: 0;
+}
+
+/* LineHighlight */
+.chroma .hl {
+    width: 100%;
+
+    background-color: var(--code-hl-background);
+    display: block;
+}
+
+/* LineNumbersTable */
+.chroma .lnt {
+    margin-right: 0.4em;
+    padding: 0 0.4em 0 0.4em;
+}
+
+/* LineNumbers */
+.chroma .ln {
+    margin-right: 0.4em;
+    padding: 0 0.4em 0 0.4em;
+}
+
+/* Keyword */
+.chroma .k {
+    color: var(--code-k-color);
+}
+
+/* KeywordConstant */
+.chroma .kc {
+    color: var(--code-kc-color);
+}
+
+/* KeywordDeclaration */
+.chroma .kd {
+    color: var(--code-kd-color);
+}
+
+/* KeywordNamespace */
+.chroma .kn {
+    color: var(--code-kn-color);
+}
+
+/* KeywordPseudo */
+.chroma .kp {
+    color: var(--code-kp-color);
+}
+
+/* KeywordReserved */
+.chroma .kr {
+    color: var(--code-kr-color);
+}
+
+/* KeywordType */
+.chroma .kt {
+    color: var(--code-kt-color);
+}
+
+/* Name */
+.chroma .n {
+    color: var(--code-n-color);
+}
+
+/* NameAttribute */
+.chroma .na {
+    color: var(--code-na-color);
+}
+
+/* NameBuiltin */
+.chroma .nb {
+    color: var(--code-nb-color);
+}
+
+/* NameBuiltinPseudo */
+.chroma .bp {
+    color: var(--code-bp-color);
+}
+
+/* NameClass */
+.chroma .nc {
+    color: var(--code-nc-color);
+}
+
+/* NameConstant */
+.chroma .no {
+    color: var(--code-no-color);
+}
+
+/* NameDecorator */
+.chroma .nd {
+    color: var(--code-nd-color);
+}
+
+/* NameEntity */
+.chroma .ni {
+    color: var(--code-ni-color);
+}
+
+/* NameException */
+.chroma .ne {
+    color: var(--code-ne-color);
+}
+
+/* NameFunction */
+.chroma .nf {
+    color: var(--code-nf-color);
+}
+
+/* NameFunctionMagic */
+.chroma .fm {
+    color: var(--code-fm-color);
+}
+
+/* NameLabel */
+.chroma .nl {
+    color: var(--code-nl-color);
+}
+
+/* NameNamespace */
+.chroma .nn {
+    color: var(--code-nn-color);
+}
+
+/* NameOther */
+.chroma .nx {
+    color: var(--code-nx-color);
+}
+
+/* NameProperty */
+.chroma .py {
+    color: var(--code-py-color);
+}
+
+/* NameTag */
+.chroma .nt {
+    color: var(--code-nt-color);
+}
+
+/* NameVariable */
+.chroma .nv {
+    color: var(--code-nv-color);
+}
+
+/* NameVariableClass */
+.chroma .vc {
+    color: var(--code-vc-color);
+}
+
+/* NameVariableGlobal */
+.chroma .vg {
+    color: var(--code-vg-color);
+}
+
+/* NameVariableInstance */
+.chroma .vi {
+    color: var(--code-vi-color);
+}
+
+/* NameVariableMagic */
+.chroma .vm {
+    color: var(--code-vm-color);
+}
+
+/* Literal */
+.chroma .l {
+    color: var(--code-l-color);
+}
+
+/* LiteralDate */
+.chroma .ld {
+    color: var(--code-ld-color);
+}
+
+/* LiteralString */
+.chroma .s {
+    color: var(--code-s-color);
+}
+
+/* LiteralStringAffix */
+.chroma .sa {
+    color: var(--code-sa-color);
+}
+
+/* LiteralStringBacktick */
+.chroma .sb {
+    color: var(--code-sb-color);
+}
+
+/* LiteralStringChar */
+.chroma .sc {
+    color: var(--code-sc-color);
+}
+
+/* LiteralStringDelimiter */
+.chroma .dl {
+    color: var(--code-dl-color);
+}
+
+/* LiteralStringDoc */
+.chroma .sd {
+    color: var(--code-sd-color);
+}
+
+/* LiteralStringDouble */
+.chroma .s2 {
+    color: var(--code-s2-color);
+}
+
+/* LiteralStringEscape */
+.chroma .se {
+    color: var(--code-se-color);
+}
+
+/* LiteralStringHeredoc */
+.chroma .sh {
+    color: var(--code-sh-color);
+}
+
+/* LiteralStringInterpol */
+.chroma .si {
+    color: var(--code-si-color);
+}
+
+/* LiteralStringOther */
+.chroma .sx {
+    color: var(--code-sx-color);
+}
+
+/* LiteralStringRegex */
+.chroma .sr {
+    color: var(--code-sr-color);
+}
+
+/* LiteralStringSingle */
+.chroma .s1 {
+    color: var(--code-s1-color);
+}
+
+/* LiteralStringSymbol */
+.chroma .ss {
+    color: var(--code-ss-color);
+}
+
+/* LiteralNumber */
+.chroma .m {
+    color: var(--code-m-color);
+}
+
+/* LiteralNumberBin */
+.chroma .mb {
+    color: var(--code-mb-color);
+}
+
+/* LiteralNumberFloat */
+.chroma .mf {
+    color: var(--code-mf-color);
+}
+
+/* LiteralNumberHex */
+.chroma .mh {
+    color: var(--code-mh-color);
+}
+
+/* LiteralNumberInteger */
+.chroma .mi {
+    color: var(--code-mi-color);
+}
+
+/* LiteralNumberIntegerLong */
+.chroma .il {
+    color: var(--code-il-color);
+}
+
+/* LiteralNumberOct */
+.chroma .mo {
+    color: var(--code-mo-color);
+}
+
+/* Operator */
+.chroma .o {
+    color: var(--code-o-color);
+}
+
+/* OperatorWord */
+.chroma .ow {
+    color: var(--code-ow-color);
+}
+
+/* Punctuation */
+.chroma .p {
+    color: var(--code-p-color);
+}
+
+/* Comment */
+.chroma .c {
+    color: var(--code-c-color);
+}
+
+/* CommentHashbang */
+.chroma .ch {
+    color: var(--code-ch-color);
+}
+
+/* CommentMultiline */
+.chroma .cm {
+    color: var(--code-cm-color);
+}
+
+/* CommentSingle */
+.chroma .c1 {
+    color: var(--code-c1-color);
+}
+
+/* CommentSpecial */
+.chroma .cs {
+    color: var(--code-cs-color);
+}
+
+/* CommentPreproc */
+.chroma .cp {
+    color: var(--code-cp-color);
+}
+
+/* CommentPreprocFile */
+.chroma .cpf {
+    color: var(--code-cpf-color);
+}
+
+/* GenericDeleted */
+.chroma .gd {
+    color: var(--code-gd-color);
+}
+
+/* GenericEmph */
+.chroma .ge {
+    font-style: italic;
+}
+
+/* GenericInserted */
+.chroma .gi {
+    color: var(--code-gi-color);
+}
+
+/* GenericStrong */
+.chroma .gs {
+    font-weight: bold;
+}
+
+/* GenericSubheading */
+.chroma .gu {
+    color: var(--code-gu-color);
 }
 
 /* PLACEHOLDER TEXT */

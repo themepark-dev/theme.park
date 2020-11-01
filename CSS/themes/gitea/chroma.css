@@ -1,0 +1,171 @@
+/*
+/*                                    dP                   oo 
+/*                                    88                   
+/* 88d8b.d8b. .d8888b. 88d888b. .d8888b. 88  .dP  .d8888b. dP 
+/* 88'`88'`88 88'  `88 88'  `88 88'  `88 88888"   88'  `88 88 
+/* 88  88  88 88.  .88 88    88 88.  .88 88  `8b. 88.  .88 88 
+/* dP  dP  dP `88888P' dP    dP `88888P' dP   `YP `88888P8 dP 
+
+/* Source: https://gist.github.com/ntrrg/f70d4dc6ed8a739a36fe7c55f422c5f3 */
+:root {
+    /* Background */
+    --code-background: #1f1f1f;
+    --code-color: #f8f8f2;
+  
+    /* Error */
+    --code-err-background: #960050;
+    --code-err-color: #1e0010;
+  
+    /* LineHighlight */
+    --code-hl-background: #ffffcc;
+  
+    /* Keyword */
+    --code-k-color: #66d9ef;
+  
+    /* KeywordConstant */
+    --code-kc-color: #66d9ef;
+  
+    /* KeywordDeclaration */
+    --code-kd-color: #66d9ef;
+  
+    /* KeywordNamespace */
+    --code-kn-color: #f92672;
+  
+    /* KeywordPseudo */
+    --code-kp-color: #66d9ef;
+  
+    /* KeywordReserved */
+    --code-kr-color: #66d9ef;
+  
+    /* KeywordType */
+    --code-kt-color: #66d9ef;
+  
+    /* NameAttribute */
+    --code-na-color: #a6e22e;
+  
+    /* NameClass */
+    --code-nc-color: #a6e22e;
+  
+    /* NameConstant */
+    --code-no-color: #66d9ef;
+  
+    /* NameDecorator */
+    --code-nd-color: #a6e22e;
+  
+    /* NameException */
+    --code-ne-color: #a6e22e;
+  
+    /* NameFunction */
+    --code-nf-color: #a6e22e;
+  
+    /* NameOther */
+    --code-nx-color: #a6e22e;
+  
+    /* NameTag */
+    --code-nt-color: #f92672;
+  
+    /* Literal */
+    --code-l-color: #ae81ff;
+  
+    /* LiteralDate */
+    --code-ld-color: #e6db74;
+  
+    /* LiteralString */
+    --code-s-color: #e6db74;
+  
+    /* LiteralStringAffix */
+    --code-sa-color: #e6db74;
+  
+    /* LiteralStringBacktick */
+    --code-sb-color: #e6db74;
+  
+    /* LiteralStringChar */
+    --code-sc-color: #e6db74;
+  
+    /* LiteralStringDelimiter */
+    --code-dl-color: #e6db74;
+  
+    /* LiteralStringDoc */
+    --code-sd-color: #e6db74;
+  
+    /* LiteralStringDouble */
+    --code-s2-color: #e6db74;
+  
+    /* LiteralStringEscape */
+    --code-se-color: #ae81ff;
+  
+    /* LiteralStringHeredoc */
+    --code-sh-color: #e6db74;
+  
+    /* LiteralStringInterpol */
+    --code-si-color: #e6db74;
+  
+    /* LiteralStringOther */
+    --code-sx-color: #e6db74;
+  
+    /* LiteralStringRegex */
+    --code-sr-color: #e6db74;
+  
+    /* LiteralStringSingle */
+    --code-s1-color: #e6db74;
+  
+    /* LiteralStringSymbol */
+    --code-ss-color: #e6db74;
+  
+    /* LiteralNumber */
+    --code-m-color: #ae81ff;
+  
+    /* LiteralNumberBin */
+    --code-mb-color: #ae81ff;
+  
+    /* LiteralNumberFloat */
+    --code-mf-color: #ae81ff;
+  
+    /* LiteralNumberHex */
+    --code-mh-color: #ae81ff;
+  
+    /* LiteralNumberInteger */
+    --code-mi-color: #ae81ff;
+  
+    /* LiteralNumberIntegerLong */
+    --code-il-color: #ae81ff;
+  
+    /* LiteralNumberOct */
+    --code-mo-color: #ae81ff;
+  
+    /* Operator */
+    --code-o-color: #f92672;
+  
+    /* OperatorWord */
+    --code-ow-color: #f92672;
+  
+    /* Comment */
+    --code-c-color: #75715e;
+  
+    /* CommentHashbang */
+    --code-ch-color: #75715e;
+  
+    /* CommentMultiline */
+    --code-cm-color: #75715e;
+  
+    /* CommentSingle */
+    --code-c1-color: #75715e;
+  
+    /* CommentSpecial */
+    --code-cs-color: #75715e;
+  
+    /* CommentPreproc */
+    --code-cp-color: #75715e;
+  
+    /* CommentPreprocFile */
+    --code-cpf-color: #75715e;
+  
+    /* GenericDeleted */
+    --code-gd-color: #f92672;
+  
+    /* GenericInserted */
+    --code-gi-color: #a6e22e;
+  
+    /* GenericSubheading */
+    --code-gu-color: #75715e;
+}
