@@ -13,6 +13,7 @@
 
 /* GITEA DARK THEME */
 @import url(https://gilbn.github.io/theme.park/CSS/themes/gitea/gitea-base.css);
+@import url(https://gilbn.github.io/theme.park/CSS/themes/gitea/chroma.css);
 :root {
   --main-bg-color: radial-gradient(circle, #3a3a3a, #2d2d2d, #202020, #141414, #000000) center center/cover no-repeat fixed;
   --modal-bg-color: radial-gradient(circle , #3a3a3a, #2d2d2d, #202020, #141414, #000000) center center/cover no-repeat fixed;
@@ -20,8 +21,14 @@
   --button-color-hover: hsla(0,0%,100%,.30);
   --button-text: #eee;
   --accent-color:  #646464;
-  --accent-color-hover: rgba(255, 255, 255, 0.45);
+  --accent-color-hover: #ffffff73;
   --text: #b7b7b7;
   --text-hover: #fff;
   --link-hover: rgba(255, 255, 255, 0.45);
+
+  --heatmap-color-1: #303030;
+  --heatmap-color-2: #5E5E5E;
+  --heatmap-color-3: #919191;
+  --heatmap-color-4: #C6C6C6; 
+  --heatmap-color-5: #FFFFFF;
 }

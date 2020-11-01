@@ -13,6 +13,7 @@
 
 /* GITEA AQUAMARINE THEME */
 @import url(https://gilbn.github.io/theme.park/CSS/themes/gitea/gitea-base.css);
+@import url(https://gilbn.github.io/theme.park/CSS/themes/gitea/chroma.css);
 :root {
   --main-bg-color: radial-gradient(ellipse at center, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
   --modal-bg-color: radial-gradient(ellipse at top, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
@@ -24,4 +25,10 @@
   --text: #eee;
   --text-hover: #fff;
   --link-color: #12afa0;
+
+  --heatmap-color-1: #002D24;
+  --heatmap-color-2: #004B40;
+  --heatmap-color-3: #006B5F;
+  --heatmap-color-4: #008C7E; 
+  --heatmap-color-5: #12AFA0;
 }

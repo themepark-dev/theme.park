@@ -13,6 +13,7 @@
 
 /* GITEA HOTLINE THEME */
 @import url(https://gilbn.github.io/theme.park/CSS/themes/gitea/gitea-base.css);
+@import url(https://gilbn.github.io/theme.park/CSS/themes/gitea/chroma.css);
 :root {
   --main-bg-color: radial-gradient(ellipse at center, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
   --modal-bg-color: radial-gradient(ellipse at top, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
@@ -24,4 +25,10 @@
   --text: #eee;
   --text-hover: #fff;
   --link-hover: #F44336;
+
+  --heatmap-color-1: #690000;
+  --heatmap-color-2: #890000;
+  --heatmap-color-3: #AC0002;
+  --heatmap-color-4: #D0191D; 
+  --heatmap-color-5: #F44336;
 }

@@ -13,6 +13,7 @@
 
 /* GITEA ORGANIZR-DARK THEME */
 @import url(https://gilbn.github.io/theme.park/CSS/themes/gitea/gitea-base.css);
+@import url(https://gilbn.github.io/theme.park/CSS/themes/gitea/chroma.css);
 :root {
   --main-bg-color: #1f1f1f;
   --modal-bg-color: #1b1b1b;
@@ -24,4 +25,10 @@
   --text: #96a2b4;
   --text-hover: #fff;
   --link-color: #2cabe3;
+
+  --heatmap-color-1: #002A57;
+  --heatmap-color-2: #004878;
+  --heatmap-color-3: #00679A;
+  --heatmap-color-4: #0088BE; 
+  --heatmap-color-5: #2CABE3;
 }

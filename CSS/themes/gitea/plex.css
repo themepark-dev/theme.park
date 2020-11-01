@@ -13,6 +13,7 @@
 
 /* GITEA PLEX THEME */
 @import url(https://gilbn.github.io/theme.park/CSS/themes/gitea/gitea-base.css);
+@import url(https://gilbn.github.io/theme.park/CSS/themes/gitea/chroma.css);
 :root {
   --main-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-light2.png") center center/cover no-repeat fixed;
   --modal-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-dark2.png") center center/cover no-repeat fixed;
@@ -24,4 +25,10 @@
   --text: #eee;
   --text-hover: #fff;
   --link-color:#fff;
+
+  --heatmap-color-1: #492000;
+  --heatmap-color-2: #6E4500;
+  --heatmap-color-3: #9B6C00;
+  --heatmap-color-4: #CC9500; 
+  --heatmap-color-5: #FFC107;
 }
