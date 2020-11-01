@@ -79,9 +79,10 @@ a:hover,
 ::-webkit-scrollbar-thumb {
     min-height: 50px;
     border: 3px solid transparent;
-    border-radius: 8px;
+    border-radius: 8px !important;
     background-color: hsla(0, 0%, 100%, .2);
     background-clip: padding-box;
+    box-shadow: none !important;
 }
 
 ::-webkit-scrollbar-track {
@@ -91,7 +92,7 @@ a:hover,
 ::-webkit-scrollbar-thumb:hover {
     min-height: 50px;
     border: 3px solid transparent;
-    border-radius: 8px;
+    border-radius: 8px !important;
     background-color: hsla(0, 0%, 100%, .5);
     background-clip: padding-box;
 }
@@ -133,7 +134,8 @@ footer,
 .repository.view.issue .comment-list .comment .tag,
 .repository .metas .ui.list a .text,
 .repository .diff-box .header .file,
-.CodeMirror {
+.CodeMirror,
+.feeds .list ul li a .svg {
     color: var(--text);
 }
 
@@ -158,6 +160,11 @@ b:hover,
 /* TEXT HOVER IMPORTANT */
 .ui .text.grey a:hover {
     color: var(--text-hover) !important;
+}
+
+/* TEXT MUTED */
+.ui .text.light.grey {
+    color: var(--text-muted) !important;
 }
 
 /* NAVBAR */
@@ -193,6 +200,11 @@ b:hover,
 }
 
 /* UI */
+.ui.menu {
+    background: rgb(0 0 0 / 10%);
+    border: 1px solid rgba(255, 255, 255, .1);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1);
+}
 
 .ui.attached.segment {
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -728,9 +740,16 @@ td.blob-excerpt {
 
 .ui.blue.labels .label,
 .ui.ui.ui.blue.label {
+    background-color: var(--accent-color) !important;
+    border-color: var(--accent-color) !important;
+    color: var(--text-hover);
+}
+
+.ui.black.labels .label,
+.ui.ui.ui.black.label {
     background-color: var(--accent-color);
     border-color: var(--accent-color);
-    color: var(--text-hover);
+    color: var(--button-text);
 }
 
 .repository #commits-table.ui.basic.striped.table tbody tr:nth-child(2n) {
@@ -770,7 +789,7 @@ td.blob-excerpt {
 .dropzone {
     min-height: 150px;
     border: 2px solid rgba(0, 0, 0, .3);
-    background: rgb(255 255 255 / 25%);
+    background: rgb(255 255 255 / 25%) !important;
     padding: 20px;
 }
 
@@ -884,6 +903,27 @@ footer {
     background: var(--accent-color);
 }
 
+.ui.toggle.checkbox input:checked~label:before {
+    background-color: rgb(0 0 0 / 25%) !important;
+}
+
+.ui.toggle.checkbox input:checked~label,
+.ui.toggle.checkbox label {
+    color: var(--text) !important;
+}
+
+.ui.toggle.checkbox label:before,
+.ui.toggle.checkbox input:focus:checked~label:before {
+    background: rgb(255 255 255 / 10%) !important;
+    background-color: rgb(255 255 255 / 10%) !important;
+}
+
+.ui.toggle.checkbox input:focus:checked~label,
+.ui.checkbox input:focus~label,
+.ui.checkbox input:focus~label:after {
+    color: var(--text-hover) !important;
+}
+
 .ui.primary.button,
 .ui.primary.buttons .button {
     background-color: var(--button-color);
@@ -894,6 +934,21 @@ footer {
 .ui.primary.buttons .button:hover {
     background-color: var(--button-color-hover);
     color: var(--button-text);
+}
+
+.ui.teal.button,
+.ui.teal.buttons .button {
+    background-color: var(--button-color);
+    color: var(--button-text);
+    text-shadow: none;
+    background-image: none;
+}
+
+.ui.teal.button:hover,
+.ui.teal.buttons .button:hover {
+    background-color: var(--button-color-hover);
+    color: var(--button-text);
+    text-shadow: none;
 }
 
 /*
@@ -918,13 +973,13 @@ footer {
 */
 .ui.blue.button,
 .ui.blue.buttons .button {
-    background-color: var(--button-color);
+    background-color: var(--button-color) !important;
     color: var(--button-text);
 }
 
 .ui.blue.button:hover,
 .ui.blue.buttons .button:hover {
-    background-color: var(--button-color-hover);
+    background-color: var(--button-color-hover) !important;
     color: var(--button-text);
 }
 
@@ -953,11 +1008,15 @@ footer {
 .ui.basic.blue.button,
 .ui.basic.blue.buttons .button {
     box-shadow: inset 0 0 0 1px var(--accent-color) !important;
-    color: var(--accent-color) !important;
+    color: var(--button-text) !important;
 }
 
 .ui.basic.blue.button:hover,
-.ui.basic.blue.buttons .button:hover {
+.ui.basic.blue.buttons .button:hover,
+.ui.basic.blue.button:active,
+.ui.basic.blue.buttons .button:active,
+.ui.basic.blue.button:focus,
+.ui.basic.blue.buttons .button:focus {
     background: var(--button-color) !important;
     color: var(--button-text) !important;
 }
@@ -1179,42 +1238,42 @@ a.ui.labels .label:hover {
 
 /* HIGHLIGHTING */
 ::-webkit-selection {
-    background-color: var(--accent-color);
-    color: var(--text-hover);
+    background-color: var(--accent-color) !important;
+    color: var(--text-hover) !important;
 }
 
 ::-moz-selection {
-    background-color: var(--accent-color);
-    color: var(--text-hover);
+    background-color: var(--accent-color) !important;
+    color: var(--text-hover) !important;
 }
 
 ::selection {
-    background-color: var(--accent-color);
-    color: var(--text-hover);
+    background-color: var(--accent-color) !important;
+    color: var(--text-hover) !important;
 }
 
 textarea::-webkit-selection,
 input::-webkit-selection {
-    background-color: var(--accent-color);
-    color: var(--text-hover);
+    background-color: var(--accent-color) !important;
+    color: var(--text-hover) !important;
 }
 
 textarea::-moz-selection,
 input::-moz-selection {
-    background-color: var(--accent-color);
-    color: var(--text-hover);
+    background-color: var(--accent-color) !important;
+    color: var(--text-hover) !important;
 }
 
 textarea::-moz-selection,
 input::-moz-selection {
-    background-color: var(--accent-color);
-    color: var(--text-hover);
+    background-color: var(--accent-color) !important;
+    color: var(--text-hover) !important;
 }
 
 textarea::selection,
 input::selection {
-    background-color: var(--accent-color);
-    color: var(--text-hover);
+    background-color: var(--accent-color) !important;
+    color: var(--text-hover) !important;
 }
 
 /* CALENDAR */
