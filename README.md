@@ -202,6 +202,10 @@
 <p><a href="https://github.com/gilbN/theme.park/wiki/Resilio-Sync"><img src="https://avatars1.githubusercontent.com/u/12284211?s=200&v=4" alt="" width="48" height="48" /></a></p>
 <p><a href="https://github.com/gilbN/theme.park/wiki/Resilio-Sync">Resilio-Sync</a></p>
 </td>
+<td style="width: 90px; height: 40px; text-align: center;">
+<p><a href="https://github.com/gilbN/theme.park/wiki/Gitea"><img src="https://raw.githubusercontent.com/go-gitea/gitea/master/public/img/gitea-192.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://github.com/gilbN/theme.park/wiki/Gitea">Gitea</a></p>
+</td>
 </tr>
 </tbody>
 </table>
