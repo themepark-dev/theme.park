@@ -594,7 +594,10 @@ svg.vch__wrapper rect.vch__day__square[data-v-a9cfea66]:hover {
     border-color: #634343 !important
 }
 
-
+.repository.view.issue .comment-list .timeline-item .badge.badge-commit {
+    border-color: transparent;
+    background: radial-gradient(#fff0 40%,transparent 0) no-repeat;
+}
 .tag-code,
 .tag-code td {
     background: rgba(255, 255, 255, .1) !important;
@@ -1107,6 +1110,7 @@ a.ui.label:hover {
 .ui .sha.label {
     background: var(--button-color);
     color: var(--button-text);
+    border: 1px solid var(--button-color) !important;
 }
 
 a.ui.label:hover,
