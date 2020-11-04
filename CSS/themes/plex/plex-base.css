@@ -11,6 +11,10 @@
 /*			      https://github.com/gilbN/theme.park			 */
 
 /* PLEX ORGANIZR THEME */
+* {
+  outline: none;
+}
+
 body {
   background: var(--main-bg-color);
 }
@@ -416,4 +420,12 @@ a:hover {
 
 .Spinner-spinner-1qRM4t {
   border-color: var(--accent-color) transparent transparent var(--accent-color);
+}
+
+.PageHeaderMultiselectActions-container-2k4DLu {
+  border: 2px solid var(--accent-color);
+}
+
+.PageHeaderMultiselectActions-count-2fQWwV {
+  color: var(--accent-color);
 }
