@@ -258,7 +258,14 @@ b:hover,
 .ui.list>.item .header {
     color: var(--text);
 }
-
+.pagination.menu {
+    background: rgba(255, 255, 255, .08) !important;
+}
+.ui.pagination.menu .active.item {
+    background-color: rgba(0,0,0,.25);
+    color: var(--text-hover);
+    box-shadow: none;
+}
 /* MODAL */
 .ui.basic.modal,
 .ui.basic.modal>.actions,
