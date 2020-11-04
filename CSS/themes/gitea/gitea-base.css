@@ -205,15 +205,18 @@ b:hover,
     border: 1px solid rgba(255, 255, 255, .1);
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1);
 }
+
 .organization.settings .ui.vertical.menu {
     display: block;
     flex-direction: column;
     background: rgb(255 255 255 / 8%);
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
 }
+
 .ui.vertical.menu .header.item {
     background: rgb(0 0 0 / 35%);
 }
+
 .ui.attached.segment {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -258,14 +261,17 @@ b:hover,
 .ui.list>.item .header {
     color: var(--text);
 }
+
 .pagination.menu {
     background: rgba(255, 255, 255, .08) !important;
 }
+
 .ui.pagination.menu .active.item {
-    background-color: rgba(0,0,0,.25);
+    background-color: rgba(0, 0, 0, .25);
     color: var(--text-hover);
     box-shadow: none;
 }
+
 /* MODAL */
 .ui.basic.modal,
 .ui.basic.modal>.actions,
@@ -603,8 +609,9 @@ svg.vch__wrapper rect.vch__day__square[data-v-a9cfea66]:hover {
 
 .repository.view.issue .comment-list .timeline-item .badge.badge-commit {
     border-color: transparent;
-    background: radial-gradient(#fff0 40%,transparent 0) no-repeat;
+    background: radial-gradient(#fff0 40%, transparent 0) no-repeat;
 }
+
 .tag-code,
 .tag-code td {
     background: rgba(255, 255, 255, .1) !important;
@@ -942,16 +949,20 @@ footer {
     color: var(--text-hover) !important;
 }
 
+.ui.blue.button,
+.ui.blue.buttons .button,
 .ui.primary.button,
 .ui.primary.buttons .button {
-    background-color: var(--button-color);
-    color: var(--button-text);
+    background-color: var(--button-color) !important;
+    color: var(--button-text) !important;
 }
 
 .ui.primary.button:hover,
-.ui.primary.buttons .button:hover {
-    background-color: var(--button-color-hover);
-    color: var(--button-text);
+.ui.primary.buttons .button:hover,
+.ui.blue.button:hover,
+.ui.blue.buttons .button:hover {
+    background-color: var(--button-color-hover) !important;
+    color: var(--button-text) !important;
 }
 
 .ui.teal.button,
@@ -1130,6 +1141,18 @@ a.ui.labels .label:hover {
 .repository #repo-files-table .sha.label,
 .repository .timeline-item.commits-list .singular-commit .sha.label {
     border: 1px solid transparent;
+}
+
+.repository #commits-table td.sha .sha.label .detail.icon,
+.repository #repo-files-table .sha.label .detail.icon,
+.repository .timeline-item.commits-list .singular-commit .sha.label .detail.icon {
+    background: rgb(0 0 0 / 25%);
+    margin: -6px -10px -4px 0;
+    padding: 5px 4px 5px 6px;
+    border: 0;
+    border-left: 1px solid #fff;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 .repository.file.list #repo-files-table tbody .svg.octicon-file-directory,
