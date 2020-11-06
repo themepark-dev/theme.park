@@ -93,9 +93,9 @@ content-loading .contentLoading {
 
 /* MODALS */
 .ngdialog.ngdialog-theme-default .ngdialog-content {
-    background-color: var(--modal-bg-color);
+    background: var(--modal-bg-color);
     color: var(--text) !important;
-    border: #f05050 5px solid;
+    border: #f0505000 5px solid;
 }
 
 .fm .settings {
