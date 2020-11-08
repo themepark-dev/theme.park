@@ -16,13 +16,13 @@
   --main-bg-color: radial-gradient(ellipse at center, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
   --modal-bg-color: radial-gradient(ellipse at top, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
 
-  --calendar-tv-Unaired-Premiere: #35c5f4;
-  --calendar-tv-Downloading: #7932ea; 
-  --calendar-tv-Unmonitored: grey;
-  --calendar-tv-Unaired: #337ab7;  
-  --calendar-tv-missing: #d9534f;
-  --calendar-tv-On-Air: #f0ad4e; 
-  --calendar-tv-available: #5cb85c;
+  --calendar-tv-Unaired-Premiere: 53 197 244;
+  --calendar-tv-Downloading: 122 67 182; 
+  --calendar-tv-Unmonitored: 173 173 173;
+  --calendar-tv-Unaired: 93 156 236;  
+  --calendar-tv-missing: 240 80 80;
+  --calendar-tv-On-Air: 255 165 0; 
+  --calendar-tv-available: 39 194 76;
 
   --button-color: hsla(0,0%,100%,.15);
   --button-color-hover: hsla(0,0%,100%,.30);

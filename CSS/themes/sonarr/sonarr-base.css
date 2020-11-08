@@ -289,38 +289,38 @@ div.form-group > label {
 /* Calendar page */
     /* Unaired Premiere */
     .calendar .premiere {
-        border-color: var(--calendar-tv-Unaired-Premiere);
-        background-color: var(--calendar-tv-Unaired-Premiere);
+        border-color: rgb(var(--calendar-tv-Unaired-Premiere));
+        background-color: rgb(var(--calendar-tv-Unaired-Premiere));
     }
     /* Downloading */
     .calendar .purple {
-        border-color: var(--calendar-tv-Downloading);
-        background-color: var(--calendar-tv-Downloading);
+        border-color: rgb(var(--calendar-tv-Downloading));
+        background-color: rgb(var(--calendar-tv-Downloading));
     }
     /* Downloading */
     .calendar .unmonitored {
-        border-color: var(--calendar-tv-Unmonitored);
-        background-color: var(--calendar-tv-Unmonitored);
+        border-color: rgb(var(--calendar-tv-Unmonitored));
+        background-color: rgb(var(--calendar-tv-Unmonitored));
     }
     /* Unaired */
     .calendar .primary {
-        border-color: var(--calendar-tv-Unaired);
-        background-color: var(--calendar-tv-Unaired);
+        border-color: rgb(var(--calendar-tv-Unaired));
+        background-color: rgb(var(--calendar-tv-Unaired));
     }
     /* Missing */
     .calendar .danger {
-        border-color: var(--calendar-tv-missing);
-        background-color: var(--calendar-tv-missing);
+        border-color: rgb(var(--calendar-tv-missing));
+        background-color: rgb(var(--calendar-tv-missing));
     }
     /* On Air */
     .calendar .warning {
-        border-color: var(--calendar-tv-On-Air);
-        background-color: var(--calendar-tv-On-Air);
+        border-color: rgb(var(--calendar-tv-On-Air));
+        background-color: rgb(var(--calendar-tv-On-Air));
     }
     /* Downloaded*/
     .calendar .success {
-        border-color: var(--calendar-tv-available);
-        background-color: var(--calendar-tv-available);
+        border-color: rgb(var(--calendar-tv-available));
+        background-color: rgb(var(--calendar-tv-available));
     }
 
 .event .primary {
@@ -1068,7 +1068,56 @@ pre {
 	}
 
 /* CALENDAR */
+.CalendarEvent\/downloaded\/2vSrJ {
+    background: rgb(var(--calendar-tv-available) / .7) !important;
+    border-left-color: transparent !important;
+}
+.CalendarEvent\/downloaded\/2vSrJ:hover {
+    background: rgb(var(--calendar-tv-available) / .5) !important;
+    border-left-color: transparent !important;
+}
+.CalendarEvent\/missing\/1y6vZ {
+    background: rgb(var(--calendar-tv-missing) / .7) !important;
+    border-left-color: transparent !important;
+}
+.CalendarEvent\/missing\/1y6vZ:hover {
+    background: rgb(var(--calendar-tv-missing) / .5) !important;
+    border-left-color: transparent !important;
+}
 
+.CalendarEvent\/unaired\/3aHdN {
+    background: rgb(var(--calendar-tv-Unaired) / .7) !important;
+    border-left-color: transparent !important;
+}
+.CalendarEvent\/unaired\/3aHdN:hover {
+    background: rgb(var(--calendar-tv-Unaired) / .5) !important;
+    border-left-color: transparent !important;
+}
+
+.CalendarEvent\/unmonitored\/Zvc-m {
+    background: rgb(var(--calendar-tv-Unmonitored) / .7) !important;
+    border-left-color: transparent !important;
+}
+.CalendarEvent\/unmonitored\/Zvc-m:hover {
+    background: rgb(var(--calendar-tv-Unmonitored) / .5) !important;
+    border-left-color: transparent !important;
+}
+.CalendarEvent\/onAir\/dwaU_ {
+    background: rgb(var(--calendar-tv-On-Air) / .7) !important;
+    border-left-color: transparent !important;
+}
+.CalendarEvent\/onAir\/dwaU_:hover {
+    background: rgb(var(--calendar-tv-On-Air) / .5) !important;
+    border-left-color: transparent !important;
+}
+.CalendarEvent\/downloading\/1kwSO {
+    background: rgb(var(--calendar-tv-Downloading) / .7) !important;
+    border-left-color: transparent !important;
+}
+.CalendarEvent\/downloading\/1kwSO:hover {
+    background: rgb(var(--calendar-tv-Downloading) / .5) !important;
+    border-left-color: transparent !important;
+}
 	.DayOfWeek\/dayOfWeek\/1iw4D {
 		background-color: hsla(0,0%,100%,.08);
     }
@@ -1096,10 +1145,7 @@ pre {
 	.CalendarEvent\/event\/3Uyb9 {
 		border-bottom: none !important;
 	}
-	.CalendarEvent\/event\/3Uyb9:hover {
-		background-color: hsla(0,0%,100%,.08) !important;
-		border-bottom: none !important;
-    }
+
     .CalendarEventGroup\/eventGroup\/gWPtK {
         border-bottom: 1px solid hsla(0,0%,100%,.08) !important;
     }
