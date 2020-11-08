@@ -17,12 +17,12 @@
   --main-bg-color: radial-gradient(ellipse at center, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
   --modal-bg-color: radial-gradient(ellipse at top, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
 
-  --calendar-in-cinemas: #35c5f4;
-  --calendar-missing: #d9534f;
-  --calendar-announced: #337ab7;
-  --calendar-downloaded: #5cb85c;
-  --calendar-downloading: #7932ea;
-  --calendar-unmonitored: grey;
+  --calendar-in-cinemas: 53, 197, 244;
+  --calendar-Downloading: 122 67 182; 
+  --calendar-Unmonitored: 173 173 173;
+  --calendar-Unaired: 93 156 236;  
+  --calendar-missing: 240 80 80;
+  --calendar-available: 39 194 76;
 
   --button-color: hsla(0,0%,100%,.15);
   --button-color-hover: hsla(0,0%,100%,.30);

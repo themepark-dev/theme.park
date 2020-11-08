@@ -1084,7 +1084,6 @@ pre {
     background: rgb(var(--calendar-tv-missing) / .5) !important;
     border-left-color: transparent !important;
 }
-
 .CalendarEvent\/unaired\/3aHdN {
     background: rgb(var(--calendar-tv-Unaired) / .7) !important;
     border-left-color: transparent !important;
@@ -1093,7 +1092,6 @@ pre {
     background: rgb(var(--calendar-tv-Unaired) / .5) !important;
     border-left-color: transparent !important;
 }
-
 .CalendarEvent\/unmonitored\/Zvc-m {
     background: rgb(var(--calendar-tv-Unmonitored) / .7) !important;
     border-left-color: transparent !important;
