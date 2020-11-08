@@ -400,27 +400,52 @@ body {
 
 /* CALENDAR COLORS */
 .CalendarEvent-downloading-1kwSO {
-    border-left-color: var(--calendar-Downloading);
+background: rgb(var(--calendar-Downloading) / .7) !important;
+border-left-color: transparent !important;
 }
-
+.CalendarEvent-downloading-1kwSO:hover {
+background: rgb(var(--calendar-Downloading) / .5) !important;
+border-left-color: transparent !important;
+}
 .CalendarEvent-downloaded-2vSrJ {
-    border-left-color: var(--calendar-Downloaded);
+background: rgb(var(--calendar-Downloaded) / .7) !important;
+border-left-color: transparent !important;
 }
-
+.CalendarEvent-downloaded-2vSrJ:hover {
+background: rgb(var(--calendar-Downloaded) / .5) !important;
+border-left-color: transparent !important;
+}
 .CalendarEvent-unreleased-mSAoI {
-    border-left-color: var(--calendar-Unreleased);
+background: rgb(var(--calendar-Unreleased) / .7) !important;
+border-left-color: transparent !important;
 }
-
+.CalendarEvent-unreleased-mSAoI:hover {
+background: rgb(var(--calendar-Unreleased) / .5) !important;
+border-left-color: transparent !important;
+}
 .CalendarEvent-partial-2_4q1 {
-    border-left-color: var(--calendar-Partial);
+background: rgb(var(--calendar-Partial) / .7) !important;
+border-left-color: transparent !important;
 }
-
+.CalendarEvent-partial-2_4q1:hover {
+background: rgb(var(--calendar-Partial) / .5) !important;
+border-left-color: transparent !important;
+}
 .CalendarEvent-unmonitored-Zvc-m {
-    border-left-color: var(--calendar-Unmonitored);
+background: rgb(var(--calendar-Unmonitored) / .7) !important;
+border-left-color: transparent !important;
 }
-
+.CalendarEvent-unmonitored-Zvc-m:hover {
+background: rgb(var(--calendar-Unmonitored) / .5) !important;
+border-left-color: transparent !important;
+}
 .CalendarEvent-missing-1y6vZ {
-    border-left-color: var(--calendar-Missing);
+background: rgb(var(--calendar-Missing) / .7) !important;
+border-left-color: transparent !important;
+}
+.CalendarEvent-missing-1y6vZ:hover {
+background: rgb(var(--calendar-Missing) / .5) !important;
+border-left-color: transparent !important;
 }
 
 /* ACTIVITY */
