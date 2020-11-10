@@ -24,7 +24,7 @@
 <a href="https://github.com/gilbN/theme.park/wiki/Plex Themes"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/plex_banner.png" width="800px" />
 
 # [Installation](https://github.com/gilbN/theme.park/wiki/Setup)
-# [Addons](https://github.com/gilbN/theme.park/tree/master/CSS/addons)
+# [Addons](https://github.com/gilbN/theme.park/wiki/Addons)
 
 ## Current themes in the repo:
 
