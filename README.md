@@ -16,6 +16,7 @@
 </p>
 
 # [Themes](https://github.com/gilbN/theme.park/wiki/Themes)
+\- Click on the banners for screenshots.
 <a href="https://github.com/gilbN/theme.park/wiki/Organizr-Dark"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/organizr_dark_banner.png" width="800px" />
 <a href="https://github.com/gilbN/theme.park/wiki/Aquamarine"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/aquamarine_banner.png" width="800px" />
 <a href="https://github.com/gilbN/theme.park/wiki/Hotline"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/hotline_banner.png" width="800px" />
