@@ -10,22 +10,22 @@
     <br />
     <br />
     <a href="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/ombi/ombi1.png" rel="noopener"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/ombi/ombi1.png" alt="Screen Shot 1" width="49.15%" /></a>
-    <a href="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/sonarr/aquamarine.jpg" rel="noopener"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/sonarr/aquamarine.jpg" alt="Screen Shot 2" width="49.15%" /></a>
+    <a href="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/sonarr/aquamarine.png" rel="noopener"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/sonarr/aquamarine.png" alt="Screen Shot 2" width="49.15%" /></a>
     <a href="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/sabnzbd/dark.png" rel="noopener"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/sabnzbd/dark.png" alt="Screen Shot 3" width="49.15%" /></a>
-    <a href="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/lidarr/plex.jpg" rel="noopener"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/lidarr/plex.jpg" alt="Screen Shot 4" width="49.15%" /></a>
+    <a href="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/lidarr/plex.png" rel="noopener"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/lidarr/plex.png" alt="Screen Shot 4" width="49.15%" /></a>
 </p>
 
 # [Themes](https://github.com/gilbN/theme.park/wiki/Themes)
-
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/aquamarine_banner.png)
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/hotline_banner.png)
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/spacegray_banner.png)
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/dark_banner.png)
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/plex_banner.png)
-![](https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/organizr_dark_banner.png)
+\- Click on the banners for screenshots.
+<a href="https://github.com/gilbN/theme.park/wiki/Organizr-Dark"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/organizr_dark_banner.png" width="800px" />
+<a href="https://github.com/gilbN/theme.park/wiki/Aquamarine"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/aquamarine_banner.png" width="800px" />
+<a href="https://github.com/gilbN/theme.park/wiki/Hotline"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/hotline_banner.png" width="800px" />
+<a href="https://github.com/gilbN/theme.park/wiki/Space Gray"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/spacegray_banner.png" width="800px" />
+<a href="https://github.com/gilbN/theme.park/wiki/Dark"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/dark_banner.png" width="800px" />
+<a href="https://github.com/gilbN/theme.park/wiki/Plex Themes"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/plex_banner.png" width="800px" />
 
 # [Installation](https://github.com/gilbN/theme.park/wiki/Setup)
-# [Addons](https://github.com/gilbN/theme.park/tree/master/CSS/addons)
+# [Addons](https://github.com/gilbN/theme.park/wiki/Addons)
 
 ## Current themes in the repo:
 
