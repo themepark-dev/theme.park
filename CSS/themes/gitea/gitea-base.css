@@ -225,8 +225,14 @@ b:hover,
     background: rgb(255 255 255 / 8%) !important;
 }
 
+.ui.attached.segment, .ui.segment, .ui.segments {
+    background: transparent;
+    color: var(--text) !important;
+    border-color: rgba(255, 255, 255, 0.1);
+}
 .ui .info.segment.top {
     background-color: rgb(0 0 0 / 15%) !important;
+    color: var(--text);
 }
 
 .ui.attached.header {
