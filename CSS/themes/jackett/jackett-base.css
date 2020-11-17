@@ -108,6 +108,9 @@ table.dataTable thead th, table.dataTable thead td {
 .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
     background-color: rgba(0, 0, 0, 0.25);
 }
+.dataTables_length select, .dataTables_filter input, .dataTable.compact tfoot td select {
+    color: black;
+}
 #footer {
     color: #ffffff;
 }

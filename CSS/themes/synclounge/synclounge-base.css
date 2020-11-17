@@ -76,6 +76,13 @@ p a {
     background: rgba(255, 255, 255, 0.10) !important;
     color: #fff;
 }
+.theme--dark.v-expansion-panels .v-expansion-panel {
+    background-color: transparent;
+    color: #fff;
+}
+.theme--dark.v-text-field--solo>.v-input__control>.v-input__slot {
+    background: rgb(0 0 0 / 0.50);
+}
 .flex.md3 .application .theme--dark.v-list, .theme--dark .v-list {
     background: rgba(255, 255, 255, 0.10) !important;
 }
