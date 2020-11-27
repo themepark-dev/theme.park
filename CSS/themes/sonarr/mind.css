@@ -15,9 +15,9 @@
 
 :root {
   --main-bg-color: radial-gradient(ellipse at center bottom, rgba(255, 242, 0, .7) 0%, #0d0400 80%, rgba(0, 0, 0, 1) 100%) center center/cover no-repeat fixed,
-    url("https://gflix.app/theme.park/Resources/mind.jpg") center center/cover no-repeat fixed;
+    url("https://themepark-develop.netlify.app/Resources/mind.jpg") center center/cover no-repeat fixed;
   --modal-bg-color: linear-gradient(180deg, rgba(51, 49, 0, .7) 0%, #000 100%) center center/cover no-repeat fixed,
-    url("https://gflix.app/theme.park/Resources/mind.jpg") center center/cover no-repeat fixed;
+    url("https://themepark-develop.netlify.app/Resources/mind.jpg") center center/cover no-repeat fixed;
 
   --calendar-tv-Unaired-Premiere: 53 197 244;
   --calendar-tv-Downloading: 122 67 182;
