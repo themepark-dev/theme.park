@@ -755,6 +755,16 @@ border-left-color: transparent !important;
     background-color: var(--accent-color);
 }
 
+.ProtocolLabel-torrent-3aqvR {
+    border-color: #00853d !important;
+    background-color: #00853d !important;
+}
+
+.ProtocolLabel-usenet-3qKV1 {
+    border-color: #17b1d9 !important;
+    background-color: #17b1d9 !important;
+}
+
 /*ARTIST ALBUM PAGE*/
 .AlbumDetailsMedium-mediumNumber-3ZUko {
     color: #fff;
