@@ -3,12 +3,12 @@
 /* --body-after: #00ff7733; /* This is the background that creates the crt lines, background uses a transparency of 20% */
 /* --custom-text-header-animation: textflicker; /* SET TO NONE TO REMOVE THE FLICKER ANIMATION! */
 
-@import url(https://gilbn.github.io/theme.park/CSS/addons/unraid/login-page/alien/retro-terminal/retro-terminal-base.css);
+@import url(https://gilbn.github.io/theme.park/CSS/addons/unraid/login-page/retro-terminal/retro-terminal-base.css);
 :root {
 --main-bg-color:black;
 --body-before:#00ff771a;
 --body-after: #00ff7733;
---logo: url(https://gilbn.github.io/theme.park/CSS/addons/unraid/login-page/alien/logo/nostromogreen.png) center no-repeat;
+--logo: url(https://gilbn.github.io/theme.park/CSS/addons/unraid/login-page/alien/logo/wings_green.png) center no-repeat;
 --text-color: #37f592;
 --input-color: #37f592;
 --link-color: #37f592;
