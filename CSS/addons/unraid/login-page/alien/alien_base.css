@@ -27,7 +27,7 @@
     outline: none;
 }
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
     #login {
         -webkit-backdrop-filter: blur(0px);
         backdrop-filter: blur(0px);
@@ -42,7 +42,7 @@
     }
     .background-wrap,#video-bg-elem  {display: none;}
     
-    .shadow {
+    #login {
         -webkit-box-shadow: inset 0px 0px 0px 2px #F000 !important;
         box-shadow: inset 0px 0px 0px 2px #F000 !important;
     }
@@ -240,6 +240,6 @@ body {
 }
 /*LOGIN BOX SHADOW*/
 .shadow {
-    -webkit-box-shadow: inset 0px 0px 0px 2px var(--text-color);
-    box-shadow: inset 0px 0px 0px 2px var(--text-color);
+    -webkit-box-shadow: inset 0px 0px 0px 2px var(--text-color) !important;
+    box-shadow: inset 0px 0px 0px 2px var(--text-color) !important;
 }
