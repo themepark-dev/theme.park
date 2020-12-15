@@ -26,5 +26,6 @@ if ! grep -q "${TP_DOMAIN}" /app/radarr/bin/UI/index.html; then
     echo '|  Adding the stylesheet  |'
     echo '---------------------------'
     sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/theme.park\/CSS\/themes\/radarr\/${TP_THEME}.css'><\/head> /g" /app/radarr/bin/UI/index.html
-    printf 'Stylesheet set to %s\n' "${TP_THEME}"
+    printf 'Stylesheet set to %s\n' "${TP_THEME}
+    "
 fi
