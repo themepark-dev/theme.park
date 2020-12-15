@@ -12,3 +12,10 @@ These are the **default** values for all envs.
 | `TP_DOMAIN` | `gilbn.github.io` | Defaults to the example. |
 | `TP_THEME` | `organizr-dark` | Defaults to the example. |
 
+***
+
+### Hotio containers
+
+The scripts in `root\etc\cont-init.d` will also work with containers made by Hotio.
+
+[https://hotio.dev/containers/sonarr/#executing-your-own-scripts](https://hotio.dev/containers/sonarr/#executing-your-own-scripts)
