@@ -14,9 +14,7 @@
 body {
     background: var(--main-bg-color);
 }
-.content {
-    background: var(--main-bg-color) !important;
-}
+
 a {
     color: var(--link-color);
 }
@@ -131,7 +129,7 @@ body,
 
 /* CARDS */
 .card {
-    background: transparent
+    background: transparent;
 }
 
 .col-sm-6 .card,
