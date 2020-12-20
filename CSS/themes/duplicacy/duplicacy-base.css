@@ -14,7 +14,9 @@
 body {
     background: var(--main-bg-color);
 }
-
+.content {
+    background: var(--main-bg-color) !important;
+}
 a {
     color: var(--link-color);
 }
