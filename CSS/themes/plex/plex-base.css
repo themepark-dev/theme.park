@@ -246,8 +246,14 @@ body>div.user-select-modal.modal.modal-transparent.fade.in>div>div.modal-content
 
 .Spinner-spinner-Niere7 {
   border-color: var(--accent-color) transparent transparent var(--accent-color);
+  border-top-color: var(--accent-color) !important;
+  border-left-color: var(--accent-color) !important;
 }
-
+.CircularProgressBar-circularProgressBar-3gv7mU  {
+stroke-width: 2;
+stroke: var(--accent-color);
+stroke-dashoffset: 0;
+}
 .loading {
   border-color: var(--accent-color) transparent transparent var(--accent-color);
 }
