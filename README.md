@@ -19,6 +19,64 @@ These are the **default** values for all envs.
 | `TP_DOMAIN` | `gilbn.github.io` | Defaults to the example. |
 | `TP_THEME` | `organizr-dark` | Defaults to the example. |
 
+
+
+Applications that support **[[Docker Mods|Setup#docker-mods]]** installation.
+ 
+| | | |
+|----------------------------|------------------------------------|--------------------------------|
+| [Sonarr][sonarr]           | [Transmission][transmission]       | [Deluge][deluge]               |
+| [Radarr][radarr]           | [Calibre-web][calibreweb]          | [The Lounge][thelounge]        |
+| [Lidarr][lidarr]           | [ruTorrent][rutorrent]             | [Portainer][portainer]         |
+| [Bazarr][bazarr]           | [Synclounge][synclounge]           | [Lazylibrarian][lazylibrarian] |
+| [Readarr][readarr]         | [Jackett][jackett]                 |                                |
+| [Plex][plex]               | [Librespeed][html5speedtest]       |                                |
+| [Jellyfin/Emby][jelly]     | [NZBGet][nzbget]                   |                                |
+| [Tautulli][tautulli]       | [SABnzbd][sabnzbd]                 |                                |
+
+
+[sonarr]: https://github.com/gilbN/theme.park/wiki/Sonarr
+[radarr]: https://github.com/gilbN/theme.park/wiki/Radarr
+[lidarr]: https://github.com/gilbN/theme.park/wiki/Lidarr
+[readarr]: https://github.com/gilbN/theme.park/wiki/Readarr
+[bazarr]: https://github.com/gilbN/theme.park/wiki/Bazarr
+[plex]: https://github.com/gilbN/theme.park/wiki/Plex
+[jelly]: https://github.com/gilbN/theme.park/wiki/Jellyfin-Emby
+[ombi]: https://github.com/gilbN/theme.park/wiki/Ombi
+[tautulli]: https://github.com/gilbN/theme.park/wiki/Tautulli
+[organizr]: https://github.com/gilbN/theme.park/wiki/Organizr
+[grafana]: https://github.com/gilbN/theme.park/wiki/Grafana
+[sabnzbd]: https://github.com/gilbN/theme.park/wiki/SABnzbd
+[nzbget]: https://github.com/gilbN/theme.park/wiki/NZBGet
+[nzbhydra2]: https://github.com/gilbN/theme.park/wiki/NZBHydra-2
+[deluge]: https://github.com/gilbN/theme.park/wiki/Deluge
+[qbit]: https://github.com/gilbN/theme.park/wiki/qBittorrent
+[guacamole]: https://github.com/gilbN/theme.park/wiki/Guacamole
+[rutorrent]: https://github.com/gilbN/theme.park/wiki/ruTorrent
+[netdata]: https://github.com/gilbN/theme.park/wiki/Netdata
+[jackett]: https://github.com/gilbN/theme.park/wiki/Jackett
+[html5speedtest]: https://github.com/gilbN/theme.park/wiki/Librespeed
+[filebrowser]: https://github.com/gilbN/theme.park/wiki/Filebrowser
+[monitorr]: https://github.com/gilbN/theme.park/wiki/Monitorr
+[logarr]: https://github.com/gilbN/theme.park/wiki/Logarr
+[plpp]: https://github.com/gilbN/theme.park/wiki/PLPP
+[Synclounge]: https://github.com/gilbN/theme.park/wiki/Synclounge
+[theLounge]: https://github.com/gilbN/theme.park/wiki/The-Lounge
+[portainer]: https://github.com/gilbN/theme.park/wiki/Portainer
+[lazylibrarian]: https://github.com/gilbN/theme.park/wiki/Lazylibrarian
+[calibreweb]: https://github.com/gilbN/theme.park/wiki/Calibre-Web
+[transmission]: https://github.com/gilbN/theme.park/wiki/Transmission
+[requestrr]: https://github.com/gilbN/theme.park/wiki/Requestrr
+[pihole]: https://github.com/gilbN/theme.park/wiki/Pi-hole
+[adguard]: https://github.com/gilbN/theme.park/wiki/Adguard
+[gaps]: https://github.com/gilbN/theme.park/wiki/Gaps
+[bitwarden]: https://github.com/gilbN/theme.park/wiki/Bitwarden
+[duplicacy]: https://github.com/gilbN/theme.park/wiki/Duplicacy
+[kitana]: https://github.com/gilbN/theme.park/wiki/Kitana
+[webtools]: https://github.com/gilbN/theme.park/wiki/Webtools
+[resilio-sync]: https://github.com/gilbN/theme.park/wiki/Resilio-Sync
+[gitea]: https://github.com/gilbN/theme.park/wiki/Gitea
+
 ***
 
 ### Hotio containers
