@@ -1093,6 +1093,14 @@ pre {
     }
 
 /* DISCOVER */
+.DiscoverMovieOverview-link-3ukU2 {
+    display: block;
+    color: #eee;
+}
+.DiscoverMovieOverview-link-3ukU2:hover {
+    color: #fff;
+    text-decoration: none;
+}
 /*Title*/
 .AddListMovieOverview-link-3_RaH {
     color: #eee;
