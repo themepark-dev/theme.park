@@ -271,7 +271,16 @@ label {
 .dynamicTable tbody tr.selected {
   background-color: rgba(0, 0, 0, 0.45) !important;
 }
-
+.dynamicTable th.sorted.reverse {
+  background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/qbittorrent/go-down.png) !important;
+}
+.dynamicTable th.sorted {
+  background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/qbittorrent/go-up.png) !important;
+  background-size: 9px !important;
+  background-position: right !important;
+  background-repeat: no-repeat !important;
+  
+}
 .panel {
   background: var(--main-bg-color);
   border-bottom: 1px solid transparent;
@@ -1541,7 +1550,8 @@ img[src="icons/mail-folder-inbox.svg"] {
 }
 
 img[src="icons/downloading_small.svg"],
-img[src="icons/seeding.svg"] {
+img[src="icons/seeding.svg"],
+img[src="icons/stalledDL.svg"]  {
   filter: invert(79%) sepia(20%) saturate(0%) hue-rotate(135deg) brightness(87%) contrast(108%);
 }
 
