@@ -81,6 +81,6 @@ Applications that support **[[Docker Mods|Setup#docker-mods]]** installation.
 
 ### Hotio containers
 
-The scripts in `root\etc\cont-init.d` will also work with containers made by Hotio.
+The scripts in root\etc\cont-init.d will also work with containers made by Hotio. But you may need to change the path for the HTML file.
 
 [https://hotio.dev/containers/sonarr/#executing-your-own-scripts](https://hotio.dev/containers/sonarr/#executing-your-own-scripts)
