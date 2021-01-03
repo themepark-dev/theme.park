@@ -21,7 +21,7 @@ These are the **default** values for all envs. So if you want to use the `organi
 
 
 
-Applications that support **[[Docker Mods|Setup#docker-mods]]** installation.
+Applications that support Docker Mods installation.
  
 | | | |
 |----------------------------|------------------------------------|--------------------------------|
