@@ -302,7 +302,8 @@ stroke-dashoffset: 0;
   border-color: var(--button-color);
   background-color: var(--button-color);
 }
-.SelectButton-selectButton-3jGXzS.isActive .SelectButton-selectCircle-ec9No3 {
+.SelectButton-selectButton-3jGXzS.isActive .SelectButton-selectCircle-ec9No3,
+.SelectButton-selectButton-3Kbjm9.isActive .SelectButton-selectCircle-3tdvGt {
   background-color: var(--button-color);
 }
 .btn-gray.selected {
