@@ -63,7 +63,11 @@ body {
   background-color: var(--button-color);
 
 }
-
+.Button-primary-3z8akl.isDisabled {
+  background-color: var(--button-color);
+  color: rgba(0,0,0,.4);
+  opacity: .4;
+}
 .btn-primary:focus,
 .btn-primary:hover,
 .Button-primary-3fwLzo:hover {
@@ -294,7 +298,13 @@ stroke-dashoffset: 0;
   background-color: var(--accent-color);
   color: #eee;
 }
-
+.SelectButton-selectedCircle-264nVE {
+  border-color: var(--button-color);
+  background-color: var(--button-color);
+}
+.SelectButton-selectButton-3jGXzS.isActive .SelectButton-selectCircle-ec9No3 {
+  background-color: var(--button-color);
+}
 .btn-gray.selected {
   color: var(--accent-color);
 }
@@ -438,4 +448,7 @@ a:hover {
 .MetadataPosterCard-legacyUnwatchedEpisodesBadge-3kelZP {
   background-color: var(--accent-color);
   color: #ffffff;
+}
+.MetadataPosterCard-hoveredSelectedLink-3RwC7J, .MetadataPosterCard-selectedLink-3ZfYeB {
+  box-shadow: 0 0 0 2px var(--accent-color), 0 0 4px rgba(0,0,0,.3);
 }
