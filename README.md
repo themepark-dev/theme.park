@@ -21,7 +21,7 @@ These are the **default** values for all envs. So if you want to use the `organi
 
 
 
-Applications that support **[[Docker Mods|Setup#docker-mods]]** installation.
+Applications that support Docker Mods installation.
  
 | | | |
 |----------------------------|------------------------------------|--------------------------------|
@@ -81,6 +81,6 @@ Applications that support **[[Docker Mods|Setup#docker-mods]]** installation.
 
 ### Hotio containers
 
-The scripts in `root\etc\cont-init.d` will also work with containers made by Hotio.
+The scripts in root\etc\cont-init.d will also work with containers made by Hotio. But you may need to change the path for the HTML file.
 
 [https://hotio.dev/containers/sonarr/#executing-your-own-scripts](https://hotio.dev/containers/sonarr/#executing-your-own-scripts)
