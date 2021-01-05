@@ -313,7 +313,7 @@ a {
   color: var(--link-color);
 }
 
-a:hover {
+a:hover, .artwork-file-container:hover a {
   color: #eee;
 }
 
