@@ -101,4 +101,6 @@
 .btn {
     color: inherit;
 }
-
+.mentions-popup {
+    background: var(--body-bg-color);
+ }
