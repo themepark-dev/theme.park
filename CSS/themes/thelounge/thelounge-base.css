@@ -105,6 +105,6 @@
     background: var(--body-bg-color);
  }
 #chat .toggle-content{
-     background: var(--window-bg-color);   
+     background: var(--highlight-bg-color);   
     
 }
