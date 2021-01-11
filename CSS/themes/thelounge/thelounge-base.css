@@ -104,3 +104,7 @@
 .mentions-popup {
     background: var(--body-bg-color);
  }
+#chat .toggle-content{
+     background: var(--highlight-bg-color);   
+    
+}
