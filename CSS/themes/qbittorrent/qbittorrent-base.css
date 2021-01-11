@@ -239,7 +239,7 @@ label {
 }
 
 .dynamicTable th {
-  background-color: var(--accent-color) !important;
+  background-color: rgba(0, 0, 0, 0.25) !important;
   border-right-color: rgba(255, 255, 255, .08) !important;
 }
 
@@ -269,7 +269,7 @@ label {
 }
 
 .dynamicTable tbody tr.selected {
-  background-color: rgba(0, 0, 0, 0.45) !important;
+  background-color: rgba(var(--accent-color),0.6) !important;
 }
 .dynamicTable th.sorted.reverse {
   background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/qbittorrent/go-down.png) !important;
@@ -379,12 +379,12 @@ li.divider {
 
 /* Sidemenu */
 .selectedFilter {
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(var(--accent-color),0.6);
   color: #FFF;
 }
 
 ul.filterList li:hover {
-  background-color: rgba(255, 255, 255, 0.08);
+  background-color: rgba(var(--accent-color),0.6);
 }
 
 .columnHandle {
