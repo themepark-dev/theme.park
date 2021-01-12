@@ -18,6 +18,7 @@ These are the **default** values for all envs. So if you want to use the `organi
 | `DOCKER_MODS` | `gilbn/theme.park:<app>` | Replace \<app> |
 | `TP_DOMAIN` | `gilbn.github.io` | Defaults to the example. |
 | `TP_THEME` | `organizr-dark` | Defaults to the example. |
+| `TP_ADDON` | `radarr-4k-logo` | See wiki for more info on addons |
 
 
 
