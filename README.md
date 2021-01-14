@@ -11,14 +11,14 @@
 
 Add -e `DOCKER_MODS=gilbn/theme.park:<app>` e.g. `gilbn/theme.park:sonarr`
 
-These are the **default** values for all envs. So if you want to use the `organizr-dark` theme, you only need to add the `DOCKER_MODS` variable. 
+These are the ***default** values for all envs. So if you want to use the `organizr-dark` theme, you only need to add the `DOCKER_MODS` variable. 
 
 | Environment Variable | Example Value | Description |
 | -------------------- | ------------- | ----------- |
 | `DOCKER_MODS` | `gilbn/theme.park:<app>` | Replace \<app> |
 | `TP_DOMAIN` | `gilbn.github.io` | Defaults to the example. |
 | `TP_THEME` | `organizr-dark` | Defaults to the example. |
-| `TP_ADDON` | `radarr-4k-logo` | See wiki for more info on addons |
+| `TP_ADDON` | `radarr-4k-logo` | *Not set by default (See wiki for more info on addons) |
 
 
 
