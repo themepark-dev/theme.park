@@ -25,7 +25,7 @@ if ! grep -q "${TP_DOMAIN}" /usr/share/webapps/librespeed/index.html; then
     echo '---------------------------'
     echo '|  Adding the stylesheet  |'
     echo '---------------------------'
-    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/theme.park\/CSS\/themes\/html5speedtest\/${TP_THEME}.css'><\/head> /g" /usr/share/webapps/librespeed/index.html
+    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/theme.park\/CSS\/themes\/librespeed\/${TP_THEME}.css'><\/head> /g" /usr/share/webapps/librespeed/index.html
     printf 'Stylesheet set to %s\n' "${TP_THEME}
     "
 fi
