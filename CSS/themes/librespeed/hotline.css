@@ -11,11 +11,10 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
-/* HTML5SPEEDTEST DARK THEME */
-@import url(https://gilbn.github.io/theme.park/CSS/themes/html5speedtest/html5speedtest-base.css);
+/* LIBRESPEED HOTLINE THEME */
+@import url(https://gilbn.github.io/theme.park/CSS/themes/librespeed/librespeed-base.css);
 :root {
-  --main-bg-color: radial-gradient(circle, #3a3a3a, #2d2d2d, #202020, #141414, #000000) center center/cover no-repeat fixed;
-  --modal-bg-color: radial-gradient(circle , #3a3a3a, #2d2d2d, #202020, #141414, #000000) center center/cover no-repeat fixed;
-  --start-button-color: #cc7b19;
-  --start-button-color-hover: #e59029;  
-  }
+  --main-bg-color: radial-gradient(ellipse at center, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
+  --start-button-color: radial-gradient(ellipse at center, #F44336 0%, #3F51B5 100%) center center/cover no-repeat fixed;
+  --start-button-color-hover: radial-gradient(ellipse at center, #fb6054 0%, #5269e6 100%) center center/cover no-repeat fixed;
+}

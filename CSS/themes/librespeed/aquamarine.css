@@ -9,12 +9,12 @@
 /*                                                  dP					 */
 
 /*		   		        Made by @gilbN					 */
-/* 			      https://github.com/gilbN/theme.park			 */
+/*			      https://github.com/gilbN/theme.park			 */
 
-/* HTML5SPEEDTEST PLEX THEME */
-@import url(https://gilbn.github.io/theme.park/CSS/themes/html5speedtest/html5speedtest-base.css);
+/* LIBRESPEED AQUAMARINE THEME */
+@import url(https://gilbn.github.io/theme.park/CSS/themes/librespeed/librespeed-base.css);
 :root {
-  --main-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-light2.png") center center/cover no-repeat fixed;
-  --start-button-color: #cc7b19;
-  --start-button-color-hover: #e59029;  
-  }
+  --main-bg-color: radial-gradient(ellipse at center, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
+  --start-button-color:  radial-gradient(ellipse at center, #3F51B5 0%, #009688 100%) center center/cover no-repeat fixed;
+  --start-button-color-hover: radial-gradient(ellipse at center, #5066e0 0%, #01ccb9 100%) center center/cover no-repeat fixed;
+}
