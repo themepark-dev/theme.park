@@ -320,6 +320,14 @@ a:-webkit-any-link:focus {
     background-color: transparent;
 }
 
+.logs__row--white {
+    background-color: transparent;
+}
+
+.logs__row--red {
+    background-color: transparent !important;
+}
+
 .rt-tr-group.red {
     background-color: rgb(244 67 54 / 30%);
 }
