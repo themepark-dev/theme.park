@@ -324,12 +324,9 @@ a:-webkit-any-link:focus {
     background-color: transparent;
 }
 
-.logs__row--red {
+.rt-tr-group.red,
+logs__row--red {
     background-color: rgb(244 67 54 / 30%) !important;
-}
-
-.rt-tr-group.red {
-    background-color: rgb(244 67 54 / 30%);
 }
 
 .rt-tr-group.blue {
