@@ -315,6 +315,11 @@ a:-webkit-any-link:focus {
     color: var(--text)
 }
 
+.logs__no-data{
+    color: var(--text);
+    background-color: transparent;
+}
+
 .rt-tr-group.red {
     background-color: rgb(244 67 54 / 30%);
 }
