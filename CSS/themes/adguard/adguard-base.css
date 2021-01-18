@@ -325,12 +325,15 @@ a:-webkit-any-link:focus {
 }
 
 .rt-tr-group.red,
-logs__row--red {
+.logs__row--red,
+.rt-tr-group.logs__row--red {
     background-color: rgb(244 67 54 / 30%) !important;
 }
 
-.rt-tr-group.blue {
-    background-color: rgb(54 146 244 / 30%);
+.rt-tr-group.blue,
+.rt-tr-group.logs__row--blue,
+.logs__row--blue {
+    background-color: rgb(54 146 244 / 30%) !important;
 }
 
 .ReactTable .rt-noData {
