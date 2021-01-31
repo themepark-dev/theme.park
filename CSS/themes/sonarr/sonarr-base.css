@@ -852,9 +852,9 @@ a:hover {color: var(--link-color-hover);}
 	.SeriesDetailsSeason\/seasonNumber\/FL7Dt {
     color: #fff;
 	}
-	/* .Table\/table\/2C3O8 {
-    color: #fff;
-	} */
+	.Table\/table\/2C3O8 {
+    color: var(--text);
+    }
 	.SeriesDetailsSeason\/collapseButtonContainer\/trs6s {
 	border: none !important;
     background-color: rgba(0, 0, 0, .25) !important;
@@ -1275,7 +1275,11 @@ a:hover {color: var(--link-color-hover);}
 
 /* Scene information */
 .ReleaseSceneIndicator\/levelNone\/k-rVx {
-    border-color: #fff;
-    color: #fff;
-    opacity: 0.2;
+    border-color: var(--text);
+    color: var(--text);
+    opacity: 1;
+}
+.ReleaseSceneIndicator\/levelMapped\/3i7w4 {
+    border-color: var(--text);;
+    color: var(--text);;
 }
