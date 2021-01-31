@@ -29,4 +29,9 @@
   --accent-color:  #e5a00d;
   --accent-color-hover: #ffc107;
   --queue-color: #27c24c;
+  --link-color: #e5a00d;
+  --link-color-hover: #fff;
+    
+  --text:#eee;
+  --text-hover: #fff;
   }

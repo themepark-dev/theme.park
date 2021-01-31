@@ -19,7 +19,7 @@ body {
   -webkit-background-size: auto, cover;
   -moz-background-size: auto, cover;
   -o-background-size: auto, cover;
-  color: #ffffff;
+  color: var(--text);
 
 }
 
@@ -215,10 +215,7 @@ body {
 .episode-title-cell {
     color: #ffffff;
 }
-a, .episode-title-cell {
-    color: #FFFFFF !important;
-    text-decoration: none;
-}
+
 th.sortable:hover, .table-hover > tbody > tr:hover {
     background-color: rgba(0, 0, 0, .25);
     color: #ffffff;
@@ -642,21 +639,22 @@ pre {
 /* VERSION 2 */
 /* Froms */
 .FormInputHelpText\/helpText\/3_AVV {
-    color: #ffffff;
+    color: var(--text);
 }
 .FormInputGroup\/inputUnit\/19QXo {
     color: #eee !important;
   }
 
 /* LINKS */
-.Link\/to\/6fmSq {
-    color: #FFF;
-}
-.Link\/to\/6fmSq:hover {
-    color: #FFF;
-    text-decoration: none;
-}
+.Link\/to\/6fmSq {color: var(--text);}
+.Link\/to\/6fmSq:hover {color: var(--text-hover);}
 
+a {color: var(--link-color);}
+a:hover {color: var(--link-color-hover);}
+
+.TableRowCell\/cell\/2fbg4 .Link\/to\/6fmSq {color: var(--link-color);}
+
+.TableRowCell\/cell\/2fbg4 .Link\/to\/6fmSq:hover {color: var(--link-color-hover);}
 /* Buttons */
 
 .Button\/default\/2uiHU {
@@ -694,7 +692,7 @@ pre {
 
 /* LOADING PAGE */
 .ErrorPage\/page\/3GptQ, .ErrorPage\/version\/3txe6, .LoadingMessage\/loadingMessage\/1gR5r {
-    color: #FFF;
+    color: var(--text);
 }
 .LoadingIndicator\/ripple\/358v5 {
   border: 2px solid #fff;
@@ -708,7 +706,7 @@ pre {
 }
 .ModalContent\/modalContent\/-txrl {
     background: var(--modal-bg-color);
-    color: #fff;
+    color: var(--text);
 }
 .ModalFooter\/modalFooter\/1N5Ku {
     background: var(--modal-bg-color);
@@ -771,7 +769,10 @@ pre {
 /* SIDE MENU */
 	.PageSidebar\/sidebarContainer\/3Hxpq {
 		background-color: rgba(0, 0, 0, .25);
-	}
+    }
+    .PageSidebarItem\/iconContainer\/1j_mq {
+        color: white;
+    }
 	.PageSidebar\/sidebar\/3IOcI {
 		background-color: transparent;
 	}
@@ -851,9 +852,9 @@ pre {
 	.SeriesDetailsSeason\/seasonNumber\/FL7Dt {
     color: #fff;
 	}
-	.Table\/table\/2C3O8 {
+	/* .Table\/table\/2C3O8 {
     color: #fff;
-	}
+	} */
 	.SeriesDetailsSeason\/collapseButtonContainer\/trs6s {
 	border: none !important;
     background-color: rgba(0, 0, 0, .25) !important;
@@ -878,8 +879,7 @@ pre {
         border-right-color: #fff !important;
     }    
     .EpisodeTitleLink\/link\/3ynTw:hover {
-        color: #ffffff;
-        text-decoration: none;
+        color: var(--link-color-hover);
     }
     .IconButton\/button\/2qiGi:hover {
         background-color: transparent;
@@ -889,16 +889,16 @@ pre {
         color: #bac5cc;
     }
     .Label\/default\/2AF1C {
-        border-color: transparent;
+        border-color: var(--accent-color);
         background-color: var(--accent-color);
     }
     .Label\/info\/3YD3Y {
-        border-color: transparent;
+        border-color: var(--accent-color);
         background-color: var(--accent-color);
         color: #fff;
     }
     .PageSidebarItem\/status\/34pTa > .Label\/info\/3YD3Y {
-        border-color: transparent;
+        border-color: var(--queue-color);
         background-color: var(--queue-color);
         color: #fff;
     }
@@ -922,7 +922,10 @@ pre {
 	.PageToolbar\/toolbar\/1Lo1N {
 		background-color: rgba(0, 0, 0, .25);
 		color: hsla(0,0%,100%,.7);
-	}
+    }
+    .PageToolbarButton\/label\/10YbS {
+        color: var(--text);
+    }
 	/* POSTERS */
 	.SeriesIndexPoster\/title\/263Pq, .SeriesIndexPoster\/nextAiring\/1FZy6, .SeriesIndexPosterInfo\/info\/2JsCg {
 		background-color: rgba(255, 255, 255, 0.08);
@@ -1007,7 +1010,7 @@ pre {
 	
 	/* TEXT COLOR */
 	.PageContentBody\/innerContentBody\/tEszh {
-    color: #fff;
+    color: var(--text);
 	}
 	/* SEARCH RESULTS */
     .AddNewSeriesSearchResult\/underlay\/11FBP {
@@ -1267,4 +1270,12 @@ pre {
 }
 .CustomFilter\/customFilter\/zBSMd:hover {
     background-color: hsla(0,0%,100%,.08);
+}
+
+
+/* Scene information */
+.ReleaseSceneIndicator\/levelNone\/k-rVx {
+    border-color: #fff;
+    color: #fff;
+    opacity: 0.2;
 }
