@@ -485,6 +485,10 @@ border-left-color: transparent !important;
 .QualityProfileItemGroup-qualityProfileItemGroup-2U1l5.QualityProfileItemGroup-editGroups-2KzDp {
     background: rgba(0, 0, 0, 0.25);
 }
+.KeyValueListInputItem-keyInput-3YYEs, .KeyValueListInputItem-valueInput-3zlQA {
+    background: transparent;
+    color:white;
+}
 
 /* PROFILES */
 .Indexers-center-11Csq {
