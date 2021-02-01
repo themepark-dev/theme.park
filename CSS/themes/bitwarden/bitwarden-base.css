@@ -323,7 +323,10 @@ app-vault-groupings .card .card-body a,
 app-org-vault-groupings .card .card-body a {
     color: var(--text);
 }
-
+app-vault-groupings .card .card-body a:hover.text-muted {
+    color: #fff !important;
+    opacity: 1 !important;
+}
 app-vault-groupings .card li.active>a:first-of-type,
 app-vault-groupings .card li.active>div a:first-of-type,
 app-org-vault-groupings .card li.active>a:first-of-type,
