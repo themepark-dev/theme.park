@@ -11,15 +11,15 @@
 /* 			      https://github.com/gilbN/theme.park			 */
 
 body {
-  background: var(--main-bg-color);
-  background-repeat: repeat, no-repeat;
-  background-attachment: fixed, fixed;
-  background-position: center center, center center;
-  background-size: auto, cover;
-  -webkit-background-size: auto, cover;
-  -moz-background-size: auto, cover;
-  -o-background-size: auto, cover;
-  color: var(--text);
+    background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    color: var(--text);
 
 }
 
@@ -29,9 +29,11 @@ body {
     content: "\A theme.park 2.0";
     font-size: 20px;
 }
+
 .footer {
     color: #fff;
 }
+
 #scroll-up {
     color: white;
 }
@@ -40,18 +42,21 @@ body {
     .toolbar .page-toolbar .x-toolbar-left-1 {
         display: block;
     }
+
     .toolbar .page-toolbar .btn-group {
         display: block;
     }
-    .btn-group.btn-group-collapse > .btn {
+
+    .btn-group.btn-group-collapse>.btn {
         margin: 2px;
         display: block;
         float: none;
-        border-radius: 4px!important;
+        border-radius: 4px !important;
         word-wrap: normal;
         white-space: normal;
     }
 }
+
 @media screen and (max-width: 767px) {
     .table-responsive {
         border: none;
@@ -59,26 +64,29 @@ body {
 }
 
 .modal-content {
-      box-shadow: 0 0 10px 1px #000;
-      border-radius: 3px;
-      background: var(--main-bg-color);
-      background-repeat: repeat, no-repeat;
-      background-attachment: fixed, fixed;
-      background-position: center center, center center;
-      background-size: auto, cover;
-      -webkit-background-size: auto, cover;
-      -moz-background-size: auto, cover;
-      -o-background-size: auto, cover;
+    box-shadow: 0 0 10px 1px #000;
+    border-radius: 3px;
+    background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
+
 /* scroller */
 ::-webkit-scrollbar-corner {
-    background-color:  hsla(0,0%,100%,.08);
+    background-color: hsla(0, 0%, 100%, .08);
 }
+
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
     background: rgba(0, 0, 0, .25);
 }
+
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 2px;
     border-radius: 2px;
@@ -87,46 +95,63 @@ body {
 
 /* navbar and searchbar */
 .navbar-nzbdrone li a {
-    color: hsla(0,0%,100%,.7);
+    color: hsla(0, 0%, 100%, .7);
 }
+
 .navbar-nzbdrone li a:hover {
-    background-color: hsla(0,0%,100%,.08);
+    background-color: hsla(0, 0%, 100%, .08);
     color: var(--text-hover);
 }
-.search .input-group .input-group-addon, .search .input-group input {
+
+.search .input-group .input-group-addon,
+.search .input-group input {
     background-color: rgba(0, 0, 0, .25) !important;
     color: #FFF;
     border-color: transparent;
     height: 40px;
 }
-.search .input-group .input-group-addon, .search .input-group input:focus {
+
+.search .input-group .input-group-addon,
+.search .input-group input:focus {
     color: #FFF;
 }
+
 .tt-suggestion.tt-cursor {
     background-color: #191a1c !important;
     color: #ffffff !important;
 }
+
 .search .tt-dropdown-menu {
     background-color: #1f1f1f;
 }
 
-.input-group-lg>.form-control, .input-group-lg>.input-group-addon, .input-group-lg>.input-group-btn>.btn {
+.input-group-lg>.form-control,
+.input-group-lg>.input-group-addon,
+.input-group-lg>.input-group-btn>.btn {
     height: 50px;
 }
-.navbar-inverse, .navbar-toggle {
+
+.navbar-inverse,
+.navbar-toggle {
     background-color: rgba(0, 0, 0, .25);
     border-color: rgba(0, 0, 0, .25);
     color: #FFF;
 }
-.navbar-nzbdrone .navbar-toggle:focus, .navbar-nzbdrone .navbar-toggle:hover {
+
+.navbar-nzbdrone .navbar-toggle:focus,
+.navbar-nzbdrone .navbar-toggle:hover {
     color: var(--text-hover);
-    background-color: hsla(0,0%,100%,.08);
+    background-color: hsla(0, 0%, 100%, .08);
 }
+
 @media (max-width: 767px) {
-.navbar-nzbdrone .navbar-collapse .navbar-nav li:focus, .navbar-nzbdrone .navbar-collapse .navbar-nav li:hover {
-    background-color: hsla(0,0%,100%,.08);
+
+    .navbar-nzbdrone .navbar-collapse .navbar-nav li:focus,
+    .navbar-nzbdrone .navbar-collapse .navbar-nav li:hover {
+        background-color: hsla(0, 0%, 100%, .08);
     }
 }
+
 /* Form Stuff */
 
 .form-control {
@@ -147,6 +172,7 @@ body {
     border: 1px solid transparent;
     color: #FFF;
 }
+
 .form-group i {
     color: #ffffff;
 }
@@ -158,20 +184,26 @@ body {
     box-shadow: none;
     max-width: 1280px;
 }
+
 .series-item a {
     color: #FFF;
 }
-.series-posters .series-posters-item, .movie-posters-item {
+
+.series-posters .series-posters-item,
+.movie-posters-item {
     background-color: rgba(0, 0, 0, .25) !important;
     color: #444;
     box-shadow: 0 0 10px 1px #000000 !important;
 }
+
 .movie-posters-item {
     min-height: 302px !important;
 }
+
 .header-text .year {
     color: #FFF;
 }
+
 .backdrop .navbar-nzbdrone {
     opacity: 0.98;
     box-shadow: 0 0 10px 1px #000;
@@ -186,43 +218,50 @@ body {
     -o-background-size: auto, cover;
 }
 
-.series-page-header, .movie-page-header {
-  opacity: 0.98;
-  box-shadow: 0 0 10px 1px #000;
-  color: #ffffff;
-  background: var(--main-bg-color);
-  background-repeat: repeat, no-repeat;
-  background-attachment: fixed, fixed;
-  background-position: center center, center center;
-  background-size: auto, cover;
-  -webkit-background-size: auto, cover;
-  -moz-background-size: auto, cover;
-  -o-background-size: auto, cover;
+.series-page-header,
+.movie-page-header {
+    opacity: 0.98;
+    box-shadow: 0 0 10px 1px #000;
+    color: #ffffff;
+    background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
-.series-season, .movie-tabs-card {
-  opacity: 0.98;
-  box-shadow: 0 0 10px 1px #000;
-  color: #ffffff;
-  background: var(--main-bg-color);
-  background-repeat: repeat, no-repeat;
-  background-attachment: fixed, fixed;
-  background-position: center center, center center;
-  background-size: auto, cover;
-  -webkit-background-size: auto, cover;
-  -moz-background-size: auto, cover;
-  -o-background-size: auto, cover;
+
+.series-season,
+.movie-tabs-card {
+    opacity: 0.98;
+    box-shadow: 0 0 10px 1px #000;
+    color: #ffffff;
+    background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
+
 .episode-title-cell {
     color: #ffffff;
 }
 
-th.sortable:hover, .table-hover > tbody > tr:hover {
+th.sortable:hover,
+.table-hover>tbody>tr:hover {
     background-color: rgba(0, 0, 0, .25);
     color: var(--text-hover);
 }
+
 .progress.episode-progress .progressbar-back-text {
     color: #000 !important;
 }
+
 .text-warning {
     color: #ffffff;
 }
@@ -234,46 +273,62 @@ th.sortable:hover, .table-hover > tbody > tr:hover {
     color: #FFFFFF !important;
     box-shadow: none;
 }
-div.form-group > label {
+
+div.form-group>label {
     font-weight: 500;
 }
-#add-series-screen .add-series-search > input.form-control.x-series-search,
-#add-movies-screen .add-movies-search > input.form-control.x-movies-search {
+
+#add-series-screen .add-series-search>input.form-control.x-series-search,
+#add-movies-screen .add-movies-search>input.form-control.x-movies-search {
     background-color: rgba(0, 0, 0, .25) !important;
     color: #FFFFFF !important;
     border: none;
     box-shadow: none;
 }
+
 #add-series-screen .search-item select.form-control,
 #add-movies-screen .search-item select.form-control {
-    background-color: #1f1f1f ;
+    background-color: #1f1f1f;
     color: #FFFFFF;
 }
+
 .dropdown-menu>li>a {
-      color: #ffffff;
+    color: #ffffff;
 }
+
 .dropdown-menu>li>a:hover {
     color: #000;
 }
 
-.input-group.input-group-lg.add-series-search > .input-group-addon,
-.input-group.input-group-lg.add-movies-search > .input-group-addon {
+.input-group.input-group-lg.add-series-search>.input-group-addon,
+.input-group.input-group-lg.add-movies-search>.input-group-addon {
     color: #FFFFFF;
     background-color: rgba(0, 0, 0, .25);
     border: 0px solid rgba(0, 0, 0, .25);
 }
+
 /* Add Movies */
-.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
-    background-color: hsla(0,0%,100%,.08);
+.nav .open>a,
+.nav .open>a:focus,
+.nav .open>a:hover {
+    background-color: hsla(0, 0%, 100%, .08);
     border-color: var(--text-hover);
 }
+
 .discoverable-list-item:hover {
     background-color: #1f1f1f;
     color: var(--text-hover);
 }
-.btn-group-vertical>.btn.active, .btn-group-vertical>.btn:active, .btn-group-vertical>.btn:focus, .btn-group-vertical>.btn:hover, .btn-group>.btn.active,
-.btn-group>.btn:active, .btn-group>.btn:focus, .btn-group>.btn:hover {
-    background-color: hsla(0,0%,100%,.08);
+
+.btn-group-vertical>.btn.active,
+.btn-group-vertical>.btn:active,
+.btn-group-vertical>.btn:focus,
+.btn-group-vertical>.btn:hover,
+.btn-group>.btn.active,
+.btn-group>.btn:active,
+.btn-group>.btn:focus,
+.btn-group>.btn:hover {
+    background-color: hsla(0, 0%, 100%, .08);
 }
 
 /* Add Series */
@@ -284,107 +339,135 @@ div.form-group > label {
 }
 
 /* Calendar page */
-    /* Unaired Premiere */
-    .calendar .premiere {
-        border-color: rgb(var(--calendar-tv-Unaired-Premiere));
-        background-color: rgb(var(--calendar-tv-Unaired-Premiere));
-    }
-    /* Downloading */
-    .calendar .purple {
-        border-color: rgb(var(--calendar-tv-Downloading));
-        background-color: rgb(var(--calendar-tv-Downloading));
-    }
-    /* Downloading */
-    .calendar .unmonitored {
-        border-color: rgb(var(--calendar-tv-Unmonitored));
-        background-color: rgb(var(--calendar-tv-Unmonitored));
-    }
-    /* Unaired */
-    .calendar .primary {
-        border-color: rgb(var(--calendar-tv-Unaired));
-        background-color: rgb(var(--calendar-tv-Unaired));
-    }
-    /* Missing */
-    .calendar .danger {
-        border-color: rgb(var(--calendar-tv-missing));
-        background-color: rgb(var(--calendar-tv-missing));
-    }
-    /* On Air */
-    .calendar .warning {
-        border-color: rgb(var(--calendar-tv-On-Air));
-        background-color: rgb(var(--calendar-tv-On-Air));
-    }
-    /* Downloaded*/
-    .calendar .success {
-        border-color: rgb(var(--calendar-tv-available));
-        background-color: rgb(var(--calendar-tv-available));
-    }
+/* Unaired Premiere */
+.calendar .premiere {
+    border-color: rgb(var(--calendar-tv-Unaired-Premiere));
+    background-color: rgb(var(--calendar-tv-Unaired-Premiere));
+}
+
+/* Downloading */
+.calendar .purple {
+    border-color: rgb(var(--calendar-tv-Downloading));
+    background-color: rgb(var(--calendar-tv-Downloading));
+}
+
+/* Downloading */
+.calendar .unmonitored {
+    border-color: rgb(var(--calendar-tv-Unmonitored));
+    background-color: rgb(var(--calendar-tv-Unmonitored));
+}
+
+/* Unaired */
+.calendar .primary {
+    border-color: rgb(var(--calendar-tv-Unaired));
+    background-color: rgb(var(--calendar-tv-Unaired));
+}
+
+/* Missing */
+.calendar .danger {
+    border-color: rgb(var(--calendar-tv-missing));
+    background-color: rgb(var(--calendar-tv-missing));
+}
+
+/* On Air */
+.calendar .warning {
+    border-color: rgb(var(--calendar-tv-On-Air));
+    background-color: rgb(var(--calendar-tv-On-Air));
+}
+
+/* Downloaded*/
+.calendar .success {
+    border-color: rgb(var(--calendar-tv-available));
+    background-color: rgb(var(--calendar-tv-available));
+}
 
 .event .primary {
     border-color: rgba(0, 0, 0, .25);
 }
-    /* upcoming panel */
-.event h4, .date h4, .event .episode-title {
+
+/* upcoming panel */
+.event h4,
+.date h4,
+.event .episode-title {
     color: #FFFFFF !important;
 }
+
 .event .episode-title {
     color: #f9be03 !important;
 }
-.event .episode-title:focus, .event .episode-title:hover {
+
+.event .episode-title:focus,
+.event .episode-title:hover {
     color: #f9be03;
     text-decoration: underline;
     background-color: transparent;
 }
-a:focus, a:hover {
+
+a:focus,
+a:hover {
     color: var(--text-hover);
 }
+
 .event p {
     color: #FFF;
 }
+
 .fc-title {
     color: #FFF;
 }
+
 /* calendar month */
 
 .calendar th {
-    background-color: hsla(0,0%,100%,.08);
+    background-color: hsla(0, 0%, 100%, .08);
     color: #FFFFFF;
 }
+
 .fc-day.fc-today.fc-state-highlight,
 .fc-day-number.fc-today.fc-state-highlight,
 .fc-day-top.fc-today.fc-state-highlight {
-    background-color: hsla(0,0%,100%,.08);
+    background-color: hsla(0, 0%, 100%, .08);
     color: #f9be03;
 }
+
 /* Activity Page */
 .popover.in {
     opacity: .9;
 }
+
 .popover {
     background-color: #000;
     color: #fff;
 }
-.popover > .popover-title {
+
+.popover>.popover-title {
     background-color: #000;
     color: #fff;
     border: none;
 }
-.popover.left > .arrow,
-.popover.left > .arrow:after {
+
+.popover.left>.arrow,
+.popover.left>.arrow:after {
     border-left-color: #000;
 }
-.popover.right > .arrow:after {
+
+.popover.right>.arrow:after {
     border-right-color: #000;
 }
 
 .backgrid-paginator ul .active span {
     background-color: rgba(0, 0, 0, 0);
 }
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-    background-color: hsla(0,0%,100%,.08);
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+    background-color: hsla(0, 0%, 100%, .08);
 }
-.nav>li>a:focus, .nav>li>a:hover {
-    background-color: hsla(0,0%,100%,.08);
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+    background-color: hsla(0, 0%, 100%, .08);
 }
 
 /* Season Pass */
@@ -393,13 +476,16 @@ a:focus, a:hover {
     border-color: transparent;
     color: #ffffff;
 }
+
 /* alerts */
 .alert-warning {
     background-color: rgba(0, 0, 0, 0.25);
     border-color: transparent;
     color: #f0ad4e;
 }
-.alert-danger, .manual-import-error {
+
+.alert-danger,
+.manual-import-error {
     background-color: rgba(0, 0, 0, 0.25);
     border-color: transparent;
     color: #d9534f;
@@ -439,21 +525,22 @@ legend {
     box-shadow: none;
 }
 
-.add-thingy > div > .btn-default,
-.add-thingy > div > div > .btn.btn-xs.btn-default.dropdown-toggle {
+.add-thingy>div>.btn-default,
+.add-thingy>div>div>.btn.btn-xs.btn-default.dropdown-toggle {
     color: #FFFFFF;
     background-color: rgba(0, 0, 0, 0.25);
     border-color: #FFFFFF;
     outline-style: none;
 }
 
-.add-thingy > div > .btn-default:hover,
-.add-thingy > div > div > .btn.btn-xs.btn-default.dropdown-toggle:hover {
+.add-thingy>div>.btn-default:hover,
+.add-thingy>div>div>.btn.btn-xs.btn-default.dropdown-toggle:hover {
     color: var(--text-hover);
     background-color: rgba(0, 0, 0, 0.25);
     border-color: #FFF;
     outline-style: none;
 }
+
 li.save-and-add {
     color: #ffffff;
 }
@@ -463,10 +550,12 @@ ul.qualities li {
     border: 1px solid rgba(0, 0, 0, .25);
     background: rgba(0, 0, 0, .25);
 }
+
 ul.qualities li:hover {
     border: 1px solid rgba(0, 0, 0, .25);
     background: rgba(255, 255, 255, .25);
 }
+
 ul.qualities li.selected .quality-label {
     color: #ffffff;
 }
@@ -475,16 +564,20 @@ ul.qualities li.selected .quality-label {
 #quality-definition-list .rows .row .ui-slider .ui-slider-range {
     background-color: rgb(46, 47, 49);
 }
+
 #quality-definition-list .rows .row .ui-slider .ui-slider-handle {
     background-color: #f5f5f5;
     border: 1px solid #c7c7c7;
 }
+
 #quality-definition-list .rows .row .ui-slider {
     border: 1px solid #2e2f31;
 }
+
 .label-warning {
     background-color: #d58512;
 }
+
 .label-info {
     background-color: #337ab7;
 }
@@ -495,51 +588,69 @@ pre {
     color: #fff;
     background-color: rgba(0, 0, 0, .25);
 }
+
 /* Updates */
 .Updates\/info\/19gvs {
     color: #fff;
 }
+
 /* BUTTONS */
-  /* YES/NO Switch */
+/* YES/NO Switch */
 .well {
     background-color: rgba(0, 0, 0, .25);
     border: 1px solid transparent;
 }
+
 .toggle p span {
     color: rgba(0, 0, 0, 0);
 }
 
-.toggle input:checked ~ p span:nth-child(1) {
+.toggle input:checked~p span:nth-child(1) {
     color: #FFFFFF;
 }
 
-.toggle input:not(:checked) ~ p span:nth-child(2) {
+.toggle input:not(:checked)~p span:nth-child(2) {
     color: #FFFFFF;
 }
-  /* Close X button */
+
+/* Close X button */
 .close,
 .close:hover,
 .close:focus {
     color: #FFF !important;
     opacity: 1;
 }
+
 .btn-default {
-    color: hsla(0,0%,100%,.7);
+    color: hsla(0, 0%, 100%, .7);
     background-color: rgba(0, 0, 0, .25);
     border-color: transparent;
     outline-style: none;
 }
-.btn-default:hover, .btn-default.active, .btn-default.active:hover {
+
+.btn-default:hover,
+.btn-default.active,
+.btn-default.active:hover {
     color: var(--text-hover);
-    background-color: hsla(0,0%,100%,.08);
+    background-color: hsla(0, 0%, 100%, .08);
     border-color: transparent;
     outline-style: none;
 }
-.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
+
+.btn-default.active.focus,
+.btn-default.active:focus,
+.btn-default.active:hover,
+.btn-default:active.focus,
+.btn-default:active:focus,
+.btn-default:active:hover,
+.open>.dropdown-toggle.btn-default.focus,
+.open>.dropdown-toggle.btn-default:focus,
+.open>.dropdown-toggle.btn-default:hover {
     color: var(--text-hover);
-    background-color: hsla(0,0%,100%,.08);
+    background-color: hsla(0, 0%, 100%, .08);
     border-color: #FFF;
 }
+
 .fc-state-default {
     color: #FFF;
     background-color: rgba(0, 0, 0, .25);
@@ -548,18 +659,25 @@ pre {
     background-image: none;
     text-shadow: none;
 }
+
 .fc-state-default:hover {
-  background-color: hsla(0,0%,100%,.08);
+    background-color: hsla(0, 0%, 100%, .08);
 }
-.btn-group .btn+.btn, .btn-group .btn+.btn-group, .btn-group .btn-group+.btn, .btn-group .btn-group+.btn-group {
+
+.btn-group .btn+.btn,
+.btn-group .btn+.btn-group,
+.btn-group .btn-group+.btn,
+.btn-group .btn-group+.btn-group {
     margin-left: 0px;
 }
-.input-group-btn > button.btn.btn-icon-only.dropdown-toggle,
+
+.input-group-btn>button.btn.btn-icon-only.dropdown-toggle,
 .btn.btn-icon-only.x-copy-api-key.hidden-xs {
     color: #FFFFFF;
     background-color: #5cb85c;
 }
-.input-group-btn > button.btn.btn-icon-only.dropdown-toggle:hover {
+
+.input-group-btn>button.btn.btn-icon-only.dropdown-toggle:hover {
     color: var(--text-hover);
     background-color: #449d44;
 }
@@ -568,71 +686,100 @@ pre {
     color: #FFF;
     outline: 0 !important;
 }
+
 .btn.btn-lg.btn-block.x-search-auto {
     color: #FFF;
     background-color: rgba(0, 0, 0, .25);
 }
+
 .btn.btn-lg.btn-block.x-search-auto:hover {
     color: var(--text-hover);
     background-color: rgba(255, 255, 255, 0.05);
 }
-.btn.focus, .btn:focus, .btn:hover {
+
+.btn.focus,
+.btn:focus,
+.btn:hover {
     color: var(--text-hover);
 }
-.modal-footer > button:not([class*="btn-primary"]):not([class*="btn-danger"]):not([class*="btn-success"]) {
+
+.modal-footer>button:not([class*="btn-primary"]):not([class*="btn-danger"]):not([class*="btn-success"]) {
     color: #FFF;
     background-color: rgba(0, 0, 0, .25);
     border-color: transparent;
     outline-style: none;
 }
-.modal-footer > button:hover:not([class*="btn-primary"]):not([class*="btn-danger"]):not([class*="btn-success"]) {
+
+.modal-footer>button:hover:not([class*="btn-primary"]):not([class*="btn-danger"]):not([class*="btn-success"]) {
     color: var(--text-hover);
     background-color: rgba(255, 255, 255, .25);
     border-color: transparent;
     outline-style: none;
 }
+
 /* green button */
- .btn-success {
-  color: #FFF;
+.btn-success {
+    color: #FFF;
 }
 
 /* save button */
-.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus,
-.btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
+.btn-primary.active.focus,
+.btn-primary.active:focus,
+.btn-primary.active:hover,
+.btn-primary:active.focus,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.open>.dropdown-toggle.btn-primary.focus,
+.open>.dropdown-toggle.btn-primary:focus,
+.open>.dropdown-toggle.btn-primary:hover {
     color: var(--text-hover);
     background-color: #286090 !important;
     border-color: transparent;
 }
 
 /* blue button */
-.btn-primary.focus, .btn-primary:focus, .btn-primary:hover {
+.btn-primary.focus,
+.btn-primary:focus,
+.btn-primary:hover {
     color: var(--text-hover);
     background-color: #286090 !important;
     border-color: transparent;
 }
-.btn-success.focus, .btn-success:focus, .btn-success:hover {
+
+.btn-success.focus,
+.btn-success:focus,
+.btn-success:hover {
     color: var(--text-hover);
     background-color: #449d44 !important;
     border-color: transparent;
 }
-.btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default {
-    background-color: hsla(0,0%,100%,.08);
+
+.btn-default.active,
+.btn-default:active,
+.open>.dropdown-toggle.btn-default {
+    background-color: hsla(0, 0%, 100%, .08);
     border-color: #FFF;
 }
+
 .btn-danger:hover {
     color: var(--text-hover);
     background-color: #c9302c;
     border-color: transparent;
 }
-.btn-primary, .btn-danger {
+
+.btn-primary,
+.btn-danger {
     border-color: transparent;
 }
+
 .dropdown-menu {
-      background-color: #1f1f1f;
+    background-color: #1f1f1f;
 }
+
 .dropdown-menu>li>a {
-      color: #ffffff;
+    color: #ffffff;
 }
+
 .dropdown-menu>li>a:hover {
     color: #000 !important;
 }
@@ -645,20 +792,36 @@ pre {
 .FormInputHelpText\/helpText\/3_AVV {
     color: var(--text);
 }
+
 .FormInputGroup\/inputUnit\/19QXo {
     color: #eee !important;
-  }
+}
 
 /* LINKS */
-.Link\/to\/6fmSq {color: var(--text);}
-.Link\/to\/6fmSq:hover {color: var(--text-hover);}
+.Link\/to\/6fmSq {
+    color: var(--text);
+}
 
-a {color: var(--link-color);}
-a:hover {color: var(--link-color-hover);}
+.Link\/to\/6fmSq:hover {
+    color: var(--text-hover);
+}
 
-.TableRowCell\/cell\/2fbg4 .Link\/to\/6fmSq {color: var(--link-color);}
+a {
+    color: var(--link-color);
+}
 
-.TableRowCell\/cell\/2fbg4 .Link\/to\/6fmSq:hover {color: var(--link-color-hover);}
+a:hover {
+    color: var(--link-color-hover);
+}
+
+.TableRowCell\/cell\/2fbg4 .Link\/to\/6fmSq {
+    color: var(--link-color);
+}
+
+.TableRowCell\/cell\/2fbg4 .Link\/to\/6fmSq:hover {
+    color: var(--link-color-hover);
+}
+
 /* Buttons */
 
 .Button\/default\/2uiHU {
@@ -666,28 +829,31 @@ a:hover {color: var(--link-color-hover);}
     background-color: var(--button-color);
     border-color: transparent;
 }
+
 .Button\/default\/2uiHU:hover {
     border-color: transparent;
     background-color: var(--button-color-hover) !important;
     color: var(--text-hover);
-    }
+}
 
 .Button\/primary\/1F1YL {
     border-color: transparent;
     background-color: var(--button-color);
     color: #fff;
-    }
-      
+}
+
 .Button\/primary\/1F1YL:hover {
     border-color: transparent;
     background-color: var(--button-color-hover) !important;
     color: var(--text-hover);
 }
+
 .Button\/success\/36KsU {
     border-color: var(--button-color);
     background-color: var(--button-color);
     color: #fff;
 }
+
 .Button\/success\/36KsU:hover {
     border-color: var(--button-color-hover);
     background-color: var(--button-color-hover);
@@ -695,11 +861,14 @@ a:hover {color: var(--link-color-hover);}
 }
 
 /* LOADING PAGE */
-.ErrorPage\/page\/3GptQ, .ErrorPage\/version\/3txe6, .LoadingMessage\/loadingMessage\/1gR5r {
+.ErrorPage\/page\/3GptQ,
+.ErrorPage\/version\/3txe6,
+.LoadingMessage\/loadingMessage\/1gR5r {
     color: var(--text);
 }
+
 .LoadingIndicator\/ripple\/358v5 {
-  border: 2px solid #fff;
+    border: 2px solid #fff;
 }
 
 /* MODAL */
@@ -708,124 +877,152 @@ a:hover {color: var(--link-color-hover);}
     color: #fff;
     border-bottom: var(--accent-color);
 }
+
 .ModalContent\/modalContent\/-txrl {
     background: var(--modal-bg-color);
     color: var(--text);
 }
+
 .ModalFooter\/modalFooter\/1N5Ku {
     background: var(--modal-bg-color);
     color: #fff;
     border-top: 1px solid var(--accent-color);
 }
+
 .ModalContent\/closeButton\/37Puk:hover {
     color: var(--text-hover);
 }
+
 .EpisodeSummary\/filesHeader\/2_Kgn,
 .EpisodeDetailsModalContent\/tab\/3EkW8,
 .DescriptionListItemTitle\/title\/1Y38p {
     color: #fff;
 }
-/* INPUT */
-	.TagInput\/internalInput\/Jbb1T {
-	background-color: transparent;
-	color: #fff;
-    }
-    .SelectInput\/select\/1qCdc {
-        background-color: #1e1e1e !important;
-    }
-	.AutoSuggestInput\/suggestionsList\/_bVXO, .AutoSuggestInput\/suggestionsContainerOpen\/3TAB7, .AutoSuggestInput\/suggestionsContainer\/3MmlD {
-	background-color: #323232 !important;
-	color: white;
-	border: none !important;
-	}
-	.AutoSuggestInput\/suggestionHighlighted\/2BWyt {
-	background-color: hsla(0,0%,100%,.08);
-	}
 
-    .CheckInput\/primaryIsChecked\/3mVN0 {
-        border-color: transparent;
-        background-color: var(--accent-color);
-    }
+/* INPUT */
+.TagInput\/internalInput\/Jbb1T {
+    background-color: transparent;
+    color: #fff;
+}
+
+.SelectInput\/select\/1qCdc {
+    background-color: #1e1e1e !important;
+}
+
+.AutoSuggestInput\/suggestionsList\/_bVXO,
+.AutoSuggestInput\/suggestionsContainerOpen\/3TAB7,
+.AutoSuggestInput\/suggestionsContainer\/3MmlD {
+    background-color: #323232 !important;
+    color: white;
+    border: none !important;
+}
+
+.AutoSuggestInput\/suggestionHighlighted\/2BWyt {
+    background-color: hsla(0, 0%, 100%, .08);
+}
+
+.CheckInput\/primaryIsChecked\/3mVN0 {
+    border-color: transparent;
+    background-color: var(--accent-color);
+}
+
 /* HEADER */
 
-	.PageHeader\/header\/1IhlM {
-		background-color: rgba(0, 0, 0, .7);
-	}
+.PageHeader\/header\/1IhlM {
+    background-color: rgba(0, 0, 0, .7);
+}
 
-	/* SEARCH DROPDOWN HEADER */
-	.SeriesSearchInput\/containerOpen\/3F8xe .SeriesSearchInput\/seriesContainer\/2yDTR {
-		border: none !important;
-        background: var(--modal-bg-color);
-        color: #fff !important;
-        box-shadow: 0 0 10px 1px transparent !important;
-	}
-	.SeriesSearchInput\/highlighted\/15xAK {
-		background-color: hsla(0,0%,100%,.08);
-	}
-	.PageHeader\/donate\/ZT-3N {
+/* SEARCH DROPDOWN HEADER */
+.SeriesSearchInput\/containerOpen\/3F8xe .SeriesSearchInput\/seriesContainer\/2yDTR {
+    border: none !important;
+    background: var(--modal-bg-color);
+    color: #fff !important;
+    box-shadow: 0 0 10px 1px transparent !important;
+}
+
+.SeriesSearchInput\/highlighted\/15xAK {
+    background-color: hsla(0, 0%, 100%, .08);
+}
+
+.PageHeader\/donate\/ZT-3N {
     color: #c4273c !important;
-    }
-    .SeriesSearchInput\/seriesContainer\/2yDTR::-webkit-scrollbar-thumb {
-        background-color: rgba(255, 255, 255, 0.25);
-    }
-    .SeriesSearchInput\/sectionTitle\/jIgg0 {
-        color: #fff;
-    }
+}
 
-    
+.SeriesSearchInput\/seriesContainer\/2yDTR::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.SeriesSearchInput\/sectionTitle\/jIgg0 {
+    color: #fff;
+}
+
+
 
 /* SIDE MENU */
-	.PageSidebar\/sidebarContainer\/3Hxpq {
-		background-color: rgba(0, 0, 0, .25);
-    }
-    .PageSidebarItem\/iconContainer\/1j_mq {
-        color: white;
-    }
-	.PageSidebar\/sidebar\/3IOcI {
-		background-color: transparent;
-	}
-	.PageSidebarItem\/link\/TuHn2:hover, .PageSidebarItem\/link\/TuHn2:focus {
-		color: var(--text-hover) !important;
-		background-color: hsla(0,0%,100%,.08);
-		text-decoration: none;
-	}
-	.PageSidebarItem\/isActiveLink\/1Hupc {
-		color: #FFF;
-		background-color: hsla(0,0%,100%,.08);
-	}
-	.PageSidebarItem\/isActiveParentLink\/2uxKf {
-		background-color: transparent;
-	}
+.PageSidebar\/sidebarContainer\/3Hxpq {
+    background-color: rgba(0, 0, 0, .25);
+}
 
-	@media only screen and (max-width: 768px) {
-	.PageSidebar\/sidebarContainer\/3Hxpq {
-		background: var(--main-bg-color) !important;
-	}
+.PageSidebarItem\/iconContainer\/1j_mq {
+    color: white;
+}
+
+.PageSidebar\/sidebar\/3IOcI {
+    background-color: transparent;
+}
+
+.PageSidebarItem\/link\/TuHn2:hover,
+.PageSidebarItem\/link\/TuHn2:focus {
+    color: var(--text-hover) !important;
+    background-color: hsla(0, 0%, 100%, .08);
+    text-decoration: none;
+}
+
+.PageSidebarItem\/isActiveLink\/1Hupc {
+    color: #FFF;
+    background-color: hsla(0, 0%, 100%, .08);
+}
+
+.PageSidebarItem\/isActiveParentLink\/2uxKf {
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+    .PageSidebar\/sidebarContainer\/3Hxpq {
+        background: var(--main-bg-color) !important;
     }
-    .PageSidebarItem\/isActiveItem\/bUesh {
-        border-left: 3px solid var(--accent-color);
-    }
+}
+
+.PageSidebarItem\/isActiveItem\/bUesh {
+    border-left: 3px solid var(--accent-color);
+}
 
 /* SERIES PAGE */
 
-  /* OVERVIEW PAGE */
-  
-  .SeriesIndexPoster\/controls\/prEIO {
+/* OVERVIEW PAGE */
+
+.SeriesIndexPoster\/controls\/prEIO {
     background-color: #000 !important;
 }
-  .SeriesIndexOverview\/container\/4LMzH, .SeriesIndexOverview\/container\/4LMzH:hover {
-  background-color: transparent !important;
-  }
-  .SeriesIndexOverview\/content\/3GKJk:hover {
-  background-color: hsla(0,0%,100%,.08) !important;
-  }
-  .SeriesIndexOverview\/container\/4LMzH:hover .SeriesIndexOverview\/content\/3GKJk {
-  background-color: transparent;
-  }
-  .SeriesIndexOverview\/link\/1i54B:hover {
-  text-decoration: none;
-  }
-  .ProgressBar\/container\/14z4A {
+
+.SeriesIndexOverview\/container\/4LMzH,
+.SeriesIndexOverview\/container\/4LMzH:hover {
+    background-color: transparent !important;
+}
+
+.SeriesIndexOverview\/content\/3GKJk:hover {
+    background-color: hsla(0, 0%, 100%, .08) !important;
+}
+
+.SeriesIndexOverview\/container\/4LMzH:hover .SeriesIndexOverview\/content\/3GKJk {
+    background-color: transparent;
+}
+
+.SeriesIndexOverview\/link\/1i54B:hover {
+    text-decoration: none;
+}
+
+.ProgressBar\/container\/14z4A {
     background-color: rgba(0, 0, 0, 0.25);
 }
 
@@ -836,253 +1033,325 @@ a:hover {color: var(--link-color-hover);}
 .ProgressBar\/purple\/3DlHm {
     background-color: var(--accent-color);
 }
-	/* SHOW PAGE */
-	.SeriesDetailsSeason\/season\/3XIYa, .SeriesDetailsSeason\/collapseButtonContainer\/3XxzX {
+
+/* SHOW PAGE */
+.SeriesDetailsSeason\/season\/3XIYa,
+.SeriesDetailsSeason\/collapseButtonContainer\/3XxzX {
     border: none !important;
     background-color: rgba(0, 0, 0, .25) !important;
-	}
-	.SeriesDetailsSeason\/actionButton\/3BQuA  {
+}
+
+.SeriesDetailsSeason\/actionButton\/3BQuA {
     color: var(--text) !important;
-    }
-    .SeriesDetailsSeason\/collapseButtonIcon\/17xZI {
-        color: #bac5cc;
-    }
+}
 
-	.fa-search:hover {
+.SeriesDetailsSeason\/collapseButtonIcon\/17xZI {
+    color: #bac5cc;
+}
+
+.fa-search:hover {
     color: var(--text-hover) !important;
-	}
-	.Icon\/default\/3C-KJ:hover {
+}
+
+.Icon\/default\/3C-KJ:hover {
     color: var(--text-hover) !important;
-	}
-	.MonitorToggleButton\/toggleButton\/3CcN9 {
+}
+
+.MonitorToggleButton\/toggleButton\/3CcN9 {
     color: #dadada;
-	}
-	.SeriesDetailsSeason\/seasonNumber\/FL7Dt {
-    color: #fff;
-	}
-	.Table\/table\/2C3O8 {
-    color: var(--text);
-    }
-	.SeriesDetailsSeason\/collapseButtonContainer\/trs6s {
-	border: none !important;
-    background-color: rgba(0, 0, 0, .25) !important;
-	}
-	.Popover\/title\/326tA, .SeasonInfo\/title\/1tid_, .Popover\/body\/10Yh7 {
-		background: var(--modal-bg-color) !important;
-	}
-	.Tooltip\/tooltipContainer\/2693s {
-	color: #fff;
-    }
-    .Tooltip\/tooltip\/3HJXy.Tooltip\/inverse\/yMvcm {
-        background: var(--modal-bg-color);
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    }
-    .Tooltip\/bottom\/3Ewbi.Tooltip\/inverse\/yMvcm {
-        border-bottom-color: #fff;
-    }
-    .Tooltip\/bottom\/3Ewbi.Tooltip\/default\/2NTKh {
-        border-bottom-color: #fff !important;
-    }
-    .Tooltip\/right\/2MxTa.Tooltip\/default\/2NTKh {
-        border-right-color: #fff !important;
-    }    
-    .EpisodeTitleLink\/link\/3ynTw:hover {
-        color: var(--link-color-hover);
-    }
-    .IconButton\/button\/2qiGi:hover {
-        background-color: transparent;
-        color: var(--text-hover);
-    }
-    .IconButton\/button\/2qiGi {
-        color: #bac5cc;
-    }
-    .Label\/default\/2AF1C {
-        border-color: var(--accent-color);
-        background-color: var(--accent-color);
-    }
-    .Label\/info\/3YD3Y {
-        border-color: var(--accent-color);
-        background-color: var(--accent-color);
-        color: #fff;
-    }
-    .PageSidebarItem\/status\/34pTa > .Label\/info\/3YD3Y {
-        border-color: var(--queue-color);
-        background-color: var(--queue-color);
-        color: #fff;
-    }
-    .ProtocolLabel\/torrent\/3aqvR {
-        border-color: #00853d !important;
-        background-color: #00853d !important;
-    }
-    .ProtocolLabel\/usenet\/3qKV1 {
+}
 
-        border-color: #17b1d9 !important;
-        background-color: #17b1d9 !important;
-      }
-  /* Table options*/
-  .TableOptionsColumn\/column\/2H7ic {
+.SeriesDetailsSeason\/seasonNumber\/FL7Dt {
+    color: #fff;
+}
+
+.Table\/table\/2C3O8 {
+    color: var(--text);
+}
+
+.SeriesDetailsSeason\/collapseButtonContainer\/trs6s {
+    border: none !important;
+    background-color: rgba(0, 0, 0, .25) !important;
+}
+
+.Popover\/title\/326tA,
+.SeasonInfo\/title\/1tid_,
+.Popover\/body\/10Yh7 {
+    background: var(--modal-bg-color) !important;
+}
+
+.Tooltip\/tooltipContainer\/2693s {
+    color: #fff;
+}
+
+.Tooltip\/tooltip\/3HJXy.Tooltip\/inverse\/yMvcm {
+    background: var(--modal-bg-color);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Tooltip\/bottom\/3Ewbi.Tooltip\/inverse\/yMvcm {
+    border-bottom-color: #fff;
+}
+
+.Tooltip\/bottom\/3Ewbi.Tooltip\/default\/2NTKh {
+    border-bottom-color: #fff !important;
+}
+
+.Tooltip\/right\/2MxTa.Tooltip\/default\/2NTKh {
+    border-right-color: #fff !important;
+}
+
+.EpisodeTitleLink\/link\/3ynTw:hover {
+    color: var(--link-color-hover);
+}
+
+.IconButton\/button\/2qiGi:hover {
+    background-color: transparent;
+    color: var(--text-hover);
+}
+
+.IconButton\/button\/2qiGi {
+    color: #bac5cc;
+}
+
+.Label\/default\/2AF1C {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+}
+
+.Label\/info\/3YD3Y {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+.PageSidebarItem\/status\/34pTa>.Label\/info\/3YD3Y {
+    border-color: var(--queue-color);
+    background-color: var(--queue-color);
+    color: #fff;
+}
+
+.ProtocolLabel\/torrent\/3aqvR {
+    border-color: #00853d !important;
+    background-color: #00853d !important;
+}
+
+.ProtocolLabel\/usenet\/3qKV1 {
+
+    border-color: #17b1d9 !important;
+    background-color: #17b1d9 !important;
+}
+
+/* Table options*/
+.TableOptionsColumn\/column\/2H7ic {
     background: rgba(0, 0, 0, .25);
     color: #FFF;
-	border: none;
-    }
-    .TableHeaderCell\/headerCell\/DbapO {
-        color: #fff;
-        }
+    border: none;
+}
 
-	/* TOP MENU SERIES */
-	.PageToolbar\/toolbar\/1Lo1N,.PageToolbarButton\/toolbarButton\/QiQEt.PageToolbarButton\/isDisabled\/343fJ {
-		background-color: rgba(0, 0, 0, .25);
-		color: var(--text);
-    }
-    .PageToolbarButton\/label\/10YbS {
-        color: var(--text);
-    }
-	/* POSTERS */
-	.SeriesIndexPoster\/title\/263Pq, .SeriesIndexPoster\/nextAiring\/1FZy6, .SeriesIndexPosterInfo\/info\/2JsCg {
-		background-color: rgba(255, 255, 255, 0.08);
-			color: #fff;
-	}
-	/* HOVEL LABELS */
-	.Label\/default\/2zdw6 {
-		border-color: #1b1b1b;
-		background-color: #1b1b1b;
-	}
-	/* SERIES TOP HEADER DROPDOWN */
-	.MenuItem\/menuItem\/zB-Up, .MenuContent\/menuContent\/3Zkj4 {
+.TableHeaderCell\/headerCell\/DbapO {
+    color: #fff;
+}
+
+/* TOP MENU SERIES */
+.PageToolbar\/toolbar\/1Lo1N,
+.PageToolbarButton\/toolbarButton\/QiQEt.PageToolbarButton\/isDisabled\/343fJ {
+    background-color: rgba(0, 0, 0, .25);
+    color: var(--text);
+}
+
+.PageToolbarButton\/label\/10YbS {
+    color: var(--text);
+}
+
+/* POSTERS */
+.SeriesIndexPoster\/title\/263Pq,
+.SeriesIndexPoster\/nextAiring\/1FZy6,
+.SeriesIndexPosterInfo\/info\/2JsCg {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #fff;
+}
+
+/* HOVEL LABELS */
+.Label\/default\/2zdw6 {
+    border-color: #1b1b1b;
+    background-color: #1b1b1b;
+}
+
+/* SERIES TOP HEADER DROPDOWN */
+.MenuItem\/menuItem\/zB-Up,
+.MenuContent\/menuContent\/3Zkj4 {
     background: var(--modal-bg-color);
     color: var(--text);
-    }
-    .MenuContent\/scroller\/V4APc {
-        box-shadow: black 0 0 5px 0px; 
-    }
-	.MenuItem\/menuItem\/zB-Up:hover, .MenuItem\/menuItem\/zB-Up:focus {
-		background: hsla(0,0%,100%,.08) !important;
-		color: var(--text-hover);
-		text-decoration: none;
-	}
-	.MenuItemSeparator\/separator\/1ayq0 {
-    background-color: hsla(0,0%,100%,.08) !important;
-	}
-	/* SERIES TOP HEADER HOVER */
-	.PageToolbarButton\/toolbarButton\/QiQEt:hover {
+}
+
+.MenuContent\/scroller\/V4APc {
+    box-shadow: black 0 0 5px 0px;
+}
+
+.MenuItem\/menuItem\/zB-Up:hover,
+.MenuItem\/menuItem\/zB-Up:focus {
+    background: hsla(0, 0%, 100%, .08) !important;
     color: var(--text-hover);
-	}
-	.MenuButton\/menuButton\/3nh0N:hover {
+    text-decoration: none;
+}
+
+.MenuItemSeparator\/separator\/1ayq0 {
+    background-color: hsla(0, 0%, 100%, .08) !important;
+}
+
+/* SERIES TOP HEADER HOVER */
+.PageToolbarButton\/toolbarButton\/QiQEt:hover {
     color: var(--text-hover);
-	}
-	/* ALPHABET JUMP BAR */
-	.PageJumpBar\/jumpBar\/3owcF {
+}
+
+.MenuButton\/menuButton\/3nh0N:hover {
+    color: var(--text-hover);
+}
+
+/* ALPHABET JUMP BAR */
+.PageJumpBar\/jumpBar\/3owcF {
     color: #FFF;
-	}
-	/* MINI RIGHT SCROLL BAR */
-	.OverlayScroller\/thumb\/1Lhfi {
-    background-color: hsla(0,0%,100%,.08) !important;
+}
+
+/* MINI RIGHT SCROLL BAR */
+.OverlayScroller\/thumb\/1Lhfi {
+    background-color: hsla(0, 0%, 100%, .08) !important;
 }
 
 /* ADD NEW */
-    div[class*='EnhancedSelectInputOption'] { 
+div[class*='EnhancedSelectInputOption'] {
     background-color: #1e1e1e;
     color: #fff;
-    }
-    div[class*='EnhancedSelectInputOption']:hover { 
+}
+
+div[class*='EnhancedSelectInputOption']:hover {
     background-color: rgba(255, 255, 255, 0.08);
     color: var(--text-hover);
-    }
-    .EnhancedSelectInput\/options\/3yy65 {
+}
+
+.EnhancedSelectInput\/options\/3yy65 {
     border: 1px solid #1e1e1e;
     border-radius: 4px;
     background-color: #1e1e1e;
-    }
+}
 
-	/* SEARCH BAR */
-	.Input\/input\/2YWzR, .AddNewSeries\/searchIconContainer\/3QAm8, .AddNewSeries\/clearLookupButton\/1dKG7 {
-		border: none;
-		background-color: rgba(255, 255, 255, 0.08);
-		color: #FFF
-    }
-    .SeriesSearchResult\/alternateTitle\/21CfS {
-        color: #ffffff;
-        font-size: 12px;
-      }
-    .AddNewSeriesSearchResult\/year\/2jW2b {
-        color: #fff;
-    }
-	 .Input\/input\/2YWzR:focus {
-        outline: 0;
-        border-color: #fff;
-        box-shadow: none;
+/* SEARCH BAR */
+.Input\/input\/2YWzR,
+.AddNewSeries\/searchIconContainer\/3QAm8,
+.AddNewSeries\/clearLookupButton\/1dKG7 {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #FFF
+}
+
+.SeriesSearchResult\/alternateTitle\/21CfS {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.AddNewSeriesSearchResult\/year\/2jW2b {
+    color: #fff;
+}
+
+.Input\/input\/2YWzR:focus {
+    outline: 0;
+    border-color: #fff;
+    box-shadow: none;
     background-color: rgba(255, 255, 255, 0.25);
-    } 
-    .TagInput\/input\/3E1DX.TagInput\/isFocused\/13j-F {
-        outline: 0;
-        border-color: #fff;
-        box-shadow: none;
-    }
-    ::placeholder {color: #eee;}
-    :-ms-input-placeholder {color: #eee;}
-    ::-webkit-input-placeholder {color: #eee ;}
-	
-	/* TEXT COLOR */
-	.PageContentBody\/innerContentBody\/tEszh {
+}
+
+.TagInput\/input\/3E1DX.TagInput\/isFocused\/13j-F {
+    outline: 0;
+    border-color: #fff;
+    box-shadow: none;
+}
+
+::placeholder {
+    color: #eee;
+}
+
+:-ms-input-placeholder {
+    color: #eee;
+}
+
+::-webkit-input-placeholder {
+    color: #eee;
+}
+
+/* TEXT COLOR */
+.PageContentBody\/innerContentBody\/tEszh {
     color: var(--text);
-	}
-	/* SEARCH RESULTS */
-    .AddNewSeriesSearchResult\/underlay\/11FBP {
+}
+
+/* SEARCH RESULTS */
+.AddNewSeriesSearchResult\/underlay\/11FBP {
     background-color: rgba(0, 0, 0, .0) !important;
-    }
-    .AddNewSeriesSearchResult\/underlay\/11FBP:hover {
-    background-color: hsla(0,0%,100%,.08) !important;
-    }
-    .AddNewSeriesModalContent\/year\/t7IIJ {
-        color: #fff;
-    }
-    .RootFolderSelectInputSelectedValue\/seriesFolder\/a7chC, .RootFolderSelectInputSelectedValue\/freeSpace\/1Irwm {
-        color: #fff;
-    }
+}
+
+.AddNewSeriesSearchResult\/underlay\/11FBP:hover {
+    background-color: hsla(0, 0%, 100%, .08) !important;
+}
+
+.AddNewSeriesModalContent\/year\/t7IIJ {
+    color: #fff;
+}
+
+.RootFolderSelectInputSelectedValue\/seriesFolder\/a7chC,
+.RootFolderSelectInputSelectedValue\/freeSpace\/1Irwm {
+    color: #fff;
+}
 
 /* IMPORT */
 
-	.FieldSet\/legend\/3x6NF {
+.FieldSet\/legend\/3x6NF {
     color: #FFF;
     border-bottom: 1px solid var(--accent-color);
-	}
-	.TableRow\/row\/33xJE:hover {
-    background-color: hsla(0,0%,100%,.08);
+}
+
+.TableRow\/row\/33xJE:hover {
+    background-color: hsla(0, 0%, 100%, .08);
     color: var(--text-hover);
-	}
-	.VirtualTableRow\/row\/2-JS9:hover {
-    background-color: hsla(0,0%,100%,.08);
-	}
-	.ImportSeriesSelectSeries\/button\/3CL3L {
+}
+
+.VirtualTableRow\/row\/2-JS9:hover {
+    background-color: hsla(0, 0%, 100%, .08);
+}
+
+.ImportSeriesSelectSeries\/button\/3CL3L {
     border: none !important;
     background-color: rgba(0, 0, 0, .25) !important;
-    }
-    .ImportSeriesSearchResult\/series\/2BXMC:hover {
+}
+
+.ImportSeriesSearchResult\/series\/2BXMC:hover {
     background-color: rgba(0, 0, 0, 0.25);
-    }
-	.ImportSeriesSelectSeries\/content\/3oSDj, .ImportSeriesSelectSeries\/searchIconContainer\/1wOES {
+}
+
+.ImportSeriesSelectSeries\/content\/3oSDj,
+.ImportSeriesSelectSeries\/searchIconContainer\/1wOES {
     border: none !important;
     background-color: #323232 !important;
     color: white !important;
-	}
+}
 
 /* MASS EDITOR */
-	/* FOOTER */
-	.PageContentFooter\/contentFooter\/3ODMj {
+/* FOOTER */
+.PageContentFooter\/contentFooter\/3ODMj {
     border: none;
     background-color: rgba(0, 0, 0, .25);
     color: #FFF;
-	}
+}
 
 /* SEASON PASS */
 
-	.SeasonPassSeason\/season\/2FWuT {
-		border: none;
-		background-color: rgba(0, 0, 0, .25) !important;
-	}
-	.SeasonPassSeason\/allEpisodes\/1zGja {
-		background-color: #5cb85c;
-	}
+.SeasonPassSeason\/season\/2FWuT {
+    border: none;
+    background-color: rgba(0, 0, 0, .25) !important;
+}
+
+.SeasonPassSeason\/allEpisodes\/1zGja {
+    background-color: #5cb85c;
+}
 
 /* CALENDAR */
 .CalendarEvent\/downloaded\/2vSrJ {
@@ -1090,195 +1359,240 @@ a:hover {color: var(--link-color-hover);}
     border-left-color: transparent !important;
     color: #fff;
 }
+
 .CalendarEvent\/downloaded\/2vSrJ:hover {
     background: rgb(var(--calendar-tv-available) / .5) !important;
     border-left-color: transparent !important;
 }
+
 .CalendarEvent\/missing\/1y6vZ {
     background: rgb(var(--calendar-tv-missing) / .7) !important;
     border-left-color: transparent !important;
     color: #fff;
 }
+
 .CalendarEvent\/missing\/1y6vZ:hover {
     background: rgb(var(--calendar-tv-missing) / .5) !important;
     border-left-color: transparent !important;
 }
+
 .CalendarEvent\/unaired\/3aHdN {
     background: rgb(var(--calendar-tv-Unaired) / .7) !important;
     border-left-color: transparent !important;
     color: #fff;
 }
+
 .CalendarEvent\/unaired\/3aHdN:hover {
     background: rgb(var(--calendar-tv-Unaired) / .5) !important;
     border-left-color: transparent !important;
 }
+
 .CalendarEvent\/unmonitored\/Zvc-m {
     background: rgb(var(--calendar-tv-Unmonitored) / .7) !important;
     border-left-color: transparent !important;
     color: #fff;
 }
+
 .CalendarEvent\/unmonitored\/Zvc-m:hover {
     background: rgb(var(--calendar-tv-Unmonitored) / .5) !important;
     border-left-color: transparent !important;
 }
+
 .CalendarEvent\/onAir\/dwaU_ {
     background: rgb(var(--calendar-tv-On-Air) / .7) !important;
     border-left-color: transparent !important;
     color: #fff;
 }
+
 .CalendarEvent\/onAir\/dwaU_:hover {
     background: rgb(var(--calendar-tv-On-Air) / .5) !important;
     border-left-color: transparent !important;
 }
+
 .CalendarEvent\/downloading\/1kwSO {
     background: rgb(var(--calendar-tv-Downloading) / .7) !important;
     border-left-color: transparent !important;
     color: #fff;
 }
+
 .CalendarEvent\/downloading\/1kwSO:hover {
     background: rgb(var(--calendar-tv-Downloading) / .5) !important;
     border-left-color: transparent !important;
 }
-	.DayOfWeek\/dayOfWeek\/1iw4D {
-        background-color: hsla(0,0%,100%,.08);
-        color: #fff;
-    }
-    .CalendarDay\/dayOfMonth\/2CzdW {
-        border-bottom: 1px solid hsla(0,0%,100%,.08);
-        background-color: rgba(0, 0, 0, .25);
-    }
-    .CalendarDay\/isToday\/1rFJO {
-        background-color: hsla(0,0%,100%,.08) !important;
-    }
 
-	.CalendarDay\/day\/2TMXA, .CalendarDays\/days\/girjM {
-		-webkit-box-flex: 1;
-		-webkit-flex: 1 0 14.28%;
-		flex: 1 0 14.28%;
-		overflow: hidden;
-		min-height: 70px;
-		border-bottom: 1px solid hsla(0,0%,100%,.08);
-		border-left: 1px solid hsla(0,0%,100%,.08);
-		border-right: 1px solid hsla(0,0%,100%,.08);
-	}
-	.CalendarEvent\/seriesTitle\/3sg1o, .CalendarEvent\/episodeInfo\/IWdbW, .CalendarEvent\/airTime\/3Wzho, .Legend\/legend\/tgR0o .LegendItem\/legendItem\/zXNYn {
-		color: #ffffff !important;
-	}
-	.CalendarEvent\/event\/3Uyb9 {
-		border-bottom: none !important;
-	}
+.DayOfWeek\/dayOfWeek\/1iw4D {
+    background-color: hsla(0, 0%, 100%, .08);
+    color: #fff;
+}
 
-    .CalendarEventGroup\/eventGroup\/gWPtK {
-        border-bottom: 1px solid hsla(0,0%,100%,.08) !important;
-    }
-    
-    .CalendarEventGroup\/seriesTitle\/ThqKe {
-        color: #ffffff !important;
-    }
-    .CalendarEventGroup\/airTime\/1Z6G9 {
-        color: #eee;
-    }
-    .CalendarEventGroup\/episodeInfo\/vfg0M {
-        color: #eee;
-    }
-    /* calendar agenda */
-    .AgendaEvent\/event\/2a83A:hover {
-        background-color: hsla(0,0%,100%,.08) !important;
-    }
+.CalendarDay\/dayOfMonth\/2CzdW {
+    border-bottom: 1px solid hsla(0, 0%, 100%, .08);
+    background-color: rgba(0, 0, 0, .25);
+}
+
+.CalendarDay\/isToday\/1rFJO {
+    background-color: hsla(0, 0%, 100%, .08) !important;
+}
+
+.CalendarDay\/day\/2TMXA,
+.CalendarDays\/days\/girjM {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 14.28%;
+    flex: 1 0 14.28%;
+    overflow: hidden;
+    min-height: 70px;
+    border-bottom: 1px solid hsla(0, 0%, 100%, .08);
+    border-left: 1px solid hsla(0, 0%, 100%, .08);
+    border-right: 1px solid hsla(0, 0%, 100%, .08);
+}
+
+.CalendarEvent\/seriesTitle\/3sg1o,
+.CalendarEvent\/episodeInfo\/IWdbW,
+.CalendarEvent\/airTime\/3Wzho,
+.Legend\/legend\/tgR0o .LegendItem\/legendItem\/zXNYn {
+    color: #ffffff !important;
+}
+
+.CalendarEvent\/event\/3Uyb9 {
+    border-bottom: none !important;
+}
+
+.CalendarEventGroup\/eventGroup\/gWPtK {
+    border-bottom: 1px solid hsla(0, 0%, 100%, .08) !important;
+}
+
+.CalendarEventGroup\/seriesTitle\/ThqKe {
+    color: #ffffff !important;
+}
+
+.CalendarEventGroup\/airTime\/1Z6G9 {
+    color: #eee;
+}
+
+.CalendarEventGroup\/episodeInfo\/vfg0M {
+    color: #eee;
+}
+
+/* calendar agenda */
+.AgendaEvent\/event\/2a83A:hover {
+    background-color: hsla(0, 0%, 100%, .08) !important;
+}
+
 /*QUEUE PAGE */
-    /* Manual Import*/
+/* Manual Import*/
 .SelectEpisodeModalContent\/path\/1Okqk {
     color: #eee;
 }
+
 /* SETTINGS */
-    .PageContentBody\/innerContentBody\/tEszh .Link\/to\/6fmSq {
-        color: #fff;
-    }
-	.Settings\/summary\/3KPAv {
-		color: var(--text);
-    }
-    .FormLabel\/large\/3Sn9u {
-        color: #fff
-    }
-    .FormLabel\/isAdvanced\/1glHh {
-        color: #ff902b;
-    }
-	/* MEDIA MANAGEMENT - FILE NAME TOKENS */
-	.NamingOption\/option\/giCGd {
-	    border: 1px solid transparent;
-	}
-	.NamingOption\/token\/1y5bz {
-	    background-color: rgba(255, 255, 255, 0.15);
-	}
-	.NamingOption\/example\/RNR6x {
-	    background-color: rgba(255, 255, 255, 0.25);
-	}
-	.NamingOption\/option\/giCGd:hover .NamingOption\/token\/1y5bz  {
-	    background-color: rgba(255, 255, 2550, 0.25);
-	}
-	.NamingOption\/option\/giCGd:hover .NamingOption\/example\/RNR6x {
-	    background-color: rgba(255, 255, 2550, 0.35);
-	}
-	/* PROFILES */
-	.Card\/card\/1iGZk, .QualityProfiles\/addQualityProfile\/2U2Io {
-    background-color: rgba(0,0,0,.45);
+.PageContentBody\/innerContentBody\/tEszh .Link\/to\/6fmSq {
+    color: #fff;
+}
+
+.Settings\/summary\/3KPAv {
+    color: var(--text);
+}
+
+.FormLabel\/large\/3Sn9u {
+    color: #fff
+}
+
+.FormLabel\/isAdvanced\/1glHh {
+    color: #ff902b;
+}
+
+/* MEDIA MANAGEMENT - FILE NAME TOKENS */
+.NamingOption\/option\/giCGd {
+    border: 1px solid transparent;
+}
+
+.NamingOption\/token\/1y5bz {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.NamingOption\/example\/RNR6x {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.NamingOption\/option\/giCGd:hover .NamingOption\/token\/1y5bz {
+    background-color: rgba(255, 255, 2550, 0.25);
+}
+
+.NamingOption\/option\/giCGd:hover .NamingOption\/example\/RNR6x {
+    background-color: rgba(255, 255, 2550, 0.35);
+}
+
+/* PROFILES */
+.Card\/card\/1iGZk,
+.QualityProfiles\/addQualityProfile\/2U2Io {
+    background-color: rgba(0, 0, 0, .45);
     box-shadow: 0 0 10px 1px #000000;
     color: var(--text);
-	}
-	.QualityProfiles\/center\/1iiKm, .LanguageProfiles\/center\/7EV_2, .ReleaseProfiles\/center\/114Qx {
-	background-color: transparent;
+}
+
+.QualityProfiles\/center\/1iiKm,
+.LanguageProfiles\/center\/7EV_2,
+.ReleaseProfiles\/center\/114Qx {
+    background-color: transparent;
     border: none;
     color: var(--text);
-	}
-    .QualityProfileItem\/qualityProfileItem\/VFp-W, .QualityProfileItemGroup\/qualityProfileItemGroup\/2U1l5, .LanguageProfileItem\/languageProfileItem\/18XGg {
+}
+
+.QualityProfileItem\/qualityProfileItem\/VFp-W,
+.QualityProfileItemGroup\/qualityProfileItemGroup\/2U1l5,
+.LanguageProfileItem\/languageProfileItem\/18XGg {
     border: none;
     background-color: rgba(0, 0, 0, .25);
     color: #FFF;
-    }
-    .QualityProfileItemGroup\/qualityProfileItemGroup\/2U1l5.QualityProfileItemGroup\/editGroups\/2KzDp {
+}
+
+.QualityProfileItemGroup\/qualityProfileItemGroup\/2U1l5.QualityProfileItemGroup\/editGroups\/2KzDp {
     background: rgba(0, 0, 0, 0.25);
-    }
-    .KeyValueListInputItem\/keyInput\/3YYEs, .KeyValueListInputItem\/valueInput\/3zlQA {
-        border: none;
-        background: transparent;
-        color: white;
-    }
-	/* PROFILES */
-	.Indexers\/center\/11Csq {
-	background-color: transparent;
+}
+
+.KeyValueListInputItem\/keyInput\/3YYEs,
+.KeyValueListInputItem\/valueInput\/3zlQA {
+    border: none;
+    background: transparent;
+    color: white;
+}
+
+/* PROFILES */
+.Indexers\/center\/11Csq {
+    background-color: transparent;
     border: none;
     color: var(--text);
-    }
-    
-    /* INDEXERS */
+}
 
-	/* DOWNLOAD CLIENTS */
-	.DownloadClients\/center\/FvACx {
-	background-color: transparent;
+/* INDEXERS */
+
+/* DOWNLOAD CLIENTS */
+.DownloadClients\/center\/FvACx {
+    background-color: transparent;
     border: none;
     color: var(--text);
-    }
+}
 
-    /*INPORT LISTS */
-    .ImportLists\/center\/17Qdu{
-        background-color: transparent;
-        border: none;
-        color: var(--text);
-    }
-
-	/* CONNECTIONS */
-	.Notifications\/center\/8iwmy {
-	background-color: transparent;
+/*INPORT LISTS */
+.ImportLists\/center\/17Qdu {
+    background-color: transparent;
     border: none;
     color: var(--text);
-	}
+}
 
-	/* LOG */
-	.Alert\/info\/1J8mE {
+/* CONNECTIONS */
+.Notifications\/center\/8iwmy {
+    background-color: transparent;
+    border: none;
+    color: var(--text);
+}
+
+/* LOG */
+.Alert\/info\/1J8mE {
     border-color: transparent;
     background-color: rgba(0, 0, 0, 0.25);
     color: #FFC107;
-    }
+}
 
 /* Login Page */
 
@@ -1286,9 +1600,11 @@ a:hover {color: var(--link-color-hover);}
     background-color: rgba(0, 0, 0, 0.25);
     color: white;
 }
+
 .panel-header {
     background-color: rgba(0, 0, 0, 0.45);
 }
+
 .forgot-password {
     color: #eee !important;
 }
@@ -1297,8 +1613,9 @@ a:hover {color: var(--link-color-hover);}
 .FilterBuilderRow\/filterRow\/1ozij:hover {
     background-color: transparent;
 }
+
 .CustomFilter\/customFilter\/zBSMd:hover {
-    background-color: hsla(0,0%,100%,.08);
+    background-color: hsla(0, 0%, 100%, .08);
 }
 
 
@@ -1308,7 +1625,10 @@ a:hover {color: var(--link-color-hover);}
     color: var(--text);
     opacity: 1;
 }
+
 .ReleaseSceneIndicator\/levelMapped\/3i7w4 {
-    border-color: var(--text);;
-    color: var(--text);;
+    border-color: var(--text);
+    ;
+    color: var(--text);
+    ;
 }
