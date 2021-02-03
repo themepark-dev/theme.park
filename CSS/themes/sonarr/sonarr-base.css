@@ -720,7 +720,9 @@ a:hover {color: var(--link-color-hover);}
 .ModalContent\/closeButton\/37Puk:hover {
     color: var(--text-hover);
 }
-.EpisodeSummary\/filesHeader\/2_Kgn,.EpisodeDetailsModalContent\/tab\/3EkW8 {
+.EpisodeSummary\/filesHeader\/2_Kgn,
+.EpisodeDetailsModalContent\/tab\/3EkW8,
+.DescriptionListItemTitle\/title\/1Y38p {
     color: #fff;
 }
 /* INPUT */
