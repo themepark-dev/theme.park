@@ -91,7 +91,7 @@ body {
 }
 .navbar-nzbdrone li a:hover {
     background-color: hsla(0,0%,100%,.08);
-    color: #ffffff;
+    color: var(--text-hover);
 }
 .search .input-group .input-group-addon, .search .input-group input {
     background-color: rgba(0, 0, 0, .25) !important;
@@ -119,7 +119,7 @@ body {
     color: #FFF;
 }
 .navbar-nzbdrone .navbar-toggle:focus, .navbar-nzbdrone .navbar-toggle:hover {
-    color: #FFF;
+    color: var(--text-hover);
     background-color: hsla(0,0%,100%,.08);
 }
 @media (max-width: 767px) {
@@ -218,7 +218,7 @@ body {
 
 th.sortable:hover, .table-hover > tbody > tr:hover {
     background-color: rgba(0, 0, 0, .25);
-    color: #ffffff;
+    color: var(--text-hover);
 }
 .progress.episode-progress .progressbar-back-text {
     color: #000 !important;
@@ -265,11 +265,11 @@ div.form-group > label {
 /* Add Movies */
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
     background-color: hsla(0,0%,100%,.08);
-    border-color: #FFF;
+    border-color: var(--text-hover);
 }
 .discoverable-list-item:hover {
     background-color: #1f1f1f;
-    color: white;
+    color: var(--text-hover);
 }
 .btn-group-vertical>.btn.active, .btn-group-vertical>.btn:active, .btn-group-vertical>.btn:focus, .btn-group-vertical>.btn:hover, .btn-group>.btn.active,
 .btn-group>.btn:active, .btn-group>.btn:focus, .btn-group>.btn:hover {
@@ -336,7 +336,7 @@ div.form-group > label {
     background-color: transparent;
 }
 a:focus, a:hover {
-    color: #ffffff;
+    color: var(--text-hover);
 }
 .event p {
     color: #FFF;
@@ -449,7 +449,7 @@ legend {
 
 .add-thingy > div > .btn-default:hover,
 .add-thingy > div > div > .btn.btn-xs.btn-default.dropdown-toggle:hover {
-    color: #FFF;
+    color: var(--text-hover);
     background-color: rgba(0, 0, 0, 0.25);
     border-color: #FFF;
     outline-style: none;
@@ -489,12 +489,16 @@ ul.qualities li.selected .quality-label {
     background-color: #337ab7;
 }
 
-/* SYSTEM logs */
+/* SYSTEM */
+/* logs */
 pre {
     color: #fff;
     background-color: rgba(0, 0, 0, .25);
 }
-
+/* Updates */
+.Updates\/info\/19gvs {
+    color: #fff;
+}
 /* BUTTONS */
   /* YES/NO Switch */
 .well {
@@ -526,13 +530,13 @@ pre {
     outline-style: none;
 }
 .btn-default:hover, .btn-default.active, .btn-default.active:hover {
-    color: #FFFFFF;
+    color: var(--text-hover);
     background-color: hsla(0,0%,100%,.08);
     border-color: transparent;
     outline-style: none;
 }
 .btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
-    color: #fff;
+    color: var(--text-hover);
     background-color: hsla(0,0%,100%,.08);
     border-color: #FFF;
 }
@@ -556,7 +560,7 @@ pre {
     background-color: #5cb85c;
 }
 .input-group-btn > button.btn.btn-icon-only.dropdown-toggle:hover {
-    color: #FFFFFF;
+    color: var(--text-hover);
     background-color: #449d44;
 }
 
@@ -569,11 +573,11 @@ pre {
     background-color: rgba(0, 0, 0, .25);
 }
 .btn.btn-lg.btn-block.x-search-auto:hover {
-    color: #FFF;
+    color: var(--text-hover);
     background-color: rgba(255, 255, 255, 0.05);
 }
 .btn.focus, .btn:focus, .btn:hover {
-    color: #fff;
+    color: var(--text-hover);
 }
 .modal-footer > button:not([class*="btn-primary"]):not([class*="btn-danger"]):not([class*="btn-success"]) {
     color: #FFF;
@@ -582,7 +586,7 @@ pre {
     outline-style: none;
 }
 .modal-footer > button:hover:not([class*="btn-primary"]):not([class*="btn-danger"]):not([class*="btn-success"]) {
-    color: #FFF;
+    color: var(--text-hover);
     background-color: rgba(255, 255, 255, .25);
     border-color: transparent;
     outline-style: none;
@@ -595,19 +599,19 @@ pre {
 /* save button */
 .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus,
 .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
-    color: #fff;
+    color: var(--text-hover);
     background-color: #286090 !important;
     border-color: transparent;
 }
 
 /* blue button */
 .btn-primary.focus, .btn-primary:focus, .btn-primary:hover {
-    color: #fff;
+    color: var(--text-hover);
     background-color: #286090 !important;
     border-color: transparent;
 }
 .btn-success.focus, .btn-success:focus, .btn-success:hover {
-    color: #fff;
+    color: var(--text-hover);
     background-color: #449d44 !important;
     border-color: transparent;
 }
@@ -616,7 +620,7 @@ pre {
     border-color: #FFF;
 }
 .btn-danger:hover {
-    color: #fff;
+    color: var(--text-hover);
     background-color: #c9302c;
     border-color: transparent;
 }
@@ -665,7 +669,7 @@ a:hover {color: var(--link-color-hover);}
 .Button\/default\/2uiHU:hover {
     border-color: transparent;
     background-color: var(--button-color-hover) !important;
-    color: #fff;
+    color: var(--text-hover);
     }
 
 .Button\/primary\/1F1YL {
@@ -677,7 +681,7 @@ a:hover {color: var(--link-color-hover);}
 .Button\/primary\/1F1YL:hover {
     border-color: transparent;
     background-color: var(--button-color-hover) !important;
-    color: #fff;
+    color: var(--text-hover);
 }
 .Button\/success\/36KsU {
     border-color: var(--button-color);
@@ -687,7 +691,7 @@ a:hover {color: var(--link-color-hover);}
 .Button\/success\/36KsU:hover {
     border-color: var(--button-color-hover);
     background-color: var(--button-color-hover);
-    color: #fff;
+    color: var(--text-hover);
 }
 
 /* LOADING PAGE */
@@ -714,9 +718,11 @@ a:hover {color: var(--link-color-hover);}
     border-top: 1px solid var(--accent-color);
 }
 .ModalContent\/closeButton\/37Puk:hover {
+    color: var(--text-hover);
+}
+.EpisodeSummary\/filesHeader\/2_Kgn,.EpisodeDetailsModalContent\/tab\/3EkW8 {
     color: #fff;
 }
-
 /* INPUT */
 	.TagInput\/internalInput\/Jbb1T {
 	background-color: transparent;
@@ -777,7 +783,7 @@ a:hover {color: var(--link-color-hover);}
 		background-color: transparent;
 	}
 	.PageSidebarItem\/link\/TuHn2:hover, .PageSidebarItem\/link\/TuHn2:focus {
-		color: #FFF !important;
+		color: var(--text-hover) !important;
 		background-color: hsla(0,0%,100%,.08);
 		text-decoration: none;
 	}
@@ -834,17 +840,17 @@ a:hover {color: var(--link-color-hover);}
     background-color: rgba(0, 0, 0, .25) !important;
 	}
 	.SeriesDetailsSeason\/actionButton\/3BQuA  {
-    color: hsla(0,0%,100%,.7) !important;
+    color: var(--text) !important;
     }
     .SeriesDetailsSeason\/collapseButtonIcon\/17xZI {
         color: #bac5cc;
     }
 
 	.fa-search:hover {
-    color: #FFF !important;
+    color: var(--text-hover) !important;
 	}
 	.Icon\/default\/3C-KJ:hover {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 	}
 	.MonitorToggleButton\/toggleButton\/3CcN9 {
     color: #dadada;
@@ -883,7 +889,7 @@ a:hover {color: var(--link-color-hover);}
     }
     .IconButton\/button\/2qiGi:hover {
         background-color: transparent;
-        color: #fff;
+        color: var(--text-hover);
     }
     .IconButton\/button\/2qiGi {
         color: #bac5cc;
@@ -917,11 +923,14 @@ a:hover {color: var(--link-color-hover);}
     color: #FFF;
 	border: none;
     }
+    .TableHeaderCell\/headerCell\/DbapO {
+        color: #fff;
+        }
 
 	/* TOP MENU SERIES */
-	.PageToolbar\/toolbar\/1Lo1N {
+	.PageToolbar\/toolbar\/1Lo1N,.PageToolbarButton\/toolbarButton\/QiQEt.PageToolbarButton\/isDisabled\/343fJ {
 		background-color: rgba(0, 0, 0, .25);
-		color: hsla(0,0%,100%,.7);
+		color: var(--text);
     }
     .PageToolbarButton\/label\/10YbS {
         color: var(--text);
@@ -939,11 +948,14 @@ a:hover {color: var(--link-color-hover);}
 	/* SERIES TOP HEADER DROPDOWN */
 	.MenuItem\/menuItem\/zB-Up, .MenuContent\/menuContent\/3Zkj4 {
     background: var(--modal-bg-color);
-    color: #e1e2e3;
-	}
+    color: var(--text);
+    }
+    .MenuItem\/menuItem\/zB-Up {
+        box-shadow: black 0 0 5px 0px; 
+    }
 	.MenuItem\/menuItem\/zB-Up:hover, .MenuItem\/menuItem\/zB-Up:focus {
 		background: hsla(0,0%,100%,.08) !important;
-		color: #fbfcfc;
+		color: var(--text-hover);
 		text-decoration: none;
 	}
 	.MenuItemSeparator\/separator\/1ayq0 {
@@ -951,10 +963,10 @@ a:hover {color: var(--link-color-hover);}
 	}
 	/* SERIES TOP HEADER HOVER */
 	.PageToolbarButton\/toolbarButton\/QiQEt:hover {
-    color: #FFF;
+    color: var(--text-hover);
 	}
 	.MenuButton\/menuButton\/3nh0N:hover {
-    color: #FFF;
+    color: var(--text-hover);
 	}
 	/* ALPHABET JUMP BAR */
 	.PageJumpBar\/jumpBar\/3owcF {
@@ -972,7 +984,7 @@ a:hover {color: var(--link-color-hover);}
     }
     div[class*='EnhancedSelectInputOption']:hover { 
     background-color: rgba(255, 255, 255, 0.08);
-    color: #fff;
+    color: var(--text-hover);
     }
     .EnhancedSelectInput\/options\/3yy65 {
     border: 1px solid #1e1e1e;
@@ -1034,7 +1046,7 @@ a:hover {color: var(--link-color-hover);}
 	}
 	.TableRow\/row\/33xJE:hover {
     background-color: hsla(0,0%,100%,.08);
-    color: #FFF;
+    color: var(--text-hover);
 	}
 	.VirtualTableRow\/row\/2-JS9:hover {
     background-color: hsla(0,0%,100%,.08);
@@ -1074,6 +1086,7 @@ a:hover {color: var(--link-color-hover);}
 .CalendarEvent\/downloaded\/2vSrJ {
     background: rgb(var(--calendar-tv-available) / .7) !important;
     border-left-color: transparent !important;
+    color: #fff;
 }
 .CalendarEvent\/downloaded\/2vSrJ:hover {
     background: rgb(var(--calendar-tv-available) / .5) !important;
@@ -1082,6 +1095,7 @@ a:hover {color: var(--link-color-hover);}
 .CalendarEvent\/missing\/1y6vZ {
     background: rgb(var(--calendar-tv-missing) / .7) !important;
     border-left-color: transparent !important;
+    color: #fff;
 }
 .CalendarEvent\/missing\/1y6vZ:hover {
     background: rgb(var(--calendar-tv-missing) / .5) !important;
@@ -1090,6 +1104,7 @@ a:hover {color: var(--link-color-hover);}
 .CalendarEvent\/unaired\/3aHdN {
     background: rgb(var(--calendar-tv-Unaired) / .7) !important;
     border-left-color: transparent !important;
+    color: #fff;
 }
 .CalendarEvent\/unaired\/3aHdN:hover {
     background: rgb(var(--calendar-tv-Unaired) / .5) !important;
@@ -1098,6 +1113,7 @@ a:hover {color: var(--link-color-hover);}
 .CalendarEvent\/unmonitored\/Zvc-m {
     background: rgb(var(--calendar-tv-Unmonitored) / .7) !important;
     border-left-color: transparent !important;
+    color: #fff;
 }
 .CalendarEvent\/unmonitored\/Zvc-m:hover {
     background: rgb(var(--calendar-tv-Unmonitored) / .5) !important;
@@ -1106,6 +1122,7 @@ a:hover {color: var(--link-color-hover);}
 .CalendarEvent\/onAir\/dwaU_ {
     background: rgb(var(--calendar-tv-On-Air) / .7) !important;
     border-left-color: transparent !important;
+    color: #fff;
 }
 .CalendarEvent\/onAir\/dwaU_:hover {
     background: rgb(var(--calendar-tv-On-Air) / .5) !important;
@@ -1114,13 +1131,15 @@ a:hover {color: var(--link-color-hover);}
 .CalendarEvent\/downloading\/1kwSO {
     background: rgb(var(--calendar-tv-Downloading) / .7) !important;
     border-left-color: transparent !important;
+    color: #fff;
 }
 .CalendarEvent\/downloading\/1kwSO:hover {
     background: rgb(var(--calendar-tv-Downloading) / .5) !important;
     border-left-color: transparent !important;
 }
 	.DayOfWeek\/dayOfWeek\/1iw4D {
-		background-color: hsla(0,0%,100%,.08);
+        background-color: hsla(0,0%,100%,.08);
+        color: #fff;
     }
     .CalendarDay\/dayOfMonth\/2CzdW {
         border-bottom: 1px solid hsla(0,0%,100%,.08);
@@ -1140,7 +1159,7 @@ a:hover {color: var(--link-color-hover);}
 		border-left: 1px solid hsla(0,0%,100%,.08);
 		border-right: 1px solid hsla(0,0%,100%,.08);
 	}
-	.CalendarEvent\/seriesTitle\/3sg1o, .CalendarEvent\/episodeInfo\/IWdbW, .CalendarEvent\/airTime\/3Wzho {
+	.CalendarEvent\/seriesTitle\/3sg1o, .CalendarEvent\/episodeInfo\/IWdbW, .CalendarEvent\/airTime\/3Wzho, .Legend\/legend\/tgR0o .LegendItem\/legendItem\/zXNYn {
 		color: #ffffff !important;
 	}
 	.CalendarEvent\/event\/3Uyb9 {
@@ -1170,10 +1189,18 @@ a:hover {color: var(--link-color-hover);}
     color: #eee;
 }
 /* SETTINGS */
-
+    .PageContentBody\/innerContentBody\/tEszh .Link\/to\/6fmSq {
+        color: #fff;
+    }
 	.Settings\/summary\/3KPAv {
-		color: #fff;
-	}
+		color: var(--text);
+    }
+    .FormLabel\/large\/3Sn9u {
+        color: #fff
+    }
+    .FormLabel\/isAdvanced\/1glHh {
+        color: #ff902b;
+    }
 	/* MEDIA MANAGEMENT - FILE NAME TOKENS */
 	.NamingOption\/option\/giCGd {
 	    border: 1px solid transparent;
@@ -1194,12 +1221,12 @@ a:hover {color: var(--link-color-hover);}
 	.Card\/card\/1iGZk, .QualityProfiles\/addQualityProfile\/2U2Io {
     background-color: rgba(0,0,0,.45);
     box-shadow: 0 0 10px 1px #000000;
-    color: #fff;
+    color: var(--text);
 	}
 	.QualityProfiles\/center\/1iiKm, .LanguageProfiles\/center\/7EV_2, .ReleaseProfiles\/center\/114Qx {
 	background-color: transparent;
     border: none;
-    color: #c2c6c8;
+    color: var(--text);
 	}
     .QualityProfileItem\/qualityProfileItem\/VFp-W, .QualityProfileItemGroup\/qualityProfileItemGroup\/2U1l5, .LanguageProfileItem\/languageProfileItem\/18XGg {
     border: none;
@@ -1218,7 +1245,7 @@ a:hover {color: var(--link-color-hover);}
 	.Indexers\/center\/11Csq {
 	background-color: transparent;
     border: none;
-    color: #c2c6c8;
+    color: var(--text);
     }
     
     /* INDEXERS */
@@ -1227,21 +1254,21 @@ a:hover {color: var(--link-color-hover);}
 	.DownloadClients\/center\/FvACx {
 	background-color: transparent;
     border: none;
-    color: #c2c6c8;
+    color: var(--text);
     }
 
     /*INPORT LISTS */
     .ImportLists\/center\/17Qdu{
         background-color: transparent;
         border: none;
-        color: #c2c6c8;
+        color: var(--text);
     }
 
 	/* CONNECTIONS */
 	.Notifications\/center\/8iwmy {
 	background-color: transparent;
     border: none;
-    color: #c2c6c8;
+    color: var(--text);
 	}
 
 	/* LOG */
