@@ -321,6 +321,15 @@ tbody>tr:last-child td {
 .progress-bar-info {
   background-color: var(--nav-button-color);
 }
+.glyphicon-compressed:before{
+  color: #888;
+}
+.direct-unpack span{
+  color: #888;
+}
+.processing-download > div {
+  background-color: #888;
+}
 
 
 .multioperations-selector {
