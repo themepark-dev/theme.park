@@ -25,8 +25,8 @@ body {
   font-size: 1.4em !important;
   color: white;
 }
-  /* Scrollbar */  
-  @media only screen and (min-width: 768px) {  
+  /* Scrollbar */
+  @media only screen and (min-width: 768px) {
     html {
         height: 100%;
         width: 100%;
@@ -105,6 +105,12 @@ body {
 }
 .caret {
   border-top-color: white !important;
+}
+svg.peity polygon {
+  fill: var(--nav-button-color) !important;
+}
+svg.peity polyline {
+  stroke: var(--nav-button-color) !important;
 }
 
 /* BUTTONS */
@@ -300,6 +306,29 @@ tbody>tr:last-child td {
 .table-messages .table-messages-remove {
   border-bottom: 1px solid transparent!important;
   background: rgba(255, 255, 255, 0.25);
+}
+.progress {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+.progress-bar strong {
+  color: hsla(0,0%,100%,.7) !important;
+}
+.progress-bar + span{
+  color: hsla(0,0%,100%,.7) !important;
+}
+.progress-bar-info {
+  background-color: var(--nav-button-color);
+}
+.glyphicon-compressed:before{
+  color: #888;
+}
+.direct-unpack span{
+  color: #888;
+}
+.processing-download > div {
+  background-color: #888;
 }
 
 
@@ -614,4 +643,12 @@ label {
 }
 #content a, #content a:hover, #content a:active, #content a:visited, #serverResponse {
   color: #eee;
+}
+
+/* interface configuration */
+#modal-options .table-server-connections th {
+  border-left: none;
+}
+#modal-options .table-server-connections th:last-child {
+  border-right: none;
 }
