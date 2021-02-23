@@ -644,3 +644,11 @@ label {
 #content a, #content a:hover, #content a:active, #content a:visited, #serverResponse {
   color: #eee;
 }
+
+/* interface configuration */
+#modal-options .table-server-connections th {
+  border-left: none;
+}
+#modal-options .table-server-connections th:last-child {
+  border-right: none;
+}
