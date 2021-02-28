@@ -1,7 +1,7 @@
 FROM scratch
 
 RUN \
-echo "::theme.park:: Installing svn package" && \
+echo "THEMEPARK :: INFO :: Installing svn package" && \
 apt-get update \
 apt-get install subversion -y
 

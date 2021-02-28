@@ -26,12 +26,12 @@ if [[ ! -d /themepark ]]; then
     echo '| Downloading WebUI files from github |'
     echo '---------------------------------------'
     svn export https://github.com/qbittorrent/qBittorrent/trunk/src/webui/www /themepark
-    printf 'Downloaded qBittorrent webui to "/themepark"\n'
+    printf '\nDownloaded qBittorrent webui to "/themepark"\n'
     svn export https://github.com/qbittorrent/qBittorrent/trunk/src/icons /temp 
     cp -r /temp /themepark/public
     cp -r /temp /themepark/private
     rm -rf /temp
-    printf 'Downloaded qBittorrent webui icons to "/themepark"\n'
+    printf '\nDownloaded qBittorrent webui icons to "/themepark"\n'
 fi
 
 # Adding stylesheets
