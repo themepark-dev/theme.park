@@ -4,6 +4,14 @@ echo '------------------------------'
 echo '| qBittorrent theme.park Mod |'
 echo '------------------------------'
 
+if [[ ! -d /usr/bin/svn ]]; then
+echo '--------------------------'
+echo '| Installing svn package |'
+echo '--------------------------'
+ apt-get update && \
+ apt-get install -y subversion
+fi
+
 # Display variables for troubleshooting
 echo -e "Variables set:\\n\
 'TP_DOMAIN'=${TP_DOMAIN}\\n\
