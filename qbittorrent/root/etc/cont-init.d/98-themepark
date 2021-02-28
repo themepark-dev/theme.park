@@ -56,7 +56,7 @@ if ! grep -q "${TP_DOMAIN}" /themepark/private/index.html; then
     echo '| Adding the stylesheet to private index.html |'
     echo '-----------------------------------------------'
     sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/theme.park\/CSS\/themes\/qbittorrent\/${TP_THEME}.css'><\/head> /g" /themepark/private/index.html
-    printf 'Stylesheet set to %s on private index.html \n'"${TP_THEME}"
+    printf 'Stylesheet set to %s on private index.html\n' "${TP_THEME}"
 fi
 
 if ! grep -q "WebUI\\\RootFolder" /config/qBittorrent/qBittorrent.conf; then
