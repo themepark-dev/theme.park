@@ -37,9 +37,9 @@ if [[ ! -d /themepark ]]; then
     svn export https://github.com/qbittorrent/qBittorrent/trunk/src/webui/www /themepark
     printf '\nDownload finished\n\n'
     printf '\nDownloading qBittorrent webui icons to "/themepark/public"..please wait\n'
-    svn export https://github.com/qbittorrent/qBittorrent/trunk/src/icons /themepark/public
+    svn export --force https://github.com/qbittorrent/qBittorrent/trunk/src/icons /themepark/public/icons
     printf '\nDownloading qBittorrent webui icons to "/themepark/private"..please wait\n'
-    svn export https://github.com/qbittorrent/qBittorrent/trunk/src/icons /themepark/private
+    svn export --force https://github.com/qbittorrent/qBittorrent/trunk/src/icons /themepark/private/icons
     printf '\nDownload finished\n\n'
 fi
 
