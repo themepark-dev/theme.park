@@ -20,13 +20,18 @@ if [[ -z ${TP_THEME} ]]; then
     TP_THEME='organizr-dark'
 fi
 
-# Copying template
+# Downloading fresh webui files from source.
 if [[ ! -d /themepark ]]; then
-    echo '------------------------'
-    echo '| Copying the template |'
-    echo '------------------------'
-    cp -r /defaults/theme /themepark
-    printf 'Template copied to "/themepark"\n'
+    echo '---------------------------------------'
+    echo '| Downloading WebUI files from github |'
+    echo '---------------------------------------'
+    svn export https://github.com/qbittorrent/qBittorrent/trunk/src/webui/www /themepark
+    printf 'Downloaded qBittorrent webui to "/themepark"\n'
+    svn export https://github.com/qbittorrent/qBittorrent/trunk/src/icons /temp 
+    cp -r /temp /themepark/public
+    cp -r /temp /themepark/private
+    rm -rf /temp
+    printf 'Downloaded qBittorrent webui icons to "/themepark"\n'
 fi
 
 # Adding stylesheets
@@ -43,7 +48,7 @@ if ! grep -q "${TP_DOMAIN}" /themepark/private/index.html; then
     echo '| Adding the stylesheet to private index.html |'
     echo '-----------------------------------------------'
     sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/theme.park\/CSS\/themes\/qbittorrent\/${TP_THEME}.css'><\/head> /g" /themepark/private/index.html
-    printf 'Stylesheet set to %s\n private index.html' "${TP_THEME}"
+    printf 'Stylesheet set to %s on private index.html \n'"${TP_THEME}"
 fi
 
 if ! grep -q "WebUI\\\RootFolder" /config/qBittorrent/qBittorrent.conf; then
