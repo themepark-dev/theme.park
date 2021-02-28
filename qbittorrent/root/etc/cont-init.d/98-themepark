@@ -34,12 +34,13 @@ if [[ ! -d /themepark ]]; then
     echo '| Downloading WebUI files from github |'
     echo '---------------------------------------'
     printf '\nDownloading qBittorrent webui to "/themepark"..please wait\n'
-    svn export https://github.com/qbittorrent/qBittorrent/trunk/src/webui/www /themepark
+    svn export --quiet https://github.com/qbittorrent/qBittorrent/trunk/src/webui/www /themepark
     printf '\nDownload finished\n\n'
     printf '\nDownloading qBittorrent webui icons to "/themepark/xxx"..please wait\n'
     svn export --force --quiet https://github.com/qbittorrent/qBittorrent/trunk/src/icons /temp
     cp -a /temp/. /themepark/public/icons
     cp -a /temp/. /themepark/private/icons
+    rm -rf /temp
     printf '\nDownload finished\n\n'
 fi
 
