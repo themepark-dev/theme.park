@@ -4,7 +4,7 @@ echo '------------------------------'
 echo '| qBittorrent theme.park Mod |'
 echo '------------------------------'
 
-if [[ ! -d /usr/bin/svn ]]; then
+if ! [[ -x "$(command -v svn)" ]]; then
 echo '--------------------------'
 echo '| Installing svn package |'
 echo '--------------------------'
@@ -33,13 +33,15 @@ if [[ ! -d /themepark ]]; then
     echo '---------------------------------------'
     echo '| Downloading WebUI files from github |'
     echo '---------------------------------------'
+    printf '\nDownloading qBittorrent webui to "/themepark"..please wait\n'
     svn export https://github.com/qbittorrent/qBittorrent/trunk/src/webui/www /themepark
-    printf '\nDownloaded qBittorrent webui to "/themepark"\n'
+    printf '\nDownload finished\n\n'
+    printf '\nDownloading qBittorrent webui icons to "/themepark"..please wait\n'
     svn export https://github.com/qbittorrent/qBittorrent/trunk/src/icons /temp 
     cp -r /temp /themepark/public
     cp -r /temp /themepark/private
     rm -rf /temp
-    printf '\nDownloaded qBittorrent webui icons to "/themepark"\n'
+    printf '\nDownload finished\n\n'
 fi
 
 # Adding stylesheets
@@ -56,7 +58,7 @@ if ! grep -q "${TP_DOMAIN}" /themepark/private/index.html; then
     echo '| Adding the stylesheet to /themepark/private/index.html |'
     echo '----------------------------------------------------------'
     sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/theme.park\/CSS\/themes\/qbittorrent\/${TP_THEME}.css'><\/head> /g" /themepark/private/index.html
-    printf 'Stylesheet set to %s on private index.html\n' "${TP_THEME}"
+    printf 'Stylesheet set to %s on private index.html\n\n' "${TP_THEME}"
 fi
 
 if ! grep -q "WebUI\\\RootFolder" /config/qBittorrent/qBittorrent.conf; then
