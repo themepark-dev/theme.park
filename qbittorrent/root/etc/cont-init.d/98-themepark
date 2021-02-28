@@ -36,10 +36,10 @@ if [[ ! -d /themepark ]]; then
     printf '\nDownloading qBittorrent webui to "/themepark"..please wait\n'
     svn export https://github.com/qbittorrent/qBittorrent/trunk/src/webui/www /themepark
     printf '\nDownload finished\n\n'
-    printf '\nDownloading qBittorrent webui icons to "/themepark/public"..please wait\n'
-    svn export --force https://github.com/qbittorrent/qBittorrent/trunk/src/icons /themepark/public/icons
-    printf '\nDownloading qBittorrent webui icons to "/themepark/private"..please wait\n'
-    svn export --force https://github.com/qbittorrent/qBittorrent/trunk/src/icons /themepark/private/icons
+    printf '\nDownloading qBittorrent webui icons to "/themepark/xxx"..please wait\n'
+    svn export --force --quiet https://github.com/qbittorrent/qBittorrent/trunk/src/icons /temp
+    cp -a /temp/. /themepark/public/icons
+    cp -a /temp/. /themepark/private/icons
     printf '\nDownload finished\n\n'
 fi
 
