@@ -30,7 +30,7 @@ Applications that support Docker Mods installation.
 | [Radarr][radarr]           | [Calibre-web][calibreweb]          | [The Lounge][thelounge]        |
 | [Lidarr][lidarr]           | [ruTorrent][rutorrent]             | [Portainer][portainer]         |
 | [Bazarr][bazarr]           | [Synclounge][synclounge]           | [Lazylibrarian][lazylibrarian] |
-| [Readarr][readarr]         | [Jackett][jackett]                 |                                |
+| [Readarr][readarr]         | [Jackett][jackett]                 | [qBittorrent][qbittorrent]     |
 | [Plex][plex]               | [Librespeed][html5speedtest]       |                                |
 | [Jellyfin/Emby][jelly]     | [NZBGet][nzbget]                   |                                |
 | [Tautulli][tautulli]       | [SABnzbd][sabnzbd]                 |                                |
@@ -77,6 +77,7 @@ Applications that support Docker Mods installation.
 [webtools]: https://github.com/gilbN/theme.park/wiki/Webtools
 [resilio-sync]: https://github.com/gilbN/theme.park/wiki/Resilio-Sync
 [gitea]: https://github.com/gilbN/theme.park/wiki/Gitea
+[qbittorrent]: https://github.com/gilbN/theme.park/wiki/qBittorrent
 
 ***
 
