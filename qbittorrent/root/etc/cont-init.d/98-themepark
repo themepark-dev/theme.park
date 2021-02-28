@@ -38,8 +38,8 @@ if [[ ! -d /themepark ]]; then
     printf '\nDownload finished\n\n'
     printf '\nDownloading qBittorrent webui icons to "/themepark"..please wait\n'
     svn export https://github.com/qbittorrent/qBittorrent/trunk/src/icons /temp 
-    cp -a /temp. /themepark/public
-    cp -a /temp. /themepark/private
+    cp -a /temp /themepark/public
+    cp -a /temp /themepark/private
     rm -rf /temp
     printf '\nDownload finished\n\n'
 fi
