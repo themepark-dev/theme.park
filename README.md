@@ -208,8 +208,8 @@
 </td>
 </td>
 <td style="width: 90px; height: 40px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Unraid-login-page"><img src="https://i.imgur.com/pWBOIrj.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Unraid-login-page">Unraid</a></p>
+<p><a href="https://github.com/gilbN/theme.park/wiki/Unraid"><img src="https://i.imgur.com/pWBOIrj.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://github.com/gilbN/theme.park/wiki/Unraid">Unraid</a></p>
 </td>
 </tr>
 </tbody>
