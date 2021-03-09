@@ -1,0 +1,159 @@
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+
+/*		   		        Made by @gilbN					 */
+/* 			      https://github.com/gilbN/theme.park			 */
+
+  body {
+      color: var(--text);
+      background: var(--main-bg-color);
+  }
+  a,.blue-text {
+     color: var(--link-color);
+  }
+  #template {
+      background: var(--main-bg-color);
+  }
+  #menu {
+    background-color: #000;
+}
+  /*DASHBOARD*/
+  table.share_status.dashboard {
+      background-color: rgba(0, 0, 0, .15);
+      border: 1px solid rgba(255, 255, 255, .25);
+  }
+  table.share_status.dashboard tr>td.next {
+      border-top: 1px solid rgba(255, 255, 255, .25);
+  }
+  span.outer.solid {
+      background-color: transparent;
+  }
+  
+  .sys {
+      background: rgba(0, 0, 0, .35);
+  }
+  .usage-disk>span:first-child {
+      background-color: #4caf50
+  }
+  
+  .green-text, .passed, .green {
+      color: #4caf50;
+  }
+  
+  /*MAIN*/
+  #title {
+      border-bottom: 1px solid rgba(255, 255, 255, .25);
+      background-color: rgba(0, 0, 0, .5);
+      color: var(--text)
+  }
+  table {
+      background-color: rgb(0 0 0 / 25%);
+  }
+  table.disk_status thead tr:first-child td, 
+  table tbody tr.tr_last,
+  table.share_status tbody tr:nth-child(even),
+  table.share_status thead tr:first-child td,
+  table.tablesorter thead tr th,
+  table.tablesorter tbody tr:nth-child(even),
+  table.tablesorter thead tr .tablesorter-headerAsc, table.tablesorter thead tr .tablesorter-headerDesc{
+      background-color: rgba(0, 0, 0, .25);
+  }
+  table.disk_status tbody tr:nth-child(even) {
+      background-color: rgba(0, 0, 0, .25);
+  }
+  table.disk_status thead tr:last-child {
+      border-bottom: 1px solid rgba(255, 255, 255, .25);
+  }
+  table.tablesorter thead tr {
+      border-bottom: rgba(255, 255, 255, .25) 1px solid;
+  }
+  
+  table tbody tr.tr_last {
+      border-top: 1px solid rgba(255, 255, 255, .25);
+  }
+  
+  /*BUTTON*/
+  input[type=button], input[type=reset], input[type=submit], button, button[type=button], a.button {
+      color: var(--button-text);
+      text-shadow: var(--text-shadow) var(--text-shadow-color);
+      background: linear-gradient(90deg, var(--button-color) 0, var(--button-color)) 0 0 no-repeat, linear-gradient(90deg, var(--button-color) 0, var(--button-color)) 0 100% no-repeat, linear-gradient(0deg, var(--button-color) 0, var(--button-color)) 0 100% no-repeat, linear-gradient(0deg, var(--button-color) 0, var(--button-color)) 100% 100% no-repeat;
+      background: -webkit-gradient(linear, left top, right top, from(var(--button-color)), to(var(--button-color))) 0 0 no-repeat, -webkit-gradient(linear, left top, right top, from(var(--button-color)), to(var(--button-color))) 0 100% no-repeat, -webkit-gradient(linear, left bottom, left top, from(var(--button-color)), to(var(--button-color))) 0 100% no-repeat, -webkit-gradient(linear, left bottom, left top, from(var(--button-color)), to(var(--button-color))) 100% 100% no-repeat;
+      background-size: 100% 2px, 100% 2px, 2px 100%, 2px 100%;
+      border: 1px solid transparent;
+  }
+  
+  input:hover[type=button], input:hover[type=reset], input:hover[type=submit], button:hover, button:hover[type=button], a.button:hover {
+      color: var(--button-text);
+      text-shadow: var(--text-shadow) var(--button-color-hover);
+      box-shadow: var(--box-shadow) var(--button-color-hover);
+      background-color: var(--button-color-hover);
+      background: -webkit-gradient(linear, left top, right top, from(var(--button-color-hover)), to(var(--button-color-hover)));
+      background: linear-gradient(90deg, var(--button-color-hover) 0, var(--button-color-hover));
+  }
+  .switch-button-background.checked {
+      background-color: #4caf50;
+  }
+  .switch-button-label.on {
+      color: #4caf50;
+  }
+  
+  /* BAR GAUGES */
+  .usage-disk {
+      color: white;
+  }
+  
+  /* USERS */
+  div.user-list {
+      border: 1px solid rgba(255, 255, 255, .15);
+      background-color: rgba(255, 255, 255, .05);
+  }
+  
+  /* SETTINGS */
+  label.checkbox input:checked ~ .checkmark {
+      background: var(--button-color);
+  }
+  
+  .logLine {
+      background: transparent;
+  }
+  .logLine.spacing {
+      color: var(--text);
+      background: var(--modal-bg-color);
+  }
+  #sb-info-inner, #sb-loading-inner, div.sb-message,#sb-title, #sb-title-inner {
+      color: var(--text);
+      background-color: transparent;
+  }
+  #sb-wrapper {
+      border: 1px rgba(0, 0, 0, 0) solid;
+      color: var(--text);
+      background: var(--modal-bg-color);
+  }
+  #sb-body, #sb-loading,#sb-body-inner, iframe {
+      color: var(--text);
+      background: transparent !important;
+  }
+  
+  /* CA */
+  .ca_holderDocker {
+      background-color: rgb(255 255 255 / 10%);
+      border-color: rgb(255 255 255 / 25%);
+  }
+  .selectedMenu, .hoverMenu {
+      color: var(--link-color);
+  }
+  .ca_holderFav {
+      background: var(--button-color-hover) !important;
+      color: var(--text-hover)
+  }
+
+  /* AZURE THEME*/
+  div.frame,div.tabs {
+    background: var(--main-bg-color);
+}
