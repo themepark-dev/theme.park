@@ -97,7 +97,7 @@
       background: linear-gradient(90deg, var(--button-color-hover) 0, var(--button-color-hover));
   }
   .switch-button-background.checked {
-      background-color: #4caf50;
+      background-color: #4caf50 !important;
   }
   .switch-button-label.on {
       color: #4caf50;
