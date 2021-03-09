@@ -139,7 +139,11 @@
       color: var(--text);
       background: transparent !important;
   }
-  
+  /* FOOTER */
+  #footer {
+    color: var(--text);
+    background: var(--main-bg-color);
+}
   /* CA */
   .ca_holderDocker {
       background-color: rgb(255 255 255 / 10%);
