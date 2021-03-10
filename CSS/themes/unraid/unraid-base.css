@@ -21,7 +21,7 @@
       background: var(--main-bg-color);
   }
   #menu {
-    background-color: #000;
+    background: var(--main-bg-color);
 }
   /*DASHBOARD*/
   table.share_status.dashboard {
