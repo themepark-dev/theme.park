@@ -317,3 +317,12 @@ div.shade-black {
 .sweet-alert p {
     color: var(--text);
 }
+
+/*HELP TEXT*/
+
+blockquote {
+    border-top: 2px solid rgb(255 255 255 / 25%);
+    border-bottom: 2px solid rgb(255 255 255 / 25%);
+    color: var(--text);
+    background-color: rgb(255 255 255 / 10%);
+}
