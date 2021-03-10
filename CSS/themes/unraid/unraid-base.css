@@ -255,7 +255,7 @@ div.tabs {
 
 /*DROPDOWN MENU*/
 .dropdown-menu {
-    background-color: var(--modal-bg-color);
+    background: var(--modal-bg-color);
 }
 
 .dropdown-menu a {
