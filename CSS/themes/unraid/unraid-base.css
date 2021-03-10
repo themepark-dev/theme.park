@@ -55,7 +55,9 @@ span.outer.solid {
     background-color: transparent;
 }
 
-.sys,.usage-disk, .usage-bar {
+.sys,
+.usage-disk,
+.usage-bar {
     background: rgba(0, 0, 0, .35);
 }
 
@@ -118,7 +120,8 @@ input[type=reset],
 input[type=submit],
 button,
 button[type=button],
-a.button {
+a.button,
+.sweet-alert button {
     color: var(--button-text);
     text-shadow: var(--text-shadow) var(--text-shadow-color);
     background: linear-gradient(90deg, var(--button-color) 0, var(--button-color)) 0 0 no-repeat, linear-gradient(90deg, var(--button-color) 0, var(--button-color)) 0 100% no-repeat, linear-gradient(0deg, var(--button-color) 0, var(--button-color)) 0 100% no-repeat, linear-gradient(0deg, var(--button-color) 0, var(--button-color)) 100% 100% no-repeat;
@@ -132,7 +135,8 @@ input:hover[type=reset],
 input:hover[type=submit],
 button:hover,
 button:hover[type=button],
-a.button:hover {
+a.button:hover,
+.sweet-alert button:hover {
     color: var(--button-text);
     text-shadow: var(--text-shadow) var(--button-color-hover);
     box-shadow: var(--box-shadow) var(--button-color-hover);
@@ -238,15 +242,19 @@ a.ca_appreadmore:hover {
 .tooltipster-sidetip.tooltipster-right .tooltipster-box {
     border-left: 3px solid var(--accent-color) !important;
 }
+
 .tooltipster-sidetip.tooltipster-bottom .tooltipster-box {
     border-top: 3px solid var(--accent-color) !important;
 }
+
 .tooltipster-sidetip.tooltipster-right .tooltipster-arrow-border {
     border-right-color: var(--accent-color) !important;
 }
+
 .tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow-border {
     border-bottom-color: var(--accent-color) !important;
 }
+
 .appIconsPopUp:hover {
     color: var(--accent-color) !important;
 }
@@ -297,4 +305,15 @@ div.shade-black {
 
 ::-webkit-input-placeholder {
     color: var(--text-muted) !important;
+}
+
+/* MODAL */
+
+.sweet-alert {
+    background: var(--modal-bg-color) !important;
+}
+
+.sweet-alert h2,
+.sweet-alert p {
+    color: var(--text);
 }
