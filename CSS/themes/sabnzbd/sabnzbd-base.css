@@ -477,14 +477,14 @@ table {
 }
 
 /*Input*/
-input[type="text"], input[type="email"], input[type="url"], input[type="number"], input[type="password"], textarea, select {
+input[type="text"], input[type="email"], input[type="url"], input[type="number"], input[type="password"], input[type="date"], textarea, select {
   border: none;
   background-color: rgba(255, 255, 255, 0.25);
   border-radius: 3px !important;
   color: #fff !important;
   outline: none;
 }
-input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="number"]:focus, input[type="password"]:focus, textarea:focus, select:focus {
+input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="date"]:focus, textarea:focus, select:focus {
   border: none;
   background-color: rgb(25, 26, 28);
   border-radius: 3px !important;
