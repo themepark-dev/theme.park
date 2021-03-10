@@ -252,3 +252,29 @@ div.frame,
 div.tabs {
     background: var(--main-bg-color);
 }
+
+/*DROPDOWN MENU*/
+.dropdown-menu {
+    background-color: var(--modal-bg-color);
+}
+
+.dropdown-menu a {
+    color: var(--text);
+}
+
+.dropdown-menu .divider {
+    background-color: rgb(255 255 255 / 10%);
+    border-bottom: 1px solid rgb(255 255 255 / 10%);
+}
+
+.dropdown-menu li>a:hover,
+.dropdown-menu li>a:focus,
+.dropdown-submenu:hover>a {
+    color: var(--text-hover);
+    background: rgb(255 255 255 / 10%);
+}
+
+/*VM MANAGER*/
+div.shade-black {
+    background-color: rgb(0 0 0 / 15%);
+}
