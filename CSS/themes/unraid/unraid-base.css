@@ -23,6 +23,9 @@
   #menu {
     background: var(--main-bg-color);
 }
+#nav-block #nav-item:focus:after, #nav-block #nav-item:hover:after {
+    background: var(--accent-color);
+}
   /*DASHBOARD*/
   table.share_status.dashboard {
       background-color: rgba(0, 0, 0, .15);
