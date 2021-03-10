@@ -211,8 +211,8 @@ div.tab [type=radio]+label:hover {
 
 /* CA */
 .ca_holderDocker {
-    background-color: rgb(255 255 255 / 10%);
-    border-color: rgb(255 255 255 / 25%);
+    background-color: rgb(255 255 255 / 10%) !important;
+    border-color: rgb(255 255 255 / 25%) !important;
 }
 
 .selectedMenu,
@@ -220,9 +220,9 @@ div.tab [type=radio]+label:hover {
     color: var(--link-color) !important;
 }
 
-.ca_holderFav {
+.ca_templatesDisplay .ca_holderFav {
     background: var(--button-color-hover) !important;
-    color: var(--text-hover)
+    color: var(--text-hover) !important;
 }
 
 a.ca_appreadmore:hover {
@@ -236,20 +236,23 @@ a.ca_appreadmore:hover {
 }
 
 .tooltipster-sidetip.tooltipster-right .tooltipster-box {
-    border-left: 3px solid var(--accent-color);
+    border-left: 3px solid var(--accent-color) !important;
 }
-
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-box {
+    border-top: 3px solid var(--accent-color) !important;
+}
 .tooltipster-sidetip.tooltipster-right .tooltipster-arrow-border {
-    border-right-color: var(--accent-color);
+    border-right-color: var(--accent-color) !important;
 }
-
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow-border {
+    border-bottom-color: var(--accent-color) !important;
+}
 .appIconsPopUp:hover {
-    text-decoration: none;
-    color: var(--accent-color);
+    color: var(--accent-color) !important;
 }
 
 a.popUpLink:hover {
-    color: var(--accent-color-hover);
+    color: var(--accent-color-hover) !important;
 }
 
 /* AZURE THEME*/
