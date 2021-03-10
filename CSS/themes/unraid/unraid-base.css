@@ -28,6 +28,14 @@ a,
     background: var(--main-bg-color);
 }
 
+#header .text-left {
+    border-right: solid medium var(--accent-color);
+}
+
+#header path {
+    fill: var(--accent-color);
+}
+
 #nav-block #nav-item:focus:after,
 #nav-block #nav-item:hover:after {
     background: var(--accent-color);
@@ -184,6 +192,12 @@ iframe {
     background: transparent !important;
 }
 
+/* PLUGINS */
+div.tab [type=radio]:checked+label,
+div.tab [type=radio]+label:hover {
+    border: 1px solid var(--accent-color);
+}
+
 /* FOOTER */
 #footer {
     color: var(--text);
@@ -198,12 +212,39 @@ iframe {
 
 .selectedMenu,
 .hoverMenu {
-    color: var(--link-color);
+    color: var(--link-color) !important;
 }
 
 .ca_holderFav {
     background: var(--button-color-hover) !important;
     color: var(--text-hover)
+}
+
+a.ca_appreadmore:hover {
+    color: var(--accent-color-hover) !important;
+}
+
+.ca_bottomLine .appIcons:hover,
+.ca_bottomLine .unpinned:hover {
+    text-decoration: none;
+    color: var(--accent-color) !important;
+}
+
+.tooltipster-sidetip.tooltipster-right .tooltipster-box {
+    border-left: 3px solid var(--accent-color);
+}
+
+.tooltipster-sidetip.tooltipster-right .tooltipster-arrow-border {
+    border-right-color: var(--accent-color);
+}
+
+.appIconsPopUp:hover {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+a.popUpLink:hover {
+    color: var(--accent-color-hover);
 }
 
 /* AZURE THEME*/
