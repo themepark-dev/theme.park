@@ -98,7 +98,7 @@ table.disk_status tbody tr:nth-child(even) {
 }
 
 table.disk_status thead tr:last-child {
-    border-bottom: 1px solid rgb(81 103 109);
+    border-bottom: 1px solid rgb(160, 160, 160);
 }
 
 table.tablesorter thead tr {
