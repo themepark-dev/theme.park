@@ -121,7 +121,8 @@ input[type=submit],
 button,
 button[type=button],
 a.button,
-.sweet-alert button {
+.sweet-alert button,
+#template button[type=button], #template button {
     color: var(--button-text);
     text-shadow: var(--text-shadow) var(--text-shadow-color);
     background: linear-gradient(90deg, var(--button-color) 0, var(--button-color)) 0 0 no-repeat, linear-gradient(90deg, var(--button-color) 0, var(--button-color)) 0 100% no-repeat, linear-gradient(0deg, var(--button-color) 0, var(--button-color)) 0 100% no-repeat, linear-gradient(0deg, var(--button-color) 0, var(--button-color)) 100% 100% no-repeat;
@@ -136,7 +137,8 @@ input:hover[type=submit],
 button:hover,
 button:hover[type=button],
 a.button:hover,
-.sweet-alert button:hover {
+.sweet-alert button:hover,
+#template button[type=button]:hover, #template button:hover {
     color: var(--button-text);
     text-shadow: var(--text-shadow) var(--button-color-hover);
     box-shadow: var(--box-shadow) var(--button-color-hover);
