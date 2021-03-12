@@ -122,7 +122,8 @@ button,
 button[type=button],
 a.button,
 .sweet-alert button,
-#template button[type=button], #template button {
+#template button[type=button],
+#template button {
     color: var(--button-text);
     text-shadow: var(--text-shadow) var(--text-shadow-color);
     background: linear-gradient(90deg, var(--button-color) 0, var(--button-color)) 0 0 no-repeat, linear-gradient(90deg, var(--button-color) 0, var(--button-color)) 0 100% no-repeat, linear-gradient(0deg, var(--button-color) 0, var(--button-color)) 0 100% no-repeat, linear-gradient(0deg, var(--button-color) 0, var(--button-color)) 100% 100% no-repeat;
@@ -138,7 +139,8 @@ button:hover,
 button:hover[type=button],
 a.button:hover,
 .sweet-alert button:hover,
-#template button[type=button]:hover, #template button:hover {
+#template button[type=button]:hover,
+#template button:hover {
     color: var(--button-text);
     text-shadow: var(--text-shadow) var(--button-color-hover);
     box-shadow: var(--box-shadow) var(--button-color-hover);
@@ -249,11 +251,16 @@ a.ca_appreadmore:hover {
     border-top: 3px solid var(--accent-color) !important;
 }
 
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-border {
+    border-top-color: var(--accent-color) !important;
+}
+
 .tooltipster-sidetip.tooltipster-right .tooltipster-arrow-border {
     border-right-color: var(--accent-color) !important;
 }
 
-.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow-border {
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow-border,
+.tooltipster-sidetip.tooltipster-top .tooltipster-box {
     border-bottom-color: var(--accent-color) !important;
 }
 
@@ -311,8 +318,12 @@ div.shade-black {
 
 /* MODAL */
 
-.sweet-alert {
+/* .sweet-alert {
     background: var(--modal-bg-color) !important;
+} */
+
+.showSweetAlert {
+    background: var(--modal-bg-color);
 }
 
 .sweet-alert h2,
