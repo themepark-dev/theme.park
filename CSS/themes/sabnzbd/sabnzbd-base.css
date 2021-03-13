@@ -98,6 +98,9 @@ body {
   background: var(--modal-bg-color);
   background-color: rgb(25, 26, 28);
 }
+.main-notification-box {
+  background-color: var(--modal-bg-color);
+}
 .form-control:focus {
   border-color: #ffffff;
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 255, 255, 0.6);
@@ -200,12 +203,12 @@ svg.peity polyline {
 }
 .btn-default.fileBrowser {
   color: #fff;
-  background-color: #337ab7;
+  background-color: var(--default-button-color);
   border-color: transparent;
 }
 .btn-default.fileBrowser:hover, .btn-default.fileBrowser:focus, .btn-default.fileBrowser:active {
   color: #fff !important;
-  background-color: #458fce !important;
+  background-color: var(--default-button-color-hover) !important;
   border-color: transparent !important;
 }
 
@@ -234,12 +237,12 @@ svg.peity polyline {
 }
 .btn-default.patternKey {
   color: #fff !important;
-  background-color: #337ab7;
+  background-color: var(--default-button-color);
   border-color: transparent;
 }
 .btn-default.patternKey:hover {
   color: #fff !important;
-  background-color: #458fce;
+  background-color: var(--default-button-color-hover);
   border-color: transparent;
 }
 
@@ -257,12 +260,12 @@ input[type="button"]:hover, input[type="submit"]:hover, input[type="button"]:act
 /* file button */
 .btn-default.btn-file {
   color: #fff;
-  background-color: #337ab7;
+  background-color: var(--default-button-color);
   border-color: transparent;
 }
 .btn-default.btn-file:hover, .btn-default.btn-file:active, .btn-default.btn-file:focus {
   color: #fff !important;
-  background-color: #458fce !important;
+  background-color: var(--default-button-color-hover) !important;
   border-color: transparent !important;
 }
 
@@ -318,8 +321,8 @@ tbody>tr:last-child td {
 .progress-bar + span{
   color: hsla(0,0%,100%,.7) !important;
 }
-.progress-bar-info {
-  background-color: var(--nav-button-color);
+.progress-bar-info, .progress-bar {
+  background-color: var(--nav-button-color) !important;
 }
 .glyphicon-compressed:before{
   color: #888;
