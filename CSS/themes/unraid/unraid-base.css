@@ -37,7 +37,8 @@ a,
 }
 
 #nav-block #nav-item:focus:after,
-#nav-block #nav-item:hover:after {
+#nav-block #nav-item:hover:after,
+#nav-block #nav-item.active:after {
     background: var(--accent-color);
 }
 
@@ -123,7 +124,7 @@ button[type=button],
 a.button,
 .sweet-alert button,
 #template button[type=button],
-#template button {
+#template button{
     color: var(--button-text);
     text-shadow: var(--text-shadow) var(--text-shadow-color);
     background: linear-gradient(90deg, var(--button-color) 0, var(--button-color)) 0 0 no-repeat, linear-gradient(90deg, var(--button-color) 0, var(--button-color)) 0 100% no-repeat, linear-gradient(0deg, var(--button-color) 0, var(--button-color)) 0 100% no-repeat, linear-gradient(0deg, var(--button-color) 0, var(--button-color)) 100% 100% no-repeat;
@@ -338,4 +339,35 @@ blockquote {
     border-bottom: 2px solid rgb(255 255 255 / 25%);
     color: var(--text);
     background-color: rgb(255 255 255 / 10%);
+}
+
+/* MY SERVERS */
+.UnraidUPC .--hasBanner-custom .UnraidUPC-dropdown {
+    background-color: var(--modal-bg-color) !important;
+    --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 50%) !important;
+    -webkit-box-shadow: var(--tw-ring-offset-shadow,0 0 transparent),var(--tw-ring-shadow,0 0 transparent),var(--tw-shadow);
+    box-shadow: var(--tw-ring-offset-shadow,0 0 transparent),var(--tw-ring-shadow,0 0 transparent),var(--tw-shadow);
+    color: var(--text) !important;
+}
+#UnraidUPC .text-beta {
+    color: var(--text) !important;
+}
+.UnraidUPC-dropdown a, .UnraidUPC-dropdown button {
+    color: var(--text) !important;
+}
+.UnraidUPC-dropdown .btn-emphasize, .UnraidUPC-dropdown a:focus, .UnraidUPC-dropdown a:hover, .UnraidUPC-dropdown button:focus, .UnraidUPC-dropdown button:hover {
+    background-image: -webkit-gradient(linear,left top,right top,from(var(--tw-gradient-stops)));
+    background-image: linear-gradient(
+90deg
+,var(--tw-gradient-stops));
+    --tw-gradient-from: var(--accent-color);
+    --tw-gradient-stops: var(--tw-gradient-from),var(--accent-color,rgba(226,40,40,0));
+    --tw-gradient-to: var(--accent-color);
+    --tw-text-opacity: 1;
+    color: rgba(255,255,255,var(--tw-text-opacity));
+    outline: 0;
+}
+
+unraid-authed::part(div[data-v-050c892a] > button) {
+    background: pink !important;
 }
