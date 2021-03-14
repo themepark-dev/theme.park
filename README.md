@@ -25,6 +25,27 @@
 <a href="https://github.com/gilbN/theme.park/wiki/Plex Themes"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/plex_banner.png" width="800px" />
 
 # [Installation](https://github.com/gilbN/theme.park/wiki/Setup)
+
+### Methods:
+<ul>
+    <li><a href="https://github.com/gilbN/theme.park/wiki/Setup#-docker-mods"><img src="https://avatars.githubusercontent.com/u/12324908?s=20&v=4"> Docker Mods</a></li>
+        <ul><li><a href="https://github.com/gilbN/theme.park/wiki/Setup#-hotio-containers"><img src="https://hotio.dev/img/favicon.ico" width="20px"> Hotio containers</a></li></ul>
+    <li><a href="https://github.com/gilbN/theme.park/wiki/Setup#subfilter-method">Subfilter Method</a></li>
+    <ul>
+        <li><a href="https://github.com/gilbN/theme.park/wiki/Setup#nginx">Nginx</a></li>
+        <ul>
+            <li><a href="https://github.com/gilbN/theme.park/wiki/Setup#nginx-variable">Nginx Variable (Recommended for easy switching) ⭐</a></li>
+            <li><a href="https://github.com/gilbN/theme.park/wiki/Setup#nginx-proxy-manager">Nginx Proxy Manager</a></li>
+        </ul>
+        <li><a href="https://github.com/gilbN/theme.park/wiki/Setup#apache">Apache</a></li>
+        <li><a href="https://github.com/gilbN/theme.park/wiki/Setup#caddy">Caddy</a></li>
+        <li><a href="https://github.com/gilbN/theme.park/wiki/Setup#caddy-v2">Caddy V2</a></li>
+        <li><a href="https://github.com/traefik/plugin-rewritebody">Traefik:</a> <a
+                href="https://github.com/gilbN/theme.park/issues/42">See this issue</a></li>
+    </ul>
+    <li><a href="https://github.com/gilbN/theme.park/wiki/Setup#stylus-method">Stylus Method</a></li>
+    <li><a href="https://github.com/gilbN/theme.park/wiki/Setup#blackberry-theme-installer-method">Blackberry Theme Installer</a></li>
+
 # [Addons](https://github.com/gilbN/theme.park/wiki/Addons)
 
 ## Current themes in the repo:
