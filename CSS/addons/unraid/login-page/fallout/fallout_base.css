@@ -53,11 +53,12 @@ body {
     left: 0;
 }
 #video-bg-elem {
+    display: block;
     position: absolute;
-    top: 0;
-    left: 0;
-    min-height: 100%;
-    min-width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
 }
 /*TEXT COLOR*/
 #login h1,
