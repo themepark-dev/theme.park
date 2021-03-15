@@ -16,7 +16,9 @@ body {
 }
 
 a,
-.blue-text {
+.blue-text,
+a.static,
+i.control {
     color: var(--link-color);
 }
 
@@ -148,6 +150,24 @@ a.button:hover,
     background-color: var(--button-color-hover);
     background: -webkit-gradient(linear, left top, right top, from(var(--button-color-hover)), to(var(--button-color-hover)));
     background: linear-gradient(90deg, var(--button-color-hover) 0, var(--button-color-hover));
+}
+
+.swal-button{
+    color: var(--button-text) !important;
+    text-shadow: var(--text-shadow) var(--text-shadow-color) !important;
+    background: linear-gradient(90deg, var(--button-color) 0, var(--button-color)) 0 0 no-repeat, linear-gradient(90deg, var(--button-color) 0, var(--button-color)) 0 100% no-repeat, linear-gradient(0deg, var(--button-color) 0, var(--button-color)) 0 100% no-repeat, linear-gradient(0deg, var(--button-color) 0, var(--button-color)) 100% 100% no-repeat !important;
+    background: -webkit-gradient(linear, left top, right top, from(var(--button-color)), to(var(--button-color))) 0 0 no-repeat, -webkit-gradient(linear, left top, right top, from(var(--button-color)), to(var(--button-color))) 0 100% no-repeat, -webkit-gradient(linear, left bottom, left top, from(var(--button-color)), to(var(--button-color))) 0 100% no-repeat, -webkit-gradient(linear, left bottom, left top, from(var(--button-color)), to(var(--button-color))) 100% 100% no-repeat !important;
+    background-size: 100% 2px, 100% 2px, 2px 100%, 2px 100% !important;
+    border: 1px solid transparent !important; 
+}
+
+.swal-button:hover {
+    color: var(--button-text) !important;
+    text-shadow: var(--text-shadow) var(--button-color-hover) !important;
+    box-shadow: var(--box-shadow) var(--button-color-hover) !important;
+    background-color: var(--button-color-hover) !important;
+    background: -webkit-gradient(linear, left top, right top, from(var(--button-color-hover)), to(var(--button-color-hover))) !important;
+    background: linear-gradient(90deg, var(--button-color-hover) 0, var(--button-color-hover)) !important;
 }
 
 .switch-button-background.checked {
@@ -323,12 +343,14 @@ div.shade-black {
     background: var(--modal-bg-color) !important;
 } */
 
-.showSweetAlert {
+.showSweetAlert,
+.swal-overlay--show-modal .swal-modal {
     background: var(--modal-bg-color);
 }
 
 .sweet-alert h2,
-.sweet-alert p {
+.sweet-alert p,
+.swal-title {
     color: var(--text);
 }
 
