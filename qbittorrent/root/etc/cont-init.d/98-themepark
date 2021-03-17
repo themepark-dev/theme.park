@@ -59,6 +59,10 @@ if ! grep -q "${TP_DOMAIN}" /themepark/private/index.html; then
     echo '----------------------------------------------------------'
     sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/theme.park\/CSS\/themes\/qbittorrent\/${TP_THEME}.css'><\/head> /g" /themepark/private/index.html
     printf 'Stylesheet set to %s on private index.html\n\n' "${TP_THEME}"
+    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/theme.park\/CSS\/themes\/qbittorrent\/${TP_THEME}.css'><\/head> /g" /themepark/private/upload.html
+    printf 'Stylesheet set to %s on private upload.html\n\n' "${TP_THEME}"
+    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/theme.park\/CSS\/themes\/qbittorrent\/${TP_THEME}.css'><\/head> /g" /themepark/private/download.html
+    printf 'Stylesheet set to %s on private download.html\n\n' "${TP_THEME}"
 fi
 
 if ! grep -q "WebUI\\\RootFolder" /config/qBittorrent/qBittorrent.conf; then
