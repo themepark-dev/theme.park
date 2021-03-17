@@ -45,6 +45,12 @@ i.control {
 #nav-block #nav-item.active:after {
     background: var(--accent-color);
 }
+#nav-block #nav-item a:hover {
+    color: var(--text-hover) !important;
+}
+#nav-block #nav-item a {
+    color: var(--text) !important;
+}
 
 /*DASHBOARD*/
 table.share_status.dashboard {
