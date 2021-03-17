@@ -37,7 +37,9 @@ i.control {
 #header path {
     fill: var(--accent-color);
 }
-
+#header {
+    background: var(--main-bg-color);
+}
 #nav-block #nav-item:focus:after,
 #nav-block #nav-item:hover:after,
 #nav-block #nav-item.active:after {
