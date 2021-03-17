@@ -205,7 +205,7 @@ body>div.user-select-modal.modal.modal-transparent.fade.in>div>div.modal-content
 }
 
 .MetadataPosterCardOverlay-unplayedBadge-2hKHo5 {
-  background-color: var(--accent-color);
+  background-color: var(--poster-unwatched);
 }
 
 .MetadataPosterCardFace-face--dz_Dx:hover {
@@ -301,6 +301,7 @@ stroke-dashoffset: 0;
 .SelectButton-selectedCircle-264nVE {
   border-color: var(--button-color);
   background-color: var(--button-color);
+  color: #fff;
 }
 .SelectButton-selectButton-3jGXzS.isActive .SelectButton-selectCircle-ec9No3,
 .SelectButton-selectButton-3Kbjm9.isActive .SelectButton-selectCircle-3tdvGt {
@@ -447,7 +448,7 @@ a:hover, .artwork-file-container:hover a {
   color: var(--accent-color);
 }
 .MetadataPosterCard-legacyUnwatchedEpisodesBadge-3kelZP {
-  background-color: var(--accent-color);
+  background-color: var(--poster-unwatched);
   color: #ffffff;
 }
 .MetadataPosterCard-hoveredSelectedLink-3RwC7J, .MetadataPosterCard-selectedLink-3ZfYeB {
