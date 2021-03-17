@@ -40,6 +40,9 @@ i.control {
 #header {
     background: var(--main-bg-color);
 }
+#header, #header .logo, #header .text-right a {
+    color: var(--text) !important;
+}
 #nav-block #nav-item:focus:after,
 #nav-block #nav-item:hover:after,
 #nav-block #nav-item.active:after {
