@@ -24,12 +24,12 @@ body {
 .matches-title,
 .matches-list:empty::before,
 .card-stack:empty::after,
-footer {
+footer,
+.Field_Label {
     color: var(--text-color);
 }
 
 /* ACCENTS */
-
 .matches-section hr {
     border: 0.5px solid var(--accent-color);
 }
@@ -40,20 +40,24 @@ footer {
     color: var(--button-text);
 }
 
-.logo {
-    filter: var(--logo-color)
+.logo,
+.Logo {
+    filter: var(--logo-color);
+    color: var(--accent-color);
 }
 
 /* FORMS */
 .login-form input,
-input {
+input,
+.TextInput {
     background: rgba(0, 0, 0, .25);
     border: 1px solid transparent;
     color: var(--text)
 }
 
 .login-form input:focus,
-input:focus {
+input:focus,
+.TextInput:focus {
     background: #fff;
     border: 1px solid transparent;
     color: black;
@@ -65,18 +69,57 @@ input:focus {
 
 /* BUTTONS */
 .login-form .room-code-container .generate-button,
-.login-form .submit-button {
+.login-form .submit-button,
+.ButtonPrimary,
+.AddRemoveList_Add,
+.SegmentedControlsListItem {
     background: var(--button-color);
     color: var(--button-text);
+    border: 1px solid var(--button-color);
 }
 
 .login-form .room-code-container .generate-button:hover,
-.login-form .submit-button:hover {
+.login-form .submit-button:hover,
+.ButtonPrimary:hover,
+.ButtonPrimary:active
+.ButtonSecondary:hover,
+.ButtonSecondary:active,
+.ButtonTertiary:hover,
+.ButtonTertiary:active,
+.AddRemoveList_Add:hover,
+.AddRemoveList_Add:active,
+.SegmentedControlsListItem:hover,
+.SegmentedControlsListItem:active {
     background: var(--button-color-hover);
     color: var(--button-text-hover);
+    border-color: var(--button-color-hover)
+}
+
+.ButtonSecondary {
+    border: 2px solid var(--button-color);
+    color: var(--button-color);
+}
+
+.ButtonTertiary {
+    color: var(--button-color);
+    transition: background-color var(--button-color-hover) ease-in-out;
+}
+
+.SegmentedControlOption {
+    color: var(--button-text);
 }
 
 /* CARDS */
 .card {
     border: 1px solid transparent;
+}
+
+.Card_MoreInfoButton:hover {
+    color: var(--accent-color);
+}
+
+/* MENUS POPOVER */
+.PopoverMenuButton:hover {
+    background: rgb(255 255 255 / 15%) !important;
+    color: var(--mm-white);
 }
