@@ -233,8 +233,16 @@
 <p><a href="https://github.com/gilbN/theme.park/wiki/Unraid">Unraid</a></p>
 </td>
 </tr>
+<tr>
+<td style="width: 90px; height: 40px; text-align: center;">
+<p><a href="https://github.com/gilbN/theme.park/wiki/Moviematch"><img src="https://raw.githubusercontent.com/LukeChannings/moviematch/main/web/static/icons/icon-180.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://github.com/gilbN/theme.park/wiki/Moviematch">Moviematch</a></p>
+</td>
+</tr>
 </tbody>
 </table>
+
+
 
 ## [Adding your own theme colors](https://github.com/gilbN/theme.park/wiki/Creating-your-own-themes)
 

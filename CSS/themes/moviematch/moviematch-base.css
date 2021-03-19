@@ -1,0 +1,82 @@
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+
+/*		   		        Made by @gilbN					 */
+/*			      https://github.com/gilbN/theme.park			 */
+
+* {
+    outline: none;
+
+}
+
+body {
+    background: var(--main-bg-color);
+    color: var(--text-color)
+}
+
+/* TEXT COLOR */
+.matches-title,
+.matches-list:empty::before,
+.card-stack:empty::after,
+footer {
+    color: var(--text-color);
+}
+
+/* ACCENTS */
+
+.matches-section hr {
+    border: 0.5px solid var(--accent-color);
+}
+
+.matches-section hr::before,
+.matches-title .matches-count {
+    background: var(--accent-color);
+    color: var(--button-text);
+}
+
+.logo {
+    filter: var(--logo-color)
+}
+
+/* FORMS */
+.login-form input,
+input {
+    background: rgba(0, 0, 0, .25);
+    border: 1px solid transparent;
+    color: var(--text)
+}
+
+.login-form input:focus,
+input:focus {
+    background: #fff;
+    border: 1px solid transparent;
+    color: black;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* BUTTONS */
+.login-form .room-code-container .generate-button,
+.login-form .submit-button {
+    background: var(--button-color);
+    color: var(--button-text);
+}
+
+.login-form .room-code-container .generate-button:hover,
+.login-form .submit-button:hover {
+    background: var(--button-color-hover);
+    color: var(--button-text-hover);
+}
+
+/* CARDS */
+.card {
+    border: 1px solid transparent;
+}
