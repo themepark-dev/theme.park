@@ -92,7 +92,7 @@ background: var(--modal-bg-color)
     background: var(--accent-color);
 }
 /* LINKS */
-a, .table-action,.session--toggle,p a,.profile-page .logout {
+a, .table-action,.session--toggle,p a,.profile-page .logout,.person--bio--read-more {
     color: var(--link-color);
 }
 
@@ -124,18 +124,24 @@ a, .table-action,.session--toggle,p a,.profile-page .logout {
 
 /* BUTTONS */
 
-.btn, .btn__square {
+.btn, .btn__square,
+.rbc-btn-group button.rbc-active {
     background: var(--button-color);
     color: var(--button-text);
     border: 2px solid var(--button-color);
 }
-.btn:hover, .btn__square:hover {
+.btn:hover, .btn__square:hover,
+.rbc-btn-group button.rbc-active:active, .rbc-btn-group button.rbc-active:focus, .rbc-btn-group button.rbc-active:hover,
+.rbc-btn-group button:active, .rbc-btn-group button:focus, .rbc-btn-group button:hover {
     background: var(--button-color-hover);
     color: var(--button-text-hover);
     border: 2px solid var(--button-color-hover);
 }
 .btn.bad:hover {
     border: 2px solid #e95151;
+}
+.btn.good.btn__square:hover {
+    border: 2px solid #98dd32;
 }
 
 /* TABLES */
@@ -149,10 +155,10 @@ a, .table-action,.session--toggle,p a,.profile-page .logout {
 }
 
 /* MODALS */
-.modal--inner {
+.modal--inner,.issues--inner,.review--main {
     background: var(--modal-bg-color);
 }
-.modal--top {
+.modal--top,.issues--top,.review--top {
     background: var(--modal-bg-color);
 }
 /* FORMS & INPUTS */
