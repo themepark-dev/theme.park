@@ -31,7 +31,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.person--details p {
     color: #fff;
 }
 
@@ -151,6 +152,10 @@ p a,
     -webkit-box-shadow: 0 0 0 2px var(--accent-color), 0 5px 10px 0 rgb(0 0 0 / 30%);
     -moz-box-shadow: 0 0 0 2px var(--accent-color), 0 5px 10px 0 rgba(0, 0, 0, .3);
     box-shadow: 0 0 0 2px var(--accent-color), 0 5px 10px 0 rgb(0 0 0 / 30%);
+}
+
+.card .quick-req:hover svg {
+    fill: var(--accent-color);
 }
 
 .push-msg--item {
