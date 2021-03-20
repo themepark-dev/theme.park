@@ -204,7 +204,6 @@ p a,
     color: #fff;
 }
 
-
 /* TABLES */
 .generic-table tr:not(.child):not(.sub) td {
     border-bottom: 1px solid rgba(255, 255, 255, .1);
