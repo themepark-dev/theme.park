@@ -139,6 +139,10 @@ p a,
     background: rgb(0 0 0 / 25%);
 }
 
+.spinner svg {
+    filter: var(--spinner);
+}
+
 /* DASH */
 .session--prog,
 .session--media .card .playback-status {
