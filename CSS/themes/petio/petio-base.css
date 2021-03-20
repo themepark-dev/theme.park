@@ -182,10 +182,17 @@ p a,
 
 .btn.bad:hover {
     border: 2px solid #e95151;
+    color: #fff;
 }
 
 .btn.good.btn__square:hover {
     border: 2px solid #98dd32;
+    color: #fff;
+}
+
+.btn.blue.btn__square:hover {
+    border: 2px solid #3d85b8;
+    color: #fff;
 }
 
 /* TABLES */
