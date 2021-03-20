@@ -248,7 +248,6 @@
 
 
 
-
 ## [Adding your own theme colors](https://github.com/gilbN/theme.park/wiki/Creating-your-own-themes)
 
 
