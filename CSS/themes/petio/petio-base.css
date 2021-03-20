@@ -49,12 +49,6 @@ h6,
 }
 
 /* MENU */
-/* @media (min-width: 1100px) {
-.sidebar--inner {
-    display: block;
-    background: rgb(0 0 0 / 25%);
-}
-} */
 .menu {
     background: rgb(0 0 0 / 25%);
 }
@@ -86,6 +80,11 @@ h6,
 .menu--item.active {
     background: rgba(255, 255, 255, .15);
     border-right: 4px solid var(--accent-color);
+}
+
+.sidebar--inner .logo .logo-text span,
+.menu .logo span {
+    color: var(--accent-color);
 }
 
 @media (min-width: 1100px) {
@@ -199,6 +198,12 @@ p a,
     border: 2px solid #3d85b8;
     color: #fff;
 }
+
+.requests--status__radarr,
+.requests--status__pending {
+    color: #fff;
+}
+
 
 /* TABLES */
 .generic-table tr:not(.child):not(.sub) td {
