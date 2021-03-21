@@ -204,9 +204,6 @@ body>div.user-select-modal.modal.modal-transparent.fade.in>div>div.modal-content
   color: #fff;
 }
 
-.MetadataPosterCardOverlay-unplayedBadge-2hKHo5 {
-  background-color: var(--poster-unwatched);
-}
 
 .MetadataPosterCardFace-face--dz_Dx:hover {
   box-shadow: 0 0 0 2px var(--accent-color);
@@ -244,8 +241,14 @@ body>div.user-select-modal.modal.modal-transparent.fade.in>div>div.modal-content
   box-shadow: inset 4px 0 0 0 var(--accent-color);
 }
 
-.PosterCardOverlayProgress-progressBar-3k291O {
+.MetadataPosterCardOverlay-unplayedBadge-2hKHo5 {
+  background-color: var(--poster-unwatched);
+}
+.PosterCardOverlayProgress-progressBar-3k291O,
+.MetadataPosterCard-legacyMultiVersionBadge-2CCcrj,
+.MetadataPosterCardOverlay-unplayedBadge-2hKHo5 {
   background-color: var(--accent-color);
+  color: #000;
 }
 
 .Spinner-spinner-Niere7 {
@@ -296,12 +299,12 @@ stroke-dashoffset: 0;
 .SelectButton-isSelected-3mX245 .SelectButton-selectCircle-3tdvGt {
   border-color: var(--accent-color);
   background-color: var(--accent-color);
-  color: #eee;
+  color: #000;
 }
 .SelectButton-selectedCircle-264nVE {
   border-color: var(--button-color);
   background-color: var(--button-color);
-  color: #fff;
+  color: #000;
 }
 .SelectButton-selectButton-3jGXzS.isActive .SelectButton-selectCircle-ec9No3,
 .SelectButton-selectButton-3Kbjm9.isActive .SelectButton-selectCircle-3tdvGt {

@@ -11,7 +11,7 @@
 /*			      https://github.com/gilbN/theme.park			 */
 
 /* PLEX AQUAMARINE THEME */
-@import url(https://gflix.app/theme.park/CSS/themes/plex/plex-base.css);
+@import url(https://gilbn.github.io/theme.park/CSS/themes/plex/plex-base.css);
 :root {
   --main-bg-color:  radial-gradient( ellipse at center,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed;
   --modal-bg-color: radial-gradient( ellipse at top,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed;
@@ -20,5 +20,5 @@
   --button-color-hover: #81a6b7;
   --accent-color: #70aeca;
   --accent-color-hover: #81a6b7;
-  --poster-unwatched: #4dd56b;
+  --poster-unwatched: #70aeca;
 }
