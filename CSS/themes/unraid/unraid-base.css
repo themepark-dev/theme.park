@@ -361,8 +361,10 @@ div.shade-black {
 
 .sweet-alert h2,
 .sweet-alert p,
-.swal-title {
-    color: var(--text);
+.swal-title,
+.swal-content,
+.swal-content select {
+    color: var(--text) !important;
 }
 
 /*HELP TEXT*/
