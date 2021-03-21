@@ -229,7 +229,6 @@ div.sb-message,
     background: var(--modal-bg-color);
 }
 
-#sb-body,
 #sb-loading,
 #sb-body-inner,
 iframe {
