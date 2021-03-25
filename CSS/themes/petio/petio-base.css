@@ -37,15 +37,15 @@ h6,
 }
 
 .settings--menu--item.active p {
-    color: var(--accent-color);
+    color: rgb(var(--accent-color));
 }
 
 .settings--menu--item.active {
-    border-bottom: 1px solid var(--accent-color);
+    border-bottom: 1px solid rgb(var(--accent-color));
 }
 
 .settings--menu--item.active .icon svg path {
-    fill: var(--accent-color);
+    fill: rgb(var(--accent-color));
 }
 
 /* MENU */
@@ -79,40 +79,40 @@ h6,
 
 .menu--item.active {
     background: rgba(255, 255, 255, .15);
-    border-right: 4px solid var(--accent-color);
+    border-right: 4px solid rgb(var(--accent-color));
 }
 
 .sidebar--inner .logo .logo-text span,
 .menu .logo span {
-    color: var(--accent-color);
+    color: rgb(var(--accent-color));
 }
 
 @media (min-width: 1100px) {
     .sidebar--item.active {
         border-top: none !important;
-        border-right: 4px solid var(--accent-color);
+        border-right: 4px solid rgb(var(--accent-color));
     }
 }
 
 .sidebar--item.active {
     background: rgba(255, 255, 255, .15);
-    border-top: 4px solid var(--accent-color);
+    border-top: 4px solid rgb(var(--accent-color));
 }
 
 .menu--item.active p,
 .media-content .media-crew .sidebar--item.active a,
 .sidebar--item.active .media-content .media-crew a,
 .sidebar--item.active p {
-    color: var(--accent-color);
+    color: rgb(var(--accent-color));
 }
 
 .menu--item.active .icon svg path,
 .sidebar--item.active .icon svg path {
-    fill: var(--accent-color);
+    fill: rgb(var(--accent-color));
 }
 
 .mob-menu-top .nav-toggle span {
-    background: var(--accent-color);
+    background: rgb(var(--accent-color));
 }
 
 /* LINKS */
@@ -121,7 +121,9 @@ a,
 .session--toggle,
 p a,
 .profile-page .logout,
-.person--bio--read-more {
+.person--bio--read-more,
+.filter--item--collapse,
+.filter--comparison {
     color: var(--link-color);
 }
 
@@ -131,8 +133,8 @@ p a,
 }
 
 .filter--add:hover {
-    color: var(--accent-color);
-    border-color: var(--accent-color);
+    color: rgb(var(--accent-color));
+    border-color: rgb(var(--accent-color));
 }
 
 .filter--item {
@@ -143,22 +145,30 @@ p a,
     filter: var(--spinner);
 }
 
+.request-status {
+    color: #fff !important;
+}
+
+.filter--action {
+    background: rgba(var(--accent-color),.3);
+}
+
 /* DASH */
 .session--prog,
 .session--media .card .playback-status {
-    background: var(--accent-color);
+    background: rgb(var(--accent-color));
 }
 
 .card--inner:hover .image-wrap {
     -webkit-filter: brightness(.7);
     filter: brightness(.7);
-    -webkit-box-shadow: 0 0 0 2px var(--accent-color), 0 5px 10px 0 rgb(0 0 0 / 30%);
-    -moz-box-shadow: 0 0 0 2px var(--accent-color), 0 5px 10px 0 rgba(0, 0, 0, .3);
-    box-shadow: 0 0 0 2px var(--accent-color), 0 5px 10px 0 rgb(0 0 0 / 30%);
+    -webkit-box-shadow: 0 0 0 2px rgb(var(--accent-color)), 0 5px 10px 0 rgb(0 0 0 / 30%);
+    -moz-box-shadow: 0 0 0 2px rgb(var(--accent-color)), 0 5px 10px 0 rgba(0, 0, 0, .3);
+    box-shadow: 0 0 0 2px rgb(var(--accent-color)), 0 5px 10px 0 rgb(0 0 0 / 30%);
 }
 
 .card .quick-req:hover svg {
-    fill: var(--accent-color);
+    fill: rgb(var(--accent-color));
 }
 
 .push-msg--item {
@@ -234,11 +244,11 @@ p a,
 
 /* FORMS & INPUTS */
 input[type=checkbox]:checked:after {
-    background: var(--accent-color)
+    background: rgb(var(--accent-color))
 }
 
 input:not([type=checkbox]):not(.styled-input--input):not([type=file]):focus {
-    border-bottom: 2px solid var(--accent-color);
+    border-bottom: 2px solid rgb(var(--accent-color));
     background: rgba(255, 255, 255, .2);
     color: var(--text-color-hover)
 }

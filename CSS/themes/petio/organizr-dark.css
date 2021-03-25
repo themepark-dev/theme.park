@@ -12,7 +12,7 @@
 /*			      https://github.com/gilbN/theme.park			 */
 
 /* MOVIEMATCH ORGANIZR-DARK THEME */
-@import url(https://gilbn.github.io/theme.park/CSS/themes/petio/petio-base.css);
+@import url(https://gflix.app/theme.park/CSS/themes/petio/petio-base.css);
 :root {
   --main-bg-color: #1f1f1f;
   --modal-bg-color: #1b1b1b;
@@ -22,7 +22,7 @@
   --button-color-hover: rgb(44 171 227 / .8);
   --button-text: #eee;
   --button-text-hover: #fff;
-  --accent-color:#2cabe3;
+  --accent-color: 44, 171, 227;
   --accent-color-hover: #fff;
   --link-color: #2cabe3;
   --spinner: invert(65%) sepia(83%) saturate(2026%) hue-rotate(167deg) brightness(90%) contrast(97%);

@@ -22,7 +22,7 @@
   --button-color-hover: hsla(0,0%,100%,.30);
   --button-text: #eee;
   --button-text-hover: #fff;
-  --accent-color:  #F44336;
+  --accent-color: 244, 67, 54;
   --accent-color-hover: #0b3161;
   --link-color: #0b3161;
   --spinner: invert(32%) sepia(35%) saturate(3786%) hue-rotate(341deg) brightness(100%) contrast(92%);
