@@ -150,7 +150,7 @@ p a,
 }
 
 .filter--action {
-    background: rgba(var(--accent-color),.3);
+    background: rgba(var(--accent-color), .3);
 }
 
 /* DASH */
@@ -258,6 +258,12 @@ input:not([type=checkbox]):not(.styled-input--input):not([type=file]),
     border-bottom: 2px solid rgba(0, 0, 0, 0);
     color: var(--text-color);
     background: rgb(255 255 255 / 10%);
+}
+
+.search-form input:focus {
+    background: hsla(0, 0%, 100%, .1) !important;
+    color: var(--text-color-hover) !important;
+    border-bottom: 2px solid rgba(0, 0, 0, 0) !important;
 }
 
 /* PLACEHOLDER TEXT */
