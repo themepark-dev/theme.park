@@ -54,7 +54,6 @@ h6,
 }
 
 @media (max-width: 1099.98px) {
-
     .sidebar--inner,
     .sidebar--scroll {
         background: var(--modal-bg-color);
@@ -265,6 +264,21 @@ input:not([type=checkbox]):not(.styled-input--input):not([type=file]),
     color: var(--text-color-hover) !important;
     border-bottom: 2px solid rgba(0, 0, 0, 0) !important;
 }
+/* CALENDAR */
+.rbc-show-more {
+    background-color: hsl(0deg 0% 0% / 25%);
+}
+.rbc-day-bg.rbc-today {
+    background: rgb(var(--accent-color),.5);
+}
+a.rbc-show-more {
+    color: rgb(var(--accent-color));
+}
+
+.calendar--event p {
+    color: #fff !important;
+}
+
 
 /* PLACEHOLDER TEXT */
 ::placeholder {
