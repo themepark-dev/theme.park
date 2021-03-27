@@ -153,6 +153,19 @@ p a,
     background: rgba(var(--accent-color), .3);
 }
 
+.sr--add-new .sr--instance--inner:hover {
+    color: rgb(var(--accent-color));
+    border-color: rgb(var(--accent-color));
+}
+
+.console--item {
+    color: #fff;
+}
+
+code {
+    color: #fff;
+}
+
 /* DASH */
 .session--prog,
 .session--media .card .playback-status {
@@ -213,7 +226,6 @@ p a,
     color: #fff;
 }
 
-.requests--status__radarr,
 .requests--status__pending {
     color: #fff;
 }
@@ -227,6 +239,16 @@ p a,
     text-align: left;
     padding: 5px;
     border-bottom: 1px solid rgba(255, 255, 255, .4);
+}
+
+thead {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.generic-table tr:not(.child):not(.sub) th:nth-child(odd),
+.generic-table tr:not(.child):not(.sub) th:nth-child(2n) {
+    background: transparent !important;
 }
 
 /* MODALS */
