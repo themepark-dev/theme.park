@@ -13,11 +13,18 @@
 /* PLEX AQUAMARINE THEME */
 @import url(https://gilbn.github.io/theme.park/CSS/themes/plex/plex-base.css);
 :root {
-    --main-bg-color: radial-gradient(ellipse at center, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
-    --modal-bg-color: radial-gradient(ellipse at top, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
-    --link-color: #009688;
-    --button-color: #009688;
-    --button-color-hover: #12afa0;
-    --accent-color:  #009688;
-    --poster-unwatched: #00d374;
-  }
+  --main-bg-color: radial-gradient(ellipse at center, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
+  --modal-bg-color: radial-gradient(ellipse at top, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
+  --text-color: #eee;
+  --text-color-hover: #fff;
+  --text-muted: #ddd;
+  --button-color: #009688;
+  --button-color-hover: #12afa0;
+  --button-text: #eee;
+  --button-text-hover: #FFF;
+  --accent-color:  18, 175, 160;
+  --accent-color-hover: #fff;
+  --link-color: #0ed2bf;
+  --link-color-hover: #FFF;
+  --poster-unwatched: #00d374;
+}
