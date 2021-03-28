@@ -10,7 +10,6 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
-/* PLEX ORGANIZR THEME */
 * {
   outline: none;
 }
@@ -30,7 +29,6 @@ label {
 .text-muted {
   color: var(--text-muted);
 }
-
 
 /* LINKS */
 
