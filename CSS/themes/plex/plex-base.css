@@ -149,15 +149,44 @@ a:hover {
 }
 
 [class*="SessionTileDetails-playerContainer"] {
-  background-color: rgb(var(--accent-color), .2)
+  background-color: rgba(var(--accent-color), .2)
 }
 
 [class*="SessionTileDetails-videoStreamInformation"] {
-  background-color: rgb(var(--accent-color), .15)
+  background-color: rgba(var(--accent-color), .15)
 }
 
 [class*="SessionTileDetails-audioStreamInformation"] {
-  background-color: rgb(var(--accent-color), .1)
+  background-color: rgba(var(--accent-color), .1)
+}
+
+[class*="SessionTileDetails-subtitlesStreamInformation"] {
+  background-color: rgba(var(--accent-color), .05);
+}
+
+[class*="TopUsersList-container"][class*="ServerDashboardSectionContent-container"]>div>div>div>div:nth-child(3) {
+  background-color: rgba(var(--accent-color), .2) !important;
+}
+
+[class*="TopUsersList-container"][class*="ServerDashboardSectionContent-container"]>div>div>div>div:nth-child(4) {
+  background-color: rgba(var(--accent-color), .15) !important;
+}
+
+[class*="TopUsersList-container"][class*="ServerDashboardSectionContent-container"]>div>div>div>div:nth-child(5) {
+  background-color: rgba(var(--accent-color), .1) !important;
+}
+
+[class*="TopUsersList-container"][class*="ServerDashboardSectionContent-container"]>div>div>div>div:nth-child(6) {
+  background-color: rgba(var(--accent-color), .05) !important;
+}
+
+[class*="TopUsersCell-playHistoryLink"] {
+  background-color: rgb(var(--accent-color));
+  color: #fff;
+}
+
+[class*="TopPlayedColumnHeader-emptyTitleBackground"] {
+  background-color: rgba(var(--accent-color), .3);
 }
 
 [class*="SelectedMenuItem-isSelected"],
