@@ -34,23 +34,30 @@ i.control {
     border-right: solid medium var(--accent-color);
 }
 
-#header path {
-    fill: var(--accent-color);
-}
 #header {
     background-color: transparent;
 }
-#header, #header .logo, #header .text-right a {
+
+#header,
+#header .text-right a {
     color: var(--text) !important;
 }
+
+#header .block {
+    background-color: rgb(0 0 0 / 20%);
+    border-radius: 0px 0px 0px 25px;
+}
+
 #nav-block #nav-item:focus:after,
 #nav-block #nav-item:hover:after,
 #nav-block #nav-item.active:after {
     background: var(--accent-color);
 }
+
 #nav-block #nav-item a:hover {
     color: var(--text-hover) !important;
 }
+
 #nav-block #nav-item a {
     color: var(--text) !important;
 }
@@ -137,7 +144,7 @@ button[type=button],
 a.button,
 .sweet-alert button,
 #template button[type=button],
-#template button{
+#template button {
     color: var(--button-text);
     text-shadow: var(--text-shadow) var(--text-shadow-color);
     background: linear-gradient(90deg, var(--button-color) 0, var(--button-color)) 0 0 no-repeat, linear-gradient(90deg, var(--button-color) 0, var(--button-color)) 0 100% no-repeat, linear-gradient(0deg, var(--button-color) 0, var(--button-color)) 0 100% no-repeat, linear-gradient(0deg, var(--button-color) 0, var(--button-color)) 100% 100% no-repeat;
@@ -163,13 +170,13 @@ a.button:hover,
     background: linear-gradient(90deg, var(--button-color-hover) 0, var(--button-color-hover));
 }
 
-.swal-button{
+.swal-button {
     color: var(--button-text) !important;
     text-shadow: var(--text-shadow) var(--text-shadow-color) !important;
     background: linear-gradient(90deg, var(--button-color) 0, var(--button-color)) 0 0 no-repeat, linear-gradient(90deg, var(--button-color) 0, var(--button-color)) 0 100% no-repeat, linear-gradient(0deg, var(--button-color) 0, var(--button-color)) 0 100% no-repeat, linear-gradient(0deg, var(--button-color) 0, var(--button-color)) 100% 100% no-repeat !important;
     background: -webkit-gradient(linear, left top, right top, from(var(--button-color)), to(var(--button-color))) 0 0 no-repeat, -webkit-gradient(linear, left top, right top, from(var(--button-color)), to(var(--button-color))) 0 100% no-repeat, -webkit-gradient(linear, left bottom, left top, from(var(--button-color)), to(var(--button-color))) 0 100% no-repeat, -webkit-gradient(linear, left bottom, left top, from(var(--button-color)), to(var(--button-color))) 100% 100% no-repeat !important;
     background-size: 100% 2px, 100% 2px, 2px 100%, 2px 100% !important;
-    border: 1px solid transparent !important; 
+    border: 1px solid transparent !important;
 }
 
 .swal-button:hover {
@@ -379,26 +386,32 @@ blockquote {
 .UnraidUPC .--hasBanner-custom .UnraidUPC-dropdown {
     background-color: var(--modal-bg-color) !important;
     --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 50%) !important;
-    -webkit-box-shadow: var(--tw-ring-offset-shadow,0 0 transparent),var(--tw-ring-shadow,0 0 transparent),var(--tw-shadow);
-    box-shadow: var(--tw-ring-offset-shadow,0 0 transparent),var(--tw-ring-shadow,0 0 transparent),var(--tw-shadow);
+    -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 transparent), var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 transparent), var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow);
     color: var(--text) !important;
 }
+
 #UnraidUPC .text-beta {
     color: var(--text) !important;
 }
-.UnraidUPC-dropdown a, .UnraidUPC-dropdown button {
+
+.UnraidUPC-dropdown a,
+.UnraidUPC-dropdown button {
     color: var(--text) !important;
 }
-.UnraidUPC-dropdown .btn-emphasize, .UnraidUPC-dropdown a:focus, .UnraidUPC-dropdown a:hover, .UnraidUPC-dropdown button:focus, .UnraidUPC-dropdown button:hover {
-    background-image: -webkit-gradient(linear,left top,right top,from(var(--tw-gradient-stops)));
-    background-image: linear-gradient(
-90deg
-,var(--tw-gradient-stops));
+
+.UnraidUPC-dropdown .btn-emphasize,
+.UnraidUPC-dropdown a:focus,
+.UnraidUPC-dropdown a:hover,
+.UnraidUPC-dropdown button:focus,
+.UnraidUPC-dropdown button:hover {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--tw-gradient-stops)));
+    background-image: linear-gradient(90deg, var(--tw-gradient-stops));
     --tw-gradient-from: var(--accent-color);
-    --tw-gradient-stops: var(--tw-gradient-from),var(--accent-color,rgba(226,40,40,0));
+    --tw-gradient-stops: var(--tw-gradient-from), var(--accent-color, rgba(226, 40, 40, 0));
     --tw-gradient-to: var(--accent-color);
     --tw-text-opacity: 1;
-    color: rgba(255,255,255,var(--tw-text-opacity));
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
     outline: 0;
 }
 
