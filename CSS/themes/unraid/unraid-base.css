@@ -193,7 +193,7 @@ a.button:hover,
 }
 
 .switch-button-label.on {
-    color: #4caf50;
+    color: #4caf50 !important;
 }
 
 /* BAR GAUGES */
