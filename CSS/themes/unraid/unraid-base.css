@@ -38,7 +38,7 @@ i.control {
     fill: var(--accent-color);
 }
 #header {
-    background: var(--main-bg-color);
+    background-color: transparent;
 }
 #header, #header .logo, #header .text-right a {
     color: var(--text) !important;
