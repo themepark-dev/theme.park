@@ -54,9 +54,13 @@ a:hover {
 }
 
 /* SIDEBAR */
-[class*="SourceSidebar-openSidebar"],
+[class*="SourceSidebar-openSidebar"][class*="SourceSidebar-sidebar"],
 [class*="SourceSidebar-sidebar"] {
-  background: rgba(0, 0, 0, .25) !important;
+  background: rgba(0, 0, 0, .25);
+}
+
+[class*="SourceSidebar-expandedSidebar"][class*="SourceSidebar-sidebar"] {
+  background: var(--modal-bg-color) !important;
 }
 
 [class*="DisclosureArrow-isSelected"] {
