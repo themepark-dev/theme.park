@@ -216,10 +216,6 @@ code {
     color: #fff;
 }
 
-/* REQUESTS */
-.card.requested .image-wrap:after {
-    background: rgb(var(--accent-color));
-}
 
 /* BUTTONS */
 
