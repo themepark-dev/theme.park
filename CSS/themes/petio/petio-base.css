@@ -181,6 +181,10 @@ code {
     padding: 0px 7px;
 }
 
+.color-blue {
+    color: #4eaff4;
+}
+
 .setup--step.active {
     border-color: rgb(var(--accent-color));
     color: rgb(var(--accent-color));
