@@ -177,7 +177,7 @@ code {
 .color-red {
     /* Ratings */
     background: rgb(0 0 0 / 25%);
-    border-radius: 100px;
+    border-radius: 5px;
     padding: 0px 7px;
 }
 
