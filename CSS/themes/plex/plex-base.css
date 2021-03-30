@@ -44,7 +44,7 @@ a:hover {
 
 /* BODY */
 [class*="FullPageBackground-backgroundContainer"] [class*="CrossFadeImage-crossFade"],
-#plex>[class*="FullPageBackground-backgroundContainer"]>div>div:nth-child(2) {
+#plex>[class*="background-container"]>div>div>div:nth-child(2) {
   background: var(--main-bg-color) !important;
 }
 
