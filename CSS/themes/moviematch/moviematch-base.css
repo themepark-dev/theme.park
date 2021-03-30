@@ -67,6 +67,11 @@ input:focus {
     outline: none;
 }
 
+.Select_Element {
+    border: 2px solid var(--button-color);
+    color: var(--button-color-text);
+}
+
 /* BUTTONS */
 .login-form .room-code-container .generate-button,
 .login-form .submit-button,
@@ -92,7 +97,13 @@ input:focus {
 .SegmentedControlsListItem:active {
     background: var(--button-color-hover);
     color: var(--button-text-hover);
-    border-color: var(--button-color-hover)
+    border-color: var(--button-color-hover);
+}
+@media (hover: hover) {
+    .ButtonSecondary:hover {
+        color: var(--button-text-hover);
+        border-color: var(--button-color-hover);
+    }
 }
 
 .ButtonSecondary {
@@ -117,7 +128,9 @@ input:focus {
 .Card_MoreInfoButton:hover {
     color: var(--accent-color);
 }
-
+.RoomInfoBar {
+    background-color: rgba(0, 0, 0, 0.25);
+}
 /* MENUS POPOVER */
 .PopoverMenuButton:hover {
     background: rgb(255 255 255 / 15%) !important;
