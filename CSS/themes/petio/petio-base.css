@@ -137,6 +137,11 @@ p a,
     border-color: rgb(var(--accent-color));
 }
 
+.filter--row--add:hover,
+.filter--row--remove:hover {
+    color: rgb(var(--accent-color));
+}
+
 .filter--item {
     background: rgb(0 0 0 / 25%);
 }
@@ -166,6 +171,25 @@ code {
     color: #fff;
 }
 
+.color-green,
+.color-orange,
+.color-blue,
+.color-red {
+    /* Ratings */
+    background: rgb(0 0 0 / 25%);
+    border-radius: 100px;
+    padding: 0px 7px;
+}
+
+.setup--step.active {
+    border-color: rgb(var(--accent-color));
+    color: rgb(var(--accent-color));
+}
+
+.setup--wrap .server-select-option.selected {
+    background: rgb(var(--accent-color));
+}
+
 /* DASH */
 .session--prog,
 .session--media .card .playback-status {
@@ -186,6 +210,11 @@ code {
 
 .push-msg--item {
     color: #fff;
+}
+
+/* REQUESTS */
+.card.requested .image-wrap:after {
+    background: rgb(var(--accent-color));
 }
 
 /* BUTTONS */
@@ -212,22 +241,51 @@ code {
 }
 
 .btn.bad:hover {
-    border: 2px solid #e95151;
-    color: #fff;
+    /*Delete/Cancel button*/
+    border: 2px solid #f55;
+    background: #f55;
 }
 
 .btn.good.btn__square:hover {
-    border: 2px solid #98dd32;
-    color: #fff;
+    /*Watch Now button*/
+    border: 2px solid #98ec1c;
+    background: #98ec1c;
 }
 
 .btn.blue.btn__square:hover {
-    border: 2px solid #3d85b8;
-    color: #fff;
+    /* Requested button*/
+    border: 2px solid #3f9de0;
+    background: #3f9de0;
+}
+
+.media-trailer--close {
+    background: var(--button-color);
+}
+
+.media-trailer--close:hover {
+    background: var(--button-color-hover);
 }
 
 .requests--status__pending {
     color: #fff;
+}
+
+.myrequests--item--details .detail-steps--item__active {
+    color: rgb(var(--accent-color));
+    opacity: 1;
+}
+
+.myrequests--item--details .detail-steps--item__active .icon {
+    border-color: rgb(var(--accent-color));
+}
+
+.myrequests--item--details .detail-steps--item__active svg {
+    fill: rgb(var(--accent-color));
+}
+
+.request-count {
+    color: #fff;
+    background: rgba(var(--accent-color), .8);
 }
 
 /* TABLES */
