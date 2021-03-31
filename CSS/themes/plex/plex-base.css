@@ -71,6 +71,10 @@ a:hover {
   box-shadow: inset 4px 0 0 0 rgb(var(--accent-color)) !important;
 }
 
+[class*="SourceSidebarServerHeader-title"] {
+  color: rgb(var(--accent-color));
+}
+
 /* NAVBAR */
 [class*="NavBar-container"] {
   background: rgba(0, 0, 0, .25) !important;
