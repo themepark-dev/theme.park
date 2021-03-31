@@ -194,6 +194,10 @@ code {
     background: rgb(var(--accent-color));
 }
 
+.login-wrap .logo span {
+    color: rgb(var(--accent-color));
+}
+
 /* DASH */
 .session--prog,
 .session--media .card .playback-status {
