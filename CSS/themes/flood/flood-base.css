@@ -249,8 +249,6 @@ p,
     color: var(--text) !important;
 }
 
-
-
 .error {
     background: #f34570;
     border-radius: 3px;
@@ -284,8 +282,7 @@ p,
 
 .dark .torrent__detail--name,
 .torrent__detail--name {
-    color: hsla(0, 0%, 100%, .87);
-    font-weight: 400;
+    color: var(--text-hover);
 }
 
 .dark .torrent--is-condensed,
@@ -312,7 +309,7 @@ p,
 
 .dark .table__heading--is-sorted,
 .table__heading--is-sorted {
-    color: hsla(0, 0%, 100%, .87);
+    color: var(--text-hover);
 }
 
 .dark .table__heading,
