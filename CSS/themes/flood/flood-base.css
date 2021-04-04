@@ -295,7 +295,7 @@ p,
 
 .dark .torrent__detail,
 .torrent__detail {
-    color: hsla(0, 0%, 100%, .6);
+    color: var(--text);
 }
 
 .torrent--is-downloading--actively .torrent__detail--downRate {
