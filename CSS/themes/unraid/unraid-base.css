@@ -321,23 +321,23 @@ div.tabs {
 
 /*DROPDOWN MENU*/
 .dropdown-menu {
-    background: var(--modal-bg-color);
+    background: var(--modal-bg-color) !important;
 }
 
 .dropdown-menu a {
-    color: var(--text);
+    color: var(--text) !important;
 }
 
 .dropdown-menu .divider {
-    background-color: rgb(255 255 255 / 10%);
-    border-bottom: 1px solid rgb(255 255 255 / 10%);
+    background-color: rgb(255 255 255 / 10%) !important;
+    border-bottom: 1px solid rgb(255 255 255 / 10%) !important;
 }
 
 .dropdown-menu li>a:hover,
 .dropdown-menu li>a:focus,
 .dropdown-submenu:hover>a {
-    color: var(--text-hover);
-    background: rgb(255 255 255 / 10%);
+    color: var(--text-hover) !important;
+    background: rgb(255 255 255 / 10%) !important;
 }
 
 /*VM MANAGER*/
@@ -420,4 +420,11 @@ blockquote {
 
 unraid-authed::part(div[data-v-050c892a] > button) {
     background: pink !important;
+}
+
+/* Edit template*/
+#contDescription {
+    background: rgb(0 0 0 / 25%);
+    padding: 1%;
+    border-radius: 5px; 
 }
