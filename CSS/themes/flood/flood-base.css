@@ -263,14 +263,14 @@ p,
 .dark .torrent--is-condensed.torrent--is-selected+.torrent,
 .torrent--is-condensed.torrent--is-selected,
 .torrent--is-condensed.torrent--is-selected+.torrent {
-    border-color: rgb(255 255 255 / 10%);
+    border-color: rgba(var(--accent-color),.7);
 }
 
 .dark .torrent--is-selected:after,
 .dark .torrent--is-selected:hover:after,
 .torrent--is-selected:after,
 .torrent--is-selected:hover:after {
-    background: rgba(0, 0, 0, .45);
+    background: rgba(var(--accent-color),.7);
 }
 
 .dark .table__row--heading,
