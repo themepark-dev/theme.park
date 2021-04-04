@@ -235,12 +235,16 @@
 </tr>
 <tr>
 <td style="width: 90px; height: 40px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Moviematch"><img src="https://raw.githubusercontent.com/LukeChannings/moviematch/main/web/static/icons/icon-180.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://github.com/gilbN/theme.park/wiki/Moviematch"><img src="https://raw.githubusercontent.com/LukeChannings/moviematch/main/web/app/static/icons/icon-180.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://github.com/gilbN/theme.park/wiki/Moviematch">Moviematch</a></p>
 </td>
 <td style="width: 90px; height: 40px; text-align: center;">
 <p><a href="https://github.com/gilbN/theme.park/wiki/Petio"><img src="https://avatars.githubusercontent.com/u/75477127?s=48&v=4" alt="" width="48" height="48" /></a></p>
 <p><a href="https://github.com/gilbN/theme.park/wiki/Petio">Petio</a></p>
+</td>
+<td style="width: 90px; height: 40px; text-align: center;">
+<p><a href="https://github.com/gilbN/theme.park/wiki/Flood"><img src="https://raw.githubusercontent.com/jesec/flood/master/flood.svg" alt="" width="48" height="48" /></a></p>
+<p><a href="https://github.com/gilbN/theme.park/wiki/Flood">Flood</a></p>
 </td>
 </tr>
 </tbody>
