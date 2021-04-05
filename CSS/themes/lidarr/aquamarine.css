@@ -26,6 +26,16 @@
 
   --button-color: #009688;
   --button-color-hover: #12afa0;
+  --button-text: #eee;
+  --button-text-hover: #FFF;
+
   --accent-color:  #009688;
   --accent-color-hover: #12afa0;
+  --queue-color: #009688;
+  --link-color: #0ed2bf;
+  --link-color-hover: #fff;
+    
+  --text:#eee;
+  --text-hover: #fff;
+  --text-muted: #b6b0b0;
 }

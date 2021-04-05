@@ -19,336 +19,635 @@ body {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
+    color: var(--text);
 }
 
-/* scroller */
-::-webkit-scrollbar-corner {
-    background-color: hsla(0, 0%, 100%, .08);
+/* Froms */
+
+[class*="FormInputHelpText-helpText-"] {
+    color: var(--text);
 }
 
-::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-    background: rgba(0, 0, 0, .25);
-}
-
-::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 2px;
-    border-radius: 2px;
-    background-color: rgba(255, 255, 255, 0.25) !important;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    -webkit-border-radius: 2px;
-    border-radius: 2px;
-    background-color: rgba(255, 255, 255, 0.45) !important;
-}
-
-/* MINI RIGHT SCROLL BAR */
-.OverlayScroller-thumb-1Lhfi {
-    background-color: hsla(0, 0%, 100%, .25) !important;
-}
-
-.OverlayScroller-thumb-1Lhfi:hover {
-    background-color: rgba(255, 255, 255, 0.45) !important;
+[class*="FormInputGroup-inputUnit-"] {
+    color: #eee !important;
 }
 
 /* LINKS */
-.Link-to-6fmSq {
-    color: #FFF;
+[class*="Link-to-"] {
+    color: var(--text);
 }
 
-.Link-to-6fmSq:hover {
-    color: #FFF;
+[class*="Link-to-"]:hover {
+    color: var(--text-hover);
     text-decoration: none;
 }
 
-/* LOADING PAGE */
-.ErrorPage-page-3GptQ,
-.ErrorPage-version-3txe6,
-.LoadingMessage-loadingMessage-1gR5r {
-    color: #FFF;
+a {
+    color: var(--link-color);
 }
 
-.LoadingIndicator-ripple-358v5 {
+a:hover {
+    color: var(--link-color-hover);
+}
+
+[class*="TableRowCell-cell-"] [class*="Link-to-"] {
+    color: var(--link-color) !important;
+}
+
+[class*="TableRowCell-cell-"] [class*="Link-to-"]:hover {
+    color: var(--link-color-hover) !important;
+}
+
+/* Buttons */
+
+[class*="Button-default-"] {
+    color: var(--button-text);
+    background-color: var(--button-color);
+    border-color: transparent;
+}
+
+[class*="Button-default-"]:hover {
+    border-color: transparent;
+    background-color: var(--button-color-hover) !important;
+    color: var(--button-text-hover);
+}
+
+[class*="Button-primary-"] {
+    border-color: transparent;
+    background-color: var(--button-color);
+    color: var(--button-text);
+}
+
+[class*="Button-primary-"]:hover {
+    border-color: transparent;
+    background-color: var(--button-color-hover) !important;
+    color: var(--button-text-hover);
+}
+
+[class*="Button-success-"] {
+    border-color: var(--button-color);
+    background-color: var(--button-color);
+    color: var(--button-text);
+}
+
+[class*="Button-success-"]:hover {
+    border-color: var(--button-color-hover);
+    background-color: var(--button-color-hover);
+    color: var(--button-text-hover);
+}
+
+/* LOADING PAGE */
+[class*="ErrorPage-page-"],
+[class*="ErrorPage-version-"],
+[class*="LoadingMessage-loadingMessage-"] {
+    color: var(--text);
+}
+
+[class*="LoadingIndicator-ripple-"] {
     border: 2px solid #fff;
 }
 
 /* MODAL */
-.ModalHeader-modalHeader-gpcvG {
-    background: var(--main-bg-color);
+[class*="ModalHeader-modalHeader-"] {
+    background: var(--modal-bg-color);
     color: #fff;
-    border-bottom: 1px solid var(--accent-color);
+    border-bottom: var(--accent-color);
 }
 
-.ModalContent-modalContent--txrl {
-    background: var(--main-bg-color);
-    color: #fff;
+[class*="ModalContent-modalContent-"] {
+    background: var(--modal-bg-color);
+    color: var(--text);
 }
 
-.ModalFooter-modalFooter-1N5Ku {
-    background: var(--main-bg-color);
+[class*="ModalFooter-modalFooter-"] {
+    background: var(--modal-bg-color);
     color: #fff;
     border-top: 1px solid var(--accent-color);
 }
 
+[class*="ModalContent-closeButton-"]:hover {
+    color: #fff;
+}
+
 /* INPUT */
-.TagInput-internalInput-Jbb1T {
+[class*="TagInput-internalInput-"] {
     background-color: transparent;
     color: #fff;
 }
 
-.TagInput-input-3E1DX {
-    border: none;
-    background-color: rgba(255, 255, 255, 0.08);
-    color: #FFF;
+[class*="SelectInput-select-"] {
+    background-color: rgba(0, 0, 0, 0.25) !important;
 }
 
-.TagInput-input-3E1DX.TagInput-isFocused-13j-F {
-    outline: 0;
-    border-color: #fff;
-    box-shadow: none;
-    background-color: rgba(255, 255, 255, 0.25);
+[class*="SelectInput-select-"]:active,
+[class*="SelectInput-select-"]:focus {
+    background: #1e1e1e !important;
 }
 
-.TagInput-suggestion-3jRkQ,
-.TagInput-containerOpen-2g0Wc,
-.TagInput-suggestionsContainer-1vjHY {
-    background-color: #1e1e1e !important;
-}
-
-.TagInput-suggestion-3jRkQ:hover {
-    background-color: hsla(0, 0%, 100%, .3) !important;
-}
-
-.SelectInput-select-1qCdc {
-    background-color: #1e1e1e !important;
-}
-
-.AutoSuggestInput-suggestionsList-_bVXO,
-.AutoSuggestInput-suggestionsContainerOpen-3TAB7,
-.AutoSuggestInput-suggestionsContainer-3MmlD {
+[class*="AutoSuggestInput-suggestionsList-"],
+[class*="AutoSuggestInput-suggestionsContainerOpen-"],
+[class*="AutoSuggestInput-suggestionsContainer-"] {
     background-color: #323232 !important;
     color: white;
     border: none !important;
 }
 
-.AutoSuggestInput-suggestionHighlighted-2BWyt {
+[class*="AutoSuggestInput-suggestionHighlighted-"] {
     background-color: hsla(0, 0%, 100%, .08);
 }
 
-.FormInputHelpText-helpText-3_AVV {
-    color: #fff;
-}
-
-.CheckInput-primaryIsChecked-3mVN0 {
-    border-color: transparent;
-    background-color: var(--accent-color);
+[class*="CheckInput-primaryIsChecked-"] {
+    border-color: var(--accent-color) !important;
+    background-color: var(--accent-color) !important;
 }
 
 /* HEADER */
 
-.PageHeader-header-1IhlM {
+[class*="PageHeader-header-"] {
     background-color: rgba(0, 0, 0, .7);
 }
 
-.PageHeader-donate-ZT-3N {
+/* SEARCH DROPDOWN HEADER */
+
+[class*="PageHeader-donate-"] {
     color: #c4273c !important;
 }
 
+/* LIDARR SPECIFIC */
+[class*="ArtistSearchInput-sectionTitle-"] {
+    color: #fff;
+}
+
+[class*="ArtistSearchInput-containerOpen-"] [class*="ArtistSearchInput-artistContainer-"] {
+    border: none !important;
+    background: var(--modal-bg-color);
+    color: #fff !important;
+    box-shadow: 0 0 10px 1px transparent !important;
+}
+
+[class*="ArtistSearchInput-highlighted-"] {
+    background-color: hsla(0, 0%, 100%, .08)
+}
+
+[class*"=ArtistSearchInput-artistContainer-"]::-webkit-scrollbar-thumb,
+[class*="ImportArtistSelectArtist-results-"]::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+/* MINI RIGHT SCROLL BAR */
+[class*="OverlayScroller-thumb-"],
+[class*="ImportArtistSelectArtist-results-"]::-webkit-scrollbar-thumb {
+    background-color: hsla(0, 0%, 100%, .08) !important;
+}
+[class*="OverlayScroller-thumb-"]:hover,
+[class*="ImportArtistSelectArtist-results-"]::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.25) !important;
+}
+
+
 /* SIDE MENU */
-
-@media only screen and (max-width: 768px) {
-    .PageSidebar-sidebar-3IOcI {
-        background-color: rgba(0, 0, 0, .45) !important;
-    }
+[class*="PageSidebar-sidebarContainer-"] {
+    background-color: rgba(0, 0, 0, .25);
 }
 
-.PageSidebar-sidebar-2UXc0 {
-    background-color: rgba(0, 0, 0, .45);
-}
-
-.PageSidebar-sidebarContainer-3Hxpq {
-    background-color: rgba(0, 0, 0, .45) !important;
-}
-
-.PageSidebar-sidebar-3IOcI {
+[class*="PageSidebar-sidebar-"] {
     background-color: transparent;
 }
 
-.PageSidebarItem-link-TuHn2:hover,
-.PageSidebarItem-link-TuHn2:focus {
-    color: #FFF !important;
+[class*="PageSidebarItem-link-"]:hover,
+[class*="PageSidebarItem-link-"]:focus {
+    color: var(--text-hover) !important;
     background-color: hsla(0, 0%, 100%, .08);
     text-decoration: none;
 }
 
-.PageSidebarItem-isActiveLink-1Hupc {
+[class*="PageSidebarItem-isActiveLink-"] {
     color: #FFF;
     background-color: hsla(0, 0%, 100%, .08);
 }
 
-.PageSidebarItem-isActiveParentLink-2uxKf {
+[class*="PageSidebarItem-isActiveParentLink-"] {
     background-color: transparent;
 }
 
 @media only screen and (max-width: 768px) {
-    .PageSidebar-sidebarContainer-3Hxpq {
+    [class*="PageSidebar-sidebarContainer-"] {
         background: var(--main-bg-color) !important;
     }
 }
 
-.PageSidebarItem-isActiveItem-bUesh {
+[class*="PageSidebarItem-isActiveItem-"] {
     border-left: 3px solid var(--accent-color);
 }
 
-.fa-search:hover {
-    color: #FFF !important;
+/* LIBRARY PAGE */
+/* LIDARR SPECIFIC */
+[class*="ArtistIndexPoster-controls-"] {
+    background-color: #000 !important;
+}
+/* OVERVIEW PAGE */
+
+/* OVERVIEW PAGE */
+[class*="ArtistIndexOverview-container-"],
+[class*="ArtistIndexOverview-container-"]:hover {
+    background-color: transparent !important;
 }
 
-.Icon-default-3C-KJ:hover {
-    color: #fff;
+[class*="ArtistIndexOverview-container-"]:hover [class*="ArtistIndexOverview-content-"] {
+    background-color: transparent;
 }
 
-.MonitorToggleButton-toggleButton-3CcN9 {
-    color: #dadada;
+[class*="ArtistIndexOverview-content-"]:hover {
+    background-color: hsla(0, 0%, 100%, .08) !important;
 }
 
-.Table-table-2C3O8 {
-    color: #fff;
-}
-
-.Popover-title-326tA,
-.SeasonInfo-title-1tid_,
-.Popover-body-10Yh7 {
-    background-color: #1f1f1f !important;
-    color: #fff !important;
-}
-
-.Tooltip-tooltipContainer-2693s {
-    color: #fff;
-}
-
-.Tooltip-right-2MxTa,
-.Tooltip-default-2NTKh {
-    border-right-color: #1f1f1f !important;
-}
-
-.Tooltip-tooltip-3HJXy.Tooltip-inverse-yMvcm {
-    background: var(--modal-bg-color);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .2)
-}
-
-.Tooltip-bottom-3Ewbi.Tooltip-inverse-yMvcm {
-    border-bottom-color: #eee;
-}
-
-
-/* TOP MENU  */
-.PageToolbar-toolbar-1Lo1N {
-    background-color: rgba(0, 0, 0, .25);
-    color: hsla(0, 0%, 100%, .7);
-}
-
-/* HOVEL LABELS */
-.Label-default-2zdw6 {
-    border-color: #1b1b1b;
-    background-color: #1b1b1b;
-}
-
-/* TOP HEADER DROPDOWN */
-.MenuItem-menuItem-zB-Up,
-.MenuContent-menuContent-3Zkj4 {
-    background: var(--modal-bg-color);
-    color: #e1e2e3;
-}
-
-.MenuItem-menuItem-zB-Up:hover,
-.MenuItem-menuItem-zB-Up:focus {
-    background: hsla(0, 0%, 100%, .08) !important;
-    color: #fbfcfc;
+[class*="ArtistIndexOverview-link-"]:hover {
     text-decoration: none;
 }
 
-.MenuItemSeparator-separator-1ayq0 {
-    background-color: #e1e2e3;
+[class*="ProgressBar-container-"] {
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
-/* TOP HEADER HOVER */
-.PageToolbarButton-toolbarButton-QiQEt:hover {
-    color: #FFF;
+[class*=".ProgressBar-purple-"] {
+    background-color: var(--accent-color);
 }
 
-.MenuButton-menuButton-3nh0N:hover {
+
+/*ARTIST PAGE*/
+[class*="ArtistDetailsSeason-albumType-"],
+[class*="ArtistDetailsSeason-collapseButtonContainer-"] {
+    border: none !important;
+    background-color: rgba(0, 0, 0, .25) !important;
+}
+
+[class*="ArtistDetailsSeason-header-"],
+[class*="ArtistDetailsSeason-albumCount-"],
+[class*="ArtistDetails-metadataMessage-"],
+[class*="ArtistDetailsSeason-albumCount-"] {
+    color: #fff;
+}
+
+.fa-search:hover {
+    color: var(--text-hover) !important;
+}
+
+[class*="Label-default-"] {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+}
+
+[class*="Icon-default-"]:hover {
+    color: #fff;
+}
+
+[class*="MonitorToggleButton-toggleButton-"] {
+    color: #dadada;
+}
+
+[class*="ProtocolLabel-torrent-"] {
+    border-color: #00853d !important;
+    background-color: #00853d !important;
+}
+
+[class*="ProtocolLabel-usenet-"] {
+    border-color: #17b1d9 !important;
+    background-color: #17b1d9 !important;
+}
+
+/*ARTIST ALBUM PAGE*/
+[class*="AlbumDetailsMedium-mediumNumber-"] {
+    color: #fff;
+}
+
+[class*="AlbumDetailsMedium-medium-"] {
+    border: none;
+    background-color: rgba(0, 0, 0, .25);
+}
+
+[class*="ExtraFileTable-container-"] {
+    border: 1px solid transparent;
+    background-color: rgba(0, 0, 0, .25);
+}
+
+[class*="AlbumDetails-selectedTab-"] {
+    border-bottom: 4px solid var(--accent-color);
+}
+
+[class*="AlbumDetailsMedium-collapseButtonContainer-"] {
+    border: none;
+    background-color: rgba(0, 0, 0, .25);
+}
+[class*="ArtistIndexProgressBar-progress-"] {
+    background-color: hsla(0, 0%, 100%, .08);
+}
+
+[class*="ArtistIndexBanner-title-"],
+[class*="ArtistIndexBannerInfo-info-"] {
+    background-color: rgba(0, 0, 0, .25);
+    color: #fff;
+}
+
+[class*="Popover-title-"],
+[class*="SeasonInfo-title-"],
+[class*="Popover-body-"],
+[class*="Tooltip-body-"] {
+    background: var(--modal-bg-color) !important;
+}
+
+[class*="Tooltip-tooltipContainer-"] {
+    color: #fff;
+}
+
+[class*="Tooltip-bottom-"][class*="Tooltip-default-"] {
+    border-bottom-color: #eee;
+}
+
+[class*="Tooltip-right-"][class*="Tooltip-default-"] {
+    border-right-color: #eee;
+}
+
+[class*="EpisodeTitleLink-link-"]:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+[class*="IconButton-button-"] {
+    color: var(--text);
+}
+
+[class*="IconButton-button-"]:hover {
+    background-color: transparent;
+    color: var(--text-hover);
+}
+
+[class*="Label-default-"] {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+}
+
+[class*="Label-info-"]{
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+[class*="PageSidebarItem-status-"][class*="Label-info-"] {
+    border-color: var(--queue-color);
+    background-color: var(--queue-color);
+    color: #fff;
+}
+
+/* Table options*/
+[class*="TableOptionsColumn-column-"] {
+    background: rgba(0, 0, 0, .25);
     color: #FFF;
+    border: none;
+}
+
+[class*="TableHeaderCell-headerCell-"] {
+    color: #fff;
+}
+
+[class*="Table-table-"] {
+    color: var(--text);
+}
+
+[class*="TableRow-row-"]:hover {
+    background-color: hsla(0, 0%, 100%, .08);
+    color: var(--text-hover);
+}
+
+/* TOP MENU SERIES */
+[class*="PageToolbar-toolbar-"] {
+    background-color: rgba(0, 0, 0, .25);
+    color: var(--text);
+}
+
+[class*="PageToolbarButton-label-"] {
+    color: var(--text);
+}
+
+[class*="PageToolbarButton-toolbarButton-"][class*="PageToolbarButton-isDisabled-"] {
+    opacity: .5;
+    color: var(--text);
+}
+[class*="PageToolbarButton-toolbarButton-"][class*="PageToolbarButton-isDisabled-"]:hover,
+[class*="PageToolbarButton-isDisabled-"]:hover {
+    color: var(--text) !important;
+}
+
+[class*="PageToolbarButton-label-"] {
+    color: var(--text);
+}
+
+[class*="PageToolbarButton-toolbarButton-"]:hover {
+    color: var(--text-hover);
+}
+
+[class*="MenuButton-menuButton-"]:hover {
+    color: var(--text-hover);
+}
+
+/* POSTERS */
+[class*="ArtistIndexPoster-title-"],
+[class*="ArtistIndexPosterInfo-info-"] {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: var(--text);
+}
+
+
+/* MOVIES TOP HEADER DROPDOWN */
+[class*="MenuItem-menuItem-"],
+[class*="MenuContent-menuContent-"] {
+    background: var(--modal-bg-color);
+    color: var(--text);
+}
+
+[class*="MenuContent-scroller-"] {
+    box-shadow: black 0 0 5px 0px;
+}
+
+[class*="MenuItem-menuItem-"]:hover,
+[class*="MenuItem-menuItem-"]:focus {
+    background: hsla(0, 0%, 100%, .08) !important;
+    color: var(--text-hover);
+    text-decoration: none;
+}
+
+[class*="MenuItemSeparator-separator-"] {
+    background-color: hsla(0, 0%, 100%, .08) !important;
 }
 
 /* ALPHABET JUMP BAR */
-.PageJumpBar-jumpBar-3owcF {
+[class*="PageJumpBar-jumpBar-"] {
     color: #FFF;
 }
 
 /* ADD NEW */
-
-/* SEARCH BAR */
-.Input-input-2YWzR {
-    border: none;
-    background-color: rgba(255, 255, 255, 0.08);
-    color: #FFF;
+div[class*='EnhancedSelectInputOption'] {
+    background-color: #1e1e1e;
+    color: #fff;
 }
 
-.Input-input-2YWzR:focus {
+div[class*='EnhancedSelectInputOption']:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #fff;
+}
+
+[class*="EnhancedSelectInput-options-"] {
+    border: 1px solid #1e1e1e;
+    border-radius: 4px;
+    background-color: #1e1e1e;
+}
+
+/* SEARCH BAR */
+[class*="Input-input-"],
+[class*="AddNewArtist-searchIconContainer-"],
+[class*="CheckInput-isIndeterminate-"] {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #FFF
+}
+
+[class*="ArtistSearchInput-container-"] [class*="Input-input-"] {
+    background: transparent;
+    border-bottom: solid 1px #fff;
+}
+
+[class*="ArtistSearchInput-container-"] [class*="Input-input-"]:focus {
+    border-bottom: none;
+    background: transparent;
+}
+
+[class*="ArtistSearchResult-alternateTitle-"] {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+[class*="Input-input-"]:focus {
     outline: 0;
     border-color: #fff;
     box-shadow: none;
     background-color: rgba(255, 255, 255, 0.25);
 }
 
-.Button-default-2uiHU:hover {
-    border-color: transparent;
-    background-color: hsla(0, 0%, 100%, .3) !important;
-    color: #fff;
+[class*="TagInput-input-"][class*="TagInput-isFocused-"] {
+    outline: 0;
+    border-color: #fff;
+    box-shadow: none;
 }
 
 /* TEXT COLOR */
-.PageContentBody-innerContentBody-tEszh {
+
+[class*="PageContentBody-innerContentBody-"] {
+    color: var(--text);
+}
+
+/* SEARCH RESULTS */
+[class*="AddNewArtistSearchResult-year-"] {
     color: #fff;
 }
 
-::placeholder {
-    color: #eee;
+[class*="AddNewArtistSearchResult-searchResult-"],
+[class*="AddNewArtistSearchResult-underlay-"],
+[class*="AddNewAlbumSearchResult-underlay-"] {
+    background-color: transparent;
 }
 
-:-moz-placeholder {
-    color: #eee;
+[class*="AddNewArtistSearchResult-searchResult-"]:hover,
+[class*="AddNewArtistSearchResult-underlay-"]:hover,
+[class*="AddNewAlbumSearchResult-underlay-"]:hover {
+    background-color: hsla(0, 0%, 100%, .08);
+    color: inherit;
+    text-decoration: none;
+}
+
+[class*="RootFolderSelectInputSelectedValue-movieFolder-"],
+[class*="RootFolderSelectInputSelectedValue-freeSpace-"] {
+    color: #fff;
+}
+
+/* IMPORT ARTIST */
+[class*="ImportArtistSelectArtist-content-"],
+[class*="ImportArtistSelectArtist-searchIconContainer-"] {
+    background: var(--modal-bg-color);
+    color: #FFF;
+    border: 1px solid transparent;
+}
+
+[class*="ImportArtistName-disambiguation-"] {
+    color: var(--text-muted);
+}
+
+[class*="ImportArtistSearchResult-artist-"]:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* MOVE THIS */
+::placeholder {
+    color: var(--text);
 }
 
 :-ms-input-placeholder {
-    color: #eee;
+    color: var(--text)
 }
 
 ::-webkit-input-placeholder {
-    color: #eee;
+    color: var(--text);
 }
 
 /* IMPORT */
+/* Text color */
+[class*="ImportArtistSelectFolder-header-"] {
+    color: #FFF;
+}
 
-.FieldSet-legend-3x6NF {
+[class*="ExpandingFileDetails-fileDetails-"] {
+    border: 1px solid rgb(255 255 255 / .1);
+    background-color: rgb(255 255 255 / 8%);
+}
+
+/* IMPORT NEW ARTIST */
+/* Drop down menu/button*/
+[class*="ImportArtistSelectArtist-button-"] {
+    border: none; 
+    background-color: rgba(0, 0, 0, 0.25) !important;
+    color: #fff;
+}
+
+
+/* IMPORT */
+
+[class*="FieldSet-legend-"] {
     color: #FFF;
     border-bottom: 1px solid var(--accent-color);
 }
 
-.TableRow-row-33xJE:hover {
-    background-color: hsla(0, 0%, 100%, .08);
-    color: #FFF;
+[class*="VirtualTableRow-row-"]:hover {
+    background-color: rgba(255, 255, 255, 0.08);
 }
 
-.VirtualTableRow-row-2-JS9:hover {
-    background-color: hsla(0, 0%, 100%, .08);
+[class*="ImportMovieSelectMovie-button-"] {
+    border: none !important;
+    background-color: rgba(0, 0, 0, 0.25) !important;
 }
 
+
+/*Title*/
+
+.PageJumpBarItem-jumpBarItem-3F58I:hover {
+    color: #fff;
+    background: hsla(0, 0%, 100%, .08);
+}
+
+/*Posters*/
+.AddListMoviePoster-title-2qKvg {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #fff;
+}
 
 /* MASS EDITOR */
+
 /* FOOTER */
 .PageContentFooter-contentFooter-3ODMj {
     border: none;
@@ -368,17 +667,71 @@ body {
 }
 
 /* CALENDAR */
-.Button-default-2uiHU {
-    color: #FFF;
-    background-color: rgba(0, 0, 0, .25);
-    border-color: transparent;
+.CalendarEvent-downloaded-2vSrJ {
+    background: rgb(var(--calendar-available) / .7) !important;
+    border-left-color: transparent !important;
+}
+
+.CalendarEvent-downloaded-2vSrJ:hover {
+    background: rgb(var(--calendar-available) / .5) !important;
+    border-left-color: transparent !important;
+}
+
+.CalendarEvent-missing-1y6vZ {
+    background: rgb(var(--calendar-missing) / .7) !important;
+    border-left-color: transparent !important;
+}
+
+.CalendarEvent-missing-1y6vZ:hover {
+    background: rgb(var(--calendar-missing) / .5) !important;
+    border-left-color: transparent !important;
+}
+
+.CalendarEvent-unreleased-mSAoI {
+    background: rgb(var(--calendar-Unaired) / .7) !important;
+    border-left-color: transparent !important;
+}
+
+.CalendarEvent-unreleased-mSAoI:hover {
+    background: rgb(var(--calendar-Unaired) / .5) !important;
+    border-left-color: transparent !important;
+}
+
+.CalendarEvent-unmonitored-Zvc-m {
+    background: rgb(var(--calendar-Unmonitored) / .7) !important;
+    border-left-color: transparent !important;
+}
+
+.CalendarEvent-unmonitored-Zvc-m:hover {
+    background: rgb(var(--calendar-Unmonitored) / .5) !important;
+    border-left-color: transparent !important;
+}
+
+.CalendarEvent-downloading-1kwSO {
+    background: rgb(var(--calendar-Downloading) / .7) !important;
+    border-left-color: transparent !important;
+}
+
+.CalendarEvent-downloading-1kwSO:hover {
+    background: rgb(var(--calendar-Downloading) / .5) !important;
+    border-left-color: transparent !important;
 }
 
 .DayOfWeek-dayOfWeek-1iw4D {
     background-color: hsla(0, 0%, 100%, .08);
 }
 
-.CalendarDay-day-2TMXA {
+.CalendarDay-dayOfMonth-2CzdW {
+    border-bottom: 1px solid hsla(0, 0%, 100%, .08);
+    background-color: rgba(0, 0, 0, .25);
+}
+
+.CalendarDay-isToday-1rFJO {
+    background-color: hsla(0, 0%, 100%, .08) !important;
+}
+
+.CalendarDay-day-2TMXA,
+.CalendarDays-days-girjM {
     -webkit-box-flex: 1;
     -webkit-flex: 1 0 14.28%;
     flex: 1 0 14.28%;
@@ -389,74 +742,62 @@ body {
     border-right: 1px solid hsla(0, 0%, 100%, .08);
 }
 
+.CalendarEvent-movieTitle-2-WAP,
+.CalendarEvent-episodeInfo-IWdbW,
+.CalendarEvent-airTime-3Wzho {
+    color: #ffffff !important;
+}
+
+.CalendarEvent-movieInfo-2LF5- {
+    color: #eee;
+}
+
 .CalendarEvent-event-3Uyb9 {
     border-bottom: none !important;
 }
 
-.CalendarEvent-event-3Uyb9:hover {
+.CalendarEventGroup-eventGroup-gWPtK {
+    border-bottom: 1px solid hsla(0, 0%, 100%, .08) !important;
+}
+
+.CalendarEventGroup-movieTitle-ThqKe {
+    color: #ffffff !important;
+}
+
+.CalendarEventGroup-airTime-1Z6G9 {
+    color: #eee;
+}
+
+.CalendarEventGroup-episodeInfo-vfg0M {
+    color: #eee;
+}
+
+/* calendar agenda */
+.AgendaEvent-event-2a83A:hover {
     background-color: hsla(0, 0%, 100%, .08) !important;
-    border-bottom: none !important;
 }
 
-/* CALENDAR COLORS */
-.CalendarEvent-downloading-1kwSO {
-background: rgb(var(--calendar-Downloading) / .7) !important;
-border-left-color: transparent !important;
-}
-.CalendarEvent-downloading-1kwSO:hover {
-background: rgb(var(--calendar-Downloading) / .5) !important;
-border-left-color: transparent !important;
-}
-.CalendarEvent-downloaded-2vSrJ {
-background: rgb(var(--calendar-Downloaded) / .7) !important;
-border-left-color: transparent !important;
-}
-.CalendarEvent-downloaded-2vSrJ:hover {
-background: rgb(var(--calendar-Downloaded) / .5) !important;
-border-left-color: transparent !important;
-}
-.CalendarEvent-unreleased-mSAoI {
-background: rgb(var(--calendar-Unreleased) / .7) !important;
-border-left-color: transparent !important;
-}
-.CalendarEvent-unreleased-mSAoI:hover {
-background: rgb(var(--calendar-Unreleased) / .5) !important;
-border-left-color: transparent !important;
-}
-.CalendarEvent-partial-2_4q1 {
-background: rgb(var(--calendar-Partial) / .7) !important;
-border-left-color: transparent !important;
-}
-.CalendarEvent-partial-2_4q1:hover {
-background: rgb(var(--calendar-Partial) / .5) !important;
-border-left-color: transparent !important;
-}
-.CalendarEvent-unmonitored-Zvc-m {
-background: rgb(var(--calendar-Unmonitored) / .7) !important;
-border-left-color: transparent !important;
-}
-.CalendarEvent-unmonitored-Zvc-m:hover {
-background: rgb(var(--calendar-Unmonitored) / .5) !important;
-border-left-color: transparent !important;
-}
-.CalendarEvent-missing-1y6vZ {
-background: rgb(var(--calendar-Missing) / .7) !important;
-border-left-color: transparent !important;
-}
-.CalendarEvent-missing-1y6vZ:hover {
-background: rgb(var(--calendar-Missing) / .5) !important;
-border-left-color: transparent !important;
-}
-
-/* ACTIVITY */
-.ProgressBar-primary-3YDfb {
-    background-color: var(--accent-color);
-}
 
 /* SETTINGS */
-
-.Settings-summary-3KPAv {
+[class*="PageContentBody-innerContentBody-"] [class*="Link-to-"] {
     color: #fff;
+}
+
+[class*="Settings-summary-"] {
+    color: var(--text);
+}
+
+/* MEDIA MANGEMENT */
+.NamingOption-small-2nxIl {
+    border: 1px solid transparent;
+}
+
+.NamingOption-token-1y5bz {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.NamingOption-example-RNR6x {
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 /* PROFILES */
@@ -464,7 +805,11 @@ border-left-color: transparent !important;
 .QualityProfiles-addQualityProfile-2U2Io {
     background-color: rgba(0, 0, 0, .45);
     box-shadow: 0 0 10px 1px #000000;
-    color: #fff;
+    color: #c2c6c8;
+}
+
+.Card-card-1iGZk:hover {
+    color: white;
 }
 
 .QualityProfiles-center-1iiKm,
@@ -476,7 +821,8 @@ border-left-color: transparent !important;
 }
 
 .QualityProfileItem-qualityProfileItem-VFp-W,
-.QualityProfileItemGroup-qualityProfileItemGroup-2U1l5 {
+.QualityProfileItemGroup-qualityProfileItemGroup-2U1l5,
+.LanguageProfileItem-languageProfileItem-18XGg {
     border: none;
     background-color: rgba(0, 0, 0, .25);
     color: #FFF;
@@ -485,9 +831,17 @@ border-left-color: transparent !important;
 .QualityProfileItemGroup-qualityProfileItemGroup-2U1l5.QualityProfileItemGroup-editGroups-2KzDp {
     background: rgba(0, 0, 0, 0.25);
 }
-.KeyValueListInputItem-keyInput-3YYEs, .KeyValueListInputItem-valueInput-3zlQA {
+
+.KeyValueListInputItem-keyInput-3YYEs,
+.KeyValueListInputItem-valueInput-3zlQA {
+    border: none;
     background: transparent;
-    color:white;
+    color: white;
+}
+
+.QualityProfileFormatItem-qualityProfileFormatItem-19XrK {
+    border: 1px solid transparent;
+    background: rgba(0, 0, 0, .25);
 }
 
 /* PROFILES */
@@ -497,16 +851,12 @@ border-left-color: transparent !important;
     color: #c2c6c8;
 }
 
-/* INDEXERS */
-
 /* DOWNLOAD CLIENTS */
 .DownloadClients-center-FvACx {
     background-color: transparent;
     border: none;
     color: #c2c6c8;
 }
-
-/* IMPORT LISTS */
 
 /* CONNECTIONS */
 .Notifications-center-8iwmy {
@@ -515,11 +865,65 @@ border-left-color: transparent !important;
     color: #c2c6c8;
 }
 
+/* LISTS */
+.ImportLists-center-17Qdu {
+    background-color: transparent;
+    border: none;
+    color: #c2c6c8;
+}
+
 /* LOG */
 .Alert-info-1J8mE {
     border-color: transparent;
-    color: #FFC107;
     background-color: rgba(0, 0, 0, 0.25);
+    color: #FFC107;
+}
+
+/* INDEXER */
+.Restrictions-center-3ngzk {
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+
+/* LISTS */
+.NetImports-center-3otL- {
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+
+/* CUSTOM FORMAT */
+.CustomFormats-center-1w6Bw,
+.EditCustomFormatModalContent-center-3QU87 {
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+
+/* Login Page */
+
+.panel-body {
+    background-color: rgba(0, 0, 0, 0.25);
+    color: white;
+}
+
+.panel-header {
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.forgot-password {
+    color: #eee !important;
+}
+
+/* Custom filter */
+.FilterBuilderRow-filterRow-1ozij:hover {
+    background-color: transparent;
+}
+
+.CustomFilter-customFilter-zBSMd:hover {
+    background-color: hsla(0, 0%, 100%, .08);
+}
+
+.SelectMovieModalContent-path-32FI- {
+    color: #eee;
 }
 
 /* -------------------------LIDARR STUFF------------------------------*/
@@ -562,9 +966,7 @@ border-left-color: transparent !important;
     color: #fff;
 }
 
-.LoadingIndicator-ripple-1264V {
-    border: 2px solid #FFFFFF;
-}
+
 
 /* Popup modal */
 .Modal-large-I2McN,
@@ -636,42 +1038,6 @@ border-left-color: transparent !important;
     color: #FFF;
 }
 
-.MenuButton-menuButton-3cqRJ:hover {
-    color: #FFF;
-}
-
-.MenuItem-menuItem-211VP,
-.MenuContent-menuContent-e2UAN {
-    background-color: #191a1c;
-    color: #e1e2e3;
-}
-
-.MenuItem-menuItem-211VP:hover,
-.MenuItem-menuItem-211VP:focus {
-    background-color: hsla(0, 0%, 100%, .08) !important;
-    color: #fbfcfc;
-    text-decoration: none;
-}
-
-.ArtistSearchInput-sectionTitle-3Xr5V {
-    color: #fff;
-}
-
-.ArtistSearchInput-containerOpen-OZAuD .ArtistSearchInput-artistContainer-331xe {
-    border: none;
-    background: var(--modal-bg-color);
-    color: #fff;
-    box-shadow: 0 0 10px 1px #000000;
-}
-
-.ArtistSearchInput-artistContainer-331xe::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.25);
-}
-
-.ArtistSearchInput-highlighted-2oxYA {
-    background-color: hsla(0, 0%, 100%, .08)
-}
-
 /* Sidebar */
 @media only screen and (max-width: 768px) {
     .PageSidebar-sidebar-2UXc0 {
@@ -722,99 +1088,9 @@ border-left-color: transparent !important;
     color: hsla(0, 0%, 100%, .7) !important;
 }
 
-/*ARTIST PAGE*/
-.ArtistIndexPoster-title-38afV,
-.ArtistIndexPosterInfo-info-3J_DB {
-    background-color: rgba(255, 255, 255, 0.08);
-}
 
-.ArtistDetailsSeason-albumType-3aBd- {
-    border: none;
-    background-color: rgba(0, 0, 0, .25);
-}
 
-.ArtistDetailsSeason-header-2GIDr {
-    color: #fff;
-}
 
-.ArtistDetailsSeason-albumCount-14dOS {
-    color: #ffffff;
-}
-
-.ArtistDetailsSeason-collapseButtonContainer-1c4Kb {
-    border: none;
-    background-color: rgba(0, 0, 0, .25);
-}
-
-.ArtistDetails-metadataMessage-2NtMl {
-    color: #ffffff;
-}
-
-.ArtistDetailsSeason-albumCount-36Ow9 {
-    color: #ffffff;
-}
-
-.Label-default-2AF1C {
-    border-color: var(--accent-color);
-    background-color: var(--accent-color);
-}
-
-.ProtocolLabel-torrent-3aqvR {
-    border-color: #00853d !important;
-    background-color: #00853d !important;
-}
-
-.ProtocolLabel-usenet-3qKV1 {
-    border-color: #17b1d9 !important;
-    background-color: #17b1d9 !important;
-}
-
-/*ARTIST ALBUM PAGE*/
-.AlbumDetailsMedium-mediumNumber-3ZUko {
-    color: #fff;
-}
-
-.AlbumDetailsMedium-medium-dqPTF {
-    border: none;
-    background-color: rgba(0, 0, 0, .25);
-}
-
-.AlbumDetailsMedium-collapseButtonContainer-33Y3Z {
-    border-top: none;
-    background-color: rgba(0, 0, 0, .25);
-}
-
-.ArtistIndexOverview-container-3_iEh:hover .ArtistIndexOverview-content-3zZhb,
-.ArtistIndexProgressBar-progress-3DLoM {
-    background-color: hsla(0, 0%, 100%, .08);
-}
-
-.ArtistIndexBanner-title-3TKM6 {
-    background-color: rgba(0, 0, 0, .25);
-    color: #fff;
-}
-
-.ProgressBar-container-14z4A {
-    background-color: rgba(0, 0, 0, 0.25);
-}
-
-/* OVERVIEW PAGE */
-.ArtistIndexOverview-container-29HZM,
-.ArtistIndexOverview-container-29HZM:hover {
-    background-color: transparent !important;
-}
-
-.ArtistIndexOverview-content-hiNUl:hover {
-    background-color: hsla(0, 0%, 100%, .08) !important;
-}
-
-.ArtistIndexOverview-container-29HZM:hover .ArtistIndexOverview-content-hiNUl {
-    background-color: transparent;
-}
-
-.ArtistIndexOverview-content-hiNUl:hover {
-    text-decoration: none;
-}
 
 /* BANNER PAGE */
 .ArtistIndexBanner-title-dKZ3c {
@@ -845,15 +1121,6 @@ border-left-color: transparent !important;
     color: #FFF;
 }
 
-.IconButton-button-2qiGi:hover {
-    color: #fff !important;
-    background-color: transparent;
-}
-
-.IconButton-button-2qiGi {
-    color: #bac5cc;
-}
-
 /* Table options*/
 .TableOptionsColumn-column-2H7ic {
     background: rgba(0, 0, 0, .25);
@@ -866,112 +1133,6 @@ border-left-color: transparent !important;
     border-top: 1px solid #eee !important;
 }
 
-/* ADD NEW ARTIST */
-.AddNewArtist-searchIconContainer-7ygSM,
-.Input-input-dS7Oc,
-.AddNewArtist-clearLookupButton-2ym1,
-.ImportArtistSelectArtist-button-WUML4,
-.PageContentFooter-contentFooter-1t6xx {
-    border: none;
-    background-color: rgba(0, 0, 0, .25);
-    color: #FFF;
-}
-
-.AddNewArtistSearchResult-year-3Ziif {
-    color: #ccc;
-}
-
-.AddNewArtistSearchResult-searchResult-fxW3m,
-.AddNewAlbumSearchResult-searchResult-XtaL3,
-.AddNewArtistSearchResult-searchResult-N5Vx4,
-.AddNewArtistSearchResult-underlay-3aVNi,
-.AddNewAlbumSearchResult-underlay-2Egnf {
-    background-color: transparent;
-}
-
-.AddNewArtistSearchResult-searchResult-fxW3m:hover,
-.AddNewAlbumSearchResult-searchResult-XtaL3:hover,
-.AddNewArtistSearchResult-searchResult-N5Vx4:hover,
-.AddNewArtistSearchResult-underlay-3aVNi:hover,
-.AddNewAlbumSearchResult-underlay-2Egnf:hover {
-    background-color: hsla(0, 0%, 100%, .08);
-    color: inherit;
-    text-decoration: none;
-}
-
-.AddNewItem-searchIconContainer-2CBFJ {
-    border: none;
-    border-right: none;
-    background-color: rgba(255, 255, 255, 0.08);
-}
-
-.ImportArtistSearchResult-artist-IVs0T:hover {
-    background-color: hsla(0, 0%, 100%, .08);
-}
-
-.Input-input-dS7Oc:focus {
-    outline: 0;
-    border-color: transparent;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 8px rgba(0, 0, 0, 0);
-    background-color: rgb(30, 30, 30);
-}
-
-/* IMPORT ARTIST */
-.ImportArtistSelectArtist-content-qicZY {
-    background-color: #1e1e1e;
-    color: #FFF;
-    border: 1px solid #00000000;
-}
-
-.ImportArtistSelectArtist-button-1zPPw {
-    border: 1px solid #00000000;
-    background-color: #1f1f1f;
-}
-
-.ImportArtistSelectArtist-searchIconContainer-3YJva {
-    background-color: rgba(0, 0, 0, .25);
-    border-color: transparent;
-}
-
-.ImportArtistSearchResult-artist-11vxQ:hover {
-    background-color: rgba(255, 255, 255, 0.08);
-}
-
-.Button-default-1X0nf {
-    color: #FFF;
-    background-color: rgba(0, 0, 0, .25);
-}
-
-.AddNewArtist-noResults-L1xcp,
-.AddNewArtist-message-c33sh {
-    color: #FFF;
-}
-
-.Button-default-1X0nf:hover {
-    background-color: hsla(0, 0%, 100%, .08);
-}
-
-
-/* IMPORT */
-/* Text color */
-.ImportArtistSelectFolder-header-1AE_l,
-.PageContent-content-2-LcY,
-.FieldSet-legend-3mbvV {
-    color: #FFF;
-}
-
-.TableRow-row-2tPLX {
-    color: #FFF;
-}
-
-.TableRow-row-2tPLX:hover {
-    background-color: hsla(0, 0%, 100%, .08);
-    color: #FFF;
-}
-.ExpandingFileDetails-fileDetails-ja8Cz {
-    border: 1px solid rgb(255 255 255 / .1);
-    background-color: rgb(255 255 255 / 8%);
-}
 /* ALBUM STUDIO */
 .AlbumStudioAlbum-album-mOsjl,
 .AlbumStudioAlbum-tracks-14O0r {
