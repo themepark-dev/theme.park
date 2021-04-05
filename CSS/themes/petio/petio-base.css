@@ -270,7 +270,12 @@ code {
     background: var(--button-color-hover);
 }
 
-.requests--status__pending {
+.requests--status__pending,
+.requests--status__orange,
+.requests--status__bad,
+.requests--status__cinema,
+.requests--status__blue,
+.requests--status__manual {
     color: #fff;
 }
 
