@@ -10,6 +10,21 @@
 /*		   		        Made by @gilbN					 */
 /* 			      https://github.com/gilbN/theme.park			 */
 
+/* MOBILE */
+
+@media (max-width: 720px) {
+    .modal__body,
+    .modal__content__wrapper,
+    .modal__header,
+    body,
+    .dark .torrents,
+    .torrents,
+    .action-bar {
+        background: #1b1b1b !important;
+    }
+}
+
+
 body,
 .dark .torrents,
 .torrents {
@@ -263,14 +278,14 @@ p,
 .dark .torrent--is-condensed.torrent--is-selected+.torrent,
 .torrent--is-condensed.torrent--is-selected,
 .torrent--is-condensed.torrent--is-selected+.torrent {
-    border-color: rgba(var(--accent-color),.7);
+    border-color: rgba(var(--accent-color), .7);
 }
 
 .dark .torrent--is-selected:after,
 .dark .torrent--is-selected:hover:after,
 .torrent--is-selected:after,
 .torrent--is-selected:hover:after {
-    background: rgba(var(--accent-color),.7);
+    background: rgba(var(--accent-color), .7);
 }
 
 .dark .table__row--heading,
@@ -504,7 +519,7 @@ p,
 }
 
 .tooltip__content {
-    background: var(--modal-bg-color);
+    background: #1b1b1b;
     color: var(--text);
 }
 
