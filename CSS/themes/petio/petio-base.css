@@ -20,9 +20,11 @@ body {
 }
 
 /* TEXT COLOR */
-.sub-title,
-.widget--title,
-p {
+p,
+.card .text-wrap .title,
+.card .text-wrap .year,
+.media-content .overview,
+.media-content .media-crew .crew-credit {
     color: var(--text-color);
 }
 
