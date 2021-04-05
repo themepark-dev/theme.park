@@ -194,11 +194,11 @@
 <p><a href="https://github.com/gilbN/theme.park/wiki/Lazylibrarian">Lazylibrarian</a></p>
 </td>
 <td style="width: 90px; height: 40px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Adguard"><img src="https://github.com/causefx/Organizr/blob/v2-master/plugins/images/tabs/AdGuardHome.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://github.com/gilbN/theme.park/wiki/Adguard"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-master/plugins/images/tabs/AdGuardHome.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://github.com/gilbN/theme.park/wiki/Adguard">Adguard</a></p>
 </td>
 <td style="width: 90px; height: 40px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Gaps"><img src="https://github.com/JasonHHouse/gaps/blob/master/images/gaps.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://github.com/gilbN/theme.park/wiki/Gaps"><img src="https://raw.githubusercontent.com/JasonHHouse/gaps/master/images/gaps.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://github.com/gilbN/theme.park/wiki/Gaps">Gaps</a></p>
 </td>
 </tr>
@@ -243,7 +243,7 @@
 <p><a href="https://github.com/gilbN/theme.park/wiki/Petio">Petio</a></p>
 </td>
 <td style="width: 90px; height: 40px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Flood"><img src="https://raw.githubusercontent.com/jesec/flood/master/flood.svg" alt="" width="48" height="48" /></a></p>
+<p><a href="https://github.com/gilbN/theme.park/wiki/Flood"><img src="https://raw.githubusercontent.com/jesec/flood/master/client/src/public/icon_96x96.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://github.com/gilbN/theme.park/wiki/Flood">Flood</a></p>
 </td>
 </tr>
