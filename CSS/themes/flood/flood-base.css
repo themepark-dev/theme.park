@@ -13,6 +13,7 @@
 /* MOBILE */
 
 @media (max-width: 720px) {
+
     .modal__body,
     .modal__content__wrapper,
     .modal__header,
@@ -422,6 +423,11 @@ p,
 .dark .action:focus-visible .icon,
 .dark .action:hover .icon {
     fill: rgb(var(--accent-color));
+}
+
+.dropdown__value,
+.dropdown.is-expanded .dropdown__header .dropdown__value {
+    color: rgb(var(--accent-color));
 }
 
 /* SIDE MENU */
