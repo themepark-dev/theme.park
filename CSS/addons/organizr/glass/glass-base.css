@@ -379,6 +379,16 @@
 	font-size: 20px;
 	color: rgba(40, 205, 65, 1);
     }
+
+/* Weather boxes */
+#homepageOrderWeatherAndAir .col-lg-2 .white-box,
+#homepageOrderWeatherAndAir > div:nth-child(1) > div.col-lg-4.col-sm-12.col-xs-12 > div,
+#homepageOrderWeatherAndAir > div:nth-child(2) > div.col-lg-4.col-sm-12.col-xs-12 > div{
+    background: var(--div-background-color-25) !important;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px)
+}
+
 /* Custom HTML */    
     #homepageOrdercustomhtmlTwo, #homepageOrdercustomhtml {
         -webkit-backdrop-filter: blur(10px);
