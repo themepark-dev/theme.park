@@ -13,12 +13,21 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
+
       - name: get changed files
         id: getfile
         run: |
           echo "::set-output name=files::$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }}| xargs)"
 
-      - name: echo the changed files
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.PERSONAL_TOKEN }}
+  
+      - name: echo the changed files and build&push
+        uses: docker/build-push-action@v2
         run: |
           for i in ${{ steps.getfile.outputs.files }}
             do
@@ -28,4 +37,5 @@ jobs:
               elif [ "$i" == *.md ]; then
                 continue # Skip markdown files
               docker build . --file $i --tag theme.park:$directory
+              docker push ghcr.io/gilbn/theme.park:$directory
             done
