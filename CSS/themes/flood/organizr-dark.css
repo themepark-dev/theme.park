@@ -10,21 +10,24 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
-/* PLEX ORGANIZR-DARK THEME */
-@import url(https://gilbn.github.io/theme.park/CSS/themes/plex/plex-base.css);
+/* FLOOD ORGANIZR-DARK THEME */
+@import url(https://gilbn.github.io/theme.park/CSS/themes/flood/flood-base.css);
+
 :root {
   --main-bg-color: #1f1f1f;
   --modal-bg-color: #1b1b1b;
-  --text-color: #96a2b4;
-  --text-color-hover: #fff;
-  --text-muted: #ddd;
+
   --button-color: #2cabe3;
   --button-color-hover: rgb(44 171 227 / .8);
   --button-text: #eee;
   --button-text-hover: #fff;
+
   --accent-color: 44, 171, 227;
-  --accent-color-hover: #fff;
+  --accent-color-hover: white;
+  --queue-color: #2cabe3;
   --link-color: #2cabe3;
-  --link-color-hover: #FFF;
-  --poster-unwatched: #2cabe3;
-  }
+  --link-color-hover: #fff;
+
+  --text: #96a2b4;
+  --text-hover: #fff;
+}

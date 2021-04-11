@@ -44,7 +44,8 @@ a:hover {
 
 /* BODY */
 [class*="FullPageBackground-backgroundContainer"] [class*="CrossFadeImage-crossFade"],
-#plex>[class*="background-container"]>div>div>div:nth-child(2) {
+#plex>[class*="background-container"]>div>div>div:nth-child(2),
+#plex>div[class*="FullPageBackground-backgroundContainer-"]>div>div:nth-child(2) {
   background: var(--main-bg-color) !important;
 }
 
@@ -105,7 +106,9 @@ a:hover {
 
 [class*="PageHeaderTabButton-isSelected"],
 [class*="PageHeaderTabDropdown-isSelected"],
-[class*="MultiSelectPageHeader-selectedTitle"] {
+[class*="MultiSelectPageHeader-selectedTitle"],
+[class*="PageHeaderMultiselectActions-container-"],
+[class*="PageHeaderMultiselectActions-count-"] {
   color: rgb(var(--accent-color));
   border-color: rgb(var(--accent-color));
 }
@@ -125,7 +128,9 @@ a:hover {
   box-shadow: 0 2px 0 0 rgb(var(--accent-color));
 }
 
-[class*="MetadataPosterCardFace-isSelected"] {
+[class*="MetadataPosterCardFace-isSelected"],
+[class*="MetadataPosterCard-hoveredSelectedLink-"],
+[class*="MetadataPosterCard-selectedLink-"] {
   box-shadow: 0 0 0 2px rgb(var(--accent-color)), 0 0 4px rgb(0 0 0 / 30%);
 }
 
@@ -240,6 +245,11 @@ a:hover {
 
 [class*="NavBarActivityMenuStatusItem-statusButtonIndicator"] {
   color: rgb(var(--accent-color));
+}
+
+[class*="SelectButton-selectedCircle-"] {
+  border-color: rgb(var(--accent-color));
+  background-color: rgb(var(--accent-color));
 }
 
 /* MODAL */

@@ -494,9 +494,9 @@ table.dataTable>tbody>tr:nth-of-type(even):hover {
     #homepageOrdertransmission .white-box {
         padding-right: 0px !important;
     }
-    #homepage-items .white-box {
+/*    #homepage-items .white-box {
         padding-left: 0px !important;
-    }
+    }*/
     #homepage-items .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover {
         cursor: pointer;
         opacity: 1;
