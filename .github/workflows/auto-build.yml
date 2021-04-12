@@ -4,7 +4,9 @@ on:
     branches: [ docker-mods ]
     paths:
       - '**/Dockerfile'
-
+defaults:
+  run:
+    working-directory: ./your_working_dir
 jobs:
   job1:
     runs-on: ubuntu-latest
@@ -25,7 +27,7 @@ jobs:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GH_PAT }}
-  
+
       - name: echo the changed files and build&push
         run: |
           for i in ${{ steps.getfile.outputs.files }}
@@ -36,6 +38,6 @@ jobs:
               elif [ "$i" == *.md ]; then
                 continue # Skip markdown files
               fi
-              docker build --file $i --tag theme.park:$directory
+              docker build $i --tag theme.park:$directory
               docker push ghcr.io/gilbn/theme.park:$directory
             done
