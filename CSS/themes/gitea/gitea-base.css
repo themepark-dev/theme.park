@@ -55,7 +55,8 @@ a:hover,
 .ui .text.blue a,
 .issue.list a:not(.label):hover,
 .ui .migrate a,
-.ui .text.grey a {
+.ui .text.grey a,
+.issue.list>.item .title:hover {
     color: var(--link-color) !important;
 }
 
@@ -156,7 +157,6 @@ footer,
 
 /* TEXT HOVER */
 b:hover,
-.issue.list>.item .title:hover,
 .ui.checkbox+label:hover,
 .ui.checkbox label:hover,
 .ui.checkbox input:focus~label,
@@ -625,6 +625,9 @@ svg.vch__wrapper rect.vch__day__square[data-v-a9cfea66]:hover {
     background-color: #3a523a
 }
 
+.repository .segment.reactions .ui.label.basic {
+    color: var(--accent-color)!important;
+}
 
 .repository .diff-file-box .code-diff-split tbody tr.add-code td:first-child,
 .repository .diff-file-box .code-diff-split tbody tr.add-code td:nth-child(2),
@@ -694,15 +697,17 @@ td.blob-excerpt {
 .ui.tabular.menu .active.item {
     background: none var(--main-bg-color) !important;
     color: var(--text);
-    border-color: rgb(255 255 255 / 10%);
+    border-color: rgb(255 255 255 / 10%) !important;
 }
 
 .ui.tabular.menu {
     border-bottom: 1px solid rgb(255 255 255 / 10%);
 }
 
-.ui.tabular.menu .item:hover {
-    color: var(--text-hover);
+.ui.tabular.menu .item:hover,
+.ui.tabular.menu .active.item, 
+.ui.tabular.menu .active.item:hover {
+    color: var(--text-hover) !important;
     border-radius: .28571429rem .28571429rem 0 0 !important;
 }
 
@@ -1124,7 +1129,11 @@ footer {
 }
 
 .ui.basic.button,
-.ui.basic.buttons .button {
+.ui.basic.buttons .button,
+.ui.basic.blue.button,
+.ui.basic.blue.buttons .button,
+.ui.basic.primary.button,
+.ui.basic.primary.buttons .button {
     color: var(--button-text);
     box-shadow: inset 0 0 0 1px rgb(255 255 255 / 15%) !important;
 }
@@ -1177,6 +1186,9 @@ a.ui.basic.label:hover {
     background: none !important;
     color: rgb(255 255 255 / 60%) !important;
     box-shadow: inset 0 0 0 1px rgba(34, 36, 38, .15) !important;
+}
+.repo-title {
+    color: #ffffff;
 }
 
 /* LABELS */
