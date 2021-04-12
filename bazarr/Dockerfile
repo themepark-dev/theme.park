@@ -1,4 +1,4 @@
 FROM scratch
 
-# copy local files 
+# copy local files
 COPY root/ /
