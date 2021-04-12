@@ -751,6 +751,7 @@ a.ui.card:hover {
     margin-bottom: 10px;
     border: 1px solid rgb(255 255 255 / .1);
     border-radius: 3px;
+    background: rgb(255 255 255 / 10%);
 }
 
 .repository.release #release-list {
@@ -965,6 +966,10 @@ a.ui.card:hover {
     color: var(--text);
 }
 
+table#repo-files-table {
+    background: rgb(0 0 0 / 35%);
+}
+
 .ui.table>tbody {
     border: 1px solid rgba(34, 36, 38, .15);
     color: var(--text);
@@ -1038,9 +1043,14 @@ footer {
 .ui.primary.button:hover,
 .ui.primary.buttons .button:hover,
 .ui.blue.button:hover,
-.ui.blue.buttons .button:hover {
+.ui.blue.buttons .button:hover,
+.ui.basic.blue.button:focus,
+.ui.basic.blue.buttons .button:focus,
+.ui.basic.primary.button:focus,
+.ui.basic.primary.buttons .button:focus {
     background-color: var(--button-color-hover) !important;
     color: var(--button-text) !important;
+    box-shadow: inset 0 0 0 1px transparent !important;
 }
 
 .ui.teal.button,
