@@ -36,5 +36,5 @@ jobs:
                 continue # Skip markdown files
               fi
               docker build $directory --tag theme.park:$directory
-              docker push ghcr.io/gilbn/theme.park:$directory
+              docker push theme.park:$directory
             done
