@@ -8,7 +8,7 @@ on:
     - '**/README.md'
     - '**/LICENSE'
 jobs:
-  build_mod:
+  push_to_ghcr_io:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
@@ -39,4 +39,35 @@ jobs:
               fi
               docker build $directory --tag ghcr.io/gilbn/theme.park:$directory
               docker push ghcr.io/gilbn/theme.park:$directory
+            done
+  push_to_dockerhub:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: get changed files
+        id: getfile
+        run: |
+          echo "::set-output name=files::$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }}| xargs)"
+      - name: Login to Docker Hub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: find correct directory then build&push
+        run: |
+          for i in ${{ steps.getfile.outputs.files }}
+            do
+              directory="$( echo $i | cut -d'/' -f1 -s )"
+              if [ -z "$directory" ]; then
+                continue # Skip root dir
+              elif [ "$i" == *.md ]; then
+                continue # Skip markdown files
+              elif [ "$i" == *.yml ]; then
+                continue # Skip YAML files
+              fi
+              docker build $directory --tag gilbn/theme.park:$directory
+              docker push gilbn/theme.park:$directory
             done
