@@ -4,9 +4,6 @@ on:
     branches: [ docker-mods ]
     paths:
       - '**/Dockerfile'
-defaults:
-  run:
-    working-directory: ./your_working_dir
 jobs:
   job1:
     runs-on: ubuntu-latest
