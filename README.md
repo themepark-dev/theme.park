@@ -15,7 +15,7 @@ These are the ***default** values for all envs. So if you want to use the `organ
 
 | Environment Variable | Example Value | Description |
 | -------------------- | ------------- | ----------- |
-| `DOCKER_MODS` | `gilbn/theme.park:<app>` | Replace \<app> |
+| `DOCKER_MODS` | `ghcr.io/gilbn/theme.park:<app>` | Replace \<app> |
 | `TP_DOMAIN` | `gilbn.github.io` | Defaults to the example. |
 | `TP_THEME` | `organizr-dark` | Defaults to the example. |
 | `TP_ADDON` | `radarr-4k-logo` | *Not set by default (See [wiki](https://github.com/gilbN/theme.park/wiki/Addons) for more info on addons) |
