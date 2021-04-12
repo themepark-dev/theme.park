@@ -2,29 +2,25 @@ name: publishmultipledockerimages
 on:
   push:
     branches: [ docker-mods ]
-    paths:
-      - '**/Dockerfile'
+
 jobs:
-  job1:
+  build_mod:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-
       - name: get changed files
         id: getfile
         run: |
           echo "::set-output name=files::$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }}| xargs)"
-
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v1
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GH_PAT }}
-
       - name: echo the changed files and build&push
         run: |
           for i in ${{ steps.getfile.outputs.files }}
