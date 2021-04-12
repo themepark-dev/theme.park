@@ -1,4 +1,4 @@
-name: publishmultipledockerimages
+name: autobuildallthemods
 on:
   push:
     branches: [ docker-mods ]
@@ -25,7 +25,7 @@ jobs:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GH_PAT }}
-      - name: echo the changed files and build&push
+      - name: find correct directory then build&push
         run: |
           for i in ${{ steps.getfile.outputs.files }}
             do
