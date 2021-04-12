@@ -35,6 +35,6 @@ jobs:
               elif [ "$i" == *.md ]; then
                 continue # Skip markdown files
               fi
-              docker build $directory --tag theme.park:$directory
-              docker push theme.park:$directory
+              docker build $directory --tag ghcr.io/gilbn/theme.park:$directory
+              docker push ghcr.io/gilbn/theme.park:$directory
             done
