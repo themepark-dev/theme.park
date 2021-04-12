@@ -34,6 +34,8 @@ jobs:
                 continue # Skip root dir
               elif [ "$i" == *.md ]; then
                 continue # Skip markdown files
+              elif [ "$i" == *.yml ]; then
+                continue # Skip YAML files
               fi
               docker build $directory --tag ghcr.io/gilbn/theme.park:$directory
               docker push ghcr.io/gilbn/theme.park:$directory
