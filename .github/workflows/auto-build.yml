@@ -2,7 +2,11 @@ name: publishmultipledockerimages
 on:
   push:
     branches: [ docker-mods ]
-
+    paths-ignore:
+    - '.github/**'
+    - '.vscode/**'
+    - '**/README.md'
+    - '**/LICENSE'
 jobs:
   build_mod:
     runs-on: ubuntu-latest
