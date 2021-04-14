@@ -65,6 +65,7 @@ a:focus, a:hover {
     background: rgba(255, 255, 255, 0.08);
     border: none;
     outline: none;
+    color: #fff;
 }
 table.dataTable.cell-border tbody tr:first-child th, table.dataTable.cell-border tbody tr:first-child td {
     border-top: none;
