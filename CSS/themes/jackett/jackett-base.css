@@ -10,7 +10,9 @@
 
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
-
+* {
+    outline: none;
+}
 body {
     background-repeat: repeat;
 	background: var(--main-bg-color) !important;
