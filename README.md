@@ -34,7 +34,7 @@
     <ul>
         <li><a href="https://github.com/gilbN/theme.park/wiki/Setup#nginx">Nginx</a></li>
         <ul>
-            <li><a href="https://github.com/gilbN/theme.park/wiki/Setup#nginx-variable">Nginx Variable (Recommended for easy switching) ⭐</a></li>
+            <li><a href="https://github.com/gilbN/theme.park/wiki/Setup#nginx-variable">Nginx Variable</a></li>
             <li><a href="https://github.com/gilbN/theme.park/wiki/Setup#nginx-proxy-manager">Nginx Proxy Manager</a></li>
         </ul>
         <li><a href="https://github.com/gilbN/theme.park/wiki/Setup#apache">Apache</a></li>
