@@ -635,103 +635,89 @@ div[class*='EnhancedSelectInputOption']:hover {
 
 /*Title*/
 
-.PageJumpBarItem-jumpBarItem-3F58I:hover {
+[class*="PageJumpBarItem-jumpBarItem-"]:hover {
     color: #fff;
     background: hsla(0, 0%, 100%, .08);
 }
 
 /*Posters*/
-.AddListMoviePoster-title-2qKvg {
-    background-color: rgba(255, 255, 255, 0.08);
-    color: #fff;
-}
+
 
 /* MASS EDITOR */
 
 /* FOOTER */
-.PageContentFooter-contentFooter-3ODMj {
+[class*="PageContentFooter-contentFooter-"] {
     border: none;
     background-color: rgba(0, 0, 0, .25);
     color: #FFF;
 }
 
-/* SEASON PASS */
-
-.SeasonPassSeason-season-2FWuT {
-    border: none;
-    background-color: rgba(0, 0, 0, .25) !important;
-}
-
-.SeasonPassSeason-allEpisodes-1zGja {
-    background-color: #5cb85c;
-}
-
 /* CALENDAR */
-.CalendarEvent-downloaded-2vSrJ {
+[class*="CalendarEvent-downloaded-"] {
     background: rgb(var(--calendar-available) / .7) !important;
     border-left-color: transparent !important;
 }
 
-.CalendarEvent-downloaded-2vSrJ:hover {
+[class*="CalendarEvent-downloaded-"]:hover {
     background: rgb(var(--calendar-available) / .5) !important;
     border-left-color: transparent !important;
 }
 
-.CalendarEvent-missing-1y6vZ {
+[class*="CalendarEvent-missing-"] {
     background: rgb(var(--calendar-missing) / .7) !important;
     border-left-color: transparent !important;
 }
 
-.CalendarEvent-missing-1y6vZ:hover {
-    background: rgb(var(--calendar-missing) / .5) !important;
+[class*="CalendarEvent-missing-"]:hover {
+    background: rgba(var(--calendar-missing) / .5) !important;
     border-left-color: transparent !important;
 }
 
-.CalendarEvent-unreleased-mSAoI {
-    background: rgb(var(--calendar-Unaired) / .7) !important;
+[class*="CalendarEvent-unreleased-"] {
+    background: rgb(var(--calendar-unaired) / .7) !important;
     border-left-color: transparent !important;
 }
 
-.CalendarEvent-unreleased-mSAoI:hover {
-    background: rgb(var(--calendar-Unaired) / .5) !important;
+[class*="CalendarEvent-unreleased-"]:hover {
+    background: rgb(var(--calendar-unaired) / .5) !important;
     border-left-color: transparent !important;
 }
 
-.CalendarEvent-unmonitored-Zvc-m {
-    background: rgb(var(--calendar-Unmonitored) / .7) !important;
+[class*="CalendarEvent-unmonitored-"] {
+    background: rgb(var(--calendar-unmonitored) / .7) !important;
     border-left-color: transparent !important;
 }
 
-.CalendarEvent-unmonitored-Zvc-m:hover {
-    background: rgb(var(--calendar-Unmonitored) / .5) !important;
+[class*="CalendarEvent-unmonitored-"]:hover {
+    background: rgb(var(--calendar-unmonitored) / .5) !important;
     border-left-color: transparent !important;
 }
 
-.CalendarEvent-downloading-1kwSO {
-    background: rgb(var(--calendar-Downloading) / .7) !important;
+[class*="CalendarEvent-downloading-"] {
+    background: rgb(var(--calendar-downloading) / .7) !important;
     border-left-color: transparent !important;
 }
 
-.CalendarEvent-downloading-1kwSO:hover {
-    background: rgb(var(--calendar-Downloading) / .5) !important;
+[class*="CalendarEvent-downloading-"]:hover {
+    background: rgb(var(--calendar-downloading) / .5) !important;
     border-left-color: transparent !important;
 }
 
-.DayOfWeek-dayOfWeek-1iw4D {
+[class*="DayOfWeek-dayOfWeek-"] {
     background-color: hsla(0, 0%, 100%, .08);
 }
 
-.CalendarDay-dayOfMonth-2CzdW {
+[class*="CalendarDay-dayOfMonth-"] {
     border-bottom: 1px solid hsla(0, 0%, 100%, .08);
     background-color: rgba(0, 0, 0, .25);
 }
 
-.CalendarDay-isToday-1rFJO {
+[class*="CalendarDay-isToday-"] {
     background-color: hsla(0, 0%, 100%, .08) !important;
 }
 
-.CalendarDay-day-2TMXA,
-.CalendarDays-days-girjM {
+[class*="CalendarDay-day-"],
+[class*="CalendarDays-days-"] {
     -webkit-box-flex: 1;
     -webkit-flex: 1 0 14.28%;
     flex: 1 0 14.28%;
@@ -742,41 +728,18 @@ div[class*='EnhancedSelectInputOption']:hover {
     border-right: 1px solid hsla(0, 0%, 100%, .08);
 }
 
-.CalendarEvent-movieTitle-2-WAP,
-.CalendarEvent-episodeInfo-IWdbW,
-.CalendarEvent-airTime-3Wzho {
-    color: #ffffff !important;
+[class*="CalendarEvent-event-"] {
+    border-bottom: 1px solid transparent;
 }
 
-.CalendarEvent-movieInfo-2LF5- {
-    color: #eee;
-}
-
-.CalendarEvent-event-3Uyb9 {
-    border-bottom: none !important;
-}
-
-.CalendarEventGroup-eventGroup-gWPtK {
+[class*="CalendarEventGroup-eventGroup-"] {
     border-bottom: 1px solid hsla(0, 0%, 100%, .08) !important;
 }
 
-.CalendarEventGroup-movieTitle-ThqKe {
-    color: #ffffff !important;
-}
-
-.CalendarEventGroup-airTime-1Z6G9 {
-    color: #eee;
-}
-
-.CalendarEventGroup-episodeInfo-vfg0M {
-    color: #eee;
-}
-
 /* calendar agenda */
-.AgendaEvent-event-2a83A:hover {
+[class*="AgendaEvent-event-"]:hover {
     background-color: hsla(0, 0%, 100%, .08) !important;
 }
-
 
 /* SETTINGS */
 [class*="PageContentBody-innerContentBody-"] [class*="Link-to-"] {
@@ -788,15 +751,15 @@ div[class*='EnhancedSelectInputOption']:hover {
 }
 
 /* MEDIA MANGEMENT */
-.NamingOption-small-2nxIl {
+[class*="NamingOption-small-"] {
     border: 1px solid transparent;
 }
 
-.NamingOption-token-1y5bz {
+[class*="NamingOption-token-"] {
     background-color: rgba(255, 255, 255, 0.15);
 }
 
-.NamingOption-example-RNR6x {
+[class*="NamingOption-example-"] {
     background-color: rgba(255, 255, 255, 0.25);
 }
 

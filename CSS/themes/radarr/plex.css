@@ -18,9 +18,9 @@
   --modal-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-dark2.png") center center/cover no-repeat fixed;
 
   --calendar-in-cinemas: 53, 197, 244;
-  --calendar-Downloading: 122 67 182; 
-  --calendar-Unmonitored: 173 173 173;
-  --calendar-Unaired: 93 156 236;  
+  --calendar-downloading: 122 67 182; 
+  --calendar-unmonitored: 173 173 173;
+  --calendar-unaired: 93 156 236;  
   --calendar-missing: 240 80 80;
   --calendar-available: 39 194 76;
 

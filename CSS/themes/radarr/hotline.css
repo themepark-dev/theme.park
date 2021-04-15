@@ -18,9 +18,9 @@
   --modal-bg-color: radial-gradient(ellipse at top, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
 
   --calendar-in-cinemas: 53, 197, 244;
-  --calendar-Downloading: 122 67 182; 
-  --calendar-Unmonitored: 173 173 173;
-  --calendar-Unaired: 93 156 236;  
+  --calendar-downloading: 122 67 182; 
+  --calendar-unmonitored: 173 173 173;
+  --calendar-unaired: 93 156 236;  
   --calendar-missing: 240 80 80;
   --calendar-available: 39 194 76;
 

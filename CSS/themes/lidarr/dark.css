@@ -17,12 +17,12 @@
   --main-bg-color: radial-gradient(circle, #3a3a3a, #2d2d2d, #202020, #141414, #000000) center center/cover no-repeat fixed;
   --modal-bg-color: radial-gradient(circle , #3a3a3a, #2d2d2d, #202020, #141414, #000000) center center/cover no-repeat fixed;
 
-  --calendar-Downloading: 122 67 182;
-  --calendar-Downloaded: 39 194 76;
-  --calendar-Unreleased: 93 156 236;
-  --calendar-Partial: 255, 165, 0;  
-  --calendar-Unmonitored: 173 173 173;
-  --calendar-Missing: 240 80 80; 
+  --calendar-downloading: 122 67 182;
+  --calendar-downloaded: 39 194 76;
+  --calendar-unreleased: 93 156 236;
+  --calendar-partial: 255, 165, 0;  
+  --calendar-unmonitored: 173 173 173;
+  --calendar-missing: 240 80 80; 
 
   --button-color: hsla(0,0%,100%,.15);
   --button-color-hover: hsla(0,0%,100%,.30);
