@@ -16,16 +16,19 @@
   --main-bg-color: #1f1f1f;
   --modal-bg-color: #1b1b1b;
 
-  --calendar-tv-Unaired-Premiere: 53 197 244;
-  --calendar-tv-Downloading: 122 67 182; 
-  --calendar-tv-Unmonitored: 173 173 173;
-  --calendar-tv-Unaired: 93 156 236;  
+  --calendar-tv-unaired-premiere: 53 197 244;
+  --calendar-tv-downloading: 122 67 182; 
+  --calendar-tv-unmonitored: 173 173 173;
+  --calendar-tv-unaired: 93 156 236;  
   --calendar-tv-missing: 240 80 80;
-  --calendar-tv-On-Air: 255 165 0; 
+  --calendar-tv-on-air: 255 165 0; 
   --calendar-tv-available: 39 194 76;
-
+  
   --button-color: #2cabe3;
   --button-color-hover: rgb(44 171 227 / .8);
+  --button-text: #eee;
+  --button-text-hover: #fff;
+
   --accent-color:  #2cabe3;
   --accent-color-hover: white;
   --queue-color: #2cabe3;
@@ -34,4 +37,5 @@
     
   --text:#96a2b4;
   --text-hover: #fff;
+  --text-muted: #999;
   }

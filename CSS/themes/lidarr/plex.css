@@ -17,15 +17,25 @@
   --main-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-light2.png") center center/cover no-repeat fixed;
   --modal-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-dark2.png") center center/cover no-repeat fixed;
 
-  --calendar-Downloading: 122 67 182;
-  --calendar-Downloaded: 39 194 76;
-  --calendar-Unreleased: 93 156 236;
-  --calendar-Partial: 255, 165, 0;  
-  --calendar-Unmonitored: 173 173 173;
-  --calendar-Missing: 240 80 80; 
+  --calendar-downloading: 122 67 182;
+  --calendar-downloaded: 39 194 76;
+  --calendar-unreleased: 93 156 236;
+  --calendar-partial: 255, 165, 0;  
+  --calendar-unmonitored: 173 173 173;
+  --calendar-missing: 240 80 80; 
 
   --button-color: #cc7b19;
   --button-color-hover: #e59029;
+  --button-text: #eee;
+  --button-text-hover: #FFF;
+
   --accent-color:  #e5a00d;
   --accent-color-hover: #ffc107;
+  --queue-color: #27c24c;
+  --link-color: #e5a00d;
+  --link-color-hover: #fff;
+    
+  --text:#eee;
+  --text-hover: #fff;
+  --text-muted: #999;
   }
