@@ -472,8 +472,7 @@ a:hover {
 
 /* MINI RIGHT SCROLL BAR */
 [class*="OverlayScroller-thumb-"],
-[class*="Scroller-scroller-"]::-webkit-scrollbar-thumb
- {
+[class*="Scroller-scroller-"]::-webkit-scrollbar-thumb {
     background-color: hsla(0, 0%, 100%, .08) !important;
 }
 
