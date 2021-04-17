@@ -166,7 +166,7 @@ a:hover {
 /* HEADER */
 
 [class*="PageHeader-header-"] {
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, .35);
 }
 
 /* SEARCH DROPDOWN HEADER */
