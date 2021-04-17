@@ -243,8 +243,8 @@ div[class*='EnhancedSelectInputOption']:hover {
 }
 
 [class*="PageSidebarItem-isActiveLink-"] {
-    color: #FFF;
-    background-color: hsla(0, 0%, 100%, .08);
+    color: #FFF !important;
+    background-color: hsla(0, 0%, 100%, .08) !important;
 }
 
 [class*="PageSidebarItem-isActiveParentLink-"] {
