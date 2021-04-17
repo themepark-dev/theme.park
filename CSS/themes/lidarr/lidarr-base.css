@@ -481,7 +481,7 @@ div[class*='EnhancedSelectInputOption']:hover {
 }
 
 
-/* MOVIES TOP HEADER DROPDOWN */
+/* TOP HEADER DROPDOWN */
 [class*="MenuItem-menuItem-"],
 [class*="MenuContent-menuContent-"] {
     background: var(--modal-bg-color);
@@ -587,7 +587,6 @@ div[class*='EnhancedSelectInputOption']:hover {
     text-decoration: none;
 }
 
-[class*="RootFolderSelectInputSelectedValue-movieFolder-"],
 [class*="RootFolderSelectInputSelectedValue-freeSpace-"] {
     color: #fff;
 }
@@ -651,12 +650,6 @@ div[class*='EnhancedSelectInputOption']:hover {
 [class*="VirtualTableRow-row-"]:hover {
     background-color: rgba(255, 255, 255, 0.08);
 }
-
-[class*="ImportMovieSelectMovie-button-"] {
-    border: none !important;
-    background-color: rgba(0, 0, 0, 0.25) !important;
-}
-
 
 /*Title*/
 
@@ -950,10 +943,6 @@ div[class*='EnhancedSelectInputOption']:hover {
 
 [class*="CustomFilter-customFilter-"]:hover {
     background-color: hsla(0, 0%, 100%, .08);
-}
-
-[class*="SelectMovieModalContent-path-"] {
-    color: var(--text);
 }
 
 /* -------------------------LIDARR STUFF------------------------------*/
