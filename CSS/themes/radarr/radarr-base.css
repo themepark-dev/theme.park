@@ -471,11 +471,14 @@ a:hover {
 }
 
 /* MINI RIGHT SCROLL BAR */
-[class*="OverlayScroller-thumb-"] {
+[class*="OverlayScroller-thumb-"],
+[class*="Scroller-scroller-"]::-webkit-scrollbar-thumb
+ {
     background-color: hsla(0, 0%, 100%, .08) !important;
 }
 
-[class*="OverlayScroller-thumb-"]:hover {
+[class*="OverlayScroller-thumb-"]:hover,
+[class*="Scroller-scroller-"]::-webkit-scrollbar-thumb:hover {
     background-color: rgba(255, 255, 255, 0.25) !important;
 }
 
