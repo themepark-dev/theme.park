@@ -29,7 +29,7 @@ body {
 }
 
 [class*="FormInputGroup-inputUnit-"] {
-    color: #eee !important;
+    color: var(--text) !important;
 }
 
 /* LINKS */
@@ -339,11 +339,11 @@ a:hover {
 }
 
 [class*="Tooltip-bottom-"][class*="Tooltip-default-"] {
-    border-bottom-color: #eee;
+    border-bottom-color: var(--text);
 }
 
 [class*="Tooltip-right-"][class*="Tooltip-default-"] {
-    border-right-color: #eee;
+    border-right-color: var(--text);
 }
 
 [class*="EpisodeTitleLink-link-"]:hover {
@@ -475,7 +475,7 @@ a:hover {
     background-color: hsla(0, 0%, 100%, .08) !important;
 }
 
-[class*="OverlayScroller-thumb-"] :hover {
+[class*="OverlayScroller-thumb-"]:hover {
     background-color: rgba(255, 255, 255, 0.25) !important;
 }
 
@@ -620,7 +620,7 @@ div[class*='EnhancedSelectInputOption']:hover {
 
 /*Title*/
 [class*="AddListMovieOverview-link-"] {
-    color: #eee;
+    color: var(--text);
 }
 
 [class*="AddListMovieOverview-link-"]:hover {
@@ -733,7 +733,7 @@ div[class*='EnhancedSelectInputOption']:hover {
 }
 
 [class*="CalendarEvent-movieInfo-"] {
-    color: #eee;
+    color: var(--text);
 }
 
 [class*="CalendarEvent-event-"] {
@@ -749,18 +749,17 @@ div[class*='EnhancedSelectInputOption']:hover {
 }
 
 [class*="CalendarEventGroup-airTime-"] {
-    color: #eee;
+    color: var(--text);
 }
 
 [class*="CalendarEventGroup-episodeInfo-"] {
-    color: #eee;
+    color: var(--text);
 }
 
 /* calendar agenda */
 [class*="AgendaEvent-event-"]:hover {
     background-color: hsla(0, 0%, 100%, .08) !important;
 }
-
 
 /* SETTINGS */
 [class*="PageContentBody-innerContentBody-"] [class*="Link-to-"] {
@@ -771,9 +770,13 @@ div[class*='EnhancedSelectInputOption']:hover {
     color: var(--text);
 }
 
-/* MEDIA MANGEMENT */
+/* MEDIA MANAGEMENT - FILE NAME TOKENS */
 [class*="NamingOption-small-"] {
     border: 1px solid transparent;
+}
+
+[class*="NamingOption-token-"] {
+    background-color: rgba(255, 255, 255, 0.15);
 }
 
 [class*="NamingOption-token-"] {
@@ -784,100 +787,112 @@ div[class*='EnhancedSelectInputOption']:hover {
     background-color: rgba(255, 255, 255, 0.25);
 }
 
+[class*="NamingOption-option-"] {
+    border: 1px solid transparent;
+}
+
+[class*="NamingOption-option-"]:hover [class*="NamingOption-token-"] {
+    background-color: rgba(255, 255, 2550, 0.25);
+}
+
+[class*="NamingOption-option-"]:hover [class*="NamingOption-example-"] {
+    background-color: rgba(255, 255, 2550, 0.35);
+}
+
 /* PROFILES */
-.Card-card-1iGZk,
-.QualityProfiles-addQualityProfile-2U2Io {
+[class*="Card-card-"],
+[class*="QualityProfiles-addQualityProfile-"] {
     background-color: rgba(0, 0, 0, .45);
     box-shadow: 0 0 10px 1px #000000;
-    color: #c2c6c8;
+    color: var(--text);
 }
 
-.Card-card-1iGZk:hover {
-    color: white;
+[class*="Card-card-"]:hover {
+    color: var(--text-hover);
 }
 
-.QualityProfiles-center-1iiKm,
-.LanguageProfiles-center-7EV_2,
-.ReleaseProfiles-center-114Qx {
+[class*="QualityProfiles-center-"],
+[class*="LanguageProfiles-center-"],
+[class*="ReleaseProfiles-center-"] {
     background-color: transparent;
     border: none;
-    color: #c2c6c8;
+    color: var(--text);
 }
 
-.QualityProfileItem-qualityProfileItem-VFp-W,
-.QualityProfileItemGroup-qualityProfileItemGroup-2U1l5,
-.LanguageProfileItem-languageProfileItem-18XGg {
+[class*="QualityProfileItem-qualityProfileItem-"],
+[class*="QualityProfileItemGroup-qualityProfileItemGroup-"],
+[class*="LanguageProfileItem-languageProfileItem-"] {
     border: none;
     background-color: rgba(0, 0, 0, .25);
     color: #FFF;
 }
 
-.QualityProfileItemGroup-qualityProfileItemGroup-2U1l5.QualityProfileItemGroup-editGroups-2KzDp {
+[class*="QualityProfileItemGroup-qualityProfileItemGroup-"][class*="QualityProfileItemGroup-editGroups-"] {
     background: rgba(0, 0, 0, 0.25);
 }
 
-.KeyValueListInputItem-keyInput-3YYEs,
-.KeyValueListInputItem-valueInput-3zlQA {
+[class*="KeyValueListInputItem-keyInput-"],
+[class*="KeyValueListInputItem-valueInput-"] {
     border: none;
     background: transparent;
     color: white;
 }
 
-.QualityProfileFormatItem-qualityProfileFormatItem-19XrK {
+[class*="QualityProfileFormatItem-qualityProfileFormatItem-"] {
     border: 1px solid transparent;
     background: rgba(0, 0, 0, .25);
 }
 
 /* PROFILES */
-.Indexers-center-11Csq {
+[class*="Indexers-center-"] {
     background-color: transparent;
     border: none;
-    color: #c2c6c8;
+    color: var(--text);
 }
 
 /* DOWNLOAD CLIENTS */
-.DownloadClients-center-FvACx {
+[class*="DownloadClients-center-"] {
     background-color: transparent;
     border: none;
-    color: #c2c6c8;
+    color: var(--text);
 }
 
 /* CONNECTIONS */
-.Notifications-center-8iwmy {
+[class*="Notifications-center-"] {
     background-color: transparent;
     border: none;
-    color: #c2c6c8;
+    color: var(--text);
 }
 
 /* LISTS */
-.ImportLists-center-17Qdu {
+[class*="ImportLists-center-"] {
     background-color: transparent;
     border: none;
-    color: #c2c6c8;
+    color: var(--text);
 }
 
 /* LOG */
-.Alert-info-1J8mE {
+[class*="Alert-info-"] {
     border-color: transparent;
     background-color: rgba(0, 0, 0, 0.25);
     color: #FFC107;
 }
 
 /* INDEXER */
-.Restrictions-center-3ngzk {
+[class*="Restrictions-center-"] {
     border: 1px solid transparent;
     background-color: transparent;
 }
 
 /* LISTS */
-.NetImports-center-3otL- {
+[class*="NetImports-center-"] {
     border: 1px solid transparent;
     background-color: transparent;
 }
 
 /* CUSTOM FORMAT */
-.CustomFormats-center-1w6Bw,
-.EditCustomFormatModalContent-center-3QU87 {
+[class*="CustomFormats-center-"],
+[class*="EditCustomFormatModalContent-center-"] {
     border: 1px solid transparent;
     background-color: transparent;
 }
@@ -886,7 +901,7 @@ div[class*='EnhancedSelectInputOption']:hover {
 
 .panel-body {
     background-color: rgba(0, 0, 0, 0.25);
-    color: white;
+    color: var(--text);
 }
 
 .panel-header {
@@ -894,18 +909,18 @@ div[class*='EnhancedSelectInputOption']:hover {
 }
 
 .forgot-password {
-    color: #eee !important;
+    color: var(--text) !important;
 }
 
 /* Custom filter */
-.FilterBuilderRow-filterRow-1ozij:hover {
+[class*="FilterBuilderRow-filterRow-"]:hover {
     background-color: transparent;
 }
 
-.CustomFilter-customFilter-zBSMd:hover {
+[class*="CustomFilter-customFilter-"]:hover {
     background-color: hsla(0, 0%, 100%, .08);
 }
 
-.SelectMovieModalContent-path-32FI- {
-    color: #eee;
+[class*="SelectMovieModalContent-path-"] {
+    color: var(--text);
 }

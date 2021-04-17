@@ -12,7 +12,7 @@
 /*			      https://github.com/gilbN/theme.park			 */
 
 /* LIDARR AQUAMARINE THEME */
-@import url(https://gflix.app/theme.park/CSS/themes/lidarr/lidarr-base.css);
+@import url(https://gilbn.github.io/theme.park/CSS/themes/lidarr/lidarr-base.css);
 :root {
   --main-bg-color: radial-gradient(ellipse at center, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
   --modal-bg-color: radial-gradient(ellipse at top, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
@@ -28,7 +28,7 @@
   --button-color-hover: #12afa0;
   --button-text: #eee;
   --button-text-hover: #FFF;
-
+  
   --accent-color:  #009688;
   --accent-color-hover: #12afa0;
   --queue-color: #009688;

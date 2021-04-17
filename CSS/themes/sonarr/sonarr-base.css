@@ -29,7 +29,7 @@ body {
 }
 
 [class*="FormInputGroup\/inputUnit\/"] {
-    color: #eee !important;
+    color: var(--text) !important;
 }
 
 /* LINKS */
@@ -132,7 +132,7 @@ a:hover {
 }
 
 /* SONARR SPECIFIC */
- /* NOTE calendar modal popup */
+/* NOTE calendar modal popup */
 [class*="EpisodeSummary\/infoTitle\/"],
 [class*="EpisodeDetailsModalContent\/tab\/"],
 [class*="DescriptionListItemTitle\/title\/"] {
@@ -187,6 +187,7 @@ a:hover {
 [class*="SeriesSearchInput\/sectionTitle\/"] {
     color: #fff;
 }
+
 [class*="SeriesSearchInput\/containerOpen\/"] [class*="SeriesSearchInput\/seriesContainer\/"] {
     border: none !important;
     background: var(--modal-bg-color);
@@ -201,9 +202,11 @@ a:hover {
 [class*="SeriesSearchInput\/seriesContainer\/"]::-webkit-scrollbar-thumb {
     background-color: rgba(255, 255, 255, 0.25) !important;
 }
+
 [class*="Scroller\/scroller\/"]::-webkit-scrollbar-thumb {
     background-color: hsla(0, 0%, 100%, .08);
 }
+
 [class*="Scroller\/scroller\/"]::-webkit-scrollbar-thumb:hover {
     background-color: rgba(255, 255, 255, 0.25);
 }
@@ -248,6 +251,7 @@ a:hover {
 [class*="SeriesIndexPoster\/controls\/"] {
     background-color: #000 !important;
 }
+
 /* OVERVIEW PAGE */
 
 [class*="SeriesIndexOverviews\/container\/"],
@@ -281,7 +285,7 @@ a:hover {
 
 /* SHOW PAGE */
 [class*="SeriesDetailsSeason\/season\/"],
-[class*="SeriesDetailsSeason\/collapseButtonContainer\/"]{
+[class*="SeriesDetailsSeason\/collapseButtonContainer\/"] {
     border: none !important;
     background-color: rgba(0, 0, 0, .25) !important;
 }
@@ -410,6 +414,7 @@ a:hover {
     opacity: .5;
     color: var(--text);
 }
+
 [class*="PageToolbarButton\/toolbarButton\/"][class*="PageToolbarButton\/isDisabled\/"]:hover,
 [class*="PageToolbarButton\/isDisabled\/"]:hover {
     color: var(--text) !important;
@@ -426,18 +431,13 @@ a:hover {
 [class*="MenuButton\/menuButton\/"]:hover {
     color: var(--text-hover);
 }
+
 /* POSTERS */
 [class*="SeriesIndexPoster\/title\/"],
 [class*="SeriesIndexPoster\/nextAiring\/"],
 [class*="SeriesIndexPosterInfo\/info\/"] {
     background-color: rgba(255, 255, 255, 0.08);
     color: var(--text);
-}
-
-/* HOVEL LABELS */
-[class*="Label\/default\/"] {
-    border-color: #1b1b1b;
-    background-color: #1b1b1b;
 }
 
 /* SERIES TOP HEADER DROPDOWN */
@@ -477,6 +477,7 @@ a:hover {
 [class*="ImportSeriesSelectSeries\/results\/"]::-webkit-scrollbar-thumb:hover {
     background-color: rgba(255, 255, 255, 0.25) !important;
 }
+
 /* ADD NEW */
 div[class*='EnhancedSelectInputOption'] {
     background-color: #1e1e1e;
@@ -731,11 +732,11 @@ div[class*='EnhancedSelectInputOption']:hover {
 }
 
 [class*="CalendarEventGroup\/airTime\/"] {
-    color: #eee;
+    color: var(--text);
 }
 
 [class*="CalendarEventGroup\/episodeInfo\/"] {
-    color: #eee;
+    color: var(--text);
 }
 
 /* calendar agenda */
@@ -746,11 +747,11 @@ div[class*='EnhancedSelectInputOption']:hover {
 /*QUEUE PAGE */
 /* Manual Import*/
 [class*="SelectEpisodeModalContent\/path\/"] {
-    color: #eee;
+    color: var(--text);
 }
 
 /* SETTINGS */
-[class*="PageContentBody\/innerContentBody"] [class*="Link\/to"]{
+[class*="PageContentBody\/innerContentBody"] [class*="Link\/to"] {
     color: #fff;
 }
 
@@ -758,72 +759,76 @@ div[class*='EnhancedSelectInputOption']:hover {
     color: var(--text);
 }
 
-.FormLabel\/large\/3Sn9u {
+[class*="FormLabel\/large\/"] {
     color: #fff
 }
 
-.FormLabel\/isAdvanced\/1glHh {
+[class*="FormLabel\/isAdvanced\/"] {
     color: #ff902b;
 }
 
 /* MEDIA MANAGEMENT - FILE NAME TOKENS */
-.NamingOption\/option\/giCGd {
+[class*="NamingOption\/option\/"] {
     border: 1px solid transparent;
 }
 
-.NamingOption\/token\/1y5bz {
+[class*="NamingOption\/token\/"] {
     background-color: rgba(255, 255, 255, 0.15);
 }
 
-.NamingOption\/example\/RNR6x {
+[class*="NamingOption\/example\/"] {
     background-color: rgba(255, 255, 255, 0.25);
 }
 
-.NamingOption\/option\/giCGd:hover .NamingOption\/token\/1y5bz {
+[class*="NamingOption\/option\/"]:hover [class*="NamingOption\/token\/"] {
     background-color: rgba(255, 255, 2550, 0.25);
 }
 
-.NamingOption\/option\/giCGd:hover .NamingOption\/example\/RNR6x {
+[class*="NamingOption\/option\/"]:hover [class*="NamingOption\/example\/"] {
     background-color: rgba(255, 255, 2550, 0.35);
 }
 
 /* PROFILES */
-.Card\/card\/1iGZk,
-.QualityProfiles\/addQualityProfile\/2U2Io {
+[class*="Card\/card\/"],
+[class*="QualityProfiles\/addQualityProfile\/"] {
     background-color: rgba(0, 0, 0, .45);
     box-shadow: 0 0 10px 1px #000000;
     color: var(--text);
 }
 
-.QualityProfiles\/center\/1iiKm,
-.LanguageProfiles\/center\/7EV_2,
-.ReleaseProfiles\/center\/114Qx {
+[class*="Card\/card\/"] {
+    color: var(--text-hover);
+}
+
+[class*="QualityProfiles\/center\/"],
+[class*="LanguageProfiles\/center\/"],
+[class*="ReleaseProfiles\/center\/"] {
     background-color: transparent;
     border: none;
     color: var(--text);
 }
 
-.QualityProfileItem\/qualityProfileItem\/VFp-W,
-.QualityProfileItemGroup\/qualityProfileItemGroup\/2U1l5,
-.LanguageProfileItem\/languageProfileItem\/18XGg {
+[class*="QualityProfileItem\/qualityProfileItem\/"],
+[class*="QualityProfileItemGroup\/qualityProfileItemGroup\/"],
+[class*="LanguageProfileItem\/languageProfileItem\/"] {
     border: none;
     background-color: rgba(0, 0, 0, .25);
     color: #FFF;
 }
 
-.QualityProfileItemGroup\/qualityProfileItemGroup\/2U1l5.QualityProfileItemGroup\/editGroups\/2KzDp {
+[class*="QualityProfileItemGroup\/qualityProfileItemGroup\/"][class*="QualityProfileItemGroup\/editGroups\/"] {
     background: rgba(0, 0, 0, 0.25);
 }
 
-.KeyValueListInputItem\/keyInput\/3YYEs,
-.KeyValueListInputItem\/valueInput\/3zlQA {
+[class*="KeyValueListInputItem\/keyInput\/"],
+[class*="KeyValueListInputItem\/valueInput\/"] {
     border: none;
     background: transparent;
     color: white;
 }
 
 /* PROFILES */
-.Indexers\/center\/11Csq {
+[class*="Indexers\/center\/"] {
     background-color: transparent;
     border: none;
     color: var(--text);
@@ -832,28 +837,28 @@ div[class*='EnhancedSelectInputOption']:hover {
 /* INDEXERS */
 
 /* DOWNLOAD CLIENTS */
-.DownloadClients\/center\/FvACx {
+[class*="DownloadClients\/center\/"] {
     background-color: transparent;
     border: none;
     color: var(--text);
 }
 
 /*INPORT LISTS */
-.ImportLists\/center\/17Qdu {
+[class*="ImportLists\/center\/"] {
     background-color: transparent;
     border: none;
     color: var(--text);
 }
 
 /* CONNECTIONS */
-.Notifications\/center\/8iwmy {
+[class*="Notifications\/center\/"] {
     background-color: transparent;
     border: none;
     color: var(--text);
 }
 
 /* LOG */
-.Alert\/info\/1J8mE {
+[class*="Alert\/info\/"] {
     border-color: transparent;
     background-color: rgba(0, 0, 0, 0.25);
     color: #FFC107;
@@ -863,7 +868,7 @@ div[class*='EnhancedSelectInputOption']:hover {
 
 .panel-body {
     background-color: rgba(0, 0, 0, 0.25);
-    color: white;
+    color: var(--text);
 }
 
 .panel-header {
@@ -871,29 +876,26 @@ div[class*='EnhancedSelectInputOption']:hover {
 }
 
 .forgot-password {
-    color: #eee !important;
+    color: var(--text) !important;
 }
 
 /* Custom filter */
-.FilterBuilderRow\/filterRow\/1ozij:hover {
+[class*="FilterBuilderRow\/filterRow\/"]:hover {
     background-color: transparent;
 }
 
-.CustomFilter\/customFilter\/zBSMd:hover {
+[class*="CustomFilter\/customFilter\/"]:hover {
     background-color: hsla(0, 0%, 100%, .08);
 }
 
-
 /* Scene information */
-.ReleaseSceneIndicator\/levelNone\/k-rVx {
+[class*="ReleaseSceneIndicator\/levelNone\/"] {
     border-color: var(--text);
     color: var(--text);
     opacity: 1;
 }
 
-.ReleaseSceneIndicator\/levelMapped\/3i7w4 {
+[class*="ReleaseSceneIndicator\/levelMapped\/"] {
     border-color: var(--text);
-    ;
     color: var(--text);
-    ;
 }
