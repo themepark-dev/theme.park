@@ -381,6 +381,10 @@ a:hover {
     border-bottom: 4px solid var(--accent-color);
 }
 
+[class*="MovieDetails-tabList-] {
+    color: #fff;
+}
+
 /* Table options*/
 [class*="TableOptionsColumn-column-"] {
     background: rgba(0, 0, 0, .25);
