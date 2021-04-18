@@ -4,6 +4,11 @@ echo '------------------------------'
 echo '| qBittorrent theme.park Mod |'
 echo '------------------------------'
 
+APP_FILEPATH='/config/qBittorrent/qBittorrent.conf'
+if [ "${TP_HOTIO}" = true ]; then
+    echo 'Changing to Hotio file path!'
+    APP_FILEPATH='/config/config/qBittorrent/qBittorrent.conf'
+fi
 if ! [[ -x "$(command -v svn)" ]]; then
 echo '--------------------------'
 echo '| Installing svn package |'
@@ -65,24 +70,24 @@ if ! grep -q "${TP_DOMAIN}" /themepark/private/index.html; then
     printf 'Stylesheet set to %s on private download.html\n\n' "${TP_THEME}"
 fi
 
-if ! grep -q "WebUI\\\RootFolder" /config/qBittorrent/qBittorrent.conf; then
+if ! grep -q "WebUI\\\RootFolder" "${APP_FILEPATH}"; then
     echo '--------------------------------------'
     echo '| Adding WebUI\RootFolder=/themepark |'
     echo '--------------------------------------'
-    sed -i -e '$aWebUI\\RootFolder=/themepark' /config/qBittorrent/qBittorrent.conf;
+    sed -i -e '$aWebUI\\RootFolder=/themepark' "${APP_FILEPATH}";
 fi
 
-if ! grep -q "WebUI\\\AlternativeUIEnabled" /config/qBittorrent/qBittorrent.conf; then
+if ! grep -q "WebUI\\\AlternativeUIEnabled" "${APP_FILEPATH}"; then
     echo '------------------------------------------'
     echo '| Adding WebUI\AlternativeUIEnabled=true |'
     echo '------------------------------------------'
-    sed -i -e '$aWebUI\\AlternativeUIEnabled=true' /config/qBittorrent/qBittorrent.conf;
+    sed -i -e '$aWebUI\\AlternativeUIEnabled=true' "${APP_FILEPATH}";
 fi
 
-if  ! grep -q "WebUI\\\RootFolder=/themepark" /config/qBittorrent/qBittorrent.conf || ! grep -q "WebUI\\\AlternativeUIEnabled=true" /config/qBittorrent/qBittorrent.conf; then
+if  ! grep -q "WebUI\\\RootFolder=/themepark" "${APP_FILEPATH}" || ! grep -q "WebUI\\\AlternativeUIEnabled=true" "${APP_FILEPATH}"; then
     echo '-------------------------------------------------------'
     echo '| Updating RootFolder and AlternativeUIEnabled values |'
     echo '-------------------------------------------------------'
-    sed -i "s/WebUI\\\AlternativeUIEnabled=.*$/WebUI\\\AlternativeUIEnabled=true/g" /config/qBittorrent/qBittorrent.conf;
-    sed -i "s/WebUI\\\RootFolder=.*$/WebUI\\\RootFolder=\/themepark/g" /config/qBittorrent/qBittorrent.conf;
+    sed -i "s/WebUI\\\AlternativeUIEnabled=.*$/WebUI\\\AlternativeUIEnabled=true/g" "${APP_FILEPATH}";
+    sed -i "s/WebUI\\\RootFolder=.*$/WebUI\\\RootFolder=\/themepark/g" "${APP_FILEPATH}";
 fi
