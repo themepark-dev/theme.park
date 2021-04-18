@@ -7,7 +7,7 @@ echo '------------------------------'
 APP_FILEPATH='/config/qBittorrent/qBittorrent.conf'
 if [ "${TP_HOTIO}" = true ]; then
     echo 'Changing to Hotio file path!'
-    APP_FILEPATH='/config/config/qBittorrent/qBittorrent.conf'
+    APP_FILEPATH='/config/config/qBittorrent.conf'
 fi
 if ! [[ -x "$(command -v svn)" ]]; then
 echo '--------------------------'
