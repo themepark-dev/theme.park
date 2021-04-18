@@ -381,7 +381,7 @@ a:hover {
     border-bottom: 4px solid var(--accent-color);
 }
 
-[class*="MovieDetails-tabList-] {
+[class*="MovieDetails-tabList-"] {
     color: #fff;
 }
 
