@@ -19,6 +19,16 @@
 
   --button-color: #009688;
   --button-color-hover: #12afa0;
-  --accent-color:  #009688;
+  --button-text: #eee;
+  --button-text-hover: #FFF;
+
+  --accent-color:  0, 150, 136;
   --accent-color-hover: #12afa0;
+  --queue-color: #009688;
+  --link-color: #0ed2bf;
+  --link-color-hover: #fff;
+    
+  --text:#eee;
+  --text-hover: #fff;
+  --text-muted: #bbb;
 }
