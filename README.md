@@ -62,8 +62,12 @@
 <p><a href="https://github.com/gilbN/theme.park/wiki/Radarr">Radarr</a></p>
 </td>
 <td style="width: 10px; height: 98px; text-align: center;">
-<p style="text-align: center;"><a href="https://github.com/gilbN/theme.park/wiki/Lidarr"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-develop/plugins/images/tabs/lidarr.png" width="48" height="48" /></a></p>
-<p style="text-align: center;"><a href="https://github.com/gilbN/theme.park/wiki/Lidarr">Lidarr</a></p>
+<p style="text-align: center;"><a href="https://github.com/gilbN/theme.park/wiki/Prowlarr"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-develop/plugins/images/tabs/lidarr.png" width="48" height="48" /></a></p>
+<p style="text-align: center;"><a href="https://github.com/gilbN/theme.park/wiki/Prowlarr">Lidarr</a></p>
+</td>
+<td style="width: 10px; height: 98px; text-align: center;">
+<p style="text-align: center;"><a href="https://github.com/gilbN/theme.park/wiki/Lidarr"><img src="https://raw.githubusercontent.com/Prowlarr/Prowlarr/develop/Logo/48.png" width="48" height="48" /></a></p>
+<p style="text-align: center;"><a href="https://github.com/gilbN/theme.park/wiki/Lidarr">Prowlarr</a></p>
 </td>
 <td style="width: 90px; height: 98px; text-align: center;">
 <p><a href="https://github.com/gilbN/theme.park/wiki/Bazarr"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-develop/plugins/images/tabs/bazarr.png" alt="" width="48" height="48" /></a></p>
@@ -77,15 +81,11 @@
 <p><a href="https://github.com/gilbN/theme.park/wiki/Plex"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-master/plugins/images/tabs/plex.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://github.com/gilbN/theme.park/wiki/Plex">Plex</a></p>
 </td>
+</tr>
+<tr style="height: 26px;">
 <td style="width: 109px; height: 98px; text-align: center;">
 <p><a href="https://github.com/gilbN/theme.park/wiki/Jellyfin-Emby"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-develop/plugins/images/tabs/jellyfin.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://github.com/gilbN/theme.park/wiki/Jellyfin-Emby">Jellyfin/Emby</a></p>
-</td>
-</tr>
-<tr style="height: 26px;">
-<td style="width: 110px; height: 26px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Calibre-Web"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-develop/plugins/images/tabs/calibre-web.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Calibre-Web">Calibre-web</a></p>
 </td>
 <td style="width: 160px; height: 26px; text-align: center;">
 <p><a href="https://github.com/gilbN/theme.park/wiki/Tautulli"><img src="https://raw.githubusercontent.com/Tautulli/Tautulli/master/data/interfaces/default/images/logo-circle.png" alt="" width="48" height="48" /></a></p>
@@ -245,6 +245,10 @@
 <td style="width: 90px; height: 40px; text-align: center;">
 <p><a href="https://github.com/gilbN/theme.park/wiki/Flood"><img src="https://raw.githubusercontent.com/jesec/flood/master/client/src/public/icon_96x96.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://github.com/gilbN/theme.park/wiki/Flood">Flood</a></p>
+</td>
+<td style="width: 110px; height: 26px; text-align: center;">
+<p><a href="https://github.com/gilbN/theme.park/wiki/Calibre-Web"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-develop/plugins/images/tabs/calibre-web.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://github.com/gilbN/theme.park/wiki/Calibre-Web">Calibre-web</a></p>
 </td>
 </tr>
 </tbody>
