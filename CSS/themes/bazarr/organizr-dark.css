@@ -19,6 +19,16 @@
 
   --button-color: #2cabe3;
   --button-color-hover: rgb(44 171 227 / .8);
-  --accent-color:  #2cabe3;
+  --button-text: #eee;
+  --button-text-hover: #fff;
+
+  --accent-color:  44, 171, 227;
   --accent-color-hover: white;
+  --queue-color: #2cabe3;
+  --link-color: #2cabe3;
+  --link-color-hover: #fff;
+    
+  --text:#96a2b4;
+  --text-hover: #fff;
+  --text-muted: #999;
 }
