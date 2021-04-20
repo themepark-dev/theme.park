@@ -9,10 +9,10 @@ echo -e "Variables set:\\n\
 'TP_DOMAIN'=${TP_DOMAIN}\\n\
 'TP_THEME'=${TP_THEME}\\n"
 
-APP_FILEPATH='/app/bazarr/bin/views/_main.html'
+APP_FILEPATH='/app/bazarr/bin/frontend/build/index.html'
 if [ "${TP_HOTIO}" = true ]; then
     echo 'Changing to Hotio file path!'
-    APP_FILEPATH='/app/bin/views/_main.html'
+    APP_FILEPATH='/app/bin/frontend/build/index.html'
 fi
 
 # Set default
