@@ -210,20 +210,24 @@ a:hover {
 }
 
 /* ADD NEW */
-div[class*='EnhancedSelectInputOption'] {
-    background-color: #1e1e1e;
-    color: #fff;
-}
-
-div[class*='EnhancedSelectInputOption']:hover {
-    background-color: rgba(255, 255, 255, 0.08);
-    color: #fff;
-}
-
 [class*="EnhancedSelectInput-options-"] {
-    border: 1px solid #1e1e1e;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 4px;
-    background-color: #1e1e1e;
+    background: var(--modal-bg-color);
+}
+
+[class*="EnhancedSelectInputOption-isSelected-"],
+[class*="EnhancedSelectInputOption-isSelected-"]:hover {
+    background-color: rgba(255, 255, 255, 0.20) !important;
+}
+
+[class*="EnhancedSelectInputOption-option-"]:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+[class*="HintedSelectInputOption-hintText-"],
+[class*="RootFolderSelectInputOption-freeSpace-"] {
+    color: var(--text);
 }
 
 /* SIDE MENU */
@@ -506,23 +510,6 @@ div[class*='EnhancedSelectInputOption']:hover {
 /* ALPHABET JUMP BAR */
 [class*="PageJumpBar-jumpBar-"] {
     color: #FFF;
-}
-
-/* ADD NEW */
-div[class*='EnhancedSelectInputOption'] {
-    background-color: #1e1e1e;
-    color: #fff;
-}
-
-div[class*='EnhancedSelectInputOption']:hover {
-    background-color: rgba(255, 255, 255, 0.08);
-    color: #fff;
-}
-
-[class*="EnhancedSelectInput-options-"] {
-    border: 1px solid #1e1e1e;
-    border-radius: 4px;
-    background-color: #1e1e1e;
 }
 
 /* SEARCH BAR */

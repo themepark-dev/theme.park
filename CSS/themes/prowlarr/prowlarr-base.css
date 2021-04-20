@@ -165,6 +165,7 @@ a:hover {
 
 [class*="PageHeader-header-"] {
     background-color: rgba(0, 0, 0, .35);
+    box-shadow: none;
 }
 
 /* SEARCH DROPDOWN HEADER */
@@ -486,20 +487,23 @@ a:hover {
 }
 
 /* ADD NEW */
-div[class*='EnhancedSelectInputOption'] {
-    background-color: #1e1e1e;
-    color: #fff;
-}
-
-div[class*='EnhancedSelectInputOption']:hover {
-    background-color: rgba(255, 255, 255, 0.08);
-    color: #fff;
-}
 
 [class*="EnhancedSelectInput-options-"] {
-    border: 1px solid #1e1e1e;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 4px;
-    background-color: #1e1e1e;
+    background: var(--modal-bg-color);
+}
+[class*="EnhancedSelectInputOption-isSelected-"],
+[class*="EnhancedSelectInputOption-isSelected-"]:hover {
+    background-color: rgba(255, 255, 255, 0.20) !important;
+}
+
+[class*="EnhancedSelectInputOption-option-"]:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+[class*="HintedSelectInputOption-hintText-"] {
+    color: var(--text);
 }
 
 /* SEARCH BAR */
@@ -933,6 +937,11 @@ div[class*='EnhancedSelectInputOption']:hover {
 }
 
 /* ChartJS */
-canvas.chartjs-render-monitor {
-    background: rgb(255, 255, 255, 0.05);
-    }
+[class*="Stats-fullWidthChart-"],
+[class*="Stats-halfWidthChart-"]{
+  background: rgba(0, 0, 0, .25) !important;
+}
+
+canvas {
+filter: invert(1)
+}
