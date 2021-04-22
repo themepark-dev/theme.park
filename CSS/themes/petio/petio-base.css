@@ -70,7 +70,7 @@ h6,
 }
 
 @media (max-width: 991.98px) {
-    .menu.open {
+   .menu {
         background: var(--modal-bg-color)
     }
 }
