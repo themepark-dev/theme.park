@@ -233,6 +233,11 @@ a:hover {
 [class*="MovieIndexPoster-controls-"] {
     background-color: #000 !important;
 }
+[class*="MovieTitlesTableContent-blankpad-"],
+[class*="ExtraFileTableContent-blankpad-"],
+[class*="MovieHistoryTableContent-blankpad-"] {
+    color: var(--text);
+}
 
 /* OVERVIEW PAGE */
 
