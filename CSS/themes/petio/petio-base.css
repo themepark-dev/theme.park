@@ -246,6 +246,19 @@ code {
     border: 2px solid var(--button-color-hover);
 }
 
+/* Keep Plex Button Color*/
+#root > div > div.login-wrap > div.login--inner > form > div:nth-child(7) > button,
+#root > div > div.view > div > div > div.settings--content > section:nth-child(2) > button:nth-child(3) {
+    background: #d79b23;
+    border: 2px solid #d79b23;
+    color: #000;
+}
+#root > div > div.login-wrap > div.login--inner > form > div:nth-child(7) > button:hover,
+#root > div > div.view > div > div > div.settings--content > section:nth-child(2) > button:nth-child(3):hover {
+    background: #ab7b1c;
+    border-color: #ab7b1c;
+}
+
 .btn.bad:hover {
     /*Delete/Cancel button*/
     border: 2px solid #f55;
