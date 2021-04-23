@@ -214,6 +214,7 @@ a:hover {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 4px;
     background: var(--modal-bg-color);
+    color: var(--text);
 }
 
 [class*="EnhancedSelectInputOption-isSelected-"],
