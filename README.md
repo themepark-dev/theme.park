@@ -246,6 +246,10 @@
 <p><a href="https://github.com/gilbN/theme.park/wiki/Flood"><img src="https://raw.githubusercontent.com/jesec/flood/master/client/src/public/icon_96x96.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://github.com/gilbN/theme.park/wiki/Flood">Flood</a></p>
 </td>
+<td style="width: 90px; height: 40px; text-align: center;">
+<p><a href="https://github.com/gilbN/theme.park/wiki/Dozzle"><img src="https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/img/dozzle.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://github.com/gilbN/theme.park/wiki/Dozzle">Dozzle</a></p>
+</td>
 </tr>
 </tbody>
 </table>
