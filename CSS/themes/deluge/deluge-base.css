@@ -1409,7 +1409,7 @@
   
   .x-panel-tbar .x-btn-text {
       height: 24px !important;
-      color: rgb(0,0,0,0);
+      color: rgb(0,0,0,0) !important;
   }
   
   .x-panel-tbar .x-toolbar .xtb-sep {
