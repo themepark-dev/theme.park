@@ -11,7 +11,7 @@
 /*			      https://github.com/gilbN/theme.park			 */
 
 /* THE LOUNGE SPACE GRAY THEME */
-@import url(https://gilbn.github.io/theme.park/CSS/themes/thelounge/thelounge-base.css);
+@import url(https://theme-park.dev/CSS/themes/thelounge/thelounge-base.css);
 :root {
   --body-bg-color: radial-gradient( ellipse at center,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed;
   --window-bg-color: radial-gradient( ellipse at top,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed;

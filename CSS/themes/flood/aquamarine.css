@@ -11,7 +11,7 @@
 /*			      https://github.com/gilbN/theme.park			 */
 
 /* FLOOD AQUAMARINE THEME */
-@import url(https://gilbn.github.io/theme.park/CSS/themes/flood/flood-base.css);
+@import url(https://theme-park.dev/CSS/themes/flood/flood-base.css);
 
 :root {
   --main-bg-color: radial-gradient(ellipse at center, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;

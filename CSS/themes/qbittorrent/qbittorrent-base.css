@@ -1523,7 +1523,7 @@ ul.filterList a {
 }
 
 img[src="icons/inode-directory.svg"] {
-  background: url(https://gilbn.github.io/theme.park/Resources/qbittorrent/folder-open-solid.svg);
+  background: url(https://theme-park.dev/Resources/qbittorrent/folder-open-solid.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-origin: content-box;
@@ -1532,7 +1532,7 @@ img[src="icons/inode-directory.svg"] {
 }
 
 img[src="icons/network-server.svg"] {
-  background: url(https://gilbn.github.io/theme.park/Resources/qbittorrent/network-wired-solid.svg);
+  background: url(https://theme-park.dev/Resources/qbittorrent/network-wired-solid.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-origin: content-box;
@@ -1541,7 +1541,7 @@ img[src="icons/network-server.svg"] {
 }
 
 img[src="icons/mail-folder-inbox.svg"] {
-  background: url(https://gilbn.github.io/theme.park/Resources/qbittorrent/inbox-solid.svg);
+  background: url(https://theme-park.dev/Resources/qbittorrent/inbox-solid.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-origin: content-box;

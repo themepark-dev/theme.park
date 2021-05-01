@@ -12,8 +12,8 @@
 /*			      https://github.com/gilbN/theme.park			 */
 
 /* GITEA ORGANIZR-DARK THEME */
-@import url(https://gilbn.github.io/theme.park/CSS/themes/gitea/gitea-base.css);
-@import url(https://gilbn.github.io/theme.park/CSS/themes/gitea/chroma.css);
+@import url(https://theme-park.dev/CSS/themes/gitea/gitea-base.css);
+@import url(https://theme-park.dev/CSS/themes/gitea/chroma.css);
 :root {
   --main-bg-color: #1f1f1f;
   --modal-bg-color: #1b1b1b;

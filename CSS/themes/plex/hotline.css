@@ -11,7 +11,7 @@
 /*			      https://github.com/gilbN/theme.park			 */
 
 /* PLEX HOTLINE THEME */
-@import url(https://gilbn.github.io/theme.park/CSS/themes/plex/plex-base.css);
+@import url(https://theme-park.dev/CSS/themes/plex/plex-base.css);
 :root {
   --main-bg-color: radial-gradient(ellipse at center, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
   --modal-bg-color: radial-gradient(ellipse at top, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;

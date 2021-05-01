@@ -1,8 +1,8 @@
-@import url("https://gilbn.github.io/theme.park/CSS/addons/unraid/login-page/fallout/fallout_base.css");
+@import url("https://theme-park.dev/CSS/addons/unraid/login-page/fallout/fallout_base.css");
 :root {
-    --main-bg-color: url(https://gilbn.github.io/theme.park/CSS/addons/unraid/login-page/fallout/wallpaper/rocky-wall.png),
-    url(https://gilbn.github.io/theme.park/CSS/addons/unraid/login-page/fallout/wallpaper/terminal.jpg) center center/cover no-repeat fixed;
-    --logo: url(https://gilbn.github.io/theme.park/CSS/addons/unraid/login-page/fallout/logo/vault-tec_green.png) center no-repeat;
+    --main-bg-color: url(https://theme-park.dev/CSS/addons/unraid/login-page/fallout/wallpaper/rocky-wall.png),
+    url(https://theme-park.dev/CSS/addons/unraid/login-page/fallout/wallpaper/terminal.jpg) center center/cover no-repeat fixed;
+    --logo: url(https://theme-park.dev/CSS/addons/unraid/login-page/fallout/logo/vault-tec_green.png) center no-repeat;
     --text-color: #14F074;
     --input-color: #14F074;
     --link-color: #14F074;

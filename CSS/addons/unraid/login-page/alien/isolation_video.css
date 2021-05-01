@@ -1,7 +1,7 @@
-@import url("https://gilbn.github.io/theme.park/CSS/addons/unraid/login-page/alien/alien_base.css");
+@import url("https://theme-park.dev/CSS/addons/unraid/login-page/alien/alien_base.css");
 :root {
     --main-bg: transparent;
-    --logo: url(https://gilbn.github.io/theme.park/CSS/addons/unraid/login-page/alien/logo/wings_green.png) center no-repeat;
+    --logo: url(https://theme-park.dev/CSS/addons/unraid/login-page/alien/logo/wings_green.png) center no-repeat;
     --text-color: #37f592;
     --input-color: #37f592;
     --link-color: #37f592;

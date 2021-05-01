@@ -4,7 +4,7 @@
         display: none !important;
     }
     .header-icon.px-3.m-0.d-none.d-md-block:before {
-        background-image: url("https://gilbn.github.io/theme.park/CSS/addons/bazarr/bazarr4k.png");
+        background-image: url("https://theme-park.dev/CSS/addons/bazarr/bazarr4k.png");
         display: inline-block;
         width: 32px; 
         height: 32px;
@@ -12,7 +12,7 @@
         background-size:  cover;
         -webkit-background-size:  cover;
         -moz-background-size:  cover;
-        -o-background-size: cover;
+        -o-backgroun-.dev
     }    
 } 
 
@@ -22,7 +22,7 @@
         display: none !important;
     }   
    .sidebar-title.d-flex.align-items-center.d-md-none.container:before {
-        background-image: url("https://gilbn.github.io/theme.park/CSS/addons/bazarr/bazarr4k.png");
+        background-image: url("https://theme-park.dev/CSS/addons/bazarr/bazarr4k.png");
         display: inline-block;
         width: 32px; 
         height: 32px;

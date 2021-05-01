@@ -18,8 +18,8 @@ Examples of how to add it:
 proxy_set_header Accept-Encoding "";
 sub_filter
 '</head>'
-'<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/bazarr/THEME.css">
-<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/addons/bazarr/bazarr-4k-logo.css">
+'<link rel="stylesheet" type="text/css" href="https://theme-park.dev/CSS/themes/bazarr/THEME.css">
+<link rel="stylesheet" type="text/css" href="https://theme-park.dev/CSS/addons/bazarr/bazarr-4k-logo.css">
 </head>';
 sub_filter_once on;
 ```
@@ -28,7 +28,7 @@ sub_filter_once on;
 
 ```nginx
 AddOutputFilterByType SUBSTITUTE text/html
-   Substitute 's|</head> '<link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/themes/bazarr/THEME.css"><link rel="stylesheet" type="text/css" href="https://gilbn.github.io/theme.park/CSS/addons/bazarr/bazarr-4k-logo.css">
+   Substitute 's|</head> '<link rel="stylesheet" type="text/css" href="https://theme-park.dev/CSS/themes/bazarr/THEME.css"><link rel="stylesheet" type="text/css" href="https://theme-park.dev/CSS/addons/bazarr/bazarr-4k-logo.css">
 </head>';|'
 ```
 
@@ -38,7 +38,7 @@ AddOutputFilterByType SUBSTITUTE text/html
 filter rule {
     content_type text/html.*
     search_pattern </head>
-    replacement "<link rel='stylesheet' type='text/css' href='https://gilbn.github.io/theme.park/CSS/themes/<APP_NAME>/<THEME>.css'><link rel='stylesheet' type='text/css' href='https://gilbn.github.io/theme.park/CSS/addons/bazarr/bazarr-4k-logo.css'></head>"
+    replacement "<link rel='stylesheet' type='text/css' href='https://theme-park.dev/CSS/themes/<APP_NAME>/<THEME>.css'><link rel='stylesheet' type='text/css' href='https://theme-park.dev/CSS/addons/bazarr/bazarr-4k-logo.css'></head>"
 }
 ```
 
@@ -47,6 +47,6 @@ filter rule {
 Just add another import line.
 
 ```css
-@import "https://gilbn.github.io/theme.park/CSS/themes/bazarr/THEME.css";
-@import "https://gilbn.github.io/theme.park/CSS/addons/bazarr/bazarr-4k-logo.css";
+@import "https://theme-park.dev/CSS/themes/bazarr/THEME.css";
+@import "https://theme-park.dev/CSS/addons/bazarr/bazarr-4k-logo.css";
 ```

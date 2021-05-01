@@ -12,7 +12,7 @@
 /*			      https://github.com/gilbN/theme.park			 */
 
 /* JELLYFIN ORGANIZR-DARK THEME */
-@import url(https://gilbn.github.io/theme.park/CSS/themes/jellyfin/jellyfin-base.css);
+@import url(https://theme-park.dev/CSS/themes/jellyfin/jellyfin-base.css);
 :root {
   --main-bg-color: #1F1F1F;
   --modal-bg-color: #1b1b1b;

@@ -13,7 +13,7 @@
 
 
 /* NETDATA ORGANIZR DASHBOARD THEME */
-@import url(https://gilbn.github.io/theme.park/CSS/themes/netdata/netdata-base.css);
+@import url(https://theme-park.dev/CSS/themes/netdata/netdata-base.css);
 :root {
   --main-bg-color: transparent;
   --modal-bg-color: #1f1f1f;

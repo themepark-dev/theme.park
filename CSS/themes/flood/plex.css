@@ -11,7 +11,7 @@
 /* 			      https://github.com/gilbN/theme.park			 */
 
 /* FLOOD PLEX THEME */
-@import url(https://gilbn.github.io/theme.park/CSS/themes/flood/flood-base.css);
+@import url(https://theme-park.dev/CSS/themes/flood/flood-base.css);
 
 :root {
   --main-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-light2.png") center center/cover no-repeat fixed;
