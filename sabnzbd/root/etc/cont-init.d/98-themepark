@@ -17,9 +17,16 @@ fi
 
 # Set default
 if [[ -z ${TP_DOMAIN} ]]; then
-    echo 'No domain set, defaulting to gilbn.github.io'
-    TP_DOMAIN='gilbn.github.io'
+    echo 'No domain set, defaulting to theme-park.dev'
+    TP_DOMAIN='theme-park.dev'
 fi
+
+case ${TP_DOMAIN} in
+  *"github.io"*)
+  echo "Switching to github.io URL style"
+    TP_DOMAIN="${TP_DOMAIN}\/theme.park"
+    ;;
+esac
 
 if [[ -z ${TP_THEME} ]]; then
     echo 'No theme set, defaulting to organizr-dark'
@@ -31,9 +38,9 @@ if ! grep -q "${TP_DOMAIN}" "${APP_FILEPATH}/interfaces/Glitter/templates/main.t
     echo '---------------------------'
     echo '|  Adding the stylesheet  |'
     echo '---------------------------'
-    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/theme.park\/CSS\/themes\/sabnzbd\/${TP_THEME}.css'><\/head> /g" "${APP_FILEPATH}/interfaces/Glitter/templates/main.tmpl"
-    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/theme.park\/CSS\/themes\/sabnzbd\/${TP_THEME}.css'><\/head> /g" "${APP_FILEPATH}/interfaces/Config/templates/_inc_header_uc.tmpl"
-    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/theme.park\/CSS\/themes\/sabnzbd\/${TP_THEME}.css'><\/head> /g" "${APP_FILEPATH}/interfaces/Config/templates/login/main.tmpl"
-    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/theme.park\/CSS\/themes\/sabnzbd\/${TP_THEME}.css'><\/head> /g" "${APP_FILEPATH}/interfaces/wizard/inc_top.tmpl"
+    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/themes\/sabnzbd\/${TP_THEME}.css'><\/head> /g" "${APP_FILEPATH}/interfaces/Glitter/templates/main.tmpl"
+    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/themes\/sabnzbd\/${TP_THEME}.css'><\/head> /g" "${APP_FILEPATH}/interfaces/Config/templates/_inc_header_uc.tmpl"
+    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/themes\/sabnzbd\/${TP_THEME}.css'><\/head> /g" "${APP_FILEPATH}/interfaces/Config/templates/login/main.tmpl"
+    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/themes\/sabnzbd\/${TP_THEME}.css'><\/head> /g" "${APP_FILEPATH}/interfaces/wizard/inc_top.tmpl"
     printf 'Stylesheet set to %s\n' "${TP_THEME}"
 fi

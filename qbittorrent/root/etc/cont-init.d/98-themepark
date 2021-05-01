@@ -24,9 +24,16 @@ echo -e "Variables set:\\n\
 
 # Set default
 if [[ -z ${TP_DOMAIN} ]]; then
-    echo 'No domain set, defaulting to gilbn.github.io'
-    TP_DOMAIN='gilbn.github.io'
+    echo 'No domain set, defaulting to theme-park.dev'
+    TP_DOMAIN='theme-park.dev'
 fi
+
+case ${TP_DOMAIN} in
+  *"github.io"*)
+  echo "Switching to github.io URL style"
+    TP_DOMAIN="${TP_DOMAIN}\/theme.park"
+    ;;
+esac
 
 if [[ -z ${TP_THEME} ]]; then
     echo 'No theme set, defaulting to organizr-dark'
@@ -54,7 +61,7 @@ if ! grep -q "${TP_DOMAIN}" /themepark/public/index.html; then
     echo '---------------------------------------------------------'
     echo '| Adding the stylesheet to /themepark/public/index.html |'
     echo '---------------------------------------------------------'
-    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/theme.park\/CSS\/themes\/qbittorrent\/${TP_THEME}.css'><\/head> /g" /themepark/public/index.html
+    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/themes\/qbittorrent\/${TP_THEME}.css'><\/head> /g" /themepark/public/index.html
     printf 'Stylesheet set to %s on public index.html\n' "${TP_THEME}"
 fi
 
@@ -62,11 +69,11 @@ if ! grep -q "${TP_DOMAIN}" /themepark/private/index.html; then
     echo '----------------------------------------------------------'
     echo '| Adding the stylesheet to /themepark/private/index.html |'
     echo '----------------------------------------------------------'
-    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/theme.park\/CSS\/themes\/qbittorrent\/${TP_THEME}.css'><\/head> /g" /themepark/private/index.html
+    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/themes\/qbittorrent\/${TP_THEME}.css'><\/head> /g" /themepark/private/index.html
     printf 'Stylesheet set to %s on private index.html\n\n' "${TP_THEME}"
-    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/theme.park\/CSS\/themes\/qbittorrent\/${TP_THEME}.css'><\/head> /g" /themepark/private/upload.html
+    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/themes\/qbittorrent\/${TP_THEME}.css'><\/head> /g" /themepark/private/upload.html
     printf 'Stylesheet set to %s on private upload.html\n\n' "${TP_THEME}"
-    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/theme.park\/CSS\/themes\/qbittorrent\/${TP_THEME}.css'><\/head> /g" /themepark/private/download.html
+    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/themes\/qbittorrent\/${TP_THEME}.css'><\/head> /g" /themepark/private/download.html
     printf 'Stylesheet set to %s on private download.html\n\n' "${TP_THEME}"
 fi
 
