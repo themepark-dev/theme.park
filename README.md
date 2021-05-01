@@ -9,264 +9,240 @@
  </a><a href="https://technicalramblings.com/" rel="noopener"><img class="alignnone" title="technicalramblings!" src="https://img.shields.io/badge/blog-technicalramblings.com-informational.svg?style=for-the-badge" alt="" height="37" /></a>
     <br />
     <br />
-    <a href="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/ombi/ombi1.png" rel="noopener"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/ombi/ombi1.png" alt="Screen Shot 1" width="49.15%" /></a>
-    <a href="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/sonarr/aquamarine.png" rel="noopener"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/sonarr/aquamarine.png" alt="Screen Shot 2" width="49.15%" /></a>
-    <a href="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/sabnzbd/dark.png" rel="noopener"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/sabnzbd/dark.png" alt="Screen Shot 3" width="49.15%" /></a>
-    <a href="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/lidarr/plex.png" rel="noopener"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/lidarr/plex.png" alt="Screen Shot 4" width="49.15%" /></a>
+    <a href="https://docs.theme-park.dev/site_assets/sonarr/aquamarine.png" rel="noopener"><img src="https://docs.theme-park.dev/site_assets/sonarr/aquamarine.png" alt="Screen Shot 1" width="49.15%" /></a>
+    <a href="https://docs.theme-park.dev/site_assets/radarr/organizr-dark.png" rel="noopener"><img src="https://docs.theme-park.dev/site_assets/radarr/organizr-dark.png" alt="Screen Shot 2" width="49.15%" /></a>
+    <a href="https://docs.theme-park.dev/site_assets/qbittorrent/hotline.png" rel="noopener"><img src="https://docs.theme-park.dev/site_assets/qbittorrent/hotline.png" alt="Screen Shot 3" width="49.15%" /></a>
+    <a href="https://docs.theme-park.dev/site_assets/tautulli/plex.png" rel="noopener"><img src="https://docs.theme-park.dev/site_assets/tautulli/plex.png" alt="Screen Shot 4" width="49.15%" /></a>
 </p>
 
-# [Themes](https://github.com/gilbN/theme.park/wiki/Themes)
-\- Click on the banners for screenshots.
-<a href="https://github.com/gilbN/theme.park/wiki/Organizr-Dark"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/organizr_dark_banner.png" width="800px" />
-<a href="https://github.com/gilbN/theme.park/wiki/Aquamarine"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/aquamarine_banner.png" width="800px" />
-<a href="https://github.com/gilbN/theme.park/wiki/Hotline"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/hotline_banner.png" width="800px" />
-<a href="https://github.com/gilbN/theme.park/wiki/Space Gray"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/spacegray_banner.png" width="800px" />
-<a href="https://github.com/gilbN/theme.park/wiki/Dark"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/dark_banner.png" width="800px" />
-<a href="https://github.com/gilbN/theme.park/wiki/Plex Themes"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/plex_banner.png" width="800px" />
+# [Themes](https://docs.theme-park.dev/themes/)
 
-# [Installation](https://github.com/gilbN/theme.park/wiki/Setup)
+<p align="center">
+Click on the banners for screenshots.
 
-### Methods:
-<ul>
-    <li><a href="https://github.com/gilbN/theme.park/wiki/Setup#-docker-mods"><img src="https://avatars.githubusercontent.com/u/12324908?s=20&v=4"> Docker Mods</a></li>
-        <ul><li><a href="https://github.com/gilbN/theme.park/wiki/Setup#-hotio-containers"><img src="https://hotio.dev/img/favicon.ico" width="20px"> Hotio containers</a></li></ul>
-    <li><a href="https://github.com/gilbN/theme.park/wiki/Setup#subfilter-method">Subfilter Method</a></li>
-    <ul>
-        <li><a href="https://github.com/gilbN/theme.park/wiki/Setup#nginx">Nginx</a></li>
-        <ul>
-            <li><a href="https://github.com/gilbN/theme.park/wiki/Setup#nginx-variable">Nginx Variable</a></li>
-            <li><a href="https://github.com/gilbN/theme.park/wiki/Setup#nginx-proxy-manager">Nginx Proxy Manager</a></li>
-        </ul>
-        <li><a href="https://github.com/gilbN/theme.park/wiki/Setup#apache">Apache</a></li>
-        <li><a href="https://github.com/gilbN/theme.park/wiki/Setup#caddy">Caddy</a></li>
-        <li><a href="https://github.com/gilbN/theme.park/wiki/Setup#caddy-v2">Caddy V2</a></li>
-        <li><a href="https://github.com/traefik/plugin-rewritebody">Traefik:</a> <a
-                href="https://github.com/gilbN/theme.park/issues/42">See this issue</a></li>
-    </ul>
-    <li><a href="https://github.com/gilbN/theme.park/wiki/Setup#stylus-method">Stylus Method</a></li>
-    <li><a href="https://github.com/gilbN/theme.park/wiki/Setup#blackberry-theme-installer-method">Blackberry Theme Installer</a></li>
+<a href="https://docs.theme-park.dev/colors/organizr-dark/"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/organizr_dark_banner.png" width="800px" />
+<a href="https://docs.theme-park.dev/colors/aquamarine"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/aquamarine_banner.png" width="800px" />
+<a href="https://docs.theme-park.dev/colors/hotline"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/hotline_banner.png" width="800px" />
+<a href="https://docs.theme-park.dev/colors/space-gray"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/spacegray_banner.png" width="800px" />
+<a href="https://docs.theme-park.dev/colors/dark"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/dark_banner.png" width="800px" />
+<a href="https://docs.theme-park.dev/colors/plex"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/plex_banner.png" width="800px" />
 
-# [Addons](https://github.com/gilbN/theme.park/wiki/Addons)
+## [Installation](https://docs.theme-park.dev/setup)
 
-## Current themes in the repo:
+## [Addons](https://docs.theme-park.dev/themes/addons/sonarr/)
+
+## [Adding your own theme colors](https://docs.theme-park.dev/custom/)
+
+<p align="center">
+Current themes in the repo
 
 <table style="height: 649px; width: 698px; margin-left: auto; margin-right: auto;" cellspacing="10" cellpadding="10">
 <tbody>
 <tr style="height: 98px;">
 <td style="width: 110px; height: 98px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Sonarr"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://raw.githubusercontent.com/Sonarr/Sonarr/phantom-develop/Logo/sonarr-simple.svg" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Sonarr">Sonarr</a></p>
+<p><a href="https://docs.theme-park.dev/themes/sonarr"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://docs.theme-park.dev/site_assets/sonarr/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/sonarr">Sonarr</a></p>
 </td>
 <td style="width: 160px; height: 98px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Radarr"><img src="https://raw.githubusercontent.com/Radarr/Radarr/aphrodite/Logo/Radarr.svg" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Radarr">Radarr</a></p>
+<p><a href="https://docs.theme-park.dev/themes/radarr"><img src="https://docs.theme-park.dev/site_assets/radarr/logo.png" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/radarr">Radarr</a></p>
 </td>
 <td style="width: 10px; height: 98px; text-align: center;">
-<p style="text-align: center;"><a href="https://github.com/gilbN/theme.park/wiki/Lidarr"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-develop/plugins/images/tabs/lidarr.png" width="48" height="48" /></a></p>
-<p style="text-align: center;"><a href="https://github.com/gilbN/theme.park/wiki/Lidarr">Lidarr</a></p>
+<p style="text-align: center;"><a href="https://docs.theme-park.dev/themes/lidarr"><img src="https://docs.theme-park.dev/site_assets/lidarr/logo.png" width="48" height="48" /></a></p>
+<p style="text-align: center;"><a href="https://docs.theme-park.dev/themes/lidarr">Lidarr</a></p>
 </td>
 <td style="width: 90px; height: 98px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Bazarr"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-develop/plugins/images/tabs/bazarr.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Bazarr">Bazarr</a></p>
+<p><a href="https://docs.theme-park.dev/themes/bazarr"><img src="https://docs.theme-park.dev/site_assets/bazarr/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/bazarr">Bazarr</a></p>
 </td>
 <td style="width: 136px; height: 98px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Readarr"><img src="https://raw.githubusercontent.com/Readarr/Readarr/develop/Logo/256.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Readarr">Readarr</a></p>
+<p><a href="https://docs.theme-park.dev/themes/readarr"><img src="https://docs.theme-park.dev/site_assets/readarr/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/readarr">Readarr</a></p>
 </td>
 <td style="width: 140px; height: 98px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Plex"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-master/plugins/images/tabs/plex.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Plex">Plex</a></p>
+<p><a href="https://docs.theme-park.dev/themes/plex"><img src="https://docs.theme-park.dev/site_assets/plex/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/plex">Plex</a></p>
 </td>
 <td style="width: 110px; height: 26px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Calibre-Web"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-develop/plugins/images/tabs/calibre-web.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Calibre-Web">Calibre-web</a></p>
+<p><a href="https://docs.theme-park.dev/themes/calibre-Web"><img src="https://docs.theme-park.dev/site_assets/calibreweb/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/calibre-Web">Calibre-web</a></p>
 </td>
 </tr>
 <tr style="height: 26px;">
 <td style="width: 109px; height: 98px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Jellyfin-Emby"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-develop/plugins/images/tabs/jellyfin.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Jellyfin-Emby">Jellyfin/Emby</a></p>
+<p><a href="https://docs.theme-park.dev/themes/jellyfin"><img src="https://docs.theme-park.dev/site_assets/jellyfin/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/jellyfin">Jellyfin/Emby</a></p>
 </td>
 <td style="width: 160px; height: 26px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Tautulli"><img src="https://raw.githubusercontent.com/Tautulli/Tautulli/master/data/interfaces/default/images/logo-circle.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Tautulli">Tautulli</a></p>
+<p><a href="https://docs.theme-park.dev/themes/tautulli"><img src="https://docs.theme-park.dev/site_assets/tautulli/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/tautulli">Tautulli</a></p>
 </td>
 <td style="width: 10px; height: 26px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Ombi"><img src="https://raw.githubusercontent.com/tidusjar/Ombi/feature/v4/src/Ombi/wwwroot/images/favicon/android-chrome-192x192.png" alt="" width="48" height="48" /><img src="https://github.com/gilbN/theme.park/wiki/Ombi" alt="" width="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Ombi">Ombi</a></p>
+<p><a href="https://docs.theme-park.dev/themes/ombi"><img src="https://docs.theme-park.dev/site_assets/ombi/logo.png" alt="" width="48" height="48" /><img src="https://docs.theme-park.dev/themes/ombi" alt="" width="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/ombi">Ombi</a></p>
 </td>
 <td style="width: 90px; height: 26px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Requestrr"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-develop/plugins/images/tabs/requestrr.png" alt="" width="48" height="45" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Requestrr">Requestrr</a></p>
+<p><a href="https://docs.theme-park.dev/themes/requestrr"><img src="https://docs.theme-park.dev/site_assets/requestrr/logo.png" alt="" width="48" height="45" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/requestrr">Requestrr</a></p>
 </td>
 <td style="width: 136px; height: 26px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Organizr"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-master/plugins/images/organizr/logo.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Organizr">Organizr</a></p>
+<p><a href="https://docs.theme-park.dev/themes/organizr"><img src="https://docs.theme-park.dev/site_assets/organizr/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/organizr">Organizr</a></p>
 </td>
 <td style="width: 140px; height: 26px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Synclounge"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-develop/plugins/images/tabs/synclounge-dark.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Synclounge">Synclounge</a></p>
+<p><a href="https://docs.theme-park.dev/themes/synclounge"><img src="https://docs.theme-park.dev/site_assets/synclounge/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/synclounge">Synclounge</a></p>
 </td>
 <td style="width: 109px; height: 26px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Deluge"><img src="https://raw.githubusercontent.com/deluge-torrent/deluge/develop/deluge/ui/data/pixmaps/deluge.svg" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Deluge">Deluge</a></p>
+<p><a href="https://docs.theme-park.dev/themes/deluge"><img src="https://docs.theme-park.dev/site_assets/deluge/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/deluge">Deluge</a></p>
 </td>
 </tr>
 <tr style="height: 73px;">
 <td style="width: 110px; height: 73px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/qBittorrent"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-develop/plugins/images/tabs/qBittorrent.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/qBittorrent">qBittorrent</a></p>
+<p><a href="https://docs.theme-park.dev/themes/qbittorrent"><img src="https://docs.theme-park.dev/site_assets/qbittorrent/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/qbittorrent">qBittorrent</a></p>
 </td>
 <td style="width: 160px; height: 73px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/ruTorrent"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-develop/plugins/images/tabs/rutorrent.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/ruTorrent">ruTorrent</a></p>
+<p><a href="https://docs.theme-park.dev/themes/rutorrent"><img src="https://docs.theme-park.dev/site_assets/rutorrent/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/rutorrent">ruTorrent</a></p>
 </td>
 <td style="width: 10px; height: 73px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Transmission"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-develop/plugins/images/tabs/transmission.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Transmission">Transmission</a></p>
+<p><a href="https://docs.theme-park.dev/themes/transmission"><img src="https://docs.theme-park.dev/site_assets/transmission/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/transmission">Transmission</a></p>
 </td>
 <td style="width: 90px; height: 73px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/SABnzbd"><img src="https://raw.githubusercontent.com/sabnzbd/sabnzbd/develop/interfaces/Config/templates/staticcfg/ico/android-192x192.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/SABnzbd">SABnzbd</a></p>
+<p><a href="https://docs.theme-park.dev/themes/sabnzbd"><img src="https://docs.theme-park.dev/site_assets/sabnzbd/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/sabnzbd">SABnzbd</a></p>
 </td>
 <td style="width: 136px; height: 73px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/NZBGet"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-develop/plugins/images/tabs/nzbget.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/NZBGet">NZBGet</a></p>
+<p><a href="https://docs.theme-park.dev/themes/nzbget"><img src="https://docs.theme-park.dev/site_assets/nzbget/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/nzbget">NZBGet</a></p>
 </td>
 <td style="width: 140px; height: 73px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/NZBHydra-2"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-develop/plugins/images/tabs/nzbhydra.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/NZBHydra-2">NZBHydra 2</a></p>
+<p><a href="https://docs.theme-park.dev/themes/nzbhydra2"><img src="https://docs.theme-park.dev/site_assets/nzbhydra2/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/nzbhydra2">NZBHydra 2</a></p>
 </td>
 <td style="width: 109px; height: 73px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Jackett"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-develop/plugins/images/tabs/jackett.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Jackett">Jackett</a></p>
+<p><a href="https://docs.theme-park.dev/themes/jackett"><img src="https://docs.theme-park.dev/site_assets/jackett/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/jackett">Jackett</a></p>
 </td>
 </tr>
 <tr style="height: 56px;">
 <td style="width: 110px; height: 56px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Grafana"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-develop/plugins/images/tabs/grafana.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Grafana">Grafana</a></p>
+<p><a href="https://docs.theme-park.dev/themes/grafana"><img src="https://docs.theme-park.dev/site_assets/grafana/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/grafana">Grafana</a></p>
 </td>
 <td style="width: 160px; height: 56px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Netdata"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-develop/plugins/images/tabs/netdata.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Netdata">Netdata</a></p>
+<p><a href="https://docs.theme-park.dev/themes/netdata"><img src="https://docs.theme-park.dev/site_assets/netdata/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/netdata">Netdata</a></p>
 </td>
 <td style="width: 10px; height: 56px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Monitorr"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-develop/plugins/images/tabs/monitorr.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Monitorr">Monitorr</a></p>
+<p><a href="https://docs.theme-park.dev/themes/monitorr"><img src="https://docs.theme-park.dev/site_assets/monitorr/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/monitorr">Monitorr</a></p>
 </td>
 <td style="width: 90px; height: 56px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Logarr"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-develop/plugins/images/tabs/logarr.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Logarr">Logarr</a></p>
+<p><a href="https://docs.theme-park.dev/themes/logarr"><img src="https://docs.theme-park.dev/site_assets/logarr/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/logarr">Logarr</a></p>
 </td>
 <td style="width: 136px; height: 56px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Portainer"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-develop/plugins/images/tabs/portainer.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Portainer">Portainer</a></p>
+<p><a href="https://docs.theme-park.dev/themes/portainer"><img src="https://docs.theme-park.dev/site_assets/portainer/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/portainer">Portainer</a></p>
 </td>
 <td style="width: 140px; height: 56px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Pi-hole"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-develop/plugins/images/tabs/pihole.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Pi-hole">Pi-hole</a></p>
+<p><a href="https://docs.theme-park.dev/themes/pihole"><img src="https://docs.theme-park.dev/site_assets/pihole/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/pihole">Pi-hole</a></p>
 </td>
 <td style="width: 109px; height: 56px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Guacamole"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-develop/plugins/images/tabs/guacamole.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Guacamole">Guacamole</a></p>
+<p><a href="https://docs.theme-park.dev/themes/guacamole"><img src="https://docs.theme-park.dev/site_assets/guacamole/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/guacamole">Guacamole</a></p>
 </td>
 </tr>
 <tr style="height: 40px; text-align: center;">
 <td style="width: 110px; height: 40px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Filebrowser"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-develop/plugins/images/tabs/filebrowser.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Filebrowser">Filebrowser</a></p>
+<p><a href="https://docs.theme-park.dev/themes/filebrowser"><img src="https://docs.theme-park.dev/site_assets/filebrowser/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/filebrowser">Filebrowser</a></p>
 </td>
 <td style="width: 160px; height: 40px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/PLPP"><img src="https://cdn.discordapp.com/attachments/374757488005873667/620267729726734336/plpp.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/PLPP">PLPP</a></p>
+<p><a href="https://docs.theme-park.dev/themes/plpp"><img src="https://docs.theme-park.dev/site_assets/plpp/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/plpp">PLPP</a></p>
 </td>
 <td style="width: 10px; height: 40px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Librespeed"><img src="https://raw.githubusercontent.com/librespeed/speedtest/master/.logo/icon_huge.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Librespeed">librespeed</a></p>
+<p><a href="https://docs.theme-park.dev/themes/librespeed"><img src="https://docs.theme-park.dev/site_assets/librespeed/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/librespeed">librespeed</a></p>
 </td>
 <td style="width: 90px; height: 40px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/The-Lounge"><img src="https://raw.githubusercontent.com/thelounge/thelounge/master/client/img/logo-grey-bg-152x152px.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/The-Lounge">The Lounge</a></p>
+<p><a href="https://docs.theme-park.dev/themes/thelounge"><img src="https://docs.theme-park.dev/site_assets/thelounge/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/thelounge">The Lounge</a></p>
 </td>
 <td style="width: 90px; height: 40px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Lazylibrarian"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-develop/plugins/images/tabs/lazylibrarian.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Lazylibrarian">Lazylibrarian</a></p>
+<p><a href="https://docs.theme-park.dev/themes/lazylibrarian"><img src="https://docs.theme-park.dev/site_assets/lazylibrarian/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/lazylibrarian">Lazylibrarian</a></p>
 </td>
 <td style="width: 90px; height: 40px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Adguard"><img src="https://raw.githubusercontent.com/causefx/Organizr/v2-master/plugins/images/tabs/AdGuardHome.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Adguard">Adguard</a></p>
+<p><a href="https://docs.theme-park.dev/themes/adguard"><img src="https://docs.theme-park.dev/site_assets/adguard/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/adguard">Adguard</a></p>
 </td>
 <td style="width: 90px; height: 40px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Gaps"><img src="https://raw.githubusercontent.com/JasonHHouse/gaps/master/images/gaps.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Gaps">Gaps</a></p>
+<p><a href="https://docs.theme-park.dev/themes/gaps"><img src="https://docs.theme-park.dev/site_assets/gaps/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/gaps">Gaps</a></p>
 </td>
 </tr>
 <tr>
 <td style="width: 90px; height: 40px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Bitwarden"><img src="https://raw.githubusercontent.com/bitwarden/brand/master/icons/256x256.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Bitwarden">Bitwarden</a></p>
+<p><a href="https://docs.theme-park.dev/themes/bitwarden"><img src="https://docs.theme-park.dev/site_assets/bitwarden/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/bitwarden">Bitwarden</a></p>
 </td>
 <td style="width: 90px; height: 40px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Duplicacy"><img src="https://avatars1.githubusercontent.com/u/10550069?s=400&u=4c3068cced0cb7b005bdbe2c4061a93c61b1a8e0&v=4" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Duplicacy">Duplicacy</a></p>
+<p><a href="https://docs.theme-park.dev/themes/duplicacy"><img src="https://docs.theme-park.dev/site_assets/duplicacy/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/duplicacy">Duplicacy</a></p>
 </td>
 <td style="width: 90px; height: 40px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Kitana"><img src="https://raw.githubusercontent.com/pannal/Kitana/master/static/img/android-icon-48x48.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Kitana">Kitana</a></p>
+<p><a href="https://docs.theme-park.dev/themes/kitana"><img src="https://docs.theme-park.dev/site_assets/kitana/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/kitana">Kitana</a></p>
 </td>
 <td style="width: 90px; height: 40px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Webtools"><img src="https://raw.githubusercontent.com/ukdtom/WebTools.bundle/master/Wiki/WebTools/Logos/WebTools-48.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Webtools">Webtools</a></p>
+<p><a href="https://docs.theme-park.dev/themes/webtools"><img src="https://docs.theme-park.dev/site_assets/webtools/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/webtools">Webtools</a></p>
 </td>
 <td style="width: 90px; height: 40px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Resilio-Sync"><img src="https://avatars1.githubusercontent.com/u/12284211?s=200&v=4" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Resilio-Sync">Resilio-Sync</a></p>
+<p><a href="https://docs.theme-park.dev/themes/resilio-Sync"><img src="https://docs.theme-park.dev/site_assets/resilio-sync/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/resilio-Sync">Resilio-Sync</a></p>
 </td>
 <td style="width: 90px; height: 40px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Gitea"><img src="https://raw.githubusercontent.com/go-gitea/gitea/master/public/img/gitea.svg" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Gitea">Gitea</a></p>
+<p><a href="https://docs.theme-park.dev/themes/gitea"><img src="https://docs.theme-park.dev/site_assets/gitea/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/gitea">Gitea</a></p>
 </td>
 </td>
 <td style="width: 90px; height: 40px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Unraid"><img src="https://i.imgur.com/pWBOIrj.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Unraid">Unraid</a></p>
+<p><a href="https://docs.theme-park.dev/themes/unraid"><img src="https://docs.theme-park.dev/site_assets/unraid/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/unraid">Unraid</a></p>
 </td>
 </tr>
 <tr>
 <td style="width: 90px; height: 40px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Moviematch"><img src="https://raw.githubusercontent.com/LukeChannings/moviematch/main/web/app/static/icons/icon-180.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Moviematch">Moviematch</a></p>
+<p><a href="https://docs.theme-park.dev/themes/moviematch"><img src="https://docs.theme-park.dev/site_assets/moviematch/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/moviematch">Moviematch</a></p>
 </td>
 <td style="width: 90px; height: 40px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Petio"><img src="https://avatars.githubusercontent.com/u/75477127?s=48&v=4" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Petio">Petio</a></p>
+<p><a href="https://docs.theme-park.dev/themes/petio"><img src="https://docs.theme-park.dev/site_assets/petio/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/petio">Petio</a></p>
 </td>
 <td style="width: 90px; height: 40px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Flood"><img src="https://raw.githubusercontent.com/jesec/flood/master/client/src/public/icon_96x96.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Flood">Flood</a></p>
+<p><a href="https://docs.theme-park.dev/themes/flood"><img src="https://docs.theme-park.dev/site_assets/flood/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/flood">Flood</a></p>
 </td>
 <td style="width: 90px; height: 40px; text-align: center;">
-<p><a href="https://github.com/gilbN/theme.park/wiki/Dozzle"><img src="https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/img/dozzle.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://github.com/gilbN/theme.park/wiki/Dozzle">Dozzle</a></p>
+<p><a href="https://docs.theme-park.dev/themes/dozzle"><img src="https://docs.theme-park.dev/site_assets/dozzle/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/dozzle">Dozzle</a></p>
 </td>
 </tr>
 </tbody>
 </table>
 
-
-
-## [Adding your own theme colors](https://github.com/gilbN/theme.park/wiki/Creating-your-own-themes)
-
-
-
-
-
-
 ***
 
-
-### Honourable mentions:
+### Honourable mentions
 
 [Archmonger/Blackberry-Themes](https://github.com/Archmonger/Blackberry-Themes)
 
