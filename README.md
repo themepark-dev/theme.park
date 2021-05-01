@@ -20,12 +20,12 @@
 <p align="center">
 Click on the banners for screenshots.
 
-<a href="https://docs.theme-park.dev/colors/organizr-dark/"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/organizr_dark_banner.png" width="800px" />
-<a href="https://docs.theme-park.dev/colors/aquamarine"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/aquamarine_banner.png" width="800px" />
-<a href="https://docs.theme-park.dev/colors/hotline"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/hotline_banner.png" width="800px" />
-<a href="https://docs.theme-park.dev/colors/space-gray"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/spacegray_banner.png" width="800px" />
-<a href="https://docs.theme-park.dev/colors/dark"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/dark_banner.png" width="800px" />
-<a href="https://docs.theme-park.dev/colors/plex"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/Screenshots/plex_banner.png" width="800px" />
+<a href="https://docs.theme-park.dev/colors/organizr-dark/"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/banners/organizr_dark_banner.png" width="800px" />
+<a href="https://docs.theme-park.dev/colors/aquamarine"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/banners/aquamarine_banner.png" width="800px" />
+<a href="https://docs.theme-park.dev/colors/hotline"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/banners/hotline_banner.png" width="800px" />
+<a href="https://docs.theme-park.dev/colors/space-gray"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/banners/spacegray_banner.png" width="800px" />
+<a href="https://docs.theme-park.dev/colors/dark"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/banners/dark_banner.png" width="800px" />
+<a href="https://docs.theme-park.dev/colors/plex"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/banners/plex_banner.png" width="800px" />
 
 ## [Installation](https://docs.theme-park.dev/setup)
 
