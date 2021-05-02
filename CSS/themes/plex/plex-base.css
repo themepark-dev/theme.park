@@ -115,7 +115,8 @@ a:hover {
 
 [class*="MetadataPosterCardOverlay-unplayedBadge"],
 [class*="MetadataPosterCard-legacyUnwatchedTag-"],
-[class*="MetadataPosterCard-legacyUnwatchedEpisodesBadge"] {
+[class*="MetadataPosterCard-legacyUnwatchedEpisodesBadge"],
+[class*="MetadataPosterCardOverlay-versionBadge-"] {
   background-color: var(--poster-unwatched);
 }
 
