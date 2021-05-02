@@ -364,12 +364,14 @@ a:hover {
 
 [class*="IconButton\/button\/"]:hover {
     background-color: transparent;
-    color: var(--text-hover);
+    color: var(--text-hover) !important;
 }
 
-[class*="Label\/default\/"] {
+[class*="Label\/default\/"],
+[class*="Label\/inverse\/"] {
     border-color: var(--accent-color);
     background-color: var(--accent-color);
+    color: #fff;
 }
 
 [class*="Label\/info\/"] {

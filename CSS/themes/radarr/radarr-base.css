@@ -328,10 +328,6 @@ a:hover {
     background-color: rgba(0, 0, 0, .25);
 }
 
-.Table-table-2C3O8 {
-    color: #fff;
-}
-
 [class*="Popover-title-"],
 [class*="SeasonInfo-title-"],
 [class*="Popover-body-"],
@@ -360,14 +356,20 @@ a:hover {
     color: var(--text);
 }
 
+[class*="Label-default-"] [class*="IconButton-button-"]  {
+    color: #eee;
+}
+
 [class*="IconButton-button-"]:hover {
     background-color: transparent;
     color: var(--text-hover);
 }
 
-[class*="Label-default-"] {
+[class*="Label-default-"],
+[class*="Label-inverse-"] {
     border-color: var(--accent-color);
     background-color: var(--accent-color);
+    color: #fff;
 }
 
 [class*="Label-info-"] {
@@ -554,7 +556,9 @@ a:hover {
 
 /* TEXT COLOR */
 
-[class*="PageContentBody-innerContentBody-"] {
+[class*="PageContentBody-innerContentBody-"],
+[class*="PageContentBody-contentBody-"],
+.react-tabs__tab-panel .react-tabs__tab-panel--selected > div {
     color: var(--text);
 }
 

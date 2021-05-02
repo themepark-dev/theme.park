@@ -361,9 +361,11 @@ a:hover {
     color: var(--text-hover);
 }
 
-[class*="Label-default-"] {
+[class*="Label-default-"],
+[class*="Label-inverse-"] {
     border-color: var(--accent-color);
     background-color: var(--accent-color);
+    color: #fff;
 }
 
 [class*="Label-info-"] {
