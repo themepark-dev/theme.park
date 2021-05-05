@@ -99,7 +99,7 @@ a:hover {
 /* LOADING PAGE */
 [class*="ErrorPage-page-"],
 [class*="ErrorPage-version-"],
-[class*="LoadingMessage-loadingMessage-358v5"] {
+[class*="LoadingMessage-loadingMessage-"] {
     color: var(--text);
 }
 
@@ -348,7 +348,7 @@ a:hover {
 }
 
 [class*="EpisodeTitleLink-link-"]:hover {
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -533,7 +533,7 @@ a:hover {
 }
 
 [class*="MovieSearchResult-alternateTitle-"] {
-    color: #ffffff;
+    color: #fff;
     font-size: 12px;
 }
 
@@ -746,13 +746,10 @@ a:hover {
 }
 
 [class*="CalendarEvent-movieTitle-"],
+[class*="CalendarEvent-movieInfo-"],
 [class*="CalendarEvent-episodeInfo-"],
 [class*="CalendarEvent-airTime-"] {
-    color: #ffffff !important;
-}
-
-[class*="CalendarEvent-movieInfo-"] {
-    color: var(--text);
+    color: #fff !important;
 }
 
 [class*="CalendarEvent-event-"] {
@@ -764,7 +761,7 @@ a:hover {
 }
 
 [class*="CalendarEventGroup-movieTitle-"] {
-    color: #ffffff !important;
+    color: #fff !important;
 }
 
 [class*="CalendarEventGroup-airTime-"] {
