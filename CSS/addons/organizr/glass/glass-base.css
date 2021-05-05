@@ -672,6 +672,10 @@
 
 /* Mobile*/
 @media (max-width: 480px) {
+* {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+}
 #page-wrapper {
     background: var(--mobile-bg-color)  !important;
   background-size: cover;
@@ -680,22 +684,18 @@
   height: 100%;
 }
 #side-menu {
-    -webkit-backdrop-filter: blur(10px) !important;
-    backdrop-filter: blur(10px) !important;
+    background: var(--mobile-bg-color) !important;
 }	
 .navbar-header {
     background: var(--div-background-color-25)    !important;
-	    -webkit-backdrop-filter: blur(10px) !important;
-    backdrop-filter: blur(10px) !important;
 }
-.navbar-default {
-    background: var(--mobile-bg-color);
-    border-color: #e7e7e7;
+.navbar-default,.show-sidebar .sidebar .sidebar-head {
+    background: var(--mobile-bg-color) !important;
 }
-
+.dropdown-menu {
+    background: var(--mobile-bg-color) !important;
+}
 #internal-Settings {
-    -webkit-backdrop-filter: blur(10px) !important;
-    backdrop-filter: blur(10px) !important;
     background: var(--mobile-bg-color) !important;
 }
 .mfp-zoom-out.mfp-ready.mfp-bg {
