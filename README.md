@@ -1,14 +1,17 @@
-<h1 align="center">
-    <img src="https://imgur.com/iSpc8Iq.png">
-</h1>
+[![](https://imgur.com/iSpc8Iq.png)]()
+
+[![Docs](https://img.shields.io/static/v1.svg?color=009688&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=theme-park.dev&message=Docs)](https://docs.theme-park.dev "Documentation for all the themes in this repository.")
+[![Discord](https://img.shields.io/discord/591352397830553601.svg?color=009688&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=Discord&logo=discord)](https://discord.gg/HM5uUKU "Discord for theme installation support")
+[![GitHub Stars](https://img.shields.io/github/stars/gilbn/theme.park.svg?color=009688&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/GilbN/theme.park)
+[![Support](https://img.shields.io/static/v1.svg?color=009688&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=&message=sponsor&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABN0lEQVQ4T2NkoBAwIuv/HxDggMT/wLhhwwUQ/39AgAEDA4MATI5xw4YDcDaaAf+R+AcZN2wAG/g/IACkwR7JALjFYAbU5v0k+sYR5BLG/wEBCQwMDAUMDAz6DM3NDAxz5zIwPHhAjFkXGRgYJoAMaGBgYKgH6wgPZ2DYt4+B4fVrYgwAqWlENYBYbQwMDO8+sjH8+cvUSbYB6w9Kv/vwlW0aWYE4Z5MCAwfrf7fYnxN3wwwAxTEorvHGBMjZBy+Ivvv6jSXi20+OU+kMnR/RExIoQEGxIo8eHM/fcDA8fc114/J9/jVJv/prsSYkaJqYwMDAEIBsCMjme894bl6+w7s76e/EXGTDUVwAk0CJWgYGBliAIduM0wVIhoCS8X7kAMMWy1hdAPUKOGCXbJdnhQUYSQYQm6YAtdh8zhSGm1AAAAAASUVORK5CYII=)](https://github.com/sponsors/GilbN "Donate!")
+[![GitHub](https://img.shields.io/github/license/gilbn/theme.park.svg?color=009688&labelColor=555555&logoColor=ffffff&style=for-the-badge)](https://github.com/gilbN/theme.park/blob/master/LICENSE)
+[![GitHub Package Repository](https://img.shields.io/static/v1.svg?color=009688&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=theme-park.dev&message=Packages&logo=github)](https://github.com/users/GilbN/packages/container/package/theme.park)
+[![Docker Pulls](https://img.shields.io/docker/pulls/gilbn/theme.park.svg?color=009688&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=pulls&logo=docker)](https://hub.docker.com/r/gilbn/theme.park)
+[![Blog](https://img.shields.io/static/v1.svg?color=009688&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=technicalramblings&message=Blog)](https://technicalramblings.com/ "A blog with different guides :)")
 
 <p align="center">
   A collection of themes/skins for your favorite apps!
 <p align="center">
-<a href="https://github.com/sponsors/GilbN" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" >   </a><a href="https://discord.gg/HM5uUKU" rel="noopener"><img class="alignnone" title="theme.park!" src="https://img.shields.io/badge/chat-Discord-blue.svg?style=for-the-badge&logo=discord" alt="" height="37" /></a>
- </a><a href="https://technicalramblings.com/" rel="noopener"><img class="alignnone" title="technicalramblings!" src="https://img.shields.io/badge/blog-technicalramblings.com-informational.svg?style=for-the-badge" alt="" height="37" /></a>
-    <br />
-    <br />
     <a href="https://docs.theme-park.dev/site_assets/sonarr/aquamarine.png" rel="noopener"><img src="https://docs.theme-park.dev/site_assets/sonarr/aquamarine.png" alt="Screen Shot 1" width="49.15%" /></a>
     <a href="https://docs.theme-park.dev/site_assets/radarr/organizr-dark.png" rel="noopener"><img src="https://docs.theme-park.dev/site_assets/radarr/organizr-dark.png" alt="Screen Shot 2" width="49.15%" /></a>
     <a href="https://docs.theme-park.dev/site_assets/qbittorrent/hotline.png" rel="noopener"><img src="https://docs.theme-park.dev/site_assets/qbittorrent/hotline.png" alt="Screen Shot 3" width="49.15%" /></a>
@@ -19,13 +22,14 @@
 
 <p align="center">
 Click on the banners for screenshots.
+</p>
 
-<a href="https://docs.theme-park.dev/colors/organizr-dark/"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/banners/organizr_dark_banner.png" width="800px" />
-<a href="https://docs.theme-park.dev/colors/aquamarine"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/banners/aquamarine_banner.png" width="800px" />
-<a href="https://docs.theme-park.dev/colors/hotline"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/banners/hotline_banner.png" width="800px" />
-<a href="https://docs.theme-park.dev/colors/space-gray"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/banners/spacegray_banner.png" width="800px" />
-<a href="https://docs.theme-park.dev/colors/dark"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/banners/dark_banner.png" width="800px" />
-<a href="https://docs.theme-park.dev/colors/plex"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/banners/plex_banner.png" width="800px" />
+[![Organizr Dark](https://raw.githubusercontent.com/gilbN/theme.park/master/banners/organizr_dark_banner.png)](https://docs.theme-park.dev/colors/organizr-dark/)
+[![Organizr Dark](https://raw.githubusercontent.com/gilbN/theme.park/master/banners/aquamarine_banner.png)](https://docs.theme-park.dev/colors/aquamarine/)
+[![Organizr Dark](https://raw.githubusercontent.com/gilbN/theme.park/master/banners/hotline_banner.png)](https://docs.theme-park.dev/colors/hotline/)
+[![Organizr Dark](https://raw.githubusercontent.com/gilbN/theme.park/master/banners/spacegray_banner.png)](https://docs.theme-park.dev/colors/space-gray/)
+[![Organizr Dark](https://raw.githubusercontent.com/gilbN/theme.park/master/banners/dark_banner.png)](https://docs.theme-park.dev/colors/dark/)
+[![Organizr Dark](https://raw.githubusercontent.com/gilbN/theme.park/master/banners/plex_banner.png)](https://docs.theme-park.dev/colors/plex/)
 
 ## [Installation](https://docs.theme-park.dev/setup)
 
@@ -35,7 +39,7 @@ Click on the banners for screenshots.
 
 <p align="center">
 Current themes in the repo
-
+<p align="center">
 <table style="height: 649px; width: 698px; margin-left: auto; margin-right: auto;" cellspacing="10" cellpadding="10">
 <tbody>
 <tr style="height: 98px;">
