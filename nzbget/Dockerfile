@@ -2,5 +2,5 @@ FROM scratch
 
 LABEL maintainer="GilbN" 
 LABEL app="NZBGet"
-# copy local files. 
+#copy local files. 
 COPY root/ /
