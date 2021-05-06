@@ -24,12 +24,12 @@
 Click on the banners for screenshots.
 </p>
 
-[![Organizr Dark](https://raw.githubusercontent.com/gilbN/theme.park/master/banners/organizr_dark_banner.png)](https://docs.theme-park.dev/colors/organizr-dark/)
-[![Organizr Dark](https://raw.githubusercontent.com/gilbN/theme.park/master/banners/aquamarine_banner.png)](https://docs.theme-park.dev/colors/aquamarine/)
-[![Organizr Dark](https://raw.githubusercontent.com/gilbN/theme.park/master/banners/hotline_banner.png)](https://docs.theme-park.dev/colors/hotline/)
-[![Organizr Dark](https://raw.githubusercontent.com/gilbN/theme.park/master/banners/spacegray_banner.png)](https://docs.theme-park.dev/colors/space-gray/)
-[![Organizr Dark](https://raw.githubusercontent.com/gilbN/theme.park/master/banners/dark_banner.png)](https://docs.theme-park.dev/colors/dark/)
-[![Organizr Dark](https://raw.githubusercontent.com/gilbN/theme.park/master/banners/plex_banner.png)](https://docs.theme-park.dev/colors/plex/)
+[![](https://raw.githubusercontent.com/gilbN/theme.park/master/banners/organizr_dark_banner.png)](https://docs.theme-park.dev/colors/organizr-dark/)
+[![](https://raw.githubusercontent.com/gilbN/theme.park/master/banners/aquamarine_banner.png)](https://docs.theme-park.dev/colors/aquamarine/)
+[![](https://raw.githubusercontent.com/gilbN/theme.park/master/banners/hotline_banner.png)](https://docs.theme-park.dev/colors/hotline/)
+[![](https://raw.githubusercontent.com/gilbN/theme.park/master/banners/spacegray_banner.png)](https://docs.theme-park.dev/colors/space-gray/)
+[![](https://raw.githubusercontent.com/gilbN/theme.park/master/banners/dark_banner.png)](https://docs.theme-park.dev/colors/dark/)
+[![](https://raw.githubusercontent.com/gilbN/theme.park/master/banners/plex_banner.png)](https://docs.theme-park.dev/colors/plex/)
 
 ## [Installation](https://docs.theme-park.dev/setup)
 
