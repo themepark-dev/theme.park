@@ -4,7 +4,7 @@ echo '-----------------------------'
 echo '|  Tautulli theme.park Mod  |'
 echo '-----------------------------'
 
-# Display variables for troubleshooting
+# Display variables for troubleshooting 
 echo -e "Variables set:\\n\
 'TP_DOMAIN'=${TP_DOMAIN}\\n\
 'TP_THEME'=${TP_THEME}\\n"
