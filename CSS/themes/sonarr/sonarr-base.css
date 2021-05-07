@@ -370,7 +370,7 @@ a:hover {
 [class*="Label\/default\/"] {
     border-color: var(--accent-color);
     background-color: var(--accent-color);
-    color: var(--text);
+    color: #fff;
 }
 
 [class*="Label\/info\/"] {
