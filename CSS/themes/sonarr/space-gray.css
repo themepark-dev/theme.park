@@ -31,7 +31,6 @@
   
   --accent-color: #607D8B;
   --accent-color-hover: #81a6b7;
-  --accent-color-inverse:  rgba(255, 255, 255, 0.85);
   --queue-color: #81a6b7;
   --link-color: #81a6b7;
   --link-color-hover: #fff;
@@ -39,5 +38,4 @@
   --text:#eee;
   --text-hover: #fff;
   --text-muted: #999;
-  --text-inverse:#607D8B;
 }

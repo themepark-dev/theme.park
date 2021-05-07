@@ -373,12 +373,6 @@ a:hover {
     color: var(--text);
 }
 
-[class*="Label\/inverse\/"] {
-    border-color: var(--accent-color-inverse);
-    background-color: var(--accent-color-inverse);
-    color: var(--text-inverse);
-}
-
 [class*="Label\/info\/"] {
     border-color: var(--accent-color);
     background-color: var(--accent-color);
