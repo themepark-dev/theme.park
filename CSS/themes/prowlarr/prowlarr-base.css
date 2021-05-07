@@ -361,8 +361,7 @@ a:hover {
     color: var(--text-hover);
 }
 
-[class*="Label-default-"],
-[class*="Label-inverse-"] {
+[class*="Label-default-"] {
     border-color: var(--accent-color);
     background-color: var(--accent-color);
     color: #fff;
