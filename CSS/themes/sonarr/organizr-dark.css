@@ -31,6 +31,7 @@
 
   --accent-color:  #2cabe3;
   --accent-color-hover: white;
+  --accent-color-inverse:  rgba(255, 255, 255, 0.85);
   --queue-color: #2cabe3;
   --link-color: #2cabe3;
   --link-color-hover: #fff;
@@ -38,4 +39,5 @@
   --text:#96a2b4;
   --text-hover: #fff;
   --text-muted: #999;
+  --text-inverse:#2cabe3;
   }
