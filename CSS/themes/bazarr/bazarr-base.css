@@ -256,6 +256,7 @@ a:hover {
     border-bottom: solid 1px rgba(255, 255, 255, .1);
 
 }
+
 /* LOGIN */
 .bg-light {
     background-color: var(--main-bg-color) !important;
@@ -267,6 +268,7 @@ a:hover {
     background-color: transparent;
     border-top: 1px solid rgba(255, 255, 255, .1);
 }
+
 
 .card {
     background-color: rgba(0, 0, 0, .45);
