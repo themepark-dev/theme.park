@@ -269,9 +269,18 @@ label {
 }
 
 .dynamicTable tbody tr.selected {
-  background-color: rgba(0, 0, 0, 0.45) !important;
+  background-color: rgba(var(--accent-color),0.6) !important;
 }
-
+.dynamicTable th.sorted.reverse {
+  background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/qbittorrent/go-down.png) !important;
+}
+.dynamicTable th.sorted {
+  background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/qbittorrent/go-up.png) !important;
+  background-size: 9px !important;
+  background-position: right !important;
+  background-repeat: no-repeat !important;
+  
+}
 .panel {
   background: var(--main-bg-color);
   border-bottom: 1px solid transparent;
@@ -370,12 +379,12 @@ li.divider {
 
 /* Sidemenu */
 .selectedFilter {
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(var(--accent-color),0.6);
   color: #FFF;
 }
 
 ul.filterList li:hover {
-  background-color: rgba(255, 255, 255, 0.08);
+  background-color: rgba(var(--accent-color),0.6);
 }
 
 .columnHandle {
@@ -1514,7 +1523,7 @@ ul.filterList a {
 }
 
 img[src="icons/inode-directory.svg"] {
-  background: url(https://gilbn.github.io/theme.park/Resources/qbittorrent/folder-open-solid.svg);
+  background: url(https://theme-park.dev/Resources/qbittorrent/folder-open-solid.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-origin: content-box;
@@ -1523,7 +1532,7 @@ img[src="icons/inode-directory.svg"] {
 }
 
 img[src="icons/network-server.svg"] {
-  background: url(https://gilbn.github.io/theme.park/Resources/qbittorrent/network-wired-solid.svg);
+  background: url(https://theme-park.dev/Resources/qbittorrent/network-wired-solid.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-origin: content-box;
@@ -1532,7 +1541,7 @@ img[src="icons/network-server.svg"] {
 }
 
 img[src="icons/mail-folder-inbox.svg"] {
-  background: url(https://gilbn.github.io/theme.park/Resources/qbittorrent/inbox-solid.svg);
+  background: url(https://theme-park.dev/Resources/qbittorrent/inbox-solid.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-origin: content-box;
@@ -1541,7 +1550,8 @@ img[src="icons/mail-folder-inbox.svg"] {
 }
 
 img[src="icons/downloading_small.svg"],
-img[src="icons/seeding.svg"] {
+img[src="icons/seeding.svg"],
+img[src="icons/stalledDL.svg"]  {
   filter: invert(79%) sepia(20%) saturate(0%) hue-rotate(135deg) brightness(87%) contrast(108%);
 }
 

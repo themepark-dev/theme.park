@@ -13,7 +13,7 @@
 
 /* CALIBRE-WEB ORGANIZR-DARK THEME */
 /* Set theme to CaliBlur in UI Configuration -> View Configuration -> Theme -> CaliBlur -> Submit */
-@import url(https://gilbn.github.io/theme.park/CSS/themes/calibreweb/calibreweb-base.css);
+@import url(https://theme-park.dev/CSS/themes/calibreweb/calibreweb-base.css);
 :root {
   --main-bg-color: #1f1f1f;
   --modal-bg-color: #1b1b1b;

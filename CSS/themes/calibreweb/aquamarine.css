@@ -13,7 +13,7 @@
 
 /* CALIBRE-WEB AQUAMARINE THEME */
 /* Set theme to CaliBlur in UI Configuration -> View Configuration -> Theme -> CaliBlur -> Submit */
-@import url(https://gilbn.github.io/theme.park/CSS/themes/calibreweb/calibreweb-base.css);
+@import url(https://theme-park.dev/CSS/themes/calibreweb/calibreweb-base.css);
 :root {
   --main-bg-color: radial-gradient(ellipse at center, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
   --modal-bg-color: radial-gradient(ellipse at top, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;

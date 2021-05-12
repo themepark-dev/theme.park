@@ -11,7 +11,7 @@
 /*			      https://github.com/gilbN/theme.park			 */
 
 /* THE LOUNGE DARK THEME */
-@import url(https://gilbn.github.io/theme.park/CSS/themes/thelounge/thelounge-base.css);
+@import url(https://theme-park.dev/CSS/themes/thelounge/thelounge-base.css);
 :root {
   --body-bg-color: radial-gradient(circle , #3a3a3a, #2d2d2d, #202020, #141414, #000000) center center/cover no-repeat fixed;
   --window-bg-color: radial-gradient(circle, #3a3a3a, #2d2d2d, #202020, #141414, #000000) center center/cover no-repeat fixed;

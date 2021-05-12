@@ -32,3 +32,13 @@ body.login:not(.read-frame), body.shelfcreate, body.shelfedit {
         background: var(--modal-bg-color) !important;
         }
     }
+/* Book cover border */
+.container-fluid .book .cover span img {
+    border: 1px solid transparent;
+}
+
+/* Buttons */
+.btn-default a,
+.btn-default a:hover {
+  color: var(--text);
+}

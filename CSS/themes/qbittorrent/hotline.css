@@ -12,7 +12,7 @@
 /*			      https://github.com/gilbN/theme.park			 */
 
 /* QBITTORRENT HOTLINE THEME */
-@import url(https://gilbn.github.io/theme.park/CSS/themes/qbittorrent/qbittorrent-base.css);
+@import url(https://theme-park.dev/CSS/themes/qbittorrent/qbittorrent-base.css);
 :root {
   --main-bg-color: radial-gradient(ellipse at center, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
   --modal-bg-color: radial-gradient(ellipse at top, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
@@ -20,7 +20,7 @@
   --button-color: hsla(0,0%,100%,.15);
   --button-color-hover: hsla(0,0%,100%,.30);
   --button-text: #eee;
-  --accent-color:  #F44336;
+  --accent-color:  244, 64, 52;
   --accent-color-hover: #0b3161;
   --text: #eee;
   --text-hover: #fff;

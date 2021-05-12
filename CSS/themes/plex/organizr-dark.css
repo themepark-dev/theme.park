@@ -11,12 +11,20 @@
 /*			      https://github.com/gilbN/theme.park			 */
 
 /* PLEX ORGANIZR-DARK THEME */
-@import url(https://gilbn.github.io//theme.park/CSS/themes/plex/plex-base.css);
+@import url(https://theme-park.dev/CSS/themes/plex/plex-base.css);
 :root {
   --main-bg-color: #1f1f1f;
   --modal-bg-color: #1b1b1b;
-  --link-color: #2cabe3;
+  --text-color: #96a2b4;
+  --text-color-hover: #fff;
+  --text-muted: #ddd;
   --button-color: #2cabe3;
   --button-color-hover: rgb(44 171 227 / .8);
-  --accent-color:  #2cabe3;
+  --button-text: #eee;
+  --button-text-hover: #fff;
+  --accent-color: 44, 171, 227;
+  --accent-color-hover: #fff;
+  --link-color: #2cabe3;
+  --link-color-hover: #FFF;
+  --poster-unwatched: #2cabe3;
   }

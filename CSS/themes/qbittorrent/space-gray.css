@@ -12,7 +12,7 @@
 /*			      https://github.com/gilbN/theme.park			 */
 
   /* QBITTORRENT SPACE GRAY THEME */
-@import url(https://gilbn.github.io/theme.park/CSS/themes/qbittorrent/qbittorrent-base.css);
+@import url(https://theme-park.dev/CSS/themes/qbittorrent/qbittorrent-base.css);
 :root {
   --main-bg-color:  radial-gradient( ellipse at center,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed;
   --modal-bg-color: radial-gradient( ellipse at top,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed; 
@@ -20,7 +20,7 @@
   --button-color: #607D8B;
   --button-color-hover: #81a6b7;
   --button-text: #eee;
-  --accent-color: #81a6b7;
+  --accent-color: 129, 166, 183;
   --accent-color-hover: #81a6b7;
   --text: #eee;
   --text-hover: #fff;

@@ -12,7 +12,7 @@
 /*			      https://github.com/gilbN/theme.park			 */
 
 /* JELLYFIN HOTLINE THEME */
-@import url(https://gilbn.github.io/theme.park/CSS/themes/jellyfin/jellyfin-base.css);
+@import url(https://theme-park.dev/CSS/themes/jellyfin/jellyfin-base.css);
 :root {
   --main-bg-color: radial-gradient(ellipse at center, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
   --modal-bg-color: radial-gradient(ellipse at center, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;

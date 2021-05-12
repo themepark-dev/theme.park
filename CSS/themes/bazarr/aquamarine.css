@@ -12,13 +12,23 @@
 /*			      https://github.com/gilbN/theme.park			 */
 
 /* BAZARR AQUAMARINE THEME */
-@import url(https://gilbn.github.io/theme.park/CSS/themes/bazarr/bazarr-base.css);
+@import url(https://theme-park.dev/CSS/themes/bazarr/bazarr-base.css);
 :root {
   --main-bg-color: radial-gradient(ellipse at center, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
   --modal-bg-color: radial-gradient(ellipse at top, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
 
   --button-color: #009688;
   --button-color-hover: #12afa0;
-  --accent-color:  #009688;
+  --button-text: #eee;
+  --button-text-hover: #FFF;
+
+  --accent-color:  0, 150, 136;
   --accent-color-hover: #12afa0;
+  --queue-color: #009688;
+  --link-color: #0ed2bf;
+  --link-color-hover: #fff;
+    
+  --text:#eee;
+  --text-hover: #fff;
+  --text-muted: #bbb;
 }

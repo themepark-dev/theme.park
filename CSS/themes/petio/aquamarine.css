@@ -1,0 +1,29 @@
+
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+
+/*		   		        Made by @gilbN					 */
+/*			      https://github.com/gilbN/theme.park			 */
+
+/* MOVIEMATCH AQUAMARINE THEME */
+@import url(https://theme-park.dev/CSS/themes/petio/petio-base.css);
+:root {
+  --main-bg-color: radial-gradient(ellipse at center, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
+  --modal-bg-color: radial-gradient(ellipse at top, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
+  --text-color: #eee;
+  --text-color-hover: #fff;
+  --button-color: #009688;
+  --button-color-hover: #12afa0;
+  --button-text: #eee;
+  --button-text-hover: #FFF;
+  --accent-color:  18, 175, 160;
+  --accent-color-hover: #fff;
+  --link-color: #0ed2bf;
+  --spinner: invert(39%) sepia(98%) saturate(527%) hue-rotate(129deg) brightness(94%) contrast(101%);
+}

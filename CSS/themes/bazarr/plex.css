@@ -12,13 +12,23 @@
 /* 			      https://github.com/gilbN/theme.park			 */
 
 /* BAZARR PLEX THEME */
-@import url(https://gilbn.github.io/theme.park/CSS/themes/bazarr/bazarr-base.css);
+@import url(https://theme-park.dev/CSS/themes/bazarr/bazarr-base.css);
 :root {
   --main-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-light2.png") center center/cover no-repeat fixed;
   --modal-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-dark2.png") center center/cover no-repeat fixed;
 
   --button-color: #cc7b19;
   --button-color-hover: #e59029;
-  --accent-color:  #e5a00d;
+  --button-text: #eee;
+  --button-text-hover: #fff;
+
+  --accent-color:  229, 160, 13;
   --accent-color-hover: #ffc107;
+  --queue-color: #27c24c;
+  --link-color: #e5a00d;
+  --link-color-hover: #fff;
+    
+  --text:#eee;
+  --text-hover: #fff;
+  --text-muted: #bbb;
 }

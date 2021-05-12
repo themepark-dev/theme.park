@@ -1,0 +1,231 @@
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+
+/*		   		        Made by @gilbN					 */
+/*			      https://github.com/gilbN/theme.park			 */
+
+* {
+    outline: none;
+}
+
+html,
+body {
+    background: var(--main-bg-color) !important;
+    color: var(--text-color);
+}
+
+
+/* Scrollbar */
+
+html.has-custom-scrollbars ::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, .25);
+    outline: 1px solid #0000;
+    border-radius: 4px;
+}
+
+html.has-custom-scrollbars ::-webkit-scrollbar-thumb:active,
+html.has-custom-scrollbars ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, .45);
+
+}
+
+html.has-custom-scrollbars ::-webkit-scrollbar-track {
+    background: #1f1f1f;
+}
+
+html.has-custom-scrollbars ::-webkit-scrollbar-track:hover {
+    background: #1f1f1f;
+}
+
+html.has-custom-scrollbars section main {
+    scrollbar-color: #353535 transparent;
+    scrollbar-width: thin
+}
+
+/* Text important */
+p,
+.menu-list a {
+    color: var(--text-color) !important;
+
+}
+
+.panel-heading {
+    background-color: rgb(var(--accent-color));
+}
+
+.panel-block {
+    color: var(--text-color);
+}
+
+.panel-tabs a.is-active {
+    border-bottom-color: rgb(var(--accent-color));
+    color: rgb(var(--accent-color));
+}
+
+.panel-tabs a {
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-color);
+}
+
+.panel-tabs a:hover {
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-strong-color);
+}
+
+a.panel-block:hover,
+label.panel-block:hover {
+    background-color: rgba(255, 255, 255, .08);
+    color: var(--text-strong-color);
+}
+
+/* Side Menu*/
+.menu-list a:hover {
+    background-color: rgba(255, 255, 255, .08);
+    color: var(--text-strong-color);
+}
+
+.menu-list a.is-active,
+.menu-list a.is-active:hover {
+    background-color: rgb(var(--accent-color));
+    color: #fff !important;
+}
+
+.menu-list li:hover .column-icon:hover {
+    color: black !important;
+}
+
+li.exited a {
+    color: var(--text-muted) !important;
+}
+
+.select select,
+.textarea,
+.input,
+.dropdown-content {
+    background: var(--modal-bg-color);
+    border-color: rgba(255, 255, 255, .1);
+    border-radius: 4px;
+    color: var(--text-strong-color);
+}
+
+.autocomplete .dropdown-item.is-hovered,
+a.dropdown-item:hover,
+button.dropdown-item:hover {
+    background: rgba(255, 255, 255, .25);
+    color: var(--text-strong-color);
+}
+
+.column-icon[data-v-35775614]:hover {
+    color: rgb(var(--accent-color));
+}
+
+.select select:focus,
+.textarea:focus,
+.input:focus,
+.select select.is-focused,
+.is-focused.textarea,
+.is-focused.input,
+.select select:active,
+.textarea:active,
+.input:active,
+.select select.is-active,
+.is-active.textarea,
+.is-active.input {
+    border-color: rgb(var(--accent-color));
+    box-shadow: 0 0 0 0.125em rgba(var(--accent-color), .25);
+}
+
+/* Settings buttons */
+.button {
+    background: var(--button-color);
+    color: var(--button-text);
+    border-color: var(--button-color);
+}
+
+section .is-scrollbar-notification button {
+    background: var(--button-color) !important;
+    color: var(--button-text) !important;
+    border-color: var(--button-color) !important;
+}
+
+.b-radio.radio.button.is-selected {
+    background-color: var(--button-color-hover);
+    border-color: transparent;
+    color: var(--text-strong-color);
+}
+
+.button:hover {
+    background: var(--button-color-hover) !important;
+    border-color: var(--button-color-hover) !important;
+    color: var(--button-text-hover) !important;
+}
+
+.button:active,
+.button.is-active {
+    background: var(--button-color-hover);
+    border-color: var(--button-color-hover);
+    color: var(--text-strong-color);
+}
+
+.is-settings-control {
+    background: var(--button-color);
+    color: var(--button-text);
+    border-color: transparent;
+}
+
+.is-settings-control:hover {
+    border-color: var(--button-color-hover) !important;
+    background: var(--button-color-hover) !important;
+    color: var(--button-text-hover) !important;
+}
+
+code {
+    background: rgba(0, 0, 0, .35) !important;
+}
+
+.switch input[type=checkbox]:checked+.check {
+    background: var(--button-color);
+}
+
+.switch:hover input[type=checkbox]:checked+.check {
+    background: var(--button-color-hover);
+}
+
+.switch input[type=checkbox]:focus:checked+.check,
+.switch input[type=checkbox]:active:checked+.check {
+    box-shadow: 0 0 0.5em rgb(var(--accent-color), .8);
+}
+
+/* Events */
+
+.events {
+    background: rgba(0, 0, 0, .35);
+}
+
+.scroll-progress svg circle {
+    fill: rgba(255, 255, 255, .45) !important;
+    stroke: rgb(var(--accent-color)) !important;
+}
+
+.scroll-progress span {
+    color: var(--text-strong-color) !important;
+}
+
+.splitpanes--vertical>.splitpanes__splitter:hover {
+    background: rgb(var(--accent-color)) !important;
+}
+
+.events.medium {
+    background: rgba(0, 0, 0, .45);
+}
+
+.date {
+    color: rgb(var(--accent-color)) !important;
+    background: rgba(0, 0, 0, .25) !important;
+}

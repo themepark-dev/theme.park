@@ -12,20 +12,30 @@
 /*			      https://github.com/gilbN/theme.park			 */
 
 /* LIDARR ORGANIZR-DARK THEME */
-@import url(https://gilbn.github.io/theme.park/CSS/themes/lidarr/lidarr-base.css);
+@import url(https://theme-park.dev/CSS/themes/lidarr/lidarr-base.css);
 :root {
   --main-bg-color: #1f1f1f;
   --modal-bg-color: #1b1b1b;
 
-  --calendar-Downloading: 122 67 182;
-  --calendar-Downloaded: 39 194 76;
-  --calendar-Unreleased: 93 156 236;
-  --calendar-Partial: 255, 165, 0;  
-  --calendar-Unmonitored: 173 173 173;
-  --calendar-Missing: 240 80 80;  
+  --calendar-downloading: 122 67 182;
+  --calendar-downloaded: 39 194 76;
+  --calendar-unreleased: 93 156 236;
+  --calendar-partial: 255, 165, 0;  
+  --calendar-unmonitored: 173 173 173;
+  --calendar-missing: 240 80 80; 
 
   --button-color: #2cabe3;
   --button-color-hover: rgb(44 171 227 / .8);
+  --button-text: #eee;
+  --button-text-hover: #fff;
+
   --accent-color:  #2cabe3;
   --accent-color-hover: white;
+  --queue-color: #2cabe3;
+  --link-color: #2cabe3;
+  --link-color-hover: #fff;
+    
+  --text:#96a2b4;
+  --text-hover: #fff;
+  --text-muted: #999;
   }
