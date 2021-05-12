@@ -256,9 +256,16 @@ a:hover {
     border-bottom: solid 1px rgba(255, 255, 255, .1);
 
 }
-
+/* LOGIN */
 .bg-light {
     background-color: var(--main-bg-color) !important;
+}
+.auth-card {
+    border: 1px solid transparent;
+}
+.auth-card .card-footer {
+    background-color: transparent;
+    border-top: 1px solid rgba(255, 255, 255, .1);
 }
 
 .card {
@@ -654,4 +661,39 @@ text {
 line {
     stroke: var(--text);
     fill: none;
+}
+
+/* PLACEHOLDER TEXT */
+::placeholder {
+    color: var(--text) !important;
+    opacity: .5 !important;
+}
+
+:-moz-placeholder {
+    color: var(--text) !important;
+    opacity: .5 !important;
+}
+
+:-ms-input-placeholder {
+    color: var(--text) !important;
+    opacity: .5 !important;
+}
+
+::-webkit-input-placeholder {
+    color: var(--text) !important;
+    opacity: .5;
+}
+
+/* TOASTS */
+.toast {
+    background: var(--modal-bg-color);
+    border: 1px solid rgba(0,0,0,.1);
+    box-shadow: 0 .25rem .75rem rgba(0,0,0,.1);
+    color: var(--text)
+}
+
+.toast-header {
+    color: var(--text-hover);
+    background-color: hsla(0, 0%, 0%, .35);
+    border-bottom: 1px solid rgba(0,0,0,.05);
 }
