@@ -10,6 +10,14 @@ assignees: ''
 **Describe the bug**
 A clear and concise description of what the bug is.
 
+**Theme Install Method** (Don't skip)
+- Docker run / Compose Config
+- Webserver subfilter Config
+- Stylus Config
+
+**Application Info** (Don't skip)
+- Version / Branch / Container Tag
+
 **To Reproduce**
 Steps to reproduce the behavior:
 1. Go to '...'
@@ -23,13 +31,6 @@ A clear and concise description of what you expected to happen.
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
 
-**Theme Install Method**
-- Docker run / Compose Config
-- Webserver subfilter Config
-- Stylus Config
-
-**Application Info**
-- Version / Branch / Container Tag
 
 **Desktop (If applicable) (please complete the following information):**
  - OS: [e.g. iOS]
