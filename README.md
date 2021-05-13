@@ -24,23 +24,23 @@
 Click on the banners for screenshots.
 </p>
 
-[![](https://raw.githubusercontent.com/gilbN/theme.park/master/banners/organizr_dark_banner.png)](https://docs.theme-park.dev/colors/organizr-dark/)
-[![](https://raw.githubusercontent.com/gilbN/theme.park/master/banners/aquamarine_banner.png)](https://docs.theme-park.dev/colors/aquamarine/)
-[![](https://raw.githubusercontent.com/gilbN/theme.park/master/banners/hotline_banner.png)](https://docs.theme-park.dev/colors/hotline/)
-[![](https://raw.githubusercontent.com/gilbN/theme.park/master/banners/spacegray_banner.png)](https://docs.theme-park.dev/colors/space-gray/)
-[![](https://raw.githubusercontent.com/gilbN/theme.park/master/banners/dark_banner.png)](https://docs.theme-park.dev/colors/dark/)
-[![](https://raw.githubusercontent.com/gilbN/theme.park/master/banners/plex_banner.png)](https://docs.theme-park.dev/colors/plex/)
+<a href="https://docs.theme-park.dev/colors/organizr-dark"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/banners/organizr_dark_banner.png" alt="Organizr-Dark"/></a>
+<a href="https://docs.theme-park.dev/colors/aquamarine"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/banners/aquamarine_banner.png" alt="Aquamarine"/></a>
+<a href="https://docs.theme-park.dev/colors/hotline"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/banners/hotline_banner.png" alt="Hotline"/></a>
+<a href="https://docs.theme-park.dev/colors/space-gray"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/banners/spacegray_banner.png" alt="Space-Gray"/></a>
+<a href="https://docs.theme-park.dev/colors/dark"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/banners/dark_banner.png" alt="Dark"/></a>
+<a href="https://docs.theme-park.dev/colors/plex"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/banners/plex_banner.png" alt="Plex"/></a>
 
-## [Installation](https://docs.theme-park.dev/setup)
+<a href="https://docs.theme-park.dev/setup"><h2>Installation</h2></a>
 
-## [Addons](https://docs.theme-park.dev/themes/addons/sonarr/)
+<a href="https://docs.theme-park.dev/themes/addons/sonarr"><h2>Addons</h2></a>
 
-## [Adding your own theme colors](https://docs.theme-park.dev/custom/)
+<a href="https://docs.theme-park.dev/custom/"><h2>Adding your own theme colors</h2></a>
 
-<p align="center">
-Current themes in the repo
-<p align="center">
-<table style="height: 649px; width: 698px; margin-left: auto; margin-right: auto;" cellspacing="10" cellpadding="10">
+
+<p align="center">Current themes in the repo</p>
+<div align="center">
+<table margin-left: auto; margin-right: auto;" cellspacing="10" cellpadding="10">
 <tbody>
 <tr style="height: 98px;">
 <td style="width: 110px; height: 98px; text-align: center;">
@@ -243,19 +243,12 @@ Current themes in the repo
 </tr>
 </tbody>
 </table>
+</div>
 
-***
+<br>
 
-### Honourable mentions
+<a href="https://docs.theme-park.dev/custom/"><h3>Honourable mentions</h3></a>
 
-[Archmonger/Blackberry-Themes](https://github.com/Archmonger/Blackberry-Themes)
+<a href="https://github.com/Archmonger/Blackberry-Themes">Archmonger/Blackberry-Themes</a>
 
-[leram84/layer.Cake](https://github.com/leram84/layer.Cake/)
-
-[rg9400/Cloud-Tautulli-Theme](https://github.com/rg9400/Cloud-Tautulli-Theme)
-
-[Burry/organizr-v2-plex-theme](https://github.com/Burry/organizr-v2-plex-theme)
-
-[iFelix18/Darkerr](https://github.com/iFelix18/Darkerr)
-
-[ydkmlt84/DarkerNZBget](https://github.com/ydkmlt84/DarkerNZBget)
+<a href="https://github.com/leram84/layer.Cake/">leram84/layer.Cake</a>
