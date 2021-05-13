@@ -1,9 +1,11 @@
 /* Desktop */
 @media (min-width: 752px) {
-    .navbar-brand>img {
+    .navbar-brand>img,
+    .PageHeader-logoFull-Ctqrg {
         display:none !important; 
         }
-    .navbar > .container-fluid .navbar-brand:before {
+    .navbar > .container-fluid .navbar-brand:before,
+    .PageHeader-logoFull-Ctqrg:before {
         background-image: url("https://theme-park.dev/CSS/addons/radarr/radarr4k.png");
         display: inline-block;
         width: 128px; 
@@ -39,10 +41,10 @@
 
 /* Radarr V3*/
 @media (min-width: 752px) {
-    .PageHeader-logoFull-2z6pD  {
+    [class*="PageHeader-logoFull-"]  {
         display: none !important;
     }
-    .PageHeader-logoContainer-3bOb3:before {
+    [class*="PageHeader-logoContainer-"]:before {
         background-image: url("https://theme-park.dev/CSS/addons/radarr/radarr4k-v3.png");
         display: inline-block;
         width: 148px; 
@@ -56,10 +58,10 @@
 } 
 
 @media (max-width: 767px) {
-    .PageHeader-logo-2y8vm  {
+    [class*="PageHeader-logo-"]  {
         display: none !important;
-    }   
-    .PageHeader-logoContainer-3bOb3:before {
+    }
+    [class*="PageHeader-logoContainer-"]{
         background-image: url("https://theme-park.dev/CSS/addons/radarr/radarr-v3-mobile.png");
         display: inline-block;
         width: 32px; 

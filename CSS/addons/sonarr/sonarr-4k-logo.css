@@ -61,10 +61,10 @@
 
 /* Sonarr V3*/
 @media (min-width: 752px) {
-    .PageHeader\/logo\/2y8vm  {
+    [class*="PageHeader\/logo\/"]  {
         display: none !important;
     }
-    .PageHeader\/logoContainer\/3bOb3:before {
+    [class*="PageHeader\/logoContainer\/"]:before {
         background-image: url("https://theme-park.dev/CSS/addons/sonarr/sonarr-4k.png");
         display: inline-block;
         width: 32px; 
@@ -78,10 +78,10 @@
 } 
 
 @media (max-width: 767px) {
-    .PageHeader\/logo\/2y8vm   {
+    [class*="PageHeader\/logo\/"]   {
         display: none !important;
     }   
-    .PageHeader\/logoContainer\/3bOb3:before {
+    [class*="PageHeader\/logoContainer\/"]:before {
         background-image: url("https://theme-park.dev/CSS/addons/sonarr/sonarr-4k.png");
         display: inline-block;
         width: 32px; 
