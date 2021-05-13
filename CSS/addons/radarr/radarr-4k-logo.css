@@ -1,11 +1,9 @@
 /* Desktop */
 @media (min-width: 752px) {
-    .navbar-brand>img,
-    .PageHeader-logoFull-Ctqrg {
+    .navbar-brand>img {
         display:none !important; 
         }
-    .navbar > .container-fluid .navbar-brand:before,
-    .PageHeader-logoFull-Ctqrg:before {
+    .navbar > .container-fluid .navbar-brand:before {
         background-image: url("https://theme-park.dev/CSS/addons/radarr/radarr4k.png");
         display: inline-block;
         width: 128px; 
