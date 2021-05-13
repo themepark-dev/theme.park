@@ -1,4 +1,4 @@
-[![](https://imgur.com/iSpc8Iq.png)]()
+<img src="/banners/tp_banner.png"/>
 
 [![Docs](https://img.shields.io/static/v1.svg?color=009688&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=theme-park.dev&message=Docs)](https://docs.theme-park.dev "Documentation for all the themes in this repository.")
 [![Discord](https://img.shields.io/discord/591352397830553601.svg?color=009688&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=Discord&logo=discord)](https://discord.gg/HM5uUKU "Discord for theme installation support")
@@ -9,27 +9,24 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/gilbn/theme.park.svg?color=009688&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=pulls&logo=docker)](https://hub.docker.com/r/gilbn/theme.park)
 [![Blog](https://img.shields.io/static/v1.svg?color=009688&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=technicalramblings&message=Blog)](https://technicalramblings.com/ "A blog with different guides :)")
 
-<p align="center">
-  A collection of themes/skins for your favorite apps!
-<p align="center">
+<p align="center">A collection of themes/skins for your favorite apps!</p>
+<div align="center">
     <a href="https://docs.theme-park.dev/site_assets/sonarr/aquamarine.png" rel="noopener"><img src="https://docs.theme-park.dev/site_assets/sonarr/aquamarine.png" alt="Screen Shot 1" width="49.15%" /></a>
     <a href="https://docs.theme-park.dev/site_assets/radarr/organizr-dark.png" rel="noopener"><img src="https://docs.theme-park.dev/site_assets/radarr/organizr-dark.png" alt="Screen Shot 2" width="49.15%" /></a>
     <a href="https://docs.theme-park.dev/site_assets/qbittorrent/hotline.png" rel="noopener"><img src="https://docs.theme-park.dev/site_assets/qbittorrent/hotline.png" alt="Screen Shot 3" width="49.15%" /></a>
     <a href="https://docs.theme-park.dev/site_assets/tautulli/plex.png" rel="noopener"><img src="https://docs.theme-park.dev/site_assets/tautulli/plex.png" alt="Screen Shot 4" width="49.15%" /></a>
-</p>
+</div>
 
-# [Themes](https://docs.theme-park.dev/themes/)
+<a href="https://docs.theme-park.dev/themes/"><h1>Themes</h1></a>
 
-<p align="center">
-Click on the banners for screenshots.
-</p>
+<p align="center">Click on the banners for screenshots.</p>
 
-<a href="https://docs.theme-park.dev/colors/organizr-dark"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/banners/organizr_dark_banner.png" alt="Organizr-Dark"/></a>
-<a href="https://docs.theme-park.dev/colors/aquamarine"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/banners/aquamarine_banner.png" alt="Aquamarine"/></a>
-<a href="https://docs.theme-park.dev/colors/hotline"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/banners/hotline_banner.png" alt="Hotline"/></a>
-<a href="https://docs.theme-park.dev/colors/space-gray"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/banners/spacegray_banner.png" alt="Space-Gray"/></a>
-<a href="https://docs.theme-park.dev/colors/dark"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/banners/dark_banner.png" alt="Dark"/></a>
-<a href="https://docs.theme-park.dev/colors/plex"><img src="https://raw.githubusercontent.com/gilbN/theme.park/master/banners/plex_banner.png" alt="Plex"/></a>
+<a href="https://docs.theme-park.dev/colors/organizr-dark"><img src="/banners/organizr_dark_banner.png" alt="Organizr-Dark"/></a>
+<a href="https://docs.theme-park.dev/colors/aquamarine"><img src="/banners/aquamarine_banner.png" alt="Aquamarine"/></a>
+<a href="https://docs.theme-park.dev/colors/hotline"><img src="/banners/hotline_banner.png" alt="Hotline"/></a>
+<a href="https://docs.theme-park.dev/colors/space-gray"><img src="/master/banners/spacegray_banner.png" alt="Space-Gray"/></a>
+<a href="https://docs.theme-park.dev/colors/dark"><img src="/banners/dark_banner.png" alt="Dark"/></a>
+<a href="https://docs.theme-park.dev/colors/plex"><img src="/banners/plex_banner.png" alt="Plex"/></a>
 
 <a href="https://docs.theme-park.dev/setup"><h2>Installation</h2></a>
 
@@ -38,6 +35,7 @@ Click on the banners for screenshots.
 <a href="https://docs.theme-park.dev/custom/"><h2>Adding your own theme colors</h2></a>
 
 <p align="center">Current themes in the repo</p>
+
 <div align="center">
 <table style="margin-left: auto; margin-right: auto;" cellspacing="10" cellpadding="10">
 <tbody>
@@ -81,7 +79,7 @@ Click on the banners for screenshots.
 <p><a href="https://docs.theme-park.dev/themes/tautulli">Tautulli</a></p>
 </td>
 <td style="width: 10px; height: 26px; text-align: center;">
-<p><a href="https://docs.theme-park.dev/themes/ombi"><img src="https://docs.theme-park.dev/site_assets/ombi/logo.png" alt="" width="48" height="48" /><img src="https://docs.theme-park.dev/themes/ombi" alt="" width="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/ombi"><img src="https://docs.theme-park.dev/site_assets/ombi/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/ombi">Ombi</a></p>
 </td>
 <td style="width: 90px; height: 26px; text-align: center;">
@@ -215,7 +213,6 @@ Click on the banners for screenshots.
 <td style="width: 90px; height: 40px; text-align: center;">
 <p><a href="https://docs.theme-park.dev/themes/gitea"><img src="https://docs.theme-park.dev/site_assets/gitea/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/gitea">Gitea</a></p>
-</td>
 </td>
 <td style="width: 90px; height: 40px; text-align: center;">
 <p><a href="https://docs.theme-park.dev/themes/unraid"><img src="https://docs.theme-park.dev/site_assets/unraid/logo.png" alt="" width="48" height="48" /></a></p>
