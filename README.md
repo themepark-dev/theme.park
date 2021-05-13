@@ -24,7 +24,7 @@
 <a href="https://docs.theme-park.dev/colors/organizr-dark"><img src="/banners/organizr_dark_banner.png" alt="Organizr-Dark"/></a>
 <a href="https://docs.theme-park.dev/colors/aquamarine"><img src="/banners/aquamarine_banner.png" alt="Aquamarine"/></a>
 <a href="https://docs.theme-park.dev/colors/hotline"><img src="/banners/hotline_banner.png" alt="Hotline"/></a>
-<a href="https://docs.theme-park.dev/colors/space-gray"><img src="/master/banners/spacegray_banner.png" alt="Space-Gray"/></a>
+<a href="https://docs.theme-park.dev/colors/space-gray"><img src="/banners/spacegray_banner.png" alt="Space-Gray"/></a>
 <a href="https://docs.theme-park.dev/colors/dark"><img src="/banners/dark_banner.png" alt="Dark"/></a>
 <a href="https://docs.theme-park.dev/colors/plex"><img src="/banners/plex_banner.png" alt="Plex"/></a>
 
