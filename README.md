@@ -210,8 +210,8 @@ Current themes in the repo
 <p><a href="https://docs.theme-park.dev/themes/webtools">Webtools</a></p>
 </td>
 <td style="width: 90px; height: 40px; text-align: center;">
-<p><a href="https://docs.theme-park.dev/themes/resilio-Sync"><img src="https://docs.theme-park.dev/site_assets/resilio-sync/logo.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://docs.theme-park.dev/themes/resilio-Sync">Resilio-Sync</a></p>
+<p><a href="https://docs.theme-park.dev/themes/resilio-sync"><img src="https://docs.theme-park.dev/site_assets/resilio-sync/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/resilio-sync">Resilio-Sync</a></p>
 </td>
 <td style="width: 90px; height: 40px; text-align: center;">
 <p><a href="https://docs.theme-park.dev/themes/gitea"><img src="https://docs.theme-park.dev/site_assets/gitea/logo.png" alt="" width="48" height="48" /></a></p>
