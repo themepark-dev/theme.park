@@ -37,10 +37,9 @@ Click on the banners for screenshots.
 
 <a href="https://docs.theme-park.dev/custom/"><h2>Adding your own theme colors</h2></a>
 
-
 <p align="center">Current themes in the repo</p>
 <div align="center">
-<table margin-left: auto; margin-right: auto;" cellspacing="10" cellpadding="10">
+<table style="margin-left: auto; margin-right: auto;" cellspacing="10" cellpadding="10">
 <tbody>
 <tr style="height: 98px;">
 <td style="width: 110px; height: 98px; text-align: center;">
