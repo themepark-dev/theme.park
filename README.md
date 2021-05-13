@@ -17,7 +17,7 @@
     <a href="https://docs.theme-park.dev/site_assets/tautulli/plex.png" rel="noopener"><img src="https://docs.theme-park.dev/site_assets/tautulli/plex.png" alt="Screen Shot 4" width="49.15%" /></a>
 </div>
 
-<a href="https://docs.theme-park.dev/themes/"><h1>Themes</h1></a>
+<h1><a href="https://docs.theme-park.dev/themes/">Themes</a></h1>
 
 <p align="center">Click on the banners for screenshots.</p>
 
@@ -28,11 +28,11 @@
 <a href="https://docs.theme-park.dev/colors/dark"><img src="/banners/dark_banner.png" alt="Dark"/></a>
 <a href="https://docs.theme-park.dev/colors/plex"><img src="/banners/plex_banner.png" alt="Plex"/></a>
 
-<a href="https://docs.theme-park.dev/setup"><h2>Installation</h2></a>
+<h2><a href="https://docs.theme-park.dev/setup">Installation</a></h2>
 
-<a href="https://docs.theme-park.dev/themes/addons/sonarr"><h2>Addons</h2></a>
+<h2><a href="https://docs.theme-park.dev/themes/addons/sonarr">Addons</a></h2>
 
-<a href="https://docs.theme-park.dev/custom/"><h2>Adding your own theme colors</h2></a>
+<h2><a href="https://docs.theme-park.dev/custom/">Adding your own theme colors</a></h2>
 
 <p align="center">Current themes in the repo</p>
 
@@ -243,8 +243,8 @@
 
 <br>
 
-<a href="https://docs.theme-park.dev/custom/"><h3>Honourable mentions</h3></a>
+<h3><a href="https://docs.theme-park.dev/custom/">Honourable mentions</a></h3>
 
-<a href="https://github.com/Archmonger/Blackberry-Themes">Archmonger/Blackberry-Themes</a>
+<p><a href="https://github.com/Archmonger/Blackberry-Themes">Archmonger/Blackberry-Themes</a></p>
 
-<a href="https://github.com/leram84/layer.Cake/">leram84/layer.Cake</a>
+<p><a href="https://github.com/leram84/layer.Cake/">leram84/layer.Cake</a></p>
