@@ -1,0 +1,35 @@
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+
+/*		   		        Made by @gilbN					 */
+/*			      https://github.com/gilbN/theme.park			 */
+
+/* SONARR TIME STONE THEME */
+@import url(https://gilbn.github.io/theme.park/CSS/themes/sonarr/sonarr-base.css);
+
+:root {
+  --main-bg-color: radial-gradient(ellipse at center bottom, rgba(109, 247, 81, .7) 0%, #00130c 80%, rgb(0, 0, 0) 100%) center center/cover no-repeat fixed,
+    url("https://themepark-develop.netlify.app/Resources/time.jpg") center center/cover no-repeat fixed;
+  --modal-bg-color: linear-gradient(180deg, rgba(2, 77, 0, .8) 0%, #00130c 100%) center center/cover no-repeat fixed,
+    url("https://themepark-develop.netlify.app/Resources/time.jpg") center center/cover no-repeat fixed;
+
+  --calendar-tv-Unaired-Premiere: 53 197 244;
+  --calendar-tv-Downloading: 122 67 182;
+  --calendar-tv-Unmonitored: 173 173 173;
+  --calendar-tv-Unaired: 93 156 236;
+  --calendar-tv-missing: 240 80 80;
+  --calendar-tv-On-Air: 255 165 0;
+  --calendar-tv-available: 39 194 76;
+
+  --button-color: rgba(255, 255, 255, .15);
+  --button-color-hover: rgba(4, 168, 0, .8);
+  --accent-color: #6df751cc;
+  --accent-color-hover: #6df751cc;
+  --queue-color: #6df751cc;
+}

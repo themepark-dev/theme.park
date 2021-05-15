@@ -1,0 +1,256 @@
+@media (min-width: 992px) {
+    #mainNav {
+        box-shadow: none;
+        background-color: rgba(0, 0, 0, 0.55);
+        backdrop-filter: blur(10px);
+    }
+
+    #mainNav .navbar-brand {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    #mainNav .navbar-brand:hover {
+        color: #fff;
+    }
+
+    #mainNav .navbar-nav .nav-item .nav-link {
+        color: rgba(255, 255, 255, 0.7);
+        padding: 0 1rem;
+    }
+
+    #mainNav .navbar-nav .nav-item .nav-link:hover {
+        color: #fff;
+    }
+
+    #mainNav .navbar-nav .nav-item:last-child .nav-link {
+        padding-right: 0;
+    }
+
+    #mainNav.navbar-scrolled {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        background-color: rgba(0, 0, 0, 0.55);
+        backdrop-filter: blur(10px);
+    }
+
+    #mainNav.navbar-scrolled .navbar-brand {
+        color: #212529;
+    }
+
+    #mainNav.navbar-scrolled .navbar-brand:hover {
+        color: #12afa0;
+    }
+
+    #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
+        color: #fff;
+        ;
+    }
+
+    #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
+        color: #12afa0;
+    }
+}
+
+#mainNav {
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-light .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.mfp-container {
+    backdrop-filter: blur(10px);
+}
+
+/* BUTTON SHIT*/
+.btn-primary {
+    color: #fff;
+    background-color: #009688;
+    border-color: #009688;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #12afa0;
+    border-color: #12afa0;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    color: #fff;
+    background-color: #12afa0;
+    border-color: #12afa0;
+    box-shadow: 0 0 0 0.2rem #12afa080;
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+    color: #fff;
+    background-color: #009688;
+    border-color: #009688;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #12afa0;
+    border-color: #12afa0;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem #12afa080;
+}
+
+hr.divider {
+    border-color: #12afa0
+}
+
+a {
+    color: #fff;
+}
+a:hover {
+    color: #12afa0;
+    text-decoration: none;
+}
+.text-primary {
+    color: #12afa0 !important;
+}
+body,html {
+    background: transparent;
+}
+/* IMAGE SLIDER */
+.jquery-bg-slideshow-wrap-bg-element {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.bg {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 30pt;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    text-shadow: 1px 1px 10px black;
+    margin: 0;
+}
+
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption,
+#portfolio .container-sm .portfolio-box .portfolio-box-caption,
+#portfolio .container-md .portfolio-box .portfolio-box-caption,
+#portfolio .container-lg .portfolio-box .portfolio-box-caption,
+#portfolio .container-xl .portfolio-box .portfolio-box-caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    background: transparent;
+    transition: opacity 0.25s ease;
+    text-align: center;
+}
+
+.bg-primary,
+.bg-dark {
+    background: #2d2d2d;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #2d2d2d, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #2d2d2d, #000000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.theme-overview {
+    background: #2d2d2d;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #2d2d2d, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #2d2d2d, #000000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: var(--font-family-sans-serif);
+}
+#services {
+    background: #2d2d2d;
+    color: white;
+    padding: 0rem 0 8rem 0;
+}
+
+.app-container {
+    background: rgba(0, 0, 0, 0.2);
+    color:rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+}
+.app-container:hover {
+    color: white;
+    text-decoration: none;
+    background: #47918a80;
+}
+.app-container:hover img {
+    transform: scale(1.1);
+}
+.app-container img {
+    transition: transform .5s;
+}
+
+.app-container-image {
+    width: 48px;
+    height: 48px;
+}
+
+p {
+    margin-bottom: 0.5rem;
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 500;
+    line-height: 1.2;
+}
+.portfolio-box img {
+    object-fit: cover;
+    width: 562.4px;
+    height: 295.56px;
+ }
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption.aquamarine-hover:hover {
+    background: radial-gradient(ellipse at center, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
+    opacity: .9;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption.hotline-hover:hover {
+    background: radial-gradient(ellipse at center, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
+    opacity: .9;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption.space-gray-hover:hover {
+    background: radial-gradient(ellipse at center, rgba(87, 108, 117, 1) 0%, rgba(37, 50, 55, 1) 100.2%) center center/cover no-repeat fixed;
+    opacity: .9;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption.organizr-dark-hover:hover {
+    background: #1f1f1f;
+    opacity: .9;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption.dark-hover:hover {
+    background: radial-gradient(circle, #3a3a3a, #2d2d2d, #202020, #141414, #000000) center center/cover no-repeat fixed;
+    opacity: .9;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption.plex-hover:hover {
+    background: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-light2.png") center center/cover no-repeat fixed;
+    opacity: .9;
+}
