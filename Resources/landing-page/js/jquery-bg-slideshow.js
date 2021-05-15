@@ -31,7 +31,7 @@
 
  * 
  */
- (function($) {
+(function($) {
 	$.fn.bgSlideShow = function(options) {
 		var preloadedImages = new Array();
 
@@ -46,6 +46,8 @@
 			transitionSpeed: 3000,
 			// The effect to use when transitioning (fade-in, from-right, from-left)
 			transitionEffect: 'fade-in',
+			// Adds a gradient over the images.
+			gradient: null,
 			// Randomize the start element
 			randomize: false,
 			// If the initial image should also be rendered by this plugin
@@ -118,20 +120,21 @@
 			thisSetting.images = s.images;
 			thisSetting.slideControls = s.slideControls;
 			// List controls
-			thisSetting.slideControls.enabled = $(elmt).data("slidecontrols.enabled") || s.slideControls.enabled;
+			thisSetting.slideControls.enabled = getBoolean($(elmt).data("slidecontrols.enabled"),s.slideControls.enabled);
 			thisSetting.slideControls.classes = $(elmt).data("slidecontrols.classes") || s.slideControls.classes;
 			//			thisSetting.slideControls.size = $(elmt).data("slideControls.size") || s.slideControls.size;
 			//			thisSetting.slideControls.spaceBetween = $(elmt).data("slideControls.spacebetween") || s.slideControls.spaceBetween;
 			//			thisSetting.slideControls.backgroundColor = $(elmt).data("slideControls.backgroundcolor") || s.slideControls.backgroundColor;
 			//			thisSetting.slideControls.borderColor = $(elmt).data("slideControls.bordercolor") || s.slideControls.borderColor;
 			//			thisSetting.slideControls.borderSize = $(elmt).data("slideControls.bordersize") || s.slideControls.borderSize;
-
+			
 			// Images are comma separated, so we need to split that into arrays
 			if ($(elmt).data("images")) {
 				thisSetting.images = $(elmt).data("images").split(",").map(item => item.trim());
 			}
 			thisSetting.initialBackground = $(elmt).data("initialbackground") || s.initialBackground;
 			thisSetting.transitionDelay = $(elmt).data("transitiondelay") || s.transitionDelay;
+			thisSetting.gradient = $(elmt).data("gradient") || s.gradient;
 			thisSetting.transitionSpeed = $(elmt).data("transitionspeed") || s.transitionSpeed;
 			thisSetting.transitionEffect = $(elmt).data("transitioneffect") || s.transitionEffect;
 			thisSetting.randomize = getBoolean($(elmt).data("randomize"), s.randomize);
@@ -279,7 +282,11 @@
 			} else {
 				image = settings.initialBackground;
 			}
-			$(element).css("background-image", "url(" + image + ")");
+			if(settings.gradient) {
+				$(element).css("background-image", settings.gradient + ", url(" + image + ")");
+			}else {
+				$(element).css("background-image", "url(" + image + ")");
+			}
 		}
 
 		/**
@@ -305,18 +312,36 @@
 				$(settings.cloned).remove();
 			}
 			settings.cloned = $(element).clone();
+			if(settings.gradient) {
+				$(settings.cloned).addClass("jquery-bg-slideshow-cloned").css({
+					"background-image": settings.gradient+", url(" + nextImage + ")"
+				}).insertAfter($(element));
+			} else {
+				$(settings.cloned).addClass("jquery-bg-slideshow-cloned").css({
+					"background-image": "url(" + nextImage + ")"
+				}).insertAfter($(element));
+			}
 			$(settings.cloned).addClass("jquery-bg-slideshow-cloned").css({
-				"background-image": "url(" + nextImage + ")"
+				"background-image": settings.gradient+", url(" + nextImage + ")"
 			}).insertAfter($(element));
 			$(settings.cloned).css("display", settings.defaultDisplay);
 			debug(settings.debug, "Before element fadeout");
 			$(element).stop().fadeOut(settings.transitionSpeed, function() {
 				debug(settings.debug, "Fading out is done - should remove cloned element");
-				$(this).css({
-					"background-image": "url(" + nextImage + ")",
-					"position": "absolute",
-					"display": settings.defaultDisplay
-				});
+				if(settings.gradient) {
+					$(this).css({
+						"background-image": settings.gradient+", url(" + nextImage + ")",
+						"position": "absolute",
+						"display": settings.defaultDisplay
+					});
+				} else {
+					$(this).css({
+						"background-image": "url(" + nextImage + ")",
+						"position": "absolute",
+						"display": settings.defaultDisplay
+					});
+				}
+
 				//var removed = $(settings.cloned).remove();
 				//debug(settings.debug, "Total removed [" + removed.length + "]");
 				if (settings.eventHandlers.afterChange) {
