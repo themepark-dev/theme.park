@@ -120,9 +120,12 @@ a:hover {
 .text-primary {
     color: #12afa0 !important;
 }
-body,html {
-    background: transparent;
-}
+
+body,
+header.masthead {
+    background: black;
+  }
+
 /* IMAGE SLIDER */
 .jquery-bg-slideshow-wrap-bg-element {
     width: 100%;
