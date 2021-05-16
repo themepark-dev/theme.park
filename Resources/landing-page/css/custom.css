@@ -222,11 +222,13 @@ p {
     font-weight: 500;
     line-height: 1.2;
 }
+@media (min-width: 992px) {
 .portfolio-box img {
     object-fit: cover;
     width: 562.4px;
     height: 295.56px;
  }
+}
 
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption.aquamarine-hover:hover {
     background: radial-gradient(ellipse at center, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
