@@ -153,12 +153,16 @@ header.masthead {
     background-color: transparent;
 }
 
+@media (max-width: 768px) {
+    .bg,header.masthead {
+        background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 50%), url(../assets/img/space-gray.png) !important;
+    }
+}
 .bg {
     height: 100%;
     width: 100%;
     background-color: black;
     color: white;
-
     margin: 0;
 }
 
