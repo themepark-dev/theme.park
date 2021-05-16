@@ -232,7 +232,7 @@
 					var id = $(this).attr("id");
 					var imageOffset = parseInt(id.match(/-image(\d+)/)[1]);
 					settings.current = imageOffset + 1;
-					$(element).css("background-image", "url(" + settings.images[imageOffset] + ")");
+					$(element).css("background", "url(" + settings.images[imageOffset] + ")");
 					updateCurrentSlideElement(settings, settings.current - 1);
 					console.log("clicked on [" + $(this).attr("id") + "]");
 				});
@@ -283,9 +283,9 @@
 				image = settings.initialBackground;
 			}
 			if(settings.gradient) {
-				$(element).css("background-image", settings.gradient + ", url(" + image + ")");
+				$(element).css("background", settings.gradient + ", url(" + image + ") center center/cover no-repeat fixed");
 			}else {
-				$(element).css("background-image", "url(" + image + ")");
+				$(element).css("background", "url(" + image + ") center center/cover no-repeat fixed");
 			}
 		}
 
@@ -314,15 +314,15 @@
 			settings.cloned = $(element).clone();
 			if(settings.gradient) {
 				$(settings.cloned).addClass("jquery-bg-slideshow-cloned").css({
-					"background-image": settings.gradient+", url(" + nextImage + ")"
+					"background": settings.gradient+", url(" + nextImage + ") center center/cover no-repeat fixed"
 				}).insertAfter($(element));
 			} else {
 				$(settings.cloned).addClass("jquery-bg-slideshow-cloned").css({
-					"background-image": "url(" + nextImage + ")"
+					"background": "url(" + nextImage + ") center center/cover no-repeat fixed"
 				}).insertAfter($(element));
 			}
 			$(settings.cloned).addClass("jquery-bg-slideshow-cloned").css({
-				"background-image": settings.gradient+", url(" + nextImage + ")"
+				"background": settings.gradient+", url(" + nextImage + ") center center/cover no-repeat fixed"
 			}).insertAfter($(element));
 			$(settings.cloned).css("display", settings.defaultDisplay);
 			debug(settings.debug, "Before element fadeout");
@@ -330,13 +330,13 @@
 				debug(settings.debug, "Fading out is done - should remove cloned element");
 				if(settings.gradient) {
 					$(this).css({
-						"background-image": settings.gradient+", url(" + nextImage + ")",
+						"background": settings.gradient+", url(" + nextImage + ") center center/cover no-repeat fixed",
 						"position": "absolute",
 						"display": settings.defaultDisplay
 					});
 				} else {
 					$(this).css({
-						"background-image": "url(" + nextImage + ")",
+						"background": "url(" + nextImage + ") center center/cover no-repeat fixed",
 						"position": "absolute",
 						"display": settings.defaultDisplay
 					});
