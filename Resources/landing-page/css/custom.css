@@ -8,6 +8,17 @@
     }
   }
   
+@media (max-width: 768px) {
+    #mainNav, #mainNav.navbar-scrolled {
+        padding: 0 1rem 0 1rem !important;
+    }
+    .branding {
+        height: 40px !important;
+    }
+    #mainNav .navbar-nav .nav-item .nav-link{
+        padding-left: 1rem;
+    }
+}
   /* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
   @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
     #mainNav,
@@ -73,11 +84,19 @@
 #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
     color: #12afa0;
   }
-  #mainNav .navbar-nav .nav-item .nav-link.active {
+#mainNav .navbar-nav .nav-item .nav-link.active {
     color: #12afa0 !important;
   }
 .navbar-light .navbar-toggler-icon {
     filter: invert(1);
+}
+.navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, 0.5);
+    border-color: rgb(255 255 255 / 10%);
+}
+
+.branding {
+    height: 55px;
 }
 
 .mfp-container {
@@ -166,28 +185,6 @@ header.masthead {
     margin: 0;
 }
 
-
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption,
-#portfolio .container-sm .portfolio-box .portfolio-box-caption,
-#portfolio .container-md .portfolio-box .portfolio-box-caption,
-#portfolio .container-lg .portfolio-box .portfolio-box-caption,
-#portfolio .container-xl .portfolio-box .portfolio-box-caption {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    opacity: 0;
-    color: #fff;
-    background: transparent;
-    transition: opacity 0.25s ease;
-    text-align: center;
-}
-
 .bg-primary,
 .bg-dark {
     background: #2d2d2d;
@@ -241,46 +238,42 @@ p {
     font-weight: 500;
     line-height: 1.2;
 }
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
 .portfolio-box img {
     object-fit: cover;
-    width: 562.4px;
-    height: 295.56px;
  }
+} */
+
+/* EXAMPLE IMAGES*/
+#portfolio [class*="container-"] .portfolio-box:hover .portfolio-box-caption.aquamarine-hover,
+#portfolio [class*="container-"] .portfolio-box:hover .portfolio-box-caption.hotline-hover,
+#portfolio [class*="container-"] .portfolio-box:hover .portfolio-box-caption.space-gray-hover,
+#portfolio [class*="container-"] .portfolio-box:hover .portfolio-box-caption.organizr-dark-hover,
+#portfolio [class*="container-"] .portfolio-box:hover .portfolio-box-caption.dark-hover,
+#portfolio [class*="container-"] .portfolio-box:hover .portfolio-box-caption.plex-hover {
+    opacity: .9;
 }
 
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption.aquamarine-hover:hover {
+#portfolio [class*="container-"] .portfolio-box .portfolio-box-caption.aquamarine-hover {
     background: radial-gradient(ellipse at center, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
-    opacity: .9;
-    width: 562.4px;
 }
 
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption.hotline-hover:hover {
+#portfolio [class*="container-"] .portfolio-box .portfolio-box-caption.hotline-hover {
     background: radial-gradient(ellipse at center, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
-    opacity: .9;
-    width: 562.4px;
 }
 
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption.space-gray-hover:hover {
+#portfolio [class*="container-"] .portfolio-box .portfolio-box-caption.space-gray-hover {
     background: radial-gradient(ellipse at center, rgba(87, 108, 117, 1) 0%, rgba(37, 50, 55, 1) 100.2%) center center/cover no-repeat fixed;
-    opacity: .9;
-    width: 562.4px;
 }
 
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption.organizr-dark-hover:hover {
+#portfolio [class*="container-"] .portfolio-box .portfolio-box-caption.organizr-dark-hover {
     background: #1f1f1f;
-    opacity: .9;
-    width: 562.4px;
 }
 
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption.dark-hover:hover {
+#portfolio [class*="container-"] .portfolio-box .portfolio-box-caption.dark-hover {
     background: radial-gradient(circle, #3a3a3a, #2d2d2d, #202020, #141414, #000000) center center/cover no-repeat fixed;
-    opacity: .9;
-    width: 562.4px;
 }
 
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption.plex-hover:hover {
+#portfolio [class*="container-"] .portfolio-box .portfolio-box-caption.plex-hover {
     background: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-light2.png") center center/cover no-repeat fixed;
-    opacity: .9;
-    width: 562.4px;
 }
