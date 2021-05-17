@@ -844,6 +844,10 @@ a:hover {
     background: rgba(0, 0, 0, 0.25);
 }
 
+[class*="QualityDefinitions-sizeLimitHelpText-"] {
+    color: var(--text);
+}
+
 [class*="KeyValueListInputItem-keyInput-"],
 [class*="KeyValueListInputItem-valueInput-"] {
     border: none;

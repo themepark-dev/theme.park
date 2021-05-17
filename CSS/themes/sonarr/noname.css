@@ -26,8 +26,17 @@
 
   --button-color: #fb3f62;
   --button-color-hover: rgba(251, 63, 98, .8);
+  --button-text: #eee;
+  --button-text-hover: #FFF;
+
   --accent-color:  rgba(251, 63, 98, .8);
   --accent-color-hover: rgba(251, 63, 98, .8);
   --queue-color: rgba(63, 251, 157, .8);
+  --link-color: #ff6581;
+  --link-color-hover: #fff;
+    
+  --text:#eee;
+  --text-hover: #fff;
+  --text-muted: #999;
   }
 

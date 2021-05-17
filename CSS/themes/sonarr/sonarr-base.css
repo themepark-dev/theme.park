@@ -295,6 +295,10 @@ a:hover {
     color: var(--text) !important;
 }
 
+[class*="SeriesDetailsSeason\/sizeOnDisk\/"] {
+    color: var(--text-muted);
+}
+
 .fa-search:hover {
     color: var(--text-hover) !important;
 }
@@ -832,6 +836,9 @@ a:hover {
     color: white;
 }
 
+[class*="QualityDefinitions\/sizeLimitHelpText\/"] {
+    color: var(--text);
+}
 /* PROFILES */
 [class*="Indexers\/center\/"] {
     background-color: transparent;
@@ -1178,6 +1185,10 @@ a:hover {
 [class*="SeriesDetailsSeason-actionButton-"],
 [class*="SeriesDetailsSeason-collapseButtonIcon-"] {
     color: var(--text) !important;
+}
+
+[class*="SeriesDetailsSeason-sizeOnDisk-"] {
+    color: var(--text-muted);
 }
 
 .fa-search:hover {
@@ -1714,6 +1725,10 @@ a:hover {
     border: none;
     background: transparent;
     color: white;
+}
+
+[class*="QualityDefinitions-sizeLimitHelpText-"] {
+    color: var(--text);
 }
 
 /* PROFILES */
