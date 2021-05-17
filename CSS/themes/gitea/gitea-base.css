@@ -314,6 +314,10 @@ b:hover,
     border-color: rgb(255 255 255 / 10%) !important;
 }
 
+.ui.secondary.pointing.menu .item {
+    color: var(--text-muted);
+}
+
 .ui.repository.list .item:not(:first-child) {
     border-top: 1px solid rgb(255 255 255 / 25%);
 
