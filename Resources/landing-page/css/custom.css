@@ -207,7 +207,12 @@ header.masthead {
     color: white;
     padding: 0rem 0 8rem 0;
 }
-
+.all-apps {
+    max-width: 1980px;
+}
+.img-fluid {
+    border-radius: 5px;
+}
 .app-container {
     background: rgba(0, 0, 0, 0.2);
     color:rgba(255, 255, 255, 0.7);
@@ -252,6 +257,7 @@ p {
 #portfolio [class*="container-"] .portfolio-box:hover .portfolio-box-caption.dark-hover,
 #portfolio [class*="container-"] .portfolio-box:hover .portfolio-box-caption.plex-hover {
     opacity: .9;
+    border-radius: 5px;
 }
 
 #portfolio [class*="container-"] .portfolio-box .portfolio-box-caption.aquamarine-hover {
