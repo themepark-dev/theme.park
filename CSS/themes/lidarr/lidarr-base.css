@@ -983,10 +983,3 @@ a:hover {
     background-color: #f05050;
 }
 
-/* Scrollbar test fix*/
-
-[class*="PageContentBody-contentBody-"],
-[class*="PageSidebar-sidebar-"] {
-    margin-right: -70px !important;
-    margin-bottom: -70px !important;   
-}

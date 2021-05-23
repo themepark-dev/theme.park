@@ -912,7 +912,7 @@ a:hover {
     color: var(--text);
 }
 
-/* Scrollbar test fix*/
+/* Scrollbar test fix
 
 [class*="PageContentBody\/contentBody\/"],
 [class*="PageSidebar\/sidebar\/"] {
@@ -1812,7 +1812,7 @@ a:hover {
     color: var(--text);
 }
 
-/* Scrollbar test fix*/
+/* Scrollbar test fix
 
 [class*="PageContentBody-contentBody-"],
 [class*="PageSidebar-sidebar-"] {
