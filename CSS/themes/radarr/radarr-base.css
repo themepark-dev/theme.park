@@ -943,3 +943,11 @@ a:hover {
 [class*="SelectMovieModalContent-path-"] {
     color: var(--text);
 }
+
+/* Scrollbar test fix*/
+
+[class*="PageContentBody-contentBody-"],
+[class*="PageSidebar-sidebar-"] {
+    margin-right: -70px !important;
+    margin-bottom: -70px !important;   
+}
