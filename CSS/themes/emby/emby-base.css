@@ -538,4 +538,9 @@ html {
     background: rgb(255 255 255 / 15%) !important;
 }
 }
-  
+
+.mainDrawer {
+    background: var(--header-blur-background);
+    -webkit-backdrop-filter: saturate(1.8) blur(1.5em);
+    backdrop-filter: saturate(1.8) blur(1.5em);
+}
