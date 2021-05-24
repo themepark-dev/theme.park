@@ -48,7 +48,7 @@ html {
 }
 
 .pageTitleWithDefaultLogo {
-    background-image: url(http://192.168.1.34:8055/web/modules/themes/logodark.png)
+    background-image: url(https://theme-park.dev/Resources/emby/logowhite.png)
 }
 
 .backgroundContainer,.dialog,html {
@@ -502,7 +502,7 @@ html {
 }
 
 .drawerLogo {
-    background-image: url(../logowhite.png);
+    background-image: url(https://theme-park.dev/Resources/emby/logowhite.png);
     border-bottom-color: var(--line-background)
 }
 
@@ -531,4 +531,11 @@ html {
     background: var(--theme-accent-text-color)
 }
 
+
+/* TP CUSTOM */
+@media (hover: hover) and (pointer: fine) {
+.navMenuOption:hover {
+    background: rgb(255 255 255 / 15%) !important;
+}
+}
   

@@ -12,12 +12,51 @@
 /* 			      https://github.com/gilbN/theme.park			 */
 
 /* EMBY PLEX THEME */
-@import url(https://theme-park.dev/CSS/themes/jellyfin/jellyfin-base.css);
+@import url("https://theme-park.dev/CSS/themes/emby/emby-base.css");
 :root {
-  --main-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-light2.png") center center/cover no-repeat fixed;
-  --modal-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-dark2.png") center center/cover no-repeat fixed;
-  --button-color: #cc7b19;
-  --button-color-hover: #e59029;
-  --accent-color:  #e5a00d;
-  --accent-color-hover: #ffc107;
-  }
+    --theme-primary-color: #e5a00d;
+    --theme-text-color: #eee;
+    --theme-text-color-opaque: #fff;
+    --theme-accent-text-color: #e5a00d;
+    --theme-primary-color-lightened: rgba(229, 161, 13, 0.2);
+    --theme-icon-focus-background: rgba(229, 161, 13, 0.2);
+
+    --theme-background: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-light2.png") center center/cover no-repeat fixed;
+    --header-blur-background: rgba(20,20,20,0.66);
+    --drawer-background: #2C2C2E;
+    --docked-drawer-background: rgba(0, 0, 0, 0.25);
+    --button-background: #1f1f1f;
+    --card-background: rgba(0, 0, 0, 0.15);
+    --footer-background: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-light2.png") center center/cover no-repeat fixed;;
+    --footer-blur-background: rgba(29,29,31,0.66);
+    
+    --header-background: var(--theme-background);
+    --theme-body-secondary-text-color: rgba(255, 255, 255, .6);
+    --line-background: rgba(255, 255, 255, .08);
+    --line-size: .08em;
+    --scrollbar-thumb-background: rgba(255,255,255,.3);
+}
+
+@media (pointer: fine) {
+    :not(.layout-tv):root {
+        --theme-background: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-light2.png") center center/cover no-repeat fixed;
+        --header-blur-background: rgba(20,20,20,0.66);
+        --drawer-background: #2C2C2E;
+        --docked-drawer-background: rgba(0, 0, 0, 0.25);
+        --button-background: #1f1f1f;
+        --card-background: rgba(0, 0, 0, 0.15);
+        --footer-background: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-light2.png") center center/cover no-repeat fixed;;
+        --footer-blur-background: rgba(29,29,31,0.66);
+    }
+}
+
+.layout-tv:root {
+    --theme-background: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-light2.png") center center/cover no-repeat fixed;
+    --header-blur-background: rgba(20,20,20,0.66);
+    --drawer-background: #2C2C2E;
+    --docked-drawer-background: rgba(0, 0, 0, 0.25);
+    --button-background: #1f1f1f;
+    --card-background: rgba(0, 0, 0, 0.15);
+    --footer-background: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-light2.png") center center/cover no-repeat fixed;;
+    --footer-blur-background: rgba(29,29,31,0.66);
+}

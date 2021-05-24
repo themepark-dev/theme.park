@@ -12,12 +12,51 @@
 /*			      https://github.com/gilbN/theme.park			 */
 
 /* EMBY SPACE GRAY THEME */
-@import url(https://theme-park.dev/CSS/themes/jellyfin/jellyfin-base.css);
+@import url("https://theme-park.dev/CSS/themes/emby/emby-base.css");
 :root {
-  --main-bg-color:  radial-gradient( ellipse at center,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed;
-  --modal-bg-color: radial-gradient( ellipse at top,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed; 
-  --button-color: #607D8B;
-  --button-color-hover: #81a6b7;
-  --accent-color: #607D8B;
-  --accent-color-hover: #81a6b7;
+    --theme-primary-color: #81a6b7;
+    --theme-text-color: #eee;
+    --theme-text-color-opaque: #fff;
+    --theme-accent-text-color: #81a6b7;
+    --theme-primary-color-lightened: rgba(129, 166, 183, 0.2);
+    --theme-icon-focus-background: rgba(129, 166, 183, 0.2);
+
+    --theme-background: radial-gradient( ellipse at center,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed;
+    --header-blur-background: rgba(20,20,20,0.66);
+    --drawer-background: #2C2C2E;
+    --docked-drawer-background: rgba(0, 0, 0, 0.25);
+    --button-background: #1f1f1f;
+    --card-background: rgba(0, 0, 0, 0.15);
+    --footer-background: radial-gradient( ellipse at center,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed;;
+    --footer-blur-background: rgba(29,29,31,0.66);
+    
+    --header-background: var(--theme-background);
+    --theme-body-secondary-text-color: rgba(255, 255, 255, .6);
+    --line-background: rgba(255, 255, 255, .08);
+    --line-size: .08em;
+    --scrollbar-thumb-background: rgba(255,255,255,.3);
+}
+
+@media (pointer: fine) {
+    :not(.layout-tv):root {
+        --theme-background: radial-gradient( ellipse at center,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed;
+        --header-blur-background: rgba(20,20,20,0.66);
+        --drawer-background: #2C2C2E;
+        --docked-drawer-background: rgba(0, 0, 0, 0.25);
+        --button-background: #1f1f1f;
+        --card-background: rgba(0, 0, 0, 0.15);
+        --footer-background: radial-gradient( ellipse at center,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed;;
+        --footer-blur-background: rgba(29,29,31,0.66);
+    }
+}
+
+.layout-tv:root {
+    --theme-background: radial-gradient( ellipse at center,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed;
+    --header-blur-background: rgba(20,20,20,0.66);
+    --drawer-background: #2C2C2E;
+    --docked-drawer-background: rgba(0, 0, 0, 0.25);
+    --button-background: #1f1f1f;
+    --card-background: rgba(0, 0, 0, 0.15);
+    --footer-background: radial-gradient( ellipse at center,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed;;
+    --footer-blur-background: rgba(29,29,31,0.66);
 }
