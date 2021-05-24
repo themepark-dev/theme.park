@@ -548,3 +548,164 @@ html {
 .cardImageIcon {
     color: #fff;
     }
+
+.dialog .inputLabelFocused,
+.selectLabelFocused,
+.textareaLabelFocused {
+    color: #fff;
+}
+
+
+/* JELLYFIN */
+
+@media (hover: hover) and (pointer: fine) {
+    .paper-icon-button-light:hover:not(:disabled) {
+        color: var(--theme-accent-text-color);
+        background-color: var(--theme-icon-focus-background);
+    }
+}
+
+.paper-icon-button-light:active:not(:disabled) {
+    color: var(--theme-accent-text-color);
+    background-color: var(--theme-icon-focus-background);
+}
+
+.paper-icon-button-light.show-focus:focus {
+    color: var(--theme-accent-text-color);
+}
+
+.button-submit {
+    background: var(--theme-accent-text-color);
+    color: #fff;
+}
+
+.button-submit:focus {
+    background: var(--theme-accent-text-color);
+    color: #fff;
+}
+
+.inputLabelFocused,
+.selectLabelFocused,
+.textareaLabelFocused {
+    color: var(--theme-accent-text-color);
+}
+
+.itemSelectionPanel {
+    border: 1px solid var(--theme-accent-text-color);
+}
+
+.selectionCommandsPanel {
+    background: var(--theme-accent-text-color);
+    color: #fff;
+}
+
+.upNextDialog-countdownText {
+    color: var(--theme-accent-text-color);
+}
+
+.alphaPickerButton-tv:focus {
+    background-color: var(--theme-accent-text-color);
+    color: #fff !important;
+}
+
+.progressring-spiner {
+    border-color: var(--theme-accent-text-color);
+}
+
+.button-flat:hover {
+    color: var(--theme-accent-text-color);
+}
+
+.button-link {
+    color: var(--theme-accent-text-color);
+}
+
+.emby-input:focus,
+.emby-textarea:focus {
+    border-color: var(--theme-accent-text-color);
+}
+
+.emby-select-withcolor:focus {
+    border-color: var(--theme-accent-text-color) !important;
+}
+
+.emby-select-tv-withcolor:focus {
+    background-color: var(--theme-accent-text-color) !important;
+    color: #fff !important;
+}
+
+.emby-checkbox:checked + span + .checkboxOutline {
+    border-color: var(--theme-accent-text-color);
+}
+
+.emby-checkbox:checked + span + .checkboxOutline,
+.itemProgressBarForeground {
+    background-color: var(--theme-accent-text-color);
+}
+
+.emby-checkbox:focus:not(:checked) + span + .checkboxOutline {
+    border-color: var(--theme-accent-text-color);
+}
+
+.countIndicator,
+.fullSyncIndicator,
+.playedIndicator {
+    background: var(--theme-accent-text-color);
+}
+
+.navMenuOption-selected {
+    background: var(--theme-accent-text-color) !important;
+    color: #fff;
+}
+
+.emby-button.show-focus:focus {
+    background: var(--theme-accent-text-color);
+    color: #fff;
+}
+
+.emby-tab-button.show-focus:focus {
+    color: var(--theme-accent-text-color);
+}
+
+.emby-tab-button:hover {
+    color: var(--theme-accent-text-color);
+}
+
+.guide-channelHeaderCell:focus,
+.programCell:focus {
+    background-color: var(--theme-accent-text-color) !important;
+    color: #fff !important;
+}
+
+.guide-date-tab-button.emby-tab-button-active,
+.guide-date-tab-button:focus {
+    color: var(--theme-accent-text-color);
+}
+
+.guide-date-tab-button.show-focus:focus {
+    background-color: var(--theme-accent-text-color);
+    color: #fff;
+}
+
+.buttonActive {
+    color: var(--theme-accent-text-color) !important;
+}
+
+.card:focus .cardBox.visualCardBox,
+.card:focus .cardBox:not(.visualCardBox) .cardScalable {
+    border-color: var(--theme-accent-text-color) !important;
+}
+
+.metadataSidebarIcon {
+    color: var(--theme-accent-text-color);
+}
+
+.emby-button.detailFloatingButton {
+    background-color: var(--theme-accent-text-color);
+    color: #fff;
+}
+
+.layout-tv .emby-button.detailFloatingButton:focus {
+    background-color: #f2f2f2;
+    color: var(--theme-accent-text-color);
+}
