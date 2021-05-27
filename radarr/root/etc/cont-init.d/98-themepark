@@ -11,9 +11,11 @@ echo -e "Variables set:\\n\
 'TP_THEME'=${TP_THEME}\\n"
 
 APP_FILEPATH='/app/radarr/bin/UI/index.html'
+LOGIN_FILEPATH='/app/radarr/bin/UI/login.html'
 if [ "${TP_HOTIO}" = true ]; then
     echo 'Changing to Hotio file path!'
     APP_FILEPATH='/app/bin/UI/index.html'
+    LOGIN_FILEPATH='/app/bin/UI/login.html'
 fi
 
 # Set default
@@ -40,6 +42,7 @@ if ! grep -q "${TP_DOMAIN}" "${APP_FILEPATH}"; then
     echo '|  Adding the stylesheet  |'
     echo '---------------------------'
     sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/themes\/radarr\/${TP_THEME}.css'><\/head> /g" "${APP_FILEPATH}"
+    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/themes\/radarr\/${TP_THEME}.css'><\/head> /g" "${LOGIN_FILEPATH}"
     printf 'Stylesheet set to %s\n' "${TP_THEME}"
     if [[ -n ${TP_ADDON} ]]; then
         sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/addons\/radarr\/${TP_ADDON}.css'><\/head> /g" "${APP_FILEPATH}"
