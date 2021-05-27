@@ -931,6 +931,31 @@ a:hover {
     color: var(--text) !important;
 }
 
+input[type=email],
+input[type=password] {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #FFF;
+}
+
+.button {
+    border-color: var(--button-color);
+    background-color: var(--button-color);
+    cursor: pointer;
+}
+.button:hover {
+    border-color: var(--button-color-hover);
+    background-color: var(--button-color-hover);
+    color: #fff;
+    text-decoration: none;
+}
+.form-input:focus {
+    outline: 0;
+    border-color: #fff;
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
 /* Custom filter */
 [class*="FilterBuilderRow-filterRow-"]:hover {
     background-color: transparent;
