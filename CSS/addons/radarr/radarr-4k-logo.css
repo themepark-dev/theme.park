@@ -74,3 +74,23 @@
         flex: 0 0 32px;
     } 
 }
+
+[class*="LoadingPage-logoFull-"] {
+    display: none !important;
+}
+
+[class*="LoadingPage-page-"]:before {
+        background-image: url("https://theme-park.dev/CSS/addons/radarr/radarr4k-v3.png");
+        display: inline-block;
+        width: 148px; 
+        height: 48px;
+        content:"";
+        background-size:  cover;
+        -webkit-background-size:  cover;
+        -moz-background-size:  cover;
+        -o-background-size: cover;
+        margin-top: 50px;
+        margin-right: auto;
+        margin-left: auto;
+
+}
