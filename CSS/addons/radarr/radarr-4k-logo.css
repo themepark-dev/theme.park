@@ -69,5 +69,8 @@
         -webkit-background-size:  cover;
         -moz-background-size:  cover;
         -o-background-size: cover;
+        margin-left: 20px;
+        margin-right: 8px;
+        flex: 0 0 32px;
     } 
 }
