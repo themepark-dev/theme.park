@@ -457,7 +457,7 @@ a .library-user-instance-box:hover {
 .dashboard-recent-media-metacontainer h3.text-muted a:hover {
     color: var(--accent-color);
 }
-a .poster-face:hover, a .cover-face:hover, a .users-poster-face:hover {
+a .poster-face:hover, a .cover-face:hover, a .users-poster-face:hover,.summary-poster-face-overlay {
     -webkit-box-shadow: inset 0 0 0 2px var(--accent-color);
     -moz-box-shadow: inset 0 0 0 2px var(--accent-color);
     box-shadow: inset 0 0 0 2px var(--accent-color);
