@@ -97,8 +97,14 @@ p,
     color: var(--text);
 }
 
-/* TOP NAVBAR */
+/* CARDS */
+.theme--light.v-card,
+.theme--dark.v-card {
+    background-color: rgba(0, 0, 0, .5);
+    color: var(--text);
+}
 
+/* TOP NAVBAR */
 .theme--light.v-app-bar.v-toolbar.v-sheet,
 .theme--dark.v-app-bar.v-toolbar.v-sheet {
     background-color: rgba(0, 0, 0, .25) !important;
