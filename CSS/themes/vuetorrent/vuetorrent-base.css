@@ -286,8 +286,8 @@ p,
 
 
 /* DROPDOWN */
-.theme--dark.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled),
-.theme--light.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled) {
+.v-menu__content .theme--dark.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled),
+.v-menu__content .theme--light.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled) {
     color: var(--text) !important;
     background: var(--modal-bg-color) !important;
 }
@@ -307,4 +307,18 @@ p,
 .theme--light.v-data-table {
     background-color: rgba(0, 0, 0, .65);
     color: var(--text);
+}
+
+/* TOOLTIP */
+.apexcharts-tooltip.apexcharts-theme-dark .apexcharts-tooltip-title,
+.apexcharts-tooltip.apexcharts-theme-light .apexcharts-tooltip-title {
+    background: rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.apexcharts-tooltip.apexcharts-theme-dark,
+.apexcharts-tooltip.apexcharts-theme-light {
+    color: var(--text);
+    background: var(--modal-bg-color);
+    border: 1px solid rgba(255, 255, 255, .1);
 }
