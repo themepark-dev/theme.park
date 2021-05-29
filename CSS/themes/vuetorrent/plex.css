@@ -1,0 +1,34 @@
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+
+/*		   		        Made by @gilbN					 */
+/* 			      https://github.com/gilbN/theme.park			 */
+
+/* VUETORRENT PLEX THEME */
+@import url(https://theme-park.dev/CSS/themes/vuetorrent/vuetorrent-base.css);
+
+:root {
+  --main-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-light2.png") center center/cover no-repeat fixed;
+  --modal-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-dark2.png") center center/cover no-repeat fixed;
+
+  --button-color: #cc7b19;
+  --button-color-hover: #e59029;
+  --button-text: #eee;
+  --button-text-hover: #FFF;
+
+  --accent-color: 229, 160, 13;
+  --accent-color-hover: #ffc107;
+  --queue-color: #27c24c;
+  --link-color: #e5a00d;
+  --link-color-hover: #fff;
+
+  --text: #eee;
+  --text-muted: #ccc;
+  --text-hover: #fff;
+}
