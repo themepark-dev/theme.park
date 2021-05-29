@@ -25,12 +25,16 @@
     }
 }
 
-body,html,
+body,
 .background,
 .theme--light.v-application,
 .theme--dark.v-application, .v-application .background{
     color: var(--text);
     background: var(--main-bg-color) !important;
+}
+html{
+    color: var(--text);
+    background: #1f1f1f !important;
 }
 
 /* SCROLL BAR */
