@@ -314,6 +314,25 @@ p,
     background-color: rgba(0, 0, 0, .65);
     color: var(--text);
 }
+.theme--light.v-data-table>.v-data-table__wrapper>table>tbody>tr:hover:not(.v-data-table__expanded__content):not(.v-data-table__empty-wrapper),
+.theme--dark.v-data-table>.v-data-table__wrapper>table>tbody>tr:hover:not(.v-data-table__expanded__content):not(.v-data-table__empty-wrapper){
+    background: rgb(255 255 255 / 15%);
+}
+
+.theme--dark.v-data-table>.v-data-table__wrapper>table>tbody>tr:not(:last-child)>td:last-child, .theme--dark.v-data-table>.v-data-table__wrapper>table>tbody>tr:not(:last-child)>td:not(.v-data-table__mobile-row), .theme--dark.v-data-table>.v-data-table__wrapper>table>tbody>tr:not(:last-child)>th:last-child, .theme--dark.v-data-table>.v-data-table__wrapper>table>tbody>tr:not(:last-child)>th:not(.v-data-table__mobile-row), .theme--dark.v-data-table>.v-data-table__wrapper>table>thead>tr:last-child>th,
+.theme--light.v-data-table>.v-data-table__wrapper>table>tbody>tr:not(:last-child)>td:last-child, .theme--light.v-data-table>.v-data-table__wrapper>table>tbody>tr:not(:last-child)>td:not(.v-data-table__mobile-row), .theme--light.v-data-table>.v-data-table__wrapper>table>tbody>tr:not(:last-child)>th:last-child, .theme--light.v-data-table>.v-data-table__wrapper>table>tbody>tr:not(:last-child)>th:not(.v-data-table__mobile-row), .theme--light.v-data-table>.v-data-table__wrapper>table>thead>tr:last-child>th{
+    border-bottom: thin solid hsla(0,0%,100%,.12);
+}
+
+.theme--light.v-data-table>.v-data-table__wrapper>table>thead>tr>th,
+.theme--dark.v-data-table>.v-data-table__wrapper>table>thead>tr>th{
+    color: var(--text);
+}
+
+.theme--light.v-data-table .v-data-table-header th.sortable.active, .theme--light.v-data-table .v-data-table-header th.sortable.active .v-data-table-header__icon, .theme--light.v-data-table .v-data-table-header th.sortable:hover,
+.theme--dark.v-data-table .v-data-table-header th.sortable.active, .theme--dark.v-data-table .v-data-table-header th.sortable.active .v-data-table-header__icon, .theme--dark.v-data-table .v-data-table-header th.sortable:hover{
+    color: var(--text-hover);
+}
 
 /* TOOLTIP */
 .apexcharts-tooltip.apexcharts-theme-dark .apexcharts-tooltip-title,
