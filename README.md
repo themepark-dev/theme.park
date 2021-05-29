@@ -233,6 +233,10 @@
 <p><a href="https://docs.theme-park.dev/themes/flood">Flood</a></p>
 </td>
 <td style="width: 90px; height: 40px; text-align: center;">
+<p><a href="https://docs.theme-park.dev/themes/vuetorrent"><img src="https://docs.theme-park.dev/site_assets/vuetorrent/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/vuetorrent">VueTorrent</a></p>
+</td>
+<td style="width: 90px; height: 40px; text-align: center;">
 <p><a href="https://docs.theme-park.dev/themes/dozzle"><img src="https://docs.theme-park.dev/site_assets/dozzle/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/dozzle">Dozzle</a></p>
 </td>
