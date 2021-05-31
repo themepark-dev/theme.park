@@ -65,8 +65,8 @@
 <p><a href="https://docs.theme-park.dev/themes/plex">Plex</a></p>
 </td>
 <td style="width: 110px; height: 26px; text-align: center;">
-<p><a href="https://docs.theme-park.dev/themes/calibre-Web"><img src="https://docs.theme-park.dev/site_assets/calibreweb/logo.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://docs.theme-park.dev/themes/calibre-Web">Calibre-web</a></p>
+<p><a href="https://docs.theme-park.dev/themes/calibreweb"><img src="https://docs.theme-park.dev/site_assets/calibreweb/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/calibreweb">Calibre-web</a></p>
 </td>
 </tr>
 <tr style="height: 26px;">
