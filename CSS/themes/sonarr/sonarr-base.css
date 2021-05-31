@@ -635,7 +635,7 @@ a:hover {
     color: #fff;
 }
 
-[class*="CalendarEvent\/downloaded\/"]:hover {
+[class*="Calendar\/calendar\/"] [class*="CalendarEvent\/downloaded\/"]:hover {
     background: rgb(var(--calendar-tv-available) / .5) !important;
     border-left-color: transparent !important;
 }
@@ -646,7 +646,7 @@ a:hover {
     color: #fff;
 }
 
-[class*="CalendarEvent\/missing\/"]:hover {
+[class*="Calendar\/calendar\/"]  [class*="CalendarEvent\/missing\/"]:hover {
     background: rgb(var(--calendar-tv-missing) / .5) !important;
     border-left-color: transparent !important;
 }
@@ -657,7 +657,7 @@ a:hover {
     color: #fff;
 }
 
-[class*="CalendarEvent\/unaired\/"]:hover {
+[class*="Calendar\/calendar\/"] [class*="CalendarEvent\/unaired\/"]:hover {
     background: rgb(var(--calendar-tv-unaired) / .5) !important;
     border-left-color: transparent !important;
 }
@@ -668,7 +668,7 @@ a:hover {
     color: #fff;
 }
 
-[class*="CalendarEvent\/unmonitored\/"]:hover {
+[class*="Calendar\/calendar\/"] [class*="CalendarEvent\/unmonitored\/"]:hover {
     background: rgb(var(--calendar-tv-unmonitored) / .5) !important;
     border-left-color: transparent !important;
 }
@@ -679,7 +679,7 @@ a:hover {
     color: #fff;
 }
 
-[class*="CalendarEvent\/onAir\/"]:hover {
+[class*="Calendar\/calendar\/"] [class*="CalendarEvent\/onAir\/"]:hover {
     background: rgb(var(--calendar-tv-on-air) / .5) !important;
     border-left-color: transparent !important;
 }
@@ -690,7 +690,7 @@ a:hover {
     color: #fff;
 }
 
-[class*="CalendarEvent\/downloading\/"]:hover {
+[class*="Calendar\/calendar\/"] [class*="CalendarEvent\/downloading\/"]:hover {
     background: rgb(var(--calendar-tv-downloading) / .5) !important;
     border-left-color: transparent !important;
 }
@@ -1559,7 +1559,7 @@ a:hover {
     color: #fff;
 }
 
-[class*="CalendarEvent-downloaded-"]:hover {
+[class*="Calendar-calendar-"] [class*="CalendarEvent-downloaded-"]:hover {
     background: rgb(var(--calendar-tv-available) / .5) !important;
     border-left-color: transparent !important;
 }
@@ -1570,7 +1570,7 @@ a:hover {
     color: #fff;
 }
 
-[class*="CalendarEvent-missing-"]:hover {
+[class*="Calendar-calendar-"] [class*="CalendarEvent-missing-"]:hover {
     background: rgb(var(--calendar-tv-missing) / .5) !important;
     border-left-color: transparent !important;
 }
@@ -1581,7 +1581,7 @@ a:hover {
     color: #fff;
 }
 
-[class*="CalendarEvent-unaired-"]:hover {
+[class*="Calendar-calendar-"] [class*="CalendarEvent-unaired-"]:hover {
     background: rgb(var(--calendar-tv-unaired) / .5) !important;
     border-left-color: transparent !important;
 }
@@ -1592,7 +1592,7 @@ a:hover {
     color: #fff;
 }
 
-[class*="CalendarEvent-unmonitored-"]:hover {
+[class*="Calendar-calendar-"] [class*="CalendarEvent-unmonitored-"]:hover {
     background: rgb(var(--calendar-tv-unmonitored) / .5) !important;
     border-left-color: transparent !important;
 }
@@ -1603,7 +1603,7 @@ a:hover {
     color: #fff;
 }
 
-[class*="CalendarEvent-onAir-"]:hover {
+[class*="Calendar-calendar-"] [class*="CalendarEvent-onAir-"]:hover {
     background: rgb(var(--calendar-tv-on-air) / .5) !important;
     border-left-color: transparent !important;
 }
@@ -1614,7 +1614,7 @@ a:hover {
     color: #fff;
 }
 
-[class*="CalendarEvent-downloading-"]:hover {
+[class*="Calendar-calendar-"] [class*="CalendarEvent-downloading-"]:hover {
     background: rgb(var(--calendar-tv-downloading) / .5) !important;
     border-left-color: transparent !important;
 }
