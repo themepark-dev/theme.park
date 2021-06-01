@@ -1196,9 +1196,6 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.25);
 }
 
-[class*="TableRow-row-"] [class*="ProgressBar-primary-"] {
-    background-color: var(--accent-color) !important;
-}
 
 [class*=".ProgressBar-purple-"] {
     background-color: var(--accent-color);
