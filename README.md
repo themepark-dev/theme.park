@@ -52,21 +52,21 @@
 <p style="text-align: center;"><a href="https://docs.theme-park.dev/themes/lidarr"><img src="https://docs.theme-park.dev/site_assets/lidarr/logo.png" width="48" height="48" /></a></p>
 <p style="text-align: center;"><a href="https://docs.theme-park.dev/themes/lidarr">Lidarr</a></p>
 </td>
-<td style="width: 90px; height: 98px; text-align: center;">
-<p><a href="https://docs.theme-park.dev/themes/bazarr"><img src="https://docs.theme-park.dev/site_assets/bazarr/logo.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://docs.theme-park.dev/themes/bazarr">Bazarr</a></p>
-</td>
 <td style="width: 136px; height: 98px; text-align: center;">
 <p><a href="https://docs.theme-park.dev/themes/readarr"><img src="https://docs.theme-park.dev/site_assets/readarr/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/readarr">Readarr</a></p>
 </td>
+<td style="width: 110px; height: 26px; text-align: center;">
+<p><a href="https://docs.theme-park.dev/themes/prowlarr"><img src="https://docs.theme-park.dev/site_assets/prowlarr/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/prowlarr">Prowlarr</a></p>
+</td>
+<td style="width: 90px; height: 98px; text-align: center;">
+<p><a href="https://docs.theme-park.dev/themes/bazarr"><img src="https://docs.theme-park.dev/site_assets/bazarr/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/bazarr">Bazarr</a></p>
+</td>
 <td style="width: 140px; height: 98px; text-align: center;">
 <p><a href="https://docs.theme-park.dev/themes/plex"><img src="https://docs.theme-park.dev/site_assets/plex/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/plex">Plex</a></p>
-</td>
-<td style="width: 110px; height: 26px; text-align: center;">
-<p><a href="https://docs.theme-park.dev/themes/calibreweb"><img src="https://docs.theme-park.dev/site_assets/calibreweb/logo.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://docs.theme-park.dev/themes/calibreweb">Calibre-web</a></p>
 </td>
 </tr>
 <tr style="height: 26px;">
@@ -239,6 +239,10 @@
 <td style="width: 90px; height: 40px; text-align: center;">
 <p><a href="https://docs.theme-park.dev/themes/dozzle"><img src="https://docs.theme-park.dev/site_assets/dozzle/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/dozzle">Dozzle</a></p>
+</td>
+<td style="width: 110px; height: 26px; text-align: center;">
+<p><a href="https://docs.theme-park.dev/themes/calibreweb"><img src="https://docs.theme-park.dev/site_assets/calibreweb/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/calibreweb">Calibre-web</a></p>
 </td>
 </tr>
 </tbody>
