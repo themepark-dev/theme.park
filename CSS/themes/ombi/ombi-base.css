@@ -31,7 +31,10 @@ a {
     color: var(--link-color);
 }
 
-a:hover {
+a:hover,
+.forgot-password:active,
+.forgot-password:focus,
+.forgot-password:hover {
     color: var(--link-color-hover);
 }
 /* SCROLLBAR */
@@ -478,7 +481,6 @@ button.admin-cog {
 /* Login page */
 .login-card H1.login_logo {
     color: rgb(var(--accent-color)) !important;
-
 }
 
 /* TABLES */
