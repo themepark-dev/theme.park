@@ -533,3 +533,8 @@ hr {
 .mat-bottom-sheet-container {
     background: var(--modal-bg-color);
 }
+
+/* OTHER */
+.mat-tooltip {
+    background: var(--modal-bg-color) !important;
+}
