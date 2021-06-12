@@ -548,3 +548,7 @@ hr {
 .mat-tooltip {
     background: var(--modal-bg-color) !important;
 }
+
+.mat-progress-spinner.mat-accent circle,.mat-spinner.mat-accent circle {
+    stroke: rgb(var(--accent-color));
+}
