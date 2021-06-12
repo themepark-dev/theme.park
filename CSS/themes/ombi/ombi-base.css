@@ -31,11 +31,14 @@ a {
     color: var(--link-color);
 }
 
-a:hover,
+a:hover {
+    color: var(--link-color-hover);
+}
+
 .forgot-password:active,
 .forgot-password:focus,
 .forgot-password:hover {
-    color: var(--link-color-hover);
+    color: var(--link-color-hover) !important;
 }
 /* SCROLLBAR */
 ::-webkit-scrollbar-thumb {
