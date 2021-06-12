@@ -16,10 +16,19 @@
 :root {
   --main-bg-color: radial-gradient(ellipse at center, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
   --modal-bg-color: radial-gradient(ellipse at top, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
-  --request-button:#F44336;
-  --request-button-hover: #0b3161;
-  --loading-bar: #F44336 ; 
-  --accent-color: #ff6155;
-  --label-color: rgba(11, 49, 97, 0.75);
-
+  
+  --button-color: hsla(0,0%,100%,.15);
+  --button-color-hover: hsla(0,0%,100%,.30);
+  --button-text: #eee;
+  --button-text-hover: #FFF;
+  
+  --accent-color:  244, 67, 54;
+  --accent-color-hover: #0b3161;
+  --queue-color: #6b5;
+  --link-color: #ddd;
+  --link-color-hover: #fff;
+    
+  --text:#eee;
+  --text-hover: #fff;
+  --text-muted: #999;
 }
