@@ -222,6 +222,16 @@ a:hover {
     max-height: 290px;
     max-width: 12rem;
 }
+@media (max-width: 768px) {
+.section h2 {
+    margin-left: 5px !important;
+    }
+}
+@media (min-width: 768px) {
+    .section h2 {
+        margin-left: 63px !important;
+    }
+}
 
 /* CARDS */
 .ombi-card {
