@@ -826,7 +826,8 @@ a:hover {
 [class*="QualityProfiles-center-"],
 [class*="LanguageProfiles-center-"],
 [class*="ReleaseProfiles-center-"],
-[class*="Applications-center-"] {
+[class*="Applications-center-"],
+[class*="AppProfiles-center-"] {
     background-color: transparent;
     border: none;
     color: var(--text);
