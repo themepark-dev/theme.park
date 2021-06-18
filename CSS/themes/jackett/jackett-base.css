@@ -215,6 +215,6 @@ fieldset[disabled] .form-control {
 
 .alert-info {
     color: #ffffff;
-    background-color: var(--modal-bg-color);
+    background: var(--modal-bg-color);
     border-color: transparent;
 }
