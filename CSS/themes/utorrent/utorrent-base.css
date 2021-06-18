@@ -1,0 +1,639 @@
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+/*		   		        Made by @gilbN					 */
+/*			      https://github.com/gilbN/theme.park			 */
+/* Based on https://github.com/themightykitten/ruTorrent-MaterialDesign */
+@import url(https://use.fontawesome.com/releases/v5.0.7/css/all.css); @import url(https://fonts.googleapis.com/css?family=Roboto:400,600,700,300); @font-face {
+    font-family: 'Roboto'!important
+}
+
+html,body {
+    font-family: 'Roboto' !important;
+    background: var(--main-bg-color);
+    color: #fff;
+    text-shadow: 0 -1px 0 #000
+}
+
+hr {
+    background-color: rgba(255, 255, 255, 0.08);
+    height: 1px;
+    border-width: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+iframe {
+    border-width: 0px !important;
+    border: none !important;
+}
+
+div.CMenu {
+    opacity: .98;
+    border: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    background: var(--modal-bg-color);
+    padding: 0;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+div.CMenu ul {
+    background: transparent;
+}
+
+div.CMenu li {
+    background: var(--modal-bg-color);
+}
+
+div.CMenu li a {
+    color: #fff;
+    background: transparent;
+}
+
+div.CMenu li a.dis {
+    color: #fff;
+    background: rgba(0,0,0,0.4)!important;
+}
+
+div.CMenu li a.dis:hover {
+    color: #fff
+}
+
+div.CMenu li.sep {
+    background-color: rgba(255, 255, 255, .08);
+    height: 1px;
+    border-width: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .08);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+div.CMenu li a.sel {
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+div.CMenu li ul li a.sel {
+    color: #178FD1
+}
+
+div.CMenu li:hover>a {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    color: #fff;
+    text-shadow: 0 -1px 0 #000;
+}
+
+div.stable {
+    background: transparent;
+    border: 0;
+}
+
+.stable-body td {
+    border-bottom: 1px solid #ff000000!important;
+}
+
+#mainStatusBar {
+    border-top: 1px solid #292828!important;
+    background: rgba(0,0,0,.5);
+}
+
+.sel {
+    border: 1px dotted #555
+}
+
+div#mainToolbar {
+    background-color: rgba(0, 0, 0, 0.25);
+    background-image: none;
+    border-bottom: none;
+    padding: 4px 0 2px 0;
+}
+
+div#mainToolbar a {
+    margin: 4px 5px 0 5px
+}
+
+div#mainToolbar a:hover {
+    background: none
+}
+
+div#mainToolbar a#add {
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat 0 0 !important;
+}
+
+div#mainToolbar a#add:hover {
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat 0 -24px !important;
+}
+
+div#mainToolbar a#addurl {
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat 0 0 !important;
+}
+
+div#mainToolbar a#addurl::after {
+    content: "";
+    background: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/deluge/connection.png);
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    top: 19px;
+    left: 49px;
+    background-size: 12px;
+    background-repeat: no-repeat;
+}
+
+div#mainToolbar a#addurl:hover {
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat 0 -24px !important;
+}
+
+div#mainToolbar a#addurl:hover::after {
+    background-position: bottom;
+}
+
+div#mainToolbar a#remove {
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat -48px 0 !important;
+}
+
+div#mainToolbar a#remove:hover {
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat -48px -24px !important;
+}
+
+div#mainToolbar a#start {
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat -72px 0 !important;
+}
+
+div#mainToolbar a#start:hover {
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat -72px -24px !important;
+}
+
+div#mainToolbar a#pause {
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat -96px 0 !important;
+}
+
+div#mainToolbar a#pause:hover {
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat -96px -24px !important;
+}
+
+div#mainToolbar a#stop {
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat -120px 0 !important;
+}
+
+div#mainToolbar a#stop:hover {
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat -120px -24px !important;
+}
+
+div#mainToolbar a#queueup {
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat -144px 0 !important;
+}
+
+div#mainToolbar a#queueup:hover {
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat -144px -24px !important;
+}
+
+div#mainToolbar a#queuedown {
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat -168px 0 !important;
+}
+
+div#mainToolbar a#queuedown:hover {
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat -168px -24px !important;
+}
+
+div#mainToolbar a#search {
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat -192px 0 !important;
+}
+
+div#mainToolbar a#rssdownloader {
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat -241px 0 !important;
+}
+
+div#mainToolbar a#rssdownloader:hover {
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat -241px -24px !important;
+}
+
+div#mainToolbar a#setting {
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat -264px 0 !important;
+}
+
+div#mainToolbar a#setting:hover {
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat -264px -24px !important;
+}
+
+div select {
+    -webkit-appearance: none !important;
+    background: #1f1f1f url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/dropdown.png) no-repeat 0 0;
+    background-position: right;
+    border: 1px solid #1f1f1f ;
+    padding-right: 15px !important;
+}
+
+#overlay {
+    font-family: 'Roboto' !important;
+    background: var(--main-bg-color);
+    color: #fff;
+    text-shadow: 0 -1px 0 #000
+}
+
+#overlay .msg {
+    background: rgba(0, 0, 0, 0.5);
+    border: 0;
+}
+
+a {
+    color: #fff;
+    font-family: 'Roboto'
+}
+
+#overlay {
+    border: none !important;
+}
+
+div#dlgSettings-head {
+    background: #273231 url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/dlg-toolbars.gif) no-repeat scroll 0 -72px;
+    text-shadow: 0 -1px 0 #000;
+}
+
+div#mainCatList {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-right: 1px solid transparent;
+    border-left: none
+}
+
+div#mainCatList ul li span {
+    color: #D4D6C9
+}
+
+div#mainCatList ul li.sel span {
+    font-weight: bold;
+    color: var(--default-button-color);
+}
+
+div#mainCatList ul li {
+    border: none;
+    margin: 5px;
+    font-family: 'Roboto'
+}
+
+div#mainCatList ul li.sel {
+    background-color: transparent;
+    color: var(--default-button-color);
+    text-shadow: 0 -1px 0 #000;
+    border: none
+}
+
+#mainCatList-categories li .icon {
+    background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/status_icons.png)
+}
+
+#mainTorList .stable-icon .icon {
+    background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/status_icons.png);
+}
+
+div#mainCatList ul li.sel span {
+    color: var(--default-button-color)
+}
+
+div#mainInfoPane-content {
+    background: transparent;
+    border: 0;
+}
+
+div#mainInfoPane-generalTab, div#mainInfoPane-loggerTab {
+    background: transparent;
+    border: 0;
+}
+
+div#mainInfoPane-generalTab td.header {
+    background: rgba(0,0,0,0.2);
+    border: 0;
+}
+
+.folder-tabs li>a {
+    background: transparent;
+    font-family: 'Roboto';
+    border: 0;
+    border-bottom: 1px solid #BBB;
+}
+
+.folder-tabs li.selected>a {
+    background: transparent!important;
+    font-family: 'Roboto';
+    border: 0;
+    border-bottom: 2px solid #09F;
+}
+
+.folder-tabs li>a:hover {
+    background: transparent;
+    font-family: 'Roboto';
+    border: 0;
+    border-bottom: 1px solid #54baff;
+}
+
+.folder-tabs li>a span {
+    color: #FFFFFF;
+}
+
+div#modalbg {
+    background-color: #181818
+}
+
+* > fieldset {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 2px
+}
+
+a.dlg-close {
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/close.png) no-repeat scroll left center
+}
+
+a.dlg-close:hover {
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/close.png) no-repeat scroll left center
+}
+
+a.dlg-close:link,a.dlg-close:visited {
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/close.png) no-repeat scroll left center
+}
+
+fieldset {
+    background-color: transparent;
+    font-family: 'Roboto'
+}
+
+legend {
+    color: #999;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1em
+}
+
+td.disabled,label.disabled,span.disabled,div.disabled {
+    color: #b9b9b9
+}
+
+input.disabled {
+    background-color: #181818;
+    color: #333;
+    border: 1px solid #333
+}
+
+fieldset legend {
+    color: #FFF;
+}
+
+input[type="text"], input[type="password"], input:not([type=button]):not([type=submit]), select {
+    color: #fff;
+    border: none;
+    background: rgba(0, 0, 0, 0.25) url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/headers.png) repeat-x scroll 0 -138px;
+    border-radius: 2px;
+    outline: none;
+}
+
+input[type="text"][disabled],input[type="password"][disabled],input[type="file"][disabled],select[disabled] {
+    color: #fff;
+    border: none;
+    background: rgba(0, 0, 0, 0.08) url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/headers.png) repeat scroll 0 0!important;
+    border-radius: 2px;
+    opacity: .2
+}
+
+textarea {
+    border: none;
+    border-radius: 2px
+}
+
+input.btn {
+    background: var(--default-button-color) none repeat scroll 0 0;
+    border-radius: 2px;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+    display: inline;
+    font-weight: 700;
+    text-shadow: none;
+    position: relative;
+}
+
+input.btn:hover,input.btn:focus {
+    background: var(--default-button-color-hover) none repeat scroll 0 0;
+}
+
+div#dlgProps textarea#prop-trackers {
+    background: #222;
+    border: 1px solid #333;
+    color: #ff8000;
+}
+
+div.dlg-window {
+    background: var(--modal-bg-color);
+    color: #fff;
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border: none;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.60)
+}
+
+div.dlg-body {
+    padding: 20px 5px;
+}
+
+
+#dlgSettings-menuCont {
+    background: transparent;
+    border: 0;
+}
+
+#dlgSettings-menu .selected>a {
+    background: rgba(0,0,0,0.4);
+}
+
+.stable-infobar {
+    background: rgba(0,0,0,0.4);
+}
+
+.dlg-head {
+    background-color: #273238!important;
+    border-bottom: none;
+    color: #fff!important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.dlg-foot {
+    padding: 1em;
+    bottom: -0.6em;
+    position: absolute;
+}
+div#dlgAdd-head.dlg-head {
+    background: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/dlg-toolbars.gif) 0 0 no-repeat !important;
+}
+div#dlgProps-head.dlg-head {
+    background: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/torrent.png) 0 0 no-repeat !important;
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+    min-height: 50px;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    background-color: hsla(0,0%,100%,.2);
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    min-height: 50px;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    background-color: hsla(0,0%,100%,.5);
+    background-clip: padding-box;
+}
+
+span#ds,span#dl {
+    color: #178FD1
+}
+
+span#ra {
+    color: #F70000
+}
+
+span#us,span#ul {
+    color: #AACF27
+}
+
+.stable-head table tr td {
+    border-right: 1px solid #242424!important;
+    font-family: Roboto!important
+}
+
+.stable {
+    border: 1px solid;
+    border-color: #333333 #181818 #181818 #333333;
+}
+
+.stable td {
+    padding: 2px;
+}
+
+.stable-head {
+    color: #dcdcdc;
+    background: rgba(0, 0, 0, 0.45);
+    border: none;
+    text-shadow: 0px 1px 0px #000;
+    font-family: Ubuntu;
+}
+
+.stable-head table tr {
+    background: transparent;
+    border: none;
+}
+
+.stable-head table tr td {
+    border: none;
+    font-family: Ubuntu;
+    height: 18px;
+    line-height: 18px;
+    cursor: pointer;
+}
+
+.stable-head td:hover {
+    background: rgba(0,0,0,0.4);
+}
+
+.stable-body {
+    background: window;
+    text-shadow: 0px 1px 0px #000;
+    color: #CACCCC;
+}
+
+.stable-body td {
+    border-bottom: 1px solid #333333;
+}
+
+.stable-body td div {
+    font-family: Ubuntu, Verdana, Arial, Helvetica, sans-serif;
+    height: 16px !important;
+}
+
+.stable-body tr:nth-child(odd) td {
+    background: rgba(0,0,0,0.2)
+}
+
+.stable-body tr:nth-child(even) td {
+    background: rgba(0,0,0,0.35)
+}
+
+.stable-body tr {
+    height: 22px;
+}
+
+.stable-body tr.selected {
+    background: rgba(0,0,0,0.4)!important;
+}
+
+.stable-body {
+    background: transparent
+}
+
+.stable-body tr.selected td {
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+    text-shadow: 0px -1px 0px #000;
+}
+
+.stable-move-header {
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/header_move.gif) repeat-x scroll center top;
+    border: 1px solid #0099FF;
+}
+
+.stable-move-header {
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/header_move.gif) repeat-x scroll center top rgba(128,128,128,0.7);
+    border: 1px solid #0099FF;
+}
+
+.stable-separator-header {
+    background: #181818;
+}
+
+.stable-progress-bar {
+    border: 0px;
+    border-bottom: none !important;
+    background: var(--progress-color) !important;
+}
+
+.stable-progress {
+    background: rgba(0,0,0,0.2);
+    line-height: 16px;
+    position: relative;
+    text-align: center;
+    overflow: visible;
+    font-size: 11px;
+    font-family: Roboto;
+    z-index: 1;
+    text-shadow: 0px 0px 2px #000;
+    color: #fff !important;
+}
+
+#dlgRSSDownloader-content {
+    background: transparent;
+}
+
+#dlgRSSDownloader-feedsMenu, #dlgRSSDownloader-filtersMenu {
+    background: transparent;
+    border: 0;
+    border-right: 1px solid rgba(255,255,255,0.4);
+}
