@@ -139,7 +139,7 @@ div#mainToolbar a#addurl {
 
 div#mainToolbar a#addurl::after {
     content: "";
-    background: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/deluge/connection.png);
+    background: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/connection.png);
     height: 12px;
     width: 12px;
     position: absolute;
