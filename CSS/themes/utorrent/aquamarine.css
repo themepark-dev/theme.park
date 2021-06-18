@@ -11,8 +11,8 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
-/* RUTORRENT AQUAMARINE THEME */
-@import url(./utorrent-base.css);
+/* UTORRENT AQUAMARINE THEME */
+@import url(https://theme-park.dev/CSS/themes/utorrent/utorrent-base.css);
 :root {
   --main-bg-color: radial-gradient(ellipse at center, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
   --modal-bg-color: radial-gradient(ellipse at top, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
