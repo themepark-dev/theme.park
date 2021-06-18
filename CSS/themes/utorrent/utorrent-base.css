@@ -126,15 +126,15 @@ div#mainToolbar a:hover {
 }
 
 div#mainToolbar a#add {
-    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat 0 0 !important;
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/toolbar.png) no-repeat 0 0 !important;
 }
 
 div#mainToolbar a#add:hover {
-    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat 0 -24px !important;
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/toolbar.png) no-repeat 0 -24px !important;
 }
 
 div#mainToolbar a#addurl {
-    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat 0 0 !important;
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/toolbar.png) no-repeat 0 0 !important;
 }
 
 div#mainToolbar a#addurl::after {
@@ -150,7 +150,7 @@ div#mainToolbar a#addurl::after {
 }
 
 div#mainToolbar a#addurl:hover {
-    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat 0 -24px !important;
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/toolbar.png) no-repeat 0 -24px !important;
 }
 
 div#mainToolbar a#addurl:hover::after {
@@ -158,76 +158,76 @@ div#mainToolbar a#addurl:hover::after {
 }
 
 div#mainToolbar a#remove {
-    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat -48px 0 !important;
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/toolbar.png) no-repeat -48px 0 !important;
 }
 
 div#mainToolbar a#remove:hover {
-    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat -48px -24px !important;
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/toolbar.png) no-repeat -48px -24px !important;
 }
 
 div#mainToolbar a#start {
-    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat -72px 0 !important;
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/toolbar.png) no-repeat -72px 0 !important;
 }
 
 div#mainToolbar a#start:hover {
-    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat -72px -24px !important;
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/toolbar.png) no-repeat -72px -24px !important;
 }
 
 div#mainToolbar a#pause {
-    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat -96px 0 !important;
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/toolbar.png) no-repeat -96px 0 !important;
 }
 
 div#mainToolbar a#pause:hover {
-    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat -96px -24px !important;
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/toolbar.png) no-repeat -96px -24px !important;
 }
 
 div#mainToolbar a#stop {
-    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat -120px 0 !important;
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/toolbar.png) no-repeat -120px 0 !important;
 }
 
 div#mainToolbar a#stop:hover {
-    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat -120px -24px !important;
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/toolbar.png) no-repeat -120px -24px !important;
 }
 
 div#mainToolbar a#queueup {
-    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat -144px 0 !important;
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/toolbar.png) no-repeat -144px 0 !important;
 }
 
 div#mainToolbar a#queueup:hover {
-    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat -144px -24px !important;
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/toolbar.png) no-repeat -144px -24px !important;
 }
 
 div#mainToolbar a#queuedown {
-    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat -168px 0 !important;
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/toolbar.png) no-repeat -168px 0 !important;
 }
 
 div#mainToolbar a#queuedown:hover {
-    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat -168px -24px !important;
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/toolbar.png) no-repeat -168px -24px !important;
 }
 
 div#mainToolbar a#search {
-    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat -192px 0 !important;
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/toolbar.png) no-repeat -192px 0 !important;
 }
 
 div#mainToolbar a#rssdownloader {
-    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat -241px 0 !important;
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/toolbar.png) no-repeat -241px 0 !important;
 }
 
 div#mainToolbar a#rssdownloader:hover {
-    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat -241px -24px !important;
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/toolbar.png) no-repeat -241px -24px !important;
 }
 
 div#mainToolbar a#setting {
-    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat -264px 0 !important;
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/toolbar.png) no-repeat -264px 0 !important;
 }
 
 div#mainToolbar a#setting:hover {
-    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/toolbar.png) no-repeat -264px -24px !important;
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/toolbar.png) no-repeat -264px -24px !important;
 }
 
 div select {
     -webkit-appearance: none !important;
-    background: #1f1f1f url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/dropdown.png) no-repeat 0 0;
+    background: #1f1f1f url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/dropdown.png) no-repeat 0 0;
     background-position: right;
     border: 1px solid #1f1f1f ;
     padding-right: 15px !important;
@@ -245,6 +245,21 @@ div select {
     border: 0;
 }
 
+#overlay .msg img {
+    visibility: hidden;
+}
+
+#overlay .msg:before {
+    content: '';
+    background: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/ajax-loader.gif) no-repeat 0 0;
+    background-size: 16px;
+    padding: 8px;
+    display: inline-block;
+    margin-left: -4px;
+    margin-top: 4px;
+    position: absolute;
+}
+
 a {
     color: #fff;
     font-family: 'Roboto'
@@ -255,7 +270,7 @@ a {
 }
 
 div#dlgSettings-head {
-    background: #273231 url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/dlg-toolbars.gif) no-repeat scroll 0 -72px;
+    background: #273231 url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/dlg-toolbars.gif) no-repeat scroll 0 -72px;
     text-shadow: 0 -1px 0 #000;
 }
 
@@ -289,11 +304,11 @@ div#mainCatList ul li.sel {
 }
 
 #mainCatList-categories li .icon {
-    background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/status_icons.png)
+    background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/status_icons.png)
 }
 
 #mainTorList .stable-icon .icon {
-    background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/status_icons.png);
+    background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/status_icons.png);
 }
 
 div#mainCatList ul li.sel span {
@@ -350,15 +365,15 @@ div#modalbg {
 }
 
 a.dlg-close {
-    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/close.png) no-repeat scroll left center
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/close.png) no-repeat scroll left center
 }
 
 a.dlg-close:hover {
-    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/close.png) no-repeat scroll left center
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/close.png) no-repeat scroll left center
 }
 
 a.dlg-close:link,a.dlg-close:visited {
-    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/close.png) no-repeat scroll left center
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/close.png) no-repeat scroll left center
 }
 
 fieldset {
@@ -390,7 +405,7 @@ fieldset legend {
 input[type="text"], input[type="password"], input:not([type=button]):not([type=submit]), select {
     color: #fff;
     border: none;
-    background: rgba(0, 0, 0, 0.25) url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/headers.png) repeat-x scroll 0 -138px;
+    background: rgba(0, 0, 0, 0.25) url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/headers.png) repeat-x scroll 0 -138px;
     border-radius: 2px;
     outline: none;
 }
@@ -398,7 +413,7 @@ input[type="text"], input[type="password"], input:not([type=button]):not([type=s
 input[type="text"][disabled],input[type="password"][disabled],input[type="file"][disabled],select[disabled] {
     color: #fff;
     border: none;
-    background: rgba(0, 0, 0, 0.08) url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/headers.png) repeat scroll 0 0!important;
+    background: rgba(0, 0, 0, 0.08) url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/headers.png) repeat scroll 0 0!important;
     border-radius: 2px;
     opacity: .2
 }
@@ -473,10 +488,10 @@ div.dlg-body {
     position: absolute;
 }
 div#dlgAdd-head.dlg-head {
-    background: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/dlg-toolbars.gif) 0 0 no-repeat !important;
+    background: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/dlg-toolbars.gif) 0 0 no-repeat !important;
 }
 div#dlgProps-head.dlg-head {
-    background: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/torrent.png) 0 0 no-repeat !important;
+    background: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/torrent.png) 0 0 no-repeat !important;
 }
 
 ::-webkit-scrollbar {
@@ -596,12 +611,12 @@ span#us,span#ul {
 }
 
 .stable-move-header {
-    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/header_move.gif) repeat-x scroll center top;
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/header_move.gif) repeat-x scroll center top;
     border: 1px solid #0099FF;
 }
 
 .stable-move-header {
-    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/header_move.gif) repeat-x scroll center top rgba(128,128,128,0.7);
+    background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/utorrent/header_move.gif) repeat-x scroll center top rgba(128,128,128,0.7);
     border: 1px solid #0099FF;
 }
 
