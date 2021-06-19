@@ -315,6 +315,10 @@ a:hover {
     color: #fff;
 }
 
+[class*="ArtistDetailsSeason-albums-"] {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
 .fa-search:hover {
     color: var(--text-hover) !important;
 }
