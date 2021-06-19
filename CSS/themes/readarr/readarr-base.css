@@ -442,6 +442,10 @@ a:hover {
     color: var(--text-hover);
 }
 
+[class*="TableRowCell-cell-"] {
+    border-top: 1px solid rgb(255 255 255 / 25%);
+}
+
 /* TOP MENU SERIES */
 [class*="PageToolbar-toolbar-"] {
     background-color: rgba(0, 0, 0, .25);
