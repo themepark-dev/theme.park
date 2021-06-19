@@ -515,19 +515,19 @@ a:hover {
 
 /* SEARCH BAR */
 [class*="Input-input-"],
-[class*="AddNewArtist-searchIconContainer-"],
+[class*="AddNewItem-searchIconContainer-"],
 [class*="CheckInput-isIndeterminate-"] {
     border: none;
     background-color: rgba(255, 255, 255, 0.08);
     color: #FFF
 }
 
-[class*="ArtistSearchInput-container-"] [class*="Input-input-"] {
+[class*="AuthorSearchInput-input-"][class*="Input-input-"] {
     background: transparent;
     border-bottom: solid 1px #fff;
 }
 
-[class*="ArtistSearchInput-container-"] [class*="Input-input-"]:focus {
+[class*="AuthorSearchInput-input-"][class*="Input-input-"]:focus {
     border-bottom: none;
     background: transparent;
 }
@@ -1005,6 +1005,14 @@ input[type=password] {
 [class*="AuthorDetailsSeason-bookType-"] {
     border: none;
     background-color: rgba(0, 0, 0, .25);
+}
+
+[class*="AuthorDetailsSeason-books-"] {
+    border-top: 1px solid rgb(255 255 255 / 50%);
+}
+
+[class*="AuthorDetails-tabList-"] {
+    border-bottom: 1px solid rgb(255 255 255 / 50%);
 }
 
 [class*="BookDetails-selectedTab-"] {
