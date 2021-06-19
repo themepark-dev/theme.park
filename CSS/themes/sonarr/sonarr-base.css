@@ -1217,6 +1217,10 @@ a:hover {
     color: var(--text-muted);
 }
 
+[class*="SeriesDetails-contentContainer-"] {
+    color: var(--text);
+}
+
 .fa-search:hover {
     color: var(--text-hover) !important;
 }
