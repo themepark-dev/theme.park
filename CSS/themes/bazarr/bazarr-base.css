@@ -713,5 +713,5 @@ line {
 /* LOGS */
 /* Stack traceback */
 code.zmdi-language-python-alt {
-    color: #fff;
+    color: var(--text);
 }
