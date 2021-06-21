@@ -709,3 +709,9 @@ line {
     text-shadow: -2px -2px 5px rgb(var(--accent-color)),2px -2px 5px rgb(var(--accent-color)),-2px 2px 5px rgb(var(--accent-color)),2px 2px 5px rgb(var(--accent-color));
     overflow: visible
 }
+
+/* LOGS */
+/* Stack traceback */
+code.zmdi-language-python-alt {
+    color: #fff;
+}
