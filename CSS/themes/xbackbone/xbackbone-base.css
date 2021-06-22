@@ -14,6 +14,45 @@
     background: var(--main-bg-color) !important;
 }
 
+/* Scrollbar */
+@media only screen and (min-width: 768px) {
+    html {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    body {
+        overflow-y: auto;
+        height: 100%;
+        background: var(--main-bg-color)
+    }
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+    min-height: 50px;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    background-color: hsla(0, 0%, 100%, .2);
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    min-height: 50px;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    background-color: hsla(0, 0%, 100%, .5);
+    background-clip: padding-box;
+}
+
 /* TEXT */
 body,
 .table,
@@ -86,12 +125,15 @@ a:hover {
 .table-hover>tbody>tr:hover {
     color: var(--text-hover);
 }
+
 .table {
     border-color: rgb(255 255 255 / 20%);
 }
+
 .table>:not(:last-child)>:last-child>* {
     border-bottom-color: rgb(255 255 255 / 50%);
 }
+
 /* BUTTONS */
 
 .btn-light {
@@ -201,9 +243,11 @@ textarea.form-control:focus {
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgb(var(--accent-color), .25);
 }
+
 .dropzone {
     border: 2px dashed rgb(255 255 255 / 30%);
 }
+
 /* PAGINATION */
 .page-link {
     color: var(--button-text);
