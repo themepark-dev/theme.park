@@ -83,6 +83,7 @@ html {
 }
 
 .detailButton-icon {
+    background: none !important;
     border-color: rgba(255,255,255,.3)
 }
 
