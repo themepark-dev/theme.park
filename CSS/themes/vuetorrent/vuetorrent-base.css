@@ -107,14 +107,20 @@ p,
 /* TOP NAVBAR */
 .theme--light.v-app-bar.v-toolbar.v-sheet,
 .theme--dark.v-app-bar.v-toolbar.v-sheet {
-    background-color: rgba(0, 0, 0, .25) !important;
     color: var(--text) !important;
+}
+
+.v-app-bar.v-app-bar--hide-shadow {
+    background-color: rgba(0, 0, 0, .25) !important;
+}
+
+.v-app-bar.v-app-bar--is-scrolled{
+    background: var(--main-bg-color) !important;
 }
 
 .v-navigation-drawer__content .theme--dark.v-card,
 .v-navigation-drawer__content .theme--light.v-card {
     background: rgba(0, 0, 0, 0) !important;
-
 }
 
 /* SIDE MENU */
@@ -302,7 +308,11 @@ p,
 .v-menu__content .theme--dark.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled),
 .v-menu__content .theme--light.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled) {
     color: var(--text) !important;
-    background: var(--modal-bg-color) !important;
+}
+
+.v-menu__content .theme--dark.theme--dark.v-list,
+.v-menu__content .theme--light.theme--light.v-list {
+background: var(--modal-bg-color) !important;
 }
 
 .theme--dark.v-icon,
@@ -312,7 +322,7 @@ p,
 
 .theme--light.v-divider,
 .theme--dark.v-divider {
-    border-color: rgba(255, 255, 255, .65) !important;
+    border-color: rgba(255, 255, 255,.2) !important;
 }
 
 /* TABLE */
