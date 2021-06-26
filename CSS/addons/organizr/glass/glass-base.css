@@ -493,6 +493,8 @@
     background: var(--div-background-color-15) !important;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
+    -webkit-backdrop-filter: blur(10px) !important;
+    backdrop-filter: blur(10px) !important;
 }
 
 /* Email users */
