@@ -640,6 +640,10 @@ a:hover {
     text-decoration: none;
 }
 
+.DiscoverMoviePoster-title-1owri {
+    background-color: var(--accent-color);
+}
+
 /*Title*/
 [class*="AddListMovieOverview-link-"] {
     color: var(--text);
