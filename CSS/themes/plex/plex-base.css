@@ -39,7 +39,8 @@ a,
   color: var(--link-color)
 }
 
-a:hover {
+a:hover,
+.artwork-file-container:hover a {
   color: var(--link-color-hover);
 }
 
@@ -109,7 +110,9 @@ a:hover {
 [class*="PageHeaderTabDropdown-isSelected-"],
 [class*="MultiSelectPageHeader-selectedTitle-"],
 [class*="PageHeaderMultiselectActions-container-"],
-[class*="PageHeaderMultiselectActions-count-"] {
+[class*="PageHeaderMultiselectActions-count-"],
+[class*="PivotTab-selectedButton-"],
+[class*="PivotTabDropdown-isSelected-"] {
   color: rgb(var(--accent-color));
   border-color: rgb(var(--accent-color));
 }
@@ -143,6 +146,10 @@ a:hover {
   color: rgba(0, 0, 0, .75);
   transform: scale(1.4);
 }
+
+[class*="SelectButton-selectButton-"].isActive [class*="SelectButton-selectCircle-"] {
+  background: rgb(var(--accent-color-hover));
+  }
 
 [class*="PlayButton-playButton-"]:hover [class*="PlayButton-playCircle-"],
 [class*="PlayPauseOverlay-playCircle-"] {
@@ -379,24 +386,48 @@ fieldset[disabled] .btn-primary:hover {
   color: var(--text-color);
 }
 
-[class*="Button-primary-"] {
+[class*="Button-primary-"],
+.selectize-control.multi .selectize-input>div {
   background-color: var(--button-color);
   color: var(--button-text);
 }
 
-[class*="Button-primary-"]:hover {
+[class*="Button-primary-"]:hover,
+.selectize-control.multi .selectize-input>div.active {
   background-color: var(--button-color-hover);
   color: var(--button-text-hover);
 }
 
 /* DROPDOWN MENU */
-[class*="Menu-menu-"] {
+[class*="Menu-menu-"],
+.selectize-dropdown, .selectize-dropdown.form-control {
   background: var(--modal-bg-color);
 }
 
 [class*="ServerMenuItem-selectedServerMenuItem-"],
 [class*="ServerMenuItem-selectedIcon-"] {
   color: rgb(var(--accent-color));
+}
+
+[class*="Tooltip-tooltip-"] {
+  background-color: var(--button-color);
+  color: #fff;
+}
+
+[class*="Tooltip-tooltipBottomArrow-"]:after {
+  border-top-color: var(--button-color);
+}
+
+[class*="Tooltip-tooltipTopArrow-"]:after {
+  border-bottom-color: var(--button-color);
+}
+
+[class*="Tooltip-tooltipRightArrow-"]:after {
+  border-left-color: var(--button-color);
+}
+
+[class*="Tooltip-tooltipLeftArrow-"]:after {
+  border-right-color: var(--button-color);
 }
 
 /* SETTINGS */
