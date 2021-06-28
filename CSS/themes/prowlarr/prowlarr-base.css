@@ -287,7 +287,7 @@ a:hover {
 }
 
 [class*="Icon-default-"]:hover {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="MonitorToggleButton-toggleButton-"] {
