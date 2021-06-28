@@ -640,8 +640,10 @@ a:hover {
     text-decoration: none;
 }
 
-.DiscoverMoviePoster-title-1owri {
-    background-color: var(--accent-color);
+[class*="DiscoverMoviePoster-title-"],
+[class*="DiscoverMoviePosterInfo-info-"] {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: var(--text);
 }
 
 /*Title*/
