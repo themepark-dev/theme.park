@@ -11,7 +11,7 @@
 /* 			      https://github.com/gilbN/theme.park			 */
 
 /* SONARR PLEX THEME */
-@import url(https://theme-park.dev/CSS/themes/sonarr/sonarr-base.css);
+@import url(https://gflix.app/theme.park/CSS/themes/sonarr/sonarr-base.css);
 :root {
   --main-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-light2.png") center center/cover no-repeat fixed;
   --modal-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-dark2.png") center center/cover no-repeat fixed;
@@ -34,6 +34,7 @@
   --queue-color: #27c24c;
   --link-color: #e5a00d;
   --link-color-hover: #fff;
+  --label-text-color: #fff;
     
   --text:#eee;
   --text-hover: #fff;

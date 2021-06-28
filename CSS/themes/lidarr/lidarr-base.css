@@ -326,10 +326,10 @@ a:hover {
 [class*="Label-default-"] {
     border-color: var(--accent-color);
     background-color: var(--accent-color);
-    color: #fff;
+    color: var(--label-text-color);
 }
 
-[class*="Icon-default-"]:hover {
+[class*="Icon-default-"]:hover:not([class*="Label-large-"] [class*="Icon-default-"], [class*="PathInput-fileBrowserButton-"]svg) {
     color: var(--text-hover);
 }
 
@@ -418,13 +418,13 @@ a:hover {
 [class*="Label-info-"] {
     border-color: var(--accent-color);
     background-color: var(--accent-color);
-    color: #fff;
+    color: var(--label-text-color);
 }
 
 [class*="PageSidebarItem-status-"][class*="Label-info-"] {
     border-color: var(--queue-color);
     background-color: var(--queue-color);
-    color: #fff;
+    color: var(--label-text-color);
 }
 
 /* Table options*/
@@ -525,7 +525,7 @@ a:hover {
 [class*="CheckInput-isIndeterminate-"] {
     border: none;
     background-color: rgba(255, 255, 255, 0.08);
-    color: #FFF
+    color: var(--label-text-color);
 }
 
 [class*="ArtistSearchInput-container-"] [class*="Input-input-"] {
