@@ -24,7 +24,7 @@
   --text: #b7b7b7;
   --text-hover: #fff;
   --text-muted: #6c757d;
-  --link-hover: rgba(255, 255, 255, 0.45);
+  --link-color: rgba(255, 255, 255, 0.45);
 
   --heatmap-color-1: #303030;
   --heatmap-color-2: #5E5E5E;
