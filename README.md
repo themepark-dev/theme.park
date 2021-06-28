@@ -72,7 +72,7 @@
 <tr style="height: 26px;">
 <td style="width: 109px; height: 98px; text-align: center;">
 <p><a href="https://docs.theme-park.dev/themes/jellyfin"><img src="https://docs.theme-park.dev/site_assets/jellyfin/logo.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://docs.theme-park.dev/themes/jellyfin">Jellyfin/Emby</a></p>
+<p><a href="https://docs.theme-park.dev/themes/jellyfin">Jellyfin</a></p>
 </td>
 <td style="width: 160px; height: 26px; text-align: center;">
 <p><a href="https://docs.theme-park.dev/themes/emby"><img src="https://docs.theme-park.dev/site_assets/emby/logo.png" alt="" width="48" height="48" /></a></p>
