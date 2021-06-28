@@ -640,6 +640,12 @@ a:hover {
     text-decoration: none;
 }
 
+[class*="DiscoverMoviePoster-title-"],
+[class*="DiscoverMoviePosterInfo-info-"] {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: var(--text);
+}
+
 /*Title*/
 [class*="AddListMovieOverview-link-"] {
     color: var(--text);
