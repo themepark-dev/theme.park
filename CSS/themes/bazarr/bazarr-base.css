@@ -220,7 +220,7 @@ a:hover {
     }
 }
 .sidebar-container .badge-secondary {
-    color: var(--button-text);
+    color: var(--label-text-color);
     background-color: var(--queue-color);
 }
 /* TOP NAV BAR */
@@ -299,6 +299,7 @@ a:hover {
 
 .progress-bar.bg-primary {
     background: rgb(var(--accent-color)) !important;
+    color: var(--label-text-color) !important;
 }
 
 .progress-bar.bg-warning {
