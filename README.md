@@ -1,4 +1,4 @@
-<img src="/banners/tp_banner.png"/>
+<img src="https://docs.theme-park.dev/site_assets/tp_banner.png"/>
 
 [![Docs](https://img.shields.io/static/v1.svg?color=009688&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=theme-park.dev&message=Docs)](https://docs.theme-park.dev "Documentation for all the themes in this repository.")
 [![Discord](https://img.shields.io/discord/591352397830553601.svg?color=009688&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=Discord&logo=discord)](https://discord.gg/HM5uUKU "Discord for theme installation support")
@@ -21,12 +21,12 @@
 
 <p align="center">Click on the banners for screenshots.</p>
 
-<a href="https://docs.theme-park.dev/colors/organizr-dark"><img src="/banners/organizr_dark_banner.png" alt="Organizr-Dark"/></a>
-<a href="https://docs.theme-park.dev/colors/aquamarine"><img src="/banners/aquamarine_banner.png" alt="Aquamarine"/></a>
-<a href="https://docs.theme-park.dev/colors/hotline"><img src="/banners/hotline_banner.png" alt="Hotline"/></a>
-<a href="https://docs.theme-park.dev/colors/space-gray"><img src="/banners/spacegray_banner.png" alt="Space-Gray"/></a>
-<a href="https://docs.theme-park.dev/colors/dark"><img src="/banners/dark_banner.png" alt="Dark"/></a>
-<a href="https://docs.theme-park.dev/colors/plex"><img src="/banners/plex_banner.png" alt="Plex"/></a>
+<a href="https://docs.theme-park.dev/colors/organizr-dark"><img src="https://docs.theme-park.dev/site_assets/organizrdark_banner.png" alt="Organizr-Dark"/></a>
+<a href="https://docs.theme-park.dev/colors/aquamarine"><img src="https://docs.theme-park.dev/site_assets/aquamarine_banner.png" alt="Aquamarine"/></a>
+<a href="https://docs.theme-park.dev/colors/hotline"><img src="https://docs.theme-park.dev/site_assets/hotline_banner.png" alt="Hotline"/></a>
+<a href="https://docs.theme-park.dev/colors/space-gray"><img src="https://docs.theme-park.dev/site_assets/spacegray_banner.png" alt="Space-Gray"/></a>
+<a href="https://docs.theme-park.dev/colors/dark"><img src="https://docs.theme-park.dev/site_assets/dark_banner.png" alt="Dark"/></a>
+<a href="https://docs.theme-park.dev/colors/plex"><img src="https://docs.theme-park.dev/site_assets/plex_banner.png" alt="Plex"/></a>
 
 <h2><a href="https://docs.theme-park.dev/setup">Installation</a></h2>
 
@@ -75,16 +75,16 @@
 <p><a href="https://docs.theme-park.dev/themes/jellyfin">Jellyfin/Emby</a></p>
 </td>
 <td style="width: 160px; height: 26px; text-align: center;">
-<p><a href="https://docs.theme-park.dev/themes/tautulli"><img src="https://docs.theme-park.dev/site_assets/tautulli/logo.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://docs.theme-park.dev/themes/tautulli">Tautulli</a></p>
+<p><a href="https://docs.theme-park.dev/themes/emby"><img src="https://docs.theme-park.dev/site_assets/emby/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/emby">Emby</a></p>
 </td>
 <td style="width: 10px; height: 26px; text-align: center;">
 <p><a href="https://docs.theme-park.dev/themes/ombi"><img src="https://docs.theme-park.dev/site_assets/ombi/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/ombi">Ombi</a></p>
 </td>
 <td style="width: 90px; height: 26px; text-align: center;">
-<p><a href="https://docs.theme-park.dev/themes/requestrr"><img src="https://docs.theme-park.dev/site_assets/requestrr/logo.png" alt="" width="48" height="45" /></a></p>
-<p><a href="https://docs.theme-park.dev/themes/requestrr">Requestrr</a></p>
+<p><a href="https://docs.theme-park.dev/themes/tautulli"><img src="https://docs.theme-park.dev/site_assets/tautulli/logo.png" alt="" width="48" height="45" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/tautulli">Tautulli</a></p>
 </td>
 <td style="width: 136px; height: 26px; text-align: center;">
 <p><a href="https://docs.theme-park.dev/themes/organizr"><img src="https://docs.theme-park.dev/site_assets/organizr/logo.png" alt="" width="48" height="48" /></a></p>
@@ -247,6 +247,12 @@
 <td style="width: 110px; height: 26px; text-align: center;">
 <p><a href="https://docs.theme-park.dev/themes/xbackbone"><img src="https://docs.theme-park.dev/site_assets/xbackbone/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/xbackbone">Xbackbone</a></p>
+</td>
+</tr>
+<tr>
+<td style="width: 90px; height: 26px; text-align: center;">
+<p><a href="https://docs.theme-park.dev/themes/requestrr"><img src="https://docs.theme-park.dev/site_assets/requestrr/logo.png" alt="" width="48" height="45" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/requestrr">Requestrr</a></p>
 </td>
 </tr>
 </tbody>
