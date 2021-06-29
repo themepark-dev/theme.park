@@ -161,6 +161,11 @@ a:hover {
 [class*="CheckInput-primaryIsChecked-"] {
     border-color: var(--accent-color) !important;
     background-color: var(--accent-color) !important;
+    color: var(--label-text-color) !important;
+}
+
+[class*="CheckInput-input-"][class*="CheckInput-isNotChecked-"] {
+    background: #fff;
 }
 
 /* HEADER */
@@ -220,6 +225,7 @@ a:hover {
 [class*="EnhancedSelectInputOption-isSelected-"],
 [class*="EnhancedSelectInputOption-isSelected-"]:hover {
     background-color: rgba(255, 255, 255, 0.20) !important;
+    color: var(--text-hover);
 }
 
 [class*="EnhancedSelectInputOption-option-"]:hover {
@@ -269,7 +275,7 @@ a:hover {
 /* LIBRARY PAGE */
 /* LIDARR SPECIFIC */
 [class*="ArtistIndexPoster-controls-"] {
-    background-color: #000 !important;
+    background-color: var(--accent-color) !important;
 }
 
 /* OVERVIEW PAGE */
@@ -319,9 +325,9 @@ a:hover {
     border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.fa-search:hover {
+/* .fa-search:hover {
     color: var(--text-hover) !important;
-}
+} */
 
 [class*="Label-default-"] {
     border-color: var(--accent-color);
@@ -409,7 +415,17 @@ a:hover {
     color: var(--text);
 }
 
+[class*="Label-default-"] [class*="IconButton-button-"],
+[class*="Label-default-"] [class*="IconButton-button-"]:hover  {
+    color: var(--label-text-color);
+}
+
 [class*="IconButton-button-"]:hover {
+    background-color: transparent;
+    color: var(--text-hover);
+}
+
+[class*="Table-tableContainer-"] [class*="IconButton-button-"]:hover {
     background-color: transparent;
     color: var(--text-hover);
 }
@@ -430,12 +446,12 @@ a:hover {
 /* Table options*/
 [class*="TableOptionsColumn-column-"] {
     background: rgba(0, 0, 0, .25);
-    color: #FFF;
+    color: var(--text-hover);
     border: none;
 }
 
 [class*="TableHeaderCell-headerCell-"] {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="Table-table-"] {
@@ -487,7 +503,7 @@ a:hover {
 [class*="ArtistIndexPoster-title-"],
 [class*="ArtistIndexPosterInfo-info-"] {
     background-color: rgba(255, 255, 255, 0.08);
-    color: var(--text);
+    color: var(--text-hover);
 }
 
 
@@ -525,7 +541,7 @@ a:hover {
 [class*="CheckInput-isIndeterminate-"] {
     border: none;
     background-color: rgba(255, 255, 255, 0.08);
-    color: var(--label-text-color);
+    color: #FFF;
 }
 
 [class*="ArtistSearchInput-container-"] [class*="Input-input-"] {
@@ -583,6 +599,11 @@ a:hover {
 
 [class*="RootFolderSelectInputSelectedValue-freeSpace-"] {
     color: #fff;
+}
+
+[class*="RootFolderSelectInputOption-freeSpace-"],
+[class*="RootFolderSelectInputOption-seriesFolder-"] {
+    color: var(--text-muted);
 }
 
 /* IMPORT ARTIST */
@@ -808,7 +829,6 @@ a:hover {
 [class*="ReleaseProfiles-center-"] {
     background-color: transparent;
     border: none;
-    color: var(--text);
 }
 
 [class*="QualityProfileItem-qualityProfileItem-"],
@@ -843,7 +863,6 @@ a:hover {
 [class*="Indexers-center-"] {
     background-color: transparent;
     border: none;
-    color: var(--text);
 }
 
 [class*="Card-card-"],
@@ -859,7 +878,6 @@ a:hover {
 [class*="RootFolders-center-"] {
     background-color: transparent;
     border: none;
-    color: var(--text);
 }
 
 [class*="Indexers-center-"],
@@ -876,21 +894,18 @@ a:hover {
 [class*="DownloadClients-center-"] {
     background-color: transparent;
     border: none;
-    color: var(--text);
 }
 
 /* CONNECTIONS */
 [class*="Notifications-center-"] {
     background-color: transparent;
     border: none;
-    color: var(--text);
 }
 
 /* LISTS */
 [class*="ImportLists-center-"] {
     background-color: transparent;
     border: none;
-    color: var(--text);
 }
 
 /* LOG */

@@ -159,6 +159,11 @@ a:hover {
 [class*="CheckInput-primaryIsChecked-"] {
     border-color: var(--accent-color) !important;
     background-color: var(--accent-color) !important;
+    color: var(--label-text-color) !important;
+}
+
+[class*="CheckInput-input-"][class*="CheckInput-isNotChecked-"] {
+    background: #fff;
 }
 
 /* HEADER */
@@ -232,7 +237,7 @@ a:hover {
 /* MOVIES PAGE */
 /* RADARR SPECIFIC */
 [class*="MovieIndexPoster-controls-"] {
-    background-color: #000 !important;
+    background-color: var(--accent-color) !important;
 }
 
 /* OVERVIEW PAGE */
@@ -358,6 +363,11 @@ a:hover {
 
 [class*="IconButton-button-"]:hover {
     background-color: transparent;
+    color: var(--label-text-color);
+}
+
+[class*="Table-tableContainer-"] [class*="IconButton-button-"]:hover {
+    background-color: transparent;
     color: var(--text-hover);
 }
 
@@ -384,18 +394,18 @@ a:hover {
 }
 
 [class*="MovieDetails-tabList-"] {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 /* Table options*/
 [class*="TableOptionsColumn-column-"] {
     background: rgba(0, 0, 0, .25);
-    color: #FFF;
+    color: var(--text-hover);
     border: none;
 }
 
 [class*="TableHeaderCell-headerCell-"] {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="Table-table-"] {
@@ -450,7 +460,7 @@ a:hover {
 [class*="MovieIndexPosterInfo-info-"],
 [class*="MovieCreditPoster-title-"] {
     background-color: rgba(255, 255, 255, 0.08);
-    color: var(--text);
+    color: var(--text-hover);
 }
 
 /* LIBRARY TOP HEADER DROPDOWN */
@@ -502,6 +512,7 @@ a:hover {
 [class*="EnhancedSelectInputOption-isSelected-"],
 [class*="EnhancedSelectInputOption-isSelected-"]:hover {
     background-color: rgba(255, 255, 255, 0.20) !important;
+    color: var(--text-hover);
 }
 
 [class*="EnhancedSelectInputOption-option-"]:hover {
@@ -518,7 +529,7 @@ a:hover {
 [class*="CheckInput-isIndeterminate-"] {
     border: none;
     background-color: rgba(255, 255, 255, 0.08);
-    color: var(--label-text-color);
+    color: #fff;
 }
 
 [class*="IndexerSearchInput-container-"] [class*="Input-input-"] {
@@ -577,6 +588,11 @@ a:hover {
 [class*="RootFolderSelectInputSelectedValue-movieFolder-"],
 [class*="RootFolderSelectInputSelectedValue-freeSpace-"] {
     color: #fff;
+}
+
+[class*="RootFolderSelectInputOption-freeSpace-"],
+[class*="RootFolderSelectInputOption-movieFolder-"] {
+    color: var(--text-muted);
 }
 
 /* MOVE THIS */
@@ -823,18 +839,23 @@ a:hover {
     color: var(--text);
 }
 
-[class*="Card-card-"]:hover {
+[class*="Card-card-"]:hover,
+[class*="Applications-center-"]:hover {
     color: var(--text-hover);
 }
 
 [class*="QualityProfiles-center-"],
 [class*="LanguageProfiles-center-"],
-[class*="ReleaseProfiles-center-"],
+[class*="ReleaseProfiles-center-"] {
+    background-color: transparent;
+    border: none;
+    color: var(--text);
+}
+
 [class*="Applications-center-"],
 [class*="AppProfiles-center-"] {
     background-color: transparent;
     border: none;
-    color: var(--text);
 }
 
 [class*="QualityProfileItem-qualityProfileItem-"],
@@ -876,14 +897,12 @@ a:hover {
 [class*="DownloadClients-center-"] {
     background-color: transparent;
     border: none;
-    color: var(--text);
 }
 
 /* CONNECTIONS */
 [class*="Notifications-center-"] {
     background-color: transparent;
     border: none;
-    color: var(--text);
 }
 
 /* LISTS */

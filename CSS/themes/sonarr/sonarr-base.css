@@ -169,6 +169,11 @@ a:hover {
 [class*="CheckInput-primaryIsChecked-"] {
     border-color: var(--accent-color) !important;
     background-color: var(--accent-color) !important;
+    color: var(--label-text-color) !important;
+}
+
+[class*="CheckInput-input-"][class*="CheckInput-isNotChecked-"] {
+    background: #fff;
 }
 
 /* HEADER */
@@ -249,7 +254,7 @@ a:hover {
 /* SERIES PAGE */
 /* SONARR SPECIFIC  */
 [class*="SeriesIndexPoster-controls-"] {
-    background-color: #000 !important;
+    background-color: var(--accent-color) !important;
 }
 
 /* OVERVIEW PAGE */
@@ -294,6 +299,10 @@ a:hover {
 [class*="SeriesDetailsSeason-actionButton-"],
 [class*="SeriesDetailsSeason-collapseButtonIcon-"] {
     color: var(--text) !important;
+}
+[class*="SeriesDetailsSeason-actionButton-"]:hover,
+[class*="SeriesDetailsSeason-collapseButtonIcon-"]:hover {
+    color: var(--text-hover) !important;
 }
 
 [class*="SeriesDetailsSeason-sizeOnDisk-"] {
@@ -373,7 +382,16 @@ a:hover {
 
 [class*="IconButton-button-"]:hover {
     background-color: transparent;
-    color: var(--text-hover) !important;
+    color: var(--label-text-color);
+}
+
+.SeriesDetailsSeason-left-29MvW [class*="IconButton-button-"]:hover {
+    color: var(--text-hover);
+}
+
+[class*="Table-tableContainer-"] [class*="IconButton-button-"]:hover {
+    background-color: transparent;
+    color: var(--text-hover);
 }
 
 [class*="Label-default-"] {
@@ -403,12 +421,12 @@ a:hover {
 /* Table options*/
 [class*="TableOptionsColumn-column-"] {
     background: rgba(0, 0, 0, .25);
-    color: #FFF;
+    color: var(--text-hover);
     border: none;
 }
 
 [class*="TableHeaderCell-headerCell-"] {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="Table-table-"] {
@@ -457,7 +475,7 @@ a:hover {
 [class*="SeriesIndexPoster-nextAiring-"],
 [class*="SeriesIndexPosterInfo-info-"] {
     background-color: rgba(255, 255, 255, 0.08);
-    color: var(--text);
+    color: var(--text-hover);
 }
 
 /* SERIES TOP HEADER DROPDOWN */
@@ -508,6 +526,7 @@ a:hover {
 [class*="EnhancedSelectInputOption-isSelected-"],
 [class*="EnhancedSelectInputOption-isSelected-"]:hover {
     background-color: rgba(255, 255, 255, 0.20) !important;
+    color: var(--text-hover);
 }
 
 [class*="EnhancedSelectInputOption-option-"]:hover {
@@ -525,7 +544,7 @@ a:hover {
 [class*="CheckInput-isIndeterminate-"] {
     border: none;
     background-color: rgba(255, 255, 255, 0.08);
-    color: var(--label-text-color);
+    color: #fff;
 }
 
 [class*="SeriesSearchInput-container-"] [class*="Input-input-"] {
@@ -590,6 +609,11 @@ a:hover {
 [class*="RootFolderSelectInputSelectedValue-seriesFolder-"],
 [class*="RootFolderSelectInputSelectedValue-freeSpace-"] {
     color: #fff;
+}
+
+[class*="RootFolderSelectInputOption-freeSpace-"],
+[class*="RootFolderSelectInputOption-seriesFolder-"] {
+    color: var(--text-muted);
 }
 
 /* IMPORT */
@@ -820,7 +844,7 @@ a:hover {
     color: var(--text);
 }
 
-[class*="Card-card-"] {
+[class*="Card-card-"]:hover {
     color: var(--text-hover);
 }
 
@@ -829,7 +853,6 @@ a:hover {
 [class*="ReleaseProfiles-center-"] {
     background-color: transparent;
     border: none;
-    color: var(--text);
 }
 
 [class*="QualityProfileItem-qualityProfileItem-"],
@@ -859,7 +882,6 @@ a:hover {
 [class*="Indexers-center-"] {
     background-color: transparent;
     border: none;
-    color: var(--text);
 }
 
 /* INDEXERS */
@@ -868,21 +890,18 @@ a:hover {
 [class*="DownloadClients-center-"] {
     background-color: transparent;
     border: none;
-    color: var(--text);
 }
 
 /*INPORT LISTS */
 [class*="ImportLists-center-"] {
     background-color: transparent;
     border: none;
-    color: var(--text);
 }
 
 /* CONNECTIONS */
 [class*="Notifications-center-"] {
     background-color: transparent;
     border: none;
-    color: var(--text);
 }
 
 /* LOG */
