@@ -92,6 +92,9 @@ a:hover {
 .table {
     color: var(--text);
 }
+.table thead th {
+    color: var(--text-hover);
+}
 
 /* Form Stuff */
 
@@ -313,7 +316,7 @@ a:hover {
 }
 
 .badge-primary {
-    color: #fff;
+    color: var(--label-text-color);
     background-color: rgb(var(--accent-color));
 }
 
@@ -620,16 +623,19 @@ a:hover {
 }
 
 .custom-selector .selector__option--is-focused {
-    background-color: rgba(var(--accent-color), .2)
+    background-color: rgba(var(--accent-color), .2);
+    color: #fff;
 }
 
 .custom-selector .selector__option--is-focused:active,
 .custom-selector .selector__option--is-focused:focus {
-    background-color: rgba(var(--accent-color), .2)
+    background-color: rgba(var(--accent-color), .2);
+    color: #fff;
 }
 
 .custom-selector .selector__option--is-selected {
     background-color: rgb(var(--accent-color));
+    color: var(--label-text-color);
 }
 
 .custom-selector .selector__option--is-selected:active {
@@ -707,8 +713,12 @@ line {
 }
 
 .alert-container .toast-container .toast .toast-body .progress .progress-bar {
-    text-shadow: -2px -2px 5px rgb(var(--accent-color)),2px -2px 5px rgb(var(--accent-color)),-2px 2px 5px rgb(var(--accent-color)),2px 2px 5px rgb(var(--accent-color));
+    text-shadow: -2px -2px 5px rgba(var(--accent-color),.15),2px -2px 5px rgba(var(--accent-color),.15),-2px 2px 5px rgba(var(--accent-color),.15),2px 2px 5px rgba(var(--accent-color),.15);
     overflow: visible
+}
+.progress-bar-striped {
+    background-image: linear-gradient(45deg,rgba(var(--accent-color),.15) 25%,transparent 0,transparent 50%,rgba(var(--accent-color),.15) 0,rgba(var(--accent-color),.15) 75%,transparent 0,transparent);
+    background-size: 1rem 1rem
 }
 
 /* LOGS */
