@@ -158,12 +158,17 @@ a:hover {
 
 .btn-primary:hover,
 .btn-outline-dark:hover,
-.btn-outline-secondary:hover {
+.btn-outline-secondary:hover,
+.btn-check:focus+.btn-primary, .btn-primary:focus {
     color: var(--button-text-hover);
     background-color: var(--button-color-hover);
     border-color: var(--button-color-hover);
 }
-
+.btn-check:active+.btn-primary:focus, .btn-check:checked+.btn-primary:focus, 
+.btn-primary.active:focus, .btn-primary:active:focus, .show>.btn-primary.dropdown-toggle:focus,
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+    box-shadow: 0 0 0 0.25rem rgba(var(--accent-color),.5);
+}
 .btn-outline-primary,
 .btn-outline-info {
     color: var(--button-color);
