@@ -387,7 +387,9 @@ a:hover {
     color: var(--label-text-color);
 }
 
-.SeriesDetailsSeason-left-29MvW [class*="IconButton-button-"]:hover {
+[class*="SeriesDetailsSeason-left-"] [class*="IconButton-button-"]:hover,
+[class*="SeriesDetails-seriesNavigationButton-"]:hover,
+[class*="SeriesDetails-monitorToggleButton-"]:hover {
     color: var(--text-hover);
 }
 

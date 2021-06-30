@@ -422,6 +422,15 @@ a:hover {
     color: var(--label-text-color);
 }
 
+[class*="AuthorDetailsHeader-monitorToggleButton-"]:hover,
+[class*="AuthorDetails-authorNavigationButton-"]:hover,
+[class*="AuthorDetails-authorUpButton-"]:hover,
+[class*="BookDetailsHeader-monitorToggleButton-1F9Pp"]:hover,
+[class*="BookDetails-bookUpButton-"]:hover,
+[class*="BookDetails-bookNavigationButton-"]:hover {
+    color: var(--text-hover);
+}
+
 [class*="Table-tableContainer-"] [class*="IconButton-button-"]:hover {
     background-color: transparent;
     color: var(--text-hover);
