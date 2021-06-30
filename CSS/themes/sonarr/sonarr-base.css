@@ -328,11 +328,13 @@ a:hover {
 [class*="ProtocolLabel-torrent-"] {
     border-color: #00853d !important;
     background-color: #00853d !important;
+    color: #fff !important;
 }
 
 [class*="ProtocolLabel-usenet-"] {
     border-color: #17b1d9 !important;
     background-color: #17b1d9 !important;
+    color: #fff !important;
 }
 
 [class*="SeriesDetailsSeason-seasonNumber-"] {
