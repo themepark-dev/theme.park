@@ -309,7 +309,7 @@ a:hover {
 }
 
 .btn-ombi:hover {
-    background-color: var(--button-color) !important;
+    background-color: var(--button-color-hover) !important;
     color: var(--button-text-hover) !important;
 
 }
@@ -404,6 +404,11 @@ small.important {
 .mat-raised-button:not([class*=mat-elevation-z]):not(.mat-raised-button.mat-warn):not(.viewon-btn.plex) {
     box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
     background: var(--button-color);
+}
+
+.mat-raised-button:not([class*=mat-elevation-z]):not(.mat-raised-button.mat-warn):not(.viewon-btn.plex):hover {
+    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+    background: var(--button-color-hover) !important;
 }
 
 /* Plex buttons */
@@ -546,6 +551,7 @@ tr.mat-header-row {
 
 #info-wrapper .mat-chip.mat-standard-chip.mat-chip-selected.mat-primary {
     background-color: rgb(var(--accent-color));
+    color: var(--label-text-color);
 }
 
 hr {

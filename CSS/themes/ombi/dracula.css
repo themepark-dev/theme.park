@@ -11,24 +11,25 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
-/* OMBI DARK THEME */
+/* OMBI DRACULA THEME */
 @import url(https://theme-park.dev/CSS/themes/ombi/ombi-base.css);
 :root {
-  --main-bg-color: radial-gradient(circle, #3a3a3a, #2d2d2d, #202020, #141414, #000000) center center/cover no-repeat fixed;
-  --modal-bg-color: radial-gradient(circle , #3a3a3a, #2d2d2d, #202020, #141414, #000000) center center/cover no-repeat fixed;
-  
-  --button-color: hsla(0,0%,100%,.15);
-  --button-color-hover: rgb(82, 82, 82);
+  --main-bg-color: #282a36;
+  --modal-bg-color: #282a36;
+
+  --button-color: #bd93f9;
+  --button-color-hover: #ff79c6;
   --button-text: #eee;
   --button-text-hover: #FFF;
 
-  --accent-color:  100, 100, 100;
-  --accent-color-hover: #ffffff73;
-  --queue-color: #6b5;
-  --link-color: #ddd;
-  --link-color-hover: #fff;
+  --accent-color:  80, 250, 123;
+  --accent-color-hover: #50fa7b;
+  --queue-color: #50fa7b;
+  --link-color: #ff79c6;
+  --link-color-hover: #8be9fd;
+  --label-text-color: #282a36;
     
-  --text:#eee;
-  --text-hover: #fff;
+  --text:#6272a4;
+  --text-hover: #95adfa;
   --text-muted: #999;
-  }
+}
