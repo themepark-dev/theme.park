@@ -193,21 +193,39 @@ a:hover {
 }
 
 .sidebar-container .sidebar-button {
+    color: var(--text) !important;
     background: transparent
 }
 
 .sidebar-container .sidebar-button:active,
 .sidebar-container .sidebar-button:focus {
-    color: #fff;
+    color: #fff !important;
     background-color: hsla(0, 0%, 100%, .08) !important;
 }
 
 .sidebar-container .sidebar-button:hover {
     background-color: hsla(0, 0%, 100%, .08) !important;
+    color: var(--text-hover) !important;
 }
+.content-header.bg-dark .btn-dark:hover {
+    color:var(--text-hover) !important;
+    }
 
 .sidebar-container .sidebar-button.sb-active {
     background-color: hsla(0, 0%, 100%, .08);
+    color: #fff !important;
+}
+
+.content-header.bg-dark>button {
+    color: var(--text);
+}
+
+.content-header.bg-dark>button:hover {
+    color: var(--text-hover);
+}
+
+.content-header.bg-dark .btn-dark {
+    color:var(--text);
 }
 
 .sidebar-container .sidebar-collapse-box.active:before,
@@ -318,6 +336,11 @@ a:hover {
 .badge-primary {
     color: var(--label-text-color);
     background-color: rgb(var(--accent-color));
+}
+
+.text-truncate.badge.badge-secondary {
+    color: var(--label-text-color);
+    background-color: var(--queue-color);
 }
 
 .popover {
@@ -564,6 +587,10 @@ a:hover {
 
 .custom-switch .custom-control-input:disabled:checked~.custom-control-label:before {
     background-color: rgba(var(--accent-color), .5)
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label:after {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath fill='%23000' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z'/%3E%3C/svg%3E");
 }
 
 .custom-select:focus {
