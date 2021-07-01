@@ -11,7 +11,7 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
-/* MOVIEMATCH DARK THEME */
+/* PETIO DARK THEME */
 @import url(https://theme-park.dev/CSS/themes/petio/petio-base.css);
 :root {
   --main-bg-color: radial-gradient(circle, #3a3a3a, #2d2d2d, #202020, #141414, #000000) center center/cover no-repeat fixed;
@@ -25,5 +25,5 @@
   --accent-color: 100, 100, 100;
   --accent-color-hover: #ffffff73;
   --link-color: #fff;
-  --spinner: invert(35%) sepia(12%) saturate(4%) hue-rotate(2deg) brightness(104%) contrast(86%);
+  --spinner: invert(35%) sepia(12%) saturate(4%) hue-rotate(2deg) brightness(104%) contrast(86%); /* Made with https://codepen.io/jsm91/embed/ZEEawyZ */
 }

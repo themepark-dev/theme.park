@@ -11,7 +11,7 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
-/* MOVIEMATCH HOTLINE THEME */
+/* PETIO HOTLINE THEME */
 @import url(https://theme-park.dev/CSS/themes/petio/petio-base.css);
 :root {
   --main-bg-color: radial-gradient(ellipse at center, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
@@ -25,5 +25,5 @@
   --accent-color: 244, 67, 54;
   --accent-color-hover: #0b3161;
   --link-color: #0b3161;
-  --spinner: invert(32%) sepia(35%) saturate(3786%) hue-rotate(341deg) brightness(100%) contrast(92%);
+  --spinner: invert(32%) sepia(35%) saturate(3786%) hue-rotate(341deg) brightness(100%) contrast(92%); /* Made with https://codepen.io/jsm91/embed/ZEEawyZ */
 }
