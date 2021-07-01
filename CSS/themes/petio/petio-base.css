@@ -129,6 +129,17 @@ p a,
     color: var(--link-color);
 }
 
+a:hover,
+.table-action:hover,
+.session--toggle:hover,
+p a:hover,
+.profile-page .logout:hover,
+.person--bio--read-more:hover,
+.filter--item--collapse:hover,
+.filter--comparison:hover {
+    color: var(--link-color-hover);
+}
+
 /* OTHER */
 .widget--item hr {
     background: rgb(255 255 255 / 50%);

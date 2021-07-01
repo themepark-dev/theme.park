@@ -25,5 +25,6 @@
   --accent-color: 44, 171, 227;
   --accent-color-hover: #fff;
   --link-color: #2cabe3;
+  --link-color-hover: #fff;
   --spinner: invert(65%) sepia(83%) saturate(2026%) hue-rotate(167deg) brightness(90%) contrast(97%); /* Made with https://codepen.io/jsm91/embed/ZEEawyZ */
 }

@@ -11,20 +11,20 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
-/* PETIO SPACE GRAY THEME */
+/* PETIO DRACULA THEME */
 @import url(https://theme-park.dev/CSS/themes/petio/petio-base.css);
 :root {
-  --main-bg-color:  radial-gradient( ellipse at center,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed;
-  --modal-bg-color: radial-gradient( ellipse at top,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed; 
-  --text-color: #eee;
-  --text-color-hover: #fff;
-  --button-color: #607D8B;
-  --button-color-hover: #81a6b7;
+  --main-bg-color: #282a36;
+  --modal-bg-color: #282a36;
+  --text-color:#6272a4;
+  --text-color-hover: #95adfa;
+  --button-color: #bd93f9;
+  --button-color-hover: #ff79c6;
   --button-text: #eee;
-  --button-text-hover: #fff;
-  --accent-color: 129, 166, 183;
-  --accent-color-hover: #607D8B;
-  --link-color: #9adfff;
-  --link-color-hover: #fff;
-  --spinner: invert(50%) sepia(31%) saturate(341%) hue-rotate(155deg) brightness(88%) contrast(85%); /* Made with https://codepen.io/jsm91/embed/ZEEawyZ */
+  --button-text-hover: #FFF;
+  --accent-color: 80, 250, 123;
+  --accent-color-hover: #8be9fd;
+  --link-color: #ff79c6;
+  --link-color-hover: #8be9fd;
+  --spinner: invert(79%) sepia(27%) saturate(1033%) hue-rotate(74deg) brightness(104%) contrast(96%); /* Made with https://codepen.io/jsm91/embed/ZEEawyZ */
 }
