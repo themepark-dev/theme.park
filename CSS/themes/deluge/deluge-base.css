@@ -18,7 +18,7 @@
   
   html {
       background: var(--main-bg-color);
-      color: #FFF;
+      color: var(--text);
       font-family: 'Roboto', sans-serif !important;
   }
   
@@ -73,7 +73,7 @@
   }
   
   .x-item-disabled * {
-      color: #aaaaaa !important;
+      color: var(--text-muted) !important;
   }
   
   .x-splitbar-proxy {
@@ -278,20 +278,20 @@
   
   .x-tab-strip span.x-tab-strip-text {
       font:normal 11px 'Roboto', tahoma,arial,helvetica;
-      color:#aaaaaa;
+      color:var(--text);
   }
   
   .x-tab-strip-over span.x-tab-strip-text {
-      color:#ffffff;
+      color: var(--text-hover);
   }
   
   .x-tab-strip-active span.x-tab-strip-text {
-      color:#cccccc;
+      color:var(--text-hover) !important;
       font-weight:bold;
   }
   
   .x-tab-strip-disabled .x-tabs-text {
-      color:#aaaaaa;
+      color: var(--text-muted);
   }
   
   .x-tab-strip-top .x-tab-right, .x-tab-strip-top .x-tab-left, .x-tab-strip-top .x-tab-strip-inner{
@@ -303,6 +303,11 @@
       margin-left: 2px;
       background: rgba(0, 0, 0, 0.25);
   }
+
+  #torrentDetails dl dt, dl.singleline dt {
+    color: var(--text-hover) !important;
+}
+
   .x-tab-strip-bottom .x-tab-right {
       //background-image: url(../images/gray/tabs/tab-btm-inactive-right-bg.gif);
   }
@@ -482,9 +487,13 @@
   
   .x-fieldset legend {
       font:bold 11px 'Roboto', tahoma, arial, helvetica, sans-serif;
-      color:#ffffff;
+      color: var(--text-hover);
   }
-  
+
+  .x-window-draggable, .x-window-draggable .x-window-header-text {
+    color: var(--text-hover);
+}
+
   .x-panel-tbar .icon-add {
       background: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/deluge/add.png) no-repeat 0 0 !important;
       width: 24px !important;
@@ -667,12 +676,12 @@
   }
   
   #tbar-deluge-text.x-item-disabled * {
-      color: white !important;
+      color: var(--text) !important;
       font-size: 16px;
       font-weight: normal;
   }
   #tbar-deluge-text * {
-    color: white !important;
+    color: var(--text-hover) !important;
   }
   
   /* Buttons hover */
@@ -681,9 +690,11 @@
   }
   .x-window-bc .x-window-footer .x-btn {
       background-color: var(--button-color);
+      color: var(--button-text);
   }
   .x-window-bc .x-window-footer .x-btn:hover {
       background-color: var(--button-color-hover);
+      color: var(--button-text-hover)
   }
   .x-form-file-wrap .x-btn {
       position: absolute;
@@ -696,11 +707,12 @@
       right: 0;
       z-index: 1;
       background: var(--button-color-hover);
+      color: var(--button-text-hover)
   }
   
   .x-btn button{
       font:normal 11px 'Roboto', arial,tahoma,verdana,helvetica;
-      color:#ffffff;
+      color: var(--button-text);
   }
   
   .x-btn em {
@@ -965,6 +977,7 @@
   .x-grid3-header{
       background-color:rgba(0, 0, 0, 0.25);
       background-image: none;
+      color: var(--text-hover) !important;
   }
   
   .x-grid3-header-pop {
@@ -1025,6 +1038,7 @@
       background-color:rgba(255, 255, 255, 0.08) !important;
       background-image: none;
       border-color:transparent;
+      color: var(--text-hover) !important;
   }
   
   .x-grid3-cell-selected{
@@ -1091,7 +1105,7 @@
   }
   
   .x-grid3-hd-btn, a.x-grid3-hd-btn:hover {
-      background: linear-gradient(116deg, transparent 0%, transparent 0%, transparent 60%, #252525 60%), linear-gradient(244deg, #fff 0%, #fff 0%, #fff 60%, transparent 60%);
+      background: linear-gradient(116deg, transparent 0%, transparent 0%, transparent 60%, #252525 60%), linear-gradient(244deg, var(--text-hover) 0%, var(--text-hover) 0%, var(--text-hover) 60%, transparent 60%);
       height: 6px !important;
       width: 8px;
       padding: 7px 2px;
@@ -1603,17 +1617,19 @@
   }
   
   a.x-menu-item {
-      color:#fff;
+      color:var(--text);
   }
   
   .x-menu-item-active {
       background-image: none;
       background-color: rgba(255, 255, 255, 0.08);
       border-color:transparent;
+      color: var(--text-hover) !important;
   }
   
   .x-menu-item-active a.x-menu-item {
       border-color:transparent;
+      color: var(--text-hover) !important;
   }
   
   .x-menu-check-item .x-menu-item-icon{
@@ -1763,7 +1779,7 @@
   }
   
   .x-panel-header {
-      color:#ffffff;
+      color:var(--text-hover);
       font-weight:bold; 
       font-size: 11px;
       font-family: 'Roboto', tahoma,arial,verdana,sans-serif;
@@ -1829,18 +1845,18 @@
   .x-panel-collapsed .x-accordion-hd .x-tool-toggle {
       height: 8px;
       width: 8px;
-      border: 1px solid #a7a7a7;
+      border: 1px solid var(--button-color);
       padding: 2px;
-      background: linear-gradient(to bottom, transparent 45%, #fff 45%, #fff 55%, transparent 55%), linear-gradient(to right, transparent 45%, #fff 45%, #fff 55%, transparent 55%);
+      background: linear-gradient(to bottom, transparent 45%, var(--button-color) 45%, var(--button-color) 55%, transparent 55%), linear-gradient(to right, transparent 45%, var(--button-color) 45%, var(--button-color) 55%, transparent 55%);
       background-clip: content-box;
   }
   
   .x-accordion-hd .x-tool-toggle {
       height: 8px;
       width: 8px;
-      border: 1px solid #a7a7a7;
+      border: 1px solid var(--button-color);
       padding: 2px;
-      background: linear-gradient(to bottom, transparent 45%, #fff 45%, #fff 55%, transparent 55%);;
+      background: linear-gradient(to bottom, transparent 45%, var(--button-color) 45%, var(--button-color) 55%, transparent 55%);
       background-clip: content-box;
   }
   
@@ -1848,8 +1864,8 @@
       height: 8px;
       width: 6px;
       padding: 2px 3px;
-      border: 1px solid #a7a7a7;
-      background: linear-gradient(26deg, #252525 40%, #252525 40%, #252525 0%, transparent 0%), linear-gradient(154deg, #252525 40%, #fff 40%, #fff 100%, #252525 100%);
+      border: 1px solid var(--button-color);
+      background: linear-gradient(26deg, #252525 40%, #252525 40%, #252525 0%, transparent 0%), linear-gradient(154deg, #252525 40%, var(--button-color) 40%, var(--button-color) 100%, #252525 100%);
       background-clip: content-box;
   }
   
@@ -1857,8 +1873,8 @@
       height: 8px;
       width: 6px;
       padding: 2px 3px;
-      border: 1px solid #a7a7a7;
-      background: linear-gradient(-26deg, #252525 40%, #252525 40%, #252525 0%, transparent 0%), linear-gradient(-154deg, #252525 40%, #fff 40%, #fff 100%, #252525 100%);
+      border: 1px solid var(--button-color);
+      background: linear-gradient(-26deg, #252525 40%, #252525 40%, #252525 0%, transparent 0%), linear-gradient(-154deg, #252525 40%, var(--button-color) 40%, var(--button-color) 100%, #252525 100%);
       background-clip: content-box;
   }
   
@@ -1866,8 +1882,8 @@
       height: 6px !important;
       width: 8px;
       padding: 3px 2px;
-      border: 1px solid #a7a7a7;
-      background: linear-gradient(116deg, transparent 0%, transparent 0%, transparent 60%, #252525 60%), linear-gradient(244deg, #fff 0%, #fff 0%, #fff 60%, transparent 60%);
+      border: 1px solid var(--button-color);
+      background: linear-gradient(116deg, transparent 0%, transparent 0%, transparent 60%, #252525 60%), linear-gradient(244deg, var(--button-color) 0%, var(--button-color) 0%, var(--button-color) 60%, transparent 60%);
       background-clip: content-box;
   }
   
@@ -1875,8 +1891,8 @@
       height: 6px;
       width: 8px;
       padding: 3px 2px;
-      border: 1px solid #a7a7a7;
-      background: linear-gradient(116deg, #252525 40%, #252525 40%, #252525 0%, transparent 0%), linear-gradient(244deg, transparent 40%, #fff 40%, #fff 100%, transparent 100%);
+      border: 1px solid var(--button-color);
+      background: linear-gradient(116deg, #252525 40%, #252525 40%, #252525 0%, transparent 0%), linear-gradient(244deg, transparent 40%, var(--button-color) 40%, var(--button-color) 100%, transparent 100%);
       background-clip: content-box;
   }
   
@@ -1885,7 +1901,7 @@
       width: 8px;
       border: 1px solid #44444400;
       padding: 2px;
-      background: linear-gradient(to bottom right, transparent 45%, #fff 45%, #fff 55%, transparent 55%), linear-gradient(to top right, transparent 45%, #fff 45%, #fff 55%, transparent 55%);
+      background: linear-gradient(to bottom right, transparent 45%, var(--button-color) 45%, var(--button-color) 55%, transparent 55%), linear-gradient(to top right, transparent 45%, var(--button-color) 45%, var(--button-color) 55%, transparent 55%);
       background-clip: content-box;
   }
   
@@ -2038,7 +2054,7 @@
   }
   
   .x-accordion-hd {
-      color:#ffffff;
+      color:var(--text-hover);
       font-weight:normal;
       //background-image: url(../images/gray/panel/light-hd.gif);
   }
@@ -2090,25 +2106,27 @@
   }
   
   .x-progress-bar {
-      background-color:var(--progress-color);
+      background-color: rgb(var(--progress-color));
       background-image: none;
       border-top-color:transparent;
       border-bottom-color:transparent;
       border-right-color:transparent;
+      color: var(--label-text-color);
   }
   
   .x-progress-text {
       font-size:11px;
       font-weight:normal;
-      color:#fff !important;
+      color: var(--label-text-color) !important;
   }
   
   .x-progress-text-back {
-      color:#fff !important;
+    color: var(--label-text-color) !important;
   }
   .x-list-header {
       background-color: rgba(0, 0, 0, 0.25);
       background-image: none;
+      color: var(--text-hover) !important;
   }
   
   .x-list-header-inner div em {
@@ -2126,6 +2144,7 @@
   
   .x-list-selected {
       background-color: rgba(255, 255, 255, 0.08);
+      color: var(--text-hover) !important;
   }
   
   .x-list-resizer {
