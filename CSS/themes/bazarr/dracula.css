@@ -11,8 +11,8 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
-/* BAZARR AQUAMARINE THEME */
-@import url(https://theme-park.dev/CSS/themes/bazarr/bazarr-base.css);
+/* BAZARR DRACULA THEME */
+@import url(https://gflix.app/theme.park/CSS/themes/bazarr/bazarr-base.css);
 :root {
   --main-bg-color: #282a36;
   --modal-bg-color: #282a36;
