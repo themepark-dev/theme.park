@@ -47,9 +47,6 @@ html {
     color: rgba(255,255,255,.87)
 }
 
-.pageTitleWithDefaultLogo {
-    background-image: url(https://theme-park.dev/Resources/emby/logowhite.png)
-}
 
 .backgroundContainer,.dialog,html {
     background: var(--theme-background)
