@@ -199,21 +199,22 @@ a:hover {
 
 .sidebar-container .sidebar-button:active,
 .sidebar-container .sidebar-button:focus {
-    color: #fff !important;
-    background-color: hsla(0, 0%, 100%, .08) !important;
+    color: rgb(var(--accent-color)) !important;
+    background-color: rgba(0, 0, 0, 0.15) !important;
 }
 
 .sidebar-container .sidebar-button:hover {
-    background-color: hsla(0, 0%, 100%, .08) !important;
-    color: var(--text-hover) !important;
+    background-color: transparent !important;
+    color: rgb(var(--accent-color)) !important;
 }
 .content-header.bg-dark .btn-dark:hover {
     color:var(--text-hover) !important;
     }
 
-.sidebar-container .sidebar-button.sb-active {
-    background-color: hsla(0, 0%, 100%, .08);
-    color: #fff !important;
+.sidebar-container .sidebar-button.sb-active,
+.sidebar-container .sidebar-button.sb-active:hover {
+    background-color: rgba(0, 0, 0, 0.15) !important;
+    color: rgb(var(--accent-color)) !important;
 }
 
 .content-header.bg-dark>button {

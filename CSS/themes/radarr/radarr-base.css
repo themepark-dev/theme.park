@@ -207,20 +207,19 @@ a:hover {
     background-color: transparent;
 }
 
-[class*="PageSidebarItem-link-"]:hover,
-[class*="PageSidebarItem-link-"]:focus {
-    color: var(--text-hover) !important;
-    background-color: hsla(0, 0%, 100%, .08);
+[class*="PageSidebarItem-link-"]:hover {
+    color: var(--accent-color);
     text-decoration: none;
 }
 
-[class*="PageSidebarItem-isActiveLink-"] {
-    color: #FFF !important;
-    background-color: hsla(0, 0%, 100%, .08) !important;
+[class*="PageSidebarItem-isActiveLink-"],
+[class*="PageSidebarItem-isActiveLink-"]:hover, 
+[class*="PageSidebarItem-link-"]:focus {
+    color: var(--accent-color) !important;
 }
 
 [class*="PageSidebarItem-isActiveParentLink-"] {
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.15);
 }
 
 @media only screen and (max-width: 768px) {
