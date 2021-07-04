@@ -11,7 +11,7 @@
 /*			      https://github.com/gilbN/theme.park			 */
 
 /* SONARR  THEME */
-@import url(https://gflix.app/theme.park/CSS/themes/sonarr/sonarr-base.css);
+@import url(https://theme-park.dev/CSS/themes/sonarr/sonarr-base.css);
 :root {
   --main-bg-color: linear-gradient(45deg, #fb3f62 0%, #204c80 37%, #004249 97%) center center/cover no-repeat fixed;
   --modal-bg-color: radial-gradient(circle, #204c80 0%, #000 100%) center center/cover no-repeat fixed;

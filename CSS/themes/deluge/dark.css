@@ -13,24 +13,9 @@
 
 /* DELUGE DARK THEME */
 @import url(https://theme-park.dev/CSS/themes/deluge/deluge-base.css);
+@import url(https://theme-park.dev/CSS/variables/dark.css);
+
+/* APP VARS */
 :root {
-  --main-bg-color: radial-gradient(circle, #3a3a3a, #2d2d2d, #202020, #141414, #000000) center center/cover no-repeat fixed;
-  --modal-bg-color: radial-gradient(circle , #3a3a3a, #2d2d2d, #202020, #141414, #000000) center center/cover no-repeat fixed;
-
-  --button-color: hsla(0,0%,100%,.15);
-  --button-color-hover: hsla(0,0%,100%,.30);
-  --button-text: #eee;
-  --button-text-hover: #FFF;
-
-  --accent-color: 100, 100, 100;
-  --accent-color-hover: rgba(255, 255, 255, 0.45);
-  --link-color: #ddd;
-  --link-color-hover: #fff;
-  --label-text-color: #fff;
-    
-  --text:#eee;
-  --text-hover: #fff;
-  --text-muted: #999;
-
   --progress-color: 61, 61, 61;
 }
