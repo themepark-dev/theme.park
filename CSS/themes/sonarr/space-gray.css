@@ -12,10 +12,10 @@
 
 /* SONARR SPACE GRAY THEME */
 @import url(https://theme-park.dev/CSS/themes/sonarr/sonarr-base.css);
-:root {
-  --main-bg-color:  radial-gradient( ellipse at center,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed;
-  --modal-bg-color: radial-gradient( ellipse at top,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed;
+@import url(https://theme-park.dev/CSS/variables/space-gray.css);
 
+/* APP VARS */
+:root {
   --calendar-tv-unaired-premiere: 53 197 244;
   --calendar-tv-downloading: 122 67 182; 
   --calendar-tv-unmonitored: 173 173 173;
@@ -23,20 +23,5 @@
   --calendar-tv-missing: 240 80 80;
   --calendar-tv-on-air: 255 165 0; 
   --calendar-tv-available: 39 194 76;
-  
-  --button-color: #607D8B;
-  --button-color-hover: #81a6b7;
-  --button-text: #eee;
-  --button-text-hover: #fff;
-  
-  --accent-color: #607D8B;
-  --accent-color-hover: #81a6b7;
   --queue-color: #81a6b7;
-  --link-color: #81a6b7;
-  --link-color-hover: #fff;
-  --label-text-color: #fff;
-    
-  --text:#eee;
-  --text-hover: #fff;
-  --text-muted: #999;
 }
