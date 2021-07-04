@@ -111,7 +111,7 @@ a:hover {
 [class*="ModalHeader-modalHeader-"] {
     background: var(--modal-bg-color);
     color: #fff;
-    border-bottom: var(--accent-color);
+    border-bottom: rgb(var(--accent-color));
 }
 
 [class*="Modal-large-"],
@@ -124,7 +124,7 @@ a:hover {
 [class*="ModalFooter-modalFooter-"] {
     background: var(--modal-bg-color);
     color: #fff;
-    border-top: 1px solid var(--accent-color);
+    border-top: 1px solid rgb(var(--accent-color));
 }
 
 [class*="ModalContent-closeButton-"]:hover {
@@ -159,8 +159,8 @@ a:hover {
 }
 
 [class*="CheckInput-primaryIsChecked-"] {
-    border-color: var(--accent-color) !important;
-    background-color: var(--accent-color) !important;
+    border-color: rgb(var(--accent-color))!important;
+    background-color: rgb(var(--accent-color))!important;
     color: var(--label-text-color) !important;
 }
 
@@ -247,14 +247,14 @@ a:hover {
 }
 
 [class*="PageSidebarItem-link-"]:hover {
-    color: var(--accent-color);
+    color: rgb(var(--accent-color));
     text-decoration: none;
 }
 
 [class*="PageSidebarItem-isActiveLink-"],
 [class*="PageSidebarItem-isActiveLink-"]:hover, 
 [class*="PageSidebarItem-link-"]:focus {
-    color: var(--accent-color) !important;
+    color: rgb(var(--accent-color))!important;
 }
 
 [class*="PageSidebarItem-isActiveParentLink-"] {
@@ -268,13 +268,13 @@ a:hover {
 }
 
 [class*="PageSidebarItem-isActiveItem-"] {
-    border-left: 3px solid var(--accent-color);
+    border-left: 3px solid rgb(var(--accent-color));
 }
 
 /* LIBRARY PAGE */
 /* LIDARR SPECIFIC */
 [class*="ArtistIndexPoster-controls-"] {
-    background-color: var(--accent-color) !important;
+    background-color: rgb(var(--accent-color))!important;
 }
 
 /* OVERVIEW PAGE */
@@ -302,7 +302,7 @@ a:hover {
 }
 
 [class*=".ProgressBar-purple-"] {
-    background-color: var(--accent-color);
+    background-color: rgb(var(--accent-color));
 }
 
 
@@ -329,8 +329,8 @@ a:hover {
 } */
 
 [class*="Label-default-"] {
-    border-color: var(--accent-color);
-    background-color: var(--accent-color);
+    border-color: rgb(var(--accent-color));
+    background-color: rgb(var(--accent-color));
     color: var(--label-text-color);
 }
 
@@ -370,7 +370,7 @@ a:hover {
 }
 
 [class*="AlbumDetails-selectedTab-"] {
-    border-bottom: 4px solid var(--accent-color);
+    border-bottom: 4px solid rgb(var(--accent-color));
 }
 
 [class*="AlbumDetailsMedium-collapseButtonContainer-"] {
@@ -433,8 +433,8 @@ a:hover {
 
 
 [class*="Label-info-"] {
-    border-color: var(--accent-color);
-    background-color: var(--accent-color);
+    border-color: rgb(var(--accent-color));
+    background-color: rgb(var(--accent-color));
     color: var(--label-text-color);
 }
 
@@ -679,7 +679,7 @@ input:focus:-ms-input-placeholder {
 
 [class*="FieldSet-legend-"] {
     color: #FFF;
-    border-bottom: 1px solid var(--accent-color);
+    border-bottom: 1px solid rgb(var(--accent-color));
 }
 
 [class*="VirtualTableRow-row-"]:hover {

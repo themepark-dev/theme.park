@@ -13,31 +13,15 @@
 
 /* LIDARR HOTLINE THEME */
 @import url(https://theme-park.dev/CSS/themes/lidarr/lidarr-base.css);
-:root {
-  --main-bg-color: radial-gradient(ellipse at center, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
-  --modal-bg-color: radial-gradient(ellipse at top, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
+@import url(https://theme-park.dev/CSS/variables/hotline.css);
 
-  --calendar-tv-unaired-premiere: 53 197 244;
-  --calendar-tv-downloading: 122 67 182; 
-  --calendar-tv-unmonitored: 173 173 173;
-  --calendar-tv-unaired: 93 156 236;  
-  --calendar-tv-missing: 240 80 80;
-  --calendar-tv-on-air: 255 165 0; 
-  --calendar-tv-available: 39 194 76;
-  
-  --button-color: hsla(0,0%,100%,.15);
-  --button-color-hover: hsla(0,0%,100%,.30);
-  --button-text: #eee;
-  --button-text-hover: #FFF;
-  
-  --accent-color:  #F44336;
-  --accent-color-hover: #0b3161;
+/* APP VARS */
+:root {
+  --calendar-downloading: 122 67 182;
+  --calendar-downloaded: 39 194 76;
+  --calendar-unreleased: 93 156 236;
+  --calendar-partial: 255, 165, 0;  
+  --calendar-unmonitored: 173 173 173;
+  --calendar-missing: 240 80 80;
   --queue-color: #6b5;
-  --link-color: #ddd;
-  --link-color-hover: #fff;
-  --label-text-color: #fff;
-    
-  --text:#eee;
-  --text-hover: #fff;
-  --text-muted: #999;
 }
