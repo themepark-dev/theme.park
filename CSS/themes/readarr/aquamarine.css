@@ -13,30 +13,15 @@
 
 /* READARR AQUAMARINE THEME */
 @import url(https://theme-park.dev/CSS/themes/readarr/readarr-base.css);
-:root {
-  --main-bg-color: radial-gradient(ellipse at center, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
-  --modal-bg-color: radial-gradient(ellipse at top, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
+@import url(https://theme-park.dev/CSS/variables/aquamarine.css);
 
+/* APP VARS */
+:root {
   --calendar-downloading: 122 67 182;
   --calendar-downloaded: 39 194 76;
   --calendar-unreleased: 93 156 236;
   --calendar-partial: 255, 165, 0;  
   --calendar-unmonitored: 173 173 173;
   --calendar-missing: 240 80 80; 
-
-  --button-color: #009688;
-  --button-color-hover: #12afa0;
-  --button-text: #eee;
-  --button-text-hover: #FFF;
-  
-  --accent-color:  #009688;
-  --accent-color-hover: #12afa0;
   --queue-color: #009688;
-  --link-color: #0ed2bf;
-  --link-color-hover: #fff;
-  --label-text-color: #fff;
-    
-  --text:#eee;
-  --text-hover: #fff;
-  --text-muted: #999;
 }
