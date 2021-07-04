@@ -19,10 +19,16 @@
 
   --button-color: hsla(0,0%,100%,.15);
   --button-color-hover: hsla(0,0%,100%,.30);
-  --accent-color:  rgba(255, 255, 255, 0.25);
+  --button-text: #eee;
+  --button-text-hover: #FFF;
+
+  --accent-color: 100, 100, 100;
   --accent-color-hover: rgba(255, 255, 255, 0.45);
-  --tooltip-bg: #1f1f1f;
-  --tooltip-link-color: #f1c40f;
-  --text: #eee;
+  --link-color: #ddd;
+  --link-color-hover: #fff;
+  --label-text-color: #fff;
+    
+  --text:#eee;
   --text-hover: #fff;
+  --text-muted: #999;
 }
