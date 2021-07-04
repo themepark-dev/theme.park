@@ -25,13 +25,21 @@ body {
 }
 
 /* LINKS */
-a {
+a,
+app-vault-groupings .card .card-body a,
+app-org-vault-groupings .card .card-body a,
+.groupings .card .card-body a {
     color: var(--link-color);
 }
 
-a:hover {
-    color: var(--link-color);
-    opacity: .8;
+a:hover,
+app-vault-groupings .card li.active>a:first-of-type,
+app-vault-groupings .card li.active>div a:first-of-type,
+app-org-vault-groupings .card li.active>a:first-of-type,
+app-org-vault-groupings .card li.active>div a:first-of-type,
+.groupings .card li.active>a:first-of-type,
+.groupings .card li.active>div a:first-of-type {
+   color: var(--link-color-hover) !important;
 }
 
 /* TEXT */
@@ -40,8 +48,7 @@ a:hover {
 .modal-header small,
 .table,
 .text-body {
-    color: var(--text) !important;
-    opacity: .8;
+    color: var(--text-muted) !important;
 }
 
 .table-hover tbody tr:hover {
@@ -49,13 +56,18 @@ a:hover {
     background-color: rgba(255, 255, 255, .08);
 }
 
-h3 {
-    color: white !important;
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,label,label:not(.form-check-label):not(.btn), label.bold
+.card-header:first-child,
+.card-header, .modal-header {
+    color: var(--text-hover) !important;
 }
 
 /* NAVBAR */
 .navbar {
     background-color: rgb(0 0 0 / 25%) !important;
+}
+.navbar-dark .navbar-nav .show>.nav-link, .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .nav-link.active {
+    color: rgb(var(--accent-color));
 }
 
 /* CARDS */
@@ -63,14 +75,10 @@ h3 {
     background-color: rgba(255, 255, 255, 0.07);
 }
 
-app-vault-groupings .card .card-body a {
-    color: var(--text);
-}
-
 app-vault-groupings .card li.active>a:first-of-type,
 app-vault-groupings .card li.active>div a:first-of-type,
 app-vault-groupings .card li.active>div>.fa {
-    color: var(--accent-color);
+    color: rgb(var(--accent-color));
 }
 
 body>app-root>app-user-layout>app-tools>div>div>div.col-9>app-password-generator>div.card.card-password.bg-light.my-4 {
@@ -78,7 +86,7 @@ body>app-root>app-user-layout>app-tools>div>div>div.col-9>app-password-generator
 }
 
 .password-number {
-    color: var(--accent-color);
+    color: rgb(var(--accent-color));
 }
 
 /* MODALS */
@@ -143,7 +151,7 @@ body>app-root>app-user-layout>app-tools>div>div>div.col-9>app-password-generator
 
 .form-control:disabled,
 .form-control[readonly] {
-    background-color: rgb(255 255 255 / 50%);
+    background-color: rgb(255 255 255 / 25%);
     opacity: 1;
 }
 
@@ -181,7 +189,7 @@ a.text-danger:focus {
 .list-group-item.active {
     color: var(--text);
     background-color: rgb(255 255 255 / 10%);
-    border-left: 3px solid var(--accent-color);
+    border-left: 3px solid rgb(var(--accent-color));
 }
 
 .callout {
@@ -196,25 +204,27 @@ a.text-danger:focus {
 /* BUTTONS */
 .btn-link {
     color: var(--button-color);
+    color: var(--button-text);
 }
 
 .btn-link:hover {
-    color: var(--button-color);
-    opacity: .8;
+    color: var(--button-color-hover);
+    color: var(--button-text-hover);
     transition: 0.15s;
 }
 
 .btn-primary {
     background-color: var(--button-color);
     border-color: var(--button-color);
+    color: var(--button-text);
 }
 
 .btn-primary:hover,
 .btn-primary:not(:disabled):not(.disabled):active {
-    background-color: var(--button-color);
-    opacity: .8;
+    background-color: var(--button-color-hover);
+    border-color: var(--button-color-hover);
+    color: var(--button-text-hover);
     transition: 0.15s;
-    border-color: var(--button-color)
 }
 
 .btn-primary:focus,
@@ -231,26 +241,27 @@ a.text-danger:focus {
 }
 
 .btn[class*="btn-outline-"]:not(:hover),
-.swal2-popup .swal2-actions button[class*="btn-outline-"]:not(:hover) {
+.swal2-popup .swal2-actions button[class*="btn-outline-"]:not(:hover),
+.swal2-popup .swal2-actions button.swal2-cancel {
     border-color: var(--button-color);
     background-color: var(--button-color);
-    color: var(--text-hover);
+    color: var(--button-text);
 }
 
 .btn-outline-secondary:hover,
 .swal2-popup .swal2-actions button.swal2-cancel:hover {
-    color: var(--text-hover);
+    color: var(--button-text-hover);
     background-color: var(--button-color-hover);
     border-color: var(--button-color-hover);
 }
 
 .btn-outline-secondary:hover:not(:disabled),
 .swal2-popup .swal2-actions button.swal2-cancel:hover:not(:disabled) {
-    color: var(--text-hover);
+    color: var(--button-text-hover);
 }
 
 .btn-outline-primary:hover {
-    color: var(--text-hover);
+    color: var(--button-text-hover) !important;
     background-color: var(--button-color-hover);
     border-color: var(--button-color-hover);
 }
@@ -258,15 +269,20 @@ a.text-danger:focus {
 .btn-outline-primary:not(:disabled):not(.disabled):active,
 .btn-outline-primary:not(:disabled):not(.disabled).active,
 .show>.btn-outline-primary.dropdown-toggle {
-    color: #fff;
+    color: var(--button-text-hover);
     background-color: var(--button-color-hover);
     border-color: var(--button-color-hover);
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus,
 .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
-.show>.btn-outline-primary.dropdown-toggle:focus {
-    box-shadow: none;
+.show>.btn-outline-primary.dropdown-toggle:focus,
+.btn-outline-secondary:focus, 
+.swal2-popup .swal2-actions button.swal2-cancel:focus, 
+.btn-outline-secondary.focus,
+.swal2-popup .swal2-actions button.focus.swal2-cancel,
+.btn-outline-primary:focus, .btn-outline-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgb(var(--accent-color),.5);
 }
 
 .btn-outline-secondary:not(:disabled):not(.disabled):active,
@@ -275,7 +291,7 @@ a.text-danger:focus {
 .swal2-popup .swal2-actions button.swal2-cancel:not(:disabled):not(.disabled).active,
 .show>.btn-outline-secondary.dropdown-toggle,
 .swal2-popup .swal2-actions .show>button.dropdown-toggle.swal2-cancel {
-    color: var(--text-hover);
+    color: var(--button-text-hover);
     background-color: var(--button-color-hover);
     border-color: var(--button-color-hover);
 }
@@ -293,7 +309,7 @@ a.text-danger:focus {
 .swal2-popup .swal2-actions button.disabled.swal2-confirm,
 .btn-primary:disabled,
 .swal2-popup .swal2-actions button.swal2-confirm:disabled {
-    color: #fff;
+    color: var(--button-text-hover);
     background-color: var(--button-color);
     border-color: var(--button-color);
     opacity: .8;
@@ -309,7 +325,7 @@ a.text-danger:focus {
 }
 
 .org-nav .nav-tabs a.active {
-    border-top: 3px solid var(--accent-color);
+    border-top: 3px solid rgb(var(--accent-color));
 }
 
 .nav-tabs .nav-link.active,
@@ -319,10 +335,6 @@ a.text-danger:focus {
     border-color: transparent;
 }
 
-app-vault-groupings .card .card-body a,
-app-org-vault-groupings .card .card-body a {
-    color: var(--text);
-}
 app-vault-groupings .card .card-body a:hover.text-muted {
     color: #fff !important;
     opacity: 1 !important;
@@ -332,28 +344,39 @@ app-vault-groupings .card li.active>div a:first-of-type,
 app-org-vault-groupings .card li.active>a:first-of-type,
 app-org-vault-groupings .card li.active>div a:first-of-type {
     font-weight: bold;
-    color: var(--accent-color);
+    color: rgb(var(--accent-color));
 }
 
 /* PLACEHOLDER TEXT */
-::placeholder {
-    color: var(--text) !important;
-    opacity: .5;
+input::-webkit-input-placeholder {
+    color: var(--text);
+}
+input:focus::-webkit-input-placeholder {
+    color: #000;
 }
 
-:-moz-placeholder {
-    color: var(--text) !important;
-    opacity: .5;
+/* Firefox < 19 */
+input:-moz-placeholder {
+    color: var(--text);
+}
+input:focus:-moz-placeholder {
+    color: #000;
 }
 
-:-ms-input-placeholder {
-    color: var(--text) !important;
-    opacity: .5;
+/* Firefox > 19 */
+input::-moz-placeholder {
+    color: var(--text);
+}
+input:focus::-moz-placeholder {
+    color: #000;
 }
 
-::-webkit-input-placeholder {
-    color: var(--text) !important;
-    opacity: .5;
+/* Internet Explorer 10 */
+input:-ms-input-placeholder {
+    color: var(--text);
+}
+input:focus:-ms-input-placeholder {
+    color: #000;
 }
 
 /* ADMIN PAGE */
