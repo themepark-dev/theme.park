@@ -13,23 +13,9 @@
 
 /* BAZARR DRACULA THEME */
 @import url(https://theme-park.dev/CSS/themes/bazarr/bazarr-base.css);
+@import url(https://theme-park.dev/CSS/varibles/dracula.css);
+
+/* APP VARS */
 :root {
-  --main-bg-color: #282a36;
-  --modal-bg-color: #282a36;
-
-  --button-color: #bd93f9;
-  --button-color-hover: #ff79c6;
-  --button-text: #eee;
-  --button-text-hover: #FFF;
-
-  --accent-color:  80, 250, 123;
-  --accent-color-hover: #50fa7b;
   --queue-color: #50fa7b;
-  --link-color: #ff79c6;
-  --link-color-hover: #8be9fd;
-  --label-text-color: #282a36;
-    
-  --text:#6272a4;
-  --text-hover: #95adfa;
-  --text-muted: #999;
 }
