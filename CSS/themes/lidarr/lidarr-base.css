@@ -110,7 +110,7 @@ a:hover {
 /* MODAL */
 [class*="ModalHeader-modalHeader-"] {
     background: var(--modal-bg-color);
-    color: #fff;
+    color: var(--text-hover);
     border-bottom: rgb(var(--accent-color));
 }
 
@@ -417,7 +417,7 @@ a:hover {
 }
 
 [class*="Label-default-"] [class*="IconButton-button-"],
-[class*="Label-default-"] [class*="IconButton-button-"]:hover  {
+[class*="Label-small-"] [class*="IconButton-button-"]:hover {
     color: var(--label-text-color);
 }
 
@@ -678,7 +678,7 @@ input:focus:-ms-input-placeholder {
 /* IMPORT */
 
 [class*="FieldSet-legend-"] {
-    color: #FFF;
+    color: var(--text-hover);
     border-bottom: 1px solid rgb(var(--accent-color));
 }
 
@@ -801,6 +801,14 @@ input:focus:-ms-input-placeholder {
 
 [class*="Settings-summary-"] {
     color: var(--text);
+}
+
+[class*="FormLabel-large-"] {
+    color: var(--text-hover);
+}
+
+[class*="FormLabel-isAdvanced-"] {
+    color: #ff902b;
 }
 
 /* MEDIA MANAGEMENT - FILE NAME TOKENS */

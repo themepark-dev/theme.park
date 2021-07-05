@@ -96,6 +96,11 @@ a:hover {
     color: var(--text-hover);
 }
 
+h1, h2, h3, h4, h5, h6,
+.custom-control-label,label,.modal-header {
+    color: var(--text-hover);
+}
+
 /* Form Stuff */
 
 .header-container input[type=text] {
@@ -133,7 +138,7 @@ a:hover {
 .form-control[readonly] {
     background-color: rgb(255 255 255 / 15%);
     opacity: .7;
-    color: var(--text);
+    color: #fff;
     border: 1px solid rgb(255 255 255 / 15%);
 }
 
@@ -289,6 +294,9 @@ a:hover {
 .auth-card .card-footer {
     background-color: transparent;
     border-top: 1px solid rgba(255, 255, 255, .1);
+}
+hr {
+    border-top: 1px solid rgb(255 255 255 / 10%);
 }
 
 
