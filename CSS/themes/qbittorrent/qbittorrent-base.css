@@ -1546,11 +1546,11 @@ img[src="icons/mail-folder-inbox.svg"] {
   filter: invert(79%) sepia(20%) saturate(0%) hue-rotate(135deg) brightness(87%) contrast(108%);
 }
 
-img[src="icons/downloading_small.svg"],
+/* img[src="icons/downloading_small.svg"],
 img[src="icons/seeding.svg"],
 img[src="icons/stalledDL.svg"]  {
   filter: invert(79%) sepia(20%) saturate(0%) hue-rotate(135deg) brightness(87%) contrast(108%);
-}
+} */
 
 #searchPattern {
   width: 300px;
@@ -1562,10 +1562,10 @@ img[src="icons/stalledDL.svg"]  {
   background-position: left;
 }
 
-#connectionStatus,
+/* #connectionStatus,
 #alternativeSpeedLimits {
   filter: invert(79%) sepia(20%) saturate(0%) hue-rotate(135deg) brightness(87%) contrast(108%);
-}
+} */
 
 #errored_filter>a img {
   display: none;
