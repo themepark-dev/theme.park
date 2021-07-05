@@ -824,8 +824,9 @@ input:focus:-ms-input-placeholder {
 }
 
 /* SETTINGS */
-[class*="PageContentBody-innerContentBody-"] [class*="Link-to-"] {
-    color: #fff;
+[class*="Settings-link-"] {
+    color: var(--text-hover);
+    border-bottom: 1px solid rgb(var(--accent-color));
 }
 
 [class*="Settings-summary-"] {
