@@ -497,7 +497,7 @@ a:hover {
 }
 
 [class*="PageToolbarButton-toolbarButton-"]:hover {
-    color: var(--text-hover);
+    color: rgb(var(--accent-color));
 }
 
 [class*="MenuButton-menuButton-"]:hover {
