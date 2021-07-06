@@ -451,7 +451,7 @@ a:hover {
 }
 
 [class*="MenuButton-menuButton-"]:hover {
-    color: var(--text-hover);
+    color: rgb(var(--accent-color));
 }
 
 /* POSTERS */
