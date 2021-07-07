@@ -67,7 +67,7 @@ p,
 .theme--dark.v-label,
 .theme--light.v-label,
 .theme--light.v-counter {
-    color: var(--text);
+    color: var(--text-hover);
 }
 
 .v-application .grey--text {
@@ -88,7 +88,7 @@ p,
 
 .theme--dark.v-subheader,
 .theme--light.v-subheader {
-    color: hsla(0, 0%, 100%, .7);
+    color: var(--text-hover);
 }
 
 .theme--light.v-input,
@@ -303,6 +303,71 @@ p,
     color: #FFF;
 }
 
+.v-application .torrent-paused-color .caption,
+.v-application .torrent-seeding-color .caption,
+.v-application .torrent-done-color .caption {
+color: #ccc !important;
+}
+
+.v-application .torrent-paused-color {
+background-color: rgb(156 163 175 / 70%) !important;
+    border-color: rgb(156 163 175 / 70%) !important;
+}
+.v-application .torrent-seeding-color {
+    background-color: rgba(78, 205, 230, .7) !important;
+    border-color: rgba(78, 205, 230, .7) !important;
+}
+.v-application .torrent-done-color  {
+    background-color: rgba(22, 87, 62, .7) !important;
+    border-color: rgba(22, 87, 62, .7) !important;
+}
+
+.v-application .torrent-downloading-color  {
+    background-color: rgba(91, 185, 116, .7) !important;
+    border-color: rgba(91, 185, 116, .7) !important;
+}
+
+.v-application .torrent-fail-color  {
+    background-color: rgba(248, 62, 112, .7) !important;
+    border-color: rgba(248, 62, 112, .7) !important;
+}
+
+.v-application .torrent-queued-color  {
+    background-color: rgba(46, 94, 170, .7) !important;
+    border-color: rgba(46, 94, 170, .7) !important;
+}
+
+.v-application .torrent-checking-color  {
+    background-color: rgba(255, 112, 67, .7) !important;
+    border-color: rgba(255, 112, 67, .7) !important;
+}
+
+.v-application .torrent-stalled-color  {
+    background-color: rgba(74, 222, 128, .7) !important;
+    border-color: rgba(74, 222, 128, .7) !important;
+}
+
+.v-application .torrent-metadata-color  {
+    background-color: rgba(126, 87, 194, .7) !important;
+    border-color: rgba(126, 87, 194, .7) !important;
+}
+
+.v-application .torrent-moving-color  {
+    background-color: rgba(255, 170, 44, .7) !important;
+    border-color: rgba(255, 170, 44, .7) !important;
+}
+
+.torrent-paused-color .v-chip.paused,
+.torrent-seeding-color .v-chip.seeding,
+.torrent-done-color .v-chip.downloading,
+.torrent-done-color .v-chip.fail,
+.torrent-done-color .v-chip.queued,
+.torrent-done-color .v-chip.checking,
+.torrent-done-color .v-chip.stalled,
+.torrent-done-color .v-chip.metadata,
+.torrent-done-color .v-chip.moving {
+    color: #fff !important;
+}
 
 /* DROPDOWN */
 .v-menu__content .theme--dark.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled),
@@ -317,7 +382,7 @@ background: var(--modal-bg-color) !important;
 
 .theme--dark.v-icon,
 .theme--light.v-icon {
-    color: #fff;
+    color: rgb(var(--accent-color)) !important;
 }
 
 .theme--light.v-divider,
