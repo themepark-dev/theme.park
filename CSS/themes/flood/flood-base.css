@@ -47,9 +47,10 @@ h4,
 h5,
 h6,
 p,
+.inverse .h1, .inverse .h2, .inverse .h3, .inverse .h4, .inverse .h5, .inverse .h6, .inverse h1, .inverse h2, .inverse h3, .inverse h4, .inverse h5, .inverse h6
 .dark .torrents__alert,
 .torrents__alert {
-    color: var(--text);
+    color: var(--text-hover);
 }
 
 /* AUTH PAGE */
@@ -139,6 +140,10 @@ p,
 .form__element:active~.form__element__addon .icon,
 .form__element:focus~.form__element__addon .icon {
     fill: rgb(var(--accent-color));
+}
+
+.form__element__addon .icon {
+    fill: var(--text-hover);
 }
 
 .select__item--is-selected .icon {
@@ -293,7 +298,7 @@ p,
 .table__row--heading {
     background: rgba(255, 255, 255, .15);
     box-shadow: 0 1px 0 hsl(0deg 0% 100% / 12%);
-    color: #fff;
+    color: var(--text-hover);
 }
 
 .dark .torrent__detail--name,
@@ -314,6 +319,12 @@ p,
 .torrent--is-downloading--actively .torrent__detail--downRate {
     color: #39ce83;
     font-weight: 500;
+}
+.dark .torrent--is-condensed.torrent--is-selected .torrent__detail,
+.torrent--is-condensed.torrent--is-selected .torrent__detail,
+.dark .torrent--is-condensed.torrent--is-selected.torrent--is-stopped .torrent__detail,
+.torrent--is-condensed.torrent--is-selected.torrent--is-stopped .torrent__detail {
+    color: var(--label-text-color);
 }
 
 .table__heading:focus-visible,
@@ -377,12 +388,16 @@ p,
 
 .torrent-details__section--file-tree .directory-tree__parent-directory,
 .dark .torrent-details__section--file-tree .directory-tree__parent-directory {
-    color: rgba(var(--accent-color), .6);
+    color: var(--text-hover);
 }
 
+.dark .torrent-details__table__heading--primary,
 .torrent-details__table__heading--primary,
-.torrent-details__table__heading--secondary {
-    color: rgba(var(--accent-color), .6);
+.dark .torrent-details__table__heading--secondary
+.torrent-details__table__heading--secondary,
+.dark .torrent-details__table__heading--tertiary,
+.torrent-details__table__heading--tertiary {
+    color: var(--text-hover);
 }
 
 .torrent-details__section .badge {
@@ -437,7 +452,9 @@ p,
     box-shadow: 1px 0 hsl(0deg 0% 100% / 12%);
     color: var(--text);
 }
-
+.sidebar-filter__item--heading, .sidebar-filter__item--heading:focus-visible, .sidebar-filter__item--heading:hover {
+    color: var(--text-hover) !important;
+}
 .dark .sidebar-filter__item,
 .sidebar-filter__item {
     color: var(--text);
@@ -456,18 +473,25 @@ p,
 .dark .sidebar-filter__item.is-active .badge,
 .sidebar-filter__item.is-active .badge {
     background: rgb(var(--accent-color));
-    color: var(--button-text-hover);
+    color: var(--label-text-color);
 }
 
 .dark .sidebar-filter__item .icon,
 .sidebar-filter__item .icon {
-    fill: hsla(0, 0%, 100%, .38);
+    fill: rgb(var(--accent-color), .3);
 }
 
 .sidebar-filter .badge,
 .dark .sidebar-filter .badge {
     background: rgb(var(--accent-color), .3);
-    color: var(--text);
+    color: var(--label-text-color);
+}
+
+.dark .sidebar-filter__item:focus-visible .icon, 
+.dark .sidebar-filter__item:hover .icon,
+.sidebar-filter__item:focus-visible .icon, 
+.sidebar-filter__item:hover .icon {
+    fill: rgb(var(--accent-color));
 }
 
 .dark .sidebar-filter__item:focus-visible,
@@ -481,7 +505,7 @@ p,
     background: rgba(var(--accent-color), .25);
     border-bottom: 1px solid rgba(var(--accent-color), .3);
     border-top: 1px solid rgba(var(--accent-color), .3);
-    color: var(--text);
+    color: #eee;
     padding-right: 45px;
 }
 
@@ -508,6 +532,13 @@ p,
 .dark .sidebar__diskusage .progress-bar__fill__wrapper,
 .sidebar__diskusage .progress-bar__fill__wrapper {
     background: hsla(0, 0%, 100%, .12);
+}
+
+.torrent--is-selected.torrent--is-stopped .progress-bar__icon .icon {
+    color: #ffffff;
+}
+.torrent--is-selected.torrent--is-stopped .progress-bar__fill {
+    background: #ffffff;
 }
 
 .dark .sidebar__icon-button,
@@ -546,13 +577,29 @@ p,
     background: var(--modal-bg-color);
 }
 
+.modal--vertical.modal--tabs-in-header .modal__header,
+.modal--vertical.modal--tabs-in-body .modal__tabs {
+    /* Modal side menu*/
+    background: rgb(0 0 0 / 45%) !important;
+    color: var(--text-hover);
+}
+
+.modal__tabs .modal__tab.is-active:after {
+    background: rgb(var(--accent-color));
+}
+.modal--vertical .modal__tabs .modal__tab:after {
+    width: 3px;
+}
+
 .modal__header {
-    color: var(--text);
+    color: var(--text-hover);
     box-shadow: inset 0 -1px 0 rgb(255 255 255 / 10%);
 }
 
 .modal__tabs .modal__tab.is-active {
-    color: rgb(var(--accent-color));
+    color: var(--text-hover);
+    background: rgb(255 255 255 / 15%);
+    border-radius: 3px 3px 0px 0px;
 }
 
 .modal__tabs {
