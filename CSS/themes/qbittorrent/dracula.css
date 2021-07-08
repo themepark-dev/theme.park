@@ -9,13 +9,13 @@
 /*                                                  dP					 */
 
 /*		   		        Made by @gilbN					 */
-/* 			      https://github.com/gilbN/theme.park			 */
+/*			      https://github.com/gilbN/theme.park			 */
 
-/* QBITTORRENT PLEX THEME */
+  /* QBITTORRENT SPACE GRAY THEME */
 @import url(https://theme-park.dev/CSS/themes/qbittorrent/qbittorrent-base.css);
-@import url(https://theme-park.dev/CSS/variables/plex.css);
+@import url(https://theme-park.dev/CSS/variables/dracula.css);
 
 /* APP VARS */
 :root {
-  --progress-color: #cc7b19;
-  }
+  --progress-color: #50fa7b;
+}

@@ -29,7 +29,7 @@
 
 html,
 body {
-  color: #FFF;
+  color: var(--text);
   background: transparent;
 }
 
@@ -49,7 +49,7 @@ input:disabled {
 }
 
 input[type="text"i] {
-  color: #FFF;
+  color: var(--text-hover);
   background-color: rgba(0, 0, 0, .25);
   border-width: 0px;
   outline: none;
@@ -58,7 +58,7 @@ input[type="text"i] {
 }
 
 input[type="password"i] {
-  color: #FFF;
+  color: var(--text-hover);
   background-color: rgba(0, 0, 0, .25);
   border-width: 0px;
   outline: none;
@@ -67,7 +67,7 @@ input[type="password"i] {
 }
 
 input[type="number"i] {
-  color: #FFF;
+  color: var(--text-hover);
   background-color: rgba(0, 0, 0, .25);
   border-width: 0px;
   outline: none;
@@ -75,7 +75,7 @@ input[type="number"i] {
 }
 
 input[type="file"i] {
-  color: #FFF;
+  color: var(--text-hover);
   background-color: rgba(0, 0, 0, .25);
   border-width: 0px;
   outline: none;
@@ -103,7 +103,7 @@ h2,
 h3,
 h4,
 .mochaTitlebar h3 {
-  color: #fff;
+  color: var(--text-hover);
 }
 
 /* Login */
@@ -115,6 +115,7 @@ h4,
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
+  color: var(--text-hover);
 }
 
 #error_msg {
@@ -199,17 +200,17 @@ label {
 }
 
 #desktopNavbar ul li a {
-  color: #fff;
+  color: var(--text);
 }
 
 #desktopNavbar ul li a:hover {
-  color: #fff;
+  color: var(--text-hover);
   background-color: rgba(255, 255, 255, 0.08);
 }
 
 #desktopNavbar li ul li a:hover {
   background: rgba(255, 255, 255, .08);
-  color: #fff;
+  color: var(--text-hover);
 }
 
 #desktopNavbar li ul {
@@ -218,7 +219,7 @@ label {
 }
 
 #desktopNavbar li ul li a {
-  color: #fff;
+  color: var(--text);
 }
 
 #desktopHeader {
@@ -241,6 +242,7 @@ label {
 .dynamicTable th {
   background-color: rgba(0, 0, 0, 0.25) !important;
   border-right-color: rgba(255, 255, 255, .08) !important;
+  color: var(--text-hover);
 }
 
 .dynamicTable thead tr {
@@ -266,10 +268,12 @@ label {
 
 .dynamicTable tbody tr:hover {
   background-color: rgba(255, 255, 255, 0.15) !important;
+  color: var(--text-hover);
 }
 
 .dynamicTable tbody tr.selected {
   background-color: rgba(var(--accent-color),0.6) !important;
+  color: var(--label-text-color);
 }
 .dynamicTable th.sorted.reverse {
   background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/qbittorrent/go-down.png) !important;
@@ -297,7 +301,7 @@ li.divider {
 
 
 #main input[type="text"i] {
-  color: #FFF;
+  color: var(--text-hover);
   background-color: rgba(0, 0, 0, .25);
   border-width: 0px;
   outline: none;
@@ -313,7 +317,7 @@ li.divider {
 }
 
 #main input[type="password"i] {
-  color: #FFF;
+  color: var(--text-hover);
   background-color: rgba(0, 0, 0, .25);
   border-width: 0px;
   outline: none;
@@ -350,7 +354,7 @@ li.divider {
   border-radius: 4px;
   cursor: pointer;
   border: none;
-  color: var(--button-text) !important;
+  color: var(--button-text-hover) !important;
 }
 
 
@@ -361,11 +365,15 @@ li.divider {
 }
 
 .contextMenu li a {
-  color: #fff;
+  color: var(--text);
 }
 
 .contextMenu li a:hover {
   background-color: rgba(255, 255, 255, .08) !important;
+  color: var(--text-hover);
+}
+.contextMenu li a:hover {
+
 }
 
 .contextMenu li ul {
@@ -380,11 +388,20 @@ li.divider {
 /* Sidemenu */
 .selectedFilter {
   background-color: rgba(var(--accent-color),0.6);
-  color: #FFF;
+  color: #eee;
+}
+
+.selectedFilter:before {
+  color: var(--button-color-hover) !important;
 }
 
 ul.filterList li:hover {
   background-color: rgba(var(--accent-color),0.6);
+  color: var(--button-color-hover) !important;
+}
+
+ul.filterList li:hover:before {
+  color: var(--button-color-hover) !important;
 }
 
 .columnHandle {
@@ -412,13 +429,13 @@ ul.filterList li:hover {
 }
 
 .tab-menu li.selected a {
-  color: #fff !important;
+  color: var(--text-hover) !important;
   background: transparent !important;
   font-weight: normal !important;
 }
 
 .tab-menu li a {
-  color: #fff !important;
+  color: var(--text) !important;
   background: transparent !important;
 }
 
@@ -440,6 +457,7 @@ ul.filterList li:hover {
 
 .progressbar_dark {
   background: var(--progress-color) !important;
+  color: var(--label-text-color) !important;
 }
 
 .progressbar_light {
@@ -516,7 +534,11 @@ fieldset {
 }
 
 .mocha.isFocused .mochaTitlebar h3 {
-  color: #fff;
+  color: var(--text-hover);
+}
+
+fieldset.settings legend {
+  color: var(--text-hover);
 }
 
 .mochaContentWrapper {
@@ -541,7 +563,7 @@ textarea:disabled {
 }
 
 textarea {
-  color: #fff !important;
+  color: var(--text-hover) !important;
   cursor: default;
   background-color: rgb(0, 0, 0, .25) !important;
   border: none !important;
@@ -621,7 +643,7 @@ input[type="submit"i]:hover {
   width: 24px;
   height: 24px;
   margin-right: 10px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
   margin-top: 5px;
 }
 
@@ -634,7 +656,7 @@ input[type="submit"i]:hover {
   width: 24px;
   height: 24px;
   margin-right: 10px;
-  color: white;
+  color: var(--button-color-hover);
 }
 
 #uploadButton>img.mochaToolButton {
@@ -650,7 +672,7 @@ input[type="submit"i]:hover {
   width: 24px;
   height: 24px;
   margin-right: 10px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
 }
 
 #uploadButton:hover:before {
@@ -662,7 +684,7 @@ input[type="submit"i]:hover {
   width: 24px;
   height: 24px;
   margin-right: 10px;
-  color: white;
+  color: var(--button-color-hover);
 }
 
 #deleteButton>img.mochaToolButton {
@@ -678,7 +700,7 @@ input[type="submit"i]:hover {
   width: 24px;
   height: 24px;
   margin-right: 10px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
 }
 
 #deleteButton:hover:before {
@@ -690,7 +712,7 @@ input[type="submit"i]:hover {
   width: 24px;
   height: 24px;
   margin-right: 10px;
-  color: white;
+  color: var(--button-color-hover);
 }
 
 #resumeButton>img.mochaToolButton {
@@ -706,7 +728,7 @@ input[type="submit"i]:hover {
   width: 24px;
   height: 24px;
   margin-right: 10px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
 }
 
 #resumeButton:hover:before {
@@ -718,7 +740,7 @@ input[type="submit"i]:hover {
   width: 24px;
   height: 24px;
   margin-right: 10px;
-  color: white;
+  color: var(--button-color-hover);
 }
 
 #pauseButton>img.mochaToolButton {
@@ -734,7 +756,7 @@ input[type="submit"i]:hover {
   width: 24px;
   height: 24px;
   margin-right: 10px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
 }
 
 #pauseButton:hover:before {
@@ -746,7 +768,7 @@ input[type="submit"i]:hover {
   width: 24px;
   height: 24px;
   margin-right: 10px;
-  color: white;
+  color: var(--button-color-hover);
 }
 
 #topPrioButton>img.mochaToolButton {
@@ -762,7 +784,7 @@ input[type="submit"i]:hover {
   width: 24px;
   height: 24px;
   margin-right: 10px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
 }
 
 #topPrioButton:hover:before {
@@ -774,7 +796,7 @@ input[type="submit"i]:hover {
   width: 24px;
   height: 24px;
   margin-right: 10px;
-  color: white;
+  color: var(--button-color-hover);
 }
 
 #increasePrioButton>img.mochaToolButton {
@@ -790,7 +812,7 @@ input[type="submit"i]:hover {
   width: 24px;
   height: 24px;
   margin-right: 10px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
 }
 
 #increasePrioButton:hover:before {
@@ -802,7 +824,7 @@ input[type="submit"i]:hover {
   width: 24px;
   height: 24px;
   margin-right: 10px;
-  color: white;
+  color: var(--button-color-hover);
 }
 
 #decreasePrioButton>img.mochaToolButton {
@@ -818,7 +840,7 @@ input[type="submit"i]:hover {
   width: 24px;
   height: 24px;
   margin-right: 10px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
 }
 
 #decreasePrioButton:hover:before {
@@ -830,7 +852,7 @@ input[type="submit"i]:hover {
   width: 24px;
   height: 24px;
   margin-right: 10px;
-  color: white;
+  color: var(--button-color-hover);
 }
 
 #bottomPrioButton>img.mochaToolButton {
@@ -846,7 +868,7 @@ input[type="submit"i]:hover {
   width: 24px;
   height: 24px;
   margin-right: 10px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
 }
 
 #bottomPrioButton:hover:before {
@@ -858,7 +880,7 @@ input[type="submit"i]:hover {
   width: 24px;
   height: 24px;
   margin-right: 10px;
-  color: white;
+  color: var(--button-color-hover);
 }
 
 #preferencesButton>img.mochaToolButton {
@@ -874,7 +896,7 @@ input[type="submit"i]:hover {
   width: 24px;
   height: 24px;
   margin-right: 10px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
 }
 
 #preferencesButton:hover:before {
@@ -886,7 +908,7 @@ input[type="submit"i]:hover {
   width: 24px;
   height: 24px;
   margin-right: 10px;
-  color: white;
+  color: var(--button-color-hover);
 }
 
 /*Top menu icons*/
@@ -916,7 +938,7 @@ input[type="submit"i]:hover {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
   padding-left: 5px;
 }
 
@@ -931,7 +953,7 @@ input[type="submit"i]:hover {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
   padding-left: 5px;
 }
 
@@ -946,7 +968,7 @@ input[type="submit"i]:hover {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
   padding-left: 5px;
 }
 
@@ -961,7 +983,7 @@ input[type="submit"i]:hover {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
   padding-left: 5px;
 }
 
@@ -978,7 +1000,7 @@ input[type="submit"i]:hover {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
   padding-left: 5px;
 }
 
@@ -993,7 +1015,7 @@ input[type="submit"i]:hover {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
   padding-left: 5px;
 }
 
@@ -1008,7 +1030,7 @@ input[type="submit"i]:hover {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
   padding-left: 5px;
 }
 
@@ -1023,7 +1045,7 @@ input[type="submit"i]:hover {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
   padding-left: 5px;
 }
 
@@ -1038,7 +1060,7 @@ input[type="submit"i]:hover {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
   padding-left: 5px;
 }
 
@@ -1053,7 +1075,7 @@ input[type="submit"i]:hover {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
   padding-left: 5px;
 }
 
@@ -1068,7 +1090,7 @@ input[type="submit"i]:hover {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
   padding-left: 5px;
 }
 
@@ -1083,7 +1105,7 @@ input[type="submit"i]:hover {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
   padding-left: 5px;
 }
 
@@ -1098,7 +1120,7 @@ input[type="submit"i]:hover {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
   padding-left: 5px;
 }
 
@@ -1113,7 +1135,7 @@ input[type="submit"i]:hover {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
   padding-left: 5px;
 }
 
@@ -1131,7 +1153,7 @@ input[type="submit"i]:hover {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
   padding-left: 5px;
 }
 
@@ -1158,7 +1180,7 @@ input[type="submit"i]:hover {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
   padding-left: 5px;
 
 }
@@ -1186,7 +1208,7 @@ input[type="submit"i]:hover {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
   padding-left: 5px;
 
 }
@@ -1214,7 +1236,7 @@ input[type="submit"i]:hover {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
   padding-left: 5px;
 
 }
@@ -1230,7 +1252,7 @@ input[type="submit"i]:hover {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
   padding-left: 5px;
 
 }
@@ -1269,7 +1291,7 @@ input[type="submit"i]:hover {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
   padding-left: 5px;
 
 }
@@ -1300,7 +1322,7 @@ input[type="submit"i]:hover {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
   padding-left: 5px;
 }
 
@@ -1317,7 +1339,7 @@ input[type="submit"i]:hover {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
   padding-left: 5px;
 }
 
@@ -1332,7 +1354,7 @@ input[type="submit"i]:hover {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
   padding-left: 5px;
 }
 
@@ -1347,7 +1369,7 @@ input[type="submit"i]:hover {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
   padding-left: 5px;
 }
 
@@ -1368,7 +1390,7 @@ ul.filterList a {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
   padding-left: 5px;
 }
 
@@ -1383,7 +1405,7 @@ ul.filterList a {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
   padding-left: 5px;
 }
 
@@ -1398,7 +1420,7 @@ ul.filterList a {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
   padding-left: 5px;
 }
 
@@ -1413,7 +1435,7 @@ ul.filterList a {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
   padding-left: 5px;
 }
 
@@ -1428,7 +1450,7 @@ ul.filterList a {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
   padding-left: 5px;
 }
 
@@ -1443,7 +1465,7 @@ ul.filterList a {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
   padding-left: 5px;
 }
 
@@ -1458,7 +1480,7 @@ ul.filterList a {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--button-color);
   padding-left: 5px;
 }
 
@@ -1473,7 +1495,7 @@ ul.filterList a {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--button-color);
   padding-left: 5px;
 }
 
@@ -1488,7 +1510,7 @@ ul.filterList a {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--button-color);
   padding-left: 5px;
 }
 
@@ -1503,7 +1525,7 @@ ul.filterList a {
   font-weight: 900;
   display: inline-block !important;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--button-color);
   padding-left: 5px;
 }
 
@@ -1518,7 +1540,7 @@ ul.filterList a {
   font-weight: 900;
   display: inline-block !important;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--button-color);
   padding-left: 5px;
 }
 
@@ -1578,7 +1600,7 @@ img[src="icons/stalledDL.svg"]  {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
   padding-left: 5px;
 }
 
@@ -1595,7 +1617,7 @@ img[src="icons/stalledDL.svg"]  {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
   padding-left: 5px;
 }
 
@@ -1612,7 +1634,7 @@ img[src="icons/stalledDL.svg"]  {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
   padding-left: 5px;
 }
 
@@ -1677,7 +1699,8 @@ img[src="icons/view-filter.svg"],
 img[src="icons/view-preview.svg"],
 img[src="icons/view-statistics.svg"],
 img[src="icons/wallet-open.svg"],
-img[src="icons/webui.svg"] {
+img[src="icons/webui.svg"],
+img[src="icons/checking.svg"] {
   filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(289deg) brightness(106%) contrast(101%);
 }
 
@@ -1718,6 +1741,6 @@ img[src="icons/webui.svg"] {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--button-color);
   padding-left: 5px;
 }
