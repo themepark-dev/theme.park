@@ -1592,7 +1592,7 @@
       //background-image: url(../images/gray/qtip/tip-anchor-sprite.gif);
   }
   .x-menu {
-      background:var(--modal-bg-color);
+      background:var(--drop-down-menu-bg);
   }
   
   .x-menu-floating{
@@ -1921,8 +1921,13 @@
       font:normal 11px 'Roboto', arial,tahoma, helvetica, sans-serif;
   }
   
-  .x-window {
-      background: var(--modal-bg-color);
+  .x-window, .x-window .x-panel-body,
+  .x-window .x-tab-panel-header, .x-tab-panel-footer,
+  .x-window .x-panel-noborder .x-panel-bbar-noborder .x-toolbar {
+      background: var(--modal-bg-color) !important;
+  }
+  .x-window .x-panel-bbar .x-toolbar, .x-panel-tbar .x-toolbar {
+    background: var(--modal-bg-color);
   }
   
   .x-window-proxy {
@@ -1947,7 +1952,7 @@
   
   .x-window-tl {
       background-image: none;
-      background-color: transparent;
+      background: var(--modal-header-color);
   }
   
   .x-window-tr {
@@ -1962,7 +1967,7 @@
   
   .x-window-bl {
       background-image: none;
-      background-color: transparent;
+      background: var(--modal-footer-color);
   }
   
   .x-window-br {
