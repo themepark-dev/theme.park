@@ -79,6 +79,10 @@ span.outer.solid {
     background-color: transparent;
 }
 
+span.inner {
+    width: 137px;
+}
+
 .sys,
 .usage-disk,
 .usage-bar {
