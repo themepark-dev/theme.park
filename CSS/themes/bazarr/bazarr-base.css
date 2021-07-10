@@ -396,11 +396,13 @@ hr {
 }
 
 .modal-header {
+    background: var(--modal-header-color);
     border-bottom: 1px solid var(--accent-color);
 
 }
 
 .modal-footer {
+    background: var(--modal-footer-color);
     border-top: 1px solid var(--accent-color);
 }
 
@@ -623,7 +625,7 @@ input {
 /* DROPDOWN MENU */
 .dropdown-menu,.dropdown-header {
     color: var(--text);
-    background: var(--modal-bg-color);
+    background: var(--drop-down-menu-bg);
 }
 
 .dropdown-item {
@@ -657,7 +659,7 @@ input {
 }
 
 .selector__menu {
-    background: var(--modal-bg-color) !important;
+    background: var(--drop-down-menu-bg) !important;
     color: var(--text)
 }
 

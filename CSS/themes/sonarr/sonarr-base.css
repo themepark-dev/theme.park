@@ -111,7 +111,7 @@ a:hover {
 
 /* MODAL */
 [class*="ModalHeader-modalHeader-"] {
-    background: var(--modal-bg-color);
+    background: var(--modal-header-color);
     color: var(--text-hover);
     border-bottom: rgb(var(--accent-color));
 }
@@ -122,7 +122,7 @@ a:hover {
 }
 
 [class*="ModalFooter-modalFooter-"] {
-    background: var(--modal-bg-color);
+    background: var(--modal-footer-color);
     color: #fff;
     border-top: 1px solid rgb(var(--accent-color));
 }
@@ -490,7 +490,7 @@ a:hover {
 /* SERIES TOP HEADER DROPDOWN */
 [class*="MenuItem-menuItem-"],
 [class*="MenuContent-menuContent-"] {
-    background: var(--modal-bg-color);
+    background: var(--drop-down-menu-bg);
     color: var(--text);
 }
 
@@ -529,7 +529,7 @@ a:hover {
 [class*="EnhancedSelectInput-options-"] {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 4px;
-    background: var(--modal-bg-color);
+    background: var(--drop-down-menu-bg);
     color: var(--text);
 }
 [class*="EnhancedSelectInputOption-isSelected-"],
