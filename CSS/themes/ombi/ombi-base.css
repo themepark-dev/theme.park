@@ -58,7 +58,7 @@ a:hover {
 /* Drop down menu */
 .mat-menu-panel,
 #requestsToDisplayDropdown-panel {
-    background: var(--modal-bg-color);
+    background: var(--drop-down-menu-bg);
 }
 
 .mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
@@ -109,20 +109,23 @@ a:hover {
 }
 
 .sidenav-container[_ngcontent-icv-c127] .sidenav[_ngcontent-icv-c127] .active-list-item[_ngcontent-icv-c127] {
-    color: var(--text-hover) !important;
+    color: rgb(var(--accent-color)) !important;
 }
 
-.sidenav-container .sidenav .active-list-item {
-    color: var(--text-hover);
+.sidenav-container .sidenav .active-list-item,
+.sidenav-container .sidenav .active-list-item:hover {
+    color: rgb(var(--accent-color)) !important;
     background: rgb(255 255 255 / 15%) !important;
     border-radius: .375rem !important;
     padding: 10px 20px;
     height: auto;
     width: 16rem !important;
 }
+[id*="nav-"] {
+    color: var(--text) !important;
+}
 
 .sidenav-container .sidenav .mat-list-item {
-    color: var(--text) !important;
     font-family: Roboto, sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -152,11 +155,20 @@ a:hover {
 }
 
 .sidenav-container .sidenav.mat-action-list .mat-list-item:focus,
-.sidenav-container .sidenav .mat-action-list .mat-list-item:hover,
 .sidenav-container .sidenav.mat-list-option:focus,
-.mat-list-option:hover,
 .sidenav-container .sidenav .mat-nav-list .mat-list-item:focus,
-.sidenav-container .sidenav .mat-nav-list .mat-list-item:hover {
+.sidenav-container .sidenav.mat-action-list .mat-list-item:focus:hover,
+.sidenav-container .sidenav.mat-list-option:focus:hover,
+.sidenav-container .sidenav .mat-nav-list .mat-list-item:focus:hover {
+    background: hsla(0, 0%, 100%, .04);
+    border-radius: .375rem !important;
+    color: rgb(var(--accent-color)) !important;
+}
+
+
+.sidenav-container .sidenav .mat-action-list .mat-list-item:hover:not(.active-list-item),
+.mat-list-option:hover:not(.active-list-item),
+.sidenav-container .sidenav .mat-nav-list .mat-list-item:hover:not(.active-list-item) {
     background: hsla(0, 0%, 100%, .04);
     border-radius: .375rem !important;
     color: var(--text-hover) !important;
@@ -578,7 +590,7 @@ hr {
 
 /* OTHER */
 .mat-tooltip {
-    background: var(--modal-bg-color) !important;
+    background: var(--drop-down-menu-bg) !important;
 }
 
 .mat-progress-spinner.mat-accent circle,.mat-spinner.mat-accent circle {
