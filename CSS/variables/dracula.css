@@ -1,6 +1,11 @@
 :root {
   --main-bg-color: #282a36;
+  
   --modal-bg-color: #282a36;
+  --modal-header-color: #282a36;
+  --modal-footer-color: #282a36;
+
+  --drop-down-menu-bg: #282a36;
 
   --button-color: #bd93f9;
   --button-color-hover: #ff79c6;
