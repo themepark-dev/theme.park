@@ -13,30 +13,9 @@
 
 /* prowlarr PLEX THEME */
 @import url(https://theme-park.dev/CSS/themes/prowlarr/prowlarr-base.css);
+@import url(https://theme-park.dev/CSS/variables/plex.css);
+
+/* APP VARS */
 :root {
-  --main-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-light2.png") center center/cover no-repeat fixed;
-  --modal-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-dark2.png") center center/cover no-repeat fixed;
-
-  --calendar-in-cinemas: 53, 197, 244;
-  --calendar-downloading: 122 67 182; 
-  --calendar-unmonitored: 173 173 173;
-  --calendar-unaired: 93 156 236;  
-  --calendar-missing: 240 80 80;
-  --calendar-available: 39 194 76;
-
-  --button-color: #cc7b19;
-  --button-color-hover: #e59029;
-  --button-text: #eee;
-  --button-text-hover: #fff;
-
-  --accent-color:  #e5a00d;
-  --accent-color-hover: #ffc107;
   --queue-color: #27c24c;
-  --link-color: #e5a00d;
-  --link-color-hover: #fff;
-  --label-text-color: #fff;
-    
-  --text:#eee;
-  --text-hover: #fff;
-  --text-muted: #999;
   }
