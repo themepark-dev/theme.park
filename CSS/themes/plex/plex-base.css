@@ -16,15 +16,47 @@
 
 /* TEXT */
 body,
+p,
+label,
+[class*="PrePlaySummary-summary-"],
+[class*="ClaimedServer-messageHeader-"],
+[class*="MetadataPosterCardTitle-isSecondary-"],
+[class*="MetadataPosterCardTitle-isSecondary-"] a {
+  color: var(--text) !important;
+}
+
+[class*="SourceSidebarLink-title-"],
+[class*="SourceSidebarLink-sourceLink-"],
+[class*="Link-default-"],
+[class*="PrePlayTertiaryTitle-tertiaryTitle-"] {
+  color: var(--text);
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
-p,
-label,
-[class*="ClaimedServer-messageHeader-"] {
-  color: var(--text-color) !important;
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+[class*="PrePlayPrimaryTitle-primaryTitle-"] a,
+[class*="PrePlayLeftTitle-leftTitle-"],
+[class*="PrePlayPrimaryTitle-primaryTitle-"],
+[class*="CollapsibleText-readMore-"],
+[class*="HubTitle-hubTitle-"],
+[class*="FormLabel-label-"],
+[class*="ServerDashboardPageHeader-headerTitle-"],
+[class*="SidebarList-sidebarListHeader-"],
+[class*="MenuHeader-menuHeader-WuKJVD"],
+[class*="PrePlayDetailsGroupItem-label-"],
+[class*="PageHeader-pageHeader-"],
+[class*="PageHeaderTitle-title-"] {
+  color: var(--text-hover) !important;
 }
 
 .text-muted {
@@ -35,19 +67,34 @@ label,
 
 a,
 [class*="Link-primary-"],
-[class*="Link-isSelected-"] {
+[class*="Link-isSelected-"],
+[class*="PrePlayDetailsGroupItem-groupItem-"] a,
+[class*="MetadataPosterCardTitle-title-"] a, a[class*="MetadataPosterCardTitle-title-"],
+[class*="PrePlayTagListLink-tagsListLink-"][class*="Link-default-"] {
   color: var(--link-color)
 }
 
 a:hover,
-.artwork-file-container:hover a {
+[class*="Link-link-"]:hover,
+.artwork-file-container:hover a,
+[class*="MetadataPosterCardTitle-title-"] a:hover, a[class*="MetadataPosterCardTitle-title-"]:hover {
   color: var(--link-color-hover);
+}
+
+[class*="MetadataPosterCardTitle-title-"][class*="MetadataPosterCardTitle-isSecondary-377V8A"] [class*="Link-link-1Kt-hA"]:hover,
+[class*="MetadataPosterCardTitle-title-"][class*="MetadataPosterCardTitle-isSecondary-377V8A"]:hover {
+  color: var(--text-hover) !important;
+}
+
+[class*="TopUsersCell-playHistoryLink-"][class*="Link-link-"] {
+  color: var(--label-text-color) !important;
 }
 
 /* BODY */
 [class*="FullPageBackground-backgroundContainer-"] [class*="CrossFadeImage-crossFade-"],
 #plex>[class*="background-container-"]>div>div>div:nth-child(2),
-#plex>div[class*="FullPageBackground-backgroundContainer-"]>div>div:nth-child(2) {
+#plex>div[class*="FullPageBackground-backgroundContainer-"]>div>div:nth-child(2),
+#plex > div[class*="FullPageBackground-backgroundContainer-"] > div > div:nth-child(4){
   background: var(--main-bg-color) !important;
 }
 
@@ -57,6 +104,13 @@ a:hover,
 }
 
 /* SIDEBAR */
+
+/* TEMP */
+[class*="SourceSidebarLink-isSelected-"] {
+  box-shadow: inset 2px 0 0 0 rgb(var(--accent-color));
+}
+/* /TEMP */
+
 [class*="SourceSidebar-openSidebar-"][class*="SourceSidebar-sidebar-"],
 [class*="SourceSidebar-sidebar-"] {
   background: rgba(0, 0, 0, .25);
@@ -70,8 +124,18 @@ a:hover,
   border-color: rgb(var(--accent-color));
 }
 
-[class*="SourceSidebarLink-isSelected-"] {
-  box-shadow: inset 4px 0 0 0 rgb(var(--accent-color)) !important;
+[class*="SourceSidebarLink-isSelected-"]:before {
+  background-color: rgb(var(--accent-color)) !important;
+}
+
+[class*="SourceSidebarLink-isSelected-"] [class*="SourceSidebarLink-iconContainer-"],
+[class*="SourceSidebarLink-isSelected-"] [class*="SourceSidebarLink-title-"] {
+  color: rgb(var(--accent-color));
+}
+
+[class*="SourceSidebarLink-sourceLink-"]:hover [class*="SourceSidebarLink-iconContainer-"],
+[class*="SourceSidebarLink-sourceLink-"]:hover [class*="SourceSidebarLink-title-"] {
+  color: var(--accent-color-hover);
 }
 
 [class*="SourceSidebarServerHeader-title-"] {
@@ -106,15 +170,37 @@ a:hover,
 
 /* ACCENTS */
 
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+  color: rgb(var(--accent-color))
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+  background-color:rgb(var(--accent-color),.03);
+
+}
+.btn-gray:focus, .btn-gray:hover {
+  color: var(--accent-color-hover);
+}
+
 [class*="PageHeaderTabButton-isSelected-"],
 [class*="PageHeaderTabDropdown-isSelected-"],
 [class*="MultiSelectPageHeader-selectedTitle-"],
 [class*="PageHeaderMultiselectActions-container-"],
 [class*="PageHeaderMultiselectActions-count-"],
 [class*="PivotTab-selectedButton-"],
-[class*="PivotTabDropdown-isSelected-"] {
+[class*="PivotTabDropdown-isSelected-"],
+[class*="PageHeaderTitle-detail-"] {
   color: rgb(var(--accent-color));
   border-color: rgb(var(--accent-color));
+}
+
+[class*="PivotTab-selectedButton-"]:after {
+  background-color: rgb(var(--accent-color));
+}
+[class*="PivotTab-selectedButton-"]:hover:after {
+  background-color: var(--link-color-hover);
 }
 
 [class*="MetadataPosterCardOverlay-unplayedBadge-"],
@@ -293,7 +379,7 @@ a:hover,
 
 .well,
 .files ul li {
-  color: var(--text-color);
+  color: var(--text);
   background-color: rgb(255 255 255 / 10%);
   border: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 5%);
@@ -301,12 +387,12 @@ a:hover,
 }
 
 .edit-section-modal .wizard-blocks-group>.wizard-block.selectable:hover {
-  color: var(--text-color-hover);
+  color: var(--text-hover);
   background-color: rgba(255, 255, 255, .05);
 }
 
 .edit-section-modal .wizard-blocks-group>.wizard-block.selectable {
-  color: var(--text-color)
+  color: var(--text)
 }
 
 .striped-list-item>.striped-list-inner-item>.selected,
@@ -315,7 +401,7 @@ a:hover,
 }
 
 .modal-header>h4>.modal-icon {
-  color: var(--text-color-hover);
+  color: var(--text-hover);
 }
 
 /* BUTTONS */
@@ -360,7 +446,7 @@ fieldset[disabled] .btn-primary:hover {
 }
 
 .btn-gray {
-  color: var(--text-color);
+  color: var(--text);
 }
 
 .edit-lock-addon.locked {
@@ -383,7 +469,7 @@ fieldset[disabled] .btn-primary:hover {
 }
 
 .edit-section-modal .wizard-blocks-group>.wizard-block {
-  color: var(--text-color);
+  color: var(--text);
 }
 
 [class*="Button-primary-"],
@@ -446,11 +532,17 @@ hr {
 .alerts-container .page-count {
   margin-right: 15px;
   font-size: 14px;
-  color: var(--text-color);
+  color: var(--text);
   vertical-align: top;
 }
 
 /* SYNC */
 .filter-bar .dropdown.open>a {
   color: rgb(var(--accent-color));
+}
+
+/* TABLE */
+
+[class*="TableHeaderTitle-tableHeaderTitle-"] {
+  color: var(--text-hover);
 }

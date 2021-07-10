@@ -12,22 +12,9 @@
 
 /* PLEX DRACULA THEME */
 @import url(https://theme-park.dev/CSS/themes/plex/plex-base.css);
+@import url(https://theme-park.dev/CSS/variables/dracula.css);
+
+/* APP VARS*/
 :root {
-  --main-bg-color: #282a36;
-  --modal-bg-color: #282a36;
-  
-  --button-color: #bd93f9;
-  --button-color-hover: #ff79c6;
-  --button-text: #eee;
-  --button-text-hover: #FFF;
-
-  --accent-color:  80, 250, 123;
-  --accent-color-hover: #50fa7b;
-  --link-color: #ff79c6;
-  --link-color-hover: #8be9fd;
   --poster-unwatched: #bd93f9;
-
-  --text-color: #6272a4;
-  --text-color-hover: #95adfa;
-  --text-muted: #999;
 }

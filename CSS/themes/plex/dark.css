@@ -12,19 +12,9 @@
 
 /* PLEX DARK THEME */
 @import url(https://theme-park.dev/CSS/themes/plex/plex-base.css);
+@import url(https://theme-park.dev/CSS/variables/dark.css);
+
+/* APP VARS*/
 :root {
-  --main-bg-color: radial-gradient(circle, #3a3a3a, #2d2d2d, #202020, #141414, #000000) center center/cover no-repeat fixed;
-  --modal-bg-color: radial-gradient(circle , #3a3a3a, #2d2d2d, #202020, #141414, #000000) center center/cover no-repeat fixed;
-  --text-color: #b7b7b7;
-  --text-color-hover: #fff;
-  --text-muted: #ddd;
-  --button-color: hsla(0,0%,100%,.15);
-  --button-color-hover: hsla(0,0%,100%,.30);
-  --button-text: #eee;
-  --button-text-hover: #fff;
-  --accent-color: 229, 160, 13;
-  --accent-color-hover: #ffffff73;
-  --link-color: #e5a00d;
-  --link-color-hover: #FFF;
   --poster-unwatched: #e5a00d;
 }

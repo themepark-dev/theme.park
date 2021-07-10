@@ -12,19 +12,9 @@
 
 /* PLEX HOTLINE THEME */
 @import url(https://theme-park.dev/CSS/themes/plex/plex-base.css);
+@import url(https://theme-park.dev/CSS/variables/hotline.css);
+
+/* APP VARS*/
 :root {
-  --main-bg-color: radial-gradient(ellipse at center, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
-  --modal-bg-color: radial-gradient(ellipse at top, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
-  --text-color: #eee;
-  --text-color-hover: #fff;
-  --text-muted: #ddd;
-  --button-color: #0b3161;
-  --button-color-hover: rgb(244, 67, 54);
-  --button-text: #eee;
-  --button-text-hover: #fff;
-  --accent-color: 244, 67, 54;
-  --accent-color-hover: rgba(255, 255, 255, .5);
-  --link-color: #f44336;
-  --link-color-hover: #FFF;
   --poster-unwatched: #FB3122;
 }
