@@ -16,16 +16,19 @@
 
 body {
     background: var(--main-bg-color);
-    color: var(--text-color)
+    color: var(--text)
 }
 
 /* TEXT COLOR */
 p,
-.card .text-wrap .title,
 .card .text-wrap .year,
 .media-content .overview,
-.media-content .media-crew .crew-credit {
-    color: var(--text-color);
+.media-content .media-crew .crew-credit,
+.media-content .media-crew .sidebar--item a,
+.sidebar--item .media-content .media-crew a,
+.sidebar--item p,
+.menu--item p {
+    color: var(--text);
 }
 
 h1,
@@ -34,8 +37,19 @@ h3,
 h4,
 h5,
 h6,
-.person--details p {
-    color: #fff;
+.person--details p,
+.text-wrap > p,
+.card .text-wrap .title,
+.main-title,
+.media-details .media-title, .single-title,
+.sub-title,
+.sub-title, .widget--title,
+.settings--menu--item p {
+    color: var(--text-hover);
+}
+
+.card .text-wrap > p {
+    color: var(--text-hover);
 }
 
 .settings--menu--item.active p {
@@ -44,6 +58,9 @@ h6,
 
 .settings--menu--item.active {
     border-bottom: 1px solid rgb(var(--accent-color));
+}
+.settings--menu--item:hover {
+    border-bottom: 1px solid var(--text-hover);
 }
 
 .settings--menu--item.active .icon svg path {
@@ -80,7 +97,7 @@ h6,
 }
 
 .menu--item.active {
-    background: rgba(255, 255, 255, .15);
+    background: rgba(var(--accent-color), .05);
     border-right: 4px solid rgb(var(--accent-color));
 }
 
@@ -97,7 +114,7 @@ h6,
 }
 
 .sidebar--item.active {
-    background: rgba(255, 255, 255, .15);
+    background: rgba(var(--accent-color), .05);
     border-top: 4px solid rgb(var(--accent-color));
 }
 
@@ -115,6 +132,19 @@ h6,
 
 .mob-menu-top .nav-toggle span {
     background: rgb(var(--accent-color));
+}
+
+.sidebar--item:hover p,
+.sidebar--item:hover .icon svg path,
+.menu--item:hover p,
+.menu--item:hover .icon svg path {
+color: rgb(var(--accent-color));
+fill: rgb(var(--accent-color));
+}
+
+.sidebar--item .icon svg path,
+.menu--item .icon svg path {
+    fill: var(--text);
 }
 
 /* LINKS */
@@ -143,6 +173,10 @@ p a:hover,
 /* OTHER */
 .widget--item hr {
     background: rgb(255 255 255 / 50%);
+}
+.widget--item--inner,
+.sr--instance--inner {
+    background: hsl(0deg 0% 0% / 15%);
 }
 
 .filter--add:hover {
@@ -217,7 +251,8 @@ code {
     background: rgb(var(--accent-color));
 }
 
-.card--inner:hover .image-wrap {
+.card--inner:hover .image-wrap,
+.company-card:hover .company-card--inner {
     -webkit-filter: brightness(.7);
     filter: brightness(.7);
     -webkit-box-shadow: 0 0 0 2px rgb(var(--accent-color)), 0 5px 10px 0 rgb(0 0 0 / 30%);
@@ -335,7 +370,7 @@ code {
 }
 
 thead {
-    color: #fff;
+    color: var(--text-hover);
     background: rgba(0, 0, 0, 0.25);
 }
 
@@ -365,19 +400,19 @@ input[type=checkbox]:checked:after {
 input:not([type=checkbox]):not(.styled-input--input):not([type=file]):focus {
     border-bottom: 2px solid rgb(var(--accent-color));
     background: rgba(255, 255, 255, .2);
-    color: var(--text-color-hover)
+    color: var(--text-hover)
 }
 
 input:not([type=checkbox]):not(.styled-input--input):not([type=file]),
 .login-wrap input {
     border-bottom: 2px solid rgba(0, 0, 0, 0);
-    color: var(--text-color);
+    color: var(--text);
     background: rgb(255 255 255 / 10%);
 }
 
 .search-form input:focus {
     background: hsla(0, 0%, 100%, .1) !important;
-    color: var(--text-color-hover) !important;
+    color: var(--text-hover) !important;
     border-bottom: 2px solid rgba(0, 0, 0, 0) !important;
 }
 

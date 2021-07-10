@@ -13,18 +13,9 @@
 
 /* PETIO DARK THEME */
 @import url(https://theme-park.dev/CSS/themes/petio/petio-base.css);
+@import url(https://theme-park.dev/CSS/variables/dark.css);
+
+/* APP VARS */
 :root {
-  --main-bg-color: radial-gradient(circle, #3a3a3a, #2d2d2d, #202020, #141414, #000000) center center/cover no-repeat fixed;
-  --modal-bg-color: radial-gradient(circle , #3a3a3a, #2d2d2d, #202020, #141414, #000000) center center/cover no-repeat fixed;
-  --text-color: #b7b7b7;
-  --text-color-hover: #fff;
-  --button-color: hsla(0,0%,100%,.15);
-  --button-color-hover: rgb(82, 82, 82);
-  --button-text: #eee;
-  --button-text-hover: #fff;
-  --accent-color: 100, 100, 100;
-  --accent-color-hover: #ffffff73;
-  --link-color: #fff;
-  --link-color-hover: #fff;
   --spinner: invert(35%) sepia(12%) saturate(4%) hue-rotate(2deg) brightness(104%) contrast(86%); /* Made with https://codepen.io/jsm91/embed/ZEEawyZ */
 }

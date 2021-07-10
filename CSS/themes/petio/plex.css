@@ -12,18 +12,9 @@
 
 /* PETIO PLEX THEME */
 @import url(https://theme-park.dev/CSS/themes/petio/petio-base.css);
+@import url(https://theme-park.dev/CSS/variables/plex.css);
+
+/* APP VARS */
 :root {
-  --main-bg-color:  url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-light2.png") center center/cover no-repeat fixed;
-  --modal-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-dark2.png") center center/cover no-repeat fixed; 
-  --text-color: #eee;
-  --text-color-hover: #fff;
-  --button-color: #cc7b19;
-  --button-color-hover: #e59029;
-  --button-text: #eee;
-  --button-text-hover: #fff;
-  --accent-color: 229, 160, 13;
-  --accent-color-hover: #ffc107;
-  --link-color: #e5a00d;
-  --link-color-hover: #fff;
   --spinner: invert(0%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(100%); /* Made with https://codepen.io/jsm91/embed/ZEEawyZ */
 }
