@@ -25,6 +25,12 @@ i.control {
     color: var(--link-color);
 }
 
+a:hover,
+a.static:hover,
+i.control:hover {
+    color: var(--link-color-hover);
+}
+
 #template {
     background: var(--main-bg-color);
 }
@@ -34,7 +40,7 @@ i.control {
 }
 
 #header .text-left {
-    border-right: solid medium var(--accent-color);
+    border-right: solid medium rgb(var(--accent-color));
 }
 
 #header {
@@ -54,15 +60,27 @@ i.control {
 #nav-block #nav-item:focus:after,
 #nav-block #nav-item:hover:after,
 #nav-block #nav-item.active:after {
-    background: var(--accent-color);
+    background: var(--accent-color-hover);
 }
 
 #nav-block #nav-item a:hover {
-    color: var(--text-hover) !important;
+    color: var(--text-hover);
 }
 
 #nav-block #nav-item a {
-    color: var(--text) !important;
+    color: var(--text);
+}
+
+#nav-item.active a {
+    color: rgb(var(--accent-color)) !important;
+}
+
+#nav-item.active a:hover {
+    color: rgb(var(--accent-color)) !important;
+}
+
+textarea {
+    background: rgb(0 0 0 / 25%);
 }
 
 /*DASHBOARD*/
@@ -73,6 +91,7 @@ table.share_status.dashboard {
 
 table.share_status.dashboard tr>td.next {
     border-top: 1px solid rgba(255, 255, 255, .25);
+    color: var(--text-hover);
 }
 
 span.outer.solid {
@@ -80,8 +99,12 @@ span.outer.solid {
 }
 
 span.inner {
-    width: 137px;
+    width: 137px !important;
 }
+
+thead.sortable,thead,table.tablesorter thead tr th {
+    color: var(--text-hover);   
+   }
 
 .sys,
 .usage-disk,
@@ -91,6 +114,13 @@ span.inner {
 
 .usage-disk>span:first-child {
     background-color: #4caf50
+}
+
+#db-box3 > tbody.smb.share.share1.sortable > tr > td > a {
+    color: var(--link-color);
+}
+#db-box3 > tbody.smb.share.share1.sortable > tr > td > a:hover {
+    color: var(--link-color-hover);
 }
 
 .green-text,
@@ -103,7 +133,7 @@ span.inner {
 #title {
     border-bottom: 1px solid rgba(255, 255, 255, .25);
     background-color: rgba(0, 0, 0, .5);
-    color: var(--text)
+    color: var(--text-hover);
 }
 
 table {
@@ -169,7 +199,7 @@ a.button:hover,
 .sweet-alert button:hover,
 #template button[type=button]:hover,
 #template button:hover {
-    color: var(--button-text);
+    color: var(--button-text-hover);
     text-shadow: var(--text-shadow) var(--button-color-hover);
     box-shadow: var(--box-shadow) var(--button-color-hover);
     background-color: var(--button-color-hover);
@@ -187,7 +217,7 @@ a.button:hover,
 }
 
 .swal-button:hover {
-    color: var(--button-text) !important;
+    color: var(--button-text-hover) !important;
     text-shadow: var(--text-shadow) var(--button-color-hover) !important;
     box-shadow: var(--box-shadow) var(--button-color-hover) !important;
     background-color: var(--button-color-hover) !important;
@@ -250,10 +280,14 @@ iframe {
     background: transparent !important;
 }
 
+div.Panel i.PanelIcon {
+    color: var(--text-hover);
+}
+
 /* PLUGINS */
 div.tab [type=radio]:checked+label,
 div.tab [type=radio]+label:hover {
-    border: 1px solid var(--accent-color);
+    border: 1px solid var(--accent-color-hover);
 }
 
 /* FOOTER */
@@ -264,13 +298,22 @@ div.tab [type=radio]+label:hover {
 
 /* CA */
 .ca_holderDocker {
-    background-color: rgb(255 255 255 / 10%) !important;
-    border-color: rgb(255 255 255 / 25%) !important;
+    background-color: rgb(0 0 0 / 10%) !important;
+    border-color: rgb(0 0 0 / 25%) !important;
+}
+.ca_holderDocker::before {
+    color: rgb(255 255 255 / 40%) !important;
 }
 
-.selectedMenu,
+.selectedMenu {
+    color: rgb(var(--accent-color)) !important;
+}
 .hoverMenu {
-    color: var(--link-color) !important;
+    color: var(--link-color-hover) !important;
+}
+
+.ca_descriptionArea:hover,a.ca_repoPopup:hover {
+    color: var(--text-hover) !important;
 }
 
 .ca_templatesDisplay .ca_holderFav {
@@ -279,42 +322,50 @@ div.tab [type=radio]+label:hover {
 }
 
 a.ca_appreadmore:hover {
-    color: var(--accent-color-hover) !important;
+    color: var(--link-color-hover) !important;
 }
 
 .ca_bottomLine .appIcons:hover,
 .ca_bottomLine .unpinned:hover {
     text-decoration: none;
-    color: var(--accent-color) !important;
+    color: var(--link-color-hover) !important;
 }
 
 .tooltipster-sidetip.tooltipster-right .tooltipster-box {
-    border-left: 3px solid var(--accent-color) !important;
+    border-left: 3px solid rgb(var(--accent-color)) !important;
 }
 
 .tooltipster-sidetip.tooltipster-bottom .tooltipster-box {
-    border-top: 3px solid var(--accent-color) !important;
+    border-top: 3px solid rgb(var(--accent-color)) !important;
 }
 
 .tooltipster-sidetip.tooltipster-top .tooltipster-arrow-border {
-    border-top-color: var(--accent-color) !important;
+    border-top-color: rgb(var(--accent-color)) !important;
 }
 
 .tooltipster-sidetip.tooltipster-right .tooltipster-arrow-border {
-    border-right-color: var(--accent-color) !important;
+    border-right-color: rgb(var(--accent-color)) !important;
 }
 
 .tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow-border,
 .tooltipster-sidetip.tooltipster-top .tooltipster-box {
-    border-bottom-color: var(--accent-color) !important;
+    border-bottom-color: rgb(var(--accent-color)) !important;
 }
 
 .appIconsPopUp:hover {
-    color: var(--accent-color) !important;
+    color: var(--accent-color-hover) !important;
 }
 
 a.popUpLink:hover {
     color: var(--accent-color-hover) !important;
+}
+
+li.caMenuItem {
+    color: var(--link-color);
+}
+
+li.caMenuItem:hover {
+    color: var(--link-color-hover);
 }
 
 /* AZURE THEME*/
@@ -325,7 +376,7 @@ div.tabs {
 
 /*DROPDOWN MENU*/
 .dropdown-menu {
-    background: var(--modal-bg-color) !important;
+    background: var(--drop-down-menu-bg) !important;
 }
 
 .dropdown-menu a {
@@ -391,7 +442,7 @@ blockquote {
 
 /* MY SERVERS */
 .UnraidUPC .--hasBanner-custom .UnraidUPC-dropdown {
-    background-color: var(--modal-bg-color) !important;
+    background-color: var(--drop-down-menu-bg) !important;
     --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 50%) !important;
     -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 transparent), var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 transparent), var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow);
@@ -414,9 +465,9 @@ blockquote {
 .UnraidUPC-dropdown button:hover {
     background-image: -webkit-gradient(linear, left top, right top, from(var(--tw-gradient-stops)));
     background-image: linear-gradient(90deg, var(--tw-gradient-stops));
-    --tw-gradient-from: var(--accent-color);
-    --tw-gradient-stops: var(--tw-gradient-from), var(--accent-color, rgba(226, 40, 40, 0));
-    --tw-gradient-to: var(--accent-color);
+    --tw-gradient-from: var(--accent-color-hover);
+    --tw-gradient-stops: var(--tw-gradient-from), rgb(var(--accent-color)), rgba(226, 40, 40, 0);
+    --tw-gradient-to: var(--accent-color-hover);
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
     outline: 0;
@@ -431,4 +482,8 @@ unraid-authed::part(div[data-v-050c892a] > button) {
     background: rgb(0 0 0 / 25%);
     padding: 1%;
     border-radius: 5px; 
+}
+
+dt {
+    color: var(--text-hover);
 }

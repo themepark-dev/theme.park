@@ -13,22 +13,4 @@
 
 /* UNRAID AQUAMARINE THEME */
 @import url(https://theme-park.dev/CSS/themes/unraid/unraid-base.css);
-:root {
-  --main-bg-color: radial-gradient(ellipse at center, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
-  --modal-bg-color: radial-gradient(ellipse at top, #47918a 0%, #0b3161 100%) center center/cover no-repeat fixed;
-  --button-color: #009688;
-  --button-color-hover: #12afa0;
-  --button-text: #eee;
-  --accent-color:  #12afa0;
-  --accent-color-hover: #fff;
-  --text: #eee;
-  --text-hover: #fff;
-  --text-muted: #6c757d;
-  --link-color: #12afa0;
-
-  --heatmap-color-1: #002D24;
-  --heatmap-color-2: #004B40;
-  --heatmap-color-3: #006B5F;
-  --heatmap-color-4: #008C7E; 
-  --heatmap-color-5: #12AFA0;
-}
+@import url(https://theme-park.dev/CSS/variables/aquamarine.css);

@@ -13,23 +13,4 @@
 
 /* UNRAID SPACE GRAY THEME */
 @import url(https://theme-park.dev/CSS/themes/unraid/unraid-base.css);
-:root {
-  --main-bg-color:  radial-gradient( ellipse at center,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed;
-  --modal-bg-color: radial-gradient( ellipse at top,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed; 
-  --button-color: #607D8B;
-  --button-color-hover: #81a6b7;
-  --button-text: #eee;
-  --accent-color: #81a6b7;
-  --accent-color-hover: #81a6b7;
-  --text: #eee;
-  --text-hover: #fff;
-  --text-muted: #6c757d;
-  --link-color: #81a6b7;
-
-  --heatmap-color-1: #002634;
-  --heatmap-color-2: #1D4352;
-  --heatmap-color-3: #3E6272;
-  --heatmap-color-4: #5F8394; 
-  --heatmap-color-5: #81A6B7;
-  
-}
+@import url(https://theme-park.dev/CSS/variables/space-gray.css);
