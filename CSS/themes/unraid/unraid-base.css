@@ -18,6 +18,14 @@ body {
     background: var(--main-bg-color);
 }
 
+h1,h2,h3,h4,h5,h6,strong {
+color: var(--text-hover);
+}
+
+i.fa.fa-fw {
+    color: var(--text-hover)!important;
+}
+
 a,
 .blue-text,
 a.static,
@@ -260,12 +268,17 @@ label.checkbox input:checked~.checkmark {
 
 #sb-info-inner,
 #sb-loading-inner,
-div.sb-message,
-#sb-title,
-#sb-title-inner {
+div.sb-message {
     color: var(--text);
     background-color: transparent;
 }
+
+#sb-title,
+#sb-title-inner {
+    color: var(--text-hover);
+    background-color: transparent;
+}
+
 
 #sb-wrapper {
     border: 1px rgba(0, 0, 0, 0) solid;
@@ -288,6 +301,13 @@ div.Panel i.PanelIcon {
 div.tab [type=radio]:checked+label,
 div.tab [type=radio]+label:hover {
     border: 1px solid var(--accent-color-hover);
+    color: var(--text-hover);
+}
+
+div.tab [type=radio]+label {
+    border: 1px solid rgb(255 255 255 / 25%);
+    background-color: rgb(0 0 0 / 50%);
+    opacity: 0.5;
 }
 
 /* FOOTER */
@@ -434,10 +454,10 @@ div.shade-black {
 /*HELP TEXT*/
 
 blockquote {
-    border-top: 2px solid rgb(255 255 255 / 25%);
-    border-bottom: 2px solid rgb(255 255 255 / 25%);
+    border-top: 2px solid rgb(0 0 0 / 25%);
+    border-bottom: 2px solid rgb(0 0 0 / 25%);
     color: var(--text);
-    background-color: rgb(255 255 255 / 10%);
+    background-color: rgb(0 0 0 / 10%);
 }
 
 /* MY SERVERS */
