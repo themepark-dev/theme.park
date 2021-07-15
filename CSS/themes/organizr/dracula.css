@@ -10,9 +10,9 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
-/* ORGANIZR SPACE GRAY THEME */
+/* ORGANIZR DRACULA THEME */
 @import url("https://theme-park.dev/CSS/themes/organizr/organizr-base.css");
-@import url("https://theme-park.dev/CSS/variables/space-gray.css");
+@import url("https://theme-park.dev/CSS/variables/dracula.css");
 
 /* APP VARS */
 :root {
@@ -22,5 +22,5 @@
     --calendar-tv-unreleased: #eeeeee;
     --calendar-movie-missing: #ff7676;
     --calendar-movie-available: #53e69d;
-    --calendar-movie-unreleased: #eeeeee; 
+    --calendar-movie-unreleased: #eeeeee;
   }
