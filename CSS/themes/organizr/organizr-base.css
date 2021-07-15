@@ -81,6 +81,11 @@ h6 {
     color: var(--text-hover) !important;
 }
 
+.badge {
+    background-color: rgb(var(--accent-color));
+    color: var(--label-text-color);
+}
+
 .tabLoaded {
     -webkit-filter: drop-shadow(0 0 2px transparent);
     filter: drop-shadow(0 0 2px transparent);
