@@ -1204,11 +1204,11 @@ a:hover {
 
 /* Homepage Unifi cards */
 .unifiCards .panel-heading {
-    background: rgba(255, 255, 255, 0.2) !important;
-    color: var(--text-hover) !important;
+    background: rgb(var(--accent-color));
+    color: var( --label-text-color) !important;
     border-color: transparent !important;
     text-align: inherit !important;
-    border-radius: 3px 3px 0 0 !important;
+    border-radius: 3px 3px 0 0 
 }
 
 .unifiCards .panel-wrapper.collapse.in {
@@ -1280,6 +1280,22 @@ a:hover {
 .swal-overlay--show-modal .swal-modal {
     background: var(--main-bg-color);
     color: var(--text-hover);
+}
+
+[id*="homepage"] .panel-heading.bg-info,
+.fc-toolbar:not(.fc-alternate){
+    background: rgb(var(--accent-color
+    )) !important;
+    color: var(--label-text-color) !important;
+}
+.fc-toolbar:not(.fc-alternate) h2,
+.fc .fc-button-group > button:not(.fc-alternate [class*="fc"]){
+    color: var(--label-text-color) !important;
+}
+
+.bg-info:not(.fc-alternate) {
+    background-color: rgb(var(--accent-color)) !important;
+    color: var(--lbel-text-color) !important;
 }
 
 /* THEME PARK CUSTOM END*/
@@ -1581,7 +1597,7 @@ input,
     background: #2b8b2d;
 }
 
-.panel-body {
+.panel-body:not(.unifiCards .panel-body) {
     background: var(--main-bg-color);
 }
 
