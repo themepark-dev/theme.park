@@ -1158,11 +1158,26 @@ a:hover {
 }
 
 /* Homepage health checks */
-.bg-inverse .healthPosition {
-    background: rgba(255, 255, 255, 0.2) !important;
-    -webkit-backdrop-filter: saturate(180%) blur(30px);
-    backdrop-filter: saturate(180%) blur(30px);
-    border-radius: 3px;
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .bg-inverse .healthPosition {
+        background: rgba(255, 255, 255, 0.2) !important;
+        -webkit-backdrop-filter: saturate(180%) blur(30px);
+        backdrop-filter: saturate(180%) blur(30px);
+        border-radius: 3px;
+    }
+}
+
+/* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
+@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    .bg-inverse .healthPosition {
+        background: var(--main-bg-color) !important;
+        border-radius: 3px;
+    }
+}
+
+.bg-inverse .healthPosition h3,
+.bg-inverse .healthPosition h5 {
+    color: #fff !important;
 }
 
 #homepageOrderhealthchecks .card-body {
@@ -1205,10 +1220,10 @@ a:hover {
 /* Homepage Unifi cards */
 .unifiCards .panel-heading {
     background: rgb(var(--accent-color));
-    color: var( --label-text-color) !important;
+    color: var(--label-text-color) !important;
     border-color: transparent !important;
     text-align: inherit !important;
-    border-radius: 3px 3px 0 0 
+    border-radius: 3px 3px 0 0
 }
 
 .unifiCards .panel-wrapper.collapse.in {
@@ -1283,17 +1298,17 @@ a:hover {
 }
 
 [id*="homepage"] .panel-heading.bg-info,
-.fc-toolbar:not(.fc-alternate){
-    background: rgb(var(--accent-color
-    )) !important;
-    color: var(--label-text-color) !important;
-}
-.fc-toolbar:not(.fc-alternate) h2,
-.fc .fc-button-group > button:not(.fc-alternate [class*="fc"]){
+.fc-toolbar:not(.fc-alternate) {
+    background: rgb(var(--accent-color)) !important;
     color: var(--label-text-color) !important;
 }
 
-.bg-info:not(.fc-alternate) {
+.fc-toolbar:not(.fc-alternate) h2,
+.fc .fc-button-group>button:not(.fc-alternate [class*="fc"]) {
+    color: var(--label-text-color) !important;
+}
+
+.bg-info:not(.fc-alternate):not(.feeds .bg-info) {
     background-color: rgb(var(--accent-color)) !important;
     color: var(--lbel-text-color) !important;
 }
@@ -1605,6 +1620,7 @@ input,
 .tab-content .panel .panel-body .bg-org {
     background: transparent !important;
 }
+
 /*
 .jq-toast-single {
     border-radius: 10px 10px 0 0;
