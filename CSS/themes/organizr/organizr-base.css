@@ -899,7 +899,8 @@ th.fc-day-header.fc-widget-header.fc-today {
 }
 
 .label-info {
-    background: var(--button-color);
+    background: rgb(var(--accent-color));
+    color: var(--label-text-color);
 }
 
 .white-box {
