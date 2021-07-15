@@ -1551,6 +1551,14 @@ body > div.mfp-wrap.mfp-auto-cursor.mfp-zoom-out.mfp-ready > div > div.mfp-conte
 body > div.mfp-wrap.mfp-auto-cursor.mfp-zoom-out.mfp-ready > div > div.mfp-content > div > div > div.white-box.m-b-0.bg-info > h3 {
     color: var(--label-text-color) !important;
 }
+@media screen and (min-width: 768px) {
+.orgErrorAlert {
+    min-width: 478px;
+    width: calc(100% - 40px);
+    max-width: 1200px;
+    background-color: var(--modal-bg-color) !important;
+}
+}
 
 /* #mediaSearch-area>div>div,
 body>div.mfp-wrap.mfp-auto-cursor.mfp-zoom-out.mfp-ready>div>div.mfp-content>div>div>div,
