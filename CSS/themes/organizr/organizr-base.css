@@ -158,7 +158,10 @@ h6 {
 .panel-info .panel-heading {
     border-color: rgb(var(--accent-color));
     color: var(--text-hover);
-    background: var(--main-bg-color);
+    background: var(--modal-bg-color);
+}
+.panel-body:not(.unifiCards .panel-body) {
+    background: var(--modal-bg-color);
 }
 
 .bg-plex {
@@ -1311,7 +1314,7 @@ a:hover {
 
 .bg-info:not(.fc-alternate):not(.feeds .bg-info) {
     background-color: rgb(var(--accent-color)) !important;
-    color: var(--lbel-text-color) !important;
+    color: var(--label-text-color) !important;
 }
 
 /* THEME PARK CUSTOM END*/
@@ -1541,15 +1544,19 @@ body {
 }
 
 .login-box,
-.white-box {
-    background: #1b1a1a;
+.white-box,
+body > div.mfp-wrap.mfp-auto-cursor.mfp-zoom-out.mfp-ready > div > div.mfp-content > div > div > div:nth-child(2) {
+    background: var(--modal-bg-color);
+}
+body > div.mfp-wrap.mfp-auto-cursor.mfp-zoom-out.mfp-ready > div > div.mfp-content > div > div > div.white-box.m-b-0.bg-info > h3 {
+    color: var(--label-text-color) !important;
 }
 
-#mediaSearch-area>div>div,
+/* #mediaSearch-area>div>div,
 body>div.mfp-wrap.mfp-auto-cursor.mfp-zoom-out.mfp-ready>div>div.mfp-content>div>div>div,
 body>div.mfp-wrap.mfp-auto-cursor.mfp-zoom-out.mfp-ready>div>div.mfp-content>div>div>div.white-box.m-b-0.bg-info {
     background: var(--modal-bg-color) !important;
-}
+} */
 
 .bg-title {
     background: var(--main-bg-color);
@@ -1613,8 +1620,9 @@ input,
     background: #2b8b2d;
 }
 
-.panel-body:not(.unifiCards .panel-body) {
-    background: var(--main-bg-color);
+
+#account-area > div > div > div > div > div.panel-wrapper.collapse.in.main-email-panel > div {
+    background: var(--modal-bg-color);
 }
 
 .tab-content .panel .panel-body,

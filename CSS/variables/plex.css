@@ -1,8 +1,8 @@
 :root {
   --main-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-light2.png") center center/cover no-repeat fixed;
   
-  --modal-bg-color: #282828;
-  --modal-header-color: #282828;
+  --modal-bg-color: #1f2326;
+  --modal-header-color: #1f2326;
   --modal-footer-color: #323232;
 
   --drop-down-menu-bg: #191a1c;
