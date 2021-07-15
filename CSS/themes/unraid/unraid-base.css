@@ -333,12 +333,12 @@ div.tab [type=radio]+label {
 }
 
 .ca_descriptionArea:hover,a.ca_repoPopup:hover {
-    color: var(--text-hover) !important;
+    color: var(--button-text-hover) !important;
 }
 
 .ca_templatesDisplay .ca_holderFav {
-    background: var(--button-color-hover) !important;
-    color: var(--text-hover) !important;
+    background: rgb(var(--accent-color),.7) !important;
+    color: var( --label-text-color) !important;
 }
 
 a.ca_appreadmore:hover {
