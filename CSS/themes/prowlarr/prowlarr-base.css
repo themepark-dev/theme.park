@@ -111,7 +111,7 @@ a:hover {
 [class*="ModalHeader-modalHeader-"] {
     background: var(--modal-header-color);
     color: var(--text-hover);
-    border-bottom: rgb(var(--accent-color));
+    border-bottom: 1px solid rgb(var(--accent-color));
 }
 
 [class*="ModalContent-modalContent-"] {
