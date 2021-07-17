@@ -14,11 +14,13 @@
 /* CALIBRE-WEB HOTLINE THEME */
 /* Set theme to CaliBlur in UI Configuration -> View Configuration -> Theme -> CaliBlur -> Submit */
 @import url(https://theme-park.dev/CSS/themes/calibreweb/calibreweb-base.css);
+@import url(https://theme-park.dev/CSS/variables/hotline.css);
+
+/* APP VARS*/
 :root {
-  --main-bg-color: radial-gradient(ellipse at center, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
-  --modal-bg-color: radial-gradient(ellipse at top, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
-  --color-primary: #ff6155;
-  --color-secondary: #F44336;
-  --color-secondary-hover: #0b3161;
-  --color-background-mobile: radial-gradient(ellipse at top, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
+  --color-background: var(--main-bg-color);
+  --color-primary: rgb(var(--accent-color));
+  --color-secondary: var(--button-color);
+  --color-secondary-hover: var(--button-color-hover);
+  --color-background-mobile: var(--main-bg-color);
 }

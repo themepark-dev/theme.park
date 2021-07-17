@@ -13,7 +13,7 @@
   --button-text-hover: #FFF;
 
   --accent-color:  80, 250, 123;
-  --accent-color-hover: #50fa7b;
+  --accent-color-hover: rgb(var(--accent-color),.8);
   --link-color: #ff79c6;
   --link-color-hover: #8be9fd;
   --label-text-color: #282a36;

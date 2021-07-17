@@ -14,11 +14,13 @@
 /* CALIBRE-WEB DARK THEME */
 /* Set theme to CaliBlur in UI Configuration -> View Configuration -> Theme -> CaliBlur -> Submit */
 @import url(https://theme-park.dev/CSS/themes/calibreweb/calibreweb-base.css);
+@import url(https://theme-park.dev/CSS/variables/dark.css);
+
+/* APP VARS*/
 :root {
-  --main-bg-color: radial-gradient(circle, #3a3a3a, #2d2d2d, #202020, #141414, #000000) center center/cover no-repeat fixed;
-  --modal-bg-color: radial-gradient(circle , #3a3a3a, #2d2d2d, #202020, #141414, #000000) center center/cover no-repeat fixed;
-  --color-primary: #F9BE03;
-  --color-secondary: #CC7B19;
-  --color-secondary-hover: #E59029;
-  --color-background-mobile: radial-gradient(circle , #3a3a3a, #2d2d2d, #202020, #141414, #000000) center center/cover no-repeat fixed;
+  --color-background: var(--main-bg-color);
+  --color-primary: rgb(var(--accent-color));
+  --color-secondary: var(--button-color);
+  --color-secondary-hover: var(--button-color-hover);
+  --color-background-mobile: var(--main-bg-color);
 }

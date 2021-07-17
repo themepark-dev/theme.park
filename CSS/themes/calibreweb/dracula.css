@@ -11,16 +11,16 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
-/* CALIBRE-WEB ORGANIZR-DARK THEME */
+/* CALIBRE-WEB DRACULA THEME */
 /* Set theme to CaliBlur in UI Configuration -> View Configuration -> Theme -> CaliBlur -> Submit */
 @import url(https://theme-park.dev/CSS/themes/calibreweb/calibreweb-base.css);
-@import url(https://theme-park.dev/CSS/variables/organizr-dark.css);
+@import url(https://theme-park.dev/CSS/variables/dracula.css);
 
 /* APP VARS*/
 :root {
-  --color-background: var(--main-bg-color);
-  --color-primary: rgb(var(--accent-color));
-  --color-secondary: var(--button-color);
-  --color-secondary-hover: var(--button-color-hover);
-  --color-background-mobile: var(--main-bg-color);
-}
+    --color-background: var(--main-bg-color);
+    --color-primary: rgb(var(--accent-color));
+    --color-secondary: var(--button-color);
+    --color-secondary-hover: var(--button-color-hover);
+    --color-background-mobile: var(--main-bg-color);
+  }
