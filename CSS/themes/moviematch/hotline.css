@@ -13,19 +13,4 @@
 
 /* MOVIEMATCH HOTLINE THEME */
 @import url(https://theme-park.dev/CSS/themes/moviematch/moviematch-base.css);
-:root {
-  --main-bg-color: radial-gradient(ellipse at center, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
-  --modal-bg-color: radial-gradient(ellipse at top, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
-  --text-color: #eee;
-  --text-color-hover: #fff;
-  --button-color: hsla(0,0%,100%,.15);
-  --button-color-hover: hsla(0,0%,100%,.30);
-  --button-text: #eee;
-  --button-text-hover: #fff;
-  --accent-color:  #F44336;
-  --accent-color-hover: #0b3161;
-  --link-color: #F44336;
-  --link-hover: #0b3161;
-  --text-muted: #bbb;
-  --logo-color: invert(32%) sepia(35%) saturate(3786%) hue-rotate(341deg) brightness(100%) contrast(92%);
-}
+@import url(https://theme-park.dev/CSS/variables/hotline.css);

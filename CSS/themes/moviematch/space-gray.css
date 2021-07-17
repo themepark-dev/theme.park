@@ -13,19 +13,4 @@
 
 /* MOVIEMATCH SPACE GRAY THEME */
 @import url(https://theme-park.dev/CSS/themes/moviematch/moviematch-base.css);
-:root {
-  --main-bg-color:  radial-gradient( ellipse at center,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed;
-  --modal-bg-color: radial-gradient( ellipse at top,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed; 
-  --text-color: #eee;
-  --text-color-hover: #fff;
-  --button-color: #607D8B;
-  --button-color-hover: #81a6b7;
-  --button-text: #eee;
-  --button-text-hover: #fff;
-  --accent-color: #81a6b7;
-  --accent-color-hover: #607D8B;
-  --link-color: #81a6b7;  
-  --link-color-hover: #fff;
-  --text-muted: #bbb;
-  --logo-color: invert(50%) sepia(31%) saturate(341%) hue-rotate(155deg) brightness(88%) contrast(85%);
-}
+@import url(https://theme-park.dev/CSS/variables/space-gray.css);

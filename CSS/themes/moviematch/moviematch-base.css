@@ -17,8 +17,10 @@
 
 body {
     background: var(--main-bg-color);
-    color: var(--text-color)
+    color: var(--text)
 }
+
+
 
 /* TEXT COLOR */
 .matches-title,
@@ -26,24 +28,22 @@ body {
 .card-stack:empty::after,
 footer,
 .Field_Label {
-    color: var(--text-color);
+    color: var(--text);
 }
 
 /* ACCENTS */
 .matches-section hr {
-    border: 0.5px solid var(--accent-color);
+    border: 0.5px solid rgb(var(--accent-color));
 }
 
 .matches-section hr::before,
 .matches-title .matches-count {
-    background: var(--accent-color);
+    background: rgb(var(--accent-color));
     color: var(--button-text);
 }
 
-.logo,
 .Logo {
-    filter: var(--logo-color);
-    color: var(--accent-color);
+    color: rgb(var(--accent-color));
 }
 
 /* FORMS */
@@ -69,7 +69,7 @@ input:focus {
 
 .Select_Element {
     border: 2px solid var(--button-color);
-    color: var(--button-color-text);
+    color: var(--button-text);
 }
 
 /* BUTTONS */
@@ -126,7 +126,7 @@ input:focus {
 }
 
 .Card_MoreInfoButton:hover {
-    color: var(--accent-color);
+    color: rgb(var(--accent-color));
 }
 .RoomInfoBar {
     background-color: rgba(0, 0, 0, 0.25);
