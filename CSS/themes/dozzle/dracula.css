@@ -9,11 +9,11 @@
 /*                                                  dP					 */
 
 /*		   		        Made by @gilbN					 */
-/* 			      https://github.com/gilbN/theme.park			 */
+/*			      https://github.com/gilbN/theme.park			 */
 
-/* DOZZLE PLEX THEME */
+/* DOZZLE DRACULA THEME */
 @import url(https://theme-park.dev/CSS/themes/dozzle/dozzle-base.css);
-@import url(https://theme-park.dev/CSS/variables/plex.css);
+@import url(https://theme-park.dev/CSS/variables/dracula.css);
 
 /* APP VARS */
 :root {

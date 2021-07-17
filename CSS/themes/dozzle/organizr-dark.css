@@ -13,17 +13,12 @@
 
 /* DOZZLE ORGANIZR-DARK THEME */
 @import url(https://theme-park.dev/CSS/themes/dozzle/dozzle-base.css);
+@import url(https://theme-park.dev/CSS/variables/organizr-dark.css);
+
+/* APP VARS */
 :root {
-  --main-bg-color: #1f1f1f;
-  --modal-bg-color: #1b1b1b;
-  --accent-color: 44, 171, 227;
-  --button-color: #2cabe3;
-  --button-color-hover: rgb(44 171 227 / .8);
-  --button-text: #eee;
-  --button-text-hover: #FFF;
-  --text-color: #96a2b4;
-  --text-strong-color: #fff;
-  --text-muted: #bbb;
+  --scheme-main-ter: var(--main-bg-color);
+  --text-strong-color: var(--button-text-hover);
   --border-color: rgb(255 255 255 / 25%);
   --logo-color: rgb(var(--accent-color));
   --body-background-color: var(--main-bg-color);

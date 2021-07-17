@@ -13,17 +13,12 @@
 
 /* DOZZLE SPACE GRAY THEME */
 @import url(https://theme-park.dev/CSS/themes/dozzle/dozzle-base.css);
+@import url(https://theme-park.dev/CSS/variables/space-gray.css);
+
+/* APP VARS */
 :root {
-  --main-bg-color:  radial-gradient( ellipse at center,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed;
-  --modal-bg-color: radial-gradient( ellipse at top,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed; 
-  --accent-color: 129, 166, 183;
-  --button-color: #607D8B;
-  --button-color-hover: #81a6b7;
-  --button-text: #eee;
-  --button-text-hover: #FFF;
-  --text-color: #eee;
-  --text-strong-color: #fff;
-  --text-muted: #bbb;
+  --scheme-main-ter: var(--main-bg-color);
+  --text-strong-color: var(--button-text-hover);
   --border-color: rgb(255 255 255 / 25%);
   --logo-color: rgb(var(--accent-color));
   --body-background-color: var(--main-bg-color);

@@ -17,7 +17,13 @@
 html,
 body {
     background: var(--main-bg-color) !important;
-    color: var(--text-color);
+    color: var(--text);
+}
+
+h1, h2, h3, h4, h5, h6,
+section header,
+.menu-label {
+    color: var(--text-hover) !important;
 }
 
 
@@ -51,16 +57,17 @@ html.has-custom-scrollbars section main {
 /* Text important */
 p,
 .menu-list a {
-    color: var(--text-color) !important;
+    color: var(--text) !important;
 
 }
 
 .panel-heading {
     background-color: rgb(var(--accent-color));
+    color: var(--label-text-color) !important;
 }
 
 .panel-block {
-    color: var(--text-color);
+    color: var(--text);
 }
 
 .panel-tabs a.is-active {
@@ -70,7 +77,7 @@ p,
 
 .panel-tabs a {
     border-bottom: 1px solid var(--border-color);
-    color: var(--text-color);
+    color: var(--text);
 }
 
 .panel-tabs a:hover {
@@ -87,13 +94,13 @@ label.panel-block:hover {
 /* Side Menu*/
 .menu-list a:hover {
     background-color: rgba(255, 255, 255, .08);
-    color: var(--text-strong-color);
+    color: var(--text-hover) !important;
 }
 
 .menu-list a.is-active,
 .menu-list a.is-active:hover {
     background-color: rgb(var(--accent-color));
-    color: #fff !important;
+    color: var(--label-text-color) !important;
 }
 
 .menu-list li:hover .column-icon:hover {
@@ -180,6 +187,16 @@ section .is-scrollbar-notification button {
 }
 
 .is-settings-control:hover {
+    border-color: var(--button-color-hover) !important;
+    background: var(--button-color-hover) !important;
+    color: var(--button-text-hover) !important;
+}
+
+#hide-nav{
+    background: var(--button-color) !important;
+    color: var(--button-text) !important;
+}
+#hide-nav:hover{
     border-color: var(--button-color-hover) !important;
     background: var(--button-color-hover) !important;
     color: var(--button-text-hover) !important;
