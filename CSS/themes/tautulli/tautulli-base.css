@@ -443,7 +443,7 @@ a:hover, a:focus {
     color: var(--link-color-hover);
 }
 table.display td:hover a {
-    color: rgb(var(--accent-color));
+    color: var(--link-color-hover);
 }
 .user-overview-stats-instance h3, .user-player-instance-playcount h3, .summary-content-title h1, .summary-content-title h1 a {
     color: var(--text-hover);
