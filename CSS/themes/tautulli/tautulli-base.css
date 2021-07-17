@@ -12,16 +12,53 @@
 /*			      https://github.com/gilbN/theme.park			 */
   body {
       background: var(--main-bg-color);
+      color: var(--text);
   }
   
   /* Text */
-  .text-muted, .help-block, .small-muted ,h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small {
-      color: #FFF;
+
+p,
+.news-title, .news-date {
+    color: var(--text);
+}
+
+  .help-block ,h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small,
+   .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small,
+   h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small,
+   .header-bar span,
+   .dashboard-activity-info-time, strong,
+   .summary-content-details-tag strong,
+   .padded-header h1, h2, h3, h4, h5, h6,
+   .config-scheduler-table th,
+   #tautulli-news .open .news-title, #tautulli-news .open .news-date, #tautulli-news .accordion li.open .link i.fa {
+      color: var(--text-hover);
   }
-  a.no-highlight {
-      color: #dedede;
+
+  .list-unstyled {
+      color: #fff;
   }
-  #plexpy-notifiers-table .friendly_name, #notifier-config-modal span.notifier_id, #plexpy-newsletters-table .friendly_name, #newsletter-config-modal span.newsletter_id, #plexpy-mobile-devices-table .friendly_name, #mobile-device-config-modal span.notifier_id {
+
+  .text-muted, .small-muted {
+    color: var(--text-muted);
+  }
+
+  /* LINKS */
+  
+  a,
+  a.no-highlight,
+  .news-body a {
+      color: var(--link-color);
+  }
+
+  a:hover,
+  a.no-highlight:hover,
+  .dashboard-activity-metadata-title a:hover,
+  .dashboard-activity-metadata-user a:hover {
+    color: var(--link-color-hover);
+    }
+
+  #plexpy-notifiers-table .friendly_name, #notifier-config-modal span.notifier_id, #plexpy-newsletters-table .friendly_name,
+   #newsletter-config-modal span.newsletter_id, #plexpy-mobile-devices-table .friendly_name, #mobile-device-config-modal span.notifier_id {
       color: #fff;
   }
   /* Navbar */
@@ -39,30 +76,33 @@
       background-color: rgba(0, 0, 0, 0.25);
   }
   .nav > li > a {
-      color: #FFF;
+      color: var(--text);
   }
   .nav > li > a:hover, .nav > li > a:focus {
       background-color: rgba(255, 255, 255, 0.08);
+      color: var(--text-hover);
   }
   .nav .open > a, .nav .open > a:hover, .nav .open  > a:focus {
       background-color: rgba(255, 255, 255, 0.08);
+      color:rgb(var(--accent-color));
   }
   
   /* Dropdown */
   .dropdown-menu {
-      background: var(--modal-bg-color);
+      background: var(--drop-down-menu-bg);
   }
   .dropdown-menu > li > a {
-      color: #FFF;
+      color: var(--text);
   }
   .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
       background-color: rgba(255, 255, 255, 0.08);
+      color: var(--text-hover);
   }
   .dropdown-menu .divider {
       background-color: rgba(255, 255, 255, 0.08);
   }
   select, .react-selectize.bootstrap3.root-node .react-selectize-control {
-      background: rgba(0, 0, 0, 0.25);
+      background: var(--drop-down-menu-bg);
   }
   
   /* Dashboard */
@@ -76,7 +116,7 @@
       background-color: rgba(255, 255, 255, 0.25);
   }
   .dashboard-activity-metadata-user a {
-      color: #fff;
+      color: var(--link-color);
   }
   .dashboard-activity-metadata-subtitle-container {
       color: #fff;
@@ -87,40 +127,41 @@
   .dashboard-recent-media-metacontainer h3.text-muted {
       color: #fff;
   }
+
   /* Buttons */
   .btn-dark {
-      background-color: rgba(0, 0, 0, 0.25);
-      border-color: transparent;
-  }
-  .btn-dark:hover {
-      color: #d7d7d7;
-      background-color: rgba(255, 255, 255, 0.08);
-      border-color: transparent;
-  }
-  .btn-dark:active, .btn-dark.active, .open > .dropdown-toggle.btn-dark, .btn-dark.active:focus {
-      color: #fff;
-      background-color: rgba(0, 0, 0, 0.45);
-      border-color: transparent;
-  }
-  .btn:focus, .btn.focus, .btn-dark:focus, .btn-dark.focus, .btn-dark:active:focus {
-     color: #fff;
-     background-color: rgba(0, 0, 0, 0.45) !important;
-  }
-   .btn-dark.active:hover {
-      background-color: rgba(255, 255, 255, 0.08);
-  }
-   .btn-dark.inactive:hover {
-      background-color: rgba(255, 255, 255, 0.08);
-  }
-  .btn-danger.btn-edit {
-      background-color: rgba(255, 255, 255, 0.25);
-  }
-  .btn-form {
-      background-color: rgba(0, 0, 0, 0.45);
-  }
-  .btn-form:hover {
-      background-color: rgba(255, 255, 255, 0.08);
-  }
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+}
+.btn-dark:hover {
+    color: var(--button-text-hover);
+    background-color: var(--button-color-hover);
+    border-color: var(--button-color-hover);
+}
+.btn-dark:active, .btn-dark.active, .open > .dropdown-toggle.btn-dark, .btn-dark.active:focus {
+    color: var(--button-text-hover);
+    background-color: var(--button-color-hover);
+    border-color: var(--button-color-hover);
+}
+.btn:focus:not(select), .btn.focus:not(select), .btn-dark:focus:not(select), .btn-dark.focus:not(select), .btn-dark:active:focus:not(select) {
+   color: var(--button-text-hover);
+   background-color: var(--button-color-hover) !important;
+}
+ .btn-dark.active:hover {
+    background-color: var(--button-color-hover);
+}
+ .btn-dark.inactive:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+.btn-danger.btn-edit {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+.btn-form {
+    background-color: var(--button-color);
+}
+.btn-form:hover {
+    background-color: var(--button-color-hover);
+}
   
   /* Inputs */
   textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
@@ -165,7 +206,7 @@
       background-color: rgba(0, 0, 0, 0.15);
   }
   table.display thead th {
-      color: #fff;
+      color: var(--text-hover);
       background-color: rgba(0, 0, 0, 0.25);
   }
   table.display thead tr:hover {
@@ -177,7 +218,7 @@
   }
   .nav-settings > li > a {
       border-bottom: 1px solid transparent;
-      color: #fff;
+      color: var(--text);
   }
   .nav-settings > li {
       background-color: rgba(0, 0, 0, 0.45);
@@ -187,7 +228,7 @@
       background-color: rgba(0, 0, 0, 0.25);
   }
   .nav-settings > li > a:hover, .nav-settings > li > a:focus {
-      color: #fff;
+      color: var(--text-hover);
       background-color: rgba(255, 255, 255, 0.08);
   }
   .card {
@@ -237,13 +278,14 @@ span > a.active, .stacked-configs > li > span > span.active {
       border-color: #00000000;
   }
   .pagination > li > a, .pagination > li > span {
-      background-color: rgba(0, 0, 0, 0.25);
-      border: 1px solid #00000000;
+    background-color: var(--button-color);
+    border: 1px solid var(--button-color);
+    color: var(--button-text);
   }
   .pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
-      background-color: rgba(255, 255, 255, 0.08);
-      border: 1px solid #00000000;
-      color: #FFF;
+      background-color: var(--button-color-hover);
+      border: 1px solid var(--button-color-hover);
+      color: var(--button-text-hover);
   }
   /* Graphs */
   .graphs-instance {
@@ -260,12 +302,12 @@ span > a.active, .stacked-configs > li > span > span.active {
       background: var(--modal-bg-color);
   }
   .modal-header {
-      background: var(--modal-bg-color);
-      border-bottom: 1px solid var(--accent-color);
+      background: var(--modal-header-color);
+      border-bottom: 1px solid rgb(var(--accent-color));
   }
   .modal-footer {
-      background: var(--modal-bg-color);
-      border-top: 1px solid var(--accent-color);	
+      background: var(--modal-footer-color);
+      border-top: 1px solid rgb(var(--accent-color));	
   }
   .modal-config-section {
       border-top: 1px solid rgba(255, 255, 255, .08);
@@ -274,10 +316,10 @@ span > a.active, .stacked-configs > li > span > span.active {
       border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   }
   #notifier-config-modal .nav-tabs > li > a, #newsletter-config-modal .nav-tabs > li > a {
-      color: #ffffff;
+      color: var(--text);
   }
   #notifier-config-modal .nav-tabs > li.active > a, #notifier-config-modal .nav-tabs > li.active > a:hover, #notifier-config-modal .nav-tabs > li.active > a:focus, #newsletter-config-modal .nav-tabs > li.active > a, #newsletter-config-modal .nav-tabs > li.active > a:hover, #newsletter-config-modal .nav-tabs > li.active > a:focus {
-      color: #fff;
+      color: var(--text-hover);
       background: rgba(0, 0, 0, 0.45);
   }
   #notifier-config-modal .nav-tabs > li.active > a, #notifier-config-modal .nav-tabs > li.active > a:hover, #notifier-config-modal .nav-tabs > li.active > a:focus, #newsletter-config-modal .nav-tabs > li.active > a, #newsletter-config-modal .nav-tabs > li.active > a:hover, #newsletter-config-modal .nav-tabs > li.active > a:focus {
@@ -287,6 +329,7 @@ span > a.active, .stacked-configs > li > span > span.active {
   #notifier-config-modal .nav-tabs > li > a:hover, #newsletter-config-modal .nav-tabs > li > a:hover {
       border-color: #0000;
       background: rgba(255, 255, 255, 0.08);
+      color: var(--text-hover);
   }
   #notifier-config-modal .nav-tabs, #newsletter-config-modal .nav-tabs {
       border-bottom: 1px solid rgba(255, 255, 255, 0.25);
@@ -334,7 +377,7 @@ span > a.active, .stacked-configs > li > span > span.active {
     color: #eee;
 }
 #login-methods > li.open > div {
-    color: var(--accent-color);
+    color: rgb(var(--accent-color));
 }
 
 /* Buttons */
@@ -358,7 +401,7 @@ span > a.active, .stacked-configs > li > span > span.active {
     background-color: var(--button-color-hover);
     box-shadow: inset 0 1px 0 var(--button-color-hover);
 }
-.btn:focus, .btn.focus, .btn-dark:focus, .btn-dark.focus, .btn-dark:active:focus {
+.btn:focus:not(#history-user):not(#graph-user):not(#sync-user), .btn.focus, .btn-dark:focus, .btn-dark.focus, .btn-dark:active:focus {
     color: #fff;
     background-color: var(--button-color-hover) !important;
     opacity: .8;
@@ -369,108 +412,116 @@ span > a.active, .stacked-configs > li > span > span.active {
 }
 
 /* Accents */
+.badge {
+    color: var(--label-text-color);
+    background-color: rgb(var(--accent-color));
+}
+.summary-content {
+    color: rgb(var(--accent-color));
+}
 .nav > li.active > a, .nav > li.active > a:hover, .nav > li.active > a:focus {
-    color: var(--accent-color);
+    color: rgb(var(--accent-color));
 }
 .dashboard-activity-progress .progress-bar {
-    background-color: var(--accent-color);
-    background-image: -moz-linear-gradient(top, var(--accent-color-hover), var(--accent-color));
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(var(--accent-color-hover)), to(var(--accent-color)));
-    background-image: -webkit-linear-gradient(top, var(--accent-color-hover, var(--accent-color)));
-    background-image: -o-linear-gradient(top, var(--accent-color-hover, var(--accent-color)));
-    background-image: linear-gradient(to bottom, var(--accent-color-hover, var(--accent-color)));
+    background-color: rgb(var(--accent-color));
+    background-image: -moz-linear-gradient(top, var(--accent-color-hover), rgb(var(--accent-color)));
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(var(--accent-color-hover)), to(rgb(var(--accent-color))));
+    background-image: -webkit-linear-gradient(top, var(--accent-color-hover, rgb(var(--accent-color))));
+    background-image: -o-linear-gradient(top, var(--accent-color-hover, rgb(var(--accent-color))));
+    background-image: linear-gradient(to bottom, var(--accent-color-hover, rgb(var(--accent-color))));
 
 }
 .dashboard-stats-info-item .sub-count {
-    color: var(--accent-color);
+    color: rgb(var(--accent-color));
 }
 .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
-    background-color: var(--accent-color);
-    border-color: var(--accent-color);
+    background-color: var(--button-color-hover);
+    border-color: var(--button-color-hover);
+    color: var(--button-text-hover);
 }
 a:hover, a:focus {
-    color: var(--accent-color);
+    color: var(--link-color-hover);
 }
 table.display td:hover a {
-    color: var(--accent-color);
+    color: rgb(var(--accent-color));
 }
 .user-overview-stats-instance h3, .user-player-instance-playcount h3, .summary-content-title h1, .summary-content-title h1 a {
-    color: var(--accent-color);
+    color: var(--text-hover);
 }
 .user-info-nav > .active > a {
-    color: var(--accent-color);
+    color: rgb(var(--accent-color));
 }
 a:hover .dashboard-recent-media-poster, a:hover .dashboard-recent-media-cover {
-    webkit-box-shadow: inset 0 0 0 2px var(--accent-color);
-    -moz-box-shadow: inset 0 0 0 2px var(--accent-color);
-    box-shadow: inset 0 0 0 2px var(--accent-color);
+    -webkit-box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
+    -moz-box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
+    box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
 }
 .nav-settings > .active > a, .nav-settings > .active > a:hover, .nav-settings > .active > a:focus {
-    color: var(--accent-color);
+    color: rgb(var(--accent-color));
 }
 div.advanced-setting {
-    border-left: 1px solid var(--accent-color);
+    border-left: 1px solid rgb(var(--accent-color));
 }
 .docker-setting {
-    color: var(--accent-color);
+    color: rgb(var(--accent-color));
 }
 .modal-body strong, .modal-body strong i.fa {
-    color:  var(--accent-color);
+    color:  rgb(var(--accent-color));
 }
 .user-info-nav a:hover {
     color: var(--accent-color-hover)
 }
 a:hover .dashboard-activity-poster, a:hover .dashboard-activity-cover {
-    -webkit-box-shadow: inset 0 0 0 2px var(--accent-color);
-    -moz-box-shadow: inset 0 0 0 2px var(--accent-color);
-    box-shadow: inset 0 0 0 2px var(--accent-color);
+    -webkit-box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
+    -moz-box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
+    box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
 }
 a:hover .dashboard-stats-poster, a:hover .dashboard-stats-cover, a:hover .dashboard-stats-circle, a:hover .dashboard-stats-square {
-    -webkit-box-shadow: inset 0 0 0 2px var(--accent-color);
-    -moz-box-shadow: inset 0 0 0 2px var(--accent-color);
-    box-shadow: inset 0 0 0 2px var(--accent-color);
+    -webkit-box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
+    -moz-box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
+    box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
 }
 a:hover .item-children-poster {
-    webkit-box-shadow: inset 0 0 0 2px var(--accent-color);
-    -moz-box-shadow: inset 0 0 0 2px var(--accent-color);
-    box-shadow: inset 0 0 0 2px var(--accent-color);
+    -webkit-box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
+    -moz-box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
+    box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
 }
 .dashboard-activity-terminate-session:hover {
-    color: var(--accent-color);
+    color: rgb(var(--accent-color));
 }
 a .dashboard-activity-metadata-user-thumb:hover {
-    -webkit-box-shadow: inset 0 0 0 2px var(--accent-color);
-    -moz-box-shadow: inset 0 0 0 2px var(--accent-color);
-    box-shadow: inset 0 0 0 2px var(--accent-color);
+    -webkit-box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
+    -moz-box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
+    box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
 }
 .stream-info .heading {
-    color: var(--accent-color);
+    color: rgb(var(--accent-color));
 }
 a .library-user-instance-box:hover {
-    -webkit-box-shadow: inset 0 0 0 2px var(--accent-color);
-    -moz-box-shadow: inset 0 0 0 2px var(--accent-color);
-    box-shadow: inset 0 0 0 2px var(--accent-color);
+    -webkit-box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
+    -moz-box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
+    box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
 }
 .summary-navbar-list .breadcrumb a:hover {
-    color: var(--accent-color);
+    color: rgb(var(--accent-color));
 }
 .dashboard-recent-media-metacontainer h3.text-muted a:hover {
-    color: var(--accent-color);
+    color: rgb(var(--accent-color));
 }
 a .poster-face:hover, a .cover-face:hover, a .users-poster-face:hover,.summary-poster-face-overlay {
-    -webkit-box-shadow: inset 0 0 0 2px var(--accent-color);
-    -moz-box-shadow: inset 0 0 0 2px var(--accent-color);
-    box-shadow: inset 0 0 0 2px var(--accent-color);
+    -webkit-box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
+    -moz-box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
+    box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
 }
 .submenu li {
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 span > a.active, .stacked-configs > li > span > span.active {
-    color: var(--accent-color);
+    color: rgb(var(--accent-color));
 }
 .accordion li.open .link, .accordion li.open .link i.fa {
-    color: var(--accent-color);
+    color: rgb(var(--accent-color));
 }
 .news-body a:hover {
-    color: var(--accent-color);
+    color: var(--link-color-hover);
 }
