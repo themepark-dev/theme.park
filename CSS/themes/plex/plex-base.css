@@ -115,6 +115,7 @@ a:hover,
 /* TEMP */
 [class*="SourceSidebarLink-isSelected-"] {
   box-shadow: inset 2px 0 0 0 rgb(var(--accent-color));
+  background: rgb(var(--accent-color),0.05);
 }
 /* /TEMP */
 
