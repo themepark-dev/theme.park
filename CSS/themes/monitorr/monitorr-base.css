@@ -149,6 +149,13 @@ background: transparent;
 
 #modalloading {
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 	color: white !important;
 	border: 1px solid transparent !important;
 	box-shadow: 0.5rem 0.5rem 1rem rgb(15, 15, 15, 0.45) !important;
@@ -312,6 +319,13 @@ box-shadow: none;
 }
 #myModal3 {
     background: var(--modal-bg-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 	border: 1px solid transparent !important;
 }
 .modalimgpath, .modaltext, #uploadbutton {

@@ -15,6 +15,13 @@
 
 body {
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     color: #dedede;
 }
 /* Scrollbar */  
@@ -27,7 +34,14 @@ body {
     body {
         overflow-y: auto;
         height: 100%;
-        background: var(--main-bg-color)
+        background: var(--main-bg-color);
+        background-repeat: repeat, no-repeat;
+        background-attachment: fixed, fixed;
+        background-position: center center, center center;
+        background-size: auto, cover;
+        -webkit-background-size: auto, cover;
+        -moz-background-size: auto, cover;
+        -o-background-size: auto, cover; 
     }
     }
     ::-webkit-scrollbar {
@@ -50,7 +64,16 @@ body {
         background-color: hsla(0,0%,100%,.5);
         background-clip: padding-box;
     }
-div#torrent_container {background: var(--main-bg-color)}
+div#torrent_container {
+    background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
+}
 
 /* Toolbar */
 div#toolbar {
@@ -180,6 +203,13 @@ div#toolbar {
 /* Modal */
     div.dialog_container div.dialog_window {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     background-color: #eee;
     border: none !important;
     opacity: 1;
@@ -207,6 +237,13 @@ div#toolbar {
     .ui-widget-content {
     border: 1px solid transparent;
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     color: #dedede;
     }
     .ui-widget-header {color: #dedede !important;}

@@ -12,6 +12,13 @@
 /*			      https://github.com/gilbN/theme.park			 */
   body {
       background: var(--main-bg-color);
+      background-repeat: repeat, no-repeat;
+      background-attachment: fixed, fixed;
+      background-position: center center, center center;
+      background-size: auto, cover;
+      -webkit-background-size: auto, cover;
+      -moz-background-size: auto, cover;
+      -o-background-size: auto, cover; 
       color: var(--text);
   }
   
@@ -64,6 +71,13 @@ p,
   /* Navbar */
   .navbar {
       background: var(--main-bg-color);
+      background-repeat: repeat, no-repeat;
+      background-attachment: fixed, fixed;
+      background-position: center center, center center;
+      background-size: auto, cover;
+      -webkit-background-size: auto, cover;
+      -moz-background-size: auto, cover;
+      -o-background-size: auto, cover; 
       -webkit-box-shadow: none;
       -moz-box-shadow: none;
       box-shadow: none;
@@ -90,6 +104,13 @@ p,
   /* Dropdown */
   .dropdown-menu {
       background: var(--drop-down-menu-bg);
+      background-repeat: repeat, no-repeat;
+      background-attachment: fixed, fixed;
+      background-position: center center, center center;
+      background-size: auto, cover;
+      -webkit-background-size: auto, cover;
+      -moz-background-size: auto, cover;
+      -o-background-size: auto, cover; 
   }
   .dropdown-menu > li > a {
       color: var(--text);
@@ -103,6 +124,13 @@ p,
   }
   select, .react-selectize.bootstrap3.root-node .react-selectize-control {
       background: var(--drop-down-menu-bg);
+      background-repeat: repeat, no-repeat;
+      background-attachment: fixed, fixed;
+      background-position: center center, center center;
+      background-size: auto, cover;
+      -webkit-background-size: auto, cover;
+      -moz-background-size: auto, cover;
+      -o-background-size: auto, cover; 
   }
   
   /* Dashboard */
@@ -300,13 +328,34 @@ span > a.active, .stacked-configs > li > span > span.active {
   }
   .modal-body {
       background: var(--modal-bg-color);
+      background-repeat: repeat, no-repeat;
+      background-attachment: fixed, fixed;
+      background-position: center center, center center;
+      background-size: auto, cover;
+      -webkit-background-size: auto, cover;
+      -moz-background-size: auto, cover;
+      -o-background-size: auto, cover; 
   }
   .modal-header {
       background: var(--modal-header-color);
+      background-repeat: repeat, no-repeat;
+      background-attachment: fixed, fixed;
+      background-position: center center, center center;
+      background-size: auto, cover;
+      -webkit-background-size: auto, cover;
+      -moz-background-size: auto, cover;
+      -o-background-size: auto, cover; 
       border-bottom: 1px solid rgb(var(--accent-color));
   }
   .modal-footer {
       background: var(--modal-footer-color);
+      background-repeat: repeat, no-repeat;
+      background-attachment: fixed, fixed;
+      background-position: center center, center center;
+      background-size: auto, cover;
+      -webkit-background-size: auto, cover;
+      -moz-background-size: auto, cover;
+      -o-background-size: auto, cover; 
       border-top: 1px solid rgb(var(--accent-color));	
   }
   .modal-config-section {

@@ -1,9 +1,9 @@
 :root {
   --main-bg-color: #1f1f1f;
 
-  --modal-bg-color: #1b1b1b;
-  --modal-header-color: #1b1b1b;
-  --modal-footer-color: #1b1b1b;
+  --modal-bg-color: #333;
+  --modal-header-color: #232323;
+  --modal-footer-color: #232323;
 
   --drop-down-menu-bg: #1b1b1b;
 

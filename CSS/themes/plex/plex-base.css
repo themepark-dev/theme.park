@@ -96,6 +96,13 @@ a:hover,
 #plex>div[class*="FullPageBackground-backgroundContainer-"]>div>div:nth-child(2),
 #plex > div[class*="FullPageBackground-backgroundContainer-"] > div > div:nth-child(4){
   background: var(--main-bg-color) !important;
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  background-size: auto, cover;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover; 
 }
 
 [class*="BottomBar-bottomBar-"] {
@@ -118,6 +125,13 @@ a:hover,
 
 [class*="SourceSidebar-expandedSidebar-"][class*="SourceSidebar-sidebar-"] {
   background: var(--modal-bg-color) !important;
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  background-size: auto, cover;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover; 
 }
 
 [class*="DisclosureArrow-isSelected-"] {
@@ -350,17 +364,38 @@ a:hover,
 /* MODAL */
 [class*="ModalContent-modalContent-"] {
   background: var(--modal-bg-color);
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  background-size: auto, cover;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover; 
 }
 
 .modal-header {
   padding: 15px 20px;
   background: var(--modal-header-color);
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  background-size: auto, cover;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover; 
   border-bottom: 1px solid rgba(255, 255, 255, .05);
 }
 
 .modal-content {
   position: relative;
   background: var(--modal-bg-color);
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  background-size: auto, cover;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover; 
   border: 1px solid #999;
   border: 1px solid rgba(0, 0, 0, .2);
   border-radius: 3px;
@@ -374,6 +409,13 @@ a:hover,
   padding: 15px 20px;
   margin-top: 0;
   background: var(--modal-footer-color);
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  background-size: auto, cover;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover; 
   border-top: 1px solid rgba(255, 255, 255, .05);
 }
 
@@ -488,6 +530,13 @@ fieldset[disabled] .btn-primary:hover {
 [class*="Menu-menu-"],
 .selectize-dropdown, .selectize-dropdown.form-control {
   background: var(--drop-down-menu-bg);
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  background-size: auto, cover;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover; 
 }
 
 [class*="ServerMenuItem-selectedServerMenuItem-"],

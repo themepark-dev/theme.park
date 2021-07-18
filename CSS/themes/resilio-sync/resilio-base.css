@@ -16,6 +16,13 @@ body,
 .tableScrollContainer,
 .settings-tabs-wrapper .settings-tabs-container {
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 a {
@@ -156,10 +163,24 @@ UL.jqueryFileTree A,
 .bt-navbar #choose-share-type-menu,
 .bt-navbar .choose-dropdown-menu {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 .dropdown-menu {
     background-color: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     border: 1px solid #ccc;
     border: 1px solid rgba(0, 0, 0, .15);
     border-radius: 2px;
@@ -169,6 +190,13 @@ UL.jqueryFileTree A,
 
 .dropdown-menu {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     border: 1px solid rgba(255, 255, 255, .1);
     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .2);
     box-shadow: 0 6px 12px rgba(0, 0, 0, .2);
@@ -306,10 +334,24 @@ button.selectpicker.btn-default {
 .bt-navbar #choose-share-type-menu .arrow,
 .bt-navbar .choose-dropdown-menu .arrow {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 .popout-parent {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 .context-menu li a:focus,
@@ -319,6 +361,13 @@ button.selectpicker.btn-default {
 
 .context-notification .context-notification-inner {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 #general-settings #languagedrop {
@@ -334,6 +383,13 @@ button.selectpicker.btn-default {
 .modal-header,
 .modal-footer {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     color: var(--text);
 }
 
@@ -343,10 +399,24 @@ button.selectpicker.btn-default {
 .modal-page {
     color: var(--text);
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 .modal-body .horizontal-separator .horizontal-separator-text {
     background-color: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     color: var(--text);
 }
 
@@ -388,6 +458,13 @@ ul.jqueryFileTree a:hover {
 
 #sharing-content .nav-tabs.nav-sub-tabs>li {
     background-color: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 #sharing-content .nav-tabs.nav-sub-tabs>li>a {
@@ -409,6 +486,13 @@ ul.jqueryFileTree a:hover {
 .modal-filter.open,
 .modal-input.open {
     background: var(--main-bg-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 .modal-header .transfer-path .labelContainer {
@@ -431,6 +515,13 @@ ul.jqueryFileTree a:hover {
 #onboarding-dark.fixed .tutorial-background,
 #syncall-tutorial.fixed .tutorial-background {
     background-color: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     color: var(--text);
 }
 
@@ -453,6 +544,13 @@ ul.jqueryFileTree a:hover {
 
 #statusPanel {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 .status-panel-shown #statusPanel {
@@ -487,6 +585,13 @@ ul.jqueryFileTree a:hover {
 .resizableTableContainer .tableHeaderContainer {
     border-bottom: 1px solid rgba(255, 255, 255, .1);
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 #statusPanel .chart-c3 .c3-tooltip {
@@ -630,6 +735,13 @@ ul.jqueryFileTree a:hover {
 
 .tableScrollContainer .table thead tr th {
     background: var(--main-bg-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 /* PLACEHOLDER TEXT */

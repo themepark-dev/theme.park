@@ -32,6 +32,13 @@ body,
 .v-application .background {
     color: var(--text);
     background: var(--main-bg-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 html {
@@ -116,6 +123,13 @@ p,
 
 .v-app-bar.v-app-bar--is-scrolled{
     background: var(--main-bg-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 .v-navigation-drawer__content .theme--dark.v-card,
@@ -180,6 +194,13 @@ p,
 .v-dialog .theme--light.v-list,
 .v-dialog .theme--dark.v-list {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     color: var(--text);
 }
 
@@ -378,6 +399,13 @@ background-color: rgb(156 163 175 / 70%) !important;
 .v-menu__content .theme--dark.theme--dark.v-list,
 .v-menu__content .theme--light.theme--light.v-list {
 background: var(--modal-bg-color) !important;
+background-repeat: repeat, no-repeat;
+background-attachment: fixed, fixed;
+background-position: center center, center center;
+background-size: auto, cover;
+-webkit-background-size: auto, cover;
+-moz-background-size: auto, cover;
+-o-background-size: auto, cover; 
 }
 
 .theme--dark.v-icon,
@@ -440,6 +468,13 @@ background: var(--modal-bg-color) !important;
 .apexcharts-tooltip.apexcharts-theme-light {
     color: var(--text);
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     border: 1px solid rgba(255, 255, 255, .1);
 }
 

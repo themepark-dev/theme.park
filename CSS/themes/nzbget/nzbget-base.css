@@ -131,6 +131,13 @@ tr.checked, tr.checked td, tr.checked:nth-child(odd) .progress {
 }
 .navbar-container {
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 .navbar .nav > li > a:hover {
     color: var(--accent-color);
@@ -163,6 +170,13 @@ tr.checked, tr.checked td, tr.checked:nth-child(odd) .progress {
 .dropdown-menu {
     background-color: #191a1c;
 	background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 	color: #FFF;
 }
 .dropdown-menu a {

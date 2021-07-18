@@ -23,6 +23,13 @@
   }
   div.displayMiddle {
       background: var(--modal-bg-color);
+      background-repeat: repeat, no-repeat;
+      background-attachment: fixed, fixed;
+      background-position: center center, center center;
+      background-size: auto, cover;
+      -webkit-background-size: auto, cover;
+      -moz-background-size: auto, cover;
+      -o-background-size: auto, cover; 
   }
     /* Scrollbar */  
     @media only screen and (min-width: 768px) {  
@@ -34,7 +41,14 @@
       body {
           overflow-y: auto;
           height: 100%;
-          background: var(--main-bg-color)
+          background: var(--main-bg-color);
+          background-repeat: repeat, no-repeat;
+          background-attachment: fixed, fixed;
+          background-position: center center, center center;
+          background-size: auto, cover;
+          -webkit-background-size: auto, cover;
+          -moz-background-size: auto, cover;
+          -o-background-size: auto, cover; 
       }
   }
       ::-webkit-scrollbar {
@@ -233,10 +247,24 @@
   /* SIDE MENU */
   .menu, .menu .header {
     background: var(--modal-bg-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     box-shadow: none;
 }
 .menu-content, .menu-content .header, .menu-body {
     background: var(--modal-bg-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
   .clipboard, .clipboard-service-target {
       background: rgba(0, 0, 0, 0.25);
@@ -245,10 +273,24 @@
   /* NOTIFICATION BOX */
   .notification.error {
       background: var(--modal-bg-color);
+      background-repeat: repeat, no-repeat;
+      background-attachment: fixed, fixed;
+      background-position: center center, center center;
+      background-size: auto, cover;
+      -webkit-background-size: auto, cover;
+      -moz-background-size: auto, cover;
+      -o-background-size: auto, cover; 
       color: white;
   }
   .notification {
       background: var(--modal-bg-color);
+      background-repeat: repeat, no-repeat;
+      background-attachment: fixed, fixed;
+      background-position: center center, center center;
+      background-size: auto, cover;
+      -webkit-background-size: auto, cover;
+      -moz-background-size: auto, cover;
+      -o-background-size: auto, cover; 
       color: white;
   }
   
@@ -299,10 +341,24 @@
   /* DUA 2FA PAGE */
   .duo-signature-response-field {
       background: var(--modal-bg-color) !important;
+      background-repeat: repeat, no-repeat;
+      background-attachment: fixed, fixed;
+      background-position: center center, center center;
+      background-size: auto, cover;
+      -webkit-background-size: auto, cover;
+      -moz-background-size: auto, cover;
+      -o-background-size: auto, cover; 
   }
   .base-wrapper {
       border: 1px solid transparent !important;
       background: var(--modal-bg-color) !important;
+      background-repeat: repeat, no-repeat;
+      background-attachment: fixed, fixed;
+      background-position: center center, center center;
+      background-size: auto, cover;
+      -webkit-background-size: auto, cover;
+      -moz-background-size: auto, cover;
+      -o-background-size: auto, cover; 
   }
   .base-body {
       background-color: #333 !important;
@@ -332,11 +388,25 @@
 
   #connection-warning {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     color: #FFF;
 }
 /* File Transfer */
 #file-transfer-dialog .transfer-manager {
-    background: var(--modal-bg-color) ;
+    background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 .transfer.error {
     background: rgba(244, 67, 54, 0.5) ;
@@ -345,5 +415,12 @@
     background-color: transparent ;
 }
 .transfer .in-progress .progress {
-    background-color: var(--modal-bg-color) ;
+    background-color: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }

@@ -35,10 +35,24 @@ body {
 
 body {
   background: var(--main-bg-color);
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  background-size: auto, cover;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover; 
 }
 
 #desktop {
   background: var(--main-bg-color);
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  background-size: auto, cover;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover; 
 }
 
 input:disabled {
@@ -216,6 +230,13 @@ label {
 #desktopNavbar li ul {
   border: 1px solid transparent;
   background: var(--modal-bg-color);
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  background-size: auto, cover;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover; 
 }
 
 #desktopNavbar li ul li a {
@@ -224,6 +245,13 @@ label {
 
 #desktopHeader {
   background: var(--main-bg-color);
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  background-size: auto, cover;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover; 
 }
 
 #desktopFooter {
@@ -287,6 +315,13 @@ label {
 }
 .panel {
   background: var(--main-bg-color);
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  background-size: auto, cover;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover; 
   border-bottom: 1px solid transparent;
 }
 
@@ -362,6 +397,13 @@ li.divider {
 .contextMenu {
   border: 1px solid transparent;
   background: var(--modal-bg-color);
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  background-size: auto, cover;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover; 
 }
 
 .contextMenu li a {
@@ -379,6 +421,13 @@ li.divider {
 .contextMenu li ul {
   border: 1px solid transparent;
   background: var(--modal-bg-color);
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  background-size: auto, cover;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover; 
 }
 
 .contextMenu .separator {
@@ -512,6 +561,13 @@ fieldset {
   top: 0;
   left: 0;
   background: var(--modal-bg-color) !important;
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  background-size: auto, cover;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover; 
 }
 
 .mochaToolbarWrapper {

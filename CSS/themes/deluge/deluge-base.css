@@ -18,6 +18,13 @@
   
   html {
       background: var(--main-bg-color);
+      background-repeat: repeat, no-repeat;
+      background-attachment: fixed, fixed;
+      background-position: center center, center center;
+      background-size: auto, cover;
+      -webkit-background-size: auto, cover;
+      -moz-background-size: auto, cover;
+      -o-background-size: auto, cover;
       color: var(--text);
       font-family: 'Roboto', sans-serif !important;
   }
@@ -1593,6 +1600,13 @@
   }
   .x-menu {
       background:var(--drop-down-menu-bg);
+      background-repeat: repeat, no-repeat;
+      background-attachment: fixed, fixed;
+      background-position: center center, center center;
+      background-size: auto, cover;
+      -webkit-background-size: auto, cover;
+      -moz-background-size: auto, cover;
+      -o-background-size: auto, cover;
   }
   
   .x-menu-floating{
@@ -1775,6 +1789,13 @@
   
   .x-panel {
       background: var(--main-bg-color);
+      background-repeat: repeat, no-repeat;
+      background-attachment: fixed, fixed;
+      background-position: center center, center center;
+      background-size: auto, cover;
+      -webkit-background-size: auto, cover;
+      -moz-background-size: auto, cover;
+      -o-background-size: auto, cover;
       border-color: #d0d0d0;
   }
   
@@ -1792,6 +1813,13 @@
       border-color: transparent;
       border: 1px solid rgba(255, 255, 255, 0.08);
       background: var(--main-bg-color);
+      background-repeat: repeat, no-repeat;
+      background-attachment: fixed, fixed;
+      background-position: center center, center center;
+      background-size: auto, cover;
+      -webkit-background-size: auto, cover;
+      -moz-background-size: auto, cover;
+      -o-background-size: auto, cover;
   }
   
   .x-panel-bbar .x-toolbar, .x-panel-tbar .x-toolbar {
@@ -1925,9 +1953,23 @@
   .x-window .x-tab-panel-header, .x-tab-panel-footer,
   .x-window .x-panel-noborder .x-panel-bbar-noborder .x-toolbar {
       background: var(--modal-bg-color) !important;
+      background-repeat: repeat, no-repeat;
+      background-attachment: fixed, fixed;
+      background-position: center center, center center;
+      background-size: auto, cover;
+      -webkit-background-size: auto, cover;
+      -moz-background-size: auto, cover;
+      -o-background-size: auto, cover;
   }
   .x-window .x-panel-bbar .x-toolbar, .x-panel-tbar .x-toolbar {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
   }
   
   .x-window-proxy {
@@ -1953,6 +1995,13 @@
   .x-window-tl {
       background-image: none;
       background: var(--modal-header-color);
+      background-repeat: repeat, no-repeat;
+      background-attachment: fixed, fixed;
+      background-position: center center, center center;
+      background-size: auto, cover;
+      -webkit-background-size: auto, cover;
+      -moz-background-size: auto, cover;
+      -o-background-size: auto, cover;
   }
   
   .x-window-tr {
@@ -1968,6 +2017,13 @@
   .x-window-bl {
       background-image: none;
       background: var(--modal-footer-color);
+      background-repeat: repeat, no-repeat;
+      background-attachment: fixed, fixed;
+      background-position: center center, center center;
+      background-size: auto, cover;
+      -webkit-background-size: auto, cover;
+      -moz-background-size: auto, cover;
+      -o-background-size: auto, cover;
   }
   
   .x-window-br {
@@ -2037,6 +2093,13 @@
   .x-panel-noborder .x-panel-tbar-noborder .x-toolbar {
       border-bottom-color:#353535;
       background: var(--main-bg-color);
+      background-repeat: repeat, no-repeat;
+      background-attachment: fixed, fixed;
+      background-position: center center, center center;
+      background-size: auto, cover;
+      -webkit-background-size: auto, cover;
+      -moz-background-size: auto, cover;
+      -o-background-size: auto, cover;
   }
   
   .x-panel-noborder .x-panel-bbar-noborder .x-toolbar {
@@ -2056,6 +2119,13 @@
   }
   .x-border-layout-ct {
       background:var(--main-bg-color);
+      background-repeat: repeat, no-repeat;
+      background-attachment: fixed, fixed;
+      background-position: center center, center center;
+      background-size: auto, cover;
+      -webkit-background-size: auto, cover;
+      -moz-background-size: auto, cover;
+      -o-background-size: auto, cover;
   }
   
   .x-accordion-hd {

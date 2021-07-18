@@ -12,7 +12,13 @@
 /* 			      https://github.com/gilbN/theme.park			 */
 
 main {
-background: var(--main-bg-color);
+background: var(--main-bg-color);background-repeat: repeat, no-repeat;
+background-attachment: fixed, fixed;
+background-position: center center, center center;
+background-size: auto, cover;
+-webkit-background-size: auto, cover;
+-moz-background-size: auto, cover;
+-o-background-size: auto, cover; 
 }
 h4 {
     color: #ffffff;
@@ -71,6 +77,13 @@ p a {
 }
 .application .theme--dark.v-card, .theme--dark .v-card {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 .flex.md3 .application .theme--dark.v-card, .theme--dark .v-card {
     background: rgba(255, 255, 255, 0.10) !important;
@@ -91,12 +104,33 @@ flex xs12 .flex.md3 .application .theme--dark.v-list, .theme--dark .v-list {
 }
 .v-navigation-drawer {
     background: var(--main-bg-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 /*popup modal */
 .v-dialog {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 .menuable__content__active {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }

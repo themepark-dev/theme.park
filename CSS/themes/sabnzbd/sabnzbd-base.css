@@ -36,7 +36,14 @@ body {
   body {
     overflow-y: auto;
     height: 100%;
-    background: var(--main-bg-color)
+    background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
   }
 }
 
@@ -98,6 +105,13 @@ body {
 
 .dropdown-menu {
   background: var(--modal-bg-color);
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  background-size: auto, cover;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover; 
 }
 
 .dropdown-menu>li>a {
@@ -116,11 +130,25 @@ body {
 
 .menu-options .form-control {
   background: var(--modal-bg-color);
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  background-size: auto, cover;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover; 
   background-color: rgb(25, 26, 28);
 }
 
 .main-notification-box {
   background-color: var(--modal-bg-color);
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  background-size: auto, cover;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover; 
 }
 
 .form-control:focus {
@@ -533,6 +561,13 @@ tr td.row-extra-text,
 /*Settings*/
 .navbar-default {
   background: var(--main-bg-color);
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  background-size: auto, cover;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover; 
   border: none;
 }
 
@@ -776,14 +811,35 @@ select[disabled]:hover {
 /*modal*/
 .modal-content {
   background: var(--modal-bg-color);
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  background-size: auto, cover;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover; 
 }
 
 .modal-body {
   background: var(--modal-bg-color);
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  background-size: auto, cover;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover; 
 }
 
 .modal-header {
   background: var(--modal-bg-color);
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  background-size: auto, cover;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover; 
 }
 
 .modal-body>.nav-tabs>li>a {
@@ -813,6 +869,13 @@ select[disabled]:hover {
 
 .modal-body>.tab-content>.active {
   background: var(--modal-bg-color) !important;
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  background-size: auto, cover;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover; 
 }
 
 #modal-options .tab-content h4 {

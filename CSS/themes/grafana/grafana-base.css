@@ -14,6 +14,13 @@
 body {
 	color:#FFFFFF !important;
 	background: var(--main-bg-color) !important;
+	background-repeat: repeat, no-repeat!important;
+	background-attachment: fixed, fixed!important;
+	background-position: center center, center center!important;
+	background-size: auto, cover!important;
+	-webkit-background-size: auto, cover!important;
+	-moz-background-size: auto, cover!important;
+	-o-background-size: auto, cover!important;
 }
 .theme-dark, .theme-light, .preloader {
 	background: var(--main-bg-color) !important;
@@ -43,6 +50,13 @@ body {
 /* Variable Dropdown Menu */
 .variable-value-dropdown {
 background: var(--modal-bg-color);
+background-repeat: repeat, no-repeat!important;
+background-attachment: fixed, fixed!important;
+background-position: center center, center center!important;
+background-size: auto, cover!important;
+-webkit-background-size: auto, cover!important;
+-moz-background-size: auto, cover!important;
+-o-background-size: auto, cover!important;
 border: 1px solid #00000000;
 }
 .variable-value-dropdown.single .selected {
@@ -154,6 +168,13 @@ color:#FFFFFF !important;
 }
 .side-menu-header, .dropdown-menu--menu, .dropdown-menu--navbar, .dropdown-menu--sidemenu {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat!important;
+	background-attachment: fixed, fixed!important;
+	background-position: center center, center center!important;
+	background-size: auto, cover!important;
+	-webkit-background-size: auto, cover!important;
+	-moz-background-size: auto, cover!important;
+	-o-background-size: auto, cover!important;
 }
 .dropdown-menu .divider {
     border-bottom: 1px solid #d8d9da;
@@ -161,6 +182,13 @@ color:#FFFFFF !important;
 .dropdown-menu--sidemenu>li>.side-menu-header-link:hover {
     color: #fff!important;
     background: var(--modal-bg-color)!important;
+    background-repeat: repeat, no-repeat!important;
+	background-attachment: fixed, fixed!important;
+	background-position: center center, center center!important;
+	background-size: auto, cover!important;
+	-webkit-background-size: auto, cover!important;
+	-moz-background-size: auto, cover!important;
+	-o-background-size: auto, cover!important;
 }
 .dropdown-menu--menu>li>a:hover, .dropdown-menu--navbar>li>a:hover, .dropdown-menu--sidemenu>li>a:hover {
     background: rgba(0, 0, 0, 0.25)!important;
@@ -184,6 +212,13 @@ color:#FFFFFF !important;
 /* Dashboard dropdown menu */
 .search-dropdown__col_1 {
     background: var(--modal-bg-color) !important;
+    background-repeat: repeat, no-repeat!important;
+	background-attachment: fixed, fixed!important;
+	background-position: center center, center center!important;
+	background-size: auto, cover!important;
+	-webkit-background-size: auto, cover!important;
+	-moz-background-size: auto, cover!important;
+	-o-background-size: auto, cover!important;
 }
 .search-container {
     left: 0px !important;
@@ -194,9 +229,23 @@ color:#FFFFFF !important;
 /* dropdown menu */
 .css-n9566h, .css-1m7hyr {
     background: var(--modal-bg-color) !important;
+    background-repeat: repeat, no-repeat!important;
+	background-attachment: fixed, fixed!important;
+	background-position: center center, center center!important;
+	background-size: auto, cover!important;
+	-webkit-background-size: auto, cover!important;
+	-moz-background-size: auto, cover!important;
+	-o-background-size: auto, cover!important;
 }
 .search-filter-box {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat!important;
+	background-attachment: fixed, fixed!important;
+	background-position: center center, center center!important;
+	background-size: auto, cover!important;
+	-webkit-background-size: auto, cover!important;
+	-moz-background-size: auto, cover!important;
+	-o-background-size: auto, cover!important;
 }
 .search-filter-box__header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -270,6 +319,13 @@ color:#FFFFFF !important;
 }
 .gf-form-select-box__option {
     background: var(--modal-bg-color) !important;
+    background-repeat: repeat, no-repeat!important;
+	background-attachment: fixed, fixed!important;
+	background-position: center center, center center!important;
+	background-size: auto, cover!important;
+	-webkit-background-size: auto, cover!important;
+	-moz-background-size: auto, cover!important;
+	-o-background-size: auto, cover!important;
 }
 .gf-form-select-box__option.gf-form-select-box__option--is-focused {
     color: #fff;
@@ -562,6 +618,13 @@ border-color: #b56d16 !important;
 
 .modal-header, .css-1z13zsv-modalHeader {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat!important;
+	background-attachment: fixed, fixed!important;
+	background-position: center center, center center!important;
+	background-size: auto, cover!important;
+	-webkit-background-size: auto, cover!important;
+	-moz-background-size: auto, cover!important;
+	-o-background-size: auto, cover!important;
     -webkit-box-shadow: none;
     box-shadow: none;
     border-bottom: 1px solid #d8d9da;
@@ -569,6 +632,13 @@ border-color: #b56d16 !important;
 }
 .modal-body, .css-111908g {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat!important;
+	background-attachment: fixed, fixed!important;
+	background-position: center center, center center!important;
+	background-size: auto, cover!important;
+	-webkit-background-size: auto, cover!important;
+	-moz-background-size: auto, cover!important;
+	-o-background-size: auto, cover!important;
     color: #eee;
 }
 
@@ -577,7 +647,16 @@ border-color: #b56d16 !important;
 /*V7*/
 
 /*LOGIN*/
-.css-bnbqsv {background: var(--main-bg-color)}
+.css-bnbqsv {
+    background: var(--main-bg-color);
+	background-repeat: repeat, no-repeat!important;
+	background-attachment: fixed, fixed!important;
+	background-position: center center, center center!important;
+	background-size: auto, cover!important;
+	-webkit-background-size: auto, cover!important;
+	-moz-background-size: auto, cover!important;
+	-o-background-size: auto, cover!important;
+}
 .css-3iwqj4 { background: transparent;}
 #login-view > div > form > div:nth-child(1) > div:nth-child(2) > div > div > input, #login-view > div > form > div:nth-child(2) > div:nth-child(2) > div > div > input {
     height: 38px;
@@ -693,6 +772,13 @@ body > grafana-app > div > div > react-container > div > div > div.view > div > 
 /* SEARCH */
 .css-x9mxj5 {
 background: var(--main-bg-color);
+background-repeat: repeat, no-repeat!important;
+background-attachment: fixed, fixed!important;
+background-position: center center, center center!important;
+background-size: auto, cover!important;
+-webkit-background-size: auto, cover!important;
+-moz-background-size: auto, cover!important;
+-o-background-size: auto, cover!important;
 }
 .css-1m6pigl:focus + label {
 outline-offset: 2px;
@@ -712,6 +798,13 @@ box-shadow: rgba(20, 22, 25, 0) 0px 0px 0px 2px, rgba(31, 97, 196, 0) 0px 0px 0p
 }
 .css-y0yg3l {
 background: var(--main-bg-color);
+background-repeat: repeat, no-repeat!important;
+background-attachment: fixed, fixed!important;
+background-position: center center, center center!important;
+background-size: auto, cover!important;
+-webkit-background-size: auto, cover!important;
+-moz-background-size: auto, cover!important;
+-o-background-size: auto, cover!important;
 border-color: transparent;
 }
 .css-y0yg3l {
@@ -789,6 +882,13 @@ border-bottom: 1px solid transparent;
 /*Background*/
 .css-azp59k {
 background: var(--main-bg-color);
+background-repeat: repeat, no-repeat!important;
+background-attachment: fixed, fixed!important;
+background-position: center center, center center!important;
+background-size: auto, cover!important;
+-webkit-background-size: auto, cover!important;
+-moz-background-size: auto, cover!important;
+-o-background-size: auto, cover!important;
 }
 /*Query box*/
 .css-hz0utb {
@@ -918,6 +1018,13 @@ border-color: rgba(255, 255, 255, .09);
 /*DASHBOARD SETINGS*/
 .dashboard-settings,.dashboard-settings__body2 {
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat!important;
+	background-attachment: fixed, fixed!important;
+	background-position: center center, center center!important;
+	background-size: auto, cover!important;
+	-webkit-background-size: auto, cover!important;
+	-moz-background-size: auto, cover!important;
+	-o-background-size: auto, cover!important;
 }
 .navbar--edit {
     background: rgba(0, 0, 0, .25);

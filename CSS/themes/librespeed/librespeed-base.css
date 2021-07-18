@@ -62,6 +62,13 @@ a:-webkit-any-link {
 }
 #privacyPolicy {
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 input {
     font-family: "Roboto",sans-serif;

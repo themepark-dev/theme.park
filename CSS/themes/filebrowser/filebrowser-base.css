@@ -53,6 +53,13 @@
     min-height: 100%;
     height: auto;
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 body {
     
@@ -65,7 +72,13 @@ body {
     border: none;
 }
 #loading {
-background: var(--main-bg-color);
+background: var(--main-bg-color);background-repeat: repeat, no-repeat;
+background-attachment: fixed, fixed;
+background-position: center center, center center;
+background-size: auto, cover;
+-webkit-background-size: auto, cover;
+-moz-background-size: auto, cover;
+-o-background-size: auto, cover;
 }
 
 #loading .spinner * {
@@ -80,9 +93,23 @@ button:hover, input[type=submit]:hover{
 html {
     min-height: 100%;
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 body{
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 nav {
     background-color: rgba(0,0,0,.45);
@@ -107,6 +134,13 @@ nav>div{
 }
 header{
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 	border-bottom: transparent;
 	box-shadow: 0 3px 6px 0 rgba(0,0,0,.15);
 }
@@ -118,6 +152,13 @@ body{
 }
 .shell {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 	color: #FFF;
 }
 .shell__prompt i {
@@ -177,6 +218,13 @@ svg {
 }
 #listing #multiple-selection {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 #breadcrumbs span a{
     color: rgb(238, 238, 238);
@@ -200,6 +248,13 @@ svg {
 }
 #search #result{
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
     color: rgb(238, 238, 238);
 }
 #search .boxes{
@@ -217,6 +272,13 @@ svg {
 }
 #search.active #input{
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
     height: 60px;
     color: black;
 }
@@ -252,6 +314,13 @@ table th{
 }
 .card.floating{
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 #search #input {
     background-color:rgba(255, 255, 255, 0.08);

@@ -9,10 +9,24 @@
 
 .modal-content {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat !important;
+    background-attachment: fixed, fixed !important;
+    background-position: center center, center center !important;
+    background-size: auto, cover !important;
+    -webkit-background-size: auto, cover !important;
+    -moz-background-size: auto, cover !important;
+    -o-background-size: auto, cover !important; 
 }
 
 .panel-footer {
     background: var(--modal-footer-color) !important;
+    background-repeat: repeat, no-repeat !important;
+    background-attachment: fixed, fixed !important;
+    background-position: center center, center center !important;
+    background-size: auto, cover !important;
+    -webkit-background-size: auto, cover !important;
+    -moz-background-size: auto, cover !important;
+    -o-background-size: auto, cover !important; 
 }
 
 .panel-default .panel-body,
@@ -159,9 +173,23 @@ h6 {
     border-color: rgb(var(--accent-color));
     color: var(--text-hover);
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 .panel-body:not(.unifiCards .panel-body) {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 .bg-plex {
@@ -185,6 +213,13 @@ h6 {
 /*toast*/
 .iziToast.success-notify.iziToast-layout2 {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-bottom: transparent
 }
@@ -192,6 +227,13 @@ h6 {
 #dazsm6ofc1i6j6s9g5k5fija>div>div:nth-child(2),
 #dazsm6ofc1i6j6s9g5k5fija>div>div.white-box.m-b-0.bg-info {
     background: var(--modal-bg-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 .css-bar-lg:after {
@@ -210,6 +252,13 @@ h6 {
 
 #settings-main-system-settings {
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 /* forms */
@@ -348,7 +397,14 @@ input:focus:-ms-input-placeholder {
     body {
         overflow-y: auto;
         height: 100%;
-        background: var(--main-bg-color)
+        background: var(--main-bg-color);
+        background-repeat: repeat, no-repeat;
+        background-attachment: fixed, fixed;
+        background-position: center center, center center;
+        background-size: auto, cover;
+        -webkit-background-size: auto, cover;
+        -moz-background-size: auto, cover;
+        -o-background-size: auto, cover; 
     }
 }
 
@@ -379,6 +435,13 @@ input:focus:-ms-input-placeholder {
 /* JS GRID USERS */
 .jsgrid-grid-header {
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 th.text-center,
@@ -478,6 +541,13 @@ th.fc-day-header.fc-widget-header.fc-today {
 
 .fc-popover {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 /* loginpage sidemenu */
@@ -908,6 +978,13 @@ th.fc-day-header.fc-widget-header.fc-today {
 
 .white-box {
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 /* Homepage headers */
@@ -921,6 +998,13 @@ th.fc-day-header.fc-widget-header.fc-today {
     border-color: transparent;
     color: #fff;
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 /* Homepage buttons */
@@ -1052,6 +1136,13 @@ th.fc-day-header.fc-widget-header.fc-today {
 .iziToast.success-notify.iziToast-layout2 {
     border: none;
     background: var(--modal-bg-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     border-bottom: transparent;
 }
 
@@ -1062,6 +1153,13 @@ th.fc-day-header.fc-widget-header.fc-today {
 
 .iziToast:after {
     background: var(--modal-bg-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 .update-notify .iziToast-progressbar div,
@@ -1077,30 +1175,65 @@ th.fc-day-header.fc-widget-header.fc-today {
 .ajs-message.ajs-error-alertify.ajs-visible {
     color: #f44336;
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     border-color: transparent;
 }
 
 .ajs-message.ajs-warning-alertify {
     color: #ffeb3b;
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     border-color: transparent;
 }
 
 .ajs-message.ajs-info-alertify {
     color: #6da8ff;
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     border-color: transparent;
 }
 
 .ajs-message.ajs-success-alertify {
     color: #00ffb8;
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     border-color: transparent;
 }
 
 /* Noty */
 .noty_type__error-noty .noty_body {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     color: #f44336;
     border: 1px solid transparent;
     border-bottom: transparent;
@@ -1108,6 +1241,13 @@ th.fc-day-header.fc-widget-header.fc-today {
 
 .noty_type__warning-noty .noty_body {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     color: #ffeb3b;
     border: 1px solid transparent;
     border-bottom: transparent;
@@ -1115,6 +1255,13 @@ th.fc-day-header.fc-widget-header.fc-today {
 
 .noty_type__info-noty .noty_body {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     color: #3a83f0;
     border: 1px solid transparent;
     border-bottom: transparent;
@@ -1122,6 +1269,13 @@ th.fc-day-header.fc-widget-header.fc-today {
 
 .noty_type__success-noty .noty_body {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     color: #00ffb8;
     border: 1px solid transparent;
     border-bottom: transparent;
@@ -1175,6 +1329,13 @@ a:hover {
 @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
     .bg-inverse .healthPosition {
         background: var(--main-bg-color) !important;
+        background-repeat: repeat, no-repeat;
+        background-attachment: fixed, fixed;
+        background-position: center center, center center;
+        background-size: auto, cover;
+        -webkit-background-size: auto, cover;
+        -moz-background-size: auto, cover;
+        -o-background-size: auto, cover; 
         border-radius: 3px;
     }
 }
@@ -1298,6 +1459,13 @@ a:hover {
 
 .swal-overlay--show-modal .swal-modal {
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     color: var(--text-hover);
 }
 
@@ -1321,16 +1489,37 @@ a:hover {
 
 html {
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     color: var(--text);
 }
 
 body {
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     color: var(--text);
 }
 
 #page-wrapper {
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 /*Top Header Part*/
@@ -1340,6 +1529,13 @@ body {
 
 .navbar-header {
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 .navbar-top-links>li>a {
@@ -1350,11 +1546,25 @@ body {
 .nav .open>a:focus,
 .nav .open>a:hover {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 /*Right panel*/
 .right-sidebar .rpanel-title {
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 /*Bread Crumb*/
@@ -1366,6 +1576,13 @@ body {
 .sidebar,
 .sidebar .sidebar-head {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
 }
 
@@ -1418,6 +1635,9 @@ body {
 
 .dropdown-menu {
     background: var(--drop-down-menu-bg) !important;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 .dropdown-menu>li>a {
@@ -1440,7 +1660,10 @@ body {
 }
 
 .bg-org:not([id="menu-"]div):not(.panel-heading) {
-    background: var(--main-bg-color) !important;
+    background: var(--main-bg-color) !important;;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 /*Button*/
@@ -1492,6 +1715,13 @@ body {
 .fc th.fc-fri,
 .fc-button {
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 .table tbody tr.advance-table-row.active,
@@ -1547,6 +1777,13 @@ body {
 .white-box,
 body > div.mfp-wrap.mfp-auto-cursor.mfp-zoom-out.mfp-ready > div > div.mfp-content > div > div > div:nth-child(2) {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 body > div.mfp-wrap.mfp-auto-cursor.mfp-zoom-out.mfp-ready > div > div.mfp-content > div > div > div.white-box.m-b-0.bg-info > h3 {
     color: var(--label-text-color) !important;
@@ -1557,6 +1794,13 @@ body > div.mfp-wrap.mfp-auto-cursor.mfp-zoom-out.mfp-ready > div > div.mfp-conte
     width: calc(100% - 40px);
     max-width: 1200px;
     background-color: var(--modal-bg-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 }
 
@@ -1568,6 +1812,13 @@ body>div.mfp-wrap.mfp-auto-cursor.mfp-zoom-out.mfp-ready>div>div.mfp-content>div
 
 .bg-title {
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 .panel {
@@ -1594,6 +1845,13 @@ input,
 
 .tabs-style-flip .content-wrap {
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 .tabs-style-flip nav li.tab-current a {
@@ -1631,6 +1889,13 @@ input,
 
 #account-area > div > div > div > div > div.panel-wrapper.collapse.in.main-email-panel > div {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 .tab-content .panel .panel-body,
@@ -1680,6 +1945,13 @@ a.mytooltip {
 
 .white-popup-block {
     background: var(--modal-bg-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     padding: 20px 30px;
     text-align: left;
     max-width: 75%;

@@ -12,11 +12,25 @@ html {
 }
 
 .skinHeader-withBackground {
-    background: var(--header-background)
+    background: var(--header-background);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 .appfooter,.formDialogFooter:not(.formDialogFooter-clear),.formDialogHeader:not(.formDialogHeader-clear) {
-    background: var(--footer-background)
+    background: var(--footer-background);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 @supports (backdrop-filter: blur(1em)) or (-webkit-backdrop-filter:blur(1em)) {
@@ -49,7 +63,14 @@ html {
 
 
 .backgroundContainer,.dialog,html {
-    background: var(--theme-background)
+    background: var(--theme-background);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 .backgroundContainer.withBackdrop {
@@ -58,7 +79,14 @@ html {
 
 @media not all and (min-width: 50em) {
     .itemBackgroundContainer.withBackdrop {
-        background :var(--theme-background)
+        background :var(--theme-background);
+        background-repeat: repeat, no-repeat;
+        background-attachment: fixed, fixed;
+        background-position: center center, center center;
+        background-size: auto, cover;
+        -webkit-background-size: auto, cover;
+        -moz-background-size: auto, cover;
+        -o-background-size: auto, cover; 
     }
 }
 
@@ -333,21 +361,49 @@ html {
 }
 
 .channelCell,.guide-headerTimeslots,.timeslotHeaders {
-    background: var(--theme-background)
+    background: var(--theme-background);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 @media (pointer: coarse) {
     .channelCell-mobilefocus {
-        background:var(--theme-background)!important
+        background:var(--theme-background)!important;
+        background-repeat: repeat, no-repeat;
+        background-attachment: fixed, fixed;
+        background-position: center center, center center;
+        background-size: auto, cover;
+        -webkit-background-size: auto, cover;
+        -moz-background-size: auto, cover;
+        -o-background-size: auto, cover; 
     }
 }
 
 .channelCell-mobilefocus:not(:focus-visible) {
-    background: var(--theme-background)!important
+    background: var(--theme-background)!important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 .channelCell-mobilefocus:not(:-moz-focusring) {
-    background: var(--theme-background)!important
+    background: var(--theme-background)!important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 .channelCell,.epgRow,.programCell {

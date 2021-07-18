@@ -31,6 +31,13 @@ body,
 .torrents {
     color: var(--text);
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 
 /* TEXT */
@@ -57,6 +64,13 @@ p,
 
 .application__view--auth-form {
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 
 
@@ -210,6 +224,13 @@ p,
 .context-menu__items,
 .menu {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
     border-radius: 4px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .05), 0 1px 3px 1px rgba(0, 0, 0, .1), 0 0 0 1px rgba(0, 0, 0, .1);
     color: var(--text);
@@ -416,6 +437,13 @@ p,
 /* TOB NAVBAR */
 .action-bar {
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
     border-bottom: 1px solid rgba(255, 255, 255, .1);
     color: var(--text);
 }
@@ -565,6 +593,13 @@ p,
 .modal__content__wrapper,
 .modal__header {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
     color: var(--text)
 }
 
@@ -575,6 +610,13 @@ p,
 .modal--vertical.modal--tabs-in-header .modal__header {
     box-shadow: inset -1px 0 0 rgba(255, 255, 255, .1);
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 
 .modal--vertical.modal--tabs-in-header .modal__header,

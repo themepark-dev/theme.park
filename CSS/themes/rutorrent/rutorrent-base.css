@@ -23,6 +23,13 @@ html,body
 {
 	font-family:'Roboto' !important;
 	background: var(--main-bg-color);
+	background-repeat: repeat, no-repeat;
+	background-attachment: fixed, fixed;
+	background-position: center center, center center;
+	background-size: auto, cover;
+	-webkit-background-size: auto, cover;
+	-moz-background-size: auto, cover;
+	-o-background-size: auto, cover; 
 	color:#fff;
 	text-shadow:0 -1px 0 #000
 }
@@ -52,7 +59,14 @@ hr {
 
 div#cover
 {
-	background:var(--main-bg-color)
+	background:var(--main-bg-color);
+	background-repeat: repeat, no-repeat;
+	background-attachment: fixed, fixed;
+	background-position: center center, center center;
+	background-size: auto, cover;
+	-webkit-background-size: auto, cover;
+	-moz-background-size: auto, cover;
+	-o-background-size: auto, cover; 
 }
 
 div#msg {
@@ -95,6 +109,13 @@ ul.CMenu {
     border-left: 1px solid transparent;
     border-bottom: 1px solid transparent;
     background: var(--modal-bg-color);
+	background-repeat: repeat, no-repeat;
+	background-attachment: fixed, fixed;
+	background-position: center center, center center;
+	background-size: auto, cover;
+	-webkit-background-size: auto, cover;
+	-moz-background-size: auto, cover;
+	-o-background-size: auto, cover; 
     padding: 0;
 	border-radius: 5px;
 	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
@@ -104,6 +125,13 @@ ul.CMenu {
 ul.CMenu li
 {
 	background:var(--modal-bg-color);
+	background-repeat: repeat, no-repeat;
+	background-attachment: fixed, fixed;
+	background-position: center center, center center;
+	background-size: auto, cover;
+	-webkit-background-size: auto, cover;
+	-moz-background-size: auto, cover;
+	-o-background-size: auto, cover; 
 }
 
 ul.CMenu li.menuitem:first-child
@@ -1002,6 +1030,13 @@ div#dlgProps textarea#prop-trackers
 
 div.dlg-window {
     background: var(--modal-bg-color);
+	background-repeat: repeat, no-repeat;
+	background-attachment: fixed, fixed;
+	background-position: center center, center center;
+	background-size: auto, cover;
+	-webkit-background-size: auto, cover;
+	-moz-background-size: auto, cover;
+	-o-background-size: auto, cover; 
     color: #fff;
     border-top: 1px solid transparent;
     border-right: 1px solid transparent;

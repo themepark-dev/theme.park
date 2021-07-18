@@ -110,17 +110,38 @@ a:hover {
 /* MODAL */
 [class*="ModalHeader-modalHeader-"] {
     background: var(--modal-header-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     color: var(--text-hover);
     border-bottom: 1px solid rgb(var(--accent-color));
 }
 
 [class*="ModalContent-modalContent-"] {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     color: var(--text);
 }
 
 [class*="ModalFooter-modalFooter-"] {
     background: var(--modal-footer-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     color: #fff;
     border-top: 1px solid rgb(var(--accent-color));
 }
@@ -187,6 +208,13 @@ a:hover {
 [class*="IndexerSearchInput-containerOpen-"] [class*="IndexerSearchInput-movieContainer-"] {
     border: none !important;
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     color: #fff !important;
     box-shadow: 0 0 10px 1px transparent !important;
 }
@@ -226,6 +254,13 @@ a:hover {
 @media only screen and (max-width: 768px) {
     [class*="PageSidebar-sidebarContainer-"] {
         background: var(--main-bg-color) !important;
+        background-repeat: repeat, no-repeat;
+        background-attachment: fixed, fixed;
+        background-position: center center, center center;
+        background-size: auto, cover;
+        -webkit-background-size: auto, cover;
+        -moz-background-size: auto, cover;
+        -o-background-size: auto, cover; 
     }
 }
 
@@ -339,6 +374,13 @@ a:hover {
 [class*="Popover-body-"],
 [class*="Tooltip-body-"] {
     background: var(--modal-bg-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 [class*="Tooltip-tooltipContainer-"] {
@@ -468,6 +510,13 @@ a:hover {
 [class*="MenuItem-menuItem-"],
 [class*="MenuContent-menuContent-"] {
     background: var(--drop-down-menu-bg);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     color: var(--text);
 }
 
@@ -508,6 +557,13 @@ a:hover {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 4px;
     background: var(--drop-down-menu-bg);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     color: var(--text);
 }
 [class*="EnhancedSelectInputOption-isSelected-"],
@@ -649,6 +705,13 @@ input:focus:-ms-input-placeholder {
 [class*="ImportMovieSelectMovie-searchIconContainer-"] {
     border: none;
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     color: white;
 }
 

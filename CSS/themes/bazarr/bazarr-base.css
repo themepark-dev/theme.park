@@ -248,6 +248,13 @@ h1, h2, h3, h4, h5, h6,
     .sidebar-container.open,
     .sidebar-container {
         background: var(--modal-bg-color);
+        background-repeat: repeat, no-repeat;
+        background-attachment: fixed, fixed;
+        background-position: center center, center center;
+        background-size: auto, cover;
+        -webkit-background-size: auto, cover;
+        -moz-background-size: auto, cover;
+        -o-background-size: auto, cover;
     }
 }
 .sidebar-container .badge-secondary {
@@ -284,6 +291,13 @@ h1, h2, h3, h4, h5, h6,
 /* PAGES */
 .content-header.bg-dark {
     background: var(--main-bg-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
     border-bottom: solid 1px rgba(255, 255, 255, .1);
 
 }
@@ -291,6 +305,13 @@ h1, h2, h3, h4, h5, h6,
 /* LOGIN */
 .bg-light {
     background-color: var(--main-bg-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 .auth-card {
     border: 1px solid transparent;
@@ -397,12 +418,26 @@ hr {
 
 .modal-header {
     background: var(--modal-header-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
     border-bottom: 1px solid var(--accent-color);
 
 }
 
 .modal-footer {
     background: var(--modal-footer-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
     border-top: 1px solid var(--accent-color);
 }
 
@@ -626,6 +661,13 @@ input {
 .dropdown-menu,.dropdown-header {
     color: var(--text);
     background: var(--drop-down-menu-bg);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 
 .dropdown-item {
@@ -660,6 +702,13 @@ input {
 
 .selector__menu {
     background: var(--drop-down-menu-bg) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
     color: var(--text)
 }
 
@@ -746,6 +795,13 @@ line {
 /* TOASTS */
 .toast {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
     border: 1px solid rgba(0,0,0,.1);
     box-shadow: 0 .25rem .75rem rgba(0,0,0,.1);
     color: var(--text)

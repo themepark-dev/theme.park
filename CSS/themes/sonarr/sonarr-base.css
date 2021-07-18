@@ -112,17 +112,38 @@ a:hover {
 /* MODAL */
 [class*="ModalHeader-modalHeader-"] {
     background: var(--modal-header-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     color: var(--text-hover);
     border-bottom: 1px solid rgb(var(--accent-color));
 }
 
 [class*="ModalContent-modalContent-"] {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     color: var(--text);
 }
 
 [class*="ModalFooter-modalFooter-"] {
     background: var(--modal-footer-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     color: #fff;
     border-top: 1px solid rgb(var(--accent-color));
 }
@@ -196,6 +217,13 @@ a:hover {
 [class*="SeriesSearchInput-containerOpen-"] [class*="SeriesSearchInput-seriesContainer-"] {
     border: none !important;
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     color: #fff !important;
     box-shadow: 0 0 10px 1px transparent !important;
 }
@@ -350,6 +378,13 @@ a:hover {
 [class*="Popover-body-"],
 [class*="Tooltip-bod-"] {
     background: var(--modal-bg-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
 }
 
 [class*="Tooltip-tooltipContainer-"] {
@@ -358,6 +393,13 @@ a:hover {
 
 [class*="Tooltip-tooltip-"][class*=Tooltip-inverse-] {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -491,6 +533,13 @@ a:hover {
 [class*="MenuItem-menuItem-"],
 [class*="MenuContent-menuContent-"] {
     background: var(--drop-down-menu-bg);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     color: var(--text);
 }
 
@@ -530,6 +579,13 @@ a:hover {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 4px;
     background: var(--drop-down-menu-bg);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     color: var(--text);
 }
 [class*="EnhancedSelectInputOption-isSelected-"],
@@ -669,6 +725,13 @@ input:focus:-ms-input-placeholder {
 [class*="ImportSeriesSelectSeries-searchIconContainer-"] {
     border: none;
     background-color: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
     color: white;
 }
 

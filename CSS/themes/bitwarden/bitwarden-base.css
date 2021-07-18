@@ -21,6 +21,13 @@ img.logo {
 body.layout_frontend,
 body {
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
     color: var(--text);
 }
 
@@ -93,6 +100,13 @@ body>app-root>app-user-layout>app-tools>div>div>div.col-9>app-password-generator
 .modal-content,
 .modal-footer {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 
 .close,
@@ -106,6 +120,13 @@ body>app-root>app-user-layout>app-tools>div>div>div.col-9>app-password-generator
 
 .swal2-popup {
     background-color: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
     color: var(--text);
     border: transparent;
 }
@@ -120,6 +141,13 @@ body>app-root>app-user-layout>app-tools>div>div>div.col-9>app-password-generator
 
 .swal2-popup .swal2-actions {
     background-color: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 
 .btn-primary,
@@ -158,6 +186,13 @@ body>app-root>app-user-layout>app-tools>div>div>div.col-9>app-password-generator
 /* DROPDOWN MENU */
 .dropdown-menu {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
     border: 1px solid transparent;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, .2);
 }
@@ -318,6 +353,13 @@ a.text-danger:focus {
 /* Org */
 .org-nav {
     background-color: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 
 .org-nav .nav-tabs a {
@@ -383,10 +425,24 @@ input:focus:-ms-input-placeholder {
 
 .bg-light {
     background: var(--main-bg-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 
 .bg-light .navbar {
     background-color: var(--main-bg-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 
 /* Cards */
