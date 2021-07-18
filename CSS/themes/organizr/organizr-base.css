@@ -1529,10 +1529,10 @@ body {
 
 @-moz-document url-prefix() {
     .navbar-header {
-        background: transparent; 
+        background: transparent !important; 
     }
     .dropdown-menu {
-        background: transparent;
+        background: transparent !important;
     }
 }
 
