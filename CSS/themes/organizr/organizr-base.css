@@ -1573,9 +1573,22 @@ body {
 }
 
 /*Sidebar*/
-.sidebar,
+
+@media (max-width: 767px){
+.show-sidebar .sidebar,
 .sidebar .sidebar-head {
-    background: var(--modal-bg-color);
+    background: var(--modal-bg-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;  
+}
+}
+.sidebar {
+    background: rgba(0, 0, 0, 0.26) !important;
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -1584,6 +1597,25 @@ body {
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover; 
     box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+    transition: max-width .2s cubic-bezier(.4,0,.2,1),background-color .2s ease-out;  
+
+}
+
+.navbar-default,
+.sidebar .sidebar-head {
+    background: transparent;
+}
+
+.sidebar:hover{
+    background: var(--modal-bg-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;  
+    transition: max-width .2s cubic-bezier(.4,0,.2,1),background-color .2s ease-out;  
 }
 
 .sidebar .label-custom {
