@@ -22,16 +22,16 @@ body {
     -o-background-size: auto, cover;
 }
 
-a {
-    color: var(--link-color);
+a:not(.timeline-content a) {
+    color: var(--link-color) !important;
 }
 
-a:hover {
-    color: #fff;
+a:hover:not(.timeline-content a) {
+    color: var(--link-color-hover) !important;
 }
 
 a.disabled-link {
-    color: #666;
+    color: var(--text-muted);
 }
 
 /* Scrollbar */
@@ -45,7 +45,14 @@ a.disabled-link {
     body {
         overflow-y: auto;
         height: 100%;
-        background: var(--main-bg-color)
+        background: var(--main-bg-color);
+        background-repeat: repeat, no-repeat;
+        background-attachment: fixed, fixed;
+        background-position: center center, center center;
+        background-size: auto, cover;
+        -webkit-background-size: auto, cover;
+        -moz-background-size: auto, cover;
+        -o-background-size: auto, cover;
     }
 }
 
@@ -75,17 +82,36 @@ a.disabled-link {
 
 /* TEXT */
 body,
-.card,
 .category,
-.card label,
 .card .labels p,
-.card .title,
 .card .stats,
 .vis-time-axis .vis-text,
 .footer .copyright,
 .navbar-default .navbar-brand,
 .sidebar .nav li>a,
 .off-canvas-sidebar .nav li>a {
+    color: var(--text) !important;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.card label,
+.card,
+.card .title {
+    color: var(--text-hover);
+}
+
+label {
     color: var(--text) !important;
 }
 
@@ -113,7 +139,7 @@ body,
 }
 
 .text-primary {
-    color: var(--accent-color);
+    color: rgb(var(--accent-color));
 }
 
 .text-primary:hover {
@@ -155,7 +181,7 @@ body,
 .col-xs-4 .card,
 .col-xs-12 .card,
 .col-xs-8 .card {
-    background: rgb(255 255 255 / 8%) !important;
+    background: rgb(0 0 0 / 8%) !important;
 }
 
 #schedule-0,
@@ -178,8 +204,9 @@ body,
 #schedule-17,
 #schedule-18,
 #schedule-19,
-#schedule-20 {
-    background-color: rgb(255 255 255 / 8%);
+#schedule-20,
+[id*="#schedule-"] {
+    background-color: rgb(0 0 0 / 8%);
 }
 
 /* TIMELINE */
@@ -241,22 +268,26 @@ body,
     background: rgb(0 0 0 / 10%);
 }
 
+.sidebar[data-background-color="black"] .logo, .off-canvas-sidebar[data-background-color="black"] .logo {
+    border-bottom: 1px solid rgba(var(--accent-color));
+}
+
 .sidebar .nav li.active>a:before,
 .sidebar .nav li.active>a:after {
-    border-right: 17px solid var(--accent-color);
+    border-right: 17px solid rgb(var(--accent-color));
 }
 
 @media (min-width: 992px) {
 
     .off-canvas-sidebar .nav li.active>a:before,
     .off-canvas-sidebar .nav li.active>a:after {
-        border-right: 17px solid var(--accent-color);
+        border-right: 17px solid rgb(var(--accent-color));
     }
 }
 
 .sidebar[data-active-color="success"] .nav li.active>a,
 .off-canvas-sidebar[data-active-color="success"] .nav li.active>a {
-    color: var(--accent-color) !important;
+    color: rgb(var(--accent-color)) !important;
 }
 
 .sidebar .nav li>a:hover {
@@ -281,11 +312,27 @@ body,
 }
 
 .modal-header {
-    border-bottom: 1px solid rgb(255 255 255 / 25%);
+    border-bottom: 1px solid rgb(var(--accent-color));
+    background: var(--modal-header-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 
 .modal-footer {
-    border-top: 1px solid rgb(255 255 255 / 25%);
+    border-top: 1px solid rgb(var(--accent-color));
+    background: var(--modal-footer-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 
 .modal-body .nav-tabs>li.active>a,
@@ -425,6 +472,7 @@ fieldset[disabled] .form-control {
 .btn-info.btn-fill:focus {
     background: var(--button-color-hover);
     border: var(--button-color-hover);
+    color: var(--button-text-hover);
 }
 
 .btn-primary {
@@ -436,13 +484,13 @@ fieldset[disabled] .form-control {
 .btn-primary:focus,
 .btn-primary:active:focus {
     border-color: var(--button-color-hover);
-    color: var(--text-hover);
+    color: var(--button-text-hover);
     background-color: var(--button-color-hover);
 }
 
 .btn-primary:hover {
     border-color: var(--button-color-hover);
-    color: var(--text-hover);
+    color: var(--button-text-hover);
     background-color: var(--button-color-hover);
 }
 
@@ -453,7 +501,7 @@ fieldset[disabled] .form-control {
 }
 
 .btn-primary.btn-fill:hover {
-    color: var(--text-hover);
+    color: var(--button-text-hover);
     background-color: var(--button-color-hover);
     border-color: var(--button-color-hover);
 
@@ -464,7 +512,7 @@ div>div>div.modal-footer>button.btn.btn-default.pull-left,
 .btn-danger.btn-fill {
     border-color: #f05050;
     background-color: #f05050;
-    color: var(--button-text);
+    color: #eee;
 }
 
 div>div>div.modal-footer>button.btn.btn-default.pull-left:hover,
@@ -474,20 +522,20 @@ div>div>div.modal-footer>button.btn.btn-default.pull-left:focus,
 .btn-danger.btn-fill:hover,
 .btn-danger.btn-fill:focus {
     border-color: #ec2626;
-    color: var(--text-hover);
+    color: #fff;
     background-color: #ec2626;
 }
 
 div.bootbox.modal.fade.bootbox-confirm.in>div>div>div.modal-footer>button.btn.btn-default {
     border-color: #f05050;
     background-color: #f05050;
-    color: var(--button-text);
+    color: #eee;
 }
 
 div.bootbox.modal.fade.bootbox-confirm.in>div>div>div.modal-footer>button.btn.btn-default:hover,
 div.bootbox.modal.fade.bootbox-confirm.in>div>div>div.modal-footer>button.btn.btn-default:focus {
     border-color: #ec2626;
-    color: var(--text-hover);
+    color: #fff;
     background-color: #ec2626;
 }
 
@@ -512,12 +560,37 @@ div.bootbox.modal.fade.bootbox-confirm.in>div>div>div.modal-footer>button.btn.bt
 .btn-success.active,
 .open>.btn-success.dropdown-toggle {
     background-color: var(--button-color-hover);
-    color: var(--text-hover);
+    color: var(--button-text-hover);
     border-color: var(--button-color-hover);
+}
+
+.btn-icon {
+    background-color: rgb(var(--accent-color));
+    color: var(--label-text-color);
+    border-color: rgb(var(--accent-color));
+}
+
+.btn-icon.active.focus,
+.btn-icon.active:focus,
+.btn-icon.active:hover,
+.btn-icon:active.focus,
+.btn-icon:active:focus,
+.btn-icon:active:hover,
+.btn-icon:hover,
+.btn-icon:focus,
+.btn-icon:active,
+.btn-icon.active,
+.open>.dropdown-toggle.btn-icon.focus,
+.open>.dropdown-toggle.btn-icon:focus,
+.open>.dropdown-toggle.btn-icon:hover {
+    background-color: var(--accent-color-hover) !important;
+    color: var(--label-text-color);
+    border-color: var(--accent-color-hover);
 }
 
 .radio-box input:checked~.radio-button {
     background-color: var(--button-color);
+    color: var(--label-text-color);
 }
 
 /* TABLES */
@@ -535,6 +608,7 @@ div.bootbox.modal.fade.bootbox-confirm.in>div>div>div.modal-footer>button.btn.bt
 .table>thead>tr>th.active,
 .row-clickable.active {
     background-color: rgb(0 0 0 / 25%);
+    color: var(--text-hover);
 }
 
 .fixed-header th {
@@ -553,9 +627,12 @@ div.bootbox.modal.fade.bootbox-confirm.in>div>div>div.modal-footer>button.btn.bt
 .table tbody tr>th,
 .table tbody tr>td,
 .table tfoot tr>th,
-.table tfoot tr>td,
-hr {
+.table tfoot tr>td {
     border-top: 1px solid rgb(255 255 255 / 20%);
+}
+
+hr {
+    border-top: 1px solid rgb(var(--accent-color));
 }
 
 .list-group-item {
@@ -565,8 +642,8 @@ hr {
 .list-group-item.active,
 .list-group-item.active:focus,
 .list-group-item.active:hover {
-    background-color: var(--accent-color);
-    border-color: var(--accent-color);
+    background-color: rgb(var(--accent-color));
+    border-color: rgb(var(--accent-color));
 }
 
 /* PROGRESS BARS */
@@ -575,7 +652,7 @@ hr {
 }
 
 .progress-bar {
-    background-color: var(--accent-color);
+    background-color: rgb(var(--accent-color));
 }
 
 .progress span {
@@ -603,6 +680,6 @@ hr {
 
     .off-canvas-sidebar .nav li.active>a:before,
     .off-canvas-sidebar .nav>li.active>a:after {
-        border-left: 17px solid var(--accent-color);
+        border-left: 17px solid rgb(var(--accent-color));
     }
 }
