@@ -1527,6 +1527,15 @@ body {
     color: var(--text-hover);
 }
 
+@-moz-document url-prefix() {
+    .navbar-header {
+        background: transparent; 
+    }
+    .dropdown-menu {
+        background: transparent;
+    }
+}
+
 .navbar-header {
     background: var(--main-bg-color);
     background-repeat: repeat, no-repeat;
@@ -1608,13 +1617,13 @@ body {
 
 .sidebar:hover{
     background: var(--modal-bg-color) !important;
-    background-repeat: repeat, no-repeat;
-    background-attachment: fixed, fixed;
-    background-position: center center, center center;
-    background-size: auto, cover;
-    -webkit-background-size: auto, cover;
-    -moz-background-size: auto, cover;
-    -o-background-size: auto, cover;  
+    background-repeat: repeat, no-repeat !important;
+    background-attachment: fixed, fixed !important;
+    background-position: center center, center center !important;
+    background-size: auto, cover !important;
+    -webkit-background-size: auto, cover !important;
+    -moz-background-size: auto, cover !important;
+    -o-background-size: auto, cover !important;   
     transition: max-width .2s cubic-bezier(.4,0,.2,1),background-color .2s ease-out;  
 }
 
@@ -1667,9 +1676,13 @@ body {
 
 .dropdown-menu {
     background: var(--drop-down-menu-bg) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
 .dropdown-menu>li>a {
