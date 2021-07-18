@@ -173,6 +173,7 @@ h6 {
     border-color: rgb(var(--accent-color));
     color: var(--text-hover);
     background: var(--modal-bg-color);
+    background-color: var(--modal-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -1651,14 +1652,13 @@ body {
 
 #side-menu>li>a.active,
 #side-menu>li>ul>li>a.active {
-    /*background: rgba(10, 10, 10, 0.53);*/
+    background: rgba(var(--accent-color), 0.05);
     color: rgb(var(--accent-color));
     font-weight: 500;
     -webkit-box-shadow: inset 4px 0 0 0 rgb(var(--accent-color));
     box-shadow: inset 4px 0 0 0 rgb(var(--accent-color));
     border-radius: 0 0 0 0;
     margin-left: 0px;
-    background: transparent;
 }
 
 #side-menu ul>li>a:hover {
@@ -1672,6 +1672,9 @@ body {
 
 .user-profile .user-pro-body .u-dropdown {
     color: var(--text);
+}
+.drop-title {
+    color: var(--text-hover);
 }
 
 .dropdown-menu {
@@ -1882,7 +1885,7 @@ input,
 }
 
 .tabs-style-flip nav li.tab-current a::after {
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(var(--accent-color), 0.05);
     -webkit-transform: perspective(900px) rotate3d(1, 0, 0, 0deg);
     transform: perspective(900px) rotate3d(1, 0, 0, 0deg);
     border-radius: 0px 0px 0 0;
