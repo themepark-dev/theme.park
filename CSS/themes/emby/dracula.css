@@ -11,9 +11,9 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
-/* EMBY SPACE GRAY THEME */
-@import url("https://theme-park.dev/CSS/themes/emby/emby-base.css");
-@import url("https://dev.theme-park.dev/CSS/variables/space-gray.css");
+/* EMBY DRACULA THEME */
+@import url("https://dev.theme-park.dev/CSS/themes/emby/emby-base.css");
+@import url("https://dev.theme-park.dev/CSS/variables/dracula.css");
 :root {
     --theme-primary-color: var(--accent-color);
     --theme-text-color: var(--text);

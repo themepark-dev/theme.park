@@ -13,22 +13,22 @@
 
 /* EMBY ORGANIZR-DARK THEME */
 @import url("https://theme-park.dev/CSS/themes/emby/emby-base.css");
-
+@import url("https://dev.theme-park.dev/CSS/variables/organizr-dark.css");
 :root {
-    --theme-primary-color: #2cabe3;
-    --theme-text-color: #96a2b4;
-    --theme-text-color-opaque: #fff;
-    --theme-accent-text-color: #2cabe3;
-    --theme-primary-color-lightened: rgba(44, 171, 227 , 0.8);
-    --theme-icon-focus-background: rgba(44, 171, 227 , 0.2);
+    --theme-primary-color: var(--accent-color);
+    --theme-text-color: var(--text);
+    --theme-text-color-opaque: var(--text-hover);
+    --theme-accent-text-color: var(--accent-color);
+    --theme-primary-color-lightened: var(--accent-color-hover);
+    --theme-icon-focus-background: rgba(var(--accent-color), 0.2);
 
-    --theme-background: #1f1f1f;
+    --theme-background: var(--main-bg-color);
     --header-blur-background: rgba(20,20,20,0.66);
     --drawer-background: #2C2C2E;
-    --docked-drawer-background: #1C1C1E;
-    --button-background: #242424;
-    --card-background: #242424;
-    --footer-background: #1d1d1d;
+    --docked-drawer-background: rgba(0, 0, 0, 0.25);
+    --button-background: var(--button-color);
+    --card-background: rgba(0, 0, 0, 0.15);
+    --footer-background: var(--modal-footer-color);
     --footer-blur-background: rgba(29,29,31,0.66);
     
     --header-background: var(--theme-background);
@@ -40,24 +40,24 @@
 
 @media (pointer: fine) {
     :not(.layout-tv):root {
-        --theme-background: #1f1f1f;
+        --theme-background: var(--main-bg-color);
         --header-blur-background: rgba(20,20,20,0.66);
         --drawer-background: #2C2C2E;
-        --docked-drawer-background: #1C1C1E;
-        --button-background: #242424;
-        --card-background: #242424;
-        --footer-background: #1d1d1d;
+        --docked-drawer-background: rgba(0, 0, 0, 0.25);
+        --button-background: #1f1f1f;
+        --card-background: rgba(0, 0, 0, 0.15);
+        --footer-background: var(--modal-footer-color);
         --footer-blur-background: rgba(29,29,31,0.66);
     }
 }
 
 .layout-tv:root {
-    --theme-background: #1f1f1f;
+    --theme-background: var(--main-bg-color);
     --header-blur-background: rgba(20,20,20,0.66);
     --drawer-background: #2C2C2E;
-    --docked-drawer-background: #1C1C1E;
-    --button-background: #242424;
-    --card-background: #242424;
-    --footer-background: #1d1d1d;
+    --docked-drawer-background: rgba(0, 0, 0, 0.25);
+    --button-background: #1f1f1f;
+    --card-background: rgba(0, 0, 0, 0.15);
+    --footer-background: var(--modal-footer-color);
     --footer-blur-background: rgba(29,29,31,0.66);
 }
