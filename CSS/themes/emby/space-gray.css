@@ -13,7 +13,7 @@
 
 /* EMBY SPACE GRAY THEME */
 @import url("https://theme-park.dev/CSS/themes/emby/emby-base.css");
-@import url("https://dev.theme-park.dev/CSS/variables/space-gray.css");
+@import url("https://theme-park.dev/CSS/variables/space-gray.css");
 :root {
     --theme-primary-color: var(--accent-color);
     --theme-text-color: var(--text);

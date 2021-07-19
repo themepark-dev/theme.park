@@ -13,7 +13,7 @@
 
 /* EMBY AQUAMARINE THEME */
 @import url("https://theme-park.dev/CSS/themes/emby/emby-base.css");
-@import url("https://dev.theme-park.dev/CSS/variables/aquamarine.css");
+@import url("https://theme-park.dev/CSS/variables/aquamarine.css");
 :root {
     --theme-primary-color: var(--accent-color);
     --theme-text-color: var(--text);
