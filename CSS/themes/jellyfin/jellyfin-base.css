@@ -1,3 +1,24 @@
+
+/*TP CUSTOM */
+h1,h2, h3, h4, h5, h6,
+.inputLabel {
+    color: var(--text-hover);
+}
+
+a:not(.emby-button),
+.cardText.cardTextCentered.cardText-first > button,
+.emby-linkbutton>a {
+    color: var(--link-color) !important;
+}
+
+a:hover:not(.emby-button),
+.cardText.cardTextCentered.cardText-first > button:hover,
+.emby-linkbutton>a:hover {
+    color: var(--link-color-hover) !important;
+}
+
+/*TP END*/
+
 html {
     color: var(--theme-text-color);
     scrollbar-color: var(--scrollbar-thumb-background) transparent
@@ -19,10 +40,10 @@ html {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
-.appfooter,.formDialogFooter:not(.formDialogFooter-clear),.formDialogHeader:not(.formDialogHeader-clear) {
+.appfooter,.formDialogFooter:not(.formDialogFooter-clear) {
     background: var(--footer-background);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
@@ -30,7 +51,28 @@ html {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
+}
+.formDialogHeader:not(.formDialogHeader-clear) {
+    background: var(--modal-header-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+
+.dialog {
+    background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 
 @supports (backdrop-filter: blur(1em)) or (-webkit-backdrop-filter:blur(1em)) {
@@ -62,7 +104,7 @@ html {
 }
 
 
-.backgroundContainer,.dialog,html {
+.backgroundContainer,html {
     background: var(--theme-background);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
@@ -91,13 +133,13 @@ html {
 }
 
 .paper-icon-button-light-tv:focus,.paper-icon-button-light:active {
-    color: var(--theme-primary-color);
+    color: rgb(var(--theme-primary-color));
     background-color: var(--theme-icon-focus-background)
 }
 
 @media(hover: hover) and (pointer:fine) {
     .paper-icon-button-light:focus {
-        color:var(--theme-primary-color);
+        color:rgb(var(--theme-primary-color));
         background-color: var(--theme-icon-focus-background)
     }
 }
@@ -114,7 +156,7 @@ html {
 
 .emby-select-withcolor {
     color: inherit;
-    background: var(--button-background);
+    background: rgba(0, 0, 0, 0.25);
     border: var(--line-size) solid transparent
 }
 
@@ -149,17 +191,18 @@ html {
 }
 
 .fab:focus,.raised:focus {
-    background: #333
+    background: var(--button-color-hover);
+    color: var(--button-text-hover);
 }
 
 .button-submit:not(.emby-button-tv) {
-    background: var(--theme-primary-color);
-    color: #fff
+    background: var(--button-color);
+    color: var(--button-text)
 }
 
 .button-submit:not(.emby-button-tv):focus {
-    background: var(--theme-primary-color-lightened);
-    color: #fff
+    background: var(--button-color-hover);
+    color: var(--button-text-hover)
 }
 
 .emby-select-withcolor>option {
@@ -168,12 +211,12 @@ html {
 }
 
 .emby-select-withcolor:focus {
-    border-color: var(--theme-primary-color)!important
+    border-color: rgb(var(--theme-primary-color))!important
 }
 
 .emby-select-tv-withcolor:focus {
-    background-color: var(--theme-primary-color)!important;
-    color: #fff!important
+    background-color: rgb(var(--theme-primary-color))!important;
+    color: var(--label-text-color)!important
 }
 
 .checkboxLabel {
@@ -185,15 +228,19 @@ html {
 }
 
 .inputLabelFocused,.selectLabelFocused,.textareaLabelFocused {
-    color: var(--theme-accent-text-color)
+    color: rgb(var(--accent-color))
 }
 
 .button-link {
-    color: var(--theme-accent-text-color)
+    color: var(--link-color) !important;
+}
+
+.button-link:hover {
+    color: var(--link-color-hover) !important;
 }
 
 .button-flat-accent {
-    color: var(--theme-accent-text-color)
+    color: rgb(var(--accent-color))
 }
 
 .paperList,.visualCardBox {
@@ -204,10 +251,12 @@ html {
     border: var(--line-size) solid var(--line-background)
 }
 
-.cardText-secondary,.fieldDescription,.listItemBodyText-secondary,.secondaryText {
+.fieldDescription,.listItemBodyText-secondary,.secondaryText {
     color: var(--theme-body-secondary-text-color)
 }
-
+.cardText-secondary {
+    color: var(--text)
+}
 .cardText-first {
     color: var(--theme-text-color-opaque)
 }
@@ -218,17 +267,22 @@ html {
 
 @media(hover: hover) and (pointer:fine) {
     .actionSheetMenuItem:hover {
-        background-color:rgba(255,255,255,.2)
+        background-color:rgba(255,255,255,.2);
+        color: var(--text-hover);
     }
 }
 
 .selectionCommandsPanel {
-    background: var(--theme-primary-color);
-    color: #fff
+    background: rgb(rgb(var(--theme-primary-color)));
+    color: var(--label-text-color);
+}
+.itemSelectionCount {
+    color: var(--label-text-color)!important;
+
 }
 
 .upNextDialog-countdownText {
-    color: var(--theme-primary-color)
+    color: rgb(var(--theme-primary-color))
 }
 
 .alphaPickerButton {
@@ -241,8 +295,8 @@ html {
 }
 
 .alphaPickerButton-tv:focus {
-    background-color: var(--theme-primary-color);
-    color: #fff!important
+    background-color: rgb(var(--theme-primary-color));
+    color: var(--label-text-color)!important
 }
 
 .detailTableBodyRow-shaded:nth-child(even) {
@@ -259,12 +313,12 @@ html {
 }
 
 .listItemIcon:not(.listItemIcon-transparent) {
-    background-color: var(--theme-primary-color);
-    color: #fff;
+    background-color: rgb(var(--theme-primary-color));
+    color: var(--label-text-color);
 }
 
 .progressring-spiner {
-    border-color: var(--theme-primary-color)
+    border-color: rgb(var(--theme-primary-color))
 }
 
 .mediaInfoText {
@@ -281,12 +335,12 @@ html {
 
 .emby-input,.emby-textarea {
     color: inherit;
-    background: var(--button-background);
-    border: var(--line-size) solid var(--button-background)
+    background: rgb(0 0 0 / 25%);
+    border: var(--line-size) solid rgba(255, 255, 255, 0.1)
 }
 
 .emby-input:focus,.emby-textarea:focus {
-    border-color: var(--theme-primary-color)
+    border-color: rgb(var(--theme-primary-color))
 }
 
 .emby-checkbox:checked+span:before {
@@ -294,12 +348,16 @@ html {
 }
 
 .emby-checkbox:checked+span:before {
-    border-color: var(--theme-primary-color);
-    background-color: var(--theme-primary-color)
+    border-color: rgb(var(--theme-primary-color)) !important;
+    background-color: rgb(var(--theme-primary-color)) !important;
+    
+}
+.checkboxLabel::after,.checkboxIcon {
+    color: var(--label-text-color) !important;
 }
 
 .itemProgressBarForeground {
-    background-color: var(--theme-primary-color)
+    background-color: rgb(var(--theme-primary-color))
 }
 
 .itemProgressBarForeground-recording {
@@ -307,11 +365,12 @@ html {
 }
 
 .countIndicator {
-    background: var(--theme-primary-color)
+    background: rgb(var(--theme-primary-color));
+    color: var(--label-text-color);
 }
 
 .playedIndicator {
-    background: var(--theme-primary-color)
+    background: rgb(var(--theme-primary-color))
 }
 
 .mainDrawer {
@@ -331,12 +390,12 @@ html {
 
 .navMenuOption-selected {
     background-color: var(--theme-icon-focus-background)!important;
-    color: var(--theme-accent-text-color)
+    color: rgb(var(--accent-color))
 }
 
 .emby-button-focusscale:focus,.emby-button-focusscale:focus .detailButton-icon {
-    background: var(--theme-primary-color);
-    color: #fff
+    background: rgb(var(--theme-primary-color));
+    color: var(--label-text-color)
 }
 
 .emby-tab-button {
@@ -344,7 +403,7 @@ html {
 }
 
 .emby-tab-button-active {
-    color: var(--theme-accent-text-color)
+    color: rgb(var(--theme-accent-text-color))
 }
 
 .emby-tab-button-active.emby-button-tv {
@@ -352,12 +411,12 @@ html {
 }
 
 .emby-tab-button.emby-button-tv:focus {
-    color: var(--theme-accent-text-color);
+    color: rgb(var(--accent-color));
     background: 0 0
 }
 
 .emby-button {
-    outline-color: var(--theme-primary-color)
+    outline-color: rgb(var(--theme-primary-color))
 }
 
 .channelCell,.guide-headerTimeslots,.timeslotHeaders {
@@ -415,7 +474,7 @@ html {
 }
 
 .guide-currentTimeIndicatorDot:after {
-    border-top-color: var(--theme-primary-color)
+    border-top-color: rgb(var(--theme-primary-color))
 }
 
 .firstChannelCell {
@@ -439,8 +498,8 @@ html {
 }
 
 .channelCell:focus,.programCell:focus {
-    background-color: var(--theme-primary-color);
-    color: #fff
+    background-color: rgb(var(--theme-primary-color));
+    color: var(--label-text-color)
 }
 
 .guide-programTextIcon {
@@ -476,7 +535,7 @@ html {
 }
 
 .card:focus .card-focuscontent {
-    border-color: var(--theme-primary-color)
+    border-color: rgb(var(--theme-primary-color))
 }
 
 .cardContent-button {
@@ -512,7 +571,10 @@ html {
 }
 
 .cardOverlayButtonIcon {
-    background-color: var(--theme-primary-color)
+    background-color: rgb(var(--theme-primary-color))
+}
+.cardScalable.cardPadder-portrait > div > button > i{
+    color: var(--label-text-color) !important;
 }
 
 ::-webkit-scrollbar-track-piece {
@@ -528,7 +590,7 @@ html {
 }
 
 .emby-slider {
-    color: var(--theme-primary-color)
+    color: rgb(var(--theme-primary-color))
 }
 
 .emby-slider::-moz-range-track {
@@ -536,23 +598,23 @@ html {
 }
 
 .emby-slider::-moz-range-progress {
-    background: var(--theme-primary-color)
+    background: rgb(var(--theme-primary-color))
 }
 
 .emby-slider::-webkit-slider-thumb {
-    background: var(--theme-primary-color)
+    background: rgb(var(--theme-primary-color))
 }
 
 .emby-slider::-moz-range-thumb {
-    background: var(--theme-primary-color)
+    background: rgb(var(--theme-primary-color))
 }
 
 .emby-slider::-ms-thumb {
-    background: var(--theme-primary-color)
+    background: rgb(var(--theme-primary-color))
 }
 
 .emby-slider-background-lower {
-    background-color: var(--theme-primary-color)
+    background-color: rgb(var(--theme-primary-color))
 }
 
 .scrollbuttoncontainer {
@@ -569,7 +631,7 @@ html {
 }
 
 .emby-search-tab-button.emby-tab-button-active {
-    background: var(--theme-accent-text-color)!important
+    background: rgb(var(--accent-color))!important
 }
 
 .textActionButton.dragging {
@@ -577,32 +639,40 @@ html {
 }
 
 .dragging-over.full-drop-target {
-    background: var(--theme-primary-color)!important;
-    color: #fff!important
+    background: rgb(var(--theme-primary-color))!important;
+    color: var(--label-text-color)!important
 }
 
 .dragging-over-top:before {
-    background: var(--theme-accent-text-color)
+    background: rgb(var(--accent-color))
 }
 
 .dragging-over-bottom:after {
-    background: var(--theme-accent-text-color)
+    background: rgb(var(--accent-color))
 }
 
 
 /* TP CUSTOM */
 @media (hover: hover) and (pointer: fine) {
-.navMenuOption:hover {
-    background: rgb(255 255 255 / 15%) !important;
-}
-}
+    .navMenuOption:hover:not(.navMenuOption-selected) {
+        background: 0 !important;
+        color: var(--accent-color-hover);
+    }
+    }
 
-.mainDrawer {
-    background: var(--header-blur-background);
-    -webkit-backdrop-filter: saturate(1.8) blur(1.5em);
-    backdrop-filter: saturate(1.8) blur(1.5em);
-}
-
+    .mainDrawer {
+        background: var(--header-blur-background);
+        -webkit-backdrop-filter: saturate(1.8) blur(1.5em);
+        backdrop-filter: saturate(1.8) blur(1.5em);
+    }
+    
+    .jstree-default .jstree-clicked {
+        background: rgb(var(--accent-color));
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+        color: var(--label-text-color) !important;
+    }
+    
 .cardImageIcon {
     color: #fff;
     }
@@ -618,152 +688,152 @@ html {
 
 @media (hover: hover) and (pointer: fine) {
     .paper-icon-button-light:hover:not(:disabled) {
-        color: var(--theme-accent-text-color);
+        color: rgb(var(--theme-accent-text-color));
         background-color: var(--theme-icon-focus-background);
     }
 }
 
 .paper-icon-button-light:active:not(:disabled) {
-    color: var(--theme-accent-text-color);
+    color: rgb(var(--theme-accent-text-color));
     background-color: var(--theme-icon-focus-background);
 }
 
 .paper-icon-button-light.show-focus:focus {
-    color: var(--theme-accent-text-color);
+    color: rgb(var(--theme-accent-text-color));
 }
 
 .button-submit {
-    background: var(--theme-accent-text-color);
-    color: #fff;
+    background: rgb(var(--theme-accent-text-color));
+    color: var(--label-text-color);
 }
 
 .button-submit:focus {
-    background: var(--theme-accent-text-color);
-    color: #fff;
+    background: rgb(var(--theme-accent-text-color));
+    color: var(--label-text-color);
 }
 
 .inputLabelFocused,
 .selectLabelFocused,
 .textareaLabelFocused {
-    color: var(--theme-accent-text-color);
+    color: rgb(var(--theme-accent-text-color));
 }
 
 .itemSelectionPanel {
-    border: 1px solid var(--theme-accent-text-color);
+    border: 1px solid rgb(var(--theme-accent-text-color));
 }
 
 .selectionCommandsPanel {
-    background: var(--theme-accent-text-color);
-    color: #fff;
+    background: rgb(var(--theme-accent-text-color));
+    color: var(--label-text-color);
 }
 
 .upNextDialog-countdownText {
-    color: var(--theme-accent-text-color);
+    color: rgb(var(--theme-accent-text-color));
 }
 
 .alphaPickerButton-tv:focus {
-    background-color: var(--theme-accent-text-color);
-    color: #fff !important;
+    background-color: rgb(var(--theme-accent-text-color));
+    color: var(--label-text-color) !important;
 }
 
 .progressring-spiner {
-    border-color: var(--theme-accent-text-color);
+    border-color: rgb(var(--theme-accent-text-color));
 }
 
 .button-flat:hover {
-    color: var(--theme-accent-text-color);
+    color: rgb(var(--theme-accent-text-color));
 }
 
 .button-link {
-    color: var(--theme-accent-text-color);
+    color: rgb(var(--theme-accent-text-color));
 }
 
 .emby-input:focus,
 .emby-textarea:focus {
-    border-color: var(--theme-accent-text-color);
+    border-color: rgb(var(--theme-accent-text-color));
 }
 
 .emby-select-withcolor:focus {
-    border-color: var(--theme-accent-text-color) !important;
+    border-color: rgb(var(--theme-accent-text-color)) !important;
 }
 
 .emby-select-tv-withcolor:focus {
-    background-color: var(--theme-accent-text-color) !important;
-    color: #fff !important;
+    background-color: rgb(var(--theme-accent-text-color)) !important;
+    color: var(--label-text-color) !important;
 }
 
 .emby-checkbox:checked + span + .checkboxOutline {
-    border-color: var(--theme-accent-text-color);
+    border-color: rgb(var(--theme-accent-text-color));
 }
 
 .emby-checkbox:checked + span + .checkboxOutline,
 .itemProgressBarForeground {
-    background-color: var(--theme-accent-text-color);
+    background-color: rgb(var(--theme-accent-text-color));
 }
 
 .emby-checkbox:focus:not(:checked) + span + .checkboxOutline {
-    border-color: var(--theme-accent-text-color);
+    border-color: rgb(var(--theme-accent-text-color));
 }
 
 .countIndicator,
 .fullSyncIndicator,
 .playedIndicator {
-    background: var(--theme-accent-text-color);
+    background: rgb(var(--theme-accent-text-color));
 }
 
 .navMenuOption-selected {
-    background: var(--theme-accent-text-color) !important;
-    color: #fff;
+    background: rgb(var(--theme-accent-text-color)) !important;
+    color: var(--label-text-color);
 }
 
 .emby-button.show-focus:focus {
-    background: var(--theme-accent-text-color);
-    color: #fff;
+    background: rgb(var(--theme-accent-text-color));
+    color: var(--label-text-color);
 }
 
 .emby-tab-button.show-focus:focus {
-    color: var(--theme-accent-text-color);
+    color: rgb(var(--theme-accent-text-color));
 }
 
 .emby-tab-button:hover {
-    color: var(--theme-accent-text-color);
+    color: rgb(var(--theme-accent-text-color));
 }
 
 .guide-channelHeaderCell:focus,
 .programCell:focus {
-    background-color: var(--theme-accent-text-color) !important;
-    color: #fff !important;
+    background-color: rgb(var(--theme-accent-text-color)) !important;
+    color: var(--label-text-color) !important;
 }
 
 .guide-date-tab-button.emby-tab-button-active,
 .guide-date-tab-button:focus {
-    color: var(--theme-accent-text-color);
+    color: rgb(var(--theme-accent-text-color));
 }
 
 .guide-date-tab-button.show-focus:focus {
-    background-color: var(--theme-accent-text-color);
-    color: #fff;
+    background-color: rgb(var(--theme-accent-text-color));
+    color: var(--label-text-color);
 }
 
 .buttonActive {
-    color: var(--theme-accent-text-color) !important;
+    color: rgb(var(--theme-accent-text-color)) !important;
 }
 
 .card:focus .cardBox.visualCardBox,
 .card:focus .cardBox:not(.visualCardBox) .cardScalable {
-    border-color: var(--theme-accent-text-color) !important;
+    border-color: rgb(var(--theme-accent-text-color)) !important;
 }
 
 .metadataSidebarIcon {
-    color: var(--theme-accent-text-color);
+    color: rgb(var(--theme-accent-text-color));
 }
 
 .emby-button.detailFloatingButton {
-    background-color: var(--theme-accent-text-color);
-    color: #fff;
+    background-color: rgb(var(--theme-accent-text-color));
+    color: var(--label-text-color);
 }
 
 .layout-tv .emby-button.detailFloatingButton:focus {
     background-color: #f2f2f2;
-    color: var(--theme-accent-text-color);
+    color: rgb(var(--theme-accent-text-color));
 }

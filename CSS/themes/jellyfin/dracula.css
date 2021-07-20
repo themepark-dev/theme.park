@@ -11,9 +11,9 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
-/* JELLYFIN DARK THEME */
+/* JELLYFIN AQUAMARINE THEME */
 @import url("https://theme-park.dev/CSS/themes/jellyfin/jellyfin-base.css");
-@import url("https://theme-park.dev/CSS/variables/dark.css");
+@import url("https://theme-park.dev/CSS/variables/dracula.css");
 :root {
     --theme-primary-color: var(--accent-color);
     --theme-text-color: var(--text);
