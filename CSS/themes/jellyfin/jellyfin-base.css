@@ -144,7 +144,7 @@ html {
     }
 }
 
-.detailButton-icon,.fab,.raised {
+.fab,.raised {
     background: var(--button-background);
     color: var(--theme-text-color)
 }
@@ -170,7 +170,7 @@ html {
 }
 
 @supports (backdrop-filter: blur(1em)) or (-webkit-backdrop-filter:blur(1em)) {
-    .detailButton-icon,.emby-select-withcolor.detailTrackSelect,.fab,.raised:not(.nobackdropfilter) {
+    .detailButton-icon:not(.playstatebutton-icon-unplayed),.emby-select-withcolor.detailTrackSelect,.fab,.raised:not(.nobackdropfilter) {
         background:rgba(85,85,85,.3);
         -webkit-backdrop-filter: saturate(1.8) blur(1.5em);
         backdrop-filter: saturate(1.8) blur(1.5em)
