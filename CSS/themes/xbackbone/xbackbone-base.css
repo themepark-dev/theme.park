@@ -78,12 +78,13 @@ body,
 
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .show>.nav-link,
 .col-form-label {
     color: var(--text-hover);
 }
-
+.navbar-dark .navbar-nav .nav-link.active {
+    color: rgb(var(--accent-color));
+}
 .card-header {
     color: rgb(var(--accent-color));
 }
@@ -114,6 +115,12 @@ a:hover {
 /* TOP NAV */
 .bg-primary {
     background: rgba(0, 0, 0, .15) !important;
+}
+.navbar-dark .navbar-brand {
+    color: rgb(var(--accent-color));
+}
+.navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover {
+    color: var(--accent-color-hover);
 }
 
 /* DROPDOWN MENU */
