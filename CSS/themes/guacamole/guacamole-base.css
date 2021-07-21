@@ -10,6 +10,14 @@
 
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
+
+
+* {
+    outline: none !important;
+}
+h1,h2,h3,h4,h5,h6 {
+    color: var(--text-hover);
+}
   body {
     background: var(--main-bg-color) !important;
       background-repeat: repeat, no-repeat;
@@ -19,7 +27,7 @@
       -webkit-background-size: auto, cover;
       -moz-background-size: auto, cover;
       -o-background-size: auto, cover;
-      color:#FFFFFF !important;
+      color:var(--text) !important;
   }
   div.displayMiddle {
       background: var(--modal-bg-color);
@@ -31,6 +39,36 @@
       -moz-background-size: auto, cover;
       -o-background-size: auto, cover; 
   }
+input::-webkit-input-placeholder {
+    color: var(--text) !important;
+}
+input:focus::-webkit-input-placeholder {
+    color: var(--text-hover) !important;
+}
+
+/* Firefox < 19 */
+input:-moz-placeholder {
+    color: var(--text) !important;
+}
+input:focus:-moz-placeholder {
+    color: var(--text-hover) !important;
+}
+
+/* Firefox > 19 */
+input::-moz-placeholder {
+    color: var(--text) !important;
+}
+input:focus::-moz-placeholder {
+    color: var(--text-hover) !important;
+}
+
+/* Internet Explorer 10 */
+input:-ms-input-placeholder {
+    color: var(--text) !important;
+}
+input:focus:-ms-input-placeholder {
+    color: var(--text-hover) !important;
+}
     /* Scrollbar */  
     @media only screen and (min-width: 768px) {  
       html {
@@ -87,9 +125,10 @@
   input[type="submit"]:hover, button:hover, a.button:hover {
       background-color: var(--button-color-hover);
       border: none;
+      cursor: pointer;
   }
   .login-ui .login-fields .labeled-field input:focus {
-      background: #1f1f1f !important;
+      background: rgba(0,0,0,0.45) !important;
       outline: none;
   }
   .login-ui .login-fields .labeled-field.empty input {
@@ -97,24 +136,24 @@
       outline: none;
   }
   .login-ui .login-fields .labeled-field.empty input:focus {
-      background: #1f1f1f !important;
+      background: rgba(0,0,0,0.45) !important;
       outline: none;
   }
   .login-ui .login-dialog .login-fields input {
-      background-color: #1f1f1f !important;
+      background-color: rgba(0,0,0,0.45) !important;
   }
   div.location, input[type=text], input[type=email], input[type=number], input[type=password], textarea {
       color: white !important;
       background: rgba(0, 0, 0, 0.25) !important;
   }
-  input[type=checkbox], input[type=number], input[type=text], input[type=email], input[type=radio], label, textarea {
-      color: white !important;
+  input[type=checkbox], input[type=number], input[type=text], input[type=email], input[type=radio], textarea {
+      color: var(--text-hover) !important;
       background: transparent;
   }
   
   /* HOME MENU */
   .header h2 {
-      color: white;
+      color: var(--text-hover);
       background-color: rgba(0, 0, 0, 0.25);
   }
   
@@ -170,6 +209,16 @@
   table.sorted th.sort-primary:after {
       background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/guacamole/down.png);
   }
+
+  thead {
+      color: var(--text-hover);
+  }
+  table.sorted th, table.sorted td {
+    border: 1px solid rgb(255 255 255 / 15%);
+}
+.settings table.session-list tr.session:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
   .menu-dropdown.open, .menu-dropdown.open:hover {
       background: rgba(0, 0, 0, 0.25);
   }
@@ -180,24 +229,25 @@
   .menu-dropdown .menu-contents li a {
       display: block;
       cursor: pointer;
-      color: white;
+      color: var(--text);
       text-decoration: none;
       padding: .75em;
-      background: #1f1f1f;
   }
   .menu-dropdown .menu-contents li a.current, .menu-dropdown .menu-contents li a.current:hover {
       background-color: rgba(0,0,0,.25);
-      opacity: .9;
+      color:var(--text-hover)
   }
   .menu-dropdown .menu-contents li a:hover {
       background-color: rgba(0,0,0,.25);
+      color: var(--text-hover);
   }
   .menu-dropdown:hover {
       background: rgba(0, 0, 0, 0.25);
+      color: var(--text-hover);
   }
   
   .menu-dropdown .menu-contents {
-      background: #1f1f1f;
+    background: var(--drop-down-menu-bg);
   
   }
   .header .filter input {
@@ -208,7 +258,7 @@
       border: 0;
       border-left: 1px solid rgba(0,0,0,0.125);
       background-color: transparent;
-      color: white;
+      color: var(--text-hover);
   }
   .header .filter {
       background-color: rgba(0, 0, 0, 0.25);
@@ -226,24 +276,30 @@
     border: 0;
   }
   div.location, input[type=text], input[type=email], input[type=number], input[type=password], textarea {
-      color: white;
+      color: var(--text-hover);
   }
   
   
   .user a:visited, .connection a:visited, .connection-group a:visited {
       text-decoration: none;
-      color: white;
+      color: var(--link-color-hover);
   }
   .recent-connections .connection:hover {
       background: hsla(0, 0%, 100%, 0.08);
+      color: var(--link-color-hover);
   }
   .list-item:not(.selected) .caption:hover {
       background: hsla(0, 0%, 100%, 0.07);
+      color: var(--link-color-hover);
   }
   .list-item .name {
-      color: white;
+      color: var(--link-color);
   }
   
+  .list-item:not(.selected) .caption:hover .name {
+    color: var(--link-color-hover);
+}
+
   /* SIDE MENU */
   .menu, .menu .header {
     background: var(--modal-bg-color) !important;
@@ -306,14 +362,14 @@
   }
   .user a:visited, .connection a:visited, .connection-group a:visited {
       text-decoration: none;
-      color: white;
+      color: var(--link-color);
   }
-  .user a:hover, .user-group a:hover, .connection a:hover, .connection-group a:hover {
-    color: #ffffff !important;
+  .user a:hover, .user-group a:hover, .connection a:hover, .connection-group a:hover, a.ng-binding:hover:not(.add-user):not(.button) {
+    color: var(--link-color-hover) !important;
 }
-  .user a, .connection a, .connection-group a {
+  .user a, .connection a, .connection-group a, a.ng-binding:not(.add-user):not(.button){
       text-decoration: none;
-      color: white;
+      color: var(--link-color);
   }
   div.location, input[type=text], input[type=email], input[type=number], input[type=password], textarea {
       border: 0;
@@ -324,10 +380,16 @@
   }
   /* USER SETTINGS */
   .page-tabs .page-list li a[href], .section-tabs li a {
-      color: white;
+      color: var(--text) !important;
   }
+  .page-tabs .page-list li a[href].current, .page-tabs .page-list li a[href].current:hover, .section-tabs li a.current, .section-tabs li a.current:hover {
+    background: rgba(0,0,0,0.25);
+    cursor: default;
+    color: rgb(var(--accent-color)) !important;
+}
   .page-tabs .page-list li a[href]:hover, .section-tabs li a:hover {
       background-color: hsla(0, 0%, 100%, 0.07);
+      color: var(--text-hover) !important;
   }
   .manage-user .page-tabs .page-list li.linked a[href]:before {
       background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/guacamole/checkmark.png);
@@ -364,16 +426,16 @@
       background-color: #333 !important;
   }
   h1.spacious-frame-view {
-      color: white !important;
+      color: var(--text-hover) !important;
   }
   @media screen and (-webkit-max-device-pixel-ratio: 1.25), screen and (max-resolution: 120dpi) {
   h1, .h1 {
-      color: white !important;
+      color: var(--text-hover) !important;
   }
   }
   .white-wrapper {
       background-color: #333 !important;
-      color: white !important;
+      color: var(--text) !important;
   }
   form:not(.inline) fieldset {
       background-color: #333 !important;
@@ -382,7 +444,7 @@
       color: white !important;
   }
   input[type=radio] {
-      border: 1px solid #fff !important;
+      border: 1px solid var(--text-hover) !important;
   }
   /* Connection */
 
@@ -395,7 +457,7 @@
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover; 
-    color: #FFF;
+    color: var(--text);
 }
 /* File Transfer */
 #file-transfer-dialog .transfer-manager {
@@ -423,4 +485,15 @@
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover; 
+}
+
+.related-objects .abbreviated-related-objects ul li {
+    display: inline-block;
+    margin: .25em;
+    padding: .25em;
+    border: 1px solid rgb(var(--accent-color));
+    background: rgb(var(--accent-color));
+}
+.related-objects .abbreviated-related-objects ul li label span {
+    color: var(--label-text-color) !important;
 }
