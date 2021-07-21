@@ -12,7 +12,7 @@
 /*			      https://github.com/gilbN/theme.park			 */
 
 body {
-	color:#FFFFFF !important;
+	color:var(--text) !important;
 	background: var(--main-bg-color) !important;
 	background-repeat: repeat, no-repeat!important;
 	background-attachment: fixed, fixed!important;
@@ -32,7 +32,20 @@ body {
 	-moz-background-size: auto, cover!important;
 	-o-background-size: auto, cover!important;
 }
-.page-header-canvas {
+
+h1, h2, h3, h4, h5, h6, label,legend {
+    color: var(--text-hover);
+}
+div>aria-label>span,
+#reactRoot > div > div.main-view > div > div:nth-child(1) > div > div:nth-child(10) > div > div.button-group.css-1uxatfi > div > div > div > div > div > div > span {
+    color: var(--text-hover) !important;
+}
+p {
+    color: var(--text);
+}
+
+.page-header-canvas,
+.page-toolbar[class*="css-"] {
     background: rgba(0, 0, 0, 0.25) !important;
     box-shadow: none !important;
     border-bottom: none !important;
@@ -165,9 +178,20 @@ color:#FFFFFF !important;
 }
 .sidemenu-item.active, .sidemenu-item:hover {
     background-color: rgba(0, 0, 0, .25) !important;
+    color: rgb(var(--accent-color)) !important;
+    border-image: none;
+    border-color: rgb(var(--accent-color));
 }
-.side-menu-header, .dropdown-menu--menu, .dropdown-menu--navbar, .dropdown-menu--sidemenu {
-    background: var(--modal-bg-color);
+.sidemenu-link {
+    color: var(--text) !important;
+}
+.sidemenu-link:hover {
+    color: rgb(var(--accent-color))!important;
+}
+.side-menu-header, .dropdown-menu--menu, .dropdown-menu--navbar, .dropdown-menu--sidemenu,
+
+#reactRoot > div > div.main-view > div[class*="css-"] > div:nth-child(1) > div > div:nth-child(10) > div > div.button-group[class*="css-"] > div > div {
+    background: var(--drop-down-menu-bg);
     background-repeat: repeat, no-repeat!important;
 	background-attachment: fixed, fixed!important;
 	background-position: center center, center center!important;
@@ -176,12 +200,15 @@ color:#FFFFFF !important;
 	-moz-background-size: auto, cover!important;
 	-o-background-size: auto, cover!important;
 }
+#reactRoot > div > div.main-view > div[class*="css-"] > div:nth-child(1) > div > div:nth-child(10) > div > div.button-group[class*="css-"] > div > div > div > span {
+    color: var(--text-hover);
+}
 .dropdown-menu .divider {
     border-bottom: 1px solid #d8d9da;
 }
 .dropdown-menu--sidemenu>li>.side-menu-header-link:hover {
-    color: #fff!important;
-    background: var(--modal-bg-color)!important;
+    color: var(--text-hover)!important;
+    background: var(--drop-down-menu-bg)!important;
     background-repeat: repeat, no-repeat!important;
 	background-attachment: fixed, fixed!important;
 	background-position: center center, center center!important;
@@ -192,12 +219,13 @@ color:#FFFFFF !important;
 }
 .dropdown-menu--menu>li>a:hover, .dropdown-menu--navbar>li>a:hover, .dropdown-menu--sidemenu>li>a:hover {
     background: rgba(0, 0, 0, 0.25)!important;
+    color: var(--text-hover)!important;
 }
 .dropdown-menu>li>a {
-    color: #ffffff!important;
+    color: var(--text)!important;
 }
 .dropdown-menu-item-shortcut {
-    color: #ffffff!important;
+    color: var(--text)!important;
 }
 .dropdown-menu {
     border: 1px solid transparent;
@@ -329,22 +357,25 @@ color:#FFFFFF !important;
 }
 .gf-form-select-box__option.gf-form-select-box__option--is-focused {
     color: #fff;
-    -o-border-image: -o-linear-gradient(var(--accent-color) 30%,var(--accent-color) 99%);
-    border-image: -webkit-gradient(linear,left top,left bottom,color-stop(30%,var(--accent-color)),color-stop(99%,var(--accent-color)));
-    border-image: -webkit-linear-gradient(var(--accent-color) 30%,var(--accent-color) 99%);
+    -o-border-image: -o-linear-gradient(rgb(var(--accent-color)) 30%,rgb(var(--accent-color)) 99%);
+    border-image: -webkit-gradient(linear,left top,left bottom,color-stop(30%,rgb(var(--accent-color))),color-stop(99%,rgb(var(--accent-color))));
+    border-image: -webkit-linear-gradient(rgb(var(--accent-color)) 30%,rgb(var(--accent-color)) 99%);
 }
 .filter-table td.filter-table__switch-cell {
     border-right: none;
 }
 /* Variable label color  */
 .template-variable, .gf-form-label--variable {
-    color: var(--accent-color) !important;
+    color: rgb(var(--accent-color)) !important;
 }
 
 /* Variable label box */
 .gf-form-label {
-    background-color: rgba(0, 0, 0, 0.25) !important;
+    background: rgba(0, 0, 0, 0.25) !important;
 	border: none !important;
+}
+.gf-form-label>button[class*="css-"] {
+    background: transparent !important;
 }
 .gf-form-label--btn:hover {
     background: rgba(0, 0, 0, 0.45) !important;
@@ -410,6 +441,9 @@ color:#FFFFFF !important;
 .panel-header:hover {
     background-color: rgba(0, 0, 0, 0.25) !important;
 }
+.panel-title-text:hover {
+    color: var(--text-hover);
+}
 /* ////PANEL BACKGROUND COLOR//// */
 
 .graph-legend-table .graph-legend-series:nth-child(odd), .graph-legend-table .graph-legend-series:nth-child(2n) {
@@ -471,9 +505,18 @@ div.flot-text {
     background: rgb(0 0 0 / 35%);
 }
 .css-1n8kpcb-activeTabStyle::before, .css-dnqfjg-activeTabStyle::before {
-    background: var(--accent-color);
+    background: rgb(var(--accent-color));
 }
 /* Edit panel tabs  */
+[aria-label="Panel editor content"]{
+    background: var(--main-bg-color);
+}
+div>.scrollbar-view>div>[class*="css-"],
+#reactRoot > div > div.main-view > div.css-1mwktlb > div[class*="css-"] > div[class*="css-"] > div > div.Pane.vertical.Pane1 > div > div.Pane.horizontal.Pane2 > div > div > div[class*="css-"],
+.css-v2fjpc,
+.css-ld7ft6{
+    background: rgba(0, 0, 0, .25) !important;
+}
 .tabbed-view-header {
     box-shadow: none;
     background: rgba(0, 0, 0, 0.25);
@@ -662,63 +705,26 @@ border-color: #b56d16 !important;
     height: 38px;
 }
 /*Buttons*/
-.css-y3nv3e-button,
-.css-cc7c9f-button,
-.css-1vlnne-button,
-.css-1ihbihm-button,
-.css-14zdxje-button,
-.css-179z9yx-button,
-.css-370vzt-button,
-.css-msayan-button,
-.css-19kbjxc-button,
-.css-n4gkqg-button,
-.css-u6ysb0-button,
-.css-ak0gkt-button,
-.css-1pa3vaj-button,
-.css-g7zx83-button,
-.css-1pcbsvw-button,
+button[class$="-button"]:not(button[aria-label="toggle-viz-picker"]),
 .gf-form-button-row a, .gf-form-button-row button,
 .page-action-bar>a, .page-action-bar>button,
-.btn-primary{ 
+.btn-primary,
+button.toolbar-button { 
 background: var(--button-color) !important;
 background-color: var(--button-color) !important;
-border-color: var(--button-color);
+border-color: var(--button-color) !important;
+color: var(--button-text) !important;
 }
-.css-y3nv3e-button:hover, 
-.css-y3nv3e-button:focus, 
-.css-cc7c9f-button:hover,
-.css-cc7c9f-button:focus,
-.css-1vlnne-button:hover,
-.css-1vlnne-button:focus,
-.css-1ihbihm-button:hover,
-.css-1ihbihm-button:focus,
-.css-14zdxje-button:hover,
-.css-14zdxje-button:focus,
-.css-179z9yx-button:hover,
-.css-179z9yx-button:focus,
-.css-370vzt-button:hover,
-.css-370vzt-button:focus,
-.css-msayan-button:hover,
-.css-msayan-button:focus,
-.css-19kbjxc-button:hover,
-.css-19kbjxc-button:focus,
-.css-n4gkqg-button:hover,
-.css-n4gkqg-button:focus,
-.css-u6ysb0-button:hover,
-.css-u6ysb0-button:focus,
-.css-ak0gkt-button:hover,
-.css-ak0gkt-button:focus,
-.css-1pa3vaj-button:hover,
-.css-1pa3vaj-button:focus,
-.css-g7zx83-button:hover,
-.css-g7zx83-button:focus,
-.css-1pcbsvw-button:hover,
-.css-1pcbsvw-button:focus,
+button[class$="-button"]:hover, 
+button[class$="-button"]:focus, 
+button[class$="-button"]:active,
 .gf-form-button-row a, .gf-form-button-row button:hover,
 .btn-primary:hover{
 color: rgb(255, 255, 255);
 background: var(--button-color-hover) !important;
 background-color: var(--button-color-hover) !important;
+border-color: var(--button-color-hover) !important;
+color: var(--button-text-hover) !important;
 box-shadow: none !important;
 } 
 .css-1d9e5zy-button {color: #fff; background: var(--button-color)}
@@ -867,9 +873,11 @@ body > grafana-app > div > div > react-container > div > div > div.view > div > 
 .css-cxwxzk-Label-description,.css-n370st {
     color: #eee;
 }
-.css-1pziiev {
+.css-10pj50r,
+.css-15rfc12 {
     background: rgb(0 0 0 / 50%);
 }
+
 /*Header*/
 .css-1marj6o {
 display: flex;
@@ -897,7 +905,7 @@ border-right: 1px solid rgba(0, 0, 0, 0);
 }
 .query-keyword, .css-wvxxxy, .css-fpnw35   {
     font-weight: 500;
-    color: var(--accent-color);
+    color: rgb(var(--accent-color));
 }
 .css-lvafs5 {
     background: rgba(0, 0, 0, .5);
@@ -948,7 +956,7 @@ border-bottom: 1px solid rgba(255, 255, 255, .08);
     box-shadow: none !important;
 }
 .css-1gokw4e input:checked + label, .css-1gokw4e input:checked + label:hover {
-background: var(--accent-color);
+background: rgb(var(--accent-color));
 }
 .css-1gokw4e label {
     background: white;
@@ -959,16 +967,16 @@ background: var(--accent-color);
     border-color: transparent;
 }
 .css-1fsv7gr:hover > div:first-child {
-    border-color: var(--accent-color);
+    border-color: rgb(var(--accent-color));
 }
 .css-1emhacm-currentVisualizationItem > div:first-child {
     outline-offset: 2px;
-    box-shadow: rgb(20, 22, 25) 0px 0px 0px 2px, var(--accent-color) 0px 0px 0px 4px;
+    box-shadow: rgb(20, 22, 25) 0px 0px 0px 2px, rgb(var(--accent-color)) 0px 0px 0px 4px;
 }
 .css-mgq0xs-currentVisualizationItem > div:first-child {
     outline: transparent dotted 2px;
     outline-offset: 1px;
-    box-shadow: var(--accent-color) 0px 0px 0px 2px, #607D8B 0px 0px 0px 2px;
+    box-shadow: rgb(var(--accent-color)) 0px 0px 0px 2px, #607D8B 0px 0px 0px 2px;
     transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1) 0s;
 }
 /*Old stat panel unit dropdown */
@@ -995,7 +1003,7 @@ height: 100%;
     background: rgba(255, 255, 255, .08)
 }
 input:checked+.gf-form-switch__slider {
-background: var(--accent-color);
+background: rgb(var(--accent-color));
 }
 /* RuPaul Drag Line*/
 .css-pii3u7:hover {
@@ -1034,7 +1042,7 @@ border-color: rgba(255, 255, 255, .09);
 }
 .grafana-info-box {
 background-color: rgba(0, 0, 0, .5);
-border-top: 3px solid var(--accent-color);
+border-top: 3px solid rgb(var(--accent-color));
 }
 /* Variables*/
 .filter-table--hover tbody tr:hover {
