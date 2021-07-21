@@ -57,7 +57,7 @@ label,
 .pagination>li>a:hover,
 .pagination>li>span:focus,
 .pagination>li>span:hover,
-.text-dark,
+.text-dark:not(#to-recover),
 .swal-title {
     color: var(--text-hover) !important;
 }
@@ -587,13 +587,31 @@ th.fc-day-header.fc-widget-header.fc-today {
     background: rgba(0, 0, 0, 0.9) !important;
     border: none !important;
 }
-
+#organizr-login-heading > a,
+#plex-login-heading > a,
+#recoverform > div:nth-child(1) > div > h3,
+#recoverform > div:nth-child(1) > div > p {
+    color: #fff !important;
+}
+#login-username-Input::placeholder,
+#login-password-Input::placeholder,
+#recover-input::placeholder {
+    color: var(--text-muted) !important;
+}
+#to-recover,
+label[for="checkbox-login"] {
+    color: var(--link-color) !important;
+}
+#to-recover:hover,
+label[for="checkbox-login"]:hover {
+    color: var(--link-color-hover) !important;
+}
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
     .login-register>.login-box>.white-box {
         -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
         border-radius: 15px;
-        background-color: rgba(0, 0, 0, 0.45);
+        background-color: rgba(0, 0, 0, 0.45) !important;
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
         color: white !important;
@@ -604,10 +622,10 @@ th.fc-day-header.fc-widget-header.fc-today {
 /* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
 @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
     .login-register>.login-box>.white-box {
-        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-        border-radius: 15px;
-        background-color: rgba(0, 0, 0, 0.7);
+        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8) !important;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.8) !important;
+        border-radius: 15px !important;
+        background: var(--main-bg-color) !important;
     }
 }
 
@@ -1134,7 +1152,8 @@ th.fc-day-header.fc-widget-header.fc-today {
 /* Notification Popups */
 /* Izi */
 .iziToast.update-notify.iziToast-layout2,
-.iziToast.success-notify.iziToast-layout2 {
+.iziToast.success-notify.iziToast-layout2,
+.iziToast.warning-notify.iziToast-layout2 {
     border: none;
     background: var(--modal-bg-color) !important;
     background-repeat: repeat, no-repeat;
@@ -1148,7 +1167,9 @@ th.fc-day-header.fc-widget-header.fc-today {
 }
 
 .iziToast.update-notify>.iziToast-body .iziToast-icon,
-.iziToast.success-notify>.iziToast-body .iziToast-icon {
+.iziToast.success-notify>.iziToast-body .iziToast-icon
+.iziToast.warning-notify>.iziToast-body .iziToast-icon,
+.iziToast.warning-notify > .iziToast-body .iziToast-icon{
     color: var(--link-color) !important;
 }
 
@@ -1164,7 +1185,8 @@ th.fc-day-header.fc-widget-header.fc-today {
 }
 
 .update-notify .iziToast-progressbar div,
-.success-notify .iziToast-progressbar div {
+.success-notify .iziToast-progressbar div,
+.warning-notify .iziToast-progressbar div {
     background: rgb(var(--accent-color)) !important;
 }
 
