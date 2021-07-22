@@ -1,7 +1,7 @@
 
 /*TP CUSTOM */
 h1,h2, h3, h4, h5, h6,
-.inputLabel {
+.inputLabel, label {
     color: var(--text-hover);
 }
 
@@ -197,7 +197,8 @@ html {
     color: var(--button-text)
 }
 
-.button-submit:not(.emby-button-tv):focus {
+.button-submit:not(.emby-button-tv):focus,
+.button-submit:not(.emby-button-tv):hover {
     background: var(--button-color-hover);
     color: var(--button-text-hover)
 }
