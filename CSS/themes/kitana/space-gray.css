@@ -13,15 +13,4 @@
 
 /* KITANA SPACE GRAY THEME */
 @import url(https://theme-park.dev/CSS/themes/kitana/kitana-base.css);
-:root {
-  --main-bg-color:  radial-gradient( ellipse at center,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed;
-  --modal-bg-color: radial-gradient( ellipse at top,  rgba(87,108,117,1) 0%, rgba(37,50,55,1) 100.2% ) center center/cover no-repeat fixed; 
-  --button-color: #607D8B;
-  --button-color-hover: #81a6b7;
-  --button-text: #eee;
-  --accent-color: #81a6b7;
-  --accent-color-hover: #81a6b7;
-  --text: #eee;
-  --text-hover: #fff;
-  --link-color: #81a6b7;
-}
+@import url(https://theme-park.dev/CSS/variables/space-gray.css);

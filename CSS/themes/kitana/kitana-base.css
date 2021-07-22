@@ -18,7 +18,8 @@ body {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
+    color: var(--text);
 }
 
 a {
@@ -26,7 +27,12 @@ a {
 }
 
 a:hover {
-    color: #fff;
+    color: var(--link-color-hover);
+}
+
+a.ml-2,
+a.mx-2 {
+    color: rgb(var(--accent-color)) !important;
 }
 
 #content:before {
@@ -37,7 +43,7 @@ a:hover {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
 * {
@@ -50,10 +56,20 @@ body,
     color: var(--text);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+    color: var(--text-hover);
+}
+
 /* ACCENTS */
 .badge-dark {
-    color: var(--button-text);
-    background-color: var(--accent-color);
+    color: var(--label-text-color);
+    background-color: rgb(rgb(var(--accent-color)));
 }
 
 /* NAVBAR */
@@ -85,7 +101,7 @@ body,
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
     border: 1px solid transparent;
 }
 
@@ -115,6 +131,7 @@ body,
 }
 
 .card-header {
+    color: var(--text-hover);
     background-color: rgb(0 0 0 / 25%);
     border-bottom: 1px solid rgba(255, 255, 255, .125) !important;
 }
@@ -160,14 +177,14 @@ ul li:hover {
 .btn-primary:not(:disabled):not(.disabled).active,
 .show>.btn-primary.dropdown-toggle {
     border-color: var(--button-color-hover);
-    color: var(--text-hover);
+    color: var(--button-text-hover);
     background-color: var(--button-color-hover);
     box-shadow: none !important;
 }
 
 .badge-primary {
-    color: var(--button-text);
-    background-color: var(--accent-color);
+    color: var(--label-text-color);
+    background-color: rgb(var(--accent-color));
 }
 
 .badge-secondary {
@@ -188,6 +205,31 @@ ul li:hover {
     background-color: rgb(0 0 0 / 50%) !important;
     color: var(--text-hover) !important;
 }
+
+.custom-control-input:checked~.custom-control-label::before {
+    color: var(--label-text-color);
+    border-color: rgb(var(--accent-color));
+    background-color: rgb(var(--accent-color));
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+    filter: invert(1);
+}
+
+.custom-control-input:focus~.custom-control-label::before {
+    box-shadow: 0 0 0 .2rem rgba(55, 90, 127, 0.25)
+}
+
+.custom-control-input:focus:not(:checked)~.custom-control-label::before {
+    border-color: rgb(var(--accent-color));
+}
+
+.custom-control-input:not(:disabled):active~.custom-control-label::before {
+    color: #fff;
+    background-color: #97b3d2;
+    border-color: #97b3d2
+}
+
 
 /* PLACEHOLDER TEXT */
 ::placeholder {
