@@ -56,39 +56,39 @@ a:hover,
 }
 
 input::-webkit-input-placeholder {
-    color: var(--text);
+    color: var(--text-muted) !important;
 }
 
 input:focus::-webkit-input-placeholder {
-    color: var(--text-hover);
+    color: var(--text-hover) !important;
 }
 
 /* Placeholders */
 /* Firefox < 19 */
 input:-moz-placeholder {
-    color: var(--text-muted);
+    color: var(--text-muted) !important;
 }
 
 input:focus:-moz-placeholder {
-    color: var(--text-hover);
+    color: var(--text-hover) !important;
 }
 
 /* Firefox > 19 */
 input::-moz-placeholder {
-    color: var(--text-muted);
+    color: var(--text-muted) !important;
 }
 
 input:focus::-moz-placeholder {
-    color: var(--text-hover);
+    color: var(--text-hover) !important;
 }
 
 /* Internet Explorer 10 */
 input:-ms-input-placeholder {
-    color: var(--text-muted);
+    color: var(--text-muted) !important;
 }
 
 input:focus:-ms-input-placeholder {
-    color: var(--text-hover);
+    color: var(--text-hover) !important;
 }
 
 /* SCROLLBAR */
@@ -346,9 +346,12 @@ button.close {
 }
 
 select:focus,
-select:active {
-    background: #1b1b1b;
-    color: white;
+select:active,
+select.form-control:focus,
+select.form-control:active,
+#auth_type:focus {
+    background: #1b1b1b !important;
+    color: white !important;
 }
 
 .form-control:active:not(select.form-control),
