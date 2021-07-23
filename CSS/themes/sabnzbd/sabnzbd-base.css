@@ -19,12 +19,34 @@ body {
   -moz-background-size: auto, cover;
   -o-background-size: auto, cover;
   background-color: transparent;
-  color: hsla(0, 0%, 100%, .7) !important;
   font-family: Open Sans Bold, Helvetica Neue, Helvetica, Arial, sans-serif !important;
   font-size: 1.4em !important;
-  color: white;
+  color: var(--text);
 }
 
+h1,h2,h3,h4,h5,h6,label:not(.btn),legend {
+  color: var(--text-hover) !important;
+}
+p {
+  color: var(--text);
+}
+a {
+  color: var(--link-color);
+}
+
+a:active,
+a:hover,
+a:focus{
+  color: var(--link-color-hover);
+}
+
+#modal-options .modal-header a {
+  color: var(--link-color) !important;
+}
+
+#modal-options .modal-header a:hover {
+  color: var(--link-color-hover) !important;
+}
 /* Scrollbar */
 @media only screen and (min-width: 768px) {
   html {
@@ -72,15 +94,40 @@ body {
 }
 
 /* navbar */
+.nav-tabs,hr {
+  border-bottom: 1px solid rgb(var(--accent-color));
+}
+#modal-options #options-status hr {
+  border-top: 1px solid rgb(var(--accent-color));
+}
+
 .navbar-inverse {
   background-color: rgba(0, 0, 0, .25);
   border-color: transparent !important;
 }
-
-.navbar-btn {
-  background: var(--nav-button-color) !important;
-  border-color: transparent !important;
+.navbar-nav>li>a {
+  color: rgb(var(--accent-color)) !important;
+  opacity: 1;
 }
+.navbar-nav>li>a:hover, .main-menu-link:hover a {
+  opacity: 1;
+  color: var(--accent-color-hover) !important;
+}
+.main-menu-link .icon-bar {
+  display: block;
+  width: 16px;
+  height: 3px;
+  border-radius: 1px !important;
+  background-color: var(--link-color);
+  margin-top: 3px;
+}
+.main-menu-link:hover .icon-bar {
+  background-color: var(--link-color-hover);
+}
+/* .navbar-btn {
+  background: var(--button-color) !important;
+  border-color: transparent !important;
+} */
 
 .navbar-inverse .navbar-nav>.open>a,
 .navbar-inverse .navbar-nav>.open>a:hover,
@@ -90,11 +137,11 @@ body {
 
 .ui-slider-horizontal,
 .ui-slider-range-min {
-  background: var(--settings-accent-color) !important;
+  background: rgb(var(--accent-color)) !important;
 }
 
 .ui-slider .ui-slider-handle {
-  background-color: var(--settings-accent-color);
+  background-color: rgb(var(--accent-color));
   border: 1px solid black;
 }
 
@@ -104,7 +151,7 @@ body {
 }
 
 .dropdown-menu {
-  background: var(--modal-bg-color);
+  background: var(--drop-down-menu-bg);
   background-repeat: repeat, no-repeat;
   background-attachment: fixed, fixed;
   background-position: center center, center center;
@@ -115,17 +162,17 @@ body {
 }
 
 .dropdown-menu>li>a {
-  color: #fff;
+  color: var(--text-hover);
 }
 
 .dropdown-menu>li>a:hover,
 .dropdown-menu>li>a:focus {
-  color: #ffffff;
+  color: var(--text-hover);
   background-color: rgba(255, 255, 255, 0.08);
 }
 
 .dropdown-header {
-  color: #fff;
+  color: var(--text-hover);
 }
 
 .menu-options .form-control {
@@ -152,7 +199,7 @@ body {
 }
 
 .form-control:focus {
-  border-color: #ffffff;
+  border-color: var(--text-hover);
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(255, 255, 255, 0.6);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(255, 255, 255, 0.6);
 }
@@ -162,41 +209,41 @@ body {
 }
 
 svg.peity polygon {
-  fill: var(--nav-button-color) !important;
+  fill: var(--button-color) !important;
 }
 
 svg.peity polyline {
-  stroke: var(--nav-button-color) !important;
+  stroke: var(--button-color) !important;
 }
 
 /* BUTTONS */
 .form-signin .btn {
-  background: var(--default-button-color) !important;
+  background: var(--button-color) !important;
   outline: none !important;
 }
 
 .text-center a {
-  color: #ffffff;
+  color: var(--text-hover);
 }
 
 .btn-default {
-  color: #fff;
-  background: var(--default-button-color);
-  border-color: #00000000 !important;
+  color: var(--button-text);
+  background: var(--button-color);
+  border-color: var(--button-color);
   outline: none !important;
 }
 
 .btn-default:focus,
 .btn-default.focus {
-  color: #fff;
-  background: var(--default-button-color-hover);
-  border-color: #00000000 !important;
+  color: var(--button-text-hover);
+  background: var(--button-color-hover);
+  border-color: var(--button-color-hover);
 }
 
 .btn-default:hover {
-  color: #fff;
-  background: var(--default-button-color-hover);
-  border-color: #00000000 !important;
+  color: var(--button-text-hover);
+  background: var(--button-color-hover);
+  border-color: var(--button-color-hover);
 }
 
 .btn-default:active:hover,
@@ -208,17 +255,17 @@ svg.peity polyline {
 .btn-default:active.focus,
 .btn-default.active.focus,
 .open>.dropdown-toggle.btn-default.focus {
-  color: #fff;
-  background: var(--default-button-color-active);
-  border-color: #00000000 !important;
+  color: var(--button-text-hover);
+  background: var(--button-color-hover);
+  border-color: var(--button-color-hover);
 }
 
 .btn-default:active,
 .btn-default.active,
 .open>.dropdown-toggle.btn-default {
-  color: #fff;
-  background: var(--default-button-color-active);
-  border-color: #00000000 !important;
+  color: var(--button-text-hover) !important;
+  background: var(--button-color-hover) !important;
+  border-color: var(--button-color-hover) !important;
 }
 
 .btn-group>.btn:hover,
@@ -241,34 +288,34 @@ svg.peity polyline {
 .btn-default:active.focus,
 .btn-default.active.focus,
 .open>.dropdown-toggle.btn-default.focus {
-  color: #fff !important;
-  background-color: var(--default-button-color-active);
-  border-color: #00000000 !important;
+  color: var(--button-text-hover);
+  background-color: var(--button-color-hover);
+  border-color: var(--button-color-hover);
 }
 
 .btn-default:active,
 .btn-default.active,
 .open>.dropdown-toggle.btn-default {
-  color: #fff;
-  background-color: var(--default-button-color-active) !important;
-  border-color: #00000000 !important;
+  color: var(--button-text-hover) !important  ;
+  background-color: var(--button-color-hover) !important;
+  border-color: var(--button-color-hover) !important;
 }
 
 /* buttons settings */
 .btn-default.sabnzbd_restart {
-  color: #fff;
+  color: var(--button-text);
   background-color: #a94442;
   border-color: transparent;
 }
 
 .btn-default.sabnzbd_restart:hover {
-  color: #fff;
+  color: var(--button-text-hover);
   background-color: #d93935;
   border-color: transparent;
 }
 
 .btn-default.saveButton {
-  color: #fff;
+  color: var(--button-text);
   background-color: #3c763d;
   border-color: transparent;
 }
@@ -283,20 +330,20 @@ svg.peity polyline {
 
 /* buttons categories */
 .btn-default.delCat {
-  color: #fff;
+  color: var(--button-text);
   background-color: #a94442;
   border-color: #2d2c2c;
 }
 
 .btn-default.delCat:hover {
-  color: #fff;
+  color: var(--button-text-hover);
   background-color: #d93935;
   border-color: transparent;
 }
 
 .btn-default.fileBrowser {
-  color: #fff;
-  background-color: var(--default-button-color);
+  color: var(--button-text);
+  background-color: var(--button-color);
   border-color: transparent;
 }
 
@@ -304,20 +351,20 @@ svg.peity polyline {
 .btn-default.fileBrowser:focus,
 .btn-default.fileBrowser:active {
   color: #fff !important;
-  background-color: var(--default-button-color-hover) !important;
+  background-color: var(--button-color-hover) !important;
   border-color: transparent !important;
 }
 
 /* Button Switches*/
 .btn-default.restoreDefaults {
-  color: #fff;
+  color: var(--button-text);
   background-color: #a94442;
   border-color: transparent;
 }
 
 .btn-default.restoreDefaults:hover,
 .btn-default.restoreDefaults:focus {
-  color: #fff;
+  color:var(--button-text-hover);
   background-color: #d93935;
   border-color: transparent;
 }
@@ -337,20 +384,20 @@ svg.peity polyline {
 
 .btn-default.patternKey {
   color: #fff !important;
-  background-color: var(--default-button-color);
+  background-color: var(--button-color);
   border-color: transparent;
 }
 
 .btn-default.patternKey:hover {
   color: #fff !important;
-  background-color: var(--default-button-color-hover);
+  background-color: var(--button-color-hover);
   border-color: transparent;
 }
 
 input[type="button"],
 input[type="submit"] {
   color: #fff !important;
-  background: var(--default-button-color);
+  background: var(--button-color);
   border: 1px solid #00000000
 }
 
@@ -361,14 +408,14 @@ input[type="submit"]:active,
 input[type="button"]:focus,
 input[type="submit"]:focus {
   color: #fff !important;
-  background-color: var(--default-button-color-hover) !important;
+  background-color: var(--button-color-hover) !important;
   border: 1px solid #00000000
 }
 
 /* file button */
 .btn-default.btn-file {
-  color: #fff;
-  background-color: var(--default-button-color);
+  color: var(--text-hover);
+  background-color: var(--button-color);
   border-color: transparent;
 }
 
@@ -376,20 +423,13 @@ input[type="submit"]:focus {
 .btn-default.btn-file:active,
 .btn-default.btn-file:focus {
   color: #fff !important;
-  background-color: var(--default-button-color-hover) !important;
+  background-color: var(--button-color-hover) !important;
   border-color: transparent !important;
 }
 
 /* History */
 .caret {
   border-top-color: white !important;
-}
-
-a,
-a:active,
-a:hover,
-a:focus {
-  color: white;
 }
 
 .table-striped>tbody>tr:nth-of-type(odd) {
@@ -421,7 +461,8 @@ table:hover {
 }
 
 .table-hover>tbody>tr:hover {
-  background-color: rgba(255, 255, 255, 0.07) !important
+  background-color: rgba(255, 255, 255, 0.07) !important;
+  color: var(--text-hover);
 }
 
 tbody>tr:last-child td {
@@ -437,7 +478,7 @@ tr td.row-extra-text,
 .history-table tr td.status,
 .history-table tr td.history-completedon,
 .history-table tr td.row-extra-text {
-  color: #fff;
+  color: var(--text);
 }
 
 .table-messages .table-messages-remove {
@@ -461,7 +502,7 @@ tr td.row-extra-text,
 
 .progress-bar-info,
 .progress-bar {
-  background-color: var(--nav-button-color) !important;
+  background-color: var(--button-color) !important;
 }
 
 .glyphicon-compressed:before {
@@ -483,27 +524,37 @@ tr td.row-extra-text,
 }
 
 #history-options .hover-button {
-  color: white;
+  color: rgb(var(--accent-color));
 }
 
 .pagination>li>a,
 .pagination>li>span,
 .pagination>li>span:hover {
-  color: white;
+  color: var(--button-text);
+  background-color: var(--button-color);
+  border: 1px solid var(--button-color);
 }
 
 .pagination>li>a,
 .pagination>li>span {
-  background-color: rgba(0, 0, 0, 0.25) !important;
-  border: none !important;
+  color: var(--button-text);
+  background-color: var(--button-color);
+  border: 1px solid var(--button-color);
 }
 
 .pagination>li>a:hover,
 .pagination>li>span:hover,
 .pagination>li>a:focus,
 .pagination>li>span:focus {
-  background-color: rgba(255, 255, 255, 0.25);
-  border-color: transparent;
+  color: var(--button-text-hover);
+  background-color: var(--button-color-hover);
+  border: 1px solid var(--button-color-hover);
+}
+
+.pagination li.active a, .pagination li.active span, .pagination li.active a:hover, .pagination li.active span:hover {
+  color: var(--button-text-hover);
+  background-color: var(--button-color-hover);
+  border: 1px solid var(--button-color-hover);
 }
 
 .pagination>.disabled>span,
@@ -512,9 +563,9 @@ tr td.row-extra-text,
 .pagination>.disabled>a,
 .pagination>.disabled>a:hover,
 .pagination>.disabled>a:focus {
-  color: white;
+  color: var(--text-muted);
   background-color: rgba(0, 0, 0, .25);
-  border-color: transparent;
+  border: 1px solid  transparent;
 }
 
 
@@ -554,8 +605,8 @@ tr td.row-extra-text,
 }
 
 .badge {
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.25);
+  color: var(--label-text-color);
+  background-color: rgb(var(--accent-color));
 }
 
 /*Settings*/
@@ -572,7 +623,7 @@ tr td.row-extra-text,
 }
 
 .navbar-default .navbar-nav>li>a {
-  color: #dddddd !important;
+  color: var(--text) !important;
 }
 
 .navbar-default .navbar-nav>.open>a {
@@ -586,23 +637,25 @@ tr td.row-extra-text,
 
 .navbar-default .navbar-nav>li>a:hover {
   background-color: hsla(0, 0%, 100%, .08) !important;
-  color: white !important;
+  color: var(--text-hover) !important;
 }
 
 .navbar-default .navbar-nav>li>a.active {
   background-color: hsla(0, 0%, 0%, .15) !important;
-  color: var(--settings-accent-color) !important;
+  color: rgb(var(--accent-color)) !important;
 }
 
 #content {
-  color: #fff;
+  color: var(--text-hover);
 }
 
 .colmask {
   border: none;
   background-color: rgba(0, 0, 0, .25);
 }
-
+.padTable:not(.ui-sortable) {
+  background: var(--main-bg-color) !important;
+}
 table {
   border-color: transparent !important;
 }
@@ -628,7 +681,7 @@ table {
 }
 
 .info-container {
-  color: #fff;
+  color: var(--text-hover);
 }
 
 .col2 table {
@@ -647,7 +700,7 @@ table {
 }
 
 .path {
-  color: #fff;
+  color: var(--text-hover);
 }
 
 .col2 h3 {
@@ -655,35 +708,35 @@ table {
 }
 
 .form-control.advanced-button.config-hover {
-  color: #fff;
+  color: var(--text-hover);
   background-color: rgba(255, 255, 255, 0.25);
   border-color: rgba(255, 255, 255, 0.25);
   border-radius: 3px !important;
 }
 
 .form-control.advanced-button.config-hover:hover {
-  color: #fff;
+  color: var(--text-hover);
   background-color: rgba(255, 255, 255, 0.3);
   border-color: rgba(255, 255, 255, 0.3);
   border-radius: 3px !important;
 }
 
 .form-control::-moz-placeholder {
-  color: #fff !important;
+  color: var(--text-muted) !important;
   opacity: 1
 }
 
 .form-control:-ms-input-placeholder {
-  color: #fff !important;
+  color: var(--text-muted) !important;
 }
 
 .form-control::-webkit-input-placeholder {
-  color: #fff !important;
+  color: var(--text-muted) !important;
 }
 
 .col2 p,
 .col2-cats {
-  color: #fff;
+  color: var(--text-hover);
 }
 
 /*Input*/
@@ -696,9 +749,9 @@ input[type="date"],
 textarea,
 select {
   border: none;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(0, 0, 0, 0.15);
   border-radius: 3px !important;
-  color: #fff !important;
+  color: var(--text-hover) !important;
   outline: none;
 }
 
@@ -744,7 +797,7 @@ input[type="text"]:focus,
 input[type="time"]:focus,
 input[type="url"]:focus,
 input[type="week"]:focus {
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.1);
   border: none;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
@@ -761,11 +814,11 @@ input[type="week"]:focus {
 }
 
 .Servers .ct-series-a .ct-line {
-  stroke: #ffffff;
+  stroke: var(--text-hover);
 }
 
 .Servers .ct-series-a .ct-area {
-  fill: #ffffff;
+  fill: var(--text-hover);
 }
 
 /*Categories*/
@@ -832,7 +885,7 @@ select[disabled]:hover {
 }
 
 .modal-header {
-  background: var(--modal-bg-color);
+  background: var(--modal-header-color);
   background-repeat: repeat, no-repeat;
   background-attachment: fixed, fixed;
   background-position: center center, center center;
@@ -843,7 +896,7 @@ select[disabled]:hover {
 }
 
 .modal-body>.nav-tabs>li>a {
-  color: white !important;
+  color: var(--text) !important;
   opacity: 1 !important;
   border: transparent;
 }
@@ -851,8 +904,8 @@ select[disabled]:hover {
 .modal-body>.nav-tabs>li.active>a,
 .modal-body>.nav-tabs>li.active>a:hover,
 .modal-body>.nav-tabs>li.active>a:focus {
-  color: #555;
-  background-color: hsla(0, 0%, 100%, .08);
+  color: rgb(var(--accent-color)) !important;
+  background-color: hsla(0, 0%, 100%, .08) !important;
   border: transparent;
   border-bottom-color: transparent;
   cursor: default;
@@ -865,6 +918,7 @@ select[disabled]:hover {
 .modal-body>.nav>li>a:hover,
 .modal-body>.nav>li>a:focus {
   background-color: hsla(0, 0%, 100%, .08) !important;
+  color: var(--text-hover) !important;
 }
 
 .modal-body>.tab-content>.active {
@@ -889,7 +943,7 @@ select[disabled]:hover {
 
 a.list-group-item,
 button.list-group-item {
-  color: #fff;
+  color: var(--text-hover);
 }
 
 a.list-group-item:hover,
@@ -897,20 +951,8 @@ button.list-group-item:hover,
 a.list-group-item:focus,
 button.list-group-item:focus {
   text-decoration: none;
-  color: #fff;
+  color: var(--text-hover);
   background-color: rgba(255, 255, 255, 0.08);
-}
-
-legend {
-  display: block;
-  width: 100%;
-  padding: 0;
-  margin-bottom: 20px;
-  font-size: 21px;
-  line-height: inherit;
-  color: #fff;
-  border: 0;
-  border-bottom: none;
 }
 
 .form-control {
@@ -936,11 +978,7 @@ fieldset[disabled] .form-control {
 
 /* Scheduling */
 .time {
-  color: #fff;
-}
-
-label {
-  color: #ffffff;
+  color: var(--text-hover);
 }
 
 /* Wizard */
@@ -977,4 +1015,13 @@ label {
 
 #modal-options .table-server-connections th:last-child {
   border-right: none;
+}
+
+.main-helplink {
+  display: block;
+  position: static;
+  float: right;
+  color: rgb(var(--accent-color)) !important;
+  padding: 0px;
+  font-size: 1.2em;
 }

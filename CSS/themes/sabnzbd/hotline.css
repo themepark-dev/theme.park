@@ -13,13 +13,4 @@
 
 /* SABNZBD HOTLINE THEME */
 @import url(https://theme-park.dev/CSS/themes/sabnzbd/sabnzbd-base.css);
-:root {
-  --main-bg-color: radial-gradient(ellipse at center, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
-  --modal-bg-color: radial-gradient(ellipse at top, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
-
-  --settings-accent-color: #FFEB3B;
-  --nav-button-color: radial-gradient(ellipse at top, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
-  --default-button-color: hsla(0,0%,100%,.25);
-  --default-button-color-hover: hsla(0,0%,100%,.3);
-  --default-button-color-active: hsla(0,0%,100%,.3);
-}
+@import url(https://theme-park.dev/CSS/variables/hotline.css);
