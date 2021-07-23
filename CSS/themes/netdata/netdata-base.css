@@ -11,7 +11,8 @@
 /*			      https://github.com/gilbN/theme.park			 */
 
 
-body {
+body,
+[class*="styled__SocialMediaContainer-"] {
     background: var(--main-bg-color) !important;
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
@@ -20,15 +21,31 @@ body {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
-    color: #ffffff !important;
+    color: var(--text);
 }
 
 * {
-    outline: none;
+    outline: none !important;
+}
+
+/* TEXT */
+
+h1,h2,h3,h4,h5,h6,label:not(.toggle-on.btn,.toggle-off.btn),legend {
+    color: var(--text-hover) !important;
+}
+.dashboard-context-info {
+    color: var(--text);
+}
+
+a,.dashboard-context-info a {
+    color: var(--link-color) !important;
+}
+a:hover,.dashboard-context-info a:hover {
+    color: var(--link-color-hover) !important;
 }
 
 .loadOverlay {
-    color: #eee !important;
+    color: var(--text) !important;
     background: var(--main-bg-color) !important;
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
@@ -54,7 +71,7 @@ body {
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
     background-color: rgba(0, 0, 0, .25) !important;
-    color: #ffffff !important;
+    color: var(--text-hover) !important;
 }
 
 .navbar-default .navbar-nav>.open>a,
@@ -89,8 +106,9 @@ body {
 .nav-tabs>li.active>a,
 .nav-tabs>li.active>a:hover,
 .nav-tabs>li.active>a:focus {
-    background-color: rgba(0, 0, 0, 0.45) !important;
+    background-color: rgba(0, 0, 0, 0.15) !important;
     border: 1px solid #00000000 !important;
+    color: rgb(var(--accent-color));
 }
 
 .nav>li>a:hover,
@@ -102,7 +120,9 @@ body {
 .nav>li>a:hover,
 .nav>li>a:focus {
     background-color: rgba(255, 255, 255, 0.08) !important;
-    border-color: transparent !important;
+}
+.nav-tabs > li > a:hover {
+    border-color: transparent;
 }
 
 .nav-tabs {
@@ -124,8 +144,11 @@ body {
     -o-background-size: auto, cover; 
 }
 
-.dropdown-menu {
-    background: var(--modal-bg-color) !important;
+.dropdown-menu,
+[class*="__Dropdown-"],
+[class*="documentation__Container-sc-"],
+[class*="styled__PickerBox-"] {
+    background: var(--drop-down-menu-bg) !important;
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -135,6 +158,33 @@ body {
     -o-background-size: auto, cover; 
     border: 0px !important;
 }
+
+[class*="styled__ShortPickElement-"] {
+    color: var(--link-color);
+}
+
+[class*="styled__ShortPickElement-"]:hover {
+    color: var(--link-color-hover);
+}
+.DateInput_input__focused {
+    border: 1px solid rgb(var(--accent-color));
+
+}
+
+.CalendarDay__selected, .CalendarDay__selected:active, .CalendarDay__selected:hover, .CalendarDay__selected_span:active, .CalendarDay__selected_span:hover {
+    background: rgb(var(--accent-color));
+    color: var(--label-text-color);
+}
+.CalendarDay__default:hover {
+    background: var(--accent-color-hover);
+    color: var(--label-text-color);
+}
+
+[class*="item__PanelRowContainer-"]:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+
 
 .dropdown-menu>li>a:hover,
 .dropdown-menu>li>a:focus {
@@ -153,15 +203,31 @@ body {
 }
 
 .modal-header {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+    background: var(--modal-header-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
+    border-bottom: 1px solid rgb(var(--accent-color)) !important;
 }
 
 .modal-footer {
-    border-top: 1px solid rgba(255, 255, 255, 0.3) !important;
+    background: var(--modal-footer-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
+    border-top: 1px solid rgb(var(--accent-color)) !important;
 }
 
 .nav-tabs {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-bottom: 1px solid rgb(var(--accent-color)) !important;
 }
 
 .panel {
@@ -226,14 +292,34 @@ table {
 .dashboard-sidebar .nav>.active>a,
 .dashboard-sidebar .nav>.active:hover>a,
 .dashboard-sidebar .nav>.active:focus>a {
-    color: var(--accent-color) !important;
-    border-left: 2px solid var(--accent-color) !important;
+    color: rgb(var(--accent-color)) !important;
+    border-left: 2px solid rgb(var(--accent-color)) !important;
+}
+
+[class*="sidebar__Wrapper-"] {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+[class*="sidebar__Wrapper-"] [class*="flex-sc-"]:not([class*="collapsible__Animated-"])  {
+    background: transparent;
+}
+[class*="collapsible__Animated-"] {
+    background: var(--main-bg-color);
+}
+[class*="header__Wrapper-"] {
+    background: var(--main-bg-color);
+}
+
+[class*="styled__StyledButton-"] .button-icon {
+    fill: rgb(var(--accent-color)) !important;
+}
+[class*="styled__StyledButton-"]:hover .button-icon{
+    fill: var(--accent-color-hover) !important;
 }
 
 /*code*/
 code {
-    color: #fff !important;
-    background-color: rgba(255, 255, 255, 0.15) !important;
+    color: var(--label-text-color) !important;
+    background-color: rgb(var(--accent-color)) !important;
 }
 
 /* System Overview metrics */
@@ -267,23 +353,25 @@ code {
 
 /* Sidebar */
 .dashboard-sidebar .nav>li>a {
-    color: #ffffff !important;
+    color: var(--text);
 }
 
-.dashboard-sidebar .nav>li>a:hover,
-.dashboard-sidebar .nav>li>a:focus {
-    color: var(--accent-color) !important;
-    border-left: 1px solid var(--accent-color) !important;
+.dashboard-sidebar .nav>li>a:focus,
+.dashboard-sidebar .nav>li>a:hover {
+    padding-left: 19px;
+    color: var(--text-hover);
+    text-decoration: none;
+    background-color: transparent;
+    border-left: 1px solid rgb(var(--accent-color));
 }
 
 small,
 .small {
-    font-size: 85%;
-    color: white;
+    color: var(--text-muted);
 }
 
 .action-button {
-    color: white !important;
+    color: var(--button-text-hover) !important;
 }
 
 hr {
@@ -301,19 +389,39 @@ hr {
 }
 
 /* Buttons */
-.btn-default {
-    background-color: rgba(0, 0, 0, 0.25) !important;
+.btn-default:not([class*="toggle"]) {
+    background-color: var(--button-color);
+    color: var(--button-text);
+    border-color: var(--button-color);
 }
 
-.btn-default:hover {
-    background-color: rgba(255, 255, 255, 0.08) !important;
+a[class*="styled__StyledButton-"],
+[data-testid*="date-picker::click-apply::global-view-"] {
+    background-color: var(--button-color) !important;
+    color: var(--button-text) !important;
+    border-color: var(--button-color) !important;
 }
 
-.btn-default:active,
-.btn-default.active,
-.open>.dropdown-toggle.btn-default {
-    background-color: rgba(0, 0, 0, 0.45);
-    border-color: rgba(0, 0, 0, 0.45) !important;
+a[class*="styled__StyledButton-"]:hover,
+a[class*="styled__StyledButton-"]:active,
+[data-testid*="date-picker::click-apply::global-view-"]:hover,
+[data-testid*="date-picker::click-apply::global-view-"]:active {
+    background-color: var(--button-color-hover) !important;
+    color: var(--button-text-hover) !important;
+    border-color: var(--button-color-hover) !important;
+}
+
+.btn-default:hover:not([class*="toggle"]) {
+    background-color: var(--button-color-hover);
+    color: var(--button-text-hover);
+    border-color: var(--button-color-hover);
+}
+
+.btn-default:active:not(.open>.dropdown-toggle.btn-default):not([class*="toggle"]),
+.btn-default.active:not(.open>.dropdown-toggle.btn-default):not([class*="toggle"]){
+    background-color: var(--button-color-hover);
+    border-color: var(--button-color-hover);
+    color: var(--button-text-hover);
 }
 
 /* NAV */
@@ -328,19 +436,10 @@ hr {
     -o-background-size: auto, cover; 
 }
 
-[class^="styled__ListContainer"] {
-    background: var(--main-bg-color);
-    background-repeat: repeat, no-repeat;
-    background-attachment: fixed, fixed;
-    background-position: center center, center center;
-    background-size: auto, cover;
-    -webkit-background-size: auto, cover;
-    -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
-    color: white;
-}
-
-[class^="styled__PanelContainer"] {
+[class*="styled__ListContainer"],
+[class*="container__Container-"] div,
+[class*="styled__PanelContainer"],
+[class*="styled__StyledHeader"] {
     background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
@@ -349,26 +448,15 @@ hr {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover; 
-    color: white;
+    color: var(--text-hover);
 }
 
-[class^="styled__StyledHeader"] {
-    background: var(--main-bg-color);
-    background-repeat: repeat, no-repeat;
-    background-attachment: fixed, fixed;
-    background-position: center center, center center;
-    background-size: auto, cover;
-    -webkit-background-size: auto, cover;
-    -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
-    color: white;
-}
 
 [class^="styled__BottomPanel"] {
     background: #0000;
 }
 
 [class^=".styled__StyledSpaceBarPlus"] {
-    background: var(--accent-color);
-    border-color: var(--accent-color);
+    background: rgb(var(--accent-color));
+    border-color: rgb(var(--accent-color));
 }

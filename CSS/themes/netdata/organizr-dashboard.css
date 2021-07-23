@@ -14,9 +14,7 @@
 
 /* NETDATA ORGANIZR DASHBOARD THEME */
 @import url(https://theme-park.dev/CSS/themes/netdata/netdata-base.css);
+@import url(https://theme-park.dev/CSS/variables/organizr-dark.css);
 :root {
   --main-bg-color: transparent;
-  --modal-bg-color: #1f1f1f;
-
-  --accent-color: #FFEB3B;
 }

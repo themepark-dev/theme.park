@@ -13,9 +13,4 @@
 
 /* NETDATA HOTLINE THEME */
 @import url(https://theme-park.dev/CSS/themes/netdata/netdata-base.css);
-:root {
-  --main-bg-color: radial-gradient(ellipse at center, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
-  --modal-bg-color: radial-gradient(ellipse at top, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
-
-  --accent-color: #FFEB3B;
-}
+@import url(https://theme-park.dev/CSS/variables/hotline.css);
