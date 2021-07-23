@@ -30,17 +30,28 @@ body,
 
 /* TEXT */
 
-h1,h2,h3,h4,h5,h6,label:not(.toggle-on.btn,.toggle-off.btn),legend {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label:not(.toggle-on.btn, .toggle-off.btn),
+legend {
     color: var(--text-hover) !important;
 }
+
 .dashboard-context-info {
     color: var(--text);
 }
 
-a,.dashboard-context-info a {
+a,
+.dashboard-context-info a {
     color: var(--link-color) !important;
 }
-a:hover,.dashboard-context-info a:hover {
+
+a:hover,
+.dashboard-context-info a:hover {
     color: var(--link-color-hover) !important;
 }
 
@@ -53,7 +64,7 @@ a:hover,.dashboard-context-info a:hover {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
 /* Navbar */
@@ -121,7 +132,8 @@ a:hover,.dashboard-context-info a:hover {
 .nav>li>a:focus {
     background-color: rgba(255, 255, 255, 0.08) !important;
 }
-.nav-tabs > li > a:hover {
+
+.nav-tabs>li>a:hover {
     border-color: transparent;
 }
 
@@ -141,7 +153,7 @@ a:hover,.dashboard-context-info a:hover {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
 .dropdown-menu,
@@ -155,7 +167,7 @@ a:hover,.dashboard-context-info a:hover {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
     border: 0px !important;
 }
 
@@ -166,15 +178,21 @@ a:hover,.dashboard-context-info a:hover {
 [class*="styled__ShortPickElement-"]:hover {
     color: var(--link-color-hover);
 }
+
 .DateInput_input__focused {
     border: 1px solid rgb(var(--accent-color));
 
 }
 
-.CalendarDay__selected, .CalendarDay__selected:active, .CalendarDay__selected:hover, .CalendarDay__selected_span:active, .CalendarDay__selected_span:hover {
+.CalendarDay__selected,
+.CalendarDay__selected:active,
+.CalendarDay__selected:hover,
+.CalendarDay__selected_span:active,
+.CalendarDay__selected_span:hover {
     background: rgb(var(--accent-color));
     color: var(--label-text-color);
 }
+
 .CalendarDay__default:hover {
     background: var(--accent-color-hover);
     color: var(--label-text-color);
@@ -199,7 +217,7 @@ a:hover,.dashboard-context-info a:hover {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
 .modal-header {
@@ -210,7 +228,7 @@ a:hover,.dashboard-context-info a:hover {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
     border-bottom: 1px solid rgb(var(--accent-color)) !important;
 }
 
@@ -222,7 +240,7 @@ a:hover,.dashboard-context-info a:hover {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
     border-top: 1px solid rgb(var(--accent-color)) !important;
 }
 
@@ -267,7 +285,7 @@ table {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
     border-top: 1px solid #00000000 !important;
 }
 
@@ -279,7 +297,7 @@ table {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
 .close,
@@ -299,12 +317,15 @@ table {
 [class*="sidebar__Wrapper-"] {
     background-color: rgba(0, 0, 0, 0.25);
 }
-[class*="sidebar__Wrapper-"] [class*="flex-sc-"]:not([class*="collapsible__Animated-"])  {
+
+[class*="sidebar__Wrapper-"] [class*="flex-sc-"]:not([class*="collapsible__Animated-"]) {
     background: transparent;
 }
+
 [class*="collapsible__Animated-"] {
     background: var(--main-bg-color);
 }
+
 [class*="header__Wrapper-"] {
     background: var(--main-bg-color);
 }
@@ -312,7 +333,8 @@ table {
 [class*="styled__StyledButton-"] .button-icon {
     fill: rgb(var(--accent-color)) !important;
 }
-[class*="styled__StyledButton-"]:hover .button-icon{
+
+[class*="styled__StyledButton-"]:hover .button-icon {
     fill: var(--accent-color-hover) !important;
 }
 
@@ -418,7 +440,7 @@ a[class*="styled__StyledButton-"]:active,
 }
 
 .btn-default:active:not(.open>.dropdown-toggle.btn-default):not([class*="toggle"]),
-.btn-default.active:not(.open>.dropdown-toggle.btn-default):not([class*="toggle"]){
+.btn-default.active:not(.open>.dropdown-toggle.btn-default):not([class*="toggle"]) {
     background-color: var(--button-color-hover);
     border-color: var(--button-color-hover);
     color: var(--button-text-hover);
@@ -433,7 +455,7 @@ a[class*="styled__StyledButton-"]:active,
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
 [class*="styled__ListContainer"],
@@ -447,7 +469,7 @@ a[class*="styled__StyledButton-"]:active,
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
     color: var(--text-hover);
 }
 
