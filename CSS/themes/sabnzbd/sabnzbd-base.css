@@ -24,19 +24,28 @@ body {
   color: var(--text);
 }
 
-h1,h2,h3,h4,h5,h6,label:not(.btn),legend {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label:not(.btn),
+legend {
   color: var(--text-hover) !important;
 }
+
 p {
   color: var(--text);
 }
+
 a {
   color: var(--link-color);
 }
 
 a:active,
 a:hover,
-a:focus{
+a:focus {
   color: var(--link-color-hover);
 }
 
@@ -47,6 +56,7 @@ a:focus{
 #modal-options .modal-header a:hover {
   color: var(--link-color-hover) !important;
 }
+
 /* Scrollbar */
 @media only screen and (min-width: 768px) {
   html {
@@ -65,7 +75,7 @@ a:focus{
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
   }
 }
 
@@ -94,9 +104,11 @@ a:focus{
 }
 
 /* navbar */
-.nav-tabs,hr {
+.nav-tabs,
+hr {
   border-bottom: 1px solid rgb(var(--accent-color));
 }
+
 #modal-options #options-status hr {
   border-top: 1px solid rgb(var(--accent-color));
 }
@@ -105,14 +117,18 @@ a:focus{
   background-color: rgba(0, 0, 0, .25);
   border-color: transparent !important;
 }
+
 .navbar-nav>li>a {
   color: rgb(var(--accent-color)) !important;
   opacity: 1;
 }
-.navbar-nav>li>a:hover, .main-menu-link:hover a {
+
+.navbar-nav>li>a:hover,
+.main-menu-link:hover a {
   opacity: 1;
   color: var(--accent-color-hover) !important;
 }
+
 .main-menu-link .icon-bar {
   display: block;
   width: 16px;
@@ -121,9 +137,11 @@ a:focus{
   background-color: var(--link-color);
   margin-top: 3px;
 }
+
 .main-menu-link:hover .icon-bar {
   background-color: var(--link-color-hover);
 }
+
 /* .navbar-btn {
   background: var(--button-color) !important;
   border-color: transparent !important;
@@ -158,7 +176,7 @@ a:focus{
   background-size: auto, cover;
   -webkit-background-size: auto, cover;
   -moz-background-size: auto, cover;
-  -o-background-size: auto, cover; 
+  -o-background-size: auto, cover;
 }
 
 .dropdown-menu>li>a {
@@ -183,7 +201,7 @@ a:focus{
   background-size: auto, cover;
   -webkit-background-size: auto, cover;
   -moz-background-size: auto, cover;
-  -o-background-size: auto, cover; 
+  -o-background-size: auto, cover;
   background-color: rgb(25, 26, 28);
 }
 
@@ -195,7 +213,7 @@ a:focus{
   background-size: auto, cover;
   -webkit-background-size: auto, cover;
   -moz-background-size: auto, cover;
-  -o-background-size: auto, cover; 
+  -o-background-size: auto, cover;
 }
 
 .form-control:focus {
@@ -296,7 +314,7 @@ svg.peity polyline {
 .btn-default:active,
 .btn-default.active,
 .open>.dropdown-toggle.btn-default {
-  color: var(--button-text-hover) !important  ;
+  color: var(--button-text-hover) !important;
   background-color: var(--button-color-hover) !important;
   border-color: var(--button-color-hover) !important;
 }
@@ -364,7 +382,7 @@ svg.peity polyline {
 
 .btn-default.restoreDefaults:hover,
 .btn-default.restoreDefaults:focus {
-  color:var(--button-text-hover);
+  color: var(--button-text-hover);
   background-color: #d93935;
   border-color: transparent;
 }
@@ -551,7 +569,10 @@ tr td.row-extra-text,
   border: 1px solid var(--button-color-hover);
 }
 
-.pagination li.active a, .pagination li.active span, .pagination li.active a:hover, .pagination li.active span:hover {
+.pagination li.active a,
+.pagination li.active span,
+.pagination li.active a:hover,
+.pagination li.active span:hover {
   color: var(--button-text-hover);
   background-color: var(--button-color-hover);
   border: 1px solid var(--button-color-hover);
@@ -565,7 +586,7 @@ tr td.row-extra-text,
 .pagination>.disabled>a:focus {
   color: var(--text-muted);
   background-color: rgba(0, 0, 0, .25);
-  border: 1px solid  transparent;
+  border: 1px solid transparent;
 }
 
 
@@ -618,7 +639,7 @@ tr td.row-extra-text,
   background-size: auto, cover;
   -webkit-background-size: auto, cover;
   -moz-background-size: auto, cover;
-  -o-background-size: auto, cover; 
+  -o-background-size: auto, cover;
   border: none;
 }
 
@@ -653,9 +674,11 @@ tr td.row-extra-text,
   border: none;
   background-color: rgba(0, 0, 0, .25);
 }
+
 .padTable:not(.ui-sortable) {
   background: var(--main-bg-color) !important;
 }
+
 table {
   border-color: transparent !important;
 }
@@ -870,7 +893,7 @@ select[disabled]:hover {
   background-size: auto, cover;
   -webkit-background-size: auto, cover;
   -moz-background-size: auto, cover;
-  -o-background-size: auto, cover; 
+  -o-background-size: auto, cover;
 }
 
 .modal-body {
@@ -881,7 +904,7 @@ select[disabled]:hover {
   background-size: auto, cover;
   -webkit-background-size: auto, cover;
   -moz-background-size: auto, cover;
-  -o-background-size: auto, cover; 
+  -o-background-size: auto, cover;
 }
 
 .modal-header {
@@ -892,7 +915,7 @@ select[disabled]:hover {
   background-size: auto, cover;
   -webkit-background-size: auto, cover;
   -moz-background-size: auto, cover;
-  -o-background-size: auto, cover; 
+  -o-background-size: auto, cover;
 }
 
 .modal-body>.nav-tabs>li>a {
@@ -929,7 +952,7 @@ select[disabled]:hover {
   background-size: auto, cover;
   -webkit-background-size: auto, cover;
   -moz-background-size: auto, cover;
-  -o-background-size: auto, cover; 
+  -o-background-size: auto, cover;
 }
 
 #modal-options .tab-content h4 {
