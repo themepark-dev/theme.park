@@ -9,9 +9,12 @@
 
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
-  
+* {
+    outline: none !important;
+}  
+
   body {
-      color: #ccc;
+      color: var(--text);
       background: var(--main-bg-color);
       background-repeat: repeat, no-repeat;
       background-attachment: fixed, fixed;
@@ -22,9 +25,51 @@
       -o-background-size: auto, cover; 
   }
   p {
-      color: #ccc !important;
+      color: var(--text) !important;
   }
-  
+  h1,h2,h3,h4,h5,h6,label, legend {
+      color: var(--text-hover);
+  }
+  legend,.nav-tabs {
+    border-bottom: 1px solid rgb(var(--accent-color), .45) !important;
+}
+  a,.btn-link {
+      color: var(--link-color);
+  }
+  a:hover,.btn-link:hover {
+    color: var(--link-color-hover);
+}
+input::-webkit-input-placeholder {
+    color: var(--text);
+}
+input:focus::-webkit-input-placeholder {
+    color: var(--text-hover);
+}
+
+/* Placeholders */
+/* Firefox < 19 */
+input:-moz-placeholder {
+    color: var(--text-muted);
+}
+input:focus:-moz-placeholder {
+    color: var(--text-hover);
+}
+
+/* Firefox > 19 */
+input::-moz-placeholder {
+    color: var(--text-muted);
+}
+input:focus::-moz-placeholder {
+    color: var(--text-hover);
+}
+
+/* Internet Explorer 10 */
+input:-ms-input-placeholder {
+    color: var(--text-muted);
+}
+input:focus:-ms-input-placeholder {
+    color: var(--text-hover);
+}
   /* SCROLLBAR */  
   @media only screen and (min-width: 768px) {  
     html {
@@ -78,47 +123,55 @@
       border-color: transparent;
   }
   .navbar-default .navbar-brand {
-      color: #e4e4e4;
+      color: rgb(var(--accent-color));
   }
+  .navbar-default .navbar-brand:hover,
+  .navbar-default .navbar-brand:focus {
+    color: var(--accent-color-hover);
+    background-color: none;
+}
   .navbar-default .navbar-nav>li>a {
-      color: #e4e4e4;
+      color: var(--text);
   }
   .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-      color: #ffffff;
+      color: var(--text-hover);
       background-image: none;
       background-color: rgba(0, 0, 0, .25);
   }
   /* BUTTONS */
   
   .btn-primary, .btn-default {
-      background-image: none;
-      color: #ffffff;
-      background-color: var(--button-color);
-      border-color: transparent;
+      color: var(--button-text) !important;
+      background-color: var(--button-color) !important;
+      background: var(--button-color) !important;
+      border-color: var(--button-color) !important;
+      background-image: none !important;
       outline: none;
   }
   
   .btn-primary:hover, .btn-default:hover, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
       background-image: none;
-      color: #ffffff;
-      background-color: var(--button-color-hover);
-      border-color: transparent;
+      color: var(--button-text-hover) !important;
+      background-color: var(--button-color-hover) !important;
+      border-color: var(--button-color-hover) !important;
   }
-  .btn-primary:active:hover, .btn-primary.active:hover, .open>.dropdown-toggle.btn-primary:hover, .btn-primary:active:focus, .btn-primary.active:focus, .open>.dropdown-toggle.btn-primary:focus, .btn-primary:active.focus, .btn-primary.active.focus, .open>.dropdown-toggle.btn-primary.focus {
-      color: #ffffff;
-      background-color: var(--button-color-hover);
-      border-color: transparent;
+  .btn-primary:active:hover, .btn-primary.active:hover, .open>
+  -toggle.btn-primary:hover, .btn-primary:active:focus, .btn-primary.active:focus, .open>.dropdown-toggle.btn-primary:focus, .btn-primary:active.focus, .btn-primary.active.focus, .open>.dropdown-toggle.btn-primary.focus {
+    color: var(--button-text-hover) !important;
+    background-color: var(--button-color-hover) !important;
+    border-color: var(--button-color-hover) !important;
   }
   .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
-      color: #ffffff;
-      background-color: var(--button-color-hover);
-      border-color: transparent;
+    color: var(--button-text-hover) !important;
+    background-color: var(--button-color-hover) !important;
+    border-color: var(--button-color-hover) !important;
   }
   
-  .btn-primary:active:hover, .btn-primary.active:hover, .open>.dropdown-toggle.btn-primary:hover, .btn-primary:active:focus, .btn-primary.active:focus, .open>.dropdown-toggle.btn-primary:focus, .btn-primary:active.focus, .btn-primary.active.focus, .open>.dropdown-toggle.btn-primary.focus,.btn:hover, .btn:focus, .btn.focus {
+  .btn-primary:active:hover, .btn-primary.active:hover, .open>.dropdown-toggle.btn-primary:hover, .btn-primary:active:focus, .btn-primary.active:focus, .open>.dropdown-toggle.btn-primary:focus, .btn-primary:active.focus, .btn-primary.active.focus, .open>.dropdown-toggle.btn-primary.focus {
       outline: none;
-      background-color: var(--button-color-hover);
-      border-color: transparent;
+      color: var(--button-text-hover) !important;
+      background-color: var(--button-color-hover) !important;
+      border-color: var(--button-color-hover) !important;
   }
   .btn-link:hover, .btn-link:focus, button.close {
       outline:none
@@ -126,38 +179,39 @@
   
   .btn-warning {
       background-image: none;
-      color: #ffffff;
+      color: var(--button-text-hover);
       background-color: #f89406;
       border-color: #f89406;
   }
   
   .btn-warning:hover {
       background-image: none;
-      color: #ffffff;
+      color: var(--button-text-hover);
       background-color: #c67605;
       border-color: #bc7005;
   }
   .btn:hover, .btn:focus, .btn.focus {
-      color: #ffffff;
+      color: var(--button-text-hover);
       text-decoration: none;
   }
   
   .pagination>li.disabled>a, .pagination>li.disabled>a:hover, .pagination>li.disabled>span, .pagination>li.disabled>span:hover {
       background-color: var(--button-color);
+      color: var(--text-muted);
       background-image: none;
       outline:none;
   }
   .pagination>.disabled>span, .pagination>.disabled>span:hover, .pagination>.disabled>span:focus, .pagination>.disabled>a, .pagination>.disabled>a:hover, .pagination>.disabled>a:focus {
-      color: #ccc;
+      color: var(--text-muted);
       background-color: var(--button-color);
-      border-color: transparent;
+      border-color: var(--button-color);
       cursor: not-allowed;
   }
   .pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
-      color: #ffffff;
+      color: var(--button-text-hover);
       background-image: none;
-      background-color: rgba(0, 0, 0, 0.45);
-      border-color: transparent;
+      background-color: var(--button-color-hover);
+      border-color: var(--button-color-hover);
       outline: none;
   }
   .pagination>li.active>a, .pagination>li.active>span {
@@ -168,16 +222,16 @@
       background-image: none;
   }
   .pagination>li>a, .pagination>li>span {
-      color: #ffffff;
+      color: var(--button-text);
       background-color: var(--button-color);
-      border: 1px solid transparent;
+      border: 1px solid var(--button-color);
   
   }
   .pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus {
-      color: #ffffff;
+      color: var(--button-text-hover);
       background-image: none;
       background-color: var(--button-color-hover);
-      border-color: transparent;
+      border-color: var(--button-color-hover);
       outline: none;
   }
   
@@ -191,39 +245,21 @@
   }
   
   .form-control {
-      color: #fff;
-      background-color: rgba(0, 0, 0, 0.25);
+      color: var(--text);
+      background-color: rgba(255, 255, 255, 0.1);
       background-image: none;
       border: 1px solid transparent;
   }
-  .form-control:active, .form-control:focus {
-      color: #272b30;
-      background-color: #fff !important;
+  select:focus, select:active {
+      background: #1b1b1b;
+      color: white;
+  }
+  .form-control:active:not(select.form-control), .form-control:focus:not(select.form-control),
+  .configtable .input-group .form-control:active, .configtable .input-group .form-control:focus {
+      color: var(--text-hover);
+      background-color: rgba(0, 0, 0, 0.25) !important;
       background-image: none;
       border: 1px solid transparent;  
-  }
-  #subhead_menu .input-group .form-control:active ,.input-group .form-control:focus {
-      color: #272b30;
-      background-color: #fff !important;
-      height: 30px !important;
-  }
-  .configtable .input-group .form-control:active ,.configtable .input-group .form-control:focus {
-      display: block;
-      width: 100%;
-      height: 38px !important;
-      padding: 8px 12px;
-      font-size: 14px;
-      line-height: 1.42857143;
-      color: #272b30;
-      background-color: #fff !important;
-      background-image: none;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
-      box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
-      -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
-      -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-      transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
   }
   
   
@@ -231,6 +267,10 @@
   
   table {
       background-color: rgba(255, 255, 255, 0.08);
+  }
+
+  thead {
+      color: var(--text-hover);
   }
   
   .table-striped>tbody>tr:nth-of-type(odd) {
@@ -255,7 +295,7 @@
   /* SETTINGS */
   
   .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
-      color: #ffffff;
+      color: rgb(var(--accent-color));
       background-color: rgba(255, 255, 255, 0.08);
       border: 1px solid TRANSPARENT;
       border-bottom-color: transparent;
@@ -275,8 +315,8 @@
       border:none;
       border-color: transparent;
       background-image: none;
-      color: #ffffff;
-      background-color: rgba(0, 0, 0, .45);
+      color: var(--button-text);
+      background-color: var(--button-color);
   }
   .input-group {
       margin-top: 2px;
@@ -300,13 +340,29 @@
       border: 1px solid transparent;
   }
   .modal-header {
-      border-bottom: 1px solid rgba(255, 255, 255, .45);
+    background: var(--modal-header-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
+      border-bottom: 1px solid rgb(var(--accent-color));
   }
   .modal-footer {
-      border-top: 1px solid rgba(255, 255, 255, .45);
+    background: var(--modal-footer-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover; 
+      border-top: 1px solid rgb(var(--accent-color));
   }
   pre {
-      color: #ccc;
+      color: var(--text);
       background-color: rgba(0, 0, 0, 0.25);
       border: 1px solid transparent;
   }
