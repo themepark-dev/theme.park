@@ -13,9 +13,4 @@
 
 /* LIBRESPEED ORGANIZR-DARK THEME */
 @import url(https://theme-park.dev/CSS/themes/librespeed/librespeed-base.css);
-:root {
-  --main-bg-color: #1f1f1f;
-  --modal-bg-color: #1b1b1b;
-  --start-button-color: #2cabe3;
-  --start-button-color-hover: rgb(44 171 227 / .8);
-  }
+@import url(https://theme-park.dev/CSS/variables/organizr-dark.css);

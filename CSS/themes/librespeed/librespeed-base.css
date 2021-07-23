@@ -20,13 +20,13 @@ html, body {
 	-webkit-background-size: auto, cover;
 	-moz-background-size: auto, cover;
 	-o-background-size: auto, cover;
-	color:#FFFFFF !important;
+	color: var(--text) !important;
 }
-h1 {
-    color: white;
+h1,h2,h3,h4,h5,h6, label {
+    color: var(--text-hover);
 }
 div.meterText:empty:before {
-    color: white !important;
+    color: var(--text-hover) !important;
 }
 
 #dlText {
@@ -39,13 +39,13 @@ div.meterText:empty:before {
     color: #2cabe3;
 }
 #startStopBtn {
-    color: #ffffff;
-    background: var(--start-button-color);
-    border: 0.15em solid var(--start-button-color);
+    color: var(--button-text);
+    background: var(--button-color);
+    border: 0.15em solid var(--button-color);
 }
 #startStopBtn:hover {
-	border: 0.15em solid var(--start-button-color-hover);
-	background: var(--start-button-color-hover);
+	border: 0.15em solid var(--button-color-hover);
+	background: var(--button-color-hover);
 }
 #startStopBtn.running {
     background: #FF3030 !important;
@@ -57,9 +57,17 @@ div.meterText:empty:before {
     border-color: #FF6060;
     color: #FFFFFF;
 }
-a:-webkit-any-link {
-	color: white;
+a,a:-webkit-any-link {
+	color: var(--link-color);
 }
+a:hover,a:-webkit-any-link:hover {
+	color: var(--link-color-hover);
+}
+
+#ip,.unit {
+    color: rgb(var(--accent-color));
+}
+
 #privacyPolicy {
     background: var(--main-bg-color);
     background-repeat: repeat, no-repeat;
@@ -85,3 +93,6 @@ input {
     outline: none;
 }
 
+.testName {
+    color: var(--text-hover) !important;
+}

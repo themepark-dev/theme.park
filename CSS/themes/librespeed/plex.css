@@ -13,8 +13,4 @@
 
 /* LIBRESPEED PLEX THEME */
 @import url(https://theme-park.dev/CSS/themes/librespeed/librespeed-base.css);
-:root {
-  --main-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-light2.png") center center/cover no-repeat fixed;
-  --start-button-color: #cc7b19;
-  --start-button-color-hover: #e59029;  
-  }
+@import url(https://theme-park.dev/CSS/variables/plex.css);
