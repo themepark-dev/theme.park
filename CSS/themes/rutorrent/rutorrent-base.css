@@ -30,7 +30,7 @@ html,body
 	-webkit-background-size: auto, cover;
 	-moz-background-size: auto, cover;
 	-o-background-size: auto, cover; 
-	color:#fff;
+	color:var(--text);
 	text-shadow:0 -1px 0 #000
 }
 
@@ -96,7 +96,7 @@ div#lng
 	border:1px solid #333
 }
 .rmenuitem {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 }
 iframe {
 	border-width: 0px !important;
@@ -108,7 +108,7 @@ ul.CMenu {
     border-right: 1px solid transparent;
     border-left: 1px solid transparent;
     border-bottom: 1px solid transparent;
-    background: var(--modal-bg-color);
+    background: var(--drop-down-menu-bg);
 	background-repeat: repeat, no-repeat;
 	background-attachment: fixed, fixed;
 	background-position: center center, center center;
@@ -124,7 +124,7 @@ ul.CMenu {
 
 ul.CMenu li
 {
-	background:var(--modal-bg-color);
+	background:var(--drop-down-menu-bg);
 	background-repeat: repeat, no-repeat;
 	background-attachment: fixed, fixed;
 	background-position: center center, center center;
@@ -148,18 +148,18 @@ ul.CMenu li.menuitem:last-child
 
 ul.CMenu li a
 {
-	color:#fff;
+	color:var(--text);
 	background:transparent;
 }
 
 ul.CMenu li a.dis
 {
-	color:#fff
+	color:rgb(var(--accent-color))
 }
 
 ul.CMenu li a.dis:hover
 {
-	color:#fff
+	color:var(--text-hover)
 }
 
 ul.CMenu li hr {
@@ -194,18 +194,18 @@ ul.CMenu li ul li a.sel
 
 ul.CMenu li a:hover {
     background-color: rgba(255, 255, 255, 0.08) !important;
-    color: #fff;
+    color: var(--text-hover);
     text-shadow: 0 -1px 0 #000;
 }
 
 ul.CMenu li:hover ul li a {
     background-color: transparent;
-    color: #fff;
+    color: var(--text-hover);
 }
 
 ul.CMenu li:hover ul li a:hover
 {
-	color:#fff;
+	color:var(--text-hover);
 	text-shadow:0 -1px 0 transparent
 }
 
@@ -439,7 +439,7 @@ div select {
 .stg_con fieldset
 {
 	border:none;
-	border-top:1px solid #888;
+	border-top:1px solid rgb(var(--accent-color));
 	border-radius:0
 }
 
@@ -480,7 +480,7 @@ div#CatList
 
 div#CatList ul li span
 {
-	color:#D4D6C9
+	color:var(--text)
 }
 
 div#CatList ul li.sel span
@@ -498,7 +498,7 @@ div#CatList ul li
 div#CatList ul li.sel
 {
 	background-color:transparent;
-	color:var(--default-button-color);
+	color:var(--text-hover);
 	text-shadow:0 -1px 0 #000;
 	border:none
 }
@@ -519,7 +519,7 @@ div#CatList ul li.sel
 	background:url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/pnl_open.gif) 0 0 no-repeat !important;
 	background-color:#273238;
 	font-weight:700;
-	color:#DCDCDC;
+	color:var(--text-hover);
 	text-shadow:0 -1px 0 #000;
 	border:none
 }
@@ -593,7 +593,7 @@ div#CatList ul li.disRSS
 
 div#CatList ul li.sel span
 {
-	color:var(--default-button-color)
+	color: rgb(var(--accent-color));
 }
 
 div#flabel_cont ul li
@@ -618,7 +618,7 @@ div#gcont table td.Header
 {
 	background:transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/status_icons.png) no-repeat 0 -286px;
 	font-family:'Roboto';
-	color:#D4D6C9;
+	color:var(--text-hover);
 	padding-left:17px
 }
 
@@ -626,7 +626,7 @@ div#gcont table tr
 {
 	background:rgba(0, 0, 0, 0.45);
 	font-family:'Roboto';
-	color:#D4D6C9
+	color:var(--text);
 }
 
 div#gcont table tr td
@@ -760,19 +760,19 @@ div#stg .lm
 {
 	font-size:1em;
 	font-weight:400;
-	color:#dedede;
+	color:var(--text);
 	transition:all .5s
 }
 
 .lm li a:hover
 {
-	color:#fff;
+	color:var(--text-hover);
 	transition:all .5s
 }
 
 .lm li a.focus
 {
-	color:#FFF;
+	color:var(--text-hover);
 	background:none
 }
 
@@ -785,7 +785,7 @@ input.disabled
 
 legend
 {
-	color:#FFF;
+	color:var(--text-hover);
 }
 
 select.cols
@@ -885,10 +885,10 @@ textarea
 
 input.Button
 {
-	background:var(--default-button-color) none repeat scroll 0 0;
+	background:var(--button-color) none repeat scroll 0 0;
 	border-radius:2px;
 	border:none;
-	color:#FFF;
+	color:var(--button-text);
 	cursor:pointer;
 	display:inline;
 	font-weight:700;
@@ -897,7 +897,8 @@ input.Button
 
 input.Button:hover,input.Button:focus
 {
-	background:var(--default-button-color-hover) none repeat scroll 0 0;
+	background:var(--button-color-hover) none repeat scroll 0 0;
+	color:var(--button-text-hover);
 }
 
 #mainlayout
@@ -918,7 +919,7 @@ ul#tabbar li a
 {
 	background:none;
 	border:none;
-	color:#bbbbbb;
+	color:var(--text);
 	cursor:pointer;
 	font-family:inherit;
 	line-height:24px;
@@ -931,7 +932,7 @@ ul#tabbar li a
 
 ul#tabbar li a:hover
 {
-	color:#fff;
+	color:var(--text-hover);
 	text-shadow:none;
 	background:none
 }
@@ -939,8 +940,8 @@ ul#tabbar li a:hover
 ul#tabbar li.selected a
 {
 	background:none;
-	border-bottom:2px solid var(--default-button-color);
-	color:#eee;
+	border-bottom:2px solid rgb(var(--accent-color));
+	color:rgb(var(--accent-color));
 	padding:4px 15px 5px;
 	font-weight:700;
 	text-shadow:none;
@@ -1037,7 +1038,7 @@ div.dlg-window {
 	-webkit-background-size: auto, cover;
 	-moz-background-size: auto, cover;
 	-o-background-size: auto, cover; 
-    color: #fff;
+    color: var(--text);
     border-top: 1px solid transparent;
     border-right: 1px solid transparent;
     border-left: 1px solid transparent;
@@ -1070,7 +1071,8 @@ div#yesnoDlg div.dlg-header
 div#stg-header
 {
 	background:rgba(0, 0, 0, 0.25);
-	text-shadow:0 -1px 0 #000
+	text-shadow:0 -1px 0 #000;
+	color: var(--text-hover);
 }
 
 div#dlgHelp-header,div#dlgHelp div.dlg-header
@@ -1354,22 +1356,22 @@ span.det
 
 .stable { border: 1px solid; border-color: #333333 #181818 #181818 #333333; }
 .stable td { padding: 2px; }
-.stable-head { color: #dcdcdc; background: rgba(0, 0, 0, 0.45); border: none; text-shadow: 0px 1px 0px #000; font-family: Ubuntu; }
+.stable-head { color: var(--text-hover); background: rgba(0, 0, 0, 0.45); border: none; text-shadow: 0px 1px 0px rgba(0, 0, 0, 0); font-family: Ubuntu; }
 div#tdcont .stable-head { border: none; }
 div#tdcont .stable { border: none; }
 .stable-head table tr { background: transparent; border: none; }
 .stable-head table tr td { border: none; font-family: Ubuntu; height: 18px; line-height: 18px; cursor: pointer; }
 .stable-head div.resz { border: 1px solid #FF0000; background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/s.gif) no-repeat scroll left center; }
-.stable-body { background: window; text-shadow: 0px 1px 0px #000; color: #CACCCC; }
+.stable-body { background: window; text-shadow: 0px 1px 0px rgba(0, 0, 0, 0); color: var(--text); }
 .stable-body td { border-bottom: 1px solid #333333; }
 .stable-body td div { font-family: Ubuntu, Verdana, Arial, Helvetica, sans-serif; height: 16px !important; }
 .stable-body tr.odd td { background: #333333 }
 .stable-body tr.even td { background: #191919 }
 .stable-body tr { height: 22px; }
 .stable-body { background: transparent }
-.stable-body tr.selected td{ background: rgba(255, 255, 255, 0.25); color: #fff; text-shadow: 0px -1px 0px #000; }
+.stable-body tr.selected td{ background: rgba(255, 255, 255, 0.25); color: var(--text-hover); text-shadow: 0px -1px 0px rgba(0, 0, 0, 0); }
 div.stable-body table tbody tr.even td {    background: rgba(0, 0, 0, 0.08); }
-div.stable-body table tbody tr.even td:nth-child(2n+1) { color: #ffffff; }
+div.stable-body table tbody tr.even td:nth-child(2n+1) { color: var(--text); }
 div.stable-body table tbody tr.even:nth-child(2n+1) td { background: #181818 url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/headers.png) repeat-x 0px -64px; }
 .stable-move-header { background: transparent url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/rutorrent/header_move.gif) repeat-x scroll center top; border: 1px solid #0099FF; }
 
@@ -1391,7 +1393,7 @@ div.stable-body table tbody tr.even:nth-child(2n+1) td { background: #181818 url
 }
 
 .stable-body tr.selected span.meter-value { color: #fff; }
-.meter-text { line-height: 16px; position: relative; text-align: left; float: left; width: 0px; height: 0px; overflow: visible; left: 40%; font-size: 11px; font-family: Ubuntu; z-index: 1; text-shadow: 0px 0px 2px #000; color: #fff; }
+.meter-text { line-height: 16px; position: relative; text-align: left; float: left; width: 0px; height: 0px; overflow: visible; left: 40%; font-size: 11px; font-family: Ubuntu; z-index: 1; text-shadow: 0px 0px 2px rgba(0, 0, 0, 0); color: var(--label-text-color); }
 
 
 

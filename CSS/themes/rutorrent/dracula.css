@@ -11,11 +11,11 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
-/* RUTORRENT HOTLINE THEME */
+/* RUTORRENT DRACULA THEME */
 @import url(https://theme-park.dev/CSS/themes/rutorrent/rutorrent-base.css);
-@import url(https://theme-park.dev/CSS/variables/hotline.css);
+@import url(https://theme-park.dev/CSS/variables/dracula.css);
 
 /* APP VARS */
 :root {
-  --progress-color: #df6c4c;
+  --progress-color: #50fa7b;
 }
