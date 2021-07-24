@@ -33,9 +33,10 @@ label,
 }
 
 [class*="MetadataPosterCardActions-editButton-"],
-[class*="MetadataPosterCardActions-moreButton-"]  {
+[class*="MetadataPosterCardActions-moreButton-"] {
   color: rgb(var(--accent-color)) !important;
 }
+
 [class*="MetadataPosterCardActions-editButton-"]:hover,
 [class*="MetadataPosterCardActions-moreButton-"]:hover {
   color: var(--accent-color-hover) !important;
@@ -78,7 +79,8 @@ a,
 [class*="Link-primary-"],
 [class*="Link-isSelected-"],
 [class*="PrePlayDetailsGroupItem-groupItem-"] a,
-[class*="MetadataPosterCardTitle-title-"] a, a[class*="MetadataPosterCardTitle-title-"],
+[class*="MetadataPosterCardTitle-title-"] a,
+a[class*="MetadataPosterCardTitle-title-"],
 [class*="PrePlayTagListLink-tagsListLink-"][class*="Link-default-"] {
   color: var(--link-color)
 }
@@ -86,7 +88,8 @@ a,
 a:hover,
 [class*="Link-link-"]:hover,
 .artwork-file-container:hover a,
-[class*="MetadataPosterCardTitle-title-"] a:hover, a[class*="MetadataPosterCardTitle-title-"]:hover {
+[class*="MetadataPosterCardTitle-title-"] a:hover,
+a[class*="MetadataPosterCardTitle-title-"]:hover {
   color: var(--link-color-hover);
 }
 
@@ -105,7 +108,7 @@ a[class*="MetadataTableRow-title-"]:hover {
 [class*="FullPageBackground-backgroundContainer-"] [class*="CrossFadeImage-crossFade-"],
 #plex>[class*="background-container-"]>div>div>div:nth-child(2),
 #plex>div[class*="FullPageBackground-backgroundContainer-"]>div>div:nth-child(2),
-#plex > div[class*="FullPageBackground-backgroundContainer-"] > div > div:nth-child(4){
+#plex>div[class*="FullPageBackground-backgroundContainer-"]>div>div:nth-child(4) {
   background: var(--main-bg-color) !important;
   background-repeat: repeat, no-repeat;
   background-attachment: fixed, fixed;
@@ -113,7 +116,7 @@ a[class*="MetadataTableRow-title-"]:hover {
   background-size: auto, cover;
   -webkit-background-size: auto, cover;
   -moz-background-size: auto, cover;
-  -o-background-size: auto, cover; 
+  -o-background-size: auto, cover;
 }
 
 [class*="BottomBar-bottomBar-"] {
@@ -126,8 +129,9 @@ a[class*="MetadataTableRow-title-"]:hover {
 /* TEMP */
 [class*="SourceSidebarLink-isSelected-"] {
   box-shadow: inset 2px 0 0 0 rgb(var(--accent-color));
-  background: rgb(var(--accent-color),0.05);
+  background: rgb(var(--accent-color), 0.05);
 }
+
 /* /TEMP */
 
 [class*="SourceSidebar-openSidebar-"][class*="SourceSidebar-sidebar-"],
@@ -143,7 +147,7 @@ a[class*="MetadataTableRow-title-"]:hover {
   background-size: auto, cover;
   -webkit-background-size: auto, cover;
   -moz-background-size: auto, cover;
-  -o-background-size: auto, cover; 
+  -o-background-size: auto, cover;
 }
 
 [class*="DisclosureArrow-isSelected-"] {
@@ -211,11 +215,15 @@ button:hover [class*="DisclosureArrow-disclosureArrow-"] {
   color: rgb(var(--accent-color))
 }
 
-.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-  background-color:rgb(var(--accent-color),.03);
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+  background-color: rgb(var(--accent-color), .03);
 
 }
-.btn-gray:focus, .btn-gray:hover {
+
+.btn-gray:focus,
+.btn-gray:hover {
   color: var(--accent-color-hover);
 }
 
@@ -234,6 +242,7 @@ button:hover [class*="DisclosureArrow-disclosureArrow-"] {
 [class*="PivotTab-selectedButton-"]:after {
   background-color: rgb(var(--accent-color));
 }
+
 [class*="PivotTab-selectedButton-"]:hover:after {
   background-color: var(--link-color-hover);
 }
@@ -270,7 +279,7 @@ button:hover [class*="DisclosureArrow-disclosureArrow-"] {
 
 [class*="SelectButton-selectButton-"].isActive [class*="SelectButton-selectCircle-"] {
   background: rgb(var(--accent-color-hover));
-  }
+}
 
 [class*="PlayButton-playButton-"]:hover [class*="PlayButton-playCircle-"],
 [class*="PlayPauseOverlay-playCircle-"] {
@@ -391,7 +400,7 @@ button:hover [class*="DisclosureArrow-disclosureArrow-"] {
   background-size: auto, cover;
   -webkit-background-size: auto, cover;
   -moz-background-size: auto, cover;
-  -o-background-size: auto, cover; 
+  -o-background-size: auto, cover;
 }
 
 .modal-header {
@@ -403,7 +412,7 @@ button:hover [class*="DisclosureArrow-disclosureArrow-"] {
   background-size: auto, cover;
   -webkit-background-size: auto, cover;
   -moz-background-size: auto, cover;
-  -o-background-size: auto, cover; 
+  -o-background-size: auto, cover;
   border-bottom: 1px solid rgba(255, 255, 255, .05);
 }
 
@@ -416,7 +425,7 @@ button:hover [class*="DisclosureArrow-disclosureArrow-"] {
   background-size: auto, cover;
   -webkit-background-size: auto, cover;
   -moz-background-size: auto, cover;
-  -o-background-size: auto, cover; 
+  -o-background-size: auto, cover;
   border: 1px solid #999;
   border: 1px solid rgba(0, 0, 0, .2);
   border-radius: 3px;
@@ -436,7 +445,7 @@ button:hover [class*="DisclosureArrow-disclosureArrow-"] {
   background-size: auto, cover;
   -webkit-background-size: auto, cover;
   -moz-background-size: auto, cover;
-  -o-background-size: auto, cover; 
+  -o-background-size: auto, cover;
   border-top: 1px solid rgba(255, 255, 255, .05);
 }
 
@@ -549,7 +558,8 @@ fieldset[disabled] .btn-primary:hover {
 
 /* DROPDOWN MENU */
 [class*="Menu-menu-"],
-.selectize-dropdown, .selectize-dropdown.form-control {
+.selectize-dropdown,
+.selectize-dropdown.form-control {
   background: var(--drop-down-menu-bg);
   background-repeat: repeat, no-repeat;
   background-attachment: fixed, fixed;
@@ -557,7 +567,7 @@ fieldset[disabled] .btn-primary:hover {
   background-size: auto, cover;
   -webkit-background-size: auto, cover;
   -moz-background-size: auto, cover;
-  -o-background-size: auto, cover; 
+  -o-background-size: auto, cover;
 }
 
 [class*="ServerMenuItem-selectedServerMenuItem-"],
