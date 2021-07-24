@@ -32,6 +32,15 @@ label,
   color: var(--text);
 }
 
+[class*="MetadataPosterCardActions-editButton-"],
+[class*="MetadataPosterCardActions-moreButton-"]  {
+  color: rgb(var(--accent-color)) !important;
+}
+[class*="MetadataPosterCardActions-editButton-"]:hover,
+[class*="MetadataPosterCardActions-moreButton-"]:hover {
+  color: var(--accent-color-hover) !important;
+}
+
 h1,
 h2,
 h3,
@@ -82,7 +91,9 @@ a:hover,
 }
 
 [class*="MetadataPosterCardTitle-title-"][class*="MetadataPosterCardTitle-isSecondary-377V8A"] [class*="Link-link-1Kt-hA"]:hover,
-[class*="MetadataPosterCardTitle-title-"][class*="MetadataPosterCardTitle-isSecondary-377V8A"]:hover {
+[class*="MetadataPosterCardTitle-title-"][class*="MetadataPosterCardTitle-isSecondary-377V8A"]:hover,
+[class*=".MetadataTableRow-title-"] a:hover,
+a[class*="MetadataTableRow-title-"]:hover {
   color: var(--text-hover) !important;
 }
 
@@ -184,6 +195,15 @@ a:hover,
 
 
 /* ACCENTS */
+
+[class*="DisclosureArrow-default-"] {
+  border-color: rgb(var(--accent-color));
+}
+
+a:hover [class*="DisclosureArrow-disclosureArrow-"],
+button:hover [class*="DisclosureArrow-disclosureArrow-"] {
+  border-color: var(--accent-color-hover);
+}
 
 .nav-pills>li.active>a,
 .nav-pills>li.active>a:focus,
