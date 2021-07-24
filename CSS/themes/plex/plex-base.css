@@ -449,6 +449,11 @@ button:hover [class*="DisclosureArrow-disclosureArrow-"] {
   border-top: 1px solid rgba(255, 255, 255, .05);
 }
 
+.modal-body-with-panes .modal-nav-pane {
+  background-image: none;
+  background: rgba(0, 0, 0, .25);
+}
+
 .well,
 .files ul li {
   color: var(--text);
