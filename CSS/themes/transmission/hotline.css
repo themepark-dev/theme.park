@@ -13,10 +13,4 @@
 
 /* TRANSMISSION HOTLINE THEME */
 @import url(https://theme-park.dev/CSS/themes/transmission/transmission-base.css);
-:root {
-  --main-bg-color: radial-gradient(ellipse at center, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
-  --modal-bg-color: radial-gradient(ellipse at top, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
-  --default-button-color: #F44336;
-  --default-button-color-hover: rgb(247, 106, 96);
-  --progress-color: #F44336;
-}
+@import url(https://theme-park.dev/CSS/variables/hotline.css);
