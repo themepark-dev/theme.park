@@ -379,7 +379,7 @@ button:hover [class*="DisclosureArrow-disclosureArrow-"] {
 }
 
 .media-poster-container.selected .media-poster:after {
-  color: var(--button-text)
+  color: var(--label-text-color);
 }
 
 [class*="NavBarActivityMenuStatusItem-statusButtonIndicator-"] {
