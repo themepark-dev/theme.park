@@ -5,18 +5,18 @@
   --modal-header-color: radial-gradient(circle , #3a3a3a, #2d2d2d, #202020, #141414, #000000) center center/cover no-repeat fixed;
   --modal-footer-color: radial-gradient(circle , #3a3a3a, #2d2d2d, #202020, #141414, #000000) center center/cover no-repeat fixed;
 
-  --drop-down-menu-bg: radial-gradient(circle , #3a3a3a, #2d2d2d, #202020, #141414, #000000) center center/cover no-repeat fixed;
+  --drop-down-menu-bg: #2d2d2d;
 
-  --button-color: hsla(0,0%,100%,.15);
-  --button-color-hover: hsla(0,0%,100%,.30);
+  --button-color: #474747;
+  --button-color-hover: #5a5a5a;
   --button-text: #eee;
   --button-text-hover: #FFF;
 
-  --accent-color: 100, 100, 100;
+  --accent-color: 170, 170, 170;
   --accent-color-hover: rgba(255, 255, 255, 0.45);
   --link-color: #ddd;
   --link-color-hover: #fff;
-  --label-text-color: #fff;
+  --label-text-color: black;
     
   --text:#eee;
   --text-hover: #fff;
