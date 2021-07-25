@@ -1,32 +1,39 @@
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+
     #mainNav,
     #mainNav.navbar-scrolled {
-      box-shadow: none;
-      background-color: rgba(0, 0, 0, 0.55);
-      -webkit-backdrop-filter: blur(10px);
-      backdrop-filter: blur(10px);
+        box-shadow: none;
+        background-color: rgba(0, 0, 0, 0.55);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
     }
-  }
-  
+}
+
 @media (max-width: 768px) {
-    #mainNav, #mainNav.navbar-scrolled {
+
+    #mainNav,
+    #mainNav.navbar-scrolled {
         padding: 0 1rem 0 1rem !important;
     }
+
     .branding {
         height: 40px !important;
     }
-    #mainNav .navbar-nav .nav-item .nav-link{
+
+    #mainNav .navbar-nav .nav-item .nav-link {
         padding-left: 1rem;
     }
 }
-  /* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
-  @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+
+/* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
+@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+
     #mainNav,
     #mainNav.navbar-scrolled {
-      box-shadow: none;
-      background-color: rgba(0, 0, 0, 0.9);
+        box-shadow: none;
+        background-color: rgba(0, 0, 0, 0.9);
     }
-  }
+}
 
 @media (min-width: 992px) {
     #mainNav {
@@ -81,15 +88,20 @@
         color: #12afa0;
     }
 }
-#mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
+
+#mainNav .navbar-nav .nav-item .nav-link:hover,
+#mainNav .navbar-nav .nav-item .nav-link:active {
     color: #12afa0;
-  }
+}
+
 #mainNav .navbar-nav .nav-item .nav-link.active {
     color: #12afa0 !important;
-  }
+}
+
 .navbar-light .navbar-toggler-icon {
     filter: invert(1);
 }
+
 .navbar-light .navbar-toggler {
     color: rgba(0, 0, 0, 0.5);
     border-color: rgb(255 255 255 / 10%);
@@ -152,10 +164,12 @@ hr.divider {
 a {
     color: #fff;
 }
+
 a:hover {
     color: #12afa0;
     text-decoration: none;
 }
+
 .text-primary {
     color: #12afa0 !important;
 }
@@ -163,7 +177,7 @@ a:hover {
 body,
 header.masthead {
     background: black;
-  }
+}
 
 /* IMAGE SLIDER */
 .jquery-bg-slideshow-wrap-bg-element {
@@ -173,10 +187,13 @@ header.masthead {
 }
 
 @media (max-width: 768px) {
-    .bg,header.masthead {
+
+    .bg,
+    header.masthead {
         background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 50%), url(../assets/img/space-gray.png) !important;
     }
 }
+
 .bg {
     height: 100%;
     width: 100%;
@@ -194,6 +211,7 @@ header.masthead {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+
 .theme-overview {
     background: #2d2d2d;
     background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 1.0), rgba(87, 109, 117, 1.0));
@@ -202,32 +220,39 @@ header.masthead {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family: var(--font-family-sans-serif);
 }
+
 #services {
     background: rgba(87, 109, 117, 1.0);
     color: white;
     padding: 0rem 0 8rem 0;
 }
+
 .all-apps {
     max-width: 1980px;
 }
+
 .img-fluid {
     border-radius: 5px;
 }
+
 .app-container {
     background: rgba(0, 0, 0, 0.2);
-    color:rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7);
     border-radius: 5px;
     max-width: 120px;
     min-width: 120px;
 }
+
 .app-container:hover {
     color: white;
     text-decoration: none;
     background: #47918a80;
 }
+
 .app-container:hover img {
     transform: scale(1.1);
 }
+
 .app-container img {
     transition: transform .5s;
 }
@@ -243,6 +268,7 @@ p {
     font-weight: 500;
     line-height: 1.2;
 }
+
 /* @media (min-width: 992px) {
 .portfolio-box img {
     object-fit: cover;
