@@ -18,7 +18,7 @@ body {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
 a,
@@ -38,7 +38,7 @@ a:hover {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
 * {
@@ -114,7 +114,7 @@ content-loading .contentLoading {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
     color: var(--text) !important;
     border: #f0505000 5px solid;
 }
@@ -127,7 +127,7 @@ content-loading .contentLoading {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
     color: var(--text);
     Border: 1px solid rgba(0, 0, 0, 0.2);
 }

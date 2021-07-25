@@ -18,7 +18,7 @@
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
 /* Scrollbar */
@@ -39,7 +39,7 @@
         background-size: auto, cover;
         -webkit-background-size: auto, cover;
         -moz-background-size: auto, cover;
-        -o-background-size: auto, cover; 
+        -o-background-size: auto, cover;
     }
 }
 
@@ -82,9 +82,11 @@ body,
 .col-form-label {
     color: var(--text-hover);
 }
+
 .navbar-dark .navbar-nav .nav-link.active {
     color: rgb(var(--accent-color));
 }
+
 .card-header {
     color: rgb(var(--accent-color));
 }
@@ -116,10 +118,13 @@ a:hover {
 .bg-primary {
     background: rgba(0, 0, 0, .15) !important;
 }
+
 .navbar-dark .navbar-brand {
     color: rgb(var(--accent-color));
 }
-.navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover {
+
+.navbar-dark .navbar-brand:focus,
+.navbar-dark .navbar-brand:hover {
     color: var(--accent-color-hover);
 }
 
@@ -132,7 +137,7 @@ a:hover {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
 .dropdown-item:focus,
@@ -191,16 +196,23 @@ a:hover {
 .btn-primary:hover,
 .btn-outline-dark:hover,
 .btn-outline-secondary:hover,
-.btn-check:focus+.btn-primary, .btn-primary:focus {
+.btn-check:focus+.btn-primary,
+.btn-primary:focus {
     color: var(--button-text-hover);
     background-color: var(--button-color-hover);
     border-color: var(--button-color-hover);
 }
-.btn-check:active+.btn-primary:focus, .btn-check:checked+.btn-primary:focus, 
-.btn-primary.active:focus, .btn-primary:active:focus, .show>.btn-primary.dropdown-toggle:focus,
-.btn-check:focus+.btn-primary, .btn-primary:focus {
-    box-shadow: 0 0 0 0.25rem rgba(var(--accent-color),.5);
+
+.btn-check:active+.btn-primary:focus,
+.btn-check:checked+.btn-primary:focus,
+.btn-primary.active:focus,
+.btn-primary:active:focus,
+.show>.btn-primary.dropdown-toggle:focus,
+.btn-check:focus+.btn-primary,
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.25rem rgba(var(--accent-color), .5);
 }
+
 .btn-outline-primary,
 .btn-outline-info {
     color: var(--button-color);

@@ -22,7 +22,7 @@ body,
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
 a {
@@ -169,7 +169,7 @@ UL.jqueryFileTree A,
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
 .dropdown-menu {
@@ -180,7 +180,7 @@ UL.jqueryFileTree A,
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
     border: 1px solid #ccc;
     border: 1px solid rgba(0, 0, 0, .15);
     border-radius: 2px;
@@ -196,7 +196,7 @@ UL.jqueryFileTree A,
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
     border: 1px solid rgba(255, 255, 255, .1);
     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .2);
     box-shadow: 0 6px 12px rgba(0, 0, 0, .2);
@@ -340,7 +340,7 @@ button.selectpicker.btn-default {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
 .popout-parent {
@@ -351,7 +351,7 @@ button.selectpicker.btn-default {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
 .context-menu li a:focus,
@@ -367,7 +367,7 @@ button.selectpicker.btn-default {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
 #general-settings #languagedrop {
@@ -389,7 +389,7 @@ button.selectpicker.btn-default {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
     color: var(--text);
 }
 
@@ -405,7 +405,7 @@ button.selectpicker.btn-default {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
 .modal-body .horizontal-separator .horizontal-separator-text {
@@ -416,7 +416,7 @@ button.selectpicker.btn-default {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
     color: var(--text);
 }
 
@@ -464,7 +464,7 @@ ul.jqueryFileTree a:hover {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
 #sharing-content .nav-tabs.nav-sub-tabs>li>a {
@@ -492,7 +492,7 @@ ul.jqueryFileTree a:hover {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
 .modal-header .transfer-path .labelContainer {
@@ -521,7 +521,7 @@ ul.jqueryFileTree a:hover {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
     color: var(--text);
 }
 
@@ -550,7 +550,7 @@ ul.jqueryFileTree a:hover {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
 .status-panel-shown #statusPanel {
@@ -591,7 +591,7 @@ ul.jqueryFileTree a:hover {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
 #statusPanel .chart-c3 .c3-tooltip {
@@ -741,7 +741,7 @@ ul.jqueryFileTree a:hover {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
 /* PLACEHOLDER TEXT */

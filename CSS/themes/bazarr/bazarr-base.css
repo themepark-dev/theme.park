@@ -92,12 +92,20 @@ a:hover {
 .table {
     color: var(--text);
 }
+
 .table thead th {
     color: var(--text-hover);
 }
 
-h1, h2, h3, h4, h5, h6,
-.custom-control-label,label,.modal-header {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.custom-control-label,
+label,
+.modal-header {
     color: var(--text-hover);
 }
 
@@ -212,9 +220,10 @@ h1, h2, h3, h4, h5, h6,
     background-color: transparent !important;
     color: rgb(var(--accent-color)) !important;
 }
+
 .content-header.bg-dark .btn-dark:hover {
-    color:rgb(var(--accent-color));
-    }
+    color: rgb(var(--accent-color));
+}
 
 .sidebar-container .sidebar-button.sb-active,
 .sidebar-container .sidebar-button.sb-active:hover {
@@ -231,10 +240,12 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .content-header.bg-dark .btn-dark {
-    color:var(--text);
+    color: var(--text);
 }
-.btn-dark.disabled:hover, .btn-dark:disabled:hover {
-    color:var(--text) !important;
+
+.btn-dark.disabled:hover,
+.btn-dark:disabled:hover {
+    color: var(--text) !important;
 }
 
 
@@ -257,10 +268,12 @@ h1, h2, h3, h4, h5, h6,
         -o-background-size: auto, cover;
     }
 }
+
 .sidebar-container .badge-secondary {
     color: var(--label-text-color);
     background-color: var(--queue-color);
 }
+
 /* TOP NAV BAR */
 .header-container .bg-primary {
     background-color: rgba(0, 0, 0, .35) !important;
@@ -313,13 +326,16 @@ h1, h2, h3, h4, h5, h6,
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
 }
+
 .auth-card {
     border: 1px solid transparent;
 }
+
 .auth-card .card-footer {
     background-color: transparent;
     border-top: 1px solid rgba(255, 255, 255, .1);
 }
+
 hr {
     border-top: 1px solid rgb(255 255 255 / 10%);
 }
@@ -642,6 +658,7 @@ hr {
 .custom-checkbox .custom-control-input:checked~.custom-control-label:after {
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath fill='%23000' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z'/%3E%3C/svg%3E");
 }
+
 input {
     color: var(--text-hover) !important;
 }
@@ -658,7 +675,8 @@ input {
 }
 
 /* DROPDOWN MENU */
-.dropdown-menu,.dropdown-header {
+.dropdown-menu,
+.dropdown-header {
     color: var(--text);
     background: var(--drop-down-menu-bg);
     background-repeat: repeat, no-repeat;
@@ -802,23 +820,24 @@ line {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
-    border: 1px solid rgba(0,0,0,.1);
-    box-shadow: 0 .25rem .75rem rgba(0,0,0,.1);
+    border: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .1);
     color: var(--text)
 }
 
 .toast-header {
     color: var(--text-hover);
     background-color: hsla(0, 0%, 0%, .35);
-    border-bottom: 1px solid rgba(0,0,0,.05);
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
 }
 
 .alert-container .toast-container .toast .toast-body .progress .progress-bar {
-    text-shadow: -2px -2px 5px rgba(var(--accent-color),.35),2px -2px 5px rgba(var(--accent-color),.35),-2px 2px 5px rgba(var(--accent-color),.35),2px 2px 5px rgba(var(--accent-color),.35);
+    text-shadow: -2px -2px 5px rgba(var(--accent-color), .35), 2px -2px 5px rgba(var(--accent-color), .35), -2px 2px 5px rgba(var(--accent-color), .35), 2px 2px 5px rgba(var(--accent-color), .35);
     overflow: visible
 }
+
 .progress-bar-striped {
-    background-image: linear-gradient(45deg,rgba(var(--accent-color),.5) 25%,transparent 0,transparent 50%,rgba(var(--accent-color),.5) 0,rgba(var(--accent-color),.5) 75%,transparent 0,transparent);
+    background-image: linear-gradient(45deg, rgba(var(--accent-color), .5) 25%, transparent 0, transparent 50%, rgba(var(--accent-color), .5) 0, rgba(var(--accent-color), .5) 75%, transparent 0, transparent);
     background-size: 1rem 1rem
 }
 

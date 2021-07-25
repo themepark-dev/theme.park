@@ -268,7 +268,8 @@ label {
     background: rgb(0 0 0 / 10%);
 }
 
-.sidebar[data-background-color="black"] .logo, .off-canvas-sidebar[data-background-color="black"] .logo {
+.sidebar[data-background-color="black"] .logo,
+.off-canvas-sidebar[data-background-color="black"] .logo {
     border-bottom: 1px solid rgba(var(--accent-color));
 }
 

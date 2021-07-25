@@ -22,7 +22,7 @@ body {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
     color: var(--text)
 }
 
@@ -45,17 +45,19 @@ h4,
 h5,
 h6,
 .person--details p,
-.text-wrap > p,
+.text-wrap>p,
 .card .text-wrap .title,
 .main-title,
-.media-details .media-title, .single-title,
+.media-details .media-title,
+.single-title,
 .sub-title,
-.sub-title, .widget--title,
+.sub-title,
+.widget--title,
 .settings--menu--item p {
     color: var(--text-hover);
 }
 
-.card .text-wrap > p {
+.card .text-wrap>p {
     color: var(--text-hover);
 }
 
@@ -66,6 +68,7 @@ h6,
 .settings--menu--item.active {
     border-bottom: 1px solid rgb(var(--accent-color));
 }
+
 .settings--menu--item:hover {
     border-bottom: 1px solid var(--text-hover);
 }
@@ -90,7 +93,7 @@ h6,
         background-size: auto, cover;
         -webkit-background-size: auto, cover;
         -moz-background-size: auto, cover;
-        -o-background-size: auto, cover; 
+        -o-background-size: auto, cover;
     }
 }
 
@@ -101,7 +104,7 @@ h6,
 }
 
 @media (max-width: 991.98px) {
-   .menu {
+    .menu {
         background: var(--modal-bg-color);
         background-repeat: repeat, no-repeat;
         background-attachment: fixed, fixed;
@@ -109,7 +112,7 @@ h6,
         background-size: auto, cover;
         -webkit-background-size: auto, cover;
         -moz-background-size: auto, cover;
-        -o-background-size: auto, cover; 
+        -o-background-size: auto, cover;
     }
 }
 
@@ -121,7 +124,7 @@ h6,
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
 .menu--item.active {
@@ -166,8 +169,8 @@ h6,
 .sidebar--item:hover .icon svg path,
 .menu--item:hover p,
 .menu--item:hover .icon svg path {
-color: rgb(var(--accent-color));
-fill: rgb(var(--accent-color));
+    color: rgb(var(--accent-color));
+    fill: rgb(var(--accent-color));
 }
 
 .sidebar--item .icon svg path,
@@ -202,6 +205,7 @@ p a:hover,
 .widget--item hr {
     background: rgb(255 255 255 / 50%);
 }
+
 .widget--item--inner,
 .sr--instance--inner {
     background: hsl(0deg 0% 0% / 15%);
@@ -321,14 +325,15 @@ code {
 }
 
 /* Keep Plex Button Color*/
-#root > div > div.login-wrap > div.login--inner > form > div:nth-child(7) > button,
-#root > div > div.view > div > div > div.settings--content > section:nth-child(2) > button:nth-child(3) {
+#root>div>div.login-wrap>div.login--inner>form>div:nth-child(7)>button,
+#root>div>div.view>div>div>div.settings--content>section:nth-child(2)>button:nth-child(3) {
     background: #d79b23;
     border: 2px solid #d79b23;
     color: #000;
 }
-#root > div > div.login-wrap > div.login--inner > form > div:nth-child(7) > button:hover,
-#root > div > div.view > div > div > div.settings--content > section:nth-child(2) > button:nth-child(3):hover {
+
+#root>div>div.login-wrap>div.login--inner>form>div:nth-child(7)>button:hover,
+#root>div>div.view>div>div>div.settings--content>section:nth-child(2)>button:nth-child(3):hover {
     background: #ab7b1c;
     border-color: #ab7b1c;
 }
@@ -418,7 +423,7 @@ thead {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
 .modal--top,
@@ -431,7 +436,7 @@ thead {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
 /* FORMS & INPUTS */

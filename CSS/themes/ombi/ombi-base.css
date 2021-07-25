@@ -1,4 +1,3 @@
-
 /*    dP   dP                                                                  dP        */
 /*    88   88                                                                  88        */
 /*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
@@ -30,9 +29,22 @@ body,
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, legend {
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+legend {
     color: var(--text-hover);
 }
 
@@ -50,11 +62,12 @@ a:hover {
 .forgot-password:hover {
     color: var(--link-color-hover) !important;
 }
+
 /* SCROLLBAR */
 ::-webkit-scrollbar-thumb {
     border-radius: 3px;
     background: rgb(255 255 255 / 30%);
-} 
+}
 
 /* TOP NAV */
 .top-search-bar .mat-form-field-flex {
@@ -72,7 +85,7 @@ a:hover {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
 .mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
@@ -135,6 +148,7 @@ a:hover {
     height: auto;
     width: 16rem !important;
 }
+
 [id*="nav-"] {
     color: var(--text) !important;
 }
@@ -257,11 +271,13 @@ a:hover {
     max-height: 290px;
     max-width: 12rem;
 }
+
 @media (max-width: 768px) {
-.section h2 {
-    margin-left: 5px !important;
+    .section h2 {
+        margin-left: 5px !important;
     }
 }
+
 @media (min-width: 768px) {
     .section h2 {
         margin-left: 63px !important;
@@ -314,21 +330,24 @@ a:hover {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
 #info-wrapper .mat-card.mat-card-flat:not([class*=mat-elevation-z]) {
     box-shadow: 0 0 0 0 rgb(0 0 0 / 20%), 0 0 0 0 rgb(0 0 0 / 14%), 0 0 0 0 rgb(0 0 0 / 12%);
     background: transparent;
 }
+
 #info-wrapper .mat-card .label,
 #info-wrapper .mat-card .mat-card-header {
     color: var(--text-hover);
 }
 
-#info-wrapper .mat-card,#info-wrapper .mat-card-content {
+#info-wrapper .mat-card,
+#info-wrapper .mat-card-content {
     color: var(--text);
 }
+
 .btn-ombi {
     background-color: rgba(0, 0, 0, 0.85) !important;
     /* backdrop-filter: blur(10px) !important;
@@ -434,6 +453,7 @@ small.important {
     color: var(--button-text) !important;
     background-color: var(--button-color) !important;
 }
+
 .mat-raised-button:not([class*=mat-elevation-z]):not(.mat-raised-button.mat-warn):not(.viewon-btn.plex) {
     box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
     background: var(--button-color);
@@ -468,7 +488,7 @@ button#sign-in {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
 button.admin-cog {
@@ -542,7 +562,7 @@ button.admin-cog {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
     box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12)
 }
 
@@ -606,13 +626,15 @@ hr {
 }
 
 .full-screenshot.enabled.overlay {
-    background-image: linear-gradient(180deg,transparent,50%,rgb(var(--accent-color), 0.1));
+    background-image: linear-gradient(180deg, transparent, 50%, rgb(var(--accent-color), 0.1));
 }
+
 .social-icons-container {
     background-color: hsl(0deg 0% 0% / 85%) !important;
     backdrop-filter: blur(10px) !important;
     -webkit-backdrop-filter: blur(10px) !important;
 }
+
 /* MODAL */
 .mat-autocomplete-panel,
 .mat-dialog-container {
@@ -623,7 +645,7 @@ hr {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
 .mat-bottom-sheet-container {
@@ -634,7 +656,7 @@ hr {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
 /* OTHER */
@@ -646,9 +668,10 @@ hr {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
-.mat-progress-spinner.mat-accent circle,.mat-spinner.mat-accent circle {
+.mat-progress-spinner.mat-accent circle,
+.mat-spinner.mat-accent circle {
     stroke: rgb(var(--accent-color));
 }

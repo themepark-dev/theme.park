@@ -38,7 +38,7 @@ body,
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
 html {
@@ -121,7 +121,7 @@ p,
     background-color: rgba(0, 0, 0, .25) !important;
 }
 
-.v-app-bar.v-app-bar--is-scrolled{
+.v-app-bar.v-app-bar--is-scrolled {
     background: var(--main-bg-color) !important;
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
@@ -129,7 +129,7 @@ p,
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
 .v-navigation-drawer__content .theme--dark.v-card,
@@ -200,7 +200,7 @@ p,
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
     color: var(--text);
 }
 
@@ -327,53 +327,55 @@ p,
 .v-application .torrent-paused-color .caption,
 .v-application .torrent-seeding-color .caption,
 .v-application .torrent-done-color .caption {
-color: #ccc !important;
+    color: #ccc !important;
 }
 
 .v-application .torrent-paused-color {
-background-color: rgb(156 163 175 / 70%) !important;
+    background-color: rgb(156 163 175 / 70%) !important;
     border-color: rgb(156 163 175 / 70%) !important;
 }
+
 .v-application .torrent-seeding-color {
     background-color: rgba(78, 205, 230, .7) !important;
     border-color: rgba(78, 205, 230, .7) !important;
 }
-.v-application .torrent-done-color  {
+
+.v-application .torrent-done-color {
     background-color: rgba(22, 87, 62, .7) !important;
     border-color: rgba(22, 87, 62, .7) !important;
 }
 
-.v-application .torrent-downloading-color  {
+.v-application .torrent-downloading-color {
     background-color: rgba(91, 185, 116, .7) !important;
     border-color: rgba(91, 185, 116, .7) !important;
 }
 
-.v-application .torrent-fail-color  {
+.v-application .torrent-fail-color {
     background-color: rgba(248, 62, 112, .7) !important;
     border-color: rgba(248, 62, 112, .7) !important;
 }
 
-.v-application .torrent-queued-color  {
+.v-application .torrent-queued-color {
     background-color: rgba(46, 94, 170, .7) !important;
     border-color: rgba(46, 94, 170, .7) !important;
 }
 
-.v-application .torrent-checking-color  {
+.v-application .torrent-checking-color {
     background-color: rgba(255, 112, 67, .7) !important;
     border-color: rgba(255, 112, 67, .7) !important;
 }
 
-.v-application .torrent-stalled-color  {
+.v-application .torrent-stalled-color {
     background-color: rgba(74, 222, 128, .7) !important;
     border-color: rgba(74, 222, 128, .7) !important;
 }
 
-.v-application .torrent-metadata-color  {
+.v-application .torrent-metadata-color {
     background-color: rgba(126, 87, 194, .7) !important;
     border-color: rgba(126, 87, 194, .7) !important;
 }
 
-.v-application .torrent-moving-color  {
+.v-application .torrent-moving-color {
     background-color: rgba(255, 170, 44, .7) !important;
     border-color: rgba(255, 170, 44, .7) !important;
 }
@@ -398,14 +400,14 @@ background-color: rgb(156 163 175 / 70%) !important;
 
 .v-menu__content .theme--dark.theme--dark.v-list,
 .v-menu__content .theme--light.theme--light.v-list {
-background: var(--modal-bg-color) !important;
-background-repeat: repeat, no-repeat;
-background-attachment: fixed, fixed;
-background-position: center center, center center;
-background-size: auto, cover;
--webkit-background-size: auto, cover;
--moz-background-size: auto, cover;
--o-background-size: auto, cover; 
+    background: var(--modal-bg-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 
 .theme--dark.v-icon,
@@ -415,7 +417,7 @@ background-size: auto, cover;
 
 .theme--light.v-divider,
 .theme--dark.v-divider {
-    border-color: rgba(255, 255, 255,.2) !important;
+    border-color: rgba(255, 255, 255, .2) !important;
 }
 
 /* TABLE */
@@ -474,7 +476,7 @@ background-size: auto, cover;
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
     border: 1px solid rgba(255, 255, 255, .1);
 }
 

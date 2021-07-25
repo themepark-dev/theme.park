@@ -1,4 +1,3 @@
-
 /*    dP   dP                                                                  dP        */
 /*    88   88                                                                  88        */
 /*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
@@ -11,20 +10,29 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
-html, body {
-	background: var(--main-bg-color) !important;
-	background-repeat: repeat, no-repeat;
-	background-attachment: fixed, fixed;
-	background-position: center center, center center;
-	background-size: auto, cover;
-	-webkit-background-size: auto, cover;
-	-moz-background-size: auto, cover;
-	-o-background-size: auto, cover;
-	color: var(--text) !important;
+html,
+body {
+    background: var(--main-bg-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    color: var(--text) !important;
 }
-h1,h2,h3,h4,h5,h6, label {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
     color: var(--text-hover);
 }
+
 div.meterText:empty:before {
     color: var(--text-hover) !important;
 }
@@ -32,39 +40,51 @@ div.meterText:empty:before {
 #dlText {
     color: #F44336;
 }
+
 #ulText {
     color: #4CAF50;
 }
-#pingText, #jitText {
+
+#pingText,
+#jitText {
     color: #2cabe3;
 }
+
 #startStopBtn {
     color: var(--button-text);
     background: var(--button-color);
     border: 0.15em solid var(--button-color);
 }
+
 #startStopBtn:hover {
-	border: 0.15em solid var(--button-color-hover);
-	background: var(--button-color-hover);
+    border: 0.15em solid var(--button-color-hover);
+    background: var(--button-color-hover);
 }
+
 #startStopBtn.running {
     background: #FF3030 !important;
     border-color: #FF6060;
     color: #FFFFFF;
 }
+
 #startStopBtn.running:hover {
     background: #FF3030;
     border-color: #FF6060;
     color: #FFFFFF;
 }
-a,a:-webkit-any-link {
-	color: var(--link-color);
-}
-a:hover,a:-webkit-any-link:hover {
-	color: var(--link-color-hover);
+
+a,
+a:-webkit-any-link {
+    color: var(--link-color);
 }
 
-#ip,.unit {
+a:hover,
+a:-webkit-any-link:hover {
+    color: var(--link-color-hover);
+}
+
+#ip,
+.unit {
     color: rgb(var(--accent-color));
 }
 
@@ -76,10 +96,11 @@ a:hover,a:-webkit-any-link:hover {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
+
 input {
-    font-family: "Roboto",sans-serif;
+    font-family: "Roboto", sans-serif;
     color: white;
     background-color: rgba(0, 0, 0, 0.25) !important;
     -webkit-rtl-ordering: logical;

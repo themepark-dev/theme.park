@@ -41,7 +41,7 @@ body {
   background-size: auto, cover;
   -webkit-background-size: auto, cover;
   -moz-background-size: auto, cover;
-  -o-background-size: auto, cover; 
+  -o-background-size: auto, cover;
 }
 
 #desktop {
@@ -52,7 +52,7 @@ body {
   background-size: auto, cover;
   -webkit-background-size: auto, cover;
   -moz-background-size: auto, cover;
-  -o-background-size: auto, cover; 
+  -o-background-size: auto, cover;
 }
 
 input:disabled {
@@ -236,7 +236,7 @@ label {
   background-size: auto, cover;
   -webkit-background-size: auto, cover;
   -moz-background-size: auto, cover;
-  -o-background-size: auto, cover; 
+  -o-background-size: auto, cover;
 }
 
 #desktopNavbar li ul li a {
@@ -251,7 +251,7 @@ label {
   background-size: auto, cover;
   -webkit-background-size: auto, cover;
   -moz-background-size: auto, cover;
-  -o-background-size: auto, cover; 
+  -o-background-size: auto, cover;
 }
 
 #desktopFooter {
@@ -300,19 +300,22 @@ label {
 }
 
 .dynamicTable tbody tr.selected {
-  background-color: rgba(var(--accent-color),0.6) !important;
+  background-color: rgba(var(--accent-color), 0.6) !important;
   color: var(--label-text-color);
 }
+
 .dynamicTable th.sorted.reverse {
   background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/qbittorrent/go-down.png) !important;
 }
+
 .dynamicTable th.sorted {
   background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/qbittorrent/go-up.png) !important;
   background-size: 9px !important;
   background-position: right !important;
   background-repeat: no-repeat !important;
-  
+
 }
+
 .panel {
   background: var(--main-bg-color);
   background-repeat: repeat, no-repeat;
@@ -321,7 +324,7 @@ label {
   background-size: auto, cover;
   -webkit-background-size: auto, cover;
   -moz-background-size: auto, cover;
-  -o-background-size: auto, cover; 
+  -o-background-size: auto, cover;
   border-bottom: 1px solid transparent;
 }
 
@@ -403,7 +406,7 @@ li.divider {
   background-size: auto, cover;
   -webkit-background-size: auto, cover;
   -moz-background-size: auto, cover;
-  -o-background-size: auto, cover; 
+  -o-background-size: auto, cover;
 }
 
 .contextMenu li a {
@@ -414,9 +417,8 @@ li.divider {
   background-color: rgba(255, 255, 255, .08) !important;
   color: var(--text-hover);
 }
-.contextMenu li a:hover {
 
-}
+.contextMenu li a:hover {}
 
 .contextMenu li ul {
   border: 1px solid transparent;
@@ -427,7 +429,7 @@ li.divider {
   background-size: auto, cover;
   -webkit-background-size: auto, cover;
   -moz-background-size: auto, cover;
-  -o-background-size: auto, cover; 
+  -o-background-size: auto, cover;
 }
 
 .contextMenu .separator {
@@ -436,7 +438,7 @@ li.divider {
 
 /* Sidemenu */
 .selectedFilter {
-  background-color: rgba(var(--accent-color),0.6);
+  background-color: rgba(var(--accent-color), 0.6);
   color: #eee;
 }
 
@@ -445,7 +447,7 @@ li.divider {
 }
 
 ul.filterList li:hover {
-  background-color: rgba(var(--accent-color),0.6);
+  background-color: rgba(var(--accent-color), 0.6);
   color: var(--button-color-hover) !important;
 }
 
@@ -567,7 +569,7 @@ fieldset {
   background-size: auto, cover;
   -webkit-background-size: auto, cover;
   -moz-background-size: auto, cover;
-  -o-background-size: auto, cover; 
+  -o-background-size: auto, cover;
 }
 
 .mochaToolbarWrapper {
@@ -1778,7 +1780,8 @@ img[src="icons/checking.svg"] {
 
 .contextMenu li a.arrow-right,
 .contextMenu li a:hover.arrow-right,
-.contextMenu li a.arrow-right, .contextMenu li a:hover.arrow-right {
+.contextMenu li a.arrow-right,
+.contextMenu li a:hover.arrow-right {
   background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/qbittorrent/arrow-right.gif);
   background-repeat: no-repeat;
   background-position: right center;

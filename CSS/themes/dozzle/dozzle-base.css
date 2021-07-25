@@ -27,7 +27,12 @@ body {
     color: var(--text);
 }
 
-h1, h2, h3, h4, h5, h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 section header,
 .menu-label {
     color: var(--text-hover) !important;
@@ -206,11 +211,12 @@ section .is-scrollbar-notification button {
     color: var(--button-text-hover) !important;
 }
 
-#hide-nav{
+#hide-nav {
     background: var(--button-color) !important;
     color: var(--button-text) !important;
 }
-#hide-nav:hover{
+
+#hide-nav:hover {
     border-color: var(--button-color-hover) !important;
     background: var(--button-color-hover) !important;
     color: var(--button-text-hover) !important;

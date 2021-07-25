@@ -145,6 +145,7 @@
  .modal-content {
      background-color: var(--modal-bg-color);
  }
+
  #GeneralDeleteModal .bg-danger {
      background: var(--modal-bg-color);
  }
@@ -173,7 +174,8 @@
  .btn-toolbar>.btn-group>#btnGroupDrop2:hover>span,
  .btn-toolbar>.btn-group>.btn-group>#btnGroupDrop2:hover>span,
  div[aria-label="Edit/Delete book"]>.btn>span:hover,
- #btnGroupDrop1[aria-expanded=true] > span, #shelf-actions > .btn-group.open > #add-to-shelf > span {
+ #btnGroupDrop1[aria-expanded=true]>span,
+ #shelf-actions>.btn-group.open>#add-to-shelf>span {
      color: var(--text-hover);
  }
 
@@ -304,7 +306,7 @@
 
  /* SERIES PAGE */
  .cover .badge {
-    color: var(--label-text-color);
-    background-color: rgb(var(--accent-color));
+     color: var(--label-text-color);
+     background-color: rgb(var(--accent-color));
 
-} 
+ }

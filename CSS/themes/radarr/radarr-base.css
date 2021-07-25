@@ -116,7 +116,7 @@ a:hover {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
     color: var(--text-hover);
     border-bottom: 1px solid rgb(var(--accent-color));
 }
@@ -129,7 +129,7 @@ a:hover {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
     color: var(--text);
 }
 
@@ -141,7 +141,7 @@ a:hover {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
     color: #fff;
     border-top: 1px solid rgb(var(--accent-color));
 }
@@ -213,7 +213,7 @@ a:hover {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
     color: #fff !important;
     box-shadow: 0 0 10px 1px transparent !important;
 }
@@ -241,7 +241,7 @@ a:hover {
 }
 
 [class*="PageSidebarItem-isActiveLink-"],
-[class*="PageSidebarItem-isActiveLink-"]:hover, 
+[class*="PageSidebarItem-isActiveLink-"]:hover,
 [class*="PageSidebarItem-link-"]:focus {
     color: rgb(var(--accent-color)) !important;
 }
@@ -259,7 +259,7 @@ a:hover {
         background-size: auto, cover;
         -webkit-background-size: auto, cover;
         -moz-background-size: auto, cover;
-        -o-background-size: auto, cover; 
+        -o-background-size: auto, cover;
     }
 }
 
@@ -272,6 +272,7 @@ a:hover {
 [class*="MovieIndexPoster-controls-"] {
     background-color: rgb(var(--accent-color)) !important;
 }
+
 [class*="MovieTitlesTableContent-blankpad-"],
 [class*="ExtraFileTableContent-blankpad-"],
 [class*="MovieHistoryTableContent-blankpad-"] {
@@ -380,7 +381,7 @@ a:hover {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
 [class*="Tooltip-tooltipContainer-"] {
@@ -405,7 +406,7 @@ a:hover {
 }
 
 [class*="Label-default-"] [class*="IconButton-button-"],
-[class*="Label-small-"] [class*="IconButton-button-"]:hover  {
+[class*="Label-small-"] [class*="IconButton-button-"]:hover {
     color: var(--label-text-color);
 }
 
@@ -521,7 +522,7 @@ a:hover {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
     color: var(--text);
 }
 
@@ -568,9 +569,10 @@ a:hover {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
     color: var(--text);
 }
+
 [class*="EnhancedSelectInputOption-isSelected-"],
 [class*="EnhancedSelectInputOption-isSelected-"]:hover {
     background-color: rgba(255, 255, 255, 0.20) !important;
@@ -630,7 +632,7 @@ a:hover {
 
 [class*="PageContentBody-innerContentBody-"],
 [class*="PageContentBody-contentBody-"],
-.react-tabs__tab-panel .react-tabs__tab-panel--selected > div {
+.react-tabs__tab-panel .react-tabs__tab-panel--selected>div {
     color: var(--text);
 }
 
@@ -663,6 +665,7 @@ a:hover {
 input::-webkit-input-placeholder {
     color: var(--text);
 }
+
 input:focus::-webkit-input-placeholder {
     color: var(--text-hover);
 }
@@ -671,6 +674,7 @@ input:focus::-webkit-input-placeholder {
 input:-moz-placeholder {
     color: var(--text);
 }
+
 input:focus:-moz-placeholder {
     color: var(--text-hover);
 }
@@ -679,6 +683,7 @@ input:focus:-moz-placeholder {
 input::-moz-placeholder {
     color: var(--text);
 }
+
 input:focus::-moz-placeholder {
     color: var(--text-hover);
 }
@@ -687,6 +692,7 @@ input:focus::-moz-placeholder {
 input:-ms-input-placeholder {
     color: var(--text);
 }
+
 input:focus:-ms-input-placeholder {
     color: var(--text-hover);
 }
@@ -718,7 +724,7 @@ input:focus:-ms-input-placeholder {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
     color: white;
 }
 
@@ -1057,12 +1063,14 @@ input[type=password] {
     background-color: var(--button-color);
     cursor: pointer;
 }
+
 .button:hover {
     border-color: var(--button-color-hover);
     background-color: var(--button-color-hover);
     color: #fff;
     text-decoration: none;
 }
+
 .form-input:focus {
     outline: 0;
     border-color: #fff;

@@ -54,8 +54,18 @@ h4,
 h5,
 h6,
 p,
-.inverse .h1, .inverse .h2, .inverse .h3, .inverse .h4, .inverse .h5, .inverse .h6, .inverse h1, .inverse h2, .inverse h3, .inverse h4, .inverse h5, .inverse h6
-.dark .torrents__alert,
+.inverse .h1,
+.inverse .h2,
+.inverse .h3,
+.inverse .h4,
+.inverse .h5,
+.inverse .h6,
+.inverse h1,
+.inverse h2,
+.inverse h3,
+.inverse h4,
+.inverse h5,
+.inverse h6 .dark .torrents__alert,
 .torrents__alert {
     color: var(--text-hover);
 }
@@ -341,6 +351,7 @@ p,
     color: #39ce83;
     font-weight: 500;
 }
+
 .dark .torrent--is-condensed.torrent--is-selected .torrent__detail,
 .torrent--is-condensed.torrent--is-selected .torrent__detail,
 .dark .torrent--is-condensed.torrent--is-selected.torrent--is-stopped .torrent__detail,
@@ -414,8 +425,7 @@ p,
 
 .dark .torrent-details__table__heading--primary,
 .torrent-details__table__heading--primary,
-.dark .torrent-details__table__heading--secondary
-.torrent-details__table__heading--secondary,
+.dark .torrent-details__table__heading--secondary .torrent-details__table__heading--secondary,
 .dark .torrent-details__table__heading--tertiary,
 .torrent-details__table__heading--tertiary {
     color: var(--text-hover);
@@ -480,9 +490,13 @@ p,
     box-shadow: 1px 0 hsl(0deg 0% 100% / 12%);
     color: var(--text);
 }
-.sidebar-filter__item--heading, .sidebar-filter__item--heading:focus-visible, .sidebar-filter__item--heading:hover {
+
+.sidebar-filter__item--heading,
+.sidebar-filter__item--heading:focus-visible,
+.sidebar-filter__item--heading:hover {
     color: var(--text-hover) !important;
 }
+
 .dark .sidebar-filter__item,
 .sidebar-filter__item {
     color: var(--text);
@@ -515,9 +529,9 @@ p,
     color: var(--label-text-color);
 }
 
-.dark .sidebar-filter__item:focus-visible .icon, 
+.dark .sidebar-filter__item:focus-visible .icon,
 .dark .sidebar-filter__item:hover .icon,
-.sidebar-filter__item:focus-visible .icon, 
+.sidebar-filter__item:focus-visible .icon,
 .sidebar-filter__item:hover .icon {
     fill: rgb(var(--accent-color));
 }
@@ -565,6 +579,7 @@ p,
 .torrent--is-selected.torrent--is-stopped .progress-bar__icon .icon {
     color: #ffffff;
 }
+
 .torrent--is-selected.torrent--is-stopped .progress-bar__fill {
     background: #ffffff;
 }
@@ -629,6 +644,7 @@ p,
 .modal__tabs .modal__tab.is-active:after {
     background: rgb(var(--accent-color));
 }
+
 .modal--vertical .modal__tabs .modal__tab:after {
     width: 3px;
 }

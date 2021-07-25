@@ -116,7 +116,7 @@ a:hover {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
     color: var(--text-hover);
     border-bottom: 1px solid rgb(var(--accent-color));
 }
@@ -131,7 +131,7 @@ a:hover {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
     color: var(--text);
 }
 
@@ -143,7 +143,7 @@ a:hover {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
     color: #fff;
     border-top: 1px solid rgb(var(--accent-color));
 }
@@ -180,8 +180,8 @@ a:hover {
 }
 
 [class*="CheckInput-primaryIsChecked-"] {
-    border-color: rgb(var(--accent-color))!important;
-    background-color: rgb(var(--accent-color))!important;
+    border-color: rgb(var(--accent-color)) !important;
+    background-color: rgb(var(--accent-color)) !important;
     color: var(--label-text-color) !important;
 }
 
@@ -215,7 +215,7 @@ a:hover {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
     color: #fff !important;
     box-shadow: 0 0 10px 1px transparent !important;
 }
@@ -253,7 +253,7 @@ a:hover {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
     color: var(--text);
 }
 
@@ -287,9 +287,9 @@ a:hover {
 }
 
 [class*="PageSidebarItem-isActiveLink-"],
-[class*="PageSidebarItem-isActiveLink-"]:hover, 
+[class*="PageSidebarItem-isActiveLink-"]:hover,
 [class*="PageSidebarItem-link-"]:focus {
-    color: rgb(var(--accent-color))!important;
+    color: rgb(var(--accent-color)) !important;
 }
 
 [class*="PageSidebarItem-isActiveParentLink-"] {
@@ -305,7 +305,7 @@ a:hover {
         background-size: auto, cover;
         -webkit-background-size: auto, cover;
         -moz-background-size: auto, cover;
-        -o-background-size: auto, cover; 
+        -o-background-size: auto, cover;
     }
 }
 
@@ -316,7 +316,7 @@ a:hover {
 /* LIBRARY PAGE */
 /* LIDARR SPECIFIC */
 [class*="ArtistIndexPoster-controls-"] {
-    background-color: rgb(var(--accent-color))!important;
+    background-color: rgb(var(--accent-color)) !important;
 }
 
 /* OVERVIEW PAGE */
@@ -441,7 +441,7 @@ a:hover {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
 }
 
 [class*="Tooltip-tooltipContainer-"] {
@@ -567,7 +567,7 @@ a:hover {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
     color: var(--text);
 }
 
@@ -673,7 +673,7 @@ a:hover {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover; 
+    -o-background-size: auto, cover;
     color: #FFF;
     border: 1px solid transparent;
 }
@@ -690,6 +690,7 @@ a:hover {
 input::-webkit-input-placeholder {
     color: var(--text);
 }
+
 input:focus::-webkit-input-placeholder {
     color: var(--text-hover);
 }
@@ -698,6 +699,7 @@ input:focus::-webkit-input-placeholder {
 input:-moz-placeholder {
     color: var(--text);
 }
+
 input:focus:-moz-placeholder {
     color: var(--text-hover);
 }
@@ -706,6 +708,7 @@ input:focus:-moz-placeholder {
 input::-moz-placeholder {
     color: var(--text);
 }
+
 input:focus::-moz-placeholder {
     color: var(--text-hover);
 }
@@ -714,6 +717,7 @@ input:focus::-moz-placeholder {
 input:-ms-input-placeholder {
     color: var(--text);
 }
+
 input:focus:-ms-input-placeholder {
     color: var(--text-hover);
 }
@@ -1053,12 +1057,14 @@ input[type=password] {
     background-color: var(--button-color);
     cursor: pointer;
 }
+
 .button:hover {
     border-color: var(--button-color-hover);
     background-color: var(--button-color-hover);
     color: #fff;
     text-decoration: none;
 }
+
 .form-input:focus {
     outline: 0;
     border-color: #fff;
@@ -1122,4 +1128,3 @@ input[type=password] {
     color: #FFF;
     background-color: #f05050;
 }
-

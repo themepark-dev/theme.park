@@ -11,8 +11,9 @@
 /* 			      https://github.com/gilbN/theme.park			 */
 
 * {
-    outline: none; 
+    outline: none;
 }
+
 body {
     color: var(--text);
     background: var(--main-bg-color);
@@ -25,12 +26,18 @@ body {
     -o-background-size: auto, cover;
 }
 
-h1,h2,h3,h4,h5,h6,strong {
-color: var(--text-hover);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+    color: var(--text-hover);
 }
 
 i.fa.fa-fw {
-    color: var(--text-hover)!important;
+    color: var(--text-hover) !important;
 }
 
 a,
@@ -131,9 +138,11 @@ span.inner {
     width: 137px !important;
 }
 
-thead.sortable,thead,table.tablesorter thead tr th {
-    color: var(--text-hover);   
-   }
+thead.sortable,
+thead,
+table.tablesorter thead tr th {
+    color: var(--text-hover);
+}
 
 .sys,
 .usage-disk,
@@ -145,10 +154,11 @@ thead.sortable,thead,table.tablesorter thead tr th {
     background-color: #4caf50
 }
 
-#db-box3 > tbody.smb.share.share1.sortable > tr > td > a {
+#db-box3>tbody.smb.share.share1.sortable>tr>td>a {
     color: var(--link-color);
 }
-#db-box3 > tbody.smb.share.share1.sortable > tr > td > a:hover {
+
+#db-box3>tbody.smb.share.share1.sortable>tr>td>a:hover {
     color: var(--link-color-hover);
 }
 
@@ -363,6 +373,7 @@ div.tab [type=radio]+label {
     background-color: rgb(0 0 0 / 10%) !important;
     border-color: rgb(0 0 0 / 25%) !important;
 }
+
 .ca_holderDocker::before {
     color: rgb(255 255 255 / 40%) !important;
 }
@@ -370,17 +381,19 @@ div.tab [type=radio]+label {
 .selectedMenu {
     color: rgb(var(--accent-color)) !important;
 }
+
 .hoverMenu {
     color: var(--link-color-hover) !important;
 }
 
-.ca_descriptionArea:hover,a.ca_repoPopup:hover {
+.ca_descriptionArea:hover,
+a.ca_repoPopup:hover {
     color: var(--button-text-hover) !important;
 }
 
 .ca_templatesDisplay .ca_holderFav {
-    background: rgb(var(--accent-color),.7) !important;
-    color: var( --label-text-color) !important;
+    background: rgb(var(--accent-color), .7) !important;
+    color: var(--label-text-color) !important;
 }
 
 a.ca_appreadmore:hover {
@@ -571,7 +584,7 @@ unraid-authed::part(div[data-v-050c892a] > button) {
 #contDescription {
     background: rgb(0 0 0 / 25%);
     padding: 1%;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
 
 dt {

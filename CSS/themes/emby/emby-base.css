@@ -1,18 +1,22 @@
-
 /*TP CUSTOM */
-h1,h2, h3, h4, h5, h6,
-.inputLabel, label {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.inputLabel,
+label {
     color: var(--text-hover);
 }
 
 a:not(.emby-button),
-.cardText.cardTextCentered.cardText-first > button {
+.cardText.cardTextCentered.cardText-first>button {
     color: var(--link-color) !important;
 }
 
 a:hover:not(.emby-button),
-.cardText.cardTextCentered.cardText-first > button:hover
-    {
+.cardText.cardTextCentered.cardText-first>button:hover {
     color: var(--link-color-hover) !important;
 }
 
@@ -24,7 +28,7 @@ html {
 }
 
 .emby-collapsible-button {
-    border-color: var(--line-background)!important
+    border-color: var(--line-background) !important
 }
 
 .skinHeader-withBackground.skinHeader-withfulldrawer {
@@ -42,7 +46,8 @@ html {
     -o-background-size: auto, cover;
 }
 
-.appfooter,.formDialogFooter:not(.formDialogFooter-clear) {
+.appfooter,
+.formDialogFooter:not(.formDialogFooter-clear) {
     background: var(--footer-background);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
@@ -52,6 +57,7 @@ html {
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
 }
+
 .formDialogHeader:not(.formDialogHeader-clear) {
     background: var(--modal-header-color);
     background-repeat: repeat, no-repeat;
@@ -76,7 +82,7 @@ html {
 
 @supports (backdrop-filter: blur(1em)) or (-webkit-backdrop-filter:blur(1em)) {
     .skinHeader-withBackground {
-        background:var(--header-blur-background);
+        background: var(--header-blur-background);
         -webkit-backdrop-filter: saturate(1.8) blur(1.5em);
         backdrop-filter: saturate(1.8) blur(1.5em)
     }
@@ -89,24 +95,25 @@ html {
 }
 
 .skinHeader.semiTransparent {
-    -webkit-backdrop-filter: none!important;
-    backdrop-filter: none!important;
-    background-color: rgba(0,0,0,.3);
-    background: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.6)),to(rgba(0,0,0,0)));
-    background: -webkit-linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,0));
-    background: -o-linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,0));
-    background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,0));
-    -webkit-box-shadow: none!important;
-    box-shadow: none!important;
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+    background-color: rgba(0, 0, 0, .3);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .6)), to(rgba(0, 0, 0, 0)));
+    background: -webkit-linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0));
+    background: -o-linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0));
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0));
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
     border-bottom: 0;
-    color: rgba(255,255,255,.87)
+    color: rgba(255, 255, 255, .87)
 }
 
 .pageTitleWithDefaultLogo {
     background-image: url(https://theme-park.dev/Resources/emby/logowhite.png)
 }
 
-.backgroundContainer,html {
+.backgroundContainer,
+html {
     background: var(--theme-background);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
@@ -118,12 +125,12 @@ html {
 }
 
 .backgroundContainer.withBackdrop {
-    background-color: rgba(0,0,0,.83)
+    background-color: rgba(0, 0, 0, .83)
 }
 
 @media not all and (min-width: 50em) {
     .itemBackgroundContainer.withBackdrop {
-        background :var(--theme-background);
+        background: var(--theme-background);
         background-repeat: repeat, no-repeat;
         background-attachment: fixed, fixed;
         background-position: center center, center center;
@@ -134,25 +141,28 @@ html {
     }
 }
 
-.paper-icon-button-light-tv:focus,.paper-icon-button-light:active {
+.paper-icon-button-light-tv:focus,
+.paper-icon-button-light:active {
     color: rgb(var(--theme-primary-color));
     background-color: var(--theme-icon-focus-background)
 }
 
 @media(hover: hover) and (pointer:fine) {
     .paper-icon-button-light:focus {
-        color:rgb(var(--theme-primary-color));
+        color: rgb(var(--theme-primary-color));
         background-color: var(--theme-icon-focus-background)
     }
 }
 
-.detailButton-icon,.fab,.raised {
+.detailButton-icon,
+.fab,
+.raised {
     background: var(--button-color);
     color: var(--button-text);
 }
 
 .detailButton-icon {
-    border-color: rgba(255,255,255,.3)
+    border-color: rgba(255, 255, 255, .3)
 }
 
 .emby-select-withcolor {
@@ -167,27 +177,33 @@ html {
 }
 
 @supports (backdrop-filter: blur(1em)) or (-webkit-backdrop-filter:blur(1em)) {
-    .detailButton-icon,.emby-select-withcolor.detailTrackSelect,.fab,.raised:not(.nobackdropfilter) {
-        background:rgba(85,85,85,.3);
+
+    .detailButton-icon,
+    .emby-select-withcolor.detailTrackSelect,
+    .fab,
+    .raised:not(.nobackdropfilter) {
+        background: rgba(85, 85, 85, .3);
         -webkit-backdrop-filter: saturate(1.8) blur(1.5em);
         backdrop-filter: saturate(1.8) blur(1.5em)
     }
 
-    .dialog-blur,.toast {
+    .dialog-blur,
+    .toast {
         color: #fff;
-        background: rgba(56,56,56,.76);
+        background: rgba(56, 56, 56, .76);
         -webkit-backdrop-filter: blur(2.5em) saturate(1.8);
         backdrop-filter: blur(2.5em) saturate(1.8);
-        -webkit-box-shadow: none!important;
-        box-shadow: none!important
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important
     }
 
     .toast-large {
-        color: rgba(255,255,255,.87)
+        color: rgba(255, 255, 255, .87)
     }
 }
 
-.fab:focus,.raised:focus {
+.fab:focus,
+.raised:focus {
     background: var(--button-color-hover);
     color: var(--button-text-hover);
 }
@@ -209,12 +225,12 @@ html {
 }
 
 .emby-select-withcolor:focus {
-    border-color: rgb(var(--theme-primary-color))!important
+    border-color: rgb(var(--theme-primary-color)) !important
 }
 
 .emby-select-tv-withcolor:focus {
-    background-color: rgb(var(--theme-primary-color))!important;
-    color: #fff!important
+    background-color: rgb(var(--theme-primary-color)) !important;
+    color: #fff !important
 }
 
 .checkboxLabel {
@@ -225,7 +241,9 @@ html {
     background-color: var(--theme-icon-focus-background)
 }
 
-.inputLabelFocused,.selectLabelFocused,.textareaLabelFocused {
+.inputLabelFocused,
+.selectLabelFocused,
+.textareaLabelFocused {
     color: rgb(var(--accent-color))
 }
 
@@ -237,7 +255,8 @@ html {
     color: rgb(var(--accent-color))
 }
 
-.paperList,.visualCardBox {
+.paperList,
+.visualCardBox {
     background-color: var(--card-background)
 }
 
@@ -245,12 +264,16 @@ html {
     border: var(--line-size) solid var(--line-background)
 }
 
-.fieldDescription,.listItemBodyText-secondary,.secondaryText {
+.fieldDescription,
+.listItemBodyText-secondary,
+.secondaryText {
     color: var(--theme-body-secondary-text-color)
 }
+
 .cardText-secondary {
     color: var(--text)
 }
+
 .cardText-first {
     color: var(--theme-text-color-opaque)
 }
@@ -261,7 +284,7 @@ html {
 
 @media(hover: hover) and (pointer:fine) {
     .actionSheetMenuItem:hover {
-        background-color:rgba(255,255,255,.2)
+        background-color: rgba(255, 255, 255, .2)
     }
 }
 
@@ -269,8 +292,9 @@ html {
     background: rgb(var(--theme-primary-color));
     color: var(--label-text-color);
 }
+
 .itemSelectionCount {
-    color: var(--label-text-color)!important;
+    color: var(--label-text-color) !important;
 
 }
 
@@ -289,20 +313,20 @@ html {
 
 .alphaPickerButton-tv:focus {
     background-color: rgb(var(--theme-primary-color));
-    color: #fff!important
+    color: #fff !important
 }
 
 .detailTableBodyRow-shaded:nth-child(even) {
     background: #1c1c1c;
-    background: rgba(30,30,30,.9)
+    background: rgba(30, 30, 30, .9)
 }
 
 .listItem-border {
-    border-color: var(--line-background)!important
+    border-color: var(--line-background) !important
 }
 
 .listItem-focusscale:focus {
-    background: rgba(54,54,54,.8)
+    background: rgba(54, 54, 54, .8)
 }
 
 .progressring-spiner {
@@ -321,13 +345,15 @@ html {
     color: #cb272a
 }
 
-.emby-input,.emby-textarea {
+.emby-input,
+.emby-textarea {
     color: inherit;
     background: rgb(0 0 0 / 25%);
     border: var(--line-size) solid rgba(255, 255, 255, 0.1)
 }
 
-.emby-input:focus,.emby-textarea:focus {
+.emby-input:focus,
+.emby-textarea:focus {
     border-color: rgb(var(--theme-primary-color))
 }
 
@@ -338,8 +364,9 @@ html {
 .emby-checkbox:checked+span:before {
     border-color: rgb(var(--theme-primary-color)) !important;
     background-color: rgb(var(--theme-primary-color)) !important;
-    
+
 }
+
 .checkboxLabel::after {
     color: var(--label-text-color);
 }
@@ -372,16 +399,17 @@ html {
 
 @media(hover: hover) and (pointer:fine) {
     .navMenuOption:hover {
-        background:#303030
+        background: #303030
     }
 }
 
 .navMenuOption-selected {
-    background-color: var(--theme-icon-focus-background)!important;
+    background-color: var(--theme-icon-focus-background) !important;
     color: rgb(var(--accent-color))
 }
 
-.emby-button-focusscale:focus,.emby-button-focusscale:focus .detailButton-icon {
+.emby-button-focusscale:focus,
+.emby-button-focusscale:focus .detailButton-icon {
     background: rgb(var(--theme-primary-color));
     color: #fff
 }
@@ -407,7 +435,9 @@ html {
     outline-color: rgb(var(--theme-primary-color))
 }
 
-.channelCell,.guide-headerTimeslots,.timeslotHeaders {
+.channelCell,
+.guide-headerTimeslots,
+.timeslotHeaders {
     background: var(--theme-background);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
@@ -420,7 +450,7 @@ html {
 
 @media (pointer: coarse) {
     .channelCell-mobilefocus {
-        background:var(--theme-background)!important;
+        background: var(--theme-background) !important;
         background-repeat: repeat, no-repeat;
         background-attachment: fixed, fixed;
         background-position: center center, center center;
@@ -432,7 +462,7 @@ html {
 }
 
 .channelCell-mobilefocus:not(:focus-visible) {
-    background: var(--theme-background)!important;
+    background: var(--theme-background) !important;
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -443,7 +473,7 @@ html {
 }
 
 .channelCell-mobilefocus:not(:-moz-focusring) {
-    background: var(--theme-background)!important;
+    background: var(--theme-background) !important;
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -453,8 +483,10 @@ html {
     -o-background-size: auto, cover;
 }
 
-.channelCell,.epgRow,.programCell {
-    border-color: rgba(255,255,255,.05)
+.channelCell,
+.epgRow,
+.programCell {
+    border-color: rgba(255, 255, 255, .05)
 }
 
 .guide-currentTimeIndicatorDot {
@@ -470,22 +502,23 @@ html {
 }
 
 .programCell-sports {
-    background: #3949ab!important
+    background: #3949ab !important
 }
 
 .programCell-movie {
-    background: #5e35b1!important
+    background: #5e35b1 !important
 }
 
 .programCell-kids {
-    background: #039be5!important
+    background: #039be5 !important
 }
 
 .programCell-news {
-    background: #43a047!important
+    background: #43a047 !important
 }
 
-.channelCell:focus,.programCell:focus {
+.channelCell:focus,
+.programCell:focus {
     background-color: rgb(var(--theme-primary-color));
     color: #fff
 }
@@ -503,7 +536,7 @@ html {
 }
 
 .ratingbutton-icon-withrating {
-    color: #c33!important
+    color: #c33 !important
 }
 
 .downloadbutton-icon-on {
@@ -515,7 +548,7 @@ html {
 }
 
 .playstatebutton-icon-played {
-    color: #c33!important
+    color: #c33 !important
 }
 
 .repeatButton-active {
@@ -561,7 +594,8 @@ html {
 .cardOverlayButtonIcon {
     background-color: rgb(var(--theme-primary-color))
 }
-.cardScalable.cardPadder-portrait > div > button > i{
+
+.cardScalable.cardPadder-portrait>div>button>i {
     color: var(--label-text-color) !important;
 }
 
@@ -607,11 +641,11 @@ html {
 
 .scrollbuttoncontainer {
     color: #fff;
-    background: rgba(20,20,20,.5)
+    background: rgba(20, 20, 20, .5)
 }
 
 .recordingIcon-active {
-    color: #c33!important
+    color: #c33 !important
 }
 
 .drawerLogo {
@@ -624,16 +658,16 @@ html {
 }
 
 .emby-search-tab-button.emby-tab-button-active {
-    background: rgb(var(--accent-color))!important
+    background: rgb(var(--accent-color)) !important
 }
 
 .textActionButton.dragging {
-    background: var(--button-background)!important
+    background: var(--button-background) !important
 }
 
 .dragging-over.full-drop-target {
-    background: rgb(var(--theme-primary-color))!important;
-    color: #fff!important
+    background: rgb(var(--theme-primary-color)) !important;
+    color: #fff !important
 }
 
 .dragging-over-top:before {
@@ -649,17 +683,17 @@ html {
         background: 0 !important;
         color: var(--accent-color-hover);
     }
-    }
-    
-    .mainDrawer {
-        background: var(--header-blur-background);
-        -webkit-backdrop-filter: saturate(1.8) blur(1.5em);
-        backdrop-filter: saturate(1.8) blur(1.5em);
-    }
-    
-    .jstree-default .jstree-clicked {
-        background: rgb(var(--accent-color));
-        -webkit-border-radius: 2px;
-        border-radius: 2px;
-        color: var(--label-text-color) !important;
-    }
+}
+
+.mainDrawer {
+    background: var(--header-blur-background);
+    -webkit-backdrop-filter: saturate(1.8) blur(1.5em);
+    backdrop-filter: saturate(1.8) blur(1.5em);
+}
+
+.jstree-default .jstree-clicked {
+    background: rgb(var(--accent-color));
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    color: var(--label-text-color) !important;
+}

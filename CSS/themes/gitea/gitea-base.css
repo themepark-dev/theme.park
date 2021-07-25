@@ -167,8 +167,7 @@ h4,
 h5,
 h6,
 .ui.header,
-.ui.header .sub.header
- {
+.ui.header .sub.header {
     color: var(--text-hover);
 }
 
@@ -324,6 +323,7 @@ b:hover,
     color: var(--text-hover);
     box-shadow: none;
 }
+
 .feeds .list ul li:not(:last-child) {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -428,6 +428,7 @@ b:hover,
 .ui.menu.new-menu {
     background: rgb(0 0 0 / 25%);
 }
+
 .ui.menu.new-menu::after {
     background: transparent;
 }
@@ -974,7 +975,8 @@ a.ui.card:hover {
 
 .ui.blue.labels .label,
 .ui.ui.ui.blue.label,
-.ui.grey.labels .label, .ui.ui.ui.grey.label {
+.ui.grey.labels .label,
+.ui.ui.ui.grey.label {
     background-color: rgb(var(--accent-color)) !important;
     border-color: rgb(var(--accent-color)) !important;
     color: var(--label-text-color);
