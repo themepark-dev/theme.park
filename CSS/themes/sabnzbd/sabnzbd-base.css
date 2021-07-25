@@ -497,6 +497,7 @@ tr td.row-extra-text,
 .history-table tr td.history-completedon,
 .history-table tr td.row-extra-text {
   color: var(--text);
+  border-top: none !important;
 }
 
 .table-messages .table-messages-remove {
@@ -543,6 +544,11 @@ tr td.row-extra-text,
 
 #history-options .hover-button {
   color: rgb(var(--accent-color));
+}
+
+#history-tab .table>tbody>tr:nth-of-type(2n+1),
+.table-striped>tbody>tr:nth-of-type(2n+1) {
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 .pagination>li>a,
@@ -689,7 +695,7 @@ table {
 .table>thead>tr>td,
 .table>tbody>tr>td,
 .table>tfoot>tr>td {
-  border-top: transparent;
+  border-top: none !important;
 }
 
 .section,
@@ -826,7 +832,48 @@ input[type="week"]:focus {
   box-shadow: none !important;
 }
 
+input[type="date"] {
+  background: transparent;
+  color: white;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(100%);
+}
+
 /*Servers*/
+
+.server-disabled {
+  background: repeating-linear-gradient(-55deg,
+      #444444,
+      #444444 10px,
+      #333 10px,
+      #333 20px) center center/cover no-repeat fixed;
+  color: var(--text-muted);
+}
+
+.server-disabled p,
+.server-disabled label,
+.server-disabled h3 {
+  color: var(--text-muted) !important;
+}
+
+.server-disabled button {
+  background: #363636;
+  border-color: #363636;
+  color: var(--text-muted);
+}
+
+.server-disabled button:hover {
+  background: #464646;
+  border-color: #464646;
+  color: var(--text-muted);
+}
+
+.section .server-disabled {
+  background-color: rgba(255, 255, 255, 0);
+}
+
 .Servers .ct-label {
   color: white;
 }
