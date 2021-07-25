@@ -178,12 +178,11 @@ a[class*="MetadataTableRow-title-"]:hover {
 }
 
 [class*="NavBarActivityButton-isHighlighted-"] [class*="NavBarActivityButton-activityIcon-"] {
-  background: rgb(var(--accent-color));
-  color: #000;
+  color:  rgb(var(--accent-color));
 }
 
 [class*="NavBarActivityButton-isHighlighted-"]:hover [class*="NavBarActivityButton-activityIcon-"] {
-  background-color: var(--accent-color-hover);
+  color: var(--accent-color-hover);
 
 }
 
@@ -379,7 +378,7 @@ button:hover [class*="DisclosureArrow-disclosureArrow-"] {
 }
 
 .media-poster-container.selected .media-poster:after {
-  color: var(--button-text)
+  color: var(--label-text-color);
 }
 
 [class*="NavBarActivityMenuStatusItem-statusButtonIndicator-"] {
