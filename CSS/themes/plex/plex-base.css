@@ -180,6 +180,16 @@ a[class*="MetadataTableRow-title-"]:hover {
 [class*="NavBarActivityButton-isHighlighted-"] [class*="NavBarActivityButton-activityIcon-"] {
   color:  rgb(var(--accent-color));
 }
+/* old plex web */
+.NavBarActivityButton-isHighlighted-2YqjDs .NavBarActivityButton-activityIcon-3gF_TD {
+  background-color: rgb(var(--accent-color));
+  color: var(--label-text-color);
+}
+.NavBarActivityButton-isHighlighted-2YqjDs:hover .NavBarActivityButton-activityIcon-3gF_TD {
+  background-color: var(--accent-color-hover);
+  color: var(--label-text-color) !important;
+}
+/* /old plex web */
 
 [class*="NavBarActivityButton-isHighlighted-"]:hover [class*="NavBarActivityButton-activityIcon-"] {
   color: var(--accent-color-hover);
