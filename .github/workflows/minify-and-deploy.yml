@@ -1,0 +1,27 @@
+name: Minify CSS and deploy to live branch
+on:
+  push:
+    branches:
+      - master
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: actions/checkout@v2
+
+      - name: Auto Minify
+        uses: nizarmah/auto-minify@master
+
+      - name: Remove .min suffix from minified files
+        run: find ./CSS -depth -name "*.min.*" -exec sh -c 'mv "$1" "${1%.*.*}.${1##*.}"' _ {} \;
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/master' }}
+        with:
+          publish_dir: ./
+          publish_branch: live
+          github_token: ${{ secrets.GITHUB_TOKEN }}
