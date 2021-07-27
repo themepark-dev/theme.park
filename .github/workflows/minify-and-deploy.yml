@@ -10,6 +10,13 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
+      - name: Wrong domain check
+        run: |
+          echo "$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }})"
+          if git grep -q -E ${{ secrets.DOMAIN }} -- *.css; then
+            echo "Game over man!"
+            exit 1
+          fi
       - uses: actions/checkout@v2
 
       - name: Auto Minify
