@@ -196,6 +196,7 @@ h6 {
 .bg-plex {
     background: #e5a00d;
     color: white;
+    border-radius: 25px;
 }
 
 .tabs-style-flip nav a,
@@ -552,12 +553,47 @@ th.fc-day-header.fc-widget-header.fc-today {
 }
 
 /* loginpage sidemenu */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     .login-register>.login-box>.white-box {
         margin-top: auto !important;
         width: 100% !important;
         -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0) !important;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0) !important;
+    }
+} */
+@media (max-width: 480px) {
+    @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+        #wrapper .login-register>.login-box>.white-box {
+            background: transparent !important;
+            margin-top: auto !important;
+            width: 100% !important;
+            -webkit-backdrop-filter: blur(0px) !important;
+            backdrop-filter: blur(0px) !important;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        .login-box.login-sidebar {
+            background: rgba(0, 0, 0, .45) !important;
+            -webkit-backdrop-filter: blur(10px) !important;
+            backdrop-filter: blur(10px) !important;
+
+        }
+    }
+
+    /* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
+    @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+        #wrapper .login-register>.login-box>.white-box {
+            background: transparent !important;
+            margin-top: auto !important;
+            width: 100% !important;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+        }
+
+        .login-box.login-sidebar {
+            background: var(--modal-bg-color) !important;
+        }
     }
 }
 
@@ -609,6 +645,13 @@ label[for="checkbox-login"] {
 #to-recover:hover,
 label[for="checkbox-login"]:hover {
     color: var(--link-color-hover) !important;
+}
+
+#organizr-login-collapse>div>div.form-group.text-center.m-t-20.m-b-0>div>button {
+    background: rgb(255 255 255 / 15%) !important;
+    color: white;
+    border-radius: 25px;
+    border: none;
 }
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
@@ -682,7 +725,7 @@ label[for="checkbox-login"]:hover {
 .login-box.login-sidebar,
 #login-panels .panel-body,
 #login-panels .panel {
-    background: transparent !important;
+    background: transparent;
 }
 
 /*Center login Box*/
@@ -1739,7 +1782,6 @@ body {
 
 .bg-org:not([id="menu-"]div):not(.panel-heading) {
     background: var(--main-bg-color) !important;
-    ;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
