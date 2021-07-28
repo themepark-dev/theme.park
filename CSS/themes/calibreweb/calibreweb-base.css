@@ -236,7 +236,7 @@
 
 
  .btn-primary,
- .btn-primary>span.glyphicon:not(#edit_book > span):not(#btnGroupDrop1 > span.glyphicon.glyphicon-download):not(#add-to-shelf span) {
+ .btn-primary>span.glyphicon:not(#edit_book > span):not(#btnGroupDrop1 > span.glyphicon.glyphicon-download):not(#add-to-shelf>span::before) {
      color: var(--button-text);
      background-color: var(--button-color);
      border-color: var(--button-color);
