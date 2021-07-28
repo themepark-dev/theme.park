@@ -17,13 +17,29 @@ jobs:
             echo "Game over man!"
             exit 1
           fi
-      - uses: actions/checkout@v2
+      - name: Minify CSS
+        run: |
+          sudo npm install -g minify
+          sudo apt-get update
+          sudo apt-get -y install moreutils
 
-      #- name: Auto Minify
-      #  uses: nizarmah/auto-minify@master
-
-      #- name: Remove .min suffix from minified files
-      #  run: find ./CSS -depth -name "*.min.*" -exec sh -c 'mv "$1" "${1%.*.*}.${1##*.}"' _ {} \;
+          minify_file(){
+              directory=$1
+              basename=$(basename $directory);
+              extension="${basename##*.}"
+              output="${directory%/*}/"
+              filename="${basename%.*}"
+              output_path="${output}${filename}.${extension}"
+              minify ${directory} | sponge ${output_path}
+              echo "Minified ${directory} > ${output_path}"
+          }
+          
+            find ./CSS -type f -iname *base.css | while read fname
+                do
+                    if [[ "$fname" != *"min."* ]]; then
+                        minify_file $fname
+                    fi
+                done
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
