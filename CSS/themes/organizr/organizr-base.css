@@ -553,14 +553,7 @@ th.fc-day-header.fc-widget-header.fc-today {
 }
 
 /* loginpage sidemenu */
-/* @media (max-width: 480px) {
-    .login-register>.login-box>.white-box {
-        margin-top: auto !important;
-        width: 100% !important;
-        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0) !important;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0) !important;
-    }
-} */
+
 @media (max-width: 480px) {
     @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
         #wrapper .login-register>.login-box>.white-box {
@@ -639,15 +632,17 @@ th.fc-day-header.fc-widget-header.fc-today {
 
 #to-recover,
 label[for="checkbox-login"] {
-    color: var(--link-color) !important;
+    color: #bbb !important;
 }
 
 #to-recover:hover,
 label[for="checkbox-login"]:hover {
-    color: var(--link-color-hover) !important;
+    color: #fff !important;
 }
 
-#organizr-login-collapse>div>div.form-group.text-center.m-t-20.m-b-0>div>button {
+#organizr-login-collapse>div>div.form-group.text-center.m-t-20.m-b-0>div>button,
+#recoverform>div:nth-child(3)>div>button,
+#leave-recover {
     background: rgb(255 255 255 / 15%) !important;
     color: white;
     border-radius: 25px;
