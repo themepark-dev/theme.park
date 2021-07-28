@@ -19,11 +19,11 @@ jobs:
           fi
       - uses: actions/checkout@v2
 
-      - name: Auto Minify
-        uses: nizarmah/auto-minify@master
+      #- name: Auto Minify
+      #  uses: nizarmah/auto-minify@master
 
-      - name: Remove .min suffix from minified files
-        run: find ./CSS -depth -name "*.min.*" -exec sh -c 'mv "$1" "${1%.*.*}.${1##*.}"' _ {} \;
+      #- name: Remove .min suffix from minified files
+      #  run: find ./CSS -depth -name "*.min.*" -exec sh -c 'mv "$1" "${1%.*.*}.${1##*.}"' _ {} \;
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
