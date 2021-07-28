@@ -507,7 +507,7 @@ div.shade-black {
     background: var(--modal-bg-color) !important;
 } */
 
-.showSweetAlert,
+.showSweetAlert:not([data-has-cancel-button="false"]),
 .swal-overlay--show-modal .swal-modal {
     background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat;
