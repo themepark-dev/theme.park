@@ -1,1 +1,599 @@
-body{color:#fff!important;background-color:transparent!important}.main-view{background:linear-gradient(180deg,#ffffff00 10px,#ffffff00 100px)!important}div.flot-text{color:#fff!important}.preloader,.theme-dark,.theme-light{background:0 0!important}.login-branding{border-right:none!important}.sidemenu-open .sidemenu{background:rgba(0,0,0,.25)!important}.sidemenu__logo:hover{background:rgba(0,0,0,.25)!important}.sidemenu-item.active,.sidemenu-item:hover{background-color:rgba(0,0,0,.25)!important}@media (max-width:768px){.sidemenu .sidemenu__logo_small_breakpoint{background:var(--main-bg-color)}}.search-dropdown__col_1{background:0 0!important}.search-container{left:0!important}.navbar-page-btn{color:#fff!important}.panel-in-fullscreen .navbar{background:linear-gradient(90deg,rgba(0,0,0,.15),rgba(0,0,0,.25))!important}.search-field-wrapper{background-color:#1f1f1f!important;box-shadow:none!important}.search-field-wrapper>input{height:55px!important;background-color:rgba(0,0,0,.25)!important}.search-field-icon{background-color:rgba(0,0,0,.25)!important}.dashboard-settings__aside{background:rgba(0,0,0,.25)!important}.dashboard-page--settings-open .navbar{background:linear-gradient(90deg,rgba(0,0,0,.15),rgba(0,0,0,.25))!important}.navbar-button--primary{border-color:#ffffff00!important}.dashboard-settings__aside-header{color:#fff!important}.dashboard-settings__nav-item{color:#fff!important}.bootstrap-tagsinput{background-color:#09090b!important}.gf-form-select-wrapper .gf-form-input{background-color:#393a3b!important}.add-data-source-item{background:rgba(255,255,255,.08);-webkit-box-shadow:none;box-shadow:none}.add-data-source-item:hover{-webkit-box-shadow:none;box-shadow:none;background:rgba(255,255,255,.15);border:1px solid #00000000;color:#fff}.template-variable{color:#f79520!important}.gf-form-label{background-color:rgba(0,0,0,.25)!important;border:none!important;color:#fff}.gf-form-input:focus{color:#fff!important;background-color:#262626!important;border:none!important;box-shadow:none!important}.variable-option.highlighted,.variable-option:hover{background-color:hsla(0,0%,100%,.1)!important}.variable-value-link{padding:7.4px 10px!important;background-color:rgba(0,0,0,.25)!important;border:none!important;color:#fff!important}.gf-form-input{color:#fff!important;background-color:rgba(255,255,255,.15)!important;border:0 solid #262628!important}.navbar-button{color:#fff!important;background-color:rgba(0,0,0,.25)!important;background-image:linear-gradient(180deg,rgba(0,0,0,.25),rgba(0,0,0,.25))!important;border:none!important}.gf-timepicker-absolute-section select{background-color:#393a3b!important}.panel-container{background-color:rgba(0,0,0,.25);border:transparent;box-shadow:none!important}.panel-container--transparent,.panel-container.panel-transparent{background-color:transparent;border:transparent}.panel-header:hover{background-color:rgba(0,0,0,.25)!important}.panel-loading{color:transparent}.graph-legend-table .graph-legend-series:nth-child(odd){background:0 0!important}div.flot-text{color:#fff!important}.panel-loading{color:#fff!important}.theme-dark .react-grid-item>.react-resizable-handle:after{border-right:2px solid #fff!important;border-bottom:2px solid #fff!important}.table-panel-container{background-color:rgba(0,0,0,.25)!important}.table-panel-table td{padding:.45em 0 .45em 1.1em;border-bottom:1px solid #171819;border-right:1px solid #171819}.tabbed-view-header{box-shadow:none;background:rgba(0,0,0,.25);border-bottom:none}.tabbed-view-panel-title{padding-left:10px}.leaflet-bar a,.leaflet-bar a:hover{background-color:#1f1f1f!important;border-bottom:1px solid #1f1f1f!important;color:#fff!important}.leaflet-bar a:hover{background-color:#1b1b1b!important}.leaflet-control-attribution{display:none}.add-panel__item{background:linear-gradient(135deg,rgba(0,0,0,0),rgba(0,0,0,.25));box-shadow:-1px -1px 0 0 hsla(0,0%,100%,.1),1px 1px 0 0 transparent}.add-panel__item.active,.add-panel__item:hover{background:linear-gradient(135deg,rgba(0,0,0,.25),rgba(0,0,0,.25))}.add-panel__header{background:rgba(0,0,0,.25);box-shadow:none;border-bottom:0}:root{--main-bg-color:url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"),url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-light2.png") center center/cover no-repeat fixed;--modal-bg-color:url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"),url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-dark2.png") center center/cover no-repeat fixed;--button-color:#cc7b19;--button-color-hover:#e59029;--accent-color:#e5a00d;--accent-color-hover:#ffc107}.css-bnbqsv{background:var(--main-bg-color)}.css-3iwqj4{background:0 0}#login-view>div>form>div:nth-child(1)>div:nth-child(2)>div>div>input,#login-view>div>form>div:nth-child(2)>div:nth-child(2)>div>div>input{height:38px}.btn-primary,.css-14zdxje-button,.css-179z9yx-button,.css-19kbjxc-button,.css-1ihbihm-button,.css-1vlnne-button,.css-370vzt-button,.css-cc7c9f-button,.css-msayan-button,.css-y3nv3e-button,.gf-form-button-row a,.gf-form-button-row button,.page-action-bar>a,.page-action-bar>button{background:var(--button-color)!important;background-color:var(--button-color)!important;border-color:var(--button-color)}.btn-primary:hover,.css-14zdxje-button:focus,.css-14zdxje-button:hover,.css-179z9yx-button:focus,.css-179z9yx-button:hover,.css-19kbjxc-button:focus,.css-19kbjxc-button:hover,.css-1ihbihm-button:focus,.css-1ihbihm-button:hover,.css-1vlnne-button:focus,.css-1vlnne-button:hover,.css-370vzt-button:focus,.css-370vzt-button:hover,.css-cc7c9f-button:focus,.css-cc7c9f-button:hover,.css-msayan-button:focus,.css-msayan-button:hover,.css-y3nv3e-button:focus,.css-y3nv3e-button:hover,.gf-form-button-row a,.gf-form-button-row button:hover{color:#fff;background:var(--button-color-hover)!important;background-color:var(--button-color-hover)!important;box-shadow:none!important}.css-1d9e5zy-button{color:#fff;background:var(--button-color)}.css-1d9e5zy-button:hover{color:#fff;background:var(--button-color-hover)}input:focus{box-shadow:none!important}.css-17rc2pp-input-wrapper:focus,.css-1i9is3t:focus{box-shadow:none;color:transparent}.gf-form-select-box__control--is-focused{border-color:transparent;outline:0;-webkit-box-shadow:none!important;box-shadow:none!important}.css-1bjepp-input-input{background-color:hsla(0,0%,100%,.25);border-radius:3px;border-color:transparent;-webkit-transition:background-color .15s ease-in-out,box-shadow .15s ease-in-out!important;transition:background-color .15s ease-in-out,box-shadow .15s ease-in-out!important}.css-1bjepp-input-input:focus{box-shadow:none!important;background-color:#fff;color:#000;transition:background-color .2s;-webkit-transition:background-color .2s;border-radius:3px}.css-14hvfbu-input-wrapper:focus{border-color:transparent!important;box-shadow:none!important}.css-1w5c5dq-input-inputWrapper input:not(:last-child){height:100%}.css-1bjepp-input-input:disabled{background-color:rgba(0,0,0,.5);color:#9fa7b3}.css-1bjepp-input-input:hover{border-color:transparent}body>grafana-app>div>div>react-container>div>div>div.view>div>div.page-container.page-body>div:nth-child(2)>form>div>div>div>div.css-1w5c5dq-input-inputWrapper>input{height:100%}.css-x9mxj5{background:var(--main-bg-color)}.css-1m6pigl:focus+label{outline-offset:2px;box-shadow:rgba(20,22,25,0) 0 0 0 2px,rgba(31,97,196,0) 0 0 0 4px!important;z-index:3;outline:transparent dotted 2px;transition:all .2s cubic-bezier(.19,1,.22,1) 0s}.css-1m6pigl:checked+label{color:var(--accent-color)!important;border-color:rgba(255,255,255,.1);background:rgba(0,0,0,.5)}.css-b40tk8:focus+label{box-shadow:rgba(20,22,25,0) 0 0 0 2px,rgba(31,97,196,0) 0 0 0 4px!important}.css-y0yg3l{background:var(--main-bg-color);border-color:transparent}.css-y0yg3l{background:rgba(0,0,0,.25)!important;border-color:transparent}.css-1je3bh6{background:0 0;border-bottom:1px solid transparent}.css-1umfglk{background:rgba(0,0,0,.25)}.css-1umfglk:hover{background:rgba(0,0,0,.35)}.css-1ow9mne-input-input{line-height:1.5;height:38px;background-color:hsla(0,0%,100%,.25);border-radius:3px;border-color:transparent;-webkit-transition:background-color .15s ease-in-out,box-shadow .15s ease-in-out!important;transition:background-color .15s ease-in-out,box-shadow .15s ease-in-out!important}.css-1ow9mne-input-input{box-shadow:none!important;background-color:#fff;color:#000;transition:background-color .2s;-webkit-transition:background-color .2s;height:38px;border-radius:3px}.css-13o428a{margin:10px 0 0}.css-15xxblz,.css-1ld19yb{background:rgba(0,0,0,.25)}.css-1as70ku,.css-u5zjuh{background:rgba(0,0,0,.25)}.css-17abkeq,.css-5ak73y{color:#fff}body>grafana-app>div>div>react-container>div>div>div.view>div>div.page-container.page-body>form>div:nth-child(4)>div:nth-child(2)>div>div.css-1w5c5dq-input-inputWrapper>input{height:100%}.css-1marj6o{display:flex;-webkit-box-pack:justify;justify-content:space-between;padding:8px;background:0 0;border-bottom:1px solid transparent}.css-azp59k{background:var(--main-bg-color)}.css-hz0utb{background:rgba(0,0,0,.35);border-right:1px solid transparent}.css-fpnw35,.css-wvxxxy,.query-keyword{font-weight:500;color:var(--accent-color)}.css-lvafs5{background:rgba(0,0,0,.5)}.css-ui3sz4-activeTabStyle{margin-right:16px;position:relative;display:block;color:#d8d9da;cursor:default;list-style:none;padding:11px 15px 9px;border-style:solid;border-image:initial;border-width:0 1px 1px;border-radius:3px 3px 0 0;border-color:transparent!important;background:rgba(0,0,0,.5);overflow:hidden}.css-1awj6q7-counter{background-color:rgba(0,0,0,.5);color:#fff}.css-y2f54e{background:rgba(0,0,0,.25)}.css-y2f54e:hover{background:rgba(0,0,0,.35)}.css-1e8invk::before{background:rgba(0,0,0,.35)!important}.css-1xj5tuf{background:rgba(0,0,0,.35);border-left:1px solid transparent}.css-1majipf{border-bottom:1px solid rgba(255,255,255,.08)}.css-1f38lle:focus{box-shadow:none!important}.css-1gokw4e input:checked+label,.css-1gokw4e input:checked+label:hover{background:var(--accent-color)}.css-1gokw4e label{background:#fff}.css-1lemfi9{background:rgba(0,0,0,.25);border-color:transparent}.css-1fsv7gr:hover>div:first-child{border-color:var(--accent-color)}.css-1emhacm-currentVisualizationItem>div:first-child{outline-offset:2px;box-shadow:#141619 0 0 0 2px,var(--accent-color) 0 0 0 4px}body>grafana-app>div>div>react-container>div>div.css-azp59k>div.css-1bd2u9>div>div.Pane.vertical.Pane2>div>div>div.css-1xj5tuf>div>div.view>div:nth-child(3)>div:nth-child(1)>div.panel-options-group__body>panel-editor-tab>panel-editor-tab-singlestatoptions>div>div:nth-child(2)>div:nth-child(6)>unit-picker>div>div>div>div>input{height:100%}.css-m58wdd:hover{color:rgba(255,255,255,.94);z-index:2;border-width:1px;border-style:solid;border-color:rgba(255,255,255,.1);border-image:initial;background:rgba(255,255,255,.15)}.css-m58wdd{color:rgba(255,255,255,.94);z-index:2;border-width:1px;border-style:solid;border-color:rgba(255,255,255,0);border-image:initial;background:rgba(255,255,255,.08)}input:checked+.gf-form-switch__slider{background:var(--accent-color)}.css-pii3u7:hover{border-color:rgba(255,255,255,.25)}.css-1t13ra6{border-color:rgba(255,255,255,.09)}.css-1t13ra6:hover{border-color:rgba(255,255,255,.25)}.css-1w9m9al-call-to-action-card{background:rgba(0,0,0,.25)}.dashboard-settings,.dashboard-settings__body2{background:var(--main-bg-color)}.navbar--edit{background:rgba(0,0,0,.25);border-bottom:1px solid transparent;-webkit-box-shadow:0 0 10px transparent;box-shadow:0 0 10px transparent}.grafana-info-box{background-color:rgba(0,0,0,.5);border-top:3px solid var(--accent-color)}.filter-table--hover tbody tr:hover{background:hsla(0,0%,100%,.15)}.filter-table tbody tr:nth-child(odd):hover{background:hsla(0,0%,100%,.15)!important}::placeholder{color:#fff!important}:-ms-input-placeholder{color:#fff!important}::-webkit-input-placeholder{color:#fff!important}
+
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+
+/*		   		        Made by @gilbN					 */
+/*			      https://github.com/gilbN/theme.park			 */
+
+/* GRAFANA THEME FOR ORGANIZR DASHBOARD INTEGRATION */
+body {
+    color: #FFFFFF !important;
+    background-color: transparent !important;
+}
+.main-view {
+    background: linear-gradient(180deg,#ffffff00 10px,#ffffff00 100px) !important;
+}
+div.flot-text {
+  color: #FFF !important;
+}
+/* Loading page */
+.theme-dark, .theme-light, .preloader {
+    background: transparent !important;
+}
+
+/* login page */
+.login-branding {
+    border-right: none !important;
+}
+
+/* sidemenu */
+.sidemenu-open .sidemenu {
+    background: rgba(0, 0, 0, .25) !important;
+}
+.sidemenu__logo:hover {
+    background: rgba(0, 0, 0, .25) !important;
+}
+.sidemenu-item.active, .sidemenu-item:hover {
+    background-color: rgba(0, 0, 0, .25) !important;
+}
+@media (max-width: 768px) {
+.sidemenu .sidemenu__logo_small_breakpoint {
+    background: var(--main-bg-color);
+}
+}
+
+/* Dashboard dropdown menu */
+.search-dropdown__col_1 {
+    background: transparent !important;
+}
+.search-container {
+    left: 0px !important;
+}
+.navbar-page-btn {
+    color: #FFF !important;
+}
+
+/* Panel fullscreen navbar */
+.panel-in-fullscreen .navbar {
+    background: linear-gradient(90deg,rgba(0, 0, 0, .15),rgba(0, 0, 0, 0.25)) !important;
+}
+
+/* Dashboard search menu */
+.search-field-wrapper {
+	background-color: #1f1f1f !important;
+	box-shadow: none !important;
+}
+.search-field-wrapper>input {
+	height: 55px !important;
+    background-color: rgba(0, 0, 0, 0.25) !important;
+}
+.search-field-icon {
+    background-color: rgba(0, 0, 0, .25) !important;
+}
+
+/* Dashboard settings menu */
+.dashboard-settings__aside {
+    background: rgba(0, 0, 0, .25) !important;
+}
+.dashboard-page--settings-open .navbar {
+    background: linear-gradient(90deg,rgba(0, 0, 0, .15),rgba(0, 0, 0, 0.25)) !important;
+}
+.navbar-button--primary {
+    border-color: #ffffff00 !important;
+}
+.dashboard-settings__aside-header {
+    color: #ffffff !important;
+}
+.dashboard-settings__nav-item {
+    color: #ffffff !important;
+}
+.bootstrap-tagsinput {
+    background-color: #09090b !important;
+}
+.gf-form-select-wrapper .gf-form-input {
+    background-color: #393a3b !important;
+}
+
+/*Datasources Menu*/
+
+.add-data-source-item {
+    background: rgba(255, 255, 255, 0.08);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.add-data-source-item:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid #00000000;
+    color: #fff;
+}
+/* Variable label color */
+.template-variable {
+    color: #f79520 !important;
+}
+
+/* Variable label box */
+.gf-form-label {
+    background-color: rgba(0, 0, 0, 0.25) !important;
+	   border: none !important;
+     color: #FFF;
+}
+.gf-form-input:focus {
+    color: #FFF !important;
+    background-color: #262626 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.variable-option.highlighted, .variable-option:hover {
+    background-color: hsla(0,0%,100%,.1) !important;
+}
+
+/* Variable dashboard dropdown */
+.variable-value-link {
+    padding: 7.4px 10px !important;
+    background-color: rgba(0, 0, 0, 0.25) !important;
+    border: none !important;
+    color: #FFFFFF !important;
+}
+
+/* Variable input box */
+.gf-form-input {
+	color: #FFFFFF !important;
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    border: 0px solid #262628 !important;
+
+}
+
+/* NAVBAR BUTTONS */
+.navbar-button {
+    color: #FFF !important;
+    background-color: rgba(0, 0, 0, 0.25) !important;
+    background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)) !important;
+    border: none !important;
+}
+
+/* Custom Range Refreshing every X Dropdown */
+.gf-timepicker-absolute-section select {
+    background-color: #393a3b !important;
+}
+
+/* PANEL BACKGROUND COLOR*/
+.panel-container {
+    background-color: rgba(0, 0, 0, .25);
+    border: transparent;
+    box-shadow: none !important;
+}
+.panel-container.panel-transparent, .panel-container--transparent {
+background-color: transparent;
+  border: transparent;
+}
+.panel-header:hover {
+    background-color: rgba(0, 0, 0, 0.25) !important;
+}
+.panel-loading {
+    color: transparent;
+}
+/* ////PANEL BACKGROUND COLOR//// */
+
+.graph-legend-table .graph-legend-series:nth-child(odd) {
+    background: transparent !important;
+}
+
+/* Panel text color*/
+div.flot-text {
+    color: #FFF !important;
+}
+
+/* panel loading circle*/
+.panel-loading {
+    color: #FFF !important;
+}
+
+/* panel resize arrow */
+.theme-dark .react-grid-item>.react-resizable-handle:after {
+    border-right: 2px solid #fff !important;
+    border-bottom: 2px solid #fff !important;
+}
+
+/* table panel background color */
+.table-panel-container {
+    background-color: rgba(0, 0, 0, .25) !important;
+}
+/* table panel border size */
+.table-panel-table td {
+    padding: .45em 0 .45em 1.1em;
+    border-bottom: 1px solid #171819;
+    border-right: 1px solid #171819;
+}
+/* Edit panel tabs  */
+.tabbed-view-header {
+    box-shadow: none;
+    background: rgba(0, 0, 0, 0.25);
+    border-bottom: none;
+}
+.tabbed-view-panel-title {
+    padding-left: 10px;
+}
+/* worldmap zoom buttons and leaflet  */
+.leaflet-bar a, .leaflet-bar a:hover {
+    background-color: #1f1f1f !important;
+    border-bottom: 1px solid #1f1f1f !important;
+    color: white !important;
+}
+.leaflet-bar a:hover {
+    background-color: #1b1b1b !important;
+}
+.leaflet-control-attribution {
+    display: none;
+}
+/* New Dashboard */
+.add-panel__item {
+    background: linear-gradient(135deg,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.25));
+    box-shadow: -1px -1px 0 0 hsla(0,0%,100%,.1), 1px 1px 0 0 rgba(0, 0, 0, 0);
+}
+.add-panel__item.active, .add-panel__item:hover {
+    background: linear-gradient(135deg,rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25));
+}
+.add-panel__header {
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: none;
+    border-bottom: 0px;
+}
+
+@import url(https://theme-park.dev/CSS/themes/grafana/grafana-base.css);
+
+:root {
+  --main-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-light2.png") center center/cover no-repeat fixed;
+  --modal-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-dark2.png") center center/cover no-repeat fixed;
+ 
+  --button-color: #cc7b19;
+  --button-color-hover: #e59029;
+  --accent-color:  #e5a00d;
+  --accent-color-hover: #ffc107;
+}
+
+
+/*V7*/
+
+/*LOGIN*/
+.css-bnbqsv {background: var(--main-bg-color)}
+.css-3iwqj4 { background: transparent;}
+#login-view > div > form > div:nth-child(1) > div:nth-child(2) > div > div > input, #login-view > div > form > div:nth-child(2) > div:nth-child(2) > div > div > input {
+    height: 38px;
+}
+/*Buttons*/
+.css-y3nv3e-button,
+.css-cc7c9f-button,
+.css-1vlnne-button,
+.css-1ihbihm-button,
+.css-14zdxje-button,
+.css-179z9yx-button,
+.css-370vzt-button,
+.css-msayan-button,
+.css-19kbjxc-button,
+.gf-form-button-row a, .gf-form-button-row button,
+.page-action-bar>a, .page-action-bar>button,
+.btn-primary{ 
+background: var(--button-color) !important;
+background-color: var(--button-color) !important;
+border-color: var(--button-color);
+}
+.css-y3nv3e-button:hover, 
+.css-y3nv3e-button:focus, 
+.css-cc7c9f-button:hover,
+.css-cc7c9f-button:focus,
+.css-1vlnne-button:hover,
+.css-1vlnne-button:focus,
+.css-1ihbihm-button:hover,
+.css-1ihbihm-button:focus,
+.css-14zdxje-button:hover,
+.css-14zdxje-button:focus,
+.css-179z9yx-button:hover,
+.css-179z9yx-button:focus,
+.css-370vzt-button:hover,
+.css-370vzt-button:focus,
+.css-msayan-button:hover,
+.css-msayan-button:focus,
+.css-19kbjxc-button:hover,
+.css-19kbjxc-button:focus,
+.gf-form-button-row a, .gf-form-button-row button:hover,
+.btn-primary:hover{
+color: rgb(255, 255, 255);
+background: var(--button-color-hover) !important;
+background-color: var(--button-color-hover) !important;
+box-shadow: none !important;
+} 
+.css-1d9e5zy-button {color: #fff; background: var(--button-color)}
+.css-1d9e5zy-button:hover {color: #fff; background: var(--button-color-hover)}
+
+/*INPUT*/
+input:focus {box-shadow: none !important;}
+.css-17rc2pp-input-wrapper:focus, .css-1i9is3t:focus {
+box-shadow:none;
+color: transparent;
+}
+.gf-form-select-box__control--is-focused {
+border-color: transparent;
+outline: none;
+-webkit-box-shadow: none !important;
+box-shadow: none !important;
+}
+
+.css-1bjepp-input-input {
+background-color: hsla(0,0%,100%,.25);
+border-radius: 3px;
+border-color: transparent;
+-webkit-transition: background-color .15s ease-in-out,box-shadow .15s ease-in-out !important;
+transition: background-color .15s ease-in-out,box-shadow .15s ease-in-out !important;
+}
+
+.css-1bjepp-input-input:focus {
+box-shadow: none !important;
+background-color: white;
+color: black;
+transition: background-color .2s;
+-webkit-transition: background-color .2s;
+border-radius: 3px;
+}
+.css-14hvfbu-input-wrapper:focus { 
+border-color:transparent !important;
+box-shadow: none !important;    
+}
+.css-1w5c5dq-input-inputWrapper input:not(:last-child) {
+    height: 100%
+}
+/*Disabled input*/
+.css-1bjepp-input-input:disabled {
+    background-color: rgba(0, 0, 0, .5);
+    color: rgb(159, 167, 179);
+}
+.css-1bjepp-input-input:hover {border-color: transparent;}
+body > grafana-app > div > div > react-container > div > div > div.view > div > div.page-container.page-body > div:nth-child(2) > form > div > div > div > div.css-1w5c5dq-input-inputWrapper > input {height: 100%;}
+
+
+/* SEARCH */
+.css-x9mxj5 {
+background: var(--main-bg-color);
+}
+.css-1m6pigl:focus + label {
+outline-offset: 2px;
+box-shadow: rgba(20, 22, 25, 0) 0px 0px 0px 2px, rgba(31, 97, 196, 0) 0px 0px 0px 4px !important;
+z-index: 3;
+outline: transparent dotted 2px;
+transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+}
+.css-1m6pigl:checked + label {
+color: var(--accent-color) !important;
+border-color: rgba(255, 255, 255, .1);
+background: rgba(0, 0, 0, .5);
+}
+.css-b40tk8:focus + label {
+box-shadow: rgba(20, 22, 25, 0) 0px 0px 0px 2px, rgba(31, 97, 196, 0) 0px 0px 0px 4px !important;
+
+}
+.css-y0yg3l {
+background: var(--main-bg-color);
+border-color: transparent;
+}
+.css-y0yg3l {
+background: rgba(0, 0, 0, .25) !important;
+border-color: transparent;
+}
+
+.css-1je3bh6 {
+background: transparent;
+border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+/*Folder bars*/
+.css-1umfglk {
+background: rgba(0, 0, 0, .25);
+}
+.css-1umfglk:hover {
+background: rgba(0, 0, 0, .35);
+}
+
+/* Login Error message*/
+.css-1ow9mne-input-input {
+line-height: 1.5;
+height: 38px;
+background-color: hsla(0,0%,100%,.25);
+border-radius: 3px;
+border-color: transparent;
+-webkit-transition: background-color .15s ease-in-out,box-shadow .15s ease-in-out !important;
+transition: background-color .15s ease-in-out,box-shadow .15s ease-in-out !important;
+}
+.css-1ow9mne-input-input {
+box-shadow: none !important;
+background-color: white;
+color: black;
+transition: background-color .2s;
+-webkit-transition: background-color .2s;
+height: 38px;
+border-radius: 3px;
+}
+.css-13o428a {
+margin: 10px 0px 0px;
+}
+
+/*Welcome to Grafana*/
+.css-15xxblz,.css-1ld19yb {background: rgba(0, 0, 0, .25);}
+
+.css-1as70ku, .css-u5zjuh {
+background: rgba(0, 0, 0, .25);}
+.css-17abkeq, .css-5ak73y  {
+color: #fff;
+}
+
+
+/* Import */
+body > grafana-app > div > div > react-container > div > div > div.view > div > div.page-container.page-body > form > div:nth-child(4) > div:nth-child(2) > div > div.css-1w5c5dq-input-inputWrapper > input {height:100%}
+
+
+/*PANEL EDIT*/
+
+/*Header*/
+.css-1marj6o {
+display: flex;
+-webkit-box-pack: justify;
+justify-content: space-between;
+padding: 8px;
+background: transparent;
+border-bottom: 1px solid transparent;
+}
+/*Background*/
+.css-azp59k {
+background: var(--main-bg-color);
+}
+/*Query box*/
+.css-hz0utb {
+background: rgba(0, 0, 0, .35);
+border-right: 1px solid rgba(0, 0, 0, 0);
+}
+.query-keyword, .css-wvxxxy, .css-fpnw35   {
+    font-weight: 500;
+    color: var(--accent-color);
+}
+.css-lvafs5 {
+    background: rgba(0, 0, 0, .5);
+}
+
+.css-ui3sz4-activeTabStyle {
+margin-right: 16px;
+position: relative;
+display: block;
+color: rgb(216, 217, 218);
+cursor: default;
+list-style: none;
+padding: 11px 15px 9px;
+border-style: solid;
+border-image: initial;
+border-width: 0px 1px 1px;
+border-radius: 3px 3px 0px 0px;
+border-color: transparent !important;
+background: rgba(0, 0, 0, .5);
+overflow: hidden;
+}
+.css-1awj6q7-counter {
+background-color: rgba(0, 0, 0, .5);
+color: rgb(255, 255, 255);
+}
+/*Transform tab*/
+.css-y2f54e {
+background: rgba(0, 0, 0, .25);
+}
+.css-y2f54e:hover {
+background: rgba(0, 0, 0, .35);
+}
+.css-1e8invk::before {
+background:rgba(0, 0, 0, .35) !important;
+}
+
+/* Right side menu*/
+.css-1xj5tuf {
+background: rgba(0, 0, 0, .35);
+border-left: 1px solid transparent;
+}
+/*Dropdown bottom borders*/
+.css-1majipf {
+border-bottom: 1px solid rgba(255, 255, 255, .08);
+}
+/*Settings text input*/
+.css-1f38lle:focus {
+    box-shadow: none !important;
+}
+.css-1gokw4e input:checked + label, .css-1gokw4e input:checked + label:hover {
+background: var(--accent-color);
+}
+.css-1gokw4e label {
+    background: white;
+}
+/*Visualization*/
+.css-1lemfi9 {
+    background: rgba(0, 0, 0, .25);
+    border-color: transparent;
+}
+.css-1fsv7gr:hover > div:first-child {
+    border-color: var(--accent-color);
+}
+.css-1emhacm-currentVisualizationItem > div:first-child {
+    outline-offset: 2px;
+    box-shadow: rgb(20, 22, 25) 0px 0px 0px 2px, var(--accent-color) 0px 0px 0px 4px;
+}
+/*Old stat panel unit dropdown */
+body > grafana-app > div > div > react-container > div > div.css-azp59k > div.css-1bd2u9 > div > div.Pane.vertical.Pane2 > div > div > div.css-1xj5tuf > div > div.view > div:nth-child(3) > div:nth-child(1) > div.panel-options-group__body > panel-editor-tab > panel-editor-tab-singlestatoptions > div > div:nth-child(2) > div:nth-child(6) > unit-picker > div > div > div > div > input {
+height: 100%;
+}
+/*Buttons*/
+.css-m58wdd:hover {
+    color: rgba(255, 255, 255, .94);
+    z-index: 2;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, .1);
+    border-image: initial;
+    background: rgba(255, 255, 255, .15)
+}
+.css-m58wdd {
+    color: rgba(255, 255, 255, .94);
+    z-index: 2;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0);
+    border-image: initial;
+    background: rgba(255, 255, 255, .08)
+}
+input:checked+.gf-form-switch__slider {
+background: var(--accent-color);
+}
+/* RuPaul Drag Line*/
+.css-pii3u7:hover {
+border-color: rgba(255, 255, 255, .25);
+}
+
+.css-1t13ra6 {
+border-color: rgba(255, 255, 255, .09);
+}
+.css-1t13ra6:hover {
+    border-color: rgba(255, 255, 255, .25); 
+}
+
+/*SETTINGS*/
+/*Teams*/
+.css-1w9m9al-call-to-action-card {
+    background: rgba(0, 0, 0, .25);
+    }
+
+
+/*DASHBOARD SETINGS*/
+.dashboard-settings,.dashboard-settings__body2 {
+    background: var(--main-bg-color);
+}
+.navbar--edit {
+    background: rgba(0, 0, 0, .25);
+    border-bottom: 1px solid transparent;
+    -webkit-box-shadow: 0 0 10px transparent;
+    box-shadow: 0 0 10px transparent;
+}
+.grafana-info-box {
+background-color: rgba(0, 0, 0, .5);
+border-top: 3px solid var(--accent-color);
+}
+/* Variables*/
+.filter-table--hover tbody tr:hover {
+    background: hsla(0,0%,100%,.15);
+}
+.filter-table tbody tr:nth-child(odd):hover {
+background: hsla(0,0%,100%,.15) !important;
+}
+/*Placeholder text*/
+::placeholder {color: #fff !important;}
+:-ms-input-placeholder {color: #fff !important;}
+::-webkit-input-placeholder {color: #fff !important;}

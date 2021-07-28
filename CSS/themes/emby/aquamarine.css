@@ -1,1 +1,63 @@
-@import url(https://theme-park.dev/CSS/themes/emby/emby-base.css);@import url(https://theme-park.dev/CSS/variables/aquamarine.css);:root{--theme-primary-color:var(--accent-color);--theme-text-color:var(--text);--theme-text-color-opaque:var(--text-hover);--theme-accent-text-color:var(--accent-color);--theme-primary-color-lightened:var(--accent-color-hover);--theme-icon-focus-background:rgba(var(--accent-color), 0.2);--theme-background:var(--main-bg-color);--header-blur-background:rgba(20,20,20,0.66);--drawer-background:#2C2C2E;--docked-drawer-background:rgba(0, 0, 0, 0.25);--button-background:var(--button-color);--card-background:rgba(0, 0, 0, 0.15);--footer-background:var(--modal-footer-color);--footer-blur-background:rgba(29,29,31,0.66);--header-background:var(--theme-background);--theme-body-secondary-text-color:rgba(255, 255, 255, .6);--line-background:rgba(255, 255, 255, .08);--line-size:.08em;--scrollbar-thumb-background:rgba(255,255,255,.3)}@media (pointer:fine){:not(.layout-tv):root{--theme-background:var(--main-bg-color);--header-blur-background:rgba(20,20,20,0.66);--drawer-background:#2C2C2E;--docked-drawer-background:rgba(0, 0, 0, 0.25);--button-background:#1f1f1f;--card-background:rgba(0, 0, 0, 0.15);--footer-background:var(--modal-footer-color);--footer-blur-background:rgba(29,29,31,0.66)}}.layout-tv:root{--theme-background:var(--main-bg-color);--header-blur-background:rgba(20,20,20,0.66);--drawer-background:#2C2C2E;--docked-drawer-background:rgba(0, 0, 0, 0.25);--button-background:#1f1f1f;--card-background:rgba(0, 0, 0, 0.15);--footer-background:var(--modal-footer-color);--footer-blur-background:rgba(29,29,31,0.66)}
+
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+
+/*		   		        Made by @gilbN					 */
+/*			      https://github.com/gilbN/theme.park			 */
+
+/* EMBY AQUAMARINE THEME */
+@import url("https://theme-park.dev/CSS/themes/emby/emby-base.css");
+@import url("https://theme-park.dev/CSS/variables/aquamarine.css");
+:root {
+    --theme-primary-color: var(--accent-color);
+    --theme-text-color: var(--text);
+    --theme-text-color-opaque: var(--text-hover);
+    --theme-accent-text-color: var(--accent-color);
+    --theme-primary-color-lightened: var(--accent-color-hover);
+    --theme-icon-focus-background: rgba(var(--accent-color), 0.2);
+
+    --theme-background: var(--main-bg-color);
+    --header-blur-background: rgba(20,20,20,0.66);
+    --drawer-background: #2C2C2E;
+    --docked-drawer-background: rgba(0, 0, 0, 0.25);
+    --button-background: var(--button-color);
+    --card-background: rgba(0, 0, 0, 0.15);
+    --footer-background: var(--modal-footer-color);
+    --footer-blur-background: rgba(29,29,31,0.66);
+    
+    --header-background: var(--theme-background);
+    --theme-body-secondary-text-color: rgba(255, 255, 255, .6);
+    --line-background: rgba(255, 255, 255, .08);
+    --line-size: .08em;
+    --scrollbar-thumb-background: rgba(255,255,255,.3);
+}
+
+@media (pointer: fine) {
+    :not(.layout-tv):root {
+        --theme-background: var(--main-bg-color);
+        --header-blur-background: rgba(20,20,20,0.66);
+        --drawer-background: #2C2C2E;
+        --docked-drawer-background: rgba(0, 0, 0, 0.25);
+        --button-background: #1f1f1f;
+        --card-background: rgba(0, 0, 0, 0.15);
+        --footer-background: var(--modal-footer-color);
+        --footer-blur-background: rgba(29,29,31,0.66);
+    }
+}
+
+.layout-tv:root {
+    --theme-background: var(--main-bg-color);
+    --header-blur-background: rgba(20,20,20,0.66);
+    --drawer-background: #2C2C2E;
+    --docked-drawer-background: rgba(0, 0, 0, 0.25);
+    --button-background: #1f1f1f;
+    --card-background: rgba(0, 0, 0, 0.15);
+    --footer-background: var(--modal-footer-color);
+    --footer-blur-background: rgba(29,29,31,0.66);
+}

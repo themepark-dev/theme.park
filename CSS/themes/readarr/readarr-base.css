@@ -1,1 +1,1195 @@
-body{background:var(--main-bg-color);background-repeat:repeat,no-repeat;background-attachment:fixed,fixed;background-position:center center,center center;background-size:auto,cover;-webkit-background-size:auto,cover;-moz-background-size:auto,cover;-o-background-size:auto,cover;color:var(--text)}[class*=FormInputHelpText-helpText-]{color:var(--text)}[class*=FormInputGroup-inputUnit-]{color:var(--text)!important}[class*=Link-to-]{color:var(--text)}[class*=Link-to-]:hover{color:var(--text-hover);text-decoration:none}a{color:var(--link-color)}a:hover{color:var(--link-color-hover)}[class*=TableRowCell-cell-] [class*=Link-to-]{color:var(--link-color)!important}[class*=TableRowCell-cell-] [class*=Link-to-]:hover{color:var(--link-color-hover)!important}[class*=Button-default-]{color:var(--button-text);background-color:var(--button-color);border-color:transparent}[class*=Button-default-]:hover{border-color:transparent;background-color:var(--button-color-hover)!important;color:var(--button-text-hover)}[class*=Button-primary-]{border-color:transparent;background-color:var(--button-color);color:var(--button-text)}[class*=Button-primary-]:hover{border-color:transparent;background-color:var(--button-color-hover)!important;color:var(--button-text-hover)}[class*=Button-success-]{border-color:var(--button-color);background-color:var(--button-color);color:var(--button-text)}[class*=Button-success-]:hover{border-color:var(--button-color-hover);background-color:var(--button-color-hover);color:var(--button-text-hover)}[class*=ErrorPage-page-],[class*=ErrorPage-version-],[class*=LoadingMessage-loadingMessage-]{color:var(--text)}[class*=LoadingIndicator-ripple-]{border:2px solid #fff}[class*=ModalHeader-modalHeader-]{background:var(--modal-header-color);background-repeat:repeat,no-repeat;background-attachment:fixed,fixed;background-position:center center,center center;background-size:auto,cover;-webkit-background-size:auto,cover;-moz-background-size:auto,cover;-o-background-size:auto,cover;color:var(--text-hover);border-bottom:1px solid rgb(var(--accent-color))}[class*=Modal-large-],[class*=Modal-modal-],[class*=ModalContent-modalContent-]{background:var(--modal-bg-color);background-repeat:repeat,no-repeat;background-attachment:fixed,fixed;background-position:center center,center center;background-size:auto,cover;-webkit-background-size:auto,cover;-moz-background-size:auto,cover;-o-background-size:auto,cover;color:var(--text)}[class*=ModalFooter-modalFooter-]{background:var(--modal-footer-color);background-repeat:repeat,no-repeat;background-attachment:fixed,fixed;background-position:center center,center center;background-size:auto,cover;-webkit-background-size:auto,cover;-moz-background-size:auto,cover;-o-background-size:auto,cover;color:#fff;border-top:1px solid rgb(var(--accent-color))}[class*=ModalContent-closeButton-]:hover{color:#fff}[class*=TagInput-internalInput-]{background-color:transparent;color:#fff}[class*=SelectInput-select-]{background-color:rgba(0,0,0,.25)!important}[class*=SelectInput-select-]:active,[class*=SelectInput-select-]:focus{background:#1e1e1e!important}[class*=AutoSuggestInput-suggestionsContainer-],[class*=AutoSuggestInput-suggestionsContainerOpen-],[class*=AutoSuggestInput-suggestionsList-]{background-color:#323232!important;color:#fff;border:none!important}[class*=AutoSuggestInput-suggestionHighlighted-]{background-color:hsla(0,0%,100%,.08)}[class*=CheckInput-primaryIsChecked-]{border-color:rgb(var(--accent-color))!important;background-color:rgb(var(--accent-color))!important;color:var(--label-text-color)!important}[class*=CheckInput-input-][class*=CheckInput-isNotChecked-]{background:#fff}[class*=PageHeader-header-]{background-color:rgba(0,0,0,.35)}[class*=PageHeader-donate-]{color:#c4273c!important}[class*=AuthorSearchInput-sectionTitle-]{color:#fff}[class*=AuthorSearchInput-containerOpen-] [class*=AuthorSearchInput-authorContainer-]{border:none!important;background:var(--modal-bg-color);background-repeat:repeat,no-repeat;background-attachment:fixed,fixed;background-position:center center,center center;background-size:auto,cover;-webkit-background-size:auto,cover;-moz-background-size:auto,cover;-o-background-size:auto,cover;color:#fff!important;box-shadow:0 0 10px 1px transparent!important}[class*=AuthorSearchInput-highlighted-]{background-color:hsla(0,0%,100%,.08)}[class*"=AuthorSearchInput-authorContainer-"]::-webkit-scrollbar-thumb,[class*=ImportAuthorSelectAuthor-results-]::-webkit-scrollbar-thumb{background-color:rgba(255,255,255,.25)}[class*=ImportAuthorSelectAuthor-results-]::-webkit-scrollbar-thumb,[class*=OverlayScroller-thumb-],[class*=Scroller-scroller-]::-webkit-scrollbar-thumb{background-color:hsla(0,0%,100%,.08)!important}[class*=ImportAuthorSelectAuthor-results-]::-webkit-scrollbar-thumb:hover,[class*=OverlayScroller-thumb-]:hover,[class*=Scroller-scroller-]::-webkit-scrollbar-thumb:hover{background-color:rgba(255,255,255,.25)!important}[class*=EnhancedSelectInput-options-]{border:1px solid rgba(255,255,255,.2);border-radius:4px;background:var(--drop-down-menu-bg);background-repeat:repeat,no-repeat;background-attachment:fixed,fixed;background-position:center center,center center;background-size:auto,cover;-webkit-background-size:auto,cover;-moz-background-size:auto,cover;-o-background-size:auto,cover;color:var(--text)}[class*=EnhancedSelectInputOption-isSelected-],[class*=EnhancedSelectInputOption-isSelected-]:hover{background-color:rgba(255,255,255,.2)!important;color:var(--text-hover)}[class*=EnhancedSelectInputOption-option-]:hover{background-color:rgba(255,255,255,.08)}[class*=HintedSelectInputOption-hintText-],[class*=RootFolderSelectInputOption-freeSpace-]{color:var(--text)}[class*=PageSidebar-sidebarContainer-]{background-color:rgba(0,0,0,.25)}[class*=PageSidebar-sidebar-]{background-color:transparent}[class*=PageSidebarItem-link-]:hover{color:rgb(var(--accent-color));text-decoration:none}[class*=PageSidebarItem-isActiveLink-],[class*=PageSidebarItem-isActiveLink-]:hover,[class*=PageSidebarItem-link-]:focus{color:rgb(var(--accent-color))!important}[class*=PageSidebarItem-isActiveParentLink-]{background-color:rgba(0,0,0,.15)}@media only screen and (max-width:768px){[class*=PageSidebar-sidebarContainer-]{background:var(--main-bg-color)!important;background-repeat:repeat,no-repeat;background-attachment:fixed,fixed;background-position:center center,center center;background-size:auto,cover;-webkit-background-size:auto,cover;-moz-background-size:auto,cover;-o-background-size:auto,cover}}[class*=PageSidebarItem-isActiveItem-]{border-left:3px solid rgb(var(--accent-color))}[class*=AuthorIndexPoster-controls-]{background-color:rgb(var(--accent-color))!important}[class*=AuthorIndexOverview-container-],[class*=AuthorIndexOverview-container-]:hover{background-color:transparent!important}[class*=AuthorIndexOverview-container-]:hover [class*=AuthorIndexOverview-content-]{background-color:transparent}[class*=AuthorIndexOverview-content-]:hover{background-color:hsla(0,0%,100%,.08)!important}[class*=AuthorIndexOverview-link-]:hover{text-decoration:none}[class*=ProgressBar-container-]{background-color:rgba(0,0,0,.25)}[class*=".ProgressBar-purple-"]{background-color:rgb(var(--accent-color))}[class*=AuthorDetailsSeason-albumType-],[class*=AuthorDetailsSeason-collapseButtonContainer-]{border:none!important;background-color:rgba(0,0,0,.25)!important}[class*=AuthorDetails-metadataMessage-],[class*=AuthorDetailsSeason-albumCount-],[class*=AuthorDetailsSeason-header-]{color:#fff}.fa-search:hover{color:var(--text-hover)!important}[class*=Label-default-]{border-color:rgb(var(--accent-color));background-color:rgb(var(--accent-color));color:var(--label-text-color)}[class*=Icon-default-]:hover:not([class*=Label-large-][class*=Icon-default-],[class*=PathInput-fileBrowserButton-]svg){color:var(--text-hover)}[class*=MonitorToggleButton-toggleButton-]{color:#dadada}[class*=ProtocolLabel-torrent-]{border-color:#00853d!important;background-color:#00853d!important;color:#fff!important}[class*=ProtocolLabel-usenet-]{border-color:#17b1d9!important;background-color:#17b1d9!important;color:#fff!important}[class*=AlbumDetailsMedium-mediumNumber-]{color:#fff}[class*=AlbumDetailsMedium-medium-]{border:none;background-color:rgba(0,0,0,.25)}[class*=ExtraFileTable-container-]{border:1px solid transparent;background-color:rgba(0,0,0,.25)}[class*=AlbumDetails-selectedTab-]{border-bottom:4px solid rgb(var(--accent-color))}[class*=AlbumDetailsMedium-collapseButtonContainer-]{border:none;background-color:rgba(0,0,0,.25)}[class*=AuthorIndexProgressBar-progress-]{background-color:hsla(0,0%,100%,.08)}[class*=AuthorIndexBanner-title-],[class*=AuthorIndexBannerInfo-info-]{background-color:rgba(0,0,0,.25);color:#fff}[class*=Popover-body-],[class*=Popover-title-],[class*=SeasonInfo-title-],[class*=Tooltip-body-]{background:var(--modal-bg-color)!important;background-repeat:repeat,no-repeat;background-attachment:fixed,fixed;background-position:center center,center center;background-size:auto,cover;-webkit-background-size:auto,cover;-moz-background-size:auto,cover;-o-background-size:auto,cover}[class*=Tooltip-tooltipContainer-]{color:#fff}[class*=Tooltip-bottom-][class*=Tooltip-default-]{border-bottom-color:var(--text)}[class*=Tooltip-right-][class*=Tooltip-default-]{border-right-color:var(--text)}[class*=EpisodeTitleLink-link-]:hover{color:#fff;text-decoration:none}[class*=IconButton-button-]{color:var(--text)}[class*=Label-default-] [class*=IconButton-button-],[class*=Label-small-] [class*=IconButton-button-]:hover{color:var(--label-text-color)}[class*=IconButton-button-]:hover{background-color:transparent;color:var(--label-text-color)}[class*=AuthorDetails-authorNavigationButton-]:hover,[class*=AuthorDetails-authorUpButton-]:hover,[class*=AuthorDetailsHeader-monitorToggleButton-]:hover,[class*=BookDetails-bookNavigationButton-]:hover,[class*=BookDetails-bookUpButton-]:hover,[class*=BookDetailsHeader-monitorToggleButton-1F9Pp]:hover{color:var(--text-hover)}[class*=Table-tableContainer-] [class*=IconButton-button-]:hover{background-color:transparent;color:var(--text-hover)}[class*=Label-info-]{border-color:rgb(var(--accent-color));background-color:rgb(var(--accent-color));color:#fff}[class*=PageSidebarItem-status-][class*=Label-info-]{border-color:var(--queue-color);background-color:var(--queue-color);color:#fff}[class*=TableOptionsColumn-column-]{background:rgba(0,0,0,.25);color:var(--text-hover);border:none}[class*=TableHeaderCell-headerCell-]{color:var(--text-hover)}[class*=Table-table-]{color:var(--text)}[class*=TableRow-row-]:hover{background-color:hsla(0,0%,100%,.08);color:var(--text-hover)}[class*=TableRowCell-cell-]{border-top:1px solid rgb(255 255 255 / 25%)}[class*=PageToolbar-toolbar-]{background-color:rgba(0,0,0,.25);color:var(--text)}[class*=PageToolbarButton-label-]{color:var(--text)}[class*=PageToolbarButton-toolbarButton-][class*=PageToolbarButton-isDisabled-]{opacity:.5;color:var(--text)}[class*=PageToolbarButton-isDisabled-]:hover,[class*=PageToolbarButton-toolbarButton-][class*=PageToolbarButton-isDisabled-]:hover{color:var(--text)!important}[class*=PageToolbarButton-label-]{color:var(--text)}[class*=PageToolbarButton-toolbarButton-]:hover{color:rgb(var(--accent-color))}[class*=MenuButton-menuButton-]:hover{color:rgb(var(--accent-color))}[class*=AuthorIndexPoster-title-],[class*=AuthorIndexPosterInfo-info-]{background-color:rgba(255,255,255,.08);color:var(--text-hover)}[class*=MenuContent-menuContent-],[class*=MenuItem-menuItem-]{background:var(--drop-down-menu-bg);background-repeat:repeat,no-repeat;background-attachment:fixed,fixed;background-position:center center,center center;background-size:auto,cover;-webkit-background-size:auto,cover;-moz-background-size:auto,cover;-o-background-size:auto,cover;color:var(--text)}[class*=MenuContent-scroller-]{box-shadow:#000 0 0 5px 0}[class*=MenuItem-menuItem-]:focus,[class*=MenuItem-menuItem-]:hover{background:hsla(0,0%,100%,.08)!important;color:var(--text-hover);text-decoration:none}[class*=MenuItemSeparator-separator-]{background-color:hsla(0,0%,100%,.08)!important}[class*=PageJumpBar-jumpBar-]{color:#fff}[class*=AddNewItem-searchIconContainer-],[class*=CheckInput-isIndeterminate-],[class*=Input-input-]{border:none;background-color:rgba(255,255,255,.08);color:#fff}[class*=AuthorSearchInput-input-][class*=Input-input-]{background:0 0;border-bottom:solid 1px #fff}[class*=AuthorSearchInput-input-][class*=Input-input-]:focus{border-bottom:none;background:0 0}[class*=AuthorSearchResult-alternateTitle-]{color:#fff;font-size:12px}[class*=Input-input-]:focus{outline:0;border-color:#fff;box-shadow:none;background-color:rgba(255,255,255,.25)}[class*=TagInput-input-][class*=TagInput-isFocused-]{outline:0;border-color:#fff;box-shadow:none}[class*=PageContentBody-innerContentBody-]{color:var(--text)}[class*=AddNewAuthorSearchResult-year-]{color:#fff}[class*=AddNewAlbumSearchResult-underlay-],[class*=AddNewAuthorSearchResult-searchResult-],[class*=AddNewAuthorSearchResult-underlay-]{background-color:transparent}[class*=AddNewAlbumSearchResult-underlay-]:hover,[class*=AddNewAuthorSearchResult-searchResult-]:hover,[class*=AddNewAuthorSearchResult-underlay-]:hover{background-color:hsla(0,0%,100%,.08);color:inherit;text-decoration:none}[class*=RootFolderSelectInputSelectedValue-freeSpace-]{color:#fff}[class*=RootFolderSelectInputOption-freeSpace-]{color:var(--text-muted)}[class*=ImportAuthorSelectAuthor-content-],[class*=ImportAuthorSelectAuthor-searchIconContainer-]{background:var(--modal-bg-color);background-repeat:repeat,no-repeat;background-attachment:fixed,fixed;background-position:center center,center center;background-size:auto,cover;-webkit-background-size:auto,cover;-moz-background-size:auto,cover;-o-background-size:auto,cover;color:#fff;border:1px solid transparent}[class*=ImportAuthorName-disambiguation-]{color:var(--text-muted)}[class*=ImportAuthorSearchResult-author-]:hover{background-color:rgba(255,255,255,.08)}input::-webkit-input-placeholder{color:var(--text)}input:focus::-webkit-input-placeholder{color:var(--text-hover)}input:-moz-placeholder{color:var(--text)}input:focus:-moz-placeholder{color:var(--text-hover)}input::-moz-placeholder{color:var(--text)}input:focus::-moz-placeholder{color:var(--text-hover)}input:-ms-input-placeholder{color:var(--text)}input:focus:-ms-input-placeholder{color:var(--text-hover)}[class*=ImportAuthorSelectFolder-header-]{color:#fff}[class*=ExpandingFileDetails-fileDetails-]{border:1px solid rgb(255 255 255 / .1);background-color:rgb(255 255 255 / 8%)}[class*=ImportAuthorSelectAuthor-button-]{border:none;background-color:rgba(0,0,0,.25)!important;color:#fff}[class*=FieldSet-legend-]{color:var(--text-hover);border-bottom:1px solid rgb(var(--accent-color))}[class*=VirtualTableRow-row-]:hover{background-color:rgba(255,255,255,.08)}[class*=PageJumpBarItem-jumpBarItem-]:hover{color:#fff;background:hsla(0,0%,100%,.08)}[class*=PageContentFooter-contentFooter-]{border:none;background-color:rgba(0,0,0,.25);color:#fff}[class*=CalendarEvent-downloaded-]{background:rgb(var(--calendar-available) / .7)!important;border-left-color:transparent!important}[class*=Calendar-calendar-] [class*=CalendarEvent-downloaded-]:hover{background:rgb(var(--calendar-available) / .5)!important;border-left-color:transparent!important}[class*=CalendarEvent-missing-]{background:rgb(var(--calendar-missing) / .7)!important;border-left-color:transparent!important}[class*=Calendar-calendar-] [class*=CalendarEvent-missing-]:hover{background:rgba(var(--calendar-missing) / .5)!important;border-left-color:transparent!important}[class*=CalendarEvent-unreleased-]{background:rgb(var(--calendar-unaired) / .7)!important;border-left-color:transparent!important}[class*=Calendar-calendar-] [class*=CalendarEvent-unreleased-]:hover{background:rgb(var(--calendar-unaired) / .5)!important;border-left-color:transparent!important}[class*=CalendarEvent-unmonitored-]{background:rgb(var(--calendar-unmonitored) / .7)!important;border-left-color:transparent!important}[class*=Calendar-calendar-] [class*=CalendarEvent-unmonitored-]:hover{background:rgb(var(--calendar-unmonitored) / .5)!important;border-left-color:transparent!important}[class*=CalendarEvent-downloading-]{background:rgb(var(--calendar-downloading) / .7)!important;border-left-color:transparent!important}[class*=Calendar-calendar-] [class*=CalendarEvent-downloading-]:hover{background:rgb(var(--calendar-downloading) / .5)!important;border-left-color:transparent!important}[class*=DayOfWeek-dayOfWeek-]{background-color:hsla(0,0%,100%,.08)}[class*=CalendarDay-dayOfMonth-]{border-bottom:1px solid hsla(0,0%,100%,.08);background-color:rgba(0,0,0,.25)}[class*=CalendarDay-isToday-]{background-color:hsla(0,0%,100%,.08)!important}[class*=CalendarDay-day-],[class*=CalendarDays-days-]{-webkit-box-flex:1;-webkit-flex:1 0 14.28%;flex:1 0 14.28%;overflow:hidden;min-height:70px;border-bottom:1px solid hsla(0,0%,100%,.08);border-left:1px solid hsla(0,0%,100%,.08);border-right:1px solid hsla(0,0%,100%,.08)}[class*=CalendarEvent-event-]{border-bottom:1px solid transparent}[class*=CalendarEventGroup-eventGroup-]{border-bottom:1px solid hsla(0,0%,100%,.08)!important}[class*=AgendaEvent-event-]:hover{background-color:hsla(0,0%,100%,.08)!important}[class*=Settings-link-]{color:var(--text-hover);border-bottom:1px solid rgb(var(--accent-color))}[class*=Settings-summary-]{color:var(--text)}[class*=FormLabel-large-]{color:var(--text-hover)}[class*=FormLabel-isAdvanced-]{color:#ff902b}[class*=NamingOption-small-]{border:1px solid transparent}[class*=NamingOption-token-]{background-color:rgba(255,255,255,.15)}[class*=NamingOption-token-]{background-color:rgba(255,255,255,.15)}[class*=NamingOption-example-]{background-color:rgba(255,255,255,.25)}[class*=NamingOption-option-]{border:1px solid transparent}[class*=NamingOption-option-]:hover [class*=NamingOption-token-]{background-color:rgba(255,255,2550,.25)}[class*=NamingOption-option-]:hover [class*=NamingOption-example-]{background-color:rgba(255,255,2550,.35)}[class*=Card-card-],[class*=QualityProfiles-addQualityProfile-]{background-color:rgba(0,0,0,.45);box-shadow:0 0 10px 1px #000;color:var(--text)}[class*=Card-card-]:hover{color:var(--text-hover)}[class*=LanguageProfiles-center-],[class*=QualityProfiles-center-],[class*=ReleaseProfiles-center-]{background-color:transparent;border:none}[class*=LanguageProfileItem-languageProfileItem-],[class*=QualityProfileItem-qualityProfileItem-],[class*=QualityProfileItemGroup-qualityProfileItemGroup-]{border:none;background-color:rgba(0,0,0,.25);color:#fff}[class*=QualityProfileItemGroup-qualityProfileItemGroup-][class*=QualityProfileItemGroup-editGroups-]{background:rgba(0,0,0,.25)}[class*=KeyValueListInputItem-keyInput-],[class*=KeyValueListInputItem-valueInput-]{border:none;background:0 0;color:#fff}[class*=QualityProfileFormatItem-qualityProfileFormatItem-]{border:1px solid transparent;background:rgba(0,0,0,.25)}[class*=QualityDefinitions-sizeLimitHelpText-]{color:var(--text)}[class*=Indexers-center-]{background-color:transparent;border:none}[class*=Card-card-],[class*=QualityProfiles-addQualityProfile-]{background-color:rgba(0,0,0,.45);box-shadow:0 0 10px 1px #000;color:var(--text)}[class*=LanguageProfiles-center-],[class*=MetadataProfiles-center-],[class*=QualityProfiles-center-],[class*=RootFolders-center-]{background-color:transparent;border:none}[class*=RootFolders-center-]{border:1px solid transparent}[class*=DownloadClients-center-],[class*=ImportLists-center-],[class*=Indexers-center-],[class*=Notifications-center-],[class*=Restrictions-center-]{display:inline-block;padding:15px 20px 15px;border-radius:4px}[class*=DownloadClients-center-]{background-color:transparent;border:none}[class*=Notifications-center-]{background-color:transparent;border:none}[class*=ImportLists-center-]{background-color:transparent;border:none}[class*=Alert-info-]{border-color:transparent;background-color:rgba(0,0,0,.25);color:#ffc107}[class*=Restrictions-center-]{border:1px solid transparent;background-color:transparent}[class*=NetImports-center-]{border:1px solid transparent;background-color:transparent}[class*=CustomFormats-center-],[class*=EditCustomFormatModalContent-center-]{border:1px solid transparent;background-color:transparent}.panel-body{background-color:rgba(0,0,0,.25);color:var(--text)}.panel-header{background-color:rgba(0,0,0,.45)}.forgot-password{color:var(--text)!important}input[type=email],input[type=password]{border:none;background-color:rgba(255,255,255,.08);color:#fff}.button{border-color:var(--button-color);background-color:var(--button-color);cursor:pointer}.button:hover{border-color:var(--button-color-hover);background-color:var(--button-color-hover);color:#fff;text-decoration:none}.form-input:focus{outline:0;border-color:#fff;box-shadow:none;background-color:rgba(255,255,255,.25)}[class*=FilterBuilderRow-filterRow-]:hover{background-color:transparent}[class*=CustomFilter-customFilter-]:hover{background-color:hsla(0,0%,100%,.08)}[class*=AuthorIndexPoster-link-],[class*=AuthorIndexPoster-title-]{background-color:rgba(255,255,255,.08)}[class*=AddNewAuthorSearchResult-underlay-],[class*=AddNewBookSearchResult-underlay-]{background-color:transparent}[class*=AddNewAuthorSearchResult-underlay-]:hover,[class*=AddNewBookSearchResult-underlay-]:hover{background-color:hsla(0,0%,100%,.08);color:inherit;text-decoration:none}[class*=AuthorDetails-tab-]{color:#fff}[class*=AuthorIndexBanner-title-]{background-color:hsla(0,0%,100%,.08)}[class*=AuthorIndexOverview-container-]:hover [class*=AuthorIndexOverview-content-]{background-color:hsla(0,0%,100%,.08)}[class*=AuthorDetailsSeason-bookType-]{border:none;background-color:rgba(0,0,0,.25)}[class*=AuthorDetailsSeason-books-]{border-top:1px solid rgb(255 255 255 / 50%)}[class*=AuthorDetails-tabList-]{border-bottom:1px solid rgb(255 255 255 / 50%);color:var(--text-hover)}[class*=BookDetails-selectedTab-]{border-bottom:4px solid rgb(var(--accent-color))}[class*=BookshelfBook-book-]{border:1px solid transparent;background-color:rgba(0,0,0,.25)!important}[class*=BookshelfBook-missingWanted-]{background-color:#f05050;color:#fff}[class*=AuthorDetailsSeries-bookType-]{border:none;background-color:rgba(0,0,0,.25)}[class*=AuthorDetailsSeries-collapseButtonContainer-]{border:none;background-color:rgba(0,0,0,.25)}[class*=AuthorDetailsSeries-bookTypeLabel-]{color:#fff}[class*=AuthorDetailsSeries-bookCount-]{color:#fff}[class*=AuthorDetails-selectedTab-]{border-bottom:4px solid rgb(var(--accent-color))}[class*=AuthorDetails-metadataMessage-]{color:var(--text)}[class*=AuthorDetails-metadataMessage-] [class*=Link-to-]{color:rgb(var(--accent-color))}[class*=AuthorDetails-metadataMessage-] [class*=Link-to-]:hover{color:var(--accent-color-hover)}[class*=BookDetails-tab-]{color:#fff}
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+
+/*		   		        Made by @gilbN					 */
+/* 			      https://github.com/gilbN/theme.park			 */
+
+body {
+    background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    color: var(--text);
+}
+
+/* Froms */
+
+[class*="FormInputHelpText-helpText-"] {
+    color: var(--text);
+}
+
+[class*="FormInputGroup-inputUnit-"] {
+    color: var(--text) !important;
+}
+
+/* LINKS */
+[class*="Link-to-"] {
+    color: var(--text);
+}
+
+[class*="Link-to-"]:hover {
+    color: var(--text-hover);
+    text-decoration: none;
+}
+
+a {
+    color: var(--link-color);
+}
+
+a:hover {
+    color: var(--link-color-hover);
+}
+
+[class*="TableRowCell-cell-"] [class*="Link-to-"] {
+    color: var(--link-color) !important;
+}
+
+[class*="TableRowCell-cell-"] [class*="Link-to-"]:hover {
+    color: var(--link-color-hover) !important;
+}
+
+/* Buttons */
+
+[class*="Button-default-"] {
+    color: var(--button-text);
+    background-color: var(--button-color);
+    border-color: transparent;
+}
+
+[class*="Button-default-"]:hover {
+    border-color: transparent;
+    background-color: var(--button-color-hover) !important;
+    color: var(--button-text-hover);
+}
+
+[class*="Button-primary-"] {
+    border-color: transparent;
+    background-color: var(--button-color);
+    color: var(--button-text);
+}
+
+[class*="Button-primary-"]:hover {
+    border-color: transparent;
+    background-color: var(--button-color-hover) !important;
+    color: var(--button-text-hover);
+}
+
+[class*="Button-success-"] {
+    border-color: var(--button-color);
+    background-color: var(--button-color);
+    color: var(--button-text);
+}
+
+[class*="Button-success-"]:hover {
+    border-color: var(--button-color-hover);
+    background-color: var(--button-color-hover);
+    color: var(--button-text-hover);
+}
+
+/* LOADING PAGE */
+[class*="ErrorPage-page-"],
+[class*="ErrorPage-version-"],
+[class*="LoadingMessage-loadingMessage-"] {
+    color: var(--text);
+}
+
+[class*="LoadingIndicator-ripple-"] {
+    border: 2px solid #fff;
+}
+
+/* MODAL */
+[class*="ModalHeader-modalHeader-"] {
+    background: var(--modal-header-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    color: var(--text-hover);
+    border-bottom: 1px solid rgb(var(--accent-color));
+}
+
+[class*="Modal-large-"],
+[class*="Modal-modal-"],
+[class*="ModalContent-modalContent-"] {
+    background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    color: var(--text);
+}
+
+[class*="ModalFooter-modalFooter-"] {
+    background: var(--modal-footer-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    color: #fff;
+    border-top: 1px solid rgb(var(--accent-color));
+}
+
+[class*="ModalContent-closeButton-"]:hover {
+    color: #fff;
+}
+
+/* INPUT */
+[class*="TagInput-internalInput-"] {
+    background-color: transparent;
+    color: #fff;
+}
+
+[class*="SelectInput-select-"] {
+    background-color: rgba(0, 0, 0, 0.25) !important;
+}
+
+[class*="SelectInput-select-"]:active,
+[class*="SelectInput-select-"]:focus {
+    background: #1e1e1e !important;
+}
+
+[class*="AutoSuggestInput-suggestionsList-"],
+[class*="AutoSuggestInput-suggestionsContainerOpen-"],
+[class*="AutoSuggestInput-suggestionsContainer-"] {
+    background-color: #323232 !important;
+    color: white;
+    border: none !important;
+}
+
+[class*="AutoSuggestInput-suggestionHighlighted-"] {
+    background-color: hsla(0, 0%, 100%, .08);
+}
+
+[class*="CheckInput-primaryIsChecked-"] {
+    border-color: rgb(var(--accent-color)) !important;
+    background-color: rgb(var(--accent-color)) !important;
+    color: var(--label-text-color) !important;
+}
+
+[class*="CheckInput-input-"][class*="CheckInput-isNotChecked-"] {
+    background: #fff;
+}
+
+/* HEADER */
+
+[class*="PageHeader-header-"] {
+    background-color: rgba(0, 0, 0, .35);
+}
+
+/* SEARCH DROPDOWN HEADER */
+
+[class*="PageHeader-donate-"] {
+    color: #c4273c !important;
+}
+
+/* LIDARR SPECIFIC */
+[class*="AuthorSearchInput-sectionTitle-"] {
+    color: #fff;
+}
+
+[class*="AuthorSearchInput-containerOpen-"] [class*="AuthorSearchInput-authorContainer-"] {
+    border: none !important;
+    background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    color: #fff !important;
+    box-shadow: 0 0 10px 1px transparent !important;
+}
+
+[class*="AuthorSearchInput-highlighted-"] {
+    background-color: hsla(0, 0%, 100%, .08)
+}
+
+[class*"=AuthorSearchInput-authorContainer-"]::-webkit-scrollbar-thumb,
+[class*="ImportAuthorSelectAuthor-results-"]::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* MINI RIGHT SCROLL BAR */
+[class*="OverlayScroller-thumb-"],
+[class*="ImportAuthorSelectAuthor-results-"]::-webkit-scrollbar-thumb,
+[class*="Scroller-scroller-"]::-webkit-scrollbar-thumb {
+    background-color: hsla(0, 0%, 100%, .08) !important;
+}
+
+[class*="OverlayScroller-thumb-"]:hover,
+[class*="ImportAuthorSelectAuthor-results-"]::-webkit-scrollbar-thumb:hover,
+[class*="Scroller-scroller-"]::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.25) !important;
+}
+
+/* ADD NEW */
+[class*="EnhancedSelectInput-options-"] {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    background: var(--drop-down-menu-bg);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    color: var(--text);
+}
+
+[class*="EnhancedSelectInputOption-isSelected-"],
+[class*="EnhancedSelectInputOption-isSelected-"]:hover {
+    background-color: rgba(255, 255, 255, 0.20) !important;
+    color: var(--text-hover);
+}
+
+[class*="EnhancedSelectInputOption-option-"]:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+[class*="HintedSelectInputOption-hintText-"],
+[class*="RootFolderSelectInputOption-freeSpace-"] {
+    color: var(--text);
+}
+
+/* SIDE MENU */
+[class*="PageSidebar-sidebarContainer-"] {
+    background-color: rgba(0, 0, 0, .25);
+}
+
+[class*="PageSidebar-sidebar-"] {
+    background-color: transparent;
+}
+
+[class*="PageSidebarItem-link-"]:hover {
+    color: rgb(var(--accent-color));
+    text-decoration: none;
+}
+
+[class*="PageSidebarItem-isActiveLink-"],
+[class*="PageSidebarItem-isActiveLink-"]:hover,
+[class*="PageSidebarItem-link-"]:focus {
+    color: rgb(var(--accent-color)) !important;
+}
+
+[class*="PageSidebarItem-isActiveParentLink-"] {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+@media only screen and (max-width: 768px) {
+    [class*="PageSidebar-sidebarContainer-"] {
+        background: var(--main-bg-color) !important;
+        background-repeat: repeat, no-repeat;
+        background-attachment: fixed, fixed;
+        background-position: center center, center center;
+        background-size: auto, cover;
+        -webkit-background-size: auto, cover;
+        -moz-background-size: auto, cover;
+        -o-background-size: auto, cover;
+    }
+}
+
+[class*="PageSidebarItem-isActiveItem-"] {
+    border-left: 3px solid rgb(var(--accent-color));
+}
+
+/* LIBRARY PAGE */
+/* LIDARR SPECIFIC */
+[class*="AuthorIndexPoster-controls-"] {
+    background-color: rgb(var(--accent-color)) !important;
+}
+
+/* OVERVIEW PAGE */
+
+/* OVERVIEW PAGE */
+[class*="AuthorIndexOverview-container-"],
+[class*="AuthorIndexOverview-container-"]:hover {
+    background-color: transparent !important;
+}
+
+[class*="AuthorIndexOverview-container-"]:hover [class*="AuthorIndexOverview-content-"] {
+    background-color: transparent;
+}
+
+[class*="AuthorIndexOverview-content-"]:hover {
+    background-color: hsla(0, 0%, 100%, .08) !important;
+}
+
+[class*="AuthorIndexOverview-link-"]:hover {
+    text-decoration: none;
+}
+
+[class*="ProgressBar-container-"] {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+[class*=".ProgressBar-purple-"] {
+    background-color: rgb(var(--accent-color));
+}
+
+
+/*ARTIST PAGE*/
+[class*="AuthorDetailsSeason-albumType-"],
+[class*="AuthorDetailsSeason-collapseButtonContainer-"] {
+    border: none !important;
+    background-color: rgba(0, 0, 0, .25) !important;
+}
+
+[class*="AuthorDetailsSeason-header-"],
+[class*="AuthorDetailsSeason-albumCount-"],
+[class*="AuthorDetails-metadataMessage-"],
+[class*="AuthorDetailsSeason-albumCount-"] {
+    color: #fff;
+}
+
+.fa-search:hover {
+    color: var(--text-hover) !important;
+}
+
+[class*="Label-default-"] {
+    border-color: rgb(var(--accent-color));
+    background-color: rgb(var(--accent-color));
+    color: var(--label-text-color);
+}
+
+[class*="Icon-default-"]:hover:not([class*="Label-large-"] [class*="Icon-default-"], [class*="PathInput-fileBrowserButton-"]svg) {
+    color: var(--text-hover);
+}
+
+[class*="MonitorToggleButton-toggleButton-"] {
+    color: #dadada;
+}
+
+[class*="ProtocolLabel-torrent-"] {
+    border-color: #00853d !important;
+    background-color: #00853d !important;
+    color: #fff !important;
+}
+
+[class*="ProtocolLabel-usenet-"] {
+    border-color: #17b1d9 !important;
+    background-color: #17b1d9 !important;
+    color: #fff !important;
+}
+
+/*ARTIST ALBUM PAGE*/
+[class*="AlbumDetailsMedium-mediumNumber-"] {
+    color: #fff;
+}
+
+[class*="AlbumDetailsMedium-medium-"] {
+    border: none;
+    background-color: rgba(0, 0, 0, .25);
+}
+
+[class*="ExtraFileTable-container-"] {
+    border: 1px solid transparent;
+    background-color: rgba(0, 0, 0, .25);
+}
+
+[class*="AlbumDetails-selectedTab-"] {
+    border-bottom: 4px solid rgb(var(--accent-color));
+}
+
+[class*="AlbumDetailsMedium-collapseButtonContainer-"] {
+    border: none;
+    background-color: rgba(0, 0, 0, .25);
+}
+
+[class*="AuthorIndexProgressBar-progress-"] {
+    background-color: hsla(0, 0%, 100%, .08);
+}
+
+[class*="AuthorIndexBanner-title-"],
+[class*="AuthorIndexBannerInfo-info-"] {
+    background-color: rgba(0, 0, 0, .25);
+    color: #fff;
+}
+
+[class*="Popover-title-"],
+[class*="SeasonInfo-title-"],
+[class*="Popover-body-"],
+[class*="Tooltip-body-"] {
+    background: var(--modal-bg-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+
+[class*="Tooltip-tooltipContainer-"] {
+    color: #fff;
+}
+
+[class*="Tooltip-bottom-"][class*="Tooltip-default-"] {
+    border-bottom-color: var(--text);
+}
+
+[class*="Tooltip-right-"][class*="Tooltip-default-"] {
+    border-right-color: var(--text);
+}
+
+[class*="EpisodeTitleLink-link-"]:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+[class*="IconButton-button-"] {
+    color: var(--text);
+}
+
+[class*="Label-default-"] [class*="IconButton-button-"],
+[class*="Label-small-"] [class*="IconButton-button-"]:hover {
+    color: var(--label-text-color);
+}
+
+[class*="IconButton-button-"]:hover {
+    background-color: transparent;
+    color: var(--label-text-color);
+}
+
+[class*="AuthorDetailsHeader-monitorToggleButton-"]:hover,
+[class*="AuthorDetails-authorNavigationButton-"]:hover,
+[class*="AuthorDetails-authorUpButton-"]:hover,
+[class*="BookDetailsHeader-monitorToggleButton-1F9Pp"]:hover,
+[class*="BookDetails-bookUpButton-"]:hover,
+[class*="BookDetails-bookNavigationButton-"]:hover {
+    color: var(--text-hover);
+}
+
+[class*="Table-tableContainer-"] [class*="IconButton-button-"]:hover {
+    background-color: transparent;
+    color: var(--text-hover);
+}
+
+[class*="Label-info-"] {
+    border-color: rgb(var(--accent-color));
+    background-color: rgb(var(--accent-color));
+    color: #fff;
+}
+
+[class*="PageSidebarItem-status-"][class*="Label-info-"] {
+    border-color: var(--queue-color);
+    background-color: var(--queue-color);
+    color: #fff;
+}
+
+/* Table options*/
+[class*="TableOptionsColumn-column-"] {
+    background: rgba(0, 0, 0, .25);
+    color: var(--text-hover);
+    border: none;
+}
+
+[class*="TableHeaderCell-headerCell-"] {
+    color: var(--text-hover);
+}
+
+[class*="Table-table-"] {
+    color: var(--text);
+}
+
+[class*="TableRow-row-"]:hover {
+    background-color: hsla(0, 0%, 100%, .08);
+    color: var(--text-hover);
+}
+
+[class*="TableRowCell-cell-"] {
+    border-top: 1px solid rgb(255 255 255 / 25%);
+}
+
+/* TOP MENU SERIES */
+[class*="PageToolbar-toolbar-"] {
+    background-color: rgba(0, 0, 0, .25);
+    color: var(--text);
+}
+
+[class*="PageToolbarButton-label-"] {
+    color: var(--text);
+}
+
+[class*="PageToolbarButton-toolbarButton-"][class*="PageToolbarButton-isDisabled-"] {
+    opacity: .5;
+    color: var(--text);
+}
+
+[class*="PageToolbarButton-toolbarButton-"][class*="PageToolbarButton-isDisabled-"]:hover,
+[class*="PageToolbarButton-isDisabled-"]:hover {
+    color: var(--text) !important;
+}
+
+[class*="PageToolbarButton-label-"] {
+    color: var(--text);
+}
+
+[class*="PageToolbarButton-toolbarButton-"]:hover {
+    color: rgb(var(--accent-color));
+}
+
+[class*="MenuButton-menuButton-"]:hover {
+    color: rgb(var(--accent-color));
+}
+
+/* POSTERS */
+[class*="AuthorIndexPoster-title-"],
+[class*="AuthorIndexPosterInfo-info-"] {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: var(--text-hover);
+}
+
+
+/* TOP HEADER DROPDOWN */
+[class*="MenuItem-menuItem-"],
+[class*="MenuContent-menuContent-"] {
+    background: var(--drop-down-menu-bg);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    color: var(--text);
+}
+
+[class*="MenuContent-scroller-"] {
+    box-shadow: black 0 0 5px 0px;
+}
+
+[class*="MenuItem-menuItem-"]:hover,
+[class*="MenuItem-menuItem-"]:focus {
+    background: hsla(0, 0%, 100%, .08) !important;
+    color: var(--text-hover);
+    text-decoration: none;
+}
+
+[class*="MenuItemSeparator-separator-"] {
+    background-color: hsla(0, 0%, 100%, .08) !important;
+}
+
+/* ALPHABET JUMP BAR */
+[class*="PageJumpBar-jumpBar-"] {
+    color: #FFF;
+}
+
+/* SEARCH BAR */
+[class*="Input-input-"],
+[class*="AddNewItem-searchIconContainer-"],
+[class*="CheckInput-isIndeterminate-"] {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #fff;
+}
+
+[class*="AuthorSearchInput-input-"][class*="Input-input-"] {
+    background: transparent;
+    border-bottom: solid 1px #fff;
+}
+
+[class*="AuthorSearchInput-input-"][class*="Input-input-"]:focus {
+    border-bottom: none;
+    background: transparent;
+}
+
+[class*="AuthorSearchResult-alternateTitle-"] {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+[class*="Input-input-"]:focus {
+    outline: 0;
+    border-color: #fff;
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+[class*="TagInput-input-"][class*="TagInput-isFocused-"] {
+    outline: 0;
+    border-color: #fff;
+    box-shadow: none;
+}
+
+/* TEXT COLOR */
+
+[class*="PageContentBody-innerContentBody-"] {
+    color: var(--text);
+}
+
+/* SEARCH RESULTS */
+[class*="AddNewAuthorSearchResult-year-"] {
+    color: #fff;
+}
+
+[class*="AddNewAuthorSearchResult-searchResult-"],
+[class*="AddNewAuthorSearchResult-underlay-"],
+[class*="AddNewAlbumSearchResult-underlay-"] {
+    background-color: transparent;
+}
+
+[class*="AddNewAuthorSearchResult-searchResult-"]:hover,
+[class*="AddNewAuthorSearchResult-underlay-"]:hover,
+[class*="AddNewAlbumSearchResult-underlay-"]:hover {
+    background-color: hsla(0, 0%, 100%, .08);
+    color: inherit;
+    text-decoration: none;
+}
+
+[class*="RootFolderSelectInputSelectedValue-freeSpace-"] {
+    color: #fff;
+}
+
+[class*="RootFolderSelectInputOption-freeSpace-"] {
+    color: var(--text-muted);
+}
+
+/* IMPORT ARTIST */
+[class*="ImportAuthorSelectAuthor-content-"],
+[class*="ImportAuthorSelectAuthor-searchIconContainer-"] {
+    background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    color: #FFF;
+    border: 1px solid transparent;
+}
+
+[class*="ImportAuthorName-disambiguation-"] {
+    color: var(--text-muted);
+}
+
+[class*="ImportAuthorSearchResult-author-"]:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* MOVE THIS */
+input::-webkit-input-placeholder {
+    color: var(--text);
+}
+
+input:focus::-webkit-input-placeholder {
+    color: var(--text-hover);
+}
+
+/* Firefox < 19 */
+input:-moz-placeholder {
+    color: var(--text);
+}
+
+input:focus:-moz-placeholder {
+    color: var(--text-hover);
+}
+
+/* Firefox > 19 */
+input::-moz-placeholder {
+    color: var(--text);
+}
+
+input:focus::-moz-placeholder {
+    color: var(--text-hover);
+}
+
+/* Internet Explorer 10 */
+input:-ms-input-placeholder {
+    color: var(--text);
+}
+
+input:focus:-ms-input-placeholder {
+    color: var(--text-hover);
+}
+
+/* IMPORT */
+/* Text color */
+[class*="ImportAuthorSelectFolder-header-"] {
+    color: #FFF;
+}
+
+[class*="ExpandingFileDetails-fileDetails-"] {
+    border: 1px solid rgb(255 255 255 / .1);
+    background-color: rgb(255 255 255 / 8%);
+}
+
+/* IMPORT NEW ARTIST */
+/* Drop down menu/button*/
+[class*="ImportAuthorSelectAuthor-button-"] {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.25) !important;
+    color: #fff;
+}
+
+
+/* IMPORT */
+
+[class*="FieldSet-legend-"] {
+    color: var(--text-hover);
+    border-bottom: 1px solid rgb(var(--accent-color));
+}
+
+[class*="VirtualTableRow-row-"]:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+/*Title*/
+
+[class*="PageJumpBarItem-jumpBarItem-"]:hover {
+    color: #fff;
+    background: hsla(0, 0%, 100%, .08);
+}
+
+/*Posters*/
+
+
+/* MASS EDITOR */
+
+/* FOOTER */
+[class*="PageContentFooter-contentFooter-"] {
+    border: none;
+    background-color: rgba(0, 0, 0, .25);
+    color: #FFF;
+}
+
+/* CALENDAR */
+[class*="CalendarEvent-downloaded-"] {
+    background: rgb(var(--calendar-available) / .7) !important;
+    border-left-color: transparent !important;
+}
+
+[class*="Calendar-calendar-"] [class*="CalendarEvent-downloaded-"]:hover {
+    background: rgb(var(--calendar-available) / .5) !important;
+    border-left-color: transparent !important;
+}
+
+[class*="CalendarEvent-missing-"] {
+    background: rgb(var(--calendar-missing) / .7) !important;
+    border-left-color: transparent !important;
+}
+
+[class*="Calendar-calendar-"] [class*="CalendarEvent-missing-"]:hover {
+    background: rgba(var(--calendar-missing) / .5) !important;
+    border-left-color: transparent !important;
+}
+
+[class*="CalendarEvent-unreleased-"] {
+    background: rgb(var(--calendar-unaired) / .7) !important;
+    border-left-color: transparent !important;
+}
+
+[class*="Calendar-calendar-"] [class*="CalendarEvent-unreleased-"]:hover {
+    background: rgb(var(--calendar-unaired) / .5) !important;
+    border-left-color: transparent !important;
+}
+
+[class*="CalendarEvent-unmonitored-"] {
+    background: rgb(var(--calendar-unmonitored) / .7) !important;
+    border-left-color: transparent !important;
+}
+
+[class*="Calendar-calendar-"] [class*="CalendarEvent-unmonitored-"]:hover {
+    background: rgb(var(--calendar-unmonitored) / .5) !important;
+    border-left-color: transparent !important;
+}
+
+[class*="CalendarEvent-downloading-"] {
+    background: rgb(var(--calendar-downloading) / .7) !important;
+    border-left-color: transparent !important;
+}
+
+[class*="Calendar-calendar-"] [class*="CalendarEvent-downloading-"]:hover {
+    background: rgb(var(--calendar-downloading) / .5) !important;
+    border-left-color: transparent !important;
+}
+
+[class*="DayOfWeek-dayOfWeek-"] {
+    background-color: hsla(0, 0%, 100%, .08);
+}
+
+[class*="CalendarDay-dayOfMonth-"] {
+    border-bottom: 1px solid hsla(0, 0%, 100%, .08);
+    background-color: rgba(0, 0, 0, .25);
+}
+
+[class*="CalendarDay-isToday-"] {
+    background-color: hsla(0, 0%, 100%, .08) !important;
+}
+
+[class*="CalendarDay-day-"],
+[class*="CalendarDays-days-"] {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 14.28%;
+    flex: 1 0 14.28%;
+    overflow: hidden;
+    min-height: 70px;
+    border-bottom: 1px solid hsla(0, 0%, 100%, .08);
+    border-left: 1px solid hsla(0, 0%, 100%, .08);
+    border-right: 1px solid hsla(0, 0%, 100%, .08);
+}
+
+[class*="CalendarEvent-event-"] {
+    border-bottom: 1px solid transparent;
+}
+
+[class*="CalendarEventGroup-eventGroup-"] {
+    border-bottom: 1px solid hsla(0, 0%, 100%, .08) !important;
+}
+
+/* calendar agenda */
+[class*="AgendaEvent-event-"]:hover {
+    background-color: hsla(0, 0%, 100%, .08) !important;
+}
+
+/* SETTINGS */
+[class*="Settings-link-"] {
+    color: var(--text-hover);
+    border-bottom: 1px solid rgb(var(--accent-color));
+}
+
+[class*="Settings-summary-"] {
+    color: var(--text);
+}
+
+[class*="FormLabel-large-"] {
+    color: var(--text-hover);
+}
+
+[class*="FormLabel-isAdvanced-"] {
+    color: #ff902b;
+}
+
+/* MEDIA MANAGEMENT - FILE NAME TOKENS */
+[class*="NamingOption-small-"] {
+    border: 1px solid transparent;
+}
+
+[class*="NamingOption-token-"] {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+[class*="NamingOption-token-"] {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+[class*="NamingOption-example-"] {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+[class*="NamingOption-option-"] {
+    border: 1px solid transparent;
+}
+
+[class*="NamingOption-option-"]:hover [class*="NamingOption-token-"] {
+    background-color: rgba(255, 255, 2550, 0.25);
+}
+
+[class*="NamingOption-option-"]:hover [class*="NamingOption-example-"] {
+    background-color: rgba(255, 255, 2550, 0.35);
+}
+
+/* PROFILES */
+[class*="Card-card-"],
+[class*="QualityProfiles-addQualityProfile-"] {
+    background-color: rgba(0, 0, 0, .45);
+    box-shadow: 0 0 10px 1px #000000;
+    color: var(--text);
+}
+
+[class*="Card-card-"]:hover {
+    color: var(--text-hover);
+}
+
+[class*="QualityProfiles-center-"],
+[class*="LanguageProfiles-center-"],
+[class*="ReleaseProfiles-center-"] {
+    background-color: transparent;
+    border: none;
+}
+
+[class*="QualityProfileItem-qualityProfileItem-"],
+[class*="QualityProfileItemGroup-qualityProfileItemGroup-"],
+[class*="LanguageProfileItem-languageProfileItem-"] {
+    border: none;
+    background-color: rgba(0, 0, 0, .25);
+    color: #FFF;
+}
+
+[class*="QualityProfileItemGroup-qualityProfileItemGroup-"][class*="QualityProfileItemGroup-editGroups-"] {
+    background: rgba(0, 0, 0, 0.25);
+}
+
+[class*="KeyValueListInputItem-keyInput-"],
+[class*="KeyValueListInputItem-valueInput-"] {
+    border: none;
+    background: transparent;
+    color: white;
+}
+
+[class*="QualityProfileFormatItem-qualityProfileFormatItem-"] {
+    border: 1px solid transparent;
+    background: rgba(0, 0, 0, .25);
+}
+
+[class*="QualityDefinitions-sizeLimitHelpText-"] {
+    color: var(--text);
+}
+
+/* PROFILES */
+[class*="Indexers-center-"] {
+    background-color: transparent;
+    border: none;
+}
+
+[class*="Card-card-"],
+[class*="QualityProfiles-addQualityProfile-"] {
+    background-color: rgba(0, 0, 0, .45);
+    box-shadow: 0 0 10px 1px #000000;
+    color: var(--text);
+}
+
+[class*="QualityProfiles-center-"],
+[class*="LanguageProfiles-center-"],
+[class*="MetadataProfiles-center-"],
+[class*="RootFolders-center-"] {
+    background-color: transparent;
+    border: none;
+}
+
+[class*="RootFolders-center-"] {
+    border: 1px solid transparent;
+}
+
+[class*="Indexers-center-"],
+[class*="Restrictions-center-"],
+[class*="DownloadClients-center-"],
+[class*="ImportLists-center-"],
+[class*="Notifications-center-"] {
+    display: inline-block;
+    padding: 15px 20px 15px;
+    border-radius: 4px;
+}
+
+/* DOWNLOAD CLIENTS */
+[class*="DownloadClients-center-"] {
+    background-color: transparent;
+    border: none;
+}
+
+/* CONNECTIONS */
+[class*="Notifications-center-"] {
+    background-color: transparent;
+    border: none;
+}
+
+/* LISTS */
+[class*="ImportLists-center-"] {
+    background-color: transparent;
+    border: none;
+}
+
+/* LOG */
+[class*="Alert-info-"] {
+    border-color: transparent;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: #FFC107;
+}
+
+/* INDEXER */
+[class*="Restrictions-center-"] {
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+
+/* LISTS */
+[class*="NetImports-center-"] {
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+
+/* CUSTOM FORMAT */
+[class*="CustomFormats-center-"],
+[class*="EditCustomFormatModalContent-center-"] {
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+
+/* Login Page */
+
+.panel-body {
+    background-color: rgba(0, 0, 0, 0.25);
+    color: var(--text);
+}
+
+.panel-header {
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.forgot-password {
+    color: var(--text) !important;
+}
+
+input[type=email],
+input[type=password] {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #FFF;
+}
+
+.button {
+    border-color: var(--button-color);
+    background-color: var(--button-color);
+    cursor: pointer;
+}
+
+.button:hover {
+    border-color: var(--button-color-hover);
+    background-color: var(--button-color-hover);
+    color: #fff;
+    text-decoration: none;
+}
+
+.form-input:focus {
+    outline: 0;
+    border-color: #fff;
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Custom filter */
+[class*="FilterBuilderRow-filterRow-"]:hover {
+    background-color: transparent;
+}
+
+[class*="CustomFilter-customFilter-"]:hover {
+    background-color: hsla(0, 0%, 100%, .08);
+}
+
+/* Readarr */
+
+/* Library */
+
+[class*="AuthorIndexPoster-link-"],
+[class*="AuthorIndexPoster-title-"] {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Add New*/
+[class*="AddNewAuthorSearchResult-underlay-"],
+[class*="AddNewBookSearchResult-underlay-"] {
+    background-color: transparent;
+}
+
+[class*="AddNewAuthorSearchResult-underlay-"]:hover,
+[class*="AddNewBookSearchResult-underlay-"]:hover {
+    background-color: hsla(0, 0%, 100%, .08);
+    color: inherit;
+    text-decoration: none;
+}
+
+/*Author Page*/
+[class*="AuthorDetails-tab-"] {
+    color: #FFF;
+}
+
+[class*="AuthorIndexBanner-title-"] {
+    background-color: hsla(0, 0%, 100%, .08);
+}
+
+[class*="AuthorIndexOverview-container-"]:hover [class*="AuthorIndexOverview-content-"] {
+    background-color: hsla(0, 0%, 100%, .08);
+}
+
+/*Books Tab*/
+[class*="AuthorDetailsSeason-bookType-"] {
+    border: none;
+    background-color: rgba(0, 0, 0, .25);
+}
+
+[class*="AuthorDetailsSeason-books-"] {
+    border-top: 1px solid rgb(255 255 255 / 50%);
+}
+
+[class*="AuthorDetails-tabList-"] {
+    border-bottom: 1px solid rgb(255 255 255 / 50%);
+    color: var(--text-hover);
+}
+
+[class*="BookDetails-selectedTab-"] {
+    border-bottom: 4px solid rgb(var(--accent-color));
+}
+
+[class*="BookshelfBook-book-"] {
+    border: 1px solid transparent;
+    background-color: rgba(0, 0, 0, .25) !important;
+    ;
+}
+
+[class*="BookshelfBook-missingWanted-"] {
+    background-color: #f05050;
+    color: #fff;
+}
+
+/*Series Tab*/
+[class*="AuthorDetailsSeries-bookType-"] {
+    border: none;
+    background-color: rgba(0, 0, 0, .25);
+}
+
+[class*="AuthorDetailsSeries-collapseButtonContainer-"] {
+    border: none;
+    background-color: rgba(0, 0, 0, .25);
+}
+
+[class*="AuthorDetailsSeries-bookTypeLabel-"] {
+    color: #FFF;
+}
+
+[class*="AuthorDetailsSeries-bookCount-"] {
+    color: #FFF;
+}
+
+/*Search Tab*/
+
+[class*="AuthorDetails-selectedTab-"] {
+    border-bottom: 4px solid rgb(var(--accent-color));
+}
+
+[class*="AuthorDetails-metadataMessage-"] {
+    color: var(--text);
+}
+
+[class*="AuthorDetails-metadataMessage-"] [class*="Link-to-"] {
+    color: rgb(var(--accent-color));
+}
+
+[class*="AuthorDetails-metadataMessage-"] [class*="Link-to-"]:hover {
+    color: var(--accent-color-hover);
+}
+
+/*Specific Book Page*/
+[class*="BookDetails-tab-"] {
+    color: #FFF;
+}
