@@ -278,7 +278,7 @@ table {
 .table>thead>tr>td,
 .table>tbody>tr>td,
 .table>tfoot>tr>td {
-    background-color: var(--modal-bg-color) !important;
+    background: var(--modal-bg-color) !important;
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -290,7 +290,7 @@ table {
 }
 
 .multi-column-dropdown li a:hover {
-    background-color: var(--modal-bg-color) !important;
+    background: var(--modal-bg-color) !important;
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;

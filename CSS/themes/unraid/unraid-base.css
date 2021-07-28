@@ -538,7 +538,7 @@ blockquote {
 
 /* MY SERVERS */
 .UnraidUPC .--hasBanner-custom .UnraidUPC-dropdown {
-    background-color: var(--drop-down-menu-bg) !important;
+    background: var(--drop-down-menu-bg) !important;
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;

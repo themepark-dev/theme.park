@@ -173,7 +173,6 @@ h6 {
     border-color: rgb(var(--accent-color));
     color: var(--text-hover);
     background: var(--modal-bg-color);
-    background-color: var(--modal-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -1875,7 +1874,7 @@ body>div.mfp-wrap.mfp-auto-cursor.mfp-zoom-out.mfp-ready>div>div.mfp-content>div
         min-width: 478px;
         width: calc(100% - 40px);
         max-width: 1200px;
-        background-color: var(--modal-bg-color) !important;
+        background: var(--modal-bg-color) !important;
         background-repeat: repeat, no-repeat;
         background-attachment: fixed, fixed;
         background-position: center center, center center;

@@ -172,7 +172,7 @@
   /*Background*/
   .content-wrapper,
   .right-side {
-      background-color: var(--main-bg-color);
+      background: var(--main-bg-color);
       background-repeat: repeat, no-repeat;
       background-attachment: fixed, fixed;
       background-position: center center, center center;

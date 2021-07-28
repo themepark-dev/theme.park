@@ -206,7 +206,7 @@ hr {
 }
 
 .main-notification-box {
-  background-color: var(--modal-bg-color);
+  background: var(--modal-bg-color);
   background-repeat: repeat, no-repeat;
   background-attachment: fixed, fixed;
   background-position: center center, center center;

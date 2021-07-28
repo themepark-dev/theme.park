@@ -12,6 +12,14 @@
 
  /* "Re-skin" of CaliBlur https://github.com/leram84/layer.Cake/tree/master/caliBlur */
  /* Set theme to CaliBlur in UI Configuration -> View Configuration -> Theme -> CaliBlur -> Submit */
+ /* APP VARS*/
+ :root {
+    --color-background: var(--main-bg-color);
+    --color-primary: rgb(var(--accent-color));
+    --color-secondary: var(--button-color);
+    --color-secondary-hover: var(--button-color-hover);
+    --color-background-mobile: var(--main-bg-color);
+  }
  *,
  *:focus,
  *:active,
@@ -26,7 +34,7 @@
  }
 
  .blur-wrapper:after {
-     background: var(--modal-bg-color) !important;
+     background: var(--main-bg-color) !important;
  }
 
  body>.container-fluid {
@@ -143,7 +151,7 @@
 
  /* MODAL */
  .modal-content {
-     background-color: var(--modal-bg-color);
+     background: var(--modal-bg-color);
  }
 
  #GeneralDeleteModal .bg-danger {
@@ -182,7 +190,7 @@
 
  /* DROPDOWN MENU */
  .dropdown-menu {
-     background-color: var(--drop-down-menu-bg) !important;
+     background: var(--drop-down-menu-bg) !important;
      max-height: none !important;
  }
 

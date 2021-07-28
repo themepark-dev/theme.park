@@ -317,7 +317,7 @@ label,
 
 /* LOGIN */
 .bg-light {
-    background-color: var(--main-bg-color) !important;
+    background: var(--main-bg-color) !important;
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;

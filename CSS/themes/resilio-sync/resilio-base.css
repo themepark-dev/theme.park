@@ -173,7 +173,7 @@ UL.jqueryFileTree A,
 }
 
 .dropdown-menu {
-    background-color: var(--modal-bg-color);
+    background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -409,7 +409,7 @@ button.selectpicker.btn-default {
 }
 
 .modal-body .horizontal-separator .horizontal-separator-text {
-    background-color: var(--modal-bg-color);
+    background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -457,7 +457,7 @@ ul.jqueryFileTree a:hover {
 }
 
 #sharing-content .nav-tabs.nav-sub-tabs>li {
-    background-color: var(--modal-bg-color);
+    background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -514,7 +514,7 @@ ul.jqueryFileTree a:hover {
 #archive-onboarding.fixed .tutorial-background,
 #onboarding-dark.fixed .tutorial-background,
 #syncall-tutorial.fixed .tutorial-background {
-    background-color: var(--main-bg-color);
+    background: var(--main-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;

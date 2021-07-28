@@ -137,7 +137,7 @@ body>app-root>app-user-layout>app-tools>div>div>div.col-9>app-password-generator
 }
 
 .swal2-popup {
-    background-color: var(--modal-bg-color);
+    background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -158,7 +158,7 @@ body>app-root>app-user-layout>app-tools>div>div>div.col-9>app-password-generator
 }
 
 .swal2-popup .swal2-actions {
-    background-color: var(--modal-bg-color);
+    background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -371,7 +371,7 @@ a.text-danger:focus {
 
 /* Org */
 .org-nav {
-    background-color: var(--main-bg-color);
+    background: var(--main-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -459,7 +459,7 @@ input:focus:-ms-input-placeholder {
 }
 
 .bg-light .navbar {
-    background-color: var(--main-bg-color) !important;
+    background: var(--main-bg-color) !important;
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
