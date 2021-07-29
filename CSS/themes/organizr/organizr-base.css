@@ -74,7 +74,6 @@ label,
 .dd-handle,
 .dd3-content,
 .dropify-wrapper,
-.form-control,
 .panel-default .panel-heading,
 .panel-white .panel-heading,
 .select2-container .select2-choice,
@@ -270,13 +269,15 @@ select.form-control:focus {
     border: 1px solid rgba(120, 130, 140, 0.4);
 }
 
-.form-material .form-control:focus {
-    background: #1f1f1f;
-    border: 1px solid rgba(120, 130, 140, 0.4);
+.form-material .form-control:focus,
+.form-control:focus {
+    background: rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 
 }
 
-.form-material .form-control {
+.form-material .form-control,
+.form-control {
     background: rgba(0, 0, 0, 0.25);
     border-radius: 3px;
     padding: inherit;
@@ -588,6 +589,27 @@ th.fc-day-header.fc-widget-header.fc-today {
             background: var(--modal-bg-color) !important;
         }
     }
+
+    #lockScreen .white-box {
+        width: 100% !important;
+        height: 100% !important;
+        background: rgb(0 0 0 / 45%) !important;
+        margin-top: auto !important;
+        border-radius: 0px !important;
+    }
+
+    .lock-screen {
+        overflow: auto !important;
+    }
+
+    @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+        #lockScreen .white-box {
+            background: var(--modal-bg-color) !important;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            border-radius: 15px;
+        }
+    }
 }
 
 /* logo */
@@ -642,7 +664,8 @@ label[for="checkbox-login"]:hover {
 
 #organizr-login-collapse>div>div.form-group.text-center.m-t-20.m-b-0>div>button,
 #recoverform>div:nth-child(3)>div>button,
-#leave-recover {
+#leave-recover,
+#form-lockscreen>div.form-group.text-center>div>button {
     background: rgb(255 255 255 / 15%) !important;
     color: white;
     border-radius: 25px;
@@ -734,6 +757,10 @@ label[for="checkbox-login"]:hover {
     height: 345px;
 }
 
+#form-lockscreen>div:nth-child(1)>div>div>h3 {
+    color: #fff !important;
+}
+
 .login-sidebar .white-box {
     width: 100%;
     position: absolute;
@@ -765,7 +792,7 @@ label[for="checkbox-login"]:hover {
         -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
         border-radius: 15px;
-        background-color: rgba(0, 0, 0, 0.7);
+        background: var(--modal-bg-color);
     }
 }
 
@@ -1353,7 +1380,9 @@ a {
 }
 
 .btn-link:hover,
-a:hover {
+a:hover,
+.panel-blue a:hover,
+.panel-info a:hover {
     color: var(--link-color-hover);
     text-decoration: none;
 }
