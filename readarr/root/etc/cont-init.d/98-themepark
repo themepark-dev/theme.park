@@ -43,7 +43,7 @@ if ! grep -q "${TP_DOMAIN}" "${APP_FILEPATH}"; then
     sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/themes\/readarr\/${TP_THEME}.css'><\/head> /g" "${APP_FILEPATH}"
     sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/themes\/readarr\/${TP_THEME}.css'><\/head> /g" "${LOGIN_FILEPATH}"
     printf 'Stylesheet set to %s\n' "${TP_THEME}"
-.   if [[ -n ${TP_ADDON} ]]; then
+    if [[ -n ${TP_ADDON} ]]; then
         sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/addons\/readarr\/${TP_ADDON}.css'><\/head> /g" "${APP_FILEPATH}"
         printf 'Added custom addon: %s\n\n' "${TP_ADDON}"
     fi
