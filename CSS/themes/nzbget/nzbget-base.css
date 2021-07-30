@@ -11,7 +11,7 @@
 /*			      https://github.com/gilbN/theme.park			 */
 
 body {
-    background: var(--main-bg-color) !important;
+    background: var(--main-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -19,8 +19,7 @@ body {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
-    background-color: rgba(0, 0, 0, .0);
-    color: #FFFFFF !important;
+    color: var(--text) !important;
 }
 
 /* scroller */
@@ -40,7 +39,18 @@ body {
     border-radius: 2px;
     background-color: hsla(0, 0%, 100%, .08);
 }
-
+.modal-header {
+    padding: 9px 15px;
+    border-bottom: 1px solid rgb(var(--accent-color));
+    background: var(--modal-footer-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
 .modal {
     background: var(--modal-bg-color) !important;
     background-repeat: repeat, no-repeat;
@@ -50,21 +60,34 @@ body {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
-    color: #FFFFFF !important;
+    color: var(--text) !important;
 }
 
 .modal-footer {
-    background-color: transparent;
-    border-top: none;
+    background-color: var(--modal-footer-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    border-top: 1px solid rgb(var(--accent-color));
+    -webkit-box-shadow: inset 0 1px 0 transparent;
+    -moz-box-shadow: inset 0 1px 0 transparent;
+    box-shadow: inset 0 1px 0 transparent;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-hover);
+}
 /* TABLES */
 .table a {
-    color: #ffffff;
+    color: var(--link-color);
 }
 
 .table a:hover {
-    color: #e5a00d;
+    color: var(--link-color-hover) !important;
 }
 
 .table-striped tbody tr:nth-child(odd) {
@@ -83,7 +106,7 @@ body {
 .table tbody tr:hover,
 .table tbody tr:hover td,
 .table tbody tr:hover a {
-    color: white;
+    color: var(--text-hover);
     background-color: hsla(0, 0%, 100%, .08);
 }
 
@@ -134,7 +157,7 @@ tr.checked:nth-child(odd) .progress {
 }
 
 .pagination .active a {
-    color: #ffffff;
+    color: rgb(rgb(var(--accent-color)));
 }
 
 /* PROGRESS BAR */
@@ -152,7 +175,7 @@ tr.checked:nth-child(odd) .progress {
 
 /* NAVBAR */
 .navbar-fixed-top .navbar-inner {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 }
 
 .navbar-inner {
@@ -172,15 +195,25 @@ tr.checked:nth-child(odd) .progress {
 }
 
 .navbar .nav>li>a:hover {
-    color: var(--accent-color);
+    color: rgb(var(--accent-color)) !important;
+    background: hsla(0, 0%, 100%, .08);
 }
 
-.navbar .nav .active>a,
+.navbar .nav .active>a{
+    background: hsla(0, 0%, 100%, .08);
+    color: rgb(var(--accent-color));
+}
+
 .navbar .nav .active>a:hover {
     background: hsla(0, 0%, 100%, .08);
-    color: var(--accent-color);
+    color: var(--accent-color-hover) !important;
 }
-
+div.check:hover {
+    border: 1px solid var(--accent-color-hover);
+}
+#DownloadsTable > tbody > tr.checked td .check {
+    border: 1px solid rgb(var(--accent-color));
+}
 [class^="icon-"],
 [class*=" icon-"],
 [class^="img-"],
@@ -189,30 +222,33 @@ tr.checked:nth-child(odd) .progress {
 }
 
 .navbar-search .search-query {
-    color: #ffffff;
+    color: var(--text);
     background-color: rgba(0, 0, 0, 0.25) !important;
-    border: 0px solid #151515;
+
 
 }
 
 .navbar-search .search-query:focus,
 .navbar-search .search-query.focused {
-    color: #000 !important;
+    color: var(--text-hover) !important;
     text-shadow: none;
-    background-color: white !important;
+    background-color: rgba(0, 0, 0, 0.45) !important;
 }
-
+.focused .search-caret-button .caret {
+	margin-left: 5px;
+	border-top-color: rgb(255, 255, 255);
+	border-bottom-color: rgb(255, 255, 255);
+}
 .search-caret-button {
     outline: none;
 }
 
 .menu-header {
-    color: #ffffff;
+    color: var(--text-hover);
 }
 
 .dropdown-menu {
-    background-color: #191a1c;
-    background: var(--modal-bg-color);
+    background: var(--drop-down-menu-bg);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -220,17 +256,17 @@ tr.checked:nth-child(odd) .progress {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
-    color: #FFF;
+    color: var(--text);
 }
 
 .dropdown-menu a {
-    color: #ffffff;
+    color: var(--text);
 }
 
 .dropdown-menu li>a:hover,
 .dropdown-menu .active>a,
 .dropdown-menu .active>a:hover {
-    color: #ffffff;
+    color: var(--text-hover);
     background-color: hsla(0, 0%, 100%, .05);
 }
 
@@ -239,7 +275,24 @@ tr.checked:nth-child(odd) .progress {
     border-bottom: none;
 }
 
+#ConfigContent .config-header {
+    border-bottom: 1px solid rgb(var(--accent-color));
+    color: var(--text-hover);
+}
+#StatDialog_Custom a,
+#AddDialog_Files a {
+    color: var(--link-color);
+}
+#StatDialog_Custom a:hover, 
+#AddDialog_Files a:hover {
+    color: var(--link-color-hover);
+    cursor: pointer;
+}
 /* BUTTONS */
+.btn-primary, .btn-primary:hover, .btn-warning, .btn-warning:hover, .btn-danger, .btn-danger:hover, .btn-success, .btn-success:hover, .btn-info, .btn-info:hover, .btn-inverse, .btn-inverse:hover {
+    text-shadow: none;
+}
+
 .btn-group>.dropdown-toggle {
     box-shadow: none;
 }
@@ -251,33 +304,33 @@ tr.checked:nth-child(odd) .progress {
 }
 
 #ConfigData>div>button.btn {
-    background: rgba(0, 0, 0, .25) !important;
-    color: #FFF !important;
+    background: var(--button-color) !important;
+    color: var(--button-text) !important;
     font-weight: bold;
     text-shadow: unset;
 }
 
 #ConfigData>div>button.btn:hover {
-    background: hsla(0, 0%, 100%, .08) !important;
-    color: #FFF !important;
+    background: var(--button-color-hover) !important;
+    color: var(--button-text-hover) !important;
     font-weight: bold;
     text-shadow: unset;
 }
 
 #ConfigData>div>div>table>tbody>tr>td>.btn {
-    background: #414141;
-    color: #adb1b1;
+    background: var(--button-color);
+    color: var(--button-text);
     text-shadow: unset;
     font-weight: bold;
 }
 
 #Config_Save:hover {
-    background-color: #51a351;
-    color: #FFF;
+    background-color: rgb(81, 163, 81);
+    color: #eee;
 }
 
 #Config_Save {
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(81, 163, 81, 0.8);
     color: #FFF;
     margin: auto;
 }
@@ -309,9 +362,10 @@ tr.checked:nth-child(odd) .progress {
 }
 
 #ConfigData input.btn.btn-primary {
-    background: var(--button-color) !important;
+    background: var(--button-color-hover) !important;
     text-shadow: unset;
-    color: white;
+    color: var(--button-text-hover) !important;
+    border: 1px solid var(--button-color-hover);
 }
 
 #ConfigData input.btn {
@@ -343,21 +397,21 @@ tr.checked:nth-child(odd) .progress {
 }
 
 .btn {
-    color: #ffffff;
+    color: var(--button-text);
     text-shadow: none;
-    background-color: rgba(0, 0, 0, 0.25);
-
+    background-color: var(--button-color);
     background-image: none;
-    border-color: transparent;
-    border-bottom-color: transparent;
+    /* border-color: transparent;
+    border-bottom-color: transparent; */
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
+    border-color: transparent;
 }
 
 .btn:hover {
-    color: #FFF;
-    background-color: hsla(0, 0%, 100%, .08);
+    color: var(--button-text-hover);
+    background-color: var(--button-color-hover);
 
 }
 
@@ -366,44 +420,45 @@ tr.checked:nth-child(odd) .progress {
 }
 
 .btn-group.open .btn.dropdown-toggle {
-    background-color: #FFF;
-    background-color: hsla(0, 0%, 100%, .08);
+    background-color: var(--button-color-hover);
 }
 
 #ConfigData>div>div>table>tbody>tr>td>.btn {
-    background: rgba(0, 0, 0, 0.25);
-    color: #FFF;
+    background: var(--button-color);
+    color: var(--button-text);
     text-shadow: unset;
     font-weight: bold;
 }
 
 #ConfigData>div>div>table>tbody>tr>td>.btn:hover {
-    background: hsla(0, 0%, 100%, .08);
-    color: #FFF;
+    background: var(--button-color-hover);
+    color: var(--button-text-hover);
 }
 
 input,
 textarea,
-select,
 .uneditable-input {
-    color: #ffffff;
-    background-color: rgb(0, 0, 0);
-    background-image: var(main-bg-color) !important;
-    background-repeat: repeat, no-repeat;
-    background-attachment: fixed, fixed;
-    background-position: center center, center center;
-    background-size: auto, cover;
-    -webkit-background-size: auto, cover;
-    -moz-background-size: auto, cover;
-    -o-background-size: auto, cover;
-    background-color: rgba(0, 0, 0, 0.25) !important;
-    color: #FFFFFF !important;
-    border: none;
+    background: rgba(0, 0, 0, 0.25) !important;
+    color: var(--text) !important;
+    border: transparent;
+}
+input:focus:not(.btn),
+textarea:focus,
+.uneditable-input:focus {
+    background: rgba(255, 255, 255, 0.10) !important;
+    color: var(--text-hover) !important;
+    border: transparent;
+}
+
+select {
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 1px solid #00000000;
+    color: var(--text)
 }
 
 select:focus {
-    background: #191a1c !important;
-    color: #FFF !important;
+    background: #1b1b1b !important;
+    color: var(--text-hover) !important;
 }
 
 input[type="file"]:focus,
@@ -420,9 +475,9 @@ select:focus {
 
 input:focus,
 textarea:focus {
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 0, 0, 0.6);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 }
 
 .alert-info {
@@ -433,7 +488,7 @@ textarea:focus {
     border: 0px;
     background-color: hsla(0, 0%, 100%, .05);
     text-shadow: unset;
-    color: #FFF;
+    color: var(--text-hover);
     text-transform: capitalize;
 }
 
@@ -455,7 +510,26 @@ textarea:focus {
 /* SETTINGS */
 
 label {
-    color: #FFF;
+    color: var(--text-hover);
+}
+
+.badge-active,#MessagesTabBadge {
+    background-color: var(--button-color-hover);
+    color: var(--button-text-hover);
+    -webkit-box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+}
+
+.label:not(.label-success,.label-warning), .badge:not(.badge-success, .badge-warning) {
+    font-size: 10.998px;
+    font-weight: bold;
+    line-height: 14px;
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 25%);
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: rgb(255 255 255 / 25%);
 }
 
 #ConfigNav {
@@ -464,7 +538,7 @@ label {
 }
 
 #ConfigNav.nav-list a {
-    color: #fff;
+    color: var(--text);
     text-decoration: none;
 }
 
@@ -482,12 +556,18 @@ label {
 
 .nav-list>.active>a,
 .nav-list>.active>a:hover {
-    color: var(--accent-color) !important;
+    color: rgb(var(--accent-color)) !important;
     background-color: transparent;
 }
 
 .nav>li>a:hover {
     background-color: hsla(0, 0%, 100%, .08);
+    color: var(--text-hover) !important;
+}
+
+.nav-list .divider {
+    background-color: rgb(var(--accent-color));
+    border-bottom: 1px solid rgb(var(--accent-color));
 }
 
 span.help-option-title {
@@ -528,20 +608,22 @@ span.help-option-title {
 }
 
 a {
-    color: var(--accent-color);
+    color:var(--link-color);
     text-decoration: none;
 }
 
 a:hover {
-    color: #fff;
+    color: var(--link-color-hover);
     text-decoration: underline;
-}
-
-.label-warning,
-.badge-warning {
-    background-color: var(--button-color);
 }
 
 .caret {
     border-top: 4px solid #ffffff;
+}
+
+hr {
+    margin: 18px 0;
+    border: 0;
+    border-top: 1px solid gb(var(--accent-color));
+    border-bottom: 1px solid gb(var(--accent-color));
 }
