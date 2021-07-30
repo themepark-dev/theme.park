@@ -39,6 +39,7 @@ body {
     border-radius: 2px;
     background-color: hsla(0, 0%, 100%, .08);
 }
+
 .modal-header {
     padding: 9px 15px;
     border-bottom: 1px solid rgb(var(--accent-color));
@@ -51,6 +52,7 @@ body {
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
 }
+
 .modal {
     background: var(--modal-bg-color) !important;
     background-repeat: repeat, no-repeat;
@@ -78,9 +80,15 @@ body {
     box-shadow: inset 0 1px 0 transparent;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--text-hover);
 }
+
 /* TABLES */
 .table a {
     color: var(--link-color);
@@ -199,7 +207,7 @@ tr.checked:nth-child(odd) .progress {
     background: hsla(0, 0%, 100%, .08);
 }
 
-.navbar .nav .active>a{
+.navbar .nav .active>a {
     background: hsla(0, 0%, 100%, .08);
     color: rgb(var(--accent-color));
 }
@@ -208,12 +216,15 @@ tr.checked:nth-child(odd) .progress {
     background: hsla(0, 0%, 100%, .08);
     color: var(--accent-color-hover) !important;
 }
+
 div.check:hover {
     border: 1px solid var(--accent-color-hover);
 }
-#DownloadsTable > tbody > tr.checked td .check {
+
+#DownloadsTable>tbody>tr.checked td .check {
     border: 1px solid rgb(var(--accent-color));
 }
+
 [class^="icon-"],
 [class*=" icon-"],
 [class^="img-"],
@@ -234,11 +245,13 @@ div.check:hover {
     text-shadow: none;
     background-color: rgba(0, 0, 0, 0.45) !important;
 }
+
 .focused .search-caret-button .caret {
-	margin-left: 5px;
-	border-top-color: rgb(255, 255, 255);
-	border-bottom-color: rgb(255, 255, 255);
+    margin-left: 5px;
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
 }
+
 .search-caret-button {
     outline: none;
 }
@@ -279,17 +292,31 @@ div.check:hover {
     border-bottom: 1px solid rgb(var(--accent-color));
     color: var(--text-hover);
 }
+
 #StatDialog_Custom a,
 #AddDialog_Files a {
     color: var(--link-color);
 }
-#StatDialog_Custom a:hover, 
+
+#StatDialog_Custom a:hover,
 #AddDialog_Files a:hover {
     color: var(--link-color-hover);
     cursor: pointer;
 }
+
 /* BUTTONS */
-.btn-primary, .btn-primary:hover, .btn-warning, .btn-warning:hover, .btn-danger, .btn-danger:hover, .btn-success, .btn-success:hover, .btn-info, .btn-info:hover, .btn-inverse, .btn-inverse:hover {
+.btn-primary,
+.btn-primary:hover,
+.btn-warning,
+.btn-warning:hover,
+.btn-danger,
+.btn-danger:hover,
+.btn-success,
+.btn-success:hover,
+.btn-info,
+.btn-info:hover,
+.btn-inverse,
+.btn-inverse:hover {
     text-shadow: none;
 }
 
@@ -442,6 +469,7 @@ textarea,
     color: var(--text) !important;
     border: transparent;
 }
+
 input:focus:not(.btn),
 textarea:focus,
 .uneditable-input:focus {
@@ -513,7 +541,8 @@ label {
     color: var(--text-hover);
 }
 
-.badge-active,#MessagesTabBadge {
+.badge-active,
+#MessagesTabBadge {
     background-color: var(--button-color-hover);
     color: var(--button-text-hover);
     -webkit-box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
@@ -521,7 +550,8 @@ label {
     box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
 }
 
-.label:not(.label-success,.label-warning), .badge:not(.badge-success, .badge-warning) {
+.label:not(.label-success, .label-warning),
+.badge:not(.badge-success, .badge-warning) {
     font-size: 10.998px;
     font-weight: bold;
     line-height: 14px;
@@ -608,7 +638,7 @@ span.help-option-title {
 }
 
 a {
-    color:var(--link-color);
+    color: var(--link-color);
     text-decoration: none;
 }
 
