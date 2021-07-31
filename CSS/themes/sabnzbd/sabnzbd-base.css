@@ -9,6 +9,8 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
+@import url(https://dev.theme-park.dev/CSS/defaults/placeholders.css);
+
 body {
   background: var(--main-bg-color) !important;
   background-repeat: repeat, no-repeat;
@@ -41,6 +43,15 @@ p {
 
 a {
   color: var(--link-color);
+}
+
+.speedlimit-dropdown.dropdown>div>div>a {
+  color: var(--button-text);
+}
+
+#navbar-collapse>ul>li.speedlimit-dropdown.dropdown>div>div:hover a.hover-button {
+  color: var(--button-text-hover);
+  opacity: 1;
 }
 
 a:active,
@@ -216,11 +227,11 @@ hr {
   -o-background-size: auto, cover;
 }
 
-.form-control:focus {
-  border-color: var(--text-hover);
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(255, 255, 255, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(255, 255, 255, 0.6);
+.main-filedrop.in,
+.main-restarting.in {
+  color: var(--text-hover);
 }
+
 
 .caret {
   border-top-color: white !important;
@@ -234,7 +245,18 @@ svg.peity polyline {
   stroke: var(--button-color) !important;
 }
 
+.rss-icon-svg {
+  fill: var(--button-color);
+  border-radius: 3px !important;
+}
+
 /* BUTTONS */
+.input-group-addon {
+  color: var(--button-text);
+  background: var(--button-color);
+  border-color: var(--button-color);
+}
+
 .form-signin .btn {
   background: var(--button-color) !important;
   outline: none !important;
@@ -505,6 +527,10 @@ tr td.row-extra-text,
   background: rgba(255, 255, 255, 0.25);
 }
 
+.progress .progress-bar .fileDetails {
+  color: var(--button-text);
+}
+
 .progress {
   background-color: transparent !important;
   box-shadow: none !important;
@@ -602,7 +628,14 @@ tr td.row-extra-text,
 
 .form-control {
   color: white;
-  background-color: #1b1a1a;
+  background-color: rgb(0 0 0 / 25%);
+}
+
+.form-control:focus {
+  border-color: var(--text-hover);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #1b1b1b;
 }
 
 /*Tabbed sorting */
@@ -1009,6 +1042,29 @@ select[disabled]:hover {
 #modal-options .options-switch label,
 #modal-options #options-orphans .process-all-orphaned {
   color: white;
+}
+
+#modal-options #options-status small {
+  color: var(--text-muted);
+}
+
+#modal-options .options-function-box .input-group-addon {
+  background-color: var(--button-color);
+  color: var(--button-text);
+  border: 1px solid var(--button-color);
+}
+
+#modal-options .table-server-connections thead {
+
+  background-color: rgba(0, 0, 0, .25);
+}
+
+#modal-options .table-server-connections thead {
+  background-color: rgba(0, 0, 0, .25);
+}
+
+#modal-item-files .item-files-table .progress small {
+  color: var(--text-muted) !important;
 }
 
 a.list-group-item,
