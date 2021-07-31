@@ -9,7 +9,7 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
-@import url(https://dev.theme-park.dev/CSS/defaults/placeholders.css);
+@import url(https://theme-park.dev/CSS/defaults/placeholders.css);
 
 body {
   background: var(--main-bg-color) !important;
