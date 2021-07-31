@@ -1,0 +1,34 @@
+input::-webkit-input-placeholder {
+  color: var(--text);
+}
+
+input:focus::-webkit-input-placeholder {
+  color: var(--text-hover);
+}
+
+/* Firefox < 19 */
+input:-moz-placeholder {
+  color: var(--text);
+}
+
+input:focus:-moz-placeholder {
+  color: var(--text-hover);
+}
+
+/* Firefox > 19 */
+input::-moz-placeholder {
+  color: var(--text);
+}
+
+input:focus::-moz-placeholder {
+  color: var(--text-hover);
+}
+
+/* Internet Explorer 10 */
+input:-ms-input-placeholder {
+  color: var(--text);
+}
+
+input:focus:-ms-input-placeholder {
+  color: var(--text-hover);
+}
