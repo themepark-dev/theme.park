@@ -38,6 +38,7 @@ a {
 a:hover {
     color: var(--link-color-hover);
 }
+
 .navbar-default {
     background-color: rgba(0, 0, 0, 0.6);
     border-color: transparent;
@@ -71,8 +72,9 @@ a:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     outline: none;
 }
+
 .alert-info a:hover {
-    color:  var(--link-color);
+    color: var(--link-color);
     opacity: .8;
 }
 
@@ -113,12 +115,18 @@ a:hover {
     border: 1px solid transparent;
 }
 
-legend,label {
+legend,
+label {
     color: var(--text-hover);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--text-hover) !important;
 }
 
@@ -157,7 +165,7 @@ h1,h2,h3,h4,h5,h6 {
 .btn-info {
     color: var(--button-text);
     background: var(--button-color);
-    border-color:var(--button-color);
+    border-color: var(--button-color);
 }
 
 .btn-info.active,
@@ -271,11 +279,14 @@ h1,h2,h3,h4,h5,h6 {
 .dropdown-menu>li>a {
     color: var(--text);
 }
-.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li>a:hover {
     text-decoration: none;
     color: var(--text-hover);
     background-color: rgba(255, 255, 255, 0.1);
 }
+
 .history-title {
     font-style: italic;
     color: var(--text-muted);
@@ -311,6 +322,7 @@ h1,h2,h3,h4,h5,h6 {
     border: 1px solid var(--button-color);
     background: var(--button-color);
 }
+
 .input-group-addon {
     color: var(--button-text);
     border: 1px solid var(--button-color);
@@ -402,10 +414,12 @@ hr {
     -o-background-size: auto, cover;
     border-top: 1px solid rgb(var(--accent-color));
 }
+
 .well {
     background-color: hsla(0, 0%, 0%, 0.45);
     border: 1px solid #00000000;
 }
+
 /* Updates */
 .alert-warning {
     background: rgba(255, 255, 255, 0.25);
@@ -456,16 +470,16 @@ pre {
 }
 
 /* FORM LOGIN */
-body > div > div.center-form.panel.col-md-8 > div > form > button {
+body>div>div.center-form.panel.col-md-8>div>form>button {
     color: var(--button-text);
     background: var(--button-color);
     border-color: var(--button-color);
 
 }
 
-body > div > div.center-form.panel.col-md-8 > div > form > button:hover,
-body > div > div.center-form.panel.col-md-8 > div > form > button:focus,
-body > div > div.center-form.panel.col-md-8 > div > form > button:active{
+body>div>div.center-form.panel.col-md-8>div>form>button:hover,
+body>div>div.center-form.panel.col-md-8>div>form>button:focus,
+body>div>div.center-form.panel.col-md-8>div>form>button:active {
     color: var(--button-text-hover);
     background: var(--button-color-hover);
     border-color: var(--button-color-hover);
@@ -480,9 +494,9 @@ body > div > div.center-form.panel.col-md-8 > div > form > button:active{
 
 .filter-button.btn-default:focus,
 .filter-button.btn-default:focus.active {
-    background-color: var(--button-color-hover)!important;
-    border-color: var(--button-color-hover)!important;
-    color: var(--button-text)!important;
+    background-color: var(--button-color-hover) !important;
+    border-color: var(--button-color-hover) !important;
+    color: var(--button-text) !important;
 }
 
 .indexer-statuses-accordion {
@@ -491,7 +505,8 @@ body > div > div.center-form.panel.col-md-8 > div > form > button:active{
 
 /* Pagination */
 
-.pagination>li>a,.pagination>li>span {
+.pagination>li>a,
+.pagination>li>span {
     text-decoration: none;
     color: var(--button-text);
     background-color: var(--button-color);
@@ -499,13 +514,21 @@ body > div > div.center-form.panel.col-md-8 > div > form > button:active{
 
 }
 
-.pagination>li>a:focus,.pagination>li>a:hover,.pagination>li>span:focus,.pagination>li>span:hover {
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>li>span:focus,
+.pagination>li>span:hover {
     color: var(--button-text-hover);
     background-color: var(--button-color-hover);
     border-color: var(--button-color-hover);
 }
 
-.pagination>.active>a,.pagination>.active>a:focus,.pagination>.active>a:hover,.pagination>.active>span,.pagination>.active>span:focus,.pagination>.active>span:hover {
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
     z-index: 2;
     color: var(--button-text);
     background-color: var(--button-color);
@@ -513,7 +536,12 @@ body > div > div.center-form.panel.col-md-8 > div > form > button:active{
     cursor: default
 }
 
-.pagination>.disabled>a,.pagination>.disabled>a:focus,.pagination>.disabled>a:hover,.pagination>.disabled>span,.pagination>.disabled>span:focus,.pagination>.disabled>span:hover {
+.pagination>.disabled>a,
+.pagination>.disabled>a:focus,
+.pagination>.disabled>a:hover,
+.pagination>.disabled>span,
+.pagination>.disabled>span:focus,
+.pagination>.disabled>span:hover {
     color: var(--text-muted);
     background-color: rgba(255, 255, 255, .1);
     border-color: rgba(255, 255, 255, .1);
@@ -527,11 +555,12 @@ pre {
     border: 1px solid rgba(255, 255, 255, .1);
 }
 
-chart > nvd3 > svg > text {
+chart>nvd3>svg>text {
     fill: var(--text-muted);
 }
 
-.caption,caption {
+.caption,
+caption {
     color: var(--text-muted);
 }
 
