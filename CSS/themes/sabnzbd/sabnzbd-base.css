@@ -26,6 +26,10 @@ body {
   color: var(--text);
 }
 
+* {
+  outline: none !important;
+}
+
 h1,
 h2,
 h3,
