@@ -11,6 +11,7 @@
 /* 			      https://github.com/gilbN/theme.park			 */
 
 @import url(https://use.fontawesome.com/releases/v5.15.1/css/all.css);
+@import url(https://theme-park.dev/CSS/defaults/placeholders.css);
 
 body,
 .tableScrollContainer,
@@ -23,6 +24,23 @@ body,
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
+    color: var(--text);
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    color: var(--text-hover) !important;
 }
 
 a {
@@ -30,7 +48,7 @@ a {
 }
 
 a:hover {
-    color: #fff;
+    color: var(--link-color-hover);
 }
 
 * {
@@ -109,7 +127,7 @@ UL.jqueryFileTree A,
 
 /* ACCENTS */
 #choose-product-dialog .product-container .product:hover {
-    border-color: var(--accent-color);
+    border-color: rgb(var(--accent-color));
 }
 
 .text-success {
@@ -119,7 +137,7 @@ UL.jqueryFileTree A,
 #historyContainer .table-filter-panel .filter-item.active,
 .resizableTableContainer .table-filter-panel .filter-item.active,
 .tableContainerWithFilterPanel .table-filter-panel .filter-item.active {
-    color: var(--accent-color)
+    color: rgb(var(--accent-color))
 }
 
 /* NAVBAR */
@@ -138,7 +156,7 @@ UL.jqueryFileTree A,
 .bt-navbar .btn.btn-tab.active,
 .bt-navbar .btn.btn-tab:active {
     background-color: rgb(0 0 0 / 25%);
-    border-bottom-color: var(--accent-color);
+    border-bottom-color: rgb(var(--accent-color));
 }
 
 .bt-navbar .btn:hover {
@@ -162,7 +180,7 @@ UL.jqueryFileTree A,
 /* DROPDOWN MENU */
 .bt-navbar #choose-share-type-menu,
 .bt-navbar .choose-dropdown-menu {
-    background: var(--modal-bg-color);
+    background: var(--drop-down-menu-bg);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -173,23 +191,7 @@ UL.jqueryFileTree A,
 }
 
 .dropdown-menu {
-    background: var(--modal-bg-color);
-    background-repeat: repeat, no-repeat;
-    background-attachment: fixed, fixed;
-    background-position: center center, center center;
-    background-size: auto, cover;
-    -webkit-background-size: auto, cover;
-    -moz-background-size: auto, cover;
-    -o-background-size: auto, cover;
-    border: 1px solid #ccc;
-    border: 1px solid rgba(0, 0, 0, .15);
-    border-radius: 2px;
-    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-}
-
-.dropdown-menu {
-    background: var(--modal-bg-color);
+    background: var(--drop-down-menu-bg);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -205,6 +207,15 @@ UL.jqueryFileTree A,
 .dropdown-menu li a:focus,
 .dropdown-menu li a:hover {
     background-color: rgb(255 255 255 / 8%);
+    color: var(--text-hover);
+}
+
+#columns-context .bt-checkbox:hover {
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.context-menu .bt-checkbox label,
+.context-menu .bt-radio label {
     color: var(--text-hover);
 }
 
@@ -344,7 +355,7 @@ button.selectpicker.btn-default {
 }
 
 .popout-parent {
-    background: var(--modal-bg-color);
+    background: var(--drop-down-menu-bg);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -357,6 +368,11 @@ button.selectpicker.btn-default {
 .context-menu li a:focus,
 .context-menu li a:hover {
     background-color: rgb(255 255 255 / 8%);
+    color: var(--text-hover) !important;
+}
+
+.context-menu li.has-icon a {
+    color: var(--text);
 }
 
 .context-notification .context-notification-inner {
@@ -380,9 +396,20 @@ button.selectpicker.btn-default {
 }
 
 /* MODALS */
-.modal-header,
+.modal-header {
+    background: var(--modal-header-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    color: var(--text);
+}
+
 .modal-footer {
-    background: var(--modal-bg-color);
+    background: var(--modal-footer-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -420,6 +447,12 @@ button.selectpicker.btn-default {
     color: var(--text);
 }
 
+.modal-filter .btn:hover,
+.modal-input .btn:hover {
+    background-color: var(--button-color);
+    color: var(--button-text);
+}
+
 #choose-product-dialog .product-container .product {
     background-color: rgb(255 255 255 / 0.08);
     border: 1px solid transparent;
@@ -444,9 +477,30 @@ ul.jqueryFileTree a:hover {
     background: linear-gradient(left, transparent, transparent);
 }
 
-.nav-tabs.nav-sub-tabs {
+.nav-tabs.nav-sub-tabs,
+.nav-tabs.nav-sub-tabs>li {
     background-color: transparent;
     border-bottom-color: rgb(255 255 255 / .1);
+}
+
+.nav-tabs.nav-sub-tabs>li.active a,
+.nav-tabs.nav-sub-tabs>li.active a:focus,
+.nav-tabs.nav-sub-tabs>li.active a:hover {
+    background-color: var(--button-color-hover);
+    border: 1px solid var(--button-color-hover);
+    color: var(--button-text-hover);
+}
+
+.nav-tabs.nav-sub-tabs>li>a {
+    background-color: var(--button-color);
+    border: 1px solid var(--button-color);
+    color: var(--button-text);
+}
+
+.nav-tabs.nav-sub-tabs>li>a:hover {
+    background-color: var(--button-color-hover);
+    border: 1px solid var(--button-color-hover);
+    color: var(--button-text-hover);
 }
 
 #file-sharing-content .shareOptionsContainer .shareOption:hover,
@@ -468,9 +522,9 @@ ul.jqueryFileTree a:hover {
 }
 
 #sharing-content .nav-tabs.nav-sub-tabs>li>a {
-    border: 1px solid #cacaca;
-    color: #606060;
-    background: white;
+    border: 1px solid var(--button-color);
+    color: var(--button-text);
+    background: var(--button-color);
 }
 
 #sharing-content .nav-tabs.nav-sub-tabs>li.active a,
@@ -478,14 +532,14 @@ ul.jqueryFileTree a:hover {
 .nav-tabs.nav-sub-tabs>li.active a:hover {
     background: var(--button-color-hover) !important;
     border: 1px solid var(--button-color-hover);
-    color: var(--button-text)
+    color: var(--button-text-hover);
 }
 
 .activity-filter.open,
 .main-filter.open,
 .modal-filter.open,
 .modal-input.open {
-    background: var(--main-bg-color) !important;
+    background: var(--main-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -613,7 +667,7 @@ ul.jqueryFileTree a:hover {
 /* SETTINGS */
 .settings-tabs-wrapper .settings-tabs-buttons .left-nav-button.active {
     background-color: rgb(0 0 0 / 25%);
-    color: var(--accent-color);
+    color: rgb(var(--accent-color));
 }
 
 .settings-tabs-wrapper .settings-tabs-buttons .left-nav-button:hover:not(.active) {
@@ -621,7 +675,7 @@ ul.jqueryFileTree a:hover {
 }
 
 .settings-tabs-wrapper .settings-tabs-buttons .left-nav-button:hover:not(.active) .txt-button {
-    color: var(--text-hover);
+    color: var(--button-text-hover);
 }
 
 #support-tab #page-menu .support-content>a,
@@ -647,7 +701,7 @@ ul.jqueryFileTree a:hover {
 }
 
 #my-devices .my-devices .link-device-block #device-to-qr .device-link {
-    color: var(--accent-color);
+    color: rgb(var(--accent-color));
 }
 
 #my-devices .my-devices .link-device-block #device-to-qr:hover:not(:disabled) .device-link-text {
@@ -657,7 +711,7 @@ ul.jqueryFileTree a:hover {
 
 #my-devices .my-devices .info-button:hover {
     background-color: var(--button-color-hover);
-    color: var(--button-text);
+    color: var(--button-text-hover);
 }
 
 /* BUTTONS */
@@ -679,7 +733,7 @@ ul.jqueryFileTree a:hover {
 .btn-primary:not(:disabled):not(.disabled).active,
 #support-tab #page-feedback-form .back-button:hover {
     border-color: var(--button-color-hover);
-    color: var(--text-hover);
+    color: var(--button-text-hover);
     background-color: var(--button-color-hover);
     box-shadow: none !important;
 }
@@ -722,6 +776,11 @@ ul.jqueryFileTree a:hover {
     color: var(--text-hover);
 }
 
+.transfer-table .transfer-row.active a,
+.transfer-table .transfer-row:hover a {
+    color: var(--text-hover);
+}
+
 .table>thead>tr>th {
     vertical-align: bottom;
     border-bottom: 1px solid rgb(255 255 255 / 10%);
@@ -735,32 +794,11 @@ ul.jqueryFileTree a:hover {
 
 .tableScrollContainer .table thead tr th {
     background: var(--main-bg-color) !important;
-    background-repeat: repeat, no-repeat;
-    background-attachment: fixed, fixed;
-    background-position: center center, center center;
-    background-size: auto, cover;
-    -webkit-background-size: auto, cover;
-    -moz-background-size: auto, cover;
-    -o-background-size: auto, cover;
-}
-
-/* PLACEHOLDER TEXT */
-::placeholder {
-    color: var(--text) !important;
-    opacity: .5 !important;
-}
-
-:-moz-placeholder {
-    color: var(--text) !important;
-    opacity: .5 !important;
-}
-
-:-ms-input-placeholder {
-    color: var(--text) !important;
-    opacity: .5 !important;
-}
-
-::-webkit-input-placeholder {
-    color: var(--text) !important;
-    opacity: .5;
+    background-repeat: repeat, no-repeat !important;
+    background-attachment: fixed, fixed !important;
+    background-position: center center, center center !important;
+    background-size: auto, cover !important;
+    -webkit-background-size: auto, cover !important;
+    -moz-background-size: auto, cover !important;
+    -o-background-size: auto, cover !important;
 }
