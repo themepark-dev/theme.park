@@ -13,15 +13,4 @@
 
 /* RESILIO-SYNC ORGANIZR-DARK THEME */
 @import url(https://theme-park.dev/CSS/themes/resilio-sync/resilio-base.css);
-:root {
-  --main-bg-color: #1f1f1f;
-  --modal-bg-color: #1b1b1b;
-  --button-color: #2cabe3;
-  --button-color-hover: #2a90bd;
-  --button-text: #eee;
-  --accent-color:#2cabe3;
-  --accent-color-hover: #fff;
-  --text:#96a2b4;
-  --text-hover: #fff;
-  --link-color: #2cabe3;
-}
+@import url(https://theme-park.dev/CSS/variables/organizr-dark.css);
