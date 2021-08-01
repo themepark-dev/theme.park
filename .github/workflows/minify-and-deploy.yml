@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - master
+    paths-ignore:
+        - 'docker-mods/**'
 jobs:
   deploy:
     runs-on: ubuntu-latest
