@@ -181,6 +181,10 @@ tr.checked:nth-child(odd) .progress {
     background-color: #51a351;
 }
 
+.bar-text-left,
+.bar-text-right {
+color: #fff;
+}
 /* NAVBAR */
 .navbar-fixed-top .navbar-inner {
     color: var(--text-hover) !important;
