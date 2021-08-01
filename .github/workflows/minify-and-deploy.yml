@@ -5,6 +5,8 @@ on:
       - master
     paths-ignore:
         - 'docker-mods/**'
+        - '.github/**'
+        - '.vscode/**'
 jobs:
   deploy:
     runs-on: ubuntu-latest
