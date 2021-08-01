@@ -1,12 +1,10 @@
 name: autobuildallthemods
 on:
   push:
-    branches: [ docker-mods ]
-    paths-ignore:
-    - '.github/**'
-    - '.vscode/**'
-    - '**/README.md'
-    - '**/LICENSE'
+    branches: 
+      - master
+    paths:
+    - 'docker-mods/**'
 jobs:
   push_to_ghcr_io:
     runs-on: ubuntu-latest
@@ -29,7 +27,7 @@ jobs:
         run: |
           for i in ${{ steps.getfile.outputs.files }}
             do
-              directory="$( echo $i | cut -d'/' -f1 -s )"
+              directory="$( echo $i | cut -d'/' -f2 -s )"
               if [ -z "$directory" ]; then
                 continue # Skip root dir
               elif [ "$i" == *.md ]; then
@@ -37,7 +35,7 @@ jobs:
               elif [ "$i" == *.yml ]; then
                 continue # Skip YAML files
               fi
-              docker build $directory --tag ghcr.io/gilbn/theme.park:$directory
+              docker build docker-mods/$directory --tag ghcr.io/gilbn/theme.park:$directory
               docker push ghcr.io/gilbn/theme.park:$directory
             done
   push_to_dockerhub:
@@ -60,7 +58,7 @@ jobs:
         run: |
           for i in ${{ steps.getfile.outputs.files }}
             do
-              directory="$( echo $i | cut -d'/' -f1 -s )"
+              directory="$( echo $i | cut -d'/' -f2 -s )"
               if [ -z "$directory" ]; then
                 continue # Skip root dir
               elif [ "$i" == *.md ]; then
@@ -68,6 +66,6 @@ jobs:
               elif [ "$i" == *.yml ]; then
                 continue # Skip YAML files
               fi
-              docker build $directory --tag gilbn/theme.park:$directory
+              docker build docker-mods/$directory --tag gilbn/theme.park:$directory
               docker push gilbn/theme.park:$directory
             done
