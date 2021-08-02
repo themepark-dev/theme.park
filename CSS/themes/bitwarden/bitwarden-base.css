@@ -494,3 +494,9 @@ input:focus:-ms-input-placeholder {
     background-color: rgb(0 0 0 / 10%);
     border-color: rgb(0 0 0 / 10%);
 }
+
+.text-muted,
+.card-header small,
+.modal-header small {
+    color: var(--text-muted) !important;
+}
