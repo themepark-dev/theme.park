@@ -21,6 +21,7 @@
 
 <p align="center">Click on the banners for screenshots.</p>
 
+<a href="https://docs.theme-park.dev/colors/dracula"><img src="https://docs.theme-park.dev/site_assets/dracula_banner.png" alt="Dracula"/></a>
 <a href="https://docs.theme-park.dev/colors/organizr-dark"><img src="https://docs.theme-park.dev/site_assets/organizrdark_banner.png" alt="Organizr-Dark"/></a>
 <a href="https://docs.theme-park.dev/colors/aquamarine"><img src="https://docs.theme-park.dev/site_assets/aquamarine_banner.png" alt="Aquamarine"/></a>
 <a href="https://docs.theme-park.dev/colors/hotline"><img src="https://docs.theme-park.dev/site_assets/hotline_banner.png" alt="Hotline"/></a>
@@ -132,7 +133,7 @@
 <tr style="height: 56px;">
 <td style="width: 110px; height: 56px; text-align: center;">
 <p><a href="https://docs.theme-park.dev/themes/grafana"><img src="https://docs.theme-park.dev/site_assets/grafana/logo.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://docs.theme-park.dev/themes/grafana">Grafana</a></p>
+<p><a href="https://docs.theme-park.dev/themes/grafana">Grafana (Deprecated)</a></p>
 </td>
 <td style="width: 160px; height: 56px; text-align: center;">
 <p><a href="https://docs.theme-park.dev/themes/netdata"><img src="https://docs.theme-park.dev/site_assets/netdata/logo.png" alt="" width="48" height="48" /></a></p>
@@ -140,11 +141,11 @@
 </td>
 <td style="width: 10px; height: 56px; text-align: center;">
 <p><a href="https://docs.theme-park.dev/themes/monitorr"><img src="https://docs.theme-park.dev/site_assets/monitorr/logo.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://docs.theme-park.dev/themes/monitorr">Monitorr</a></p>
+<p><a href="https://docs.theme-park.dev/themes/monitorr">Monitorr (Deprecated)</a></p>
 </td>
 <td style="width: 90px; height: 56px; text-align: center;">
 <p><a href="https://docs.theme-park.dev/themes/logarr"><img src="https://docs.theme-park.dev/site_assets/logarr/logo.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://docs.theme-park.dev/themes/logarr">Logarr</a></p>
+<p><a href="https://docs.theme-park.dev/themes/logarr">Logarr (Deprecated)</a></p>
 </td>
 <td style="width: 136px; height: 56px; text-align: center;">
 <p><a href="https://docs.theme-park.dev/themes/portainer"><img src="https://docs.theme-park.dev/site_assets/portainer/logo.png" alt="" width="48" height="48" /></a></p>
@@ -166,7 +167,7 @@
 </td>
 <td style="width: 160px; height: 40px; text-align: center;">
 <p><a href="https://docs.theme-park.dev/themes/plpp"><img src="https://docs.theme-park.dev/site_assets/plpp/logo.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://docs.theme-park.dev/themes/plpp">PLPP</a></p>
+<p><a href="https://docs.theme-park.dev/themes/plpp">PLPP (Deprecated)</a></p>
 </td>
 <td style="width: 10px; height: 40px; text-align: center;">
 <p><a href="https://docs.theme-park.dev/themes/librespeed"><img src="https://docs.theme-park.dev/site_assets/librespeed/logo.png" alt="" width="48" height="48" /></a></p>
@@ -174,7 +175,7 @@
 </td>
 <td style="width: 90px; height: 40px; text-align: center;">
 <p><a href="https://docs.theme-park.dev/themes/thelounge"><img src="https://docs.theme-park.dev/site_assets/thelounge/logo.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://docs.theme-park.dev/themes/thelounge">The Lounge</a></p>
+<p><a href="https://docs.theme-park.dev/themes/thelounge">The Lounge (Deprecated)</a></p>
 </td>
 <td style="width: 90px; height: 40px; text-align: center;">
 <p><a href="https://docs.theme-park.dev/themes/lazylibrarian"><img src="https://docs.theme-park.dev/site_assets/lazylibrarian/logo.png" alt="" width="48" height="48" /></a></p>
@@ -204,7 +205,7 @@
 </td>
 <td style="width: 90px; height: 40px; text-align: center;">
 <p><a href="https://docs.theme-park.dev/themes/webtools"><img src="https://docs.theme-park.dev/site_assets/webtools/logo.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://docs.theme-park.dev/themes/webtools">Webtools</a></p>
+<p><a href="https://docs.theme-park.dev/themes/webtools">Webtools (Deprecated)</a></p>
 </td>
 <td style="width: 90px; height: 40px; text-align: center;">
 <p><a href="https://docs.theme-park.dev/themes/resilio-sync"><img src="https://docs.theme-park.dev/site_assets/resilio-sync/logo.png" alt="" width="48" height="48" /></a></p>
