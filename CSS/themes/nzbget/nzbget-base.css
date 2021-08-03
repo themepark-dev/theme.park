@@ -183,8 +183,9 @@ tr.checked:nth-child(odd) .progress {
 
 .bar-text-left,
 .bar-text-right {
-color: #fff;
+    color: #fff;
 }
+
 /* NAVBAR */
 .navbar-fixed-top .navbar-inner {
     color: var(--text-hover) !important;
@@ -554,8 +555,8 @@ label {
     box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
 }
 
-.label:not(.label-success, .label-warning),
-.badge:not(.badge-success, .badge-warning) {
+.label:not(.label-success, .label-warning, .label-important, .label-info, .label-inverse),
+.badge:not(.badge-success, .badge-warning, .badge-important, .badge-info, .badge-inverse) {
     font-size: 10.998px;
     font-weight: bold;
     line-height: 14px;
