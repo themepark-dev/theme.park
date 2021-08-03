@@ -263,7 +263,7 @@ button:hover [class*="DisclosureArrow-disclosureArrow-"] {
 [class*="MetadataPosterCard-legacyUnwatchedTag-"],
 [class*="MetadataPosterCard-legacyUnwatchedEpisodesBadge-"],
 [class*="MetadataPosterCardOverlay-versionBadge-"] {
-  background-color: var(--poster-unwatched);
+  background-color: var(--plex-poster-unwatched);
 }
 
 [class*="MetadataPosterCardFace-"]:hover,

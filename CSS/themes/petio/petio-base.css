@@ -226,7 +226,7 @@ p a:hover,
 }
 
 .spinner svg {
-    filter: var(--spinner);
+    filter: var(--petio-spinner);
 }
 
 .request-status {

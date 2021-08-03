@@ -501,8 +501,8 @@ a:hover {
 }
 
 [class*="PageSidebarItem-status-"][class*="Label-info-"] {
-    border-color: var(--queue-color);
-    background-color: var(--queue-color);
+    border-color: var(--arr-queue-color);
+    background-color: var(--arr-queue-color);
     color: #fff;
 }
 

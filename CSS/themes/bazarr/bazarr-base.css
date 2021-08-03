@@ -271,7 +271,7 @@ label,
 
 .sidebar-container .badge-secondary {
     color: var(--label-text-color);
-    background-color: var(--queue-color);
+    background-color: var(--arr-queue-color);
 }
 
 /* TOP NAV BAR */

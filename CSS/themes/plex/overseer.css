@@ -16,8 +16,7 @@
 
 /* APP VARS*/
 :root {
-  --poster-unwatched: #6366f1;
-  --sidebar-color: #1f2937;
+    --sidebar-color: #1f2937;
 }
 
 /* EXTRA CSS */
@@ -52,15 +51,15 @@
 }
 
 [class*="SourceSidebar-expandedSidebar-"][class*="SourceSidebar-sidebar-"] [class*="SourceSidebarLink-isSelected-"] {
-     background: var(--main-bg-color) !important;
+    background: var(--main-bg-color) !important;
 }
 
 [class*="SourceSidebarContent-expandedSidebarContent-"],
-[class*="AllSourcesSidebarContent-container-"]{
+[class*="AllSourcesSidebarContent-container-"] {
     padding: 10px;
 }
 
-[class*="SourceSidebar-collapsedSidebar-"][class*="SourceSidebar-sidebar-"] [class*="AllSourcesSidebarContent-container-"]{
+[class*="SourceSidebar-collapsedSidebar-"][class*="SourceSidebar-sidebar-"] [class*="AllSourcesSidebarContent-container-"] {
     padding: 0px;
 }
 
@@ -72,10 +71,11 @@
     border-radius: 0px !important;
 }
 
-[class*="SourceSidebarContent-expandedSidebarContent-"] [class*="SourceSidebarLink-button-"][class*="SidebarLink-sidebarLink-"][class*="Link-default-"][class*="SourceSidebarLink-small-"][class*="SourceSidebarLink-isSelected-"]{
+[class*="SourceSidebarContent-expandedSidebarContent-"] [class*="SourceSidebarLink-button-"][class*="SidebarLink-sidebarLink-"][class*="Link-default-"][class*="SourceSidebarLink-small-"][class*="SourceSidebarLink-isSelected-"] {
     box-shadow: none !important;
     border-radius: 5px;
 }
+
 [class*="SourceSidebar-collapsedSidebar-"][class*="SourceSidebar-sidebar-"] [class*="SourceSidebarItem-button-"][class*="SourceSidebarLink-button-"][class*="SidebarLink-sidebarLink-"][class*="Link-default-"][class*="SourceSidebarLink-small-"][class*="SourceSidebarItem-isSelected-"][class*="SourceSidebarLink-isSelected-"] {
     box-shadow: inset 4px 0 0 0 rgb(var(--accent-color)) !important;
     border-radius: 0px;
