@@ -14,8 +14,3 @@
 /* PETIO AQUAMARINE THEME */
 @import url(https://theme-park.dev/CSS/themes/petio/petio-base.css);
 @import url(https://theme-park.dev/CSS/variables/aquamarine.css);
-
-/* APP VARS */
-:root {
-  --spinner: invert(39%) sepia(98%) saturate(527%) hue-rotate(129deg) brightness(94%) contrast(101%); /* Made with https://codepen.io/jsm91/embed/ZEEawyZ */
-}

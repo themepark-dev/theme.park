@@ -10,6 +10,15 @@
 /*		   		        Made by @gilbN					 */
 /* 			      https://github.com/gilbN/theme.park			 */
 
+:root {
+    --color-secondary-alpha-70: var(--gitea-color-secondary-alpha-70);
+    --color-primary-light-4: var(--gitea-color-primary-light-4);
+    --color-primary-light-2: var(--gitea-color-primary-light-2);
+    --color-primary: var(--gitea-color-primary);
+    --color-primary-dark-2: var(--gitea-color-primary-dark-2); 
+    --color-primary-dark-4: var(--gitea-color-primary-dark-4);
+  }
+
 body {
     background: var(--main-bg-color);
     background-repeat: repeat, no-repeat;

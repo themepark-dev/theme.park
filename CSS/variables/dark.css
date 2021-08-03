@@ -21,4 +21,16 @@
   --text:#ddd;
   --text-hover: #fff;
   --text-muted: #999;
+
+  /*Specials*/
+  --queue-color: #6b5; /* Servarr apps + Bazarr*/
+  --poster-unwatched: #e5a00d; /* Plex */
+  --spinner: invert(35%) sepia(12%) saturate(4%) hue-rotate(2deg) brightness(104%) contrast(86%); /* Petio */ /* Made with https://codepen.io/jsm91/embed/ZEEawyZ */
+
+  --gitea-color-secondary-alpha-70: rgba(0, 0, 0, 0.35);
+  --gitea-color-primary-light-4: #303030;
+  --gitea-color-primary-light-2: #5E5E5E;
+  --gitea-color-primary: #919191;
+  --gitea-color-primary-dark-2: #C6C6C6; 
+  --gitea-color-primary-dark-4: #FFFFFF;
 }

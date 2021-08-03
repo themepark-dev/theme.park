@@ -1359,7 +1359,7 @@ div.stable-body table tbody tr.even:nth-child(2n+1) td {
     float: left;
     border: 1px inset transparent !important;
     border-bottom: none !important;
-    background: var(--progress-color) !important;
+    background: rgb(var(--accent-color)) !important;
 }
 
 .stable-body tr.selected span.meter-value {

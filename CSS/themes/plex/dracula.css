@@ -13,8 +13,3 @@
 /* PLEX DRACULA THEME */
 @import url(https://theme-park.dev/CSS/themes/plex/plex-base.css);
 @import url(https://theme-park.dev/CSS/variables/dracula.css);
-
-/* APP VARS*/
-:root {
-  --poster-unwatched: #bd93f9;
-}

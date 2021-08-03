@@ -508,7 +508,7 @@ ul.filterList li:hover:before {
 }
 
 .progressbar_dark {
-  background: var(--progress-color) !important;
+  background: rgb(var(--accent-color)) !important;
   color: var(--label-text-color) !important;
 }
 
