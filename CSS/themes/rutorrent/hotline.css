@@ -14,8 +14,3 @@
 /* RUTORRENT HOTLINE THEME */
 @import url(https://theme-park.dev/CSS/themes/rutorrent/rutorrent-base.css);
 @import url(https://theme-park.dev/CSS/variables/hotline.css);
-
-/* APP VARS */
-:root {
-  --progress-color: #df6c4c;
-}

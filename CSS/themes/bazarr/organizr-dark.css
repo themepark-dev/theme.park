@@ -14,8 +14,3 @@
 /* BAZARR ORGANIZR-DARK THEME */
 @import url(https://theme-park.dev/CSS/themes/bazarr/bazarr-base.css);
 @import url(https://theme-park.dev/CSS/variables/organizr-dark.css);
-
-/* APP VARS */
-:root {
-  --queue-color: #2cabe3;
-}

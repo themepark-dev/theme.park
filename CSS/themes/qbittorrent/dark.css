@@ -14,8 +14,3 @@
 /* QBITTORRENT DARK THEME */
 @import url(https://theme-park.dev/CSS/themes/qbittorrent/qbittorrent-base.css);
 @import url(https://theme-park.dev/CSS/variables/dark.css);
-
-/* APP VARS */
-:root {
-  --progress-color: rgb(170,170,170);
-  }

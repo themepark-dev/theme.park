@@ -14,13 +14,3 @@
 /* DOZZLE DRACULA THEME */
 @import url(https://theme-park.dev/CSS/themes/dozzle/dozzle-base.css);
 @import url(https://theme-park.dev/CSS/variables/dracula.css);
-
-/* APP VARS */
-:root {
-  --scheme-main-ter: var(--main-bg-color);
-  --text-strong-color: var(--button-text-hover);
-  --border-color: rgb(255 255 255 / 25%);
-  --logo-color: rgb(var(--accent-color));
-  --body-background-color: var(--main-bg-color);
-  --border-hover-color: rgb(var(--accent-color));
-}

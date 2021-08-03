@@ -14,8 +14,3 @@
 /* RUTORRENT ORGANIZR-DARK THEME */
 @import url(https://theme-park.dev/CSS/themes/rutorrent/rutorrent-base.css);
 @import url(https://theme-park.dev/CSS/variables/organizr-dark.css);
-
-/* APP VARS */
-:root {
-  --progress-color: #2cabe3;
-  }

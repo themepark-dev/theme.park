@@ -13,8 +13,3 @@
 /* PLEX HOTLINE THEME */
 @import url(https://theme-park.dev/CSS/themes/plex/plex-base.css);
 @import url(https://theme-park.dev/CSS/variables/hotline.css);
-
-/* APP VARS*/
-:root {
-  --poster-unwatched: #FB3122;
-}

@@ -13,8 +13,3 @@
 /* FLOOD AQUAMARINE THEME */
 @import url(https://theme-park.dev/CSS/themes/flood/flood-base.css);
 @import url(https://theme-park.dev/CSS/variables/aquamarine.css);
-
-/* APP VARS */
-:root {
-  --accent-color: 18, 175, 160;
-  }

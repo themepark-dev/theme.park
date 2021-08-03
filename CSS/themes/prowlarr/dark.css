@@ -14,9 +14,3 @@
 /* PROWLARR DARK THEME */
 @import url(https://theme-park.dev/CSS/themes/prowlarr/prowlarr-base.css);
 @import url(https://theme-park.dev/CSS/variables/dark.css);
-
-/* APP VARS */
-:root {
-  --queue-color: #6b5;
-
-  }

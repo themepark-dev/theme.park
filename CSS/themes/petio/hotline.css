@@ -14,8 +14,3 @@
 /* PETIO HOTLINE THEME */
 @import url(https://theme-park.dev/CSS/themes/petio/petio-base.css);
 @import url(https://theme-park.dev/CSS/variables/hotline.css);
-
-/* APP VARS */
-:root {
-  --spinner: invert(32%) sepia(35%) saturate(3786%) hue-rotate(341deg) brightness(100%) contrast(92%); /* Made with https://codepen.io/jsm91/embed/ZEEawyZ */
-}

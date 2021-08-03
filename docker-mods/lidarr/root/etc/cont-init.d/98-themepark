@@ -40,7 +40,9 @@ if ! grep -q "${TP_DOMAIN}" "${APP_FILEPATH}"; then
     echo '---------------------------'
     echo '|  Adding the stylesheet  |'
     echo '---------------------------'
-    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/themes\/lidarr\/${TP_THEME}.css'><\/head> /g" "${APP_FILEPATH}"
-    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/themes\/lidarr\/${TP_THEME}.css'><\/head> /g" "${LOGIN_FILEPATH}"
+    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/themes\/lidarr\/lidarr-base.css'><\/head> /g" "${APP_FILEPATH}"
+    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/variables\/${TP_THEME}.css'><\/head> /g" "${APP_FILEPATH}"
+    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/themes\/lidarr\/lidarr-base.css'><\/head> /g" "${LOGIN_FILEPATH}"
+    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/variables\/${TP_THEME}.css'><\/head> /g" "${LOGIN_FILEPATH}"
     printf 'Stylesheet set to %s\n' "${TP_THEME}"
 fi
