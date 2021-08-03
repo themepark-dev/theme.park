@@ -10,6 +10,16 @@
 /*		   		        Made by @gilbN					 */
 /* 			      https://github.com/gilbN/theme.park			 */
 
+:root {
+    --calendar-tv-unaired-premiere: 53 197 244;
+    --calendar-tv-downloading: 122 67 182; 
+    --calendar-tv-unmonitored: 173 173 173;
+    --calendar-tv-unaired: 93 156 236;  
+    --calendar-tv-missing: 240 80 80;
+    --calendar-tv-on-air: 255 165 0; 
+    --calendar-tv-available: 39 194 76;
+  }
+
 body {
     background: var(--main-bg-color);
     background-repeat: repeat, no-repeat;

@@ -14,8 +14,3 @@
 /* PETIO DRACULA THEME */
 @import url(https://theme-park.dev/CSS/themes/petio/petio-base.css);
 @import url(https://theme-park.dev/CSS/variables/dracula.css);
-
-/* APP VARS */
-:root {
-  --spinner: invert(79%) sepia(27%) saturate(1033%) hue-rotate(74deg) brightness(104%) contrast(96%); /* Made with https://codepen.io/jsm91/embed/ZEEawyZ */
-}

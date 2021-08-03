@@ -13,15 +13,3 @@
 /* SONARR SPACE GRAY THEME */
 @import url(https://theme-park.dev/CSS/themes/sonarr/sonarr-base.css);
 @import url(https://theme-park.dev/CSS/variables/space-gray.css);
-
-/* APP VARS */
-:root {
-  --calendar-tv-unaired-premiere: 53 197 244;
-  --calendar-tv-downloading: 122 67 182; 
-  --calendar-tv-unmonitored: 173 173 173;
-  --calendar-tv-unaired: 93 156 236;  
-  --calendar-tv-missing: 240 80 80;
-  --calendar-tv-on-air: 255 165 0; 
-  --calendar-tv-available: 39 194 76;
-  --queue-color: #81a6b7;
-}

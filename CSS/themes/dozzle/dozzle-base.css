@@ -10,6 +10,15 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
+:root {
+    --scheme-main-ter: var(--main-bg-color);
+    --text-strong-color: var(--button-text-hover);
+    --border-color: rgb(255 255 255 / 25%);
+    --logo-color: rgb(var(--accent-color));
+    --body-background-color: var(--main-bg-color);
+    --border-hover-color: rgb(var(--accent-color));
+}
+
 * {
     outline: none;
 }

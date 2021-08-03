@@ -1,0 +1,39 @@
+#!/usr/bin/with-contenv bash
+
+echo '-------------------------------'
+echo '|  Synclounge theme.park Mod  |'
+echo '-------------------------------'
+
+# Display variables for troubleshooting 
+echo -e "Variables set:\\n\
+'TP_DOMAIN'=${TP_DOMAIN}\\n\
+'TP_THEME'=${TP_THEME}\\n"
+
+# Set default
+if [[ -z ${TP_DOMAIN} ]]; then
+    echo 'No domain set, defaulting to theme-park.dev'
+    TP_DOMAIN='theme-park.dev'
+fi
+
+case ${TP_DOMAIN} in
+  *"github.io"*)
+  echo "Switching to github.io URL style"
+    TP_DOMAIN="${TP_DOMAIN}\/theme.park"
+    ;;
+esac
+
+if [[ -z ${TP_THEME} ]]; then
+    echo 'No theme set, defaulting to organizr-dark'
+    TP_THEME='organizr-dark'
+fi
+
+# Adding stylesheets
+if ! grep -q "${TP_DOMAIN}" /usr/lib/node_modules/synclounge/dist/index.html; then
+    echo '---------------------------'
+    echo '|  Adding the stylesheet  |'
+    echo '---------------------------'
+    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/themes\/synclounge\/synclounge-base.css'><\/head> /g" /usr/lib/node_modules/synclounge/dist/index.html
+    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/variables\/${TP_THEME}.css'><\/head> /g" /usr/lib/node_modules/synclounge/dist/index.html
+    printf 'Stylesheet set to %s\n' "${TP_THEME}
+    "
+fi

@@ -13,8 +13,3 @@
 /* PLEX DARK THEME */
 @import url(https://theme-park.dev/CSS/themes/plex/plex-base.css);
 @import url(https://theme-park.dev/CSS/variables/dark.css);
-
-/* APP VARS*/
-:root {
-  --poster-unwatched: #e5a00d;
-}

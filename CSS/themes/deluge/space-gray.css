@@ -14,8 +14,3 @@
 /* DELUGE SPACE GRAY THEME */
 @import url(https://theme-park.dev/CSS/themes/deluge/deluge-base.css);
 @import url(https://theme-park.dev/CSS/variables/space-gray.css);
-
-/* APP VARS */
-:root {
-  --progress-color: 96, 125, 139; 
-}

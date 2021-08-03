@@ -472,6 +472,11 @@ input[type="submit"]:focus {
 }
 
 /* History */
+
+.queue-table .row-extra-text, .history-table .row-extra-text {
+  color: var(--text-muted);
+}
+
 .caret {
   border-top-color: white !important;
 }

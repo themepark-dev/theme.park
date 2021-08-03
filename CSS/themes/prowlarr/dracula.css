@@ -14,9 +14,3 @@
 /* PROWLARR DRACULA THEME */
 @import url(https://theme-park.dev/CSS/themes/prowlarr/prowlarr-base.css);
 @import url(https://theme-park.dev/CSS/variables/dracula.css);
-
-/* APP VARS */
-:root {
-  --queue-color: #50fa7b;
-
-}

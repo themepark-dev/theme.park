@@ -14,8 +14,3 @@
 /* QBITTORRENT ORGANIZR-DARK THEME */
 @import url(https://theme-park.dev/CSS/themes/qbittorrent/qbittorrent-base.css);
 @import url(https://theme-park.dev/CSS/variables/organizr-dark.css);
-
-/* APP VARS */
-:root {
-  --progress-color: #2cabe3;
-  }

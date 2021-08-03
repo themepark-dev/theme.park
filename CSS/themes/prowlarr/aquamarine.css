@@ -14,8 +14,3 @@
 /* PROWLARR AQUAMARINE THEME */
 @import url(https://theme-park.dev/CSS/themes/prowlarr/prowlarr-base.css);
 @import url(https://theme-park.dev/CSS/variables/aquamarine.css);
-
-/* APP VARS */
-:root {
-  --queue-color: #009688;
-}

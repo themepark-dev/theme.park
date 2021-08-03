@@ -221,7 +221,8 @@ header.masthead {
     font-family: var(--font-family-sans-serif);
 }
 
-#services {
+#services,
+#themes {
     background: rgba(87, 109, 117, 1.0);
     color: white;
     padding: 0rem 0 8rem 0;
@@ -276,12 +277,7 @@ p {
 } */
 
 /* EXAMPLE IMAGES*/
-#portfolio [class*="container-"] .portfolio-box:hover .portfolio-box-caption.aquamarine-hover,
-#portfolio [class*="container-"] .portfolio-box:hover .portfolio-box-caption.hotline-hover,
-#portfolio [class*="container-"] .portfolio-box:hover .portfolio-box-caption.space-gray-hover,
-#portfolio [class*="container-"] .portfolio-box:hover .portfolio-box-caption.organizr-dark-hover,
-#portfolio [class*="container-"] .portfolio-box:hover .portfolio-box-caption.dark-hover,
-#portfolio [class*="container-"] .portfolio-box:hover .portfolio-box-caption.plex-hover {
+#portfolio [class*="container-"] .portfolio-box:hover .portfolio-box-caption[class*="-hover"] {
     opacity: .9;
     border-radius: 5px;
 }
@@ -308,4 +304,8 @@ p {
 
 #portfolio [class*="container-"] .portfolio-box .portfolio-box-caption.plex-hover {
     background: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/preset-light2.png") center center/cover no-repeat fixed;
+}
+
+#portfolio [class*="container-"] .portfolio-box .portfolio-box-caption.dracula-hover {
+    background: #282a36;
 }

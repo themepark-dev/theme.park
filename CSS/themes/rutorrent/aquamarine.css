@@ -14,8 +14,3 @@
 /* RUTORRENT AQUAMARINE THEME */
 @import url(https://theme-park.dev/CSS/themes/rutorrent/rutorrent-base.css);
 @import url(https://theme-park.dev/CSS/variables/aquamarine.css);
-
-/* APP VARS */
-:root {
-  --progress-color: #4c95af;
-}

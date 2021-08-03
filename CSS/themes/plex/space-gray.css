@@ -13,8 +13,3 @@
 /* PLEX AQUAMARINE THEME */
 @import url(https://theme-park.dev/CSS/themes/plex/plex-base.css);
 @import url(https://theme-park.dev/CSS/variables/space-gray.css);
-
-/* APP VARS*/
-:root {
-  --poster-unwatched: #70aeca;
-}

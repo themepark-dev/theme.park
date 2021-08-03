@@ -14,8 +14,3 @@
 /* DELUGE HOTLINE THEME */
 @import url(https://theme-park.dev/CSS/themes/deluge/deluge-base.css);
 @import url(https://theme-park.dev/CSS/variables/hotline.css);
-
-/* APP VARS */
-:root {
-  --progress-color: 223, 108, 76; 
-}

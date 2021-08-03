@@ -14,8 +14,3 @@
 /* prowlarr PLEX THEME */
 @import url(https://theme-park.dev/CSS/themes/prowlarr/prowlarr-base.css);
 @import url(https://theme-park.dev/CSS/variables/plex.css);
-
-/* APP VARS */
-:root {
-  --queue-color: #27c24c;
-  }
