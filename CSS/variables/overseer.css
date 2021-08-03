@@ -12,11 +12,11 @@
   --button-text: #e5e7eb;
   --button-text-hover: #fff;
 
-  --accent-color: 79, 70, 229;
+  --accent-color: 167, 139, 250;
   --accent-color-hover: rgb(var(--accent-color),.8);
   --link-color: #6366f1;
   --link-color-hover: #a78bfa;
-  --label-text-color: #d1d5db;
+  --label-text-color: #000;
 
   --text: #d1d5db;
   --text-hover: #fff;
