@@ -22,6 +22,7 @@
 <p align="center">Click on the banners for screenshots.</p>
 
 <a href="https://docs.theme-park.dev/colors/dracula"><img src="https://docs.theme-park.dev/site_assets/dracula_banner.png" alt="Dracula"/></a>
+<a href="https://docs.theme-park.dev/colors/overseer"><img src="https://docs.theme-park.dev/site_assets/overseer_banner.png" alt="Overseer"/></a>
 <a href="https://docs.theme-park.dev/colors/organizr-dark"><img src="https://docs.theme-park.dev/site_assets/organizrdark_banner.png" alt="Organizr-Dark"/></a>
 <a href="https://docs.theme-park.dev/colors/aquamarine"><img src="https://docs.theme-park.dev/site_assets/aquamarine_banner.png" alt="Aquamarine"/></a>
 <a href="https://docs.theme-park.dev/colors/hotline"><img src="https://docs.theme-park.dev/site_assets/hotline_banner.png" alt="Hotline"/></a>

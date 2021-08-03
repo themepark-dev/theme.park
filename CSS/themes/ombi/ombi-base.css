@@ -19,8 +19,7 @@ html,
 body,
 .wizard-background,
 .content-container,
-.mat-sidenav-container,
-.content-container .top-bar-container {
+.mat-sidenav-container {
     color: var(--text) !important;
     background: var(--main-bg-color) !important;
     background-repeat: repeat, no-repeat;
@@ -30,6 +29,10 @@ body,
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
+}
+
+.content-container .top-bar-container {
+    background: transparent !important;
 }
 
 .h1,
@@ -231,7 +234,7 @@ a:hover {
     margin: 10px auto auto !important;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .content-container {
         margin-left: 255px !important;
     }
@@ -239,7 +242,7 @@ a:hover {
     .content-container .section {
         margin: 6px !important;
     }
-}
+} */
 
 /* MOBILE */
 @media (min-width: 768px) {
