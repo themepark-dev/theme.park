@@ -158,8 +158,7 @@ html {
 }
 
 
-.backgroundContainer,
-html {
+.backgroundContainer:not(.backgroundContainer.withBackdrop), html {
     background: var(--theme-background);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
