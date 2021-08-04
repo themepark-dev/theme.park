@@ -82,7 +82,7 @@ h6,
 
 /* LINKS */
 
-a,
+a:not(.sub-value a),
 a.no-highlight,
 .news-body a {
     color: var(--link-color);
