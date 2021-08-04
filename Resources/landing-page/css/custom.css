@@ -309,3 +309,7 @@ p {
 #portfolio [class*="container-"] .portfolio-box .portfolio-box-caption.dracula-hover {
     background: #282a36;
 }
+
+#portfolio [class*="container-"] .portfolio-box .portfolio-box-caption.overseer-hover {
+    background: #111827;
+}
