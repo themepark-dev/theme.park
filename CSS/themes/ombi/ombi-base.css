@@ -105,6 +105,10 @@ a:hover {
     color: rgb(var(--accent-color)) !important;
 }
 
+#main-container\ dark > mat-sidenav-container > mat-sidenav-content {
+    margin-left: 16rem !important;
+}
+
 @media (min-width: 768px) {
     .sidenav-container .sidenav {
         background: hsla(0, 0%, 0%, 0.438) !important;
@@ -149,7 +153,6 @@ a:hover {
     border-radius: .375rem !important;
     padding: 10px 20px;
     height: auto;
-    width: 16rem !important;
 }
 
 [id*="nav-"] {
