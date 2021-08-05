@@ -496,7 +496,7 @@ button:hover [class*="DisclosureArrow-disclosureArrow-"] {
 /* BUTTONS */
 .btn-primary {
   border-color: var(--button-color);
-  color: #fff;
+  color: var(--button-text);
   background-color: var(--button-color);
   -webkit-transition: background-color .1s;
   transition: background-color .1s;
@@ -504,7 +504,7 @@ button:hover [class*="DisclosureArrow-disclosureArrow-"] {
 
 .btn-primary:focus,
 .btn-primary:hover {
-  color: #fff;
+  color: var(--button-text-hover);
   background-color: var(--button-color-hover);
 }
 
@@ -539,7 +539,7 @@ fieldset[disabled] .btn-primary:hover {
 }
 
 .edit-lock-addon.locked {
-  color: #fff;
+  color: var(--button-text-hover);
   background-color: var(--button-color);
   border-color: var(--button-color);
 }
@@ -594,7 +594,7 @@ fieldset[disabled] .btn-primary:hover {
 
 [class*="Tooltip-tooltip-"] {
   background-color: var(--button-color);
-  color: #fff;
+  color: var(--button-text);
 }
 
 [class*="Tooltip-tooltipBottomArrow-"]:after {
