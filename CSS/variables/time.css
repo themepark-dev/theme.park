@@ -1,0 +1,30 @@
+:root {
+  --main-bg-color: radial-gradient(ellipse at center bottom, rgba(109, 247, 81, .7) 0%, #00130c 80%, rgb(0, 0, 0) 100%) center center/cover no-repeat fixed,
+    url("https://theme-park.dev/Resources/time.jpg") center center/cover no-repeat fixed;
+  --modal-bg-color: linear-gradient(180deg, rgba(2, 77, 0, 1) 0%, #00130c 100%) center center/cover no-repeat fixed;
+  --modal-header-color: linear-gradient(180deg, rgba(2, 77, 0, 1) 0%, #00130c 100%) center center/cover no-repeat fixed;
+  --modal-footer-color: linear-gradient(180deg, rgba(2, 77, 0, 1) 0%, #00130c 100%) center center/cover no-repeat fixed;
+
+  --drop-down-menu-bg: linear-gradient(180deg, rgba(2, 77, 0, 1) 0%, #00130c 100%) center center/cover no-repeat fixed;
+
+  --button-color: rgb(4, 168, 0);
+  --button-color-hover: rgba(4, 168, 0, .8);
+  --button-text: #eee;
+  --button-text-hover: #FFF;
+
+  --accent-color: 109, 247, 81;
+  --accent-color-hover: rgba(var(--accent-color), 0.8);
+  --link-color: rgb(109, 247, 81);
+  --link-color-hover: rgba(109, 247, 81,.8);
+  --label-text-color: #000;
+
+  --text:#ddd;
+  --text-hover: #fff;
+  --text-muted: #999;
+
+    /*Specials*/
+  --arr-queue-color: #6df751cc; /* Servarr apps + Bazarr*/
+  --plex-poster-unwatched: rgb(109, 247, 81);
+  --petio-spinner: invert(73%) sepia(74%) saturate(428%) hue-rotate(55deg) brightness(101%) contrast(96%); /* Made with https://codepen.io/jsm91/embed/ZEEawyZ */
+  --gitea-color-primary-dark-4: 109, 247, 81;
+}
