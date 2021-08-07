@@ -35,6 +35,8 @@
 
 <h2><a href="https://docs.theme-park.dev/themes/addons/sonarr">Addons</a></h2>
 
+<h2><a href="https://docs.theme-park.dev/community-themes/">Community Themes</a></h2>
+
 <h2><a href="https://docs.theme-park.dev/custom/">Adding your own theme theme-options</a></h2>
 
 <p align="center">Current themes in the repo</p>
