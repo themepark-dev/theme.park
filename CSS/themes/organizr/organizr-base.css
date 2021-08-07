@@ -7,6 +7,12 @@
 
 /* THEME PARK CUSTOM */
 
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: rgb(var(--accent-color));
+    border: 1px solid rgb(var(--accent-color));
+    color: var(--label-text-color);
+}
+
 .modal-content {
     background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat !important;
