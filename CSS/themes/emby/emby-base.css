@@ -204,7 +204,7 @@ html {
 
 .detailButton-icon,
 .fab,
-.raised {
+.raised:not(.raised-mini) {
     background: var(--button-color);
     color: var(--button-text);
 }
