@@ -21,20 +21,21 @@
 
 <p align="center">Click on the banners for screenshots.</p>
 
-<a href="https://docs.theme-park.dev/colors/dracula"><img src="https://docs.theme-park.dev/site_assets/dracula_banner.png" alt="Dracula"/></a>
-<a href="https://docs.theme-park.dev/colors/overseer"><img src="https://docs.theme-park.dev/site_assets/overseer_banner.png" alt="Overseer"/></a>
-<a href="https://docs.theme-park.dev/colors/organizr-dark"><img src="https://docs.theme-park.dev/site_assets/organizrdark_banner.png" alt="Organizr-Dark"/></a>
-<a href="https://docs.theme-park.dev/colors/aquamarine"><img src="https://docs.theme-park.dev/site_assets/aquamarine_banner.png" alt="Aquamarine"/></a>
-<a href="https://docs.theme-park.dev/colors/hotline"><img src="https://docs.theme-park.dev/site_assets/hotline_banner.png" alt="Hotline"/></a>
-<a href="https://docs.theme-park.dev/colors/space-gray"><img src="https://docs.theme-park.dev/site_assets/spacegray_banner.png" alt="Space-Gray"/></a>
-<a href="https://docs.theme-park.dev/colors/dark"><img src="https://docs.theme-park.dev/site_assets/dark_banner.png" alt="Dark"/></a>
-<a href="https://docs.theme-park.dev/colors/plex"><img src="https://docs.theme-park.dev/site_assets/plex_banner.png" alt="Plex"/></a>
+<a href="https://docs.theme-park.dev/theme-options/dracula"><img src="https://docs.theme-park.dev/theme-options/dracula_banner.png" alt="Dracula"/></a>
+<a href="https://docs.theme-park.dev/theme-options/overseer"><img src="https://docs.theme-park.dev/theme-options/overseer_banner.png" alt="Overseer"/></a>
+<a href="https://docs.theme-park.dev/theme-options/organizr-dark"><img src="https://docs.theme-park.dev/theme-options/organizr dark_banner.png" alt="Organizr-Dark"/></a>
+<a href="https://docs.theme-park.dev/theme-options/aquamarine"><img src="https://docs.theme-park.dev/theme-options/aquamarine_banner.png" alt="Aquamarine"/></a>
+<a href="https://docs.theme-park.dev/theme-options/hotline"><img src="https://docs.theme-park.dev/theme-options/hotline_banner.png" alt="Hotline"/></a>
+<a href="https://docs.theme-park.dev/theme-options/hotpink"><img src="https://docs.theme-park.dev/theme-options/hotpink_banner.png" alt="Hotpink"/></a>
+<a href="https://docs.theme-park.dev/theme-options/space-gray"><img src="https://docs.theme-park.dev/theme-options/space gray_banner.png" alt="Space-Gray"/></a>
+<a href="https://docs.theme-park.dev/theme-options/dark"><img src="https://docs.theme-park.dev/theme-options/dark_banner.png" alt="Dark"/></a>
+<a href="https://docs.theme-park.dev/theme-options/plex"><img src="https://docs.theme-park.dev/theme-options/plex_banner.png" alt="Plex"/></a>
 
 <h2><a href="https://docs.theme-park.dev/setup">Installation</a></h2>
 
 <h2><a href="https://docs.theme-park.dev/themes/addons/sonarr">Addons</a></h2>
 
-<h2><a href="https://docs.theme-park.dev/custom/">Adding your own theme colors</a></h2>
+<h2><a href="https://docs.theme-park.dev/custom/">Adding your own theme theme-options</a></h2>
 
 <p align="center">Current themes in the repo</p>
 
