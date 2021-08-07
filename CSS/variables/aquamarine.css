@@ -25,6 +25,6 @@
   /*Specials*/
   --arr-queue-color: #009688; /* Servarr apps + Bazarr*/
   --plex-poster-unwatched: rgb(21, 213, 194);
-  --petio-spinner: invert(39%) sepia(98%) saturate(527%) hue-rotate(129deg) brightness(94%) contrast(101%); /* Petio */ /* Made with https://codepen.io/jsm91/embed/ZEEawyZ */
+  --petio-spinner: invert(39%) sepia(98%) saturate(527%) hue-rotate(129deg) brightness(94%) contrast(101%); /* Made with https://codepen.io/jsm91/embed/ZEEawyZ */
   --gitea-color-primary-dark-4: 18, 175, 160;
 }
