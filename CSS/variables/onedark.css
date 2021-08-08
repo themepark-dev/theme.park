@@ -10,7 +10,7 @@
   --button-color: #98c379;
   --button-color-hover: #c678dd;
   --button-text: #282c34;
-  --button-text-hover: #FFF;
+  --button-text-hover: #282c34;
 
   --accent-color:  97, 175, 239;
   --accent-color-hover: rgb(var(--accent-color),.8);
