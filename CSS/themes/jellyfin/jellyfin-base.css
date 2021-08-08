@@ -95,14 +95,6 @@ html {
     -o-background-size: auto, cover;
 }
 
-.headerTop {
-	background-color: var(--modal-header-color);
-}
-
-.mainDrawer-scrollContainer {
-	background-color: var(--modal-bg-color);
-}
-
 .appfooter,
 .formDialogFooter:not(.formDialogFooter-clear) {
     background: var(--footer-background);
@@ -888,10 +880,6 @@ html {
 
 .emby-tab-button:hover {
     color: rgb(var(--theme-accent-text-color));
-}
-
-.emby-tabs-slider{
-	background-color: var(--modal-header-color);
 }
 
 .guide-channelHeaderCell:focus,
