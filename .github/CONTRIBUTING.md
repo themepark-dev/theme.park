@@ -1,5 +1,6 @@
 # Contributing to theme.park
 
+- If you want to discuss changes, you can also bring it up in our Discord server
 ## New theme option
 
 * The current variables in use can be found in any of the CSS files in `/CSS/variables/`
