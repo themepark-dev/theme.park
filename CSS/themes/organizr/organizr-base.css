@@ -13,6 +13,14 @@
     color: var(--label-text-color);
 }
 
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    border: solid rgb(var(--accent-color)) 1px;
+}
+
+.select2-container--default .select2-selection--multiple {
+    border: 1px solid rgb(var(--accent-color), 0.5);
+}
+
 .modal-content {
     background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat !important;
