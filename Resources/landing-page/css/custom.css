@@ -313,3 +313,7 @@ p {
 #portfolio [class*="container-"] .portfolio-box .portfolio-box-caption.overseer-hover {
     background: #111827;
 }
+
+#portfolio [class*="container-"] .portfolio-box .portfolio-box-caption.hotpink-hover {
+    background: linear-gradient(45deg, #fb3f62 0%, #204c80 37%, #004249 97%) center center/cover no-repeat fixed;
+}
