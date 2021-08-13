@@ -1,3 +1,37 @@
+:root {
+    --about: linear-gradient(to bottom, rgba(0, 0, 0, 1.0), rgba(87, 109, 117, 0)), var(--main-bg-color);
+}
+
+.bg-primary {
+    background: var(--about) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+
+.bg-dark,
+.theme-overview,
+#services,
+#themes,
+footer {
+    background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+
+.text-white-50 {
+    color: var(--text) !important;
+}
+
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
 
     #mainNav,
@@ -76,26 +110,25 @@
     }
 
     #mainNav.navbar-scrolled .navbar-brand:hover {
-        color: #12afa0;
+        color: rgb(var(--accent-color));
     }
 
     #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
         color: #fff;
-        ;
     }
 
     #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
-        color: #12afa0;
+        color: var(--link-color-hover);
     }
 }
 
 #mainNav .navbar-nav .nav-item .nav-link:hover,
 #mainNav .navbar-nav .nav-item .nav-link:active {
-    color: #12afa0;
+    color: rgb(var(--accent-color));
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active {
-    color: #12afa0 !important;
+    color: var(--link-color-hover) !important;
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -117,61 +150,61 @@
 
 /* BUTTON SHIT*/
 .btn-primary {
-    color: #fff;
-    background-color: #009688;
-    border-color: #009688;
+    color: var(--button-text);
+    background-color: var(--button-color);
+    border-color: var(--button-color);
 }
 
 .btn-primary:hover {
-    color: #fff;
-    background-color: #12afa0;
-    border-color: #12afa0;
+    color: var(--button-text-hover);
+    background-color: var(--button-color-hover);
+    border-color: var(--button-color-hover);
 }
 
 .btn-primary:focus,
 .btn-primary.focus {
-    color: #fff;
-    background-color: #12afa0;
-    border-color: #12afa0;
-    box-shadow: 0 0 0 0.2rem #12afa080;
+    color: var(--button-text-hover);
+    background-color: var(--button-color-hover);
+    border-color: var(--button-color-hover);
+    box-shadow: 0 0 0 0.2rem rgba(var(--accent-color), 0.5);
 }
 
 .btn-primary.disabled,
 .btn-primary:disabled {
-    color: #fff;
-    background-color: #009688;
-    border-color: #009688;
+    color: var(--text-muted);
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.3);
 }
 
 .btn-primary:not(:disabled):not(.disabled):active,
 .btn-primary:not(:disabled):not(.disabled).active,
 .show>.btn-primary.dropdown-toggle {
-    color: #fff;
-    background-color: #12afa0;
-    border-color: #12afa0;
+    color: var(--button-text-hover);
+    background-color: var(--button-color-hover);
+    border-color: var(--button-color-hover);
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show>.btn-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.2rem #12afa080;
+    box-shadow: 0 0 0 0.2rem rgba(var(--accent-color), 0.502);
 }
 
 hr.divider {
-    border-color: #12afa0
+    border-color: rgb(var(--accent-color));
 }
 
 a {
-    color: #fff;
+    color: var(--link-color);
 }
 
 a:hover {
-    color: #12afa0;
+    color: var(--link-color-hover);
     text-decoration: none;
 }
 
 .text-primary {
-    color: #12afa0 !important;
+    color: rgb(var(--accent-color)) !important;
 }
 
 body,
@@ -202,29 +235,32 @@ header.masthead {
     margin: 0;
 }
 
+/*
 .bg-primary,
 .bg-dark {
     background: #2d2d2d;
     background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1.0), rgba(87, 109, 117, 1.0));
     background: -moz-linear-gradient(top, rgba(0, 0, 0, 1.0), rgba(87, 109, 117, 1.0));
     background: linear-gradient(to bottom, rgba(0, 0, 0, 1.0), rgba(87, 109, 117, 1.0));
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
 
 }
+*/
+
+
 
 .theme-overview {
-    background: #2d2d2d;
+    /* background: #2d2d2d;
     background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 1.0), rgba(87, 109, 117, 1.0));
     background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 1.0), rgba(87, 109, 117, 1.0));
-    background: linear-gradient(to top, rgba(0, 0, 0, 1.0), rgba(87, 109, 117, 1.0));
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to top, rgba(0, 0, 0, 1.0), rgba(87, 109, 117, 1.0)); */
     font-family: var(--font-family-sans-serif);
 }
 
 #services,
 #themes {
-    background: rgba(87, 109, 117, 1.0);
-    color: white;
+    /* background: rgba(87, 109, 117, 1.0); */
+    color: var(--text-hover);
     padding: 0rem 0 8rem 0;
 }
 
@@ -247,7 +283,7 @@ header.masthead {
 .app-container:hover {
     color: white;
     text-decoration: none;
-    background: #47918a80;
+    background: rgba(var(--accent-color), 0.5);
 }
 
 .app-container:hover img {

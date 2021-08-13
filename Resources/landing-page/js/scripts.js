@@ -70,3 +70,23 @@
     });
 
 })(jQuery); // End of use strict
+
+// load random css stylesheet
+const themes = ["aquamarine","hotline","dark","organizr-dark","dracula","overseerr",
+"plex","space-gray","hotpink","onedark"];
+var random = themes[~~(Math.random() * themes.length)];
+function injectTheme(theme,container="head") {
+    if (container === "head") {
+        html_element = document.head;
+    } else html_element = document.body;
+    let link = document.createElement("link");
+    url = "/CSS/variables/"
+    link.type = "text/css";
+    link.rel = "stylesheet";
+    link.href = `${url}/${theme}.css`;
+  
+    html_element.appendChild(link);
+  }
+
+  injectTheme(random);
+
