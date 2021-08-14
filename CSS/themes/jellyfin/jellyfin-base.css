@@ -7,43 +7,43 @@
     --theme-icon-focus-background: rgba(var(--accent-color), 0.2);
 
     --theme-background: var(--main-bg-color);
-    --header-blur-background: rgba(20,20,20,0.66);
+    --header-blur-background: rgba(20, 20, 20, 0.66);
     --drawer-background: #2C2C2E;
     --docked-drawer-background: rgba(0, 0, 0, 0.25);
     --button-background: var(--button-color);
     --card-background: rgba(0, 0, 0, 0.15);
     --footer-background: var(--modal-footer-color);
-    --footer-blur-background: rgba(29,29,31,0.66);
-    
+    --footer-blur-background: rgba(29, 29, 31, 0.66);
+
     --header-background: var(--theme-background);
     --theme-body-secondary-text-color: rgba(255, 255, 255, .6);
     --line-background: rgba(255, 255, 255, .08);
     --line-size: .08em;
-    --scrollbar-thumb-background: rgba(255,255,255,.3);
+    --scrollbar-thumb-background: rgba(255, 255, 255, .3);
 }
 
 @media (pointer: fine) {
     :not(.layout-tv):root {
         --theme-background: var(--main-bg-color);
-        --header-blur-background: rgba(20,20,20,0.66);
+        --header-blur-background: rgba(20, 20, 20, 0.66);
         --drawer-background: #2C2C2E;
         --docked-drawer-background: rgba(0, 0, 0, 0.25);
         --button-background: #1f1f1f;
         --card-background: rgba(0, 0, 0, 0.15);
         --footer-background: var(--modal-footer-color);
-        --footer-blur-background: rgba(29,29,31,0.66);
+        --footer-blur-background: rgba(29, 29, 31, 0.66);
     }
 }
 
 .layout-tv:root {
     --theme-background: var(--main-bg-color);
-    --header-blur-background: rgba(20,20,20,0.66);
+    --header-blur-background: rgba(20, 20, 20, 0.66);
     --drawer-background: #2C2C2E;
     --docked-drawer-background: rgba(0, 0, 0, 0.25);
     --button-background: #1f1f1f;
     --card-background: rgba(0, 0, 0, 0.15);
     --footer-background: var(--modal-footer-color);
-    --footer-blur-background: rgba(29,29,31,0.66);
+    --footer-blur-background: rgba(29, 29, 31, 0.66);
 }
 
 /*TP CUSTOM */
@@ -158,7 +158,8 @@ html {
 }
 
 
-.backgroundContainer:not(.backgroundContainer.withBackdrop), html {
+.backgroundContainer:not(.backgroundContainer.withBackdrop),
+html {
     background: var(--theme-background);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
@@ -744,9 +745,22 @@ html {
 }
 
 .mainDrawer {
-    background: var(--header-blur-background);
-    -webkit-backdrop-filter: saturate(1.8) blur(1.5em);
-    backdrop-filter: saturate(1.8) blur(1.5em);
+    background: var(--header-background);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+
+@supports (backdrop-filter: blur(1em)) or (-webkit-backdrop-filter:blur(1em)) {
+    .mainDrawer {
+        background: var(--header-blur-background);
+        -webkit-backdrop-filter: saturate(1.8) blur(1.5em);
+        backdrop-filter: saturate(1.8) blur(1.5em);
+    }
 }
 
 .jstree-default .jstree-clicked {
