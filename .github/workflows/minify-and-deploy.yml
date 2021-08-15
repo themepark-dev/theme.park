@@ -44,7 +44,12 @@ jobs:
                         minify_file $fname
                     fi
                 done
-
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+      - name: Get short SHA and create JSON
+        run: |
+          GIT_HASH=$(git rev-parse --short "$GITHUB_SHA")
+          python themes.py --sha=${GIT_HASH}
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/master' }}
