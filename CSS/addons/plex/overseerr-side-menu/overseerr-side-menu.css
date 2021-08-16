@@ -10,11 +10,13 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
-/* PLEX OVERSEER SIDE MENU */
+/* PLEX OVERSEERR SIDE MENU */
 
 /* APP VARS*/
 :root {
     --sidebar-color: #1f2937;
+    --menu-item: #111827;
+    --menu-item-hover: #374151;
 }
 
 /* EXTRA CSS */
@@ -24,20 +26,31 @@
     padding-top: 10px;
 }
 
+[class*="SourceSidebarLink-isSelected-"]:before {
+    background-color: transparent !important;
+}
+
 [class*="NavBar-container-"] {
     background: rgb(0 0 0 / 0%) !important;
 }
 
 [class*="SourceSidebar-openSidebar-"] [class*="SourceSidebarLink-isSelected-"] {
-    background: var(--main-bg-color);
+    background: var(--menu-item);
     box-shadow: inset 4px 0 0 0 transparent !important;
     border-radius: 5px;
     margin-bottom: 5px;
+
+}
+
+[class*="SourceSidebarLink-isSelected-"] [class*="SourceSidebarLink-iconContainer-"],
+[class*="SourceSidebarLink-isSelected-"] [class*="SourceSidebarLink-title-"] {
+    color: white;
 }
 
 [class*="SourceSidebar-openSidebar-"] [class*="SourceSidebarLink-button-"]:hover,
 [class*="SourceSidebar-openSidebar-"] [class*="SourceSidebarLink-isActive-"] {
-    background: var(--modal-bg-color);
+    background: var(--menu-item-hover);
+    border-radius: 5px;
 }
 
 [class*="SourceSidebarLink-button-"] {
@@ -49,7 +62,7 @@
 }
 
 [class*="SourceSidebar-expandedSidebar-"][class*="SourceSidebar-sidebar-"] [class*="SourceSidebarLink-isSelected-"] {
-    background: var(--main-bg-color) !important;
+    background: var(--menu-item) !important;
 }
 
 [class*="SourceSidebarContent-expandedSidebarContent-"],
@@ -63,6 +76,10 @@
 
 [class*="SourceSidebarContent-expandedSidebarContent-"] div {
     border-radius: 5px;
+}
+
+[class*="SourceSidebarContent-expandedSidebarContent-"] div:hover {
+    background-color: var(--menu-item-hover);
 }
 
 [class*="SourceSidebar-collapsedSidebar-"] [class*="SourceSidebar-sidebar-"] {
@@ -81,7 +98,7 @@
 
 [class*="SourceSidebarLink-button-"][class*="SidebarLink-sidebarLink-"][class*="Link-default-"][class*="SourceSidebarLink-small-"][class*="SourceSidebarLink-isSelected-"]:hover {
     box-shadow: none !important;
-    background: var(--modal-bg-color) !important;
+    background: var(--menu-item-hover) !important;
 }
 
 [class*="SourceSidebar-collapsedSidebar-"][class*="SourceSidebarLink-button-"][class*="SidebarLink-sidebarLink-"][class*="Link-default-"][class*="SourceSidebarLink-small-"][class*="SourceSidebarLink-isSelected-"]:hover {
@@ -90,5 +107,5 @@
 
 [class*="SourceSidebarLink-sourceLink-"]:hover [class*="SourceSidebarLink-iconContainer-"],
 [class*="SourceSidebarLink-sourceLink-"]:hover [class*="SourceSidebarLink-title-"] {
-    color: rgb(var(--accent-color));
+    color: white;
 }
