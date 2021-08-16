@@ -323,7 +323,7 @@ p {
 }
 
 #portfolio [class*="container-"] .portfolio-box .portfolio-box-caption.hotline-hover {
-    background: radial-gradient(ellipse at center, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
+    background: linear-gradient(0deg, rgba(247,101,184,1) 0%, rgb(21, 95, 165) 100%) center center/cover no-repeat fixed;
 }
 
 #portfolio [class*="container-"] .portfolio-box .portfolio-box-caption.space-gray-hover {
