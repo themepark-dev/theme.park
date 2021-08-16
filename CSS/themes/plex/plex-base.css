@@ -86,7 +86,7 @@ a[class*="MetadataPosterCardTitle-title-"],
 }
 
 a:hover,
-[class*="Link-link-"]:hover,
+[class*="Link-link-"]:hover:not([type="button"]):not([role="menuitem"]),
 .artwork-file-container:hover a,
 [class*="MetadataPosterCardTitle-title-"] a:hover,
 a[class*="MetadataPosterCardTitle-title-"]:hover {
@@ -211,6 +211,10 @@ a[class*="MetadataTableRow-title-"]:hover {
 
 
 /* ACCENTS */
+
+[class*="Badge-primary-"] {
+  background-color: rgb(var(--accent-color));
+}
 
 [class*="DisclosureArrow-default-"] {
   border-color: rgb(var(--accent-color));
