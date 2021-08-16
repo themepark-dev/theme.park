@@ -43,7 +43,7 @@
         display: none !important;
     }
     [class*="PageHeader-logoContainer-"]:before {
-        background-image: url("https://theme-park.dev/CSS/addons/radarr/radarr4k-v3.png");
+        background-image: url("https://theme-park.dev/CSS/addons/radarr/radarr-4k-logo/radarr4k-v3.png");
         display: inline-block;
         width: 148px; 
         height: 48px;
@@ -60,7 +60,7 @@
         display: none !important;
     }
     [class*="PageHeader-logoContainer-"]{
-        background-image: url("https://theme-park.dev/CSS/addons/radarr/radarr-v3-mobile.png");
+        background-image: url("https://theme-park.dev/CSS/addons/radarr/radarr-4k-logo/radarr-v3-mobile.png");
         display: inline-block;
         width: 32px; 
         height: 32px;
@@ -80,7 +80,7 @@
 }
 
 [class*="LoadingPage-page-"]:before {
-        background-image: url("https://theme-park.dev/CSS/addons/radarr/radarr4k-v3.png");
+        background-image: url("https://theme-park.dev/CSS/addons/radarr/radarr-4k-logo/radarr4k-v3.png");
         display: inline-block;
         width: 148px; 
         height: 48px;
