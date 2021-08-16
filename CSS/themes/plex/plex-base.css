@@ -32,6 +32,19 @@ label,
   color: var(--text);
 }
 
+[class*="PivotTab-button-"] {
+  color: var(--text) !important;
+}
+
+[class*="PivotTabDropdown-isSelected-"] {
+  border-color: rgb(var(--accent-color)) !important;
+  border-bottom-width: 5px !important;
+  border-left: 4px solid transparent !important;
+  border-right: 4px solid transparent !important;
+  border-top-width: 0 !important;
+  margin-top: -2px !important;
+}
+
 [class*="MetadataPosterCardActions-editButton-"],
 [class*="MetadataPosterCardActions-moreButton-"] {
   color: rgb(var(--accent-color)) !important;
@@ -249,9 +262,8 @@ button:hover [class*="DisclosureArrow-disclosureArrow-"] {
 [class*="PageHeaderMultiselectActions-container-"],
 [class*="PageHeaderMultiselectActions-count-"],
 [class*="PivotTab-selectedButton-"],
-[class*="PivotTabDropdown-isSelected-"],
 [class*="PageHeaderTitle-detail-"] {
-  color: rgb(var(--accent-color));
+  color: rgb(var(--accent-color)) !important;
   border-color: rgb(var(--accent-color));
 }
 
