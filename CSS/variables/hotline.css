@@ -1,21 +1,21 @@
 :root {
-  --main-bg-color: radial-gradient(ellipse at center, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
+  --main-bg-color: linear-gradient(0deg, rgba(247,101,184,1) 0%, rgb(21, 95, 165) 100%) center center/cover no-repeat fixed;
 
-  --modal-bg-color: radial-gradient(ellipse at top, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
-  --modal-header-color: radial-gradient(ellipse at top, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
-  --modal-footer-color: radial-gradient(ellipse at top, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
+  --modal-bg-color: linear-gradient(0deg, rgba(247,101,184,1) 0%, rgb(21, 95, 165) 100%) center center/cover no-repeat fixed;
+  --modal-header-color: linear-gradient(0deg, rgba(247,101,184,1) 0%, rgb(21, 95, 165) 100%) center center/cover no-repeat fixed;
+  --modal-footer-color: linear-gradient(0deg, rgba(247,101,184,1) 0%, rgb(21, 95, 165) 100%) center center/cover no-repeat fixed;
   
-  --drop-down-menu-bg: radial-gradient(ellipse at top, #F44336 0%, #0b3161 100%) center center/cover no-repeat fixed;
+  --drop-down-menu-bg: linear-gradient(90deg, rgba(247,101,184,1) 0%, rgba(21, 95, 165) 100%) center center/cover no-repeat fixed;
 
-  --button-color: hsla(0,0%,100%,.15);
-  --button-color-hover: hsla(0,0%,100%,.30);
+  --button-color: #f98dc9;
+  --button-color-hover: #ff4cb1;
   --button-text: #eee;
-  --button-text-hover: #FFF;
+  --button-text-hover: #fff;
   
-  --accent-color:  244, 67, 54;
+  --accent-color:  249, 141, 201;
   --accent-color-hover: rgb(var(--accent-color),.8);
-  --link-color: #ddd;
-  --link-color-hover: #fff;
+  --link-color:rgb(255, 179, 222);
+  --link-color-hover: #d7fffe;
   --label-text-color: #fff;
     
   --text:#ddd;
@@ -23,8 +23,8 @@
   --text-muted: #999;
 
   /*Specials*/
-  --arr-queue-color: #6b5; /* Servarr apps + Bazarr*/
-  --plex-poster-unwatched: #FB3122;
-  --petio-spinner: invert(32%) sepia(35%) saturate(3786%) hue-rotate(341deg) brightness(100%) contrast(92%); /* Made with https://codepen.io/jsm91/embed/ZEEawyZ */ 
-  --gitea-color-primary-dark-4: 244, 67, 54;
+  --arr-queue-color: #f98dc9; /* Servarr apps + Bazarr*/
+  --plex-poster-unwatched: #f765b8;
+  --petio-spinner: invert(78%) sepia(17%) saturate(4447%) hue-rotate(290deg) brightness(109%) contrast(95%); /* Made with https://codepen.io/jsm91/embed/ZEEawyZ */ 
+  --gitea-color-primary-dark-4: 215,255,254;
 }
