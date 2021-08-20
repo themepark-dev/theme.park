@@ -206,7 +206,7 @@ h6 {
     -o-background-size: auto, cover;
 }
 
-.bg-plex {
+.bg-plex:not(h2 .bg-plex) {
     background: #e5a00d;
     color: white;
     border-radius: 25px;
