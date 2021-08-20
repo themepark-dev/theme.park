@@ -1623,6 +1623,29 @@ a:hover,
     border: 1px solid rgb(var(--accent-color));
 }
 
+/* Apparance side menu*/
+.tabs-vertical li.active a,
+.tabs-vertical li.active a:focus,
+.tabs-vertical li.active a:hover {
+    background: rgba(var(--accent-color), .15) !important;
+}
+
+.customvtab .tabs-vertical li.active a,
+.customvtab .tabs-vertical li.active a:focus,
+.customvtab .tabs-vertical li.active a:hover {
+    border-right: 2px solid rgb(var(--accent-color));
+    color: var(--text-hover)
+}
+
+.vtabs .tabs-vertical li a {
+    color: var(--text);
+}
+
+.vtabs .nav>li>a:focus,
+.vtabs .nav>li>a:hover {
+    background-color: rgba(var(--accent-color), .15);
+}
+
 /* THEME PARK CUSTOM END*/
 
 html {
