@@ -21,15 +21,15 @@
 
 <p align="center">Click on the banners for screenshots.</p>
 
-<a href="https://docs.theme-park.dev/theme-options/dracula"><img src="https://docs.theme-park.dev/theme-options/dracula_banner.png" alt="Dracula" width="49.49%"/></a>
-<a href="https://docs.theme-park.dev/theme-options/overseerr"><img src="https://docs.theme-park.dev/theme-options/overseerr_banner.png" alt="Overseerr" width="49.49%"/></a>
-<a href="https://docs.theme-park.dev/theme-options/organizr-dark"><img src="https://docs.theme-park.dev/theme-options/organizr dark_banner.png" alt="Organizr-Dark"  width="49.49%"/></a>
-<a href="https://docs.theme-park.dev/theme-options/aquamarine"><img src="https://docs.theme-park.dev/theme-options/aquamarine_banner.png" alt="Aquamarine"  width="49.49%"/></a>
-<a href="https://docs.theme-park.dev/theme-options/hotline"><img src="https://docs.theme-park.dev/theme-options/hotline_banner.png" alt="Hotline"  width="49.49%"/></a>
-<a href="https://docs.theme-park.dev/theme-options/hotpink"><img src="https://docs.theme-park.dev/theme-options/hotpink_banner.png" alt="Hotpink"  width="49.49%"/></a>
-<a href="https://docs.theme-park.dev/theme-options/space-gray"><img src="https://docs.theme-park.dev/theme-options/space gray_banner.png" alt="Space-Gray"  width="49.49%"/></a>
-<a href="https://docs.theme-park.dev/theme-options/dark"><img src="https://docs.theme-park.dev/theme-options/dark_banner.png" alt="Dark"  width="49.49%"/></a>
-<a href="https://docs.theme-park.dev/theme-options/plex"><img src="https://docs.theme-park.dev/theme-options/plex_banner.png" alt="Plex"  width="49.49%"/></a>
+<a href="https://docs.theme-park.dev/theme-options/dracula"><img src="https://docs.theme-park.dev/theme-options/dracula_banner_small.png" alt="Dracula" width="49.49%"/></a>
+<a href="https://docs.theme-park.dev/theme-options/overseerr"><img src="https://docs.theme-park.dev/theme-options/overseerr_banner_small.png" alt="Overseerr" width="49.49%"/></a>
+<a href="https://docs.theme-park.dev/theme-options/organizr-dark"><img src="https://docs.theme-park.dev/theme-options/organizr dark_banner_small.png" alt="Organizr-Dark"  width="49.49%"/></a>
+<a href="https://docs.theme-park.dev/theme-options/aquamarine"><img src="https://docs.theme-park.dev/theme-options/aquamarine_banner_small.png" alt="Aquamarine"  width="49.49%"/></a>
+<a href="https://docs.theme-park.dev/theme-options/hotline"><img src="https://docs.theme-park.dev/theme-options/hotline_banner_small.png" alt="Hotline"  width="49.49%"/></a>
+<a href="https://docs.theme-park.dev/theme-options/hotpink"><img src="https://docs.theme-park.dev/theme-options/hotpink_banner_small.png" alt="Hotpink"  width="49.49%"/></a>
+<a href="https://docs.theme-park.dev/theme-options/space-gray"><img src="https://docs.theme-park.dev/theme-options/space gray_banner_small.png" alt="Space-Gray"  width="49.49%"/></a>
+<a href="https://docs.theme-park.dev/theme-options/dark"><img src="https://docs.theme-park.dev/theme-options/dark_banner_small.png" alt="Dark"  width="49.49%"/></a>
+<a href="https://docs.theme-park.dev/theme-options/plex"><img src="https://docs.theme-park.dev/theme-options/plex_banner_small.png" alt="Plex"  width="49.49%"/></a>
 
 <h2><a href="https://docs.theme-park.dev/setup">Installation</a></h2>
 
