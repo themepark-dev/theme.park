@@ -17,7 +17,6 @@ def get_shas(output):
 def create_addons_json():
     addon_shas = subprocess.check_output(["git", "ls-files", "-s", "./CSS/addons/*.css"])
     SHAS = get_shas(addon_shas)
-    print(SHAS)
     ADDONS = {"addons":{}}
     addon_root = './CSS/addons'
     addon_folders = [name for name in listdir(addon_root) if isdir(join(addon_root, name))]

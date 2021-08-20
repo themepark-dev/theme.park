@@ -128,7 +128,7 @@
       "addons": {
         "bazarr-4k-logo": {
           "css": [
-            "https://theme-park.dev/CSS/addons/bazarr/bazarr-4k-logo/bazarr-4k-logo.css?sha=ff9cca70767971025f11a4c16bf71043c7df2431"
+            "https://theme-park.dev/CSS/addons/bazarr/bazarr-4k-logo/bazarr-4k-logo.css?sha=46198c7fbad746b02d2dcb0b27d04467084af121"
           ]
         }
       }
@@ -323,7 +323,7 @@
     "bazarr": {
       "bazarr-4k-logo": {
         "css": [
-          "https://theme-park.dev/CSS/addons/bazarr/bazarr-4k-logo/bazarr-4k-logo.css?sha=ff9cca70767971025f11a4c16bf71043c7df2431"
+          "https://theme-park.dev/CSS/addons/bazarr/bazarr-4k-logo/bazarr-4k-logo.css?sha=46198c7fbad746b02d2dcb0b27d04467084af121"
         ]
       }
     },
