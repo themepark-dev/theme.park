@@ -109,7 +109,7 @@
       "addons": {}
     },
     "organizr": {
-      "base_css": "https://theme-park.dev/CSS/themes/organizr/organizr-base.css?sha=dd2234ea4e86c71eb6b177cfc47a969a89082843",
+      "base_css": "https://theme-park.dev/CSS/themes/organizr/organizr-base.css?sha=ed8a5ad068efe754d389413829a7ca0b9db53f1f",
       "addons": {
         "glass": {
           "css": [
