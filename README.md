@@ -11,10 +11,10 @@
 
 <p align="center">A collection of themes/skins for your favorite apps!</p>
 <div align="center">
-    <a href="https://docs.theme-park.dev/site_assets/sonarr/aquamarine.png" rel="noopener"><img src="https://docs.theme-park.dev/site_assets/sonarr/aquamarine.png" alt="Screen Shot 1" width="49.15%" /></a>
-    <a href="https://docs.theme-park.dev/site_assets/radarr/organizr-dark.png" rel="noopener"><img src="https://docs.theme-park.dev/site_assets/radarr/organizr-dark.png" alt="Screen Shot 2" width="49.15%" /></a>
-    <a href="https://docs.theme-park.dev/site_assets/qbittorrent/hotline.png" rel="noopener"><img src="https://docs.theme-park.dev/site_assets/qbittorrent/hotline.png" alt="Screen Shot 3" width="49.15%" /></a>
-    <a href="https://docs.theme-park.dev/site_assets/tautulli/plex.png" rel="noopener"><img src="https://docs.theme-park.dev/site_assets/tautulli/plex.png" alt="Screen Shot 4" width="49.15%" /></a>
+    <a href="https://docs.theme-park.dev/theme-options/aquamarine/" rel="noopener"><img src="https://docs.theme-park.dev/theme-options/screenshots/ombi_aquamarine_small.png" alt="Screen Shot 1" width="49.15%" /></a>
+    <a href="https://docs.theme-park.dev/theme-options/hotpink/" rel="noopener"><img src="https://docs.theme-park.dev/theme-options/screenshots/radarr_hotpink_small.png" alt="Screen Shot 2" width="49.15%" /></a>
+    <a href="https://docs.theme-park.dev/theme-options/overseerr/" rel="noopener"><img src="https://docs.theme-park.dev/theme-options/screenshots/petio_overseerr_small.png" alt="Screen Shot 3" width="49.15%" /></a>
+    <a href="https://docs.theme-park.dev/theme-options/dracula/" rel="noopener"><img src="https://docs.theme-park.dev/theme-options/screenshots/bazarr_dracula_small.png" alt="Screen Shot 4" width="49.15%" /></a>
 </div>
 
 <h1><a href="https://docs.theme-park.dev/themes/">Themes</a></h1>
