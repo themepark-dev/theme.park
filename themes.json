@@ -188,6 +188,11 @@
     "sonarr": {
       "base_css": "https://theme-park.dev/CSS/themes/sonarr/sonarr-base.css?sha=6a1249f5f4f1786f61b6081d6eef4f73fc7c2da8",
       "addons": {
+        "sonarr-4k-logo": {
+          "css": [
+            "https://theme-park.dev/CSS/addons/sonarr/sonarr-4k-logo/sonarr-theme.css?sha=ed7eb37b6504e37bd41774b333911c510f81c407"
+          ]
+        },
         "sonarr-theme": {
           "css": [
             "https://theme-park.dev/CSS/addons/sonarr/sonarr-theme/sonarr-theme.css?sha=ed7eb37b6504e37bd41774b333911c510f81c407"
@@ -202,6 +207,11 @@
     "plex": {
       "base_css": "https://theme-park.dev/CSS/themes/plex/plex-base.css?sha=e699751caec1be173426606d89400bd33f9748db",
       "addons": {
+        "plex-alt-logo": {
+          "css": [
+            "https://theme-park.dev/CSS/addons/plex/plex-alt-logo/overseerr-side-menu.css?sha=5c0d3148e30a5ff7636fd1b85276cbcd01486955"
+          ]
+        },
         "overseerr-side-menu": {
           "css": [
             "https://theme-park.dev/CSS/addons/plex/overseerr-side-menu/overseerr-side-menu.css?sha=5c0d3148e30a5ff7636fd1b85276cbcd01486955"
@@ -264,7 +274,7 @@
       "addons": {}
     },
     "readarr": {
-      "base_css": "https://theme-park.dev/CSS/themes/readarr/readarr-base.css?sha=ac402087e4283475b9802b9a4b2ebafdc586d41d",
+      "base_css": "https://theme-park.dev/CSS/themes/readarr/readarr-base.css?sha=4bb5deffd4980a1374c196cff9b59cccd83591bd",
       "addons": {
         "readarr-alt-logo": {
           "css": [
@@ -328,6 +338,11 @@
       }
     },
     "sonarr": {
+      "sonarr-4k-logo": {
+        "css": [
+          "https://theme-park.dev/CSS/addons/sonarr/sonarr-4k-logo/sonarr-theme.css?sha=ed7eb37b6504e37bd41774b333911c510f81c407"
+        ]
+      },
       "sonarr-theme": {
         "css": [
           "https://theme-park.dev/CSS/addons/sonarr/sonarr-theme/sonarr-theme.css?sha=ed7eb37b6504e37bd41774b333911c510f81c407"
@@ -335,6 +350,11 @@
       }
     },
     "plex": {
+      "plex-alt-logo": {
+        "css": [
+          "https://theme-park.dev/CSS/addons/plex/plex-alt-logo/overseerr-side-menu.css?sha=5c0d3148e30a5ff7636fd1b85276cbcd01486955"
+        ]
+      },
       "overseerr-side-menu": {
         "css": [
           "https://theme-park.dev/CSS/addons/plex/overseerr-side-menu/overseerr-side-menu.css?sha=5c0d3148e30a5ff7636fd1b85276cbcd01486955"
