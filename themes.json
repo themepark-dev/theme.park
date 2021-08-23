@@ -30,7 +30,13 @@
     },
     "prowlarr": {
       "base_css": "https://theme-park.dev/CSS/themes/prowlarr/prowlarr-base.css?sha=5a5c2cf2dc3589c4a04346840ae6fa0aea1e43d1",
-      "addons": {}
+      "addons": {
+        "prowlarr-darker": {
+          "css": [
+            "https://theme-park.dev/CSS/addons/prowlarr/prowlarr-darker/prowlarr-darker.css?sha=767a3200193c5ad85183b214bea9ec28643a2517"
+          ]
+        }
+      }
     },
     "logarr": {
       "base_css": "https://theme-park.dev/CSS/themes/logarr/logarr-base.css?sha=ec221b4c4a1d817ac8875fa9b95aeb83518fe0ed",
@@ -124,11 +130,16 @@
       "addons": {}
     },
     "bazarr": {
-      "base_css": "https://theme-park.dev/CSS/themes/bazarr/bazarr-base.css?sha=a3748dae7bfc6ed605eb543f5887a77625420c87",
+      "base_css": "https://theme-park.dev/CSS/themes/bazarr/bazarr-base.css?sha=4cf9cacfc200ad269ecd184d60cef73bb34629fa",
       "addons": {
         "bazarr-4k-logo": {
           "css": [
-            "https://theme-park.dev/CSS/addons/bazarr/bazarr-4k-logo/bazarr-4k-logo.css?sha=46198c7fbad746b02d2dcb0b27d04467084af121"
+            "https://theme-park.dev/CSS/addons/bazarr/bazarr-4k-logo/bazarr-darker.css?sha=96d03ac3112209b079b2c2a04ead4c8ba09b6c16"
+          ]
+        },
+        "bazarr-darker": {
+          "css": [
+            "https://theme-park.dev/CSS/addons/bazarr/bazarr-darker/bazarr-darker.css?sha=96d03ac3112209b079b2c2a04ead4c8ba09b6c16"
           ]
         }
       }
@@ -190,12 +201,12 @@
       "addons": {
         "sonarr-4k-logo": {
           "css": [
-            "https://theme-park.dev/CSS/addons/sonarr/sonarr-4k-logo/sonarr-theme.css?sha=ed7eb37b6504e37bd41774b333911c510f81c407"
+            "https://theme-park.dev/CSS/addons/sonarr/sonarr-4k-logo/sonarr-darker.css?sha=5efcc267e3ad03a993d30252a8fbf12cb1b1f171"
           ]
         },
-        "sonarr-theme": {
+        "sonarr-darker": {
           "css": [
-            "https://theme-park.dev/CSS/addons/sonarr/sonarr-theme/sonarr-theme.css?sha=ed7eb37b6504e37bd41774b333911c510f81c407"
+            "https://theme-park.dev/CSS/addons/sonarr/sonarr-darker/sonarr-darker.css?sha=5efcc267e3ad03a993d30252a8fbf12cb1b1f171"
           ]
         }
       }
@@ -228,7 +239,12 @@
       "addons": {
         "radarr-4k-logo": {
           "css": [
-            "https://theme-park.dev/CSS/addons/radarr/radarr-4k-logo/radarr-4k-logo.css?sha=094f9fb3fdc8973225da908f7bd8ca2d4a0ba047"
+            "https://theme-park.dev/CSS/addons/radarr/radarr-4k-logo/radarr-darker.css?sha=1b7f3bca4616027ace7a5ac73d25b1789e35c8d4"
+          ]
+        },
+        "radarr-darker": {
+          "css": [
+            "https://theme-park.dev/CSS/addons/radarr/radarr-darker/radarr-darker.css?sha=1b7f3bca4616027ace7a5ac73d25b1789e35c8d4"
           ]
         }
       }
@@ -259,7 +275,13 @@
     },
     "lidarr": {
       "base_css": "https://theme-park.dev/CSS/themes/lidarr/lidarr-base.css?sha=d598ad85bc3d0fedfaa332528329c3cf3fd6e411",
-      "addons": {}
+      "addons": {
+        "lidarr-darker": {
+          "css": [
+            "https://theme-park.dev/CSS/addons/lidarr/lidarr-darker/lidarr-darker.css?sha=16c08f6c980befe90460648ab504bbf36dc07e13"
+          ]
+        }
+      }
     },
     "jellyfin": {
       "base_css": "https://theme-park.dev/CSS/themes/jellyfin/jellyfin-base.css?sha=a783cb1cc8f0654ae9bc8dc92c2b735743f8c8bf",
@@ -278,13 +300,25 @@
       "addons": {
         "readarr-alt-logo": {
           "css": [
-            "https://theme-park.dev/CSS/addons/readarr/readarr-alt-logo/readarr-alt-logo.css?sha=fb0427c54496239f85297f36bf97877f17b2bfa8"
+            "https://theme-park.dev/CSS/addons/readarr/readarr-alt-logo/readarr-darker.css?sha=6f86088cf9105c4026cadbea0fc03b8e26d2ee48"
+          ]
+        },
+        "readarr-darker": {
+          "css": [
+            "https://theme-park.dev/CSS/addons/readarr/readarr-darker/readarr-darker.css?sha=6f86088cf9105c4026cadbea0fc03b8e26d2ee48"
           ]
         }
       }
     }
   },
   "addons": {
+    "prowlarr": {
+      "prowlarr-darker": {
+        "css": [
+          "https://theme-park.dev/CSS/addons/prowlarr/prowlarr-darker/prowlarr-darker.css?sha=767a3200193c5ad85183b214bea9ec28643a2517"
+        ]
+      }
+    },
     "unraid": {
       "login-page": {
         "alien": {
@@ -333,19 +367,24 @@
     "bazarr": {
       "bazarr-4k-logo": {
         "css": [
-          "https://theme-park.dev/CSS/addons/bazarr/bazarr-4k-logo/bazarr-4k-logo.css?sha=46198c7fbad746b02d2dcb0b27d04467084af121"
+          "https://theme-park.dev/CSS/addons/bazarr/bazarr-4k-logo/bazarr-darker.css?sha=96d03ac3112209b079b2c2a04ead4c8ba09b6c16"
+        ]
+      },
+      "bazarr-darker": {
+        "css": [
+          "https://theme-park.dev/CSS/addons/bazarr/bazarr-darker/bazarr-darker.css?sha=96d03ac3112209b079b2c2a04ead4c8ba09b6c16"
         ]
       }
     },
     "sonarr": {
       "sonarr-4k-logo": {
         "css": [
-          "https://theme-park.dev/CSS/addons/sonarr/sonarr-4k-logo/sonarr-theme.css?sha=ed7eb37b6504e37bd41774b333911c510f81c407"
+          "https://theme-park.dev/CSS/addons/sonarr/sonarr-4k-logo/sonarr-darker.css?sha=5efcc267e3ad03a993d30252a8fbf12cb1b1f171"
         ]
       },
-      "sonarr-theme": {
+      "sonarr-darker": {
         "css": [
-          "https://theme-park.dev/CSS/addons/sonarr/sonarr-theme/sonarr-theme.css?sha=ed7eb37b6504e37bd41774b333911c510f81c407"
+          "https://theme-park.dev/CSS/addons/sonarr/sonarr-darker/sonarr-darker.css?sha=5efcc267e3ad03a993d30252a8fbf12cb1b1f171"
         ]
       }
     },
@@ -364,14 +403,31 @@
     "radarr": {
       "radarr-4k-logo": {
         "css": [
-          "https://theme-park.dev/CSS/addons/radarr/radarr-4k-logo/radarr-4k-logo.css?sha=094f9fb3fdc8973225da908f7bd8ca2d4a0ba047"
+          "https://theme-park.dev/CSS/addons/radarr/radarr-4k-logo/radarr-darker.css?sha=1b7f3bca4616027ace7a5ac73d25b1789e35c8d4"
+        ]
+      },
+      "radarr-darker": {
+        "css": [
+          "https://theme-park.dev/CSS/addons/radarr/radarr-darker/radarr-darker.css?sha=1b7f3bca4616027ace7a5ac73d25b1789e35c8d4"
+        ]
+      }
+    },
+    "lidarr": {
+      "lidarr-darker": {
+        "css": [
+          "https://theme-park.dev/CSS/addons/lidarr/lidarr-darker/lidarr-darker.css?sha=16c08f6c980befe90460648ab504bbf36dc07e13"
         ]
       }
     },
     "readarr": {
       "readarr-alt-logo": {
         "css": [
-          "https://theme-park.dev/CSS/addons/readarr/readarr-alt-logo/readarr-alt-logo.css?sha=fb0427c54496239f85297f36bf97877f17b2bfa8"
+          "https://theme-park.dev/CSS/addons/readarr/readarr-alt-logo/readarr-darker.css?sha=6f86088cf9105c4026cadbea0fc03b8e26d2ee48"
+        ]
+      },
+      "readarr-darker": {
+        "css": [
+          "https://theme-park.dev/CSS/addons/readarr/readarr-darker/readarr-darker.css?sha=6f86088cf9105c4026cadbea0fc03b8e26d2ee48"
         ]
       }
     }

@@ -7,6 +7,7 @@ echo '---------------------------'
 # Display variables for troubleshooting 
 echo -e "Variables set:\\n\
 'TP_DOMAIN'=${TP_DOMAIN}\\n\
+'TP_ADDON'=${TP_ADDON}\\n\
 'TP_THEME'=${TP_THEME}\\n"
 
 APP_FILEPATH='/app/lidarr/bin/UI/index.html'
@@ -45,4 +46,11 @@ if ! grep -q "${TP_DOMAIN}" "${APP_FILEPATH}"; then
     sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/themes\/lidarr\/lidarr-base.css'><\/head> /g" "${LOGIN_FILEPATH}"
     sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/variables\/${TP_THEME}.css'><\/head> /g" "${LOGIN_FILEPATH}"
     printf 'Stylesheet set to %s\n' "${TP_THEME}"
+    if [[ -n ${TP_ADDON} ]]; then
+        for addon in $(echo "$TP_ADDON" | tr "|" " "); do
+        sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/addons\/lidarr\/${addon}\/${addon}.css'><\/head> /g" "${APP_FILEPATH}"
+        sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/addons\/lidarr\/${addon}\/${addon}.css'><\/head> /g" "${LOGIN_FILEPATH}"
+        printf 'Added custom addon: %s\n\n' "${addon}"
+        done
+    fi
 fi

@@ -1,0 +1,126 @@
+:root {
+    --main-bg-color: #4a4a4b;
+
+    --modal-bg-color: #353535;
+    --modal-header-color: #353535;
+    --modal-footer-color: #353535;
+
+    --drop-down-menu-bg: #66001a;
+
+    --button-color: #5899eb;
+    --button-color-hover: #4b91ea;
+    --button-text: #eee;
+    --button-text-hover: #fff;
+
+    --accent-color: 202, 48, 45;
+    --accent-color-hover: rgb(var(--accent-color), .8);
+    --link-color: rgb(93, 156, 236);
+    --link-color-hover: rgb(93, 156, 236, .8);
+    --label-text-color: #eee;
+
+    --text: #ccc;
+    --text-hover: #fff;
+    --text-muted: #999;
+
+    /*Specials*/
+    --arr-queue-color: #1d563d;
+    --side-menu-active: #252525;
+    --scroller-hover: #606060;
+    --scroller: #707070;
+    --border-color: #606060;
+    --label-color: #810020;
+    --label-info: #5d9cec;
+    --header-color: #a41726;
+    --side-menu-color: #353535;
+    --side-menu-link-color: #ca302d;
+}
+
+/* HEADER */
+
+[class*="PageHeader-header-"] {
+    background-color: var(--header-color);
+    color: #fff;
+}
+
+[class*="PageToolbar-toolbar-"] {
+    background-color: #810020;
+    color: #e1e2e3;
+}
+
+/* SIDE MENU */
+
+[class*="PageSidebar-sidebar-"] {
+    background-color: #353535;
+    color: #fff;
+}
+
+[class*=PageSidebarItem-link-]:focus {
+    color: rgb(var(--accent-color)) !important;
+}
+
+[class*=PageSidebarItem-isActiveLink-] {
+    color: var(--side-menu-link-color) !important;
+}
+
+[class*=PageSidebarItem-isActiveParentLink-] {
+    background-color: var(--side-menu-active);
+}
+
+/* SCROLLER */
+[class*=ImportSeriesSelectSeries-results-]::-webkit-scrollbar-thumb:hover,
+[class*=OverlayScroller-thumb-]:hover {
+    background-color: var(--scroller-hover) !important;
+}
+
+[class*="OverlayScroller-thumb-"],
+[class*=Scroller-scroller-]::-webkit-scrollbar-thumb {
+    background-color: var(--scroller) !important;
+}
+
+/* MODALS */
+[class*=ModalHeader-modalHeader-],
+[class*=FieldSet-legend-] {
+    border-bottom: 1px solid var(--border-color);
+}
+
+[class*=ModalFooter-modalFooter-] {
+    border-top: 1px solid var(--border-color);
+}
+
+/* LABLES */
+[class*="Label-default-"] {
+    border-color: var(--label-color);
+    background-color: var(--label-color);
+    color: white;
+}
+
+[class*="Label-info-"]:not([class*="PageSidebarItem-status-"] [class*="Label-info-"]) {
+    border-color: var(--label-info);
+    background-color: var(--label-info);
+    color: #fff;
+}
+.Label-default-xecWd {
+    border-color: #810020;
+    background-color: #810020;
+}
+
+/* SETTINGS */
+
+[class*=Settings-link-] {
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* SEARCH DROP DOWN */
+[class*="MovieSearchInput-containerOpen-"] [class*="MovieSearchInput-movieContainer-"] {
+    border: 1px solid var(--drop-down-menu-bg);
+    background-color: var(--drop-down-menu-bg);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    color: #e1e2e3;
+}
+
+/* AUTHOR PAGE */
+
+[class*="AuthorDetailsHeader-headerContent-"], [class*="BookDetailsHeader-headerContent-"] {
+    color: #fff;
+    background: #4a4a4b;
+}
