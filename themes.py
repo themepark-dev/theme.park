@@ -34,7 +34,7 @@ def create_addons_json():
                     app: {
                         addon: {
                             "css": [f"https://{DOMAIN}/CSS/addons/{app}/{addon}/{file}?sha={SHAS.get(file)}" for file in files if file.split(".")[1] == "css"]
-                        }
+                        } for addon in app_addons
                 }
             })
             extra_dirs = [dir for dir in listdir(
