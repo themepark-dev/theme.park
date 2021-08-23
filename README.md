@@ -33,7 +33,7 @@
 
 <h2><a href="https://docs.theme-park.dev/setup">Installation</a></h2>
 
-<h2><a href="https://docs.theme-park.dev/themes/addons/sonarr">Addons</a></h2>
+<h2><a href="https://docs.theme-park.dev/themes/addons">Addons</a></h2>
 
 <h2><a href="https://docs.theme-park.dev/community-themes/">Community Themes</a></h2>
 
