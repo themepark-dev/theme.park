@@ -10,6 +10,8 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
+@import url("https://theme-park/CSS/defaults/placeholders.css");
+
 * {
     outline: none;
 }
@@ -789,26 +791,6 @@ line {
     fill: none;
 }
 
-/* PLACEHOLDER TEXT */
-::placeholder {
-    color: var(--text) !important;
-    opacity: .5 !important;
-}
-
-:-moz-placeholder {
-    color: var(--text) !important;
-    opacity: .5 !important;
-}
-
-:-ms-input-placeholder {
-    color: var(--text) !important;
-    opacity: .5 !important;
-}
-
-::-webkit-input-placeholder {
-    color: var(--text) !important;
-    opacity: .5;
-}
 
 /* TOASTS */
 .toast {
