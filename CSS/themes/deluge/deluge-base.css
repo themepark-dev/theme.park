@@ -2341,6 +2341,7 @@
 
  .x-progress-wrap {
      border-color: transparent;
+     background: rgba(255, 255, 255, 0.35);
  }
 
  .x-progress-inner {
