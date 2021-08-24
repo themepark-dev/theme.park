@@ -10,7 +10,7 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
-@import url("https://theme-park/CSS/defaults/placeholders.css");
+@import url("https://theme-park.dev/CSS/defaults/placeholders.css");
 
 * {
     outline: none;
@@ -97,6 +97,10 @@ a:hover {
 
 .table thead th {
     color: var(--text-hover);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgb(0 0 0 / 15%);
 }
 
 h1,
@@ -305,7 +309,7 @@ label,
 
 /* PAGES */
 .content-header.bg-dark {
-    background: var(--main-bg-color) !important;
+    background: var(--main-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
