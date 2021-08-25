@@ -55,7 +55,7 @@
       "addons": {}
     },
     "deluge": {
-      "base_css": "https://theme-park.dev/CSS/themes/deluge/deluge-base.css?sha=ad807584ff76d7fede5509c275be5df9c4447ef6",
+      "base_css": "https://theme-park.dev/CSS/themes/deluge/deluge-base.css?sha=aa314e69790f9e36e9d12ccc08b55b964bbd0609",
       "addons": {}
     },
     "unraid": {
@@ -130,7 +130,7 @@
       "addons": {}
     },
     "bazarr": {
-      "base_css": "https://theme-park.dev/CSS/themes/bazarr/bazarr-base.css?sha=4cf9cacfc200ad269ecd184d60cef73bb34629fa",
+      "base_css": "https://theme-park.dev/CSS/themes/bazarr/bazarr-base.css?sha=0df59b81dbed836ff8c5d5c4c2f64cde31e07ecb",
       "addons": {
         "bazarr-4k-logo": {
           "css": [
@@ -220,12 +220,12 @@
       "addons": {
         "plex-alt-logo": {
           "css": [
-            "https://theme-park.dev/CSS/addons/plex/plex-alt-logo/overseerr-side-menu.css?sha=5c0d3148e30a5ff7636fd1b85276cbcd01486955"
+            "https://theme-park.dev/CSS/addons/plex/plex-alt-logo/overseerr-side-menu.css?sha=35f46daf34fd097ab37edf5e58fff7d2c316bc91"
           ]
         },
         "overseerr-side-menu": {
           "css": [
-            "https://theme-park.dev/CSS/addons/plex/overseerr-side-menu/overseerr-side-menu.css?sha=5c0d3148e30a5ff7636fd1b85276cbcd01486955"
+            "https://theme-park.dev/CSS/addons/plex/overseerr-side-menu/overseerr-side-menu.css?sha=35f46daf34fd097ab37edf5e58fff7d2c316bc91"
           ]
         }
       }
@@ -391,12 +391,12 @@
     "plex": {
       "plex-alt-logo": {
         "css": [
-          "https://theme-park.dev/CSS/addons/plex/plex-alt-logo/overseerr-side-menu.css?sha=5c0d3148e30a5ff7636fd1b85276cbcd01486955"
+          "https://theme-park.dev/CSS/addons/plex/plex-alt-logo/overseerr-side-menu.css?sha=35f46daf34fd097ab37edf5e58fff7d2c316bc91"
         ]
       },
       "overseerr-side-menu": {
         "css": [
-          "https://theme-park.dev/CSS/addons/plex/overseerr-side-menu/overseerr-side-menu.css?sha=5c0d3148e30a5ff7636fd1b85276cbcd01486955"
+          "https://theme-park.dev/CSS/addons/plex/overseerr-side-menu/overseerr-side-menu.css?sha=35f46daf34fd097ab37edf5e58fff7d2c316bc91"
         ]
       }
     },
@@ -464,7 +464,7 @@
       "url": "https://theme-park.dev/CSS/variables/mind.css?sha=6d4fc8ad0fe4c66885094e6fa4f79e9c2ded7f56"
     },
     "Aquamarine": {
-      "url": "https://theme-park.dev/CSS/variables/aquamarine.css?sha=fcf11b67a0206b658ea93576ab55e16588a2ae80"
+      "url": "https://theme-park.dev/CSS/variables/aquamarine.css?sha=88dd6fe6892d95feb86c2e480c014fc1392e5700"
     },
     "Dracula": {
       "url": "https://theme-park.dev/CSS/variables/dracula.css?sha=f7fbf04f6745f38fe50187ed0ec430d944ffe9cb"
