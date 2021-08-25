@@ -78,7 +78,7 @@
     border-radius: 5px;
 }
 
-[class*="SourceSidebarContent-expandedSidebarContent-"] div:hover {
+[class*="SourceSidebarContent-expandedSidebarContent-"] div:hover:not([data-qa-id="sidebarMore"] div) {
     background-color: var(--menu-item-hover);
 }
 
