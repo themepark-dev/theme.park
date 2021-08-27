@@ -2212,7 +2212,14 @@ fieldset[disabled] .form-control {
 
 .error-page {
     width: 100%;
-    background: #1b1a1a;
+    background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
     height: 100%;
     position: fixed;
     display: none;
