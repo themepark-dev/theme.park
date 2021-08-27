@@ -32,6 +32,18 @@
     -o-background-size: auto, cover !important;
 }
 
+[id*="homepage-"] > fieldset > div > div.panel-wrapper.collapse.in > div > div,
+[id$="-settings-items"] > div {
+    background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat !important;
+    background-attachment: fixed, fixed !important;
+    background-position: center center, center center !important;
+    background-size: auto, cover !important;
+    -webkit-background-size: auto, cover !important;
+    -moz-background-size: auto, cover !important;
+    -o-background-size: auto, cover !important;
+}
+
 .panel-footer {
     background: var(--modal-footer-color) !important;
     background-repeat: repeat, no-repeat !important;
@@ -195,7 +207,7 @@ h6 {
     -o-background-size: auto, cover;
 }
 
-.panel-body:not(.unifiCards .panel-body) {
+.panel-body:not(.unifiCards .panel-body):not(body > div.swal-overlay.swal-overlay--show-modal > div > div > div > div.panel-wrapper.collapse.in > div) {
     background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
