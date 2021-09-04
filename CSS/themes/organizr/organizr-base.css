@@ -21,7 +21,7 @@
     border: 1px solid rgb(var(--accent-color), 0.5);
 }
 
-.modal-content {
+.modal-content, .mfp-content .panel {
     background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat !important;
     background-attachment: fixed, fixed !important;
@@ -2382,7 +2382,7 @@ th {
 .pager li>span,
 .pagination>li>a,
 .pagination>li>span,
-.panel,
+.panel:not(#invite-area > div > div > div.col-md-12 > div),
 .panel-default .panel-body,
 .panel-default .panel-footer,
 .panel-default .panel-heading,
