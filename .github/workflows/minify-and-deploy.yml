@@ -29,8 +29,8 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
-          git commit -m "themes.json"
-          git push
+          git commit -m "themes.json" || echo "Ignore commit failure, proceed"
+          git push || echo "Ignore push failure, proceed"
       - name: Minify CSS
         run: |
           sudo npm install -g minify
