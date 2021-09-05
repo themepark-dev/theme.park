@@ -2,7 +2,7 @@
     --about: linear-gradient(to bottom, rgba(0, 0, 0, 1.0), rgba(87, 109, 117, 0)), var(--main-bg-color);
 }
 
-.bg-primary {
+.bg-primary { 
     background: var(--about) !important;
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
