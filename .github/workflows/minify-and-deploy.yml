@@ -21,6 +21,16 @@ jobs:
             echo "Game over man!"
             exit 1
           fi
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+      - name: create themes.json
+        run: |
+          python themes.py
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "themes.json"
+          git push
       - name: Minify CSS
         run: |
           sudo npm install -g minify
@@ -44,10 +54,6 @@ jobs:
                         minify_file $fname
                     fi
                 done
-      - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v2
-      - name: create themes.json
-        run: python themes.py
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/master' }}
