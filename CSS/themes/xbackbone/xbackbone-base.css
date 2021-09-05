@@ -104,6 +104,10 @@ code {
     border-radius: 5px;
 }
 
+pre {
+    color: rgb(var(--accent-color));
+}
+
 /* LINKS */
 a {
     color: var(--link-color);
