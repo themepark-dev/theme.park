@@ -40,7 +40,7 @@
       "addons": {}
     },
     "organizr": {
-      "base_css": "https://theme-park.dev/CSS/themes/organizr/organizr-base.css?sha=c4835d6ab521d65f7d387d7ac4d1356776512f92",
+      "base_css": "https://theme-park.dev/CSS/themes/organizr/organizr-base.css?sha=5bfb611f944397b6592d230dc3c59747f28ce4e0",
       "addons": {
         "glass": {
           "css": [
