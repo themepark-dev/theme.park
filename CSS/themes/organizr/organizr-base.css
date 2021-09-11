@@ -21,7 +21,8 @@
     border: 1px solid rgb(var(--accent-color), 0.5);
 }
 
-.modal-content, .mfp-content .panel {
+.modal-content,
+.mfp-content .panel {
     background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat !important;
     background-attachment: fixed, fixed !important;
@@ -32,8 +33,8 @@
     -o-background-size: auto, cover !important;
 }
 
-[id*="homepage-"] > fieldset > div > div.panel-wrapper.collapse.in > div > div,
-[id$="-settings-items"] > div {
+[id*="homepage-"]>fieldset>div>div.panel-wrapper.collapse.in>div>div,
+[id$="-settings-items"]>div {
     background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat !important;
     background-attachment: fixed, fixed !important;
@@ -580,6 +581,10 @@ th.fc-day-header.fc-widget-header.fc-today {
 
 /* loginpage sidemenu */
 
+.login-box {
+    background: transparent;
+}
+
 @media (max-width: 480px) {
     @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
         #wrapper .login-register>.login-box>.white-box {
@@ -763,10 +768,10 @@ label[for="checkbox-login"]:hover {
 }
 
 /*Login sidebar*/
-.login-box.login-sidebar,
+
 #login-panels .panel-body,
 #login-panels .panel {
-    background: 0 0 !important;
+    background: 0 0;
 }
 
 /*Center login Box*/
@@ -1994,7 +1999,6 @@ body {
     color: #177eac;
 }
 
-.login-box,
 .white-box,
 body>div.mfp-wrap.mfp-auto-cursor.mfp-zoom-out.mfp-ready>div>div.mfp-content>div>div>div:nth-child(2) {
     background: var(--modal-bg-color);
@@ -2380,7 +2384,7 @@ th {
 .pager li>span,
 .pagination>li>a,
 .pagination>li>span,
-.panel:not(#invite-area > div > div > div.col-md-12 > div),
+.panel:not(#invite-area > div > div > div.col-md-12 > div):not(#login-panels > div),
 .panel-default .panel-body,
 .panel-default .panel-footer,
 .panel-default .panel-heading,
