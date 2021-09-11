@@ -763,12 +763,10 @@ label[for="checkbox-login"]:hover {
 }
 
 /*Login sidebar*/
-/*Login sidebar*/
-/*Login sidebar*/
 .login-box.login-sidebar,
 #login-panels .panel-body,
 #login-panels .panel {
-    background: transparent;
+    background: 0 0 !important;
 }
 
 /*Center login Box*/
@@ -1645,7 +1643,7 @@ a:hover,
 .customvtab .tabs-vertical li.active a:focus,
 .customvtab .tabs-vertical li.active a:hover {
     border-right: 2px solid rgb(var(--accent-color));
-    color: var(--text-hover)
+    color: rgb(var(--accent-color));
 }
 
 .vtabs .tabs-vertical li a {
