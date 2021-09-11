@@ -146,6 +146,10 @@
       "base_css": "https://theme-park.dev/CSS/themes/nzbhydra2/nzbhydra2-base.css?sha=4e0eb357f9651813233770fb4ee385242e686319",
       "addons": {}
     },
+    "uptime-kuma": {
+      "base_css": "https://theme-park.dev/CSS/themes/uptime-kuma/uptime-kuma-base.css?sha=0e42f0f7acff94ef14af933f1b705a9fe450d497",
+      "addons": {}
+    },
     "prowlarr": {
       "base_css": "https://theme-park.dev/CSS/themes/prowlarr/prowlarr-base.css?sha=5a5c2cf2dc3589c4a04346840ae6fa0aea1e43d1",
       "addons": {
