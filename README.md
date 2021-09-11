@@ -259,6 +259,10 @@
 <p><a href="https://docs.theme-park.dev/themes/requestrr"><img src="https://docs.theme-park.dev/site_assets/requestrr/logo.png" alt="" width="48" height="45" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/requestrr">Requestrr</a></p>
 </td>
+<td style="width: 90px; height: 26px; text-align: center;">
+<p><a href="https://docs.theme-park.dev/themes/uptime-kuma"><img src="https://docs.theme-park.dev/site_assets/uptime-kuma/logo.png" alt="" width="48" height="45" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/uptime-kuma">Uptime Kuma</a></p>
+</td>
 </tr>
 </tbody>
 </table>
