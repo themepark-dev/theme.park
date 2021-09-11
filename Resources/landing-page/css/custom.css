@@ -277,7 +277,7 @@ header.masthead {
     color: rgba(255, 255, 255, 0.7);
     border-radius: 5px;
     max-width: 120px;
-    min-width: 120px;
+    min-width: 130px;
 }
 
 .app-container:hover {
