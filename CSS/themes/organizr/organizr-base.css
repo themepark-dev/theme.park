@@ -2164,6 +2164,27 @@ a.mytooltip {
     margin-left: -10px;
 }
 
+.tooltip-info+.tooltip .tooltip-inner,.tooltip-info.tooltip .tooltip-inner {
+    color: var(--label-text-color);
+    background-color: rgba(var(--accent-color));
+}
+
+.tooltip-info+.tooltip.top .tooltip-arrow,.tooltip-info.tooltip.top .tooltip-arrow {
+    border-top-color: rgba(var(--accent-color));
+}
+
+.tooltip-info+.tooltip.right .tooltip-arrow,.tooltip-info.tooltip.right .tooltip-arrow {
+    border-right-color: rgba(var(--accent-color));
+}
+
+.tooltip-info+tooltip.bottom .tooltip-arrow,.tooltip-info.tooltip.bottom .tooltip-arrow {
+    border-bottom-color: rgba(var(--accent-color));
+}
+
+.tooltip-info+.tooltip.left .tooltip-arrow,.tooltip-info.tooltip.left .tooltip-arrow {
+    border-left-color: rgba(var(--accent-color));
+}
+
 .swapLog.active {
     border: 1px solid rgba(120, 130, 140, .2);
     background-color: #12dafefc !important;
