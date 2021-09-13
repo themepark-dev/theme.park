@@ -227,6 +227,7 @@ a[class*="MetadataTableRow-title-"]:hover {
 
 [class*="Badge-primary-"] {
   background-color: rgb(var(--accent-color));
+  color: var(--label-text-color);
 }
 
 [class*="DisclosureArrow-default-"] {
