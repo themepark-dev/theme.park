@@ -28,28 +28,29 @@ def create_addons_json():
                 }
         })
         for addon in app_addons:
-            files = [file for file in listdir(
-                f"{addon_root}/{app}/{addon}") if isfile(join(f"{addon_root}/{app}/{addon}", file))]
-            ADDONS["addons"].update({
-                    app: {
-                        addon: {
-                            "css": [f"https://{DOMAIN}/CSS/addons/{app}/{addon}/{file}?sha={SHAS.get(file)}" for file in files if file.split(".")[1] == "css"]
-                        } for addon in app_addons
-                }
-            })
+            files = [file for file in listdir(f"{addon_root}/{app}/{addon}") if isfile(join(f"{addon_root}/{app}/{addon}", file))]
+            if len([f for f in files if f.endswith('.css')]) > 1:
+                ADDONS["addons"][app][addon].update({
+                        "css":  [f"https://{DOMAIN}/CSS/addons/{app}/{addon}/{file}?sha={SHAS.get(file)}" for file in files if file.split(".")[1] == "css"]
+                            }
+                )
+            else:
+                ADDONS["addons"][app].update({
+                        addon:  f"https://{DOMAIN}/CSS/addons/{app}/{addon}/{file}?sha={SHAS.get(file)}" for file in files if file.split(".")[1] == "css" 
+                            } 
+                )
             extra_dirs = [dir for dir in listdir(
                 f"{addon_root}/{app}/{addon}") if isdir(join(f"{addon_root}/{app}/{addon}", dir))]
             if extra_dirs:
                 for dir in extra_dirs:
                     extra_dir_files = [file for file in listdir(
                         f"{addon_root}/{app}/{addon}/{dir}") if isfile(join(f"{addon_root}/{app}/{addon}/{dir}", file))]
-                    ADDONS["addons"][app].update({
-                                addon: {
-                                    dir: {
+                    ADDONS["addons"][app][addon].update({
+                                dir: {
                                         "css": [f"https://{DOMAIN}/CSS/addons/{app}/{addon}/{dir}/{extra_file}?sha={SHAS.get(extra_file)}" for extra_file in extra_dir_files if extra_file.split(".")[1] == "css"]
-                                    } for dir in extra_dirs
+                                    }
                                 }
-                            })
+                            )
     return dumps(ADDONS)
 
 def create_json(app_folders:list=None,themes:list=None,no_sub_folders=False):
