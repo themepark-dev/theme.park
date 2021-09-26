@@ -1,7 +1,7 @@
 <!--- Provide a general summary of your changes in the Title above -->
 
 [themeparkurl]: https://theme-park.dev
-[![theme-park.dev](https://github.com/GilbN/theme.park/blob/master/banners/tp_banner.png)][themeparkurl]
+[![theme-park.dev](https://raw.githubusercontent.com/GilbN/theme.park/master/banners/tp_banner.png)][themeparkurl]
 
 
 <!--- Before submitting a pull request please check the following -->
