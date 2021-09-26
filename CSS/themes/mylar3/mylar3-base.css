@@ -141,14 +141,14 @@ a .ui-icon {
 }
 
 .links a {
-    color: #b5b5b5;
+    color: var(--link-color);
     clear: both;
     display: inline-block;
     float: left;
 }
 
 .links a:hover {
-    color: #4183c4;
+    color: var(--link-color-hover);
 }
 
 .links a .ui-icon {
@@ -326,6 +326,7 @@ table td a {
     border: 1px solid rgb(255 255 255 / 10%);
     font-size: 15px;
     padding: 2px 4px;
+    color: var(--text);
 }
 
 table.display thead th {
@@ -516,6 +517,17 @@ button {
     font: 99%;
 }
 
+select {
+    background: rgba(255, 255, 255, 0.15);
+    color: var(--text);
+}
+
+select:focus {
+    background: #1f1f1f;
+    color: var(--text);
+}
+
+
 #more {
     display: none;
 }
@@ -603,6 +615,15 @@ input[type="button"] {
     text-shadow: 0 -1px 1px rgba(0, 0, 0, 0);
 }
 
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="submit"]:active,
+input[type="button"]:active {
+    background: var(--button-color-hover);
+    border-bottom: 1px solid var(--button-color-hover);
+    color: var(--button-text-hover);
+}
+
 form legend,
 form h2 {
     font-size: 16px;
@@ -619,7 +640,7 @@ form fieldset {
 }
 
 form fieldset small.heading {
-    color: #666;
+    color: var(--text-hover);
     display: block;
     font-style: italic;
     margin-bottom: 10px;
@@ -650,27 +671,33 @@ form .row input {
 
 form .row input[type=text],
 form .row input[type=password] {
-    border: 1px solid #DDD;
-    border-top: 1px solid #CDCDCD;
-    -moz-box-shadow: 0 1px 0 #f1f1f1;
-    -webkit-box-shadow: 0 1px 0 #f1f1f1;
-    -o-box-shadow: 0 1px 0 #f1f1f1;
-    box-shadow: 0 1px 0 #f1f1f1;
-    -moz-box-shadow: inset 0 1px 1px #e0e0e0;
-    -webkit-box-shadow: inset 0 1px 1px #e0e0e0;
-    -o-box-shadow: inset 0 1px 1px #e0e0e0;
-    box-shadow: inset 0 1px 1px #e0e0e0;
-    color: #343434;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid transparent;
+    -moz-box-shadow: 0 1px 0 transparent;
+    -webkit-box-shadow: 0 1px 0 transparent;
+    -o-box-shadow: 0 1px 0 transparent;
+    box-shadow: 0 1px 0 transparent;
+    -moz-box-shadow: inset 0 1px 1px transparent;
+    -webkit-box-shadow: inset 0 1px 1px transparent;
+    -o-box-shadow: inset 0 1px 1px transparent;
+    box-shadow: inset 0 1px 1px transparent;
+    color: var(--text);
     font-size: 14px;
     height: auto;
     line-height: normal;
     max-width: 230px;
     margin-right: 5px;
     padding: 3px 5px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+form .row input[type=text]:focus,
+form .row input[type=password]:focus {
+    background: rgba(255, 255, 255, 0.25);
 }
 
 form .row small {
-    color: #999;
+    color: var(--text-muted);
     display: block;
     font-size: 11px;
     line-height: 12px;
@@ -2509,7 +2536,7 @@ DIV.progress-container>DIV {
 }
 
 #version {
-    color: #999;
+    color: var(--text-muted);
     font-size: 10px;
     position: relative;
     z-index: 999;
@@ -2519,7 +2546,7 @@ DIV.progress-container>DIV {
 }
 
 #backendstatus {
-    color: #999;
+    color: var(--text-muted);
     font-size: 10px;
     position: relative;
     z-index: 999;
@@ -2810,9 +2837,9 @@ table tr td#status a {
 .issue-popup {
     width: 600px;
     display: none;
-    background: #333;
+    background: var(--modal-bg-color);
     padding: 5px;
-    border: 2px solid #ddd;
+    border: 2px solid rgba(221, 221, 221, 0);
     color: white;
     font-size: 1.2em;
     position: absolute;
@@ -2820,11 +2847,11 @@ table tr td#status a {
     left: 50%;
     z-index: 99999;
     text-align: left;
-    box-shadow: 0px 0px 20px #999;
+    box-shadow: 0px 0px 20px transparent;
     /* CSS3 */
-    -moz-box-shadow: 0px 0px 20px #999;
+    -moz-box-shadow: 0px 0px 20px transparent;
     /* Firefox */
-    -webkit-box-shadow: 0px 0px 20px #999;
+    -webkit-box-shadow: 0px 0px 20px transparent;
     /* Safari, Chrome */
     border-radius: 3px 3px 3px 3px;
     -moz-border-radius: 3px;
@@ -3054,25 +3081,21 @@ table#annual_table td#aoptions {
 }
 
 #btn_menu a {
-    background-image: -moz-linear-gradient(#616161, #4e4e4e) !important;
-    background-image: linear-gradient(#616161, #4e4e4e) !important;
-    background-image: -webkit-linear-gradient(#616161, #4e4e4e) !important;
-    background-image: -o-linear-gradient(#616161, #4e4e4e) !important;
-    filter: progid:dximagetransform.microsoft.gradient(startColorstr=#6a6a6a, endColorstr=#4a4a4a) !important;
+    background: var(--button-color) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    filter: none !important;
     font-family: "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
     font-size: 12px;
     font-weight: normal;
+    color: var(--button-text)
 }
 
 #btn_container #btn_menu a:hover,
 #btn_container_center #btn_menu a:hover {
-    background-image: -moz-linear-gradient(#599bdc, #3072b3) !important;
-    background-image: linear-gradient(#599bdc, #3072b3) !important;
-    background-image: -webkit-linear-gradient(#599bdc, #3072b3) !important;
-    background-image: -o-linear-gradient(#599bdc, #3072b3) !important;
-    filter: progid:dximagetransform.microsoft.gradient(startColorstr=#fafafa, endColorstr=#eaeaea) !important;
-    color: #FFF;
-    border-color: #272b30 #272b30 #272b30;
+    background: var(--button-color-hover) !important;
+    filter: none !important;
+    color: var(--button-text-hover) !important;
+    border-color: var(--button-color-hover) !important;
 }
 
 input[type="checkbox"]+label.series_metadata_local::before {
@@ -3114,9 +3137,9 @@ input[type="checkbox"]+label.series_metadata_local::before {
 fieldset.fieldset_header {
     margin: 5px;
     padding: 0px 5px 5px;
-    border: 1px solid #666;
+    border: 1px solid rgba(255, 255, 255, 0);
     border-radius: 8px;
-    box-shadow: 0px 0px 10px #666;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0);
     padding-top: 5px;
 }
 
@@ -3172,4 +3195,79 @@ div.alphabetInfo {
     padding-top: 0.4em;
     text-align: center;
     z-index: 1;
+}
+
+/* JQUERY UI */
+.ui-tabs .ui-tabs-panel {
+    background: rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgb(var(--accent-color), .2);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a {
+    color: rgb(var(--accent-color));
+}
+
+.ui-tabs .ui-tabs-nav li {
+    background: rgba(255, 255, 255, 0.25);
+    color: var(--text);
+}
+
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited {
+    color: var(--text);
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+    position: absolute;
+    right: .3em;
+    top: 50%;
+    width: 19px;
+    margin: -10px 0 0 0;
+    padding: 1px;
+    height: 18px;
+    background: transparent;
+}
+
+
+.ui-dialog .ui-dialog-content {
+    position: relative;
+    border: 0;
+    padding: .5em 1em;
+    background: var(--modal-bg-color);
+    overflow: auto;
+    zoom: 1;
+}
+
+.ui-widget-header {
+    border: 1px solid transparent;
+    background: var(--modal-bg-color);
+    color: var(--text-hover);
+}
+
+.ui-widget-content {
+    border: 2px solid #1c1e2200;
+    background: var(--modal-bg-color);
+    color: var(--text);
 }
