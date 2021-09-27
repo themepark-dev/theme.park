@@ -264,8 +264,8 @@
 <p><a href="https://docs.theme-park.dev/themes/uptime-kuma">Uptime Kuma</a></p>
 </td>
 <td style="width: 90px; height: 26px; text-align: center;">
-<p><a href="https://docs.theme-park.dev/themes/mylar3"><img src="https://docs.theme-park.dev/site_assets/mylar3/logo.png" alt="" width="48" height="45" /></a></p>
-<p><a href="https://docs.theme-park.dev/themes/mylar3">Mylar 3</a></p>
+<p><a href="https://docs.theme-park.dev/themes/mylar"><img src="https://docs.theme-park.dev/site_assets/mylar/logo.png" alt="" width="48" height="45" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/mylar">Mylar 3</a></p>
 </td>
 </tr>
 </tbody>
