@@ -136,7 +136,7 @@ ul.sidebar .sidebar-list a {
 }
 
 .panel-body {
-    background-color: transparent;
+    background-color: transparent !important;
 }
 
 /* SIDEBAR */
