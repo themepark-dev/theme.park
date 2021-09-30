@@ -239,7 +239,7 @@
       "addons": {}
     },
     "portainer": {
-      "base_css": "https://theme-park.dev/CSS/themes/portainer/portainer-base.css?sha=5e6a400db0677dff26a75f2d4c55136c746e441a",
+      "base_css": "https://theme-park.dev/CSS/themes/portainer/portainer-base.css?sha=052f98dee50b30779aea801f3a87a9a2ed9a9a3f",
       "addons": {}
     },
     "qbittorrent": {
@@ -251,7 +251,7 @@
       "addons": {}
     },
     "adguard": {
-      "base_css": "https://theme-park.dev/CSS/themes/adguard/adguard-base.css?sha=179fda81ddf0007fe063e4324a3e314de7551c29",
+      "base_css": "https://theme-park.dev/CSS/themes/adguard/adguard-base.css?sha=f9c143a907f7a2fa3c2bfd5fd848033a8fade059",
       "addons": {}
     },
     "nzbhydra2": {
