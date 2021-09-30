@@ -10,6 +10,8 @@
 /*		   		        Made by @gilbN					 */
 /* 			      https://github.com/gilbN/theme.park			 */
 
+@import url("https://theme-park.dev/CSS/defaults/placeholders.css");
+
 body {
     background: var(--main-bg-color);
     background-repeat: repeat, no-repeat;
@@ -231,6 +233,12 @@ h6,
     color: var(--label-text-color);
 }
 
+.tooltip-custom__container .button-action--arrow-option:not(:disabled):hover {
+    cursor: pointer;
+    background: rgb(0 0 0 / 0.15);
+    overflow: hidden;
+}
+
 .toast--success {
     background-color: rgba(90, 173, 99, 0.75);
 }
@@ -428,7 +436,13 @@ h6,
 }
 
 .ReactTable .-pagination .-btn {
-    color: var(--text-muted);
+    color: var(--text);
+    background: var(--button-color);
+}
+
+.ReactTable .-pagination .-btn:not([disabled]):hover {
+    background: var(--button-color-hover);
+    color: var(--text-hover);
 }
 
 .ReactTable .-loading,
@@ -444,6 +458,20 @@ h6,
 
 .ReactTable .rt-tbody .rt-tr-group {
     border-bottom: solid 1px rgb(255 255 255 / 20%);
+}
+
+.ReactTable .rt-thead.-header {
+    background: rgb(0 0 0 / 25%);
+}
+
+.ReactTable .rt-thead .rt-th.-sort-asc, .ReactTable .rt-thead .rt-td.-sort-asc {
+    -webkit-box-shadow: inset 0 3px 0 0 rgb(var(--accent-color), 0.60);
+    box-shadow: inset 0 3px 0 0 rgb(var(--accent-color), 0.60);
+}
+
+.ReactTable .rt-thead .rt-th.-sort-desc, .ReactTable .rt-thead .rt-td.-sort-desc {
+    -webkit-box-shadow: inset 0 -3px 0 0 rgb(var(--accent-color), 0.60);
+    box-shadow: inset 0 -3px 0 0 rgb(var(--accent-color), 0.60);
 }
 
 .table th,
@@ -465,6 +493,12 @@ h6,
 }
 
 /* FORMS */
+.form-control {
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, .1)
+}
+
 .form-control--transparent {
     color: var(--text-hover);
 }
@@ -477,7 +511,36 @@ h6,
     border-color: transparent;
     -webkit-box-shadow: none;
     box-shadow: none;
-    background: #ffffff !important;
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--text-hover);
+}
+
+.form-control:disabled, .form-control[readonly] {
+    background-color: #555;
+    opacity: 1;
+    cursor: not-allowed;
+}
+
+.custom-select {
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.1) url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxMCA1Jz48cGF0aCBmaWxsPScjOTk5JyBkPSdNMCAwTDEwIDBMNSA1TDAgMCcvPjwvc3ZnPg==") no-repeat right 0.75rem center;
+    background-size: 8px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+
+.custom-select:focus {
+    color: var(--text-hover);
+    background: #1f1f1f url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxMCA1Jz48cGF0aCBmaWxsPScjOTk5JyBkPSdNMCAwTDEwIDBMNSA1TDAgMCcvPjwvc3ZnPg==") no-repeat right 0.75rem center;
+    background-size: 8px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+select.form-control.select:focus,
+select:focus {
+    color: var(--text-hover);
+    background: #1f1f1f !important;
 }
 
 .icon--selected {
