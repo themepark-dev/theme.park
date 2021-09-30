@@ -1,7 +1,7 @@
 #!/usr/bin/with-contenv bash
 
 echo '-------------------------'
-echo '| Mylar3 theme.park Mod |'
+echo '| Mylar3 theme.park Mod |' 
 echo '-------------------------'
 
 APP_FILEPATH='/app/mylar3/data/interfaces/default'
