@@ -215,6 +215,10 @@
       "base_css": "https://theme-park.dev/CSS/themes/pihole/pihole-base.css?sha=1d5290da2a5cf98fe5b63da558336036883775f7",
       "addons": {}
     },
+    "mylar3": {
+      "base_css": "https://theme-park.dev/CSS/themes/mylar3/mylar3-base.css?sha=3a4ccf284c4d4c7ec746736f6d4cbd4f7b261cce",
+      "addons": {}
+    },
     "readarr": {
       "base_css": "https://theme-park.dev/CSS/themes/readarr/readarr-base.css?sha=cbdaeb841bc34531698f30739d6b32f98029cb99",
       "addons": {
