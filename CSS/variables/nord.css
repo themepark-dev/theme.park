@@ -1,0 +1,31 @@
+:root {
+  --main-bg-color: #2E3440;
+  
+  --modal-bg-color: #3B4252;
+  --modal-header-color: #434C5E;
+  --modal-footer-color: #434C5E;
+
+  --drop-down-menu-bg: #3B4252;
+
+  --button-color: #5E81AC;
+  --button-color-hover: #81A1C1;
+  --button-text: #D8DEE9;
+  --button-text-hover: #ECEFF4;
+
+  --accent-color: 94, 129, 172;
+  --accent-color-hover: rgb(var(--accent-color),.8);
+  --link-color: #88c0d0;
+  --link-color-hover: #8FBCBB;
+  --label-text-color: #D8DEE9;
+    
+  --text:#D8DEE9;
+  --text-hover: #ECEFF4;
+  --text-muted: #81A1C1 ;
+
+  /*Specials*/
+  --arr-queue-color: #A3BE8C; /* Servarr apps + Bazarr*/
+  --plex-poster-unwatched: #D08770;
+  --petio-spinner: invert(62%) sepia(8%) saturate(998%) hue-rotate(259deg) brightness(97%) contrast(87%); /* Made with https://codepen.io/jsm91/embed/ZEEawyZ */
+  --gitea-color-primary-dark-4: 180, 142, 173;
+  }
+
