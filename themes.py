@@ -86,7 +86,7 @@ def create_json(app_folders: list = None, themes: list = None, no_sub_folders=Fa
                     app: {
                         "base_css": f"https://{DOMAIN}/CSS/themes/{app}/{app}-base.css?sha={SHAS.get(f'{app}-base.css')}",
                         "addons": ADDONS["addons"][app] if app in ADDONS["addons"] else {}
-                    } for app in app_folders
+                    } for app in app_folders if not isfile(f'./CSS/themes/{app}/.deprecated')
                 }
             }
             )
