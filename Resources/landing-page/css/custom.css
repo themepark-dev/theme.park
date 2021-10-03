@@ -353,3 +353,7 @@ p {
 #portfolio [class*="container-"] .portfolio-box .portfolio-box-caption.hotpink-hover {
     background: linear-gradient(45deg, #fb3f62 0%, #204c80 37%, #004249 97%);
 }
+
+#portfolio [class*="container-"] .portfolio-box .portfolio-box-caption.nord-hover {
+    background: #2E3440;
+}

@@ -73,7 +73,7 @@
 
 // load random css stylesheet
 const themes = ["aquamarine","hotline","dark","organizr-dark","dracula","overseerr",
-"plex","space-gray","hotpink","onedark"];
+"plex","space-gray","hotpink","onedark","nord"];
 var random = themes[~~(Math.random() * themes.length)];
 function injectTheme(theme,container="head") {
     if (container === "head") {
@@ -88,5 +88,19 @@ function injectTheme(theme,container="head") {
     html_element.appendChild(link);
   }
 
-  injectTheme(random);
+  // Add updated theme count. 
+  function addThemeCount() {
+  let themeJsonUrl = "https://theme-park.dev/themes.json"
+  return fetch(themeJsonUrl)
+  .then(response => {
+      return response.json();
+  }).then(json => {
+      document.getElementById("themeCount").innerHTML = `
+    theme.park contains ${Object.keys(json.applications).length} themed applications, with css <a
+                                href="https://docs.theme-park.dev/themes/addons/">addons</a> on certain themes.`  
+  })
+}
+
+injectTheme(random);
+addThemeCount();
 

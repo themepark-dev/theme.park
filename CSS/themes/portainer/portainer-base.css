@@ -233,6 +233,17 @@ ul.sidebar .sidebar-title {
     color: var(--text);
 }
 
+.datatable .searchBar {
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    padding: 8px;
+    background: rgba(255, 255, 255, .15);
+}
+
+.datatable .searchBar:focus-within {
+    background:rgba(255, 255, 255, .25);
+    color: var(--text-hover);
+}
 
 /* TABLE */
 
@@ -424,7 +435,7 @@ fieldset[disabled] .btn-primary:hover {
 /* FORM CONTROL */
 
 .form-control {
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.15) !important;
     border: 1px solid transparent;
 }
 

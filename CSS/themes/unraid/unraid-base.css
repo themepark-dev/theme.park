@@ -221,7 +221,7 @@ a.button,
 .sweet-alert button,
 #template button[type=button],
 #template button {
-    color: var(--button-text);
+    color: var(--text);
     text-shadow: var(--text-shadow) var(--text-shadow-color);
     background: linear-gradient(90deg, var(--button-color) 0, var(--button-color)) 0 0 no-repeat, linear-gradient(90deg, var(--button-color) 0, var(--button-color)) 0 100% no-repeat, linear-gradient(0deg, var(--button-color) 0, var(--button-color)) 0 100% no-repeat, linear-gradient(0deg, var(--button-color) 0, var(--button-color)) 100% 100% no-repeat;
     background: -webkit-gradient(linear, left top, right top, from(var(--button-color)), to(var(--button-color))) 0 0 no-repeat, -webkit-gradient(linear, left top, right top, from(var(--button-color)), to(var(--button-color))) 0 100% no-repeat, -webkit-gradient(linear, left bottom, left top, from(var(--button-color)), to(var(--button-color))) 0 100% no-repeat, -webkit-gradient(linear, left bottom, left top, from(var(--button-color)), to(var(--button-color))) 100% 100% no-repeat;
