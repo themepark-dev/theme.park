@@ -347,19 +347,19 @@ svg.peity polyline {
 
 /* buttons settings */
 .btn-default.sabnzbd_restart {
-  color: var(--button-text);
+  color: #aaa;
   background-color: #a94442;
   border-color: transparent;
 }
 
 .btn-default.sabnzbd_restart:hover {
-  color: var(--button-text-hover);
+  color: #fff;
   background-color: #d93935;
   border-color: transparent;
 }
 
 .btn-default.saveButton {
-  color: var(--button-text);
+  color: #aaa;
   background-color: #3c763d;
   border-color: transparent;
 }
@@ -374,13 +374,13 @@ svg.peity polyline {
 
 /* buttons categories */
 .btn-default.delCat {
-  color: var(--button-text);
+  color: #aaa;
   background-color: #a94442;
   border-color: #2d2c2c;
 }
 
 .btn-default.delCat:hover {
-  color: var(--button-text-hover);
+  color: #fff;
   background-color: #d93935;
   border-color: transparent;
 }
@@ -401,14 +401,14 @@ svg.peity polyline {
 
 /* Button Switches*/
 .btn-default.restoreDefaults {
-  color: var(--button-text);
+  color: #aaa;
   background-color: #a94442;
   border-color: transparent;
 }
 
 .btn-default.restoreDefaults:hover,
 .btn-default.restoreDefaults:focus {
-  color: var(--button-text-hover);
+  color: #fff;
   background-color: #d93935;
   border-color: transparent;
 }
