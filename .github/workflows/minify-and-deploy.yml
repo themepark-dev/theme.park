@@ -33,7 +33,7 @@ jobs:
           git push || echo "Ignore push failure, proceed"
       - name: Minify CSS
         run: |
-          sudo npm install -g minify
+          sudo npm install -g minify@7.2.2
           sudo apt-get update
           sudo apt-get -y install moreutils
 
