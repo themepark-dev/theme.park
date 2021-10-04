@@ -458,8 +458,7 @@ li.caMenuItem:hover {
 .supportPopup,
 .popupProfile,
 .repoPopup,
-.ca_favouriteRepo,
-.donate {
+.ca_favouriteRepo {
     color: var(--button-text) !important;
     background: var(--button-color) !important;
 }
@@ -470,8 +469,7 @@ li.caMenuItem:hover {
 .supportPopup:hover,
 .popupProfile:hover,
 .repoPopup:hover,
-.ca_favouriteRepo:hover,
-.donate:hover a {
+.ca_favouriteRepo:hover{
     background: var(--button-color-hover) !important;
     color: var(--button-text-hover) !important;
 }
