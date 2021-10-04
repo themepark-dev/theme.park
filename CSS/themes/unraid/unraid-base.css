@@ -535,6 +535,10 @@ li.caMenuItem:hover {
     color: var(--link-color-hover);
 }
 
+.ca_red {
+    color: #e22828 !important;
+}
+
 /* CA search input */
 #searchButton:hover {
     color: rgb(var(--accent-color));
