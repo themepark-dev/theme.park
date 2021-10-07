@@ -443,6 +443,123 @@ li.caMenuItem:hover {
     color: var(--link-color-hover);
 }
 
+.ca_holder {
+    background-color: rgb(0, 0, 0, .25) !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.ca_holder:hover {
+    background-color: rgba(0, 0, 0, 0.45) !important;
+}
+
+.infoButton,
+.supportButton,
+.actionsPopup,
+.supportPopup,
+.popupProfile,
+.repoPopup,
+.ca_favouriteRepo {
+    color: var(--button-text) !important;
+    background: var(--button-color) !important;
+}
+
+.infoButton:hover,
+.supportButton:hover,
+.actionsPopup:hover,
+.supportPopup:hover,
+.popupProfile:hover,
+.repoPopup:hover,
+.ca_favouriteRepo:hover{
+    background: var(--button-color-hover) !important;
+    color: var(--button-text-hover) !important;
+}
+
+.donate a {
+    color: var(--button-text) !important;
+}
+
+.donate:hover a {
+    color: var(--button-text-hover) !important;
+}
+
+.unpinned {
+    color: var(--button-color) !important
+}
+
+.unpinned:hover {
+    color: var(--button-color-hover) !important;
+}
+
+.homeMore:hover,
+.popUpClose:hover,
+.enabledIcon:hover,
+.ca_readmore:hover {
+    color: var(--link-color-hover) !important;
+}
+
+.homeMore,
+.popUpClose,
+.ca_readmore {
+    color: var(--link-color) !important;
+}
+
+.sortIcons.enabledIcon {
+    color: rgb(var(--accent-color)) !important;
+}
+
+.sortIcons.enabledIcon:hover {
+    color: var(--link-color-hover) !important;
+}
+
+.sortIcons {
+    color: var(--text) !important;
+}
+
+.sortIcons:hover {
+    color: var(--text-hover) !important;
+}
+
+.pageSelected {
+    color: rgb(var(--accent-color)) !important;
+}
+
+.pageNumber:hover {
+    color: var(--accent-color-hover) !important;
+}
+
+#copyright>a {
+    color: var(--link-color);
+}
+
+#copyright>a:hover {
+    color: var(--link-color-hover);
+}
+
+.ca_red {
+    color: #e22828 !important;
+}
+
+/* CA search input */
+#searchButton:hover {
+    color: rgb(var(--accent-color));
+}
+
+#searchBox,
+.searchSubmit {
+    background: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* CA slide in menu */
+
+.chartMenu:hover {
+    color: var(--link-color-hover) !important;
+}
+
+.sidenav {
+    background: var(--modal-bg-color) !important;
+    color: var(--text) !important;
+}
+
 /* AZURE THEME*/
 div.frame,
 div.tabs {

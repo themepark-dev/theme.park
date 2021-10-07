@@ -347,19 +347,19 @@ svg.peity polyline {
 
 /* buttons settings */
 .btn-default.sabnzbd_restart {
-  color: var(--button-text);
+  color: #ddd;
   background-color: #a94442;
   border-color: transparent;
 }
 
 .btn-default.sabnzbd_restart:hover {
-  color: var(--button-text-hover);
+  color: #fff;
   background-color: #d93935;
   border-color: transparent;
 }
 
 .btn-default.saveButton {
-  color: var(--button-text);
+  color: #ddd;
   background-color: #3c763d;
   border-color: transparent;
 }
@@ -374,13 +374,13 @@ svg.peity polyline {
 
 /* buttons categories */
 .btn-default.delCat {
-  color: var(--button-text);
+  color: #ddd;
   background-color: #a94442;
   border-color: #2d2c2c;
 }
 
 .btn-default.delCat:hover {
-  color: var(--button-text-hover);
+  color: #fff;
   background-color: #d93935;
   border-color: transparent;
 }
@@ -401,14 +401,14 @@ svg.peity polyline {
 
 /* Button Switches*/
 .btn-default.restoreDefaults {
-  color: var(--button-text);
+  color: #ddd;
   background-color: #a94442;
   border-color: transparent;
 }
 
 .btn-default.restoreDefaults:hover,
 .btn-default.restoreDefaults:focus {
-  color: var(--button-text-hover);
+  color: #fff;
   background-color: #d93935;
   border-color: transparent;
 }
@@ -427,7 +427,7 @@ svg.peity polyline {
 }
 
 .btn-default.patternKey {
-  color: #fff !important;
+  color: var(--button-text) !important;
   background-color: var(--button-color);
   border-color: transparent;
 }
@@ -440,7 +440,7 @@ svg.peity polyline {
 
 input[type="button"],
 input[type="submit"] {
-  color: #fff !important;
+  color: var(--button-text) !important;
   background: var(--button-color);
   border: 1px solid #00000000
 }
@@ -451,7 +451,7 @@ input[type="button"]:active,
 input[type="submit"]:active,
 input[type="button"]:focus,
 input[type="submit"]:focus {
-  color: #fff !important;
+  color: var(--button-text-hover) !important;
   background-color: var(--button-color-hover) !important;
   border: 1px solid #00000000
 }
@@ -466,7 +466,7 @@ input[type="submit"]:focus {
 .btn-default.btn-file:hover,
 .btn-default.btn-file:active,
 .btn-default.btn-file:focus {
-  color: #fff !important;
+  color: var(--button-text-hover) !important;
   background-color: var(--button-color-hover) !important;
   border-color: transparent !important;
 }
@@ -478,7 +478,7 @@ input[type="submit"]:focus {
 }
 
 .caret {
-  border-top-color: white !important;
+  border-top-color: var(--button-text) !important;
 }
 
 .table-striped>tbody>tr:nth-of-type(odd) {

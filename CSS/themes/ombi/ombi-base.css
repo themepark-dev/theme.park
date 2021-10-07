@@ -204,6 +204,11 @@ a:hover {
     color: var(--text-hover) !important;
 }
 
+.active-advanced.fa-filter{
+    color: rgb(var(--accent-color));
+    background:none;
+    }
+
 /* DISCOVER PAGE */
 .discover-filter-buttons-group {
     background: rgb(255 255 255 / 8%) !important;
@@ -217,6 +222,10 @@ a:hover {
 .discover-filter-buttons-group .button-active {
     background: rgba(0, 0, 0, 0.45) !important;
 }
+
+#search-filter{
+    color:var(--text);
+    }
 
 .small-middle-container [div*="_ngcontent-"] {
     margin: auto;
@@ -466,6 +475,14 @@ small.important {
     background: var(--button-color-hover) !important;
 }
 
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+    border-color: rgb(var(--accent-color));
+}
+
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple, .mat-radio-button.mat-accent .mat-radio-inner-circle, .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple), .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple {
+    background-color: rgb(var(--accent-color));
+}
+
 /* Plex buttons */
 .viewon-btn.plex,
 .viewon-btn.emby,
@@ -676,4 +693,11 @@ hr {
 .mat-progress-spinner.mat-accent circle,
 .mat-spinner.mat-accent circle {
     stroke: rgb(var(--accent-color));
+}
+
+/* ADVANCED SEARCH MODAL */
+.alert-info {
+    background: rgba(255, 255, 255, .25) !important;
+    border-color: rgba(255, 255, 255, .1) !important;
+    color: var(--text-hover) !important;
 }
