@@ -21,7 +21,7 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="Resources/landing-page/css/styles.css?v=1.1" rel="stylesheet" />
     <link rel="stylesheet" href="Resources/landing-page/css/jquery-bg-slideshow.css">
-    <link rel="stylesheet" href="Resources/landing-page/css/custom.css?v=2">
+    <link rel="stylesheet" href="Resources/landing-page/css/custom.css?v=2.1">
 </head>
 
 <body id="page-top">
@@ -71,9 +71,7 @@
                     <hr class="divider my-4" />
                 </div>
                 <div class="col-lg-8 align-self-baseline">
-                    <p class="text-white-75 font-weight-light mb-5">A collection of themes/skins for over 40 selfhosted
-                        apps!
-                    </p>
+                    <p id="tag-line" class="text-white-75 font-weight-light mb-5">...</p>
                     <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
                 </div>
             </div>
@@ -84,304 +82,24 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h2 class="text-white mt-0">Over 40 themed applications!</h2>
+                    <h2 id="theme-header-text" class="text-white mt-0">...</h2>
                     <hr class="divider light my-4" />
-                    <p class="text-white-50 mb-1" id=themeCount>...</p>
+                    <p class="text-white-50 mb-1" id=app-count>...</p>
                     <p class="text-white-50 mb-1">Installation methods include custom <a
                             href="https://blog.linuxserver.io/2019/09/14/customizing-our-containers/">docker mods</a>
                         for <a href="https://linuxserver.io">linuxserver.io</a> containers, </p>
                     <p class="text-white-50 mb-5">custom scripts for select <a href="https://hotio.dev/">Hotio</a>
                         containers
                         and multiple examples of subfiltering using webservers like Nginx and Apache</p>
-                    <p class="text-white-50 mb-5">Choose between <a class="js-scroll-trigger" href="#themes">9 different
-                            styles!</a> With the possibility to easily create your own themes using the defined <a
-                            href="https://docs.theme-park.dev/custom/">variables</a>. </p>
+                    <p class="text-white-50 mb-5" id="theme-count">... </p>
                     <a class="btn btn-primary btn-xl js-scroll-trigger" href="#services">Get Started!</a>
                 </div>
 
             </div>
         </div>
         <div class="col justify-content-center pt-5 all-apps container">
-            <div class="row justify-content-center">
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/sonarr">
-                    <p><img class="app-container-image" src="https://docs.theme-park.dev/site_assets/sonarr/logo.png" />
-                    </p>
-                    <p>Sonarr</p>
-                </a>
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/radarr">
-                    <p><img class="app-container-image" src="https://docs.theme-park.dev/site_assets/radarr/logo.png" />
-                    </p>
-                    <p>Radarr</p>
-                </a>
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/lidarr">
-                    <p><img class="app-container-image" src="https://docs.theme-park.dev/site_assets/lidarr/logo.png" />
-                    </p>
-                    <p>Lidarr</p>
-                </a>
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/readarr">
-                    <p><img class="app-container-image"
-                            src="https://docs.theme-park.dev/site_assets/readarr/logo.png" /></p>
-                    <p>Readarr</p>
-                </a>
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/prowlarr">
-                    <p><img class="app-container-image"
-                            src="https://docs.theme-park.dev/site_assets/prowlarr/logo.png" />
-                    </p>
-                    <p>Prowlarr</p>
-                </a>
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/bazarr">
-                    <p><img class="app-container-image" src="https://docs.theme-park.dev/site_assets/bazarr/logo.png" />
-                    </p>
-                    <p>Bazarr</p>
-                </a>
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/plex">
-                    <p><img class="app-container-image" src="https://docs.theme-park.dev/site_assets/plex/logo.png" />
-                    </p>
-                    <p>Plex</p>
-                </a>
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/synclounge">
-                    <p><img class="app-container-image"
-                            src="https://docs.theme-park.dev/site_assets/synclounge/logo.png" />
-                    </p>
-                    <p>Synclounge</p>
-                </a>
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/calibreweb">
-                    <p><img class="app-container-image"
-                            src="https://docs.theme-park.dev/site_assets/calibreweb/logo.png" /></p>
-                    <p>Calibre-Web</p>
-                </a>
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/jellyfin">
-                    <p><img class="app-container-image"
-                            src="https://docs.theme-park.dev/site_assets/jellyfin/logo.png" /></p>
-                    <p>Jellyfin</p>
-                </a>
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/emby">
-                    <p><img class="app-container-image" src="https://docs.theme-park.dev/site_assets/emby/logo.png" />
-                    </p>
-                    <p>Emby</p>
-                </a>
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/tautulli">
-                    <p><img class="app-container-image"
-                            src="https://docs.theme-park.dev/site_assets/tautulli/logo.png" /></p>
-                    <p>Tautulli</p>
-                </a>
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/ombi">
-                    <p><img class="app-container-image" src="https://docs.theme-park.dev/site_assets/ombi/logo.png" />
-                    </p>
-                    <p>Ombi</p>
-                </a>
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/requestrr">
-                    <p><img class="app-container-image"
-                            src="https://docs.theme-park.dev/site_assets/requestrr/logo.png" /></p>
-                    <p>Requestrr</p>
-                </a>
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/organizr">
-                    <p><img class="app-container-image"
-                            src="https://docs.theme-park.dev/site_assets/organizr/logo.png" /></p>
-                    <p>Organizr</p>
-                </a>
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/deluge">
-                    <p><img class="app-container-image" src="https://docs.theme-park.dev/site_assets/deluge/logo.png" />
-                    </p>
-                    <p>deluge</p>
-                </a>
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/qbittorrent">
-                    <p><img class="app-container-image"
-                            src="https://docs.theme-park.dev/site_assets/qbittorrent/logo.png" /></p>
-                    <p>qBittorrent</p>
-                </a>
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/rutorrent">
-                    <p><img class="app-container-image"
-                            src="https://docs.theme-park.dev/site_assets/rutorrent/logo.png" /></p>
-                    <p>ruTorrent</p>
-                </a>
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/transmission">
-                    <p><img class="app-container-image"
-                            src="https://docs.theme-park.dev/site_assets/transmission/logo.png" /></p>
-                    <p>Transmission</p>
-                </a>
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/sabnzbd">
-                    <p><img class="app-container-image"
-                            src="https://docs.theme-park.dev/site_assets/sabnzbd/logo.png" /></p>
-                    <p>SABnzbd</p>
-                </a>
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/nzbget">
-                    <p><img class="app-container-image" src="https://docs.theme-park.dev/site_assets/nzbget/logo.png" />
-                    </p>
-                    <p>NZBGet</p>
-                </a>
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/nzbhydra2">
-                    <p><img class="app-container-image"
-                            src="https://docs.theme-park.dev/site_assets/nzbhydra2/logo.png" />
-                    </p>
-                    <p>NZBHydra 2</p>
-                </a>
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/jackett">
-                    <p><img class="app-container-image"
-                            src="https://docs.theme-park.dev/site_assets/jackett/logo.png" />
-                    </p>
-                    <p>Jackett</p>
-                </a>
-                <!-- <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/grafana">
-                    <p><img class="app-container-image"
-                            src="https://docs.theme-park.dev/site_assets/grafana/logo.png" /></p>
-                    <p>Grafana</p>
-                </a> -->
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/netdata">
-                    <p><img class="app-container-image"
-                            src="https://docs.theme-park.dev/site_assets/netdata/logo.png" /></p>
-                    <p>Netdata</p>
-                </a>
-                <!-- <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/monitorr">
-                    <p><img class="app-container-image"
-                            src="https://docs.theme-park.dev/site_assets/monitorr/logo.png" /></p>
-                    <p>Monitorr</p>
-                </a>
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/logarr">
-                    <p><img class="app-container-image" src="https://docs.theme-park.dev/site_assets/logarr/logo.png" />
-                    </p>
-                    <p>Logarr</p>
-                </a> -->
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/portainer">
-                    <p><img class="app-container-image"
-                            src="https://docs.theme-park.dev/site_assets/portainer/logo.png" /></p>
-                    <p>Portainer</p>
-                </a>
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/pihole">
-                    <p><img class="app-container-image" src="https://docs.theme-park.dev/site_assets/pihole/logo.png" />
-                    </p>
-                    <p>Pi-hole</p>
-                </a>
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/guacamole">
-                    <p><img class="app-container-image"
-                            src="https://docs.theme-park.dev/site_assets/guacamole/logo.png" /></p>
-                    <p>Guacamole</p>
-                </a>
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/filebrowser">
-                    <p><img class="app-container-image"
-                            src="https://docs.theme-park.dev/site_assets/filebrowser/logo.png" /></p>
-                    <p>Filebrowser</p>
-                </a>
-                <!-- <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/plpp">
-                    <p><img class="app-container-image" src="https://docs.theme-park.dev/site_assets/plpp/logo.png" />
-                    </p>
-                    <p>PLPP</p>
-                </a> -->
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/librespeed">
-                    <p><img class="app-container-image"
-                            src="https://docs.theme-park.dev/site_assets/librespeed/logo.png" /></p>
-                    <p>Librespeed</p>
-                </a>
-                <!-- <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/thelounge">
-                    <p><img class="app-container-image"
-                            src="https://docs.theme-park.dev/site_assets/thelounge/logo.png" /></p>
-                    <p>The Lounge</p>
-                </a> -->
-                <a class="col app-container text-center p-2 m-1"
-                    href="https://docs.theme-park.dev/themes/lazylibrarian">
-                    <p><img class="app-container-image"
-                            src="https://docs.theme-park.dev/site_assets/lazylibrarian/logo.png" /></p>
-                    <p>Lazylibrarian</p>
-                </a>
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/adguard">
-                    <p><img class="app-container-image"
-                            src="https://docs.theme-park.dev/site_assets/adguard/logo.png" /></p>
-                    <p>Adguard</p>
-                </a>
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/gaps">
-                    <p><img class="app-container-image" src="https://docs.theme-park.dev/site_assets/gaps/logo.png" />
-                    </p>
-                    <p>Gaps</p>
-                </a>
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/bitwarden">
-                    <p><img class="app-container-image"
-                            src="https://docs.theme-park.dev/site_assets/bitwarden/logo.png" /></p>
-                    <p>Bitwarden</p>
-                </a>
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/duplicacy">
-                    <p><img class="app-container-image"
-                            src="https://docs.theme-park.dev/site_assets/duplicacy/logo.png" /></p>
-                    <p>Duplicacy</p>
-                </a>
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/kitana">
-                    <p><img class="app-container-image" src="https://docs.theme-park.dev/site_assets/kitana/logo.png" />
-                    </p>
-                    <p>Kitana</p>
-                </a>
-                <!-- <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/webtools">
-                    <p><img class="app-container-image"
-                            src="https://docs.theme-park.dev/site_assets/webtools/logo.png" /></p>
-                    <p>Webtools</p>
-                </a> -->
-                <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/resilio-sync">
-                    <p><img class="app-container-image"
-                            src="https://docs.theme-park.dev/site_assets/resilio-sync/logo.png" /></p>
-                    <p>Resilio-Sync</p>
-                </a>
-                <a class="col align-self-center app-container text-center p-2 m-1"
-                    href="https://docs.theme-park.dev/themes/gitea">
-                    <p><img class="app-container-image" src="https://docs.theme-park.dev/site_assets/gitea/logo.png" />
-                    </p>
-                    <p>Gitea</p>
-                </a>
-                <a class="col align-self-center app-container text-center p-2 m-1"
-                    href="https://docs.theme-park.dev/themes/unraid">
-                    <p><img class="app-container-image" src="https://docs.theme-park.dev/site_assets/unraid/logo.png" />
-                    </p>
-                    <p>Unraid</p>
-                </a>
-                <a class="col align-self-center app-container text-center p-2 m-1"
-                    href="https://docs.theme-park.dev/themes/moviematch">
-                    <p><img class="app-container-image"
-                            src="https://docs.theme-park.dev/site_assets/moviematch/logo.png" /></p>
-                    <p>Moviematch</p>
-                </a>
-                <a class="col align-self-center app-container text-center p-2 m-1"
-                    href="https://docs.theme-park.dev/themes/petio">
-                    <p><img class="app-container-image" src="https://docs.theme-park.dev/site_assets/petio/logo.png" />
-                    </p>
-                    <p>Petio</p>
-                </a>
-                <a class="col align-self-center app-container text-center p-2 m-1"
-                    href="https://docs.theme-park.dev/themes/flood">
-                    <p><img class="app-container-image" src="https://docs.theme-park.dev/site_assets/flood/logo.png" />
-                    </p>
-                    <p>Flood</p>
-                </a>
-                <a class="col align-self-center app-container text-center p-2 m-1"
-                    href="https://docs.theme-park.dev/themes/vuetorrent">
-                    <p><img class="app-container-image"
-                            src="https://docs.theme-park.dev/site_assets/vuetorrent/logo.png" />
-                    </p>
-                    <p>VueTorrent</p>
-                </a>
-                <a class="col align-self-center app-container text-center p-2 m-1"
-                    href="https://docs.theme-park.dev/themes/dozzle">
-                    <p><img class="app-container-image" src="https://docs.theme-park.dev/site_assets/dozzle/logo.png" />
-                    </p>
-                    <p>Dozzle</p>
-                </a>
-                <a class="col align-self-center app-container text-center p-2 m-1"
-                    href="https://docs.theme-park.dev/themes/xbackbone">
-                    <p><img class="app-container-image"
-                            src="https://docs.theme-park.dev/site_assets/xbackbone/logo.png" />
-                    </p>
-                    <p>Xbackbone</p>
-                </a>
-                <a class="col align-self-center app-container text-center p-2 m-1"
-                    href="https://docs.theme-park.dev/themes/uptime-kuma">
-                    <p><img class="app-container-image"
-                            src="https://docs.theme-park.dev/site_assets/uptime-kuma/logo.png" />
-                    </p>
-                    <p>Uptime Kuma</p>
-                </a>
-                <a class="col align-self-center app-container text-center p-2 m-1"
-                    href="https://docs.theme-park.dev/themes/mylar">
-                    <p><img class="app-container-image"
-                            src="https://docs.theme-park.dev/site_assets/mylar/logo.png" />
-                    </p>
-                    <p>Mylar 3</p>
-                </a>
+            <div id="all-apps" class="row justify-content-center">
+                ...
             </div>
         </div>
     </section>
@@ -434,9 +152,23 @@
         </div>
     </section>
     <!-- Portfolio-->
+    <section class="page-section pt-0">
+    <div class="container pb-3">
+        <div class="row h-100 align-items-center justify-content-center text-center">
+            <div class="col-lg-10 align-self-end">
+            </div>
+            <div class="col-lg-8 align-self-baseline">
+                <button id="switch-theme" class="btn btn-primary btn-xl click-me-btn">Click Me!</button>
+            </div>
+        </div>
+    </div>
+</section>
     <section class="page-section pb-1" id="themes">
         <div class="container">
-            <h2 class="text-center mt-0">Available theme options</h2>
+            <h2 class="text-center mt-0">Official theme options</h2>
+            <h6 class="text-center mt-0">Click here for the <a href="https://docs.theme-park.dev/community-themes/">community themes</a></h6>
+            
+
             <hr class="divider my-4" />
         </div>
     </section>
@@ -558,7 +290,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <!-- Core theme JS-->
-    <script src="Resources/landing-page/js/scripts.js?v=1.2"></script>
+    <script src="Resources/landing-page/js/scripts.js?v=1.3"></script>
     <script src="Resources/landing-page/js/jquery-bg-slideshow.js?v=1"></script>
     <script type="text/javascript">
         $(function () {

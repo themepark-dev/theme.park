@@ -71,10 +71,10 @@
 
 })(jQuery); // End of use strict
 
-// load random css stylesheet
 const themes = ["aquamarine","hotline","dark","organizr-dark","dracula","overseerr",
 "plex","space-gray","hotpink","onedark","nord"];
 var random = themes[~~(Math.random() * themes.length)];
+// load a random css stylesheet
 function injectTheme(theme,container="head") {
     if (container === "head") {
         html_element = document.head;
@@ -83,24 +83,53 @@ function injectTheme(theme,container="head") {
     url = "/CSS/variables/"
     link.type = "text/css";
     link.rel = "stylesheet";
-    link.href = `${url}/${theme}.css`;
+    link.href = `${url}/${theme.toLowerCase()}.css`;
   
     html_element.appendChild(link);
   }
 
-  // Add updated theme count. 
-  function addThemeCount() {
-  let themeJsonUrl = "https://theme-park.dev/themes.json"
-  return fetch(themeJsonUrl)
-  .then(response => {
-      return response.json();
-  }).then(json => {
-      document.getElementById("themeCount").innerHTML = `
-    theme.park contains ${Object.keys(json.applications).length} themed applications, with css <a
-                                href="https://docs.theme-park.dev/themes/addons/">addons</a> on certain themes.`  
-  })
+  // Add theme data and set theme vars
+  var apps;
+  var themeOptions;
+  function addThemeData() {
+  let themeJsonUrl = "/themes.json"
+  fetch(themeJsonUrl)
+  .then(response =>  response.json())
+  .then(json => {
+    apps = json.applications
+    themeOptions = json.themes
+    appCount = Object.keys(json.applications).length
+    document.getElementById("tag-line").innerText = `A collection of themes/skins for ${appCount} selfhosted
+    apps!`
+    document.getElementById("theme-header-text").innerText = `${appCount} themed applications!`
+    document.getElementById("app-count").innerHTML = `
+    theme.park contains ${appCount} themed applications, with css <a
+    href="https://docs.theme-park.dev/themes/addons/">addons</a> on certain themes.`
+    document.getElementById("theme-count").innerHTML = `Choose between <a class="js-scroll-trigger" href="#themes">${Object.keys(json.themes).length} different
+    styles!</a> With the possibility to easily create your own themes using the defined <a
+    href="https://docs.theme-park.dev/custom/">variables</a>.`
+    createApps(apps)
+    })
+}
+
+function createApps(apps) {
+    let allAppsDiv = document.getElementById("all-apps")
+    sorted = Object.keys(apps).sort()
+    for (let app in sorted) {
+    let newApp = `
+        <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/${sorted[app]}/">
+            <p><img class="app-container-image" src="https://docs.theme-park.dev/site_assets/${sorted[app]}/logo.png"/></p>
+            <p>${sorted[app][0].toUpperCase() + sorted[app].slice(1)}</p>
+        </a>`
+    allAppsDiv.innerHTML += newApp
+    }
 }
 
 injectTheme(random);
-addThemeCount();
+addThemeData();
+document.getElementById("switch-theme").addEventListener("click", ()=>  {
+    let theme = Object.keys(themeOptions)[~~(Math.random() * Object.keys(themeOptions).length)]
+    injectTheme(theme)
+    document.getElementById("switch-theme").innerText = theme
+})
 

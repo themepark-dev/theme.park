@@ -17,7 +17,8 @@
 .theme-overview,
 #services,
 #themes,
-footer {
+footer,
+section {
     background: var(--main-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
@@ -306,6 +307,23 @@ p {
     line-height: 1.2;
 }
 
+@keyframes glowing {
+    0% {
+      background-color: var(--button-color);
+      box-shadow: 0 0 5px rgba(var(--accent-color), 0.502);
+    }
+    50% {
+      background-color: var(--button-color-hover);
+      box-shadow: 0 0 10px rgba(var(--accent-color));
+    }
+    100% {
+        background-color: var(--button-color);
+        box-shadow: 0 0 5px rgba(var(--accent-color), 0.502)
+    }
+  }
+.click-me-btn {
+    animation: glowing 1300ms infinite;
+}
 /* @media (min-width: 992px) {
 .portfolio-box img {
     object-fit: cover;
