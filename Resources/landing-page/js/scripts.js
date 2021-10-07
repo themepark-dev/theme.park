@@ -126,11 +126,30 @@ function createApps(apps) {
     }
 }
 
+function fadeOutIn(speed ) {
+    let theme = Object.keys(themeOptions)[~~(Math.random() * Object.keys(themeOptions).length)]
+    if (!document.body.style.opacity) {
+        document.body.style.opacity = 1;
+    }
+    var outInterval = setInterval(function() {
+        document.body.style.opacity -= 0.02;
+        if (document.body.style.opacity <= 0) {
+            clearInterval(outInterval);
+            injectTheme(theme)
+            document.getElementById("switch-theme").innerText = theme
+            var inInterval = setInterval(function() {
+                document.body.style.opacity = Number(document.body.style.opacity)+0.02;
+                if (document.body.style.opacity >= 1)
+                    clearInterval(inInterval);
+            }, speed/50 );
+        }
+    }, speed/50 );
+
+}
+
 injectTheme(random);
 addThemeData();
-document.getElementById("switch-theme").addEventListener("click", ()=>  {
-    let theme = Object.keys(themeOptions)[~~(Math.random() * Object.keys(themeOptions).length)]
-    injectTheme(theme)
-    document.getElementById("switch-theme").innerText = theme
+document.getElementById("switch-theme").addEventListener("click", () =>  {
+    fadeOutIn(350);
 })
 
