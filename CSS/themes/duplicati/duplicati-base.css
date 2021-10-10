@@ -24,7 +24,7 @@ body {
 }
 
 .mainmenu {
-    background: var(--main-bg-color) !important;
+    background: initial !important;
 }
 
 .mainmenu ul li a {
