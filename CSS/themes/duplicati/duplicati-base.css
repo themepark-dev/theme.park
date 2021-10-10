@@ -1,0 +1,103 @@
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+
+/*		   		        Made by @gilbN					 */
+/*			      https://github.com/gilbN/theme.park			 */
+
+body {
+    background: var(--main-bg-color) !important;
+    color: var(--text) !important;
+}
+
+.header {
+    background: var(--modal-header-color) !important;
+}
+
+.footer {
+    background: var(--modal-footer-color) !important;
+}
+
+.mainmenu {
+    background: var(--main-bg-color) !important;
+}
+
+.mainmenu ul li a {
+    background-color: initial !important;
+}
+
+.mainmenu ul li a.active {
+    background-color: initial !important;
+    color: var(--link-color-hover) !important;
+}
+
+a {
+    color: var(--link-color) !important;
+}
+
+a:hover {
+    color: var(--link-color-hover) !important;
+}
+
+.taskmenu dt {
+    color: var(--text-hover) !important;
+}
+
+dd {
+    color: var(--text-hover) !important;
+}
+
+.tasklist dd a, .tasklist dd p {
+    color: var(--link-color) !important;
+}
+
+.tasklist dd a:hover, .tasklist dd p:hover {
+    color: var(--link-color-hover) !important;
+}
+
+.action-icons {
+    color: var(--text-hover) !important;
+}
+
+.submit {
+    color: var(--button-text) !important;
+    background: var(--button-color) !important;
+}
+
+.submit:hover {
+    color: var(--button-text-hover) !important;
+    background: var(--button-color-hover) !important;
+}
+
+input, select {
+    color: var(--button-text) !important;
+    border: none !important;
+    background: var(--modal-bg-color) !important;
+}
+
+input:focus {
+    outline: none !important;
+}
+
+h1, h2 {
+    color: var(--text-hover) !important;
+}
+
+.state {
+    background: var(--accent-color) !important;
+    color: var(--arr-queue-color) !important;
+    border-color: var(--arr-queue-color) !important;
+}
+
+@media (max-width:1150px) and (-webkit-min-device-pixel-ratio:1.25),(max-width:1150px) and (min-resolution:192dpi),(max-width:1150px) and (min-resolution:1.25dppx) {
+
+    .mainmenu {
+        background-color: var(--drop-down-menu-bg) !important;
+    }
+    
+}
