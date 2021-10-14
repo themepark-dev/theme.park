@@ -100,8 +100,7 @@ function injectTheme(theme,container="head") {
     apps = json.applications
     themeOptions = json.themes
     appCount = Object.keys(json.applications).length
-    document.getElementById("tag-line").innerText = `A collection of themes/skins for ${appCount} selfhosted
-    apps!`
+    document.getElementById("tag-line").innerText = `A collection of themes/skins for ${appCount} selfhosted apps!`
     document.getElementById("theme-header-text").innerText = `${appCount} themed applications!`
     document.getElementById("app-count").innerHTML = `
     theme.park contains ${appCount} themed applications, with css <a
