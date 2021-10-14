@@ -44,6 +44,10 @@
       "base_css": "https://theme-park.dev/CSS/themes/jackett/jackett-base.css?sha=da57858a0806974e652a41ad730d0d153575d75c",
       "addons": {}
     },
+    "duplicati": {
+      "base_css": "https://theme-park.dev/CSS/themes/duplicati/duplicati-base.css?sha=40054b99b79d98fe31c8bfc48b4516a6338fbe27",
+      "addons": {}
+    },
     "petio": {
       "base_css": "https://theme-park.dev/CSS/themes/petio/petio-base.css?sha=98fe48edde91b9f8714918d9f6f63ea3c148dc49",
       "addons": {}
