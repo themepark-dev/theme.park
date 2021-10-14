@@ -245,9 +245,8 @@
 <p><a href="https://docs.theme-park.dev/themes/requestrr">Requestrr</a></p>
 </td>
 <td style="width: 90px; height: 56px; text-align: center;">
-<p><a href="https://docs.theme-park.dev/themes/logarr"><img src="https://docs.theme-park.dev/site_assets/logarr/logo.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://docs.theme-park.dev/themes/logarr">Logarr (Deprecated)</a></p>
-</td>
+<p><a href="https://docs.theme-park.dev/themes/duplicati"><img src="https://docs.theme-park.dev/site_assets/duplicati/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/duplicati">Duplicati</a></p>
 </td>
 <td style="width: 160px; height: 40px; text-align: center;">
 <p><a href="https://docs.theme-park.dev/themes/plpp"><img src="https://docs.theme-park.dev/site_assets/plpp/logo.png" alt="" width="48" height="48" /></a></p>
@@ -271,7 +270,10 @@
 <p><a href="https://docs.theme-park.dev/themes/webtools"><img src="https://docs.theme-park.dev/site_assets/webtools/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/webtools">Webtools (Deprecated)</a></p>
 </td>
-<td style="width: 160px; height: 56px; text-align: center;">
+<td style="width: 90px; height: 56px; text-align: center;">
+<p><a href="https://docs.theme-park.dev/themes/logarr"><img src="https://docs.theme-park.dev/site_assets/logarr/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/logarr">Logarr (Deprecated)</a></p>
+</td>
 <td style="width: 110px; height: 56px; text-align: center;">
 <td style="width: 110px; height: 56px; text-align: center;">
 <td style="width: 110px; height: 56px; text-align: center;">
