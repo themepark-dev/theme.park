@@ -16,7 +16,7 @@ jobs:
       - name: get changed files
         id: getfile
         run: |
-          echo "::set-output name=files::$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }}| xargs)"
+          echo "::set-output name=files::$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} docker-mods/| xargs)"
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v1
         with:
