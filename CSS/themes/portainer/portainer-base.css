@@ -10,6 +10,8 @@
 /*		   		        Made by @gilbN					 */
 /* 			      https://github.com/gilbN/theme.park			 */
 
+@import url("https://dev.theme-park.dev/CSS/defaults/placeholders.css");
+
 /* Scrollbar */
 @media only screen and (min-width: 768px) {
     html {
@@ -434,9 +436,14 @@ fieldset[disabled] .btn-primary:hover {
 
 /* FORM CONTROL */
 
+select:focus, select.form-control:focus {
+    background: #1f1f1f !important;
+}
+
 .form-control {
     background-color: rgba(255, 255, 255, 0.15) !important;
     border: 1px solid transparent;
+    color: var(--text);
 }
 
 .form-control:not([disabled]):not(select),
@@ -453,7 +460,7 @@ output {
 
 .input-group-addon {
     color: var(--button-text);
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: var(--button-color);
     border: 1px solid transparent;
 }
 
@@ -539,26 +546,6 @@ output {
     color: rgb(var(--accent-color));
 }
 
-/* PLACEHOLDER TEXT */
-::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
-    color: #bbb;
-}
-
-::-moz-placeholder {
-    /* Firefox 19+ */
-    color: #bbb;
-}
-
-:-ms-input-placeholder {
-    /* IE 10+ */
-    color: #bbb;
-}
-
-:-moz-placeholder {
-    /* Firefox 18- */
-    color: #bbb;
-}
 
 /* STACKS */
 .CodeMirror {
