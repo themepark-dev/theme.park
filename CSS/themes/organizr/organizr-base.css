@@ -1579,7 +1579,8 @@ a:hover,
     box-shadow: none !important;
 }
 
-.swal-overlay--show-modal .swal-modal {
+.swal-overlay--show-modal .swal-modal:not(.swal-modal.orgAlertTransparent),
+body > div.swal-overlay.swal-overlay--show-modal > div > div > div > div > div.panel-heading {
     background: var(--main-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
