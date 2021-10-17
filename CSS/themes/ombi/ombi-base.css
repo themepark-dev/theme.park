@@ -100,6 +100,13 @@ a:hover {
 }
 
 /* SIDE NAV */
+
+@media only screen and (min-width: 1025px){
+    #main-container\ dark > mat-sidenav-container > mat-sidenav-content {
+        margin-left: 256px !important;
+    }
+}
+
 /* OMBI TEXT */
 .sidenav-container .sidenav .application-name {
     color: rgb(var(--accent-color)) !important;
@@ -405,10 +412,6 @@ a:hover {
         margin-bottom: 15px !important;
         margin-left: 0px !important;
         height: 100% !important;
-    }
-
-    #searchResults img {
-        min-height: 354px;
     }
 }
 

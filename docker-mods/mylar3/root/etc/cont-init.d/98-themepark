@@ -32,7 +32,7 @@ esac
 
 if [[ -z ${TP_THEME} ]]; then
     echo 'No theme set, defaulting to organizr-dark'
-    TP_THEME='organizr-dark'
+    TP_THEME='organizr'
 fi
 
 sed_file(){
