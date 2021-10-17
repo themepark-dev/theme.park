@@ -2070,6 +2070,10 @@ input,
     border-radius: 0px 0px 0 0;
 }
 
+.tabs-style-flip nav a::after {
+    background-color: rgb(var(--accent-color));
+}
+
 .tabs-style-flip .content-wrap {
     background: var(--main-bg-color);
     background-repeat: repeat, no-repeat;
