@@ -40,7 +40,7 @@ esac
 
 if [[ -z ${TP_THEME} ]]; then
     echo 'No theme set, defaulting to organizr-dark'
-    TP_THEME='organizr-dark'
+    TP_THEME='organizr'
 fi
 RELEASE_FILEPATH='/vuetorrent/release.json'
 NEEDS_UPDATE=false

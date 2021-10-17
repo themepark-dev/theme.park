@@ -34,7 +34,7 @@
       }
     },
     "sonarr": {
-      "base_css": "https://theme-park.dev/CSS/themes/sonarr/sonarr-base.css?sha=68c17914289e7ec4036fe94a40dbaea648c61a32",
+      "base_css": "https://theme-park.dev/CSS/themes/sonarr/sonarr-base.css?sha=a7f867e599c40cdb8aa57e64867a198b2b52f89c",
       "addons": {
         "sonarr-darker": "https://theme-park.dev/CSS/addons/sonarr/sonarr-darker/sonarr-darker.css?sha=b1eb1ff0827684361ad596fb49baa6362cc23036",
         "sonarr-4k-logo": "https://theme-park.dev/CSS/addons/sonarr/sonarr-4k-logo/sonarr-4k-logo.css?sha=0f0f47f170531ab1020c6211f4610e9f96c19395"
@@ -112,7 +112,7 @@
       "addons": {}
     },
     "readarr": {
-      "base_css": "https://theme-park.dev/CSS/themes/readarr/readarr-base.css?sha=cbdaeb841bc34531698f30739d6b32f98029cb99",
+      "base_css": "https://theme-park.dev/CSS/themes/readarr/readarr-base.css?sha=61037daced716f641a98138c9a27868598fc74d3",
       "addons": {
         "readarr-alt-logo": "https://theme-park.dev/CSS/addons/readarr/readarr-alt-logo/readarr-alt-logo.css?sha=ca63018567194349619240a1257fcccd52fa4827",
         "readarr-darker": "https://theme-park.dev/CSS/addons/readarr/readarr-darker/readarr-darker.css?sha=415a258cc9d1e40bf094f6f20350225c06120825"
@@ -123,7 +123,7 @@
       "addons": {}
     },
     "radarr": {
-      "base_css": "https://theme-park.dev/CSS/themes/radarr/radarr-base.css?sha=93373eb0c5cd67fbe7f601d6c5e0dcc4d37b2b91",
+      "base_css": "https://theme-park.dev/CSS/themes/radarr/radarr-base.css?sha=4d021b3b253285a4e06b747a4a080076e443aeb9",
       "addons": {
         "radarr-4k-logo": "https://theme-park.dev/CSS/addons/radarr/radarr-4k-logo/radarr-4k-logo.css?sha=bedc13f37e392d0b17a4443c88a64ca76dff9b1a",
         "radarr-darker": "https://theme-park.dev/CSS/addons/radarr/radarr-darker/radarr-darker.css?sha=317432984f97518011463ef62af84b04420e524d"
@@ -201,11 +201,11 @@
       "addons": {}
     },
     "ombi": {
-      "base_css": "https://theme-park.dev/CSS/themes/ombi/ombi-base.css?sha=140fbd890d5e9c26bf116bac3458421562cec411",
+      "base_css": "https://theme-park.dev/CSS/themes/ombi/ombi-base.css?sha=c2dc7486c407f653d5cd1c1fa5cb5c94eb68ca00",
       "addons": {}
     },
     "lidarr": {
-      "base_css": "https://theme-park.dev/CSS/themes/lidarr/lidarr-base.css?sha=7b465f6ce5761682d5d70b6a3048cf612fb65b03",
+      "base_css": "https://theme-park.dev/CSS/themes/lidarr/lidarr-base.css?sha=5057abee4e63a35229abe115492cd00f8a72734f",
       "addons": {
         "lidarr-darker": "https://theme-park.dev/CSS/addons/lidarr/lidarr-darker/lidarr-darker.css?sha=fc479d221c05b5232d720f1c32d9cb1717f7b60b"
       }
@@ -353,22 +353,25 @@
       "url": "https://theme-park.dev/CSS/variables/overseerr.css?sha=7e3a8e3ca21dd82641113cf53f071a89252c7235"
     },
     "Hotpink": {
-      "url": "https://theme-park.dev/CSS/variables/hotpink.css?sha=55999afb133b62cdc067c1ce91b6dc9bd9b10102"
+      "url": "https://theme-park.dev/CSS/variables/hotpink.css?sha=2f3974c084d053521362bae34d415f3614dba2e2"
     },
     "Organizr-dark": {
-      "url": "https://theme-park.dev/CSS/variables/organizr-dark.css?sha=6d9165e0b0208ccabd404bded0e5570c7cf129e1"
+      "url": "https://theme-park.dev/CSS/variables/organizr-dark.css?sha=e4935c9c23037a6fee9ff747c654740716aeb5fb"
     },
     "Space-gray": {
       "url": "https://theme-park.dev/CSS/variables/space-gray.css?sha=566e5616a8e48be2d0670d3f4d1ce106d2616ea2"
     },
     "Nord": {
-      "url": "https://theme-park.dev/CSS/variables/nord.css?sha=b75df07b4566d8600c203d31890c903633fbc82e"
+      "url": "https://theme-park.dev/CSS/variables/nord.css?sha=353cb0383f78b2afa4de7784d536d637f3c3666d"
     },
     "Onedark": {
       "url": "https://theme-park.dev/CSS/variables/onedark.css?sha=cbccbf4366ab59bd2b9253c221b1f093c2e85118"
     },
     "Dracula": {
       "url": "https://theme-park.dev/CSS/variables/dracula.css?sha=5abf85508d87243007cf5f4fda34a60340583466"
+    },
+    "Organizr": {
+      "url": "https://theme-park.dev/CSS/variables/organizr.css?sha=aa8d9d5c1b897b8f6d27ff274b073595b3d45741"
     },
     "Power": {
       "url": "https://theme-park.dev/CSS/variables/power.css?sha=d1be419eb6a4ae18102794ea0445f89eb2bd3734"
