@@ -452,7 +452,6 @@ li.caMenuItem:hover {
     background-color: rgba(0, 0, 0, 0.45) !important;
 }
 
-.infoButton,
 .supportButton,
 .actionsPopup,
 .supportPopup,
@@ -461,9 +460,20 @@ li.caMenuItem:hover {
 .ca_favouriteRepo {
     color: var(--button-text) !important;
     background: var(--button-color) !important;
+    border-color: var(--button-color) !important;
 }
 
-.infoButton:hover,
+#templates_content > div > div > div.ca_bottomLine > div.infoButton.ca_appPopup {
+    color: var(--button-text) !important;
+    background: var(--button-color) !important;
+    border-color: var(--button-color) !important;
+}
+.infoButton:hover {
+    background: var(--button-color-hover) !important;
+    color: var(--button-text-hover) !important;
+    border-color: var(--button-color-hover) !important;
+}
+
 .supportButton:hover,
 .actionsPopup:hover,
 .supportPopup:hover,
