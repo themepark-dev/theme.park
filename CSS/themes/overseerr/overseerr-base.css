@@ -137,6 +137,16 @@ input[type=checkbox] {
     box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
+body>div.fixed.top-0.bottom-0.left-0.right-0.z-50.flex.items-center.justify-center.w-full.h-full.bg-gray-800.bg-opacity-70>div>div.relative.mt-4.text-sm.leading-5.text-gray-300>div.flex.flex-col>div>div>div>table>tbody>tr>td.px-4.py-4.text-sm.font-medium.leading-5.text-gray-100.whitespace-nowrap.false>span>span.bg-indigo-500,
+body>div.fixed.top-0.bottom-0.left-0.right-0.z-50.flex.items-center.justify-center.w-full.h-full.bg-gray-800.bg-opacity-70>div>div.relative.mt-4.text-sm.leading-5.text-gray-300>div.flex.flex-col>div>div>div>table>thead>tr>th.w-16.px-4.py-3.bg-gray-500.false>span>span.bg-indigo-500 {
+    background: rgb(var(--accent-color));
+}
+
+span.bg-indigo-500 {
+    background-color: rgb(var(--accent-color));
+    color: var(--label-text-color) !important;
+}
+
 .react-select-container .react-select__control {
     border-color: rgba(255, 255, 255, 0.1) !important;
     background-color: rgba(0, 0, 0, 0.25) !important;
@@ -469,7 +479,9 @@ table>thead>tr>th,
 /* MODAL */
 body>div.fixed.top-0.bottom-0.left-0.right-0.z-50.flex.items-center.justify-center.w-full.h-full.bg-gray-800.bg-opacity-70.enter-done>div,
 body>div.fixed.top-0.bottom-0.left-0.right-0.z-50.flex.items-center.justify-center.w-full.h-full.bg-gray-800.bg-opacity-70.enter-done>div>div.relative.mt-4.text-sm.leading-5.text-gray-300>div.p-4.bg-gray-600.rounded-md.shadow,
-body>div.fixed.top-0.bottom-0.left-0.right-0.z-50.flex.items-center.justify-center.w-full.h-full.bg-gray-800.bg-opacity-70.enter-done>div>div.absolute.top-0.left-0.right-0.z-0.w-full.h-64>div {
+body>div.fixed.top-0.bottom-0.left-0.right-0.z-50.flex.items-center.justify-center.w-full.h-full.bg-gray-800.bg-opacity-70.enter-done>div>div.absolute.top-0.left-0.right-0.z-0.w-full.h-64>div,
+body>div.fixed.top-0.bottom-0.left-0.right-0.z-50.flex.items-center.justify-center.w-full.h-full.bg-gray-800.bg-opacity-70>div.bg-gray-700,
+body>div.fixed.top-0.bottom-0.left-0.right-0.z-50.flex.items-center.justify-center.w-full.h-full.bg-gray-800.bg-opacity-70>div>div.relative.mt-4.text-sm.leading-5.text-gray-300>div.mt-4>div.p-4.bg-gray-600.rounded-md.shadow {
     background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
@@ -480,15 +492,38 @@ body>div.fixed.top-0.bottom-0.left-0.right-0.z-50.flex.items-center.justify-cent
     -o-background-size: auto, cover;
 }
 
-body>div.fixed.top-0.bottom-0.left-0.right-0.z-50.flex.items-center.justify-center.w-full.h-full.bg-gray-800.bg-opacity-70.enter-done>div>div.absolute.top-0.left-0.right-0.z-0.w-full.h-64>div>img {
+body>div.fixed.top-0.bottom-0.left-0.right-0.z-50.flex.items-center.justify-center.w-full.h-full.bg-gray-800.bg-opacity-70.enter-done>div>div.absolute.top-0.left-0.right-0.z-0.w-full.h-64>div>img,
+body>div.fixed.top-0.bottom-0.left-0.right-0.z-50.flex.items-center.justify-center.w-full.h-full.bg-gray-800.bg-opacity-70>div>div.absolute.top-0.left-0.right-0.z-0.w-full.h-64>div>img {
     display: none !important;
 }
 
-body>div.fixed.top-0.bottom-0.left-0.right-0.z-50.flex.items-center.justify-center.w-full.h-full.bg-gray-800.bg-opacity-70.enter-done>div>div.absolute.top-0.left-0.right-0.z-0.w-full.h-64>div.absolute.inset-0 {
+body>div.fixed.top-0.bottom-0.left-0.right-0.z-50.flex.items-center.justify-center.w-full.h-full.bg-gray-800.bg-opacity-70.enter-done>div>div.absolute.top-0.left-0.right-0.z-0.w-full.h-64>div.absolute.inset-0,
+body>div.fixed.top-0.bottom-0.left-0.right-0.z-50.flex.items-center.justify-center.w-full.h-full.bg-gray-800.bg-opacity-70>div>div.absolute.top-0.left-0.right-0.z-0.w-full.h-64>div.absolute.inset-0 {
     background: transparent !important;
+}
+
+body>div.fixed.top-0.bottom-0.left-0.right-0.z-50.flex.items-center.justify-center.w-full.h-full.bg-gray-800.bg-opacity-70>div>div.relative.mt-4.text-sm.leading-5.text-gray-300>div.flex.flex-col>div>div>div>table>tbody {
+    background: rgb(255, 255, 255, .1);
 }
 
 /* PROFILE */
 #__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div.slider-header {
     margin-top: 3.5rem;
+}
+
+/* DROPDOWN */
+
+#__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div>div.media-header>div.media-actions>span>span>div>div.bg-gray-700,
+#__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div>div.media-header>div.media-actions>span>span>div>div>div>a {
+    background: var(--drop-down-menu-bg);
+}
+
+#__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div>div.media-header>div.media-actions>span>span>div>div>div>a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* LOGIN */
+#__next>div>div.relative.z-50.mt-8.sm\:mx-auto.sm\:w-full.sm\:max-w-md>div>button,
+#__next>div>div.relative.z-50.mt-8.sm\:mx-auto.sm\:w-full.sm\:max-w-md>div>div:nth-child(3)>button {
+    background: rgba(255, 255, 255, 0.1);
 }
