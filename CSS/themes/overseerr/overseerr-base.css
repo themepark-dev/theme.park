@@ -38,6 +38,14 @@ a.crew-name,
     color: var(--link-color);
 }
 
+a.text-indigo-500 {
+    color: var(--link-color) !important;
+}
+
+a.text-indigo-500:hover {
+    color: var(--link-color-hover) !important;
+}
+
 .media-fact-value a:hover,
 .media-fact-value button:hover,
 a.crew-name:hover,
@@ -273,6 +281,10 @@ body>div.z-50.fixed.inset-0.overflow-hidden.bg-opacity-70.bg-gray-800.enter-done
     background: rgba(0, 0, 0, .25) !important;
 }
 
+#__next>div>div.fixed.top-0.bottom-0.left-0.z-30.hidden.lg\:flex.lg\:flex-shrink-0>div>div>div>div.px-2>a {
+    background: rgba(0, 0, 0, 0.25);
+}
+
 /* LOADER */
 body>div.fixed.top-0.left-0.z-50.w-full.transition-opacity.ease-out.duration-400.opacity-0>div {
     --tw-bg-opacity: 1;
@@ -388,6 +400,10 @@ a.slider-title:hover {
 
 /* SETTINGS */
 
+code {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
 #__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div.mt-6>div.hidden.overflow-x-scroll.border-b.border-gray-600.sm\:block.hide-scrollbar>nav>a.px-1.py-4.ml-8.text-sm.font-medium.leading-5.transition.duration-300.border-b-2.border-transparent.whitespace-nowrap.first\:ml-0.text-indigo-500.border-indigo-600 {
     border-color: rgb(var(--accent-color));
 }
@@ -431,12 +447,22 @@ a.slider-title:hover {
     border-color: rgba(255, 255, 255, var(--tw-border-opacity));
 }
 
+#__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div.mt-10.text-white>div.hidden.sm\:block>nav>a.px-3.py-2.text-sm.font-medium.transition.duration-300.rounded-md.whitespace-nowrap.mx-2.my-1.bg-indigo-700 {
+    background-color: var(--button-color);
+}
+
 
 /* TABLE */
 
+.divide-gray-700>:not([hidden])~:not([hidden]) {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
 table>thead>tr>th,
-#__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div.mt-10.text-white>div>div.flex.flex-col>div>div>div>table>tbody>tr.bg-gray-700 {
+#__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div.mt-10.text-white>div>div.flex.flex-col>div>div>div>table>tbody>tr.bg-gray-700,
+#__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div>div>div>div>table>tbody>tr.bg-gray-700 {
     background: rgb(0 0 0 / 25%) !important;
+    border-color: rgba(255, 255, 255, 0.1);
 }
 
 
@@ -460,4 +486,9 @@ body>div.fixed.top-0.bottom-0.left-0.right-0.z-50.flex.items-center.justify-cent
 
 body>div.fixed.top-0.bottom-0.left-0.right-0.z-50.flex.items-center.justify-center.w-full.h-full.bg-gray-800.bg-opacity-70.enter-done>div>div.absolute.top-0.left-0.right-0.z-0.w-full.h-64>div.absolute.inset-0 {
     background: transparent !important;
+}
+
+/* PROFILE */
+#__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div.slider-header {
+    margin-top: 3.5rem;
 }
