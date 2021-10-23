@@ -168,6 +168,7 @@ body {
 .hover\:bg-gray-700:hover {
     --tw-bg-opacity: .3;
     background-color: rgb(var(--accent-color), var(--tw-bg-opacity));
+    color: rgb(var(--accent-color)) !important;
 }
 
 /* SEARCH BAR */
@@ -216,6 +217,10 @@ body {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
+}
+
+#__next>div>div.fixed.top-0.bottom-0.left-0.z-30.hidden.lg\:flex.lg\:flex-shrink-0>div>div>div>nav>a {
+    color: var(--text);
 }
 
 .to-purple-600 {
