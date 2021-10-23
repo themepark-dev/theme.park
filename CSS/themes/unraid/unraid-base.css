@@ -469,9 +469,11 @@ li.caMenuItem:hover {
 .supportPopup:hover,
 .popupProfile:hover,
 .repoPopup:hover,
-.ca_favouriteRepo:hover{
+.ca_favouriteRepo:hover,
+.donate:hover{
     background: var(--button-color-hover) !important;
     color: var(--button-text-hover) !important;
+    border-color: var(--button-color-hover) !important;
 }
 
 .donate a {
