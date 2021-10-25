@@ -197,7 +197,7 @@
 <p><a href="https://docs.theme-park.dev/themes/mylar3">Mylar 3</a></p>
 </td>
 </tr>
-<tr>
+<tr style="height: 40px; text-align: center;">
 <td style="width: 90px; height: 40px; text-align: center;">
 <p><a href="https://docs.theme-park.dev/themes/bitwarden"><img src="https://docs.theme-park.dev/site_assets/bitwarden/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/bitwarden">Bitwarden</a></p>
@@ -227,7 +227,7 @@
 <p><a href="https://docs.theme-park.dev/themes/moviematch">Moviematch</a></p>
 </td>
 </tr>
-<tr>
+<tr style="height: 40px; text-align: center;">
 <td style="width: 90px; height: 40px; text-align: center;">
 <p><a href="https://docs.theme-park.dev/themes/petio"><img src="https://docs.theme-park.dev/site_assets/petio/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/petio">Petio</a></p>
@@ -257,7 +257,7 @@
 <p><a href="https://docs.theme-park.dev/themes/thelounge">The Lounge (Deprecated)</a></p>
 </td>
 </tr>
-<tr>
+<tr style="height: 40px; text-align: center;">
 <td style="width: 110px; height: 73px; text-align: center;">
 <p><a href="https://docs.theme-park.dev/themes/grafana"><img src="https://docs.theme-park.dev/site_assets/grafana/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/grafana">Grafana (Deprecated)</a></p>
