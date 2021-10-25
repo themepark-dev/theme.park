@@ -1,0 +1,37 @@
+:root {
+  --main-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"),
+  radial-gradient(at center center, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9) 120%) center center/cover no-repeat fixed, 
+  radial-gradient(at bottom center, rgba(0, 0, 0, 0.15), hsla(0, 14%, 18%, 0.45), hsla(0, 18%, 5%, 0.6)) center center/cover no-repeat fixed, 
+  radial-gradient(at bottom center, rgba(167, 6, 6, 0.15), hsla(0, 14%, 18%, 0), hsla(0, 18%, 5%, 0)) center center/cover no-repeat fixed, 
+  radial-gradient(at top center, rgba(11, 80, 25, 0.6), hsla(0, 14%, 18%, 0.45), hsla(0, 18%, 5%, 0.6)) center center/cover no-repeat fixed,
+  radial-gradient(at bottom right, #0b5019, hsla(0, 14%, 18%, 0), hsla(0, 18%, 5%, 0)) center center/cover no-repeat fixed, 
+  radial-gradient(at center center, rgba(167, 6, 6, 0.25), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)) center center/cover no-repeat fixed, 
+  linear-gradient(45deg, #0b5019 0%, #a70606 135%) center center/cover no-repeat fixed;
+
+  --modal-bg-color: var(--main-bg-color);
+  --modal-header-color: var(--main-bg-color);
+  --modal-footer-color: var(--main-bg-color);
+
+  --drop-down-menu-bg: var(--main-bg-color);
+
+  --button-color: rgb(51, 0, 0);
+  --button-color-hover: rgb(104, 4, 4);
+  --button-text: #eee;
+  --button-text-hover: #FFF;
+
+  --accent-color:170,170,170;
+  --accent-color-hover: rgb(var(--accent-color),.8);
+  --link-color: #aaaaaa;
+  --link-color-hover: #fff;
+  --label-text-color: rgb(32, 32, 32);
+
+  --text:#ddd;
+  --text-hover: #fff;
+  --text-muted: #999;
+
+  /*Specials*/
+  --arr-queue-color: #6b5; /* Servarr apps + Bazarr*/
+  --plex-poster-unwatched: rgb(100, 15, 15);
+  --petio-spinner: invert(68%) sepia(13%) saturate(766%) hue-rotate(170deg) brightness(90%) contrast(79%); /* Made with https://codepen.io/jsm91/embed/ZEEawyZ */
+  --gitea-color-primary-dark-4: 100, 15, 15;
+}
