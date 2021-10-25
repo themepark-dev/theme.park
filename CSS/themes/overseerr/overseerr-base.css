@@ -67,7 +67,7 @@ button[class*="border-indigo-"],
 button[class*="border-gray-"],
 button.input-action {
     background-color: var(--button-color);
-    border: var(--button-color);
+    border-color: var(--button-color);
 }
 
 button[class*="text-white"] {
@@ -80,7 +80,7 @@ button[class*="border-indigo-"]:hover,
 button[class*="border-gray-"]:hover,
 button.input-action:hover {
     background-color: var(--button-color-hover);
-    border: var(--button-color-hover);
+    border-color: var(--button-color-hover);
 }
 
 button[class*="text-white"]:hover,
