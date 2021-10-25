@@ -258,7 +258,7 @@
 </td>
 </tr>
 <tr>
-<td>
+<td style="width: 110px; height: 73px; text-align: center;">
 <p><a href="https://docs.theme-park.dev/themes/grafana"><img src="https://docs.theme-park.dev/site_assets/grafana/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/grafana">Grafana (Deprecated)</a></p>
 </td>
