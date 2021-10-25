@@ -97,8 +97,8 @@
 <p><a href="https://docs.theme-park.dev/themes/organizr">Organizr</a></p>
 </td>
 <td style="width: 140px; height: 26px; text-align: center;">
-<p><a href="https://docs.theme-park.dev/themes/synclounge"><img src="https://docs.theme-park.dev/site_assets/synclounge/logo.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://docs.theme-park.dev/themes/synclounge">Synclounge</a></p>
+<p><a href="https://docs.theme-park.dev/themes/overseerr"><img src="https://docs.theme-park.dev/site_assets/overseerr/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/overseerr">Overseerr</a></p>
 </td>
 <td style="width: 109px; height: 26px; text-align: center;">
 <p><a href="https://docs.theme-park.dev/themes/deluge"><img src="https://docs.theme-park.dev/site_assets/deluge/logo.png" alt="" width="48" height="48" /></a></p>
@@ -136,7 +136,7 @@
 </td>
 </tr>
 <tr style="height: 56px;">
-<td>
+<td style="width: 136px; height: 56px; text-align: center;">
 <p><a href="https://docs.theme-park.dev/themes/netdata"><img src="https://docs.theme-park.dev/site_assets/netdata/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/netdata">Netdata</a></p>
 </td>
@@ -197,7 +197,7 @@
 <p><a href="https://docs.theme-park.dev/themes/mylar3">Mylar 3</a></p>
 </td>
 </tr>
-<tr>
+<tr style="height: 40px; text-align: center;">
 <td style="width: 90px; height: 40px; text-align: center;">
 <p><a href="https://docs.theme-park.dev/themes/bitwarden"><img src="https://docs.theme-park.dev/site_assets/bitwarden/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/bitwarden">Bitwarden</a></p>
@@ -227,7 +227,7 @@
 <p><a href="https://docs.theme-park.dev/themes/moviematch">Moviematch</a></p>
 </td>
 </tr>
-<tr>
+<tr style="height: 40px; text-align: center;">
 <td style="width: 90px; height: 40px; text-align: center;">
 <p><a href="https://docs.theme-park.dev/themes/petio"><img src="https://docs.theme-park.dev/site_assets/petio/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/petio">Petio</a></p>
@@ -249,16 +249,16 @@
 <p><a href="https://docs.theme-park.dev/themes/duplicati">Duplicati</a></p>
 </td>
 <td style="width: 160px; height: 40px; text-align: center;">
-<p><a href="https://docs.theme-park.dev/themes/plpp"><img src="https://docs.theme-park.dev/site_assets/plpp/logo.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://docs.theme-park.dev/themes/plpp">PLPP (Deprecated)</a></p>
+<p><a href="https://docs.theme-park.dev/themes/synclounge"><img src="https://docs.theme-park.dev/site_assets/synclounge/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/synclounge">Synclounge</a></p>
 </td>
 <td style="width: 90px; height: 40px; text-align: center;">
 <p><a href="https://docs.theme-park.dev/themes/thelounge"><img src="https://docs.theme-park.dev/site_assets/thelounge/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/thelounge">The Lounge (Deprecated)</a></p>
 </td>
 </tr>
-<tr>
-<td>
+<tr style="height: 40px; text-align: center;">
+<td style="width: 110px; height: 73px; text-align: center;">
 <p><a href="https://docs.theme-park.dev/themes/grafana"><img src="https://docs.theme-park.dev/site_assets/grafana/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/grafana">Grafana (Deprecated)</a></p>
 </td>
@@ -275,6 +275,9 @@
 <p><a href="https://docs.theme-park.dev/themes/logarr">Logarr (Deprecated)</a></p>
 </td>
 <td style="width: 110px; height: 56px; text-align: center;">
+<p><a href="https://docs.theme-park.dev/themes/plpp"><img src="https://docs.theme-park.dev/site_assets/plpp/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/plpp">PLPP (Deprecated)</a></p>
+</td>
 <td style="width: 110px; height: 56px; text-align: center;">
 <td style="width: 110px; height: 56px; text-align: center;">
 </tr>
