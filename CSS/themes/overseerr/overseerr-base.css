@@ -1,5 +1,5 @@
 /* TEXT */
-[class*="text-gray-"] {
+[class*="text-gray-"]:not(button:disabled) {
     color: var(--text);
 }
 
@@ -393,13 +393,6 @@ a.slider-title:hover {
     --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) rgb(0 0 0 / 10%) !important;
 }
 
-/* PERSON */
- #__next > div > div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64 > main > div > div > div.slider-header {
-    background: var(--main-bg-color);
-    padding: 1rem 0 2rem 0;
-    padding-left: 1rem;
-    margin: 0 -16px -16px;
-}
 
 #__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div.absolute.top-0.left-0.right-0.z-0.h-96>div>div>div.absolute.inset-0 {
     background-image: linear-gradient(rgba(var(--accent-color), 0.2) 0%, #000 100%) !important;
@@ -512,10 +505,6 @@ body>div.fixed.top-0.bottom-0.left-0.right-0.z-50.flex.items-center.justify-cent
     background: rgb(255, 255, 255, .1);
 }
 
-/* PROFILE */
-#__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div.slider-header {
-    margin-top: 3.5rem;
-}
 
 /* DROPDOWN */
 
