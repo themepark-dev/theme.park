@@ -335,8 +335,11 @@ a.slider-title:hover {
     background: linear-gradient(rgba(var(--accent-color), 0.3) 0%, rgba(0, 0, 0) 100%) !important;
 }
 
-.media-page {
-    padding-top: calc(9rem + env(safe-area-inset-top));
+#__next > div > div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64 > main > div > div > div > div.media-overview {
+    background: var(--main-bg-color);
+    padding: 1rem 1rem 2rem 0;
+    padding-left: 1rem;
+    margin: 1rem -1rem -1rem;
 }
 
 #__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div>div>div.relative.px-2.py-2.-my-2.-ml-4.-mr-4.overflow-x-scroll.overflow-y-auto.whitespace-nowrap.hide-scrollbar.overscroll-x-contain>div>a>div:hover,
@@ -391,9 +394,12 @@ a.slider-title:hover {
 }
 
 /* PERSON */
-/* #__next > div > div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64 > main > div > div > div {
-    margin-bottom: 5rem;
-} */
+ #__next > div > div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64 > main > div > div > div.slider-header {
+    background: var(--main-bg-color);
+    padding: 1rem 0 2rem 0;
+    padding-left: 1rem;
+    margin: 0 -16px -16px;
+}
 
 #__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div.absolute.top-0.left-0.right-0.z-0.h-96>div>div>div.absolute.inset-0 {
     background-image: linear-gradient(rgba(var(--accent-color), 0.2) 0%, #000 100%) !important;
