@@ -121,6 +121,7 @@ a.no-highlight:hover,
 
 #search_form #search_button.btn-inactive {
     background-color: #0000;
+    color: var(--text);
 }
 
 .nav>li.active>a,
@@ -220,6 +221,7 @@ select,
 .btn-dark {
     background-color: var(--button-color);
     border-color: var(--button-color);
+    color: var(--button-text);
 }
 
 .btn-dark:hover {
