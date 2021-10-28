@@ -61,43 +61,46 @@ def create_addons_json():
 
 def create_json(app_folders: list = None, themes: list = None, community_themes: list = None, no_sub_folders=False):
     if no_sub_folders:
-        THEMES = {}
+        THEMES_DICT = {}
         theme_shas = subprocess.check_output(["git", "ls-files", "-s", "./CSS/theme-options/*.css"])
         community_theme_shas = subprocess.check_output(["git", "ls-files", "-s", "./CSS/community-theme-options/*.css"])
         THEME_SHAS = get_shas(theme_shas)
-        COMMUNITY_THEME_SHAS = get_shas(theme_shas)
-        for theme in themes:
-            THEMES.update({
-                "themes": {
-                    theme.split(".")[0].capitalize(): {
-                        "url": f"https://{DOMAIN}/CSS/theme-options/{theme}?sha={THEME_SHAS.get(theme)}"
-                    }for theme in themes
+        COMMUNITY_THEME_SHAS = get_shas(community_theme_shas)
+        THEMES = {
+                theme.split(".")[0].capitalize(): {
+                    "url": f"https://{DOMAIN}/CSS/theme-options/{theme}?sha={THEME_SHAS.get(theme)}"
+                }for theme in themes
+            }
+        COMMUNITY_THEMES = {
+                theme.split(".")[0].capitalize(): {
+                    "url": f"https://{DOMAIN}/CSS/community-theme-options/{theme}?sha={COMMUNITY_THEME_SHAS.get(theme)}"
+                }for theme in community_themes
+            }
+        THEMES_DICT.update({
+            "themes": {
+                **THEMES
+                },
+            "community-themes": {
+                **COMMUNITY_THEMES
+                },
+            "all-themes": {
+                **THEMES, **COMMUNITY_THEMES
                 }
             })
-        for theme in community_themes:
-            print(theme)
-            THEMES.update({
-                "community-themes": {
-                    theme.split(".")[0].capitalize(): {
-                        "url": f"https://{DOMAIN}/CSS/community-theme-options/{theme}?sha={COMMUNITY_THEME_SHAS.get(theme)}"
-                    }for theme in community_themes
-                }
-            })
-        return dumps(THEMES)
+        return dumps(THEMES_DICT)
     else:
         ADDONS = loads(create_addons_json())
         APPS = {"applications": {}}
         app_shas = subprocess.check_output(["git", "ls-files", "-s", "./CSS/base/*base.css"])
         SHAS = get_shas(app_shas)
-        for app in app_folders:
-            APPS.update({
-                "applications": {
-                    app: {
-                        "base_css": f"https://{DOMAIN}/CSS/base/{app}/{app}-base.css?sha={SHAS.get(f'{app}-base.css')}",
-                        "addons": ADDONS["addons"][app] if app in ADDONS["addons"] else {}
-                    } for app in app_folders if not isfile(f'./CSS/base/{app}/.deprecated')
-                }
-            })
+        APPS.update({
+            "applications": {
+                app: {
+                    "base_css": f"https://{DOMAIN}/CSS/base/{app}/{app}-base.css?sha={SHAS.get(f'{app}-base.css')}",
+                    "addons": ADDONS["addons"][app] if app in ADDONS["addons"] else {}
+                } for app in app_folders if not isfile(f'./CSS/base/{app}/.deprecated')
+            }
+        })
         THEMES = loads(create_json(themes=themes, community_themes=community_themes, no_sub_folders=True))
         APPS.update(ADDONS)
         APPS.update(THEMES)
@@ -108,10 +111,8 @@ if __name__ == "__main__":
     app_folders = [name for name in listdir('./CSS/base') if isdir(join('./CSS/base', name))]
     themes = [name for name in listdir('./CSS/theme-options') if isfile(join('./CSS/theme-options', name))]
     community_themes = [name for name in listdir('./CSS/community-theme-options') if isfile(join('./CSS/community-theme-options', name))]
-    print(community_themes)
     with open("CNAME", "rt", closefd=True) as cname:
         DOMAIN= cname.readline()
     apps = loads(create_json(app_folders=app_folders, themes=themes, community_themes=community_themes))
-
     with open("themes.json", "w") as outfile:
         dump(apps, outfile, indent=2)
