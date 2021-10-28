@@ -348,7 +348,7 @@ p {
     background: radial-gradient(ellipse at center, rgba(87, 108, 117, 1) 0%, rgba(37, 50, 55, 1) 100.2%);
 }
 
-#portfolio [class*="container-"] .portfolio-box .portfolio-box-caption.organizr-dark-hover {
+#portfolio [class*="container-"] .portfolio-box .portfolio-box-caption.organizr-hover {
     background: #1f1f1f;
 }
 
@@ -364,7 +364,7 @@ p {
     background: #282a36;
 }
 
-#portfolio [class*="container-"] .portfolio-box .portfolio-box-caption.overseer-hover {
+#portfolio [class*="container-"] .portfolio-box .portfolio-box-caption.overseerr-hover {
     background: linear-gradient(360deg, hsl(221, 39%, 11%) 65%, hsl(215, 28%, 17%) 100%);
 }
 

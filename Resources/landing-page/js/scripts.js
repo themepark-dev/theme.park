@@ -6,29 +6,6 @@
 (function ($) {
     "use strict"; // Start of use strict
 
-    // Smooth scrolling using anime.js
-    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').on('click', function () {
-        if (
-            location.pathname.replace(/^\//, "") ==
-            this.pathname.replace(/^\//, "") &&
-            location.hostname == this.hostname
-        ) {
-            var target = $(this.hash);
-            target = target.length ?
-                target :
-                $("[name=" + this.hash.slice(1) + "]");
-            if (target.length) {
-                anime({
-                    targets: 'html, body',
-                    scrollTop: target.offset().top - 72,
-                    duration: 1000,
-                    easing: 'easeInOutExpo'
-                });
-                return false;
-            }
-        }
-    });
-
     // Closes responsive menu when a scroll trigger link is clicked
     $('.js-scroll-trigger').click(function () {
         $('.navbar-collapse').collapse('hide');
@@ -71,17 +48,14 @@
 
 })(jQuery); // End of use strict
 
-const themes = ["aquamarine","hotline","dark","organizr-dark","dracula","overseerr",
-"plex","space-gray","hotpink","onedark","nord"];
-var random = themes[~~(Math.random() * themes.length)];
-// load a random css stylesheet
+
 function injectTheme(theme,container="head") {
     if (container === "head") {
         html_element = document.head;
     } else html_element = document.body;
     let themeOption = document.getElementById("theme-option")
     let link = themeOption ? themeOption : document.createElement("link");
-    url = "/CSS/variables/"
+    url = "/CSS/theme-options/"
     link.type = "text/css";
     link.rel = "stylesheet";
     link.href = `${url}/${theme.toLowerCase()}.css`;
@@ -92,6 +66,7 @@ function injectTheme(theme,container="head") {
   // Add theme data and set theme vars
   var apps;
   var themeOptions;
+
   function addThemeData() {
   let themeJsonUrl = "/themes.json"
   fetch(themeJsonUrl)
@@ -105,27 +80,45 @@ function injectTheme(theme,container="head") {
     document.getElementById("app-count").innerHTML = `
     theme.park contains ${appCount} themed applications, with css <a
     href="https://docs.theme-park.dev/themes/addons/">addons</a> on certain themes.`
-    document.getElementById("theme-count").innerHTML = `Choose between <a class="js-scroll-trigger" href="#themes">${Object.keys(json.themes).length} different
-    styles!</a> With the possibility to easily create your own themes using the defined <a
+    document.getElementById("theme-count").innerHTML = `Choose between <a class="js-scroll-trigger" href="#themes">${Object.keys(json.themes).length} official
+    styles</a>, and <a href="https://docs.theme-park.dev/community-themes/">${Object.keys(json["community-themes"]).length} community styles!</a> With the possibility to easily create your own themes using the defined <a
     href="https://docs.theme-park.dev/custom/">variables</a>.`
-    createApps(apps)
+    createApps(apps,themeOptions)
+    smoothScroll()
+    let randomTheme = Object.keys(themeOptions)[~~(Math.random() * Object.keys(themeOptions).length)]
+    injectTheme(randomTheme)
     })
 }
 
-function createApps(apps) {
+function createApps(apps,themeOptions) {
     let allAppsDiv = document.getElementById("all-apps")
-    sorted = Object.keys(apps).sort()
-    for (let app in sorted) {
+    let allThemesDiv = document.getElementById("all-themes")
+    sortedApps = Object.keys(apps).sort()
+    sortedThemes = Object.keys(themeOptions).sort()
+    for (let app in sortedApps) {
     let newApp = `
-        <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/${sorted[app]}/">
-            <p><img class="app-container-image" src="https://docs.theme-park.dev/site_assets/${sorted[app]}/logo.png"/></p>
-            <p>${sorted[app][0].toUpperCase() + sorted[app].slice(1)}</p>
+        <a class="col app-container text-center p-2 m-1" href="https://docs.theme-park.dev/themes/${sortedApps[app]}/">
+            <p><img class="app-container-image" src="https://docs.theme-park.dev/site_assets/${sortedApps[app]}/logo.png"/></p>
+            <p>${sortedApps[app][0].toUpperCase() + sortedApps[app].slice(1)}</p>
         </a>`
     allAppsDiv.innerHTML += newApp
     }
+    for (let option in sortedThemes) {
+        let newApp = `
+        <div class="col-lg-4 col-sm-6 p-1">
+            <a class="portfolio-box" href="Resources/landing-page/assets/img/${sortedThemes[option].toLowerCase()}.png">
+                <img class="img-fluid" src="Resources/landing-page/assets/img/${sortedThemes[option].toLowerCase()}-small.jpg" alt="..." />
+                <div class="portfolio-box-caption p-3 ${sortedThemes[option].toLowerCase()}-hover">
+                    <div class="project-category text-white-50">Theme</div>
+                    <div class="project-name">${sortedThemes[option][0].toUpperCase() + sortedThemes[option].slice(1)}</div>
+                </div>
+            </a>
+        </div>`
+        allThemesDiv.innerHTML += newApp
+        }   
 }
 
-function fadeOutIn(speed ) {
+function fadeOutIn(speed) {
     let theme = Object.keys(themeOptions)[~~(Math.random() * Object.keys(themeOptions).length)]
     if (!document.body.style.opacity) {
         document.body.style.opacity = 1;
@@ -146,7 +139,29 @@ function fadeOutIn(speed ) {
 
 }
 
-injectTheme(random);
+// Smooth scrolling using anime.js
+function smoothScroll() {$('a.js-scroll-trigger[href*="#"]:not([href="#"])').on('click', function () {
+    if (
+        location.pathname.replace(/^\//, "") ==
+        this.pathname.replace(/^\//, "") &&
+        location.hostname == this.hostname
+    ) {
+        var target = $(this.hash);
+        target = target.length ?
+            target :
+            $("[name=" + this.hash.slice(1) + "]");
+        if (target.length) {
+            anime({
+                targets: 'html, body',
+                scrollTop: target.offset().top - 120,
+                duration: 1000,
+                easing: 'easeInOutExpo'
+            });
+            return false;
+        }
+    }
+})};
+
 addThemeData();
 document.getElementById("switch-theme").addEventListener("click", () =>  {
     fadeOutIn(350);
