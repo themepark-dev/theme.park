@@ -1,0 +1,337 @@
+ /*    dP   dP                                                                  dP        */
+ /*    88   88                                                                  88        */
+ /*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+ /*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+ /*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+ /*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+ /*                                                  88                                   */
+ /*                                                  dP					 */
+
+ /*		   		        Made by @gilbN					 */
+ /*			      https://github.com/gilbN/theme.park			 */
+
+ /* "Re-skin" of CaliBlur https://github.com/leram84/layer.Cake/tree/master/caliBlur */
+ /* Set theme to CaliBlur in UI Configuration -> View Configuration -> Theme -> CaliBlur -> Submit */
+ /* APP VARS*/
+ :root {
+    --color-background: var(--main-bg-color);
+    --color-primary: rgb(var(--accent-color));
+    --color-secondary: var(--button-color);
+    --color-secondary-hover: var(--button-color-hover);
+    --color-background-mobile: var(--main-bg-color);
+  }
+ *,
+ *:focus,
+ *:active,
+ .bootstrap-select .dropdown-toggle:focus,
+ .bootstrap-select>select.mobile-device:focus+.dropdown-toggle {
+     outline: none !important;
+ }
+
+ body:not(.read-frame) {
+     background: var(--main-bg-color) !important;
+     background-image: none;
+ }
+
+ .blur-wrapper:after {
+     background: var(--main-bg-color) !important;
+ }
+
+ body>.container-fluid {
+     background: var(--main-bg-color);
+ }
+
+ body.login:not(.read-frame),
+ body.shelfcreate,
+ body.shelfedit {
+     background: var(--main-bg-color) !important;
+ }
+
+ @media only screen and (max-width: 767px) {
+     .navbar-collapse.collapse {
+         background: var(--modal-bg-color) !important;
+     }
+ }
+
+ /* Book cover border */
+ .container-fluid .book .cover span img {
+     border: 1px solid transparent;
+ }
+
+ /* Buttons */
+ .btn-default a,
+ .btn-default a:hover {
+     color: var(--text);
+ }
+
+ /* TP */
+
+ /* TEXT */
+
+ .h1,
+ .h2,
+ .h3,
+ .h4,
+ .h5,
+ .h6,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ body.admin>div.container-fluid>div>div.col-sm-10>div.container-fluid>div.row:first-of-type>div.col>h2:before,
+ body.admin>div.container-fluid>div>div.col-sm-10>div.discover>h2:first-of-type:before,
+ body.edituser.admin>div.container-fluid>div.row-fluid>div.col-sm-10>div.discover>h1:before,
+ body.newuser.admin>div.container-fluid>div.row-fluid>div.col-sm-10>div.discover>h1:before,
+ .container-fluid .book .meta .author,
+ .container-fluid .book .meta .author>a:hover,
+ .well>h2,
+ body:not(.admin)>div.container-fluid>div>div.col-sm-10>div.discover:only-of-type>h2 {
+     color: var(--text-hover) !important;
+ }
+
+
+ body,
+ html,
+ p {
+     color: var(--text) !important;
+ }
+
+ .home-btn>a,
+ .plexBack>a,
+ .container-fluid .book .meta .author,
+ .container-fluid .book .meta .author>a {
+     color: var(--text);
+ }
+
+ .home-btn>a:hover,
+ body>div.navbar.navbar-default.navbar-static-top>div>div.home-btn>a:hover:before,
+ .plexBack:not(.noBack):hover>a,
+ .form-group>label,
+ label,
+ body.authorlist>div.container-fluid>div>div.col-sm-10>div.container:before,
+ body.catlist>div.container-fluid>div>div.col-sm-10>div.container:before,
+ body.langlist>div.container-fluid>div>div.col-sm-10>div.container:before,
+ body.me>div.container-fluid>div>div.col-sm-10>div.discover:before,
+ body.serieslist>div.container-fluid>div>div.col-sm-10>div.container:before {
+     color: var(--text-hover)
+ }
+
+ /* LINKS */
+ a,
+ body.admin,
+ body.admin td>a {
+     color: var(--link-color);
+ }
+
+ a:hover,
+ body.admin td>a:hover {
+     color: var(--link-color-hover);
+ }
+
+ .navigation .create-shelf a,
+ .meta>a>p {
+     color: var(--link-color) !important;
+ }
+
+ .navigation .create-shelf a:hover,
+ .author>a:hover,
+ .meta>a>p:hover {
+     color: var(--link-color-hover) !important;
+ }
+
+ /* tables */
+
+ th,
+ body.tasks>div.container-fluid>div>div.col-sm-10>div.discover>div.bootstrap-table>div.fixed-table-container>div.fixed-table-body>#table>thead>tr>th>.th-inner {
+     color: var(--text-hover) !important;
+ }
+
+
+ /* MODAL */
+ .modal-content {
+     background: var(--modal-bg-color);
+ }
+
+ #GeneralDeleteModal .bg-danger {
+     background: var(--modal-bg-color);
+ }
+
+ /* ICONS */
+ .glyphicon,
+ #add-to-shelf>span,
+ #btnGroupDrop1>span,
+ #readbtn>span,
+ #sendbtn>span,
+ .book-meta .btn-toolbar>.btn-group>.btn-group:nth-child(1)>a:first-of-type>span,
+ .book-meta .btn-toolbar>.btn-group>.btn-warning>span,
+ .btn-toolbar>.btn-group>#btnGroupDrop2>span,
+ .btn-toolbar>.btn-group>.btn-group>#btnGroupDrop2>span,
+ div[aria-label="Edit/Delete book"]>.btn>span {
+     color: var(--text);
+
+ }
+
+ #add-to-shelf:hover span,
+ #btnGroupDrop1:hover>span,
+ #readbtn:hover>span,
+ #sendbtn:hover>span,
+ .book-meta .btn-toolbar>.btn-group>.btn-group:nth-child(1)>a:first-of-type:hover>span,
+ .book-meta .btn-toolbar>.btn-group>.btn-warning:hover>span,
+ .btn-toolbar>.btn-group>#btnGroupDrop2:hover>span,
+ .btn-toolbar>.btn-group>.btn-group>#btnGroupDrop2:hover>span,
+ div[aria-label="Edit/Delete book"]>.btn>span:hover,
+ #btnGroupDrop1[aria-expanded=true]>span,
+ #shelf-actions>.btn-group.open>#add-to-shelf>span {
+     color: var(--text-hover);
+ }
+
+
+ /* DROPDOWN MENU */
+ .dropdown-menu {
+     background: var(--drop-down-menu-bg) !important;
+ }
+
+ .dropdown-menu>li>a {
+     color: var(--text);
+ }
+
+ .dropdown-menu>li>a:focus,
+ .dropdown-menu>li>a:hover {
+     color: var(--text-hover);
+     background: hsla(0, 0%, 100%, .08);
+ }
+
+ /* SIDEMENU */
+ .navigation li a:hover .glyphicon,
+ .navigation li a:hover {
+     color: rgb(var(--accent-color));
+ }
+
+ .navigation li a {
+     color: var(--text);
+ }
+
+ .navigation .nav-head {
+     color: var(--text-hover);
+ }
+
+ body>div.navbar.navbar-default.navbar-static-top>div>div.navbar-header>a:hover {
+     color: var(--accent-color-hover) !important;
+     -webkit-transition: color .2s;
+     -o-transition: color .2s;
+     transition: color .2s;
+     background-color: rgba(0, 0, 0, .55) !important;
+ }
+
+ /* NAVBAR */
+ .navbar-default .navbar-nav>li>a:focus .glyphicon,
+ .navbar-default .navbar-nav>li>a:hover .glyphicon {
+     color: var(--text-hover) !important;
+ }
+
+ /* BUTTONS */
+
+
+ .btn-primary,
+ .btn-primary>span.glyphicon:not(#edit_book > span):not(#btnGroupDrop1 > span.glyphicon.glyphicon-download):not(#add-to-shelf>span::before) {
+     color: var(--button-text);
+     background-color: var(--button-color);
+     border-color: var(--button-color);
+ }
+
+ .btn-primary:hover:not(#add-to-shelf),
+ .btn-primary:hover>span.glyphicon:not(#edit_book > span):not(#btnGroupDrop1 > span.glyphicon.glyphicon-download):not(#edit_book):not(#add-to-shelf span):not(#add-to-shelf) {
+     border-color: var(--button-color-hover);
+ }
+
+ .btn-primary.active,
+ .btn-primary:active,
+ .btn-primary:focus,
+ .btn-primary:hover,
+ .open .dropdown-toggle.btn-primary,
+ .btn-primary:focus>span.glyphicon:not(#edit_book > span):not(#btnGroupDrop1 > span.glyphicon.glyphicon-download):not(#add-to-shelf span),
+ .btn-primary:active>span.glyphicon:not(#edit_book > span):not(#btnGroupDrop1 > span.glyphicon.glyphicon-download):not(#add-to-shelf span),
+ .btn-primary:hover>span.glyphicon:not(#edit_book > span):not(#btnGroupDrop1 > span.glyphicon.glyphicon-download):not(#add-to-shelf span) {
+     background-color: var(--button-color-hover);
+ }
+
+ .btn-primary.active.focus:not(#edit_book):not(#add-to-shelf):not([data-original-title="Download :"]):not(#btnGroupDrop1),
+ .btn-primary.active:focus:not(#edit_book):not(#add-to-shelf):not([data-original-title="Download :"]):not(#btnGroupDrop1),
+ .btn-primary.active:hover:not(#edit_book):not(#add-to-shelf):not([data-original-title="Download :"]):not(#btnGroupDrop1),
+ .btn-primary:active.focus:not(#edit_book):not(#add-to-shelf:not([data-original-title="Download :"])):not(#btnGroupDrop1),
+ .btn-primary:active:focus:not(#edit_book):not(#add-to-shelf):not([data-original-title="Download :"]):not(#btnGroupDrop1),
+ .btn-primary:active:hover:not(#edit_book):not(#add-to-shelf):not([data-original-title="Download :"]):not(#btnGroupDrop1),
+ .open>.dropdown-toggle.btn-primary.focus:not(#edit_book):not(#add-to-shelf):not([data-original-title="Download :"]):not(#btnGroupDrop1),
+ .open>.dropdown-toggle.btn-primary:focus:not(#edit_book):not(#add-to-shelf):not([data-original-title="Download :"]):not(#btnGroupDrop1),
+ .open>.dropdown-toggle.btn-primary:hover:not(#edit_book):not(#add-to-shelf):not([data-original-title="Download :"]):not(#btnGroupDrop1),
+ .btn-primary:hover>span.glyphicon:not(#edit_book > span):not(#btnGroupDrop1 > span.glyphicon.glyphicon-download):not(#edit_book):not(#add-to-shelf span):not([data-original-title="Download :"]):not(#btnGroupDrop1),
+ .btn-primary:active>span.glyphicon:not(#edit_book > span):not(#btnGroupDrop1 > span.glyphicon.glyphicon-download):not(#edit_book):not(#add-to-shelf span):not([data-original-title="Download :"]):not(#btnGroupDrop1),
+ .btn-primary:focus>span.glyphicon:not(#edit_book > span):not(#btnGroupDrop1 > span.glyphicon.glyphicon-download):not(#edit_book):not(#add-to-shelf span):not([data-original-title="Download :"]):not(#btnGroupDrop1) {
+     color: var(--button-text-hover);
+     background-color: var(--button-color-hover);
+     border-color: var(--button-color-hover);
+ }
+
+ .book-meta>.bookinfo .btn-info,
+ .book-meta>.bookinfo .btn-success {
+     background-color: rgb(var(--accent-color));
+     color: var(--label-text-color);
+     font-size: 13px;
+     display: inline-block;
+     border-radius: 4px;
+     vertical-align: middle;
+     font-family: Open Sans Bold, Helvetica Neue, Helvetica, Arial, sans-serif;
+     -webkit-transition: background-color .2s, color .2s;
+     -o-transition: background-color .2s, color .2s;
+     transition: background-color .2s, color .2s;
+     text-transform: uppercase;
+ }
+
+ .book-meta>.bookinfo .btn-info:hover,
+ .book-meta>.bookinfo .btn-success:hover {
+     color: var(--label-text-color);
+     text-decoration: none;
+     background: var(--accent-color-hover);
+ }
+
+ [data-target="#fileModal"] span {
+     color: var(--button-text);
+ }
+
+ [data-target="#fileModal"]:hover span {
+     color: var(--button-text-hover);
+ }
+
+ /* ALERT */
+
+ .alert {
+     background: var(--modal-bg-color);
+     color: var(--text-hover);
+ }
+
+ /* SERIES PAGE */
+ /* from caliBlur_overide.css */
+ .cover .badge {
+     color: var(--label-text-color);
+     background-color: rgb(var(--accent-color));
+     position: absolute;
+     top: 0;
+     left: 0;
+     border-radius: 0;
+     padding: 0 8px;
+     box-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
+     line-height: 24px;
+ }
+ .cover {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  .cover .read {
+    padding: 0 0;
+    line-height: 15px;
+  }
+  body.serieslist.grid-view div.container-fluid > div > div.col-sm-10::before {
+    display: none;
+  }

@@ -1,0 +1,27 @@
+    :root {
+  --main-bg-color: radial-gradient(ellipse at center bottom, rgba(232, 11, 11, 0.7) 0%, #08000d 80%, rgba(0,0,0,1) 100%) center center/cover no-repeat fixed,
+  url("https://theme-park.dev/Resources/reality.jpg") center center/cover no-repeat fixed;
+  --modal-bg-color: linear-gradient(180deg, rgba(102, 5, 5, 1) 0%, #000 100%) center center/cover no-repeat fixed;
+  --modal-header-color: linear-gradient(180deg, rgba(102, 5, 5, 1) 0%, #000 100%) center center/cover no-repeat fixed;
+  --modal-footer-color: linear-gradient(180deg, rgba(102, 5, 5, 1) 0%, #000 100%) center center/cover no-repeat fixed;
+
+  --drop-down-menu-bg: linear-gradient(180deg, rgba(102, 5, 5, 1) 0%, #000 100%) center center/cover no-repeat fixed;
+
+  --button-color: #e80c0b;
+  --button-color-hover: #e80c0bcc;
+  --accent-color:  232, 12, 11;
+  --accent-color-hover: rgba(var(--accent-color), 0.8);
+  --link-color: rgb(232, 12, 11);
+  --link-color-hover: rgba(232, 12, 11,.8);
+  --label-text-color: #fff;
+
+  --text:#ddd;
+  --text-hover: #fff;
+  --text-muted: #999;
+
+    /*Specials*/
+  --arr-queue-color: #e80c0b; /* Servarr apps + Bazarr*/
+  --plex-poster-unwatched: rgb(232, 12, 11);
+  --petio-spinner: invert(14%) sepia(93%) saturate(3042%) hue-rotate(349deg) brightness(112%) contrast(116%); /* Made with https://codepen.io/jsm91/embed/ZEEawyZ */
+  --gitea-color-primary-dark-4: 232, 12, 11;
+}
