@@ -114,6 +114,7 @@ def temporary_copy_files():
     shutil.copytree(base_folders,"./CSS/themes",dirs_exist_ok=True)
     shutil.copytree(theme_options,"./CSS/variables",dirs_exist_ok=True)
     shutil.copytree(comm_options,"./CSS/variables",dirs_exist_ok=True)
+    shutil.copy("./css/theme-options/organizr.css","./CSS/variables/organizr-dark.css")
 
 if __name__ == "__main__":
     app_folders = [name for name in listdir('./css/base') if isdir(join('./css/base', name))]
