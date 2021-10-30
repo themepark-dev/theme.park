@@ -56,7 +56,7 @@ def create_addons_json():
                         }
                     }
                     )
-    return dumps(ADDONS)
+    return dumps(ADDONS, sort_keys=True)
 
 
 def create_json(app_folders: list = None, themes: list = None, community_themes: list = None, no_sub_folders=False):
@@ -76,7 +76,7 @@ def create_json(app_folders: list = None, themes: list = None, community_themes:
                     "url": f"https://{DOMAIN}/css/community-theme-options/{theme}?sha={COMMUNITY_THEME_SHAS.get(theme)}"
                 }for theme in community_themes
             }
-        THEMES_DICT.update({
+        THEMES_DICT.update(dict(sorted({
             "themes": {
                 **THEMES
                 },
@@ -86,21 +86,21 @@ def create_json(app_folders: list = None, themes: list = None, community_themes:
             "all-themes": {
                 **THEMES, **COMMUNITY_THEMES
                 }
-            })
+            }.items())))
         return dumps(THEMES_DICT)
     else:
         ADDONS = loads(create_addons_json())
         APPS = {"applications": {}}
         app_shas = subprocess.check_output(["git", "ls-files", "-s", "./css/base/*base.css"])
         SHAS = get_shas(app_shas)
-        APPS.update({
+        APPS.update(dict(sorted({
             "applications": {
                 app: {
                     "base_css": f"https://{DOMAIN}/css/base/{app}/{app}-base.css?sha={SHAS.get(f'{app}-base.css')}",
                     "addons": ADDONS["addons"][app] if app in ADDONS["addons"] else {}
                 } for app in app_folders if not isfile(f'./css/base/{app}/.deprecated')
             }
-        })
+        }.items())))
         THEMES = loads(create_json(themes=themes, community_themes=community_themes, no_sub_folders=True))
         APPS.update(ADDONS)
         APPS.update(THEMES)
