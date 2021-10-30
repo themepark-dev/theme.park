@@ -59,7 +59,7 @@ case ${TP_DOMAIN} in
 esac
 
 if [[ -z ${TP_THEME} ]]; then
-    echo 'No theme set, defaulting to organizr-dark'
+    echo 'No theme set, defaulting to organizr'
     TP_THEME='organizr'
 fi
 
