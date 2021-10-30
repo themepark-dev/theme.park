@@ -17,15 +17,15 @@ if [ "${TP_HOTIO}" = true ]; then
     APP_FILEPATH='/app/bin/frontend/build/index.html'
 fi
 
-THEME_TYPE='theme-options'
-if [ "${TP_COMMUNITY_THEME}" = true ]; then
-    THEME_TYPE='community-theme-options'
-fi
-
 # Set default
 if [[ -z ${TP_DOMAIN} ]]; then
     echo 'No domain set, defaulting to theme-park.dev'
     TP_DOMAIN='theme-park.dev'
+fi
+
+THEME_TYPE='theme-options'
+if [ "${TP_COMMUNITY_THEME}" = true ]; then
+    THEME_TYPE='community-theme-options'
 fi
 
 case ${TP_DOMAIN} in
@@ -45,12 +45,12 @@ if ! grep -q "${TP_DOMAIN}" "${APP_FILEPATH}"; then
     echo '---------------------------'
     echo '|  Adding the stylesheet  |'
     echo '---------------------------'
-    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/base\/bazarr\/bazarr-base.css'><\/head> /g" "${APP_FILEPATH}"
-    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/${THEME_TYPE}\/${TP_THEME}.css'><\/head> /g" "${APP_FILEPATH}"
+    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/css\/base\/bazarr\/bazarr-base.css'><\/head> /g" "${APP_FILEPATH}"
+    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/css\/${THEME_TYPE}\/${TP_THEME}.css'><\/head> /g" "${APP_FILEPATH}"
     printf 'Stylesheet set to %s\n' "${TP_THEME}"
     if [[ -n ${TP_ADDON} ]]; then
         for addon in $(echo "$TP_ADDON" | tr "|" " "); do
-        sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/addons\/bazarr\/${addon}\/${addon}.css'><\/head> /g" "${APP_FILEPATH}"
+        sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/css\/addons\/bazarr\/${addon}\/${addon}.css'><\/head> /g" "${APP_FILEPATH}"
         printf 'Added custom addon: %s\n\n' "${addon}"
         done
     fi

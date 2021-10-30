@@ -7,6 +7,7 @@ echo '----------------------------'
 # Display variables for troubleshooting 
 echo -e "Variables set:\\n\
 'TP_DOMAIN'=${TP_DOMAIN}\\n\
+'TP_COMMUNITY_THEME'=${TP_COMMUNITY_THEME}\\n\
 'TP_THEME'=${TP_THEME}\\n"
 
 APP_FILEPATH='/app/sabnzbd'
@@ -19,6 +20,11 @@ fi
 if [[ -z ${TP_DOMAIN} ]]; then
     echo 'No domain set, defaulting to theme-park.dev'
     TP_DOMAIN='theme-park.dev'
+fi
+
+THEME_TYPE='theme-options'
+if [ "${TP_COMMUNITY_THEME}" = true ]; then
+    THEME_TYPE='community-theme-options'
 fi
 
 case ${TP_DOMAIN} in
@@ -38,13 +44,13 @@ if ! grep -q "${TP_DOMAIN}" "${APP_FILEPATH}/interfaces/Glitter/templates/main.t
     echo '---------------------------'
     echo '|  Adding the stylesheet  |'
     echo '---------------------------'
-    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/themes\/sabnzbd\/sabnzbd-base.css'><\/head> /g" "${APP_FILEPATH}/interfaces/Glitter/templates/main.tmpl"
-    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/themes\/sabnzbd\/sabnzbd-base.css'><\/head> /g" "${APP_FILEPATH}/interfaces/Config/templates/_inc_header_uc.tmpl"
-    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/themes\/sabnzbd\/sabnzbd-base.css'><\/head> /g" "${APP_FILEPATH}/interfaces/Config/templates/login/main.tmpl"
-    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/themes\/sabnzbd\/sabnzbd-base.css'><\/head> /g" "${APP_FILEPATH}/interfaces/wizard/inc_top.tmpl"
-    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/variables\/${TP_THEME}.css'><\/head> /g" "${APP_FILEPATH}/interfaces/Glitter/templates/main.tmpl"
-    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/variables\/${TP_THEME}.css'><\/head> /g" "${APP_FILEPATH}/interfaces/Config/templates/_inc_header_uc.tmpl"
-    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/variables\/${TP_THEME}.css'><\/head> /g" "${APP_FILEPATH}/interfaces/Config/templates/login/main.tmpl"
-    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/variables\/${TP_THEME}.css'><\/head> /g" "${APP_FILEPATH}/interfaces/wizard/inc_top.tmpl"
+    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/css\/base\/sabnzbd\/sabnzbd-base.css'><\/head> /g" "${APP_FILEPATH}/interfaces/Glitter/templates/main.tmpl"
+    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/css\/base\/sabnzbd\/sabnzbd-base.css'><\/head> /g" "${APP_FILEPATH}/interfaces/Config/templates/_inc_header_uc.tmpl"
+    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/css\/base\/sabnzbd\/sabnzbd-base.css'><\/head> /g" "${APP_FILEPATH}/interfaces/Config/templates/login/main.tmpl"
+    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/css\/base\/sabnzbd\/sabnzbd-base.css'><\/head> /g" "${APP_FILEPATH}/interfaces/wizard/inc_top.tmpl"
+    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/css\/${THEME_TYPE}\/${TP_THEME}.css'><\/head> /g" "${APP_FILEPATH}/interfaces/Glitter/templates/main.tmpl"
+    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/css\/${THEME_TYPE}\/${TP_THEME}.css'><\/head> /g" "${APP_FILEPATH}/interfaces/Config/templates/_inc_header_uc.tmpl"
+    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/css\/${THEME_TYPE}\/${TP_THEME}.css'><\/head> /g" "${APP_FILEPATH}/interfaces/Config/templates/login/main.tmpl"
+    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/css\/${THEME_TYPE}\/${TP_THEME}.css'><\/head> /g" "${APP_FILEPATH}/interfaces/wizard/inc_top.tmpl"
     printf 'Stylesheet set to %s\n' "${TP_THEME}"
 fi

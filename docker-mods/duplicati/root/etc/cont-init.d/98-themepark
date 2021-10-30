@@ -10,12 +10,18 @@ APP_FILEPATH='/app/duplicati/webroot'
 echo -e "Variables set:\\n\
 'APP_FILEPATH'=${APP_FILEPATH}\\n\
 'TP_DOMAIN'=${TP_DOMAIN}\\n\
+'TP_COMMUNITY_THEME'=${TP_COMMUNITY_THEME}\\n\
 'TP_THEME'=${TP_THEME}\\n"
 
 # Set default
 if [[ -z ${TP_DOMAIN} ]]; then
     echo 'No domain set, defaulting to theme-park.dev'
     TP_DOMAIN='theme-park.dev'
+fi
+
+THEME_TYPE='theme-options'
+if [ "${TP_COMMUNITY_THEME}" = true ]; then
+    THEME_TYPE='community-theme-options'
 fi
 
 case ${TP_DOMAIN} in
@@ -31,8 +37,8 @@ if [[ -z ${TP_THEME} ]]; then
 fi
 
 sed_file(){
-	sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/themes\/duplicati\/duplicati-base.css'><\/head> /g" $1
-    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/variables\/${TP_THEME}.css'><\/head> /g" $1
+	sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/css\/base\/duplicati\/duplicati-base.css'><\/head> /g" $1
+    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/css\/${THEME_TYPE}\/${TP_THEME}.css'><\/head> /g" $1
 	printf 'Stylesheet set to %s on %s\n\n' "${TP_THEME}" "$1"
 }
 

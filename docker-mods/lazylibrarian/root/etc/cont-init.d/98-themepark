@@ -7,12 +7,18 @@ echo '----------------------------------'
 # Display variables for troubleshooting 
 echo -e "Variables set:\\n\
 'TP_DOMAIN'=${TP_DOMAIN}\\n\
+'TP_COMMUNITY_THEME'=${TP_COMMUNITY_THEME}\\n\
 'TP_THEME'=${TP_THEME}\\n"
 
 # Set default
 if [[ -z ${TP_DOMAIN} ]]; then
     echo 'No domain set, defaulting to theme-park.dev'
     TP_DOMAIN='theme-park.dev'
+fi
+
+THEME_TYPE='theme-options'
+if [ "${TP_COMMUNITY_THEME}" = true ]; then
+    THEME_TYPE='community-theme-options'
 fi
 
 case ${TP_DOMAIN} in
@@ -32,8 +38,8 @@ if ! grep -q "${TP_DOMAIN}" /app/lazylibrarian/data/interfaces/bookstrap/base.ht
     echo '---------------------------'
     echo '|  Adding the stylesheet  |'
     echo '---------------------------'
-    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/themes\/lazylibrarian\/lazylibrarian-base.css'><\/head> /g" /app/lazylibrarian/data/interfaces/bookstrap/base.html
-    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/variables\/${TP_THEME}.css'><\/head> /g" /app/lazylibrarian/data/interfaces/bookstrap/base.html
+    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/css\/base\/lazylibrarian\/lazylibrarian-base.css'><\/head> /g" /app/lazylibrarian/data/interfaces/bookstrap/base.html
+    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/css\/${THEME_TYPE}\/${TP_THEME}.css'><\/head> /g" /app/lazylibrarian/data/interfaces/bookstrap/base.html
     printf 'Stylesheet set to %s\n' "${TP_THEME}
     "
 fi
