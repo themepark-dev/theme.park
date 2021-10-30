@@ -205,7 +205,7 @@ label {
   line-height: 1px;
   font-size: 1px;
   overflow: hidden;
-  background: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/qbittorrent/dots.png) center center no-repeat;
+  background: url(https://raw.githubusercontent.com/gilbN/theme.park/master/resources/qbittorrent/dots.png) center center no-repeat;
 }
 
 #desktopNavbar {
@@ -306,11 +306,11 @@ label {
 }
 
 .dynamicTable th.sorted.reverse {
-  background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/qbittorrent/go-down.png) !important;
+  background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/resources/qbittorrent/go-down.png) !important;
 }
 
 .dynamicTable th.sorted {
-  background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/qbittorrent/go-up.png) !important;
+  background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/resources/qbittorrent/go-up.png) !important;
   background-size: 9px !important;
   background-position: right !important;
   background-repeat: no-repeat !important;
@@ -526,11 +526,11 @@ ul.filterList li:hover:before {
 }
 
 .panel-collapse {
-  background: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/qbittorrent/collapse-expand.gif) left top no-repeat;
+  background: url(https://raw.githubusercontent.com/gilbN/theme.park/master/resources/qbittorrent/collapse-expand.gif) left top no-repeat;
 }
 
 .panel-expand {
-  background: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/qbittorrent/collapse-expand.gif) left -16px no-repeat;
+  background: url(https://raw.githubusercontent.com/gilbN/theme.park/master/resources/qbittorrent/collapse-expand.gif) left -16px no-repeat;
 }
 
 fieldset {
@@ -1604,7 +1604,7 @@ ul.filterList a {
 }
 
 img[src="icons/inode-directory.svg"] {
-  background: url(https://theme-park.dev/Resources/qbittorrent/folder-open-solid.svg);
+  background: url(https://theme-park.dev/resources/qbittorrent/folder-open-solid.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-origin: content-box;
@@ -1612,7 +1612,7 @@ img[src="icons/inode-directory.svg"] {
 }
 
 img[src="icons/network-server.svg"] {
-  background: url(https://theme-park.dev/Resources/qbittorrent/network-wired-solid.svg);
+  background: url(https://theme-park.dev/resources/qbittorrent/network-wired-solid.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-origin: content-box;
@@ -1620,7 +1620,7 @@ img[src="icons/network-server.svg"] {
 }
 
 img[src="icons/mail-folder-inbox.svg"] {
-  background: url(https://theme-park.dev/Resources/qbittorrent/inbox-solid.svg);
+  background: url(https://theme-park.dev/resources/qbittorrent/inbox-solid.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-origin: content-box;
@@ -1773,7 +1773,7 @@ img[src="icons/checking.svg"] {
 #torrentsFilterInput {
   width: 160px;
   padding-left: 2em;
-  background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/qbittorrent/search-solid.png);
+  background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/resources/qbittorrent/search-solid.png);
   background-repeat: no-repeat;
   background-size: 1em;
   background-position: left;
@@ -1783,7 +1783,7 @@ img[src="icons/checking.svg"] {
 .contextMenu li a:hover.arrow-right,
 .contextMenu li a.arrow-right,
 .contextMenu li a:hover.arrow-right {
-  background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/qbittorrent/arrow-right.gif);
+  background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/resources/qbittorrent/arrow-right.gif);
   background-repeat: no-repeat;
   background-position: right center;
 }

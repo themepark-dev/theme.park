@@ -1,5 +1,5 @@
 :root {
-  --main-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/blur-noise.png"),
+  --main-bg-color: url("https://theme-park.dev/resources/blur-noise.png"),
   radial-gradient(at center center, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9) 120%) center center/cover no-repeat fixed, 
   radial-gradient(at bottom center, rgba(0, 0, 0, 0.15), hsla(0, 14%, 18%, 0.45), hsla(0, 18%, 5%, 0.6)) center center/cover no-repeat fixed, 
   radial-gradient(at bottom center, rgba(167, 6, 6, 0.15), hsla(0, 14%, 18%, 0), hsla(0, 18%, 5%, 0)) center center/cover no-repeat fixed, 

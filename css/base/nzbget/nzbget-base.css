@@ -234,7 +234,7 @@ div.check:hover {
 [class*=" icon-"],
 [class^="img-"],
 [class*=" img-"] {
-    background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/Resources/nzbget/icons.png);
+    background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/resources/nzbget/icons.png);
 }
 
 .navbar-search .search-query {

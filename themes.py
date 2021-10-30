@@ -107,14 +107,20 @@ def create_json(app_folders: list = None, themes: list = None, community_themes:
         return dumps(APPS)
 
 def temporary_copy_files():
-    base_folders = "./css/base/"
-    theme_options = "./css/theme-options"
-    comm_options = "./css/community-theme-options"
     shutil.rmtree("./CSS", ignore_errors=True)
-    shutil.copytree(base_folders,"./CSS/themes",dirs_exist_ok=True)
-    shutil.copytree(theme_options,"./CSS/variables",dirs_exist_ok=True)
-    shutil.copytree(comm_options,"./CSS/variables",dirs_exist_ok=True)
-    shutil.copy("./css/theme-options/organizr.css","./CSS/variables/organizr-dark.css")
+    shutil.rmtree("./Resources", ignore_errors=True)
+    src_dst = {
+        "./css/base/": "./CSS/themes",
+        "./css/theme-options": "./CSS/variables",
+        "./css/community-theme-options": "./CSS/variables",
+        "./resources/": "./Resources/",
+        "./css/theme-options/organizr.css": "./CSS/variables/organizr-dark.css"
+    }
+    for src in src_dst:
+        if ".css" in src:
+            shutil.copy(src,src_dst[src])
+            continue
+        shutil.copytree(src,src_dst[src],dirs_exist_ok=True)
 
 if __name__ == "__main__":
     app_folders = [name for name in listdir('./css/base') if isdir(join('./css/base', name))]

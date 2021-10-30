@@ -53,12 +53,12 @@ body .container .footer {
 
 body .container .header .action-icons>.pause,
 body .container .header .action-icons-small>.pause {
-    background: url(https://theme-park.dev/Resources/duplicati/pause.png);
+    background: url(https://theme-park.dev/resources/duplicati/pause.png);
 }
 
 body .container .header .action-icons>.throttle,
 body .container .header .action-icons-small>.throttle {
-    background: url(https://theme-park.dev/Resources/duplicati/throttle.png);
+    background: url(https://theme-park.dev/resources/duplicati/throttle.png);
 }
 
 body .container .body .content div.add .steps .step.active span,
@@ -209,27 +209,27 @@ body .container .body .contextmenu li a:hover {
 }
 
 body .container .body .mainmenu>ul>li>a.home {
-    background: url(https://theme-park.dev/Resources/duplicati/home.png) no-repeat 8px 7px;
+    background: url(https://theme-park.dev/resources/duplicati/home.png) no-repeat 8px 7px;
 }
 
 body .container .body .mainmenu>ul>li>a.add {
-    background: url(https://theme-park.dev/Resources/duplicati/add.png) no-repeat 8px 7px;
+    background: url(https://theme-park.dev/resources/duplicati/add.png) no-repeat 8px 7px;
 }
 
 body .container .body .mainmenu>ul>li>a.restore {
-    background: url(https://theme-park.dev/Resources/duplicati/restore.png) no-repeat 8px 7px;
+    background: url(https://theme-park.dev/resources/duplicati/restore.png) no-repeat 8px 7px;
 }
 
 body .container .body .mainmenu>ul>li>a.settings {
-    background: url(https://theme-park.dev/Resources/duplicati/settings.png) no-repeat 8px 7px;
+    background: url(https://theme-park.dev/resources/duplicati/settings.png) no-repeat 8px 7px;
 }
 
 body .container .body .mainmenu>ul>li>a.about {
-    background: url(https://theme-park.dev/Resources/duplicati/about.png) no-repeat 8px 7px;
+    background: url(https://theme-park.dev/resources/duplicati/about.png) no-repeat 8px 7px;
 }
 
 body .container .body .mainmenu>ul>li>a.logout {
-    background: url(https://theme-park.dev/Resources/duplicati/logout.png) no-repeat 8px 7px;
+    background: url(https://theme-park.dev/resources/duplicati/logout.png) no-repeat 8px 7px;
 }
 
 #threedotmenu_add_destination>ul>li>a>span {

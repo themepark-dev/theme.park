@@ -55,7 +55,7 @@ function injectTheme(theme,container="head") {
     } else html_element = document.body;
     let themeOption = document.getElementById("theme-option")
     let link = themeOption ? themeOption : document.createElement("link");
-    url = "/CSS/theme-options/"
+    url = "/css/theme-options/"
     link.type = "text/css";
     link.rel = "stylesheet";
     link.href = `${url}/${theme.toLowerCase()}.css`;
@@ -106,8 +106,8 @@ function createApps(apps,themeOptions) {
     for (let option in sortedThemes) {
         let newApp = `
         <div class="col-lg-4 col-sm-6 p-1">
-            <a class="portfolio-box" href="Resources/landing-page/assets/img/${sortedThemes[option].toLowerCase()}.png">
-                <img class="img-fluid" src="Resources/landing-page/assets/img/${sortedThemes[option].toLowerCase()}-small.jpg" alt="..." />
+            <a class="portfolio-box" href="resources/landing-page/assets/img/${sortedThemes[option].toLowerCase()}.png">
+                <img class="img-fluid" src="resources/landing-page/assets/img/${sortedThemes[option].toLowerCase()}-small.jpg" alt="..." />
                 <div class="portfolio-box-caption p-3 ${sortedThemes[option].toLowerCase()}-hover">
                     <div class="project-category text-white-50">Theme</div>
                     <div class="project-name">${sortedThemes[option][0].toUpperCase() + sortedThemes[option].slice(1)}</div>

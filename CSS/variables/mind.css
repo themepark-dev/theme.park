@@ -1,6 +1,6 @@
 :root {
   --main-bg-color: radial-gradient(ellipse at center bottom, rgba(255, 242, 0, .7) 0%, #0d0400 80%, rgba(0, 0, 0, 1) 100%) center center/cover no-repeat fixed,
-    url("https://theme-park.dev/Resources/mind.jpg") center center/cover no-repeat fixed;
+    url("https://theme-park.dev/resources/mind.jpg") center center/cover no-repeat fixed;
   --modal-bg-color: linear-gradient(180deg, rgba(51, 49, 0, 1) 0%, #000 100%) center center/cover no-repeat fixed;
   --modal-header-color: linear-gradient(180deg, rgba(51, 49, 0, 1) 0%, #000 100%) center center/cover no-repeat fixed;
   --modal-footer-color: linear-gradient(180deg, rgba(51, 49, 0, 1) 0%, #000 100%) center center/cover no-repeat fixed;
