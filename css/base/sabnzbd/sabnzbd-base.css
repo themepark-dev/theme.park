@@ -540,6 +540,10 @@ tr td.row-extra-text,
   color: var(--button-text);
 }
 
+.progress strong, .progress i {
+  color: #fff;
+}
+
 .progress {
   background-color: transparent !important;
   box-shadow: none !important;
