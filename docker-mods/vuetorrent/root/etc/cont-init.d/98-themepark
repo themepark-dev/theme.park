@@ -23,12 +23,18 @@ fi
 # Display variables for troubleshooting 
 echo -e "Variables set:\\n\
 'TP_DOMAIN'=${TP_DOMAIN}\\n\
+'TP_COMMUNITY_THEME'=${TP_COMMUNITY_THEME}\\n\
 'TP_THEME'=${TP_THEME}\\n"
 
 # Set default
 if [[ -z ${TP_DOMAIN} ]]; then
     echo 'No domain set, defaulting to theme-park.dev'
     TP_DOMAIN='theme-park.dev'
+fi
+
+THEME_TYPE='theme-options'
+if [ "${TP_COMMUNITY_THEME}" = true ]; then
+    THEME_TYPE='community-theme-options'
 fi
 
 case ${TP_DOMAIN} in
@@ -39,7 +45,7 @@ case ${TP_DOMAIN} in
 esac
 
 if [[ -z ${TP_THEME} ]]; then
-    echo 'No theme set, defaulting to organizr-dark'
+    echo 'No theme set, defaulting to organizr'
     TP_THEME='organizr'
 fi
 RELEASE_FILEPATH='/vuetorrent/release.json'
@@ -127,7 +133,7 @@ if ! grep -q "${TP_DOMAIN}" "${INDEX_FILEPATH}"; then
     echo '---------------------------------------------------------'
     echo '| Adding the stylesheet to /vuetorrent/public/index.html |'
     echo '---------------------------------------------------------'
-    sed -i "s/<\/body>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/themes\/vuetorrent\/vuetorrent-base.css'><\/body> /g" "${INDEX_FILEPATH}"
-    sed -i "s/<\/body>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/CSS\/variables\/${TP_THEME}.css'><\/body> /g" "${INDEX_FILEPATH}"
+    sed -i "s/<\/body>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/css\/base\/vuetorrent\/vuetorrent-base.css'><\/body> /g" "${INDEX_FILEPATH}"
+    sed -i "s/<\/body>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/css\/${THEME_TYPE}\/${TP_THEME}.css'><\/body> /g" "${INDEX_FILEPATH}"
     printf 'Stylesheet set to %s on public index.html\n' "${TP_THEME}"
 fi
