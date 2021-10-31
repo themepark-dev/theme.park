@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - master
+      - develop
     paths-ignore:
         - 'docker-mods/**'
         - '.github/**'
@@ -32,6 +33,7 @@ jobs:
           git commit -m "themes.json" || echo "Ignore commit failure, proceed"
           git push || echo "Ignore push failure, proceed"
       - name: Minify CSS
+        if: ${{ github.ref == 'refs/heads/master' }}
         run: |
           sudo npm install -g minify@7.2.2
           sudo apt-get update
@@ -48,7 +50,7 @@ jobs:
               echo "Minified ${directory} > ${output_path}"
           }
           
-            find ./CSS -type f -iname *base.css | while read fname
+            find ./css -type f -iname *base.css | while read fname
                 do
                     if [[ "$fname" != *"min."* ]]; then
                         minify_file $fname
