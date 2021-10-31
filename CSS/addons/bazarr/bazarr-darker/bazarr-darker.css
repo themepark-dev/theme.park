@@ -1,0 +1,65 @@
+:root {
+    --main-bg-color: #313544;
+
+    --modal-bg-color: #252833;
+    --modal-header-color: #252833;
+    --modal-footer-color: #252833;
+
+    --drop-down-menu-bg: #252833;
+
+    --button-color: #911f93;
+    --button-color-hover: #721873;
+    --button-text: #eee;
+    --button-text-hover: #fff;
+
+    --accent-color: 145, 31, 147;
+    --accent-color-hover: rgb(var(--accent-color), .8);
+    --link-color: #b828bb;
+    --link-color-hover: #911f93;
+    --label-text-color: #eee;
+
+    --text: #ccc;
+    --text-hover: #fff;
+    --text-muted: #999;
+
+    /*Specials*/
+    --arr-queue-color: #6c757d;
+    --side-menu-active: #252833;
+    --side-menu-color: #3a3f51;
+    --side-menu-link-color: #fff;
+    --scroller-hover: #606060;
+    --scroller: #707070;
+    --border-color: #606060;
+    --label-color: #911f93;
+    --label-info: #5d9cec;
+    --header-color: #911f93;
+}
+
+/* HEADER */
+.header-container .bg-primary {
+    background-color: var(--header-color) !important;
+}
+
+/* SIDE MENU */
+.sidebar-container {
+    background-color: var(--side-menu-color) !important;
+    color: white !important;
+}
+
+.sidebar-container .sidebar-button {
+    color: var(--side-menu-link-color) !important;
+}
+
+.sidebar-container .sidebar-button {
+    background-color: var(--side-menu-color) !important;
+}
+.sidebar-container .sidebar-button.sb-active, .sidebar-container .sidebar-button.sb-active:hover {
+    color: var(--side-menu-link-color) !important;
+    background-color: var(--side-menu-active) !important;
+}
+
+
+.sidebar-container .sidebar-button:hover {
+    background-color: var(--side-menu-active) !important;
+    color: var(--side-menu-link-color) !important;
+}
