@@ -114,6 +114,8 @@ def temporary_copy_files():
         "./css/theme-options": "./CSS/variables",
         "./css/community-theme-options": "./CSS/variables",
         "./resources/": "./Resources/",
+        "./css/addons/": "./CSS/addons",
+        "./css/defaults/": "./CSS/defaults",
         "./css/theme-options/organizr.css": "./CSS/variables/organizr-dark.css"
     }
     for src in src_dst:
