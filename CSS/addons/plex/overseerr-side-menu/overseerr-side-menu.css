@@ -1,0 +1,111 @@
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+
+/*		   		        Made by @gilbN					 */
+/*			      https://github.com/gilbN/theme.park			 */
+
+/* PLEX OVERSEERR SIDE MENU */
+
+/* APP VARS*/
+:root {
+    --sidebar-color: #1f2937;
+    --menu-item: #111827;
+    --menu-item-hover: #374151;
+}
+
+/* EXTRA CSS */
+[class*="SourceSidebar-openSidebar-"][class*="SourceSidebar-sidebar-"],
+[class*="SourceSidebar-sidebar-"] {
+    background: var(--sidebar-color) !important;
+    padding-top: 10px;
+}
+
+[class*="SourceSidebarLink-isSelected-"]:before {
+    background-color: transparent !important;
+}
+
+[class*="NavBar-container-"] {
+    background: rgb(0 0 0 / 0%) !important;
+}
+
+[class*="SourceSidebar-openSidebar-"] [class*="SourceSidebarLink-isSelected-"] {
+    background: var(--menu-item);
+    box-shadow: inset 4px 0 0 0 transparent !important;
+    border-radius: 5px;
+    margin-bottom: 5px;
+
+}
+
+[class*="SourceSidebarLink-isSelected-"] [class*="SourceSidebarLink-iconContainer-"],
+[class*="SourceSidebarLink-isSelected-"] [class*="SourceSidebarLink-title-"] {
+    color: white;
+}
+
+[class*="SourceSidebar-openSidebar-"] [class*="SourceSidebarLink-button-"]:hover,
+[class*="SourceSidebar-openSidebar-"] [class*="SourceSidebarLink-isActive-"] {
+    background: var(--menu-item-hover);
+    border-radius: 5px;
+}
+
+[class*="SourceSidebarLink-button-"] {
+    margin-bottom: 5px;
+}
+
+[class*="SourceSidebar-expandedSidebar-"][class*="SourceSidebar-sidebar-"] {
+    background: var(--sidebar-color) !important;
+}
+
+[class*="SourceSidebar-expandedSidebar-"][class*="SourceSidebar-sidebar-"] [class*="SourceSidebarLink-isSelected-"] {
+    background: var(--menu-item) !important;
+}
+
+[class*="SourceSidebarContent-expandedSidebarContent-"],
+[class*="AllSourcesSidebarContent-container-"] {
+    padding: 10px;
+}
+
+[class*="SourceSidebar-collapsedSidebar-"][class*="SourceSidebar-sidebar-"] [class*="AllSourcesSidebarContent-container-"] {
+    padding: 0px;
+}
+
+[class*="SourceSidebarContent-expandedSidebarContent-"] div {
+    border-radius: 5px;
+}
+
+[class*="SourceSidebarContent-expandedSidebarContent-"] div:hover:not([data-qa-id="sidebarMore"] div) {
+    background-color: var(--menu-item-hover);
+}
+
+[class*="SourceSidebar-collapsedSidebar-"] [class*="SourceSidebar-sidebar-"] {
+    border-radius: 0px !important;
+}
+
+[class*="SourceSidebarContent-expandedSidebarContent-"] [class*="SourceSidebarLink-button-"][class*="SidebarLink-sidebarLink-"][class*="Link-default-"][class*="SourceSidebarLink-small-"][class*="SourceSidebarLink-isSelected-"] {
+    box-shadow: none !important;
+    border-radius: 5px;
+}
+
+[class*="SourceSidebar-collapsedSidebar-"][class*="SourceSidebar-sidebar-"] [class*="SourceSidebarItem-button-"][class*="SourceSidebarLink-button-"][class*="SidebarLink-sidebarLink-"][class*="Link-default-"][class*="SourceSidebarLink-small-"][class*="SourceSidebarItem-isSelected-"][class*="SourceSidebarLink-isSelected-"] {
+    box-shadow: inset 4px 0 0 0 rgb(var(--accent-color)) !important;
+    border-radius: 0px;
+}
+
+[class*="SourceSidebarLink-button-"][class*="SidebarLink-sidebarLink-"][class*="Link-default-"][class*="SourceSidebarLink-small-"][class*="SourceSidebarLink-isSelected-"]:hover {
+    box-shadow: none !important;
+    background: var(--menu-item-hover) !important;
+}
+
+[class*="SourceSidebar-collapsedSidebar-"][class*="SourceSidebarLink-button-"][class*="SidebarLink-sidebarLink-"][class*="Link-default-"][class*="SourceSidebarLink-small-"][class*="SourceSidebarLink-isSelected-"]:hover {
+    box-shadow: inset 4px 0 0 0 rgb(var(--accent-color)) !important;
+}
+
+[class*="SourceSidebarLink-sourceLink-"]:hover [class*="SourceSidebarLink-iconContainer-"],
+[class*="SourceSidebarLink-sourceLink-"]:hover [class*="SourceSidebarLink-title-"] {
+    color: white;
+}

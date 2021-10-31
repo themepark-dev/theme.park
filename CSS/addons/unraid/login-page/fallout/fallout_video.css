@@ -1,0 +1,35 @@
+@import url("https://theme-park.dev/CSS/addons/unraid/login-page/fallout/fallout_base.css");
+:root {
+    --main-bg-color: transparent;
+    --logo: url(https://theme-park.dev/CSS/addons/unraid/login-page/fallout/logo/vault-tec_green.png) center no-repeat;
+    --text-color: #14F074;
+    --input-color: #14F074;
+    --link-color: #14F074;
+    --link-color-hover: #0C833D;
+    --case-color: #14F074;
+    --button-text-color: #14F074;
+    --button-text-color-hover: #FFFFFF;
+    --button-color: #14F074;
+    --button-color2: #0C833D;
+    --input-font: 'Share Tech Mono', monospace;
+    --text-font: 'Share Tech Mono', monospace;
+    --div-background-color-15: #0ea85118;
+
+    /* Replace the variables if you have a dark background  */
+    /* Light colors for dark backgrounds */
+    /*
+        --div-background-color-15: rgba(255, 255, 255, 0.15);
+    https://www.transparenttextures.com/patterns/hexellence.png
+    https://www.transparenttextures.com/patterns/gplay.png
+    https://www.transparenttextures.com/patterns/simple-horizontal-light.png
+    https://www.colourlovers.com/palette/3428762/Fallout?widths=1
+    */
+}
+@media (max-width: 500px) {
+    body {
+        background: url(https://theme-park.dev/CSS/addons/unraid/login-page/fallout/wallpaper/terminal.jpg) center center/cover no-repeat fixed !important;
+    }
+    :root {
+        --div-background-color-15: transparent; 
+    }
+}
