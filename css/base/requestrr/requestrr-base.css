@@ -10,7 +10,7 @@
 /*		   		        Made by @gilbN					 */
 /* 			      https://github.com/gilbN/theme.park			 */
 
-@import url(https://theme-park.dev/CSS/defaults/placeholders.css);
+@import url(https://theme-park.dev/css/defaults/placeholders.css);
 
 body {
     color: var(--text);
