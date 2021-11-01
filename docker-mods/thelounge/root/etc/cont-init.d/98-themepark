@@ -34,7 +34,7 @@ if [[ -z ${TP_THEME} ]]; then
 fi
 
 # Adding stylesheets
-if ! grep -q "${TP_DOMAIN}" /usr/lib/node_modules/thelounge/client/index.html.tpl; then
+if ! grep -q "${TP_DOMAIN}/css/base" /usr/lib/node_modules/thelounge/client/index.html.tpl; then
     echo '---------------------------'
     echo '|  Adding the stylesheet  |'
     echo '---------------------------'
