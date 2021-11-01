@@ -133,7 +133,7 @@ def temporary_copy_files():
         shutil.copytree(src,src_dst[src],dirs_exist_ok=True)
 
 def create_theme_options():
-    def create_app(folder):
+    def create_css(folder):
         with open(f"{folder}/{app}/{theme.lower()}.css", "w") as create_app:
             content = f'@import url("{applications[app]["base_css"]}");\n@import url("{themes[theme]["url"]}");'
             create_app.write(content)
@@ -145,7 +145,7 @@ def create_theme_options():
         for theme in themes:
             folders = ["./CSS/themes","./css/base"]
             for folder in folders:
-                create_app(folder)
+                create_css(folder)
 
 
 if __name__ == "__main__":
