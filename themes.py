@@ -1,6 +1,6 @@
 from os import listdir
 from os.path import isdir, isfile, join
-from json import dump, dumps, loads
+from json import dump, dumps, loads, load
 import subprocess
 import shutil
 
@@ -90,7 +90,7 @@ def create_json(app_folders: list = None, themes: list = None, community_themes:
         return dumps(THEMES_DICT)
     else:
         ADDONS = loads(create_addons_json())
-        APPS = {"applications": {}}
+        APPS = {}
         app_shas = subprocess.check_output(["git", "ls-files", "-s", "./css/base/*base.css"])
         SHAS = get_shas(app_shas)
         APPS.update(dict(sorted({
@@ -99,6 +99,14 @@ def create_json(app_folders: list = None, themes: list = None, community_themes:
                     "base_css": f"https://{DOMAIN}/css/base/{app}/{app}-base.css?sha={SHAS.get(f'{app}-base.css')}",
                     "addons": ADDONS["addons"][app] if app in ADDONS["addons"] else {}
                 } for app in app_folders if not isfile(f'./css/base/{app}/.deprecated')
+            }
+        }.items())))
+        APPS.update(dict(sorted({
+            "deprecated": {
+                app: {
+                    "base_css": f"https://{DOMAIN}/css/base/{app}/{app}-base.css?sha={SHAS.get(f'{app}-base.css')}",
+                    "addons": ADDONS["addons"][app] if app in ADDONS["addons"] else {}
+                } for app in app_folders if isfile(f'./css/base/{app}/.deprecated')
             }
         }.items())))
         THEMES = loads(create_json(themes=themes, community_themes=community_themes, no_sub_folders=True))
@@ -117,20 +125,37 @@ def temporary_copy_files():
         "./css/addons/": "./CSS/addons",
         "./css/defaults/": "./CSS/defaults",
         "./css/theme-options/organizr.css": "./CSS/variables/organizr-dark.css"
-    }
+        }
     for src in src_dst:
         if ".css" in src:
             shutil.copy(src,src_dst[src])
             continue
         shutil.copytree(src,src_dst[src],dirs_exist_ok=True)
 
+def create_theme_options():
+    def create_css(folder):
+        with open(f"{folder}/{app}/{theme.lower()}.css", "w") as create_app:
+            content = f'@import url("{applications[app]["base_css"]}");\n@import url("{themes[theme]["url"]}");'
+            create_app.write(content)
+    with open("themes.json") as themes:
+        data = load(themes)
+        themes = data["all-themes"]
+        applications = data["applications"]
+    for app in applications:
+        for theme in themes:
+            folders = ["./CSS/themes","./css/base"]
+            for folder in folders:
+                create_css(folder)
+
+
 if __name__ == "__main__":
     app_folders = [name for name in listdir('./css/base') if isdir(join('./css/base', name))]
     themes = [name for name in listdir('./css/theme-options') if isfile(join('./css/theme-options', name))]
     community_themes = [name for name in listdir('./css/community-theme-options') if isfile(join('./css/community-theme-options', name))]
     with open("CNAME", "rt", closefd=True) as cname:
-        DOMAIN= cname.readline()
+        DOMAIN = cname.readline()
     apps = loads(create_json(app_folders=app_folders, themes=themes, community_themes=community_themes))
     with open("themes.json", "w") as outfile:
         dump(apps, outfile, indent=2, sort_keys=True)
     temporary_copy_files()
+    create_theme_options()
