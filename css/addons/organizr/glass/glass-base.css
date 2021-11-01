@@ -1,8 +1,8 @@
 /* Set the Organizr theme to either Aquamarine or Hotline */
 /* Import the glass-base.css and root variables in the Custom Theme CSS box like below */
 /* 
-@import "https://theme-park.dev/CSS/themes/organizr/organizr-base-old.css"
-@import "https://theme-park.dev/CSS/addons/organizr/glass-base.css"; 
+@import "https://theme-park.dev/css/addons/organizr/glass/organizr-base-old.css"
+@import "https://theme-park.dev/css/addons/organizr/glass/glass-base.css"; 
 :root {
     --main-bg-color: url(https://domain.com/your/hosted/wallpaper.jpg) center center/cover no-repeat fixed;
     --mobile-bg-color: radial-gradient(circle, #3a3a3a, #2d2d2d, #202020, #141414, #000000) center center/cover no-repeat fixed;
