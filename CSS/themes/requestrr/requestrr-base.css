@@ -1,0 +1,398 @@
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+
+/*		   		        Made by @gilbN					 */
+/* 			      https://github.com/gilbN/theme.park			 */
+
+@import url(https://theme-park.dev/css/defaults/placeholders.css);
+
+body {
+    color: var(--text);
+    background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+
+.bg-default {
+    background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading-small.text-muted,
+.form-control-label,
+.text-white {
+    color: var(--text-hover) !important;
+}
+
+.text-muted {
+    color: var(--text-muted);
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(var(--accent-color));
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--text);
+}
+
+.nav-link.active:hover,
+.nav-link.active:focus {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.navbar-light .navbar-nav .nav-link:focus:not(.nav-link.active),
+.navbar-light .navbar-nav .nav-link:hover:not(.nav-link.active) {
+    color: var(--text-hover);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+@media (min-width: 768px) {
+    .navbar-vertical.navbar-expand-md.fixed-left {
+        left: 0;
+        border-width: 0 1px 0 0;
+        background: rgba(0, 0, 0, 0.25) !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    .navbar-collapse.collapsing,
+    .navbar-collapse.show {
+        background: var(--modal-bg-color);
+        background-repeat: repeat, no-repeat;
+        background-attachment: fixed, fixed;
+        background-position: center center, center center;
+        background-size: auto, cover;
+        -webkit-background-size: auto, cover;
+        -moz-background-size: auto, cover;
+        -o-background-size: auto, cover;
+        box-shadow: 0 50px 100px rgba(0, 0, 0, 0.1), 0 15px 35px rgba(0, 0, 0, 0.15), 0 5px 15px rgba(0, 0, 0, .1);
+    }
+}
+
+@media (max-width: 767.98px) {
+    .navbar-nav .nav-link {
+        color: var(--text) !important;
+    }
+}
+
+#sidenav-main>div>div>ul.mb-md-3.navbar-nav>li:nth-child(3)>a>i {
+    color: white !important;
+}
+
+.card-profile-image img,
+.shadow,
+.navbar-vertical {
+    box-shadow: none !important;
+}
+
+.fade {
+    -webkit-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+    background: rgba(0, 0, 0, 0.15) !important;
+}
+
+.bg-secondary {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.bg-gradient-default {
+    background: none !important;
+}
+
+.card-profile-image img,
+.shadow {
+    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, .15) !important;
+}
+
+.bg-white,
+.footer {
+    background-color: rgba(0, 0, 0, 0.25) !important;
+}
+
+.footer {
+    padding-left: 15px;
+}
+
+/* Logo */
+
+#sidenav-main>div>a::before {
+    content: "";
+    background: url('../static/media/requestrr.1e4722c9.svg') no-repeat;
+    background-size: 200px;
+    width: 200px;
+    height: 36px;
+    display: block;
+}
+
+.navbar-brand-img {
+    display: none;
+}
+
+@media (max-width: 767.98px) {
+    .navbar-collapse .collapse-brand img {
+        display: none;
+    }
+}
+
+@media (max-width: 767.98px) {
+    #sidenav-main>div>div>div>div>div.collapse-brand.col-6>a::before {
+        content: "";
+        background: url('../static/media/requestrr.1e4722c9.svg') no-repeat;
+        background-size: 200px;
+        width: 200px;
+        height: 36px;
+        display: block;
+    }
+}
+
+/* FORMS */
+.form-control:disabled,
+.form-control[readonly] {
+    background-color: rgba(255, 255, 255, 0.1);
+    opacity: 1;
+    border: 1px solid transparent;
+    color: gray;
+}
+
+.form-control-alternative,
+.has-danger .form-control {
+    background: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.form-control-alternative:focus {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.form-control:focus {
+    color: var(--text-hover);
+}
+
+.has-success .form-control {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.form-control {
+    color: var(--text);
+    border: 1px solid transparent;
+}
+
+/* Drop down*/
+.react-dropdown-select-item.css-148o527-ItemComponent {
+    background: var(--drop-down-menu-bg) !important;
+}
+
+.react-dropdown-select.dropdown div[role=list] span {
+    color: var(--text);
+}
+
+.react-dropdown-select.dropdown div[role=list] span:focus,
+.react-dropdown-select.dropdown div[role=list] span:hover {
+    color: var(--text-hover);
+}
+
+[class*="-ItemComponent"] {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+[class*="-DropDown"]:not(.react-dropdown-select-dropdown-position-bottom) {
+    background: rgb(255 255 255 / 0%);
+    box-shadow: 0 0 10px 1px #000 !important;
+}
+
+.react-dropdown-select.dropdown {
+    color: var(--text);
+    background-color: rgb(0 0 0 / 25%);
+}
+
+.react-dropdown-select.dropdown .react-dropdown-select-item-selected {
+    background: rgb(var(--accent-color)) !important;
+    color: var(--label-text-color) !important;
+}
+
+
+/* Buttons */
+.custom-checkbox .custom-control-input:checked~.custom-control-label:before {
+    background-color: rgb(var(--accent-color));
+    border-color: rgb(var(--accent-color));
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label:after {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='000000' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+}
+
+
+.btn-primary {
+    color: var(--button-text);
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+}
+
+.btn-primary:hover {
+    color: var(--button-text-hover);
+    background-color: var(--button-color-hover);
+    border-color: var(--button-color-hover);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+    color: var(--button-text-hover);
+    background-color: var(--button-color-hover);
+    border-color: var(--button-color-hover);
+}
+
+.btn-default,
+.btn-default:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: transparent;
+}
+
+.btn-default:not(:disabled):not(.disabled).active,
+.btn-default:not(:disabled):not(.disabled):active,
+.show>.btn-default.dropdown-toggle {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.26);
+    border-color: transparent;
+}
+
+.btn-default.disabled,
+.btn-default:disabled {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: transparent;
+    opacity: .5;
+}
+
+.btn-info.disabled,
+.btn-info:disabled {
+    color: var(--text-muted);
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+}
+
+.btn-info,
+.btn-info:hover {
+    color: var(--button-text-hover);
+    background-color: var(--button-color-hover);
+    border-color: var(--button-color-hover);
+}
+
+/* Login page*/
+
+.header.bg-gradient-info {
+    background: transparent !important;
+}
+
+@media (min-width: 1200px) {
+    .separator-skew {
+        height: 70px;
+        display: none;
+    }
+}
+
+#root>div>div.mt--8.pb-5.container>div>div>div {
+    background: rgba(0, 0, 0, 0.25) !important;
+}
+
+#root>div>div.mt--8.pb-5.container>div>div>div>div>form>div:nth-child(1)>div>input,
+#root>div>div.mt--8.pb-5.container>div>div>div>div>form>div:nth-child(2)>div>input,
+#root>div>div.mt--8.pb-5.container>div>div>div>div>form>div:nth-child(3)>div>input {
+    background: rgba(0, 0, 0, .25) !important;
+    border: 10px solid transparent;
+}
+
+.input-group-text {
+    color: var(--text);
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 1px solid transparent !important;
+}
+
+.input-group-prepend {
+    margin-right: 0px;
+}
+
+#root>div>div.header.bg-gradient-info.py-7.py-lg-8>div.separator.separator-bottom.separator-skew.zindex-100>svg>polygon {
+    display: none;
+}
+
+/* Scrollbar */
+@media only screen and (min-width: 768px) {
+    html {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    body {
+        overflow-y: auto;
+        height: 100%;
+        background: var(--main-bg-color);
+        background-repeat: repeat, no-repeat;
+        background-attachment: fixed, fixed;
+        background-position: center center, center center;
+        background-size: auto, cover;
+        -webkit-background-size: auto, cover;
+        -moz-background-size: auto, cover;
+        -o-background-size: auto, cover;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+    min-height: 50px;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    background-color: hsla(0, 0%, 100%, .2);
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    min-height: 50px;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    background-color: hsla(0, 0%, 100%, .5);
+    background-clip: padding-box;
+}

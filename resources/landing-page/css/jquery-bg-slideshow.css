@@ -1,0 +1,60 @@
+/*
+ * This is the class for the wrapper around the element that
+ * will have the slidshow background.
+ */
+ .jquery-bg-slideshow-wrap-bg-element {
+	position: relative;
+}
+
+/*
+ * This class is for the div that holds all of the small 'ball'
+ * that can be used to traverse the images in the list control.
+ */
+.jquery-bg-slideshow-list-control-element {
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+}
+
+/*
+ * This is the class that defines the small 'ball' on the bottom
+ * of the image for the user to click to view different images.
+ * This is used if the user has the 'listControls.enabled=true'.
+ * NOTE: listControls.size, listControls.backgroundColor,
+ * listControls.borderSize, listControls.spaceBetween, 
+ * and listControls.borderColor will impact this class.
+ */
+.jquery-bg-slideshow-list-control-image-element {
+	display: inline-block;
+	border-radius: 5pt;
+	height: 5pt;
+	width: 5pt;
+	margin-right: 5px;
+	background: rgb(0, 0, 0);
+	border: 2px rgb(255, 255, 255);
+	box-shadow: 1px 1px 10px 1px white;
+	cursor: pointer;
+}
+
+/*
+ * This is the class that highlights which image is being displayed
+ * within the list control.  That is, the small 'ball' on the bottom
+ * of the page.
+ */
+.jquery-bg-slideshow-list-control-image-active-element {
+	background-color: red;
+	height: 10px;
+	width: 10px;
+	border-radius: 10px;
+	transition: background-color 0.5s ease;
+}
+
+/*
+ * This is the class used to  store the cloned element.  This
+ * will be in the background as the other one fades out.
+ */
+.jquery-bg-slideshow-cloned {
+	z-index: -100;
+	display: none;
+}

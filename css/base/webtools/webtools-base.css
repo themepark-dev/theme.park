@@ -1,0 +1,392 @@
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+
+/*		   		        Made by @gilbN					 */
+/* 			      https://github.com/gilbN/theme.park			 */
+
+body {
+    background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+
+a,
+.language a {
+    color: var(--link-color);
+}
+
+a:hover {
+    color: #fff;
+}
+
+#content:before {
+    background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+
+* {
+    outline: none !important;
+}
+
+/* TEXT */
+body,
+.head .title,
+.fm .sections .section {
+    color: var(--text);
+}
+
+/* ACCENTS */
+webtools-loading .webtoolsLoading,
+content-loading .contentLoading {
+    color: var(--accent-color);
+}
+
+.uas .type.active {
+    background: var(--button-color);
+    box-shadow: none;
+}
+
+.uas .type.active:hover {
+    background: var(--button-color-hover);
+    box-shadow: none;
+}
+
+/* NAVBAR */
+.head {
+    background-color: rgb(0 0 0 / 0.25);
+    box-shadow: 0 0 0 0px rgb(0 0 0 / 0%);
+}
+
+.vertical-center {
+    box-shadow: inset 0px 15px 15px -4px rgb(255 255 0 / 0%);
+}
+
+/* SIDE MENU */
+.menu .toggle {
+    background: rgb(0 0 0 / .25);
+    color: var(--accent-color);
+}
+
+.menu {
+    background-color: rgb(0 0 0 / 25%);
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0);
+}
+
+.menu .item {
+    background: rgb(255 255 255 / 8%);
+    color: var(--button-text);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .0);
+}
+
+.menu .item:hover {
+    background: rgb(255 255 255 / .16);
+    color: var(--text-hover);
+}
+
+.menu .item.active {
+    background: var(--accent-color);
+    color: var(--button-text);
+}
+
+/* MODALS */
+.ngdialog.ngdialog-theme-default .ngdialog-content {
+    background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    color: var(--text) !important;
+    border: #f0505000 5px solid;
+}
+
+.fm .settings {
+    background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    color: var(--text);
+    Border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* PAGES */
+.sub .settings {
+    background: rgb(255 255 255 / 25%);
+}
+
+label {
+    color: var(--button-text);
+}
+
+.sub .rowShow,
+.uas .repoContainer .repo,
+.uas .typesMenu,
+.uas .repoContainer .repo.installed,
+.fm .sections .section,
+.playlists .userContainer .fileContainer,
+.playlists .playlistContainer {
+    background: rgb(255 255 255 / .08);
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, .0);
+    border: transparent;
+}
+
+.uas .type:hover {
+    background: rgb(255 255 255 / 8%);
+    color: var(--text-hover);
+}
+
+.sub .rowShow:hover,
+.uas .repoContainer .repo:hover,
+.fm .sections .section:hover {
+    background: rgb(255 255 255 / .16);
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, .0);
+}
+
+.expanded:hover {
+    background: rgb(255 255 255 / .08) !important;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, .0);
+}
+
+.sub .rowShow .lineShow .contentShow .detail {
+    background: rgb(0 0 0 / 25%);
+    color: var(--text) !important;
+}
+
+.sub .rowShow .lineShow .contentShow .detail .subItem .download:hover,
+.sub .rowShow .lineShow .contentShow .detail .subHeader .selectActions div:hover {
+    color: var(--text-hover) !important;
+}
+
+.sub .rowShow .lineShow .contentShow .detail .subItem.selected {
+    background: rgb(0 0 0 / 25%);
+}
+
+.sub .rowShow .lineShow .contentShow .detail .subItem.checked {
+    background: rgba(255, 255, 255, 0.5);
+    color: var(--text-hover);
+}
+
+.sub .rowShow .lineShow .contentShow .detail .subItem.selected.checked {
+    background: var(--accent-color);
+}
+
+.sub .rowShow .lineShow .contentShow .tvshow {
+    background-color: rgb(255 255 255 / 8%);
+    color: var(--button-text);
+}
+
+.sub .rowShow .lineShow .contentShow .tvshow:hover {
+    background-color: rgb(255 255 255 / 16%);
+
+}
+
+.sub .rowShow .lineShow .contentShow .loadmore {
+    background: var(--button-color);
+    border: solid 6px var(--button-color);
+    color: var(--button-text);
+}
+
+.sub .rowShow .lineShow .contentShow .tvshowheader div {
+    background: var(--button-color);
+    color: var(--button-text);
+}
+
+.sub .rowShow .lineShow .contentShow .tvshowheader div:hover {
+    background: var(--button-color-hover);
+    color: var(--button-text);
+    border: transparent;
+}
+
+.sub .rowShow .lineShow .contentShow .loadmore:hover {
+    background: var(--button-color-hover);
+    color: var(--button-text);
+    border: solid 6px transparent;
+}
+
+.logs .logDetails {
+    background-color: rgb(255 255 255 / 14%);
+}
+
+.logs .search {
+    background-color: rgb(255 255 255 / 8%);
+}
+
+.logs .logDetails table tr.danger {
+    background-color: rgb(244 67 54 / 50%) !important;
+    color: #fff;
+}
+
+.uas .repoContainer .repo .details .row,
+.uas .repoContainer .repo .details .row:nth-child(2n) {
+    background: rgb(0 0 0 / 25%);
+    color: var(--text);
+}
+
+/* SETTINGS */
+
+/* BUTTONS */
+.btn,
+.sub .search .btnSearch,
+.logs .logButton,
+.uas .uasBtn,
+.uas .repoContainer .repo .header .right .installUpdate,
+.uas .typesMenu .search .btnSearch,
+.btnInput,
+.playlists .playlistBtn,
+.language .languageActions .langBtn,
+.fr .reset,
+.logs .search .btnSearch,
+.fm button {
+    border-color: var(--button-color);
+    background: var(--button-color);
+    color: var(--button-text);
+    margin-right: 5px;
+    box-shadow: none;
+    border: transparent;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle,
+.sub .search .btnSearch:hover,
+.sub .search .btnSearch:focus,
+.logs .logButton:hover,
+.logs .logButton:focus,
+.uas .uasBtn:hover,
+.uas .uasBtn:focus,
+.uas .repoContainer .repo .header .right .installUpdate:hover,
+.uas .repoContainer .repo .header .right .installUpdate:focus,
+.uas .typesMenu .search .btnSearch:focus,
+.uas .typesMenu .search .btnSearch:hover,
+.btnInput:hover,
+.btnInput:focus,
+.playlists .playlistBtn:hover,
+.playlists .playlistBtn:focus,
+.playlists .playlistBtn:not(.disabled):hover,
+.language .languageActions .langBtn:hover,
+.fr .reset:hover,
+.logs .search .btnSearch:hover,
+.logs .search .btnSearch:focus,
+.fm button:hover,
+.fm button:focus {
+    border-color: var(--button-color-hover);
+    color: var(--text-hover);
+    background-color: var(--button-color-hover);
+    box-shadow: none !important;
+}
+
+.uas .repoContainer .repo .header .right .delete,
+body>div.content.ng-scope>div>div.pushTopMinor.ng-scope>div:nth-child(2)>div.playlistContent>div.topPart>div.buttons.pull-right>div:nth-child(1),
+body>div.content.ng-scope>div>div.pushTopMinor.ng-scope>div:nth-child(3)>div.playlistContent>div.topPart>div.buttons.pull-right>div:nth-child(1),
+body>div.content.ng-scope>div>div.pushTopMinor.ng-scope>div:nth-child(4)>div.playlistContent>div.topPart>div.buttons.pull-right>div:nth-child(1),
+body>div.content.ng-scope>div>div.pushTopMinor.ng-scope>div:nth-child(5)>div.playlistContent>div.topPart>div.buttons.pull-right>div:nth-child(1),
+body>div.content.ng-scope>div>div.pushTopMinor.ng-scope>div:nth-child(6)>div.playlistContent>div.topPart>div.buttons.pull-right>div:nth-child(1),
+body>div.content.ng-scope>div>div.pushTopMinor.ng-scope>div:nth-child(7)>div.playlistContent>div.topPart>div.buttons.pull-right>div:nth-child(1),
+body>div.content.ng-scope>div>div.pushTopMinor.ng-scope>div:nth-child(8)>div.playlistContent>div.topPart>div.buttons.pull-right>div:nth-child(1),
+body>div.content.ng-scope>div>div.pushTopMinor.ng-scope>div:nth-child(9)>div.playlistContent>div.topPart>div.buttons.pull-right>div:nth-child(1),
+body>div.content.ng-scope>div>div.pushTopMinor.ng-scope>div:nth-child(10)>div.playlistContent>div.topPart>div.buttons.pull-right>div:nth-child(1),
+body>div.content.ng-scope>div>div.pushTopMinor.ng-scope>div:nth-child(11)>div.playlistContent>div.topPart>div.buttons.pull-right>div:nth-child(1) {
+    background: #F44336;
+    color: var(--button-text);
+    border: #F44336;
+}
+
+.uas .repoContainer .repo .header .right .delete:hover,
+.uas .repoContainer .repo .header .right .delete:focus,
+body>div.content.ng-scope>div>div.pushTopMinor.ng-scope>div:nth-child(2)>div.playlistContent>div.topPart>div.buttons.pull-right>div:nth-child(1):focus,
+body>div.content.ng-scope>div>div.pushTopMinor.ng-scope>div:nth-child(2)>div.playlistContent>div.topPart>div.buttons.pull-right>div:nth-child(1):hover {
+    background: #ec2626;
+    color: var(--button-text);
+    border: #ec2626;
+}
+
+.playlists .playlistBtn.disabled {
+    background: var(--button-color);
+    color: var(--button-text);
+    border: var(--button-color);
+    opacity: .5;
+}
+
+.playlists .playlistBtn.disabled:hover {
+    background: var(--button-color);
+    color: var(--button-text);
+    border: var(--button-color);
+}
+
+/* FORMS */
+.form-control,
+.sub .search .searchInput,
+.uas .manualInstall,
+.uas .typesMenu .search .searchInput,
+.logs .search .searchInput {
+    color: var(--text) !important;
+    background-color: rgba(0, 0, 0, .25) !important;
+    border: 1px solid transparent !important;
+    box-shadow: none !important;
+    transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus,
+.sub .search .searchInput:focus,
+.uas .manualInstall:focus,
+.uas .typesMenu .search .searchInput:focus,
+.logs .search .searchInput:focus {
+    background-color: rgba(0, 0, 0, .5) !important;
+    color: var(--text-hover) !important;
+}
+
+/* TABLE */
+.info tr:nth-child(2n+1) {
+    background-color: rgb(255 255 255 / 0.08);
+}
+
+.logs .logDetails table tr:nth-child(even) {
+    background-color: rgb(255 255 255 / 8%);
+}
+
+/* PLACEHOLDER TEXT */
+::placeholder {
+    color: var(--text) !important;
+    opacity: .5 !important;
+}
+
+:-moz-placeholder {
+    color: var(--text) !important;
+    opacity: .5 !important;
+}
+
+:-ms-input-placeholder {
+    color: var(--text) !important;
+    opacity: .5 !important;
+}
+
+::-webkit-input-placeholder {
+    color: var(--text) !important;
+    opacity: .5;
+}

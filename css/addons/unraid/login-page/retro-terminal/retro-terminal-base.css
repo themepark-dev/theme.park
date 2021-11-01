@@ -1,0 +1,362 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css";
+@import "https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap";
+@import "https://fonts.googleapis.com/css?family=VT323";
+
+/*___FONTS___*/
+/* 'VT323', 'Share Tech Mono' */
+    /* Replace the variables if you have a dark background  */
+    /* Light colors for dark backgrounds */
+    /*
+        --div-background-color-15: rgba(255, 255, 255, 0.15);
+
+    https://www.transparenttextures.com/patterns/hexellence.png
+    https://www.transparenttextures.com/patterns/gplay.png
+    https://www.transparenttextures.com/patterns/simple-horizontal-light.png
+    https://www.colourlovers.com/palette/3428762/Fallout?widths=1
+    
+    https://codepen.io/meduzen/pen/zxbwRV
+    https://codepen.io/lbebber/pen/XJRdrV/ CRT KEY FRAMES
+    https://brennan.io/2017/06/14/alien-computer-card/
+    https://www.cssmatic.com/noise-texture
+
+    https://codepen.io/somethingformed/pen/raWJXV
+
+
+    ============ SOURCES =============
+    https://github.com/brenns10/alien-console
+    https://github.com/Swordfish90/cool-retro-term
+    https://github.com/andersevenrud/retro-css-shell-demo CRT INTERLACE
+    https://codepen.io/lbebber/pen/XJRdrV/ CRT KEY FRAMES
+    https://codepen.io/patrickhlauke/pen/YaoBop TEXT FLIKER
+
+    */
+
+
+* {
+    outline: none;
+}
+
+@media (max-width: 500px) {
+    #login {
+        -webkit-backdrop-filter: blur(0px);
+        backdrop-filter: blur(0px);
+        position: absolute;
+        padding-top: 0rem !important;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: none !important;
+    }
+    .background-wrap,#video-bg-elem,.custom-text-header  {display: none;}
+    #login {
+        border:none !important;
+    }
+}
+
+html {background: var(--main-bg-color) !important;}
+body {background: var(--main-bg-color) !important;}
+/* CRT SCREEN FLICKER*/
+body::before {
+    content: "";
+    background: radial-gradient(ellipse at center,var(--body-before) 0,rgb(0, 0, 0) 100%) !important;
+    background-repeat: repeat-y !important;
+    background-size: 100% 4px !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    animation: var(--body-animation) 0.01s infinite;
+    pointer-events: none;
+}
+/* CRT BACKGROUND WITH LINES*/
+body::after {
+    content: "";
+    background: radial-gradient(ellipse at center,var(--body-after) 0,rgba(0, 0, 0, 0.6) 80%) center center/cover no-repeat fixed, linear-gradient(#0000 0%,#0000 0%) !important;
+    background-repeat: repeat-y !important;
+    background-size: 100% 4px !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+@keyframes flicker {0% {opacity: 0.37633;}5% {opacity: 0.70002;}10% {opacity: 0.64427;}15% {opacity: 0.35591;}20% {opacity: 0.34054;}25% {opacity: 0.54917;}30% {opacity: 0.41056;}35% {opacity: 0.67637;}40% {opacity: 0.23681;}45% {opacity: 0.64945;}50% {opacity: 0.67522;}55% {opacity: 0.56049;}60% {opacity: 0.06113;}65% {opacity: 0.95766;}70% {opacity: 0.77945;}75% {opacity: 0.33817;}80% {opacity: 0.19735;}85% {opacity: 0.84337;}90% {opacity: 0.82867;}95% {opacity: 0.65512;}100% {opacity: 0.15179;}}
+
+@media only screen and (max-width: 768px) {
+    #login {
+        min-width: 300px;
+    }
+}
+/*FOR VIDEO BACKGROUND*/
+.background-wrap {
+    position: fixed;
+    z-index: -1000;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+#video-bg-elem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+}
+/*TEXT COLOR*/
+#login h1,
+#login h2,
+#login .error {
+    color: var(--text-color) !important;
+    text-shadow: var(--text-shadow) var(--text-shadow-color);
+}
+#login a {
+    color: var(--link-color);
+    text-shadow: var(--text-shadow) var(--text-shadow-color);
+}
+#login a:hover {
+    color: var(--link-color-hover);
+    text-shadow: var(--text-shadow) var(--text-shadow-color);
+}
+#login input {
+    color: var(--input-color);
+    text-shadow: 0 0 5px var(--text-shadow-color);
+}
+#login ::placeholder {
+    color: var(--input-color);
+    text-shadow: 0 0 5px var(--text-shadow-color);
+}
+#login ::-webkit-input-placeholder {
+    color: var(--input-color);
+    text-shadow: 0 0 5px var(--text-shadow-color);
+}
+#login ::-moz-placeholder {
+    color: var(--input-color);
+    text-shadow: 0 0 5px var(--text-shadow-color);
+}
+#login :-ms-input-placeholder {
+    color: var(--input-color);
+    text-shadow: 0 0 5px var(--text-shadow-color);
+}
+#login :-moz-placeholder {
+    color: var(--input-color);
+    text-shadow: 0 0 5px var(--text-shadow-color);
+}
+#login input:focus::-webkit-input-placeholder {
+    color: transparent !important;
+    text-shadow: 0 0 0px transparent;
+}
+#login input:focus:-moz-placeholder {
+    color: transparent !important;
+    text-shadow: 0 0 0px transparent;
+}
+#login input:focus::-moz-placeholder {
+    color: transparent !important;
+    text-shadow: 0 0 0px transparent;
+}
+#login input:focus:-ms-input-placeholder {
+    color: transparent !important;
+    text-shadow: 0 0 0px transparent;
+}
+
+/*TEXT FONT*/
+#login h1,
+#login h2,
+#login a,
+#login .button,
+#login .error {
+    font-family: var(--text-font);
+    -webkit-font-smoothing: none;
+    line-height: 1.2;
+}
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+/* CASE COLOR */
+#login [class^='case-'],
+#login [class*=' case-'] {
+    font-family: cases!important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    color: var(--case-color);
+    text-shadow: var(--text-shadow) var(--text-shadow-color);
+}
+/*INPUT FORMS*/
+#login [type=text],
+#login [type=password] {
+    font-family: var(--input-font);
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    border-radius: 0px;
+    border: 3px solid var(--text-color);
+    color: var(--text-color);
+}
+#login [type=text]:active,
+#login [type=text]:focus,
+#login [type=password]:active,
+#login [type=password]:focus {
+    font-family: var(--input-font);
+    background-color: rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
+}
+
+
+
+/*BUTTON*/
+#login .button {
+    color: var(--button-text-color);
+    text-shadow: var(--text-shadow) var(--text-shadow-color);
+    background: linear-gradient(90deg, var(--button-color) 0, var(--button-color)) 0 0 no-repeat, linear-gradient(90deg, var(--button-color) 0, var(--button-color)) 0 100% no-repeat, linear-gradient(0deg, var(--button-color) 0, var(--button-color)) 0 100% no-repeat, linear-gradient(0deg, var(--button-color) 0, var(--button-color)) 100% 100% no-repeat;
+    background: -webkit-gradient(linear, left top, right top, from(var(--button-color)), to(var(--button-color))) 0 0 no-repeat, -webkit-gradient(linear, left top, right top, from(var(--button-color)), to(var(--button-color))) 0 100% no-repeat, -webkit-gradient(linear, left bottom, left top, from(var(--button-color)), to(var(--button-color))) 0 100% no-repeat, -webkit-gradient(linear, left bottom, left top, from(var(--button-color)), to(var(--button-color))) 100% 100% no-repeat;
+    background-size: 100% 2px, 100% 2px, 2px 100%, 2px 100%;
+    
+}
+#login .button:hover {
+    color: var(--button-text-color-hover);
+    text-shadow: var(--text-shadow) var(--button-color-hover);
+    box-shadow: var(--box-shadow) var(--button-color-hover);
+    background-color: var(--button-color-hover);
+    background: -webkit-gradient(linear, left top, right top, from(var(--button-color-hover)), to(var(--button-color-hover)));
+    background: linear-gradient(90deg, var(--button-color-hover) 0, var(--button-color-hover));
+}
+
+/*LOGIN ID*/
+#login {
+    background: var(--loginbox-background-color) !important;
+    padding-top: 1rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    margin: 0 !important;
+    text-transform: uppercase;
+    min-width: 300px;
+    border-radius: 0px !important;
+    border: 3px dashed var(--text-color);
+}
+#login .angle::after {
+    display:none;
+}
+#login .wordmark svg {
+    display: none;
+}
+#login .logo {
+    background: var(--logo);
+    background-size: contain;
+    padding: 2rem;
+    border-radius: 0;
+    margin: 0rem 1rem 0rem 1rem;
+}
+logo.angle {
+    -webkit-box-shadow: inset 0px 0px 0px 2px var(--text-color) !important;
+    box-shadow: inset 0px 0px 0px 2px var(--text-color) !important;
+    border-radius: 0px !important;
+}
+#login .error {
+    animation-name: shake;
+    animation-duration: .7s;
+}
+
+/*CUSTOM HEADER*/
+.custom-text-header {
+    white-space: pre;
+    letter-spacing: 2px;
+    font-family: var(--text-font);
+    -webkit-font-smoothing: none;
+    font-weight: 900;
+    line-height: 1.5;
+    color: var(--custom-text-header) !important;
+    text-shadow: 0 0 20px var(--custom-text-header-shadow);
+    position: absolute;
+    left: 50%;
+    top: -15%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    animation-duration: 0.01s;
+    animation-name: var(--custom-text-header-animation);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    font-weight: 900;
+}
+.custom-text-header:after {
+    content: "";
+    position: absolute;
+    top: 135px;
+    right: -15px;
+    background-color: var(--custom-text-header);
+    vertical-align: top;
+    width: 20px;
+    height: 2px;
+    -webkit-animation: blink 1s step-end infinite;
+    animation: blink 1s step-end infinite;
+}
+@-webkit-keyframes blink {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+  
+  @keyframes blink {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+
+  @keyframes textflicker {
+    from {
+      text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
+      border: 10px 0 0 #ea36af, -2px 0 0 #75fa69;
+    }
+    to {
+      text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
+      border: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
+    }
+  }
+
+  ::selection {
+    background: var(--selection-color); /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background: var(--selection-color); /* Gecko Browsers */
+  }
+
+
+/*
+
+                     __                             ___       __  
+   ____  ____  _____/ /__________  ____ ___  ____  / (_)___  / /__
+  / __ \/ __ \/ ___/ __/ ___/ __ \/ __ `__ \/ __ \/ / / __ \/ //_/
+ / / / / /_/ (__  ) /_/ /  / /_/ / / / / / / /_/ / / / / / / ,<   
+/_/ /_/\____/____/\__/_/   \____/_/ /_/ /_/\____/_/_/_/ /_/_/|_|  
+                                                                 
+*/
+/*
+<div class="custom-text-header"> <pre>                     __                             ___       __  
+   ____  ____  _____/ /__________  ____ ___  ____  / (_)___  / /__
+  / __ \/ __ \/ ___/ __/ ___/ __ \/ __ '__ \/ __ \/ / / __ \/ //_/
+ / / / / /_/ (__  ) /_/ /  / /_/ / / / / / / /_/ / / / / / / ,&lt;   
+/_/ /_/\____/____/\__/_/   \____/_/ /_/ /_/\____/_/_/_/ /_/_/|_|  
+                                                                 </pre> </div>
+*/

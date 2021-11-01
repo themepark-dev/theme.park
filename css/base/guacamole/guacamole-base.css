@@ -1,0 +1,642 @@
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+
+/*		   		        Made by @gilbN					 */
+/*			      https://github.com/gilbN/theme.park			 */
+
+
+* {
+    outline: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-hover);
+}
+
+body {
+    background: var(--main-bg-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    color: var(--text) !important;
+}
+
+div.displayMiddle {
+    background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+
+input::-webkit-input-placeholder {
+    color: var(--text) !important;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: var(--text-hover) !important;
+}
+
+/* Firefox < 19 */
+input:-moz-placeholder {
+    color: var(--text) !important;
+}
+
+input:focus:-moz-placeholder {
+    color: var(--text-hover) !important;
+}
+
+/* Firefox > 19 */
+input::-moz-placeholder {
+    color: var(--text) !important;
+}
+
+input:focus::-moz-placeholder {
+    color: var(--text-hover) !important;
+}
+
+/* Internet Explorer 10 */
+input:-ms-input-placeholder {
+    color: var(--text) !important;
+}
+
+input:focus:-ms-input-placeholder {
+    color: var(--text-hover) !important;
+}
+
+/* Scrollbar */
+@media only screen and (min-width: 768px) {
+    html {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    body {
+        overflow-y: auto;
+        height: 100%;
+        background: var(--main-bg-color);
+        background-repeat: repeat, no-repeat;
+        background-attachment: fixed, fixed;
+        background-position: center center, center center;
+        background-size: auto, cover;
+        -webkit-background-size: auto, cover;
+        -moz-background-size: auto, cover;
+        -o-background-size: auto, cover;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+    min-height: 50px;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    background-color: hsla(0, 0%, 100%, .2);
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    min-height: 50px;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    background-color: hsla(0, 0%, 100%, .5);
+    background-clip: padding-box;
+}
+
+/* LOGIN MENU */
+div.login-ui {
+    background: inherit;
+}
+
+.login-ui div.login-dialog {
+    background: rgba(0, 0, 0, .25);
+    border: none;
+}
+
+input[type="submit"],
+button,
+a.button {
+    background-color: var(--button-color);
+    border: none;
+    outline: none;
+}
+
+input[type="submit"]:hover,
+button:hover,
+a.button:hover {
+    background-color: var(--button-color-hover);
+    border: none;
+    cursor: pointer;
+}
+
+.login-ui .login-fields .labeled-field input:focus {
+    background: rgba(0, 0, 0, 0.45) !important;
+    outline: none;
+}
+
+.login-ui .login-fields .labeled-field.empty input {
+    background: rgba(0, 0, 0, 0.25) !important;
+    outline: none;
+}
+
+.login-ui .login-fields .labeled-field.empty input:focus {
+    background: rgba(0, 0, 0, 0.45) !important;
+    outline: none;
+}
+
+.login-ui .login-dialog .login-fields input {
+    background-color: rgba(0, 0, 0, 0.45) !important;
+}
+
+div.location,
+input[type=text],
+input[type=email],
+input[type=number],
+input[type=password],
+textarea {
+    color: white !important;
+    background: rgba(0, 0, 0, 0.25) !important;
+}
+
+input[type=checkbox],
+input[type=number],
+input[type=text],
+input[type=email],
+input[type=radio],
+textarea {
+    color: var(--text-hover) !important;
+    background: transparent;
+}
+
+/* HOME MENU */
+.header h2 {
+    color: var(--text-hover);
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.connection .icon.vnc,
+.connection .icon.rdp {
+    background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/resources/guacamole/guac-monitor.png);
+}
+
+.connection .icon.ssh,
+.connection .icon.telnet {
+    background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/resources/guacamole/guac-text.png);
+}
+
+.user-menu .menu-dropdown .menu-title {
+    background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/resources/guacamole/guac-user.png);
+    background-color: transparent;
+}
+
+.user-menu .menu-dropdown .menu-contents li a[href="#/"] {
+    background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/resources/guacamole/guac-home-dark.png);
+}
+
+.user-menu .menu-dropdown .menu-contents li a[href="#/settings/users"],
+.user-menu .menu-dropdown .menu-contents li a[href="#/settings/connections"],
+.user-menu .menu-dropdown .menu-contents li a[href="#/settings/sessions"],
+.user-menu .menu-dropdown .menu-contents li a[href="#/settings/preferences"] {
+    background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/resources/guacamole/guac-config-dark.png);
+}
+
+.user-menu .menu-dropdown .menu-contents li a.logout {
+    background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/resources/guacamole/guac-logout-dark.png);
+}
+
+.icon.user {
+    background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/resources/guacamole/guac-user.png);
+}
+
+.pager .icon.first-page {
+    background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/resources/guacamole/guac-first-page.png);
+}
+
+.pager .icon.prev-page {
+    background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/resources/guacamole/guac-prev-page.png);
+}
+
+.pager .icon.next-page {
+    background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/resources/guacamole/guac-next-page.png);
+}
+
+.pager .icon.last-page {
+    background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/resources/guacamole/guac-last-page.png);
+}
+
+.loading::before {
+    background-image: url('https://raw.githubusercontent.com/gilbN/theme.park/master/resources/guacamole/cog.png');
+}
+
+table.sorted th.sort-primary.sort-descending:after {
+    background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/resources/guacamole/up.png);
+}
+
+.menu-dropdown .menu-indicator {
+    background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/resources/guacamole/down.png);
+}
+
+.menu-dropdown .menu-indicator:hover {
+    background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/resources/guacamole/down.png);
+    color: #f9be03;
+}
+
+table.sorted th.sort-primary:after {
+    background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/resources/guacamole/down.png);
+}
+
+thead {
+    color: var(--text-hover);
+}
+
+table.sorted th,
+table.sorted td {
+    border: 1px solid rgb(255 255 255 / 15%);
+}
+
+.settings table.session-list tr.session:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.menu-dropdown.open,
+.menu-dropdown.open:hover {
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.menu-dropdown {
+    border-left: none;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.menu-dropdown .menu-contents li a {
+    display: block;
+    cursor: pointer;
+    color: var(--text);
+    text-decoration: none;
+    padding: .75em;
+}
+
+.menu-dropdown .menu-contents li a.current,
+.menu-dropdown .menu-contents li a.current:hover {
+    background-color: rgba(0, 0, 0, .25);
+    color: var(--text-hover)
+}
+
+.menu-dropdown .menu-contents li a:hover {
+    background-color: rgba(0, 0, 0, .25);
+    color: var(--text-hover);
+}
+
+.menu-dropdown:hover {
+    background: rgba(0, 0, 0, 0.25);
+    color: var(--text-hover);
+}
+
+.menu-dropdown .menu-contents {
+    background: var(--drop-down-menu-bg);
+
+}
+
+.header .filter input {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -khtml-border-radius: 0;
+    border-radius: 0;
+    border: 0;
+    border-left: 1px solid rgba(0, 0, 0, 0.125);
+    background-color: transparent;
+    color: var(--text-hover);
+}
+
+.header .filter {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.filter .search-string {
+    background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/resources/guacamole/magnifier.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: 1.75em !important;
+    background-position: .25em center !important;
+    padding: .5em !important;
+    padding-left: 2.25em !important;
+    width: 100%;
+    max-width: none;
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 0;
+}
+
+div.location,
+input[type=text],
+input[type=email],
+input[type=number],
+input[type=password],
+textarea {
+    color: var(--text-hover);
+}
+
+
+.user a:visited,
+.connection a:visited,
+.connection-group a:visited {
+    text-decoration: none;
+    color: var(--link-color-hover);
+}
+
+.recent-connections .connection:hover {
+    background: hsla(0, 0%, 100%, 0.08);
+    color: var(--link-color-hover);
+}
+
+.list-item:not(.selected) .caption:hover {
+    background: hsla(0, 0%, 100%, 0.07);
+    color: var(--link-color-hover);
+}
+
+.list-item .name {
+    color: var(--link-color);
+}
+
+.list-item:not(.selected) .caption:hover .name {
+    color: var(--link-color-hover);
+}
+
+/* SIDE MENU */
+.menu,
+.menu .header {
+    background: var(--modal-bg-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    box-shadow: none;
+}
+
+.menu-content,
+.menu-content .header,
+.menu-body {
+    background: var(--modal-bg-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+
+.clipboard,
+.clipboard-service-target {
+    background: rgba(0, 0, 0, 0.25);
+    color: white;
+}
+
+/* NOTIFICATION BOX */
+.notification.error {
+    background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    color: white;
+}
+
+.notification {
+    background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    color: white;
+}
+
+/* SETTINGS */
+.page-tabs .page-list li a[href]:visited {
+    color: white;
+}
+
+.page-tabs .page-list li a[href] {
+    color: white;
+}
+
+.page-tabs .page-list li a[href]:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.user a:visited,
+.connection a:visited,
+.connection-group a:visited {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+.user a:hover,
+.user-group a:hover,
+.connection a:hover,
+.connection-group a:hover,
+a.ng-binding:hover:not(.add-user):not(.button) {
+    color: var(--link-color-hover) !important;
+}
+
+.user a,
+.connection a,
+.connection-group a,
+a.ng-binding:not(.add-user):not(.button) {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+div.location,
+input[type=text],
+input[type=email],
+input[type=number],
+input[type=password],
+textarea {
+    border: 0;
+    background: rgba(0, 0, 0, .25);
+}
+
+.location-chooser .dropdown {
+    background: #666;
+}
+
+/* USER SETTINGS */
+.page-tabs .page-list li a[href],
+.section-tabs li a {
+    color: var(--text) !important;
+}
+
+.page-tabs .page-list li a[href].current,
+.page-tabs .page-list li a[href].current:hover,
+.section-tabs li a.current,
+.section-tabs li a.current:hover {
+    background: rgba(0, 0, 0, 0.25);
+    cursor: default;
+    color: rgb(var(--accent-color)) !important;
+}
+
+.page-tabs .page-list li a[href]:hover,
+.section-tabs li a:hover {
+    background-color: hsla(0, 0%, 100%, 0.07);
+    color: var(--text-hover) !important;
+}
+
+.manage-user .page-tabs .page-list li.linked a[href]:before {
+    background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/resources/guacamole/checkmark.png);
+}
+
+.manage-user .page-tabs .page-list li.read-only a[href]:before {
+    background-image: url(https://raw.githubusercontent.com/gilbN/theme.park/master/resources/guacamole/lock.png);
+}
+
+.manage-user .notice.read-only {
+    background: hsla(0, 0%, 100%, 0.07);
+}
+
+/* DUA 2FA PAGE */
+.duo-signature-response-field {
+    background: var(--modal-bg-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+
+.base-wrapper {
+    border: 1px solid transparent !important;
+    background: var(--modal-bg-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+
+.base-body {
+    background-color: #333 !important;
+}
+
+h1.spacious-frame-view {
+    color: var(--text-hover) !important;
+}
+
+@media screen and (-webkit-max-device-pixel-ratio: 1.25),
+screen and (max-resolution: 120dpi) {
+
+    h1,
+    .h1 {
+        color: var(--text-hover) !important;
+    }
+}
+
+.white-wrapper {
+    background-color: #333 !important;
+    color: var(--text) !important;
+}
+
+form:not(.inline) fieldset {
+    background-color: #333 !important;
+}
+
+label span {
+    color: white !important;
+}
+
+input[type=radio] {
+    border: 1px solid var(--text-hover) !important;
+}
+
+/* Connection */
+
+#connection-warning {
+    background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    color: var(--text);
+}
+
+/* File Transfer */
+#file-transfer-dialog .transfer-manager {
+    background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+
+.transfer.error {
+    background: rgba(244, 67, 54, 0.5);
+}
+
+.transfer-manager .header h2 {
+    background-color: transparent;
+}
+
+.transfer .in-progress .progress {
+    background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+
+.related-objects .abbreviated-related-objects ul li {
+    display: inline-block;
+    margin: .25em;
+    padding: .25em;
+    border: 1px solid rgb(var(--accent-color));
+    background: rgb(var(--accent-color));
+}
+
+.related-objects .abbreviated-related-objects ul li label span {
+    color: var(--label-text-color) !important;
+}
