@@ -170,14 +170,14 @@
   "applications": {
     "adguard": {
       "addons": {},
-      "base_css": "https://theme-park.dev/css/base/adguard/adguard-base.css?sha=f9c143a907f7a2fa3c2bfd5fd848033a8fade059"
+      "base_css": "https://theme-park.dev/css/base/adguard/adguard-base.css?sha=d065ef2314dea7b0406f468ef38dd86459ab214f"
     },
     "bazarr": {
       "addons": {
         "bazarr-4k-logo": "https://theme-park.dev/css/addons/bazarr/bazarr-4k-logo/bazarr-4k-logo.css?sha=81c8e54d0ba80c741f0f3168892c5fd8111e9bbb",
         "bazarr-darker": "https://theme-park.dev/css/addons/bazarr/bazarr-darker/bazarr-darker.css?sha=29ece53bbee1995e502f54eda3bfb166448918bd"
       },
-      "base_css": "https://theme-park.dev/css/base/bazarr/bazarr-base.css?sha=136ee34fe8b07a18a05883ca4f66b2b0a5152300"
+      "base_css": "https://theme-park.dev/css/base/bazarr/bazarr-base.css?sha=72c89f578188e62887ec860a41c5ac3eda867dde"
     },
     "bitwarden": {
       "addons": {},
@@ -201,7 +201,7 @@
     },
     "duplicati": {
       "addons": {},
-      "base_css": "https://theme-park.dev/css/base/duplicati/duplicati-base.css?sha=02066e66d69b6cd745021191f2ccaedb9a827550"
+      "base_css": "https://theme-park.dev/css/base/duplicati/duplicati-base.css?sha=711754f5d75e10b83cbef694a93d586ad734b410"
     },
     "emby": {
       "addons": {},
@@ -259,7 +259,7 @@
     },
     "mylar3": {
       "addons": {},
-      "base_css": "https://theme-park.dev/css/base/mylar3/mylar3-base.css?sha=3a4ccf284c4d4c7ec746736f6d4cbd4f7b261cce"
+      "base_css": "https://theme-park.dev/css/base/mylar3/mylar3-base.css?sha=1e9f236912cde0527cc41790fe378502521d4677"
     },
     "netdata": {
       "addons": {},
@@ -271,7 +271,7 @@
     },
     "nzbhydra2": {
       "addons": {},
-      "base_css": "https://theme-park.dev/css/base/nzbhydra2/nzbhydra2-base.css?sha=a3129d59147064229dda312179908e6431b32620"
+      "base_css": "https://theme-park.dev/css/base/nzbhydra2/nzbhydra2-base.css?sha=5d6c47f4e7d2e232cda6852b8803ba341a150bbd"
     },
     "ombi": {
       "addons": {},
@@ -298,7 +298,7 @@
     },
     "pihole": {
       "addons": {},
-      "base_css": "https://theme-park.dev/css/base/pihole/pihole-base.css?sha=1d5290da2a5cf98fe5b63da558336036883775f7"
+      "base_css": "https://theme-park.dev/css/base/pihole/pihole-base.css?sha=08067476b94c33a0d97b8a5d3c51278414aead7d"
     },
     "plex": {
       "addons": {
@@ -309,7 +309,7 @@
     },
     "portainer": {
       "addons": {},
-      "base_css": "https://theme-park.dev/css/base/portainer/portainer-base.css?sha=4e76f910e1872f1532e7c737c52c312bf42e6a9e"
+      "base_css": "https://theme-park.dev/css/base/portainer/portainer-base.css?sha=bf8bda6f6ee9e097409f94a0175a195d182b8452"
     },
     "prowlarr": {
       "addons": {
@@ -337,11 +337,11 @@
     },
     "requestrr": {
       "addons": {},
-      "base_css": "https://theme-park.dev/css/base/requestrr/requestrr-base.css?sha=06aac76f7132b12eeb8ae6ec0ed38aece480791d"
+      "base_css": "https://theme-park.dev/css/base/requestrr/requestrr-base.css?sha=31b67b7c94d6415eb241546e2080f5fdeeed0700"
     },
     "resilio-sync": {
       "addons": {},
-      "base_css": "https://theme-park.dev/css/base/resilio-sync/resilio-sync-base.css?sha=d86f22aef07e66485e297735e5943cfbb21382b1"
+      "base_css": "https://theme-park.dev/css/base/resilio-sync/resilio-sync-base.css?sha=27aee8f8b740eca121982a1e73d64c75a4c98cd9"
     },
     "rutorrent": {
       "addons": {},
@@ -349,7 +349,7 @@
     },
     "sabnzbd": {
       "addons": {},
-      "base_css": "https://theme-park.dev/css/base/sabnzbd/sabnzbd-base.css?sha=22567214a4a724e823cf4b53a47d5e0ca5e0f588"
+      "base_css": "https://theme-park.dev/css/base/sabnzbd/sabnzbd-base.css?sha=4bd450b7123e923a2377e0e79ee2ad7e97c22ada"
     },
     "sonarr": {
       "addons": {
@@ -360,7 +360,7 @@
     },
     "synclounge": {
       "addons": {},
-      "base_css": "https://theme-park.dev/css/base/synclounge/synclounge-base.css?sha=14434e2cb3dfeb726226a5a8c2d2adf81e7bbd43"
+      "base_css": "https://theme-park.dev/css/base/synclounge/synclounge-base.css?sha=fe907865a3ca1599209eebc282ad10796219fe7c"
     },
     "tautulli": {
       "addons": {},
@@ -415,7 +415,7 @@
     },
     "uptime-kuma": {
       "addons": {},
-      "base_css": "https://theme-park.dev/css/base/uptime-kuma/uptime-kuma-base.css?sha=bcf38b9b623836dce7277446a02cbb40cd670a55"
+      "base_css": "https://theme-park.dev/css/base/uptime-kuma/uptime-kuma-base.css?sha=5acf06902ad4d20d6e350c0d01368c766fb1d2f8"
     },
     "vuetorrent": {
       "addons": {},
@@ -486,6 +486,32 @@
     },
     "Time": {
       "url": "https://theme-park.dev/css/community-theme-options/time.css?sha=80ade11270c72eca1a32c2c47f8bbf2c75308681"
+    }
+  },
+  "deprecated": {
+    "grafana": {
+      "addons": {},
+      "base_css": "https://theme-park.dev/css/base/grafana/grafana-base.css?sha=337e80575b9634e3058de8eaf6367816b7827fa5"
+    },
+    "logarr": {
+      "addons": {},
+      "base_css": "https://theme-park.dev/css/base/logarr/logarr-base.css?sha=7d6be72b24a57670570bfebaf16a60edb558fc4a"
+    },
+    "monitorr": {
+      "addons": {},
+      "base_css": "https://theme-park.dev/css/base/monitorr/monitorr-base.css?sha=04fe97f2fb536ded9c23dbc52813f74f9ed4e5b2"
+    },
+    "plpp": {
+      "addons": {},
+      "base_css": "https://theme-park.dev/css/base/plpp/plpp-base.css?sha=eb81cc7a36197d253ac833b9c544a87ff7e50baf"
+    },
+    "thelounge": {
+      "addons": {},
+      "base_css": "https://theme-park.dev/css/base/thelounge/thelounge-base.css?sha=efb54f17c4d381e7566f5b44017b8e4eb17754a8"
+    },
+    "webtools": {
+      "addons": {},
+      "base_css": "https://theme-park.dev/css/base/webtools/webtools-base.css?sha=2f9297f922e16d469f4077e0e4f687046bec8168"
     }
   },
   "themes": {

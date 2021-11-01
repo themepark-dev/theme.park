@@ -34,7 +34,7 @@ if [[ -z ${TP_THEME} ]]; then
 fi
 
 # Adding stylesheets
-if ! grep -q "${TP_DOMAIN}" /app/rutorrent/index.html; then
+if ! grep -q "${TP_DOMAIN}/css/base" /app/rutorrent/index.html; then
     echo '---------------------------'
     echo '|  Adding the stylesheet  |'
     echo '---------------------------'

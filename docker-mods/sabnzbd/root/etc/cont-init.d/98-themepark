@@ -40,7 +40,7 @@ if [[ -z ${TP_THEME} ]]; then
 fi
 
 # Adding stylesheets
-if ! grep -q "${TP_DOMAIN}" "${APP_FILEPATH}/interfaces/Glitter/templates/main.tmpl"; then
+if ! grep -q "${TP_DOMAIN}/css/base" "${APP_FILEPATH}/interfaces/Glitter/templates/main.tmpl"; then
     echo '---------------------------'
     echo '|  Adding the stylesheet  |'
     echo '---------------------------'
