@@ -24,14 +24,9 @@ jobs:
           fi
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v2
-      - name: create themes.json
+      - name: Run themes.py
         run: |
           python themes.py
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add .
-          git commit -m "themes.json" || echo "Ignore commit failure, proceed"
-          git push || echo "Ignore push failure, proceed"
       - name: Minify CSS
         if: ${{ github.ref == 'refs/heads/master' }}
         run: |
@@ -62,4 +57,11 @@ jobs:
         with:
           publish_dir: ./
           publish_branch: live
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deploy Develop
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/develop' }}
+        with:
+          publish_dir: ./
+          publish_branch: live_develop
           github_token: ${{ secrets.GITHUB_TOKEN }}
