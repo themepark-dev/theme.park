@@ -89,11 +89,11 @@ sed_file(){
 echo '---------------------------------------'
 echo '| Adding the stylesheet to html files |'
 echo '---------------------------------------'
-if ! grep -q "${TP_DOMAIN}" /themepark/public/index.html; then
+if ! grep -q "${TP_DOMAIN}/css/base" /themepark/public/index.html; then
     sed_file /themepark/public/index.html
 fi
 
-if ! grep -q "${TP_DOMAIN}" /themepark/private/index.html; then
+if ! grep -q "${TP_DOMAIN}/css/base" /themepark/private/index.html; then
     find ./themepark/private -type f -iname *.html | while read fname
 	do
 		sed_file $fname

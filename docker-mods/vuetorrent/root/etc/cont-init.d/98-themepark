@@ -129,7 +129,7 @@ if [[ -z ${TP_HOTIO} ]]; then
 fi
 
 # Adding stylesheets
-if ! grep -q "${TP_DOMAIN}" "${INDEX_FILEPATH}"; then
+if ! grep -q "${TP_DOMAIN}/css/base" "${INDEX_FILEPATH}"; then
     echo '---------------------------------------------------------'
     echo '| Adding the stylesheet to /vuetorrent/public/index.html |'
     echo '---------------------------------------------------------'

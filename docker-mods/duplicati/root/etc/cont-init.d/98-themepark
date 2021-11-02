@@ -47,7 +47,7 @@ echo '---------------------------------------'
 echo '| Adding the stylesheet to html files |'
 echo '---------------------------------------'
 
-if ! grep -q "${TP_DOMAIN}" "${APP_FILEPATH}/index.html"; then
+if ! grep -q "${TP_DOMAIN}/css/base" "${APP_FILEPATH}/index.html"; then
     find ${APP_FILEPATH} -type f -iname *.html | while read fname
 	do
 		sed_file $fname
