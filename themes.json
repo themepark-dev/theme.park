@@ -317,7 +317,7 @@
       "addons": {
         "prowlarr-darker": "https://theme-park.dev/css/addons/prowlarr/prowlarr-darker/prowlarr-darker.css?sha=5b36960c9c385ae5f40b22919af1ad93d581afdc"
       },
-      "base_css": "https://theme-park.dev/css/base/prowlarr/prowlarr-base.css?sha=bcd4651e697f670e336654dfbe1289a5de29f942"
+      "base_css": "https://theme-park.dev/css/base/prowlarr/prowlarr-base.css?sha=5371c40345fcfb65e2ba676158d658b67893d040"
     },
     "qbittorrent": {
       "addons": {},
