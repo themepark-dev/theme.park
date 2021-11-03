@@ -19,9 +19,10 @@ html,
 body,
 .wizard-background,
 .content-container,
-.mat-sidenav-container {
+html, body, .wizard-background, .content-container, #main-container\ dark > mat-sidenav-container,
+ #main-container\ dark > mat-sidenav-container > mat-sidenav-content {
     color: var(--text) !important;
-    background: var(--main-bg-color) !important;
+    background: var(--main-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -97,6 +98,9 @@ a:hover {
 
 .mat-select-panel .mat-option.mat-selected:not(.mat-option-multiple) {
     background: hsl(0deg 0% 0% / 25%);
+}
+#main-container\ dark > mat-sidenav-container > mat-sidenav-content > mat-toolbar > button {
+    color: rgb(var(--accent-color));
 }
 
 /* SIDE NAV */
