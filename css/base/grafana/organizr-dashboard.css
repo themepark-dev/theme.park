@@ -247,7 +247,7 @@ div.flot-text {
     border-bottom: 0px;
 }
 
-@import url(https://theme-park.dev/CSS/themes/grafana/grafana-base.css);
+@import url(https://theme-park.dev/css/base/grafana/grafana-base.css);
 
 :root {
   --main-bg-color: url("https://raw.githubusercontent.com/gilbN/theme.park/master/resources/blur-noise.png"), url("https://raw.githubusercontent.com/gilbN/theme.park/master/resources/preset-light2.png") center center/cover no-repeat fixed;

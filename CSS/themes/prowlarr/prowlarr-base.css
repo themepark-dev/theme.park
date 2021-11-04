@@ -983,11 +983,16 @@ input:focus:-ms-input-placeholder {
     background: rgba(0, 0, 0, .25);
 }
 
-/* PROFILES */
-[class*="Indexers-center-"] {
+/* Indexers */
+[class*="Indexers-center-"],
+[class*="IndexerProxies-center-"] {
     background-color: transparent;
     border: none;
     color: var(--text);
+}
+
+[class*="Card-card-"]:hover [class*="IndexerProxies-center-"] {
+    color: var(--text-hover);
 }
 
 /* DOWNLOAD CLIENTS */
