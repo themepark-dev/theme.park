@@ -124,7 +124,8 @@ def temporary_copy_files():
         "./resources/": "./Resources/",
         "./css/addons/": "./CSS/addons",
         "./css/defaults/": "./CSS/defaults",
-        "./css/theme-options/organizr.css": "./CSS/variables/organizr-dark.css"
+        "./css/theme-options/organizr.css": "./CSS/variables/organizr-dark.css",
+        "./css/theme-options/organizr.css": "./css/theme-options/organizr-dark.css"
         }
     for src in src_dst:
         if ".css" in src:

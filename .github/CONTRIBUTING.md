@@ -4,7 +4,7 @@
 
 ## New theme option
 
-- The current variables in use can be found in any of the CSS files in `/CSS/variables/`
+- The current variables in use can be found in any of the CSS files in `/css/variables/`
 
 - New community contributed theme options will be placed in the `Community Themes` category on our docs page.
 
