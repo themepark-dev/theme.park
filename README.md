@@ -279,7 +279,13 @@
 <p><a href="https://docs.theme-park.dev/themes/plpp">PLPP (Deprecated)</a></p>
 </td>
 <td>
+<!-- <p><a href=""><img src="" alt="" width="48" height="48" /></a></p>
+<p><a href=""></a></p> -->
+</td>
 <td>
+<!-- <p><a href=""><img src="" alt="" width="48" height="48" /></a></p>
+<p><a href=""></a></p> -->
+</td>
 </tr>
 </tbody>
 </table>
