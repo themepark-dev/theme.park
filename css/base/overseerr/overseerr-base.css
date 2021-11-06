@@ -1,5 +1,5 @@
 /* TEXT */
-[class*="text-gray-"]:not(button:disabled) {
+[class*="text-gray-"]:not(button:disabled):not(button) {
     color: var(--text);
 }
 
@@ -68,9 +68,11 @@ button[class*="border-gray-"],
 button.input-action {
     background-color: var(--button-color);
     border-color: var(--button-color);
+    color: var(--button-text);
 }
 
-button[class*="text-white"] {
+button[type="submit"],
+button[class="input-action"] {
     color: var(--button-text)
 }
 
@@ -78,12 +80,14 @@ button[class*="bg-indigo-"]:hover,
 button[class*="bg-gray-"]:hover,
 button[class*="border-indigo-"]:hover,
 button[class*="border-gray-"]:hover,
-button.input-action:hover {
+button.input-action:hover,
+button[class="input-action"]:hover {
     background-color: var(--button-color-hover);
     border-color: var(--button-color-hover);
+    color: var(--button-text-hover);
 }
 
-button[class*="text-white"]:hover,
+button[type="submit"]:hover,
 button.input-action:hover {
     color: var(--button-text-hover)
 }
