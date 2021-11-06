@@ -697,7 +697,7 @@ label[for="checkbox-login"]:hover {
 #leave-recover,
 #form-lockscreen>div.form-group.text-center>div>button {
     background: rgb(255 255 255 / 15%) !important;
-    color: white;
+    color: #eee !important;
     border-radius: 25px;
     border: none;
 }

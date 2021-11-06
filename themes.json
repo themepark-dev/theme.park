@@ -288,7 +288,7 @@
           ]
         }
       },
-      "base_css": "https://theme-park.dev/css/base/organizr/organizr-base.css?sha=21c3ea5ce3073bb252cc955aa790033e3855ebdf"
+      "base_css": "https://theme-park.dev/css/base/organizr/organizr-base.css?sha=d1c9dc9c29eaf04af833dab5a2c2fff8b8089707"
     },
     "overseerr": {
       "addons": {},
