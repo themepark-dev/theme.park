@@ -1760,20 +1760,7 @@ body {
 
 /*Sidebar*/
 
-@media (max-width: 767px) {
 
-    .show-sidebar .sidebar,
-    .sidebar .sidebar-head {
-        background: var(--modal-bg-color) !important;
-        background-repeat: repeat, no-repeat;
-        background-attachment: fixed, fixed;
-        background-position: center center, center center;
-        background-size: auto, cover;
-        -webkit-background-size: auto, cover;
-        -moz-background-size: auto, cover;
-        -o-background-size: auto, cover;
-    }
-}
 
 #wrapper > div.navbar-default.sidebar.nav-bar-rtl.os-host.os-theme-dark.os-theme-dark>.os-scrollbar>.os-scrollbar-track>.os-scrollbar-handle {
 background: rgb(0 0 0 / 0%) !important;
@@ -1805,14 +1792,30 @@ background: rgb(0 0 0 / 0%) !important;
 
 .sidebar:hover,
 .sidebar:hover .sidebar-head {
-    background: var(--modal-bg-color) !important;
-    background-repeat: repeat, no-repeat !important;
-    background-attachment: fixed, fixed !important;
-    background-position: center center, center center !important;
-    background-size: auto, cover !important;
-    -webkit-background-size: auto, cover !important;
-    -moz-background-size: auto, cover !important;
-    -o-background-size: auto, cover !important;
+    background: var(--modal-bg-color) ;
+    background-repeat: repeat, no-repeat ;
+    background-attachment: fixed, fixed ;
+    background-position: center center, center center ;
+    background-size: auto, cover ;
+    -webkit-background-size: auto, cover ;
+    -moz-background-size: auto, cover ;
+    -o-background-size: auto, cover ;
+    transition: max-width .2s cubic-bezier(.4, 0, .2, 1), background-color .3s ease-out;
+}
+
+@media (max-width: 767px) {
+
+    .show-sidebar .sidebar,
+    .sidebar .sidebar-head {
+        background: var(--modal-bg-color);
+        background-repeat: repeat, no-repeat;
+        background-attachment: fixed, fixed;
+        background-position: center center, center center;
+        background-size: auto, cover;
+        -webkit-background-size: auto, cover;
+        -moz-background-size: auto, cover;
+        -o-background-size: auto, cover;
+    }
 }
 
 .sidebar .label-custom {
