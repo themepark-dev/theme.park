@@ -1775,8 +1775,12 @@ body {
     }
 }
 
-.sidebar {
-    background: rgba(0, 0, 0, 0.26) !important;
+#wrapper > div.navbar-default.sidebar.nav-bar-rtl.os-host.os-theme-dark.os-theme-dark>.os-scrollbar>.os-scrollbar-track>.os-scrollbar-handle {
+background: rgb(0 0 0 / 0%) !important;
+}
+ .navbar-default,
+.sidebar .sidebar-head {
+    background: var(--main-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -1784,17 +1788,23 @@ body {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
-    box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
-    transition: max-width .2s cubic-bezier(.4, 0, .2, 1), background-color .2s ease-out;
+} 
+
+.sidebar  {
+    background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    box-shadow: 1px 0px 20px rgb(0 0 0 / 20%);
 
 }
 
-.navbar-default,
-.sidebar .sidebar-head {
-    background: transparent;
-}
-
-.sidebar:hover {
+.sidebar:hover,
+.sidebar:hover .sidebar-head {
     background: var(--modal-bg-color) !important;
     background-repeat: repeat, no-repeat !important;
     background-attachment: fixed, fixed !important;
@@ -1803,7 +1813,6 @@ body {
     -webkit-background-size: auto, cover !important;
     -moz-background-size: auto, cover !important;
     -o-background-size: auto, cover !important;
-    transition: max-width .2s cubic-bezier(.4, 0, .2, 1), background-color .2s ease-out;
 }
 
 .sidebar .label-custom {
