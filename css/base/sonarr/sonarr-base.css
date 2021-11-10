@@ -43,13 +43,12 @@ body {
 }
 
 /* LINKS */
-[class*="Link-to-"] {
-    color: var(--text);
-}
-
-[class*="Link-to-"]:hover {
-    color: var(--text-hover);
-    text-decoration: none;
+[class*="Link-to-"]:not([class*="PageSidebarItem-link-"]) {
+    color: var(--link-color);   
+   }
+   
+[class*="Link-to-"]:not([class*="PageSidebarItem-link-"]):hover {
+color: var(--link-color-hover);   
 }
 
 a {
