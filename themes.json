@@ -252,7 +252,7 @@
       "addons": {
         "lidarr-darker": "https://theme-park.dev/css/addons/lidarr/lidarr-darker/lidarr-darker.css?sha=fc479d221c05b5232d720f1c32d9cb1717f7b60b"
       },
-      "base_css": "https://theme-park.dev/css/base/lidarr/lidarr-base.css?sha=5057abee4e63a35229abe115492cd00f8a72734f"
+      "base_css": "https://theme-park.dev/css/base/lidarr/lidarr-base.css?sha=986aa3d0b0415bf7035d88174317d7b75cb53253"
     },
     "moviematch": {
       "addons": {},
@@ -288,7 +288,7 @@
           ]
         }
       },
-      "base_css": "https://theme-park.dev/css/base/organizr/organizr-base.css?sha=dfdf76e365735eaba9d389e4ca408cff096d9c85"
+      "base_css": "https://theme-park.dev/css/base/organizr/organizr-base.css?sha=638594fcc7834bb1da482c330246ff1921c7e7f4"
     },
     "overseerr": {
       "addons": {},
@@ -317,7 +317,7 @@
       "addons": {
         "prowlarr-darker": "https://theme-park.dev/css/addons/prowlarr/prowlarr-darker/prowlarr-darker.css?sha=5b36960c9c385ae5f40b22919af1ad93d581afdc"
       },
-      "base_css": "https://theme-park.dev/css/base/prowlarr/prowlarr-base.css?sha=5371c40345fcfb65e2ba676158d658b67893d040"
+      "base_css": "https://theme-park.dev/css/base/prowlarr/prowlarr-base.css?sha=56cd1d1964c67a79c8c27eac813b6c33e9c02e72"
     },
     "qbittorrent": {
       "addons": {},
@@ -328,14 +328,14 @@
         "radarr-4k-logo": "https://theme-park.dev/css/addons/radarr/radarr-4k-logo/radarr-4k-logo.css?sha=70630fcc12fcc11a0dff9673a04c92b014393218",
         "radarr-darker": "https://theme-park.dev/css/addons/radarr/radarr-darker/radarr-darker.css?sha=317432984f97518011463ef62af84b04420e524d"
       },
-      "base_css": "https://theme-park.dev/css/base/radarr/radarr-base.css?sha=4d021b3b253285a4e06b747a4a080076e443aeb9"
+      "base_css": "https://theme-park.dev/css/base/radarr/radarr-base.css?sha=b2b5c0a90cc19d017f0f167be026f7968fdbfcbb"
     },
     "readarr": {
       "addons": {
         "readarr-alt-logo": "https://theme-park.dev/css/addons/readarr/readarr-alt-logo/readarr-alt-logo.css?sha=6066417b624c76aebdbceddcf4f11fa0d5f6f979",
         "readarr-darker": "https://theme-park.dev/css/addons/readarr/readarr-darker/readarr-darker.css?sha=415a258cc9d1e40bf094f6f20350225c06120825"
       },
-      "base_css": "https://theme-park.dev/css/base/readarr/readarr-base.css?sha=61037daced716f641a98138c9a27868598fc74d3"
+      "base_css": "https://theme-park.dev/css/base/readarr/readarr-base.css?sha=cecf782b63ebcc27c8ac2e716a5a55d04c45b004"
     },
     "requestrr": {
       "addons": {},
@@ -358,7 +358,7 @@
         "sonarr-4k-logo": "https://theme-park.dev/css/addons/sonarr/sonarr-4k-logo/sonarr-4k-logo.css?sha=cf9d4a984a618a2344e278cb7d8dd6ac8f8b74d1",
         "sonarr-darker": "https://theme-park.dev/css/addons/sonarr/sonarr-darker/sonarr-darker.css?sha=b1eb1ff0827684361ad596fb49baa6362cc23036"
       },
-      "base_css": "https://theme-park.dev/css/base/sonarr/sonarr-base.css?sha=a7f867e599c40cdb8aa57e64867a198b2b52f89c"
+      "base_css": "https://theme-park.dev/css/base/sonarr/sonarr-base.css?sha=64f5d997f4aa631b4da1063020aee1b1b278658a"
     },
     "synclounge": {
       "addons": {},
