@@ -393,6 +393,10 @@ button:hover [class*="DisclosureArrow-disclosureArrow-"] {
   stroke-dashoffset: 0;
 }
 
+circle {
+  stroke: rgb(var(--accent-color)) !important;
+}
+
 .loading {
   border-color: rgb(var(--accent-color)) transparent transparent rgb(var(--accent-color));
 }
