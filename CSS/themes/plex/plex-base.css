@@ -99,7 +99,7 @@ a[class*="MetadataPosterCardTitle-title-"],
 }
 
 a:hover,
-[class*="Link-link-"]:hover:not([type="button"]):not([role="menuitem"]),
+[class*="Link-link-"]:hover:not([type="button"]):not([role="menuitem"]):not([type="submit"]),
 .artwork-file-container:hover a,
 [class*="MetadataPosterCardTitle-title-"] a:hover,
 a[class*="MetadataPosterCardTitle-title-"]:hover {
@@ -391,6 +391,10 @@ button:hover [class*="DisclosureArrow-disclosureArrow-"] {
   stroke-width: 2;
   stroke: rgb(var(--accent-color));
   stroke-dashoffset: 0;
+}
+
+circle {
+  stroke: rgb(var(--accent-color)) !important;
 }
 
 .loading {
