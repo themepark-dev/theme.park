@@ -307,7 +307,7 @@
         "overseerr-side-menu": "https://theme-park.dev/css/addons/plex/overseerr-side-menu/overseerr-side-menu.css?sha=b14fcec4d4226f766e3f3931b073b4b45ea416ff",
         "plex-alt-logo": "https://theme-park.dev/css/addons/plex/plex-alt-logo/plex-alt-logo.css?sha=38fdfb69ce59b36f3aab4acd7236277784c1836c"
       },
-      "base_css": "https://theme-park.dev/css/base/plex/plex-base.css?sha=788888c7f5645c1772bf9d384bcbeec3fedb6174"
+      "base_css": "https://theme-park.dev/css/base/plex/plex-base.css?sha=93605e254a2d97c191db37a875345032608f39f2"
     },
     "portainer": {
       "addons": {},
