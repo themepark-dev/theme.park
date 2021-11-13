@@ -155,7 +155,7 @@ html body,
 }
 
 [class*="SourceSidebar-expandedSidebar-"][class*="SourceSidebar-sidebar-"] {
-  background: var(--modal-bg-color) !important;
+  background: var(--modal-bg-color);
   background-repeat: repeat, no-repeat;
   background-attachment: fixed, fixed;
   background-position: center center, center center;
@@ -163,6 +163,15 @@ html body,
   -webkit-background-size: auto, cover;
   -moz-background-size: auto, cover;
   -o-background-size: auto, cover;
+}
+
+@supports (backdrop-filter: blur(1em)) or (-webkit-backdrop-filter:blur(1em)) {
+  [class*="SourceSidebar-expandedSidebar-"][class*="SourceSidebar-sidebar-"] {
+      background: var(--header-blur-background);
+      -webkit-backdrop-filter: saturate(1.8) blur(1.5em);
+      backdrop-filter: saturate(1.8) blur(1.5em);
+      background-color: rgba(0, 0, 0, .5);
+  }
 }
 
 [class*="DisclosureArrow-isSelected-"] {
