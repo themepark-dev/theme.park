@@ -154,7 +154,9 @@ if __name__ == "__main__":
     themes = [name for name in listdir('./css/theme-options') if isfile(join('./css/theme-options', name))]
     community_themes = [name for name in listdir('./css/community-theme-options') if isfile(join('./css/community-theme-options', name))]
     with open("CNAME", "rt", closefd=True) as cname:
-        DOMAIN = cname.readline()
+        CNAME = cname.readline()
+    develop = True if subprocess.check_output(["git", "symbolic-ref", "--short", "HEAD"]).decode('ascii').strip() == "develop" else False
+    DOMAIN = CNAME if not develop else f"develop.{CNAME}"
     apps = loads(create_json(app_folders=app_folders, themes=themes, community_themes=community_themes))
     with open("themes.json", "w") as outfile:
         dump(apps, outfile, indent=2, sort_keys=True)
