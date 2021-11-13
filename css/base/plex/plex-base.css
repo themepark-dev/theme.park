@@ -118,11 +118,9 @@ a[class*="MetadataTableRow-title-"]:hover {
 }
 
 /* BODY */
-[class*="FullPageBackground-backgroundContainer-"] [class*="CrossFadeImage-crossFade-"],
-#plex>[class*="background-container-"]>div>div>div:nth-child(2),
-#plex>div[class*="FullPageBackground-backgroundContainer-"]>div>div:nth-child(2),
-#plex>div[class*="FullPageBackground-backgroundContainer-"]>div>div:nth-child(4) {
-  background: var(--main-bg-color) !important;
+html body,
+.application {
+  background: var(--main-bg-color);
   background-repeat: repeat, no-repeat;
   background-attachment: fixed, fixed;
   background-position: center center, center center;
@@ -130,6 +128,10 @@ a[class*="MetadataTableRow-title-"]:hover {
   -webkit-background-size: auto, cover;
   -moz-background-size: auto, cover;
   -o-background-size: auto, cover;
+}
+
+.plex-preloader-container {
+  background-color: transparent;
 }
 
 [class*="BottomBar-bottomBar-"] {
@@ -269,11 +271,11 @@ button:hover [class*="DisclosureArrow-disclosureArrow-"] {
 }
 
 [class*="PivotTab-selectedButton-"]:after {
-  background-color: rgb(var(--accent-color));
+  background-color: rgb(var(--accent-color)) !important;
 }
 
 [class*="PivotTab-selectedButton-"]:hover:after {
-  background-color: var(--link-color-hover);
+  background-color: var(--link-color-hover) !important;
 }
 
 [class*="MetadataPosterCardOverlay-unplayedBadge-"],
@@ -637,8 +639,9 @@ fieldset[disabled] .btn-primary:hover {
 /* SETTINGS */
 [class*="SettingsFormSection-sectionWrapper-"],
 [class*="ServerDashboardPageSection-section-"],
+[class*="SettingsFormSection-sectionWrapper-"],
 hr {
-  border-top: 2px solid rgb(255 255 255 / 30%);
+  border-top: 2px solid rgba(255, 255, 255, 0.3) !important;
 }
 
 [class*="SettingsFormSection-sectionWrapper-"]:last-of-type,
@@ -670,7 +673,7 @@ hr {
   background-color: rgb(0 0 0 / 25%);
 }
 
-a>[class*="DirectoryListTableHeader-tableHeaderCell-"]:hover, 
+a>[class*="DirectoryListTableHeader-tableHeaderCell-"]:hover,
 button>[class*="DirectoryListTableHeader-tableHeaderCell-"]:hover,
 [class*="DirectoryListTableHeader-columnMenuButton-"]:hover {
   background-color: rgba(255, 255, 255, 0.1);
