@@ -457,13 +457,14 @@ li.caMenuItem:hover {
 .supportPopup,
 .popupProfile,
 .repoPopup,
-.ca_favouriteRepo {
+.ca_favouriteRepo,
+.donate {
     color: var(--button-text) !important;
     background: var(--button-color) !important;
     border-color: var(--button-color) !important;
 }
 
-#templates_content > div > div > div.ca_bottomLine > div.infoButton.ca_appPopup {
+.infoButton {
     color: var(--button-text) !important;
     background: var(--button-color) !important;
     border-color: var(--button-color) !important;
@@ -549,6 +550,24 @@ li.caMenuItem:hover {
 
 .ca_red {
     color: #e22828 !important;
+}
+
+.card_readmore {
+    color: var(--link-color) !important;
+}
+
+.card_readmore:hover {
+    color: var(--link-color-hover) !important;
+}
+
+.actionsButton {
+    color: var(--button-text) !important;
+    background: var(--button-color) !important;
+}
+
+.actionsButton:hover {
+    color: var(--button-text-hover) !important;
+    background: var(--button-color-hover) !important;
 }
 
 /* CA search input */
