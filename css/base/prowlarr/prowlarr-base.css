@@ -267,6 +267,15 @@ a:hover {
     border-left: 3px solid rgb(var(--accent-color));
 }
 
+#sidebar-toggle-button {
+    color: var(--text);
+}
+#sidebar-toggle-button:hover,
+#sidebar-toggle-button:focus,
+#sidebar-toggle-button:active {
+    color: var(--text-hover);
+}
+
 /* MOVIES PAGE */
 /* RADARR SPECIFIC */
 [class*="MovieIndexPoster-controls-"] {
