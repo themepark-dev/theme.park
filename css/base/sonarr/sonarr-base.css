@@ -392,7 +392,7 @@ a:hover {
     background-color: rgba(0, 0, 0, .25) !important;
 }
 
-[class*="Popover-title-"],
+[cl*="Popover-title-"]ass,
 [class*="SeasonInfo-title-"],
 [class*="Popover-body-"],
 [class*="Tooltip-bod-"] {
