@@ -33,12 +33,20 @@ body {
 }
 
 /* LINKS */
-[class*="Link-to-"]:not([class*="PageSidebarItem-link-"]) {
+[class*="Link-to-"]:not([class*="PageSidebarItem-link-"]):not([class*="PageHeader-"]):not([class*="Button-small-"]) {
     color: var(--link-color);   
    }
    
-[class*="Link-to-"]:not([class*="PageSidebarItem-link-"]):hover {
+[class*="Link-to-"]:not([class*="PageSidebarItem-link-"]):hover:not([class*="PageHeader-translate"]):hover:not([class*="Button-small-"]):hover {
 color: var(--link-color-hover);   
+}
+
+[class*="PageHeaderActionsMenu-menuButton-"]:hover {
+    color: #515253;
+}
+
+[class*="PageHeader-donate-"]:hover {
+    color: #9c1f30 !important;
 }
 
 a {
