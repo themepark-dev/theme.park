@@ -392,11 +392,11 @@ a:hover {
     background-color: rgba(0, 0, 0, .25) !important;
 }
 
-[class*="Popover-title-"],
+[cl*="Popover-title-"]ass,
 [class*="SeasonInfo-title-"],
 [class*="Popover-body-"],
 [class*="Tooltip-bod-"] {
-    background: var(--modal-bg-color) !important;
+    background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;

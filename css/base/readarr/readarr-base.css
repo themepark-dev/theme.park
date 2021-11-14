@@ -447,7 +447,7 @@ a:hover {
 [class*="SeasonInfo-title-"],
 [class*="Popover-body-"],
 [class*="Tooltip-body-"] {
-    background: var(--modal-bg-color) !important;
+    background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
