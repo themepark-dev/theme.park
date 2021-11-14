@@ -43,11 +43,11 @@ body {
 }
 
 /* LINKS */
-[class*="Link-to-"]:not([class*="PageSidebarItem-link-"]) {
+[class*="Link-to-"]:not([class*="PageSidebarItem-link-"]):not([class*="Button-medium-"]) {
     color: var(--link-color);   
    }
    
-[class*="Link-to-"]:not([class*="PageSidebarItem-link-"]):hover {
+[class*="Link-to-"]:not([class*="PageSidebarItem-link-"]):hover:not([class*="Button-medium-"]):hover {
 color: var(--link-color-hover);   
 }
 
@@ -392,7 +392,7 @@ a:hover {
     background-color: rgba(0, 0, 0, .25) !important;
 }
 
-[cl*="Popover-title-"]ass,
+[class*="Popover-title-"],
 [class*="SeasonInfo-title-"],
 [class*="Popover-body-"],
 [class*="Tooltip-bod-"] {

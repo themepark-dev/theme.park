@@ -358,7 +358,7 @@
         "sonarr-4k-logo": "https://develop.theme-park.dev/css/addons/sonarr/sonarr-4k-logo/sonarr-4k-logo.css?sha=cf9d4a984a618a2344e278cb7d8dd6ac8f8b74d1",
         "sonarr-darker": "https://develop.theme-park.dev/css/addons/sonarr/sonarr-darker/sonarr-darker.css?sha=b1eb1ff0827684361ad596fb49baa6362cc23036"
       },
-      "base_css": "https://develop.theme-park.dev/css/base/sonarr/sonarr-base.css?sha=83a7f506aa996f433d7211ac6a0153c4e8ddb435"
+      "base_css": "https://develop.theme-park.dev/css/base/sonarr/sonarr-base.css?sha=8ea4b12e58038013d0df4311b23dd62d9d57ff8d"
     },
     "synclounge": {
       "addons": {},
