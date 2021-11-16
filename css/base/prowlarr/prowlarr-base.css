@@ -442,6 +442,22 @@ a:hover {
     color: var(--label-text-color);
 }
 
+[class*="Label-success-"] {
+    border-color: #27c24c;
+    background-color: #27c24c;
+    color: #000;
+}
+
+[class*="Label-outline-"] {
+    background-color: #999;
+}
+
+[class*="Label-disabled-"] {
+    border-color: #999;
+    background-color: #999;
+    color: #000;
+}
+
 [class*="PageSidebarItem-status-"][class*="Label-info-"] {
     border-color: var(--arr-queue-color);
     background-color: var(--arr-queue-color);

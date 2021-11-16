@@ -465,7 +465,7 @@ a:hover {
 [class*="Label-success-"] {
     border-color: #27c24c;
     background-color: #27c24c;
-    color: var(--label-text-color);
+    color: #000;
 }
 
 [class*="Label-disabled-"][class*="Label-outline-"] {
