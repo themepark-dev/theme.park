@@ -33,12 +33,20 @@ body {
 }
 
 /* LINKS */
-[class*="Link-to-"]:not([class*="PageSidebarItem-link-"]) {
+[class*="Link-to-"]:not([class*="PageSidebarItem-link-"]):not([class*="PageHeader-"]):not([class*="Button-small-"]) {
     color: var(--link-color);   
    }
    
-[class*="Link-to-"]:not([class*="PageSidebarItem-link-"]):hover {
+[class*="Link-to-"]:not([class*="PageSidebarItem-link-"]):hover:not([class*="PageHeader-translate"]):hover:not([class*="Button-small-"]):hover {
 color: var(--link-color-hover);   
+}
+
+[class*="PageHeaderActionsMenu-menuButton-"]:hover {
+    color: #515253;
+}
+
+[class*="PageHeader-donate-"]:hover {
+    color: #9c1f30 !important;
 }
 
 a {
@@ -267,6 +275,15 @@ a:hover {
     border-left: 3px solid rgb(var(--accent-color));
 }
 
+#sidebar-toggle-button {
+    color: var(--text);
+}
+#sidebar-toggle-button:hover,
+#sidebar-toggle-button:focus,
+#sidebar-toggle-button:active {
+    color: var(--text-hover);
+}
+
 /* MOVIES PAGE */
 /* RADARR SPECIFIC */
 [class*="MovieIndexPoster-controls-"] {
@@ -373,13 +390,13 @@ a:hover {
 [class*="Popover-body-"],
 [class*="Tooltip-body-"] {
     background: var(--modal-bg-color) !important;
-    background-repeat: repeat, no-repeat;
-    background-attachment: fixed, fixed;
-    background-position: center center, center center;
-    background-size: auto, cover;
-    -webkit-background-size: auto, cover;
-    -moz-background-size: auto, cover;
-    -o-background-size: auto, cover;
+    background-repeat: repeat, no-repeat !important;
+    background-attachment: fixed, fixed !important;
+    background-position: center center, center center !important;
+    background-size: auto, cover !important;
+    -webkit-background-size: auto, cover !important;
+    -moz-background-size: auto, cover !important;
+    -o-background-size: auto, cover !important;
 }
 
 [class*="Tooltip-tooltipContainer-"] {

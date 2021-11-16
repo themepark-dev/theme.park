@@ -42,11 +42,11 @@ body {
 }
 
 /* LINKS */
-[class*="Link-to-"]:not([class*="PageSidebarItem-link-"]) {
+[class*="Link-to-"]:not([class*="PageSidebarItem-link-"]):not([class*="Button-"]) {
     color: var(--link-color);   
    }
    
-[class*="Link-to-"]:not([class*="PageSidebarItem-link-"]):hover {
+[class*="Link-to-"]:not([class*="PageSidebarItem-link-"]):hover:not([class*="Button-"]):hover {
 color: var(--link-color-hover);   
 }
 
@@ -321,6 +321,15 @@ a:hover {
     border-left: 3px solid rgb(var(--accent-color));
 }
 
+#sidebar-toggle-button {
+    color: var(--text);
+}
+#sidebar-toggle-button:hover,
+#sidebar-toggle-button:focus,
+#sidebar-toggle-button:active {
+    color: var(--text-hover);
+}
+
 /* LIBRARY PAGE */
 /* LIDARR SPECIFIC */
 [class*="ArtistIndexPoster-controls-"] {
@@ -443,13 +452,13 @@ a:hover {
 [class*="Popover-body-"],
 [class*="Tooltip-body-"] {
     background: var(--modal-bg-color) !important;
-    background-repeat: repeat, no-repeat;
-    background-attachment: fixed, fixed;
-    background-position: center center, center center;
-    background-size: auto, cover;
-    -webkit-background-size: auto, cover;
-    -moz-background-size: auto, cover;
-    -o-background-size: auto, cover;
+    background-repeat: repeat, no-repeat !important;
+    background-attachment: fixed, fixed !important;
+    background-position: center center, center center !important;
+    background-size: auto, cover !important;
+    -webkit-background-size: auto, cover !important;
+    -moz-background-size: auto, cover !important;
+    -o-background-size: auto, cover !important;
 }
 
 [class*="Tooltip-tooltipContainer-"] {
@@ -499,6 +508,26 @@ a:hover {
     border-color: var(--arr-queue-color);
     background-color: var(--arr-queue-color);
     color: var(--label-text-color);
+}
+
+[class*="Label-success-"] {
+    border-color: #27c24c;
+    background-color: #27c24c;
+    color: var(--label-text-color);
+}
+
+[class*="Label-disabled-"][class*="Label-outline-"] {
+    color: #000;
+}
+
+[class*="Label-outline-"] {
+    background-color: #999;
+}
+
+[class*="Label-disabled-"] {
+    border-color: #999;
+    background-color: #999;
+    color: #000;
 }
 
 /* Table options*/
