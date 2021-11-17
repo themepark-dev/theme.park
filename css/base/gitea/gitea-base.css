@@ -10,6 +10,8 @@
 /*		   		        Made by @gilbN					 */
 /* 			      https://github.com/gilbN/theme.park			 */
 
+@import url("https://theme-park.dev/css/base/gitea/chroma.css");
+@import url("https://theme-park.dev/css/base/gitea/monaco_vs_dark.css");
 :root {
     --color-text: var(--text);
     --color-secondary-alpha-70: rgba(0, 0, 0, 0.35);
@@ -1270,6 +1272,7 @@ footer {
 .ui.button {
     background: var(--button-color);
     color: var(--button-text);
+    border: 1px solid rgb(255 255 255 / 10%);
 }
 
 .ui.button:hover {
@@ -1293,7 +1296,6 @@ footer {
     color: var(--button-text) !important;
 }
 
-.ui.basic.button,
 .ui.basic.buttons .button,
 .ui.basic.blue.button,
 .ui.basic.blue.buttons .button,
@@ -1303,8 +1305,15 @@ footer {
     box-shadow: inset 0 0 0 1px rgb(255 255 255 / 15%) !important;
 }
 
+.ui.basic.button {
+    color: var(--text);
+}
+
 .ui.basic.button:focus,
-.ui.basic.button:hover,
+.ui.basic.button:hover {
+    color: var(--text-hover);
+}
+
 .ui.basic.buttons .button:focus,
 .ui.basic.buttons .button:hover {
     background: rgb(0 0 0 / 15%);
@@ -1340,11 +1349,17 @@ footer {
 }
 
 .repo-buttons .ui.basic.labels a.label:hover,
-a.ui.basic.label:hover {
+a.ui.basic.label:hover,
+.repo-buttons .ui.labeled.button>.label:hover {
     text-decoration: none;
     background: none var(--button-color-hover);
     color: var(--label-text-color);
     box-shadow: none;
+}
+
+.repo-buttons .ui.labeled.button.disabled>.label {
+    color: var(--button-text-color);
+    background: var(--button-color)!important;
 }
 
 .repo-buttons .disabled-repo-button a.button:hover {
