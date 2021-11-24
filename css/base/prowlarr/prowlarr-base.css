@@ -1136,3 +1136,25 @@ input[type=password] {
 canvas {
     filter: invert(1)
 }
+
+/* QUERY OPTIONS */
+[class*="QueryParameterOption-option-"] {
+    border: 1px solid transparent;
+}
+
+[class*="QueryParameterOption-token-"] {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+[class*="QueryParameterOption-example-"] {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+
+[class*="QueryParameterOption-option-"]:hover [class*="QueryParameterOption-token-"] {
+    background-color: rgba(255, 255, 2550, 0.25);
+}
+
+[class*="QueryParameterOption-option-"]:hover [class*="QueryParameterOption-example-"] {
+    background-color: rgba(255, 255, 2550, 0.35);
+}
