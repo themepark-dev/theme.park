@@ -236,7 +236,8 @@ html body,
 
 /* ACCENTS */
 
-[class*="Badge-primary-"] {
+[class*="Badge-primary-"],
+.nav-header>li>a.selected .badge {
   background-color: rgb(var(--accent-color));
   color: var(--label-text-color);
 }
