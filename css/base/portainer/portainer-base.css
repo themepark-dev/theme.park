@@ -12,6 +12,11 @@
 
 @import url("https://theme-park.dev/css/defaults/placeholders.css");
 
+:root {
+    --text-json-tree-branch-preview-color: #eee;
+    --text-json-tree-leaf-color: #eee;
+    }
+
 /* Scrollbar */
 @media only screen and (min-width: 768px) {
     html {
