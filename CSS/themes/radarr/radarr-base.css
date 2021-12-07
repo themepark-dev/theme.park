@@ -386,22 +386,30 @@ a:hover {
     background-color: rgba(0, 0, 0, .25);
 }
 
+[class*="Tooltip-tooltip-"][class*="Tooltip-inverse-"],
 [class*="Popover-title-"],
 [class*="SeasonInfo-title-"],
 [class*="Popover-body-"],
-[class*="Tooltip-body-"] {
-    background: var(--modal-bg-color) !important;
-    background-repeat: repeat, no-repeat !important;
-    background-attachment: fixed, fixed !important;
-    background-position: center center, center center !important;
-    background-size: auto, cover !important;
-    -webkit-background-size: auto, cover !important;
-    -moz-background-size: auto, cover !important;
-    -o-background-size: auto, cover !important;
+[class*="Tooltip-body-"],
+[class*="Tooltip-tooltipContainer-"],
+[class*="Tooltip-tooltip-"][class*="Tooltip-default-"] {
+    background: #1f1f1f;
+    color: #eee;
 }
 
-[class*="Tooltip-tooltipContainer-"] {
-    color: #fff;
+@supports (backdrop-filter: blur(1em)) or (-webkit-backdrop-filter:blur(1em)) {
+    [class*="Tooltip-tooltip-"][class*="Tooltip-inverse-"],
+    [class*="Popover-title-"],
+    [class*="SeasonInfo-title-"],
+    [class*="Popover-body-"],
+    [class*="Tooltip-body-"],
+    [class*="Tooltip-tooltipContainer-"],
+    [class*="Tooltip-tooltip-"][class*="Tooltip-default-"] {
+        -webkit-backdrop-filter: saturate(1) blur(1.5em);
+        backdrop-filter: saturate(1) blur(1.5em);
+        background: rgb(var(--accent-color),0.05);
+        color: white;
+    }
 }
 
 [class*="Tooltip-bottom-"][class*="Tooltip-default-"] {
