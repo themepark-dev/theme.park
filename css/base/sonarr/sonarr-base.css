@@ -976,6 +976,10 @@ input:focus:-ms-input-placeholder {
     color: var(--text);
 }
 
+[class*="-cloneButton-"][class*="IconButton-button-"]:hover {
+    color: white;
+}
+
 [class*="Card-card-"]:hover {
     color: var(--text-hover);
 }

@@ -980,6 +980,11 @@ input:focus:-ms-input-placeholder {
     color: var(--text);
 }
 
+
+[class*="-cloneButton-"][class*="IconButton-button-"]:hover {
+    color: white;
+}
+
 [class*="Card-card-"]:hover,
 [class*="Applications-center-"]:hover {
     color: var(--text-hover);
