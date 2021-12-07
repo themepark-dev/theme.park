@@ -412,6 +412,10 @@ a:hover {
     }
 }
 
+[class*="Tooltip-top-"][class*="Tooltip-inverse-"] {
+    border-top-color: var(--text);
+}
+
 [class*="Tooltip-bottom-"][class*="Tooltip-default-"] {
     border-bottom-color: var(--text);
 }
