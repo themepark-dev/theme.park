@@ -407,7 +407,6 @@ a:hover {
 @supports (backdrop-filter: blur(1em)) or (-webkit-backdrop-filter:blur(1em)) {
     [class*="Tooltip-tooltip-"][class*="Tooltip-inverse-"],
     [class*="Popover-title-"],
-    [class*="SeasonInfo-title-"],
     [class*="Popover-body-"],
     [class*="Tooltip-body-"],
     [class*="Tooltip-tooltipContainer-"],
@@ -416,6 +415,9 @@ a:hover {
         backdrop-filter: saturate(1) blur(1.5em);
         background: rgb(var(--accent-color),0.05);
         color: white;
+    }
+    [class*="SeasonInfo-title-"] {
+        background: transparent;
     }
 }
 
