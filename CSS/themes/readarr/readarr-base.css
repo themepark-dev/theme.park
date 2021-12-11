@@ -11,12 +11,11 @@
 /* 			      https://github.com/gilbN/theme.park			 */
 
 :root {
-    --calendar-downloading: 122 67 182;
     --calendar-downloaded: 39 194 76;
-    --calendar-unreleased: 93 156 236;
-    --calendar-partial: 255, 165, 0;  
+    --calendar-downloading: 122 67 182;
     --calendar-unmonitored: 173 173 173;
-    --calendar-missing: 240 80 80; 
+    --calendar-missing: 240 80 80;
+    --calendar-unreleased: 93 156 236; 
   }
 
 body {
@@ -443,22 +442,34 @@ a:hover {
     color: #fff;
 }
 
+[class*="Tooltip-tooltip-"][class*="Tooltip-inverse-"],
 [class*="Popover-title-"],
 [class*="SeasonInfo-title-"],
 [class*="Popover-body-"],
-[class*="Tooltip-body-"] {
-    background: var(--modal-bg-color) !important;
-    background-repeat: repeat, no-repeat !important;
-    background-attachment: fixed, fixed !important;
-    background-position: center center, center center !important;
-    background-size: auto, cover !important;
-    -webkit-background-size: auto, cover !important;
-    -moz-background-size: auto, cover !important;
-    -o-background-size: auto, cover !important;
+[class*="Tooltip-body-"],
+[class*="Tooltip-tooltipContainer-"],
+[class*="Tooltip-tooltip-"][class*="Tooltip-default-"] {
+    background: #1f1f1f;
+    color: #eee;
 }
 
-[class*="Tooltip-tooltipContainer-"] {
-    color: #fff;
+@supports (backdrop-filter: blur(1em)) or (-webkit-backdrop-filter:blur(1em)) {
+    [class*="Tooltip-tooltip-"][class*="Tooltip-inverse-"],
+    [class*="Popover-title-"],
+    [class*="SeasonInfo-title-"],
+    [class*="Popover-body-"],
+    [class*="Tooltip-body-"],
+    [class*="Tooltip-tooltipContainer-"],
+    [class*="Tooltip-tooltip-"][class*="Tooltip-default-"] {
+        -webkit-backdrop-filter: saturate(1) blur(1.5em);
+        backdrop-filter: saturate(1) blur(1.5em);
+        background: rgb(var(--accent-color),0.05);
+        color: white;
+    }
+}
+
+[class*="Tooltip-top-"][class*="Tooltip-inverse-"] {
+    border-top-color: var(--text);
 }
 
 [class*="Tooltip-bottom-"][class*="Tooltip-default-"] {
@@ -812,58 +823,59 @@ input:focus:-ms-input-placeholder {
 }
 
 /* CALENDAR */
-[class*="CalendarEvent-downloaded-"] {
-    background: rgb(var(--calendar-available) / .7) !important;
+[class*="CalendarEvent-downloaded-"]:not([class*="AgendaEvent-"]) {
+    background: rgb(var(--calendar-downloaded) / .7) !important;
     border-left-color: transparent !important;
 }
 
-[class*="Calendar-calendar-"] [class*="CalendarEvent-downloaded-"]:hover {
-    background: rgb(var(--calendar-available) / .5) !important;
+[class*="Calendar-calendar-"] [class*="CalendarEvent-downloaded-"]:hover:not([class*="AgendaEvent-"]) {
+    background: rgb(var(--calendar-downloaded) / .5) !important;
     border-left-color: transparent !important;
 }
 
-[class*="CalendarEvent-missing-"] {
+[class*="CalendarEvent-missing-"]:not([class*="AgendaEvent-"]) {
     background: rgb(var(--calendar-missing) / .7) !important;
     border-left-color: transparent !important;
 }
 
-[class*="Calendar-calendar-"] [class*="CalendarEvent-missing-"]:hover {
+[class*="Calendar-calendar-"] [class*="CalendarEvent-missing-"]:hover:not([class*="AgendaEvent-"]) {
     background: rgba(var(--calendar-missing) / .5) !important;
     border-left-color: transparent !important;
 }
 
-[class*="CalendarEvent-unreleased-"] {
-    background: rgb(var(--calendar-unaired) / .7) !important;
+[class*="CalendarEvent-unreleased-"]:not([class*="AgendaEvent-"]) {
+    background: rgb(var(--calendar-unreleased) / .7) !important;
     border-left-color: transparent !important;
 }
 
-[class*="Calendar-calendar-"] [class*="CalendarEvent-unreleased-"]:hover {
-    background: rgb(var(--calendar-unaired) / .5) !important;
+[class*="Calendar-calendar-"] [class*="CalendarEvent-unreleased-"]:hover:not([class*="AgendaEvent-"]) {
+    background: rgb(var(--calendar-unreleased) / .5) !important;
     border-left-color: transparent !important;
 }
 
-[class*="CalendarEvent-unmonitored-"] {
+[class*="CalendarEvent-unmonitored-"]:not([class*="AgendaEvent-"]) {
     background: rgb(var(--calendar-unmonitored) / .7) !important;
     border-left-color: transparent !important;
 }
 
-[class*="Calendar-calendar-"] [class*="CalendarEvent-unmonitored-"]:hover {
+[class*="Calendar-calendar-"] [class*="CalendarEvent-unmonitored-"]:hover:not([class*="AgendaEvent-"]) {
     background: rgb(var(--calendar-unmonitored) / .5) !important;
     border-left-color: transparent !important;
 }
 
-[class*="CalendarEvent-downloading-"] {
+[class*="CalendarEvent-downloading-"]:not([class*="AgendaEvent-"]) {
     background: rgb(var(--calendar-downloading) / .7) !important;
     border-left-color: transparent !important;
 }
 
-[class*="Calendar-calendar-"] [class*="CalendarEvent-downloading-"]:hover {
+[class*="Calendar-calendar-"] [class*="CalendarEvent-downloading-"]:hover:not([class*="AgendaEvent-"]) {
     background: rgb(var(--calendar-downloading) / .5) !important;
     border-left-color: transparent !important;
 }
 
 [class*="DayOfWeek-dayOfWeek-"] {
     background-color: hsla(0, 0%, 100%, .08);
+    color: #fff;
 }
 
 [class*="CalendarDay-dayOfMonth-"] {
@@ -874,6 +886,23 @@ input:focus:-ms-input-placeholder {
 [class*="CalendarDay-isToday-"],
 [class*="DayOfWeek-isToday-"] {
     background-color: hsla(0, 0%, 100%, .25) !important;
+    color: #fff;
+}
+
+[class*="CalendarEvent-authorName-"] a,
+[class*="CalendarEvent-authorName-"],
+[class*="CalendarEvent-bookTitle-"] a,
+[class*="CalendarEvent-bookTitle-"]{
+color: #eee !important;
+}
+
+[class*="CalendarEvent-authorName-"] a:hover,
+[class*="CalendarEvent-bookTitle-"]  a:hover{
+color: #fff !important;
+}
+
+[class*="CalendarEvent-event-"] {
+    border-left: 4px solid var(--text);
 }
 
 [class*="CalendarDay-day-"],
@@ -954,6 +983,11 @@ input:focus:-ms-input-placeholder {
     background-color: rgba(0, 0, 0, .45);
     box-shadow: 0 0 10px 1px #000000;
     color: var(--text);
+}
+
+
+[class*="-cloneButton-"][class*="IconButton-button-"]:hover {
+    color: white;
 }
 
 [class*="Card-card-"]:hover {
