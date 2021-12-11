@@ -335,7 +335,7 @@
         "readarr-alt-logo": "https://develop.theme-park.dev/css/addons/readarr/readarr-alt-logo/readarr-alt-logo.css?sha=6066417b624c76aebdbceddcf4f11fa0d5f6f979",
         "readarr-darker": "https://develop.theme-park.dev/css/addons/readarr/readarr-darker/readarr-darker.css?sha=415a258cc9d1e40bf094f6f20350225c06120825"
       },
-      "base_css": "https://develop.theme-park.dev/css/base/readarr/readarr-base.css?sha=b36d8e85b04c9ce53f1f63dacc7f37dedf204f0f"
+      "base_css": "https://develop.theme-park.dev/css/base/readarr/readarr-base.css?sha=b09568d3f518fdb2f80d6af750617e4fb12d9623"
     },
     "requestrr": {
       "addons": {},
