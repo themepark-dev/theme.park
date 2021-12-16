@@ -27,8 +27,13 @@ if ! [[ -x "$(command -v svn)" ]]; then
 echo '--------------------------'
 echo '| Installing svn package |'
 echo '--------------------------'
- apt-get update && \
- apt-get install -y subversion
+    if [ -x "$(command -v apk)" ]; then 
+      apk update && \
+      apk add --no-cache subversion
+    elif [ -x "$(command -v apt-get)" ]; then
+      apt-get update && \
+      apt-get install -y subversion
+    fi
 fi
 
 # Display variables for troubleshooting 
