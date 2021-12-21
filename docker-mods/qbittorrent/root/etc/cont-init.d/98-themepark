@@ -85,8 +85,8 @@ if [[ ! -d /themepark ]]; then
 fi
 
 sed_file(){
-	sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/css\/base\/qbittorrent\/qbittorrent-base.css'><\/head> /g" $1
-    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/css\/${THEME_TYPE}\/${TP_THEME}.css'><\/head> /g" $1
+	sed -i "s/<\/body>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/css\/base\/qbittorrent\/qbittorrent-base.css'><\/body> /g" $1
+    sed -i "s/<\/body>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/css\/${THEME_TYPE}\/${TP_THEME}.css'><\/body> /g" $1
 	printf 'Stylesheet set to %s on %s\n\n' "${TP_THEME}" "$1"
 }
 
