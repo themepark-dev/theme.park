@@ -343,6 +343,10 @@ a:hover {
     color: var(--text) !important;
 }
 
+[class*="MovieFileStatus-missing"].colorImpaired {
+    background: transparent;
+}
+
 .fa-search:hover {
     color: var(--text-hover) !important;
 }
