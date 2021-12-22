@@ -10,11 +10,12 @@
 /*		   		        Made by @gilbN					 */
 /* 			      https://github.com/gilbN/theme.park			 */
 :root {
-    --calendar-in-cinemas: 53, 197, 244;
+    --calendar-in-cinemas: 53 197 244;
     --calendar-downloading: 122 67 182; 
     --calendar-unmonitored: 173 173 173;
     --calendar-unaired: 93 156 236;  
     --calendar-missing: 240 80 80;
+    --calendar-missing-unmonitored: 255 165 0;
     --calendar-available: 39 194 76;
   }
 
@@ -41,7 +42,7 @@ body {
 }
 
 /* LINKS */
-[class*="Link-to-"]:not([class*="PageSidebarItem-link-"]):not([class*="Button-"]) {
+[class*="Link-to-"]:not([class*="PageSidebarItem-link-"]):not([class*="Button-"]):not([class*="AgendaEvent"]) {
     color: var(--link-color);   
    }
    
@@ -843,13 +844,25 @@ input:focus:-ms-input-placeholder {
     border-left-color: transparent !important;
 }
 
-[class*="CalendarEvent-missing-"] {
+[class*="CalendarEvent-missing-"],
+[class*="CalendarEvent-missingMonitored"] {
     background: rgb(var(--calendar-missing) / .7) !important;
     border-left-color: transparent !important;
 }
 
-[class*="Calendar-calendar-"] [class*="CalendarEvent-missing-"]:hover {
+[class*="Calendar-calendar-"] [class*="CalendarEvent-missing-"]:hover,
+[class*="Calendar-calendar-"] [class*="CalendarEvent-missingMonitored"]:hover {
     background: rgba(var(--calendar-missing) / .5) !important;
+    border-left-color: transparent !important;
+}
+
+[class*="CalendarEvent-missingUnmonitored-"] {
+    background: rgb(var(--calendar-missing-unmonitored) / .7) !important;
+    border-left-color: transparent !important;
+}
+
+[class*="CalendarEvent-missingUnmonitored-"]:hover {
+    background: rgb(var(--calendar-missing-unmonitored) / .5) !important;
     border-left-color: transparent !important;
 }
 
@@ -861,6 +874,16 @@ input:focus:-ms-input-placeholder {
 [class*="Calendar-calendar-"] [class*="CalendarEvent-unreleased-"]:hover {
     background: rgb(var(--calendar-unaired) / .5) !important;
     border-left-color: transparent !important;
+}
+
+[class*="CalendarEvent-event-"] {
+    background: rgb(var(--calendar-unmonitored) / .7);
+    border-left-color: transparent;
+}
+
+[class*="Calendar-calendar-"] [class*="CalendarEvent-event-"]:hover {
+    background: rgb(var(--calendar-unmonitored) / .5);
+    border-left-color: transparent;
 }
 
 [class*="CalendarEvent-unmonitored-"] {
@@ -912,7 +935,8 @@ input:focus:-ms-input-placeholder {
 [class*="CalendarEvent-movieTitle-"],
 [class*="CalendarEvent-movieInfo-"],
 [class*="CalendarEvent-episodeInfo-"],
-[class*="CalendarEvent-airTime-"] {
+[class*="CalendarEvent-airTime-"],
+[class*="CalendarEvent-link-"] {
     color: #fff !important;
 }
 
@@ -934,6 +958,11 @@ input:focus:-ms-input-placeholder {
 
 [class*="CalendarEventGroup-episodeInfo-"] {
     color: var(--text);
+}
+
+[class*="LegendItem-missingMonitoredColorImpaired-"],
+[class*="LegendItem-missingUnmonitoredColorImpaired-"] {
+    background: transparent;
 }
 
 /* calendar agenda */
