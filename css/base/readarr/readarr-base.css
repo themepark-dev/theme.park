@@ -603,7 +603,9 @@ a:hover {
 
 /* POSTERS */
 [class*="AuthorIndexPoster-title-"],
-[class*="AuthorIndexPosterInfo-info-"] {
+[class*="AuthorIndexPosterInfo-info-"],
+[class*="BookIndexPoster-title-"],
+[class*="BookIndexPosterInfo-info-"] {
     background-color: rgba(255, 255, 255, 0.08);
     color: var(--text-hover);
 }
