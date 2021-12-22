@@ -328,7 +328,7 @@
         "radarr-4k-logo": "https://develop.theme-park.dev/css/addons/radarr/radarr-4k-logo/radarr-4k-logo.css?sha=70630fcc12fcc11a0dff9673a04c92b014393218",
         "radarr-darker": "https://develop.theme-park.dev/css/addons/radarr/radarr-darker/radarr-darker.css?sha=317432984f97518011463ef62af84b04420e524d"
       },
-      "base_css": "https://develop.theme-park.dev/css/base/radarr/radarr-base.css?sha=349c31edbe7b803be7962a111df30ad6ec859a4f"
+      "base_css": "https://develop.theme-park.dev/css/base/radarr/radarr-base.css?sha=783027f1bf71462e3fc85762ed4bf443422d16b9"
     },
     "readarr": {
       "addons": {
