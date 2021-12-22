@@ -19,7 +19,9 @@ img.logo {
 }
 
 body.layout_frontend,
-body {
+body,
+html.theme_light body.layout_frontend,
+html {
     background: var(--main-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
@@ -39,13 +41,14 @@ app-org-vault-groupings .card .card-body a,
     color: var(--link-color);
 }
 
-a:hover,
+a:hover:not(.btn-secondary),
 app-vault-groupings .card li.active>a:first-of-type,
 app-vault-groupings .card li.active>div a:first-of-type,
 app-org-vault-groupings .card li.active>a:first-of-type,
 app-org-vault-groupings .card li.active>div a:first-of-type,
 .groupings .card li.active>a:first-of-type,
-.groupings .card li.active>div a:first-of-type {
+.groupings .card li.active>div a:first-of-type,
+html.theme_light a {
     color: var(--link-color-hover) !important;
 }
 
@@ -75,8 +78,8 @@ h6,
 .h4,
 .h5,
 .h6,
-label,
-label:not(.form-check-label):not(.btn),
+label:not(#g_advanced > div:nth-child(13) > label):not(#g_advanced > div:nth-child(12) > div.col-sm-8 > div > label),
+label:not(.form-check-label):not(.btn):not(#g_advanced > div:nth-child(13) > label),
 label.bold .card-header:first-child,
 .card-header,
 .modal-header {
@@ -97,7 +100,14 @@ label.bold .card-header:first-child,
 
 /* CARDS */
 .card {
-    background-color: rgba(255, 255, 255, 0.07);
+    background-color: rgba(255, 255, 255, 0.07) !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+    color: var(--text) !important;
+}
+
+html.theme_light .card-body:not(.bg-light>.card-body) {
+    background-color: transparent;
+    color: var(--text);
 }
 
 app-vault-groupings .card li.active>a:first-of-type,
@@ -295,17 +305,21 @@ a.text-danger:focus {
 
 .btn[class*="btn-outline-"]:not(:hover),
 .swal2-popup .swal2-actions button[class*="btn-outline-"]:not(:hover),
-.swal2-popup .swal2-actions button.swal2-cancel {
-    border-color: var(--button-color);
-    background-color: var(--button-color);
-    color: var(--button-text);
+.swal2-popup .swal2-actions button.swal2-cancel,
+html.theme_light .btn-primary,
+html.theme_light .swal2-confirm {
+    border-color: var(--button-color) !important;
+    background-color: var(--button-color) !important;
+    color: var(--button-text) !important;
 }
 
 .btn-outline-secondary:hover,
-.swal2-popup .swal2-actions button.swal2-cancel:hover {
-    color: var(--button-text-hover);
-    background-color: var(--button-color-hover);
-    border-color: var(--button-color-hover);
+.swal2-popup .swal2-actions button.swal2-cancel:hover,
+html.theme_light .btn-primary,
+html.theme_light .swal2-confirm {
+    color: var(--button-text-hover) !important;
+    background-color: var(--button-color-hover) !important;
+    border-color: var(--button-color-hover) !important;
 }
 
 .btn-outline-secondary:hover:not(:disabled),
@@ -315,8 +329,8 @@ a.text-danger:focus {
 
 .btn-outline-primary:hover {
     color: var(--button-text-hover) !important;
-    background-color: var(--button-color-hover);
-    border-color: var(--button-color-hover);
+    background-color: var(--button-color-hover) !important;
+    border-color: var(--button-color-hover) !important;
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active,
@@ -335,7 +349,9 @@ a.text-danger:focus {
 .btn-outline-secondary.focus,
 .swal2-popup .swal2-actions button.focus.swal2-cancel,
 .btn-outline-primary:focus,
-.btn-outline-primary.focus {
+.btn-outline-primary.focus,
+.btn-check:focus+.btn,
+.btn:focus {
     box-shadow: 0 0 0 0.2rem rgb(var(--accent-color), .5);
 }
 
@@ -344,11 +360,14 @@ a.text-danger:focus {
 .btn-outline-secondary:not(:disabled):not(.disabled).active,
 .swal2-popup .swal2-actions button.swal2-cancel:not(:disabled):not(.disabled).active,
 .show>.btn-outline-secondary.dropdown-toggle,
-.swal2-popup .swal2-actions .show>button.dropdown-toggle.swal2-cancel {
-    color: var(--button-text-hover);
-    background-color: var(--button-color-hover);
-    border-color: var(--button-color-hover);
+.swal2-popup .swal2-actions .show>button.dropdown-toggle.swal2-cancel,
+html.theme_light .btn-outline-secondary:hover:not(:disabled),
+html.theme_light .btn-outline-secondary:active {
+    color: var(--button-text-hover) !important;
+    background-color: var(--button-color-hover) !important;
+    border-color: var(--button-color-hover) !important;
 }
+
 
 .btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
 .swal2-popup .swal2-actions button.swal2-cancel:not(:disabled):not(.disabled):active:focus,
@@ -499,4 +518,10 @@ input:focus:-ms-input-placeholder {
 .card-header small,
 .modal-header small {
     color: var(--text-muted) !important;
+}
+
+/* Table */
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-accent-bg: var(--bs-table-striped-bg);
+    color: var(--text-hover);
 }
