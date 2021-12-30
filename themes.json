@@ -78,7 +78,7 @@
   },
   "all-themes": {
     "Aquamarine": {
-      "url": "https://develop.theme-park.dev/css/theme-options/aquamarine.css?sha=5cdf3f13a57669f3732b64a7573580bcaa9ac6fc"
+      "url": "https://develop.theme-park.dev/css/theme-options/aquamarine.css?sha=9f566db4c37537f2eacca0461406e5efd5881cd7"
     },
     "Blackberry-abyss": {
       "url": "https://develop.theme-park.dev/css/community-theme-options/blackberry-abyss.css?sha=5e806cb7efad3e1ac97e985f71d7a631a1b7f02b"
@@ -518,7 +518,7 @@
   },
   "themes": {
     "Aquamarine": {
-      "url": "https://develop.theme-park.dev/css/theme-options/aquamarine.css?sha=5cdf3f13a57669f3732b64a7573580bcaa9ac6fc"
+      "url": "https://develop.theme-park.dev/css/theme-options/aquamarine.css?sha=9f566db4c37537f2eacca0461406e5efd5881cd7"
     },
     "Dark": {
       "url": "https://develop.theme-park.dev/css/theme-options/dark.css?sha=dc21605e303d094fed0564a15fb983d81bcd33dd"
