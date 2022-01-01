@@ -36,6 +36,12 @@ html, body, .wizard-background, .content-container, #main-container\ dark > mat-
     background: transparent !important;
 }
 
+.container-alert {
+    color: #fff;
+    background-color: rgb(0 0 0 / 50%) !important;
+    border-color: rgb(var(--accent-color)) !important;
+}
+
 .h1,
 .h2,
 .h3,
