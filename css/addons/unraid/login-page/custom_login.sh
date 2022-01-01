@@ -1,7 +1,7 @@
 #!/bin/bash
 TYPE="retro-terminal"
 THEME="green.css"
-DOMAIN="theme-park.dev" #if you update the domain after the script has been run, You must disable and re enable JS or the whole theme.  
+DOMAIN="github.com/richterscale17/theme-park" #if you update the domain after the script has been run, You must disable and re enable JS or the whole theme.  
 ADD_JS="true"
 JS="custom_text_header.js"
 DISABLE_THEME="false"
