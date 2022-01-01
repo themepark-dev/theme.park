@@ -603,8 +603,8 @@ a:hover {
 /* ADD NEW */
 
 [class*="EnhancedSelectInput-options-"],
-.EnhancedSelectInputOption-option-g4V97,
-.EnhancedSelectInput-optionsContainer-Ysa4r {
+[class*="EnhancedSelectInputOption-option-"],
+[class*="EnhancedSelectInput-optionsContainer-"] {
     border: 0px solid rgba(255, 255, 255, 0.2);
     border-radius: 4px;
     background: var(--drop-down-menu-bg);
@@ -635,7 +635,15 @@ a:hover {
 [class*="EnhancedSelectInput-optionsModalScroller-"] {
     border: 1px solid var(--drop-down-menu-bg);
     border-radius: 4px;
-    background-color: var(--drop-down-menu-bg);
+    background: var(--drop-down-menu-bg);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    color: var(--text);
 }
 
 [class*="EnhancedSelectInput-mobileCloseButton-"] {
