@@ -114,24 +114,24 @@ def create_json(app_folders: list = None, themes: list = None, community_themes:
         APPS.update(THEMES)
         return dumps(APPS)
 
-def temporary_copy_files():
-    shutil.rmtree("./CSS", ignore_errors=True)
-    shutil.rmtree("./Resources", ignore_errors=True)
-    src_dst = {
-        "./css/base/": "./CSS/themes",
-        "./css/theme-options": "./CSS/variables",
-        "./css/community-theme-options": "./CSS/variables",
-        "./resources/": "./Resources/",
-        "./css/addons/": "./CSS/addons",
-        "./css/defaults/": "./CSS/defaults",
-        "./css/theme-options/organizr.css": "./CSS/variables/organizr-dark.css",
-        "./css/theme-options/organizr.css": "./css/theme-options/organizr-dark.css"
-        }
-    for src in src_dst:
-        if ".css" in src:
-            shutil.copy(src,src_dst[src])
-            continue
-        shutil.copytree(src,src_dst[src],dirs_exist_ok=True)
+# def temporary_copy_files():
+#     shutil.rmtree("./CSS", ignore_errors=True)
+#     shutil.rmtree("./Resources", ignore_errors=True)
+#     src_dst = {
+#         "./css/base/": "./CSS/themes",
+#         "./css/theme-options": "./CSS/variables",
+#         "./css/community-theme-options": "./CSS/variables",
+#         "./resources/": "./Resources/",
+#         "./css/addons/": "./CSS/addons",
+#         "./css/defaults/": "./CSS/defaults",
+#         "./css/theme-options/organizr.css": "./CSS/variables/organizr-dark.css",
+#         "./css/theme-options/organizr.css": "./css/theme-options/organizr-dark.css"
+#         }
+#     for src in src_dst:
+#         if ".css" in src:
+#             shutil.copy(src,src_dst[src])
+#             continue
+#         shutil.copytree(src,src_dst[src],dirs_exist_ok=True)
 
 def create_theme_options():
     def create_css(folder):
@@ -144,7 +144,7 @@ def create_theme_options():
         applications = data["applications"]
     for app in applications:
         for theme in themes:
-            folders = ["./CSS/themes","./css/base"]
+            folders = ["./css/base"]
             for folder in folders:
                 create_css(folder)
 
