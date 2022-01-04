@@ -160,5 +160,4 @@ if __name__ == "__main__":
     apps = loads(create_json(app_folders=app_folders, themes=themes, community_themes=community_themes))
     with open("themes.json", "w") as outfile:
         dump(apps, outfile, indent=2, sort_keys=True)
-    temporary_copy_files()
     create_theme_options()
