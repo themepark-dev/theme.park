@@ -36,6 +36,12 @@ html, body, .wizard-background, .content-container, #main-container\ dark > mat-
     background: transparent !important;
 }
 
+.container-alert {
+    color: #fff;
+    background-color: rgb(0 0 0 / 50%) !important;
+    border-color: rgb(var(--accent-color)) !important;
+}
+
 .h1,
 .h2,
 .h3,
@@ -549,8 +555,26 @@ button.admin-cog {
     color: rgb(var(--accent-color)) !important;
 }
 
+.mat-toolbar .mat-form-field-underline,.mat-toolbar .mat-form-field-ripple,.mat-toolbar .mat-focused .mat-form-field-ripple {
+background-color: rgb(var(--accent-color));
+}
+
+.mat-input-element,.login-card .mat-input-element {
+    caret-color: rgb(var(--accent-color)) !important;
+}
+
+input:-internal-autofill-selected {
+    appearance: menulist-button;
+    background-image: none !important;
+    background-color: -internal-light-dark(rgba(232, 240, 254, 0), rgba(70, 90, 126, 0.4)) !important;
+    color: -internal-light-dark(black, white) !important;
+}
+
+.mat-form-field.mat-focused .mat-form-field-ripple,
 .mat-checkbox-checked.mat-accent .mat-checkbox-background,
-.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background,
+.mat-toolbar .mat-form-field-underline,.mat-toolbar .mat-form-field-ripple,
+.mat-toolbar .mat-focused .mat-form-field-ripple {
     background-color: rgb(var(--accent-color));
 }
 
@@ -598,6 +622,10 @@ button.admin-cog {
 }
 
 /* TABLES */
+
+.table {
+    color: var(--text);
+}
 
 .mat-table-sticky,
 .mat-table tbody,

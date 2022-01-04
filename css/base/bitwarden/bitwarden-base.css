@@ -19,7 +19,9 @@ img.logo {
 }
 
 body.layout_frontend,
-body {
+html[class*="theme_"] body,
+html[class*="theme_"] body.layout_frontend,
+html {
     background: var(--main-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
@@ -39,17 +41,22 @@ app-org-vault-groupings .card .card-body a,
     color: var(--link-color);
 }
 
-a:hover,
+a:hover:not(.btn-secondary):not(.btn-outline-primary),
 app-vault-groupings .card li.active>a:first-of-type,
 app-vault-groupings .card li.active>div a:first-of-type,
 app-org-vault-groupings .card li.active>a:first-of-type,
 app-org-vault-groupings .card li.active>div a:first-of-type,
 .groupings .card li.active>a:first-of-type,
-.groupings .card li.active>div a:first-of-type {
+.groupings .card li.active>div a:first-of-type,
+html[class*="theme_"] a {
     color: var(--link-color-hover) !important;
+}
+html[class*="theme_"] #totpImage {
+    background: lightgray;
 }
 
 /* TEXT */
+html[class*="theme_"] .text-muted,
 .text-muted,
 .form-check-block .form-check-label>small,
 .modal-header small,
@@ -75,10 +82,10 @@ h6,
 .h4,
 .h5,
 .h6,
-label,
-label:not(.form-check-label):not(.btn),
+label:not(#g_advanced > div:nth-child(13) > label):not(#g_advanced > div:nth-child(12) > div.col-sm-8 > div > label),
+label:not(.form-check-label):not(.btn):not(#g_advanced > div:nth-child(13) > label),
 label.bold .card-header:first-child,
-.card-header,
+html[class*="theme_"] .card-header,
 .modal-header {
     color: var(--text-hover) !important;
 }
@@ -96,8 +103,21 @@ label.bold .card-header:first-child,
 }
 
 /* CARDS */
+
+html[class*="theme_"] .card-header {
+    background-color: rgb(0 0 0 / 45%);
+    color: #fff;
+}
+
 .card {
-    background-color: rgba(255, 255, 255, 0.07);
+    background-color: rgba(255, 255, 255, 0.07) !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+    color: var(--text) !important;
+}
+
+html[class*="theme_"] .card-body:not(.bg-light>.card-body) {
+    background-color: transparent;
+    color: var(--text);
 }
 
 app-vault-groupings .card li.active>a:first-of-type,
@@ -106,18 +126,43 @@ app-vault-groupings .card li.active>div>.fa {
     color: rgb(var(--accent-color));
 }
 
-body>app-root>app-user-layout>app-tools>div>div>div.col-9>app-password-generator>div.card.card-password.bg-light.my-4 {
+body>app-root>app-user-layout>app-tools>div>div>div.col-9>app-password-generator>div.card.card-password.bg-light.my-4,
+body > app-root > app-user-layout > app-tools > div > div > div.col-9 > app-password-generator > div.card.card-password.bg-light.my-4 > div {
     background-color: rgb(0 0 0 / 15%) !important;
 }
 
-.password-number {
+html[class*="theme_"] .password-number {
     color: rgb(var(--accent-color));
+}
+html[class*="theme_"] .password-letter {
+    color: white;
 }
 
 /* MODALS */
-.modal-content,
-.modal-footer {
+html[class*="theme_"] .modal-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--modal-header-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+html[class*="theme_"] .modal-body {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+html[class*="theme_"] .modal-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--modal-footer-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -183,26 +228,35 @@ body>app-root>app-user-layout>app-tools>div>div>div.col-9>app-password-generator
 }
 
 /* FORMS */
-.form-control:focus {
-    box-shadow: none;
-    border-color: transparent;
+html[class*="theme_"] label.form-check-label, html[class*="theme_"] .form-control-file {
+    color: var(--text);
 }
 
-.form-control {
+html[class*="theme_"] .form-control:focus {
+    box-shadow: none;
+    border-color: transparent;
+    background: rgb(253 253 253 / 15%);
+}
+
+html[class*="theme_"] .form-control {
     color: var(--text);
     background-color: rgb(0 0 0 / 0.25);
     border: 1px solid transparent;
 
 }
 
-.form-control:disabled,
+html[class*="theme_"] .form-control:disabled,
 .form-control[readonly] {
     background-color: rgb(255 255 255 / 25%);
     opacity: 1;
 }
 
+select:focus {
+    background: #1f1f1f !important;
+}
+
 /* DROPDOWN MENU */
-.dropdown-menu {
+/* html[class*="theme_"] .dropdown-menu {
     background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
@@ -213,15 +267,20 @@ body>app-root>app-user-layout>app-tools>div>div>div.col-9>app-password-generator
     -o-background-size: auto, cover;
     border: 1px solid transparent;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, .2);
+} */
+
+html[class*="theme_"] .dropdown-menu, html[class*="theme_"] .dropdown-item {
+    background: #1f1f1f;
+    color: #fff;
 }
 
-.dropdown-item,
-.dropdown-item-text {
+html[class*="theme_"] .dropdown-item,
+html[class*="theme_"] .dropdown-item-text {
     color: var(--text);
 }
 
-.dropdown-item:hover,
-.dropdown-item:focus {
+html[class*="theme_"] .dropdown-item:hover,
+html[class*="theme_"] .dropdown-item:focus {
     color: var(--text-hover);
     text-decoration: none;
     background-color: rgb(255 255 255 / 0.08);
@@ -239,19 +298,32 @@ a.text-danger:focus {
 }
 
 /* SETTINGS */
-.list-group-item.active {
+
+html[class*="theme_"] .page-header, html[class*="theme_"] .secondary-header {
+    border-bottom: 1px solid rgb(255 255 255 / 30%);
+}
+
+html[class*="theme_"] .list-group-item.active {
     color: var(--text);
     background-color: rgb(255 255 255 / 10%);
     border-left: 3px solid rgb(var(--accent-color));
+    border-color: rgba(255, 255, 255, 0.1);
 }
 
-.callout {
+html[class*="theme_"] .callout {
     background-color: rgb(255 255 255 / 15%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text);
 }
 
-.list-group-item {
+html[class*="theme_"] .list-group-item {
     background-color: rgb(0 0 0 / 25%);
     border: 1px solid rgb(255 255 255 / 8%);
+    color: var(--text);
+}
+
+html[class*="theme_"] .progress {
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
 /* BUTTONS */
@@ -295,17 +367,21 @@ a.text-danger:focus {
 
 .btn[class*="btn-outline-"]:not(:hover),
 .swal2-popup .swal2-actions button[class*="btn-outline-"]:not(:hover),
-.swal2-popup .swal2-actions button.swal2-cancel {
-    border-color: var(--button-color);
-    background-color: var(--button-color);
-    color: var(--button-text);
+.swal2-popup .swal2-actions button.swal2-cancel,
+html[class*="theme_"] .btn-primary,
+html[class*="theme_"] .swal2-confirm {
+    border-color: var(--button-color) !important;
+    background-color: var(--button-color) !important;
+    color: var(--button-text) !important;
 }
 
 .btn-outline-secondary:hover,
-.swal2-popup .swal2-actions button.swal2-cancel:hover {
-    color: var(--button-text-hover);
-    background-color: var(--button-color-hover);
-    border-color: var(--button-color-hover);
+.swal2-popup .swal2-actions button.swal2-cancel:hover,
+html[class*="theme_"] .btn-primary,
+html[class*="theme_"] .swal2-confirm {
+    color: var(--button-text-hover) !important;
+    background-color: var(--button-color-hover) !important;
+    border-color: var(--button-color-hover) !important;
 }
 
 .btn-outline-secondary:hover:not(:disabled),
@@ -315,8 +391,8 @@ a.text-danger:focus {
 
 .btn-outline-primary:hover {
     color: var(--button-text-hover) !important;
-    background-color: var(--button-color-hover);
-    border-color: var(--button-color-hover);
+    background-color: var(--button-color-hover) !important;
+    border-color: var(--button-color-hover) !important;
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active,
@@ -335,7 +411,9 @@ a.text-danger:focus {
 .btn-outline-secondary.focus,
 .swal2-popup .swal2-actions button.focus.swal2-cancel,
 .btn-outline-primary:focus,
-.btn-outline-primary.focus {
+.btn-outline-primary.focus,
+.btn-check:focus+.btn,
+.btn:focus {
     box-shadow: 0 0 0 0.2rem rgb(var(--accent-color), .5);
 }
 
@@ -344,11 +422,14 @@ a.text-danger:focus {
 .btn-outline-secondary:not(:disabled):not(.disabled).active,
 .swal2-popup .swal2-actions button.swal2-cancel:not(:disabled):not(.disabled).active,
 .show>.btn-outline-secondary.dropdown-toggle,
-.swal2-popup .swal2-actions .show>button.dropdown-toggle.swal2-cancel {
-    color: var(--button-text-hover);
-    background-color: var(--button-color-hover);
-    border-color: var(--button-color-hover);
+.swal2-popup .swal2-actions .show>button.dropdown-toggle.swal2-cancel,
+html[class*="theme_"] .btn-outline-secondary:hover:not(:disabled),
+html[class*="theme_"] .btn-outline-secondary:active {
+    color: var(--button-text-hover) !important;
+    background-color: var(--button-color-hover) !important;
+    border-color: var(--button-color-hover) !important;
 }
+
 
 .btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
 .swal2-popup .swal2-actions button.swal2-cancel:not(:disabled):not(.disabled):active:focus,
@@ -499,4 +580,13 @@ input:focus:-ms-input-placeholder {
 .card-header small,
 .modal-header small {
     color: var(--text-muted) !important;
+}
+
+/* Table */
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-accent-bg: var(--bs-table-striped-bg);
+    color: var(--text-hover);
+}
+html[class*="theme_"] .table td {
+    color: var(--text);
 }

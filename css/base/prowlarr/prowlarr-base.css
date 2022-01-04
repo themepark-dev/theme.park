@@ -192,6 +192,7 @@ a:hover {
 
 [class*="CheckInput-input-"][class*="CheckInput-isNotChecked-"] {
     background: #fff;
+    border: 1px solid #ccc;
 }
 
 /* HEADER */
@@ -470,6 +471,10 @@ a:hover {
     color: #000;
 }
 
+[class*="Label-disabled-"][class*="Label-outline-"] {
+    color: #000;
+}
+
 [class*="PageSidebarItem-status-"][class*="Label-info-"] {
     border-color: var(--arr-queue-color);
     background-color: var(--arr-queue-color);
@@ -597,8 +602,10 @@ a:hover {
 
 /* ADD NEW */
 
-[class*="EnhancedSelectInput-options-"] {
-    border: 1px solid rgba(255, 255, 255, 0.2);
+[class*="EnhancedSelectInput-options-"],
+[class*="EnhancedSelectInputOption-option-"],
+[class*="EnhancedSelectInput-optionsContainer-"] {
+    border: 0px solid rgba(255, 255, 255, 0.2);
     border-radius: 4px;
     background: var(--drop-down-menu-bg);
     background-repeat: repeat, no-repeat;
@@ -625,6 +632,32 @@ a:hover {
     color: var(--text);
 }
 
+[class*="EnhancedSelectInput-optionsModalScroller-"] {
+    border: 1px solid var(--drop-down-menu-bg);
+    border-radius: 4px;
+    background: var(--drop-down-menu-bg);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    color: var(--text);
+}
+
+[class*="EnhancedSelectInput-mobileCloseButton-"] {
+    color: var(--button-text);
+}
+
+[class*="EnhancedSelectInput-mobileCloseButton-"]:hover {
+    color: var(--button-text-hover);
+}
+
+[class*="EnhancedSelectInput-mobileCloseButtonContainer-"] {
+    
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
 /* SEARCH BAR */
 [class*="Input-input-"],
 [class*="AddNewMovie-searchIconContainer-"],
