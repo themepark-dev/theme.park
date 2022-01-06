@@ -121,7 +121,7 @@ h6 {
     color: var(--text-hover) !important;
 }
 
-.badge {
+.badge:not(.homepage-drag .badge) {
     background-color: rgb(var(--accent-color));
     color: var(--label-text-color);
 }
@@ -1470,7 +1470,7 @@ a:hover,
     border-radius: 3px;
 }
 
-.bg-inverse {
+.bg-inverse:not(.homepage-drag) {
     background: transparent !important;
 }
 
