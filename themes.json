@@ -146,6 +146,9 @@
     "Overseerr": {
       "url": "https://develop.theme-park.dev/css/theme-options/overseerr.css?sha=7e3a8e3ca21dd82641113cf53f071a89252c7235"
     },
+    "Pine-shadow": {
+      "url": "https://develop.theme-park.dev/css/community-theme-options/pine-shadow.css?sha=036469076b14e6d2336d2c88a6f43e28d88ea4dd"
+    },
     "Plex": {
       "url": "https://develop.theme-park.dev/css/theme-options/plex.css?sha=6059a0bddd6ce8c60be5cd95b302a00654e92dfa"
     },
@@ -473,6 +476,9 @@
     },
     "Onedark": {
       "url": "https://develop.theme-park.dev/css/community-theme-options/onedark.css?sha=cbccbf4366ab59bd2b9253c221b1f093c2e85118"
+    },
+    "Pine-shadow": {
+      "url": "https://develop.theme-park.dev/css/community-theme-options/pine-shadow.css?sha=036469076b14e6d2336d2c88a6f43e28d88ea4dd"
     },
     "Power": {
       "url": "https://develop.theme-park.dev/css/community-theme-options/power.css?sha=b5e32f47b689d875d059da53f047527531aa0b68"
