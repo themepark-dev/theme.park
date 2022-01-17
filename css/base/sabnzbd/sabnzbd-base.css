@@ -468,7 +468,8 @@ input[type="submit"]:focus {
 
 /* History */
 
-.queue-table .row-extra-text, .history-table .row-extra-text {
+.queue-table .row-extra-text,
+.history-table .row-extra-text {
   color: var(--text-muted);
 }
 
@@ -539,12 +540,13 @@ tr td.row-extra-text,
   color: var(--button-text);
 }
 
-.progress strong, .progress i {
+.progress strong,
+.progress i {
   color: #fff;
 }
 
 .progress {
-  background-color: rgb(var(--accent-color),.7) !important;
+  background-color: rgb(var(--accent-color), .7) !important;
   box-shadow: none !important;
   -webkit-box-shadow: none !important;
 }
