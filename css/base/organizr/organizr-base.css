@@ -61,6 +61,17 @@
     color: var(--text);
 }
 
+#HEALTHCHECKS-settings-items [id*="Services"] .row.m-b-40 {
+    background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+
 .h1,
 .h2,
 .h3,
