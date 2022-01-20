@@ -485,7 +485,7 @@ a:hover {
     background: #1f1f1f;
     color: #eee;
 }
-
+/* 
 @supports (backdrop-filter: blur(1em)) or (-webkit-backdrop-filter:blur(1em)) {
     [class*="Tooltip-tooltip-"][class*="Tooltip-inverse-"],
     [class*="Popover-title-"],
@@ -499,7 +499,7 @@ a:hover {
         background: rgb(var(--accent-color),0.05);
         color: white;
     }
-}
+} */
 
 [class*="Tooltip-top-"][class*="Tooltip-inverse-"] {
     border-top-color: var(--text);
