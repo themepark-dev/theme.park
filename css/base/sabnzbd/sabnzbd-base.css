@@ -236,11 +236,6 @@ hr {
   color: var(--text-hover);
 }
 
-
-.caret {
-  border-top-color: white !important;
-}
-
 svg.peity polygon {
   fill: var(--button-color) !important;
 }
@@ -473,12 +468,17 @@ input[type="submit"]:focus {
 
 /* History */
 
-.queue-table .row-extra-text, .history-table .row-extra-text {
+.queue-table .row-extra-text,
+.history-table .row-extra-text {
   color: var(--text-muted);
 }
 
 .caret {
   border-top-color: var(--button-text) !important;
+}
+
+td.delete .dropdown>a .caret {
+  border-top-color: var(--button-color) !important;
 }
 
 .table-striped>tbody>tr:nth-of-type(odd) {
@@ -540,27 +540,28 @@ tr td.row-extra-text,
   color: var(--button-text);
 }
 
-.progress strong, .progress i {
+.progress strong,
+.progress i {
   color: #fff;
 }
 
 .progress {
-  background-color: transparent !important;
+  background-color: rgb(var(--accent-color), .7) !important;
   box-shadow: none !important;
   -webkit-box-shadow: none !important;
 }
 
 .progress-bar strong {
-  color: hsla(0, 0%, 100%, .7) !important;
+  color: var(--label-text-color) !important;
 }
 
 .progress-bar+span {
-  color: hsla(0, 0%, 100%, .7) !important;
+  color: var(--label-text-color) !important;
 }
 
 .progress-bar-info,
 .progress-bar {
-  background-color: var(--button-color) !important;
+  background-color: rgb(var(--accent-color)) !important;
 }
 
 .glyphicon-compressed:before {
