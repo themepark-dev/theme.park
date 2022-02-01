@@ -144,8 +144,8 @@ h6 {
 }
 
 .active .tabLoaded {
-    -webkit-filter: drop-shadow(0 0 0px rgb(var(--accent-color)));
-    filter: drop-shadow(0 0 0px rgb(var(--accent-color)));
+    -webkit-filter: drop-shadow(0 0 2px rgb(var(--accent-color)));
+    filter: drop-shadow(0 0 2px rgb(var(--accent-color)));
     color: rgb(var(--accent-color));
 }
 
