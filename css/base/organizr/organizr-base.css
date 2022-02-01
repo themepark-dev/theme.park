@@ -138,14 +138,14 @@ h6 {
 }
 
 .tabLoaded {
-    -webkit-filter: drop-shadow(0 0 2px transparent);
-    filter: drop-shadow(0 0 2px transparent);
+    -webkit-filter: drop-shadow(0 0 5px rgb(var(--accent-color)));
+    filter: drop-shadow(0 0 5px rgb(var(--accent-color)));
     color: var(--text-hover)
 }
 
 .active .tabLoaded {
-    -webkit-filter: drop-shadow(0 0 5px transparent);
-    filter: drop-shadow(0 0 5px transparent);
+    -webkit-filter: drop-shadow(0 0 0px rgb(var(--accent-color)));
+    filter: drop-shadow(0 0 0px rgb(var(--accent-color)));
     color: rgb(var(--accent-color));
 }
 
