@@ -129,7 +129,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: var(--text-hover) !important;
+    color: var(--text-hover) !important; 
 }
 
 .badge:not(.homepage-drag .badge) {
