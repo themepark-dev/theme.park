@@ -169,18 +169,18 @@ h6 {
 
 .btn:not(.btn-danger):not(.bg-plex):not(.btn-youtube):not(.btn-info.btn-circle):not(.btn-success),
 .cbutton {
-    background: var(--button-color) !important;
-    border-color: var(--button-color) !important;
-    color: var(--button-text) !important;
+    background: var(--button-color);
+    border-color: var(--button-color);
+    color: var(--button-text);
 }
 
 .btn:hover:not(.btn-danger):not(.bg-plex):not(.btn-youtube):not(.btn-info.btn-circle):not(.btn-success),
 .btn:active:not(.btn-danger):not(.bg-plex):not(.btn-youtube):not(.btn-info.btn-circle):not(.btn-success),
 .btn:focus:not(.btn-danger):not(.bg-plex):not(.btn-youtube):not(.btn-info.btn-circle):not(.btn-success),
 .cbutton:hover {
-    background: var(--button-color-hover) !important;
-    border-color: var(--button-color-hover) !important;
-    color: var(--button-text-hover) !important;
+    background: var(--button-color-hover);
+    border-color: var(--button-color-hover);
+    color: var(--button-text-hover);
 }
 
 .cbutton {
