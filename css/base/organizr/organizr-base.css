@@ -1481,7 +1481,7 @@ a:hover,
     border-radius: 3px;
 }
 
-.bg-inverse:not(.homepage-drag) {
+.bg-inverse:not(.homepage-drag):not(.pihole-stat) {
     background: transparent !important;
 }
 
