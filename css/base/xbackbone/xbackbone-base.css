@@ -21,28 +21,6 @@
     -o-background-size: auto, cover;
 }
 
-/* Scrollbar */
-@media only screen and (min-width: 768px) {
-    html {
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-    }
-
-    body {
-        overflow-y: auto;
-        height: 100%;
-        background: var(--main-bg-color);
-        background-repeat: repeat, no-repeat;
-        background-attachment: fixed, fixed;
-        background-position: center center, center center;
-        background-size: auto, cover;
-        -webkit-background-size: auto, cover;
-        -moz-background-size: auto, cover;
-        -o-background-size: auto, cover;
-    }
-}
-
 ::-webkit-scrollbar {
     width: 14px;
 }
@@ -56,7 +34,7 @@
 }
 
 ::-webkit-scrollbar-track {
-    background-color: transparent;
+    background-color: #1f1f1f;
 }
 
 ::-webkit-scrollbar-thumb:hover {
