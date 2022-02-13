@@ -225,7 +225,7 @@
     },
     "gitea": {
       "addons": {},
-      "base_css": "https://develop.theme-park.dev/css/base/gitea/gitea-base.css?sha=868eb841e2be480a6fd33ab61cdef40692eeab6d"
+      "base_css": "https://develop.theme-park.dev/css/base/gitea/gitea-base.css?sha=1f6e0c4ea179d8cf19ca269d16a4c0e9c0f1a326"
     },
     "guacamole": {
       "addons": {},

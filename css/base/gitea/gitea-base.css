@@ -1619,3 +1619,51 @@ input::selection {
 ::-webkit-calendar-picker-indicator {
     filter: invert(1);
 }
+
+/* VIEW FILE */
+
+.lines-num {
+    color: var(--text);
+}
+
+.code-view .lines-num:hover {
+    color: var(--text-hover)!important;
+    background: rgb(var(--accent-color),.5);
+}
+
+.code-view .lines-num:active,.code-view .lines-num:focus {
+    color: var(--text-hover)!important;
+    background: rgb(var(--accent-color),.5);
+}
+
+.code-line-button {
+    background-color: var(--button-color);
+    color: var(--button-text);
+    border: 1px solid var(--button-color);
+}
+
+.code-line-button:hover {
+    color: var(--button-text-hover);
+}
+
+.ui.popup {
+    background-color: var(--button-color);
+    color: var(--button-text);
+    border-color: var(--button-color);
+}
+
+.ui.top.popup:before {
+    background: var(--button-color);
+}
+
+.ui.popup:before {
+    box-shadow: 1px 1px var(--button-color);
+}
+
+.ui.link.list .item, .ui.link.list a.item, .ui.link.list .item a:not(.ui) {
+    color: var(--button-text);
+}
+
+.ui.link.list.list a.item:hover, .ui.link.list.list .item a:not(.ui):hover, .ui.link.list.list a.item:active, .ui.link.list.list .item a:not(.ui):active {
+    color: var(--button-text-hover);
+}
