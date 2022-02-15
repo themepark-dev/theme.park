@@ -129,7 +129,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: var(--text-hover) !important;
+    color: var(--text-hover) !important; 
 }
 
 .badge:not(.homepage-drag .badge) {
@@ -138,14 +138,14 @@ h6 {
 }
 
 .tabLoaded {
-    -webkit-filter: drop-shadow(0 0 2px transparent);
-    filter: drop-shadow(0 0 2px transparent);
+    -webkit-filter: drop-shadow(0 0 5px rgb(var(--accent-color)));
+    filter: drop-shadow(0 0 5px rgb(var(--accent-color)));
     color: var(--text-hover)
 }
 
 .active .tabLoaded {
-    -webkit-filter: drop-shadow(0 0 5px transparent);
-    filter: drop-shadow(0 0 5px transparent);
+    -webkit-filter: drop-shadow(0 0 2px rgb(var(--accent-color)));
+    filter: drop-shadow(0 0 2px rgb(var(--accent-color)));
     color: rgb(var(--accent-color));
 }
 
@@ -169,18 +169,18 @@ h6 {
 
 .btn:not(.btn-danger):not(.bg-plex):not(.btn-youtube):not(.btn-info.btn-circle):not(.btn-success),
 .cbutton {
-    background: var(--button-color) !important;
-    border-color: var(--button-color) !important;
-    color: var(--button-text) !important;
+    background: var(--button-color);
+    border-color: var(--button-color);
+    color: var(--button-text);
 }
 
 .btn:hover:not(.btn-danger):not(.bg-plex):not(.btn-youtube):not(.btn-info.btn-circle):not(.btn-success),
 .btn:active:not(.btn-danger):not(.bg-plex):not(.btn-youtube):not(.btn-info.btn-circle):not(.btn-success),
 .btn:focus:not(.btn-danger):not(.bg-plex):not(.btn-youtube):not(.btn-info.btn-circle):not(.btn-success),
 .cbutton:hover {
-    background: var(--button-color-hover) !important;
-    border-color: var(--button-color-hover) !important;
-    color: var(--button-text-hover) !important;
+    background: var(--button-color-hover);
+    border-color: var(--button-color-hover);
+    color: var(--button-text-hover);
 }
 
 .cbutton {
@@ -1481,7 +1481,7 @@ a:hover,
     border-radius: 3px;
 }
 
-.bg-inverse:not(.homepage-drag) {
+.bg-inverse:not(.homepage-drag):not(.pihole-stat) {
     background: transparent !important;
 }
 
