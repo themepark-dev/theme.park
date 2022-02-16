@@ -2,7 +2,7 @@
     --about: linear-gradient(to bottom, rgba(0, 0, 0, 1.0), rgba(87, 109, 117, 0)), var(--main-bg-color);
 }
 
-.bg-primary { 
+.bg-primary {
     background: var(--about) !important;
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
@@ -307,23 +307,14 @@ p {
     line-height: 1.2;
 }
 
-@keyframes glowing {
-    0% {
-      background-color: var(--button-color);
-      box-shadow: 0 0 5px rgba(var(--accent-color), 0.502);
-    }
-    50% {
-      background-color: var(--button-color-hover);
-      box-shadow: 0 0 10px rgba(var(--accent-color));
-    }
-    100% {
-        background-color: var(--button-color);
-        box-shadow: 0 0 5px rgba(var(--accent-color), 0.502)
-    }
-  }
-.click-me-btn {
-    animation: glowing 1300ms infinite;
+.animate__animated.animate__pulse {
+    --animate-duration: 1.5s;
 }
+
+.animate__pulse:hover {
+    box-shadow: 0 0 10px rgba(var(--accent-color), 0.502);
+}
+
 /* @media (min-width: 992px) {
 .portfolio-box img {
     object-fit: cover;
@@ -341,7 +332,7 @@ p {
 }
 
 #portfolio [class*="container-"] .portfolio-box .portfolio-box-caption.hotline-hover {
-    background: linear-gradient(0deg, rgba(247,101,184,1) 0%, rgb(21, 95, 165) 100%);
+    background: linear-gradient(0deg, rgba(247, 101, 184, 1) 0%, rgb(21, 95, 165) 100%);
 }
 
 #portfolio [class*="container-"] .portfolio-box .portfolio-box-caption.space-gray-hover {
@@ -379,39 +370,56 @@ p {
 
 @keyframes fadein {
     from {
-        opacity:0;
+        opacity: 0;
     }
-    to {
-        opacity:1;
-    }
-}
-@-moz-keyframes fadein { /* Firefox */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-o-keyframes fadein { /* Opera */
-    from {
-        opacity:0;
-    }
+
     to {
         opacity: 1;
     }
 }
+
+@-moz-keyframes fadein {
+
+    /* Firefox */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+
+    /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+
+    /* Opera */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 body {
     animation: fadein 2s;
-    -moz-animation: fadein 2s; /* Firefox */
-    -webkit-animation: fadein 2s; /* Safari and Chrome */
-    -o-animation: fadein 2s; /* Opera */
+    -moz-animation: fadein 2s;
+    /* Firefox */
+    -webkit-animation: fadein 2s;
+    /* Safari and Chrome */
+    -o-animation: fadein 2s;
+    /* Opera */
 }

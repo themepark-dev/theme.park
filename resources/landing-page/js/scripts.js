@@ -50,15 +50,16 @@
 
 
 function injectTheme(theme,container="head") {
+    let themeLower = theme.toLowerCase()
     if (container === "head") {
         html_element = document.head;
     } else html_element = document.body;
     let themeOption = document.getElementById("theme-option")
     let link = themeOption ? themeOption : document.createElement("link");
-    url = "/css/theme-options/"
+    url = "/css/theme-options"
     link.type = "text/css";
     link.rel = "stylesheet";
-    link.href = `${url}/${theme.toLowerCase()}.css`;
+    link.href = `${url}/${themeLower}.css`;
     link.id = `theme-option`
     html_element.appendChild(link);
   }
@@ -85,8 +86,9 @@ function injectTheme(theme,container="head") {
     href="https://docs.theme-park.dev/custom/">variables</a>.`
     createApps(apps,themeOptions)
     smoothScroll()
-    let randomTheme = Object.keys(themeOptions)[~~(Math.random() * Object.keys(themeOptions).length)]
-    injectTheme(randomTheme)
+    currentIndex = ~~(Math.random() * Object.keys(themeOptions).length)
+    injectTheme(Object.keys(themeOptions)[currentIndex])
+    updateMetaThemeColor()
     })
 }
 
@@ -119,7 +121,9 @@ function createApps(apps,themeOptions) {
 }
 
 function fadeOutIn(speed) {
-    let theme = Object.keys(themeOptions)[~~(Math.random() * Object.keys(themeOptions).length)]
+    currentIndex = (currentIndex+1)%Object.keys(themeOptions).length;
+    //let theme = Object.keys(themeOptions)[~~(Math.random() * Object.keys(themeOptions).length)]
+    let theme = Object.keys(themeOptions)[currentIndex]
     if (!document.body.style.opacity) {
         document.body.style.opacity = 1;
     }
@@ -129,6 +133,7 @@ function fadeOutIn(speed) {
             clearInterval(outInterval);
             injectTheme(theme)
             document.getElementById("switch-theme").innerText = theme
+            updateMetaThemeColor()
             var inInterval = setInterval(function() {
                 document.body.style.opacity = Number(document.body.style.opacity)+0.02;
                 if (document.body.style.opacity >= 1)
@@ -137,6 +142,16 @@ function fadeOutIn(speed) {
         }
     }, speed/50 );
 
+}
+
+function updateMetaThemeColor() {
+    fetch(`/css/theme-options/${Object.keys(themeOptions)[currentIndex].toLowerCase()}.css`)
+    .then(response =>  response.text())
+    .then(text => {
+        let re = text.match("--accent-color:.*;")[0]
+        rgb = re.split(":")[1].split(";")[0].replace(/\s/g, "")
+        document.querySelector('meta[name="theme-color"]').setAttribute('content',  `rgb(${rgb})`);
+        })
 }
 
 // Smooth scrolling using anime.js
