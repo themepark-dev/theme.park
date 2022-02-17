@@ -32,6 +32,9 @@ section {
 .text-white-50 {
     color: var(--text) !important;
 }
+.page-section {
+    padding: 1.2rem 0;
+}
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
 
