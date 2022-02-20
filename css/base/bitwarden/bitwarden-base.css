@@ -51,6 +51,7 @@ app-org-vault-groupings .card li.active>div a:first-of-type,
 html[class*="theme_"] a {
     color: var(--link-color-hover) !important;
 }
+
 html[class*="theme_"] #totpImage {
     background: lightgray;
 }
@@ -120,6 +121,10 @@ html[class*="theme_"] .card-body:not(.bg-light>.card-body) {
     color: var(--text);
 }
 
+html[class*="theme_"] a.text-body {
+    color: var(--text-hover)
+}
+
 app-vault-groupings .card li.active>a:first-of-type,
 app-vault-groupings .card li.active>div a:first-of-type,
 app-vault-groupings .card li.active>div>.fa {
@@ -127,13 +132,14 @@ app-vault-groupings .card li.active>div>.fa {
 }
 
 body>app-root>app-user-layout>app-tools>div>div>div.col-9>app-password-generator>div.card.card-password.bg-light.my-4,
-body > app-root > app-user-layout > app-tools > div > div > div.col-9 > app-password-generator > div.card.card-password.bg-light.my-4 > div {
+body>app-root>app-user-layout>app-tools>div>div>div.col-9>app-password-generator>div.card.card-password.bg-light.my-4>div {
     background-color: rgb(0 0 0 / 15%) !important;
 }
 
 html[class*="theme_"] .password-number {
     color: rgb(var(--accent-color));
 }
+
 html[class*="theme_"] .password-letter {
     color: white;
 }
@@ -150,6 +156,7 @@ html[class*="theme_"] .modal-header {
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
 }
+
 html[class*="theme_"] .modal-body {
     background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat;
@@ -160,6 +167,7 @@ html[class*="theme_"] .modal-body {
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
 }
+
 html[class*="theme_"] .modal-footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     background: var(--modal-footer-color);
@@ -228,7 +236,8 @@ html[class*="theme_"] .modal-footer {
 }
 
 /* FORMS */
-html[class*="theme_"] label.form-check-label, html[class*="theme_"] .form-control-file {
+html[class*="theme_"] label.form-check-label,
+html[class*="theme_"] .form-control-file {
     color: var(--text);
 }
 
@@ -269,7 +278,8 @@ select:focus {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, .2);
 } */
 
-html[class*="theme_"] .dropdown-menu, html[class*="theme_"] .dropdown-item {
+html[class*="theme_"] .dropdown-menu,
+html[class*="theme_"] .dropdown-item {
     background: #1f1f1f;
     color: #fff;
 }
@@ -299,7 +309,17 @@ a.text-danger:focus {
 
 /* SETTINGS */
 
-html[class*="theme_"] .page-header, html[class*="theme_"] .secondary-header {
+html[class*="theme_"] .page-header,
+html[class*="theme_"] .secondary-header {
+    border-bottom: 1px solid rgb(255 255 255 / 30%);
+}
+
+html[class*="theme_"] .page-header,
+html[class*="theme_"] .secondary-header {
+    border-bottom: 1px solid rgb(255 255 255 / 30%);
+}
+
+html[class*="theme_"] .footer {
     border-bottom: 1px solid rgb(255 255 255 / 30%);
 }
 
@@ -450,6 +470,11 @@ html[class*="theme_"] .btn-outline-secondary:active {
     opacity: .8;
 }
 
+html[class*="theme_"] .badge-info {
+    background-color: var(--button-color);
+    color: var(--label-text-color);
+}
+
 /* Org */
 .org-nav {
     background: var(--main-bg-color);
@@ -587,6 +612,7 @@ input:focus:-ms-input-placeholder {
     --bs-table-accent-bg: var(--bs-table-striped-bg);
     color: var(--text-hover);
 }
+
 html[class*="theme_"] .table td {
     color: var(--text);
 }

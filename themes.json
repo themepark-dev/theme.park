@@ -185,7 +185,7 @@
     },
     "bitwarden": {
       "addons": {},
-      "base_css": "https://develop.theme-park.dev/css/base/bitwarden/bitwarden-base.css?sha=987fa5ed04665d94f568245cbbad9d367480a60d"
+      "base_css": "https://develop.theme-park.dev/css/base/bitwarden/bitwarden-base.css?sha=073c73f895b44a0ab871e495cc8fd2c3e7595cdf"
     },
     "calibreweb": {
       "addons": {},
