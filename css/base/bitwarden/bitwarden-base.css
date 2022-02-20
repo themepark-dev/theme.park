@@ -66,6 +66,11 @@ html[class*="theme_"] .text-muted,
     color: var(--text-muted) !important;
 }
 
+html[class*="theme_"] .navbar .nav-item.active>.nav-link,
+html[class*="theme_"] .navbar .nav-item>.nav-link {
+    font-weight: 600;
+}
+
 .table-hover tbody tr:hover {
     color: var(--text-hover);
     background-color: rgba(255, 255, 255, .08);
