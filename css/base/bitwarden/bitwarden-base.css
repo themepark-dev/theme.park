@@ -120,6 +120,10 @@ html[class*="theme_"] .card-body:not(.bg-light>.card-body) {
     color: var(--text);
 }
 
+html[class*="theme_"] a.text-body {
+    color: var(--text-hover)
+}
+
 app-vault-groupings .card li.active>a:first-of-type,
 app-vault-groupings .card li.active>div a:first-of-type,
 app-vault-groupings .card li.active>div>.fa {
@@ -303,6 +307,14 @@ html[class*="theme_"] .page-header, html[class*="theme_"] .secondary-header {
     border-bottom: 1px solid rgb(255 255 255 / 30%);
 }
 
+html[class*="theme_"] .page-header, html[class*="theme_"] .secondary-header{
+    border-bottom: 1px solid rgb(255 255 255 / 30%);
+}
+
+html[class*="theme_"] .footer {
+    border-bottom: 1px solid rgb(255 255 255 / 30%);
+}
+
 html[class*="theme_"] .list-group-item.active {
     color: var(--text);
     background-color: rgb(255 255 255 / 10%);
@@ -448,6 +460,11 @@ html[class*="theme_"] .btn-outline-secondary:active {
     background-color: var(--button-color);
     border-color: var(--button-color);
     opacity: .8;
+}
+
+html[class*="theme_"] .badge-info {
+    background-color: var(--button-color);
+    color: var(--label-text-color);
 }
 
 /* Org */
