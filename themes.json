@@ -185,7 +185,7 @@
     },
     "bitwarden": {
       "addons": {},
-      "base_css": "https://theme-park.dev/css/base/bitwarden/bitwarden-base.css?sha=987fa5ed04665d94f568245cbbad9d367480a60d"
+      "base_css": "https://theme-park.dev/css/base/bitwarden/bitwarden-base.css?sha=e24ecc3c2ee67f03760411d185636407820a29dc"
     },
     "calibreweb": {
       "addons": {},
@@ -295,7 +295,7 @@
     },
     "overseerr": {
       "addons": {},
-      "base_css": "https://theme-park.dev/css/base/overseerr/overseerr-base.css?sha=9f53525f212f6c154cd7474eb89d48623b368a6f"
+      "base_css": "https://theme-park.dev/css/base/overseerr/overseerr-base.css?sha=889f02f93c6c2ab18fc48c50e6f6bbbdee036189"
     },
     "petio": {
       "addons": {},
@@ -361,7 +361,7 @@
         "sonarr-4k-logo": "https://theme-park.dev/css/addons/sonarr/sonarr-4k-logo/sonarr-4k-logo.css?sha=cf9d4a984a618a2344e278cb7d8dd6ac8f8b74d1",
         "sonarr-darker": "https://theme-park.dev/css/addons/sonarr/sonarr-darker/sonarr-darker.css?sha=b1eb1ff0827684361ad596fb49baa6362cc23036"
       },
-      "base_css": "https://theme-park.dev/css/base/sonarr/sonarr-base.css?sha=e87d98987adda43748e07ea408de18cb98af4d11"
+      "base_css": "https://theme-park.dev/css/base/sonarr/sonarr-base.css?sha=df522e45d95ac78d41fb51a3334e8ee58025d09d"
     },
     "synclounge": {
       "addons": {},
