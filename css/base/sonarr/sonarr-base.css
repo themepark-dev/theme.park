@@ -941,11 +941,11 @@ input:focus:-ms-input-placeholder {
 }
 
 [class*="CalendarEventGroup-airTime-"] {
-    color: var(--text);
+    color: #fff;
 }
 
 [class*="CalendarEventGroup-episodeInfo-"] {
-    color: var(--text);
+    color: #fff;
 }
 
 /* calendar agenda */

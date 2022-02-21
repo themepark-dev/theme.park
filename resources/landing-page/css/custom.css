@@ -2,7 +2,7 @@
     --about: linear-gradient(to bottom, rgba(0, 0, 0, 1.0), rgba(87, 109, 117, 0)), var(--main-bg-color);
 }
 
-.bg-primary { 
+.bg-primary {
     background: var(--about) !important;
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
@@ -32,13 +32,16 @@ section {
 .text-white-50 {
     color: var(--text) !important;
 }
+.page-section {
+    padding: 1.2rem 0;
+}
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
 
     #mainNav,
     #mainNav.navbar-scrolled {
         box-shadow: none;
-        background-color: rgba(0, 0, 0, 0.55);
+        background-color: rgba(var(--accent-color),1);
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
     }
@@ -57,6 +60,7 @@ section {
 
     #mainNav .navbar-nav .nav-item .nav-link {
         padding-left: 1rem;
+        color: var(--label-text-color)
     }
 }
 
@@ -73,7 +77,7 @@ section {
 @media (min-width: 992px) {
     #mainNav {
         box-shadow: none;
-        background-color: rgba(0, 0, 0, 0.55);
+        background-color: rgba(var(--accent-color), 0.25);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
     }
@@ -101,7 +105,7 @@ section {
 
     #mainNav.navbar-scrolled {
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-        background-color: rgba(0, 0, 0, 0.55);
+        background-color: rgba(var(--accent-color), 0.25);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
     }
@@ -125,16 +129,16 @@ section {
 
 #mainNav .navbar-nav .nav-item .nav-link:hover,
 #mainNav .navbar-nav .nav-item .nav-link:active {
-    color: rgb(var(--accent-color));
+    color: var(--text-hover);
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active {
     color: var(--link-color-hover) !important;
 }
 
-.navbar-light .navbar-toggler-icon {
+/* .navbar-light .navbar-toggler-icon {
     filter: invert(1);
-}
+} */
 
 .navbar-light .navbar-toggler {
     color: rgba(0, 0, 0, 0.5);
@@ -307,23 +311,14 @@ p {
     line-height: 1.2;
 }
 
-@keyframes glowing {
-    0% {
-      background-color: var(--button-color);
-      box-shadow: 0 0 5px rgba(var(--accent-color), 0.502);
-    }
-    50% {
-      background-color: var(--button-color-hover);
-      box-shadow: 0 0 10px rgba(var(--accent-color));
-    }
-    100% {
-        background-color: var(--button-color);
-        box-shadow: 0 0 5px rgba(var(--accent-color), 0.502)
-    }
-  }
-.click-me-btn {
-    animation: glowing 1300ms infinite;
+.animate__animated.animate__pulse {
+    --animate-duration: 1.5s;
 }
+
+.animate__pulse:hover {
+    box-shadow: 0 0 10px rgba(var(--accent-color), 0.502);
+}
+
 /* @media (min-width: 992px) {
 .portfolio-box img {
     object-fit: cover;
@@ -341,7 +336,7 @@ p {
 }
 
 #portfolio [class*="container-"] .portfolio-box .portfolio-box-caption.hotline-hover {
-    background: linear-gradient(0deg, rgba(247,101,184,1) 0%, rgb(21, 95, 165) 100%);
+    background: linear-gradient(0deg, rgba(247, 101, 184, 1) 0%, rgb(21, 95, 165) 100%);
 }
 
 #portfolio [class*="container-"] .portfolio-box .portfolio-box-caption.space-gray-hover {
@@ -379,39 +374,56 @@ p {
 
 @keyframes fadein {
     from {
-        opacity:0;
+        opacity: 0;
     }
-    to {
-        opacity:1;
-    }
-}
-@-moz-keyframes fadein { /* Firefox */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-o-keyframes fadein { /* Opera */
-    from {
-        opacity:0;
-    }
+
     to {
         opacity: 1;
     }
 }
+
+@-moz-keyframes fadein {
+
+    /* Firefox */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+
+    /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+
+    /* Opera */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 body {
     animation: fadein 2s;
-    -moz-animation: fadein 2s; /* Firefox */
-    -webkit-animation: fadein 2s; /* Safari and Chrome */
-    -o-animation: fadein 2s; /* Opera */
+    -moz-animation: fadein 2s;
+    /* Firefox */
+    -webkit-animation: fadein 2s;
+    /* Safari and Chrome */
+    -o-animation: fadein 2s;
+    /* Opera */
 }

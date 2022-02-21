@@ -49,10 +49,28 @@ app-org-vault-groupings .card li.active>div a:first-of-type,
 .groupings .card li.active>a:first-of-type,
 .groupings .card li.active>div a:first-of-type,
 html[class*="theme_"] a {
-    color: var(--link-color-hover) !important;
+    color: var(--link-color-hover);
 }
+
+html[class*="theme_"] app-vault-groupings .card li.active>a:first-of-type,
+html[class*="theme_"] app-vault-groupings .card li.active>div a:first-of-type,
+html[class*="theme_"] app-org-vault-groupings .card li.active>a:first-of-type,
+html[class*="theme_"] app-org-vault-groupings .card li.active>div a:first-of-type,
+html[class*="theme_"] .groupings .card li.active>a:first-of-type,
+html[class*="theme_"] .groupings .card li.active>div a:first-of-type {
+    color: rgb(var(--accent-color));
+}
+
 html[class*="theme_"] #totpImage {
     background: lightgray;
+}
+
+html[class*="theme_"] .table td>a:not(.badge) {
+    color: var(--link-color);
+}
+
+html[class*="theme_"] .table td>a:not(.badge):hover {
+    color: var(--link-color-hover);
 }
 
 /* TEXT */
@@ -63,6 +81,11 @@ html[class*="theme_"] .text-muted,
 .table,
 .text-body {
     color: var(--text-muted) !important;
+}
+
+html[class*="theme_"] .navbar .nav-item.active>.nav-link,
+html[class*="theme_"] .navbar .nav-item>.nav-link {
+    font-weight: 600;
 }
 
 .table-hover tbody tr:hover {
@@ -120,6 +143,10 @@ html[class*="theme_"] .card-body:not(.bg-light>.card-body) {
     color: var(--text);
 }
 
+html[class*="theme_"] a.text-body {
+    color: var(--text-hover) !important;
+}
+
 app-vault-groupings .card li.active>a:first-of-type,
 app-vault-groupings .card li.active>div a:first-of-type,
 app-vault-groupings .card li.active>div>.fa {
@@ -127,15 +154,22 @@ app-vault-groupings .card li.active>div>.fa {
 }
 
 body>app-root>app-user-layout>app-tools>div>div>div.col-9>app-password-generator>div.card.card-password.bg-light.my-4,
-body > app-root > app-user-layout > app-tools > div > div > div.col-9 > app-password-generator > div.card.card-password.bg-light.my-4 > div {
+body>app-root>app-user-layout>app-tools>div>div>div.col-9>app-password-generator>div.card.card-password.bg-light.my-4>div {
     background-color: rgb(0 0 0 / 15%) !important;
 }
 
 html[class*="theme_"] .password-number {
     color: rgb(var(--accent-color));
 }
+
 html[class*="theme_"] .password-letter {
     color: white;
+}
+
+html[class*="theme_"] app-vault-groupings .card .card-body a,
+html[class*="theme_"] app-org-vault-groupings .card .card-body a,
+html[class*="theme_"] .groupings .card .card-body a {
+    color: var(--text);
 }
 
 /* MODALS */
@@ -150,6 +184,7 @@ html[class*="theme_"] .modal-header {
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
 }
+
 html[class*="theme_"] .modal-body {
     background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat;
@@ -160,6 +195,7 @@ html[class*="theme_"] .modal-body {
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
 }
+
 html[class*="theme_"] .modal-footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     background: var(--modal-footer-color);
@@ -170,6 +206,10 @@ html[class*="theme_"] .modal-footer {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
+}
+
+html[class*="theme_"] .close {
+    color: var(--text);
 }
 
 .close,
@@ -228,7 +268,8 @@ html[class*="theme_"] .modal-footer {
 }
 
 /* FORMS */
-html[class*="theme_"] label.form-check-label, html[class*="theme_"] .form-control-file {
+html[class*="theme_"] label.form-check-label,
+html[class*="theme_"] .form-control-file {
     color: var(--text);
 }
 
@@ -269,7 +310,12 @@ select:focus {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, .2);
 } */
 
-html[class*="theme_"] .dropdown-menu, html[class*="theme_"] .dropdown-item {
+html[class*="theme_"] .navbar .dropdown-menu .dropdown-item-text {
+    color: var(--text);
+}
+
+html[class*="theme_"] .dropdown-menu,
+html[class*="theme_"] .dropdown-item {
     background: #1f1f1f;
     color: #fff;
 }
@@ -297,17 +343,35 @@ a.text-danger:focus {
     background: rgb(0 0 0 / 20%) !important;
 }
 
+html[class*="theme_"] app-vault-groupings .card #search,
+html[class*="theme_"] app-org-vault-groupings .card #search,
+html[class*="theme_"] .groupings .card #search {
+    background-color: transparent;
+    border-color: rgb(var(--accent-color));
+    color: #fff;
+}
+
 /* SETTINGS */
 
-html[class*="theme_"] .page-header, html[class*="theme_"] .secondary-header {
+html[class*="theme_"] .page-header,
+html[class*="theme_"] .secondary-header {
+    border-bottom: 1px solid rgb(255 255 255 / 30%);
+}
+
+html[class*="theme_"] .page-header,
+html[class*="theme_"] .secondary-header {
+    border-bottom: 1px solid rgb(255 255 255 / 30%);
+}
+
+html[class*="theme_"] .footer {
     border-bottom: 1px solid rgb(255 255 255 / 30%);
 }
 
 html[class*="theme_"] .list-group-item.active {
-    color: var(--text);
+    border-color: rgba(255, 255, 255, 0.15);
+    color: rgb(var(--accent-color));
     background-color: rgb(255 255 255 / 10%);
     border-left: 3px solid rgb(var(--accent-color));
-    border-color: rgba(255, 255, 255, 0.1);
 }
 
 html[class*="theme_"] .callout {
@@ -317,7 +381,7 @@ html[class*="theme_"] .callout {
 }
 
 html[class*="theme_"] .list-group-item {
-    background-color: rgb(0 0 0 / 25%);
+    background-color: rgb(0 0 0 / 35%);
     border: 1px solid rgb(255 255 255 / 8%);
     color: var(--text);
 }
@@ -450,7 +514,23 @@ html[class*="theme_"] .btn-outline-secondary:active {
     opacity: .8;
 }
 
+html[class*="theme_"] .badge-info {
+    background-color: var(--button-color);
+    color: var(--label-text-color);
+}
+
 /* Org */
+
+html[class*="theme_"] .org-nav .nav-tabs a.active {
+    border-top: 3px solid rgb(var(--accent-color));
+    color: rgb(var(--accent-color));
+}
+
+html[class*="theme_"] .nav-tabs .nav-link.active {
+    background: rgba(0, 0, 0, 0.25);
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
 .org-nav {
     background: var(--main-bg-color);
     background-repeat: repeat, no-repeat;
@@ -559,6 +639,10 @@ input:focus:-ms-input-placeholder {
     background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
+html[class*="theme_"] .groupings .card .card-body a {
+    color: var(--text);
+}
+
 /* Pagination */
 
 .page-item.active .page-link {
@@ -587,6 +671,15 @@ input:focus:-ms-input-placeholder {
     --bs-table-accent-bg: var(--bs-table-striped-bg);
     color: var(--text-hover);
 }
+
 html[class*="theme_"] .table td {
     color: var(--text);
+}
+
+html[class*="theme_"] .table.table-list.table td:not(tr:first-child td),
+html[class*="theme_"] .table.table-list .table th:not(tr:first-child td),
+html[class*="theme_"] hr,
+html[class*="theme_"] .dropdown-divider,
+html[class*="theme_"] .footer {
+    border-top: 1px solid rgb(255 255 255 / 30%);
 }

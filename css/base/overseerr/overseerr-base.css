@@ -339,7 +339,7 @@ a.slider-title:hover {
     background: linear-gradient(rgba(var(--accent-color), 0.3) 0%, rgba(0, 0, 0) 100%) !important;
 }
 
-#__next > div > div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64 > main > div > div > div > div.media-overview {
+#__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div>div.media-overview {
     background: var(--main-bg-color);
     padding: 1rem 1rem 2rem 0;
     padding-left: 1rem;
@@ -525,4 +525,15 @@ body>div.fixed.top-0.bottom-0.left-0.right-0.z-50.flex.items-center.justify-cent
 #__next>div>div.relative.z-50.mt-8.sm\:mx-auto.sm\:w-full.sm\:max-w-md>div>button,
 #__next>div>div.relative.z-50.mt-8.sm\:mx-auto.sm\:w-full.sm\:max-w-md>div>div:nth-child(3)>button {
     background: rgba(255, 255, 255, 0.1);
+}
+
+/* TOAST */
+
+#toast-container>div>div {
+    background: rgb(var(--accent-color));
+}
+
+#toast-container .text-gray-400,
+#toast-container .text-white {
+    color: var(--label-text-color);
 }
