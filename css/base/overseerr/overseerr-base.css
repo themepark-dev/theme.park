@@ -336,14 +336,14 @@ a.slider-title:hover {
 
 /* SHOW PAGE */
 #__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div>div.media-page-bg-image>div.absolute.inset-0 {
-    background: linear-gradient(rgba(var(--accent-color), 0.3) 0%, rgba(0, 0, 0) 100%) !important;
+    background: var(--overseerr-gradient) !important;
 }
 
 #__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div>div.media-overview {
-    background: var(--main-bg-color);
+    /* background: var(--main-bg-color);
     padding: 1rem 1rem 2rem 0;
     padding-left: 1rem;
-    margin: 1rem -1rem -1rem;
+    margin: 1rem -1rem -1rem; */
 }
 
 #__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div>div>div.relative.px-2.py-2.-my-2.-ml-4.-mr-4.overflow-x-scroll.overflow-y-auto.whitespace-nowrap.hide-scrollbar.overscroll-x-contain>div>a>div:hover,
