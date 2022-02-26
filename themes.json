@@ -78,97 +78,97 @@
   },
   "all-themes": {
     "Aquamarine": {
-      "url": "https://theme-park.dev/css/theme-options/aquamarine.css?sha=9f566db4c37537f2eacca0461406e5efd5881cd7"
+      "url": "https://theme-park.dev/css/theme-options/aquamarine.css?sha=d20e372875669d0ec5dc98c8c462509249471d3e"
     },
     "Blackberry-abyss": {
-      "url": "https://theme-park.dev/css/community-theme-options/blackberry-abyss.css?sha=5e806cb7efad3e1ac97e985f71d7a631a1b7f02b"
+      "url": "https://theme-park.dev/css/community-theme-options/blackberry-abyss.css?sha=b64eb1f01cbd66a9dd888a96e62bb05ccf749802"
     },
     "Blackberry-amethyst": {
-      "url": "https://theme-park.dev/css/community-theme-options/blackberry-amethyst.css?sha=bfb208569a57c23e562781bcbcc25c05779421de"
+      "url": "https://theme-park.dev/css/community-theme-options/blackberry-amethyst.css?sha=1f1cd7d10acca7c00b54073724bb75e73c83a603"
     },
     "Blackberry-carol": {
-      "url": "https://theme-park.dev/css/community-theme-options/blackberry-carol.css?sha=39e2106043161e407b4e509e8d8323121fef6950"
+      "url": "https://theme-park.dev/css/community-theme-options/blackberry-carol.css?sha=0c7da8c7ad5257ee575adfed2e8ff3987fe3dfa1"
     },
     "Blackberry-dreamscape": {
-      "url": "https://theme-park.dev/css/community-theme-options/blackberry-dreamscape.css?sha=0ad15b8d2215b7528e27f3bd65f1cb0c42453be0"
+      "url": "https://theme-park.dev/css/community-theme-options/blackberry-dreamscape.css?sha=adc24f5a940aa6f8e0061e4b1ad86126f95ba57f"
     },
     "Blackberry-flamingo": {
-      "url": "https://theme-park.dev/css/community-theme-options/blackberry-flamingo.css?sha=4ddeb117541753969da70820d8205aef771e37b4"
+      "url": "https://theme-park.dev/css/community-theme-options/blackberry-flamingo.css?sha=d075526c4af1caa77d1d6ccb11536b66aa993b99"
     },
     "Blackberry-hearth": {
-      "url": "https://theme-park.dev/css/community-theme-options/blackberry-hearth.css?sha=979626f867e9a9a91664f2b6da66d478040dc8fb"
+      "url": "https://theme-park.dev/css/community-theme-options/blackberry-hearth.css?sha=5a139953a525ca38111fd2dfa815c686bc5dbb88"
     },
     "Blackberry-martian": {
-      "url": "https://theme-park.dev/css/community-theme-options/blackberry-martian.css?sha=f6fcaa104ff119d049fb72cebe2e6e620db1aa04"
+      "url": "https://theme-park.dev/css/community-theme-options/blackberry-martian.css?sha=6eb4cd0529632fca270378f66f777182f4e2fb3e"
     },
     "Blackberry-pumpkin": {
-      "url": "https://theme-park.dev/css/community-theme-options/blackberry-pumpkin.css?sha=0ba03cc3999c36f3ef7c0eae7f381cdcbdfd7f33"
+      "url": "https://theme-park.dev/css/community-theme-options/blackberry-pumpkin.css?sha=0e4c45af378262c4705bc538fdc3357e24613098"
     },
     "Blackberry-royal": {
-      "url": "https://theme-park.dev/css/community-theme-options/blackberry-royal.css?sha=4bb56762e9469e831edf005100b9bd04849ad55c"
+      "url": "https://theme-park.dev/css/community-theme-options/blackberry-royal.css?sha=6aebe0c7f1aa26cb9822b1e44ebd7ffa628d981a"
     },
     "Blackberry-shadow": {
-      "url": "https://theme-park.dev/css/community-theme-options/blackberry-shadow.css?sha=f8e59fbf4720063a949e1be5cb16ebef094dc724"
+      "url": "https://theme-park.dev/css/community-theme-options/blackberry-shadow.css?sha=b1ea4de97e26ef32b52edc79e0fb8aeee4a7d83d"
     },
     "Blackberry-solar": {
-      "url": "https://theme-park.dev/css/community-theme-options/blackberry-solar.css?sha=429071cc7b6204555899a4942d47446f54cc19c5"
+      "url": "https://theme-park.dev/css/community-theme-options/blackberry-solar.css?sha=d53082caa15548ea53a518a9ca950eeab6a95059"
     },
     "Blackberry-vanta": {
-      "url": "https://theme-park.dev/css/community-theme-options/blackberry-vanta.css?sha=45a001fcfcf1fae8d40216146f38595fcfc76738"
+      "url": "https://theme-park.dev/css/community-theme-options/blackberry-vanta.css?sha=5ae2f81e3d70a7a3f166ebfba6ae4ff050ea766d"
     },
     "Dark": {
-      "url": "https://theme-park.dev/css/theme-options/dark.css?sha=dc21605e303d094fed0564a15fb983d81bcd33dd"
+      "url": "https://theme-park.dev/css/theme-options/dark.css?sha=4efe4914c7705a00a4bed553e812bdf0bbd5b342"
     },
     "Dracula": {
-      "url": "https://theme-park.dev/css/theme-options/dracula.css?sha=5abf85508d87243007cf5f4fda34a60340583466"
+      "url": "https://theme-park.dev/css/theme-options/dracula.css?sha=60d9ec4d3e22fe15d205242f41ce71d25c4cf056"
     },
     "Hotline": {
-      "url": "https://theme-park.dev/css/theme-options/hotline.css?sha=e027feaeea0f623144af4c45b61e332a0757f5fb"
+      "url": "https://theme-park.dev/css/theme-options/hotline.css?sha=997ac961db96be5931734fb16850443e3510b1f3"
     },
     "Hotline-old": {
-      "url": "https://theme-park.dev/css/community-theme-options/hotline-old.css?sha=73fce8f3f316c64b864e8b0502de0005f3883df4"
+      "url": "https://theme-park.dev/css/community-theme-options/hotline-old.css?sha=4befb6edb8a0b329baa4319e3c6fec9856f1d76f"
     },
     "Hotpink": {
-      "url": "https://theme-park.dev/css/theme-options/hotpink.css?sha=2f3974c084d053521362bae34d415f3614dba2e2"
+      "url": "https://theme-park.dev/css/theme-options/hotpink.css?sha=b0af51fb29469af675a797094caedfa9c95a75cc"
     },
     "Mind": {
-      "url": "https://theme-park.dev/css/community-theme-options/mind.css?sha=fb9b9d13dcaae0d46499acbbae405bbc23ae37cb"
+      "url": "https://theme-park.dev/css/community-theme-options/mind.css?sha=6689c5111ff6eec40cce87e2ce7c659946fe00a1"
     },
     "Nord": {
-      "url": "https://theme-park.dev/css/theme-options/nord.css?sha=353cb0383f78b2afa4de7784d536d637f3c3666d"
+      "url": "https://theme-park.dev/css/theme-options/nord.css?sha=dc62b646ac8f48d4e1e8722f305f8a174e1a4447"
     },
     "Onedark": {
-      "url": "https://theme-park.dev/css/community-theme-options/onedark.css?sha=cbccbf4366ab59bd2b9253c221b1f093c2e85118"
+      "url": "https://theme-park.dev/css/community-theme-options/onedark.css?sha=7754291defa741c805bb0aec4d647ba27fec9cca"
     },
     "Organizr": {
-      "url": "https://theme-park.dev/css/theme-options/organizr.css?sha=aa8d9d5c1b897b8f6d27ff274b073595b3d45741"
+      "url": "https://theme-park.dev/css/theme-options/organizr.css?sha=2a1ee65a26780204509f713f7ea2d5ebdc5bd057"
     },
     "Overseerr": {
-      "url": "https://theme-park.dev/css/theme-options/overseerr.css?sha=7e3a8e3ca21dd82641113cf53f071a89252c7235"
+      "url": "https://theme-park.dev/css/theme-options/overseerr.css?sha=eedb2e0df6cc892903b8716a05184c61577ebe20"
     },
     "Pine-shadow": {
-      "url": "https://theme-park.dev/css/community-theme-options/pine-shadow.css?sha=036469076b14e6d2336d2c88a6f43e28d88ea4dd"
+      "url": "https://theme-park.dev/css/community-theme-options/pine-shadow.css?sha=cc2adf274933630ff06539a244ba9fffff9090dc"
     },
     "Plex": {
-      "url": "https://theme-park.dev/css/theme-options/plex.css?sha=6059a0bddd6ce8c60be5cd95b302a00654e92dfa"
+      "url": "https://theme-park.dev/css/theme-options/plex.css?sha=1a440c8d9526f75334d49dbef3df153b77861fe2"
     },
     "Power": {
-      "url": "https://theme-park.dev/css/community-theme-options/power.css?sha=b5e32f47b689d875d059da53f047527531aa0b68"
+      "url": "https://theme-park.dev/css/community-theme-options/power.css?sha=3dc209c5ab792d0fb00407f361dc5b75040054e2"
     },
     "Reality": {
-      "url": "https://theme-park.dev/css/community-theme-options/reality.css?sha=8eadacd5602439f8430ccad8dba4e2465d87629f"
+      "url": "https://theme-park.dev/css/community-theme-options/reality.css?sha=cefddc8d27191a2e6fec826e80b2c83d107037c3"
     },
     "Soul": {
-      "url": "https://theme-park.dev/css/community-theme-options/soul.css?sha=2ce22d7b1fd2867393fd066ea97ed3adbf15764f"
+      "url": "https://theme-park.dev/css/community-theme-options/soul.css?sha=863105e7b6a608c6211d335be61cf6f0b3a5b629"
     },
     "Space": {
-      "url": "https://theme-park.dev/css/community-theme-options/space.css?sha=59325481dd9ca66fba178e67cd83311abbc72b91"
+      "url": "https://theme-park.dev/css/community-theme-options/space.css?sha=5fadc3d68221e85c2ebb4b0d5649b985a7681d23"
     },
     "Space-gray": {
-      "url": "https://theme-park.dev/css/theme-options/space-gray.css?sha=566e5616a8e48be2d0670d3f4d1ce106d2616ea2"
+      "url": "https://theme-park.dev/css/theme-options/space-gray.css?sha=6c6733b619630e09096a974f34d0d98266842422"
     },
     "Time": {
-      "url": "https://theme-park.dev/css/community-theme-options/time.css?sha=80ade11270c72eca1a32c2c47f8bbf2c75308681"
+      "url": "https://theme-park.dev/css/community-theme-options/time.css?sha=ee60b4f5f6e787181abe2ce5f56abc8dcceabd98"
     }
   },
   "applications": {
@@ -295,7 +295,7 @@
     },
     "overseerr": {
       "addons": {},
-      "base_css": "https://theme-park.dev/css/base/overseerr/overseerr-base.css?sha=889f02f93c6c2ab18fc48c50e6f6bbbdee036189"
+      "base_css": "https://theme-park.dev/css/base/overseerr/overseerr-base.css?sha=c38ff69b417abaa911fa5e5118bcb5dffeb0dc8c"
     },
     "petio": {
       "addons": {},
@@ -433,67 +433,67 @@
   },
   "community-themes": {
     "Blackberry-abyss": {
-      "url": "https://theme-park.dev/css/community-theme-options/blackberry-abyss.css?sha=5e806cb7efad3e1ac97e985f71d7a631a1b7f02b"
+      "url": "https://theme-park.dev/css/community-theme-options/blackberry-abyss.css?sha=b64eb1f01cbd66a9dd888a96e62bb05ccf749802"
     },
     "Blackberry-amethyst": {
-      "url": "https://theme-park.dev/css/community-theme-options/blackberry-amethyst.css?sha=bfb208569a57c23e562781bcbcc25c05779421de"
+      "url": "https://theme-park.dev/css/community-theme-options/blackberry-amethyst.css?sha=1f1cd7d10acca7c00b54073724bb75e73c83a603"
     },
     "Blackberry-carol": {
-      "url": "https://theme-park.dev/css/community-theme-options/blackberry-carol.css?sha=39e2106043161e407b4e509e8d8323121fef6950"
+      "url": "https://theme-park.dev/css/community-theme-options/blackberry-carol.css?sha=0c7da8c7ad5257ee575adfed2e8ff3987fe3dfa1"
     },
     "Blackberry-dreamscape": {
-      "url": "https://theme-park.dev/css/community-theme-options/blackberry-dreamscape.css?sha=0ad15b8d2215b7528e27f3bd65f1cb0c42453be0"
+      "url": "https://theme-park.dev/css/community-theme-options/blackberry-dreamscape.css?sha=adc24f5a940aa6f8e0061e4b1ad86126f95ba57f"
     },
     "Blackberry-flamingo": {
-      "url": "https://theme-park.dev/css/community-theme-options/blackberry-flamingo.css?sha=4ddeb117541753969da70820d8205aef771e37b4"
+      "url": "https://theme-park.dev/css/community-theme-options/blackberry-flamingo.css?sha=d075526c4af1caa77d1d6ccb11536b66aa993b99"
     },
     "Blackberry-hearth": {
-      "url": "https://theme-park.dev/css/community-theme-options/blackberry-hearth.css?sha=979626f867e9a9a91664f2b6da66d478040dc8fb"
+      "url": "https://theme-park.dev/css/community-theme-options/blackberry-hearth.css?sha=5a139953a525ca38111fd2dfa815c686bc5dbb88"
     },
     "Blackberry-martian": {
-      "url": "https://theme-park.dev/css/community-theme-options/blackberry-martian.css?sha=f6fcaa104ff119d049fb72cebe2e6e620db1aa04"
+      "url": "https://theme-park.dev/css/community-theme-options/blackberry-martian.css?sha=6eb4cd0529632fca270378f66f777182f4e2fb3e"
     },
     "Blackberry-pumpkin": {
-      "url": "https://theme-park.dev/css/community-theme-options/blackberry-pumpkin.css?sha=0ba03cc3999c36f3ef7c0eae7f381cdcbdfd7f33"
+      "url": "https://theme-park.dev/css/community-theme-options/blackberry-pumpkin.css?sha=0e4c45af378262c4705bc538fdc3357e24613098"
     },
     "Blackberry-royal": {
-      "url": "https://theme-park.dev/css/community-theme-options/blackberry-royal.css?sha=4bb56762e9469e831edf005100b9bd04849ad55c"
+      "url": "https://theme-park.dev/css/community-theme-options/blackberry-royal.css?sha=6aebe0c7f1aa26cb9822b1e44ebd7ffa628d981a"
     },
     "Blackberry-shadow": {
-      "url": "https://theme-park.dev/css/community-theme-options/blackberry-shadow.css?sha=f8e59fbf4720063a949e1be5cb16ebef094dc724"
+      "url": "https://theme-park.dev/css/community-theme-options/blackberry-shadow.css?sha=b1ea4de97e26ef32b52edc79e0fb8aeee4a7d83d"
     },
     "Blackberry-solar": {
-      "url": "https://theme-park.dev/css/community-theme-options/blackberry-solar.css?sha=429071cc7b6204555899a4942d47446f54cc19c5"
+      "url": "https://theme-park.dev/css/community-theme-options/blackberry-solar.css?sha=d53082caa15548ea53a518a9ca950eeab6a95059"
     },
     "Blackberry-vanta": {
-      "url": "https://theme-park.dev/css/community-theme-options/blackberry-vanta.css?sha=45a001fcfcf1fae8d40216146f38595fcfc76738"
+      "url": "https://theme-park.dev/css/community-theme-options/blackberry-vanta.css?sha=5ae2f81e3d70a7a3f166ebfba6ae4ff050ea766d"
     },
     "Hotline-old": {
-      "url": "https://theme-park.dev/css/community-theme-options/hotline-old.css?sha=73fce8f3f316c64b864e8b0502de0005f3883df4"
+      "url": "https://theme-park.dev/css/community-theme-options/hotline-old.css?sha=4befb6edb8a0b329baa4319e3c6fec9856f1d76f"
     },
     "Mind": {
-      "url": "https://theme-park.dev/css/community-theme-options/mind.css?sha=fb9b9d13dcaae0d46499acbbae405bbc23ae37cb"
+      "url": "https://theme-park.dev/css/community-theme-options/mind.css?sha=6689c5111ff6eec40cce87e2ce7c659946fe00a1"
     },
     "Onedark": {
-      "url": "https://theme-park.dev/css/community-theme-options/onedark.css?sha=cbccbf4366ab59bd2b9253c221b1f093c2e85118"
+      "url": "https://theme-park.dev/css/community-theme-options/onedark.css?sha=7754291defa741c805bb0aec4d647ba27fec9cca"
     },
     "Pine-shadow": {
-      "url": "https://theme-park.dev/css/community-theme-options/pine-shadow.css?sha=036469076b14e6d2336d2c88a6f43e28d88ea4dd"
+      "url": "https://theme-park.dev/css/community-theme-options/pine-shadow.css?sha=cc2adf274933630ff06539a244ba9fffff9090dc"
     },
     "Power": {
-      "url": "https://theme-park.dev/css/community-theme-options/power.css?sha=b5e32f47b689d875d059da53f047527531aa0b68"
+      "url": "https://theme-park.dev/css/community-theme-options/power.css?sha=3dc209c5ab792d0fb00407f361dc5b75040054e2"
     },
     "Reality": {
-      "url": "https://theme-park.dev/css/community-theme-options/reality.css?sha=8eadacd5602439f8430ccad8dba4e2465d87629f"
+      "url": "https://theme-park.dev/css/community-theme-options/reality.css?sha=cefddc8d27191a2e6fec826e80b2c83d107037c3"
     },
     "Soul": {
-      "url": "https://theme-park.dev/css/community-theme-options/soul.css?sha=2ce22d7b1fd2867393fd066ea97ed3adbf15764f"
+      "url": "https://theme-park.dev/css/community-theme-options/soul.css?sha=863105e7b6a608c6211d335be61cf6f0b3a5b629"
     },
     "Space": {
-      "url": "https://theme-park.dev/css/community-theme-options/space.css?sha=59325481dd9ca66fba178e67cd83311abbc72b91"
+      "url": "https://theme-park.dev/css/community-theme-options/space.css?sha=5fadc3d68221e85c2ebb4b0d5649b985a7681d23"
     },
     "Time": {
-      "url": "https://theme-park.dev/css/community-theme-options/time.css?sha=80ade11270c72eca1a32c2c47f8bbf2c75308681"
+      "url": "https://theme-park.dev/css/community-theme-options/time.css?sha=ee60b4f5f6e787181abe2ce5f56abc8dcceabd98"
     }
   },
   "deprecated": {
@@ -524,34 +524,34 @@
   },
   "themes": {
     "Aquamarine": {
-      "url": "https://theme-park.dev/css/theme-options/aquamarine.css?sha=9f566db4c37537f2eacca0461406e5efd5881cd7"
+      "url": "https://theme-park.dev/css/theme-options/aquamarine.css?sha=d20e372875669d0ec5dc98c8c462509249471d3e"
     },
     "Dark": {
-      "url": "https://theme-park.dev/css/theme-options/dark.css?sha=dc21605e303d094fed0564a15fb983d81bcd33dd"
+      "url": "https://theme-park.dev/css/theme-options/dark.css?sha=4efe4914c7705a00a4bed553e812bdf0bbd5b342"
     },
     "Dracula": {
-      "url": "https://theme-park.dev/css/theme-options/dracula.css?sha=5abf85508d87243007cf5f4fda34a60340583466"
+      "url": "https://theme-park.dev/css/theme-options/dracula.css?sha=60d9ec4d3e22fe15d205242f41ce71d25c4cf056"
     },
     "Hotline": {
-      "url": "https://theme-park.dev/css/theme-options/hotline.css?sha=e027feaeea0f623144af4c45b61e332a0757f5fb"
+      "url": "https://theme-park.dev/css/theme-options/hotline.css?sha=997ac961db96be5931734fb16850443e3510b1f3"
     },
     "Hotpink": {
-      "url": "https://theme-park.dev/css/theme-options/hotpink.css?sha=2f3974c084d053521362bae34d415f3614dba2e2"
+      "url": "https://theme-park.dev/css/theme-options/hotpink.css?sha=b0af51fb29469af675a797094caedfa9c95a75cc"
     },
     "Nord": {
-      "url": "https://theme-park.dev/css/theme-options/nord.css?sha=353cb0383f78b2afa4de7784d536d637f3c3666d"
+      "url": "https://theme-park.dev/css/theme-options/nord.css?sha=dc62b646ac8f48d4e1e8722f305f8a174e1a4447"
     },
     "Organizr": {
-      "url": "https://theme-park.dev/css/theme-options/organizr.css?sha=aa8d9d5c1b897b8f6d27ff274b073595b3d45741"
+      "url": "https://theme-park.dev/css/theme-options/organizr.css?sha=2a1ee65a26780204509f713f7ea2d5ebdc5bd057"
     },
     "Overseerr": {
-      "url": "https://theme-park.dev/css/theme-options/overseerr.css?sha=7e3a8e3ca21dd82641113cf53f071a89252c7235"
+      "url": "https://theme-park.dev/css/theme-options/overseerr.css?sha=eedb2e0df6cc892903b8716a05184c61577ebe20"
     },
     "Plex": {
-      "url": "https://theme-park.dev/css/theme-options/plex.css?sha=6059a0bddd6ce8c60be5cd95b302a00654e92dfa"
+      "url": "https://theme-park.dev/css/theme-options/plex.css?sha=1a440c8d9526f75334d49dbef3df153b77861fe2"
     },
     "Space-gray": {
-      "url": "https://theme-park.dev/css/theme-options/space-gray.css?sha=566e5616a8e48be2d0670d3f4d1ce106d2616ea2"
+      "url": "https://theme-park.dev/css/theme-options/space-gray.css?sha=6c6733b619630e09096a974f34d0d98266842422"
     }
   }
 }

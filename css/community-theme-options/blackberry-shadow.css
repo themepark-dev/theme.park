@@ -27,4 +27,5 @@
   --plex-poster-unwatched: rgb(81, 101, 114);
   --petio-spinner: invert(68%) sepia(13%) saturate(766%) hue-rotate(170deg) brightness(90%) contrast(79%); /* Made with https://codepen.io/jsm91/embed/ZEEawyZ */
   --gitea-color-primary-dark-4:  81, 101, 114;
+  --overseerr-gradient: linear-gradient(135deg, rgb(37, 43, 47, .9), rgb(9, 12, 14, .9)) center center/cover no-repeat fixed;
 }
