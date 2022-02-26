@@ -8,23 +8,27 @@
     <title>theme.park - A collection of themes/skins for your favorite apps!</title>
     <meta name="title" content="theme.park - A collection of themes/skins for your favorite apps!">
     <meta name="theme-color" content="#12afa0">
-    <meta name="description" content="theme.park contains 48 themed applications, with css addons on certain themes. Installation methods include custom docker mods for linuxserver.io containers, custom scripts for select Hotio containers and multiple examples of subfiltering using webservers like Nginx and Apache">
+    <meta name="description"
+        content="theme.park contains 48 themed applications, with css addons on certain themes. Installation methods include custom docker mods for linuxserver.io containers, custom scripts for select Hotio containers and multiple examples of subfiltering using webservers like Nginx and Apache">
     <!-- Google / Search Engine Tags -->
     <meta itemprop="name" content="theme.park - A collection of themes/skins for your favorite apps!">
-    <meta itemprop="description" content="theme.park contains 48 themed applications, with css addons on certain themes. Installation methods include custom docker mods for linuxserver.io containers, custom scripts for select Hotio containers and multiple examples of subfiltering using webservers like Nginx and Apache">
+    <meta itemprop="description"
+        content="theme.park contains 48 themed applications, with css addons on certain themes. Installation methods include custom docker mods for linuxserver.io containers, custom scripts for select Hotio containers and multiple examples of subfiltering using webservers like Nginx and Apache">
     <meta itemprop="image" content="https://theme-park.dev/resources/landing-page/assets/meta_image.jpg">
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="theme.park">
     <meta property="og:url" content="https://theme-park.dev/">
     <meta property="og:title" content="theme.park - A collection of themes/skins for your favorite apps!">
-    <meta property="og:description" content="theme.park contains 48 themed applications, with css addons on certain themes. Installation methods include custom docker mods for linuxserver.io containers, custom scripts for select Hotio containers and multiple examples of subfiltering using webservers like Nginx and Apache">
+    <meta property="og:description"
+        content="theme.park contains 48 themed applications, with css addons on certain themes. Installation methods include custom docker mods for linuxserver.io containers, custom scripts for select Hotio containers and multiple examples of subfiltering using webservers like Nginx and Apache">
     <meta property="og:image" content="https://theme-park.dev/resources/landing-page/assets/meta_image.jpg">
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://theme-park.dev/">
     <meta property="twitter:title" content="theme.park - A collection of themes/skins for your favorite apps!">
-    <meta property="twitter:description" content="theme.park contains 48 themed applications, with css addons on certain themes. Installation methods include custom docker mods for linuxserver.io containers, custom scripts for select Hotio containers and multiple examples of subfiltering using webservers like Nginx and Apache">
+    <meta property="twitter:description"
+        content="theme.park contains 48 themed applications, with css addons on certain themes. Installation methods include custom docker mods for linuxserver.io containers, custom scripts for select Hotio containers and multiple examples of subfiltering using webservers like Nginx and Apache">
     <meta property="twitter:image" content="https://theme-park.dev/resources/landing-page/assets/meta_image.jpg">
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="resources/landing-page/assets/favicon.ico" />
@@ -37,11 +41,20 @@
     <!-- Third party plugin CSS-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
         rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="resources/landing-page/css/styles.css?v=1.1" rel="stylesheet" />
     <link rel="stylesheet" href="resources/landing-page/css/jquery-bg-slideshow.css">
     <link rel="stylesheet" href="resources/landing-page/css/custom.css?v=2.6">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VL0TX65BLH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-VL0TX65BLH');
+    </script>
 </head>
 
 <body id="page-top">
@@ -156,8 +169,11 @@
                 <div class="col-lg col-md-6 text-center">
                     <div class="mt-5">
                         <i class="fas fa-4x fa-palette text-primary mb-4"></i>
-                        <h3 class="h4 mb-2"><a href="https://docs.theme-park.dev/community-themes/">Community Themes!</a></h3>
-                        <p class="text-white-50 mb-0">Got a good <a href="https://docs.theme-park.dev/community-themes/">color scheme</a> you'd like to see added? PR it!</p>
+                        <h3 class="h4 mb-2"><a href="https://docs.theme-park.dev/community-themes/">Community
+                                Themes!</a></h3>
+                        <p class="text-white-50 mb-0">Got a good <a
+                                href="https://docs.theme-park.dev/community-themes/">color scheme</a> you'd like to see
+                            added? PR it!</p>
                     </div>
                 </div>
                 <div class="col-lg col-md-6 text-center">
@@ -172,21 +188,24 @@
     </section>
     <!-- Portfolio-->
     <section class="page-section pt-0">
-    <div class="container pb-3">
-        <div class="row h-100 align-items-center justify-content-center text-center">
-            <div class="col-lg-10 align-self-end">
-            </div>
-            <div class="col-lg-8 align-self-baseline">
-                <button id="switch-theme" class="btn btn-primary btn-xl animate__animated animate__pulse animate__infinite">Click Me!</button>
+        <div class="container pb-3">
+            <div class="row h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-10 align-self-end">
+                </div>
+                <div class="col-lg-8 align-self-baseline">
+                    <button id="switch-theme"
+                        class="btn btn-primary btn-xl animate__animated animate__pulse animate__infinite">Click
+                        Me!</button>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
     <section class="page-section pb-1" id="themes">
         <div class="container">
             <h2 class="text-center mt-0">Official theme options</h2>
-            <h6 class="text-center mt-0">Click here for the <a href="https://docs.theme-park.dev/community-themes/">community themes</a></h6>
-            
+            <h6 class="text-center mt-0">Click here for the <a
+                    href="https://docs.theme-park.dev/community-themes/">community themes</a></h6>
+
 
             <hr class="divider my-4" />
         </div>
