@@ -1,6 +1,7 @@
 # Contributing to theme.park
 
 - If you want to discuss changes, you can also bring it up in our Discord server
+- PR's are done against the develop branch.
 
 ## New theme option
 
