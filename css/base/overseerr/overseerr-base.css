@@ -394,7 +394,7 @@ a.slider-title:hover {
 
 /* RINGA A DINGALING*/
 .ring-1 {
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) rgb(0 0 0 / 10%) !important;
+    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) rgb(255 255 255 / 10%) !important;
 }
 
 
