@@ -169,6 +169,9 @@
     },
     "Time": {
       "url": "https://develop.theme-park.dev/css/community-theme-options/time.css?sha=ee60b4f5f6e787181abe2ce5f56abc8dcceabd98"
+    },
+    "Trueblack": {
+      "url": "https://develop.theme-park.dev/css/community-theme-options/trueblack.css?sha=8c07688ffd2ec09c02f57b84d1bddbe5344455e2"
     }
   },
   "applications": {
@@ -494,6 +497,9 @@
     },
     "Time": {
       "url": "https://develop.theme-park.dev/css/community-theme-options/time.css?sha=ee60b4f5f6e787181abe2ce5f56abc8dcceabd98"
+    },
+    "Trueblack": {
+      "url": "https://develop.theme-park.dev/css/community-theme-options/trueblack.css?sha=8c07688ffd2ec09c02f57b84d1bddbe5344455e2"
     }
   },
   "deprecated": {
