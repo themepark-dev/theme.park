@@ -298,7 +298,7 @@
     },
     "overseerr": {
       "addons": {},
-      "base_css": "https://develop.theme-park.dev/css/base/overseerr/overseerr-base.css?sha=a5b9a101894b1d6a013ef6901ae4e326e260269a"
+      "base_css": "https://develop.theme-park.dev/css/base/overseerr/overseerr-base.css?sha=7175ef33f98d6a9e9e608fefe374aa0ca1ba9e2f"
     },
     "petio": {
       "addons": {},

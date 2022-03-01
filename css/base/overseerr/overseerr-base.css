@@ -270,9 +270,9 @@ body {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(var(--accent-color), .5));
 }
 
-#__next>div>div.fixed.top-0.bottom-0.left-0.z-30.hidden.lg\:flex.lg\:flex-shrink-0>div>div>div>nav>a.flex.group.items-center.px-2.py-2.text-lg.leading-6.font-medium.rounded-md.text-white.focus\:outline-none.transition.ease-in-out.duration-150.bg-gradient-to-br.from-indigo-600.to-purple-600.hover\:from-indigo-500.hover\:to-purple-500 {
-    background: rgba(var(--accent-color), 0.05);
-    color: rgba(var(--accent-color));
+#__next>div>div.fixed.top-0.bottom-0.left-0.z-30.hidden.lg\:flex.lg\:flex-shrink-0>div>div>div>nav>a.flex.group.items-center.px-2.py-2.text-lg.leading-6.font-medium.rounded-md.text-white.focus\:outline-none.transition.ease-in-out.duration-150.bg-gradient-to-br.from-indigo-600.to-purple-600.hover\:from-indigo-500.hover\:to-purple-500,
+#__next > div > div.fixed.top-0.bottom-0.left-0.z-30.hidden.lg\:flex.lg\:flex-shrink-0 > div > div > div > nav > a.flex.group.items-center.px-2.py-2.text-lg.leading-6.font-medium.rounded-md.text-white.focus\:outline-none.transition.ease-in-out.duration-150.bg-gradient-to-br.from-indigo-600.to-purple-600.hover\:from-indigo-500.hover\:to-purple-500 > svg {
+    color: rgb(var(--accent-color)) !important;
 }
 
 body>div.z-50.fixed.inset-0.overflow-hidden.bg-opacity-70.bg-gray-800.enter-done>div>section>div>div {
