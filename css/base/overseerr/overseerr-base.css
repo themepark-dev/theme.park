@@ -193,8 +193,8 @@ body {
 }
 
 .bg-gray-800 {
-    --tw-bg-opacity: 0.3;
-    background-color: rgb(0, 0, 0, var(--tw-bg-opacity));
+    --tw-bg-opacity: 0.05;
+    background-color: rgb(255, 255, 255, var(--tw-bg-opacity));
 }
 
 .hover\:bg-gray-700:hover {
@@ -321,8 +321,8 @@ a.slider-title:hover {
 }
 
 /* CARD HOVER */
-#__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div>div.relative.px-2.py-2.-my-2.-ml-4.-mr-4.overflow-x-scroll.overflow-y-auto.whitespace-nowrap.hide-scrollbar.overscroll-x-contain>div>div>div>div>div:hover {
-    background: linear-gradient(rgba(var(--accent-color), .04) 0%, rgba(var(--accent-color), 0.9) 100%);
+#__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div>div.relative.px-2.py-2.-my-2.-ml-4.-mr-4.overflow-x-scroll.overflow-y-auto.whitespace-nowrap.hide-scrollbar.overscroll-x-contain>div>div>div>div>div:hover a {
+    background: linear-gradient(rgba(var(--accent-color), 0.3) 0%, rgba(0,0,0,.7) 100%) !important;
 }
 
 #__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div>div.relative.px-2.py-2.-my-2.-ml-4.-mr-4.overflow-x-scroll.overflow-y-auto.whitespace-nowrap.hide-scrollbar.overscroll-x-contain>div>div>div.absolute.inset-0.z-0>div.absolute.inset-0 {
