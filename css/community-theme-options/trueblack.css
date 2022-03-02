@@ -24,7 +24,7 @@
   /*Specials*/
   --arr-queue-color: #ddd; /* Servarr apps + Bazarr*/
   --plex-poster-unwatched: #ddd;
-  --petio-spinner: invert(32%) sepia(8%) saturate(8%) hue-rotate(41deg) brightness(100%) contrast(83%);/* Made with https://codepen.io/jsm91/embed/ZEEawyZ */
+  --petio-spinner: invert(35%) sepia(0%) saturate(6%) hue-rotate(136deg) brightness(95%) contrast(87%);/* Made with https://codepen.io/jsm91/embed/ZEEawyZ */
   --gitea-color-primary-dark-4: 255, 255, 255;
   --overseerr-gradient: linear-gradient(180deg, rgba(0, 0, 0, 0.17) 0%, rgba(0, 0, 0) 100%);
 }
