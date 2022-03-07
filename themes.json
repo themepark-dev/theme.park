@@ -258,7 +258,7 @@
       "addons": {
         "lidarr-darker": "https://develop.theme-park.dev/css/addons/lidarr/lidarr-darker/lidarr-darker.css?sha=fc479d221c05b5232d720f1c32d9cb1717f7b60b"
       },
-      "base_css": "https://develop.theme-park.dev/css/base/lidarr/lidarr-base.css?sha=6528ae3bca944de20b286001ba861b8edb2509bc"
+      "base_css": "https://develop.theme-park.dev/css/base/lidarr/lidarr-base.css?sha=ad2009aabc882d6e5e8cef869b75ef3a1086495b"
     },
     "moviematch": {
       "addons": {},
@@ -294,7 +294,7 @@
           ]
         }
       },
-      "base_css": "https://develop.theme-park.dev/css/base/organizr/organizr-base.css?sha=f49b551944207a44e9c93d76221d33ca2b0c8a0b"
+      "base_css": "https://develop.theme-park.dev/css/base/organizr/organizr-base.css?sha=16276b228dec27bd468a64bf4d831f4a6099396b"
     },
     "overseerr": {
       "addons": {},
@@ -323,7 +323,7 @@
       "addons": {
         "prowlarr-darker": "https://develop.theme-park.dev/css/addons/prowlarr/prowlarr-darker/prowlarr-darker.css?sha=b84c55b85b8396a03cb63e7b6e7deff7a1cfd037"
       },
-      "base_css": "https://develop.theme-park.dev/css/base/prowlarr/prowlarr-base.css?sha=e2cdb65fdc30c50daadc9848710edbe36201a07b"
+      "base_css": "https://develop.theme-park.dev/css/base/prowlarr/prowlarr-base.css?sha=00b458113ce83f95e27f165912d3d32c4a7174d6"
     },
     "qbittorrent": {
       "addons": {},
@@ -334,14 +334,14 @@
         "radarr-4k-logo": "https://develop.theme-park.dev/css/addons/radarr/radarr-4k-logo/radarr-4k-logo.css?sha=70630fcc12fcc11a0dff9673a04c92b014393218",
         "radarr-darker": "https://develop.theme-park.dev/css/addons/radarr/radarr-darker/radarr-darker.css?sha=317432984f97518011463ef62af84b04420e524d"
       },
-      "base_css": "https://develop.theme-park.dev/css/base/radarr/radarr-base.css?sha=76c9275fe7050aed436d608389faf28c289fc136"
+      "base_css": "https://develop.theme-park.dev/css/base/radarr/radarr-base.css?sha=a8dec1b716f03df21b4b8539ff29b8d24ef80107"
     },
     "readarr": {
       "addons": {
         "readarr-alt-logo": "https://develop.theme-park.dev/css/addons/readarr/readarr-alt-logo/readarr-alt-logo.css?sha=6066417b624c76aebdbceddcf4f11fa0d5f6f979",
         "readarr-darker": "https://develop.theme-park.dev/css/addons/readarr/readarr-darker/readarr-darker.css?sha=415a258cc9d1e40bf094f6f20350225c06120825"
       },
-      "base_css": "https://develop.theme-park.dev/css/base/readarr/readarr-base.css?sha=d2afeab44a1fd7dd0fc58988bea366851a2f1080"
+      "base_css": "https://develop.theme-park.dev/css/base/readarr/readarr-base.css?sha=24caabcb59d6fad8ed8d192eaf26b22d47f62918"
     },
     "requestrr": {
       "addons": {},
@@ -364,7 +364,7 @@
         "sonarr-4k-logo": "https://develop.theme-park.dev/css/addons/sonarr/sonarr-4k-logo/sonarr-4k-logo.css?sha=cf9d4a984a618a2344e278cb7d8dd6ac8f8b74d1",
         "sonarr-darker": "https://develop.theme-park.dev/css/addons/sonarr/sonarr-darker/sonarr-darker.css?sha=b1eb1ff0827684361ad596fb49baa6362cc23036"
       },
-      "base_css": "https://develop.theme-park.dev/css/base/sonarr/sonarr-base.css?sha=df522e45d95ac78d41fb51a3334e8ee58025d09d"
+      "base_css": "https://develop.theme-park.dev/css/base/sonarr/sonarr-base.css?sha=83bce2c4bf4793991fdb9ff366075facc7caa647"
     },
     "synclounge": {
       "addons": {},

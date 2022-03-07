@@ -21,17 +21,6 @@
     border: 1px solid rgb(var(--accent-color), 0.5);
 }
 
-.modal-content,
-.mfp-content .panel {
-    background: var(--modal-bg-color);
-    background-repeat: repeat, no-repeat !important;
-    background-attachment: fixed, fixed !important;
-    background-position: center center, center center !important;
-    background-size: auto, cover !important;
-    -webkit-background-size: auto, cover !important;
-    -moz-background-size: auto, cover !important;
-    -o-background-size: auto, cover !important;
-}
 
 [id*="homepage-"]>fieldset>div>div.panel-wrapper.collapse.in>div>div,
 [id$="-settings-items"]>div {
@@ -209,17 +198,9 @@ h6 {
 .panel-info .panel-heading {
     border-color: rgb(var(--accent-color));
     color: var(--text-hover);
-    background: var(--modal-bg-color);
-    background-repeat: repeat, no-repeat;
-    background-attachment: fixed, fixed;
-    background-position: center center, center center;
-    background-size: auto, cover;
-    -webkit-background-size: auto, cover;
-    -moz-background-size: auto, cover;
-    -o-background-size: auto, cover;
 }
 
-.panel-body:not(.unifiCards .panel-body):not(body > div.swal-overlay.swal-overlay--show-modal > div > div > div > div.panel-wrapper.collapse.in > div) {
+/* .panel-body:not(.unifiCards .panel-body):not(body > div.swal-overlay.swal-overlay--show-modal > div > div > div > div.panel-wrapper.collapse.in > div) {
     background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
@@ -228,7 +209,7 @@ h6 {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
-}
+} */
 
 .bg-plex:not(h2 .bg-plex) {
     background: #e5a00d;
@@ -282,6 +263,9 @@ h6 {
 /* settings */
 /* header*/
 [id*="settings-"]>div>div.panel-heading:not(form > div > div.panel-heading) {
+    background: rgba(0, 0, 0, 0.25);
+}
+[id*="settings-"]>div>div.panel-heading .bg-org:not(form > div > div.panel-heading) {
     background: rgba(0, 0, 0, 0.25);
 }
 
@@ -1719,7 +1703,7 @@ body {
 }
 
 .navbar-header {
-    background: var(--main-bg-color);
+    background: none;
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -1736,14 +1720,7 @@ body {
 .nav .open>a,
 .nav .open>a:focus,
 .nav .open>a:hover {
-    background: var(--modal-bg-color);
-    background-repeat: repeat, no-repeat;
-    background-attachment: fixed, fixed;
-    background-position: center center, center center;
-    background-size: auto, cover;
-    -webkit-background-size: auto, cover;
-    -moz-background-size: auto, cover;
-    -o-background-size: auto, cover;
+    background: rgba(0, 0, 0, 0.25);
 }
 
 /*Right panel*/
@@ -1860,7 +1837,7 @@ background: rgb(0 0 0 / 0%) !important;
 }
 
 .dropdown-menu {
-    background: var(--drop-down-menu-bg) !important;
+    background: var(--drop-down-menu-bg);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -2053,7 +2030,14 @@ body>div.mfp-wrap.mfp-auto-cursor.mfp-zoom-out.mfp-ready>div>div.mfp-content>div
 }
 
 .panel {
-    background: #1b1a1a;
+    background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 
 .form-control,
@@ -2122,7 +2106,7 @@ input,
 }
 
 
-#account-area>div>div>div>div>div.panel-wrapper.collapse.in.main-email-panel>div {
+/* #account-area>div>div>div>div>div.panel-wrapper.collapse.in.main-email-panel>div {
     background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
@@ -2131,7 +2115,7 @@ input,
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
-}
+} */
 
 .tab-content .panel .panel-body,
 .tab-content .panel .panel-body .bg-org {
@@ -2296,7 +2280,7 @@ fieldset[disabled] .form-control {
 .customvtab .tabs-vertical li.active a,
 .customvtab .tabs-vertical li.active a:focus,
 .customvtab .tabs-vertical li.active a:hover,
-.dropdown-menu,
+/* .dropdown-menu, */
 .fc-day,
 .footable-row-detail,
 .img-thumbnail,
@@ -2339,9 +2323,9 @@ table.dataTable tbody tr {
 
 .btn-default,
 .chat-list .chat-text h4,
-.dropdown-menu>li>a,
+/* .dropdown-menu>li>a,
 .dropdown-menu>li>a:focus,
-.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:hover, */
 .flot-text,
 .footer,
 .form-control,
@@ -2413,7 +2397,7 @@ th {
 .pager li>span,
 .pagination>li>a,
 .pagination>li>span,
-.panel:not(#invite-area > div > div > div.col-md-12 > div):not(#login-panels > div),
+/* .panel:not(#invite-area > div > div > div.col-md-12 > div):not(#login-panels > div), */
 .panel-default .panel-body,
 .panel-default .panel-footer,
 .panel-default .panel-heading,
@@ -2513,4 +2497,15 @@ span.select2-results {
 
 .select2-container--default .select2-results__option[aria-selected=true] {
     background-color: #232323;
+}
+
+/* .panel-info>.panel-heading {
+    background-color: rgba(var(--accent-color));
+} */
+
+.panel-blue .panel-heading, .panel-info .panel-heading {
+    background-color: #23232300;
+}
+#account-area > div > div > div > div > div.panel-wrapper.collapse.in.main-email-panel > div > div > div  > div > div {
+    background: transparent;
 }
