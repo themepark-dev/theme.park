@@ -269,6 +269,10 @@ h6 {
     background: rgba(0, 0, 0, 0.25);
 }
 
+[id*="settings-"] .panel {
+    background: rgba(0, 0, 0, 0.25);
+}
+
 #customize-appearance-form>ul>li.active>a {
     background: rgba(0, 0, 0, 0.25);
 }
@@ -2504,7 +2508,7 @@ span.select2-results {
 } */
 
 .panel-blue .panel-heading, .panel-info .panel-heading {
-    background-color: #23232300;
+    background-color: rgba(0, 0, 0, .25);
 }
 #account-area > div > div > div > div > div.panel-wrapper.collapse.in.main-email-panel > div > div > div  > div > div {
     background: transparent;
