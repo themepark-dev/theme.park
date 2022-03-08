@@ -269,6 +269,17 @@ h6 {
     background: rgba(0, 0, 0, 0.25);
 }
 
+.panel:not(#help-modal-body > div > div):not([id*="settings-"] .panel) {
+    background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+
 [id*="settings-"] .panel {
     background: rgba(0, 0, 0, 0.25);
 }
@@ -2033,16 +2044,6 @@ body>div.mfp-wrap.mfp-auto-cursor.mfp-zoom-out.mfp-ready>div>div.mfp-content>div
     -o-background-size: auto, cover;
 }
 
-.panel {
-    background: var(--main-bg-color);
-    background-repeat: repeat, no-repeat;
-    background-attachment: fixed, fixed;
-    background-position: center center, center center;
-    background-size: auto, cover;
-    -webkit-background-size: auto, cover;
-    -moz-background-size: auto, cover;
-    -o-background-size: auto, cover;
-}
 
 .form-control,
 input,
@@ -2507,14 +2508,14 @@ span.select2-results {
     background-color: rgba(var(--accent-color));
 } */
 
-.panel-blue .panel-heading, .panel-info .panel-heading {
+.panel-blue .panel-heading, .panel-info .panel-heading, #help-modal-body > div > div {
     background-color: rgba(0, 0, 0, .25);
 }
 #account-area > div > div > div > div > div.panel-wrapper.collapse.in.main-email-panel > div > div > div  > div > div {
     background: transparent;
 }
 
-[id$="-settings-page"] .panel {
+[id$="-settings-page"] .panel, .modal-content {
     background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
