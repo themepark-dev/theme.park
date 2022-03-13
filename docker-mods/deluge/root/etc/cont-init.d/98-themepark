@@ -34,7 +34,7 @@ if [[ -z ${TP_THEME} ]]; then
 fi
 
 # Adding stylesheets
-INDEX_HTML='/usr/lib/python3.10/site-packages/deluge/ui/web/index.html'
+INDEX_HTML='/usr/lib/python3/dist-packages/deluge/ui/web/index.html'
 if ! grep -q "${TP_DOMAIN}/css/base" "$INDEX_HTML"; then
     echo '---------------------------'
     echo '|  Adding the stylesheet  |'
