@@ -65,6 +65,7 @@ button[class*="bg-indigo-"],
 button[class*="bg-gray-"],
 button[class*="border-indigo-"],
 button[class*="border-gray-"],
+#__next > div > div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64 > main > div > div > div.relative.z-40.mt-6.mb-12.lg\:flex.lg\:items-end.lg\:justify-between.lg\:space-x-5 > div.flex.flex-col-reverse.mt-6.space-y-4.space-y-reverse.justify-stretch.lg\:flex-row.lg\:justify-end.lg\:space-x-reverse.lg\:space-y-0.lg\:space-x-3 > a,
 button.input-action {
     background-color: var(--button-color);
     border-color: var(--button-color);
@@ -81,7 +82,8 @@ button[class*="bg-gray-"]:hover,
 button[class*="border-indigo-"]:hover,
 button[class*="border-gray-"]:hover,
 button.input-action:hover,
-button[class="input-action"]:hover {
+button[class="input-action"]:hover,
+#__next > div > div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64 > main > div > div > div.relative.z-40.mt-6.mb-12.lg\:flex.lg\:items-end.lg\:justify-between.lg\:space-x-5 > div.flex.flex-col-reverse.mt-6.space-y-4.space-y-reverse.justify-stretch.lg\:flex-row.lg\:justify-end.lg\:space-x-reverse.lg\:space-y-0.lg\:space-x-3 > a:hover {
     background-color: var(--button-color-hover);
     border-color: var(--button-color-hover);
     color: var(--button-text-hover);
@@ -193,14 +195,19 @@ body {
 }
 
 .bg-gray-800 {
-    --tw-bg-opacity: 0.3;
-    background-color: rgb(0, 0, 0, var(--tw-bg-opacity));
+    --tw-bg-opacity: 0.05;
+    background-color: rgb(255, 255, 255, var(--tw-bg-opacity));
 }
 
 .hover\:bg-gray-700:hover {
     --tw-bg-opacity: .3;
     background-color: rgb(var(--accent-color), var(--tw-bg-opacity));
     color: rgb(var(--accent-color)) !important;
+}
+
+.bg-gray-700 {
+    --tw-bg-opacity: .05;
+    background-color: rgba(var(--accent-color), var(--tw-bg-opacity));
 }
 
 /* SEARCH BAR */
@@ -270,9 +277,9 @@ body {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(var(--accent-color), .5));
 }
 
-#__next>div>div.fixed.top-0.bottom-0.left-0.z-30.hidden.lg\:flex.lg\:flex-shrink-0>div>div>div>nav>a.flex.group.items-center.px-2.py-2.text-lg.leading-6.font-medium.rounded-md.text-white.focus\:outline-none.transition.ease-in-out.duration-150.bg-gradient-to-br.from-indigo-600.to-purple-600.hover\:from-indigo-500.hover\:to-purple-500 {
-    background: rgba(var(--accent-color), 0.05);
-    color: rgba(var(--accent-color));
+#__next>div>div.fixed.top-0.bottom-0.left-0.z-30.hidden.lg\:flex.lg\:flex-shrink-0>div>div>div>nav>a.flex.group.items-center.px-2.py-2.text-lg.leading-6.font-medium.rounded-md.text-white.focus\:outline-none.transition.ease-in-out.duration-150.bg-gradient-to-br.from-indigo-600.to-purple-600.hover\:from-indigo-500.hover\:to-purple-500,
+#__next > div > div.fixed.top-0.bottom-0.left-0.z-30.hidden.lg\:flex.lg\:flex-shrink-0 > div > div > div > nav > a.flex.group.items-center.px-2.py-2.text-lg.leading-6.font-medium.rounded-md.text-white.focus\:outline-none.transition.ease-in-out.duration-150.bg-gradient-to-br.from-indigo-600.to-purple-600.hover\:from-indigo-500.hover\:to-purple-500 > svg {
+    color: rgb(var(--accent-color)) !important;
 }
 
 body>div.z-50.fixed.inset-0.overflow-hidden.bg-opacity-70.bg-gray-800.enter-done>div>section>div>div {
@@ -321,8 +328,8 @@ a.slider-title:hover {
 }
 
 /* CARD HOVER */
-#__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div>div.relative.px-2.py-2.-my-2.-ml-4.-mr-4.overflow-x-scroll.overflow-y-auto.whitespace-nowrap.hide-scrollbar.overscroll-x-contain>div>div>div>div>div:hover {
-    background: linear-gradient(rgba(var(--accent-color), .04) 0%, rgba(var(--accent-color), 0.9) 100%);
+#__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div>div.relative.px-2.py-2.-my-2.-ml-4.-mr-4.overflow-x-scroll.overflow-y-auto.whitespace-nowrap.hide-scrollbar.overscroll-x-contain>div>div>div>div>div:hover a {
+    background: linear-gradient(rgba(var(--accent-color), 0.3) 0%, rgba(0,0,0,.7) 100%) !important;
 }
 
 #__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div>div.relative.px-2.py-2.-my-2.-ml-4.-mr-4.overflow-x-scroll.overflow-y-auto.whitespace-nowrap.hide-scrollbar.overscroll-x-contain>div>div>div.absolute.inset-0.z-0>div.absolute.inset-0 {
@@ -335,7 +342,8 @@ a.slider-title:hover {
 
 
 /* SHOW PAGE */
-#__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div>div.media-page-bg-image>div.absolute.inset-0 {
+#__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div>div.media-page-bg-image>div.absolute.inset-0,
+#__next > div > div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64 > main > div > div > div.absolute.left-0.right-0.z-0.-top-16.h-96 > div > div > div.absolute.inset-0 {
     background: var(--overseerr-gradient) !important;
 }
 
@@ -394,7 +402,7 @@ a.slider-title:hover {
 
 /* RINGA A DINGALING*/
 .ring-1 {
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) rgb(0 0 0 / 10%) !important;
+    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) rgb(255 255 255 / 10%) !important;
 }
 
 
@@ -513,12 +521,21 @@ body>div.fixed.top-0.bottom-0.left-0.right-0.z-50.flex.items-center.justify-cent
 /* DROPDOWN */
 
 #__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div>div.media-header>div.media-actions>span>span>div>div.bg-gray-700,
-#__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div>div.media-header>div.media-actions>span>span>div>div>div>a {
+#__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div>div.media-header>div.media-actions>span>span>div>div>div>a,
+#__next > div > div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64 > main > div > div > div.mt-10.text-white > form > div:nth-child(5) > div > div > div > div > div > div {
     background: var(--drop-down-menu-bg);
 }
 
 #__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div>div.media-header>div.media-actions>span>span>div>div>div>a:hover {
     background: rgba(255, 255, 255, 0.1);
+}
+
+
+[aria-labelledby="user-menu"] {
+    background: var(--drop-down-menu-bg);
+}
+[aria-labelledby="user-menu"] a:hover{
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 /* LOGIN */

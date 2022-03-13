@@ -556,7 +556,11 @@ a:hover {
 }
 
 /* LIBRARY TOP HEADER DROPDOWN */
-[class*="MenuItem-menuItem-"],
+[class*="MenuItem-menuItem-"] {
+    color: var(--text);
+    background: 0;
+}
+
 [class*="MenuContent-menuContent-"] {
     background: var(--drop-down-menu-bg);
     background-repeat: repeat, no-repeat;
@@ -565,8 +569,7 @@ a:hover {
     background-size: auto, cover;
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
-    -o-background-size: auto, cover;
-    color: var(--text);
+    -o-background-size: auto, cover;  
 }
 
 [class*="MenuContent-scroller-"] {
@@ -602,10 +605,7 @@ a:hover {
 
 /* ADD NEW */
 
-[class*="EnhancedSelectInput-options-"],
-[class*="EnhancedSelectInputOption-option-"],
-[class*="EnhancedSelectInput-optionsContainer-"] {
-    border: 0px solid rgba(255, 255, 255, 0.2);
+[class*="EnhancedSelectInput-options-"] {
     border-radius: 4px;
     background: var(--drop-down-menu-bg);
     background-repeat: repeat, no-repeat;
@@ -616,6 +616,10 @@ a:hover {
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
     color: var(--text);
+}
+
+[class*="EnhancedSelectInput-options-"] {
+    border: 1px solid rgba(var(--accent-color)) !important;
 }
 
 [class*="EnhancedSelectInputOption-isSelected-"],

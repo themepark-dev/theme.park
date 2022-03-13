@@ -103,6 +103,19 @@ a:hover {
     background-color: rgb(0 0 0 / 15%);
 }
 
+.text-dark {
+color: var(--text-hover)!important;
+}
+.text-secondary {
+color: var(--text)!important;
+}
+.dropdown-item.disabled, .dropdown-item:disabled {
+color: var(--text-muted);
+pointer-events: none;
+background-color: transparent;
+}
+
+
 h1,
 h2,
 h3,
@@ -827,6 +840,9 @@ line {
     background-size: 1rem 1rem
 }
 
+.notification-btn .notification-center-progress .progress .progress-bar {
+    text-shadow: -2px -2px 5px rgb(var(--accent-color)), 2px -2px 5px rgb(var(--accent-color)), -2px 2px 5px rgb(var(--accent-color)), 2px 2px 5px rgb(var(--accent-color));
+}
 /* LOGS */
 /* Stack traceback */
 code.zmdi-language-python-alt {
