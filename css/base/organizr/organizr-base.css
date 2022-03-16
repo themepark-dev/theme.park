@@ -22,7 +22,6 @@
 }
 
 
-[id*="homepage-"]>fieldset>div>div.panel-wrapper.collapse.in>div>div,
 [id$="-settings-items"]>div {
     background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat !important;
@@ -51,14 +50,7 @@
 }
 
 #HEALTHCHECKS-settings-items [id*="Services"] .row.m-b-40 {
-    background: var(--modal-bg-color);
-    background-repeat: repeat, no-repeat;
-    background-attachment: fixed, fixed;
-    background-position: center center, center center;
-    background-size: auto, cover;
-    -webkit-background-size: auto, cover;
-    -moz-background-size: auto, cover;
-    -o-background-size: auto, cover;
+    background: rgba(0, 0, 0, 0)
 }
 
 .h1,
@@ -269,8 +261,10 @@ h6 {
     background: rgba(0, 0, 0, 0.25);
 }
 
-.panel:not(#help-modal-body > div > div):not([id*="settings-"] .panel) {
-    background: var(--main-bg-color);
+#account-area > div > div > div > div,
+[id*="homepage-"] > fieldset > div,
+#speedtest-area > div > div {
+    background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -278,6 +272,21 @@ h6 {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
+}
+
+
+#homepage-Deluge-form > fieldset > div > div.panel-wrapper.collapse.in > div > div > div > div.tab-pane.fade.in.active > div > div > div > div > div > div > div {
+    background: rgba(0, 0, 0, .1);
+}
+
+/* Homepage Item Modals*/
+[id$="API-SOCKS"] > div:nth-child(1) > div.col-md-12.p-b-10 > div > div > div,
+[id$="About"] > div > div > div > div > div,
+[id$="Enable"] > div > div > div > div > div > div > div,
+[id$="FYI"] > div > div > div > div > div > div > div,
+#\39 w59f92rirFYI > div > div > div > div > div > div > div,
+[id$="Setup"] > div > div > div > div > div {
+    background: rgba(0, 0, 0, 0.25);
 }
 
 [id*="settings-"] .panel {
@@ -1583,9 +1592,10 @@ a:hover,
     box-shadow: none !important;
 }
 
-.swal-overlay--show-modal .swal-modal:not(.swal-modal.orgAlertTransparent),
-body > div.swal-overlay.swal-overlay--show-modal > div > div > div > div > div.panel-heading {
-    background: var(--main-bg-color);
+.swal-modal,
+body > div.swal-overlay.swal-overlay--show-modal > div > div > div > div > div.panel-heading,
+body > div.swal-overlay.swal-overlay--show-modal > div > div {
+    background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -2511,11 +2521,16 @@ span.select2-results {
 .panel-blue .panel-heading, .panel-info .panel-heading, #help-modal-body > div > div {
     background-color: rgba(0, 0, 0, .25);
 }
-#account-area > div > div > div > div > div.panel-wrapper.collapse.in.main-email-panel > div > div > div  > div > div {
+#account-area > div > div > div > div > div.panel-wrapper.collapse.in.main-email-panel > div > div > div  > div > div,
+#plexRecent > div.col-lg-12 > div,
+#overseerr-requests > div.col-lg-12 > div {
     background: transparent;
 }
 
-[id$="-settings-page"] .panel, .modal-content {
+[id$="-settings-page"] .bg-org, .modal-content,
+body > div.swal-overlay.swal-overlay--show-modal > div > div > div,
+#email-area > div > div > div.row > div > div,
+#invite-area > div > div > div.col-md-12 > div {
     background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
