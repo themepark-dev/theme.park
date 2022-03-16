@@ -1,9 +1,9 @@
 :root {
   --main-bg-color: linear-gradient(0deg, rgba(247,101,184,1) 0%, rgb(21, 95, 165) 100%) center center/cover no-repeat fixed;
 
-  --modal-bg-color: linear-gradient(0deg, rgba(247,101,184,1) 0%, rgb(21, 95, 165) 100%) center center/cover no-repeat fixed;
-  --modal-header-color: linear-gradient(0deg, rgba(247,101,184,1) 0%, rgb(21, 95, 165) 100%) center center/cover no-repeat fixed;
-  --modal-footer-color: linear-gradient(0deg, rgba(247,101,184,1) 0%, rgb(21, 95, 165) 100%) center center/cover no-repeat fixed;
+  --modal-bg-color: linear-gradient(-90deg, rgba(247,101,184,1) 0%, rgb(21, 95, 165) 100%) center center/cover no-repeat fixed;
+  --modal-header-color: linear-gradient(-90deg, rgba(247,101,184,1) 0%, rgb(21, 95, 165) 100%) center center/cover no-repeat fixed;
+  --modal-footer-color: linear-gradient(-90deg, rgba(247,101,184,1) 0%, rgb(21, 95, 165) 100%) center center/cover no-repeat fixed;
   
   --drop-down-menu-bg: linear-gradient(90deg, rgba(247,101,184,1) 0%, rgba(21, 95, 165) 100%) center center/cover no-repeat fixed;
 
