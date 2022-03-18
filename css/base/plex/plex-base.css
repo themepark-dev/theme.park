@@ -118,8 +118,11 @@ a[class*="MetadataTableRow-title-"]:hover {
 }
 
 /* BODY */
-html body,
-.application {
+#plex > div[class*="FullPageBackground-backgroundContainer-"] > div > div:nth-child(1) > canvas,
+#plex > div[class*="FullPageBackground-backgroundContainer-"] > div > canvas {
+  display: none !important;
+}
+body,[class*="FullPageBackground-backgroundContainer-"] {
   background: var(--main-bg-color);
   background-repeat: repeat, no-repeat;
   background-attachment: fixed, fixed;
@@ -280,7 +283,8 @@ button:hover [class*="DisclosureArrow-disclosureArrow-"] {
   border-color: rgb(var(--accent-color));
 }
 
-[class*="PivotTab-selectedButton-"]:after {
+[class*="PivotTab-selectedButton-"]:after,
+[class*="TabButton-selectedButton-"]:after {
   background-color: rgb(var(--accent-color)) !important;
 }
 
