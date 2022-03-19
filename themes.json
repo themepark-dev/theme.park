@@ -419,7 +419,7 @@
           }
         }
       },
-      "base_css": "https://develop.theme-park.dev/css/base/unraid/unraid-base.css?sha=a964c61c128e70e004fc11fefc7ce8154e9dc802"
+      "base_css": "https://develop.theme-park.dev/css/base/unraid/unraid-base.css?sha=4d1096ff11ea81bbc0998e1f499c7f3f165d5d33"
     },
     "uptime-kuma": {
       "addons": {},
