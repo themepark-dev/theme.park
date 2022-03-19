@@ -1133,7 +1133,7 @@ label[for="checkbox-login"]:hover {
 .panel-inverse .panel-heading {
     border-color: transparent;
     color: #fff;
-    background: var(--main-bg-color);
+    background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -1594,7 +1594,7 @@ a:hover,
 
 .swal-modal,
 body > div.swal-overlay.swal-overlay--show-modal > div > div > div > div > div.panel-heading,
-body > div.swal-overlay.swal-overlay--show-modal > div > div {
+body > div.swal-overlay.swal-overlay--show-modal > div {
     background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
@@ -1899,7 +1899,7 @@ background: rgb(0 0 0 / 0%) !important;
 }
 
 /*Button*/
-.btn-custom {
+.btn-custom{
     background: var(--button-color);
     border: 1px solid var(--button-color);
     color: var(--button-text);
@@ -1912,6 +1912,21 @@ background: rgb(0 0 0 / 0%) !important;
     border: 1px solid var(--button-color-hover);
 }
 
+.swal-button {
+    outline: none;
+    background: var(--button-color);
+    border: 1px solid var(--button-color);
+    color: var(--button-text);
+    border-radius: 0px;
+}
+.swal-button:focus,.swal-button:active {
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0), 0 0 0 3px rgb(var(--accent-color),.25);
+}
+.swal-button:not([disabled]):hover,.swal-button:active {
+    background-color: var(--button-color-hover);
+    color: var(--button-text-hover);
+    border: 1px solid var(--button-color-hover);
+}
 /*Custom tab
 .customtab li.active a,
 .customtab li.active a:hover,
@@ -2523,7 +2538,8 @@ span.select2-results {
 }
 #account-area > div > div > div > div > div.panel-wrapper.collapse.in.main-email-panel > div > div > div  > div > div,
 #plexRecent > div.col-lg-12 > div,
-#overseerr-requests > div.col-lg-12 > div {
+#overseerr-requests > div.col-lg-12 > div,
+body > div.swal-overlay.swal-overlay--show-modal > div > div > div > div {
     background: transparent;
 }
 
