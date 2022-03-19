@@ -1665,6 +1665,7 @@ body > div.swal-overlay.swal-overlay--show-modal > div {
 .customvtab .tabs-vertical li.active a:hover {
     border-right: 2px solid rgb(var(--accent-color));
     color: rgb(var(--accent-color));
+    transition: background-color .3s;
 }
 
 .vtabs .tabs-vertical li a {
@@ -1673,7 +1674,9 @@ body > div.swal-overlay.swal-overlay--show-modal > div {
 
 .vtabs .nav>li>a:focus,
 .vtabs .nav>li>a:hover {
-    background-color: rgba(var(--accent-color), .15);
+    color: rgba(var(--accent-color));
+    background: transparent;
+    transition: color .3s;
 }
 
 /* THEME PARK CUSTOM END*/
