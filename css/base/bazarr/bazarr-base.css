@@ -224,7 +224,8 @@ label,
     background-color: rgba(0, 0, 0, .25);
 }
 
-.sidebar-container .sidebar-button {
+.sidebar-container .sidebar-button,
+.sidebar-container .button {
     color: var(--text) !important;
     background: transparent
 }
@@ -235,7 +236,8 @@ label,
     background-color: rgba(0, 0, 0, 0.15) !important;
 }
 
-.sidebar-container .sidebar-button:hover {
+.sidebar-container .sidebar-button:hover,
+.sidebar-container .button:hover {
     background-color: transparent !important;
     color: rgb(var(--accent-color)) !important;
 }
@@ -245,7 +247,8 @@ label,
 }
 
 .sidebar-container .sidebar-button.sb-active,
-.sidebar-container .sidebar-button.sb-active:hover {
+.sidebar-container .sidebar-button.sb-active:hover,
+.sidebar-container .button.active {
     background-color: rgba(0, 0, 0, 0.15) !important;
     color: rgb(var(--accent-color)) !important;
 }
@@ -365,6 +368,9 @@ hr {
     box-shadow: 0 0 10px 1px #000000;
     color: var(--text);
 }
+.card-header {
+    border-bottom: 1px solid rgb(255 255 255 / 10%);
+}
 
 .settings-card:hover,
 .settings-card:focus {
@@ -381,6 +387,7 @@ hr {
 /* Series page */
 .progress-bar {
     background-color: var(--accent-color);
+    text-shadow: none;
 }
 
 .progress {

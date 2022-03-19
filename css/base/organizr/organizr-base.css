@@ -22,7 +22,6 @@
 }
 
 
-[id*="homepage-"]>fieldset>div>div.panel-wrapper.collapse.in>div>div,
 [id$="-settings-items"]>div {
     background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat !important;
@@ -51,14 +50,7 @@
 }
 
 #HEALTHCHECKS-settings-items [id*="Services"] .row.m-b-40 {
-    background: var(--modal-bg-color);
-    background-repeat: repeat, no-repeat;
-    background-attachment: fixed, fixed;
-    background-position: center center, center center;
-    background-size: auto, cover;
-    -webkit-background-size: auto, cover;
-    -moz-background-size: auto, cover;
-    -o-background-size: auto, cover;
+    background: rgba(0, 0, 0, 0)
 }
 
 .h1,
@@ -220,14 +212,16 @@ h6 {
 .tabs-style-flip nav a,
 .nav-tabs>li>a {
     color: var(--text-hover);
+    transition: color .3s;
 }
 
 .customtab2 li.active a,
 .customtab2 li.active a:focus,
 .customtab2 li.active a:hover {
-    background: rgba(0, 0, 0, 0.25) !important;
-    border-color: rgba(255, 255, 255, 0.1) !important;
+    background: rgba(var(--accent-color), 0.15) !important;
+    border-color: rgba(var(--accent-color), 0.1) !important;
     border-radius: 20px;
+    color: rgb(var(--accent-color)) !important;
 }
 
 /*toast*/
@@ -269,8 +263,10 @@ h6 {
     background: rgba(0, 0, 0, 0.25);
 }
 
-.panel:not(#help-modal-body > div > div):not([id*="settings-"] .panel) {
-    background: var(--main-bg-color);
+#account-area > div > div > div > div,
+[id*="homepage-"] > fieldset > div,
+#speedtest-area > div > div {
+    background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -278,6 +274,21 @@ h6 {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
+}
+
+
+#homepage-Deluge-form > fieldset > div > div.panel-wrapper.collapse.in > div > div > div > div.tab-pane.fade.in.active > div > div > div > div > div > div > div {
+    background: rgba(0, 0, 0, .1);
+}
+
+/* Homepage Item Modals*/
+[id$="API-SOCKS"] > div:nth-child(1) > div.col-md-12.p-b-10 > div > div > div,
+[id$="About"] > div > div > div > div > div,
+[id$="Enable"] > div > div > div > div > div > div > div,
+[id$="FYI"] > div > div > div > div > div > div > div,
+#\39 w59f92rirFYI > div > div > div > div > div > div > div,
+[id$="Setup"] > div > div > div > div > div {
+    background: rgba(0, 0, 0, 0.25);
 }
 
 [id*="settings-"] .panel {
@@ -1124,7 +1135,7 @@ label[for="checkbox-login"]:hover {
 .panel-inverse .panel-heading {
     border-color: transparent;
     color: #fff;
-    background: var(--main-bg-color);
+    background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -1164,7 +1175,6 @@ label[for="checkbox-login"]:hover {
 .nav-tabs>li.active>a:hover {
     cursor: pointer;
     opacity: 1;
-    background: rgb(var(--accent-color) , .15) !important;
 }
 
 #homepageOrderdownloader .nav-tabs>li.active>a,
@@ -1583,9 +1593,10 @@ a:hover,
     box-shadow: none !important;
 }
 
-.swal-overlay--show-modal .swal-modal:not(.swal-modal.orgAlertTransparent),
-body > div.swal-overlay.swal-overlay--show-modal > div > div > div > div > div.panel-heading {
-    background: var(--main-bg-color);
+.swal-modal,
+body > div.swal-overlay.swal-overlay--show-modal > div > div > div > div > div.panel-heading,
+body > div.swal-overlay.swal-overlay--show-modal > div {
+    background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -1654,6 +1665,7 @@ body > div.swal-overlay.swal-overlay--show-modal > div > div > div > div > div.p
 .customvtab .tabs-vertical li.active a:hover {
     border-right: 2px solid rgb(var(--accent-color));
     color: rgb(var(--accent-color));
+    transition: background-color .3s;
 }
 
 .vtabs .tabs-vertical li a {
@@ -1662,7 +1674,9 @@ body > div.swal-overlay.swal-overlay--show-modal > div > div > div > div > div.p
 
 .vtabs .nav>li>a:focus,
 .vtabs .nav>li>a:hover {
-    background-color: rgba(var(--accent-color), .15);
+    color: rgba(var(--accent-color));
+    background: transparent;
+    transition: color .3s;
 }
 
 /* THEME PARK CUSTOM END*/
@@ -1889,7 +1903,7 @@ background: rgb(0 0 0 / 0%) !important;
 }
 
 /*Button*/
-.btn-custom {
+.btn-custom{
     background: var(--button-color);
     border: 1px solid var(--button-color);
     color: var(--button-text);
@@ -1902,6 +1916,21 @@ background: rgb(0 0 0 / 0%) !important;
     border: 1px solid var(--button-color-hover);
 }
 
+.swal-button {
+    outline: none;
+    background: var(--button-color);
+    border: 1px solid var(--button-color);
+    color: var(--button-text);
+    border-radius: 0px;
+}
+.swal-button:focus,.swal-button:active {
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0), 0 0 0 3px rgb(var(--accent-color),.25);
+}
+.swal-button:not([disabled]):hover,.swal-button:active {
+    background-color: var(--button-color-hover);
+    color: var(--button-text-hover);
+    border: 1px solid var(--button-color-hover);
+}
 /*Custom tab
 .customtab li.active a,
 .customtab li.active a:hover,
@@ -2087,12 +2116,14 @@ input,
 .customtab2 li.active a:hover {
     background: #1f1f1f;
     border-radius: 20px;
+    border: 0;
+    transition: background-color .3s;
 }
 
 .nav-tabs>li>a:hover {
-    background: rgba(0, 0, 0, 0.25) !important;
-    border-radius: 0px;
-    color: var(--text-hover);
+    background: transparent !important;
+    border-radius: 20px;
+    color: rgb(var(--accent-color)) !important;
 }
 
 .tabs-style-flip nav a:focus,
@@ -2511,11 +2542,17 @@ span.select2-results {
 .panel-blue .panel-heading, .panel-info .panel-heading, #help-modal-body > div > div {
     background-color: rgba(0, 0, 0, .25);
 }
-#account-area > div > div > div > div > div.panel-wrapper.collapse.in.main-email-panel > div > div > div  > div > div {
+#account-area > div > div > div > div > div.panel-wrapper.collapse.in.main-email-panel > div > div > div  > div > div,
+#plexRecent > div.col-lg-12 > div,
+#overseerr-requests > div.col-lg-12 > div,
+body > div.swal-overlay.swal-overlay--show-modal > div > div > div > div {
     background: transparent;
 }
 
-[id$="-settings-page"] .panel, .modal-content {
+[id$="-settings-page"] .bg-org, .modal-content,
+body > div.swal-overlay.swal-overlay--show-modal > div > div > div,
+#email-area > div > div > div.row > div > div,
+#invite-area > div > div > div.col-md-12 > div {
     background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;

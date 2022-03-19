@@ -53,6 +53,10 @@ i.control:hover {
     color: var(--link-color-hover);
 }
 
+pre {
+    border: 1px solid rgb(255 255 255 / 30%);
+}
+
 #template {
     background: var(--main-bg-color);
     background-repeat: repeat, no-repeat;
