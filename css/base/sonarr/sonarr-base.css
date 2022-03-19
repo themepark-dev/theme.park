@@ -629,6 +629,7 @@ a:hover {
 
 [class*="EnhancedSelectInput-options-"] {
     border: 1px solid rgba(var(--accent-color)) !important;
+    background-color: transparent;
 }
 
 [class*="EnhancedSelectInputOption-isSelected-"],
