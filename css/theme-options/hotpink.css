@@ -1,9 +1,9 @@
 :root {
   --main-bg-color: linear-gradient(45deg, #fb3f62 0%, #204c80 37%, #004249 97%) center center/cover no-repeat fixed;
 
-  --modal-bg-color: radial-gradient(circle, #204c80 0%, #000 100%) center center/cover no-repeat fixed;
-  --modal-header-color: radial-gradient(circle, #204c80 0%, #000 100%) center center/cover no-repeat fixed;
-  --modal-footer-color: radial-gradient(circle, #204c80 0%, #000 100%) center center/cover no-repeat fixed;
+  --modal-bg-color: linear-gradient(-45deg, #204c80 0%, #000 100%) center center/cover no-repeat fixed;
+  --modal-header-color: linear-gradient(-45deg, #204c80 0%, #000 100%) center center/cover no-repeat fixed;
+  --modal-footer-color: linear-gradient(-45deg, #204c80 0%, #000 100%) center center/cover no-repeat fixed;
 
   --drop-down-menu-bg: #204c80;
 

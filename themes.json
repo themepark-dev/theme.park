@@ -78,7 +78,7 @@
   },
   "all-themes": {
     "Aquamarine": {
-      "url": "https://theme-park.dev/css/theme-options/aquamarine.css?sha=d20e372875669d0ec5dc98c8c462509249471d3e"
+      "url": "https://theme-park.dev/css/theme-options/aquamarine.css?sha=e263f729d3f58f939c76a02c8ed89cb17b02fd5c"
     },
     "Blackberry-abyss": {
       "url": "https://theme-park.dev/css/community-theme-options/blackberry-abyss.css?sha=b64eb1f01cbd66a9dd888a96e62bb05ccf749802"
@@ -117,19 +117,19 @@
       "url": "https://theme-park.dev/css/community-theme-options/blackberry-vanta.css?sha=5ae2f81e3d70a7a3f166ebfba6ae4ff050ea766d"
     },
     "Dark": {
-      "url": "https://theme-park.dev/css/theme-options/dark.css?sha=4efe4914c7705a00a4bed553e812bdf0bbd5b342"
+      "url": "https://theme-park.dev/css/theme-options/dark.css?sha=08b228ea163be7beccc6bd88a6d002c4e172032e"
     },
     "Dracula": {
       "url": "https://theme-park.dev/css/theme-options/dracula.css?sha=60d9ec4d3e22fe15d205242f41ce71d25c4cf056"
     },
     "Hotline": {
-      "url": "https://theme-park.dev/css/theme-options/hotline.css?sha=997ac961db96be5931734fb16850443e3510b1f3"
+      "url": "https://theme-park.dev/css/theme-options/hotline.css?sha=5cba20990e5a70eef88445d3df6c7bc72bc22ac9"
     },
     "Hotline-old": {
       "url": "https://theme-park.dev/css/community-theme-options/hotline-old.css?sha=4befb6edb8a0b329baa4319e3c6fec9856f1d76f"
     },
     "Hotpink": {
-      "url": "https://theme-park.dev/css/theme-options/hotpink.css?sha=b0af51fb29469af675a797094caedfa9c95a75cc"
+      "url": "https://theme-park.dev/css/theme-options/hotpink.css?sha=18ffb7ff0cf9d4ae97f09c2ccb980d8bb0fd9d3e"
     },
     "Mind": {
       "url": "https://theme-park.dev/css/community-theme-options/mind.css?sha=6689c5111ff6eec40cce87e2ce7c659946fe00a1"
@@ -150,7 +150,7 @@
       "url": "https://theme-park.dev/css/community-theme-options/pine-shadow.css?sha=cc2adf274933630ff06539a244ba9fffff9090dc"
     },
     "Plex": {
-      "url": "https://theme-park.dev/css/theme-options/plex.css?sha=1a440c8d9526f75334d49dbef3df153b77861fe2"
+      "url": "https://theme-park.dev/css/theme-options/plex.css?sha=b130ab0209be43965c0183a51f9f64a5fccff89a"
     },
     "Power": {
       "url": "https://theme-park.dev/css/community-theme-options/power.css?sha=3dc209c5ab792d0fb00407f361dc5b75040054e2"
@@ -165,7 +165,7 @@
       "url": "https://theme-park.dev/css/community-theme-options/space.css?sha=5fadc3d68221e85c2ebb4b0d5649b985a7681d23"
     },
     "Space-gray": {
-      "url": "https://theme-park.dev/css/theme-options/space-gray.css?sha=6c6733b619630e09096a974f34d0d98266842422"
+      "url": "https://theme-park.dev/css/theme-options/space-gray.css?sha=8c996eb8d2c729fe95861ed683e2a8993a413c93"
     },
     "Time": {
       "url": "https://theme-park.dev/css/community-theme-options/time.css?sha=ee60b4f5f6e787181abe2ce5f56abc8dcceabd98"
@@ -184,7 +184,7 @@
         "bazarr-4k-logo": "https://theme-park.dev/css/addons/bazarr/bazarr-4k-logo/bazarr-4k-logo.css?sha=5cb5d8ce69cd7c73988505d93910c9e9ea27532a",
         "bazarr-darker": "https://theme-park.dev/css/addons/bazarr/bazarr-darker/bazarr-darker.css?sha=29ece53bbee1995e502f54eda3bfb166448918bd"
       },
-      "base_css": "https://theme-park.dev/css/base/bazarr/bazarr-base.css?sha=696c35e0a1e7786525ccf514866e87f4d9444fa1"
+      "base_css": "https://theme-park.dev/css/base/bazarr/bazarr-base.css?sha=43d7ec0b6a346b35e3396cafce23e54110658a06"
     },
     "bitwarden": {
       "addons": {},
@@ -294,7 +294,7 @@
           ]
         }
       },
-      "base_css": "https://theme-park.dev/css/base/organizr/organizr-base.css?sha=8b641b41bfe167a62582246460acba64fc7c01f9"
+      "base_css": "https://theme-park.dev/css/base/organizr/organizr-base.css?sha=da7905fea1ae6796e21161c76745ae17c9006362"
     },
     "overseerr": {
       "addons": {},
@@ -313,7 +313,7 @@
         "overseerr-side-menu": "https://theme-park.dev/css/addons/plex/overseerr-side-menu/overseerr-side-menu.css?sha=b14fcec4d4226f766e3f3931b073b4b45ea416ff",
         "plex-alt-logo": "https://theme-park.dev/css/addons/plex/plex-alt-logo/plex-alt-logo.css?sha=38fdfb69ce59b36f3aab4acd7236277784c1836c"
       },
-      "base_css": "https://theme-park.dev/css/base/plex/plex-base.css?sha=54be0cd59c9e19928ac21ace477d3a24379835d6"
+      "base_css": "https://theme-park.dev/css/base/plex/plex-base.css?sha=9db4c2769226cbb05ca7f1541b904dc0bf0f0966"
     },
     "portainer": {
       "addons": {},
@@ -357,7 +357,7 @@
     },
     "sabnzbd": {
       "addons": {},
-      "base_css": "https://theme-park.dev/css/base/sabnzbd/sabnzbd-base.css?sha=ce782872fa42df2a474a0b5855d9980e4ce0f206"
+      "base_css": "https://theme-park.dev/css/base/sabnzbd/sabnzbd-base.css?sha=bb7792764a7c9490c7edf290f6dc855283d82478"
     },
     "sonarr": {
       "addons": {
@@ -419,7 +419,7 @@
           }
         }
       },
-      "base_css": "https://theme-park.dev/css/base/unraid/unraid-base.css?sha=a964c61c128e70e004fc11fefc7ce8154e9dc802"
+      "base_css": "https://theme-park.dev/css/base/unraid/unraid-base.css?sha=4d1096ff11ea81bbc0998e1f499c7f3f165d5d33"
     },
     "uptime-kuma": {
       "addons": {},
@@ -530,19 +530,19 @@
   },
   "themes": {
     "Aquamarine": {
-      "url": "https://theme-park.dev/css/theme-options/aquamarine.css?sha=d20e372875669d0ec5dc98c8c462509249471d3e"
+      "url": "https://theme-park.dev/css/theme-options/aquamarine.css?sha=e263f729d3f58f939c76a02c8ed89cb17b02fd5c"
     },
     "Dark": {
-      "url": "https://theme-park.dev/css/theme-options/dark.css?sha=4efe4914c7705a00a4bed553e812bdf0bbd5b342"
+      "url": "https://theme-park.dev/css/theme-options/dark.css?sha=08b228ea163be7beccc6bd88a6d002c4e172032e"
     },
     "Dracula": {
       "url": "https://theme-park.dev/css/theme-options/dracula.css?sha=60d9ec4d3e22fe15d205242f41ce71d25c4cf056"
     },
     "Hotline": {
-      "url": "https://theme-park.dev/css/theme-options/hotline.css?sha=997ac961db96be5931734fb16850443e3510b1f3"
+      "url": "https://theme-park.dev/css/theme-options/hotline.css?sha=5cba20990e5a70eef88445d3df6c7bc72bc22ac9"
     },
     "Hotpink": {
-      "url": "https://theme-park.dev/css/theme-options/hotpink.css?sha=b0af51fb29469af675a797094caedfa9c95a75cc"
+      "url": "https://theme-park.dev/css/theme-options/hotpink.css?sha=18ffb7ff0cf9d4ae97f09c2ccb980d8bb0fd9d3e"
     },
     "Nord": {
       "url": "https://theme-park.dev/css/theme-options/nord.css?sha=dc62b646ac8f48d4e1e8722f305f8a174e1a4447"
@@ -554,10 +554,10 @@
       "url": "https://theme-park.dev/css/theme-options/overseerr.css?sha=eedb2e0df6cc892903b8716a05184c61577ebe20"
     },
     "Plex": {
-      "url": "https://theme-park.dev/css/theme-options/plex.css?sha=1a440c8d9526f75334d49dbef3df153b77861fe2"
+      "url": "https://theme-park.dev/css/theme-options/plex.css?sha=b130ab0209be43965c0183a51f9f64a5fccff89a"
     },
     "Space-gray": {
-      "url": "https://theme-park.dev/css/theme-options/space-gray.css?sha=6c6733b619630e09096a974f34d0d98266842422"
+      "url": "https://theme-park.dev/css/theme-options/space-gray.css?sha=8c996eb8d2c729fe95861ed683e2a8993a413c93"
     }
   }
 }
