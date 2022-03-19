@@ -49,6 +49,10 @@ a {
   color: var(--link-color);
 }
 
+[href="#modal-add-nzb"] {
+  opacity: 1;
+}
+
 .speedlimit-dropdown.dropdown>div>div>a {
   color: var(--button-text);
 }
@@ -184,7 +188,8 @@ hr {
 }
 
 .dropdown-menu,
-#feedback-slider {
+#feedback-slider,
+.navbar-collapse.in .dropdown-menu {
   background: var(--drop-down-menu-bg);
   background-repeat: repeat, no-repeat;
   background-attachment: fixed, fixed;
@@ -193,10 +198,27 @@ hr {
   -webkit-background-size: auto, cover;
   -moz-background-size: auto, cover;
   -o-background-size: auto, cover;
+  border: none;
 }
 
-.dropdown-menu>li>a {
+.dropdown-menu>li>a{
   color: var(--text-hover);
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-collapse.in .dropdown-menu a, .navbar-collapse.in .dropdown-menu a:hover {
+  color: var(--text-hover) !important;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.navbar-inverse .navbar-toggle {
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
 .dropdown-menu>li>a:hover,
@@ -981,7 +1003,6 @@ select[disabled]:hover {
 /*modal*/
 .modal-content {
   background: var(--modal-bg-color);
-  background-repeat: repeat, no-repeat;
   background-attachment: fixed, fixed;
   background-position: center center, center center;
   background-size: auto, cover;
@@ -1010,6 +1031,8 @@ select[disabled]:hover {
   -webkit-background-size: auto, cover;
   -moz-background-size: auto, cover;
   -o-background-size: auto, cover;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .modal-body>.nav-tabs>li>a {
