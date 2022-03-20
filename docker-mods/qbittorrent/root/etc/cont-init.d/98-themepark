@@ -27,8 +27,13 @@ if ! [[ -x "$(command -v svn)" ]]; then
 echo '--------------------------'
 echo '| Installing svn package |'
 echo '--------------------------'
- apt-get update && \
- apt-get install -y subversion
+    if [ -x "$(command -v apk)" ]; then 
+      apk update && \
+      apk add --no-cache subversion
+    elif [ -x "$(command -v apt-get)" ]; then
+      apt-get update && \
+      apt-get install -y subversion
+    fi
 fi
 
 # Display variables for troubleshooting 
@@ -80,8 +85,8 @@ if [[ ! -d /themepark ]]; then
 fi
 
 sed_file(){
-	sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/css\/base\/qbittorrent\/qbittorrent-base.css'><\/head> /g" $1
-    sed -i "s/<\/head>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/css\/${THEME_TYPE}\/${TP_THEME}.css'><\/head> /g" $1
+	sed -i "s/<\/body>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/css\/base\/qbittorrent\/qbittorrent-base.css'><\/body> /g" $1
+    sed -i "s/<\/body>/<link rel='stylesheet' href='https:\/\/${TP_DOMAIN}\/css\/${THEME_TYPE}\/${TP_THEME}.css'><\/body> /g" $1
 	printf 'Stylesheet set to %s on %s\n\n' "${TP_THEME}" "$1"
 }
 

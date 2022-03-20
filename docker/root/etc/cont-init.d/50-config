@@ -1,0 +1,20 @@
+#!/usr/bin/with-contenv bash
+
+echo '------------------'
+echo '|   theme.park   |'
+echo '------------------'
+
+# Display variables for troubleshooting 
+echo -e "Variables set:\\n\
+'TP_DOMAIN'=${TP_DOMAIN}\\n"
+
+if [[ -z ${TP_DOMAIN} ]]; then
+    echo 'No domain set, defaulting to $http_host'
+    TP_DOMAIN='$http_host'
+fi
+
+DEFAULT='/config/nginx/site-confs/default'
+if ! grep -q "sub_filter 'https://theme-park.dev'  \$scheme://${TP_DOMAIN};" ${DEFAULT}; then
+    sed -i "s/sub_filter 'https:\/\/theme-park.dev'  \$scheme:\/\/TP_DOMAIN;/sub_filter 'https:\/\/theme-park.dev'  \$scheme:\/\/${TP_DOMAIN}; /g" ${DEFAULT}
+    sed -i "s/sub_filter 'https:\/\/develop.theme-park.dev'  \$scheme:\/\/TP_DOMAIN;/sub_filter 'https:\/\/theme-park.dev'  \$scheme:\/\/${TP_DOMAIN}; /g" ${DEFAULT}
+fi
