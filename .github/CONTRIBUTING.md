@@ -1,10 +1,11 @@
 # Contributing to theme.park
 
 - If you want to discuss changes, you can also bring it up in our Discord server
+- PR's are done against the develop branch.
 
 ## New theme option
 
-- The current variables in use can be found in any of the CSS files in `/css/variables/`
+- The current variables in use can be found in any of the CSS files in `/css/theme-options/` and `/css/community-theme-options/`
 
 - New community contributed theme options will be placed in the `Community Themes` category on our docs page.
 

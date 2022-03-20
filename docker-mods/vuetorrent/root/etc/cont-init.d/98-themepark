@@ -58,8 +58,13 @@ install_deps() {
         echo '-------------------------'
         echo '| Installing jq package |'
         echo '-------------------------'
-        apt-get update &&
-            apt-get install -y jq
+        if [ -x "$(command -v apk)" ]; then 
+          apk update && \
+          apk add --no-cache jq
+        elif [ -x "$(command -v apt-get)" ]; then
+          apt-get update && \
+          apt-get install -y jq
+        fi
     fi
 }
 check_updates() {
