@@ -1,0 +1,24 @@
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+
+    server_name _;
+
+    root /app/themepark;
+    index index.html index.htm index.php;
+
+    location / {
+        sub_filter_types *;
+        sub_filter 'https://theme-park.dev'  $scheme://TP_DOMAIN;
+        sub_filter 'https://develop.theme-park.dev'  $scheme://TP_DOMAIN;
+        sub_filter_once off;
+        try_files $uri $uri/ /index.html /index.php?$args =404;
+    }
+
+    # Don't cache
+    add_header Last-Modified $date_gmt;
+    add_header Cache-Control 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0';
+    if_modified_since off;
+    expires -1;
+    etag off;
+}

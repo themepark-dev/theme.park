@@ -1,0 +1,35 @@
+name: docker build
+on:
+  release:
+    branches: 
+      - live
+      - live_develop
+jobs:
+  push_to_ghcr_io:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Get the version
+        id: get_version
+        run: echo ::set-output name=VERSION::${GITHUB_REF#refs/tags/}
+      - name: Set current date as env variable
+        id: date_time
+        run: echo ::set-output name=NOW::$(date +'%Y-%m-%dT%H:%M:%S')
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GH_PAT }}
+      - name: build&push
+      if: ${{ github.ref == 'refs/heads/live' }}
+        run: |
+            docker build docker/ --build-arg TP_RELEASE=${{ steps.get_version.outputs.VERSION }} --build-arg BUILD_DATE=${{ steps.date_time.outputs.NOW }} --tag ghcr.io/gilbn/theme.park --tag ghcr.io/gilbn/theme.park:${{ steps.get_version.outputs.VERSION }}
+            docker push ghcr.io/gilbn/theme.park
+      if: ${{ github.ref == 'refs/heads/live_develop' }}
+        run: |
+            docker build docker/ --build-arg TP_RELEASE=${{ steps.get_version.outputs.VERSION }} --build-arg BUILD_DATE=${{ steps.date_time.outputs.NOW }} --tag ghcr.io/gilbn/theme.park:develop --tag ghcr.io/gilbn/theme.park:${{ steps.get_version.outputs.VERSION }}
+            docker push --all-tags ghcr.io/gilbn/theme.park:develop
