@@ -1,7 +1,7 @@
 {
   "addons": {
     "bazarr": {
-      "bazarr-4k-logo": "https://develop.theme-park.dev/css/addons/bazarr/bazarr-4k-logo/bazarr-4k-logo.css?sha=5cb5d8ce69cd7c73988505d93910c9e9ea27532a",
+      "bazarr-4k-logo": "https://develop.theme-park.dev/css/addons/bazarr/bazarr-4k-logo/bazarr-4k-logo.css?sha=59114dbc54c5cced5c71d718115bd24b29e6bfc7",
       "bazarr-darker": "https://develop.theme-park.dev/css/addons/bazarr/bazarr-darker/bazarr-darker.css?sha=29ece53bbee1995e502f54eda3bfb166448918bd"
     },
     "lidarr": {
@@ -181,7 +181,7 @@
     },
     "bazarr": {
       "addons": {
-        "bazarr-4k-logo": "https://develop.theme-park.dev/css/addons/bazarr/bazarr-4k-logo/bazarr-4k-logo.css?sha=5cb5d8ce69cd7c73988505d93910c9e9ea27532a",
+        "bazarr-4k-logo": "https://develop.theme-park.dev/css/addons/bazarr/bazarr-4k-logo/bazarr-4k-logo.css?sha=59114dbc54c5cced5c71d718115bd24b29e6bfc7",
         "bazarr-darker": "https://develop.theme-park.dev/css/addons/bazarr/bazarr-darker/bazarr-darker.css?sha=29ece53bbee1995e502f54eda3bfb166448918bd"
       },
       "base_css": "https://develop.theme-park.dev/css/base/bazarr/bazarr-base.css?sha=43d7ec0b6a346b35e3396cafce23e54110658a06"

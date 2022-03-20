@@ -1,0 +1,69 @@
+name: Minify CSS and deploy to live branch
+on:
+  push:
+    branches:
+      - master
+      - develop
+    paths-ignore:
+        - 'docker-mods/**'
+        - '.github/**'
+        - '.vscode/**'
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Wrong domain check
+        run: |
+          echo "$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }})"
+          if git grep -q -E ${{ secrets.DOMAIN }} -- *.css; then
+            echo "Game over man!"
+            exit 1
+          fi
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+      - name: Run themes.py
+        run: |
+          python themes.py
+      - name: Minify CSS
+        if: ${{ github.ref == 'refs/heads/master' }}
+        run: |
+          sudo npm install -g minify@7.2.2
+          sudo apt-get update
+          sudo apt-get -y install moreutils
+
+          minify_file(){
+              directory=$1
+              basename=$(basename $directory);
+              extension="${basename##*.}"
+              output="${directory%/*}/"
+              filename="${basename%.*}"
+              output_path="${output}${filename}.${extension}"
+              minify ${directory} | sponge ${output_path}
+              echo "Minified ${directory} > ${output_path}"
+          }
+          
+            find ./css -type f -iname *base.css | while read fname
+                do
+                    if [[ "$fname" != *"min."* ]]; then
+                        minify_file $fname
+                    fi
+                done
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/master' }}
+        with:
+          publish_dir: ./
+          publish_branch: live
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          exclude_assets: ''
+      - name: Deploy Develop
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/develop' }}
+        with:
+          publish_dir: ./
+          publish_branch: live_develop
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          exclude_assets: ''
