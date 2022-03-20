@@ -1,6 +1,7 @@
 name: docker build
 on:
   release:
+    types: [published]
     branches: 
       - live
       - live_develop
