@@ -3,9 +3,6 @@ on:
   release:
     types:
       - published
-    branches: 
-      - live
-      - live_develop
 jobs:
   push_to_ghcr_io:
     runs-on: ubuntu-latest
@@ -14,9 +11,10 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
+          ref: ${{ github.event.release.target_commitish }}
       - name: Get the version
         id: get_version
-        run: echo ::set-output name=VERSION::${GITHUB_REF#refs/tags/}
+        run: echo ::set-output name=VERSION::${{ github.event.release.tag_name }}
       - name: Set current date as env variable
         id: date_time
         run: echo ::set-output name=NOW::$(date +'%Y-%m-%dT%H:%M:%S')
@@ -27,12 +25,12 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GH_PAT }}
       - name: build&push live
-        if: ${{ github.ref == 'refs/heads/live' }}
+        if: ${{ github.event.release.target_commitish == 'live' }}
         run: |
             docker build docker/ --build-arg TP_RELEASE=${{ steps.get_version.outputs.VERSION }} --build-arg BUILD_DATE=${{ steps.date_time.outputs.NOW }} --tag ghcr.io/gilbn/theme.park --tag ghcr.io/gilbn/theme.park:${{ steps.get_version.outputs.VERSION }}
             docker push ghcr.io/gilbn/theme.park
       - name: build&push dev
-        if: ${{ github.ref == 'refs/heads/live_develop' }}
+        if: ${{ github.event.release.target_commitish == 'live_develop' }}
         run: |
             docker build docker/ --build-arg TP_RELEASE=${{ steps.get_version.outputs.VERSION }} --build-arg BUILD_DATE=${{ steps.date_time.outputs.NOW }} --tag ghcr.io/gilbn/theme.park:develop --tag ghcr.io/gilbn/theme.park:${{ steps.get_version.outputs.VERSION }}
             docker push --all-tags ghcr.io/gilbn/theme.park
@@ -45,7 +43,7 @@ jobs:
           fetch-depth: 0
       - name: Get the version
         id: get_version
-        run: echo ::set-output name=VERSION::${GITHUB_REF#refs/tags/}
+        run: echo ::set-output name=VERSION::${{ github.event.release.tag_name }}
       - name: Set current date as env variable
         id: date_time
         run: echo ::set-output name=NOW::$(date +'%Y-%m-%dT%H:%M:%S')
@@ -55,12 +53,13 @@ jobs:
           username: ${{ secrets.DH_USER }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: build&push dh live
-        if: ${{ github.ref == 'refs/heads/live' }}
+        if: ${{ github.event.release.target_commitish == 'live' }}
         run: |
             docker build docker/ --build-arg TP_RELEASE=${{ steps.get_version.outputs.VERSION }} --build-arg BUILD_DATE=${{ steps.date_time.outputs.NOW }} --tag ghcr.io/gilbn/theme.park --tag ghcr.io/gilbn/theme.park:${{ steps.get_version.outputs.VERSION }}
             docker push ghcr.io/gilbn/theme.park
       - name: build&push dh dev
-        if: ${{ github.ref == 'refs/heads/live_develop' }}
+        if: ${{ github.event.release.target_commitish == 'live_develop' }}
         run: |
             docker build docker/ --build-arg TP_RELEASE=${{ steps.get_version.outputs.VERSION }} --build-arg BUILD_DATE=${{ steps.date_time.outputs.NOW }} --tag gilbn/theme.park:develop --tag gilbn/theme.park:${{ steps.get_version.outputs.VERSION }}
             docker push --all-tags gilbn/theme.park
+
