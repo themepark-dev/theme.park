@@ -58,6 +58,7 @@ jobs:
           publish_dir: ./
           publish_branch: live
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          exclude_assets: ''
       - name: Deploy Develop
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/develop' }}
@@ -65,3 +66,4 @@ jobs:
           publish_dir: ./
           publish_branch: live_develop
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          exclude_assets: ''
