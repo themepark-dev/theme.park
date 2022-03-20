@@ -1,6 +1,7 @@
 name: docker build
 on:
   release:
+    types: [published]
     branches: 
       - live
       - live_develop
@@ -24,12 +25,13 @@ jobs:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GH_PAT }}
-      - name: build&push
-      if: ${{ github.ref == 'refs/heads/live' }}
+      - name: build&push live
+        if: ${{ github.ref == 'refs/heads/live' }}
         run: |
             docker build docker/ --build-arg TP_RELEASE=${{ steps.get_version.outputs.VERSION }} --build-arg BUILD_DATE=${{ steps.date_time.outputs.NOW }} --tag ghcr.io/gilbn/theme.park --tag ghcr.io/gilbn/theme.park:${{ steps.get_version.outputs.VERSION }}
             docker push ghcr.io/gilbn/theme.park
-      if: ${{ github.ref == 'refs/heads/live_develop' }}
+      - name: build&push dev
+        if: ${{ github.ref == 'refs/heads/live_develop' }}
         run: |
             docker build docker/ --build-arg TP_RELEASE=${{ steps.get_version.outputs.VERSION }} --build-arg BUILD_DATE=${{ steps.date_time.outputs.NOW }} --tag ghcr.io/gilbn/theme.park:develop --tag ghcr.io/gilbn/theme.park:${{ steps.get_version.outputs.VERSION }}
             docker push --all-tags ghcr.io/gilbn/theme.park
@@ -51,12 +53,13 @@ jobs:
         with:
           username: ${{ secrets.DH_USER }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-      - name: build&push
-      if: ${{ github.ref == 'refs/heads/live' }}
+      - name: build&push dh live
+        if: ${{ github.ref == 'refs/heads/live' }}
         run: |
             docker build docker/ --build-arg TP_RELEASE=${{ steps.get_version.outputs.VERSION }} --build-arg BUILD_DATE=${{ steps.date_time.outputs.NOW }} --tag ghcr.io/gilbn/theme.park --tag ghcr.io/gilbn/theme.park:${{ steps.get_version.outputs.VERSION }}
             docker push ghcr.io/gilbn/theme.park
-      if: ${{ github.ref == 'refs/heads/live_develop' }}
+      - name: build&push dh dev
+        if: ${{ github.ref == 'refs/heads/live_develop' }}
         run: |
             docker build docker/ --build-arg TP_RELEASE=${{ steps.get_version.outputs.VERSION }} --build-arg BUILD_DATE=${{ steps.date_time.outputs.NOW }} --tag gilbn/theme.park:develop --tag gilbn/theme.park:${{ steps.get_version.outputs.VERSION }}
             docker push --all-tags gilbn/theme.park
