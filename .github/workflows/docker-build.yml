@@ -55,8 +55,8 @@ jobs:
       - name: build&push dh live
         if: ${{ github.event.release.target_commitish == 'live' }}
         run: |
-            docker build docker/ --build-arg TP_RELEASE=${{ steps.get_version.outputs.VERSION }} --build-arg BUILD_DATE=${{ steps.date_time.outputs.NOW }} --tag ghcr.io/gilbn/theme.park --tag ghcr.io/gilbn/theme.park:${{ steps.get_version.outputs.VERSION }}
-            docker push ghcr.io/gilbn/theme.park
+            docker build docker/ --build-arg TP_RELEASE=${{ steps.get_version.outputs.VERSION }} --build-arg BUILD_DATE=${{ steps.date_time.outputs.NOW }} --tag ghcr.io/gilbn/theme.park --tag gilbn/theme.park:${{ steps.get_version.outputs.VERSION }}
+            docker push gilbn/theme.park
       - name: build&push dh dev
         if: ${{ github.event.release.target_commitish == 'live_develop' }}
         run: |
