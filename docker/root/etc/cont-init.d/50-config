@@ -31,6 +31,7 @@ cp -R /app/themepark/css /config/www
 cp -R /app/themepark/resources /config/www
 cp /app/themepark/index.html /config/www
 cp /app/themepark/themes.py /config/www
+cp /app/themepark/CNAME /config/www
 
 # permissions
 chown -R abc:abc \
