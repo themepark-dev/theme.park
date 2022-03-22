@@ -6,7 +6,6 @@ on:
       - develop
     paths-ignore:
         - 'docker-mods/**'
-        - '.github/**'
         - '.vscode/**'
 jobs:
   deploy:
