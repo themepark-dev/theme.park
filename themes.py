@@ -1,12 +1,15 @@
-from os import listdir
-from os.path import isdir, isfile, join
+#! /usr/bin/env python3
+
+from os import listdir, environ as env, chdir
+from os.path import isdir, isfile, join, dirname, abspath
 from json import dump, dumps, loads, load
 import subprocess
-import shutil
+
+chdir(dirname(abspath(__file__))) # Set working dir
 
 def get_shas(output):
     """Returns a dict of CSS files and SHAs"""
-    output_lines = output.splitlines()
+    output_lines = output.splitlines() if output else []
     sha_dict = {}
     for line in output_lines:
         line = line.decode('utf-8').replace("0\t", "").split(" ")
@@ -17,8 +20,7 @@ def get_shas(output):
 
 
 def create_addons_json():
-    addon_shas = subprocess.check_output(
-        ["git", "ls-files", "-s", "./css/addons/*.css"])
+    addon_shas = subprocess.check_output(["git", "ls-files", "-s", "./css/addons/*.css"]) if isdir(".git") else []
     SHAS = get_shas(addon_shas)
     ADDONS = {"addons": {}}
     addon_root = './css/addons'
@@ -62,8 +64,8 @@ def create_addons_json():
 def create_json(app_folders: list = None, themes: list = None, community_themes: list = None, no_sub_folders=False):
     if no_sub_folders:
         THEMES_DICT = {}
-        theme_shas = subprocess.check_output(["git", "ls-files", "-s", "./css/theme-options/*.css"])
-        community_theme_shas = subprocess.check_output(["git", "ls-files", "-s", "./css/community-theme-options/*.css"])
+        theme_shas = subprocess.check_output(["git", "ls-files", "-s", "./css/theme-options/*.css"]) if isdir(".git") else []
+        community_theme_shas = subprocess.check_output(["git", "ls-files", "-s", "./css/community-theme-options/*.css"]) if isdir(".git") else []
         THEME_SHAS = get_shas(theme_shas)
         COMMUNITY_THEME_SHAS = get_shas(community_theme_shas)
         THEMES = {
@@ -91,7 +93,7 @@ def create_json(app_folders: list = None, themes: list = None, community_themes:
     else:
         ADDONS = loads(create_addons_json())
         APPS = {}
-        app_shas = subprocess.check_output(["git", "ls-files", "-s", "./css/base/*base.css"])
+        app_shas = subprocess.check_output(["git", "ls-files", "-s", "./css/base/*base.css"]) if isdir(".git") else []
         SHAS = get_shas(app_shas)
         APPS.update(dict(sorted({
             "applications": {
@@ -114,25 +116,6 @@ def create_json(app_folders: list = None, themes: list = None, community_themes:
         APPS.update(THEMES)
         return dumps(APPS)
 
-# def temporary_copy_files():
-#     shutil.rmtree("./CSS", ignore_errors=True)
-#     shutil.rmtree("./Resources", ignore_errors=True)
-#     src_dst = {
-#         "./css/base/": "./CSS/themes",
-#         "./css/theme-options": "./CSS/variables",
-#         "./css/community-theme-options": "./CSS/variables",
-#         "./resources/": "./Resources/",
-#         "./css/addons/": "./CSS/addons",
-#         "./css/defaults/": "./CSS/defaults",
-#         "./css/theme-options/organizr.css": "./CSS/variables/organizr-dark.css",
-#         "./css/theme-options/organizr.css": "./css/theme-options/organizr-dark.css"
-#         }
-#     for src in src_dst:
-#         if ".css" in src:
-#             shutil.copy(src,src_dst[src])
-#             continue
-#         shutil.copytree(src,src_dst[src],dirs_exist_ok=True)
-
 def create_theme_options():
     def create_css(folder):
         with open(f"{folder}/{app}/{theme.lower()}.css", "w") as create_app:
@@ -148,15 +131,19 @@ def create_theme_options():
             for folder in folders:
                 create_css(folder)
 
+env_domain = env.get('TP_DOMAIN')
 
 if __name__ == "__main__":
     app_folders = [name for name in listdir('./css/base') if isdir(join('./css/base', name))]
     themes = [name for name in listdir('./css/theme-options') if isfile(join('./css/theme-options', name))]
     community_themes = [name for name in listdir('./css/community-theme-options') if isfile(join('./css/community-theme-options', name))]
-    with open("CNAME", "rt", closefd=True) as cname:
-        CNAME = cname.readline()
-    develop = True if subprocess.check_output(["git", "symbolic-ref", "--short", "HEAD"]).decode('ascii').strip() == "develop" else False
-    DOMAIN = CNAME if not develop else f"develop.{CNAME}"
+    develop = True if isdir(".git") and subprocess.check_output(["git", "symbolic-ref", "--short", "HEAD"]).decode('ascii').strip() == "develop" else False
+    if env_domain:
+        DOMAIN = env_domain
+    else:
+        with open("CNAME", "rt", closefd=True) as cname:
+            CNAME = cname.readline()
+        DOMAIN = CNAME if not develop else f"develop.{CNAME}"
     apps = loads(create_json(app_folders=app_folders, themes=themes, community_themes=community_themes))
     with open("themes.json", "w") as outfile:
         dump(apps, outfile, indent=2, sort_keys=True)

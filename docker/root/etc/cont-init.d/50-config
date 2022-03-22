@@ -6,7 +6,10 @@ echo '------------------'
 
 # Display variables for troubleshooting 
 echo -e "Variables set:\\n\
-'TP_DOMAIN'=${TP_DOMAIN}\\n"
+PUID=${PUID}\\n\
+PGID=${PGID}\\n\
+TZ=${TZ}\\n\
+TP_DOMAIN=${TP_DOMAIN}\\n"
 
 if [[ -z ${TP_DOMAIN} ]]; then
     echo 'No domain set, defaulting to $http_host'
@@ -18,3 +21,17 @@ if ! grep -q "sub_filter 'https://theme-park.dev'  \$scheme://${TP_DOMAIN};" ${D
     sed -i "s/sub_filter 'https:\/\/theme-park.dev'  \$scheme:\/\/TP_DOMAIN;/sub_filter 'https:\/\/theme-park.dev'  \$scheme:\/\/${TP_DOMAIN}; /g" ${DEFAULT}
     sed -i "s/sub_filter 'https:\/\/develop.theme-park.dev'  \$scheme:\/\/TP_DOMAIN;/sub_filter 'https:\/\/develop.theme-park.dev'  \$scheme:\/\/${TP_DOMAIN}; /g" ${DEFAULT}
 fi
+
+# make our folders and links
+mkdir -p \
+    /config/www/{css,resources}
+
+# copy theme files
+cp -R /app/themepark/css /config/www
+cp -R /app/themepark/resources /config/www
+cp /app/themepark/index.html /config/www
+cp /app/themepark/themes.py /config/www
+
+# permissions
+chown -R abc:abc \
+    /config

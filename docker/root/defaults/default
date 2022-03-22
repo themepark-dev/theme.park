@@ -4,7 +4,7 @@ server {
 
     server_name _;
 
-    root /app/themepark;
+    root /config/www;
     index index.html index.htm index.php;
 
     location / {
@@ -12,7 +12,7 @@ server {
         sub_filter 'https://theme-park.dev'  $scheme://TP_DOMAIN;
         sub_filter 'https://develop.theme-park.dev'  $scheme://TP_DOMAIN;
         sub_filter_once off;
-        try_files $uri $uri/ /index.html /index.php?$args =404;
+        try_files $uri $uri/ /index.html;
     }
 
     # Don't cache
