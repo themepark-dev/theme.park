@@ -34,7 +34,7 @@ jobs:
       - name: build&push develop
         if: ${{ github.ref == 'refs/heads/develop' }}
         run: |
-            docker build --build-arg TP_RELEASE=${{ steps.get_version.outputs.VERSION }} --build-arg BUILD_DATE=${{ steps.date_time.outputs.NOW }} --tag ghcr.io/gilbn/theme.park:develop }} .
+            docker build --build-arg TP_RELEASE=${{ steps.get_version.outputs.VERSION }} --build-arg BUILD_DATE=${{ steps.date_time.outputs.NOW }} --tag ghcr.io/gilbn/theme.park:develop .
             docker push --all-tags ghcr.io/gilbn/theme.park
   push_to_dockerhub:
     runs-on: ubuntu-latest
@@ -57,11 +57,11 @@ jobs:
       - name: build&push dh master
         if: ${{ github.event.release.target_commitish == 'live' }}
         run: |
-            docker build --build-arg TP_RELEASE=${{ steps.get_version.outputs.VERSION }} --build-arg BUILD_DATE=${{ steps.date_time.outputs.NOW }} --tag ghcr.io/gilbn/theme.park --tag gilbn/theme.park:${{ steps.get_version.outputs.VERSION }}
+            docker build --build-arg TP_RELEASE=${{ steps.get_version.outputs.VERSION }} --build-arg BUILD_DATE=${{ steps.date_time.outputs.NOW }} --tag ghcr.io/gilbn/theme.park --tag gilbn/theme.park:${{ steps.get_version.outputs.VERSION }} .
             docker push gilbn/theme.park
       - name: build&push dh develop
         if: ${{ github.ref == 'refs/heads/develop' }}
         run: |
-            docker build --build-arg TP_RELEASE=${{ steps.get_version.outputs.VERSION }} --build-arg BUILD_DATE=${{ steps.date_time.outputs.NOW }} --tag gilbn/theme.park:develop --tag }}
+            docker build --build-arg TP_RELEASE=${{ steps.get_version.outputs.VERSION }} --build-arg BUILD_DATE=${{ steps.date_time.outputs.NOW }} --tag gilbn/theme.park:develop .
             docker push --all-tags gilbn/theme.park
 
