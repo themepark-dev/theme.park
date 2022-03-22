@@ -18,6 +18,6 @@ apk add --no-cache --virtual=build-dependencies \
 WORKDIR /app
 COPY css/ /app/themepark/css/
 COPY resources/ /app/themepark/resources/
-COPY themes.py index.html /app/themepark/
+COPY themes.py index.html CNAME /app/themepark/
 
 COPY docker/root/ /
