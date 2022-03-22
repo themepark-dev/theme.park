@@ -30,7 +30,7 @@ jobs:
         if: ${{ github.event.release.target_commitish == 'live' }}
         run: |
             docker build --build-arg TP_RELEASE=${{ steps.get_version.outputs.VERSION }} --build-arg BUILD_DATE=${{ steps.date_time.outputs.NOW }} --tag ghcr.io/gilbn/theme.park --tag ghcr.io/gilbn/theme.park:${{ steps.get_version.outputs.VERSION }} .
-            docker push ghcr.io/gilbn/theme.park
+            docker push --all-tags ghcr.io/gilbn/theme.park
       - name: build&push develop
         if: ${{ github.ref == 'refs/heads/develop' }}
         run: |
@@ -58,7 +58,7 @@ jobs:
         if: ${{ github.event.release.target_commitish == 'live' }}
         run: |
             docker build --build-arg TP_RELEASE=${{ steps.get_version.outputs.VERSION }} --build-arg BUILD_DATE=${{ steps.date_time.outputs.NOW }} --tag gilbn/theme.park --tag gilbn/theme.park:${{ steps.get_version.outputs.VERSION }} .
-            docker push gilbn/theme.park
+            docker push --all-tags gilbn/theme.park
       - name: build&push dh develop
         if: ${{ github.ref == 'refs/heads/develop' }}
         run: |
