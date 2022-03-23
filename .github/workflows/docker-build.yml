@@ -12,6 +12,8 @@ on:
         options:
         - master
         - develop
+      tag:
+        description: 'Add a tag'
   push:
     branches:
       - develop
@@ -38,9 +40,13 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GH_PAT }}
       - name: build&push master
-        if: ${{ github.event.release.target_commitish == 'master' || github.event.inputs.branch == 'master' }}
+        if: ${{ github.event.release.target_commitish == 'master' }}
         run: |
             docker build --build-arg TP_RELEASE=${{ steps.get_version.outputs.VERSION }} --build-arg BUILD_DATE=${{ steps.date_time.outputs.NOW }} --tag ghcr.io/gilbn/theme.park --tag ghcr.io/gilbn/theme.park:${{ steps.get_version.outputs.VERSION }} .
+            docker push --all-tags ghcr.io/gilbn/theme.park
+        if: ${{ github.event.inputs.branch == 'master' }}
+        run: |
+            docker build --build-arg TP_RELEASE=${{ github.event.inputs.tag }} --build-arg BUILD_DATE=${{ steps.date_time.outputs.NOW }} --tag ghcr.io/gilbn/theme.park --tag ghcr.io/gilbn/theme.park:${{ github.event.inputs.tag }} .
             docker push --all-tags ghcr.io/gilbn/theme.park
       - name: build&push develop
         if: ${{ github.ref == 'refs/heads/develop' || github.event.inputs.branch == 'develop' }}
@@ -66,9 +72,13 @@ jobs:
           username: ${{ secrets.DH_USER }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: build&push dh master
-        if: ${{ github.event.release.target_commitish == 'master' || github.event.inputs.branch == 'master' }}
+        if: ${{ github.event.release.target_commitish == 'master' }}
         run: |
             docker build --build-arg TP_RELEASE=${{ steps.get_version.outputs.VERSION }} --build-arg BUILD_DATE=${{ steps.date_time.outputs.NOW }} --tag gilbn/theme.park --tag gilbn/theme.park:${{ steps.get_version.outputs.VERSION }} .
+            docker push --all-tags gilbn/theme.park
+        if: ${{ github.event.inputs.branch == 'master' }}
+        run: |
+            docker build --build-arg TP_RELEASE=${{ github.event.inputs.tag }} --build-arg BUILD_DATE=${{ steps.date_time.outputs.NOW }} --tag gilbn/theme.park --tag gilbn/theme.park:${{ github.event.inputs.tag }} .
             docker push --all-tags gilbn/theme.park
       - name: build&push dh develop
         if: ${{ github.ref == 'refs/heads/develop' || github.event.inputs.branch == 'develop' }}
