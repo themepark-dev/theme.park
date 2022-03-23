@@ -9,6 +9,7 @@ echo -e "Variables set:\\n\
 PUID=${PUID}\\n\
 PGID=${PGID}\\n\
 TZ=${TZ}\\n\
+TP_SCHEME=${TP_SCHEME}\\n\
 TP_DOMAIN=${TP_DOMAIN}\\n"
 
 if [[ -z ${TP_DOMAIN} ]]; then
@@ -16,11 +17,8 @@ if [[ -z ${TP_DOMAIN} ]]; then
     TP_DOMAIN='$http_host'
 fi
 
-DEFAULT='/config/nginx/site-confs/default'
-if ! grep -q "sub_filter 'https://theme-park.dev'  \$scheme://${TP_DOMAIN};" ${DEFAULT}; then
-    sed -i "s/sub_filter 'https:\/\/theme-park.dev'  \$scheme:\/\/TP_DOMAIN;/sub_filter 'https:\/\/theme-park.dev'  \$scheme:\/\/${TP_DOMAIN}; /g" ${DEFAULT}
-    sed -i "s/sub_filter 'https:\/\/develop.theme-park.dev'  \$scheme:\/\/TP_DOMAIN;/sub_filter 'https:\/\/develop.theme-park.dev'  \$scheme:\/\/${TP_DOMAIN}; /g" ${DEFAULT}
-fi
+sed -i "s/TP_DOMAIN;/${TP_DOMAIN}; /g" /defaults/default
+cp /defaults/default /config/nginx/site-confs
 
 # make our folders and links
 mkdir -p \

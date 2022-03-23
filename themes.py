@@ -38,12 +38,12 @@ def create_addons_json():
                 f"{addon_root}/{app}/{addon}") if isfile(join(f"{addon_root}/{app}/{addon}", file))]
             if len([f for f in files if f.endswith('.css')]) > 1:
                 ADDONS["addons"][app][addon].update({
-                    "css":  [f"https://{DOMAIN}/css/addons/{app}/{addon}/{file}?sha={SHAS.get(file)}" for file in files if file.split(".")[1] == "css"]
+                    "css":  [f"{scheme}://{DOMAIN}/css/addons/{app}/{addon}/{file}?sha={SHAS.get(file)}" for file in files if file.split(".")[1] == "css"]
                 }
                 )
             else:
                 ADDONS["addons"][app].update({
-                    addon:  f"https://{DOMAIN}/css/addons/{app}/{addon}/{file}?sha={SHAS.get(file)}" for file in files if file.split(".")[1] == "css"
+                    addon:  f"{scheme}://{DOMAIN}/css/addons/{app}/{addon}/{file}?sha={SHAS.get(file)}" for file in files if file.split(".")[1] == "css"
                 }
                 )
             extra_dirs = [dir for dir in listdir(
@@ -54,7 +54,7 @@ def create_addons_json():
                         f"{addon_root}/{app}/{addon}/{dir}") if isfile(join(f"{addon_root}/{app}/{addon}/{dir}", file))]
                     ADDONS["addons"][app][addon].update({
                         dir: {
-                            "css": [f"https://{DOMAIN}/css/addons/{app}/{addon}/{dir}/{extra_file}?sha={SHAS.get(extra_file)}" for extra_file in extra_dir_files if extra_file.split(".")[1] == "css"]
+                            "css": [f"{scheme}://{DOMAIN}/css/addons/{app}/{addon}/{dir}/{extra_file}?sha={SHAS.get(extra_file)}" for extra_file in extra_dir_files if extra_file.split(".")[1] == "css"]
                         }
                     }
                     )
@@ -70,12 +70,12 @@ def create_json(app_folders: list = None, themes: list = None, community_themes:
         COMMUNITY_THEME_SHAS = get_shas(community_theme_shas)
         THEMES = {
                 theme.split(".")[0].capitalize(): {
-                    "url": f"https://{DOMAIN}/css/theme-options/{theme}?sha={THEME_SHAS.get(theme)}"
+                    "url": f"{scheme}://{DOMAIN}/css/theme-options/{theme}?sha={THEME_SHAS.get(theme)}"
                 }for theme in themes
             }
         COMMUNITY_THEMES = {
                 theme.split(".")[0].capitalize(): {
-                    "url": f"https://{DOMAIN}/css/community-theme-options/{theme}?sha={COMMUNITY_THEME_SHAS.get(theme)}"
+                    "url": f"{scheme}://{DOMAIN}/css/community-theme-options/{theme}?sha={COMMUNITY_THEME_SHAS.get(theme)}"
                 }for theme in community_themes
             }
         THEMES_DICT.update(dict(sorted({
@@ -98,7 +98,7 @@ def create_json(app_folders: list = None, themes: list = None, community_themes:
         APPS.update(dict(sorted({
             "applications": {
                 app: {
-                    "base_css": f"https://{DOMAIN}/css/base/{app}/{app}-base.css?sha={SHAS.get(f'{app}-base.css')}",
+                    "base_css": f"{scheme}://{DOMAIN}/css/base/{app}/{app}-base.css?sha={SHAS.get(f'{app}-base.css')}",
                     "addons": ADDONS["addons"][app] if app in ADDONS["addons"] else {}
                 } for app in app_folders if not isfile(f'./css/base/{app}/.deprecated')
             }
@@ -106,7 +106,7 @@ def create_json(app_folders: list = None, themes: list = None, community_themes:
         APPS.update(dict(sorted({
             "deprecated": {
                 app: {
-                    "base_css": f"https://{DOMAIN}/css/base/{app}/{app}-base.css?sha={SHAS.get(f'{app}-base.css')}",
+                    "base_css": f"{scheme}://{DOMAIN}/css/base/{app}/{app}-base.css?sha={SHAS.get(f'{app}-base.css')}",
                     "addons": ADDONS["addons"][app] if app in ADDONS["addons"] else {}
                 } for app in app_folders if isfile(f'./css/base/{app}/.deprecated')
             }
@@ -132,6 +132,7 @@ def create_theme_options():
                 create_css(folder)
 
 env_domain = env.get('TP_DOMAIN')
+scheme = env.get('TP_SCHEME','https')
 
 if __name__ == "__main__":
     app_folders = [name for name in listdir('./css/base') if isdir(join('./css/base', name))]
