@@ -78,8 +78,8 @@ jobs:
             docker push --all-tags gilbn/theme.park
         if: ${{ github.event.inputs.branch == 'master' }}
         run: |
-            docker build --build-arg TP_RELEASE=${{ github.event.inputs.tag }} --build-arg BUILD_DATE=${{ steps.date_time.outputs.NOW }} --tag ghcr.io/gilbn/theme.park --tag ghcr.io/gilbn/theme.park:${{ github.event.inputs.tag }} .
-            docker push --all-tags ghcr.io/gilbn/theme.park
+            docker build --build-arg TP_RELEASE=${{ github.event.inputs.tag }} --build-arg BUILD_DATE=${{ steps.date_time.outputs.NOW }} --tag gilbn/theme.park --tag gilbn/theme.park:${{ github.event.inputs.tag }} .
+            docker push --all-tags gilbn/theme.park
       - name: build&push dh develop
         if: ${{ github.ref == 'refs/heads/develop' || github.event.inputs.branch == 'develop' }}
         run: |
