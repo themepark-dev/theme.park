@@ -49,7 +49,7 @@ app-org-vault-groupings .card li.active>div a:first-of-type,
 .groupings .card li.active>a:first-of-type,
 .groupings .card li.active>div a:first-of-type,
 html[class*="theme_"] a {
-    color: var(--link-color-hover);
+    color: var(--link-color);
 }
 
 html[class*="theme_"] app-vault-groupings .card li.active>a:first-of-type,
@@ -69,7 +69,8 @@ html[class*="theme_"] .table td>a:not(.badge) {
     color: var(--link-color);
 }
 
-html[class*="theme_"] .table td>a:not(.badge):hover {
+html[class*="theme_"] .table td>a:not(.badge):hover,
+html[class*="theme_"] .card-header a:hover:not(.badge) {
     color: var(--link-color-hover);
 }
 
@@ -531,7 +532,7 @@ html[class*="theme_"] .nav-tabs .nav-link.active {
     border-color: rgba(255, 255, 255, 0.15);
 }
 
-.org-nav {
+html[class*="theme_"] .org-nav {
     background: var(--main-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
@@ -542,7 +543,9 @@ html[class*="theme_"] .nav-tabs .nav-link.active {
     -o-background-size: auto, cover;
 }
 
-.org-nav .nav-tabs a {
+html[class*="theme_"] .org-nav .nav-tabs a,
+html[class*="theme_"] .org-nav .org-name span,
+html[class*="theme_"] .org-nav .nav-tabs a:not(.active) {
     color: var(--text);
 }
 
@@ -567,6 +570,12 @@ app-vault-groupings .card li.active>div a:first-of-type,
 app-org-vault-groupings .card li.active>a:first-of-type,
 app-org-vault-groupings .card li.active>div a:first-of-type {
     font-weight: bold;
+    color: rgb(var(--accent-color));
+}
+
+/* Font Awesome */
+
+html[class*="theme_"] .table td [class*="fa-"] {
     color: rgb(var(--accent-color));
 }
 
