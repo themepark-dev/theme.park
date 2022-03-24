@@ -373,6 +373,12 @@ div.tab [type=radio]+label {
 }
 
 /* CA */
+hr {
+
+color: var(--text);
+background-color: var(--text);
+}
+
 .ca_holderDocker {
     background-color: rgb(0 0 0 / 10%) !important;
     border-color: rgb(0 0 0 / 25%) !important;
@@ -457,18 +463,19 @@ li.caMenuItem:hover {
 }
 
 .supportButton,
-.actionsPopup,
-.supportPopup,
-.popupProfile,
-.repoPopup,
-.ca_favouriteRepo,
-.donate {
+#sidenavContent .actionsPopup,
+#sidenavContent .pinPopup,
+#sidenavContent .supportPopup,
+#sidenavContent .popupProfile,
+#sidenavContent .repoPopup,
+#sidenavContent .ca_favouriteRepo,
+#sidenavContent .donate {
     color: var(--button-text) !important;
     background: var(--button-color) !important;
     border-color: var(--button-color) !important;
 }
 
-.infoButton {
+.ca_holder .infoButton {
     color: var(--button-text) !important;
     background: var(--button-color) !important;
     border-color: var(--button-color) !important;
@@ -479,13 +486,14 @@ li.caMenuItem:hover {
     border-color: var(--button-color-hover) !important;
 }
 
-.supportButton:hover,
-.actionsPopup:hover,
-.supportPopup:hover,
-.popupProfile:hover,
-.repoPopup:hover,
-.ca_favouriteRepo:hover,
-.donate:hover{
+#sidenavContent .supportButton:hover,
+#sidenavContent .actionsPopup:hover,
+#sidenavContent .pinPopup:hover,
+#sidenavContent .supportPopup:hover,
+#sidenavContent .popupProfile:hover,
+#sidenavContent .repoPopup:hover,
+#sidenavContent .ca_favouriteRepo:hover,
+#sidenavContent .donate:hover{
     background: var(--button-color-hover) !important;
     color: var(--button-text-hover) !important;
     border-color: var(--button-color-hover) !important;
@@ -564,7 +572,7 @@ li.caMenuItem:hover {
     color: var(--link-color-hover) !important;
 }
 
-.actionsButton {
+.ca_holder .actionsButton {
     color: var(--button-text) !important;
     background: var(--button-color) !important;
 }
