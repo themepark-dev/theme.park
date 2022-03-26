@@ -188,7 +188,7 @@
     },
     "bitwarden": {
       "addons": {},
-      "base_css": "https://theme-park.dev/css/base/bitwarden/bitwarden-base.css?sha=e24ecc3c2ee67f03760411d185636407820a29dc"
+      "base_css": "https://theme-park.dev/css/base/bitwarden/bitwarden-base.css?sha=cf753f7c938a40bb61b3184ab44347706019f899"
     },
     "calibreweb": {
       "addons": {},
@@ -419,7 +419,7 @@
           }
         }
       },
-      "base_css": "https://theme-park.dev/css/base/unraid/unraid-base.css?sha=4d1096ff11ea81bbc0998e1f499c7f3f165d5d33"
+      "base_css": "https://theme-park.dev/css/base/unraid/unraid-base.css?sha=377c0d6e560d22fb1b722902a14c7f62cbcd5759"
     },
     "uptime-kuma": {
       "addons": {},
