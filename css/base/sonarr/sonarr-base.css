@@ -831,6 +831,10 @@ input:focus:-ms-input-placeholder {
 }
 
 /* CALENDAR */
+[class*="CircularProgressBar-circularProgressBarContainer-"] svg circle {
+    stroke: white !important;
+}
+
 [class*="CalendarEvent-downloaded-"] {
     background: rgb(var(--calendar-tv-available) / .7) !important;
     border-left-color: transparent !important;
