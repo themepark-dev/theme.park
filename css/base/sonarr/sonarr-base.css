@@ -750,6 +750,10 @@ input:focus:-ms-input-placeholder {
 }
 
 /* SEARCH RESULTS */
+[class*="SearchResult-title-"]{
+    color:var(--link-color);
+}
+
 [class*="AddNewSeriesSearchResult-underlay-"] {
     background-color: transparent !important;
 }

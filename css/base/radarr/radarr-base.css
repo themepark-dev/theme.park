@@ -723,6 +723,10 @@ a:hover {
 }
 
 /* SEARCH RESULTS */
+[class*="SearchResult-title-"]{
+    color:var(--link-color);
+}
+
 [class*="AddNewMovieSearchResult-searchResult-"],
 [class*="AddNewMovieSearchResult-underlay-"] {
     background-color: transparent !important;

@@ -717,6 +717,10 @@ a:hover {
 }
 
 /* SEARCH RESULTS */
+[class*="SearchResult-title-"]{
+    color:var(--link-color);
+}
+
 [class*="AddNewArtistSearchResult-year-"] {
     color: #fff;
 }
