@@ -721,6 +721,10 @@ a:hover {
 }
 
 /* SEARCH RESULTS */
+[class*="SearchResult-title-"]{
+    color:var(--link-color);
+}
+
 [class*="AddNewAuthorSearchResult-year-"] {
     color: #fff;
 }
