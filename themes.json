@@ -258,7 +258,7 @@
       "addons": {
         "lidarr-darker": "https://develop.theme-park.dev/css/addons/lidarr/lidarr-darker/lidarr-darker.css?sha=fc479d221c05b5232d720f1c32d9cb1717f7b60b"
       },
-      "base_css": "https://develop.theme-park.dev/css/base/lidarr/lidarr-base.css?sha=ad2009aabc882d6e5e8cef869b75ef3a1086495b"
+      "base_css": "https://develop.theme-park.dev/css/base/lidarr/lidarr-base.css?sha=c97b7226c7fa5dd0726979701dd16a5bd2025d71"
     },
     "moviematch": {
       "addons": {},
@@ -334,14 +334,14 @@
         "radarr-4k-logo": "https://develop.theme-park.dev/css/addons/radarr/radarr-4k-logo/radarr-4k-logo.css?sha=70630fcc12fcc11a0dff9673a04c92b014393218",
         "radarr-darker": "https://develop.theme-park.dev/css/addons/radarr/radarr-darker/radarr-darker.css?sha=317432984f97518011463ef62af84b04420e524d"
       },
-      "base_css": "https://develop.theme-park.dev/css/base/radarr/radarr-base.css?sha=0fe04a67d3f3b795b9d8ac738338105d74299c13"
+      "base_css": "https://develop.theme-park.dev/css/base/radarr/radarr-base.css?sha=d9d79abaee720a5b9868042d43c15ecd3cea5d11"
     },
     "readarr": {
       "addons": {
         "readarr-alt-logo": "https://develop.theme-park.dev/css/addons/readarr/readarr-alt-logo/readarr-alt-logo.css?sha=6066417b624c76aebdbceddcf4f11fa0d5f6f979",
         "readarr-darker": "https://develop.theme-park.dev/css/addons/readarr/readarr-darker/readarr-darker.css?sha=415a258cc9d1e40bf094f6f20350225c06120825"
       },
-      "base_css": "https://develop.theme-park.dev/css/base/readarr/readarr-base.css?sha=24caabcb59d6fad8ed8d192eaf26b22d47f62918"
+      "base_css": "https://develop.theme-park.dev/css/base/readarr/readarr-base.css?sha=922a543e65fb5bb4bf294a672d86ee63bbf90158"
     },
     "requestrr": {
       "addons": {},
@@ -364,7 +364,7 @@
         "sonarr-4k-logo": "https://develop.theme-park.dev/css/addons/sonarr/sonarr-4k-logo/sonarr-4k-logo.css?sha=cf9d4a984a618a2344e278cb7d8dd6ac8f8b74d1",
         "sonarr-darker": "https://develop.theme-park.dev/css/addons/sonarr/sonarr-darker/sonarr-darker.css?sha=b1eb1ff0827684361ad596fb49baa6362cc23036"
       },
-      "base_css": "https://develop.theme-park.dev/css/base/sonarr/sonarr-base.css?sha=47025c65a1944989fa9628096f9018c375d2968e"
+      "base_css": "https://develop.theme-park.dev/css/base/sonarr/sonarr-base.css?sha=5da42eefc2732ad1d1d0309c5a5c015b02d1c7d4"
     },
     "synclounge": {
       "addons": {},
