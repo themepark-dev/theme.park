@@ -23,10 +23,7 @@ if [[ -z ${TP_SCHEME} ]]; then
 fi
 
 DEFAULT='/defaults/default'
-sed -i "s/sub_filter 'https:\/\/theme-park.dev' https:\/\/TP_DOMAIN;/sub_filter 'https:\/\/theme-park.dev' ${TP_SCHEME}:\/\/${TP_DOMAIN}; /g" ${DEFAULT}
-sed -i "s/sub_filter 'http:\/\/theme-park.dev' http:\/\/TP_DOMAIN;/sub_filter 'http:\/\/theme-park.dev' ${TP_SCHEME}:\/\/${TP_DOMAIN}; /g" ${DEFAULT}
-sed -i "s/sub_filter 'https:\/\/develop.theme-park.dev' https:\/\/TP_DOMAIN;/sub_filter 'https:\/\/develop.theme-park.dev' ${TP_SCHEME}:\/\/${TP_DOMAIN}; /g" ${DEFAULT}
-sed -i "s/sub_filter 'http:\/\/develop.theme-park.dev' http:\/\/TP_DOMAIN;/sub_filter 'http:\/\/develop.theme-park.dev' ${TP_SCHEME}:\/\/${TP_DOMAIN}; /g" ${DEFAULT}
+sed -i "s/TP_DOMAIN/${TP_DOMAIN} /g" ${DEFAULT}
 cp /defaults/default /config/nginx/site-confs
 
 # make our folders and links
@@ -39,6 +36,9 @@ cp -R /app/themepark/resources /config/www
 cp /app/themepark/index.html /config/www
 cp /app/themepark/themes.py /config/www
 cp /app/themepark/CNAME /config/www
+
+echo 'Creating CSS files'
+python3 /config/www/themes.py
 
 # permissions
 chown -R abc:abc \
