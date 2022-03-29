@@ -9,8 +9,7 @@ LABEL maintainer="gilbn"
 RUN \
 echo " ## Installing packages ## " && \
 apk add --no-cache --virtual=build-dependencies \
-    python3 \
-    curl && \
+    python3 && \
   echo "**** install theme.park ****" && \
     mkdir -p /app/themepark
 
