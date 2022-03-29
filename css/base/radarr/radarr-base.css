@@ -723,6 +723,10 @@ a:hover {
 }
 
 /* SEARCH RESULTS */
+[class*="SearchResult-title-"]{
+    color:var(--link-color);
+}
+
 [class*="AddNewMovieSearchResult-searchResult-"],
 [class*="AddNewMovieSearchResult-underlay-"] {
     background-color: transparent !important;
@@ -871,6 +875,10 @@ input:focus:-ms-input-placeholder {
 }
 
 /* CALENDAR */
+[class*="CircularProgressBar-circularProgressBarContainer-"] svg circle {
+    stroke: white !important;
+}
+
 [class*="CalendarEvent-downloaded-"] {
     background: rgb(var(--calendar-available) / .7) !important;
     border-left-color: transparent !important;
@@ -903,12 +911,14 @@ input:focus:-ms-input-placeholder {
     border-left-color: transparent !important;
 }
 
-[class*="CalendarEvent-unreleased-"] {
+[class*="CalendarEvent-unreleased-"],
+[class*="CalendarEvent-continuing-"] {
     background: rgb(var(--calendar-unaired) / .7) !important;
     border-left-color: transparent !important;
 }
 
-[class*="Calendar-calendar-"] [class*="CalendarEvent-unreleased-"]:hover {
+[class*="Calendar-calendar-"] [class*="CalendarEvent-unreleased-"]:hover,
+[class*="Calendar-calendar-"] [class*="CalendarEvent-continuing-"]:hover {
     background: rgb(var(--calendar-unaired) / .5) !important;
     border-left-color: transparent !important;
 }
@@ -933,12 +943,14 @@ input:focus:-ms-input-placeholder {
     border-left-color: transparent !important;
 }
 
-[class*="CalendarEvent-downloading-"] {
+[class*="CalendarEvent-downloading-"],
+[class*="CalendarEvent-queue-"] {
     background: rgb(var(--calendar-downloading) / .7) !important;
     border-left-color: transparent !important;
 }
 
-[class*="Calendar-calendar-"] [class*="CalendarEvent-downloading-"]:hover {
+[class*="Calendar-calendar-"] [class*="CalendarEvent-downloading-"]:hover,
+[class*="Calendar-calendar-"] [class*="CalendarEvent-queue-"]:hover {
     background: rgb(var(--calendar-downloading) / .5) !important;
     border-left-color: transparent !important;
 }

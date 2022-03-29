@@ -721,6 +721,10 @@ a:hover {
 }
 
 /* SEARCH RESULTS */
+[class*="SearchResult-title-"]{
+    color:var(--link-color);
+}
+
 [class*="AddNewAuthorSearchResult-year-"] {
     color: #fff;
 }
@@ -857,6 +861,10 @@ input:focus:-ms-input-placeholder {
 }
 
 /* CALENDAR */
+[class*="CircularProgressBar-circularProgressBarContainer-"] svg circle {
+    stroke: white !important;
+}
+
 [class*="CalendarEvent-downloaded-"]:not([class*="AgendaEvent-"]) {
     background: rgb(var(--calendar-downloaded) / .7) !important;
     border-left-color: transparent !important;
@@ -897,12 +905,14 @@ input:focus:-ms-input-placeholder {
     border-left-color: transparent !important;
 }
 
-[class*="CalendarEvent-downloading-"]:not([class*="AgendaEvent-"]) {
+[class*="CalendarEvent-downloading-"]:not([class*="AgendaEvent-"]),
+[class*="CalendarEvent-queue-"]:not([class*="AgendaEvent-"]) {
     background: rgb(var(--calendar-downloading) / .7) !important;
     border-left-color: transparent !important;
 }
 
-[class*="Calendar-calendar-"] [class*="CalendarEvent-downloading-"]:hover:not([class*="AgendaEvent-"]) {
+[class*="Calendar-calendar-"] [class*="CalendarEvent-downloading-"]:hover:not([class*="AgendaEvent-"]),
+[class*="Calendar-calendar-"] [class*="CalendarEvent-queue-"]:hover:not([class*="AgendaEvent-"])  {
     background: rgb(var(--calendar-downloading) / .5) !important;
     border-left-color: transparent !important;
 }
