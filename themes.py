@@ -139,7 +139,7 @@ if __name__ == "__main__":
     themes = [name for name in listdir('./css/theme-options') if isfile(join('./css/theme-options', name))]
     community_themes = [name for name in listdir('./css/community-theme-options') if isfile(join('./css/community-theme-options', name))]
     develop = True if isdir(".git") and subprocess.check_output(["git", "symbolic-ref", "--short", "HEAD"]).decode('ascii').strip() == "develop" else False
-    if env_domain:
+    if env_domain and env_domain != '$http_host':
         DOMAIN = env_domain
     else:
         with open("CNAME", "rt", closefd=True) as cname:

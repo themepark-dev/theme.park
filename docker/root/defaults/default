@@ -1,18 +1,23 @@
 server {
     listen 80 default_server;
     listen [::]:80 default_server;
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
 
     server_name _;
+
+    ssl_certificate /config/keys/cert.crt;
+    ssl_certificate_key /config/keys/cert.key;
 
     root /config/www;
     index index.html index.htm index.php;
 
     location / {
         sub_filter_types *;
-        sub_filter 'https://theme-park.dev' https://TP_DOMAIN;
-        sub_filter 'http://theme-park.dev' http://TP_DOMAIN;
-        sub_filter 'https://develop.theme-park.dev' https://TP_DOMAIN;
-        sub_filter 'http://develop.theme-park.dev' http://TP_DOMAIN;
+        sub_filter 'https://theme-park.dev' $scheme://TP_DOMAIN;
+        sub_filter 'http://theme-park.dev' $scheme://TP_DOMAIN;
+        sub_filter 'https://develop.theme-park.dev' $scheme://TP_DOMAIN;
+        sub_filter 'http://develop.theme-park.dev' $scheme://TP_DOMAIN;
         sub_filter_once off;
         try_files $uri $uri/ /index.html;
     }
