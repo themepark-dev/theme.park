@@ -10,6 +10,7 @@ PUID=${PUID}\\n\
 PGID=${PGID}\\n\
 TZ=${TZ}\\n\
 TP_SCHEME=${TP_SCHEME}\\n\
+TP_URLBASE=${TP_URLBASE}\\n\
 TP_DOMAIN=${TP_DOMAIN}\\n"
 
 if [[ -z ${TP_DOMAIN} ]]; then
@@ -22,8 +23,29 @@ if [[ -z ${TP_SCHEME} ]]; then
     TP_SCHEME='https'
 fi
 
+if [[ -z ${TP_URLBASE} ]]; then
+    TP_URLBASE=''
+fi
+
+# Remove forward slash
+case ${TP_URLBASE} in
+  *"/"*)
+  TP_URLBASE=$(echo "${TP_URLBASE}" | sed 's/\///g')
+    ;;
+esac
+
 DEFAULT='/defaults/default'
-sed -i "s/TP_DOMAIN/${TP_DOMAIN} /g" ${DEFAULT}
+if [[ ${TP_URLBASE} ]]; then
+    echo "seding location"
+    sed -i "s/location \//location \/${TP_URLBASE}/g" ${DEFAULT}
+    echo "seding TP_DOMAIN"
+    sed -i "s/TP_DOMAIN/${TP_DOMAIN}/g" ${DEFAULT}
+    sed -i "s/TP_URLBASE/${TP_URLBASE}/g" ${DEFAULT}
+    sed -i "s/#sub_filter/sub_filter/g" ${DEFAULT}
+    sed -i "s/#location#/location /g" ${DEFAULT}
+elif [[ -z ${TP_URLBASE} ]]; then
+    sed -i "s/TP_DOMAIN\/TP_URLBASE/${TP_DOMAIN}/g" ${DEFAULT}
+fi
 cp /defaults/default /config/nginx/site-confs
 
 # make our folders and links

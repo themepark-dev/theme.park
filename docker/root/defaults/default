@@ -9,17 +9,23 @@ server {
     ssl_certificate /config/keys/cert.crt;
     ssl_certificate_key /config/keys/cert.key;
 
-    root /config/www;
     index index.html index.htm index.php;
 
+    #location#/ {return 302 $scheme://TP_DOMAIN/TP_URLBASE$request_uri;}
+
     location / {
+        alias /config/www/;
         sub_filter_types *;
-        sub_filter 'https://theme-park.dev' $scheme://TP_DOMAIN;
-        sub_filter 'http://theme-park.dev' $scheme://TP_DOMAIN;
-        sub_filter 'https://develop.theme-park.dev' $scheme://TP_DOMAIN;
-        sub_filter 'http://develop.theme-park.dev' $scheme://TP_DOMAIN;
+        sub_filter 'https://theme-park.dev/' $scheme://TP_DOMAIN/TP_URLBASE/;
+        sub_filter 'http://theme-park.dev/' $scheme://TP_DOMAIN/TP_URLBASE/;
+        sub_filter 'https://develop.theme-park.dev/' $scheme://TP_DOMAIN/TP_URLBASE/;
+        sub_filter 'http://develop.theme-park.dev/' $scheme://TP_DOMAIN/TP_URLBASE/;
         sub_filter_once off;
         try_files $uri $uri/ /index.html;
+
+        #SUBFOLDER SUBFILTERS
+        #sub_filter 'https://TP_DOMAIN' $scheme://TP_DOMAIN/TP_URLBASE;
+        #sub_filter 'http://TP_DOMAIN' $scheme://TP_DOMAIN/TP_URLBASE;
     }
 
     # Don't cache
