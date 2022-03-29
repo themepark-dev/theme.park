@@ -69,7 +69,7 @@ function injectTheme(theme,container="head") {
   var themeOptions;
 
   function addThemeData() {
-  let themeJsonUrl = "/themes.json"
+  let themeJsonUrl = "themes.json"
   fetch(themeJsonUrl)
   .then(response =>  response.json())
   .then(json => {
