@@ -19,8 +19,8 @@ if [[ -z ${TP_DOMAIN} ]]; then
 fi
 
 if [[ -z ${TP_SCHEME} ]]; then
-    echo 'No scheme set, defaulting to https'
-    TP_SCHEME='https'
+    echo 'No scheme set, defaulting to $scheme'
+    TP_SCHEME='$scheme'
 fi
 
 if [[ -z ${TP_URLBASE} ]]; then
@@ -36,15 +36,17 @@ esac
 
 DEFAULT='/defaults/default'
 if [[ ${TP_URLBASE} ]]; then
-    echo "seding location"
-    sed -i "s/location \//location \/${TP_URLBASE}/g" ${DEFAULT}
-    echo "seding TP_DOMAIN"
-    sed -i "s/TP_DOMAIN/${TP_DOMAIN}/g" ${DEFAULT}
-    sed -i "s/TP_URLBASE/${TP_URLBASE}/g" ${DEFAULT}
-    sed -i "s/#sub_filter/sub_filter/g" ${DEFAULT}
-    sed -i "s/#location#/location /g" ${DEFAULT}
+    if ! grep -q "location /${TP_URLBASE} {" "${DEFAULT}"; then
+        sed -i "s/location \//location \/${TP_URLBASE}/g" ${DEFAULT}
+        sed -i "s/TP_DOMAIN/${TP_DOMAIN}/g" ${DEFAULT}
+        sed -i "s/TP_URLBASE/${TP_URLBASE}/g" ${DEFAULT}
+        sed -i "s/#sub_filter/sub_filter/g" ${DEFAULT}
+        sed -i "s/#location#/location /g" ${DEFAULT}
+        sed -i "s/\$scheme/${TP_SCHEME}/g" ${DEFAULT}
+    fi
 elif [[ -z ${TP_URLBASE} ]]; then
     sed -i "s/TP_DOMAIN\/TP_URLBASE/${TP_DOMAIN}/g" ${DEFAULT}
+    sed -i "s/\$scheme/${TP_SCHEME}/g" ${DEFAULT}
 fi
 cp /defaults/default /config/nginx/site-confs
 
