@@ -1,9 +1,9 @@
-FROM ghcr.io/linuxserver/baseimage-alpine-nginx:3.14
+FROM --platform=${BUILDPLATFORM} ghcr.io/linuxserver/baseimage-alpine-nginx:3.14
 
 # set version label
 ARG BUILD_DATE
 ARG TP_RELEASE
-LABEL build_version="Version:- ${VERSION} Build-date:- ${BUILD_DATE}"
+LABEL build_version="Version:- ${VERSION} Build-date:- ${BUILD_DATE} Platform: ${BUILDPLATFORM}"
 LABEL maintainer="gilbn"
 
 RUN \
