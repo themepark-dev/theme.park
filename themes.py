@@ -119,20 +119,20 @@ def create_json(app_folders: list = None, themes: list = None, community_themes:
 def create_theme_options():
     def create_css(folder):
         with open(f"{folder}/{app}/{theme.lower()}.css", "w") as create_app:
-            content = f'@import url("{applications[app]["base_css"]}");\n@import url("{themes[theme]["url"]}");'
+            content = f'@import url("{applications[app]["base_css"]}");\n@import url("{all_themes[theme]["url"]}");'
             create_app.write(content)
     with open("themes.json") as themes:
         data = load(themes)
-        themes = data["all-themes"]
+        all_themes = data["all-themes"]
         applications = data["applications"]
     for app in applications:
-        for theme in themes:
+        for theme in all_themes:
             folders = ["./css/base"]
             for folder in folders:
                 create_css(folder)
 
 env_domain = env.get('TP_DOMAIN')
-scheme = env.get('TP_SCHEME','https')
+scheme = env.get('TP_SCHEME','https') if env.get('TP_SCHEME') != '$scheme' else 'https'
 
 if __name__ == "__main__":
     app_folders = [name for name in listdir('./css/base') if isdir(join('./css/base', name))]
