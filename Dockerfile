@@ -5,6 +5,7 @@ ARG BUILD_DATE
 ARG TP_RELEASE
 LABEL build_version="Version:- ${VERSION} Build-date:- ${BUILD_DATE} Platform: ${BUILDPLATFORM}"
 LABEL maintainer="gilbn"
+LABEL org.opencontainers.image.description DESCRIPTION
 
 RUN \
 echo " ## Installing packages ## " && \
