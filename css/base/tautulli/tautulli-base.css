@@ -218,7 +218,8 @@ select,
 }
 
 /* Buttons */
-.btn-dark {
+.btn-dark,
+.btn-dark.inactive:hover {
     background-color: var(--button-color);
     border-color: var(--button-color);
     color: var(--button-text);
@@ -231,12 +232,18 @@ select,
 }
 
 .btn-dark:active,
+.btn-dark:active:hover,
 .btn-dark.active,
 .open>.dropdown-toggle.btn-dark,
 .btn-dark.active:focus {
     color: var(--button-text-hover);
     background-color: var(--button-color-hover);
     border-color: var(--button-color-hover);
+}
+
+.btn-filter.active, .btn-filter.active.focus,
+.btn-filter.active:hover {
+    background-color: var(--button-color-hover) !important;
 }
 
 .btn:focus:not(select),
@@ -250,10 +257,6 @@ select,
 
 .btn-dark.active:hover {
     background-color: var(--button-color-hover);
-}
-
-.btn-dark.inactive:hover {
-    background-color: rgba(255, 255, 255, 0.08);
 }
 
 .btn-danger.btn-edit {
