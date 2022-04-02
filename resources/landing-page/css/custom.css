@@ -73,7 +73,15 @@ section {
         background-color: rgba(0, 0, 0, 0.9);
     }
 }
+#mainNav .navbar-nav .nav-item .nav-link {
+    color: var(--label-text-color);
+  }
 
+#mainNav .navbar-nav .nav-item .nav-link:hover,
+#mainNav .navbar-nav .nav-item .nav-link:active {
+    color: var(--label-text-color);
+    opacity: .8;
+}
 @media (min-width: 992px) {
     #mainNav {
         box-shadow: none;
@@ -127,10 +135,6 @@ section {
     }
 }
 
-#mainNav .navbar-nav .nav-item .nav-link:hover,
-#mainNav .navbar-nav .nav-item .nav-link:active {
-    color: var(--text-hover);
-}
 
 #mainNav .navbar-nav .nav-item .nav-link.active {
     color: var(--link-color-hover) !important;
