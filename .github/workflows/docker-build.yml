@@ -74,7 +74,7 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm/v7,linux/arm64
           push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ steps.metadata.outputs.tags }}, latest, latest-${{ runner.arch }}
+          tags: latest
           labels: ${{ steps.metadata.outputs.labels }}
           build-args: TP_RELEASE=${{ steps.get_version.outputs.VERSION }},BUILD_DATE=${{ steps.date_time.outputs.NOW }}
 
@@ -85,7 +85,7 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm/v7,linux/arm64
           push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ steps.metadata.outputs.tags }}, latest, ${{ github.event.inputs.tag }}, latest-${{ runner.arch }}
+          tags: latest, ${{ github.event.inputs.tag }}
           labels: ${{ steps.metadata.outputs.labels }}
           build-args: TP_RELEASE=${{ steps.get_version.outputs.VERSION }},BUILD_DATE=${{ steps.date_time.outputs.NOW }}
 
@@ -96,7 +96,7 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm/v7,linux/arm64
           push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ steps.metadata.outputs.tags }}, develop-${{ runner.arch }}
+          tags: ${{ steps.metadata.outputs.tags }}
           labels: ${{ steps.metadata.outputs.labels }}
           build-args: TP_RELEASE=${{ steps.get_version.outputs.VERSION }},BUILD_DATE=${{ steps.date_time.outputs.NOW }}
 
@@ -107,6 +107,6 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm/v7,linux/arm64
           push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ steps.metadata.outputs.tags }}, testing-${{ runner.arch }}
+          tags: ${{ steps.metadata.outputs.tags }}
           labels: ${{ steps.metadata.outputs.labels }}
           build-args: TP_RELEASE=${{ steps.get_version.outputs.VERSION }},BUILD_DATE=${{ steps.date_time.outputs.NOW }}
