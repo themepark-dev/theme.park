@@ -24,14 +24,20 @@ on:
 jobs:
   build-and-push-it-to-the-limit:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        architecture: [armhf, aarch64, amd64]
     steps:
       - name: checkout
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - name: Get the version
-        id: get_version
-        run: echo ::set-output name=VERSION::${{ github.event.release.tag_name }}
+      - name: Prepare
+        id: prep
+        run: |
+          ARCHITECTURE=${{ matrix.architecture }}
+          echo ::set-output name=VERSION::${{ github.event.release.tag_name }}
+          echo ::set-output name=platform::${ARCHITECTURE//-/\/}
 
       - name: Set current date as env variable
         id: date_time
@@ -74,9 +80,9 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm/v7,linux/arm64
           push: ${{ github.event_name != 'pull_request' }}
-          tags: latest, ${{ steps.get_version.outputs.VERSION }}
+          tags: latest, ${{ steps.prep.outputs.VERSION }}
           labels: ${{ steps.metadata.outputs.labels }}
-          build-args: TP_RELEASE=${{ steps.get_version.outputs.VERSION }},BUILD_DATE=${{ steps.date_time.outputs.NOW }}
+          build-args: TP_RELEASE=${{ steps.prep.outputs.VERSION }},BUILD_DATE=${{ steps.date_time.outputs.NOW }}
 
       - name: manual build&push master
         if: ${{ github.event.inputs.branch == 'master' }}
@@ -87,7 +93,7 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: latest, ${{ github.event.inputs.tag }}
           labels: ${{ steps.metadata.outputs.labels }}
-          build-args: TP_RELEASE=${{ steps.get_version.outputs.VERSION }},BUILD_DATE=${{ steps.date_time.outputs.NOW }}
+          build-args: TP_RELEASE=${{ steps.prep.outputs.VERSION }},BUILD_DATE=${{ steps.date_time.outputs.NOW }}
 
       - name: build&push develop
         if: ${{ github.ref == 'refs/heads/develop' || github.event.inputs.branch == 'develop' }}
@@ -98,15 +104,15 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.metadata.outputs.tags }}
           labels: ${{ steps.metadata.outputs.labels }}
-          build-args: TP_RELEASE=${{ steps.get_version.outputs.VERSION }},BUILD_DATE=${{ steps.date_time.outputs.NOW }}
+          build-args: TP_RELEASE=${{ steps.prep.outputs.VERSION }},BUILD_DATE=${{ steps.date_time.outputs.NOW }}
 
       - name: build&push testing
         if: ${{ github.ref == 'refs/heads/testing' || github.event.inputs.branch == 'testing' }}
         uses: docker/build-push-action@v2
         with:
-          context: .
-          platforms: amd64,arm32v7,arm64v8
+          file: ./${{ matrix.architecture }}.Dockerfile
+          platforms: ${{ steps.prep.outputs.platform }}
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.metadata.outputs.tags }}
           labels: ${{ steps.metadata.outputs.labels }}
-          build-args: TP_RELEASE=${{ steps.get_version.outputs.VERSION }},BUILD_DATE=${{ steps.date_time.outputs.NOW }}
+          build-args: TP_RELEASE=${{ steps.prep.outputs.VERSION }},BUILD_DATE=${{ steps.date_time.outputs.NOW }}
