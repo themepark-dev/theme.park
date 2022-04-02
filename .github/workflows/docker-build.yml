@@ -26,7 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        architecture: [armhf, aarch64, amd64]
+        architecture: [linux-arm-v7,linux-arm64, linux-amd64]
     steps:
       - name: checkout
         uses: actions/checkout@v2
@@ -37,7 +37,7 @@ jobs:
         run: |
           ARCHITECTURE=${{ matrix.architecture }}
           echo ::set-output name=VERSION::${{ github.event.release.tag_name }}
-          echo ::set-output name=platform::${ARCHITECTURE}
+          echo ::set-output name=platform::${ARCHITECTURE//-/\/}
       - name: Set current date as env variable
         id: date_time
         run: echo ::set-output name=NOW::$(date +'%Y-%m-%dT%H:%M:%S')
@@ -76,8 +76,8 @@ jobs:
         if: ${{ github.event.release.target_commitish == 'master' }}
         uses: docker/build-push-action@v2
         with:
-          file: ./Dockerfile.${{ matrix.architecture }}
-          platforms: ${{ matrix.architecture }}
+          file: ./${{ matrix.architecture }}.Dockerfile
+          platforms: ${{ steps.prep.outputs.platform }}
           push: ${{ github.event_name != 'pull_request' }}
           tags: latest, ${{ steps.prep.outputs.VERSION }}
           labels: ${{ steps.metadata.outputs.labels }}
@@ -87,8 +87,8 @@ jobs:
         if: ${{ github.event.inputs.branch == 'master' }}
         uses: docker/build-push-action@v2
         with:
-          file: ./Dockerfile.${{ matrix.architecture }}
-          platforms: ${{ matrix.architecture }}
+          file: ./${{ matrix.architecture }}.Dockerfile
+          platforms: ${{ steps.prep.outputs.platform }}
           push: ${{ github.event_name != 'pull_request' }}
           tags: latest, ${{ github.event.inputs.tag }}
           labels: ${{ steps.metadata.outputs.labels }}
@@ -98,8 +98,8 @@ jobs:
         if: ${{ github.ref == 'refs/heads/develop' || github.event.inputs.branch == 'develop' }}
         uses: docker/build-push-action@v2
         with:
-          file: ./Dockerfile.${{ matrix.architecture }}
-          platforms: ${{ matrix.architecture }}
+          file: ./${{ matrix.architecture }}.Dockerfile
+          platforms: ${{ steps.prep.outputs.platform }}
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.metadata.outputs.tags }}
           labels: ${{ steps.metadata.outputs.labels }}
@@ -109,8 +109,8 @@ jobs:
         if: ${{ github.ref == 'refs/heads/testing' || github.event.inputs.branch == 'testing' }}
         uses: docker/build-push-action@v2
         with:
-          file: ./Dockerfile.${{ matrix.architecture }}
-          platforms: ${{ matrix.architecture }}
+          file: ./${{ matrix.architecture }}.Dockerfile
+          platforms: ${{ steps.prep.outputs.platform }}
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.metadata.outputs.tags }}
           labels: ${{ steps.metadata.outputs.labels }}

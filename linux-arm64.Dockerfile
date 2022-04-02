@@ -1,4 +1,4 @@
-FROM --platform=${BUILDPLATFORM} ghcr.io/linuxserver/baseimage-alpine:arm32v7-3.14
+FROM ghcr.io/linuxserver/baseimage-alpine:arm64v8-3.14
 
 # set version label
 ARG BUILD_DATE
