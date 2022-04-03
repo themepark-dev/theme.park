@@ -19,14 +19,13 @@ on:
     branches:
       - develop
       - testing
-    paths-ignore:
-        - '.github/**'
+
 jobs:
   build-and-push-it-to-the-limit:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        architecture: [linux-arm-v7,linux-arm64, linux-amd64]
+        architecture: [linux-arm-v7,linux-arm64,linux-amd64]
     steps:
       - name: checkout
         uses: actions/checkout@v2
@@ -36,11 +35,16 @@ jobs:
         id: prep
         run: |
           ARCHITECTURE=${{ matrix.architecture }}
+          echo ::set-output name=created::$(date -u +'%Y-%m-%dT%H:%M:%SZ')
+          echo ::set-output name=title::${GITHUB_REPOSITORY}:${GITHUB_REF//refs\/heads\//}
+          echo ::set-output name=revision::${GITHUB_SHA}
+          echo ::set-output name=source::${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/tree/${GITHUB_REF//refs\/heads\//}
+          echo ::set-output name=vendor::${{ github.repository_owner }}
+          echo ::set-output name=url::${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/blob/master/README.md
           echo ::set-output name=VERSION::${{ github.event.release.tag_name }}
           echo ::set-output name=platform::${ARCHITECTURE//-/\/}
-      - name: Set current date as env variable
-        id: date_time
-        run: echo ::set-output name=NOW::$(date +'%Y-%m-%dT%H:%M:%S')
+          echo ::set-output name=cache::${GITHUB_REPOSITORY}:${GITHUB_REF//refs\/heads\//}-cache-${{ matrix.architecture }}
+          echo ::set-output name=tag::${GITHUB_REPOSITORY}:${GITHUB_REF//refs\/heads\//}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}-${{ matrix.architecture }}
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
@@ -81,7 +85,7 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: latest, ${{ steps.prep.outputs.VERSION }}
           labels: ${{ steps.metadata.outputs.labels }}
-          build-args: TP_RELEASE=${{ steps.prep.outputs.VERSION }},BUILD_DATE=${{ steps.date_time.outputs.NOW }}
+          build-args: TP_RELEASE=${{ steps.prep.outputs.VERSION }},BUILD_DATE=${{ steps.date_time.outputs.created }}
 
       - name: manual build&push master
         if: ${{ github.event.inputs.branch == 'master' }}
@@ -92,7 +96,7 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: latest, ${{ github.event.inputs.tag }}
           labels: ${{ steps.metadata.outputs.labels }}
-          build-args: TP_RELEASE=${{ steps.prep.outputs.VERSION }},BUILD_DATE=${{ steps.date_time.outputs.NOW }}
+          build-args: TP_RELEASE=${{ steps.prep.outputs.VERSION }},BUILD_DATE=${{ steps.date_time.outputs.created }}
 
       - name: build&push develop
         if: ${{ github.ref == 'refs/heads/develop' || github.event.inputs.branch == 'develop' }}
@@ -103,15 +107,78 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.metadata.outputs.tags }}
           labels: ${{ steps.metadata.outputs.labels }}
-          build-args: TP_RELEASE=${{ steps.prep.outputs.VERSION }},BUILD_DATE=${{ steps.date_time.outputs.NOW }}
+          build-args: TP_RELEASE=${{ steps.prep.outputs.VERSION }},BUILD_DATE=${{ steps.date_time.outputs.created }}
 
       - name: build&push testing
         if: ${{ github.ref == 'refs/heads/testing' || github.event.inputs.branch == 'testing' }}
         uses: docker/build-push-action@v2
         with:
-          file: ./${{ matrix.architecture }}.Dockerfile
-          platforms: ${{ steps.prep.outputs.platform }}
           push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ steps.metadata.outputs.tags }}
-          labels: ${{ steps.metadata.outputs.labels }}
-          build-args: TP_RELEASE=${{ steps.prep.outputs.VERSION }},BUILD_DATE=${{ steps.date_time.outputs.NOW }}, PLATFORM=${{ steps.prep.outputs.platform }}
+          platforms: ${{ steps.prep.outputs.platform }}
+          file: ./${{ matrix.architecture }}.Dockerfile
+          cache-from: docker.io/${{ steps.prep.outputs.cache }}
+          cache-to: docker.io/${{ steps.prep.outputs.cache }}
+          tags: |
+            docker.io/${{ steps.prep.outputs.tag }}
+            ghcr.io/${{ steps.prep.outputs.tag }}
+          labels: |
+            org.opencontainers.image.created=${{ steps.prep.outputs.created }}
+            org.opencontainers.image.title=${{ steps.prep.outputs.title }}
+            org.opencontainers.image.revision=${{ steps.prep.outputs.revision }}
+            org.opencontainers.image.source=${{ steps.prep.outputs.source }}
+            org.opencontainers.image.vendor=${{ steps.prep.outputs.vendor }}
+            org.opencontainers.image.url=${{ steps.prep.outputs.url }}
+            org.opencontainers.image.version=${{ steps.prep.outputs.version }}
+          build-args: |
+            TP_RELEASE=${{ steps.prep.outputs.VERSION }}
+            BUILD_DATE=${{ steps.date_time.outputs.created }}
+            BUILD_ARCHITECTURE=${{ matrix.architecture }}
+
+  publish:
+    runs-on: ubuntu-20.04
+    strategy:
+      matrix:
+        registry: [docker.io, ghcr.io]
+    needs: [build-and-push-it-to-the-limit]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Login to DockerHub
+        if: matrix.registry == 'docker.io'
+        uses: docker/login-action@v1
+        with:
+          registry: docker.io
+          username: ${{ secrets.DH_USER }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Login to GitHub Container Registry
+        if: matrix.registry == 'ghcr.io'
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GH_PAT }}
+
+      - name: Create manifests
+        env:
+          DOCKER_CLI_EXPERIMENTAL: enabled
+        run: |
+          IMAGE=${{ matrix.registry }}/${GITHUB_REPOSITORY}
+          TAG=${GITHUB_REF//refs\/heads\//}
+          SOURCE=${IMAGE}:${TAG}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}
+          VERSION=${{ steps.prep.outputs.VERSION }}
+          
+          [[ -f linux-amd64.Dockerfile ]]  && AMD64=${SOURCE}-linux-amd64
+          [[ -f linux-arm64.Dockerfile ]]  && ARM64=${SOURCE}-linux-arm64
+          [[ -f linux-arm-v7.Dockerfile ]] && ARMV7=${SOURCE}-linux-arm-v7
+          docker manifest create ${IMAGE}:${TAG} ${AMD64} ${ARM64} ${ARMV7}
+          docker manifest push   ${IMAGE}:${TAG}
+          docker manifest create ${IMAGE}:${TAG}-${VERSION//\~/-} ${AMD64} ${ARM64} ${ARMV7}
+          docker manifest push   ${IMAGE}:${TAG}-${VERSION//\~/-}
+          docker manifest create ${IMAGE}:${TAG}-${GITHUB_SHA:0:7} ${AMD64} ${ARM64} ${ARMV7}
+          docker manifest push   ${IMAGE}:${TAG}-${GITHUB_SHA:0:7}
+          if [[ ${TAG} == master ]]; then
+            docker manifest create ${IMAGE}:latest ${AMD64} ${ARM64} ${ARMV7}
+            docker manifest push   ${IMAGE}:latest
+          fi
