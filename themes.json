@@ -1,0 +1,563 @@
+{
+    "addons": {
+      "bazarr": {
+        "bazarr-4k-logo": "https://tp.gflix.app/css/addons/bazarr/bazarr-4k-logo/bazarr-4k-logo.css?sha=None",
+        "bazarr-darker": "https://tp.gflix.app/css/addons/bazarr/bazarr-darker/bazarr-darker.css?sha=None"
+      },
+      "lidarr": {
+        "lidarr-darker": "https://tp.gflix.app/css/addons/lidarr/lidarr-darker/lidarr-darker.css?sha=None"
+      },
+      "organizr": {
+        "glass": {
+          "css": [
+            "https://tp.gflix.app/css/addons/organizr/glass/glass-base.css?sha=None",
+            "https://tp.gflix.app/css/addons/organizr/glass/glass-login.css?sha=None",
+            "https://tp.gflix.app/css/addons/organizr/glass/organizr-base-old.css?sha=None"
+          ]
+        }
+      },
+      "plex": {
+        "overseerr-side-menu": "https://tp.gflix.app/css/addons/plex/overseerr-side-menu/overseerr-side-menu.css?sha=None",
+        "plex-alt-logo": "https://tp.gflix.app/css/addons/plex/plex-alt-logo/plex-alt-logo.css?sha=None"
+      },
+      "prowlarr": {
+        "prowlarr-darker": "https://tp.gflix.app/css/addons/prowlarr/prowlarr-darker/prowlarr-darker.css?sha=None"
+      },
+      "radarr": {
+        "radarr-4k-logo": "https://tp.gflix.app/css/addons/radarr/radarr-4k-logo/radarr-4k-logo.css?sha=None",
+        "radarr-darker": "https://tp.gflix.app/css/addons/radarr/radarr-darker/radarr-darker.css?sha=None"
+      },
+      "readarr": {
+        "readarr-alt-logo": "https://tp.gflix.app/css/addons/readarr/readarr-alt-logo/readarr-alt-logo.css?sha=None",
+        "readarr-darker": "https://tp.gflix.app/css/addons/readarr/readarr-darker/readarr-darker.css?sha=None"
+      },
+      "sonarr": {
+        "sonarr-4k-logo": "https://tp.gflix.app/css/addons/sonarr/sonarr-4k-logo/sonarr-4k-logo.css?sha=None",
+        "sonarr-darker": "https://tp.gflix.app/css/addons/sonarr/sonarr-darker/sonarr-darker.css?sha=None"
+      },
+      "unraid": {
+        "login-page": {
+          "alien": {
+            "css": [
+              "https://tp.gflix.app/css/addons/unraid/login-page/alien/alien_base.css?sha=None",
+              "https://tp.gflix.app/css/addons/unraid/login-page/alien/custom.css?sha=None",
+              "https://tp.gflix.app/css/addons/unraid/login-page/alien/hallway.css?sha=None",
+              "https://tp.gflix.app/css/addons/unraid/login-page/alien/hallway2.css?sha=None",
+              "https://tp.gflix.app/css/addons/unraid/login-page/alien/hallway3.css?sha=None",
+              "https://tp.gflix.app/css/addons/unraid/login-page/alien/hallway4.css?sha=None",
+              "https://tp.gflix.app/css/addons/unraid/login-page/alien/isolation.css?sha=None",
+              "https://tp.gflix.app/css/addons/unraid/login-page/alien/isolation_video.css?sha=None",
+              "https://tp.gflix.app/css/addons/unraid/login-page/alien/nightmare.css?sha=None",
+              "https://tp.gflix.app/css/addons/unraid/login-page/alien/scanner.css?sha=None"
+            ]
+          },
+          "fallout": {
+            "css": [
+              "https://tp.gflix.app/css/addons/unraid/login-page/fallout/custom.css?sha=None",
+              "https://tp.gflix.app/css/addons/unraid/login-page/fallout/dirty_terminal.css?sha=None",
+              "https://tp.gflix.app/css/addons/unraid/login-page/fallout/dirty_terminal2.css?sha=None",
+              "https://tp.gflix.app/css/addons/unraid/login-page/fallout/fallout_base.css?sha=None",
+              "https://tp.gflix.app/css/addons/unraid/login-page/fallout/fallout_video.css?sha=None",
+              "https://tp.gflix.app/css/addons/unraid/login-page/fallout/terminal.css?sha=None",
+              "https://tp.gflix.app/css/addons/unraid/login-page/fallout/terminal2.css?sha=None"
+            ]
+          },
+          "retro-terminal": {
+            "css": [
+              "https://tp.gflix.app/css/addons/unraid/login-page/retro-terminal/amber.css?sha=None",
+              "https://tp.gflix.app/css/addons/unraid/login-page/retro-terminal/blue.css?sha=None",
+              "https://tp.gflix.app/css/addons/unraid/login-page/retro-terminal/custom.css?sha=None",
+              "https://tp.gflix.app/css/addons/unraid/login-page/retro-terminal/green.css?sha=None",
+              "https://tp.gflix.app/css/addons/unraid/login-page/retro-terminal/red.css?sha=None",
+              "https://tp.gflix.app/css/addons/unraid/login-page/retro-terminal/retro-terminal-base.css?sha=None",
+              "https://tp.gflix.app/css/addons/unraid/login-page/retro-terminal/white.css?sha=None"
+            ]
+          }
+        }
+      }
+    },
+    "all-themes": {
+      "Aquamarine": {
+        "url": "https://tp.gflix.app/css/theme-options/aquamarine.css?sha=None"
+      },
+      "Blackberry-abyss": {
+        "url": "https://tp.gflix.app/css/community-theme-options/blackberry-abyss.css?sha=None"
+      },
+      "Blackberry-amethyst": {
+        "url": "https://tp.gflix.app/css/community-theme-options/blackberry-amethyst.css?sha=None"
+      },
+      "Blackberry-carol": {
+        "url": "https://tp.gflix.app/css/community-theme-options/blackberry-carol.css?sha=None"
+      },
+      "Blackberry-dreamscape": {
+        "url": "https://tp.gflix.app/css/community-theme-options/blackberry-dreamscape.css?sha=None"
+      },
+      "Blackberry-flamingo": {
+        "url": "https://tp.gflix.app/css/community-theme-options/blackberry-flamingo.css?sha=None"
+      },
+      "Blackberry-hearth": {
+        "url": "https://tp.gflix.app/css/community-theme-options/blackberry-hearth.css?sha=None"
+      },
+      "Blackberry-martian": {
+        "url": "https://tp.gflix.app/css/community-theme-options/blackberry-martian.css?sha=None"
+      },
+      "Blackberry-pumpkin": {
+        "url": "https://tp.gflix.app/css/community-theme-options/blackberry-pumpkin.css?sha=None"
+      },
+      "Blackberry-royal": {
+        "url": "https://tp.gflix.app/css/community-theme-options/blackberry-royal.css?sha=None"
+      },
+      "Blackberry-shadow": {
+        "url": "https://tp.gflix.app/css/community-theme-options/blackberry-shadow.css?sha=None"
+      },
+      "Blackberry-solar": {
+        "url": "https://tp.gflix.app/css/community-theme-options/blackberry-solar.css?sha=None"
+      },
+      "Blackberry-vanta": {
+        "url": "https://tp.gflix.app/css/community-theme-options/blackberry-vanta.css?sha=None"
+      },
+      "Dark": {
+        "url": "https://tp.gflix.app/css/theme-options/dark.css?sha=None"
+      },
+      "Dracula": {
+        "url": "https://tp.gflix.app/css/theme-options/dracula.css?sha=None"
+      },
+      "Hotline": {
+        "url": "https://tp.gflix.app/css/theme-options/hotline.css?sha=None"
+      },
+      "Hotline-old": {
+        "url": "https://tp.gflix.app/css/community-theme-options/hotline-old.css?sha=None"
+      },
+      "Hotpink": {
+        "url": "https://tp.gflix.app/css/theme-options/hotpink.css?sha=None"
+      },
+      "Mind": {
+        "url": "https://tp.gflix.app/css/community-theme-options/mind.css?sha=None"
+      },
+      "Nord": {
+        "url": "https://tp.gflix.app/css/theme-options/nord.css?sha=None"
+      },
+      "Onedark": {
+        "url": "https://tp.gflix.app/css/community-theme-options/onedark.css?sha=None"
+      },
+      "Organizr": {
+        "url": "https://tp.gflix.app/css/theme-options/organizr.css?sha=None"
+      },
+      "Overseerr": {
+        "url": "https://tp.gflix.app/css/theme-options/overseerr.css?sha=None"
+      },
+      "Pine-shadow": {
+        "url": "https://tp.gflix.app/css/community-theme-options/pine-shadow.css?sha=None"
+      },
+      "Plex": {
+        "url": "https://tp.gflix.app/css/theme-options/plex.css?sha=None"
+      },
+      "Power": {
+        "url": "https://tp.gflix.app/css/community-theme-options/power.css?sha=None"
+      },
+      "Reality": {
+        "url": "https://tp.gflix.app/css/community-theme-options/reality.css?sha=None"
+      },
+      "Soul": {
+        "url": "https://tp.gflix.app/css/community-theme-options/soul.css?sha=None"
+      },
+      "Space": {
+        "url": "https://tp.gflix.app/css/community-theme-options/space.css?sha=None"
+      },
+      "Space-gray": {
+        "url": "https://tp.gflix.app/css/theme-options/space-gray.css?sha=None"
+      },
+      "Time": {
+        "url": "https://tp.gflix.app/css/community-theme-options/time.css?sha=None"
+      },
+      "Trueblack": {
+        "url": "https://tp.gflix.app/css/community-theme-options/trueblack.css?sha=None"
+      }
+    },
+    "applications": {
+      "adguard": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/adguard/adguard-base.css?sha=None"
+      },
+      "bazarr": {
+        "addons": {
+          "bazarr-4k-logo": "https://tp.gflix.app/css/addons/bazarr/bazarr-4k-logo/bazarr-4k-logo.css?sha=None",
+          "bazarr-darker": "https://tp.gflix.app/css/addons/bazarr/bazarr-darker/bazarr-darker.css?sha=None"
+        },
+        "base_css": "https://tp.gflix.app/css/base/bazarr/bazarr-base.css?sha=None"
+      },
+      "bitwarden": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/bitwarden/bitwarden-base.css?sha=None"
+      },
+      "calibreweb": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/calibreweb/calibreweb-base.css?sha=None"
+      },
+      "deluge": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/deluge/deluge-base.css?sha=None"
+      },
+      "dozzle": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/dozzle/dozzle-base.css?sha=None"
+      },
+      "duplicacy": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/duplicacy/duplicacy-base.css?sha=None"
+      },
+      "duplicati": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/duplicati/duplicati-base.css?sha=None"
+      },
+      "emby": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/emby/emby-base.css?sha=None"
+      },
+      "filebrowser": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/filebrowser/filebrowser-base.css?sha=None"
+      },
+      "flood": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/flood/flood-base.css?sha=None"
+      },
+      "gaps": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/gaps/gaps-base.css?sha=None"
+      },
+      "gitea": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/gitea/gitea-base.css?sha=None"
+      },
+      "guacamole": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/guacamole/guacamole-base.css?sha=None"
+      },
+      "jackett": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/jackett/jackett-base.css?sha=None"
+      },
+      "jellyfin": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/jellyfin/jellyfin-base.css?sha=None"
+      },
+      "kitana": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/kitana/kitana-base.css?sha=None"
+      },
+      "lazylibrarian": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/lazylibrarian/lazylibrarian-base.css?sha=None"
+      },
+      "librespeed": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/librespeed/librespeed-base.css?sha=None"
+      },
+      "lidarr": {
+        "addons": {
+          "lidarr-darker": "https://tp.gflix.app/css/addons/lidarr/lidarr-darker/lidarr-darker.css?sha=None"
+        },
+        "base_css": "https://tp.gflix.app/css/base/lidarr/lidarr-base.css?sha=None"
+      },
+      "moviematch": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/moviematch/moviematch-base.css?sha=None"
+      },
+      "mylar3": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/mylar3/mylar3-base.css?sha=None"
+      },
+      "netdata": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/netdata/netdata-base.css?sha=None"
+      },
+      "nzbget": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/nzbget/nzbget-base.css?sha=None"
+      },
+      "nzbhydra2": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/nzbhydra2/nzbhydra2-base.css?sha=None"
+      },
+      "ombi": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/ombi/ombi-base.css?sha=None"
+      },
+      "organizr": {
+        "addons": {
+          "glass": {
+            "css": [
+              "https://tp.gflix.app/css/addons/organizr/glass/glass-base.css?sha=None",
+              "https://tp.gflix.app/css/addons/organizr/glass/glass-login.css?sha=None",
+              "https://tp.gflix.app/css/addons/organizr/glass/organizr-base-old.css?sha=None"
+            ]
+          }
+        },
+        "base_css": "https://tp.gflix.app/css/base/organizr/organizr-base.css?sha=None"
+      },
+      "overseerr": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/overseerr/overseerr-base.css?sha=None"
+      },
+      "petio": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/petio/petio-base.css?sha=None"
+      },
+      "pihole": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/pihole/pihole-base.css?sha=None"
+      },
+      "plex": {
+        "addons": {
+          "overseerr-side-menu": "https://tp.gflix.app/css/addons/plex/overseerr-side-menu/overseerr-side-menu.css?sha=None",
+          "plex-alt-logo": "https://tp.gflix.app/css/addons/plex/plex-alt-logo/plex-alt-logo.css?sha=None"
+        },
+        "base_css": "https://tp.gflix.app/css/base/plex/plex-base.css?sha=None"
+      },
+      "portainer": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/portainer/portainer-base.css?sha=None"
+      },
+      "prowlarr": {
+        "addons": {
+          "prowlarr-darker": "https://tp.gflix.app/css/addons/prowlarr/prowlarr-darker/prowlarr-darker.css?sha=None"
+        },
+        "base_css": "https://tp.gflix.app/css/base/prowlarr/prowlarr-base.css?sha=None"
+      },
+      "qbittorrent": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/qbittorrent/qbittorrent-base.css?sha=None"
+      },
+      "radarr": {
+        "addons": {
+          "radarr-4k-logo": "https://tp.gflix.app/css/addons/radarr/radarr-4k-logo/radarr-4k-logo.css?sha=None",
+          "radarr-darker": "https://tp.gflix.app/css/addons/radarr/radarr-darker/radarr-darker.css?sha=None"
+        },
+        "base_css": "https://tp.gflix.app/css/base/radarr/radarr-base.css?sha=None"
+      },
+      "readarr": {
+        "addons": {
+          "readarr-alt-logo": "https://tp.gflix.app/css/addons/readarr/readarr-alt-logo/readarr-alt-logo.css?sha=None",
+          "readarr-darker": "https://tp.gflix.app/css/addons/readarr/readarr-darker/readarr-darker.css?sha=None"
+        },
+        "base_css": "https://tp.gflix.app/css/base/readarr/readarr-base.css?sha=None"
+      },
+      "requestrr": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/requestrr/requestrr-base.css?sha=None"
+      },
+      "resilio-sync": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/resilio-sync/resilio-sync-base.css?sha=None"
+      },
+      "rutorrent": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/rutorrent/rutorrent-base.css?sha=None"
+      },
+      "sabnzbd": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/sabnzbd/sabnzbd-base.css?sha=None"
+      },
+      "sonarr": {
+        "addons": {
+          "sonarr-4k-logo": "https://tp.gflix.app/css/addons/sonarr/sonarr-4k-logo/sonarr-4k-logo.css?sha=None",
+          "sonarr-darker": "https://tp.gflix.app/css/addons/sonarr/sonarr-darker/sonarr-darker.css?sha=None"
+        },
+        "base_css": "https://tp.gflix.app/css/base/sonarr/sonarr-base.css?sha=None"
+      },
+      "synclounge": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/synclounge/synclounge-base.css?sha=None"
+      },
+      "tautulli": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/tautulli/tautulli-base.css?sha=None"
+      },
+      "transmission": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/transmission/transmission-base.css?sha=None"
+      },
+      "unraid": {
+        "addons": {
+          "login-page": {
+            "alien": {
+              "css": [
+                "https://tp.gflix.app/css/addons/unraid/login-page/alien/alien_base.css?sha=None",
+                "https://tp.gflix.app/css/addons/unraid/login-page/alien/custom.css?sha=None",
+                "https://tp.gflix.app/css/addons/unraid/login-page/alien/hallway.css?sha=None",
+                "https://tp.gflix.app/css/addons/unraid/login-page/alien/hallway2.css?sha=None",
+                "https://tp.gflix.app/css/addons/unraid/login-page/alien/hallway3.css?sha=None",
+                "https://tp.gflix.app/css/addons/unraid/login-page/alien/hallway4.css?sha=None",
+                "https://tp.gflix.app/css/addons/unraid/login-page/alien/isolation.css?sha=None",
+                "https://tp.gflix.app/css/addons/unraid/login-page/alien/isolation_video.css?sha=None",
+                "https://tp.gflix.app/css/addons/unraid/login-page/alien/nightmare.css?sha=None",
+                "https://tp.gflix.app/css/addons/unraid/login-page/alien/scanner.css?sha=None"
+              ]
+            },
+            "fallout": {
+              "css": [
+                "https://tp.gflix.app/css/addons/unraid/login-page/fallout/custom.css?sha=None",
+                "https://tp.gflix.app/css/addons/unraid/login-page/fallout/dirty_terminal.css?sha=None",
+                "https://tp.gflix.app/css/addons/unraid/login-page/fallout/dirty_terminal2.css?sha=None",
+                "https://tp.gflix.app/css/addons/unraid/login-page/fallout/fallout_base.css?sha=None",
+                "https://tp.gflix.app/css/addons/unraid/login-page/fallout/fallout_video.css?sha=None",
+                "https://tp.gflix.app/css/addons/unraid/login-page/fallout/terminal.css?sha=None",
+                "https://tp.gflix.app/css/addons/unraid/login-page/fallout/terminal2.css?sha=None"
+              ]
+            },
+            "retro-terminal": {
+              "css": [
+                "https://tp.gflix.app/css/addons/unraid/login-page/retro-terminal/amber.css?sha=None",
+                "https://tp.gflix.app/css/addons/unraid/login-page/retro-terminal/blue.css?sha=None",
+                "https://tp.gflix.app/css/addons/unraid/login-page/retro-terminal/custom.css?sha=None",
+                "https://tp.gflix.app/css/addons/unraid/login-page/retro-terminal/green.css?sha=None",
+                "https://tp.gflix.app/css/addons/unraid/login-page/retro-terminal/red.css?sha=None",
+                "https://tp.gflix.app/css/addons/unraid/login-page/retro-terminal/retro-terminal-base.css?sha=None",
+                "https://tp.gflix.app/css/addons/unraid/login-page/retro-terminal/white.css?sha=None"
+              ]
+            }
+          }
+        },
+        "base_css": "https://tp.gflix.app/css/base/unraid/unraid-base.css?sha=None"
+      },
+      "uptime-kuma": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/uptime-kuma/uptime-kuma-base.css?sha=None"
+      },
+      "vuetorrent": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/vuetorrent/vuetorrent-base.css?sha=None"
+      },
+      "xbackbone": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/xbackbone/xbackbone-base.css?sha=None"
+      }
+    },
+    "community-themes": {
+      "Blackberry-abyss": {
+        "url": "https://tp.gflix.app/css/community-theme-options/blackberry-abyss.css?sha=None"
+      },
+      "Blackberry-amethyst": {
+        "url": "https://tp.gflix.app/css/community-theme-options/blackberry-amethyst.css?sha=None"
+      },
+      "Blackberry-carol": {
+        "url": "https://tp.gflix.app/css/community-theme-options/blackberry-carol.css?sha=None"
+      },
+      "Blackberry-dreamscape": {
+        "url": "https://tp.gflix.app/css/community-theme-options/blackberry-dreamscape.css?sha=None"
+      },
+      "Blackberry-flamingo": {
+        "url": "https://tp.gflix.app/css/community-theme-options/blackberry-flamingo.css?sha=None"
+      },
+      "Blackberry-hearth": {
+        "url": "https://tp.gflix.app/css/community-theme-options/blackberry-hearth.css?sha=None"
+      },
+      "Blackberry-martian": {
+        "url": "https://tp.gflix.app/css/community-theme-options/blackberry-martian.css?sha=None"
+      },
+      "Blackberry-pumpkin": {
+        "url": "https://tp.gflix.app/css/community-theme-options/blackberry-pumpkin.css?sha=None"
+      },
+      "Blackberry-royal": {
+        "url": "https://tp.gflix.app/css/community-theme-options/blackberry-royal.css?sha=None"
+      },
+      "Blackberry-shadow": {
+        "url": "https://tp.gflix.app/css/community-theme-options/blackberry-shadow.css?sha=None"
+      },
+      "Blackberry-solar": {
+        "url": "https://tp.gflix.app/css/community-theme-options/blackberry-solar.css?sha=None"
+      },
+      "Blackberry-vanta": {
+        "url": "https://tp.gflix.app/css/community-theme-options/blackberry-vanta.css?sha=None"
+      },
+      "Hotline-old": {
+        "url": "https://tp.gflix.app/css/community-theme-options/hotline-old.css?sha=None"
+      },
+      "Mind": {
+        "url": "https://tp.gflix.app/css/community-theme-options/mind.css?sha=None"
+      },
+      "Onedark": {
+        "url": "https://tp.gflix.app/css/community-theme-options/onedark.css?sha=None"
+      },
+      "Pine-shadow": {
+        "url": "https://tp.gflix.app/css/community-theme-options/pine-shadow.css?sha=None"
+      },
+      "Power": {
+        "url": "https://tp.gflix.app/css/community-theme-options/power.css?sha=None"
+      },
+      "Reality": {
+        "url": "https://tp.gflix.app/css/community-theme-options/reality.css?sha=None"
+      },
+      "Soul": {
+        "url": "https://tp.gflix.app/css/community-theme-options/soul.css?sha=None"
+      },
+      "Space": {
+        "url": "https://tp.gflix.app/css/community-theme-options/space.css?sha=None"
+      },
+      "Time": {
+        "url": "https://tp.gflix.app/css/community-theme-options/time.css?sha=None"
+      },
+      "Trueblack": {
+        "url": "https://tp.gflix.app/css/community-theme-options/trueblack.css?sha=None"
+      }
+    },
+    "deprecated": {
+      "grafana": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/grafana/grafana-base.css?sha=None"
+      },
+      "logarr": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/logarr/logarr-base.css?sha=None"
+      },
+      "monitorr": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/monitorr/monitorr-base.css?sha=None"
+      },
+      "plpp": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/plpp/plpp-base.css?sha=None"
+      },
+      "thelounge": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/thelounge/thelounge-base.css?sha=None"
+      },
+      "webtools": {
+        "addons": {},
+        "base_css": "https://tp.gflix.app/css/base/webtools/webtools-base.css?sha=None"
+      }
+    },
+    "themes": {
+      "Aquamarine": {
+        "url": "https://tp.gflix.app/css/theme-options/aquamarine.css?sha=None"
+      },
+      "Dark": {
+        "url": "https://tp.gflix.app/css/theme-options/dark.css?sha=None"
+      },
+      "Dracula": {
+        "url": "https://tp.gflix.app/css/theme-options/dracula.css?sha=None"
+      },
+      "Hotline": {
+        "url": "https://tp.gflix.app/css/theme-options/hotline.css?sha=None"
+      },
+      "Hotpink": {
+        "url": "https://tp.gflix.app/css/theme-options/hotpink.css?sha=None"
+      },
+      "Nord": {
+        "url": "https://tp.gflix.app/css/theme-options/nord.css?sha=None"
+      },
+      "Organizr": {
+        "url": "https://tp.gflix.app/css/theme-options/organizr.css?sha=None"
+      },
+      "Overseerr": {
+        "url": "https://tp.gflix.app/css/theme-options/overseerr.css?sha=None"
+      },
+      "Plex": {
+        "url": "https://tp.gflix.app/css/theme-options/plex.css?sha=None"
+      },
+      "Space-gray": {
+        "url": "https://tp.gflix.app/css/theme-options/space-gray.css?sha=None"
+      }
+    }
+  }
