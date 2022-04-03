@@ -85,7 +85,7 @@ jobs:
             org.opencontainers.image.source=${{ steps.prep.outputs.source }}
             org.opencontainers.image.vendor=${{ steps.prep.outputs.vendor }}
             org.opencontainers.image.url=${{ steps.prep.outputs.url }}
-            org.opencontainers.image.version=${{ steps.prep.outputs.version }}
+            org.opencontainers.image.version=${{ steps.prep.outputs.VERSION }}
           build-args: |
             TP_RELEASE=${{ steps.prep.outputs.VERSION }}
             BUILD_DATE=${{ steps.date_time.outputs.created }}
@@ -130,11 +130,7 @@ jobs:
           [[ -f linux-arm-v7.Dockerfile ]] && ARMV7=${SOURCE}-linux-arm-v7
           docker manifest create ${IMAGE}:${TAG} ${AMD64} ${ARM64} ${ARMV7}
           docker manifest push   ${IMAGE}:${TAG}
-          if [[! -z "${VERSION}" ]]; then
-          docker manifest create ${IMAGE}:${TAG}-${VERSION//\~/-} ${AMD64} ${ARM64} ${ARMV7}
-          docker manifest push   ${IMAGE}:${TAG}-${VERSION//\~/-}
-          docker manifest create ${IMAGE}:${VERSION//\~/-} ${AMD64} ${ARM64} ${ARMV7}
-          docker manifest push   ${IMAGE}:${VERSION//\~/-}
+          if [[ ${VERSION} ]]; then
           docker manifest create ${IMAGE}:latest ${AMD64} ${ARM64} ${ARMV7}
           docker manifest push   ${IMAGE}:latest
           fi
