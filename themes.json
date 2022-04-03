@@ -429,6 +429,10 @@
       "addons": {},
       "base_css": "https://develop.theme-park.dev/css/base/vuetorrent/vuetorrent-base.css?sha=15b70559a57ea5f334728b9b11425da26614814b"
     },
+    "whisparr": {
+      "addons": {},
+      "base_css": "https://develop.theme-park.dev/css/base/whisparr/whisparr-base.css?sha=06dfdcfeb12504f85d4edde8f46421fb53f76589"
+    },
     "xbackbone": {
       "addons": {},
       "base_css": "https://develop.theme-park.dev/css/base/xbackbone/xbackbone-base.css?sha=32e4c347730f100dc279f6b5bd5ba0138fdfc473"
