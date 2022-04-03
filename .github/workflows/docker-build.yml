@@ -126,16 +126,18 @@ jobs:
           TAG=${{ github.ref_name }}
           SOURCE=${IMAGE}:${TAG}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}
           VERSION=${{ steps.prep.outputs.VERSION }}
-          RELEASE=${{ steps.prep.outputs.release }}
-          echo $RELEASE $TAG
           [[ -f linux-amd64.Dockerfile ]]  && AMD64=${SOURCE}-linux-amd64
           [[ -f linux-arm64.Dockerfile ]]  && ARM64=${SOURCE}-linux-arm64
           [[ -f linux-arm-v7.Dockerfile ]] && ARMV7=${SOURCE}-linux-arm-v7
           docker manifest create ${IMAGE}:${TAG} ${AMD64} ${ARM64} ${ARMV7}
-          docker manifest push   ${IMAGE}:${TAG}
+          docker manifest push ${IMAGE}:${TAG}
           docker manifest create ${IMAGE}:${TAG}-${GITHUB_SHA:0:7} ${AMD64} ${ARM64} ${ARMV7}
-          docker manifest push   ${IMAGE}:${TAG}-${GITHUB_SHA:0:7}
-          if [[ ${RELEASE} == 'master' ]]; then
+          docker manifest push ${IMAGE}:${TAG}-${GITHUB_SHA:0:7}
+      - name: Latest manifest
+        if: ${{ github.event.release.target_commitish == 'master' }}
+        env:
+          DOCKER_CLI_EXPERIMENTAL: enabled
+        run: |
+          IMAGE=${{ matrix.registry }}/${GITHUB_REPOSITORY,,}
           docker manifest create ${IMAGE}:latest ${AMD64} ${ARM64} ${ARMV7}
-          docker manifest push   ${IMAGE}:latest
-          fi
+          docker manifest push ${IMAGE}:latest
