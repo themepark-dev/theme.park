@@ -66,11 +66,10 @@ section {
 
 /* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
 @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-
     #mainNav,
     #mainNav.navbar-scrolled {
         box-shadow: none;
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: rgba(var(--accent-color), 1);
     }
 }
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -83,6 +82,11 @@ section {
     opacity: .8;
 }
 @media (min-width: 992px) {
+    @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+        #mainNav {
+            background-color: rgba(var(--accent-color), 0.95) !important;
+        }
+    }
     #mainNav {
         box-shadow: none;
         background-color: rgba(var(--accent-color), 0.25);
