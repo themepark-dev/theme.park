@@ -469,7 +469,8 @@ li.caMenuItem:hover {
 #sidenavContent .popupProfile,
 #sidenavContent .repoPopup,
 #sidenavContent .ca_favouriteRepo,
-#sidenavContent .donate {
+#sidenavContent .donate,
+span .maxPerPage {
     color: var(--button-text) !important;
     background: var(--button-color) !important;
     border-color: var(--button-color) !important;
@@ -493,7 +494,8 @@ li.caMenuItem:hover {
 #sidenavContent .popupProfile:hover,
 #sidenavContent .repoPopup:hover,
 #sidenavContent .ca_favouriteRepo:hover,
-#sidenavContent .donate:hover{
+#sidenavContent .donate:hover,
+.maxPerPage:hover {
     background: var(--button-color-hover) !important;
     color: var(--button-text-hover) !important;
     border-color: var(--button-color-hover) !important;
