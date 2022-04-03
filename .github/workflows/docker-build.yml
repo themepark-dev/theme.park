@@ -19,7 +19,8 @@ on:
     branches:
       - develop
       - testing
-
+    paths-ignore:
+        - '.github/**'
 jobs:
   build-and-push-it-to-the-limit:
     runs-on: ubuntu-latest
@@ -132,6 +133,8 @@ jobs:
           if [[! -z "${VERSION}" ]]; then
           docker manifest create ${IMAGE}:${TAG}-${VERSION//\~/-} ${AMD64} ${ARM64} ${ARMV7}
           docker manifest push   ${IMAGE}:${TAG}-${VERSION//\~/-}
+          docker manifest create ${IMAGE}:${VERSION//\~/-} ${AMD64} ${ARM64} ${ARMV7}
+          docker manifest push   ${IMAGE}:${VERSION//\~/-}
           fi
           docker manifest create ${IMAGE}:${TAG}-${GITHUB_SHA:0:7} ${AMD64} ${ARM64} ${ARMV7}
           docker manifest push   ${IMAGE}:${TAG}-${GITHUB_SHA:0:7}
