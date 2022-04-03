@@ -139,6 +139,7 @@ jobs:
           DOCKER_CLI_EXPERIMENTAL: enabled
         run: |
           IMAGE=${{ matrix.registry }}/${GITHUB_REPOSITORY,,}
+          TAG=${{ github.ref_name }}
           SOURCE=${IMAGE}:${TAG}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}
           [[ -f linux-amd64.Dockerfile ]] && AMD64=${SOURCE}-linux-amd64
           [[ -f linux-arm64.Dockerfile ]] && ARM64=${SOURCE}-linux-arm64
