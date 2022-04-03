@@ -36,15 +36,15 @@ jobs:
         run: |
           ARCHITECTURE=${{ matrix.architecture }}
           echo ::set-output name=created::$(date -u +'%Y-%m-%dT%H:%M:%SZ')
-          echo ::set-output name=title::${GITHUB_REPOSITORY}:${GITHUB_REF//refs\/heads\//}
+          echo ::set-output name=title::${GITHUB_REPOSITORY,,}:${GITHUB_REF//refs\/heads\//}
           echo ::set-output name=revision::${GITHUB_SHA}
-          echo ::set-output name=source::${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/tree/${GITHUB_REF//refs\/heads\//}
+          echo ::set-output name=source::${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY,,}/tree/${GITHUB_REF//refs\/heads\//}
           echo ::set-output name=vendor::${{ github.repository_owner }}
-          echo ::set-output name=url::${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/blob/master/README.md
+          echo ::set-output name=url::${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY,,}/blob/master/README.md
           echo ::set-output name=VERSION::${{ github.event.release.tag_name }}
           echo ::set-output name=platform::${ARCHITECTURE//-/\/}
-          echo ::set-output name=cache::${GITHUB_REPOSITORY}:${GITHUB_REF//refs\/heads\//}-cache-${{ matrix.architecture }}
-          echo ::set-output name=tag::${GITHUB_REPOSITORY}:${GITHUB_REF//refs\/heads\//}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}-${{ matrix.architecture }}
+          echo ::set-output name=cache::${GITHUB_REPOSITORY,,}:${GITHUB_REF//refs\/heads\//}-cache-${{ matrix.architecture }}
+          echo ::set-output name=tag::${GITHUB_REPOSITORY,,}:${GITHUB_REF//refs\/heads\//}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}-${{ matrix.architecture }}
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
@@ -164,7 +164,7 @@ jobs:
         env:
           DOCKER_CLI_EXPERIMENTAL: enabled
         run: |
-          IMAGE=${{ matrix.registry }}/${GITHUB_REPOSITORY}
+          IMAGE=${{ matrix.registry }}/${GITHUB_REPOSITORY,,}
           TAG=${GITHUB_REF//refs\/heads\//}
           SOURCE=${IMAGE}:${TAG}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}
           VERSION=${{ steps.prep.outputs.VERSION }}
