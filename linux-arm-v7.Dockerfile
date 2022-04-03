@@ -1,9 +1,9 @@
-FROM ghcr.io/linuxserver/baseimage-alpine:arm32v7-3.14
+FROM ghcr.io/linuxserver/baseimage-alpine-nginx:arm32v7-3.14
 
 # set version label
 ARG BUILD_DATE
 ARG TP_RELEASE
-LABEL build_version="Version:- ${VERSION} Build-date:- ${BUILD_DATE} Platform: ${ARCHITECTURE}"
+LABEL build_version="Version:- ${VERSION} Build-date:- ${BUILD_DATE} Platform: ${BUILD_ARCHITECTURE}"
 LABEL maintainer="gilbn"
 LABEL org.opencontainers.image.description DESCRIPTION
 

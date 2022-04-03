@@ -53,16 +53,6 @@ jobs:
         id: buildx
         uses: docker/setup-buildx-action@v1
 
-      - name: Docker meta
-        id: metadata
-        uses: docker/metadata-action@v3
-        with:
-          images: |
-            ghcr.io/gilbn/theme.park
-            gilbn/theme.park
-          tags: |
-            type=ref,event=branch
-
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v1
         with:
@@ -76,41 +66,7 @@ jobs:
           username: ${{ secrets.DH_USER }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: build&push master
-        if: ${{ github.event.release.target_commitish == 'master' }}
-        uses: docker/build-push-action@v2
-        with:
-          file: ./${{ matrix.architecture }}.Dockerfile
-          platforms: ${{ steps.prep.outputs.platform }}
-          push: ${{ github.event_name != 'pull_request' }}
-          tags: latest, ${{ steps.prep.outputs.VERSION }}
-          labels: ${{ steps.metadata.outputs.labels }}
-          build-args: TP_RELEASE=${{ steps.prep.outputs.VERSION }},BUILD_DATE=${{ steps.date_time.outputs.created }}
-
-      - name: manual build&push master
-        if: ${{ github.event.inputs.branch == 'master' }}
-        uses: docker/build-push-action@v2
-        with:
-          file: ./${{ matrix.architecture }}.Dockerfile
-          platforms: ${{ steps.prep.outputs.platform }}
-          push: ${{ github.event_name != 'pull_request' }}
-          tags: latest, ${{ github.event.inputs.tag }}
-          labels: ${{ steps.metadata.outputs.labels }}
-          build-args: TP_RELEASE=${{ steps.prep.outputs.VERSION }},BUILD_DATE=${{ steps.date_time.outputs.created }}
-
-      - name: build&push develop
-        if: ${{ github.ref == 'refs/heads/develop' || github.event.inputs.branch == 'develop' }}
-        uses: docker/build-push-action@v2
-        with:
-          file: ./${{ matrix.architecture }}.Dockerfile
-          platforms: ${{ steps.prep.outputs.platform }}
-          push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ steps.metadata.outputs.tags }}
-          labels: ${{ steps.metadata.outputs.labels }}
-          build-args: TP_RELEASE=${{ steps.prep.outputs.VERSION }},BUILD_DATE=${{ steps.date_time.outputs.created }}
-
-      - name: build&push testing
-        if: ${{ github.ref == 'refs/heads/testing' || github.event.inputs.branch == 'testing' }}
+      - name: build&push
         uses: docker/build-push-action@v2
         with:
           push: ${{ github.event_name != 'pull_request' }}
@@ -135,7 +91,7 @@ jobs:
             BUILD_ARCHITECTURE=${{ matrix.architecture }}
 
   publish:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         registry: [docker.io, ghcr.io]
@@ -168,14 +124,15 @@ jobs:
           TAG=${GITHUB_REF//refs\/heads\//}
           SOURCE=${IMAGE}:${TAG}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}
           VERSION=${{ steps.prep.outputs.VERSION }}
-          
           [[ -f linux-amd64.Dockerfile ]]  && AMD64=${SOURCE}-linux-amd64
           [[ -f linux-arm64.Dockerfile ]]  && ARM64=${SOURCE}-linux-arm64
           [[ -f linux-arm-v7.Dockerfile ]] && ARMV7=${SOURCE}-linux-arm-v7
           docker manifest create ${IMAGE}:${TAG} ${AMD64} ${ARM64} ${ARMV7}
           docker manifest push   ${IMAGE}:${TAG}
+          if [[! -z "${VERSION}" ]]; then
           docker manifest create ${IMAGE}:${TAG}-${VERSION//\~/-} ${AMD64} ${ARM64} ${ARMV7}
           docker manifest push   ${IMAGE}:${TAG}-${VERSION//\~/-}
+          fi
           docker manifest create ${IMAGE}:${TAG}-${GITHUB_SHA:0:7} ${AMD64} ${ARM64} ${ARMV7}
           docker manifest push   ${IMAGE}:${TAG}-${GITHUB_SHA:0:7}
           if [[ ${TAG} == master ]]; then
