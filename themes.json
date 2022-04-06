@@ -427,7 +427,7 @@
     },
     "vuetorrent": {
       "addons": {},
-      "base_css": "https://develop.theme-park.dev/css/base/vuetorrent/vuetorrent-base.css?sha=15b70559a57ea5f334728b9b11425da26614814b"
+      "base_css": "https://develop.theme-park.dev/css/base/vuetorrent/vuetorrent-base.css?sha=8f5b6a7781faff1d21e1bed4acff0de2b4a15bc8"
     },
     "whisparr": {
       "addons": {},
