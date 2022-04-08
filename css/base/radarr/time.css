@@ -1,2 +1,2 @@
-@import url("https://develop.theme-park.dev/css/base/radarr/radarr-base.css?sha=06dfdcfeb12504f85d4edde8f46421fb53f76589");
-@import url("https://develop.theme-park.dev/css/community-theme-options/time.css?sha=ee60b4f5f6e787181abe2ce5f56abc8dcceabd98");
+@import url("/css/base/radarr/radarr-base.css");
+@import url("/css/community-theme-options/time.css");

@@ -1,2 +1,2 @@
-@import url("https://develop.theme-park.dev/css/base/gitea/gitea-base.css?sha=1f6e0c4ea179d8cf19ca269d16a4c0e9c0f1a326");
-@import url("https://develop.theme-park.dev/css/community-theme-options/blackberry-amethyst.css?sha=1f1cd7d10acca7c00b54073724bb75e73c83a603");
+@import url("/css/base/gitea/gitea-base.css");
+@import url("/css/community-theme-options/blackberry-amethyst.css");

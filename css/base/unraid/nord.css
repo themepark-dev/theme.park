@@ -1,2 +1,2 @@
-@import url("https://develop.theme-park.dev/css/base/unraid/unraid-base.css?sha=faef37a55b6c78accf116dbe65bc1fa302fc5eac");
-@import url("https://develop.theme-park.dev/css/theme-options/nord.css?sha=dc62b646ac8f48d4e1e8722f305f8a174e1a4447");
+@import url("/css/base/unraid/unraid-base.css");
+@import url("/css/theme-options/nord.css");

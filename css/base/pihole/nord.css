@@ -1,2 +1,2 @@
-@import url("https://develop.theme-park.dev/css/base/pihole/pihole-base.css?sha=08067476b94c33a0d97b8a5d3c51278414aead7d");
-@import url("https://develop.theme-park.dev/css/theme-options/nord.css?sha=dc62b646ac8f48d4e1e8722f305f8a174e1a4447");
+@import url("/css/base/pihole/pihole-base.css");
+@import url("/css/theme-options/nord.css");

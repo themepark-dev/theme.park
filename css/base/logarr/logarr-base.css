@@ -163,7 +163,7 @@ body.fade-out {
 
 .expandtoggle:checked~.expandtoggle::before {
     content: "";
-    background: url(https://theme-park.dev/resources/logarr/increase.png) no-repeat;
+    background: url(/resources/logarr/increase.png) no-repeat;
     background-size: 2em;
     display: inline-block;
     width: 2em;
@@ -172,7 +172,7 @@ body.fade-out {
 }
 
 .expandtoggle::before {
-    background: url(https://theme-park.dev/resources/logarr/decrease.png) no-repeat;
+    background: url(/resources/logarr/decrease.png) no-repeat;
     background-size: 2em;
     content: "";
     display: inline-block;

@@ -1,2 +1,2 @@
-@import url("https://develop.theme-park.dev/css/base/pihole/pihole-base.css?sha=08067476b94c33a0d97b8a5d3c51278414aead7d");
-@import url("https://develop.theme-park.dev/css/community-theme-options/blackberry-solar.css?sha=d53082caa15548ea53a518a9ca950eeab6a95059");
+@import url("/css/base/pihole/pihole-base.css");
+@import url("/css/community-theme-options/blackberry-solar.css");

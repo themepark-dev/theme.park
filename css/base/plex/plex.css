@@ -1,2 +1,2 @@
-@import url("https://develop.theme-park.dev/css/base/plex/plex-base.css?sha=df02c3564149e6da846cf9f7ad6e1c14fa4d740f");
-@import url("https://develop.theme-park.dev/css/theme-options/plex.css?sha=bce3fc8daf82f424f1c86672ede9aa07ad0cfdae");
+@import url("/css/base/plex/plex-base.css");
+@import url("/css/theme-options/plex.css");

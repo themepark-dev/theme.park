@@ -10,8 +10,8 @@
 /*		   		        Made by @gilbN					 */
 /* 			      https://github.com/gilbN/theme.park			 */
 
-@import url("https://theme-park.dev/css/base/gitea/chroma.css");
-@import url("https://theme-park.dev/css/base/gitea/monaco_vs_dark.css");
+@import url("/css/base/gitea/chroma.css");
+@import url("/css/base/gitea/monaco_vs_dark.css");
 :root {
     --color-text: var(--text);
     --color-caret: white;

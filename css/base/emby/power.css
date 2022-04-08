@@ -1,2 +1,2 @@
-@import url("https://develop.theme-park.dev/css/base/emby/emby-base.css?sha=86b7f7a143a7a1485985dee2c6cbbd33fff1bb79");
-@import url("https://develop.theme-park.dev/css/community-theme-options/power.css?sha=3dc209c5ab792d0fb00407f361dc5b75040054e2");
+@import url("/css/base/emby/emby-base.css");
+@import url("/css/community-theme-options/power.css");

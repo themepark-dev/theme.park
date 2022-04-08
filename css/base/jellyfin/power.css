@@ -1,2 +1,2 @@
-@import url("https://develop.theme-park.dev/css/base/jellyfin/jellyfin-base.css?sha=d2cbca28a9cd542f40dace2cf5eacc58b4b77479");
-@import url("https://develop.theme-park.dev/css/community-theme-options/power.css?sha=3dc209c5ab792d0fb00407f361dc5b75040054e2");
+@import url("/css/base/jellyfin/jellyfin-base.css");
+@import url("/css/community-theme-options/power.css");

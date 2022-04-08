@@ -247,11 +247,11 @@ div.flot-text {
     border-bottom: 0px;
 }
 
-@import url(https://theme-park.dev/css/base/grafana/grafana-base.css);
+@import url(/css/base/grafana/grafana-base.css);
 
 :root {
-  --main-bg-color: url("https://theme-park.dev/resources/blur-noise.png"), url("https://theme-park.dev/resources/preset-light2.png") center center/cover no-repeat fixed;
-  --modal-bg-color: url("https://theme-park.dev/resources/blur-noise.png"), url("https://theme-park.dev/resources/preset-dark2.png") center center/cover no-repeat fixed;
+  --main-bg-color: url("/resources/blur-noise.png"), url("/resources/preset-light2.png") center center/cover no-repeat fixed;
+  --modal-bg-color: url("/resources/blur-noise.png"), url("/resources/preset-dark2.png") center center/cover no-repeat fixed;
  
   --button-color: #cc7b19;
   --button-color-hover: #e59029;

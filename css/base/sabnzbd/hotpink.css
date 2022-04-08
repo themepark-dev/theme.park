@@ -1,2 +1,2 @@
-@import url("https://develop.theme-park.dev/css/base/sabnzbd/sabnzbd-base.css?sha=bb7792764a7c9490c7edf290f6dc855283d82478");
-@import url("https://develop.theme-park.dev/css/theme-options/hotpink.css?sha=18ffb7ff0cf9d4ae97f09c2ccb980d8bb0fd9d3e");
+@import url("/css/base/sabnzbd/sabnzbd-base.css");
+@import url("/css/theme-options/hotpink.css");

@@ -1,2 +1,2 @@
-@import url("https://develop.theme-park.dev/css/base/lazylibrarian/lazylibrarian-base.css?sha=addaa5fd6fce97b0fb8729480a3897674aa73f7a");
-@import url("https://develop.theme-park.dev/css/theme-options/plex.css?sha=bce3fc8daf82f424f1c86672ede9aa07ad0cfdae");
+@import url("/css/base/lazylibrarian/lazylibrarian-base.css");
+@import url("/css/theme-options/plex.css");

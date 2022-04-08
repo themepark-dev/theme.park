@@ -1,2 +1,2 @@
-@import url("https://develop.theme-park.dev/css/base/guacamole/guacamole-base.css?sha=ddc849a8ad7430a04b6f90ef39d780ed32df7954");
-@import url("https://develop.theme-park.dev/css/theme-options/dracula.css?sha=60d9ec4d3e22fe15d205242f41ce71d25c4cf056");
+@import url("/css/base/guacamole/guacamole-base.css");
+@import url("/css/theme-options/dracula.css");

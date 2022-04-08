@@ -1,2 +1,2 @@
-@import url("https://develop.theme-park.dev/css/base/qbittorrent/qbittorrent-base.css?sha=42f392729094ccf718b0e0bbeba7fb3c6bbe112b");
-@import url("https://develop.theme-park.dev/css/theme-options/dracula.css?sha=60d9ec4d3e22fe15d205242f41ce71d25c4cf056");
+@import url("/css/base/qbittorrent/qbittorrent-base.css");
+@import url("/css/theme-options/dracula.css");

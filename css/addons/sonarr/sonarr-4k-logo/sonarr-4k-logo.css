@@ -3,7 +3,7 @@
         display: none !important;
     }
     [class*="PageHeader-logoContainer-"]:before {
-        background-image: url("https://theme-park.dev/css/addons/sonarr/sonarr-4k-logo/sonarr-4k.png");
+        background-image: url("/css/addons/sonarr/sonarr-4k-logo/sonarr-4k.png");
         display: inline-block;
         width: 32px; 
         height: 32px;
@@ -20,7 +20,7 @@
         display: none !important;
     }   
     [class*="PageHeader-logoContainer-"]:before {
-        background-image: url("https://theme-park.dev/css/addons/sonarr/sonarr-4k-logo/sonarr-4k.png");
+        background-image: url("/css/addons/sonarr/sonarr-4k-logo/sonarr-4k.png");
         display: inline-block;
         width: 32px; 
         height: 32px;
@@ -37,7 +37,7 @@
 }
 
 [class*="LoadingPage-page-"]:before {
-        background-image: url("https://theme-park.dev/css/addons/sonarr/sonarr-4k-logo/sonarr-4k.png");
+        background-image: url("/css/addons/sonarr/sonarr-4k-logo/sonarr-4k.png");
         display: inline-block;
         width: 48px; 
         height: 48px;
