@@ -117,10 +117,16 @@ def create_json(app_folders: list = None, themes: list = None, community_themes:
         return dumps(APPS)
 
 def create_theme_options():
+    app_shas = subprocess.check_output(["git", "ls-files", "-s", "./css/base/*base.css"]) if isdir(".git") else []
+    theme_shas = subprocess.check_output(["git", "ls-files", "-s", "./css/theme-options/*.css"]) if isdir(".git") else []
+    community_theme_shas = subprocess.check_output(["git", "ls-files", "-s", "./css/community-theme-options/*.css"]) if isdir(".git") else []
+    THEME_SHAS = get_shas(theme_shas)
+    COMMUNITY_THEME_SHAS = get_shas(community_theme_shas)
+    APP_SHAS = get_shas(app_shas)
     def create_css(theme, theme_type="standard"):
         folder = "./css/base"
         with open(f"{folder}/{app}/{theme.lower()}.css", "w") as create_app:
-            content = f'@import url("/css/base/{app}/{app}-base.css");\n@import url("/css/{"theme-options" if theme_type=="standard" else "community-theme-options"}/{theme.lower()}.css");'
+            content = f'@import url("/css/base/{app}/{app}-base.css?sha={APP_SHAS.get(f"{app}-base.css")}");\n@import url("/css/{"theme-options" if theme_type=="standard" else "community-theme-options"}/{theme.lower()}.css?sha={THEME_SHAS.get(f"{theme.lower()}.css") if theme_type=="standard" else COMMUNITY_THEME_SHAS.get(f"{theme.lower()}.css")}");'
             create_app.write(content)
     with open("themes.json") as themes:
         data = load(themes)
