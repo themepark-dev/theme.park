@@ -11,7 +11,7 @@
 /* 			      https://github.com/gilbN/theme.park			 */
 
 @import url(https://use.fontawesome.com/releases/v5.15.1/css/all.css);
-@import url(https://theme-park.dev/css/defaults/placeholders.css);
+@import url(/css/defaults/placeholders.css);
 
 body,
 .tableScrollContainer,

@@ -3,7 +3,7 @@
         display: none !important;
     }
     [class*="PageHeader-logoContainer-"]:before {
-        background-image: url("https://theme-park.dev/css/addons/readarr/readarr-alt-logo/readarr_alt.png");
+        background-image: url("/css/addons/readarr/readarr-alt-logo/readarr_alt.png");
         display: inline-block;
         width: 34px; 
         height: 34px;
@@ -20,7 +20,7 @@
         display: none !important;
     }   
     [class*="PageHeader-logoContainer-"]:before {
-        background-image: url("https://theme-park.dev/css/addons/readarr/readarr-alt-logo/readarr_alt.png");
+        background-image: url("/css/addons/readarr/readarr-alt-logo/readarr_alt.png");
         display: inline-block;
         width: 34px; 
         height: 34px;
@@ -37,7 +37,7 @@
 }
 
 [class*="LoadingPage-page-"]:before {
-        background-image: url("https://theme-park.dev/css/addons/readarr/readarr-alt-logo/readarr_alt.png");
+        background-image: url("/css/addons/readarr/readarr-alt-logo/readarr_alt.png");
         display: inline-block;
         width: 48px; 
         height: 48px;

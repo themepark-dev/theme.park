@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 
-from os import listdir, environ as env, chdir
+from os import defpath, listdir, environ as env, chdir
 from os.path import isdir, isfile, join, dirname, abspath
 from json import dump, dumps, loads, load
 import subprocess
@@ -117,29 +117,31 @@ def create_json(app_folders: list = None, themes: list = None, community_themes:
         return dumps(APPS)
 
 def create_theme_options():
-    def create_css(folder):
+    def create_css(theme, theme_type="standard"):
+        folder = "./css/base"
         with open(f"{folder}/{app}/{theme.lower()}.css", "w") as create_app:
-            content = f'@import url("{applications[app]["base_css"]}");\n@import url("{all_themes[theme]["url"]}");'
+            content = f'@import url("/css/base/{app}/{app}-base.css");\n@import url("/css/{"theme-options" if theme_type=="standard" else "community-theme-options"}/{theme.lower()}.css");'
             create_app.write(content)
     with open("themes.json") as themes:
         data = load(themes)
-        all_themes = data["all-themes"]
+        themes = data["themes"]
+        community_themes = data["community-themes"]
         applications = data["applications"]
     for app in applications:
-        for theme in all_themes:
-            folders = ["./css/base"]
-            for folder in folders:
-                create_css(folder)
+        for theme in themes:
+            create_css(theme)
+        for theme in community_themes:
+            create_css(theme,theme_type="community")
 
 env_domain = env.get('TP_DOMAIN')
-scheme = env.get('TP_SCHEME','https') if env.get('TP_SCHEME') != '$scheme' else 'https'
+scheme = env.get('TP_SCHEME','https') if env.get('TP_SCHEME') else 'https'
 
 if __name__ == "__main__":
     app_folders = [name for name in listdir('./css/base') if isdir(join('./css/base', name))]
     themes = [name for name in listdir('./css/theme-options') if isfile(join('./css/theme-options', name))]
     community_themes = [name for name in listdir('./css/community-theme-options') if isfile(join('./css/community-theme-options', name))]
     develop = True if isdir(".git") and subprocess.check_output(["git", "symbolic-ref", "--short", "HEAD"]).decode('ascii').strip() == "develop" else False
-    if env_domain and env_domain != '$http_host':
+    if env_domain:
         DOMAIN = env_domain
     else:
         with open("CNAME", "rt", closefd=True) as cname:
