@@ -228,7 +228,7 @@ table,
 
 .pagination>li>a,
 .pagination>li>span {
-    color: #ffffff;
+    color: var(--text-hover);
     background-color: rgba(0, 0, 0, 0.25);
     border: transparent;
 }
@@ -280,5 +280,5 @@ div.modal-body,
 }
 
 .modal-header .close:hover {
-    color: #fff;
+    color: var(--text-hover);
 }

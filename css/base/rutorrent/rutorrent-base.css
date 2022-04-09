@@ -172,7 +172,7 @@ ul.CMenu li a.exp:hover {
 }
 
 ul.CMenu li a.sel {
-    color: #ffffff;
+    color: var(--text-hover);
     background: rgba(0, 0, 0, 0.15);
 }
 
@@ -197,7 +197,7 @@ ul.CMenu li:hover ul li a:hover {
 }
 
 ul.CMenu li ul li a.dis {
-    color: #fff
+    color: var(--text-hover);
 }
 
 ul.CMenu li ul li a.dis:hover {
@@ -398,12 +398,12 @@ div select {
 }
 
 a {
-    color: #fff;
+    color: var(--link-color);
     font-family: 'Roboto'
 }
 
 .flot-text {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 }
 
 .flot-overlay {
@@ -562,7 +562,7 @@ div#gcont table {
 }
 
 div.graph_tab {
-    color: #FFF;
+    color: var(--text-hover);
     border-color: transparent;
     background-color: rgba(0, 0, 0, 0.25)
 }
@@ -712,7 +712,7 @@ div#tdetails {
     padding: 0;
     margin: 0;
     background-color: transparent;
-    color: #fff;
+    color: var(--text-hover);
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
 }
@@ -748,7 +748,7 @@ div#VDivider:hover {
 }
 
 div#tcreate textarea#trackers {
-    color: #fff;
+    color: var(--text-hover);
     border: none !important;
     background: rgba(0, 0, 0, 0.25);
     border-radius: 2px;
@@ -758,7 +758,7 @@ div#tcreate textarea#trackers {
 input[type="text"],
 input[type="password"],
 select {
-    color: #fff;
+    color: var(--text-hover);
     border: none;
     background: rgba(0, 0, 0, 0.25) url(/resources/rutorrent/headers.png) repeat-x scroll 0 -138px;
     border-radius: 2px;
@@ -769,7 +769,7 @@ input[type="text"][disabled],
 input[type="password"][disabled],
 input[type="file"][disabled],
 select[disabled] {
-    color: #fff;
+    color: var(--text-hover);
     border: none;
     background: rgba(0, 0, 0, 0.08) url(/resources/rutorrent/headers.png) repeat scroll 0 0 !important;
     border-radius: 2px;
@@ -789,7 +789,7 @@ textarea {
 #lookat,
 #message,
 #FS_downlink {
-    color: #fff;
+    color: var(--text-hover);
     border: none !important;
     background: rgba(0, 0, 0, 0.25);
     border-radius: 2px
@@ -885,7 +885,7 @@ ul#tabbar li.selected a {
 }
 
 .tabbar li a:hover {
-    color: #fff;
+    color: var(--text-hover);
     background: none;
     border: none
 }
@@ -893,7 +893,7 @@ ul#tabbar li.selected a {
 .tabbar li.selected a {
     background: none;
     border: none;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid var(--text-hover);
     color: #ececec;
     font-weight: 700;
     margin: 0 2px 0 0;
@@ -1139,7 +1139,7 @@ div#lcont div.std:nth-child(2n+1) {
 
 #stup_total,
 #stdown_total {
-    color: #fff
+    color: var(--text-hover);
 }
 
 span#ds,
@@ -1157,7 +1157,7 @@ span#ul {
 }
 
 span.det {
-    color: #fff
+    color: var(--text-hover);
 }
 
 .stable-head table tr td {
@@ -1363,7 +1363,7 @@ div.stable-body table tbody tr.even:nth-child(2n+1) td {
 }
 
 .stable-body tr.selected span.meter-value {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 .meter-text {
@@ -1423,7 +1423,7 @@ div.stable-body table tbody tr.even:nth-child(2n+1) td {
 #meter-disk-text,
 #qmeter-disk-text,
 #meter-band-text {
-    color: #fff;
+    color: var(--text-hover);
     text-shadow: 0px 0px 2px #000;
     position: relative;
     text-align: left;
@@ -1453,7 +1453,7 @@ div.stable-body table tbody tr.even:nth-child(2n+1) td {
     position: absolute;
     left: 65px;
     top: 0px;
-    color: #fff;
+    color: var(--text-hover);
     text-shadow: 0px 0px 2px #000;
     font-size: 11px;
     font-family: Ubuntu;
@@ -1472,7 +1472,7 @@ div.stable-body table tbody tr.even:nth-child(2n+1) td {
 /* #meter-cpu-td {}*/
 
 div.graph_tab {
-    color: #FFF;
+    color: var(--text-hover);
     border-color: transparent;
 }
 
@@ -1573,7 +1573,7 @@ div#dlgAddRSS div.dlg-header {
 
 .CellF {
     background-color: #000;
-    color: #fff;
+    color: var(--text-hover);
 }
 
 #tCellNotSupported {
@@ -1717,7 +1717,7 @@ div#tchat div.dlg-header {
     border: none !important;
     background-color: #6F6F6F !important;
     border-radius: 2px !important;
-    color: #fff !important
+    color: var(--text-hover) !important
 }
 
 div#logoff {
@@ -1735,7 +1735,7 @@ div#logoffDlg div.dlg-header {
 .noty_alert,
 .noty_success {
     color: #000000;
-    text-shadow: 0 -1px 0 #ffffff
+    text-shadow: 0 -1px 0 var(--text-hover)
 }
 
 .retrackers {
@@ -1746,7 +1746,7 @@ div#logoffDlg div.dlg-header {
     font-family: Tahoma, Arial, Helvetica, sans-serif;
     cursor: text;
     background: rgba(0, 0, 0, 0.25) !important;
-    color: #fff !important;
+    color: var(--text-hover) !important;
     outline: none !important;
 }
 
@@ -1760,13 +1760,13 @@ div#logoffDlg div.dlg-header {
 #dlgEditRatioRules .lf_rru li input.TextboxFocus,
 #dlgEditRules .lf_rur li input.TextboxFocus {
     background-color: rgb(255 255 255 / 25%);
-    color: #FFF;
+    color: var(--text-hover);
 }
 
 #dlgEditRatioRules .lf_rru li input.TextboxNormal,
 #dlgEditRules .lf_rur li input.TextboxNormal {
     background-color: rgb(255 255 255 / .08) !important;
-    color: #FFF;
+    color: var(--text-hover);
 }
 
 .autodl-listbox {

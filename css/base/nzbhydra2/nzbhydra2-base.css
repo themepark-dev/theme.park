@@ -424,7 +424,7 @@ hr {
 .alert-warning {
     background: rgba(255, 255, 255, 0.25);
     border-color: transparent;
-    color: #fff;
+    color: var(--text-hover);
 }
 
 .panel-default>.panel-heading {
@@ -465,7 +465,7 @@ table {
 }
 
 .search-result-tbody {
-    color: white;
+    color: var(--text-hover);
 }
 
 pre {

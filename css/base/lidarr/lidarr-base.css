@@ -112,7 +112,7 @@ a:hover {
 }
 
 [class*="LoadingIndicator-ripple-"] {
-    border: 2px solid #fff;
+    border: 2px solid var(--text-hover);
 }
 
 /* MODAL */
@@ -152,18 +152,18 @@ a:hover {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
-    color: #fff;
+    color: var(--text-hover);
     border-top: 1px solid rgb(var(--accent-color));
 }
 
 [class*="ModalContent-closeButton-"]:hover {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 /* INPUT */
 [class*="TagInput-internalInput-"] {
     background-color: transparent;
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="SelectInput-select-"] {
@@ -211,7 +211,7 @@ a:hover {
 
 /* LIDARR SPECIFIC */
 [class*="ArtistSearchInput-sectionTitle-"] {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="ArtistSearchInput-containerOpen-"] [class*="ArtistSearchInput-artistContainer-"] {
@@ -224,7 +224,7 @@ a:hover {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
-    color: #fff !important;
+    color: var(--text-hover) !important;
     box-shadow: 0 0 10px 1px transparent !important;
 }
 
@@ -405,7 +405,7 @@ a:hover {
 [class*="ArtistDetailsSeason-albumCount-"],
 [class*="ArtistDetails-metadataMessage-"],
 [class*="ArtistDetailsSeason-albumCount-"] {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="ArtistDetailsSeason-albums-"] {
@@ -444,7 +444,7 @@ a:hover {
 
 /*ARTIST ALBUM PAGE*/
 [class*="AlbumDetailsMedium-mediumNumber-"] {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="AlbumDetailsMedium-medium-"] {
@@ -473,7 +473,7 @@ a:hover {
 [class*="ArtistIndexBanner-title-"],
 [class*="ArtistIndexBannerInfo-info-"] {
     background-color: rgba(0, 0, 0, .25);
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="Tooltip-tooltip-"][class*="Tooltip-inverse-"],
@@ -484,7 +484,7 @@ a:hover {
 [class*="Tooltip-tooltipContainer-"],
 [class*="Tooltip-tooltip-"][class*="Tooltip-default-"] {
     background: #1f1f1f;
-    color: #eee;
+    color: var(--text);
 }
 /* 
 @supports (backdrop-filter: blur(1em)) or (-webkit-backdrop-filter:blur(1em)) {
@@ -515,7 +515,7 @@ a:hover {
 }
 
 [class*="EpisodeTitleLink-link-"]:hover {
-    color: #ffffff;
+    color: var(--text-hover);
     text-decoration: none;
 }
 
@@ -669,7 +669,7 @@ a:hover {
 
 /* ALPHABET JUMP BAR */
 [class*="PageJumpBar-jumpBar-"] {
-    color: #FFF;
+    color: var(--text-hover);
 }
 
 /* SEARCH BAR */
@@ -679,12 +679,12 @@ a:hover {
 [class*="CheckInput-isIndeterminate-"] {
     border: none;
     background-color: rgba(255, 255, 255, 0.08);
-    color: #FFF;
+    color: var(--text-hover);
 }
 
 [class*="ArtistSearchInput-container-"] [class*="Input-input-"] {
     background: transparent;
-    border-bottom: solid 1px #fff;
+    border-bottom: solid 1px var(--text-hover);
 }
 
 [class*="ArtistSearchInput-container-"] [class*="Input-input-"]:focus {
@@ -693,20 +693,20 @@ a:hover {
 }
 
 [class*="ArtistSearchResult-alternateTitle-"] {
-    color: #ffffff;
+    color: var(--text-hover);
     font-size: 12px;
 }
 
 [class*="Input-input-"]:focus {
     outline: 0;
-    border-color: #fff;
+    border-color: var(--text-hover);
     box-shadow: none;
     background-color: rgba(255, 255, 255, 0.25);
 }
 
 [class*="TagInput-input-"][class*="TagInput-isFocused-"] {
     outline: 0;
-    border-color: #fff;
+    border-color: var(--text-hover);
     box-shadow: none;
 }
 
@@ -722,7 +722,7 @@ a:hover {
 }
 
 [class*="AddNewArtistSearchResult-year-"] {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="AddNewArtistSearchResult-searchResult-"],
@@ -740,7 +740,7 @@ a:hover {
 }
 
 [class*="RootFolderSelectInputSelectedValue-freeSpace-"] {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="RootFolderSelectInputOption-freeSpace-"],
@@ -759,7 +759,7 @@ a:hover {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
-    color: #FFF;
+    color: var(--text-hover);
     border: 1px solid transparent;
 }
 
@@ -810,7 +810,7 @@ input:focus:-ms-input-placeholder {
 /* IMPORT */
 /* Text color */
 [class*="ImportArtistSelectFolder-header-"] {
-    color: #FFF;
+    color: var(--text-hover);
 }
 
 [class*="ExpandingFileDetails-fileDetails-"] {
@@ -823,7 +823,7 @@ input:focus:-ms-input-placeholder {
 [class*="ImportArtistSelectArtist-button-"] {
     border: none;
     background-color: rgba(0, 0, 0, 0.25) !important;
-    color: #fff;
+    color: var(--text-hover);
 }
 
 
@@ -841,7 +841,7 @@ input:focus:-ms-input-placeholder {
 /*Title*/
 
 [class*="PageJumpBarItem-jumpBarItem-"]:hover {
-    color: #fff;
+    color: var(--text-hover);
     background: hsla(0, 0%, 100%, .08);
 }
 
@@ -854,12 +854,12 @@ input:focus:-ms-input-placeholder {
 [class*="PageContentFooter-contentFooter-"] {
     border: none;
     background-color: rgba(0, 0, 0, .25);
-    color: #FFF;
+    color: var(--text-hover);
 }
 
 /* CALENDAR */
 [class*="CircularProgressBar-circularProgressBarContainer-"] svg circle {
-    stroke: white !important;
+    stroke: var(--text-hover) !important;
 }
 
 [class*="CalendarEvent-downloaded-"] {
@@ -1010,7 +1010,7 @@ input:focus:-ms-input-placeholder {
 
 
 [class*="-cloneButton-"][class*="IconButton-button-"]:hover {
-    color: white;
+    color: var(--text-hover);
 }
 
 [class*="Card-card-"]:hover {
@@ -1029,7 +1029,7 @@ input:focus:-ms-input-placeholder {
 [class*="LanguageProfileItem-languageProfileItem-"] {
     border: none;
     background-color: rgba(0, 0, 0, .25);
-    color: #FFF;
+    color: var(--text-hover);
 }
 
 [class*="QualityProfileItemGroup-qualityProfileItemGroup-"][class*="QualityProfileItemGroup-editGroups-"] {
@@ -1040,7 +1040,7 @@ input:focus:-ms-input-placeholder {
 [class*="KeyValueListInputItem-valueInput-"] {
     border: none;
     background: transparent;
-    color: white;
+    color: var(--text-hover);
 }
 
 [class*="QualityProfileFormatItem-qualityProfileFormatItem-"] {
@@ -1146,7 +1146,7 @@ input[type=email],
 input[type=password] {
     border: none;
     background-color: rgba(255, 255, 255, 0.08);
-    color: #FFF;
+    color: var(--text-hover);
 }
 
 .button {
@@ -1158,13 +1158,13 @@ input[type=password] {
 .button:hover {
     border-color: var(--button-color-hover);
     background-color: var(--button-color-hover);
-    color: #fff;
+    color: var(--text-hover);
     text-decoration: none;
 }
 
 .form-input:focus {
     outline: 0;
-    border-color: #fff;
+    border-color: var(--text-hover);
     box-shadow: none;
     background-color: rgba(255, 255, 255, 0.25);
 }
@@ -1195,7 +1195,7 @@ input[type=password] {
 [class*="ArtistIndexHeader-latestAlbum-"]:hover,
 [class*="ArtistIndexHeader-actions-"]:hover {
     background-color: rgba(0, 0, 0, .25);
-    color: #FFF;
+    color: var(--text-hover);
 }
 
 /* Fix rating border*/
@@ -1209,7 +1209,7 @@ input[type=password] {
 [class*="AlbumStudioAlbum-tracks-"] {
     border: none;
     background-color: rgba(0, 0, 0, 0.25);
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="AlbumStudioAlbum-missingWanted-"] {
@@ -1222,6 +1222,6 @@ input[type=password] {
 
 /* CONNECTIONS */
 [class*="Label-danger-"][class*="Label-outline-"] {
-    color: #FFF;
+    color: var(--text-hover);
     background-color: #f05050;
 }

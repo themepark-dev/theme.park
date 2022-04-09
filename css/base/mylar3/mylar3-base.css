@@ -628,7 +628,7 @@ input[type="radio"] {
 ::-moz-selection,
 ::selection {
     background: grey;
-    color: #fff;
+    var(--text-hover);
     text-shadow: none;
 }
 
@@ -821,7 +821,7 @@ ul#nav li a {
     color: rgb(var(--accent-color));
     display: block;
     padding: 7px 15px;
-    -text-shadow: 1px 1px 0px #FFF;
+    text-shadow: 1px 1px 0px var(--text);
     text-transform: capitalize;
     border: 1px solid transparent;
     font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
@@ -966,7 +966,7 @@ footer div {
     -moz-box-shadow: 0px 0px 2px #aaaaaa;
     -webkit-box-shadow: 0px 0px 2px #aaaaaa;
     -o-box-shadow: 0px 0px 2px #aaaaaa;
-    box-shadow: 0px 0px 2px #fff;
+    box-shadow: 0px 0px 2px var(--text);
     padding: 7px 10px;
     position: fixed;
     text-align: center;
@@ -1187,7 +1187,7 @@ div#searchbar .mini-icon {
 .checkbox.inline>input {
     margin-right: 5px;
     margin-left: 0;
-    color: #ffffff;
+    color: var(--text-hover);
 }
 
 .Skipped {
@@ -1234,7 +1234,7 @@ div#searchbar .mini-icon {
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 10px;
-    -text-shadow: 1px 1px 0 #FFFFFF;
+    -text-shadow: 1px 1px 0 var(--text-hover);
 }
 
 .comictable tr td:last-child {
@@ -1250,7 +1250,7 @@ div#searchbar .mini-icon {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 10px;
-    -text-shadow: 1px 1px 0 #FFFFFF;
+    -text-shadow: 1px 1px 0 var(--text-hover);
 }
 
 .configtable tr td:last-child {
@@ -1318,8 +1318,8 @@ div#artistheader {
 }
 
 div#artistheader #artistImg {
-    background: #ffffff url("../../../images/loader_black.gif") center no-repeat;
-    border: 5px solid #FFF;
+    background: var(--text-hover) url("../../../images/loader_black.gif") center no-repeat;
+    border: 5px solid var(--text-hover);
     -moz-box-shadow: 1px 1px 2px 0 #555555;
     -webkit-box-shadow: 1px 1px 2px 0 #555555;
     -o-box-shadow: 1px 1px 2px 0 #555555;
@@ -2070,8 +2070,8 @@ div#artistheader h2 a {
 }
 
 #searchresults_table #artistImg {
-    background: url("../../../images/loader_black.gif") no-repeat scroll center center #ffffff;
-    border: 3px solid #FFFFFF;
+    background: url("../../../images/loader_black.gif") no-repeat scroll center center var(--text-hover);
+    border: 3px solid var(--text-hover);
     box-shadow: 1px 1px 2px 0 #555555;
     float: left;
     height: 50px;
@@ -2114,7 +2114,7 @@ div#artistheader h2 a {
 #searchresults_table td#score .bar .score {
     height: 14px;
     color: #343434;
-    color: #FFF;
+    color: var(--text-hover);
     font-size: 11px;
     vertical-align: middle;
     line-height: normal;
@@ -2875,7 +2875,7 @@ table tr td#status a {
     background: var(--modal-bg-color);
     padding: 5px;
     border: 2px solid rgba(221, 221, 221, 0);
-    color: white;
+    color: var(--text-hover);
     font-size: 1.2em;
     position: absolute;
     top: 20%;

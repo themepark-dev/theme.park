@@ -37,7 +37,7 @@ html, body, .wizard-background, .content-container, #main-container\ dark > mat-
 }
 
 .container-alert {
-    color: #fff;
+    color: var(--text-hover);
     background-color: rgb(0 0 0 / 50%) !important;
     border-color: rgb(var(--accent-color)) !important;
 }
@@ -130,7 +130,7 @@ a:hover {
 
 .sidenav-container .sidenav {
     background: var(--modal-bg-color) !important;
-    color: #fff;
+    color: var(--text-hover);
     font-family: Montserrat, sans-serif;
     width: 16rem;
 }
@@ -231,7 +231,7 @@ a:hover {
     background: rgb(255 255 255 / 8%) !important;
     border: 1px solid rgb(255 255 255 / 10%) !important;
     border-radius: 30px;
-    color: #fff;
+    color: var(--text-hover);
     margin-bottom: 10px;
     margin-right: 30px;
 }
@@ -528,7 +528,7 @@ button.admin-cog {
 }
 
 .grow:hover {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 /* FORMS */

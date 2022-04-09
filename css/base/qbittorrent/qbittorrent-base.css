@@ -514,7 +514,7 @@ ul.filterList li:hover:before {
 
 .progressbar_light {
   background: rgba(0, 0, 0, 0.25) !important;
-  color: #fff !important;
+  color: var(--text-hover) !important;
 }
 
 .progressbar_wrapper {
@@ -1223,7 +1223,7 @@ input[type="submit"i]:hover {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: white;
+  color: var(--text-hover);
   opacity: 0;
 }
 
@@ -1251,7 +1251,7 @@ input[type="submit"i]:hover {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: white;
+  color: var(--text-hover);
   opacity: 0;
 }
 
@@ -1279,7 +1279,7 @@ input[type="submit"i]:hover {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: white;
+  color: var(--text-hover);
   opacity: 0;
 }
 
@@ -1323,7 +1323,7 @@ input[type="submit"i]:hover {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: white;
+  color: var(--text-hover);
   opacity: 0;
 }
 
@@ -1334,7 +1334,7 @@ input[type="submit"i]:hover {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: white;
+  color: var(--text-hover);
   opacity: 0;
 }
 
@@ -1362,7 +1362,7 @@ input[type="submit"i]:hover {
   font-weight: 900;
   display: inline-block;
   margin-right: 5px;
-  color: white;
+  color: var(--text-hover);
   opacity: 0;
 }
 

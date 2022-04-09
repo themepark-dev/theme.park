@@ -100,7 +100,7 @@ p,
 .input,
 .inverse .input {
     background: rgba(255, 255, 255, .05);
-    color: #fff;
+    color: var(--text-hover);
     border: 1px solid #0000;
     box-shadow: 0 1px 1px rgba(210, 216, 222, 0), 0 1px 3px 1px rgba(210, 216, 222, 0);
 }
@@ -304,7 +304,7 @@ p,
 .error {
     background: #f34570;
     border-radius: 3px;
-    color: #fff;
+    color: var(--text-hover);
     padding: 8px 12px;
     transition: opacity .25s;
 }
@@ -547,7 +547,7 @@ p,
     background: rgba(var(--accent-color), .25);
     border-bottom: 1px solid rgba(var(--accent-color), .3);
     border-top: 1px solid rgba(var(--accent-color), .3);
-    color: #eee;
+    color: var(--text);
     padding-right: 45px;
 }
 
@@ -563,7 +563,7 @@ p,
 }
 
 .search .icon {
-    fill: white;
+    fill: var(--text-hover);
 }
 
 .dark .sidebar__diskusage .progress-bar__fill,
@@ -577,7 +577,7 @@ p,
 }
 
 .torrent--is-selected.torrent--is-stopped .progress-bar__icon .icon {
-    color: #ffffff;
+    color: var(--text-hover);
 }
 
 .torrent--is-selected.torrent--is-stopped .progress-bar__fill {

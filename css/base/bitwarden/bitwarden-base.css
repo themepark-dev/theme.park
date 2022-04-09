@@ -130,7 +130,7 @@ html[class*="theme_"] .card-header,
 
 html[class*="theme_"] .card-header {
     background-color: rgb(0 0 0 / 45%);
-    color: #fff;
+    color: var(--text-hover);
 }
 
 .card {
@@ -164,7 +164,7 @@ html[class*="theme_"] .password-number {
 }
 
 html[class*="theme_"] .password-letter {
-    color: white;
+    color: var(--text-hover);
 }
 
 html[class*="theme_"] app-vault-groupings .card .card-body a,
@@ -215,7 +215,7 @@ html[class*="theme_"] .close {
 
 .close,
 .close:hover {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 .close:focus {
@@ -256,7 +256,7 @@ html[class*="theme_"] .close {
 
 .btn-primary,
 .swal2-popup .swal2-actions button.swal2-confirm {
-    color: #fff;
+    color: var(--text-hover);
     background-color: var(--button-color);
     border-color: var(--button-color);
 }
@@ -318,7 +318,7 @@ html[class*="theme_"] .navbar .dropdown-menu .dropdown-item-text {
 html[class*="theme_"] .dropdown-menu,
 html[class*="theme_"] .dropdown-item {
     background: #1f1f1f;
-    color: #fff;
+    color: var(--text-hover);
 }
 
 html[class*="theme_"] .dropdown-item,
@@ -349,7 +349,7 @@ html[class*="theme_"] app-org-vault-groupings .card #search,
 html[class*="theme_"] .groupings .card #search {
     background-color: transparent;
     border-color: rgb(var(--accent-color));
-    color: #fff;
+    color: var(--text-hover);
 }
 
 /* SETTINGS */
@@ -561,7 +561,7 @@ html[class*="theme_"] .org-nav .nav-tabs a:not(.active) {
 }
 
 app-vault-groupings .card .card-body a:hover.text-muted {
-    color: #fff !important;
+    color: var(--text-hover) !important;
     opacity: 1 !important;
 }
 
@@ -656,7 +656,7 @@ html[class*="theme_"] .groupings .card .card-body a {
 
 .page-item.active .page-link {
     z-index: 3;
-    color: #fff;
+    color: var(--text-hover);
     background-color: var(--button-color);
     border-color: var(--button-color);
 }

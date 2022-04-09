@@ -115,7 +115,7 @@ a:hover {
 }
 
 [class*="LoadingIndicator-ripple-"] {
-    border: 2px solid #fff;
+    border: 2px solid var(--text-hover);
 }
 
 /* MODAL */
@@ -153,7 +153,7 @@ a:hover {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
-    color: #fff;
+    color: var(--text-hover);
     border-top: 1px solid rgb(var(--accent-color));
 }
 
@@ -166,13 +166,13 @@ a:hover {
 [class*="EpisodeSummary-infoTitle-"],
 [class*="EpisodeDetailsModalContent-tab-"],
 [class*="DescriptionListItemTitle-title-"] {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 /* INPUT */
 [class*="TagInput-internalInput-"] {
     background-color: transparent;
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="SelectInput-select-"] {
@@ -220,7 +220,7 @@ a:hover {
 
 /* SONARR SPECIFIC */
 [class*="SeriesSearchInput-sectionTitle-"] {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="SeriesSearchInput-containerOpen-"] [class*="SeriesSearchInput-seriesContainer-"] {
@@ -233,7 +233,7 @@ a:hover {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
-    color: #fff !important;
+    color: var(--text-hover) !important;
     box-shadow: 0 0 10px 1px transparent !important;
 }
 
@@ -385,7 +385,7 @@ a:hover {
 }
 
 [class*="SeriesDetailsSeason-seasonNumber-"] {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="SeriesDetailsSeason-collapseButtonContainer-"] {
@@ -599,7 +599,7 @@ a:hover {
 
 /* ALPHABET JUMP BAR */
 [class*="PageJumpBar-jumpBar-"] {
-    color: #FFF;
+    color: var(--text-hover);
 }
 
 /* MINI RIGHT SCROLL BAR */
@@ -677,12 +677,12 @@ a:hover {
 [class*="CheckInput-isIndeterminate-"] {
     border: none;
     background-color: rgba(255, 255, 255, 0.08);
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="SeriesSearchInput-container-"] [class*="Input-input-"] {
     background: transparent;
-    border-bottom: solid 1px #fff;
+    border-bottom: solid 1px var(--text-hover);
 }
 
 [class*="SeriesSearchInput-container-"] [class*="Input-input-"]:focus {
@@ -691,20 +691,20 @@ a:hover {
 }
 
 [class*="SeriesSearchResult-alternateTitle-"] {
-    color: #ffffff;
+    color: var(--text-hover)
     font-size: 12px;
 }
 
 [class*="Input-input-"]:focus {
     outline: 0;
-    border-color: #fff;
+    border-color: var(--text-hover);
     box-shadow: none;
     background-color: rgba(255, 255, 255, 0.25);
 }
 
 [class*="TagInput-input-"][class*="TagInput-isFocused-"] {
     outline: 0;
-    border-color: #fff;
+    border-color: var(--text-hover);
     box-shadow: none;
 }
 
@@ -763,12 +763,12 @@ input:focus:-ms-input-placeholder {
 }
 
 [class*="AddNewSeriesSearchResult-year-"] {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="RootFolderSelectInputSelectedValue-seriesFolder-"],
 [class*="RootFolderSelectInputSelectedValue-freeSpace-"] {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="RootFolderSelectInputOption-freeSpace-"],
@@ -808,7 +808,7 @@ input:focus:-ms-input-placeholder {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
-    color: white;
+    color: var(--text-hover);
 }
 
 [class*="ImportSeriesTitle-year-"] {
@@ -820,7 +820,7 @@ input:focus:-ms-input-placeholder {
 [class*="PageContentFooter-contentFooter-"] {
     border: none;
     background-color: rgba(0, 0, 0, .25);
-    color: #FFF;
+    color: var(--text-hover);
 }
 
 /* SEASON PASS */
@@ -836,7 +836,7 @@ input:focus:-ms-input-placeholder {
 
 /* CALENDAR */
 [class*="CircularProgressBar-circularProgressBarContainer-"] svg circle {
-    stroke: white !important;
+    stroke: var(--text-hover) !important;
 }
 
 [class*="CalendarEvent-downloaded-"] {
@@ -936,7 +936,7 @@ input:focus:-ms-input-placeholder {
 [class*="CalendarEvent-episodeInfo-"],
 [class*="CalendarEvent-airTime-"],
 [class*="Legend-legend-"] [class*="LegendItem-legendItem-"] {
-    color: #ffffff !important;
+    color: var(--text-hover) !important;
 }
 
 [class*="CalendarEvent-event-"] {
@@ -948,15 +948,15 @@ input:focus:-ms-input-placeholder {
 }
 
 [class*="CalendarEventGroup-seriesTitle-"] {
-    color: #ffffff !important;
+    color: var(--text-hover) !important;
 }
 
 [class*="CalendarEventGroup-airTime-"] {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="CalendarEventGroup-episodeInfo-"] {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 /* calendar agenda */
@@ -1018,7 +1018,7 @@ input:focus:-ms-input-placeholder {
 }
 
 [class*="-cloneButton-"][class*="IconButton-button-"]:hover {
-    color: white;
+    color: var(--text-hover);
 }
 
 [class*="Card-card-"]:hover {
@@ -1037,7 +1037,7 @@ input:focus:-ms-input-placeholder {
 [class*="LanguageProfileItem-languageProfileItem-"] {
     border: none;
     background-color: rgba(0, 0, 0, .25);
-    color: #FFF;
+    color: var(--text-hover);
 }
 
 [class*="QualityProfileItemGroup-qualityProfileItemGroup-"][class*="QualityProfileItemGroup-editGroups-"] {
@@ -1048,7 +1048,7 @@ input:focus:-ms-input-placeholder {
 [class*="KeyValueListInputItem-valueInput-"] {
     border: none;
     background: transparent;
-    color: white;
+    color: var(--text-hover);
 }
 
 [class*="QualityDefinitions-sizeLimitHelpText-"] {
@@ -1107,7 +1107,7 @@ input[type=email],
 input[type=password] {
     border: none;
     background-color: rgba(255, 255, 255, 0.08);
-    color: #FFF;
+    color: var(--text-hover);
 }
 
 .button {
@@ -1119,13 +1119,13 @@ input[type=password] {
 .button:hover {
     border-color: var(--button-color-hover);
     background-color: var(--button-color-hover);
-    color: #fff;
+    color: var(--button-text-hover);
     text-decoration: none;
 }
 
 .form-input:focus {
     outline: 0;
-    border-color: #fff;
+    border-color: var(--text-hover);
     box-shadow: none;
     background-color: rgba(255, 255, 255, 0.25);
 }
