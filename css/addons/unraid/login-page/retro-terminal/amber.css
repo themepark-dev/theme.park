@@ -1,0 +1,33 @@
+/*_____________________AMBER_THEME______________________*/
+/* --body-before:#00ff771a; /* This is the background that creates the crt lines, background uses a transparency of 10% SET TO NONE TO REMOVE CRT EFFECT */
+/* --body-after: #00ff7733; /* This is the background that creates the crt lines, background uses a transparency of 20% SET TO NONE TO REMOVE CRT EFFECT */
+/* --body-animation: flicker; This is the background that flickers. SET TO NONE TO REMOVE THE FLICKER ANIMATION! */
+/* --custom-text-header-animation: textflicker; /* SET TO NONE TO REMOVE THE FLICKER ANIMATION! */
+
+@import url(/css/addons/unraid/login-page/retro-terminal/retro-terminal-base.css);
+:root {
+--main-bg-color:black;
+--body-before:#ffb52a1a;
+--body-after: #ffb52a33;
+--body-animation: flicker;
+--logo: url(/css/addons/unraid/login-page/alien/logo/wings_yellow.png) center no-repeat;
+--text-color: #ffb52a;
+--input-color: #ffb52a;
+--link-color: #ffb52a;
+--link-color-hover: #ff6868;
+--case-color: #ffb52a;
+--button-text-color: #ffb52a;
+--button-text-color-hover: #000;
+--button-color: #ffb52a;
+--button-color-hover: #ff6868;
+--selection-color: #ff6868;
+--custom-text-header:#ffb52a;
+--custom-text-header-shadow:#ffb52a;
+--custom-text-header-animation: textflicker;
+--input-font: 'Share Tech Mono', monospace;
+--text-font: 'Share Tech Mono', monospace;
+--loginbox-background-color: transparent;
+--text-shadow: 0 0 8px;
+--text-shadow-color: #ffb52a;
+--box-shadow: 0 0 15px;
+}

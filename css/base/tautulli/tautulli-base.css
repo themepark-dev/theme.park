@@ -1,0 +1,863 @@
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+
+/*		   		        Made by @gilbN					 */
+/*			      https://github.com/gilbN/theme.park			 */
+body {
+    background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    color: var(--text);
+}
+
+/* Text */
+
+p,
+.news-title,
+.news-date {
+    color: var(--text);
+}
+
+.help-block,
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small,
+.h1 small,
+.h2 small,
+.h3 small,
+.h4 small,
+.h5 small,
+.h6 small,
+h1 .small,
+h2 .small,
+h3 .small,
+h4 .small,
+h5 .small,
+h6 .small,
+.h1 .small,
+.h2 .small,
+.h3 .small,
+.h4 .small,
+.h5 .small,
+.h6 .small,
+.header-bar span,
+.dashboard-activity-info-time,
+strong,
+.summary-content-details-tag strong,
+.padded-header h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.config-scheduler-table th,
+#tautulli-news .open .news-title,
+#tautulli-news .open .news-date,
+#tautulli-news .accordion li.open .link i.fa {
+    color: var(--text-hover);
+}
+
+.list-unstyled {
+    color: var(--text-hover);
+}
+
+.text-muted,
+.small-muted {
+    color: var(--text-muted);
+}
+
+/* LINKS */
+
+a:not(.sub-value a),
+a.no-highlight,
+.news-body a {
+    color: var(--link-color);
+}
+
+a:hover,
+a.no-highlight:hover,
+.dashboard-activity-metadata-title a:hover,
+.dashboard-activity-metadata-user a:hover {
+    color: var(--link-color-hover);
+}
+
+#plexpy-notifiers-table .friendly_name,
+#notifier-config-modal span.notifier_id,
+#plexpy-newsletters-table .friendly_name,
+#newsletter-config-modal span.newsletter_id,
+#plexpy-mobile-devices-table .friendly_name,
+#mobile-device-config-modal span.notifier_id {
+    color: var(--text-hover);
+}
+
+/* Navbar */
+.navbar {
+    background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+#search_form #search_button.btn-inactive {
+    background-color: #0000;
+    color: var(--text);
+}
+
+.nav>li.active>a,
+.nav>li.active>a:hover,
+.nav>li.active>a:focus {
+    color: #f9be03;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.nav>li>a {
+    color: var(--text);
+}
+
+.nav>li>a:hover,
+.nav>li>a:focus {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: var(--text-hover);
+}
+
+.nav .open>a,
+.nav .open>a:hover,
+.nav .open>a:focus {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: rgb(var(--accent-color));
+}
+
+/* Dropdown */
+.dropdown-menu {
+    background: var(--drop-down-menu-bg);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+
+.dropdown-menu>li>a {
+    color: var(--text);
+}
+
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: var(--text-hover);
+}
+
+.dropdown-menu .divider {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+select,
+.react-selectize.bootstrap3.root-node .react-selectize-control {
+    background: var(--drop-down-menu-bg);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+
+/* Dashboard */
+.dashboard-stats-background,
+.dashboard-activity-background,
+.dashboard-activity-poster-container {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.dashboard-activity-progress-bar {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.dashboard-activity-progress .buffer-bar {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.dashboard-activity-metadata-user a {
+    color: var(--link-color);
+}
+
+.dashboard-activity-metadata-subtitle-container {
+    color: var(--text-hover);
+}
+
+.dashboard-recent-media-metacontainer h3.text-muted a {
+    color: var(--text-hover);
+}
+
+.dashboard-recent-media-metacontainer h3.text-muted {
+    color: var(--text-hover);
+}
+
+/* Buttons */
+.btn-dark,
+.btn-dark.inactive:hover {
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+    color: var(--button-text);
+}
+
+.btn-dark:hover {
+    color: var(--button-text-hover);
+    background-color: var(--button-color-hover);
+    border-color: var(--button-color-hover);
+}
+
+.btn-dark:active,
+.btn-dark:active:hover,
+.btn-dark.active,
+.open>.dropdown-toggle.btn-dark,
+.btn-dark.active:focus {
+    color: var(--button-text-hover);
+    background-color: var(--button-color-hover);
+    border-color: var(--button-color-hover);
+}
+
+.btn-filter.active, .btn-filter.active.focus,
+.btn-filter.active:hover {
+    background-color: var(--button-color-hover) !important;
+}
+
+.btn:focus:not(select),
+.btn.focus:not(select),
+.btn-dark:focus:not(select),
+.btn-dark.focus:not(select),
+.btn-dark:active:focus:not(select) {
+    color: var(--button-text-hover);
+    background-color: var(--button-color-hover) !important;
+}
+
+.btn-dark.active:hover {
+    background-color: var(--button-color-hover);
+}
+
+.btn-danger.btn-edit {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.btn-form {
+    background-color: var(--button-color);
+}
+
+.btn-form:hover {
+    background-color: var(--button-color-hover);
+}
+
+/* Inputs */
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.react-selectize.root-node .react-selectize-control,
+.selectize-control.form-control .selectize-input {
+    background: rgba(0, 0, 0, 0.25) !important;
+}
+
+/*Formcontrol */
+select.form-control,
+div.form-control .selectize-input {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 768px) {
+    .form-inline .input-group>.form-control {
+        width: auto;
+    }
+}
+
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+    background-color: rgba(236, 236, 236, 0.25);
+}
+
+textarea.form-control {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+    color: var(--text-hover);
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.form-control:focus {
+    border-color: transparent;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* Settings table cards */
+.table-card-header {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid #00000000;
+}
+
+.table-card-back {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+table.display thead th {
+    color: var(--text-hover);
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+table.display thead tr:hover {
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+/*Settings menu */
+.card-back-full {
+    background-color: transparent;
+}
+
+.nav-settings>li>a {
+    border-bottom: 1px solid transparent;
+    color: var(--text);
+}
+
+.nav-settings>li {
+    background-color: rgba(0, 0, 0, 0.45);
+    border-top: 1px solid transparent;
+}
+
+.nav-settings>.active>a,
+.nav-settings>.active>a:hover,
+.nav-settings>.active>a:focus {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.nav-settings>li>a:hover,
+.nav-settings>li>a:focus {
+    color: var(--text-hover);
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-top: 1px solid #00000000;
+}
+
+.card-sortable {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.card-handle {
+    color: var(--text-hover);
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+/*Notification agents menu */
+.stacked-configs>li {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.stacked-configs>li>span {
+    color: var(--text-hover);
+    border-left: 2px solid rgba(0, 0, 0, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.stacked-configs>li>span:hover,
+.stacked-configs>li>span:focus {
+    color: var(--text-hover);
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.stacked-configs>li>span>a.toggle-left,
+.stacked-configs>li>span>span.toggle-left {
+    color: #999;
+}
+
+span>a.active,
+.stacked-configs>li>span>span.active {
+    color: #f9be03;
+}
+
+.inline-pre {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Summary containers */
+.summary-container .table-card-header,
+.summary-container .table-card-back {
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.summary-navbar {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+/* pagination */
+.pagination>.disabled>span,
+.pagination>.disabled>span:hover,
+.pagination>.disabled>span:focus,
+.pagination>.disabled>a,
+.pagination>.disabled>a:hover,
+.pagination>.disabled>a:focus {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-color: #00000000;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+    background-color: var(--button-color);
+    border: 1px solid var(--button-color);
+    color: var(--button-text);
+}
+
+.pagination>li>a:hover,
+.pagination>li>span:hover,
+.pagination>li>a:focus,
+.pagination>li>span:focus {
+    background-color: var(--button-color-hover);
+    border: 1px solid var(--button-color-hover);
+    color: var(--button-text-hover);
+}
+
+/* Graphs */
+.graphs-instance {
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+/* Modal */
+.modal-content {
+    border: none;
+}
+
+.modal-body li {
+    color: var(--text-hover);
+}
+
+.modal-body {
+    background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+
+.modal-header {
+    background: var(--modal-header-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    border-bottom: 1px solid rgb(var(--accent-color));
+}
+
+.modal-footer {
+    background: var(--modal-footer-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    border-top: 1px solid rgb(var(--accent-color));
+}
+
+.modal-config-section {
+    border-top: 1px solid rgba(255, 255, 255, .08);
+}
+
+#changelog-modal .modal-body>h2 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+#notifier-config-modal .nav-tabs>li>a,
+#newsletter-config-modal .nav-tabs>li>a {
+    color: var(--text);
+}
+
+#notifier-config-modal .nav-tabs>li.active>a,
+#notifier-config-modal .nav-tabs>li.active>a:hover,
+#notifier-config-modal .nav-tabs>li.active>a:focus,
+#newsletter-config-modal .nav-tabs>li.active>a,
+#newsletter-config-modal .nav-tabs>li.active>a:hover,
+#newsletter-config-modal .nav-tabs>li.active>a:focus {
+    color: var(--text-hover);
+    background: rgba(0, 0, 0, 0.45);
+}
+
+#notifier-config-modal .nav-tabs>li.active>a,
+#notifier-config-modal .nav-tabs>li.active>a:hover,
+#notifier-config-modal .nav-tabs>li.active>a:focus,
+#newsletter-config-modal .nav-tabs>li.active>a,
+#newsletter-config-modal .nav-tabs>li.active>a:hover,
+#newsletter-config-modal .nav-tabs>li.active>a:focus {
+    border: 1px solid #0000;
+    border-bottom-color: transparent;
+}
+
+#notifier-config-modal .nav-tabs>li>a:hover,
+#newsletter-config-modal .nav-tabs>li>a:hover {
+    border-color: #0000;
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text-hover);
+}
+
+#notifier-config-modal .nav-tabs,
+#newsletter-config-modal .nav-tabs {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.accordion {
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.accordion li .link {
+    color: var(--text-hover);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.accordion li .link:hover,
+.accordion li .link:hover i.fa {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.submenu {
+    background: rgba(0, 0, 0, 0.25);
+}
+
+/* Stream info */
+.stream-info {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+/* Edit metadata */
+.item-children-section-title {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid #00000000;
+    border-top: 1px solid #00000000;
+}
+
+/* Mobile */
+.navbar-toggle:hover,
+.navbar-toggle:focus {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.navbar-toggle {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 768px) {
+    .navbar-collapse.in {
+        box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.7);
+    }
+}
+
+#login-methods .submenu {
+    background: transparent;
+}
+
+.login-container .remember-group {
+    color: var(--text);
+}
+
+#login-methods>li.open>div {
+    color: rgb(var(--accent-color));
+}
+
+/* Buttons */
+.btn-bright {
+    color: var(--button-text);
+    background-color: var(--button-color);
+    box-shadow: inset 0 1px 0 var(--button-color);
+}
+
+.btn-bright:hover {
+    color: var(--button-text-hover);
+    background-color: var(--button-color-hover);
+    box-shadow: inset 0 1px 0 var(--button-color-hover);
+}
+
+.btn-bright:active,
+.btn-bright.active,
+.open>.dropdown-toggle.btn-bright,
+#menu_link_show_advanced_settings.active {
+    color: var(--button-text-hover);
+    background-color: var(--button-color-hover);
+    box-shadow: inset 0 1px 0 var(--button-color-hover);
+}
+
+.btn-bright:active:hover,
+.btn-bright.active:hover,
+.open>.dropdown-toggle.btn-bright:hover,
+.btn-bright:active:focus,
+.btn-bright.active:focus,
+.open>.dropdown-toggle.btn-bright:focus,
+.btn-bright:active.focus,
+.btn-bright.active.focus,
+.open>.dropdown-toggle.btn-bright.focus {
+    color: var(--button-text-hover);
+    background-color: var(--button-color-hover);
+    box-shadow: inset 0 1px 0 var(--button-color-hover);
+}
+
+.btn:focus:not(#history-user):not(#graph-user):not(#sync-user),
+.btn.focus,
+.btn-dark:focus,
+.btn-dark.focus,
+.btn-dark:active:focus {
+    color: var(--button-text-hover);
+    background-color: var(--button-color-hover) !important;
+    opacity: .8;
+}
+
+.btn-bright.disabled,
+.btn-bright[disabled],
+fieldset[disabled] .btn-bright,
+.btn-bright.disabled:hover,
+.btn-bright[disabled]:hover,
+fieldset[disabled] .btn-bright:hover,
+.btn-bright.disabled:focus,
+.btn-bright[disabled]:focus,
+fieldset[disabled] .btn-bright:focus,
+.btn-bright.disabled.focus,
+.btn-bright[disabled].focus,
+fieldset[disabled] .btn-bright.focus,
+.btn-bright.disabled:active,
+.btn-bright[disabled]:active,
+fieldset[disabled] .btn-bright:active,
+.btn-bright.disabled.active,
+.btn-bright[disabled].active,
+fieldset[disabled] .btn-bright.active {
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+}
+
+/* Accents */
+.badge {
+    color: var(--label-text-color);
+    background-color: rgb(var(--accent-color));
+}
+
+.summary-content {
+    color: rgb(var(--accent-color));
+}
+
+.nav>li.active>a,
+.nav>li.active>a:hover,
+.nav>li.active>a:focus {
+    color: rgb(var(--accent-color));
+}
+
+.dashboard-activity-progress .progress-bar {
+    background-color: rgb(var(--accent-color));
+    background-image: -moz-linear-gradient(top, var(--accent-color-hover), rgb(var(--accent-color)));
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(var(--accent-color-hover)), to(rgb(var(--accent-color))));
+    background-image: -webkit-linear-gradient(top, var(--accent-color-hover, rgb(var(--accent-color))));
+    background-image: -o-linear-gradient(top, var(--accent-color-hover, rgb(var(--accent-color))));
+    background-image: linear-gradient(to bottom, var(--accent-color-hover, rgb(var(--accent-color))));
+
+}
+
+.dashboard-stats-info-item .sub-count {
+    color: rgb(var(--accent-color));
+}
+
+.pagination>.active>a,
+.pagination>.active>span,
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>.active>a:focus,
+.pagination>.active>span:focus {
+    background-color: var(--button-color-hover);
+    border-color: var(--button-color-hover);
+    color: var(--button-text-hover);
+}
+
+a:hover,
+a:focus {
+    color: var(--link-color-hover);
+}
+
+table.display td:hover a {
+    color: var(--link-color-hover);
+}
+
+.user-overview-stats-instance h3,
+.user-player-instance-playcount h3,
+.summary-content-title h1,
+.summary-content-title h1 a {
+    color: var(--text-hover);
+}
+
+.user-info-nav>.active>a {
+    color: rgb(var(--accent-color));
+}
+
+a:hover .dashboard-recent-media-poster,
+a:hover .dashboard-recent-media-cover {
+    -webkit-box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
+    -moz-box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
+    box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
+}
+
+.nav-settings>.active>a,
+.nav-settings>.active>a:hover,
+.nav-settings>.active>a:focus {
+    color: rgb(var(--accent-color));
+}
+
+div.advanced-setting {
+    border-left: 1px solid rgb(var(--accent-color));
+}
+
+.docker-setting {
+    color: rgb(var(--accent-color));
+}
+
+.modal-body strong,
+.modal-body strong i.fa {
+    color: rgb(var(--accent-color));
+}
+
+.user-info-nav a:hover {
+    color: var(--accent-color-hover)
+}
+
+a:hover .dashboard-activity-poster,
+a:hover .dashboard-activity-cover {
+    -webkit-box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
+    -moz-box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
+    box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
+}
+
+a:hover .dashboard-stats-poster,
+a:hover .dashboard-stats-cover,
+a:hover .dashboard-stats-circle,
+a:hover .dashboard-stats-square {
+    -webkit-box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
+    -moz-box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
+    box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
+}
+
+a:hover .item-children-poster {
+    -webkit-box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
+    -moz-box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
+    box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
+}
+
+.dashboard-activity-terminate-session:hover {
+    color: rgb(var(--accent-color));
+}
+
+a .dashboard-activity-metadata-user-thumb:hover {
+    -webkit-box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
+    -moz-box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
+    box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
+}
+
+.stream-info .heading {
+    color: rgb(var(--accent-color));
+}
+
+a .library-user-instance-box:hover {
+    -webkit-box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
+    -moz-box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
+    box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
+}
+
+.summary-navbar-list .breadcrumb a:hover {
+    color: rgb(var(--accent-color));
+}
+
+.dashboard-recent-media-metacontainer h3.text-muted a:hover {
+    color: rgb(var(--accent-color));
+}
+
+a .poster-face:hover,
+a .cover-face:hover,
+a .users-poster-face:hover,
+.summary-poster-face-overlay {
+    -webkit-box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
+    -moz-box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
+    box-shadow: inset 0 0 0 2px rgb(var(--accent-color));
+}
+
+.submenu li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+span>a.active,
+.stacked-configs>li>span>span.active {
+    color: rgb(var(--accent-color));
+}
+
+.accordion li.open .link,
+.accordion li.open .link i.fa {
+    color: rgb(var(--accent-color));
+}
+
+.news-body a:hover {
+    color: var(--link-color-hover);
+}

@@ -1,0 +1,148 @@
+name: docker build
+on:
+  release:
+    types:
+      - released
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Select branch'
+        required: true
+        type: choice
+        options:
+        - master
+        - develop
+        - testing
+      tag:
+        description: 'Add a tag'
+  push:
+    branches:
+      - develop
+      - testing
+    paths-ignore:
+        - '.github/**'
+jobs:
+  build-and-push-it-to-the-limit:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        architecture: [linux-arm-v7,linux-arm64,linux-amd64]
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Prepare
+        id: prep
+        run: |
+          ARCHITECTURE=${{ matrix.architecture }}
+          echo ::set-output name=created::$(date -u +'%Y-%m-%dT%H:%M:%SZ')
+          echo ::set-output name=title::${GITHUB_REPOSITORY,,}:${{ github.ref_name }}
+          echo ::set-output name=revision::${GITHUB_SHA}
+          echo ::set-output name=source::${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY,,}/tree/${{ github.ref_name }}
+          echo ::set-output name=vendor::${{ github.repository_owner }}
+          echo ::set-output name=url::${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY,,}/blob/master/README.md
+          echo ::set-output name=VERSION::${{ github.event.release.tag_name }}
+          echo ::set-output name=platform::${ARCHITECTURE//-/\/}
+          echo ::set-output name=cache::${GITHUB_REPOSITORY,,}:${{ github.ref_name }}-cache-${{ matrix.architecture }}
+          echo ::set-output name=tag::${GITHUB_REPOSITORY,,}:${{ github.ref_name }}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}-${{ matrix.architecture }}
+          echo ::set-output name=release::${{ github.event.release.target_commitish }}
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v1
+
+      - name: Set up Docker Buildx
+        id: buildx
+        uses: docker/setup-buildx-action@v1
+
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GH_PAT }}
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DH_USER }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: build&push
+        uses: docker/build-push-action@v2
+        with:
+          push: ${{ github.event_name != 'pull_request' }}
+          platforms: ${{ steps.prep.outputs.platform }}
+          file: ./${{ matrix.architecture }}.Dockerfile
+          cache-from: docker.io/${{ steps.prep.outputs.cache }}
+          cache-to: docker.io/${{ steps.prep.outputs.cache }}
+          tags: |
+            docker.io/${{ steps.prep.outputs.tag }}
+            ghcr.io/${{ steps.prep.outputs.tag }}
+          labels: |
+            org.opencontainers.image.created=${{ steps.prep.outputs.created }}
+            org.opencontainers.image.title=${{ steps.prep.outputs.title }}
+            org.opencontainers.image.revision=${{ steps.prep.outputs.revision }}
+            org.opencontainers.image.source=${{ steps.prep.outputs.source }}
+            org.opencontainers.image.vendor=${{ steps.prep.outputs.vendor }}
+            org.opencontainers.image.url=${{ steps.prep.outputs.url }}
+            org.opencontainers.image.version=${{ steps.prep.outputs.VERSION }}
+          build-args: |
+            TP_RELEASE=${{ steps.prep.outputs.VERSION }}
+            BUILD_DATE=${{ steps.date_time.outputs.created }}
+            BUILD_ARCHITECTURE=${{ matrix.architecture }}
+
+  publish:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        registry: [docker.io, ghcr.io]
+    needs: [build-and-push-it-to-the-limit]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Login to DockerHub
+        if: matrix.registry == 'docker.io'
+        uses: docker/login-action@v1
+        with:
+          registry: docker.io
+          username: ${{ secrets.DH_USER }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Login to GitHub Container Registry
+        if: matrix.registry == 'ghcr.io'
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GH_PAT }}
+
+      - name: Create manifests
+        env:
+          DOCKER_CLI_EXPERIMENTAL: enabled
+        run: |
+          IMAGE=${{ matrix.registry }}/${GITHUB_REPOSITORY,,}
+          TAG=${{ github.ref_name }}
+          SOURCE=${IMAGE}:${TAG}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}
+          VERSION=${{ steps.prep.outputs.VERSION }}
+          [[ -f linux-amd64.Dockerfile ]]  && AMD64=${SOURCE}-linux-amd64
+          [[ -f linux-arm64.Dockerfile ]]  && ARM64=${SOURCE}-linux-arm64
+          [[ -f linux-arm-v7.Dockerfile ]] && ARMV7=${SOURCE}-linux-arm-v7
+          docker manifest create ${IMAGE}:${TAG} ${AMD64} ${ARM64} ${ARMV7}
+          docker manifest push ${IMAGE}:${TAG}
+          docker manifest create ${IMAGE}:${TAG}-${GITHUB_SHA:0:7} ${AMD64} ${ARM64} ${ARMV7}
+          docker manifest push ${IMAGE}:${TAG}-${GITHUB_SHA:0:7}
+      - name: Latest manifest
+        if: ${{ github.event.release.target_commitish == 'master' }}
+        env:
+          DOCKER_CLI_EXPERIMENTAL: enabled
+        run: |
+          IMAGE=${{ matrix.registry }}/${GITHUB_REPOSITORY,,}
+          TAG=${{ github.ref_name }}
+          SOURCE=${IMAGE}:${TAG}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}
+          [[ -f linux-amd64.Dockerfile ]] && AMD64=${SOURCE}-linux-amd64
+          [[ -f linux-arm64.Dockerfile ]] && ARM64=${SOURCE}-linux-arm64
+          [[ -f linux-arm-v7.Dockerfile ]] && ARMV7=${SOURCE}-linux-arm-v7
+          docker manifest create ${IMAGE}:latest ${AMD64} ${ARM64} ${ARMV7}
+          docker manifest push ${IMAGE}:latest

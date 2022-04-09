@@ -1,0 +1,350 @@
+@import url("/css/defaults/placeholders.css");
+
+* {
+    outline: none !important;
+}
+
+body {
+    background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    color: var(--text) !important;
+}
+
+body .container .header {
+    background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+
+body .container .footer {
+    background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+
+.mainmenu {
+    background: initial;
+}
+
+.mainmenu ul li a {
+    background-color: initial !important;
+}
+
+.mainmenu ul li a.active {
+    background-color: initial !important;
+    color: var(--link-color-hover) !important;
+}
+
+body .container .header .action-icons>.pause,
+body .container .header .action-icons-small>.pause {
+    background: url(/resources/duplicati/pause.png);
+}
+
+body .container .header .action-icons>.throttle,
+body .container .header .action-icons-small>.throttle {
+    background: url(/resources/duplicati/throttle.png);
+}
+
+body .container .body .content div.add .steps .step.active span,
+body .container .body .content div.restore .steps .step.active span {
+    border: 4px var(--button-color) solid;
+    background: var(--button-color);
+    color: var(--button-text);
+}
+
+body .container .body .content div.add .steps-legend li.active,
+body .container .body .content div.restore .steps-legend li.active {
+    color: var(--link-color);
+}
+
+body .container .body .content div.add .steps .step span,
+body .container .body .content div.restore .steps .step span {
+    display: block;
+    border: 4px var(--button-color) solid;
+    background: var(--button-color);
+}
+
+body .container .body .content div.add .steps-legend li,
+body .container .body .content div.restore .steps-legend li {
+    color: var(--text-muted);
+}
+
+body .container .body .content div.add .steps .step,
+body .container .body .content div.restore .steps .step {
+    color: var(--button-text-hover);
+}
+
+a,
+a span:not(.tabs>li>a>span):not(.buttons>a>span),
+body .container .body a {
+    color: var(--link-color);
+}
+
+a:hover,
+a span:hover:not(.tabs>li>a>span):not(.buttons>a>span) {
+    color: var(--link-color-hover);
+}
+
+body .container .header a {
+    color: rgb(var(--accent-color))
+}
+
+body .container .header a:hover {
+    color: var(--accent-color-hover)
+}
+
+.taskmenu dt {
+    color: var(--text-hover) !important;
+}
+
+dt {
+    color: var(--text-hover) !important;
+}
+
+dd {
+    color: var(--text) !important;
+}
+
+.tasklist dd a,
+.tasklist dd p {
+    color: var(--link-color) !important;
+}
+
+.tasklist dd a:hover,
+.tasklist dd p:hover {
+    color: var(--link-color-hover) !important;
+}
+
+.action-icons {
+    color: var(--text-hover) !important;
+}
+
+.submit {
+    color: var(--button-text) !important;
+    background: var(--button-color) !important;
+}
+
+.submit:hover {
+    color: var(--button-text-hover) !important;
+    background: var(--button-color-hover) !important;
+}
+
+input,
+select,
+form.styled input,
+form.styled textarea,
+form.styled select,
+form.styled .input.select select {
+    color: var(--text);
+    border: none;
+    background: rgba(0, 0, 0, .25);
+}
+
+form.styled input:focus,
+form.styled textarea:focus {
+    color: var(--text-hover);
+    border: none;
+    background: rgba(0, 0, 0, .45);
+}
+
+select:focus,
+form.styled select:focus,
+form.styled .input.select select:focus {
+    background: #1f1f1f;
+    color: var(--text-hover);
+    border: none;
+
+}
+
+h1,
+h2 {
+    color: var(--text-hover);
+}
+
+body .container .header .state {
+    background: rgb(var(--accent-color), .1);
+    color: var(--text);
+    border-color: rgb(var(--accent-color));
+}
+
+/* DROP DOWN MENU */
+@media (max-width:1150px),
+(max-width:1150px) and (min-resolution:192dpi),
+(max-width:1150px) and (min-resolution:1.25dppx) {
+    body .container .body .mainmenu {
+        background: var(--drop-down-menu-bg) !important;
+    }
+
+}
+
+body .container .body .contextmenu {
+    display: none;
+    position: absolute;
+    background: var(--drop-down-menu-bg);
+    border: 1px rgba(255, 255, 255, 0.1) solid;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 30%);
+    z-index: 200;
+    padding: 5px;
+}
+
+body .container .body .contextmenu li a:hover {
+    background: rgba(255, 255, 255, 0.25);
+    color: var(--text-hover);
+}
+
+body .container .body .mainmenu>ul>li>a.home {
+    background: url(/resources/duplicati/home.png) no-repeat 8px 7px;
+}
+
+body .container .body .mainmenu>ul>li>a.add {
+    background: url(/resources/duplicati/add.png) no-repeat 8px 7px;
+}
+
+body .container .body .mainmenu>ul>li>a.restore {
+    background: url(/resources/duplicati/restore.png) no-repeat 8px 7px;
+}
+
+body .container .body .mainmenu>ul>li>a.settings {
+    background: url(/resources/duplicati/settings.png) no-repeat 8px 7px;
+}
+
+body .container .body .mainmenu>ul>li>a.about {
+    background: url(/resources/duplicati/about.png) no-repeat 8px 7px;
+}
+
+body .container .body .mainmenu>ul>li>a.logout {
+    background: url(/resources/duplicati/logout.png) no-repeat 8px 7px;
+}
+
+#threedotmenu_add_destination>ul>li>a>span {
+    color: var(--text) !important;
+}
+
+
+/* MODAL */
+
+div.connection-lost div.title,
+div.modal-dialog div.title {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--modal-bg-color);
+    border-radius: 5px 5px 0 0;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: var(--text);
+    text-align: center;
+}
+
+div.connection-lost div.content,
+div.modal-dialog div.content {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--modal-bg-color);
+    padding: 20px;
+}
+
+
+/* BUTTONS */
+
+#login-button {
+    cursor: pointer;
+}
+
+.button,
+form.styled .buttons input,
+form.styled .buttons a {
+    display: block;
+    background: var(--button-color);
+    color: var(--button-text) !important;
+    padding: 5px 15px;
+    float: right;
+    margin-left: 10px;
+    cursor: pointer;
+    width: auto;
+    border: none;
+    font-family: 'Clear Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 0;
+}
+
+.button:hover,
+form.styled .buttons input:hover,
+form.styled .buttons a:hover {
+    background: var(--button-color-hover);
+    color: var(--button-text-hover) !important;
+}
+
+ul.tabs>li.active>a {
+    background: var(--button-color-hover);
+    color: var(--button-text-hover) !important;
+}
+
+ul.tabs>li.active {
+    background-color: var(--button-color);
+    color: var(--button-text-hover);
+}
+
+
+ul.tabs>li {
+    display: inline;
+    margin-right: 10px;
+    border: 1px solid var(--button-color);
+    padding: 5px;
+}
+
+/* FOLDER TREE*/
+.tree-view li div.selected {
+    border-color: rgba(255, 255, 255, .1);
+    background-color: rgba(252, 252, 252, .25);
+}
+
+
+/* PROGRESS BAR */
+body .container .header .state .progress-bar {
+    background: rgba(var(--accent-color), 0.25);
+}
+
+/* LOGIN */
+#login h2 {
+    background: rgba(255, 255, 255, .15);
+    color: var(--text);
+}
+
+#login fieldset p {
+    color: var(--text-hover);
+}
+
+#login fieldset {
+    background-color: rgba(255, 255, 255, .15);
+}
+
+#login fieldset input[type="submit"] {
+    background: var(--button-color);
+    color: var(--button-text);
+}
+
+#login fieldset input[type="submit"]:hover {
+    background: var(--button-color-hover);
+    color: var(--button-text-hover);
+}
+
+#login fieldset input[type="email"],
+#login fieldset input[type="password"] {
+    background: rgba(0, 0, 0, .25);
+    color: var(--text);
+}

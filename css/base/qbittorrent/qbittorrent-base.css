@@ -1,0 +1,1806 @@
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+
+/*		   		        Made by @gilbN					 */
+/*			      https://github.com/gilbN/theme.park			 */
+
+@import url(https://use.fontawesome.com/releases/v5.0.7/css/all.css);
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: hsla(0, 0%, 100%, .08);
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: hsla(0, 0%, 100%, .08);
+}
+
+html,
+body {
+  color: var(--text);
+  background: transparent;
+}
+
+body {
+  background: var(--main-bg-color);
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  background-size: auto, cover;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover;
+  color: var(--text);
+}
+
+#desktop {
+  background: var(--main-bg-color);
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  background-size: auto, cover;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover;
+}
+
+input:disabled {
+  color: rgb(84, 84, 84);
+  cursor: default;
+  background-color: rgb(255, 255, 255, .05) !important;
+  border: none !important;
+}
+
+input[type="text"i] {
+  color: var(--text-hover);
+  background-color: rgba(0, 0, 0, .25);
+  border-width: 0px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+}
+
+input[type="password"i] {
+  color: var(--text-hover);
+  background-color: rgba(0, 0, 0, .25);
+  border-width: 0px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+}
+
+input[type="number"i] {
+  color: var(--text-hover);
+  background-color: rgba(0, 0, 0, .25);
+  border-width: 0px;
+  outline: none;
+  border: none;
+}
+
+input[type="file"i] {
+  color: var(--text-hover);
+  background-color: rgba(0, 0, 0, .25);
+  border-width: 0px;
+  outline: none;
+  border: none;
+}
+
+input[name="category"i] {
+  color: #000;
+  background-color: #fff;
+  border-width: 0px;
+  outline: none;
+  border: none;
+}
+
+input[type="file"i] {
+  border: none;
+}
+
+select {
+  border: none !important;
+}
+
+a,
+h2,
+h3,
+h4,
+.mochaTitlebar h3 {
+  color: var(--text-hover);
+}
+
+/* Login */
+#main h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 2em;
+  margin-block-end: -.9em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  color: var(--text-hover);
+}
+
+#error_msg {
+  text-transform: uppercase;
+  color: #D8000C;
+  background-color: #FFD2D2;
+  font-family: Helvetica, Arial, sans-serif;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: absolute;
+  border-radius: 4px;
+}
+
+#main {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  padding-top: 0;
+  /* background: rgba(0, 0, 0, 0.25); */
+  width: 400px;
+  height: 460px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+#logo img {
+  height: 11em;
+  position: absolute;
+  left: 50%;
+  /* top: 50%; */
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -160%);
+}
+
+#formplace {
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 12px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-weight: 300 !important;
+  padding: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+label {
+  cursor: default;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-weight: 300 !important;
+}
+
+.horizontalHandle .handleIcon {
+  margin: 0 auto;
+  height: 4px;
+  line-height: 1px;
+  font-size: 1px;
+  overflow: hidden;
+  background: url(/resources/qbittorrent/dots.png) center center no-repeat;
+}
+
+#desktopNavbar {
+  background: rgba(0, 0, 0, 0.25);
+  height: 20px;
+  border-bottom: 1px solid transparent;
+}
+
+#desktopNavbar ul li a {
+  color: var(--text);
+}
+
+#desktopNavbar ul li a:hover {
+  color: var(--text-hover);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+#desktopNavbar li ul li a:hover {
+  background: rgba(255, 255, 255, .08);
+  color: var(--text-hover);
+}
+
+#desktopNavbar li ul {
+  border: 1px solid transparent;
+  background: var(--modal-bg-color);
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  background-size: auto, cover;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover;
+}
+
+#desktopNavbar li ul li a {
+  color: var(--text);
+}
+
+#desktopHeader {
+  background: var(--main-bg-color);
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  background-size: auto, cover;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover;
+}
+
+#desktopFooter {
+  background: transparent;
+}
+
+#mochaToolbar .divider {
+  background-image: none;
+  padding-left: 0px;
+}
+
+#mochaToolbar {
+  margin-bottom: 5px;
+}
+
+.dynamicTable th {
+  background-color: rgba(0, 0, 0, 0.25) !important;
+  border-right-color: rgba(255, 255, 255, .08) !important;
+  color: var(--text-hover);
+}
+
+.dynamicTable thead tr {
+  background-color: transparent !important;
+}
+
+.dynamicTable thead tr {
+  background-color: transparent !important;
+}
+
+.dynamicTable {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.dynamicTable tbody tr {
+  background-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+.dynamicTable tbody tr:nth-child(even),
+.dynamicTable tbody tr.alt {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.dynamicTable tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  color: var(--text-hover);
+}
+
+.dynamicTable tbody tr.selected {
+  background-color: rgba(var(--accent-color), 0.6) !important;
+  color: var(--label-text-color);
+}
+
+.dynamicTable th.sorted.reverse {
+  background-image: url(/resources/qbittorrent/go-down.png) !important;
+}
+
+.dynamicTable th.sorted {
+  background-image: url(/resources/qbittorrent/go-up.png) !important;
+  background-size: 9px !important;
+  background-position: right !important;
+  background-repeat: no-repeat !important;
+
+}
+
+.panel {
+  background: var(--main-bg-color);
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  background-size: auto, cover;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover;
+  border-bottom: 1px solid transparent;
+}
+
+#pageWrapper {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+li.divider {
+  border-top: 1px solid rgba(255, 255, 255, .25) !important;
+}
+
+
+#main input[type="text"i] {
+  color: var(--text-hover);
+  background-color: rgba(0, 0, 0, .25);
+  border-width: 0px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  width: 250px;
+  height: 24px;
+  padding: 7px 12px;
+}
+
+#main input[type="text"i]:focus {
+  background-color: rgba(0, 0, 0, .45);
+}
+
+#main input[type="password"i] {
+  color: var(--text-hover);
+  background-color: rgba(0, 0, 0, .25);
+  border-width: 0px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  width: 250px;
+  height: 24px;
+  padding: 7px 12px;
+}
+
+#main input[type="password"i] {
+  background-color: rgba(0, 0, 0, .45);
+}
+
+#loginform #login {
+  padding: 6px 15px !important;
+  width: 100%;
+  margin-top: 35px;
+  background-color: var(--button-color) !important;
+  border: none;
+  border-radius: 4px;
+  color: var(--button-text) !important;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 300;
+  height: 44px;
+  line-height: 1.3333333;
+}
+
+#loginform #login:hover {
+  background-color: var(--button-color-hover) !important;
+  padding: 6px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  color: var(--button-text-hover) !important;
+}
+
+
+/*right click menu */
+.contextMenu {
+  border: 1px solid transparent;
+  background: var(--modal-bg-color);
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  background-size: auto, cover;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover;
+}
+
+.contextMenu li a {
+  color: var(--text);
+}
+
+.contextMenu li a:hover {
+  background-color: rgba(255, 255, 255, .08) !important;
+  color: var(--text-hover);
+}
+
+.contextMenu li a:hover {}
+
+.contextMenu li ul {
+  border: 1px solid transparent;
+  background: var(--modal-bg-color);
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  background-size: auto, cover;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover;
+}
+
+.contextMenu .separator {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Sidemenu */
+.selectedFilter {
+  background-color: rgba(var(--accent-color), 0.6);
+  color: #eee;
+}
+
+.selectedFilter:before {
+  color: var(--button-color-hover) !important;
+}
+
+ul.filterList li:hover {
+  background-color: rgba(var(--accent-color), 0.6);
+  color: var(--button-color-hover) !important;
+}
+
+ul.filterList li:hover:before {
+  color: var(--button-color-hover) !important;
+}
+
+.columnHandle {
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid transparent;
+}
+
+/*Sidemenu - Bottom menu*/
+.bottomPanel {
+  background: rgba(0, 0, 0, 0.25) !important;
+}
+
+/* Bottom menu */
+.panel-headerContent.tabs {
+  background: none !important;
+}
+
+.panel-header {
+  background: rgba(0, 0, 0, 0.25) !important;
+  border-bottom: 1px solid transparent !important;
+}
+
+.horizontalHandle {
+  background: none !important;
+}
+
+.tab-menu li.selected a {
+  color: var(--text-hover) !important;
+  background: transparent !important;
+  font-weight: normal !important;
+}
+
+.tab-menu li a {
+  color: var(--text) !important;
+  background: transparent !important;
+}
+
+.tab-menu li.selected {
+  background: none !important;
+}
+
+.tab-menu li {
+  background: none !important;
+}
+
+.tab-menu li a:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+.toolbarTabs {
+  background: rgba(0, 0, 0, 0.25) !important;
+}
+
+.progressbar_dark {
+  background: rgb(var(--accent-color)) !important;
+  color: var(--label-text-color) !important;
+}
+
+.progressbar_light {
+  background: rgba(0, 0, 0, 0.25) !important;
+  color: var(--text-hover) !important;
+}
+
+.progressbar_wrapper {
+  border: 1px solid transparent !important;
+}
+
+.stateIcon {
+  background-image: red !important;
+}
+
+.panel-collapse {
+  background: url(/resources/qbittorrent/collapse-expand.gif) left top no-repeat;
+}
+
+.panel-expand {
+  background: url(/resources/qbittorrent/collapse-expand.gif) left -16px no-repeat;
+}
+
+fieldset {
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: rgba(255, 255, 255, 0.25) !important;
+}
+
+/*Modal */
+
+.mochaTitlebar {
+  width: 100%;
+  overflow: hidden;
+  background: none !important;
+}
+
+.mochaToolButton {
+  margin-right: 10px;
+  background: rgba(0, 0, 0, .25);
+  border-radius: 5px;
+}
+
+.mochaToolButton:hover {
+  margin-right: 10px;
+  background: rgba(255, 255, 255, .25);
+  border-radius: 5px;
+}
+
+.mochaOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--modal-bg-color) !important;
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center center, center center;
+  background-size: auto, cover;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover;
+}
+
+.mochaToolbarWrapper {
+  width: 100%;
+  position: relative;
+  height: 29px;
+  background: rgba(0, 0, 0, 0.25) !important;
+  overflow: hidden;
+  border-top: none !important;
+}
+
+.mochaToolbar {
+  width: 100%;
+  border-top: none !important;
+}
+
+.mochaContentBorder {
+  border-top: 1px solid rgba(255, 255, 255, .25) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, .25) !important;
+}
+
+.mocha.isFocused .mochaTitlebar h3 {
+  color: var(--text-hover);
+}
+
+fieldset.settings legend {
+  color: var(--text-hover);
+}
+
+.mochaContentWrapper {
+  font-size: 12px;
+  overflow: auto;
+  background: transparent !important;
+}
+
+fieldset.settings {
+  border: solid 1px rgba(255, 255, 255, 0.25) !important;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  padding: 4px 4px 4px 10px;
+}
+
+textarea:disabled {
+  color: rgb(84, 84, 84);
+  cursor: default;
+  background-color: rgb(255, 255, 255, .05) !important;
+  border: none !important;
+}
+
+textarea {
+  color: var(--text-hover) !important;
+  cursor: default;
+  background-color: rgb(0, 0, 0, .25) !important;
+  border: none !important;
+}
+
+#watched_folders_tab td,
+#watched_folders_tab th {
+  padding: 2px 4px;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+}
+
+input[type="button"i]:hover {
+  background-color: var(--button-color-hover);
+  padding: 6px 15px;
+  cursor: pointer;
+  border: none;
+  color: var(--button-text);
+}
+
+input[type="button"i] {
+  padding: 6px 15px !important;
+  background-color: var(--button-color);
+  cursor: pointer;
+  border: none;
+  color: var(--button-text);
+}
+
+button {
+  background-color: var(--button-color) !important;
+  cursor: pointer;
+  border: 2px solid transparent;
+  color: var(--button-text);
+}
+
+button:hover {
+  background-color: var(--button-color-hover) !important;
+  cursor: pointer;
+  border: 2px solid transparent;
+  color: var(--button-text);
+}
+
+input[type="submit"i] {
+  padding: 6px 15px !important;
+  width: 100%;
+  margin-top: 15px;
+  background-color: var(--button-color) !important;
+  border: none;
+  color: var(--button-text);
+  outline: none;
+  text-transform: uppercase;
+}
+
+input[type="submit"i]:hover {
+  padding: 6px 15px !important;
+  background-color: var(--button-color-hover) !important;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  color: var(--button-text);
+  outline: none;
+  text-transform: uppercase;
+}
+
+/* Icons */
+
+
+#downloadButton>img.mochaToolButton {
+  display: none;
+}
+
+#downloadButton:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 24px;
+  content: "\f0c1";
+  font-weight: 900;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  color: var(--button-color);
+  margin-top: 5px;
+}
+
+#downloadButton:hover:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 24px;
+  content: "\f0c1";
+  font-weight: 900;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  color: var(--button-color-hover);
+}
+
+#uploadButton>img.mochaToolButton {
+  display: none;
+}
+
+#uploadButton:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 24px;
+  content: "\f067";
+  font-weight: 900;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  color: var(--button-color);
+}
+
+#uploadButton:hover:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 24px;
+  content: "\f067";
+  font-weight: 900;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  color: var(--button-color-hover);
+}
+
+#deleteButton>img.mochaToolButton {
+  display: none;
+}
+
+#deleteButton:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 24px;
+  content: "\f068";
+  font-weight: 900;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  color: var(--button-color);
+}
+
+#deleteButton:hover:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 24px;
+  content: "\f068";
+  font-weight: 900;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  color: var(--button-color-hover);
+}
+
+#resumeButton>img.mochaToolButton {
+  display: none;
+}
+
+#resumeButton:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 24px;
+  content: "\f04b";
+  font-weight: 900;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  color: var(--button-color);
+}
+
+#resumeButton:hover:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 24px;
+  content: "\f04b";
+  font-weight: 900;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  color: var(--button-color-hover);
+}
+
+#pauseButton>img.mochaToolButton {
+  display: none;
+}
+
+#pauseButton:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 24px;
+  content: "\f04c";
+  font-weight: 900;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  color: var(--button-color);
+}
+
+#pauseButton:hover:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 24px;
+  content: "\f04c";
+  font-weight: 900;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  color: var(--button-color-hover);
+}
+
+#topPrioButton>img.mochaToolButton {
+  display: none;
+}
+
+#topPrioButton:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 24px;
+  content: "\f102";
+  font-weight: 900;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  color: var(--button-color);
+}
+
+#topPrioButton:hover:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 24px;
+  content: "\f102";
+  font-weight: 900;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  color: var(--button-color-hover);
+}
+
+#increasePrioButton>img.mochaToolButton {
+  display: none;
+}
+
+#increasePrioButton:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 24px;
+  content: "\f106";
+  font-weight: 900;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  color: var(--button-color);
+}
+
+#increasePrioButton:hover:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 24px;
+  content: "\f106";
+  font-weight: 900;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  color: var(--button-color-hover);
+}
+
+#decreasePrioButton>img.mochaToolButton {
+  display: none;
+}
+
+#decreasePrioButton:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 24px;
+  content: "\f107";
+  font-weight: 900;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  color: var(--button-color);
+}
+
+#decreasePrioButton:hover:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 24px;
+  content: "\f107";
+  font-weight: 900;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  color: var(--button-color-hover);
+}
+
+#bottomPrioButton>img.mochaToolButton {
+  display: none;
+}
+
+#bottomPrioButton:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 24px;
+  content: "\f103";
+  font-weight: 900;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  color: var(--button-color);
+}
+
+#bottomPrioButton:hover:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 24px;
+  content: "\f103";
+  font-weight: 900;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  color: var(--button-color-hover);
+}
+
+#preferencesButton>img.mochaToolButton {
+  display: none;
+}
+
+#preferencesButton:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 24px;
+  content: "\f013";
+  font-weight: 900;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  color: var(--button-color);
+}
+
+#preferencesButton:hover:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 24px;
+  content: "\f013";
+  font-weight: 900;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  color: var(--button-color-hover);
+}
+
+/*Top menu icons*/
+
+#desktopNavbar li ul li a {
+  position: relative;
+  /* padding: 1px 9px 1px 25px; */
+  min-width: 120px;
+  font-weight: normal;
+  padding: 5px 10px 1px 1px;
+}
+
+.MyMenuIcon {
+  margin-left: 0px;
+}
+
+/* File */
+
+#uploadLink>img.MyMenuIcon {
+  display: none;
+}
+
+#uploadLink:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f067";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+}
+
+#downloadLink>img.MyMenuIcon {
+  display: none;
+}
+
+#downloadLink:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f0c1";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+}
+
+#logoutLink>img.MyMenuIcon {
+  display: none;
+}
+
+#logoutLink:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f2f5";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+}
+
+#shutdownLink>img.MyMenuIcon {
+  display: none;
+}
+
+#shutdownLink:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f00d";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+}
+
+/* Edit */
+
+#resumeAllLink>img.MyMenuIcon {
+  display: none;
+}
+
+#resumeAllLink:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f04b";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+}
+
+#pauseAllLink>img.MyMenuIcon {
+  display: none;
+}
+
+#pauseAllLink:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f04c";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+}
+
+#resumeLink>img.MyMenuIcon {
+  display: none;
+}
+
+#resumeLink:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f04b";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+}
+
+#pauseLink>img.MyMenuIcon {
+  display: none;
+}
+
+#pauseLink:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f04c";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+}
+
+#deleteLink>img.MyMenuIcon {
+  display: none;
+}
+
+#deleteLink:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f068";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+}
+
+#topPrioLink>img.MyMenuIcon {
+  display: none;
+}
+
+#topPrioLink:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f102";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+}
+
+#increasePrioLink>img.MyMenuIcon {
+  display: none;
+}
+
+#increasePrioLink:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f106";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+}
+
+#decreasePrioLink>img.MyMenuIcon {
+  display: none;
+}
+
+#decreasePrioLink:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f107";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+}
+
+#bottomPrioLink>img.MyMenuIcon {
+  display: none;
+}
+
+#bottomPrioLink:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f103";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+}
+
+#recheckLink>img.MyMenuIcon {
+  display: none;
+}
+
+#recheckLink:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f002";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+}
+
+/* View */
+
+#showTopToolbarLink>img.MyMenuIcon {
+  display: none;
+}
+
+
+#showTopToolbarLink:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f00c";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+}
+
+#showTopToolbarLink:active:focus:visited:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f00c";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--text-hover);
+  opacity: 0;
+}
+
+#showStatusBarLink>img.MyMenuIcon {
+  display: none;
+}
+
+
+#showStatusBarLink:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f00c";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+
+}
+
+#showStatusBarLink:active:focus:visited:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f00c";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--text-hover);
+  opacity: 0;
+}
+
+#speedInBrowserTitleBarLink>img.MyMenuIcon {
+  display: none;
+}
+
+
+#speedInBrowserTitleBarLink:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f00c";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+
+}
+
+#speedInBrowserTitleBarLink:active:focus:visited:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f00c";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--text-hover);
+  opacity: 0;
+}
+
+#showSearchEngineLink>img.MyMenuIcon {
+  display: none;
+}
+
+
+#showSearchEngineLink:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f00c";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+
+}
+
+#showRssReaderLink>img.MyMenuIcon {
+  display: none;
+}
+
+#showRssReaderLink:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f00c";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+
+}
+
+#showSearchEngineLink:active:focus:visited:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f00c";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--text-hover);
+  opacity: 0;
+}
+
+#showRssReaderLink:active:focus:visited:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f00c";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--text-hover);
+  opacity: 0;
+}
+
+#StatisticsLink>img.MyMenuIcon {
+  display: none;
+}
+
+
+#StatisticsLink:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f080";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+
+}
+
+#StatisticsLink:active:focus:visited:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f080";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--text-hover);
+  opacity: 0;
+}
+
+/*Tools*/
+
+
+#preferencesLink>img.MyMenuIcon {
+  display: none;
+}
+
+
+#preferencesLink:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f013";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+}
+
+/* Help */
+
+#docsLink>img.MyMenuIcon {
+  display: none;
+}
+
+#docsLink:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f013";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+}
+
+#bugLink>img.MyMenuIcon {
+  display: none;
+}
+
+#bugLink:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f09d";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+}
+
+#aboutLink>img.MyMenuIcon {
+  display: none;
+}
+
+#aboutLink:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f05a";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+}
+
+/*Status images on sidemenu*/
+
+ul.filterList a {
+  display: inline;
+}
+
+#all_filter>a img {
+  display: none;
+}
+
+#all_filter:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f0b0";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+}
+
+#downloading_filter>a img {
+  display: none;
+}
+
+#downloading_filter:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f063";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+}
+
+#seeding_filter>a img {
+  display: none;
+}
+
+#seeding_filter:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f062";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+}
+
+#completed_filter>a img {
+  display: none;
+}
+
+#completed_filter:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f00c";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+}
+
+#resumed_filter>a img {
+  display: none;
+}
+
+#resumed_filter:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f04b";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+}
+
+#paused_filter>a img {
+  display: none;
+}
+
+#paused_filter:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f04c";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+}
+
+#active_filter>a img {
+  display: none;
+}
+
+#active_filter:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f0b0";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+}
+
+#inactive_filter>a img {
+  display: none;
+}
+
+#inactive_filter:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f0b0";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+}
+
+#stalled_filter>a img {
+  display: none;
+}
+
+#stalled_filter:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f0b0";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+}
+
+#stalled_uploading_filter>a img {
+  display: none;
+}
+
+#stalled_uploading_filter:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f093";
+  font-weight: 900;
+  display: inline-block !important;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+}
+
+#stalled_downloading_filter>a img {
+  display: none;
+}
+
+#stalled_downloading_filter:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f019";
+  font-weight: 900;
+  display: inline-block !important;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+}
+
+img[src="icons/inode-directory.svg"] {
+  background: url(/resources/qbittorrent/folder-open-solid.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  filter: invert(79%) sepia(20%) saturate(0%) hue-rotate(135deg) brightness(87%) contrast(108%);
+}
+
+img[src="icons/network-server.svg"] {
+  background: url(/resources/qbittorrent/network-wired-solid.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  filter: invert(79%) sepia(20%) saturate(0%) hue-rotate(135deg) brightness(87%) contrast(108%);
+}
+
+img[src="icons/mail-folder-inbox.svg"] {
+  background: url(/resources/qbittorrent/inbox-solid.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  filter: invert(79%) sepia(20%) saturate(0%) hue-rotate(135deg) brightness(87%) contrast(108%);
+}
+
+/* img[src="icons/downloading_small.svg"],
+img[src="icons/seeding.svg"],
+img[src="icons/stalledDL.svg"]  {
+  filter: invert(79%) sepia(20%) saturate(0%) hue-rotate(135deg) brightness(87%) contrast(108%);
+} */
+
+#searchPattern {
+  width: 300px;
+  line-height: 2em;
+  padding: 1px 5px 1px 2em;
+  filter: invert(79%) sepia(20%) saturate(0%) hue-rotate(135deg) brightness(87%) contrast(108%);
+  background-repeat: no-repeat;
+  background-size: 1.5em;
+  background-position: left;
+}
+
+/* #connectionStatus,
+#alternativeSpeedLimits {
+  filter: invert(79%) sepia(20%) saturate(0%) hue-rotate(135deg) brightness(87%) contrast(108%);
+} */
+
+#errored_filter>a img {
+  display: none;
+}
+
+#errored_filter:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f06a";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+}
+
+/* Categories */
+
+.filterTitle img {
+  display: none;
+}
+
+.filterTitle:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f0d7";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+}
+
+/* Categories Right Click Menu */
+
+#categoriesFilterMenu>li img {
+  display: none;
+}
+
+.contextMenu li>#CreateCategory:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f06a";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+}
+
+/* Blue SVG icons */
+img[src="icons/application-x-mswinurl.svg"],
+img[src="icons/collapse.svg"],
+img[src="icons/completed.svg"],
+img[src="icons/configure.svg"],
+img[src="icons/dialog-information.svg"],
+img[src="icons/document-edit.svg"],
+img[src="icons/document-edit-verify.svg"],
+img[src="icons/document-import.svg"],
+img[src="icons/document-new.svg"],
+img[src="icons/document-properties.svg"],
+img[src="icons/document-save.svg"],
+img[src="icons/download.svg"],
+img[src="icons/edit-clear.svg"],
+img[src="icons/edit-clear-history.svg"],
+img[src="icons/edit-copy.svg"],
+img[src="icons/edit-cut.svg"],
+img[src="icons/edit-find.svg"],
+img[src="icons/edit-find-user.svg"],
+img[src="icons/edit-paste.svg"],
+img[src="icons/edit-rename.svg"],
+img[src="icons/expand.svg"],
+img[src="icons/folder-documents.svg"],
+img[src="icons/folder-download.svg"],
+img[src="icons/folder-new.svg"],
+img[src="icons/folder-remote.svg"],
+img[src="icons/gear.svg"],
+img[src="icons/go-bottom.svg"],
+img[src="icons/go-down.svg"],
+img[src="icons/go-top.svg"],
+img[src="icons/go-up.svg"],
+img[src="icons/help-about.svg"],
+img[src="icons/help-contents.svg"],
+img[src="icons/insert-link.svg"],
+img[src="icons/list-add.svg"],
+img[src="icons/mail-mark-read.svg"],
+img[src="icons/media-playback-pause.svg"],
+img[src="icons/media-playback-start.svg"],
+img[src="icons/media-seek-forward.svg"],
+img[src="icons/network-wired.svg"],
+img[src="icons/office-chart-line.svg"],
+img[src="icons/preferences-desktop.svg"],
+img[src="icons/preferences-other.svg"],
+img[src="icons/preferences-system-network.svg"],
+img[src="icons/preferences-web-browser-cookies.svg"],
+img[src="icons/rss-config.svg"],
+img[src="icons/services.svg"],
+img[src="icons/speedometer.svg"],
+img[src="icons/stalledUP.svg"],
+img[src="icons/stalledDL.svg"],
+img[src="icons/tab-close.svg"],
+img[src="icons/task-ongoing.svg"],
+img[src="icons/text-plain.svg"],
+img[src="icons/user-group-delete.svg"],
+img[src="icons/user-group-new.svg"],
+img[src="icons/view-calendar-journal.svg"],
+img[src="icons/view-categories.svg"],
+img[src="icons/view-filter.svg"],
+img[src="icons/view-preview.svg"],
+img[src="icons/view-statistics.svg"],
+img[src="icons/wallet-open.svg"],
+img[src="icons/webui.svg"],
+img[src="icons/checking.svg"] {
+  filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(289deg) brightness(106%) contrast(101%);
+}
+
+.contextMenu,
+#contextCategoryList {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Filter torrents */
+
+#torrentsFilterInput {
+  width: 160px;
+  padding-left: 2em;
+  background-image: url(/resources/qbittorrent/search-solid.png);
+  background-repeat: no-repeat;
+  background-size: 1em;
+  background-position: left;
+}
+
+.contextMenu li a.arrow-right,
+.contextMenu li a:hover.arrow-right,
+.contextMenu li a.arrow-right,
+.contextMenu li a:hover.arrow-right {
+  background-image: url(/resources/qbittorrent/arrow-right.gif);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+/* Footer */
+
+#alternativeSpeedLimits td img {
+  display: none;
+}
+
+#alternativeSpeedLimits:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  content: "\f00c";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--button-color);
+  padding-left: 5px;
+}

@@ -1,0 +1,46 @@
+#!/usr/bin/with-contenv bash
+
+echo '------------------'
+echo '|   theme.park   |'
+echo '------------------'
+
+# Display variables for troubleshooting 
+echo -e "Variables set:\\n\
+PUID=${PUID}\\n\
+PGID=${PGID}\\n\
+TZ=${TZ}\\n\
+TP_DOMAIN=${TP_DOMAIN}\\n\
+TP_URLBASE=${TP_URLBASE}\\n"
+
+# Remove forward slash
+case ${TP_URLBASE} in
+  *"/"*)
+  TP_URLBASE=$(echo "${TP_URLBASE}" | sed 's/\///g')
+    ;;
+esac
+
+DEFAULT='/defaults/default'
+if [[ ${TP_URLBASE} ]]; then
+    if ! grep -q "${TP_URLBASE}" "${DEFAULT}"; then
+        sed -i "s/themepark/${TP_URLBASE}/g" ${DEFAULT}
+    fi
+fi
+cp /defaults/default /config/nginx/site-confs
+
+# make our folders and links
+mkdir -p \
+    /config/www/{css,resources}
+
+# copy theme files
+cp -R /app/themepark/css /config/www
+cp -R /app/themepark/resources /config/www
+cp /app/themepark/index.html /config/www
+cp /app/themepark/themes.py /config/www
+cp /app/themepark/CNAME /config/www
+
+echo 'Creating CSS files'
+python3 /config/www/themes.py
+
+# permissions
+chown -R abc:abc \
+    /config

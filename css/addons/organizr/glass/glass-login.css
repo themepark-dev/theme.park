@@ -1,0 +1,192 @@
+:root {
+    --div-background-color-10: rgba(0, 0, 0, 0.15);
+    --div-background-color-15: rgba(0, 0, 0, 0.25);
+    --div-background-color-25: rgba(0, 0, 0, 0.35);
+    --div-background-color-35: rgba(0, 0, 0, 0.45);
+}
+
+/* Replace the variables if you have a dark background  */
+/* Light colors for dark backgrounds */
+/*
+    --div-background-color-10: rgba(255, 255, 255, 0.1);
+    --div-background-color-15: rgba(255, 255, 255, 0.15);
+    --div-background-color-25: rgba(255, 255, 255, 0.25);
+    --div-background-color-35: rgba(255, 255, 255, 0.35);
+*/
+/* Dark blur colors for bright backgrounds */
+/*
+    --div-background-color-10: rgba(0, 0, 0, 0.15);
+    --div-background-color-15: rgba(0, 0, 0, 0.25);
+    --div-background-color-25: rgba(0, 0, 0, 0.35);
+    --div-background-color-35: rgba(0, 0, 0, 0.45);
+	
+*/
+
+/* loginpage sidemenu */
+@media (max-width: 480px) {
+   #wrapper .login-register > .login-box > .white-box {
+     background: transparent !important;
+     margin-top: auto !important;
+     width: 100% !important;
+    -webkit-backdrop-filter: blur(0px) !important;
+    backdrop-filter: blur(0px) !important;
+
+
+   }
+   }
+
+@media (max-width: 480px) {
+   .login-box.login-sidebar {
+    background: var(--div-background-color-15) !important;
+    -webkit-backdrop-filter:  blur(10px);
+    backdrop-filter:  blur(10px);
+
+}
+}
+
+/* logo */
+	.white-box .visible-xs {
+		display: block!important;
+	}
+	.loginLogo {
+    border: 0;
+    margin-top: -60%;
+    transform: translateY(-10%);
+	}
+	@media (max-width: 480px) {
+		.loginLogo {
+		margin-top: -10% !important;
+		}
+	}
+	.blockUI {
+		opacity: 1 !important;
+		background-color: transparent !important;
+	}
+	.blockMsg {
+		background: rgba(0, 0, 0, 0.9) !important;
+		border: none !important;
+	}
+	
+    .login-register > .login-box > .white-box {
+    background: var(--div-background-color-25) !important;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    }
+
+
+    .login-register {
+		
+        height: 100%;
+        position: fixed;
+    }
+
+	.slideInRight {
+		-webkit-animation-name: none;
+		animation-name: none;
+	}
+
+	.login-register  .login-box  .white-box  .bg-org {
+		background-color: transparent !important;
+    }
+
+	/*2FA login button*/
+	.panel-wrapper .panel-body > .btn-warning, .btn-warning.disabled {
+        background: var(--div-background-color-15) !important;
+        border: 1px solid #ffc36d00 !important;
+        }
+
+        /*2FA animation header*/
+        .panel-warning .panel-heading, .panel-yellow .panel-heading {
+        color: #fff;
+        border-radius: 3px;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-color: #00000000;
+        }
+
+        /*oAuth Successful*/
+        .panel-green .panel-heading, .panel-success .panel-heading {
+        color: #53e69d;
+        text-align: center;
+        text-transform: uppercase;
+        border-radius: 3px;
+        background-color: transparent;
+        border-color: transparent;
+        }
+
+	/*Login sidebar*/
+	.login-box.login-sidebar,
+	#login-panels .panel-body,
+	#login-panels .panel {
+		background: transparent;
+	}
+	
+    #login-panels  .form-control ,  #login-panels .btn {
+    background: rgba(255, 255, 255, 0.35);
+    color: white;
+    border-radius: 25px;
+    border: none;
+    }
+  /*  #login-panels {
+    height: 44px;
+    }*/
+    #login-panles .btn-info.disabled.focus .btn-info.disabled:focus .btn-info.disabled:hover .btn-info.focus .btn-info:focus .btn-info:hover .btn:hover {
+    background: rgba(255,255, 255, 0.65);
+    border:none;
+
+    }
+	/*Center login Box*/
+	.login-sidebar {
+		position: relative;
+		right: initial;
+	}
+
+	#lockScreen .white-box {
+		width: 400px;
+		height: 345px;
+	}
+	.login-sidebar .white-box {
+		width: 100%;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	#lockScreen .white-box {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		background: var(--div-background-color-25);
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		-webkit-backdrop-filter: blur(10px);
+		backdrop-filter: blur(10px);
+		border-radius: 15px;
+    }
+    .form-control::placeholder {
+        color: white;
+    }
+    #login-username-Input, #login-password-Input {
+            text-align: center;
+    }
+    .panel .panel-heading .panel-title, label, span, .fa-lock:before {
+    color: #ffffff;
+    }
+	/* Lock screen */ 
+	#lockScreen .form-material .form-control, .form-material .form-control:focus {
+		background: rgba(255, 255, 255, 0.35);
+		border-radius: 25px;
+		padding: inherit;
+		text-align: center;
+	}
+	 #lockScreen  .btn-info {
+		background: rgba(255, 255, 255, 0.35);
+		border-radius: 25px;
+		border: 1px solid transparent;
+	 }
+	 #lockScreen .btn-info:hover {
+		 border: 1px solid transparent;
+	 }
+	

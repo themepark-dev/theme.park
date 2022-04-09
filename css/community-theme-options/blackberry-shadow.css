@@ -1,0 +1,31 @@
+:root {
+  --main-bg-color: linear-gradient(135deg, #252b2f, #090c0e) center center/cover no-repeat fixed;
+
+  --modal-bg-color: var(--main-bg-color);
+  --modal-header-color: var(--main-bg-color);
+  --modal-footer-color: var(--main-bg-color);
+
+  --drop-down-menu-bg: var(--main-bg-color);
+
+  --button-color: #252b2f;
+  --button-color-hover: #090c0e;
+  --button-text: #eee;
+  --button-text-hover: hsla(0, 0%, 100%, 0.95);
+
+  --accent-color: 81, 101, 114;
+  --accent-color-hover: rgb(var(--accent-color),.8);
+  --link-color: rgb(96, 128, 150);
+  --link-color-hover: rgb(81, 101, 114, .8);
+  --label-text-color: #eee;
+
+  --text:#ddd;
+  --text-hover: #fff;
+  --text-muted: #999;
+
+  /*Specials*/
+  --arr-queue-color: #6b5; /* Servarr apps + Bazarr*/
+  --plex-poster-unwatched: rgb(81, 101, 114);
+  --petio-spinner: invert(68%) sepia(13%) saturate(766%) hue-rotate(170deg) brightness(90%) contrast(79%); /* Made with https://codepen.io/jsm91/embed/ZEEawyZ */
+  --gitea-color-primary-dark-4:  81, 101, 114;
+  --overseerr-gradient: linear-gradient(135deg, rgb(37, 43, 47, .9), rgb(9, 12, 14, .9)) center center/cover no-repeat fixed;
+}

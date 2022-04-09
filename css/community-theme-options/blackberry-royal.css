@@ -1,0 +1,33 @@
+:root {
+  --main-bg-color: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.7) 100%) center center/cover no-repeat fixed,
+   radial-gradient(at top center, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.40) 120%) #000000 center center/cover no-repeat fixed;
+
+  --modal-bg-color: var(--main-bg-color);
+  --modal-header-color: var(--main-bg-color);
+  --modal-footer-color: var(--main-bg-color);
+
+  --drop-down-menu-bg: var(--main-bg-color);
+
+  --button-color: rgb(185, 170, 159);
+  --button-color-hover: rgb(184, 159, 141);
+  --button-text: hsla(0, 18%, 5%, 0.95);;
+  --button-text-hover: hsla(0, 0%, 100%, 0.95);
+
+  --accent-color: 185, 170, 159;
+  --accent-color-hover: rgb(var(--accent-color),.8);
+  --link-color: rgb(185, 170, 159);
+  --link-color-hover: rgb(184, 159, 141);
+  --label-text-color: hsla(0, 18%, 5%, 0.95);
+
+  --text:#ddd;
+  --text-hover: #fff;
+  --text-muted: #999;
+
+  /*Specials*/
+  --arr-queue-color: #6b5; /* Servarr apps + Bazarr*/
+  --plex-poster-unwatched: rgb(185, 170, 159);
+  --petio-spinner: invert(68%) sepia(13%) saturate(766%) hue-rotate(170deg) brightness(90%) contrast(79%); /* Made with https://codepen.io/jsm91/embed/ZEEawyZ */
+  --gitea-color-primary-dark-4:  185, 170, 159;
+  --overseerr-gradient: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.7) 100%) center center/cover no-repeat fixed,
+  radial-gradient(at top center, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.40) 120%) rgba(0, 0, 0, 0.90) center center/cover no-repeat fixed;
+}

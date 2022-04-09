@@ -1,0 +1,694 @@
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+
+/*		   		        Made by @gilbN					 */
+/* 			      https://github.com/gilbN/theme.park			 */
+
+* {
+    outline: none;
+}
+
+img.logo {
+    filter: invert(100);
+}
+
+body.layout_frontend,
+html[class*="theme_"] body,
+html[class*="theme_"] body.layout_frontend,
+html {
+    background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    color: var(--text);
+}
+
+/* LINKS */
+a,
+app-vault-groupings .card .card-body a,
+app-org-vault-groupings .card .card-body a,
+.groupings .card .card-body a {
+    color: var(--link-color);
+}
+
+a:hover:not(.btn-secondary):not(.btn-outline-primary),
+app-vault-groupings .card li.active>a:first-of-type,
+app-vault-groupings .card li.active>div a:first-of-type,
+app-org-vault-groupings .card li.active>a:first-of-type,
+app-org-vault-groupings .card li.active>div a:first-of-type,
+.groupings .card li.active>a:first-of-type,
+.groupings .card li.active>div a:first-of-type,
+html[class*="theme_"] a {
+    color: var(--link-color);
+}
+
+html[class*="theme_"] app-vault-groupings .card li.active>a:first-of-type,
+html[class*="theme_"] app-vault-groupings .card li.active>div a:first-of-type,
+html[class*="theme_"] app-org-vault-groupings .card li.active>a:first-of-type,
+html[class*="theme_"] app-org-vault-groupings .card li.active>div a:first-of-type,
+html[class*="theme_"] .groupings .card li.active>a:first-of-type,
+html[class*="theme_"] .groupings .card li.active>div a:first-of-type {
+    color: rgb(var(--accent-color));
+}
+
+html[class*="theme_"] #totpImage {
+    background: lightgray;
+}
+
+html[class*="theme_"] .table td>a:not(.badge) {
+    color: var(--link-color);
+}
+
+html[class*="theme_"] .table td>a:not(.badge):hover,
+html[class*="theme_"] .card-header a:hover:not(.badge) {
+    color: var(--link-color-hover);
+}
+
+/* TEXT */
+html[class*="theme_"] .text-muted,
+.text-muted,
+.form-check-block .form-check-label>small,
+.modal-header small,
+.table,
+.text-body {
+    color: var(--text-muted) !important;
+}
+
+html[class*="theme_"] .navbar .nav-item.active>.nav-link,
+html[class*="theme_"] .navbar .nav-item>.nav-link {
+    font-weight: 600;
+}
+
+.table-hover tbody tr:hover {
+    color: var(--text-hover);
+    background-color: rgba(255, 255, 255, .08);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+label:not(#g_advanced > div:nth-child(13) > label):not(#g_advanced > div:nth-child(12) > div.col-sm-8 > div > label),
+label:not(.form-check-label):not(.btn):not(#g_advanced > div:nth-child(13) > label),
+label.bold .card-header:first-child,
+html[class*="theme_"] .card-header,
+.modal-header {
+    color: var(--text-hover) !important;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: rgb(0 0 0 / 25%) !important;
+}
+
+.navbar-dark .navbar-nav .show>.nav-link,
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: rgb(var(--accent-color));
+}
+
+/* CARDS */
+
+html[class*="theme_"] .card-header {
+    background-color: rgb(0 0 0 / 45%);
+    color: var(--text-hover);
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.07) !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+    color: var(--text) !important;
+}
+
+html[class*="theme_"] .card-body:not(.bg-light>.card-body) {
+    background-color: transparent;
+    color: var(--text);
+}
+
+html[class*="theme_"] a.text-body {
+    color: var(--text-hover) !important;
+}
+
+app-vault-groupings .card li.active>a:first-of-type,
+app-vault-groupings .card li.active>div a:first-of-type,
+app-vault-groupings .card li.active>div>.fa {
+    color: rgb(var(--accent-color));
+}
+
+body>app-root>app-user-layout>app-tools>div>div>div.col-9>app-password-generator>div.card.card-password.bg-light.my-4,
+body>app-root>app-user-layout>app-tools>div>div>div.col-9>app-password-generator>div.card.card-password.bg-light.my-4>div {
+    background-color: rgb(0 0 0 / 15%) !important;
+}
+
+html[class*="theme_"] .password-number {
+    color: rgb(var(--accent-color));
+}
+
+html[class*="theme_"] .password-letter {
+    color: var(--text-hover);
+}
+
+html[class*="theme_"] app-vault-groupings .card .card-body a,
+html[class*="theme_"] app-org-vault-groupings .card .card-body a,
+html[class*="theme_"] .groupings .card .card-body a {
+    color: var(--text);
+}
+
+/* MODALS */
+html[class*="theme_"] .modal-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--modal-header-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+
+html[class*="theme_"] .modal-body {
+    background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+
+html[class*="theme_"] .modal-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--modal-footer-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+
+html[class*="theme_"] .close {
+    color: var(--text);
+}
+
+.close,
+.close:hover {
+    color: var(--text-hover);
+}
+
+.close:focus {
+    outline: none;
+}
+
+.swal2-popup {
+    background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    color: var(--text);
+    border: transparent;
+}
+
+.swal2-popup .swal2-title {
+    color: var(--text);
+}
+
+.swal2-popup .swal2-content {
+    color: var(--text);
+}
+
+.swal2-popup .swal2-actions {
+    background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+
+.btn-primary,
+.swal2-popup .swal2-actions button.swal2-confirm {
+    color: var(--text-hover);
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+}
+
+.btn-primary:hover,
+.swal2-popup .swal2-actions button.swal2-confirm:hover {
+    color: var(--text-hover);
+    background-color: var(--button-color-hover);
+    border-color: var(--button-color-hover);
+}
+
+/* FORMS */
+html[class*="theme_"] label.form-check-label,
+html[class*="theme_"] .form-control-file {
+    color: var(--text);
+}
+
+html[class*="theme_"] .form-control:focus {
+    box-shadow: none;
+    border-color: transparent;
+    background: rgb(253 253 253 / 15%);
+}
+
+html[class*="theme_"] .form-control {
+    color: var(--text);
+    background-color: rgb(0 0 0 / 0.25);
+    border: 1px solid transparent;
+
+}
+
+html[class*="theme_"] .form-control:disabled,
+.form-control[readonly] {
+    background-color: rgb(255 255 255 / 25%);
+    opacity: 1;
+}
+
+select:focus {
+    background: #1f1f1f !important;
+}
+
+/* DROPDOWN MENU */
+/* html[class*="theme_"] .dropdown-menu {
+    background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    border: 1px solid transparent;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .2);
+} */
+
+html[class*="theme_"] .navbar .dropdown-menu .dropdown-item-text {
+    color: var(--text);
+}
+
+html[class*="theme_"] .dropdown-menu,
+html[class*="theme_"] .dropdown-item {
+    background: #1f1f1f;
+    color: var(--text-hover);
+}
+
+html[class*="theme_"] .dropdown-item,
+html[class*="theme_"] .dropdown-item-text {
+    color: var(--text);
+}
+
+html[class*="theme_"] .dropdown-item:hover,
+html[class*="theme_"] .dropdown-item:focus {
+    color: var(--text-hover);
+    text-decoration: none;
+    background-color: rgb(255 255 255 / 0.08);
+}
+
+a.text-danger:hover,
+a.text-danger:focus {
+    color: #dd4b39 !important;
+    background-color: rgb(255 255 255 / 0.08) !important;
+}
+
+.dropdown-menu .text-danger {
+    font-weight: bold !important;
+    background: rgb(0 0 0 / 20%) !important;
+}
+
+html[class*="theme_"] app-vault-groupings .card #search,
+html[class*="theme_"] app-org-vault-groupings .card #search,
+html[class*="theme_"] .groupings .card #search {
+    background-color: transparent;
+    border-color: rgb(var(--accent-color));
+    color: var(--text-hover);
+}
+
+/* SETTINGS */
+
+html[class*="theme_"] .page-header,
+html[class*="theme_"] .secondary-header {
+    border-bottom: 1px solid rgb(255 255 255 / 30%);
+}
+
+html[class*="theme_"] .page-header,
+html[class*="theme_"] .secondary-header {
+    border-bottom: 1px solid rgb(255 255 255 / 30%);
+}
+
+html[class*="theme_"] .footer {
+    border-bottom: 1px solid rgb(255 255 255 / 30%);
+}
+
+html[class*="theme_"] .list-group-item.active {
+    border-color: rgba(255, 255, 255, 0.15);
+    color: rgb(var(--accent-color));
+    background-color: rgb(255 255 255 / 10%);
+    border-left: 3px solid rgb(var(--accent-color));
+}
+
+html[class*="theme_"] .callout {
+    background-color: rgb(255 255 255 / 15%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text);
+}
+
+html[class*="theme_"] .list-group-item {
+    background-color: rgb(0 0 0 / 35%);
+    border: 1px solid rgb(255 255 255 / 8%);
+    color: var(--text);
+}
+
+html[class*="theme_"] .progress {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+/* BUTTONS */
+.btn-link {
+    color: var(--button-color);
+    color: var(--button-text);
+}
+
+.btn-link:hover {
+    color: var(--button-color-hover);
+    color: var(--button-text-hover);
+    transition: 0.15s;
+}
+
+.btn-primary {
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+    color: var(--button-text);
+}
+
+.btn-primary:hover,
+.btn-primary:not(:disabled):not(.disabled):active {
+    background-color: var(--button-color-hover);
+    border-color: var(--button-color-hover);
+    color: var(--button-text-hover);
+    transition: 0.15s;
+}
+
+.btn-primary:focus,
+.swal2-popup .swal2-actions button.swal2-confirm:focus,
+.btn-primary.focus,
+.swal2-popup .swal2-actions button.focus.swal2-confirm,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.swal2-popup .swal2-actions button.swal2-confirm:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.swal2-popup .swal2-actions button.swal2-confirm:not(:disabled):not(.disabled).active:focus,
+.show>.btn-primary.dropdown-toggle:focus,
+.swal2-popup .swal2-actions .show>button.dropdown-toggle.swal2-confirm:focus {
+    box-shadow: none;
+}
+
+.btn[class*="btn-outline-"]:not(:hover),
+.swal2-popup .swal2-actions button[class*="btn-outline-"]:not(:hover),
+.swal2-popup .swal2-actions button.swal2-cancel,
+html[class*="theme_"] .btn-primary,
+html[class*="theme_"] .swal2-confirm {
+    border-color: var(--button-color) !important;
+    background-color: var(--button-color) !important;
+    color: var(--button-text) !important;
+}
+
+.btn-outline-secondary:hover,
+.swal2-popup .swal2-actions button.swal2-cancel:hover,
+html[class*="theme_"] .btn-primary,
+html[class*="theme_"] .swal2-confirm {
+    color: var(--button-text-hover) !important;
+    background-color: var(--button-color-hover) !important;
+    border-color: var(--button-color-hover) !important;
+}
+
+.btn-outline-secondary:hover:not(:disabled),
+.swal2-popup .swal2-actions button.swal2-cancel:hover:not(:disabled) {
+    color: var(--button-text-hover);
+}
+
+.btn-outline-primary:hover {
+    color: var(--button-text-hover) !important;
+    background-color: var(--button-color-hover) !important;
+    border-color: var(--button-color-hover) !important;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.show>.btn-outline-primary.dropdown-toggle {
+    color: var(--button-text-hover);
+    background-color: var(--button-color-hover);
+    border-color: var(--button-color-hover);
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-outline-primary.dropdown-toggle:focus,
+.btn-outline-secondary:focus,
+.swal2-popup .swal2-actions button.swal2-cancel:focus,
+.btn-outline-secondary.focus,
+.swal2-popup .swal2-actions button.focus.swal2-cancel,
+.btn-outline-primary:focus,
+.btn-outline-primary.focus,
+.btn-check:focus+.btn,
+.btn:focus {
+    box-shadow: 0 0 0 0.2rem rgb(var(--accent-color), .5);
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled):active,
+.swal2-popup .swal2-actions button.swal2-cancel:not(:disabled):not(.disabled):active,
+.btn-outline-secondary:not(:disabled):not(.disabled).active,
+.swal2-popup .swal2-actions button.swal2-cancel:not(:disabled):not(.disabled).active,
+.show>.btn-outline-secondary.dropdown-toggle,
+.swal2-popup .swal2-actions .show>button.dropdown-toggle.swal2-cancel,
+html[class*="theme_"] .btn-outline-secondary:hover:not(:disabled),
+html[class*="theme_"] .btn-outline-secondary:active {
+    color: var(--button-text-hover) !important;
+    background-color: var(--button-color-hover) !important;
+    border-color: var(--button-color-hover) !important;
+}
+
+
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
+.swal2-popup .swal2-actions button.swal2-cancel:not(:disabled):not(.disabled):active:focus,
+.btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
+.swal2-popup .swal2-actions button.swal2-cancel:not(:disabled):not(.disabled).active:focus,
+.show>.btn-outline-secondary.dropdown-toggle:focus,
+.swal2-popup .swal2-actions .show>button.dropdown-toggle.swal2-cancel:focus {
+    box-shadow: none;
+}
+
+.btn-primary.disabled,
+.swal2-popup .swal2-actions button.disabled.swal2-confirm,
+.btn-primary:disabled,
+.swal2-popup .swal2-actions button.swal2-confirm:disabled {
+    color: var(--button-text-hover);
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+    opacity: .8;
+}
+
+html[class*="theme_"] .badge-info {
+    background-color: var(--button-color);
+    color: var(--label-text-color);
+}
+
+/* Org */
+
+html[class*="theme_"] .org-nav .nav-tabs a.active {
+    border-top: 3px solid rgb(var(--accent-color));
+    color: rgb(var(--accent-color));
+}
+
+html[class*="theme_"] .nav-tabs .nav-link.active {
+    background: rgba(0, 0, 0, 0.25);
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+html[class*="theme_"] .org-nav {
+    background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+
+html[class*="theme_"] .org-nav .nav-tabs a,
+html[class*="theme_"] .org-nav .org-name span,
+html[class*="theme_"] .org-nav .nav-tabs a:not(.active) {
+    color: var(--text);
+}
+
+.org-nav .nav-tabs a.active {
+    border-top: 3px solid rgb(var(--accent-color));
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    color: var(--text);
+    background-color: rgb(255 255 255 / 25%);
+    border-color: transparent;
+}
+
+app-vault-groupings .card .card-body a:hover.text-muted {
+    color: var(--text-hover) !important;
+    opacity: 1 !important;
+}
+
+app-vault-groupings .card li.active>a:first-of-type,
+app-vault-groupings .card li.active>div a:first-of-type,
+app-org-vault-groupings .card li.active>a:first-of-type,
+app-org-vault-groupings .card li.active>div a:first-of-type {
+    font-weight: bold;
+    color: rgb(var(--accent-color));
+}
+
+/* Font Awesome */
+
+html[class*="theme_"] .table td [class*="fa-"] {
+    color: rgb(var(--accent-color));
+}
+
+/* PLACEHOLDER TEXT */
+input::-webkit-input-placeholder {
+    color: var(--text);
+}
+
+input:focus::-webkit-input-placeholder {
+    color: #000;
+}
+
+/* Firefox < 19 */
+input:-moz-placeholder {
+    color: var(--text);
+}
+
+input:focus:-moz-placeholder {
+    color: #000;
+}
+
+/* Firefox > 19 */
+input::-moz-placeholder {
+    color: var(--text);
+}
+
+input:focus::-moz-placeholder {
+    color: #000;
+}
+
+/* Internet Explorer 10 */
+input:-ms-input-placeholder {
+    color: var(--text);
+}
+
+input:focus:-ms-input-placeholder {
+    color: #000;
+}
+
+/* ADMIN PAGE */
+
+.bg-light {
+    background: var(--main-bg-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+
+.bg-light .navbar {
+    background: var(--main-bg-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+
+/* Cards */
+.bg-secondary {
+    background-color: rgb(255 255 255 / 10%) !important;
+}
+
+.bg-white {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+html[class*="theme_"] .groupings .card .card-body a {
+    color: var(--text);
+}
+
+/* Pagination */
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: var(--text-hover);
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+}
+
+.page-item.disabled .page-link {
+    color: var(--text);
+    pointer-events: none;
+    cursor: auto;
+    background-color: rgb(0 0 0 / 10%);
+    border-color: rgb(0 0 0 / 10%);
+}
+
+.text-muted,
+.card-header small,
+.modal-header small {
+    color: var(--text-muted) !important;
+}
+
+/* Table */
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-accent-bg: var(--bs-table-striped-bg);
+    color: var(--text-hover);
+}
+
+html[class*="theme_"] .table td {
+    color: var(--text);
+}
+
+html[class*="theme_"] .table.table-list.table td:not(tr:first-child td),
+html[class*="theme_"] .table.table-list .table th:not(tr:first-child td),
+html[class*="theme_"] hr,
+html[class*="theme_"] .dropdown-divider,
+html[class*="theme_"] .footer {
+    border-top: 1px solid rgb(255 255 255 / 30%);
+}
