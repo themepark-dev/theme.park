@@ -219,6 +219,12 @@ a:hover {
 }
 
 /* SONARR SPECIFIC */
+
+[class*="EpisodeDetailsModalContent-selectedTab-"] {
+    border-color: var(--accent-color-hover);
+    background-color: rgb(0 0 0 / 40%);
+}
+
 [class*="SeriesSearchInput-sectionTitle-"] {
     color: var(--text-hover);
 }
@@ -260,6 +266,10 @@ a:hover {
 
 [class*="PageSidebar-sidebar-"] {
     background-color: transparent;
+}
+
+[class*="PageSidebarItem-link-"] {
+    color: var(--text-hover)
 }
 
 [class*="PageSidebarItem-link-"]:hover {
@@ -691,7 +701,7 @@ a:hover {
 }
 
 [class*="SeriesSearchResult-alternateTitle-"] {
-    color: var(--text-hover)
+    color: var(--text-hover);
     font-size: 12px;
 }
 
@@ -936,7 +946,7 @@ input:focus:-ms-input-placeholder {
 [class*="CalendarEvent-episodeInfo-"],
 [class*="CalendarEvent-airTime-"],
 [class*="Legend-legend-"] [class*="LegendItem-legendItem-"] {
-    color: var(--text-hover) !important;
+    color: #fff !important;
 }
 
 [class*="CalendarEvent-event-"] {

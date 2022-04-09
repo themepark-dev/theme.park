@@ -318,6 +318,10 @@ a:hover {
     background-color: transparent;
 }
 
+[class*="PageSidebarItem-link-"] {
+    color: var(--text-hover)
+}
+
 [class*="PageSidebarItem-link-"]:hover {
     color: rgb(var(--accent-color));
     text-decoration: none;
