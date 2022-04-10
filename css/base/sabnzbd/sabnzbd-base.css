@@ -288,7 +288,7 @@ svg.peity polyline {
 }
 
 .btn-default {
-  color: var(--button-text);
+  color: var(--button-text) !important;
   background: var(--button-color);
   border-color: var(--button-color);
   outline: none !important;
@@ -296,13 +296,13 @@ svg.peity polyline {
 
 .btn-default:focus,
 .btn-default.focus {
-  color: var(--button-text-hover);
+  color: var(--button-text-hover) !important;
   background: var(--button-color-hover);
   border-color: var(--button-color-hover);
 }
 
 .btn-default:hover {
-  color: var(--button-text-hover);
+  color: var(--button-text-hover) !important;
   background: var(--button-color-hover);
   border-color: var(--button-color-hover);
 }

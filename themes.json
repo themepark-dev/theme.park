@@ -357,7 +357,7 @@
     },
     "sabnzbd": {
       "addons": {},
-      "base_css": "https://theme-park.dev/css/base/sabnzbd/sabnzbd-base.css?sha=1ac8ffdf9e2d3af8d58d54af28b1ca094ad2fbb8"
+      "base_css": "https://theme-park.dev/css/base/sabnzbd/sabnzbd-base.css?sha=6424d4a359a1feb035b9b859d4b7fb9a8db4f4c4"
     },
     "sonarr": {
       "addons": {
