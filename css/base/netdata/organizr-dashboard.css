@@ -13,8 +13,8 @@
 
 
 /* NETDATA ORGANIZR DASHBOARD THEME */
-@import url(https://theme-park.dev/css/base/netdata/netdata-base.css);
-@import url(https://theme-park.dev/css/variables/organizr-dark.css);
+@import url(/css/base/netdata/netdata-base.css);
+@import url(/css/variables/organizr-dark.css);
 :root {
   --main-bg-color: transparent;
 }

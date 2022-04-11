@@ -46,6 +46,7 @@ jobs:
           echo ::set-output name=platform::${ARCHITECTURE//-/\/}
           echo ::set-output name=cache::${GITHUB_REPOSITORY,,}:${{ github.ref_name }}-cache-${{ matrix.architecture }}
           echo ::set-output name=tag::${GITHUB_REPOSITORY,,}:${{ github.ref_name }}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}-${{ matrix.architecture }}
+          echo ::set-output name=release::${{ github.event.release.target_commitish }}
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
@@ -85,7 +86,7 @@ jobs:
             org.opencontainers.image.source=${{ steps.prep.outputs.source }}
             org.opencontainers.image.vendor=${{ steps.prep.outputs.vendor }}
             org.opencontainers.image.url=${{ steps.prep.outputs.url }}
-            org.opencontainers.image.version=${{ steps.prep.outputs.version }}
+            org.opencontainers.image.version=${{ steps.prep.outputs.VERSION }}
           build-args: |
             TP_RELEASE=${{ steps.prep.outputs.VERSION }}
             BUILD_DATE=${{ steps.date_time.outputs.created }}
@@ -129,16 +130,19 @@ jobs:
           [[ -f linux-arm64.Dockerfile ]]  && ARM64=${SOURCE}-linux-arm64
           [[ -f linux-arm-v7.Dockerfile ]] && ARMV7=${SOURCE}-linux-arm-v7
           docker manifest create ${IMAGE}:${TAG} ${AMD64} ${ARM64} ${ARMV7}
-          docker manifest push   ${IMAGE}:${TAG}
-          if [[! -z "${VERSION}" ]]; then
-          docker manifest create ${IMAGE}:${TAG}-${VERSION//\~/-} ${AMD64} ${ARM64} ${ARMV7}
-          docker manifest push   ${IMAGE}:${TAG}-${VERSION//\~/-}
-          docker manifest create ${IMAGE}:${VERSION//\~/-} ${AMD64} ${ARM64} ${ARMV7}
-          docker manifest push   ${IMAGE}:${VERSION//\~/-}
-          fi
+          docker manifest push ${IMAGE}:${TAG}
           docker manifest create ${IMAGE}:${TAG}-${GITHUB_SHA:0:7} ${AMD64} ${ARM64} ${ARMV7}
-          docker manifest push   ${IMAGE}:${TAG}-${GITHUB_SHA:0:7}
-          if [[ ${TAG} == master ]]; then
-            docker manifest create ${IMAGE}:latest ${AMD64} ${ARM64} ${ARMV7}
-            docker manifest push   ${IMAGE}:latest
-          fi
+          docker manifest push ${IMAGE}:${TAG}-${GITHUB_SHA:0:7}
+      - name: Latest manifest
+        if: ${{ github.event.release.target_commitish == 'master' }}
+        env:
+          DOCKER_CLI_EXPERIMENTAL: enabled
+        run: |
+          IMAGE=${{ matrix.registry }}/${GITHUB_REPOSITORY,,}
+          TAG=${{ github.ref_name }}
+          SOURCE=${IMAGE}:${TAG}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}
+          [[ -f linux-amd64.Dockerfile ]] && AMD64=${SOURCE}-linux-amd64
+          [[ -f linux-arm64.Dockerfile ]] && ARM64=${SOURCE}-linux-arm64
+          [[ -f linux-arm-v7.Dockerfile ]] && ARMV7=${SOURCE}-linux-arm-v7
+          docker manifest create ${IMAGE}:latest ${AMD64} ${ARM64} ${ARMV7}
+          docker manifest push ${IMAGE}:latest
