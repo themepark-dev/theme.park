@@ -98,12 +98,12 @@ a:hover,
 }
 
 .navbar-default .navbar-brand {
-    color: #ffffff !important;
+    color: var(--text-hover) !important;
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-    color: #ffffff !important;
+    color: var(--text-hover) !important;
     background-color: rgba(0, 0, 0, .25) !important;
 }
 
@@ -111,7 +111,7 @@ a:hover,
 .navbar-inverse .navbar-nav>li>a {
     border-right: 1px solid rgba(0, 0, 0, 0) !important;
     border-left: 1px solid rgba(0, 0, 0, 0) !important;
-    color: #ffffff !important;
+    color: var(--text-hover) !important;
 }
 
 .nav-tabs>li.active>a,
@@ -303,7 +303,7 @@ table {
 .close,
 .close:hover,
 .close:focus {
-    color: #ffffff !important;
+    color: var(--text-hover) !important;
 }
 
 /* System Overview */
@@ -353,7 +353,7 @@ code {
 .easyPieChartTitle,
 .easyPieChartLabel,
 .easyPieChartUnits {
-    color: #ffffff !important;
+    color: var(--text-hover) !important;
 }
 
 .netdata-legend-value,
@@ -361,12 +361,12 @@ code {
 .netdata-legend-toolbox-button,
 .dygraph-axis-label {
     background-color: rgba(0, 0, 0, 0) !important;
-    color: #ffffff !important;
+    color: var(--text-hover) !important;
 }
 
 .netdata-legend-resize-handler {
     background-color: rgba(0, 0, 0, 0) !important;
-    color: #ffffff !important;
+    color: var(--text-hover) !important;
 }
 
 .netdata-legend-name-table-line {

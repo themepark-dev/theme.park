@@ -694,7 +694,7 @@ th.fc-day-header.fc-widget-header.fc-today {
 #plex-login-heading>a,
 #recoverform>div:nth-child(1)>div>h3,
 #recoverform>div:nth-child(1)>div>p {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 }
 
 #login-username-Input::placeholder,
@@ -710,7 +710,7 @@ label[for="checkbox-login"] {
 
 #to-recover:hover,
 label[for="checkbox-login"]:hover {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 }
 
 #organizr-login-collapse>div>div.form-group.text-center.m-t-20.m-b-0>div>button,
@@ -718,7 +718,7 @@ label[for="checkbox-login"]:hover {
 #leave-recover,
 #form-lockscreen>div.form-group.text-center>div>button {
     background: rgb(255 255 255 / 15%) !important;
-    color: #eee !important;
+    color: var(--text)  !important;
     border-radius: 25px;
     border: none;
 }
@@ -731,7 +731,7 @@ label[for="checkbox-login"]:hover {
         background-color: rgba(0, 0, 0, 0.45) !important;
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
-        color: white !important;
+        color: var(--text-hover)  !important;
     }
 }
 
@@ -771,7 +771,7 @@ label[for="checkbox-login"]:hover {
 /*2FA animation header*/
 .panel-warning .panel-heading,
 .panel-yellow .panel-heading {
-    color: #fff;
+    color: var(--text-hover);
     border-radius: 3px;
     background-color: rgba(0, 0, 0, 0.3);
     border-color: #00000000;
@@ -807,7 +807,7 @@ label[for="checkbox-login"]:hover {
 }
 
 #form-lockscreen>div:nth-child(1)>div>div>h3 {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 }
 
 .login-sidebar .white-box {
@@ -921,7 +921,7 @@ label[for="checkbox-login"]:hover {
 
 #splashScreen .flexbox:last-of-type .bg-danger {
     background: transparent !important;
-    color: #fff !important;
+    color: var(--text-hover) !important;
     border: 0 !important;
     border-radius: 100px;
     height: 0px !important;
@@ -986,7 +986,7 @@ label[for="checkbox-login"]:hover {
 }
 
 .splash-badge {
-    color: #fff;
+    color: var(--text-hover);
     width: 80px !important;
     height: 80px;
     font-size: 60px;
@@ -1010,12 +1010,12 @@ label[for="checkbox-login"]:hover {
 
 .color-table.info-table thead th {
     background-color: rgba(61, 33, 33, 0.25);
-    color: #fff;
+    color: var(--text-hover);
 }
 
 .bg-success.text-inverse {
     background-color: rgba(255, 255, 255, 0.15) !important;
-    color: #FFF;
+    color: var(--text-hover);
 }
 
 .panel-blue a,
@@ -1106,7 +1106,7 @@ label[for="checkbox-login"]:hover {
 .icon-control-play,
 .icon-screen-desktop,
 .icon-control-pause {
-    color: white !important;
+    color: var(--text-hover)  !important;
 }
 
 .label-info {
@@ -1134,7 +1134,7 @@ label[for="checkbox-login"]:hover {
 .panel-black .panel-heading,
 .panel-inverse .panel-heading {
     border-color: transparent;
-    color: #fff;
+    color: var(--text-hover);
     background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
@@ -1437,8 +1437,8 @@ a:hover,
 
 .el-element-overlay .el-card-item .el-overlay-1 .el-info>li a:hover {
     background: transparent;
-    color: white !important;
-    border: white !important;
+    color: var(--text-hover)  !important;
+    border: var(--text-hover)  !important;
 }
 
 .progress-bar-info {
@@ -1478,7 +1478,7 @@ a:hover,
 
 .bg-inverse .healthPosition h3,
 .bg-inverse .healthPosition h5 {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 }
 
 #homepageOrderhealthchecks .card-body {
@@ -1505,12 +1505,12 @@ a:hover,
 }
 
 .homepage-tautulli-card .cardCountType {
-    color: #eee;
+    color: var(--text);
 }
 
 .homepage-tautulli-card .tautulliRank,
 .homepage-tautulli-card .tautulliSeparator {
-    color: #eee;
+    color: var(--text);
 }
 
 .homepage-tautulli-card .bg-img-cont {
@@ -2398,7 +2398,7 @@ h6 .small,
 h6 small,
 tbody,
 th {
-    color: #ffffff;
+    color: var(--text-hover);
 }
 
 .bootstrap-tagsinput,
@@ -2466,19 +2466,19 @@ input:active:not(select),
 
 .cp-container .cp-pills li a {
     padding: 5px;
-    color: #FFF;
+    color: var(--text-hover);
     text-decoration: none;
 }
 
 .cp-container .cp-pills li a.active,
 .cp-container .cp-pills li a:hover {
     background-color: #2cabe3;
-    color: #fff
+    color: #fff;
 }
 
 .jq-icon-info {
     background-color: rgba(71, 68, 68, 0.93);
-    color: #FFF;
+    color: var(--text-hover);
     border-color: #bce8f1;
 }
 

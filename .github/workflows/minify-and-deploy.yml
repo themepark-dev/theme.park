@@ -4,10 +4,21 @@ on:
     branches:
       - master
       - develop
+      - testing 
     paths-ignore:
         - 'docker-mods/**'
         - '.vscode/**'
         - '.github/**'
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Select branch'
+        required: true
+        type: choice
+        options:
+        - master
+        - develop
+        - testing
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -53,7 +64,7 @@ jobs:
                 done
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/master' }}
+        if: ${{ github.ref == 'refs/heads/master' || github.event.inputs.branch == 'master' }}
         with:
           publish_dir: ./
           publish_branch: live
@@ -61,9 +72,17 @@ jobs:
           exclude_assets: ''
       - name: Deploy Develop
         uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/develop' }}
+        if: ${{ github.ref == 'refs/heads/develop' || github.event.inputs.branch == 'develop' }}
         with:
           publish_dir: ./
           publish_branch: live_develop
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          exclude_assets: ''
+      - name: Deploy Testing
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/testing' || github.event.inputs.branch == 'testing' }}
+        with:
+          publish_dir: ./
+          publish_branch: live_testing
           github_token: ${{ secrets.GITHUB_TOKEN }}
           exclude_assets: ''

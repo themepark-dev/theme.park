@@ -93,7 +93,7 @@ label {
 
 /* DROPDOWN MENU */
 .dropdown-menu {
-    color: #fff;
+    color: var(--text-hover);
     background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
@@ -225,7 +225,7 @@ ul li:hover {
 }
 
 .custom-control-input:not(:disabled):active~.custom-control-label::before {
-    color: #fff;
+    color: var(--text-hover);
     background-color: #97b3d2;
     border-color: #97b3d2
 }

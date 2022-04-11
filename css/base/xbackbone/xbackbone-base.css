@@ -330,13 +330,13 @@ a:hover {
 
 /* FORMS */
 .form-control {
-    color: #fff;
+    color: var(--text-hover);
     background-color: rgba(0, 0, 0, .15);
     border: 1px solid rgba(0, 0, 0, .15);
 }
 
 .form-control:focus {
-    color: #fff;
+    color: var(--text-hover);
     background: #1f1f1f;
     border-color: rgba(255, 255, 255, .15);
     outline: 0;
@@ -344,7 +344,7 @@ a:hover {
 }
 
 textarea.form-control:focus {
-    color: #fff;
+    color: var(--text-hover);
     background: rgba(0, 0, 0, .35);
     border-color: rgba(255, 255, 255, .15);
     outline: 0;

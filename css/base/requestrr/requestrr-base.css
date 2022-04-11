@@ -110,7 +110,7 @@ h6,
 }
 
 #sidenav-main>div>div>ul.mb-md-3.navbar-nav>li:nth-child(3)>a>i {
-    color: white !important;
+    color: var(--text-hover) !important;
 }
 
 .card-profile-image img,
@@ -278,7 +278,7 @@ h6,
 
 .btn-default,
 .btn-default:hover {
-    color: #fff;
+    color: var(--text-hover);
     background-color: rgba(255, 255, 255, 0.25);
     border-color: transparent;
 }
@@ -286,14 +286,14 @@ h6,
 .btn-default:not(:disabled):not(.disabled).active,
 .btn-default:not(:disabled):not(.disabled):active,
 .show>.btn-default.dropdown-toggle {
-    color: #fff;
+    color: var(--text-hover);
     background-color: rgba(0, 0, 0, 0.26);
     border-color: transparent;
 }
 
 .btn-default.disabled,
 .btn-default:disabled {
-    color: #fff;
+    color: var(--text-hover);
     background-color: rgba(255, 255, 255, 0.15);
     border-color: transparent;
     opacity: .5;
