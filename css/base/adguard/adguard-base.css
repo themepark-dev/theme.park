@@ -10,7 +10,7 @@
 /*		   		        Made by @gilbN					 */
 /* 			      https://github.com/gilbN/theme.park			 */
 
-@import url("https://theme-park.dev/css/defaults/placeholders.css");
+@import url("/css/defaults/placeholders.css");
 
 body {
     background: var(--main-bg-color);
@@ -392,7 +392,7 @@ h6,
 }
 
 .service__icon {
-    color: #eee;
+    color: var(--text);
 }
 
 /* LOGS */

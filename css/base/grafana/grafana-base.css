@@ -152,7 +152,7 @@ p {
     -moz-background-size: auto, cover !important;
     -o-background-size: auto, cover !important;
     background-color: rgba(0, 0, 0, .0) !important;
-    color: #FFFFFF !important;
+    color: var(--text-hover) !important;
 }
 
 .login-branding {
@@ -170,11 +170,11 @@ p {
 
 .card-item-sub-name,
 .card-item-type {
-    color: #FFF !important;
+    color: var(--text-hover) !important;
 }
 
 .gf-form--has-input-icon .gf-form-input-icon {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 }
 
 .gf-tabs-link.active,
@@ -197,12 +197,12 @@ p {
 
 .layout-selector button {
     background: rgba(0, 0, 0, 0.25);
-    color: #ffffff;
+    color: var(--text-hover);
 }
 
 .layout-selector button.active {
     background-color: rgba(0, 0, 0, 0.45);
-    color: #ffffff;
+    color: var(--text-hover);
 }
 
 /* Configuration menu - Teams */
@@ -302,7 +302,7 @@ p {
 .icon-circle:hover .fa:hover,
 .icon-circle:hover .gicon:hover,
 .icon-circle:hover .icon-gf:hover {
-    color: #ffffff;
+    color: var(--text-hover);
     opacity: 1;
 }
 
@@ -323,7 +323,7 @@ p {
 }
 
 .navbar-page-btn {
-    color: #FFFFFF !important;
+    color: var(--text-hover) !important;
 }
 
 /* dropdown menu */
@@ -374,7 +374,7 @@ p {
 }
 
 .search-section__header {
-    color: #ffffff !important;
+    color: var(--text-hover) !important;
 }
 
 .navbar-page-btn__folder {
@@ -405,11 +405,11 @@ p {
 }
 
 .dashboard-settings__aside-header {
-    color: #ffffff !important;
+    color: var(--text-hover) !important;
 }
 
 .dashboard-settings__nav-item {
-    color: #ffffff !important;
+    color: var(--text-hover) !important;
 }
 
 .bootstrap-tagsinput {
@@ -435,7 +435,7 @@ p {
 
 .gf-form-switch__checkbox {
     border: none;
-    background: #ffffff;
+    background: var(--text-hover);
 }
 
 .gf-form-select-box__option {
@@ -450,7 +450,7 @@ p {
 }
 
 .gf-form-select-box__option.gf-form-select-box__option--is-focused {
-    color: #fff;
+    color: var(--text-hover);
     -o-border-image: -o-linear-gradient(rgb(var(--accent-color)) 30%, rgb(var(--accent-color)) 99%);
     border-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgb(var(--accent-color))), color-stop(99%, rgb(var(--accent-color))));
     border-image: -webkit-linear-gradient(rgb(var(--accent-color)) 30%, rgb(var(--accent-color)) 99%);
@@ -490,17 +490,17 @@ p {
     padding: 7.4px 10px !important;
     background-color: rgba(0, 0, 0, 0.25) !important;
     border: none !important;
-    color: #FFFFFF !important;
+    color: var(--text-hover) !important;
 }
 
 /* Variable input box */
 .gf-form-input {
-    color: #FFFFFF !important;
+    color: var(--text-hover) !important;
     border: none !important;
 }
 
 .gf-form-input:focus {
-    color: #FFF !important;
+    color: var(--text-hover) !important;
     box-shadow: none !important;
 }
 
@@ -510,7 +510,7 @@ p {
 }
 
 .gf-form-select-wrapper .gf-form-select-icon+.gf-form-input option {
-    color: #fff;
+    color: var(--text-hover);
     background: #1f1f1f;
 }
 
@@ -520,7 +520,7 @@ p {
 
 /* NAVBAR BUTTONS */
 .navbar-button {
-    color: #FFF !important;
+    color: var(--text-hover) !important;
     background-color: rgba(0, 0, 0, 0.25) !important;
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)) !important;
     border: none !important;
@@ -561,18 +561,18 @@ p {
 
 /* Panel text color*/
 div.flot-text {
-    color: #FFF !important;
+    color: var(--text-hover) !important;
 }
 
 /* panel loading circle*/
 .panel-loading {
-    color: #FFF !important;
+    color: var(--text-hover) !important;
 }
 
 /* panel resize arrow */
 .theme-dark .react-grid-item>.react-resizable-handle:after {
-    border-right: 2px solid #fff !important;
-    border-bottom: 2px solid #fff !important;
+    border-right: 2px solid var(--text-hover) !important;
+    border-bottom: 2px solid var(--text-hover) !important;
 }
 
 /* table panel background color */
@@ -705,7 +705,7 @@ div>.scrollbar-view>div>[class*="css-"],
 }
 
 .toolbar__main {
-    color: #ffffff;
+    color: var(--text-hover);
     background-color: rgba(0, 0, 0, 0.15);
     border: transparent;
 }
@@ -729,17 +729,17 @@ div>.scrollbar-view>div>[class*="css-"],
 /* buttons  
 .btn-inverse {
 border-color: #b56d16 !important;
-    color: #fff !important;
+    color: var(--text-hover) !important;
     background-color: #cc7b19 !important;
     -webkit-transition: background-color .1s !important;
     transition: background-color .1s !important;
 	}
 	.btn-inverse.active, .btn-inverse.disabled, .btn-inverse:active, .btn-inverse:focus, .btn-inverse:hover, .btn-inverse[disabled] {
-		color: #fff;
+		color: var(--text-hover);
     background-color: #e59029 !important;
 }
 .btn-outline-disabled {
-    color: #fff;
+    color: var(--text-hover);
 }*/
 
 .btn-inverse {
@@ -782,7 +782,7 @@ border-color: #b56d16 !important;
 
 /* Explore */
 .query-transaction {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 .query-type-toggle .btn.active {
@@ -831,7 +831,7 @@ border-color: #b56d16 !important;
     -webkit-box-shadow: none;
     box-shadow: none;
     border-bottom: 1px solid #d8d9da;
-    color: #eee;
+    color: var(--text);
 }
 
 .modal-body,
@@ -844,7 +844,7 @@ border-color: #b56d16 !important;
     -webkit-background-size: auto, cover !important;
     -moz-background-size: auto, cover !important;
     -o-background-size: auto, cover !important;
-    color: #eee;
+    color: var(--text);
 }
 
 
@@ -901,12 +901,12 @@ button[class$="-button"]:active,
 }
 
 .css-1d9e5zy-button {
-    color: #fff;
+    color: var(--text-hover);
     background: var(--button-color)
 }
 
 .css-1d9e5zy-button:hover {
-    color: #fff;
+    color: var(--text-hover);
     background: var(--button-color-hover)
 }
 
@@ -1069,7 +1069,7 @@ body>grafana-app>div>div>react-container>div>div>div.view>div>div.page-container
 
 .css-17abkeq,
 .css-5ak73y {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 
@@ -1083,7 +1083,7 @@ body>grafana-app>div>div>react-container>div>div>div.view>div>div.page-container
 
 .css-cxwxzk-Label-description,
 .css-n370st {
-    color: #eee;
+    color: var(--text);
 }
 
 .css-10pj50r,
@@ -1297,13 +1297,13 @@ input:checked+.gf-form-switch__slider {
 
 /*Placeholder text*/
 ::placeholder {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 }
 
 :-ms-input-placeholder {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 }
 
 ::-webkit-input-placeholder {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 }

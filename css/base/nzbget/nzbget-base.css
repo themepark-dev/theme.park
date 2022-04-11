@@ -183,7 +183,7 @@ tr.checked:nth-child(odd) .progress {
 
 .bar-text-left,
 .bar-text-right {
-    color: #fff;
+    var(--text-hover);
 }
 
 /* NAVBAR */
@@ -234,7 +234,7 @@ div.check:hover {
 [class*=" icon-"],
 [class^="img-"],
 [class*=" img-"] {
-    background-image: url(https://theme-park.dev/resources/nzbget/icons.png);
+    background-image: url(/resources/nzbget/icons.png);
 }
 
 .navbar-search .search-query {
@@ -382,7 +382,7 @@ div.check:hover {
 #ConfigData>div:nth-child(5)>div>button {
     text-shadow: unset;
     background: rgba(0, 0, 0, 0.25);
-    color: white;
+    color: var(--text-hover);
 }
 
 #ConfigData>div:nth-child(3)>div>button:hover,
@@ -390,7 +390,7 @@ div.check:hover {
 #ConfigData>div:nth-child(5)>div>button:hover {
     text-shadow: unset;
     background: hsla(0, 0%, 100%, .08);
-    color: white;
+    color: var(--text-hover);
 }
 
 #ConfigData input.btn.btn-primary {
@@ -408,24 +408,24 @@ div.check:hover {
 
 #Config_ViewButton {
     background: rgba(0, 0, 0, 0.25);
-    color: #FFF;
+    color: var(--text-hover);
 }
 
 #Config_ViewButton:hover {
     background: hsla(0, 0%, 100%, .08);
-    color: #FFF;
+    color: var(--text-hover);
 }
 
 #DownloadsEditDialog input.btn.btn-primary {
     background: var(--button-color) !important;
     text-shadow: unset;
-    color: white;
+    color: var(--button-text);
 }
 
 #HistoryEdit_ParamData input.btn.btn-primary {
     background: var(--button-color) !important;
     text-shadow: unset;
-    color: white;
+    color: var(--button-text);
 }
 
 .btn {
@@ -606,16 +606,16 @@ label {
 }
 
 span.help-option-title {
-    color: #eee;
+    color: var(--text);
 }
 
 .help-block,
 .help-inline {
-    color: #eee;
+    color: var(--text);
 }
 
 .confirm-help-block {
-    color: #eee;
+    color: var(--text);
     font-size: 13px;
     line-height: 16px;
     margin-bottom: 0;
@@ -633,7 +633,7 @@ span.help-option-title {
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
     background-color: transparent;
-    color: #FFFFFF !important;
+    color: var(--text-hover) !important;
     border: none;
 }
 

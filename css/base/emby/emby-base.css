@@ -157,7 +157,7 @@ html {
 }
 
 .pageTitleWithDefaultLogo {
-    background-image: url(https://theme-park.dev/resources/emby/logowhite.png)
+    background-image: url(/resources/emby/logowhite.png)
 }
 
 .backgroundContainer,
@@ -237,7 +237,7 @@ html {
 
     .dialog-blur,
     .toast {
-        color: #fff;
+        color: var(--text-hover);
         background: rgba(56, 56, 56, .76);
         -webkit-backdrop-filter: blur(2.5em) saturate(1.8);
         backdrop-filter: blur(2.5em) saturate(1.8);
@@ -278,7 +278,7 @@ html {
 
 .emby-select-tv-withcolor:focus {
     background-color: rgb(var(--theme-primary-color)) !important;
-    color: #fff !important
+    color: var(--text-hover) !important
 }
 
 .checkboxLabel {
@@ -361,7 +361,7 @@ html {
 
 .alphaPickerButton-tv:focus {
     background-color: rgb(var(--theme-primary-color));
-    color: #fff !important
+    color: var(--text-hover) !important
 }
 
 .detailTableBodyRow-shaded:nth-child(even) {
@@ -459,7 +459,7 @@ html {
 .emby-button-focusscale:focus,
 .emby-button-focusscale:focus .detailButton-icon {
     background: rgb(var(--theme-primary-color));
-    color: #fff
+    color: var(--text-hover)
 }
 
 .emby-tab-button {
@@ -568,7 +568,7 @@ html {
 .channelCell:focus,
 .programCell:focus {
     background-color: rgb(var(--theme-primary-color));
-    color: #fff
+    color: var(--text-hover)
 }
 
 .guide-programTextIcon {
@@ -688,7 +688,7 @@ html {
 }
 
 .scrollbuttoncontainer {
-    color: #fff;
+    color: var(--text-hover);
     background: rgba(20, 20, 20, .5)
 }
 
@@ -697,7 +697,7 @@ html {
 }
 
 .drawerLogo {
-    background-image: url(https://theme-park.dev/resources/emby/logowhite.png);
+    background-image: url(/resources/emby/logowhite.png);
     border-bottom-color: var(--line-background)
 }
 
@@ -715,7 +715,7 @@ html {
 
 .dragging-over.full-drop-target {
     background: rgb(var(--theme-primary-color)) !important;
-    color: #fff !important
+    color: var(--text-hover) !important
 }
 
 .dragging-over-top:before {

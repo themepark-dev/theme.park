@@ -240,7 +240,7 @@ label {
     cursor: default;
     background-color: rgba(0, 0, 0, .25);
     border: 1px solid rgba(255, 255, 255, .25);
-    border-bottom-color: #eee;
+    border-bottom-color: var(--text);
     border-radius: 6px 6px 0 0;
 }
 
@@ -513,7 +513,7 @@ div>div>div.modal-footer>button.btn.btn-default.pull-left,
 .btn-danger.btn-fill {
     border-color: #f05050;
     background-color: #f05050;
-    color: #eee;
+    color: var(--text);
 }
 
 div>div>div.modal-footer>button.btn.btn-default.pull-left:hover,
@@ -523,25 +523,25 @@ div>div>div.modal-footer>button.btn.btn-default.pull-left:focus,
 .btn-danger.btn-fill:hover,
 .btn-danger.btn-fill:focus {
     border-color: #ec2626;
-    color: #fff;
+    color: var(--text-hover);
     background-color: #ec2626;
 }
 
 div.bootbox.modal.fade.bootbox-confirm.in>div>div>div.modal-footer>button.btn.btn-default {
     border-color: #f05050;
     background-color: #f05050;
-    color: #eee;
+    color: var(--text);
 }
 
 div.bootbox.modal.fade.bootbox-confirm.in>div>div>div.modal-footer>button.btn.btn-default:hover,
 div.bootbox.modal.fade.bootbox-confirm.in>div>div>div.modal-footer>button.btn.btn-default:focus {
     border-color: #ec2626;
-    color: #fff;
+    color: var(--text-hover);
     background-color: #ec2626;
 }
 
 .close {
-    color: #fff
+    var(--text-hover);
 }
 
 .navbar .navbar-nav>li>a.btn-success,

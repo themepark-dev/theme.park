@@ -36,15 +36,15 @@ div#preload {
     width: 0;
     height: 0;
     display: none;
-    background-image: url(https://theme-park.dev/resources/rutorrent/menus.png);
-    background-image: url(https://theme-park.dev/resources/rutorrent/toolbar.png);
-    background-image: url(https://theme-park.dev/resources/rutorrent/status_icons.png);
-    background-image: url(https://theme-park.dev/resources/rutorrent/r_bg.gif);
-    background-image: url(https://theme-park.dev/resources/rutorrent/asc.gif);
-    background-image: url(https://theme-park.dev/resources/rutorrent/desc.gif);
-    background-image: url(https://theme-park.dev/resources/rutorrent/pnl_open.gif);
-    background-image: url(https://theme-park.dev/resources/rutorrent/pnl_close.gif);
-    background-image: url(https://theme-park.dev/resources/rutorrent/headers.png)
+    background-image: url(/resources/rutorrent/menus.png);
+    background-image: url(/resources/rutorrent/toolbar.png);
+    background-image: url(/resources/rutorrent/status_icons.png);
+    background-image: url(/resources/rutorrent/r_bg.gif);
+    background-image: url(/resources/rutorrent/asc.gif);
+    background-image: url(/resources/rutorrent/desc.gif);
+    background-image: url(/resources/rutorrent/pnl_open.gif);
+    background-image: url(/resources/rutorrent/pnl_close.gif);
+    background-image: url(/resources/rutorrent/headers.png)
 }
 
 hr {
@@ -172,7 +172,7 @@ ul.CMenu li a.exp:hover {
 }
 
 ul.CMenu li a.sel {
-    color: #ffffff;
+    color: var(--text-hover);
     background: rgba(0, 0, 0, 0.15);
 }
 
@@ -197,7 +197,7 @@ ul.CMenu li:hover ul li a:hover {
 }
 
 ul.CMenu li ul li a.dis {
-    color: #fff
+    color: var(--text-hover);
 }
 
 ul.CMenu li ul li a.dis:hover {
@@ -259,120 +259,120 @@ div#t div.TB_Separator {
 }
 
 div#t div#add {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/toolbar.png) no-repeat 0 0
+    background: transparent url(/resources/rutorrent/toolbar.png) no-repeat 0 0
 }
 
 div#t div#add:hover {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/toolbar.png) no-repeat 0 -24px
+    background: transparent url(/resources/rutorrent/toolbar.png) no-repeat 0 -24px
 }
 
 div#t div#create {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/toolbar.png) no-repeat -24px 0
+    background: transparent url(/resources/rutorrent/toolbar.png) no-repeat -24px 0
 }
 
 div#t div#create:hover {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/toolbar.png) no-repeat -24px -24px
+    background: transparent url(/resources/rutorrent/toolbar.png) no-repeat -24px -24px
 }
 
 div#t div#remove {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/toolbar.png) no-repeat -48px 0
+    background: transparent url(/resources/rutorrent/toolbar.png) no-repeat -48px 0
 }
 
 div#t div#remove:hover {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/toolbar.png) no-repeat -48px -24px
+    background: transparent url(/resources/rutorrent/toolbar.png) no-repeat -48px -24px
 }
 
 div#t div#start {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/toolbar.png) no-repeat -72px 0
+    background: transparent url(/resources/rutorrent/toolbar.png) no-repeat -72px 0
 }
 
 div#t div#start:hover {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/toolbar.png) no-repeat -72px -24px
+    background: transparent url(/resources/rutorrent/toolbar.png) no-repeat -72px -24px
 }
 
 div#t div#pause {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/toolbar.png) no-repeat -96px 0
+    background: transparent url(/resources/rutorrent/toolbar.png) no-repeat -96px 0
 }
 
 div#t div#pause:hover {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/toolbar.png) no-repeat -96px -24px
+    background: transparent url(/resources/rutorrent/toolbar.png) no-repeat -96px -24px
 }
 
 div#t div#stop {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/toolbar.png) no-repeat -120px 0
+    background: transparent url(/resources/rutorrent/toolbar.png) no-repeat -120px 0
 }
 
 div#t div#stop:hover {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/toolbar.png) no-repeat -120px -24px
+    background: transparent url(/resources/rutorrent/toolbar.png) no-repeat -120px -24px
 }
 
 div#t div#moveu {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/toolbar.png) no-repeat -144px 0
+    background: transparent url(/resources/rutorrent/toolbar.png) no-repeat -144px 0
 }
 
 div#t div#moveu:hover {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/toolbar.png) no-repeat -144px -24px
+    background: transparent url(/resources/rutorrent/toolbar.png) no-repeat -144px -24px
 }
 
 div#t div#moved {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/toolbar.png) no-repeat -168px 0
+    background: transparent url(/resources/rutorrent/toolbar.png) no-repeat -168px 0
 }
 
 div#t div#moved:hover {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/toolbar.png) no-repeat -168px -24px
+    background: transparent url(/resources/rutorrent/toolbar.png) no-repeat -168px -24px
 }
 
 div#t div#search {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/toolbar.png) no-repeat -192px 0
+    background: transparent url(/resources/rutorrent/toolbar.png) no-repeat -192px 0
 }
 
 div#t div#search:hover {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/toolbar.png) no-repeat -192px -24px
+    background: transparent url(/resources/rutorrent/toolbar.png) no-repeat -192px -24px
 }
 
 div#t div#rss {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/toolbar.png) no-repeat -241px 0
+    background: transparent url(/resources/rutorrent/toolbar.png) no-repeat -241px 0
 }
 
 div#t div#rss:hover {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/toolbar.png) no-repeat -241px -24px
+    background: transparent url(/resources/rutorrent/toolbar.png) no-repeat -241px -24px
 }
 
 div#t div#setting {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/toolbar.png) no-repeat -264px 0
+    background: transparent url(/resources/rutorrent/toolbar.png) no-repeat -264px 0
 }
 
 div#t div#setting:hover {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/toolbar.png) no-repeat -264px -24px
+    background: transparent url(/resources/rutorrent/toolbar.png) no-repeat -264px -24px
 }
 
 div#t div#plugins {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/plugin.png) no-repeat 0 center
+    background: transparent url(/resources/rutorrent/plugin.png) no-repeat 0 center
 }
 
 div#t div#plugins:hover {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/pluginh.png) no-repeat 0 center
+    background: transparent url(/resources/rutorrent/pluginh.png) no-repeat 0 center
 }
 
 div#t div#help {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/toolbar.png) no-repeat -288px 0
+    background: transparent url(/resources/rutorrent/toolbar.png) no-repeat -288px 0
 }
 
 div#t div#help:hover {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/toolbar.png) no-repeat -288px -24px
+    background: transparent url(/resources/rutorrent/toolbar.png) no-repeat -288px -24px
 }
 
 div#t div#go {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/go.png) no-repeat 0 0
+    background: transparent url(/resources/rutorrent/go.png) no-repeat 0 0
 }
 
 div#t div#go:hover {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/goh.png) no-repeat 0 0
+    background: transparent url(/resources/rutorrent/goh.png) no-repeat 0 0
 }
 
 div select {
     -webkit-appearance: none !important;
-    background: #1f1f1f url(https://theme-park.dev/resources/rutorrent/dropdown.png) no-repeat 0 0;
+    background: #1f1f1f url(/resources/rutorrent/dropdown.png) no-repeat 0 0;
     background-position: right;
     border: 1px solid #1f1f1f;
     padding-right: 15px !important;
@@ -398,12 +398,12 @@ div select {
 }
 
 a {
-    color: #fff;
+    color: var(--link-color);
     font-family: 'Roboto'
 }
 
 .flot-text {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 }
 
 .flot-overlay {
@@ -411,7 +411,7 @@ a {
 }
 
 div#stg-header {
-    background: #273238 url(https://theme-park.dev/resources/rutorrent/dlg-toolbars.gif) no-repeat scroll 0 -72px;
+    background: #273238 url(/resources/rutorrent/dlg-toolbars.gif) no-repeat scroll 0 -72px;
     text-shadow: 0 -1px 0 #000
 }
 
@@ -449,7 +449,7 @@ div#CatList ul li.sel {
 #-_-_-act-_-_-,
 #-_-_-iac-_-_-,
 #-_-_-err-_-_- {
-    background-image: url(https://theme-park.dev/resources/rutorrent/status_icons.png)
+    background-image: url(/resources/rutorrent/status_icons.png)
 }
 
 .catpanel {
@@ -459,7 +459,7 @@ div#CatList ul li.sel {
     height: 22px;
     line-height: 25px;
     background-image: none;
-    background: url(https://theme-park.dev/resources/rutorrent/pnl_open.gif) 0 0 no-repeat !important;
+    background: url(/resources/rutorrent/pnl_open.gif) 0 0 no-repeat !important;
     background-color: #273238;
     font-weight: 700;
     color: var(--text-hover);
@@ -497,28 +497,28 @@ div#CatList ul li.sel {
 }
 
 div#CatList ul li.RSS {
-    background-image: url(https://theme-park.dev/resources/rutorrent/status_icons.png);
+    background-image: url(/resources/rutorrent/status_icons.png);
     background-position: 4px -207px
 }
 
 div#CatList ul li.disRSS {
-    background-image: url(https://theme-park.dev/resources/rutorrent/status_icons.png)
+    background-image: url(/resources/rutorrent/status_icons.png)
 }
 
 .stable-icon {
-    background-image: url(https://theme-park.dev/resources/rutorrent/status_icons.png)
+    background-image: url(/resources/rutorrent/status_icons.png)
 }
 
 .Icon_File {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/file.gif) no-repeat left center
+    background: transparent url(/resources/rutorrent/file.gif) no-repeat left center
 }
 
 .Icon_Dir {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/dir.gif) no-repeat left center
+    background: transparent url(/resources/rutorrent/dir.gif) no-repeat left center
 }
 
 .Icon_Share {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/dir.gif) no-repeat left center
+    background: transparent url(/resources/rutorrent/dir.gif) no-repeat left center
 }
 
 div#CatList ul li.sel span {
@@ -526,7 +526,7 @@ div#CatList ul li.sel span {
 }
 
 div#flabel_cont ul li {
-    background-image: url(https://theme-park.dev/resources/rutorrent/status_icons.png);
+    background-image: url(/resources/rutorrent/status_icons.png);
     background-position: 4px -352px
 }
 
@@ -541,7 +541,7 @@ div#lcont {
 }
 
 div#gcont table td.Header {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/status_icons.png) no-repeat 0 -286px;
+    background: transparent url(/resources/rutorrent/status_icons.png) no-repeat 0 -286px;
     font-family: 'Roboto';
     color: var(--text-hover);
     padding-left: 17px
@@ -562,7 +562,7 @@ div#gcont table {
 }
 
 div.graph_tab {
-    color: #FFF;
+    color: var(--text-hover);
     border-color: transparent;
     background-color: rgba(0, 0, 0, 0.25)
 }
@@ -600,16 +600,16 @@ div#Speed {
 }
 
 a.dlg-close {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/close.png) no-repeat scroll left center
+    background: transparent url(/resources/rutorrent/close.png) no-repeat scroll left center
 }
 
 a.dlg-close:hover {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/close.png) no-repeat scroll left center
+    background: transparent url(/resources/rutorrent/close.png) no-repeat scroll left center
 }
 
 a.dlg-close:link,
 a.dlg-close:visited {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/close.png) no-repeat scroll left center
+    background: transparent url(/resources/rutorrent/close.png) no-repeat scroll left center
 }
 
 div.dlg-header {
@@ -712,7 +712,7 @@ div#tdetails {
     padding: 0;
     margin: 0;
     background-color: transparent;
-    color: #fff;
+    color: var(--text-hover);
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
 }
@@ -748,7 +748,7 @@ div#VDivider:hover {
 }
 
 div#tcreate textarea#trackers {
-    color: #fff;
+    color: var(--text-hover);
     border: none !important;
     background: rgba(0, 0, 0, 0.25);
     border-radius: 2px;
@@ -758,9 +758,9 @@ div#tcreate textarea#trackers {
 input[type="text"],
 input[type="password"],
 select {
-    color: #fff;
+    color: var(--text-hover);
     border: none;
-    background: rgba(0, 0, 0, 0.25) url(https://theme-park.dev/resources/rutorrent/headers.png) repeat-x scroll 0 -138px;
+    background: rgba(0, 0, 0, 0.25) url(/resources/rutorrent/headers.png) repeat-x scroll 0 -138px;
     border-radius: 2px;
     outline: none;
 }
@@ -769,15 +769,15 @@ input[type="text"][disabled],
 input[type="password"][disabled],
 input[type="file"][disabled],
 select[disabled] {
-    color: #fff;
+    color: var(--text-hover);
     border: none;
-    background: rgba(0, 0, 0, 0.08) url(https://theme-park.dev/resources/rutorrent/headers.png) repeat scroll 0 0 !important;
+    background: rgba(0, 0, 0, 0.08) url(/resources/rutorrent/headers.png) repeat scroll 0 0 !important;
     border-radius: 2px;
     opacity: .2
 }
 
 #StatusBar table tr td.pstatus2 {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/green.png) no-repeat scroll 5px center !important
+    background: transparent url(/resources/rutorrent/green.png) no-repeat scroll 5px center !important
 }
 
 textarea {
@@ -789,7 +789,7 @@ textarea {
 #lookat,
 #message,
 #FS_downlink {
-    color: #fff;
+    color: var(--text-hover);
     border: none !important;
     background: rgba(0, 0, 0, 0.25);
     border-radius: 2px
@@ -885,7 +885,7 @@ ul#tabbar li.selected a {
 }
 
 .tabbar li a:hover {
-    color: #fff;
+    color: var(--text-hover);
     background: none;
     border: none
 }
@@ -893,7 +893,7 @@ ul#tabbar li.selected a {
 .tabbar li.selected a {
     background: none;
     border: none;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid var(--text-hover);
     color: #ececec;
     font-weight: 700;
     margin: 0 2px 0 0;
@@ -903,12 +903,12 @@ ul#tabbar li.selected a {
 }
 
 #fMan_navbut {
-    background-image: url(https://theme-park.dev/resources/rutorrent/directory.png) !important;
+    background-image: url(/resources/rutorrent/directory.png) !important;
     border: 1px solid #181818 !important
 }
 
 #fMan_navbut:hover {
-    background-image: url(https://theme-park.dev/resources/rutorrent/refresh.png) !important
+    background-image: url(/resources/rutorrent/refresh.png) !important
 }
 
 #fMan_pathsel {
@@ -952,7 +952,7 @@ div.dlg-window {
 }
 
 #FS_main div.dlg-header {
-    background-image: url(https://theme-park.dev/resources/rutorrent/share.png) !important
+    background-image: url(/resources/rutorrent/share.png) !important
 }
 
 div#yesnoDlg div.dlg-header {
@@ -1029,7 +1029,7 @@ div.tab {
 div#t div#ind {
     height: 34px;
     width: 34px;
-    background: transparent url(https://theme-park.dev/resources/rutorrent/ajax-loader.gif) no-repeat 0 center;
+    background: transparent url(/resources/rutorrent/ajax-loader.gif) no-repeat 0 center;
     margin: 2px 6px
 }
 
@@ -1042,7 +1042,7 @@ tr#rrow td a#mnu_go div#go {
 }
 
 span#loadimg {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/ajax-loader.gif) no-repeat center center
+    background: transparent url(/resources/rutorrent/ajax-loader.gif) no-repeat center center
 }
 
 .meter-value-start-color {
@@ -1105,7 +1105,7 @@ div#lcont div.std:nth-child(2n+1) {
 #StatusBar table tr td {
     padding-right: 5px;
     border: none;
-    background: transparent url(https://theme-park.dev/resources/rutorrent/headers.png) no-repeat right -208px
+    background: transparent url(/resources/rutorrent/headers.png) no-repeat right -208px
 }
 
 #StatusBar table tr td td {
@@ -1117,11 +1117,11 @@ div#lcont div.std:nth-child(2n+1) {
 }
 
 #st_up {
-    background: url(https://theme-park.dev/resources/rutorrent/status.png) no-repeat 6px 2px
+    background: url(/resources/rutorrent/status.png) no-repeat 6px 2px
 }
 
 #st_down {
-    background: url(https://theme-park.dev/resources/rutorrent/status.png) no-repeat 6px -18px
+    background: url(/resources/rutorrent/status.png) no-repeat 6px -18px
 }
 
 .statuscell {
@@ -1139,7 +1139,7 @@ div#lcont div.std:nth-child(2n+1) {
 
 #stup_total,
 #stdown_total {
-    color: #fff
+    color: var(--text-hover);
 }
 
 span#ds,
@@ -1157,7 +1157,7 @@ span#ul {
 }
 
 span.det {
-    color: #fff
+    color: var(--text-hover);
 }
 
 .stable-head table tr td {
@@ -1166,46 +1166,46 @@ span.det {
 }
 
 .Icon_Dir {
-    background-image: url(https://theme-park.dev/resources/rutorrent/status_icons.png);
+    background-image: url(/resources/rutorrent/status_icons.png);
     background-position: 0 -272px
 }
 
 .Icon_File {
-    background-image: url(https://theme-park.dev/resources/rutorrent/status_icons.png);
+    background-image: url(/resources/rutorrent/status_icons.png);
     background-position: 0 -256px
 }
 
 .Icon_Torrent {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/torrent.png) no-repeat scroll left center !important
+    background: transparent url(/resources/rutorrent/torrent.png) no-repeat scroll left center !important
 }
 
 .Icon_Vid {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/video.png) no-repeat scroll left center !important
+    background: transparent url(/resources/rutorrent/video.png) no-repeat scroll left center !important
 }
 
 .Icon_Mp3 {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/mp3.png) no-repeat scroll left center !important
+    background: transparent url(/resources/rutorrent/mp3.png) no-repeat scroll left center !important
 }
 
 .Icon_Img {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/image.png) no-repeat scroll left center !important
+    background: transparent url(/resources/rutorrent/image.png) no-repeat scroll left center !important
 }
 
 .Icon_Nfo {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/nfo.png) no-repeat scroll left center !important
+    background: transparent url(/resources/rutorrent/nfo.png) no-repeat scroll left center !important
 }
 
 .Icon_Sfv {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/text.png) no-repeat scroll left center !important
+    background: transparent url(/resources/rutorrent/text.png) no-repeat scroll left center !important
 }
 
 .Icon_UpD {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/up.png) no-repeat scroll left center !important
+    background: transparent url(/resources/rutorrent/up.png) no-repeat scroll left center !important
 }
 
 .Icon_Rar,
 .Icon_Zip {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/archive.zip) no-repeat scroll left center !important
+    background: transparent url(/resources/rutorrent/archive.zip) no-repeat scroll left center !important
 }
 
 
@@ -1260,7 +1260,7 @@ div#tdcont .stable {
 
 .stable-head div.resz {
     border: 1px solid #FF0000;
-    background: transparent url(https://theme-park.dev/resources/rutorrent/s.gif) no-repeat scroll left center;
+    background: transparent url(/resources/rutorrent/s.gif) no-repeat scroll left center;
 }
 
 .stable-body {
@@ -1309,16 +1309,16 @@ div.stable-body table tbody tr.even td:nth-child(2n+1) {
 }
 
 div.stable-body table tbody tr.even:nth-child(2n+1) td {
-    background: #181818 url(https://theme-park.dev/resources/rutorrent/headers.png) repeat-x 0px -64px;
+    background: #181818 url(/resources/rutorrent/headers.png) repeat-x 0px -64px;
 }
 
 .stable-move-header {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/header_move.gif) repeat-x scroll center top;
+    background: transparent url(/resources/rutorrent/header_move.gif) repeat-x scroll center top;
     border: 1px solid #0099FF;
 }
 
 .stable-move-header {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/header_move.gif) repeat-x scroll center top rgba(128, 128, 128, 0.7);
+    background: transparent url(/resources/rutorrent/header_move.gif) repeat-x scroll center top rgba(128, 128, 128, 0.7);
     border: 1px solid #0099FF;
 }
 
@@ -1345,14 +1345,14 @@ div.stable-body table tbody tr.even:nth-child(2n+1) td {
 }
 
 .stable-scrollpos {
-    background: #181818 url(https://theme-park.dev/resources/rutorrent/headers.png) repeat-x 0px -37px;
+    background: #181818 url(/resources/rutorrent/headers.png) repeat-x 0px -37px;
     height: 17px;
     line-height: 17px;
     border-bottom: 1px solid #333333;
 }
 
 .stable-scrollpos:nth-child(2n+1) {
-    background: #181818 url(https://theme-park.dev/resources/rutorrent/headers.png) repeat-x 0px -64px;
+    background: #181818 url(/resources/rutorrent/headers.png) repeat-x 0px -64px;
 }
 
 .meter-value {
@@ -1363,7 +1363,7 @@ div.stable-body table tbody tr.even:nth-child(2n+1) td {
 }
 
 .stable-body tr.selected span.meter-value {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 .meter-text {
@@ -1417,13 +1417,13 @@ div.stable-body table tbody tr.even:nth-child(2n+1) td {
     float: left;
     border: 1px inset #1b1b1b;
     border-bottom: none;
-    background: #96CE00 url(https://theme-park.dev/resources/rutorrent/headers.png) repeat-x 0px -138px;
+    background: #96CE00 url(/resources/rutorrent/headers.png) repeat-x 0px -138px;
 }
 
 #meter-disk-text,
 #qmeter-disk-text,
 #meter-band-text {
-    color: #fff;
+    color: var(--text-hover);
     text-shadow: 0px 0px 2px #000;
     position: relative;
     text-align: left;
@@ -1446,14 +1446,14 @@ div.stable-body table tbody tr.even:nth-child(2n+1) td {
     border-right: none;
     padding-left: 25px;
     margin-left: 0px;
-    background: url(https://theme-park.dev/resources/rutorrent/status_icons.png) no-repeat 3px -336px;
+    background: url(/resources/rutorrent/status_icons.png) no-repeat 3px -336px;
 }
 
 #meter-cpu-text {
     position: absolute;
     left: 65px;
     top: 0px;
-    color: #fff;
+    color: var(--text-hover);
     text-shadow: 0px 0px 2px #000;
     font-size: 11px;
     font-family: Ubuntu;
@@ -1466,13 +1466,13 @@ div.stable-body table tbody tr.even:nth-child(2n+1) td {
     border-right: none;
     margin-left: 0px;
     padding-left: 25px;
-    background: url(https://theme-park.dev/resources/rutorrent/status_icons.png) no-repeat 3px -320px;
+    background: url(/resources/rutorrent/status_icons.png) no-repeat 3px -320px;
 }
 
 /* #meter-cpu-td {}*/
 
 div.graph_tab {
-    color: #FFF;
+    color: var(--text-hover);
     border-color: transparent;
 }
 
@@ -1573,7 +1573,7 @@ div#dlgAddRSS div.dlg-header {
 
 .CellF {
     background-color: #000;
-    color: #fff;
+    color: var(--text-hover);
 }
 
 #tCellNotSupported {
@@ -1588,7 +1588,7 @@ div#dlgAddRSS div.dlg-header {
 div#dlgEditRules-header,
 #dlgEditRatioRules-header,
 div#dlgEditRules div.dlg-header {
-    background: #181818 url(https://theme-park.dev/resources/rutorrent/dlg-toolbars.gif) no-repeat 0 -72px !important;
+    background: #181818 url(/resources/rutorrent/dlg-toolbars.gif) no-repeat 0 -72px !important;
     border-bottom: 1px solid #333333;
     text-shadow: 0px -1px 0px #000;
 }
@@ -1615,15 +1615,15 @@ div#dlgEditRatioRules {
 }
 
 #autodl-tb {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/autodll-irc1.png) no-repeat center;
+    background: transparent url(/resources/rutorrent/autodll-irc1.png) no-repeat center;
 }
 
 #autodl-tb:hover {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/autodll-irc2.png) no-repeat center;
+    background: transparent url(/resources/rutorrent/autodll-irc2.png) no-repeat center;
 }
 
 #autodl-multiselect-header {
-    background-image: url("https://theme-park.dev/resources/rutorrent/dlg-autodl-irc.gif");
+    background-image: url("/resources/rutorrent/dlg-autodl-irc.gif");
 }
 
 .shieven {
@@ -1635,59 +1635,59 @@ div#dlgEditRatioRules {
 }
 
 div#webuiUpdateToggle.pause {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/pauseui.png) no-repeat;
+    background: transparent url(/resources/rutorrent/pauseui.png) no-repeat;
 }
 
 div#webuiUpdateToggle.pause:hover {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/pauseuih.png) no-repeat;
+    background: transparent url(/resources/rutorrent/pauseuih.png) no-repeat;
 }
 
 div#webuiUpdateToggle.resume {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/playui.png) no-repeat;
+    background: transparent url(/resources/rutorrent/playui.png) no-repeat;
 }
 
 div#webuiUpdateToggle.resume:hover {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/playuih.png) no-repeat;
+    background: transparent url(/resources/rutorrent/playuih.png) no-repeat;
 }
 
 div#webuiRefresh {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/refreshui.png) no-repeat;
+    background: transparent url(/resources/rutorrent/refreshui.png) no-repeat;
 }
 
 div#webuiRefresh:hover {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/refreshuih.png) no-repeat;
+    background: transparent url(/resources/rutorrent/refreshuih.png) no-repeat;
 }
 
 div#linkproxy {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/proxy.png) no-repeat;
+    background: transparent url(/resources/rutorrent/proxy.png) no-repeat;
 }
 
 div#linkproxy:hover {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/proxyh.png) no-repeat;
+    background: transparent url(/resources/rutorrent/proxyh.png) no-repeat;
 }
 
 div#linklogs {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/linklogs.png) no-repeat;
+    background: transparent url(/resources/rutorrent/linklogs.png) no-repeat;
 }
 
 div#linklogs:hover {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/linklogsh.png) no-repeat;
+    background: transparent url(/resources/rutorrent/linklogsh.png) no-repeat;
 }
 
 div#linkseedboxmanager {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/seedboxmanager.png) no-repeat;
+    background: transparent url(/resources/rutorrent/seedboxmanager.png) no-repeat;
 }
 
 div#linkseedboxmanager:hover {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/seedboxmanagerh.png) no-repeat;
+    background: transparent url(/resources/rutorrent/seedboxmanagerh.png) no-repeat;
 }
 
 div#plugin {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/plugin.png) no-repeat;
+    background: transparent url(/resources/rutorrent/plugin.png) no-repeat;
 }
 
 div#plugin:hover {
-    background: transparent url(https://theme-park.dev/resources/rutorrent/pluginh.png) no-repeat;
+    background: transparent url(/resources/rutorrent/pluginh.png) no-repeat;
 }
 
 #maillayout #letterform table tr td {
@@ -1699,15 +1699,15 @@ div#plugin:hover {
 }
 
 div#chat {
-    background-image: url(https://theme-park.dev/resources/rutorrent/chat.png);
+    background-image: url(/resources/rutorrent/chat.png);
 }
 
 div#chat:hover {
-    background-image: url(https://theme-park.dev/resources/rutorrent/chat3.png);
+    background-image: url(/resources/rutorrent/chat3.png);
 }
 
 div#tchat div.dlg-header {
-    background-image: url(https://theme-park.dev/resources/rutorrent/chat2.png);
+    background-image: url(/resources/rutorrent/chat2.png);
 }
 
 #userlist,
@@ -1717,25 +1717,25 @@ div#tchat div.dlg-header {
     border: none !important;
     background-color: #6F6F6F !important;
     border-radius: 2px !important;
-    color: #fff !important
+    color: var(--text-hover) !important
 }
 
 div#logoff {
-    background-image: url(https://theme-park.dev/resources/rutorrent/logoff.png);
+    background-image: url(/resources/rutorrent/logoff.png);
 }
 
 div#logoff:hover {
-    background-image: url(https://theme-park.dev/resources/rutorrent/logoff3.png);
+    background-image: url(/resources/rutorrent/logoff3.png);
 }
 
 div#logoffDlg div.dlg-header {
-    background-image: url(https://theme-park.dev/resources/rutorrent/logoff2.png);
+    background-image: url(/resources/rutorrent/logoff2.png);
 }
 
 .noty_alert,
 .noty_success {
     color: #000000;
-    text-shadow: 0 -1px 0 #ffffff
+    text-shadow: 0 -1px 0 var(--text-hover)
 }
 
 .retrackers {
@@ -1746,7 +1746,7 @@ div#logoffDlg div.dlg-header {
     font-family: Tahoma, Arial, Helvetica, sans-serif;
     cursor: text;
     background: rgba(0, 0, 0, 0.25) !important;
-    color: #fff !important;
+    color: var(--text-hover) !important;
     outline: none !important;
 }
 
@@ -1760,13 +1760,13 @@ div#logoffDlg div.dlg-header {
 #dlgEditRatioRules .lf_rru li input.TextboxFocus,
 #dlgEditRules .lf_rur li input.TextboxFocus {
     background-color: rgb(255 255 255 / 25%);
-    color: #FFF;
+    color: var(--text-hover);
 }
 
 #dlgEditRatioRules .lf_rru li input.TextboxNormal,
 #dlgEditRules .lf_rur li input.TextboxNormal {
     background-color: rgb(255 255 255 / .08) !important;
-    color: #FFF;
+    color: var(--text-hover);
 }
 
 .autodl-listbox {

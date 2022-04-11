@@ -12,7 +12,7 @@
 
 
 #footer:after {
-    color: white;
+    color: var(--text-hover);
     content: "theme.park v2.0";
 }
 
@@ -25,7 +25,7 @@ body {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
-    color: #FFFFFF !important;
+    color: var(--text-hover) !important;
 }
 
 /* Scrollbar */
@@ -86,7 +86,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* Text Color */
 .alpaca-control-label,
 .alpaca-control.radio {
-    color: white !important;
+    color: var(--text-hover) !important;
 }
 
 .alpaca-form-buttons-container {
@@ -94,11 +94,11 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .Rtable-cell {
-    color: white !important;
+    color: var(--text-hover) !important;
 }
 
 #colorkey {
-    color: white !important;
+    color: var(--text-hover) !important;
 }
 
 .settingstitle {
@@ -106,7 +106,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 #reginfo {
-    color: white !important;
+    color: var(--text-hover) !important;
 }
 
 #infodata {
@@ -185,14 +185,14 @@ body::-webkit-scrollbar-thumb:hover {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
-    color: white !important;
+    color: var(--text-hover) !important;
     border: 1px solid transparent !important;
     box-shadow: 0.5rem 0.5rem 1rem rgb(15, 15, 15, 0.45) !important;
 }
 
 .modaltextloading,
 .modalloadingspinner {
-    color: #FFF !important;
+    color: var(--text-hover) !important;
 }
 
 .container {
@@ -226,7 +226,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 #servicetitle {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 }
 
 .btnoffline,
@@ -255,16 +255,16 @@ body::-webkit-scrollbar-thumb:hover {
 
 .btn-group>.btn-group:not(:first-child)>.btn,
 .btn-group>.btn:not(:first-child) {
-    color: white !important;
+    color: var(--text-hover) !important;
 }
 
 .btn-group>.btn:first-child {
-    color: white !important;
+    color: var(--text-hover) !important;
 }
 
 #time {
     background-color: rgba(0, 0, 0, .15) !important;
-    color: #fff !important;
+    color: var(--text-hover) !important;
     box-shadow: none;
 }
 
@@ -274,15 +274,15 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 #textslider {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 }
 
 .dtg {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 }
 
 .datemin {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 }
 
 #center {
@@ -308,7 +308,7 @@ body::-webkit-scrollbar-thumb:hover {
 .servicetile,
 .servicetile:hover,
 .servicetile:focus {
-    color: #ffffff;
+    color: var(--text-hover);
     text-shadow: none !important;
     text-decoration: none !important;
     outline: 0;
@@ -321,7 +321,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .servicetile {
-    color: #ffffff;
+    color: var(--text-hover);
     text-shadow: none !important;
     text-decoration: none !important;
     outline: 0;
@@ -341,12 +341,12 @@ body::-webkit-scrollbar-thumb:hover {
 
 #clock {
     background-color: rgba(0, 0, 0, .15) !important;
-    color: #fff !important;
+    color: var(--text-hover) !important;
     box-shadow: none;
 }
 
 .date {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 }
 
 #summary {
@@ -366,12 +366,12 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .pace .pace-activity {
-    border-top-color: #FFF !important;
-    border-left-color: #FFF !important;
+    border-top-color: var(--text-hover) !important;
+    border-left-color: var(--text-hover) !important;
 }
 
 .footer {
-    color: white !important;
+    color: var(--text-hover) !important;
 }
 
 .footer:hover {
@@ -409,17 +409,17 @@ body::-webkit-scrollbar-thumb:hover {
 .modalimgpath,
 .modaltext,
 #uploadbutton {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 }
 
 .file-upload {
     background-color: var(--button-color) !important;
-    color: white !important;
+    color: var(--text-hover) !important;
 }
 
 .file-upload:hover {
     background-color: var(--button-color-hover) !important;
-    color: white !important;
+    color: var(--text-hover) !important;
 }
 
 @media only screen and (max-width: 775px) {

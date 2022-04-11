@@ -28,7 +28,7 @@
  }
 
  input {
-     color: #FFF !important;
+     color: var(--text-hover) !important;
  }
 
  /* scroller */
@@ -78,7 +78,7 @@
  }
 
  .x-item-disabled {
-     color: #aaaaaa;
+     color: var(--text-muted)
  }
 
  .x-item-disabled * {
@@ -86,16 +86,16 @@
  }
 
  .x-splitbar-proxy {
-     background-color: #aaa;
+     background-color: var(--text)
  }
 
  .x-color-palette a {
-     border-color: #fff;
+     border-color: var(--text-hover)
  }
 
  .x-color-palette a:hover,
  .x-color-palette a.x-color-palette-sel {
-     border-color: #CFCFCF;
+     border-color: var(--text);
      background-color: #eaeaea;
  }
 
@@ -104,14 +104,14 @@
  }
 
  .x-deluge-all {
-     background-image: url(https://theme-park.dev/resources/deluge/all.png);
+     background-image: url(/resources/deluge/all.png);
      background-position: left center;
  }
 
  .x-deluge-downloading,
  .x-btn .x-deluge-downloading,
  .x-deluge-peer {
-     background-image: url(https://theme-park.dev/resources/deluge/dling.png);
+     background-image: url(/resources/deluge/dling.png);
      background-position: left center;
  }
 
@@ -119,34 +119,34 @@
  .x-btn .x-deluge-seeding,
  .deluge-torrents .seeding,
  .x-deluge-seed {
-     background-image: url(https://theme-park.dev/resources/deluge/uling.png);
+     background-image: url(/resources/deluge/uling.png);
      background-position: left center;
  }
 
  .x-deluge-active,
  .x-deluge-traffic,
  .x-btn .x-deluge-traffic {
-     background-image: url(https://theme-park.dev/resources/deluge/active.png);
+     background-image: url(/resources/deluge/active.png);
      background-position: left center;
  }
 
  .x-deluge-paused,
  .x-btn .x-deluge-paused,
  .deluge-torrents .paused {
-     background-image: url(https://theme-park.dev/resources/deluge/paused.png);
+     background-image: url(/resources/deluge/paused.png);
      background-position: left center;
  }
 
  .x-deluge-queued,
  .x-btn .x-deluge-queued,
  .deluge-torrents .queued {
-     background-image: url(https://theme-park.dev/resources/deluge/queued.png);
+     background-image: url(/resources/deluge/queued.png);
      background-position: left center;
  }
 
  .x-deluge-checking,
  .deluge-torrents .checking {
-     background-image: url(https://theme-park.dev/resources/deluge/checking.png);
+     background-image: url(/resources/deluge/checking.png);
      background-position: left center;
  }
 
@@ -154,36 +154,36 @@
  .deluge-torrents .error,
  .icon-error,
  .x-not-connected {
-     background-image: url(https://theme-park.dev/resources/deluge/error.png) !important;
+     background-image: url(/resources/deluge/error.png) !important;
      background-position: left center;
  }
 
  .icon-ok {
-     background-image: url(https://theme-park.dev/resources/deluge/ok.png) !important;
+     background-image: url(/resources/deluge/ok.png) !important;
      background-position: left center;
  }
 
  .x-deluge-connections,
  .x-btn .x-deluge-connections {
-     background-image: url(https://theme-park.dev/resources/deluge/connections.png) !important;
+     background-image: url(/resources/deluge/connections.png) !important;
      background-position: left center;
  }
 
  .x-deluge-freespace,
  .x-btn .x-deluge-freespace {
-     background-image: url(https://theme-park.dev/resources/deluge/harddrive.png) !important;
+     background-image: url(/resources/deluge/harddrive.png) !important;
      background-position: left center;
  }
 
  .icon-move {
-     background-image: url(https://theme-park.dev/resources/deluge/move.png) !important;
+     background-image: url(/resources/deluge/move.png) !important;
      background-position: left center;
  }
 
  .icon-recheck,
  .x-deluge-find-more,
  .x-btn .x-deluge-find-more {
-     background-image: url(https://theme-park.dev/resources/deluge/search.png) !important;
+     background-image: url(/resources/deluge/search.png) !important;
      background-position: left center;
  }
 
@@ -191,59 +191,59 @@
  .icon-edit,
  .x-deluge-edit-trackers,
  .x-btn .x-deluge-edit-trackers {
-     background-image: url(https://theme-park.dev/resources/deluge/edit.png) !important;
+     background-image: url(/resources/deluge/edit.png) !important;
      background-position: left center;
  }
 
  .xg-hmenu-sort-asc .x-menu-item-icon {
-     background-image: url(https://theme-park.dev/resources/deluge/ascending.png) !important;
+     background-image: url(/resources/deluge/ascending.png) !important;
      background-position: left center;
  }
 
  .xg-hmenu-sort-desc .x-menu-item-icon {
-     background-image: url(https://theme-park.dev/resources/deluge/descending.png) !important;
+     background-image: url(/resources/deluge/descending.png) !important;
      background-position: left center;
  }
 
  .icon-update-tracker {
-     background-image: url(https://theme-park.dev/resources/deluge/update.png) !important;
+     background-image: url(/resources/deluge/update.png) !important;
      background-position: left center;
  }
 
  .icon-queue,
  .icon-upload-slots {
-     background-image: url(https://theme-park.dev/resources/deluge/queue.png) !important;
+     background-image: url(/resources/deluge/queue.png) !important;
      background-position: left center;
  }
 
  .x-deluge-install-plugin,
  .x-btn .x-deluge-install-plugin {
-     background-image: url(https://theme-park.dev/resources/deluge/plugin.png) !important;
+     background-image: url(/resources/deluge/plugin.png) !important;
      background-position: left center;
  }
 
  .x-deluge-connect-window-icon {
-     background-image: url(https://theme-park.dev/resources/deluge/connection_small.png) !important;
+     background-image: url(/resources/deluge/connection_small.png) !important;
      background-position: left center;
  }
 
  .x-deluge-connect-window-icon {
-     background-image: url(https://theme-park.dev/resources/deluge/connection_small.png) !important;
+     background-image: url(/resources/deluge/connection_small.png) !important;
      background-position: left center;
  }
 
  .x-deluge-connect-window-icon {
-     background-image: url(https://theme-park.dev/resources/deluge/connection_small.png) !important;
+     background-image: url(/resources/deluge/connection_small.png) !important;
      background-position: left center;
  }
 
  .icon-top {
-     background-image: url(https://theme-park.dev/resources/deluge/top.png) !important;
+     background-image: url(/resources/deluge/top.png) !important;
      background-position: left center;
  }
 
  .icon-bottom {
-     background-image: url(https://theme-park.dev/resources/deluge/bottom.png) !important;
+     background-image: url(/resources/deluge/bottom.png) !important;
      background-position: left center;
  }
 
@@ -285,13 +285,13 @@
  }
 
  .x-spotlight {
-     background-color: #ccc;
+     background-color: var(--text);
  }
 
  .x-tab-panel-header,
  .x-tab-panel-footer {
      background: var(--main-bg-color);
-     border-color: #d0d0d0;
+     border-color: var(--text);
      overflow: hidden;
      zoom: 1;
      padding-bottom: 0;
@@ -550,186 +550,186 @@
  }
 
  .x-panel-tbar .icon-add {
-     background: url(https://theme-park.dev/resources/deluge/add.png) no-repeat 0 0 !important;
+     background: url(/resources/deluge/add.png) no-repeat 0 0 !important;
      width: 24px !important;
      overflow: hidden;
  }
 
  .x-panel-tbar .icon-add:hover {
-     background: url(https://theme-park.dev/resources/deluge/add.png) no-repeat 0 -24px !important;
+     background: url(/resources/deluge/add.png) no-repeat 0 -24px !important;
  }
 
  .x-panel-tbar .icon-add:active {
-     background: url(https://theme-park.dev/resources/deluge/add.png) no-repeat 1px -23px !important;
+     background: url(/resources/deluge/add.png) no-repeat 1px -23px !important;
  }
 
  .x-panel-bbar .icon-add {
-     background: url(https://theme-park.dev/resources/deluge/add_small.png) no-repeat 0 0 !important;
+     background: url(/resources/deluge/add_small.png) no-repeat 0 0 !important;
  }
 
  .x-panel-tbar .icon-remove {
-     background: url(https://theme-park.dev/resources/deluge/remove.png) no-repeat 0 0 !important;
+     background: url(/resources/deluge/remove.png) no-repeat 0 0 !important;
      width: 24px !important;
      overflow: hidden;
  }
 
  .x-panel-tbar .icon-remove:hover {
-     background: url(https://theme-park.dev/resources/deluge/remove.png) no-repeat 0 -24px !important;
+     background: url(/resources/deluge/remove.png) no-repeat 0 -24px !important;
  }
 
  .x-panel-tbar .icon-remove:active {
-     background: url(https://theme-park.dev/resources/deluge/remove.png) no-repeat 1px -23px !important;
+     background: url(/resources/deluge/remove.png) no-repeat 1px -23px !important;
  }
 
  .x-panel-bbar .icon-remove {
-     background: url(https://theme-park.dev/resources/deluge/remove_small.png) no-repeat 0 0 !important;
+     background: url(/resources/deluge/remove_small.png) no-repeat 0 0 !important;
  }
 
  .x-panel-tbar .icon-pause {
-     background: url(https://theme-park.dev/resources/deluge/pause.png) no-repeat 0 0 !important;
+     background: url(/resources/deluge/pause.png) no-repeat 0 0 !important;
      width: 24px !important;
      overflow: hidden;
  }
 
  .x-panel-tbar .icon-pause:hover {
-     background: url(https://theme-park.dev/resources/deluge/pause.png) no-repeat 0 -24px !important;
+     background: url(/resources/deluge/pause.png) no-repeat 0 -24px !important;
  }
 
  .x-panel-tbar .icon-pause:active {
-     background: url(https://theme-park.dev/resources/deluge/pause.png) no-repeat 1px -23px !important;
+     background: url(/resources/deluge/pause.png) no-repeat 1px -23px !important;
  }
 
  .x-menu-item .icon-pause {
-     background: url(https://theme-park.dev/resources/deluge/paused.png) no-repeat 0 0 !important;
+     background: url(/resources/deluge/paused.png) no-repeat 0 0 !important;
  }
 
  .x-panel-tbar .icon-resume {
-     background: url(https://theme-park.dev/resources/deluge/resume.png) no-repeat 0 0 !important;
+     background: url(/resources/deluge/resume.png) no-repeat 0 0 !important;
      width: 24px !important;
      overflow: hidden;
  }
 
  .x-panel-tbar .icon-resume:hover {
-     background: url(https://theme-park.dev/resources/deluge/resume.png) no-repeat 0 -24px !important;
+     background: url(/resources/deluge/resume.png) no-repeat 0 -24px !important;
  }
 
  .x-panel-tbar .icon-resume:active {
-     background: url(https://theme-park.dev/resources/deluge/resume.png) no-repeat 1px -23px !important;
+     background: url(/resources/deluge/resume.png) no-repeat 1px -23px !important;
  }
 
  .x-menu-item .icon-resume {
-     background: url(https://theme-park.dev/resources/deluge/resume_small.png) no-repeat 0 0 !important;
+     background: url(/resources/deluge/resume_small.png) no-repeat 0 0 !important;
  }
 
  .icon-remove {
-     background: url(https://theme-park.dev/resources/deluge/remove_small.png) no-repeat 0 0 !important;
+     background: url(/resources/deluge/remove_small.png) no-repeat 0 0 !important;
  }
 
  .x-panel-tbar .icon-up {
-     background: url(https://theme-park.dev/resources/deluge/up.png) no-repeat 0 0 !important;
+     background: url(/resources/deluge/up.png) no-repeat 0 0 !important;
      width: 24px !important;
      overflow: hidden;
  }
 
  .x-panel-tbar .icon-up:hover {
-     background: url(https://theme-park.dev/resources/deluge/up.png) no-repeat 0 -24px !important;
+     background: url(/resources/deluge/up.png) no-repeat 0 -24px !important;
  }
 
  .x-panel-tbar .icon-up:active {
-     background: url(https://theme-park.dev/resources/deluge/up.png) no-repeat 1px -23px !important;
+     background: url(/resources/deluge/up.png) no-repeat 1px -23px !important;
  }
 
  .icon-up {
-     background: url(https://theme-park.dev/resources/deluge/up_small.png) no-repeat 0 0 !important;
+     background: url(/resources/deluge/up_small.png) no-repeat 0 0 !important;
  }
 
  .x-panel-tbar .icon-down {
-     background: url(https://theme-park.dev/resources/deluge/down.png) no-repeat 0 0 !important;
+     background: url(/resources/deluge/down.png) no-repeat 0 0 !important;
      width: 24px !important;
      overflow: hidden;
  }
 
  .x-panel-tbar .icon-down:hover {
-     background: url(https://theme-park.dev/resources/deluge/down.png) no-repeat 0 -24px !important;
+     background: url(/resources/deluge/down.png) no-repeat 0 -24px !important;
  }
 
  .x-panel-tbar .icon-down:active {
-     background: url(https://theme-park.dev/resources/deluge/down.png) no-repeat 1px -23px !important;
+     background: url(/resources/deluge/down.png) no-repeat 1px -23px !important;
  }
 
  .icon-down {
-     background: url(https://theme-park.dev/resources/deluge/down_small.png) no-repeat 0 0 !important;
+     background: url(/resources/deluge/down_small.png) no-repeat 0 0 !important;
  }
 
  .x-btn .x-deluge-preferences {
-     background: url(https://theme-park.dev/resources/deluge/settings.png) no-repeat 0 0 !important;
+     background: url(/resources/deluge/settings.png) no-repeat 0 0 !important;
      width: 24px !important;
      overflow: hidden;
  }
 
  .x-btn .x-deluge-preferences:hover {
-     background: url(https://theme-park.dev/resources/deluge/settings.png) no-repeat 0 -24px !important;
+     background: url(/resources/deluge/settings.png) no-repeat 0 -24px !important;
  }
 
  .x-btn .x-deluge-preferences:active {
-     background: url(https://theme-park.dev/resources/deluge/settings.png) no-repeat 1px -23px !important;
+     background: url(/resources/deluge/settings.png) no-repeat 1px -23px !important;
  }
 
  .x-deluge-preferences {
-     background: url(https://theme-park.dev/resources/deluge/settings_small.png) no-repeat 0 4px !important;
+     background: url(/resources/deluge/settings_small.png) no-repeat 0 4px !important;
  }
 
  .icon-options {
-     background: url(https://theme-park.dev/resources/deluge/settings_small.png) no-repeat 0 0px !important;
+     background: url(/resources/deluge/settings_small.png) no-repeat 0 0px !important;
  }
 
  .x-deluge-connection-manager,
  .x-btn .x-deluge-connection-manager {
-     background: url(https://theme-park.dev/resources/deluge/connection.png) no-repeat 0 0 !important;
+     background: url(/resources/deluge/connection.png) no-repeat 0 0 !important;
      width: 24px !important;
      overflow: hidden;
  }
 
  .x-deluge-connection-manager:hover,
  .x-btn .x-deluge-connection-manager:hover {
-     background: url(https://theme-park.dev/resources/deluge/connection.png) no-repeat 0 -24px !important;
+     background: url(/resources/deluge/connection.png) no-repeat 0 -24px !important;
  }
 
  .x-deluge-connection-manager:active,
  .x-btn .x-deluge-connection-manager:active {
-     background: url(https://theme-park.dev/resources/deluge/connection.png) no-repeat 1px -23px !important;
+     background: url(/resources/deluge/connection.png) no-repeat 1px -23px !important;
  }
 
  .icon-help {
-     background: url(https://theme-park.dev/resources/deluge/help.png) no-repeat 0 0 !important;
+     background: url(/resources/deluge/help.png) no-repeat 0 0 !important;
      width: 24px !important;
      overflow: hidden;
  }
 
  .icon-help:hover {
-     background: url(https://theme-park.dev/resources/deluge/help.png) no-repeat 0 -24px !important;
+     background: url(/resources/deluge/help.png) no-repeat 0 -24px !important;
  }
 
  .icon-help:active {
-     background: url(https://theme-park.dev/resources/deluge/help.png) no-repeat 1px -23px !important;
+     background: url(/resources/deluge/help.png) no-repeat 1px -23px !important;
  }
 
  .icon-logout {
-     background: url(https://theme-park.dev/resources/deluge/logout.png) no-repeat 0 0 !important;
+     background: url(/resources/deluge/logout.png) no-repeat 0 0 !important;
      width: 24px !important;
      overflow: hidden;
  }
 
  .icon-logout:hover {
-     background: url(https://theme-park.dev/resources/deluge/logout.png) no-repeat 0 -24px !important;
+     background: url(/resources/deluge/logout.png) no-repeat 0 -24px !important;
  }
 
  .icon-logout:active {
-     background: url(https://theme-park.dev/resources/deluge/logout.png) no-repeat 1px -23px !important;
+     background: url(/resources/deluge/logout.png) no-repeat 1px -23px !important;
  }
 
  .x-deluge-main-panel {
-     background: url(https://theme-park.dev/resources/deluge/deluge.png) no-repeat 0 0 !important;
+     background: url(/resources/deluge/deluge.png) no-repeat 0 0 !important;
      padding-left: 30px !important;
  }
 
@@ -1296,7 +1296,7 @@
  }
 
  .x-cols-icon {
-     background-image: url(https://theme-park.dev/resources/deluge/columns.png);
+     background-image: url(/resources/deluge/columns.png);
  }
 
  .x-show-groups-icon {
@@ -1337,7 +1337,7 @@
  }
 
  .x-pivotgrid .x-grid3-row-headers table td {
-     background: #EEE url(../images/default/grid/grid3-rowheader.gif) repeat-x left top;
+     background: var(--text)  url(../images/default/grid/grid3-rowheader.gif) repeat-x left top;
      border-left: 1px solid;
      border-right: 1px solid;
      border-left-color: #EEE;
@@ -1372,15 +1372,15 @@
  }
 
  .x-tree-node-expanded .x-tree-node-icon {
-     background-image: url(https://theme-park.dev/resources/deluge/folder.png);
+     background-image: url(/resources/deluge/folder.png);
  }
 
  .x-tree-node-leaf .x-tree-node-icon {
-     background-image: url(https://theme-park.dev/resources/deluge/file.png);
+     background-image: url(/resources/deluge/file.png);
  }
 
  .x-tree-node-collapsed .x-tree-node-icon {
-     background-image: url(https://theme-park.dev/resources/deluge/folder.png);
+     background-image: url(/resources/deluge/folder.png);
  }
 
  .x-tree-node-loading .x-tree-node-icon {
@@ -1462,7 +1462,7 @@
  }
 
  .x-tree-node {
-     color: #cccccc;
+     color: var(--text);
      font: normal 11px 'Roboto', arial, tahoma, helvetica, sans-serif;
  }
 
@@ -1473,12 +1473,12 @@
 
  .x-tree-node a,
  .x-dd-drag-ghost a {
-     color: #cccccc;
+     color: var(--text);
  }
 
  .x-tree-node a span,
  .x-dd-drag-ghost a span {
-     color: #cccccc;
+     color: var(--text);
  }
 
  .x-tree-node .x-tree-node-disabled a span {
@@ -1539,12 +1539,12 @@
  .x-date-left,
  .x-date-right {
      //background-image: url(../images/gray/shared/hd-sprite.gif);
-     color: #fff;
+     color: var(--text-hover);
      font: bold 11px 'Roboto', "sans serif", tahoma, verdana, helvetica;
  }
 
  .x-date-middle .x-btn .x-btn-text {
-     color: #fff;
+    color: var(--text-hover);
  }
 
  .x-panel-tbar .x-btn-text {
@@ -1577,7 +1577,7 @@
  }
 
  .x-date-inner td {
-     border-color: #fff;
+     border-color: var(--text)
  }
 
  .x-date-inner a {
@@ -1644,7 +1644,7 @@
 
  .x-date-mp-btns button {
      background-color: #4E565F;
-     color: #fff;
+     color: var(--text-hover);
      border-color: #C0C0C0 #434343 #434343 #C0C0C0;
      font: normal 11px 'Roboto', arial, helvetica, tahoma, sans-serif;
  }
@@ -2143,7 +2143,7 @@
  }
 
  .x-window-tl .x-window-header {
-     color: #ffffff;
+     var(--text-hover);
      font: bold 11px 'Roboto', tahoma, arial, verdana, sans-serif;
  }
 
@@ -2224,7 +2224,7 @@
  }
 
  .x-dlg-mask {
-     background-color: #ccc;
+     background-color: var(--text);
  }
 
  .x-window-plain .x-window-mc {

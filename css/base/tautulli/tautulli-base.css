@@ -72,7 +72,7 @@ h6,
 }
 
 .list-unstyled {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 .text-muted,
@@ -101,7 +101,7 @@ a.no-highlight:hover,
 #newsletter-config-modal span.newsletter_id,
 #plexpy-mobile-devices-table .friendly_name,
 #mobile-device-config-modal span.notifier_id {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 /* Navbar */
@@ -206,15 +206,15 @@ select,
 }
 
 .dashboard-activity-metadata-subtitle-container {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 .dashboard-recent-media-metacontainer h3.text-muted a {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 .dashboard-recent-media-metacontainer h3.text-muted {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 /* Buttons */
@@ -334,7 +334,7 @@ input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
 .uneditable-input:focus {
-    color: #fff;
+    color: var(--text-hover);
     background: rgba(0, 0, 0, 0.25);
 }
 
@@ -402,7 +402,7 @@ table.display thead tr:hover {
 }
 
 .card-handle {
-    color: #fff;
+    color: var(--text-hover);
     background-color: rgba(0, 0, 0, 0.25);
 }
 
@@ -412,14 +412,14 @@ table.display thead tr:hover {
 }
 
 .stacked-configs>li>span {
-    color: #FFF;
+    color: var(--text-hover);
     border-left: 2px solid rgba(0, 0, 0, 0.25);
     border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .stacked-configs>li>span:hover,
 .stacked-configs>li>span:focus {
-    color: #fff;
+    color: var(--text-hover);
     background-color: rgba(255, 255, 255, 0.08);
 }
 
@@ -485,7 +485,7 @@ span>a.active,
 }
 
 .modal-body li {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 .modal-body {
@@ -573,7 +573,7 @@ span>a.active,
 }
 
 .accordion li .link {
-    color: #fff;
+    color: var(--text-hover);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -619,7 +619,7 @@ span>a.active,
 }
 
 .login-container .remember-group {
-    color: #eee;
+    color: var(--text);
 }
 
 #login-methods>li.open>div {
@@ -628,13 +628,13 @@ span>a.active,
 
 /* Buttons */
 .btn-bright {
-    color: #fff;
+    color: var(--button-text);
     background-color: var(--button-color);
     box-shadow: inset 0 1px 0 var(--button-color);
 }
 
 .btn-bright:hover {
-    color: #fff;
+    color: var(--button-text-hover);
     background-color: var(--button-color-hover);
     box-shadow: inset 0 1px 0 var(--button-color-hover);
 }
@@ -643,7 +643,7 @@ span>a.active,
 .btn-bright.active,
 .open>.dropdown-toggle.btn-bright,
 #menu_link_show_advanced_settings.active {
-    color: #fff;
+    color: var(--button-text-hover);
     background-color: var(--button-color-hover);
     box-shadow: inset 0 1px 0 var(--button-color-hover);
 }
@@ -657,7 +657,7 @@ span>a.active,
 .btn-bright:active.focus,
 .btn-bright.active.focus,
 .open>.dropdown-toggle.btn-bright.focus {
-    color: #fff;
+    color: var(--button-text-hover);
     background-color: var(--button-color-hover);
     box-shadow: inset 0 1px 0 var(--button-color-hover);
 }
@@ -667,7 +667,7 @@ span>a.active,
 .btn-dark:focus,
 .btn-dark.focus,
 .btn-dark:active:focus {
-    color: #fff;
+    color: var(--button-text-hover);
     background-color: var(--button-color-hover) !important;
     opacity: .8;
 }

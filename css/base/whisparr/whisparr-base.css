@@ -360,7 +360,7 @@ a:hover {
 }
 
 [class*="MonitorToggleButton-toggleButton-"] {
-    color: var(--text-hover);
+    color: #dadada;
 }
 
 
@@ -688,7 +688,7 @@ a:hover {
 
 [class*="MovieSearchInput-container-"] [class*="Input-input-"] {
     background: transparent;
-    border-bottom: solid 1px #fff;
+    border-bottom: solid 1px var(--text-hover);
 }
 
 [class*="MovieSearchInput-container-"] [class*="Input-input-"]:focus {
@@ -714,7 +714,7 @@ a:hover {
 
 [class*="TagInput-input-"][class*="TagInput-isFocused-"] {
     outline: 0;
-    border-color: #fff;
+    border-color: var(--text-hover);
     box-shadow: none;
 }
 

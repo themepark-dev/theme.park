@@ -344,28 +344,28 @@ button:hover [class*="DisclosureArrow-disclosureArrow-"] {
 [class*="SeekBar-seekBarFill-"],
 [class*="VolumeSlider-fill-"],
 [class*="SessionTile-playProgressPercent-"] {
-  background-color: rgb(var(--accent-color));
+  background-color: rgb(var(--accent-color)) !important;
 }
 
 [class*="SeekBar-seekBarBuffer-"],
 [class*="SessionTile-transcodeProgressPercent-"] {
-  background-color: rgba(var(--accent-color), .3);
+  background-color: rgba(var(--accent-color), .3) !important;
 }
 
 [class*="SessionTileDetails-playerContainer-"] {
-  background-color: rgba(var(--accent-color), .2)
+  background-color: rgba(var(--accent-color), .2) !important
 }
 
 [class*="SessionTileDetails-videoStreamInformation-"] {
-  background-color: rgba(var(--accent-color), .15)
+  background-color: rgba(var(--accent-color), .15) !important
 }
 
 [class*="SessionTileDetails-audioStreamInformation-"] {
-  background-color: rgba(var(--accent-color), .1)
+  background-color: rgba(var(--accent-color), .1) !important
 }
 
 [class*="SessionTileDetails-subtitlesStreamInformation-"] {
-  background-color: rgba(var(--accent-color), .05);
+  background-color: rgba(var(--accent-color), .05) !important;
 }
 
 [class*="TopUsersList-container-"][class*="ServerDashboardSectionContent-container-"]>div>div>div>div:nth-child(3) {
@@ -385,12 +385,12 @@ button:hover [class*="DisclosureArrow-disclosureArrow-"] {
 }
 
 [class*="TopUsersCell-playHistoryLink-"] {
-  background-color: rgb(var(--accent-color));
-  color: #fff;
+  background-color: rgb(var(--accent-color)) !important;
+  color: #fff !important;
 }
 
 [class*="TopPlayedColumnHeader-emptyTitleBackground-"] {
-  background-color: rgba(var(--accent-color), .3);
+  background-color: rgba(var(--accent-color), .3) !important;
 }
 
 [class*="SelectedMenuItem-isSelected-"],

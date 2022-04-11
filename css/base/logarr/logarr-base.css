@@ -20,7 +20,7 @@ body {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
-    color: #FFFFFF !important;
+    color: var(--text-hover) !important;
 }
 
 /* Scrollbar */
@@ -121,7 +121,7 @@ body.fade-out {
 .nav-item,
 .filesize,
 .path {
-    color: #ffffff;
+    color: var(--text-hover);
 }
 
 #username:hover,
@@ -131,7 +131,7 @@ body.fade-out {
 
 #categoryFilter,
 #auto-update {
-    color: white !important;
+    color: var(--text-hover) !important;
     background-color: transparent !important;
     box-shadow: none;
     border-radius: 0px;
@@ -163,7 +163,7 @@ body.fade-out {
 
 .expandtoggle:checked~.expandtoggle::before {
     content: "";
-    background: url(https://theme-park.dev/resources/logarr/increase.png) no-repeat;
+    background: url(/resources/logarr/increase.png) no-repeat;
     background-size: 2em;
     display: inline-block;
     width: 2em;
@@ -172,7 +172,7 @@ body.fade-out {
 }
 
 .expandtoggle::before {
-    background: url(https://theme-park.dev/resources/logarr/decrease.png) no-repeat;
+    background: url(/resources/logarr/decrease.png) no-repeat;
     background-size: 2em;
     content: "";
     display: inline-block;
@@ -204,7 +204,7 @@ body.fade-out {
 /* Text Color */
 .alpaca-control-label,
 .alpaca-control.radio {
-    color: white !important;
+    color: var(--text-hover) !important;
 }
 
 .alpaca-form-buttons-container {
@@ -212,11 +212,11 @@ body.fade-out {
 }
 
 .Rtable-cell {
-    color: white !important;
+    color: var(--text-hover) !important;
 }
 
 #colorkey {
-    color: white !important;
+    color: var(--text-hover) !important;
 }
 
 .settingstitle {
@@ -224,7 +224,7 @@ body.fade-out {
 }
 
 #reginfo {
-    color: white !important;
+    color: var(--text-hover) !important;
 }
 
 #infodata {
@@ -323,14 +323,14 @@ input:valid {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
-    color: white !important;
+    color: var(--text-hover) !important;
     border: 1px solid transparent !important;
     box-shadow: 0.5rem 0.5rem 1rem rgb(15, 15, 15, 0.45) !important;
 }
 
 .modaltextloading,
 .modalloadingspinner {
-    color: #FFF !important;
+    color: var(--text-hover) !important;
 }
 
 .container {
@@ -364,7 +364,7 @@ input:valid {
 }
 
 #servicetitle {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 }
 
 .btnoffline,
@@ -395,16 +395,16 @@ input:valid {
 
 .btn-group>.btn-group:not(:first-child)>.btn,
 .btn-group>.btn:not(:first-child) {
-    color: white !important;
+    color: var(--text-hover) !important;
 }
 
 .btn-group>.btn:first-child {
-    color: white !important;
+    color: var(--text-hover) !important;
 }
 
 #time {
     background-color: rgba(0, 0, 0, .15) !important;
-    color: #fff !important;
+    color: var(--text-hover) !important;
     box-shadow: none;
 }
 
@@ -414,15 +414,15 @@ input:valid {
 }
 
 #textslider {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 }
 
 .dtg {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 }
 
 .datemin {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 }
 
 #center {
@@ -448,7 +448,7 @@ input:valid {
 .servicetile,
 .servicetile:hover,
 .servicetile:focus {
-    color: #ffffff;
+    color: var(--text-hover);
     text-shadow: none !important;
     text-decoration: none !important;
     outline: 0;
@@ -461,7 +461,7 @@ input:valid {
 }
 
 .servicetile {
-    color: #ffffff;
+    color: var(--text-hover);
     text-shadow: none !important;
     text-decoration: none !important;
     outline: 0;
@@ -481,12 +481,12 @@ input:valid {
 
 #clock {
     background-color: rgba(0, 0, 0, .15) !important;
-    color: #fff !important;
+    color: var(--text-hover) !important;
     box-shadow: none;
 }
 
 .date {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 }
 
 #summary {
@@ -506,12 +506,12 @@ input:valid {
 }
 
 .pace .pace-activity {
-    border-top-color: #FFF !important;
-    border-left-color: #FFF !important;
+    border-top-color: var(--text-hover) !important;
+    border-left-color: var(--text-hover) !important;
 }
 
 .footer {
-    color: white !important;
+    color: var(--text-hover) !important;
 }
 
 .footer:hover {
@@ -549,17 +549,17 @@ input:valid {
 .modalimgpath,
 .modaltext,
 #uploadbutton {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 }
 
 .file-upload {
     background-color: var(--button-color) !important;
-    color: white !important;
+    color: var(--button-text) !important;
 }
 
 .file-upload:hover {
     background-color: var(--button-color-hover) !important;
-    color: white !important;
+    color: var(--button-text) !important;
 }
 
 @media only screen and (max-width: 775px) {
@@ -575,7 +575,7 @@ input:valid {
 @media only screen and (max-width: 768px) {
     #dateRight {
         background-color: rgba(0, 0, 0, .15) !important;
-        color: #fff !important;
+        color: var(--text-hover) !important;
         box-shadow: none;
     }
 }

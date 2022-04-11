@@ -9,23 +9,8 @@ echo -e "Variables set:\\n\
 PUID=${PUID}\\n\
 PGID=${PGID}\\n\
 TZ=${TZ}\\n\
-TP_SCHEME=${TP_SCHEME}\\n\
-TP_URLBASE=${TP_URLBASE}\\n\
-TP_DOMAIN=${TP_DOMAIN}\\n"
-
-if [[ -z ${TP_DOMAIN} ]]; then
-    echo 'No domain set, defaulting to $http_host'
-    TP_DOMAIN='$http_host'
-fi
-
-if [[ -z ${TP_SCHEME} ]]; then
-    echo 'No scheme set, defaulting to $scheme'
-    TP_SCHEME='$scheme'
-fi
-
-if [[ -z ${TP_URLBASE} ]]; then
-    TP_URLBASE=''
-fi
+TP_DOMAIN=${TP_DOMAIN}\\n\
+TP_URLBASE=${TP_URLBASE}\\n"
 
 # Remove forward slash
 case ${TP_URLBASE} in
@@ -36,17 +21,9 @@ esac
 
 DEFAULT='/defaults/default'
 if [[ ${TP_URLBASE} ]]; then
-    if ! grep -q "location /${TP_URLBASE} {" "${DEFAULT}"; then
-        sed -i "s/location \//location \/${TP_URLBASE}/g" ${DEFAULT}
-        sed -i "s/TP_DOMAIN/${TP_DOMAIN}/g" ${DEFAULT}
-        sed -i "s/TP_URLBASE/${TP_URLBASE}/g" ${DEFAULT}
-        sed -i "s/#sub_filter/sub_filter/g" ${DEFAULT}
-        sed -i "s/#location#/location /g" ${DEFAULT}
-        sed -i "s/\$scheme/${TP_SCHEME}/g" ${DEFAULT}
+    if ! grep -q "${TP_URLBASE}" "${DEFAULT}"; then
+        sed -i "s/themepark/${TP_URLBASE}/g" ${DEFAULT}
     fi
-elif [[ -z ${TP_URLBASE} ]]; then
-    sed -i "s/TP_DOMAIN\/TP_URLBASE/${TP_DOMAIN}/g" ${DEFAULT}
-    sed -i "s/\$scheme/${TP_SCHEME}/g" ${DEFAULT}
 fi
 cp /defaults/default /config/nginx/site-confs
 

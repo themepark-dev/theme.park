@@ -179,7 +179,7 @@ input[type=email],
 input[type=number],
 input[type=password],
 textarea {
-    color: white !important;
+    color: var(--text-hover) !important;
     background: rgba(0, 0, 0, 0.25) !important;
 }
 
@@ -201,73 +201,73 @@ textarea {
 
 .connection .icon.vnc,
 .connection .icon.rdp {
-    background-image: url(https://theme-park.dev/resources/guacamole/guac-monitor.png);
+    background-image: url(/resources/guacamole/guac-monitor.png);
 }
 
 .connection .icon.ssh,
 .connection .icon.telnet {
-    background-image: url(https://theme-park.dev/resources/guacamole/guac-text.png);
+    background-image: url(/resources/guacamole/guac-text.png);
 }
 
 .user-menu .menu-dropdown .menu-title {
-    background-image: url(https://theme-park.dev/resources/guacamole/guac-user.png);
+    background-image: url(/resources/guacamole/guac-user.png);
     background-color: transparent;
 }
 
 .user-menu .menu-dropdown .menu-contents li a[href="#/"] {
-    background-image: url(https://theme-park.dev/resources/guacamole/guac-home-dark.png);
+    background-image: url(/resources/guacamole/guac-home-dark.png);
 }
 
 .user-menu .menu-dropdown .menu-contents li a[href="#/settings/users"],
 .user-menu .menu-dropdown .menu-contents li a[href="#/settings/connections"],
 .user-menu .menu-dropdown .menu-contents li a[href="#/settings/sessions"],
 .user-menu .menu-dropdown .menu-contents li a[href="#/settings/preferences"] {
-    background-image: url(https://theme-park.dev/resources/guacamole/guac-config-dark.png);
+    background-image: url(/resources/guacamole/guac-config-dark.png);
 }
 
 .user-menu .menu-dropdown .menu-contents li a.logout {
-    background-image: url(https://theme-park.dev/resources/guacamole/guac-logout-dark.png);
+    background-image: url(/resources/guacamole/guac-logout-dark.png);
 }
 
 .icon.user {
-    background-image: url(https://theme-park.dev/resources/guacamole/guac-user.png);
+    background-image: url(/resources/guacamole/guac-user.png);
 }
 
 .pager .icon.first-page {
-    background-image: url(https://theme-park.dev/resources/guacamole/guac-first-page.png);
+    background-image: url(/resources/guacamole/guac-first-page.png);
 }
 
 .pager .icon.prev-page {
-    background-image: url(https://theme-park.dev/resources/guacamole/guac-prev-page.png);
+    background-image: url(/resources/guacamole/guac-prev-page.png);
 }
 
 .pager .icon.next-page {
-    background-image: url(https://theme-park.dev/resources/guacamole/guac-next-page.png);
+    background-image: url(/resources/guacamole/guac-next-page.png);
 }
 
 .pager .icon.last-page {
-    background-image: url(https://theme-park.dev/resources/guacamole/guac-last-page.png);
+    background-image: url(/resources/guacamole/guac-last-page.png);
 }
 
 .loading::before {
-    background-image: url('https://theme-park.dev/resources/guacamole/cog.png');
+    background-image: url('/resources/guacamole/cog.png');
 }
 
 table.sorted th.sort-primary.sort-descending:after {
-    background-image: url(https://theme-park.dev/resources/guacamole/up.png);
+    background-image: url(/resources/guacamole/up.png);
 }
 
 .menu-dropdown .menu-indicator {
-    background-image: url(https://theme-park.dev/resources/guacamole/down.png);
+    background-image: url(/resources/guacamole/down.png);
 }
 
 .menu-dropdown .menu-indicator:hover {
-    background-image: url(https://theme-park.dev/resources/guacamole/down.png);
+    background-image: url(/resources/guacamole/down.png);
     color: #f9be03;
 }
 
 table.sorted th.sort-primary:after {
-    background-image: url(https://theme-park.dev/resources/guacamole/down.png);
+    background-image: url(/resources/guacamole/down.png);
 }
 
 thead {
@@ -338,7 +338,7 @@ table.sorted td {
 }
 
 .filter .search-string {
-    background-image: url(https://theme-park.dev/resources/guacamole/magnifier.png) !important;
+    background-image: url(/resources/guacamole/magnifier.png) !important;
     background-repeat: no-repeat !important;
     background-size: 1.75em !important;
     background-position: .25em center !important;
@@ -415,7 +415,7 @@ textarea {
 .clipboard,
 .clipboard-service-target {
     background: rgba(0, 0, 0, 0.25);
-    color: white;
+    color: var(--text-hover);
 }
 
 /* NOTIFICATION BOX */
@@ -428,7 +428,7 @@ textarea {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
-    color: white;
+    color: var(--text-hover);
 }
 
 .notification {
@@ -440,16 +440,16 @@ textarea {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
-    color: white;
+    color: var(--text-hover);
 }
 
 /* SETTINGS */
 .page-tabs .page-list li a[href]:visited {
-    color: white;
+    color: var(--text-hover);
 }
 
 .page-tabs .page-list li a[href] {
-    color: white;
+    color: var(--text-hover);
 }
 
 .page-tabs .page-list li a[href]:hover {
@@ -515,11 +515,11 @@ textarea {
 }
 
 .manage-user .page-tabs .page-list li.linked a[href]:before {
-    background-image: url(https://theme-park.dev/resources/guacamole/checkmark.png);
+    background-image: url(/resources/guacamole/checkmark.png);
 }
 
 .manage-user .page-tabs .page-list li.read-only a[href]:before {
-    background-image: url(https://theme-park.dev/resources/guacamole/lock.png);
+    background-image: url(/resources/guacamole/lock.png);
 }
 
 .manage-user .notice.read-only {
@@ -577,7 +577,7 @@ form:not(.inline) fieldset {
 }
 
 label span {
-    color: white !important;
+    color: var(--text-hover) !important;
 }
 
 input[type=radio] {

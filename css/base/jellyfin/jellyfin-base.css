@@ -241,7 +241,7 @@ html {
 
     .dialog-blur,
     .toast {
-        color: #fff;
+        color: var(--text-hover);
         background: rgba(56, 56, 56, .76);
         -webkit-backdrop-filter: blur(2.5em) saturate(1.8);
         backdrop-filter: blur(2.5em) saturate(1.8);
@@ -702,7 +702,7 @@ html {
 }
 
 .scrollbuttoncontainer {
-    color: #fff;
+    color: var(--text-hover);
     background: rgba(20, 20, 20, .5)
 }
 
@@ -771,13 +771,13 @@ html {
 }
 
 .cardImageIcon {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 .dialog .inputLabelFocused,
 .selectLabelFocused,
 .textareaLabelFocused {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 

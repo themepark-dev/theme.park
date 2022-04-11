@@ -230,7 +230,7 @@ p a:hover,
 }
 
 .request-status {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 }
 
 .filter--action {
@@ -243,11 +243,11 @@ p a:hover,
 }
 
 .console--item {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 code {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 .color-green,
@@ -297,7 +297,7 @@ code {
 }
 
 .push-msg--item {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 
@@ -370,7 +370,7 @@ code {
 .requests--status__cinema,
 .requests--status__blue,
 .requests--status__manual {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 .myrequests--item--details .detail-steps--item__active {
@@ -387,7 +387,7 @@ code {
 }
 
 .request-count {
-    color: #fff;
+    color: var(--text-hover);
     background: rgba(var(--accent-color), .8);
 }
 
@@ -477,7 +477,7 @@ a.rbc-show-more {
 }
 
 .calendar--event p {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 }
 
 /* PLACEHOLDER TEXT */

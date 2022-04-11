@@ -10,8 +10,8 @@
 /*		   		        Made by @gilbN					 */
 /* 			      https://github.com/gilbN/theme.park			 */
 
-@import url("https://theme-park.dev/css/base/gitea/chroma.css");
-@import url("https://theme-park.dev/css/base/gitea/monaco_vs_dark.css");
+@import url("/css/base/gitea/chroma.css");
+@import url("/css/base/gitea/monaco_vs_dark.css");
 :root {
     --color-text: var(--text);
     --color-caret: white;
@@ -546,7 +546,7 @@ input:hover,
 textarea:hover {
     border-color: rgb(255 255 255 / 20%);
     background: rgb(0 0 0 / .25);
-    color: #fff;
+    color: var(--text-hover);
 }
 
 .ui.dropdown .menu>.item {
@@ -563,7 +563,7 @@ textarea:hover {
 
 .ui.selection.dropdown {
     background: rgb(0 0 0 / .25);
-    color: #fff;
+    color: var(--text-hover);
     border-color: rgb(255 255 255 / 10%);
 }
 
@@ -611,7 +611,7 @@ textarea:hover {
 }
 
 .ui.negative.message p {
-    color: white !important;
+    color: var(--text-hover) !important;
     box-shadow: none !important;
 }
 
@@ -621,7 +621,7 @@ textarea:hover {
 }
 
 .ui.positive.message p {
-    color: white !important;
+    color: var(--text-hover) !important;
 }
 
 /* DASHBOARD */
@@ -1012,7 +1012,7 @@ a.ui.card:hover {
 
 /* ISSUES */
 .CodeMirror-cursor {
-    border-left: 1px solid #fff;
+    border-left: 1px solid var(--text)
 }
 
 .CodeMirror,
@@ -1027,7 +1027,7 @@ a.ui.card:hover {
 
 .editor-toolbar a,
 .editor-toolbar button {
-    color: #ffffff !important;
+    color: var(--text-hover) !important;
 }
 
 .editor-toolbar {
@@ -1103,7 +1103,7 @@ a.ui.card:hover {
 .repository.view.issue .comment-list .timeline-item .badge {
     background-color: rgb(var(--accent-color));
     border: 2px solid rgb(var(--accent-color));
-    color: #fff;
+    color: var(--text-hover);
 }
 
 .issue.list>.item .desc .overdue {
@@ -1370,7 +1370,7 @@ a.ui.basic.label:hover,
 }
 
 .repo-title {
-    color: #ffffff;
+    color: var(--text-hover);
 }
 
 /* LABELS */
@@ -1418,7 +1418,7 @@ a.ui.labels .label:hover {
     margin: -6px -10px -4px 0;
     padding: 5px 4px 5px 6px;
     border: 0;
-    border-left: 1px solid #fff;
+    border-left: 1px solid var(--text-hover);
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }

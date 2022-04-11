@@ -45,7 +45,7 @@ body {
 }
 
 #servicetitle {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 }
 
 .btnoffline,
@@ -61,7 +61,7 @@ body {
 
 #time {
     background-color: rgba(0, 0, 0, .15) !important;
-    color: #fff !important;
+    color: var(--text-hover) !important;
     box-shadow: none;
 }
 
@@ -71,15 +71,15 @@ body {
 }
 
 #textslider {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 }
 
 .dtg {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 }
 
 .datemin {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 }
 
 #center {
@@ -138,12 +138,12 @@ body {
 
 #clock {
     background-color: rgba(0, 0, 0, .15) !important;
-    color: #fff !important;
+    color: var(--text-hover) !important;
     box-shadow: none;
 }
 
 .date {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 }
 
 #summary {

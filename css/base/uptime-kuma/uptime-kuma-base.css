@@ -1,4 +1,4 @@
-@import url("https://theme-park.dev/css/defaults/placeholders.css");
+@import url("/css/defaults/placeholders.css");
 
 body,
 .dark {
@@ -327,7 +327,7 @@ td {
 .multiselect__option--selected,
 .dark .multiselect__option--selected {
     background: rgba(0, 0, 0, .45);
-    color: #fff;
+    color: var(--text-hover);
     font-weight: 700;
 }
 

@@ -10,11 +10,11 @@
 /*		   		        Made by @gilbN					 */
 /* 			      https://github.com/gilbN/theme.park			 */
 
-@import url("https://theme-park.dev/css/defaults/placeholders.css");
+@import url("/css/defaults/placeholders.css");
 
 :root {
-    --text-json-tree-branch-preview-color: #eee;
-    --text-json-tree-leaf-color: #eee;
+    --text-json-tree-branch-preview-color: var(--text);
+    --text-json-tree-leaf-color: var(--text);
     }
 
 /* Scrollbar */
@@ -555,13 +555,13 @@ output {
 /* STACKS */
 .CodeMirror {
     background: rgba(255, 255, 255, 0.10);
-    color: white;
+    color: var(--text-hover);
 }
 
 .CodeMirror-gutters {
     border-right: 1px solid rgba(255, 255, 255, 0.25);
     background-color: rgba(0, 0, 0, 0.25);
-    caret-color: white;
+    caret-color: var(--text-hover);
 }
 
 .CodeMirror-linenumber {
@@ -582,7 +582,7 @@ output {
 .nav-tabs>li.active>a,
 .nav-tabs>li.active>a:focus,
 .nav-tabs>li.active>a:hover {
-    color: #fff;
+    color: var(--text-hover);
     cursor: default;
     background-color: rgba(255, 255, 255, 0.15);
     border: 1px solid #ddd0;
@@ -606,14 +606,14 @@ output {
 
 /* LOGS */
 .log_viewer {
-    color: #fff;
+    color: var(--text-hover);
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid transparent;
 }
 
 /* JSON TREE */
 json-tree {
-    color: #eee;
+    color: var(--text);
 }
 
 json-tree .key {
@@ -622,7 +622,7 @@ json-tree .key {
 }
 
 pre {
-    color: #fff;
+    color: var(--text-hover);
     background-color: rgba(255, 255, 255, .1);
     border: 1px solid transparent;
 }
