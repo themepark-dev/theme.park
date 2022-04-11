@@ -288,7 +288,7 @@ svg.peity polyline {
 }
 
 .btn-default {
-  color: var(--button-text);
+  color: var(--button-text) !important;
   background: var(--button-color);
   border-color: var(--button-color);
   outline: none !important;
@@ -296,13 +296,13 @@ svg.peity polyline {
 
 .btn-default:focus,
 .btn-default.focus {
-  color: var(--button-text-hover);
+  color: var(--button-text-hover) !important;
   background: var(--button-color-hover);
   border-color: var(--button-color-hover);
 }
 
 .btn-default:hover {
-  color: var(--button-text-hover);
+  color: var(--button-text-hover) !important;
   background: var(--button-color-hover);
   border-color: var(--button-color-hover);
 }
@@ -411,7 +411,7 @@ svg.peity polyline {
 .btn-default.fileBrowser:hover,
 .btn-default.fileBrowser:focus,
 .btn-default.fileBrowser:active {
-  color: #fff !important;
+  color: var(--button-text-hover) !important;
   background-color: var(--button-color-hover) !important;
   border-color: transparent !important;
 }
@@ -450,7 +450,7 @@ svg.peity polyline {
 }
 
 .btn-default.patternKey:hover {
-  color: #fff !important;
+  color: var(--button-text-hover) !important;
   background-color: var(--button-color-hover);
   border-color: transparent;
 }
@@ -564,7 +564,7 @@ tr td.row-extra-text,
 
 .progress strong,
 .progress i {
-  color: #fff;
+  color: var(--text-hover);
 }
 
 .progress {
@@ -663,7 +663,7 @@ tr td.row-extra-text,
 }
 
 .form-control {
-  color: white;
+  color: var(--text-hover);
   background-color: rgb(0 0 0 / 25%);
 }
 
@@ -680,7 +680,7 @@ tr td.row-extra-text,
 .history-queue-swicher .nav-tabs>li.active>a {
   border-bottom: 1px solid transparent;
   border: 1px solid transparent;
-  color: #fff !important;
+  color: var(--text-hover) !important;
 }
 
 .history-queue-swicher .nav {
@@ -903,7 +903,7 @@ input[type="week"]:focus {
 
 input[type="date"] {
   background: transparent;
-  color: white;
+  color: var(--text-hover);
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
@@ -944,7 +944,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .Servers .ct-label {
-  color: white;
+  color: var(--text-hover);
 }
 
 .Servers .ct-series-a .ct-point {
@@ -1073,12 +1073,12 @@ select[disabled]:hover {
 }
 
 #modal-options .tab-content h4 {
-  color: white;
+  color: var(--text-hover);
 }
 
 #modal-options .options-switch label,
 #modal-options #options-orphans .process-all-orphaned {
-  color: white;
+  color: var(--text-hover);
 }
 
 #modal-options #options-status small {
@@ -1168,7 +1168,7 @@ fieldset[disabled] .form-control {
 #content a:active,
 #content a:visited,
 #serverResponse {
-  color: #eee;
+  color: var(--text);
 }
 
 /* interface configuration */

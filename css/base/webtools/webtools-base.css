@@ -27,7 +27,7 @@ a,
 }
 
 a:hover {
-    color: #fff;
+    color: var(--link-color-hover);
 }
 
 #content:before {

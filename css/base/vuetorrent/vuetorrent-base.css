@@ -226,8 +226,8 @@ p,
 }
 
 .v-application .accent .v-icon__svg {
-    color: white !important;
-    fill: white !important;
+    color: var(--text-hover) !important;
+    fill: var(--text-hover) !important;
 }
 .v-application .deep-purple.accent-4 {
     background-color: rgb(var(--accent-color))!important;
@@ -375,7 +375,7 @@ p,
 .torrent-done-color .v-chip.stalled,
 .torrent-done-color .v-chip.metadata,
 .torrent-done-color .v-chip.moving {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 }
 
 /* DROPDOWN */
@@ -458,5 +458,5 @@ p,
 }
 
 .v-speed-dial__list .v-icon__svg {
-    fill: #fff;
+    fill: var(--text-hover);
 }

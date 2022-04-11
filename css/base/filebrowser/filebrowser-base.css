@@ -47,7 +47,7 @@ input:focus:-ms-input-placeholder {
 }
 
 .message {
-    color: #FFF;
+    color: var(--text-hover);
 }
 
 #login {
@@ -204,7 +204,7 @@ body {
 }
 
 .action {
-    color: #FFF;
+    color: var(--text-hover);
 }
 
 #listing.list .item {
@@ -514,7 +514,7 @@ input[type=submit]:hover {
 
 .button--flat:hover {
     background: var(--dark-red);
-    color: #FFF;
+    color: var(--text-hover);
     margin-left: 5px;
 }
 

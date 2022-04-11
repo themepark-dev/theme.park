@@ -112,7 +112,7 @@ a:hover {
 }
 
 [class*="LoadingIndicator-ripple-"] {
-    border: 2px solid #fff;
+    border: 2px solid var(--text-hover);
 }
 
 /* MODAL */
@@ -150,18 +150,18 @@ a:hover {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
-    color: #fff;
+    color: var(--text-hover);
     border-top: 1px solid rgb(var(--accent-color));
 }
 
 [class*="ModalContent-closeButton-"]:hover {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 /* INPUT */
 [class*="TagInput-internalInput-"] {
     background-color: transparent;
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="SelectInput-select-"] {
@@ -209,7 +209,7 @@ a:hover {
 
 /* RADARR SPECIFIC */
 [class*="MovieSearchInput-sectionTitle-"] {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="MovieSearchInput-containerOpen-"] [class*="MovieSearchInput-movieContainer-"] {
@@ -222,7 +222,7 @@ a:hover {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
-    color: #fff !important;
+    color: var(--text-hover) !important;
     box-shadow: 0 0 10px 1px transparent !important;
 }
 
@@ -241,6 +241,10 @@ a:hover {
 
 [class*="PageSidebar-sidebar-"] {
     background-color: transparent;
+}
+
+[class*="PageSidebarItem-link-"] {
+    color: var(--text-hover)
 }
 
 [class*="PageSidebarItem-link-"]:hover {
@@ -356,7 +360,7 @@ a:hover {
 }
 
 [class*="MonitorToggleButton-toggleButton-"] {
-    color: #dadada;
+    color: var(--text-hover);
 }
 
 
@@ -373,7 +377,7 @@ a:hover {
 }
 
 [class*="MovieDetailsSeason-seasonNumber-"] {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="MovieDetailsSeason-collapseButtonContainer-"] {
@@ -430,7 +434,7 @@ a:hover {
 }
 
 [class*="EpisodeTitleLink-link-"]:hover {
-    color: #fff;
+    color: var(--text-hover);
     text-decoration: none;
 }
 
@@ -599,7 +603,7 @@ a:hover {
 
 /* ALPHABET JUMP BAR */
 [class*="PageJumpBar-jumpBar-"] {
-    color: #FFF;
+    color: var(--text-hover);
 }
 
 /* MINI RIGHT SCROLL BAR */
@@ -679,7 +683,7 @@ a:hover {
 [class*="CheckInput-isIndeterminate-"] {
     border: none;
     background-color: rgba(255, 255, 255, 0.08);
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="MovieSearchInput-container-"] [class*="Input-input-"] {
@@ -693,17 +697,17 @@ a:hover {
 }
 
 [class*="MovieSearchResult-alternateTitle-"] {
-    color: #fff;
+    color: var(--text-hover);
     font-size: 12px;
 }
 
 [class*="AddNewMovieSearchResult-year-"] {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 }
 
 [class*="Input-input-"]:focus {
     outline: 0;
-    border-color: #fff;
+    border-color: var(--text-hover);
     box-shadow: none;
     background-color: rgba(255, 255, 255, 0.25);
 }
@@ -738,12 +742,12 @@ a:hover {
 }
 
 [class*="AddNewmovieModalContent-year-"] {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="RootFolderSelectInputSelectedValue-movieFolder-"],
 [class*="RootFolderSelectInputSelectedValue-freeSpace-"] {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="RootFolderSelectInputOption-freeSpace-"],
@@ -815,7 +819,7 @@ input:focus:-ms-input-placeholder {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
-    color: white;
+    color: var(--text-hover);
 }
 
 [class*="ImportMovieSearchResult-movie-"]:hover {
@@ -848,7 +852,7 @@ input:focus:-ms-input-placeholder {
 }
 
 [class*="AddListMovieOverview-link-"]:hover {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="AddListMovieOverview-content-"]:hover {
@@ -856,14 +860,14 @@ input:focus:-ms-input-placeholder {
 }
 
 [class*="PageJumpBarItem-jumpBarItem-"]:hover {
-    color: #fff;
+    color: var(--text-hover);
     background: hsla(0, 0%, 100%, .08);
 }
 
 /*Posters*/
 [class*="AddListMoviePoster-title-"] {
     background-color: rgba(255, 255, 255, 0.08);
-    color: #fff;
+    color: var(--text-hover);
 }
 
 /* MASS EDITOR */
@@ -871,12 +875,12 @@ input:focus:-ms-input-placeholder {
 [class*="PageContentFooter-contentFooter-"] {
     border: none;
     background-color: rgba(0, 0, 0, .25);
-    color: #FFF;
+    color: var(--text-hover);
 }
 
 /* CALENDAR */
 [class*="CircularProgressBar-circularProgressBarContainer-"] svg circle {
-    stroke: white !important;
+    stroke: var(--text-hover) !important;
 }
 
 [class*="CalendarEvent-downloaded-"] {
@@ -986,7 +990,7 @@ input:focus:-ms-input-placeholder {
 [class*="CalendarEvent-episodeInfo-"],
 [class*="CalendarEvent-airTime-"],
 [class*="CalendarEvent-link-"] {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 }
 
 [class*="CalendarEvent-event-"] {
@@ -998,7 +1002,7 @@ input:focus:-ms-input-placeholder {
 }
 
 [class*="CalendarEventGroup-movieTitle-"] {
-    color: #fff !important;
+    color: var(--text-hover) !important;
 }
 
 [class*="CalendarEventGroup-airTime-"] {
@@ -1076,7 +1080,7 @@ input:focus:-ms-input-placeholder {
 
 
 [class*="-cloneButton-"][class*="IconButton-button-"]:hover {
-    color: white;
+    color: var(--text-hover);
 }
 
 [class*="Card-card-"]:hover {
@@ -1095,7 +1099,7 @@ input:focus:-ms-input-placeholder {
 [class*="LanguageProfileItem-languageProfileItem-"] {
     border: none;
     background-color: rgba(0, 0, 0, .25);
-    color: #FFF;
+    color: var(--text-hover);
 }
 
 [class*="QualityProfileItemGroup-qualityProfileItemGroup-"][class*="QualityProfileItemGroup-editGroups-"] {
@@ -1106,7 +1110,7 @@ input:focus:-ms-input-placeholder {
 [class*="KeyValueListInputItem-valueInput-"] {
     border: none;
     background: transparent;
-    color: white;
+    color: var(--text-hover);
 }
 
 [class*="QualityProfileFormatItem-qualityProfileFormatItem-"] {
@@ -1187,7 +1191,7 @@ input[type=email],
 input[type=password] {
     border: none;
     background-color: rgba(255, 255, 255, 0.08);
-    color: #FFF;
+    color: var(--text-hover);
 }
 
 .button {
@@ -1199,13 +1203,13 @@ input[type=password] {
 .button:hover {
     border-color: var(--button-color-hover);
     background-color: var(--button-color-hover);
-    color: #fff;
+    color: var(--button-text-hover);
     text-decoration: none;
 }
 
 .form-input:focus {
     outline: 0;
-    border-color: #fff;
+    border-color: var(--text-hover);
     box-shadow: none;
     background-color: rgba(255, 255, 255, 0.25);
 }

@@ -111,7 +111,7 @@ a:hover {
 }
 
 [class*="LoadingIndicator-ripple-"] {
-    border: 2px solid #fff;
+    border: 2px solid var(--text-hover);
 }
 
 /* MODAL */
@@ -151,18 +151,18 @@ a:hover {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
-    color: #fff;
+    color: var(--text-hover);
     border-top: 1px solid rgb(var(--accent-color));
 }
 
 [class*="ModalContent-closeButton-"]:hover {
-    color: #fff;
+    color: var(--button-text-hover);
 }
 
 /* INPUT */
 [class*="TagInput-internalInput-"] {
     background-color: transparent;
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="SelectInput-select-"] {
@@ -210,7 +210,7 @@ a:hover {
 
 /* LIDARR SPECIFIC */
 [class*="AuthorSearchInput-sectionTitle-"] {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="AuthorSearchInput-containerOpen-"] [class*="AuthorSearchInput-authorContainer-"] {
@@ -223,7 +223,7 @@ a:hover {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
-    color: #fff !important;
+    color: var(--text-hover) !important;
     box-shadow: 0 0 10px 1px transparent !important;
 }
 
@@ -317,6 +317,10 @@ a:hover {
     background-color: transparent;
 }
 
+[class*="PageSidebarItem-link-"] {
+    color: var(--text-hover)
+}
+
 [class*="PageSidebarItem-link-"]:hover {
     color: rgb(var(--accent-color));
     text-decoration: none;
@@ -404,7 +408,7 @@ a:hover {
 [class*="AuthorDetailsSeason-albumCount-"],
 [class*="AuthorDetails-metadataMessage-"],
 [class*="AuthorDetailsSeason-albumCount-"] {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 .fa-search:hover {
@@ -422,7 +426,7 @@ a:hover {
 }
 
 [class*="MonitorToggleButton-toggleButton-"] {
-    color: #dadada;
+    color: var(--text-hover);
 }
 
 [class*="ProtocolLabel-torrent-"] {
@@ -439,7 +443,7 @@ a:hover {
 
 /*ARTIST ALBUM PAGE*/
 [class*="AlbumDetailsMedium-mediumNumber-"] {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="AlbumDetailsMedium-medium-"] {
@@ -468,7 +472,7 @@ a:hover {
 [class*="AuthorIndexBanner-title-"],
 [class*="AuthorIndexBannerInfo-info-"] {
     background-color: rgba(0, 0, 0, .25);
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="Tooltip-tooltip-"][class*="Tooltip-inverse-"],
@@ -510,7 +514,7 @@ a:hover {
 }
 
 [class*="EpisodeTitleLink-link-"]:hover {
-    color: #ffffff;
+    color: var(--text-hover);
     text-decoration: none;
 }
 
@@ -674,7 +678,7 @@ a:hover {
 
 /* ALPHABET JUMP BAR */
 [class*="PageJumpBar-jumpBar-"] {
-    color: #FFF;
+    color: var(--text-hover);
 }
 
 /* SEARCH BAR */
@@ -683,12 +687,12 @@ a:hover {
 [class*="CheckInput-isIndeterminate-"] {
     border: none;
     background-color: rgba(255, 255, 255, 0.08);
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="AuthorSearchInput-input-"][class*="Input-input-"] {
     background: transparent;
-    border-bottom: solid 1px #fff;
+    border-bottom: solid 1px var(--text-hover);
 }
 
 [class*="AuthorSearchInput-input-"][class*="Input-input-"]:focus {
@@ -697,20 +701,20 @@ a:hover {
 }
 
 [class*="AuthorSearchResult-alternateTitle-"] {
-    color: #ffffff;
+    color: var(--text-hover);
     font-size: 12px;
 }
 
 [class*="Input-input-"]:focus {
     outline: 0;
-    border-color: #fff;
+    border-color: var(--text-hover);
     box-shadow: none;
     background-color: rgba(255, 255, 255, 0.25);
 }
 
 [class*="TagInput-input-"][class*="TagInput-isFocused-"] {
     outline: 0;
-    border-color: #fff;
+    border-color: var(--text-hover);
     box-shadow: none;
 }
 
@@ -726,7 +730,7 @@ a:hover {
 }
 
 [class*="AddNewAuthorSearchResult-year-"] {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="AddNewAuthorSearchResult-searchResult-"],
@@ -744,7 +748,7 @@ a:hover {
 }
 
 [class*="RootFolderSelectInputSelectedValue-freeSpace-"] {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="RootFolderSelectInputOption-freeSpace-"] {
@@ -762,7 +766,7 @@ a:hover {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
-    color: #FFF;
+    color: var(--text-hover);
     border: 1px solid transparent;
 }
 
@@ -813,7 +817,7 @@ input:focus:-ms-input-placeholder {
 /* IMPORT */
 /* Text color */
 [class*="ImportAuthorSelectFolder-header-"] {
-    color: #FFF;
+    color: var(--text-hover);
 }
 
 [class*="ExpandingFileDetails-fileDetails-"] {
@@ -826,7 +830,7 @@ input:focus:-ms-input-placeholder {
 [class*="ImportAuthorSelectAuthor-button-"] {
     border: none;
     background-color: rgba(0, 0, 0, 0.25) !important;
-    color: #fff;
+    color: var(--text-hover);
 }
 
 
@@ -844,7 +848,7 @@ input:focus:-ms-input-placeholder {
 /*Title*/
 
 [class*="PageJumpBarItem-jumpBarItem-"]:hover {
-    color: #fff;
+    color: var(--text-hover);
     background: hsla(0, 0%, 100%, .08);
 }
 
@@ -857,12 +861,12 @@ input:focus:-ms-input-placeholder {
 [class*="PageContentFooter-contentFooter-"] {
     border: none;
     background-color: rgba(0, 0, 0, .25);
-    color: #FFF;
+    color: var(--text-hover);
 }
 
 /* CALENDAR */
 [class*="CircularProgressBar-circularProgressBarContainer-"] svg circle {
-    stroke: white !important;
+    stroke: var(--text-hover) !important;
 }
 
 [class*="CalendarEvent-downloaded-"]:not([class*="AgendaEvent-"]) {
@@ -919,7 +923,7 @@ input:focus:-ms-input-placeholder {
 
 [class*="DayOfWeek-dayOfWeek-"] {
     background-color: hsla(0, 0%, 100%, .08);
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="CalendarDay-dayOfMonth-"] {
@@ -930,19 +934,19 @@ input:focus:-ms-input-placeholder {
 [class*="CalendarDay-isToday-"],
 [class*="DayOfWeek-isToday-"] {
     background-color: hsla(0, 0%, 100%, .25) !important;
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="CalendarEvent-authorName-"] a,
 [class*="CalendarEvent-authorName-"],
 [class*="CalendarEvent-bookTitle-"] a,
 [class*="CalendarEvent-bookTitle-"]{
-color: #eee !important;
+color: var(--text-hover) !important;
 }
 
 [class*="CalendarEvent-authorName-"] a:hover,
 [class*="CalendarEvent-bookTitle-"]  a:hover{
-color: #fff !important;
+color: var(--text-hover) !important;
 }
 
 [class*="CalendarEvent-event-"] {
@@ -1031,7 +1035,7 @@ color: #fff !important;
 
 
 [class*="-cloneButton-"][class*="IconButton-button-"]:hover {
-    color: white;
+    color: var(--text-hover);
 }
 
 [class*="Card-card-"]:hover {
@@ -1050,7 +1054,7 @@ color: #fff !important;
 [class*="LanguageProfileItem-languageProfileItem-"] {
     border: none;
     background-color: rgba(0, 0, 0, .25);
-    color: #FFF;
+    color: var(--text-hover);
 }
 
 [class*="QualityProfileItemGroup-qualityProfileItemGroup-"][class*="QualityProfileItemGroup-editGroups-"] {
@@ -1061,7 +1065,7 @@ color: #fff !important;
 [class*="KeyValueListInputItem-valueInput-"] {
     border: none;
     background: transparent;
-    color: white;
+    color: var(--text-hover);
 }
 
 [class*="QualityProfileFormatItem-qualityProfileFormatItem-"] {
@@ -1171,7 +1175,7 @@ input[type=email],
 input[type=password] {
     border: none;
     background-color: rgba(255, 255, 255, 0.08);
-    color: #FFF;
+    color: var(--text-hover);
 }
 
 .button {
@@ -1183,13 +1187,13 @@ input[type=password] {
 .button:hover {
     border-color: var(--button-color-hover);
     background-color: var(--button-color-hover);
-    color: #fff;
+    color: var(--button-text-hover);
     text-decoration: none;
 }
 
 .form-input:focus {
     outline: 0;
-    border-color: #fff;
+    border-color: var(--text-hover);
     box-shadow: none;
     background-color: rgba(255, 255, 255, 0.25);
 }
@@ -1227,7 +1231,7 @@ input[type=password] {
 
 /*Author Page*/
 [class*="AuthorDetails-tab-"] {
-    color: #FFF;
+    color: var(--text-hover);
 }
 
 [class*="AuthorIndexBanner-title-"] {
@@ -1287,11 +1291,11 @@ input[type=password] {
 }
 
 [class*="AuthorDetailsSeries-bookTypeLabel-"] {
-    color: #FFF;
+    color: var(--text-hover);
 }
 
 [class*="AuthorDetailsSeries-bookCount-"] {
-    color: #FFF;
+    color: var(--text-hover);
 }
 
 /*Search Tab*/
@@ -1314,7 +1318,7 @@ input[type=password] {
 
 /*Specific Book Page*/
 [class*="BookDetails-tab-"] {
-    color: #FFF;
+    color: var(--text-hover);
 }
 
 /* Updates */

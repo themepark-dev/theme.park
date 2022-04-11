@@ -94,13 +94,13 @@ hr {
 .dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
 .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover,
 .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
 .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover,
 .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
-    color: #fff !important;
+    color: var(--text-hover) !important;
     background-color: rgba(255, 255, 255, 0.15);
 }
 
@@ -143,7 +143,7 @@ a:hover {
     background: rgba(255, 255, 255, 0.08);
     border: none;
     outline: none;
-    color: #fff;
+    color: var(--text-hover);
 }
 
 table.dataTable.cell-border tbody tr:first-child th,
@@ -314,7 +314,7 @@ fieldset[disabled] .form-control {
 }
 
 .close {
-    color: #fff;
+    color: var(--text-hover);
 }
 
 .btn-default {
@@ -402,14 +402,14 @@ fieldset[disabled] .btn-primary:hover {
 }
 
 .input-group-addon {
-    color: #fff;
+    color: var(--text-hover);
     background-color: rgba(0, 0, 0, 0.25);
     border: 1px solid #0000;
 
 }
 
 .alert-info {
-    color: #ffffff;
+    color: var(--text-hover);
     background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;

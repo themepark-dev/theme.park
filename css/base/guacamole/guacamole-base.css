@@ -179,7 +179,7 @@ input[type=email],
 input[type=number],
 input[type=password],
 textarea {
-    color: white !important;
+    color: var(--text-hover) !important;
     background: rgba(0, 0, 0, 0.25) !important;
 }
 
@@ -415,7 +415,7 @@ textarea {
 .clipboard,
 .clipboard-service-target {
     background: rgba(0, 0, 0, 0.25);
-    color: white;
+    color: var(--text-hover);
 }
 
 /* NOTIFICATION BOX */
@@ -428,7 +428,7 @@ textarea {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
-    color: white;
+    color: var(--text-hover);
 }
 
 .notification {
@@ -440,16 +440,16 @@ textarea {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
-    color: white;
+    color: var(--text-hover);
 }
 
 /* SETTINGS */
 .page-tabs .page-list li a[href]:visited {
-    color: white;
+    color: var(--text-hover);
 }
 
 .page-tabs .page-list li a[href] {
-    color: white;
+    color: var(--text-hover);
 }
 
 .page-tabs .page-list li a[href]:hover {
@@ -577,7 +577,7 @@ form:not(.inline) fieldset {
 }
 
 label span {
-    color: white !important;
+    color: var(--text-hover) !important;
 }
 
 input[type=radio] {

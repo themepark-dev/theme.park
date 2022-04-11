@@ -28,7 +28,7 @@
  }
 
  input {
-     color: #FFF !important;
+     color: var(--text-hover) !important;
  }
 
  /* scroller */
@@ -78,7 +78,7 @@
  }
 
  .x-item-disabled {
-     color: #aaaaaa;
+     color: var(--text-muted)
  }
 
  .x-item-disabled * {
@@ -86,16 +86,16 @@
  }
 
  .x-splitbar-proxy {
-     background-color: #aaa;
+     background-color: var(--text)
  }
 
  .x-color-palette a {
-     border-color: #fff;
+     border-color: var(--text-hover)
  }
 
  .x-color-palette a:hover,
  .x-color-palette a.x-color-palette-sel {
-     border-color: #CFCFCF;
+     border-color: var(--text);
      background-color: #eaeaea;
  }
 
@@ -285,13 +285,13 @@
  }
 
  .x-spotlight {
-     background-color: #ccc;
+     background-color: var(--text);
  }
 
  .x-tab-panel-header,
  .x-tab-panel-footer {
      background: var(--main-bg-color);
-     border-color: #d0d0d0;
+     border-color: var(--text);
      overflow: hidden;
      zoom: 1;
      padding-bottom: 0;
@@ -1337,7 +1337,7 @@
  }
 
  .x-pivotgrid .x-grid3-row-headers table td {
-     background: #EEE url(../images/default/grid/grid3-rowheader.gif) repeat-x left top;
+     background: var(--text)  url(../images/default/grid/grid3-rowheader.gif) repeat-x left top;
      border-left: 1px solid;
      border-right: 1px solid;
      border-left-color: #EEE;
@@ -1462,7 +1462,7 @@
  }
 
  .x-tree-node {
-     color: #cccccc;
+     color: var(--text);
      font: normal 11px 'Roboto', arial, tahoma, helvetica, sans-serif;
  }
 
@@ -1473,12 +1473,12 @@
 
  .x-tree-node a,
  .x-dd-drag-ghost a {
-     color: #cccccc;
+     color: var(--text);
  }
 
  .x-tree-node a span,
  .x-dd-drag-ghost a span {
-     color: #cccccc;
+     color: var(--text);
  }
 
  .x-tree-node .x-tree-node-disabled a span {
@@ -1539,12 +1539,12 @@
  .x-date-left,
  .x-date-right {
      //background-image: url(../images/gray/shared/hd-sprite.gif);
-     color: #fff;
+     color: var(--text-hover);
      font: bold 11px 'Roboto', "sans serif", tahoma, verdana, helvetica;
  }
 
  .x-date-middle .x-btn .x-btn-text {
-     color: #fff;
+    color: var(--text-hover);
  }
 
  .x-panel-tbar .x-btn-text {
@@ -1577,7 +1577,7 @@
  }
 
  .x-date-inner td {
-     border-color: #fff;
+     border-color: var(--text)
  }
 
  .x-date-inner a {
@@ -1644,7 +1644,7 @@
 
  .x-date-mp-btns button {
      background-color: #4E565F;
-     color: #fff;
+     color: var(--text-hover);
      border-color: #C0C0C0 #434343 #434343 #C0C0C0;
      font: normal 11px 'Roboto', arial, helvetica, tahoma, sans-serif;
  }
@@ -2143,7 +2143,7 @@
  }
 
  .x-window-tl .x-window-header {
-     color: #ffffff;
+     var(--text-hover);
      font: bold 11px 'Roboto', tahoma, arial, verdana, sans-serif;
  }
 
@@ -2224,7 +2224,7 @@
  }
 
  .x-dlg-mask {
-     background-color: #ccc;
+     background-color: var(--text);
  }
 
  .x-window-plain .x-window-mc {
