@@ -41,6 +41,10 @@ cp /app/themepark/CNAME /config/www
 echo 'Creating CSS files'
 python3 /config/www/themes.py
 
+# remove build deps
+# to reduce attack surface
+apk del build-dependencies
+
 # permissions
 chown -R abc:abc \
     /config
