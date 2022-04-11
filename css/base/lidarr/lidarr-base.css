@@ -1225,3 +1225,8 @@ input[type=password] {
     color: #FFF;
     background-color: #f05050;
 }
+
+/* Updates */
+[class*="Updates-info-"]{
+    border-bottom: 1px solid rgb(var(--accent-color));
+}

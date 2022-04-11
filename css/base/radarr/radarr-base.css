@@ -1222,3 +1222,8 @@ input[type=password] {
 [class*="SelectMovieModalContent-path-"] {
     color: var(--text);
 }
+
+/* Updates */
+[class*="Updates-info-"]{
+    border-bottom: 1px solid rgb(var(--accent-color));
+}
