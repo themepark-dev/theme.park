@@ -887,6 +887,7 @@ a:hover {
 
 [class*="DayOfWeek-dayOfWeek-"] {
     background-color: hsla(0, 0%, 100%, .08);
+    color: var(--text-hover);
 }
 
 [class*="CalendarDay-dayOfMonth-"] {
