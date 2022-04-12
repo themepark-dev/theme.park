@@ -908,7 +908,7 @@ a:hover {
 [class*="CalendarEvent-authorName-"],
 [class*="CalendarEvent-bookTitle-"] a,
 [class*="CalendarEvent-bookTitle-"]{
-color: var(--text-hover) !important;
+color: #fff !important;
 }
 
 [class*="CalendarEvent-authorName-"] a:hover,

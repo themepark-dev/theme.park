@@ -959,7 +959,7 @@ a:hover {
 [class*="CalendarEvent-episodeInfo-"],
 [class*="CalendarEvent-airTime-"],
 [class*="CalendarEvent-link-"] {
-    color: var(--text-hover) !important;
+    color: #fff !important;
 }
 
 [class*="CalendarEvent-event-"] {
