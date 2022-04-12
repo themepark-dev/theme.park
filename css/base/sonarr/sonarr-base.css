@@ -695,7 +695,7 @@ a:hover {
 
 [class*="SeriesSearchInput-container-"] [class*="Input-input-"] {
     background: transparent;
-    border-bottom: solid 1px var(--text-hover);
+    border-bottom: solid 1px var(--text);
 }
 
 [class*="SeriesSearchInput-container-"] [class*="Input-input-"]:focus {

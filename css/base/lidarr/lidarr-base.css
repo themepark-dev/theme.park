@@ -691,7 +691,7 @@ a:hover {
 
 [class*="ArtistSearchInput-container-"] [class*="Input-input-"] {
     background: transparent;
-    border-bottom: solid 1px var(--text-hover);
+    border-bottom: solid 1px var(--text);
 }
 
 [class*="ArtistSearchInput-container-"] [class*="Input-input-"]:focus {
