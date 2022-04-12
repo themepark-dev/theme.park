@@ -10,6 +10,8 @@
 /*		   		        Made by @gilbN					 */
 /* 			      https://github.com/gilbN/theme.park			 */
 
+@import url("/css/defaults/placeholders.css");
+
 :root {
     --calendar-downloading: 122 67 182;
     --calendar-downloaded: 39 194 76;
@@ -773,42 +775,6 @@ a:hover {
 
 [class*="ImportArtistSearchResult-artist-"]:hover {
     background-color: rgba(255, 255, 255, 0.08);
-}
-
-/* MOVE THIS */
-input::-webkit-input-placeholder {
-    color: var(--text);
-}
-
-input:focus::-webkit-input-placeholder {
-    color: var(--text-hover);
-}
-
-/* Firefox < 19 */
-input:-moz-placeholder {
-    color: var(--text);
-}
-
-input:focus:-moz-placeholder {
-    color: var(--text-hover);
-}
-
-/* Firefox > 19 */
-input::-moz-placeholder {
-    color: var(--text);
-}
-
-input:focus::-moz-placeholder {
-    color: var(--text-hover);
-}
-
-/* Internet Explorer 10 */
-input:-ms-input-placeholder {
-    color: var(--text);
-}
-
-input:focus:-ms-input-placeholder {
-    color: var(--text-hover);
 }
 
 /* IMPORT */
