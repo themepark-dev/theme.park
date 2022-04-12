@@ -203,6 +203,7 @@ a:hover {
 
 [class*="PageHeader-header-"] {
     background-color: rgba(0, 0, 0, .35);
+    color: var(--text);
 }
 
 /* SEARCH DROPDOWN HEADER */
