@@ -9,7 +9,7 @@ LABEL org.opencontainers.image.description DESCRIPTION
 
 RUN \
 echo " ## Installing packages ## " && \
-apk add --no-cache --virtual=build-dependencies \
+apk add --no-cache --virtual=runtime-dependencies \
     python3 && \
   echo "**** install theme.park ****" && \
     mkdir -p /app/themepark
