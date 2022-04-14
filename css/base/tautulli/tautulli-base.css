@@ -187,6 +187,18 @@ select,
 }
 
 /* Dashboard */
+.dashboard-stats-info-title h4 {
+    color: #fff;
+}
+
+.dashboard-stats-info-item .sub-value {
+    color: #fff;
+}
+
+.dashboard-stats-info-item .sub-list {
+    color: #eee;
+}
+
 .dashboard-stats-background,
 .dashboard-activity-background,
 .dashboard-activity-poster-container {
