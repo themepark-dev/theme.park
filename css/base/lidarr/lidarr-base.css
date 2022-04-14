@@ -830,7 +830,7 @@ a:hover {
 
 /* CALENDAR */
 [class*="CircularProgressBar-circularProgressBarContainer-"] svg circle {
-    stroke: var(--text-hover) !important;
+    stroke: #fff;
 }
 
 [class*="CalendarEvent-downloaded-"] {
