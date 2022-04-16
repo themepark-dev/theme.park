@@ -60,8 +60,8 @@ if [[ $SHA != $SHA_RELEASE ]]; then
 fi
 
 cat <<< "$SHA_RELEASE" > "/config/www/themepark/sha.txt"
-cp /root/themepark.subdomain.conf /config/nginx/proxy-confs/themepark.subdomain.conf
-cp /root/themepark.subfolder.conf /config/nginx/proxy-confs/themepark.subfolder.conf
+cp /themepark-confs/themepark.subdomain.conf /config/nginx/proxy-confs/themepark.subdomain.conf
+cp /themepark-confs/themepark.subfolder.conf /config/nginx/proxy-confs/themepark.subfolder.conf
 
 # permissions
 chown -R abc:abc \
