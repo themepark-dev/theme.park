@@ -897,6 +897,7 @@ a:hover {
     border-bottom: 1px solid hsla(0, 0%, 100%, .08);
     border-left: 1px solid hsla(0, 0%, 100%, .08);
     border-right: 1px solid hsla(0, 0%, 100%, .08);
+    color: var(--text-hover);
 }
 
 [class*="CalendarEvent-movieTitle-"],
@@ -922,11 +923,11 @@ a:hover {
 }
 
 [class*="CalendarEventGroup-airTime-"] {
-    color: var(--text);
+    color: #fff;
 }
 
 [class*="CalendarEventGroup-episodeInfo-"] {
-    color: var(--text);
+    color: #fff;
 }
 
 /* calendar agenda */
