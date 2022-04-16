@@ -4,5 +4,9 @@
     background-repeat: no-repeat;
     background-size: contain;
     margin: 0 10px;
-    width: 45px;
+    width: 40px;
+}
+
+[class*="NavBar-plexLogo-"] svg {
+    display: none;
 }
