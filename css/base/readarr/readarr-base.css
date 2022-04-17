@@ -10,6 +10,8 @@
 /*		   		        Made by @gilbN					 */
 /* 			      https://github.com/gilbN/theme.park			 */
 
+@import url("/css/defaults/placeholders.css");
+
 :root {
     --calendar-downloaded: 39 194 76;
     --calendar-downloading: 122 67 182;
@@ -200,6 +202,7 @@ a:hover {
 
 [class*="PageHeader-header-"] {
     background-color: rgba(0, 0, 0, .35);
+    color: var(--text);
 }
 
 /* SEARCH DROPDOWN HEADER */
@@ -692,7 +695,7 @@ a:hover {
 
 [class*="AuthorSearchInput-input-"][class*="Input-input-"] {
     background: transparent;
-    border-bottom: solid 1px var(--text-hover);
+    border-bottom: solid 1px var(--text);
 }
 
 [class*="AuthorSearchInput-input-"][class*="Input-input-"]:focus {
@@ -778,42 +781,6 @@ a:hover {
     background-color: rgba(255, 255, 255, 0.08);
 }
 
-/* MOVE THIS */
-input::-webkit-input-placeholder {
-    color: var(--text);
-}
-
-input:focus::-webkit-input-placeholder {
-    color: var(--text-hover);
-}
-
-/* Firefox < 19 */
-input:-moz-placeholder {
-    color: var(--text);
-}
-
-input:focus:-moz-placeholder {
-    color: var(--text-hover);
-}
-
-/* Firefox > 19 */
-input::-moz-placeholder {
-    color: var(--text);
-}
-
-input:focus::-moz-placeholder {
-    color: var(--text-hover);
-}
-
-/* Internet Explorer 10 */
-input:-ms-input-placeholder {
-    color: var(--text);
-}
-
-input:focus:-ms-input-placeholder {
-    color: var(--text-hover);
-}
-
 /* IMPORT */
 /* Text color */
 [class*="ImportAuthorSelectFolder-header-"] {
@@ -866,7 +833,7 @@ input:focus:-ms-input-placeholder {
 
 /* CALENDAR */
 [class*="CircularProgressBar-circularProgressBarContainer-"] svg circle {
-    stroke: var(--text-hover) !important;
+    stroke: #fff;
 }
 
 [class*="CalendarEvent-downloaded-"]:not([class*="AgendaEvent-"]) {
@@ -941,7 +908,7 @@ input:focus:-ms-input-placeholder {
 [class*="CalendarEvent-authorName-"],
 [class*="CalendarEvent-bookTitle-"] a,
 [class*="CalendarEvent-bookTitle-"]{
-color: var(--text-hover) !important;
+color: #fff !important;
 }
 
 [class*="CalendarEvent-authorName-"] a:hover,
@@ -963,6 +930,7 @@ color: var(--text-hover) !important;
     border-bottom: 1px solid hsla(0, 0%, 100%, .08);
     border-left: 1px solid hsla(0, 0%, 100%, .08);
     border-right: 1px solid hsla(0, 0%, 100%, .08);
+    color: var(--text-hover);
 }
 
 [class*="CalendarEvent-event-"] {

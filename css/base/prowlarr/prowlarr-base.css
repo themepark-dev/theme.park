@@ -10,6 +10,8 @@
 /*		   		        Made by @gilbN					 */
 /* 			      https://github.com/gilbN/theme.park			 */
 
+@import url("/css/defaults/placeholders.css");
+
 body {
     background: var(--main-bg-color);
     background-repeat: repeat, no-repeat;
@@ -200,6 +202,7 @@ a:hover {
 [class*="PageHeader-header-"] {
     background-color: rgba(0, 0, 0, .35);
     box-shadow: none;
+    color: var(--text);
 }
 
 /* SEARCH DROPDOWN HEADER */
@@ -677,7 +680,7 @@ a:hover {
 
 [class*="IndexerSearchInput-container-"] [class*="Input-input-"] {
     background: transparent;
-    border-bottom: solid 1px #fff;
+    border-bottom: solid 1px var(--text);
 }
 
 [class*="IndexerSearchInput-container-"] [class*="Input-input-"]:focus {
@@ -736,42 +739,6 @@ a:hover {
 [class*="RootFolderSelectInputOption-freeSpace-"],
 [class*="RootFolderSelectInputOption-movieFolder-"] {
     color: var(--text-muted);
-}
-
-/* MOVE THIS */
-input::-webkit-input-placeholder {
-    color: var(--text);
-}
-
-input:focus::-webkit-input-placeholder {
-    color: var(--text-hover);
-}
-
-/* Firefox < 19 */
-input:-moz-placeholder {
-    color: var(--text);
-}
-
-input:focus:-moz-placeholder {
-    color: var(--text-hover);
-}
-
-/* Firefox > 19 */
-input::-moz-placeholder {
-    color: var(--text);
-}
-
-input:focus::-moz-placeholder {
-    color: var(--text-hover);
-}
-
-/* Internet Explorer 10 */
-input:-ms-input-placeholder {
-    color: var(--text);
-}
-
-input:focus:-ms-input-placeholder {
-    color: var(--text-hover);
 }
 
 /* IMPORT */
@@ -908,6 +875,7 @@ input:focus:-ms-input-placeholder {
 
 [class*="DayOfWeek-dayOfWeek-"] {
     background-color: hsla(0, 0%, 100%, .08);
+    color: var(--text-hover);
 }
 
 [class*="CalendarDay-dayOfMonth-"] {
@@ -929,6 +897,7 @@ input:focus:-ms-input-placeholder {
     border-bottom: 1px solid hsla(0, 0%, 100%, .08);
     border-left: 1px solid hsla(0, 0%, 100%, .08);
     border-right: 1px solid hsla(0, 0%, 100%, .08);
+    color: var(--text-hover);
 }
 
 [class*="CalendarEvent-movieTitle-"],
@@ -954,11 +923,11 @@ input:focus:-ms-input-placeholder {
 }
 
 [class*="CalendarEventGroup-airTime-"] {
-    color: var(--text);
+    color: #fff;
 }
 
 [class*="CalendarEventGroup-episodeInfo-"] {
-    color: var(--text);
+    color: #fff;
 }
 
 /* calendar agenda */

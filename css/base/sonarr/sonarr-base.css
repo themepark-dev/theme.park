@@ -10,6 +10,8 @@
 /*		   		        Made by @gilbN					 */
 /* 			      https://github.com/gilbN/theme.park			 */
 
+@import url("/css/defaults/placeholders.css");
+
 :root {
     --calendar-tv-unaired-premiere: 53 197 244;
     --calendar-tv-downloading: 122 67 182;
@@ -210,6 +212,7 @@ a:hover {
 
 [class*="PageHeader-header-"] {
     background-color: rgba(0, 0, 0, .35);
+    color: var(--text);
 }
 
 /* SEARCH DROPDOWN HEADER */
@@ -692,7 +695,7 @@ a:hover {
 
 [class*="SeriesSearchInput-container-"] [class*="Input-input-"] {
     background: transparent;
-    border-bottom: solid 1px var(--text-hover);
+    border-bottom: solid 1px var(--text);
 }
 
 [class*="SeriesSearchInput-container-"] [class*="Input-input-"]:focus {
@@ -716,42 +719,6 @@ a:hover {
     outline: 0;
     border-color: var(--text-hover);
     box-shadow: none;
-}
-
-/* MOVE THIS */
-input::-webkit-input-placeholder {
-    color: var(--text);
-}
-
-input:focus::-webkit-input-placeholder {
-    color: var(--text-hover);
-}
-
-/* Firefox < 19 */
-input:-moz-placeholder {
-    color: var(--text);
-}
-
-input:focus:-moz-placeholder {
-    color: var(--text-hover);
-}
-
-/* Firefox > 19 */
-input::-moz-placeholder {
-    color: var(--text);
-}
-
-input:focus::-moz-placeholder {
-    color: var(--text-hover);
-}
-
-/* Internet Explorer 10 */
-input:-ms-input-placeholder {
-    color: var(--text);
-}
-
-input:focus:-ms-input-placeholder {
-    color: var(--text-hover);
 }
 
 /* TEXT COLOR */
@@ -846,7 +813,7 @@ input:focus:-ms-input-placeholder {
 
 /* CALENDAR */
 [class*="CircularProgressBar-circularProgressBarContainer-"] svg circle {
-    stroke: var(--text-hover) !important;
+    stroke: #fff;
 }
 
 [class*="CalendarEvent-downloaded-"] {
@@ -917,7 +884,7 @@ input:focus:-ms-input-placeholder {
 
 [class*="DayOfWeek-dayOfWeek-"] {
     background-color: hsla(0, 0%, 100%, .08);
-    color: #fff;
+    color: var(--text-hover);
 }
 
 [class*="CalendarDay-dayOfMonth-"] {
@@ -940,6 +907,7 @@ input:focus:-ms-input-placeholder {
     border-bottom: 1px solid hsla(0, 0%, 100%, .08);
     border-left: 1px solid hsla(0, 0%, 100%, .08);
     border-right: 1px solid hsla(0, 0%, 100%, .08);
+    color: var(--text-hover);
 }
 
 [class*="CalendarEvent-seriesTitle-"],
@@ -958,15 +926,15 @@ input:focus:-ms-input-placeholder {
 }
 
 [class*="CalendarEventGroup-seriesTitle-"] {
-    color: var(--text-hover) !important;
+    color: #fff !important;
 }
 
 [class*="CalendarEventGroup-airTime-"] {
-    color: var(--text-hover);
+    color: #eee;
 }
 
 [class*="CalendarEventGroup-episodeInfo-"] {
-    color: var(--text-hover);
+    color: #eee;
 }
 
 /* calendar agenda */
