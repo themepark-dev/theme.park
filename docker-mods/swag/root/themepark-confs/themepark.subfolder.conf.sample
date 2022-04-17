@@ -1,0 +1,17 @@
+    location  /themepark {
+        return 302  $scheme://$http_host/themepark/;
+        }
+
+    location /themepark/ {
+        alias /config/www/themepark/;
+        sub_filter_types *;
+        sub_filter 'url("/css/' 'url("/themepark/css/';
+        sub_filter_once off;
+        try_files $uri $uri/ /index.html;
+        # Don't cache
+        add_header Last-Modified $date_gmt;
+        add_header Cache-Control 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0';
+        if_modified_since off;
+        expires -1;
+        etag off;
+    }
