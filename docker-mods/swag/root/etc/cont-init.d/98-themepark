@@ -1,0 +1,67 @@
+#!/usr/bin/with-contenv bash
+
+echo '-------------------------'
+echo '|  SWAG theme.park Mod  |'
+echo '-------------------------'
+
+if ! [[ -x "$(command -v svn)" ]]; then
+echo '--------------------------'
+echo '| Installing svn package |'
+echo '--------------------------'
+    if [ -x "$(command -v apk)" ]; then
+      apk update && \
+      apk add --no-cache subversion
+    elif [ -x "$(command -v apt-get)" ]; then
+      apt-get update && \
+      apt-get install -y subversion
+    fi
+fi
+
+# Display variables for troubleshooting
+echo -e "Variables set:\\n\
+'TP_BRANCH'=${TP_BRANCH}\\n"
+
+# Set default
+if [[ -z ${TP_BRANCH} ]]; then
+    echo 'No branch set, defaulting to live'
+    TP_BRANCH='live'
+fi
+
+if [[ ${TP_BRANCH} == "master" ]]; then
+    TP_BRANCH='live'
+fi
+
+if [[ ${TP_BRANCH} == "develop" ]]; then
+    TP_BRANCH='live_develop'
+fi
+
+if [[ ${TP_BRANCH} == "testing" ]]; then
+    TP_BRANCH='live_testing'
+fi
+
+mkdir -p /config/www/themepark
+
+SHA_RELEASE=$(curl -sL "https://api.github.com/repos/gilbn/theme.park/commits/${TP_BRANCH}" | jq -r '.sha');
+if [[ ! -f "/config/www/themepark/sha.txt" ]]; then 
+    SHA=""
+else
+    SHA=$(cat /config/www/themepark/sha.txt)
+fi
+# Downloading fresh webui files from source.
+if [[ $SHA != $SHA_RELEASE ]]; then
+    echo "-----------------------------------------------------"
+    echo "| Downloading latest files from ${TP_BRANCH} branch |"
+    echo "-----------------------------------------------------"
+    svn export --quiet --force "https://github.com/GilbN/theme.park/branches/${TP_BRANCH}/css" /config/www/themepark/css
+    svn export --quiet --force "https://github.com/GilbN/theme.park/branches/${TP_BRANCH}/resources" /config/www/themepark/resources
+    svn export --quiet --force "https://github.com/GilbN/theme.park/branches/${TP_BRANCH}/themes.json" /config/www/themepark
+    svn export --quiet --force "https://github.com/GilbN/theme.park/branches/${TP_BRANCH}/index.html" /config/www/themepark
+    printf '\nDownload finished\n\n'
+fi
+
+cat <<< "$SHA_RELEASE" > "/config/www/themepark/sha.txt"
+cp /themepark-confs/* /config/nginx/proxy-confs
+
+# permissions
+chown -R abc:abc \
+    /config/www/themepark
