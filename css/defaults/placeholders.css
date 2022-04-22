@@ -1,34 +1,34 @@
-input::-webkit-input-placeholder {
-  color: var(--text) !important;
+*::-webkit-input-placeholder {
+  color: var(--text-muted) !important;
 }
 
-input:focus::-webkit-input-placeholder {
+*:focus::-webkit-input-placeholder {
   color: var(--text-hover) !important;
 }
 
 /* Firefox < 19 */
-input:-moz-placeholder {
-  color: var(--text) !important;
+*:-moz-placeholder {
+  color: var(--text-muted) !important;
 }
 
-input:focus:-moz-placeholder {
+*:focus:-moz-placeholder {
   color: var(--text-hover) !important;
 }
 
 /* Firefox > 19 */
-input::-moz-placeholder {
-  color: var(--text) !important;
+*::-moz-placeholder {
+  color: var(--text-muted) !important;
 }
 
-input:focus::-moz-placeholder {
+*:focus::-moz-placeholder {
   color: var(--text-hover) !important;
 }
 
 /* Internet Explorer 10 */
-input:-ms-input-placeholder {
-  color: var(--text) !important;
+*:-ms-input-placeholder {
+  color: var(--text-muted) !important;
 }
 
-input:focus:-ms-input-placeholder {
+*:focus:-ms-input-placeholder {
   color: var(--text-hover) !important;
 }
