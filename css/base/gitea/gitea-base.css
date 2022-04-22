@@ -12,6 +12,9 @@
 
 @import url("/css/base/gitea/chroma.css");
 @import url("/css/base/gitea/monaco_vs_dark.css");
+@import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
+
 :root {
     --color-text: var(--text);
     --color-caret: white;
@@ -117,7 +120,7 @@ a:hover,
     min-height: 50px;
     border: 3px solid transparent;
     border-radius: 8px !important;
-    background-color: hsla(0, 0%, 100%, .2);
+    background: var(--transparency-dark-20);
     background-clip: padding-box;
     box-shadow: none !important;
 }
@@ -130,7 +133,7 @@ a:hover,
     min-height: 50px;
     border: 3px solid transparent;
     border-radius: 8px !important;
-    background-color: hsla(0, 0%, 100%, .5);
+    background: var(--transparency-light-50);
     background-clip: padding-box;
 }
 
@@ -222,21 +225,21 @@ b:hover,
 .following.bar.light.ui.secondary.menu .active.item,
 .following.bar.lightui.secondary.menu .active.item:hover {
     box-shadow: none;
-    background: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
     color: rgb(var(--accent-color));
 }
 
 .ui.secondary.menu .dropdown.item:hover,
 .ui.secondary.menu .link.item:hover,
 .ui.secondary.menu a.item:hover {
-    background: rgb(255 255 255 / 0.08);
+    background: var(--transparency-light-10);
     color: var(--text-hover);
 }
 
 .ui.secondary.menu .active.item,
 .ui.secondary.menu .active.item:hover {
     box-shadow: none;
-    background: rgba(0, 0, 0, .05);
+    background: var(--transparency-dark-05);
     color: var(--text-hover);
 }
 
@@ -247,7 +250,7 @@ b:hover,
 }
 
 .organization.settings .ui.menu {
-    background: rgb(0 0 0 / 10%);
+    background: var(--transparency-dark-10);
     border: 1px solid rgba(255, 255, 255, .1);
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1);
 }
@@ -255,7 +258,7 @@ b:hover,
 .organization.settings .ui.vertical.menu {
     display: block;
     flex-direction: column;
-    background: rgb(0 0 0 / 15%);
+    background: var(--transparency-dark-15);
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -268,7 +271,7 @@ b:hover,
 }
 
 .ui.segment {
-    background: rgb(0 0 0 / 15%) !important;
+    background: var(--transparency-dark-15) !important;
 }
 
 .ui.attached.segment,
@@ -280,7 +283,7 @@ b:hover,
 }
 
 .ui .info.segment.top {
-    background-color: rgb(0 0 0 / 15%) !important;
+    background-color: var(--transparency-dark-15) !important;
     color: var(--text);
 }
 
@@ -290,17 +293,17 @@ b:hover,
 }
 
 .ui.info.message {
-    background-color: rgb(0 0 0 / 15%);
+    background-color: var(--transparency-dark-15);
     color: #276f86;
 }
 
 .ui.attached.header {
-    background: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
     border: 1px solid transparent;
 }
 
 .explore .navbar {
-    background-color: rgb(0 0 0 / 25%) !important;
+    background: var(--transparency-dark-25) !important;
 
 }
 
@@ -315,7 +318,7 @@ b:hover,
 }
 
 .ui.progress {
-    background: rgb(255 255 255 / 10%);
+    background: var(--transparency-light-10);
 }
 
 .ui.progress[data-percent="0"] .bar .progress {
@@ -328,11 +331,11 @@ b:hover,
 }
 
 .pagination.menu {
-    background: rgba(255, 255, 255, .08) !important;
+    background: var(--transparency-light-10) !important;
 }
 
 .ui.pagination.menu .active.item {
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     color: var(--text-hover);
     box-shadow: none;
 }
@@ -342,7 +345,7 @@ b:hover,
 }
 
 .feeds .list ul li.private {
-    background-color: rgb(255 255 255 / 10%);
+    background: var(--transparency-light-10);
 }
 
 .ui.secondary.pointing.menu {
@@ -354,7 +357,7 @@ b:hover,
 }
 
 .ui.repository.list .item:not(:first-child) {
-    border-top: 1px solid rgb(255 255 255 / 25%);
+    border-top: 1px solid var(--transparency-light-25);
 
 }
 
@@ -439,7 +442,7 @@ b:hover,
 
 /* SIGN IN NAV BAR*/
 .ui.menu.new-menu {
-    background: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
 }
 
 .ui.menu.new-menu::after {
@@ -490,13 +493,13 @@ b:hover,
 }
 
 .ui.menu .ui.dropdown .menu>.active.item {
-    background: rgb(0 0 0 / 10%) !important;
+    background: var(--transparency-dark-10) !important;
     color: rgb(var(--accent-color)) !important;
 }
 
 .ui.menu .ui.dropdown .menu>.item:hover,
 .ui.menu .ui.dropdown .menu>.selected.item {
-    background: rgb(255 255 255 / 0.07) !important;
+    background: var(--transparency-light-10) !important;
     color: var(--text-hover) !important;
 }
 
@@ -527,12 +530,12 @@ b:hover,
 }
 
 .ui.dropdown .menu>.item:hover {
-    background: rgb(255 255 255 / 0.07);
+    background: var(--transparency-light-10);
 }
 
 .ui.dropdown .menu .selected.item,
 .ui.dropdown.selected {
-    background: rgb(0 0 0 / 0.25);
+    background: var(--transparency-dark-25);
     color: var(--text-hover);
 }
 
@@ -545,7 +548,7 @@ b:hover,
 input:hover,
 textarea:hover {
     border-color: rgb(255 255 255 / 20%);
-    background: rgb(0 0 0 / .25);
+    background: var(--transparency-dark-25);
     color: var(--text-hover);
 }
 
@@ -562,14 +565,14 @@ textarea:hover {
 }
 
 .ui.selection.dropdown {
-    background: rgb(0 0 0 / .25);
+    background: var(--transparency-dark-25);
     color: var(--text-hover);
     border-color: rgb(255 255 255 / 10%);
 }
 
 .ui.selection.dropdown:focus {
     border-color: rgba(255, 255, 255, .08);
-    background: rgb(0 0 0 / 50%);
+    background: var(--transparency-dark-50);
     box-shadow: none;
 }
 
@@ -638,7 +641,7 @@ svg.vch__wrapper .vch__months__labels__wrapper text.vch__month__label[data-v-a9c
 
 #app .ui.item.menu,
 .ui.item.menu .item {
-    background: rgb(0 0 0 / 15%);
+    background: var(--transparency-dark-15);
     border-color: rgb(255 255 255 / 10%);
 }
 
@@ -647,7 +650,7 @@ svg.vch__wrapper .vch__months__labels__wrapper text.vch__month__label[data-v-a9c
 }
 
 .ui.menu .active.item {
-    background: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     color: var(--text);
     font-weight: 400;
     box-shadow: none;
@@ -655,25 +658,25 @@ svg.vch__wrapper .vch__months__labels__wrapper text.vch__month__label[data-v-a9c
 
 .ui.menu .active.item:hover,
 .ui.vertical.menu .active.item:hover {
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     color: var(--text-hover);
 }
 
 .ui.menu a.item:hover {
     color: var(--text-hover);
-    background: rgb(0 0 0 / 15%);
+    background: var(--transparency-dark-15);
 }
 
 #app .ui.link.menu .item:hover,
 .ui.menu .dropdown.item:hover,
 .ui.menu .link.item:hover {
     cursor: pointer;
-    background: rgba(0, 0, 0, .03);
+    background: var(--transparency-dark-05);
     color: var(--text-hover);
 }
 
 #app .ui.secondary.segment {
-    background: rgb(0 0 0 / 15%);
+    background: var(--transparency-dark-15);
     color: rgba(0, 0, 0, .6);
 }
 
@@ -684,7 +687,7 @@ svg.vch__wrapper rect.vch__day__square[data-v-a9cfea66]:hover {
 }
 
 .heatmap-color-0 {
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
 }
 
 .activity-bar-graph {
@@ -714,7 +717,7 @@ svg.vch__wrapper rect.vch__day__square[data-v-a9cfea66]:hover {
 
 /* REPOSITORY */
 .repository .header-wrapper {
-    background-color: rgb(0 0 0 / 24%);
+    background: var(--transparency-dark-25);
 }
 
 .repository .diff-detail-box {
@@ -803,7 +806,7 @@ svg.vch__wrapper rect.vch__day__square[data-v-a9cfea66]:hover {
 
 .tag-code,
 .tag-code td {
-    background: rgba(255, 255, 255, .1) !important;
+    background: var(--transparency-light-10) !important;
 }
 
 .tag-code td.lines-num {
@@ -812,11 +815,11 @@ svg.vch__wrapper rect.vch__day__square[data-v-a9cfea66]:hover {
 
 a.blob-excerpt {
     color: var(--text);
-    background: rgba(255, 255, 255, .1) !important;
+    background: var(--transparency-light-10) !important;
 }
 
 td.blob-excerpt {
-    background-color: rgba(0, 0, 0, .15);
+    background: var(--transparency-dark-15);
 }
 
 .repo-header .ui.breadcrumb a {
@@ -861,7 +864,7 @@ td.blob-excerpt {
 
 .ui.card,
 .ui.cards>.card {
-    background: rgb(0 0 0 / 15%);
+    background: var(--transparency-dark-15);
     box-shadow: none;
 }
 
@@ -870,7 +873,7 @@ td.blob-excerpt {
 .ui.link.cards .card:not(.icon):hover,
 a.ui.card:hover {
     border: 1px solid rgb(255 255 255 / 20%);
-    background: rgb(255 255 255 / 15%);
+    background: var(--transparency-light-15);
 }
 
 .repository .ui.menu {
@@ -900,7 +903,7 @@ a.ui.card:hover {
     margin-bottom: 10px;
     border: 1px solid rgb(255 255 255 / .1);
     border-radius: 3px;
-    background: rgb(255 255 255 / 10%);
+    background: var(--transparency-light-10);
 }
 
 .repository.release #release-list {
@@ -930,7 +933,7 @@ a.ui.card:hover {
     /* WIKI */
 .repository.wiki.pages .ui.ui.table td.grey:not(.marked),
 .repository.wiki.pages .ui.ui.ui.ui.table tr.grey:not(.marked) {
-    background: rgb(255 255 255 / 0.08);
+    background: var(--transparency-light-10);
     ;
 }
 
@@ -957,11 +960,11 @@ a.ui.card:hover {
 
 #git-graph-container #rev-list li.highlight,
 #git-graph-container #rev-list li.hover {
-    background-color: rgba(255, 255, 255, .05);
+    background: var(--transparency-light-05);
 }
 
 #git-graph-container #rev-list li.highlight.hover {
-    background-color: rgba(255, 255, 255, .05);
+    background: var(--transparency-light-05);
 }
 
 #git-graph-container li .author {
@@ -1003,7 +1006,7 @@ a.ui.card:hover {
 }
 
 .repository #commits-table.ui.basic.striped.table tbody tr:nth-child(2n) {
-    background-color: rgba(0, 0, 0, 0.15) !important;
+    background: var(--transparency-dark-15) !important;
 }
 
 .repository #commits-table.ui.table>tbody {
@@ -1018,7 +1021,7 @@ a.ui.card:hover {
 .CodeMirror,
 .EasyMDEContainer .CodeMirror {
     border: 1px solid rgb(255 255 255 / .1);
-    background: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25)
 }
 
 .CodeMirror-focused {
@@ -1040,14 +1043,14 @@ a.ui.card:hover {
 .editor-toolbar a:hover,
 .editor-toolbar button.active,
 .editor-toolbar button:hover {
-    background: rgb(255 255 255 / 25%);
-    border-color: rgb(255 255 255 / 25%);
+    background: var(--transparency-light-25);
+    border-color: var(--transparency-light-25);
 }
 
 .dropzone {
     min-height: 150px;
     border: 2px solid rgba(0, 0, 0, .3);
-    background: rgb(255 255 255 / 25%) !important;
+    background: var(--transparency-light-25) !important;
     padding: 20px;
 }
 
@@ -1076,7 +1079,7 @@ a.ui.card:hover {
 }
 
 .repository.view.issue .comment-list .comment .content>.header {
-    background-color: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
 }
 
 .repository.view.issue .comment-list .comment .content>.header .actions a {
@@ -1112,7 +1115,7 @@ a.ui.card:hover {
 
 /* TABLE */
 .ui.table>thead>tr>th {
-    background: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
     color: var(--text);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -1143,19 +1146,19 @@ w .ui.table>tr>td {
 }
 
 .repository.file.list #repo-files-table tr:hover {
-    background: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 .ui.table tbody tr td.selectable:hover,
 .ui.ui.selectable.table>tbody>tr:hover {
-    background: rgb(255 255 255 / 0.08);
+    background: var(--transparency-light-10);
     color: var(--text-hover);
 }
 
 /* FOOTER */
 footer {
-    background-color: rgb(0 0 0 / 25%);
-    border-top: 1px solid rgb(255 255 255 / 25%);
+    background: var(--transparency-dark-25);
+    border-top: 1px solid var(--transparency-light-25);
 }
 
 /* BUTTONS / CHECKBOXES */
@@ -1170,7 +1173,7 @@ footer {
 }
 
 .ui.toggle.checkbox input:checked~label:before {
-    background-color: rgb(0 0 0 / 25%) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 .ui.toggle.checkbox input:checked~label,
@@ -1180,8 +1183,8 @@ footer {
 
 .ui.toggle.checkbox label:before,
 .ui.toggle.checkbox input:focus:checked~label:before {
-    background: rgb(255 255 255 / 10%) !important;
-    background-color: rgb(255 255 255 / 10%) !important;
+    background: var(--transparency-light-10) !important;
+    background: var(--transparency-light-10) !important;
 }
 
 .ui.toggle.checkbox input:focus:checked~label,
@@ -1317,7 +1320,7 @@ footer {
 
 .ui.basic.buttons .button:focus,
 .ui.basic.buttons .button:hover {
-    background: rgb(0 0 0 / 15%);
+    background: var(--transparency-dark-15);
     color: var(--button-text);
 }
 
@@ -1414,7 +1417,7 @@ a.ui.labels .label:hover {
 .repository #commits-table td.sha .sha.label .detail.icon,
 .repository #repo-files-table .sha.label .detail.icon,
 .repository .timeline-item.commits-list .singular-commit .sha.label .detail.icon {
-    background: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
     margin: -6px -10px -4px 0;
     padding: 5px 4px 5px 6px;
     border: 0;
@@ -1446,7 +1449,7 @@ input {
 .ui.form input[type=time],
 .ui.form input[type=url],
 .ui.form input {
-    background: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
     border: 1px solid transparent;
     color: var(--text);
     border-radius: .28571429rem;
@@ -1470,7 +1473,7 @@ input {
     color: var(--text);
     border-color: rgb(0 0 0 / 15%);
     border-radius: .28571429rem;
-    background: rgb(0 0 0 / 50%);
+    background: var(--transparency-dark-50);
     box-shadow: inset 0 0 0 0 rgba(34, 36, 38, .35);
     caret-color: var(--text) !important;
 }
@@ -1479,7 +1482,7 @@ input {
 .ui.form textarea:focus:hover,
 input:focus:hover,
 textarea:focus:hover {
-    background: rgb(0 0 0 / 50%) !important;
+    background: var(--transparency-dark-50) !important;
     border-color: rgb(255 255 255 / .1) !important;
     color: var(--text-hover) !important;
 }
@@ -1488,7 +1491,7 @@ textarea:focus:hover {
 .ui.form textarea:hover,
 input:hover,
 textarea:hover {
-    background: rgb(0 0 0 / 25%) !important;
+    background: var(--transparency-dark-25) !important;
     border-color: rgb(255 255 255 / .1) !important;
     color: var(--text-hover) !important;
 }
@@ -1496,7 +1499,7 @@ textarea:hover {
 .ui.form textarea:focus {
     color: var(--text);
     border-color: transparent;
-    background: rgba(0, 0, 0, .5);
+    background: var(--transparency-dark-50);
     box-shadow: inset 0 0 0 0 rgba(34, 36, 38, .35);
     -webkit-appearance: none;
     caret-color: var(--text) !important;
@@ -1504,7 +1507,7 @@ textarea:hover {
 
 .ui.form textarea,
 .ui.input textarea {
-    background: rgb(0 0 0 / .25);
+    background: var(--transparency-dark-25);
     border: 1px solid rgba(34, 36, 38, .15);
     color: var(--text);
     caret-color: var(--text) !important;
@@ -1514,14 +1517,14 @@ textarea:hover {
 .ui.input.focus>input,
 .ui.input>input:focus {
     border-color: transparent;
-    background: rgb(0 0 0 / 50%);
+    background: var(--transparency-dark-50);
     color: var(--text);
     box-shadow: none;
     caret-color: var(--text) !important;
 }
 
 .ui.input>input {
-    background: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
     border: 1px solid rgba(34, 36, 38, .15);
     color: var(--text);
 }
@@ -1540,39 +1543,17 @@ textarea:hover {
 }
 
 .markdown:not(code) table tr {
-    background-color: rgba(0, 0, 0, .26);
+    background: var(--transparency-dark-25);
     border-top: 1px solid #ccc;
 }
 
 .markdown:not(code) table tr:nth-child(2n) {
-    background-color: rgba(0, 0, 0, .45);
+    background: var(--transparency-dark-45);
 }
 
 .markdown:not(code) code,
 .markdown:not(code) tt {
-    background-color: rgb(0 0 0 / 0.25);
-}
-
-
-/* PLACEHOLDER TEXT */
-::placeholder {
-    color: var(--text) !important;
-    opacity: .5;
-}
-
-:-moz-placeholder {
-    color: var(--text) !important;
-    opacity: .5;
-}
-
-:-ms-input-placeholder {
-    color: var(--text) !important;
-    opacity: .5;
-}
-
-::-webkit-input-placeholder {
-    color: var(--text) !important;
-    opacity: .5;
+    background: var(--transparency-dark-25);
 }
 
 /* HIGHLIGHTING */

@@ -10,6 +10,9 @@
 /*		   		        Made by @gilbN					 */
 /* 			      https://github.com/gilbN/theme.park			 */
 
+@import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
+
 body {
     background: var(--main-bg-color);
     background-repeat: repeat, no-repeat;
@@ -52,7 +55,7 @@ body {
     min-height: 50px;
     border: 3px solid transparent;
     border-radius: 8px;
-    background-color: hsla(0, 0%, 100%, .2);
+    background: var(--transparency-dark-20);
     background-clip: padding-box;
 }
 
@@ -64,7 +67,7 @@ body {
     min-height: 50px;
     border: 3px solid transparent;
     border-radius: 8px;
-    background-color: hsla(0, 0%, 100%, .5);
+    background: var(--transparency-light-50);
     background-clip: padding-box;
 }
 
@@ -110,7 +113,7 @@ label {
 /* Header */
 .bg-primary {
     background-color: transparent !important;
-    background: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 .navbar .list-ul-active,
@@ -150,12 +153,12 @@ label {
 table.dataTable.stripe tbody tr.odd,
 table.dataTable.display tbody tr.odd,
 table.dataTable tbody tr {
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
 }
 
 table.dataTable.hover tbody tr:hover,
 table.dataTable.display tbody tr:hover {
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
 }
 
 table.dataTable thead th,
@@ -175,14 +178,14 @@ table.dataTable.display tbody td {
 .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
     color: var(--text) !important;
     border: 1px solid transparent;
-    background: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25)
 }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button:hover,
 .dataTables_wrapper .dataTables_paginate .paginate_button:active {
     color: var(--text-hover) !important;
     border: 1px solid transparent;
-    background: rgba(255, 255, 255, .08);
+    background: var(--transparency-light-10)
 }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button:active {
@@ -279,7 +282,7 @@ table.dataTable.display tbody td {
 .nav-pills .nav-item.open .nav-link:focus,
 .nav-tabs .nav-item.show .nav-link {
     color: rgb(var(--accent-color));
-    background-color: rgba(255, 255, 255, .1);
+    background: var(--transparency-light-10);
     border-color: transparent;
 }
 
@@ -296,13 +299,13 @@ table.dataTable.display tbody td {
 .nav-tabs .nav-link:focus,
 .nav-tabs .nav-item.open .nav-link:hover,
 .nav-pills .nav-item.open .nav-link:hover {
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     border-color: transparent;
     color: var(--text-hover);
 }
 
 .nav-tabs .nav-link.active:hover {
-    background-color: rgba(255, 255, 255, .1);
+    background: var(--transparency-light-10);
 }
 
 .badge-primary {
@@ -311,7 +314,7 @@ table.dataTable.display tbody td {
 }
 
 #plexServers .card-header {
-    background-color: rgba(255, 255, 255, .1);
+    background: var(--transparency-light-10);
     color: var(--text-hover)
 }
 
@@ -320,12 +323,12 @@ table.dataTable.display tbody td {
 }
 
 #plexServers .list-group-item {
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     border: none;
 }
 
 #plexServers .card-footer {
-    background-color: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
 }
 
 .dropdown-menu {
@@ -350,7 +353,7 @@ table.dataTable.display tbody td {
 .dropdown-item:focus {
     color: var(--text-hover);
     text-decoration: none;
-    background-color: rgba(255, 255, 255, .08);
+    background-color: var(--transparency-light-10)
 }
 
 /* Input */

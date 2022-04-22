@@ -10,6 +10,9 @@
 /*		   		        Made by @gilbN					 */
 /* 			      https://github.com/gilbN/theme.park			 */
 
+@import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
+
 * {
     outline: none;
 }
@@ -93,7 +96,7 @@ pre {
 }
 
 #header .block {
-    background-color: rgb(0 0 0 / 20%);
+    background: var(--transparency-dark-20);
     border-radius: 0px 0px 0px 25px;
 }
 
@@ -120,12 +123,12 @@ pre {
 }
 
 textarea {
-    background: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
 }
 
 /*DASHBOARD*/
 table.share_status.dashboard {
-    background-color: rgba(0, 0, 0, .15);
+    background: var(--transparency-dark-15);
     border: 1px solid rgba(255, 255, 255, .25);
 }
 
@@ -151,7 +154,7 @@ table.tablesorter thead tr th {
 .sys,
 .usage-disk,
 .usage-bar {
-    background: rgba(0, 0, 0, .35);
+    background: var(--transparency-dark-35)
 }
 
 .usage-disk>span:first-child {
@@ -175,12 +178,12 @@ table.tablesorter thead tr th {
 /*MAIN*/
 #title {
     border-bottom: 1px solid rgba(255, 255, 255, .25);
-    background-color: rgba(0, 0, 0, .5);
+    background: var(--transparency-dark-50);
     color: var(--text-hover);
 }
 
 table {
-    background-color: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
 }
 
 table.disk_status thead tr:first-child td,
@@ -191,11 +194,11 @@ table.tablesorter thead tr th,
 table.tablesorter tbody tr:nth-child(even),
 table.tablesorter thead tr .tablesorter-headerAsc,
 table.tablesorter thead tr .tablesorter-headerDesc {
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
 }
 
 table.disk_status tbody tr:nth-child(even) {
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
 }
 
 table.disk_status thead tr:last-child {
@@ -284,7 +287,7 @@ a.button:hover,
 /* USERS */
 div.user-list {
     border: 1px solid rgba(255, 255, 255, .15);
-    background-color: rgba(255, 255, 255, .05);
+    background: var(--transparency-light-05);
 }
 
 /* SETTINGS */
@@ -354,8 +357,8 @@ div.tab [type=radio]+label:hover {
 }
 
 div.tab [type=radio]+label {
-    border: 1px solid rgb(255 255 255 / 25%);
-    background-color: rgb(0 0 0 / 50%);
+    border: 1px solid var(--transparency-light-25);
+    background: var(--transparency-dark-50);
     opacity: 0.5;
 }
 
@@ -380,7 +383,7 @@ background-color: var(--text);
 }
 
 .ca_holderDocker {
-    background-color: rgb(0 0 0 / 10%) !important;
+    background: var(--transparency-dark-10) !important;
     border-color: rgb(0 0 0 / 25%) !important;
 }
 
@@ -454,12 +457,12 @@ li.caMenuItem:hover {
 }
 
 .ca_holder {
-    background-color: rgb(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
     border-color: rgba(255, 255, 255, 0.1) !important;
 }
 
 .ca_holder:hover {
-    background-color: rgba(0, 0, 0, 0.45) !important;
+    background: var(--transparency-dark-45) !important;
 }
 
 .supportButton,
@@ -591,7 +594,7 @@ span .maxPerPage {
 
 #searchBox,
 .searchSubmit {
-    background: rgba(255, 255, 255, 0.05) !important;
+    background: var(--transparency-light-05) !important;
 }
 
 /* CA slide in menu */
@@ -635,7 +638,7 @@ div.tabs {
 }
 
 .dropdown-menu .divider {
-    background-color: rgb(255 255 255 / 10%) !important;
+    background: var(--transparency-light-10) !important;
     border-bottom: 1px solid rgb(255 255 255 / 10%) !important;
 }
 
@@ -643,24 +646,12 @@ div.tabs {
 .dropdown-menu li>a:focus,
 .dropdown-submenu:hover>a {
     color: var(--text-hover) !important;
-    background: rgb(255 255 255 / 10%) !important;
+    background: var(--transparency-light-10) !important;
 }
 
 /*VM MANAGER*/
 div.shade-black {
-    background-color: rgb(0 0 0 / 15%) !important;
-}
-
-::placeholder {
-    color: var(--text-muted) !important;
-}
-
-:-ms-input-placeholder {
-    color: var(--text-muted) !important;
-}
-
-::-webkit-input-placeholder {
-    color: var(--text-muted) !important;
+    background-color: var(--transparency-dark-15) !important;
 }
 
 /* MODAL */
@@ -695,7 +686,7 @@ blockquote {
     border-top: 2px solid rgb(0 0 0 / 25%);
     border-bottom: 2px solid rgb(0 0 0 / 25%);
     color: var(--text);
-    background-color: rgb(0 0 0 / 10%);
+    background: var(--transparency-dark-10);
 }
 
 /* MY SERVERS */
@@ -744,7 +735,7 @@ unraid-authed::part(div[data-v-050c892a] > button) {
 
 /* Edit template*/
 #contDescription {
-    background: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
     padding: 1%;
     border-radius: 5px;
 }

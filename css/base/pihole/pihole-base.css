@@ -10,7 +10,8 @@
   /*		   		        Made by @gilbN					 */
   /* 			      https://github.com/gilbN/theme.park			 */
 
-  @import url(/css/defaults/placeholders.css);
+  @import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
 
   body {
       background: var(--main-bg-color) !important;
@@ -41,7 +42,7 @@
   .treeview-menu>li.active>a,
   .treeview-menu>li>a:hover {
       color: var(--text-hover);
-      background: rgba(255, 255, 255, 0.1);
+      background: var(--transparency-light-10);
   }
 
   .h1,
@@ -106,7 +107,7 @@
       padding: 15px;
       border-bottom: 1px solid rgba(255, 255, 255, .25);
       border-top: 1px solid rgba(255, 255, 255, .25);
-      background-color: rgba(255, 255, 255, .2) !important;
+      background: var(--transparency-light-20) !important;
   }
 
   .navbar-nav>.user-menu>.dropdown-menu>.user-body a {
@@ -122,24 +123,24 @@
   .skin-blue .main-header .logo,
   .main-header .navbar,
   .main-header .logo {
-      background-color: rgba(0, 0, 0, .25);
+      background: var(--transparency-dark-25);
   }
 
   .skin-blue .main-header .logo:hover,
   .skin-blue .main-header .navbar .sidebar-toggle:hover,
   .sidebar-menu>li:hover>a {
-      background-color: rgba(255, 255, 255, .05);
+      background: var(--transparency-light-05);
       color: var(--text-hover) !important;
   }
 
   .sidebar-menu>li.active>a {
-      background-color: rgba(255, 255, 255, .05);
+      background: var(--transparency-light-05);
       color: rgb(var(--accent-color)) !important;
   }
 
   /* Footer */
   .main-footer {
-      background: rgba(0, 0, 0, .25);
+      background: var(--transparency-dark-25);
       color: var(--text);
       border-top: 1px solid rgb(255 255 255 / 20%);
   }
@@ -161,13 +162,13 @@
   .wrapper,
   .main-sidebar,
   .left-side {
-      background-color: rgba(0, 0, 0, .25) !important;
+      background: var(--transparency-dark-25) !important;
   }
 
   .skin-blue .sidebar-menu>li.header,
   .sidebar-menu>li.header {
       color: rgb(var(--accent-color));
-      background: rgba(0, 0, 0, .2);
+      background: var(--transparency-dark-20);
   }
 
   .treeview-menu>li>a {
@@ -175,7 +176,7 @@
   }
 
   .sidebar-menu>li>.treeview-menu {
-      background-color: rgb(0 0 0 / 25%);
+      background: var(--transparency-dark-25);
   }
 
   /* Menus */
@@ -184,12 +185,12 @@
   .sidebar-menu>li:hover>a,
   .sidebar-menu>li.active>a {
       color: var(--text-hover);
-      background: rgba(0, 0, 0, .1);
+      background: var(--transparency-dark-10);
       border-left-color: rgb(var(--accent-color));
   }
 
   .skin-blue .sidebar-menu>li>.treeview-menu {
-      background: rgba(0, 0, 0, .25);
+      background: var(--transparency-dark-25)
   }
 
   .skin-blue .treeview-menu>li>a {
@@ -233,18 +234,18 @@
 
   .main-footer .nav-tabs,
   .nav-tabs-custom .nav-tabs {
-      background-color: rgb(0 0 0 / 0.25);
+      background: var(--transparency-dark-25);
       border-bottom-color: rgb(255 255 255 / 15%);
   }
 
   .nav-tabs-custom>.nav-tabs>li:hover {
-      background-color: rgba(255, 255, 255, .05);
+      background: var(--transparency-light-05);
       color: var(--text-hover);
       border-top-color: rgb(var(--accent-color));
   }
 
   .nav-tabs-custom>.nav-tabs>li:hover>a {
-      background-color: rgba(255, 255, 255, .05);
+      background: var(--transparency-light-05);
   }
 
   /* Dashboard */
@@ -254,14 +255,14 @@
   }
 
   .box {
-      background: rgba(0, 0, 0, .24);
+      background: var(--transparency-dark-25);
       box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   }
 
   .box-solid>.box-header,
   .box>.box-header {
       color: var(--text);
-      background-color: rgba(0, 0, 0, .25);
+      background: var(--transparency-dark-25);
   }
 
   /* Total queries box*/
@@ -290,7 +291,7 @@
   }
 
   .table-bordered {
-      background: rgba(0, 0, 0, .1);
+      background: var(--transparency-dark-10)
   }
 
   .table-bordered>thead>tr>th,
@@ -303,7 +304,7 @@
   }
 
   .table-striped>tbody>tr:nth-of-type(odd) {
-      background-color: rgba(255, 255, 255, .1);
+      background: var(--transparency-light-10);
   }
 
   /* Query Log */
@@ -354,7 +355,7 @@
   /* Login */
   .panel-default {
       border-color: transparent;
-      background: rgba(0, 0, 0, 0.25);
+      background: var(--transparency-dark-25)
   }
 
   .panel-default>.panel-heading {
@@ -366,7 +367,7 @@
   .panel,
   .panel-body,
   .panel-default>.panel-heading {
-      background-color: rgb(0 0 0 / 25%);
+      background: var(--transparency-dark-25);
       border-radius: 0px;
       border: 1px solid transparent;
       color: var(--text);
@@ -374,7 +375,7 @@
 
   /* Blacklist */
   .nav-tabs-custom {
-      background: rgba(0, 0, 0, 0.25);
+      background: var(--transparency-dark-25)
   }
 
   .nav-tabs-custom>.tab-content {
@@ -393,7 +394,7 @@
 
   .nav-tabs-custom>.nav-tabs>li.active>a,
   .nav-tabs-custom>.nav-tabs>li.active:hover>a {
-      background-color: rgba(0, 0, 0, 0.25);
+      background: var(--transparency-dark-25);
       color: rgb(var(--accent-color)) !important;
   }
 
@@ -411,11 +412,11 @@
 
   /* Network */
   .table-striped>tbody>tr:nth-of-type(odd) {
-      background-color: rgba(0, 0, 0, .25) !important;
+      background: var(--transparency-dark-25) !important;
   }
 
   .table-striped>tbody>tr:nth-of-type(even) {
-      background-color: rgba(0, 0, 0, .5) !important;
+      background: var(--transparency-dark-50) !important;
   }
 
   #network-entries_wrapper.text-center {
@@ -504,13 +505,13 @@
   pre,
   .box-footer,
   .datatables_processing {
-      background: rgba(0, 0, 0, 0.25);
+      background: var(--transparency-dark-25);
       border: 1px solid rgba(255, 255, 255, 0.1);
       color: var(--text);
   }
 
   .dataTables_wrapper input[type="search"] {
-      background-color: rgb(0 0 0 / 25%);
+      background: var(--transparency-dark-25);
       color: var(--text-hover);
   }
 
@@ -529,7 +530,7 @@
   .daterangepicker select.ampmselect,
   .form-control,
   div.dataTables_wrapper div.dataTables_length select {
-      background-color: rgb(0 0 0 / 0.25);
+      background: var(--transparency-dark-25);
       color: var(--text);
       border: 1px solid rgb(255 255 255 / 15%);
   }
@@ -568,7 +569,7 @@
       min-height: 50px;
       border: 3px solid transparent;
       border-radius: 8px;
-      background-color: hsla(0, 0%, 100%, .2);
+      background: var(--transparency-dark-20);
       background-clip: padding-box;
   }
 
@@ -587,6 +588,6 @@
       min-height: 50px;
       border: 3px solid transparent;
       border-radius: 8px;
-      background-color: hsla(0, 0%, 100%, .5);
+      background: var(--transparency-light-50);
       background-clip: padding-box;
   }

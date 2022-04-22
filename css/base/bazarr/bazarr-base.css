@@ -11,6 +11,7 @@
 /*			      https://github.com/gilbN/theme.park			 */
 
 @import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
 
 * {
     outline: none;
@@ -30,7 +31,7 @@ body {
 
 /* scroller */
 ::-webkit-scrollbar-corner {
-    background-color: hsla(0, 0%, 100%, .08);
+    background-color: var(--transparency-dark-10);
 }
 
 ::-webkit-scrollbar {
@@ -42,7 +43,7 @@ body {
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 5px;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.35) !important;
+    background-color: var(--transparency-light-35) !important;
 }
 
 a,
@@ -63,21 +64,21 @@ a:hover {
 }
 
 .page-link {
-    background-color: rgba(255, 255, 255, .07);
-    border: 1px solid rgba(255, 255, 255, .1);
+    background-color: var(--transparency-light-10);
+    border: 1px solid var(--transparency-light-10);
 }
 
 .page-link:hover {
     color: var(--link-color-hover);
     text-decoration: none;
-    background-color: rgba(0, 0, 0, .15);
-    border: 1px solid rgba(255, 255, 255, .1);
+    background-color: var(--transparency-dark-15);
+    border: 1px solid var(--transparency-light-10);
 }
 
 .page-item.disabled .page-link {
     color: var(--link-color);
-    background-color: rgba(255, 255, 255, .07);
-    border: 1px solid rgba(255, 255, 255, .1);
+    background-color: var(--transparency-light-10);
+    border: 1px solid var(--transparency-light-10);
 }
 
 .page-link:focus { 
@@ -100,7 +101,7 @@ a:hover {
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
-    background-color: rgb(0 0 0 / 15%);
+    background-color: var(--transparency-dark-15);
 }
 
 .text-dark {
@@ -149,13 +150,13 @@ label,
 
 .form-control {
     color: var(--text-hover);
-    background-color: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background-color: var(--transparency-light-10);
+    border: 1px solid var(--transparency-light-10);
 }
 
 .form-control:focus {
-    background-color: rgba(255, 255, 255, 0.25) !important;
-    border-color: rgba(255, 255, 255, 0.25) !important;
+    background-color: var(--transparency-light-25) !important;
+    border-color: var(--transparency-light-25) !important;
     outline: 0;
     box-shadow: none;
     color: var(--text-hover);
@@ -163,10 +164,10 @@ label,
 
 .form-control:disabled,
 .form-control[readonly] {
-    background-color: rgb(255 255 255 / 15%);
+    background-color: var(--transparency-light-15);
     opacity: .7;
     color: var(--text-hover);
-    border: 1px solid rgb(255 255 255 / 15%);
+    border: 1px solid var(--transparency-light-15);
 }
 
 :root .form-control:focus {
@@ -180,7 +181,7 @@ label,
 
 .bootstrap-tagsinput {
     color: var(--text);
-    background-color: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
     border: 1px solid transparent !important;
 
 }
@@ -195,7 +196,7 @@ label,
 
 .input-group-text {
     color: var(--text);
-    background-color: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
     border: 1px solid transparent;
 }
 
@@ -205,7 +206,7 @@ label,
 }
 
 .custom-chip-input:focus-within {
-    border-color: rgb(255 255 255 / 10%);
+    border-color: var(--transparency-light-10);
 }
 
 .custom-chip-input .custom-chip {
@@ -221,7 +222,7 @@ label,
 
 /* SIDEBAR */
 .sidebar-container {
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
 }
 
 .sidebar-container .sidebar-button,
@@ -233,7 +234,7 @@ label,
 .sidebar-container .sidebar-button:active,
 .sidebar-container .sidebar-button:focus {
     color: rgb(var(--accent-color)) !important;
-    background-color: rgba(0, 0, 0, 0.15) !important;
+    background-color: var(--transparency-dark-15) !important;
 }
 
 .sidebar-container .sidebar-button:hover,
@@ -249,7 +250,7 @@ label,
 .sidebar-container .sidebar-button.sb-active,
 .sidebar-container .sidebar-button.sb-active:hover,
 .sidebar-container .button.active {
-    background-color: rgba(0, 0, 0, 0.15) !important;
+    background-color: var(--transparency-dark-15) !important;
     color: rgb(var(--accent-color)) !important;
 }
 
@@ -298,7 +299,7 @@ label,
 
 /* TOP NAV BAR */
 .header-container .bg-primary {
-    background-color: rgba(0, 0, 0, .35) !important;
+    background: var(--transparency-dark-35) !important;
 }
 
 .header-container .btn-primary {
@@ -333,7 +334,7 @@ label,
     -webkit-background-size: auto, cover !important;
     -moz-background-size: auto, cover !important;
     -o-background-size: auto, cover !important;
-    border-bottom: solid 1px rgba(255, 255, 255, .1);
+    border-bottom: solid 1px var(--transparency-light-10);
 
 }
 
@@ -355,21 +356,21 @@ label,
 
 .auth-card .card-footer {
     background-color: transparent;
-    border-top: 1px solid rgba(255, 255, 255, .1);
+    border-top: 1px solid var(--transparency-light-10);
 }
 
 hr {
-    border-top: 1px solid rgb(255 255 255 / 10%);
+    border-top: 1px solid var(--transparency-light-10);
 }
 
 
 .card {
-    background-color: rgba(0, 0, 0, .45);
+    background-color: var(--transparency-dark-45);
     box-shadow: 0 0 10px 1px #000000;
     color: var(--text);
 }
 .card-header {
-    border-bottom: 1px solid rgb(255 255 255 / 10%);
+    border-bottom: 1px solid var(--transparency-light-10);
 }
 
 .settings-card:hover,
@@ -380,8 +381,8 @@ hr {
 
 .alert-secondary {
     color: var(--text);
-    background-color: rgba(255, 255, 255, .15);
-    border-color: rgba(255, 255, 255, .15);
+    background-color: var(--transparency-light-15);
+    border-color: var(--transparency-light-15);
 }
 
 /* Series page */
@@ -391,7 +392,7 @@ hr {
 }
 
 .progress {
-    background-color: rgb(255 255 255 / 20%);
+    background-color: var(--transparency-light-20);
 }
 
 .progress-bar.bg-primary {
@@ -421,17 +422,17 @@ hr {
 
 .popover {
     background-color: #1f1f1f;
-    border: 1px solid rgba(255, 255, 255, .2);
+    border: 1px solid var(--transparency-light-20);
 }
 
 .bs-popover-auto[x-placement^=top]>.arrow:after,
 .bs-popover-top>.arrow:after {
-    border-top-color: rgba(255, 255, 255, .5);
+    border-top-color: var(--transparency-light-50);
 }
 
 .popover-header {
     background-color: #1f1f1f;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid var(--transparency-light-10);
 
 }
 
@@ -504,7 +505,7 @@ hr {
 }
 
 .close:hover {
-    var(--text) !important;
+    color: var(--text-hover) !important;
     text-decoration: none;
 }
 
@@ -638,7 +639,7 @@ hr {
 }
 
 .custom-control-input:focus~.custom-control-label:before {
-    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, .07);
+    box-shadow: 0 0 0 0.2rem var(--transparency-light-10);
 }
 
 .custom-control-input:checked~.custom-control-label:before {
@@ -721,11 +722,11 @@ input {
 .dropdown-item:focus,
 .dropdown-item:hover {
     color: var(--text-hover);
-    background-color: hsla(0, 0%, 100%, .08);
+    background-color: var(--transparency-dark-10);
 }
 
 .custom-selector .selector__control {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border-color: rgba(0, 0, 0, 0) !important;
     color: var(--text-hover);
 }
@@ -741,7 +742,7 @@ input {
 }
 
 .custom-selector .selector__control--is-focused {
-    border-color: rgba(255, 255, 255, .2) !important;
+    border-color: var(--transparency-light-20) !important;
 }
 
 .selector__menu {
@@ -757,7 +758,7 @@ input {
 }
 
 .custom-selector .selector__option--is-selected:active {
-    background-color: rgba(255, 255, 255, .07) !important;
+    background-color: var(--transparency-light-10) !important;
 }
 
 .custom-selector .selector__option--is-focused {
@@ -801,7 +802,7 @@ input {
 }
 
 .recharts-rectangle.recharts-tooltip-cursor {
-    fill: rgba(255, 255, 255, .15) !important;
+    fill: var(--transparency-light-15) !important;
 }
 
 text {
@@ -833,7 +834,7 @@ line {
 
 .toast-header {
     color: var(--text-hover);
-    background-color: hsla(0, 0%, 0%, .35);
+    background: var(--transparency-dark-35);
     border-bottom: 1px solid rgba(0, 0, 0, .05);
 }
 

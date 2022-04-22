@@ -10,6 +10,8 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
+@import url("/css/defaults/transparent.css");
+
 body {
     color: var(--text) !important;
     background: var(--main-bg-color) !important;
@@ -57,7 +59,7 @@ p {
 
 .page-header-canvas,
 .page-toolbar[class*="css-"] {
-    background: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
     box-shadow: none !important;
     border-bottom: none !important;
 }
@@ -88,7 +90,7 @@ p {
 }
 
 .variable-value-dropdown.single .selected {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 .css-0.gf-form-select-box__menu {
@@ -109,28 +111,28 @@ p {
 .time-picker-calendar .react-calendar__navigation,
 .time-picker-calendar .react-calendar__navigation__arrow,
 .time-picker-calendar .react-calendar__navigation__label {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 .time-picker-calendar .react-calendar__month-view__weekdays {
-    background-color: rgba(0, 0, 0, 0.6);
+    background: var(--transparency-dark-60);
 }
 
 .time-picker-calendar .react-calendar__tile--active,
 .time-picker-calendar .react-calendar__tile--active:hover {
-    background: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
     border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .time-picker-calendar .time-picker-calendar-tile:hover {
     -webkit-box-shadow: 0 0 4px rgba(255, 255, 255, 0.08);
     box-shadow: 0 0 4px #ffffff00;
-    background: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
     border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .time-picker-calendar .react-calendar__month-view__days {
-    background-color: rgba(0, 0, 0, 0.15);
+    background: var(--transparency-dark-15);
 }
 
 .time-picker-calendar .time-picker-calendar-tile {
@@ -161,11 +163,11 @@ p {
 
 /* Configuration menu */
 .card-item {
-    background: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 .card-item:hover {
-    background: hsla(0, 0%, 100%, .08) !important;
+    background: var(--transparency-dark-10) !important;
 }
 
 .card-item-sub-name,
@@ -180,53 +182,53 @@ p {
 .gf-tabs-link.active,
 .gf-tabs-link.active:focus,
 .gf-tabs-link.active:hover {
-    background: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 .filter-table tbody tr:nth-child(odd) {
-    background: hsla(0, 0%, 100%, .08) !important;
+    background: var(--transparency-dark-10) !important;
 }
 
 .cta-form {
-    background-color: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 .empty-list-cta {
-    background-color: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 .layout-selector button {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     color: var(--text-hover);
 }
 
 .layout-selector button.active {
-    background-color: rgba(0, 0, 0, 0.45);
+    background: var(--transparency-dark-45);
     color: var(--text-hover);
 }
 
 /* Configuration menu - Teams */
 .css-1ph0cdx-call-to-action-card {
-    background: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 .grafana-info-box {
-    background-color: rgba(0, 0, 0, 0.45);
+    background: var(--transparency-dark-45);
 }
 
 /* sidemenu */
 .sidemenu-open,
 .sidemenu {
-    background: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 .sidemenu__logo:hover {
-    background: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 .sidemenu-item.active,
 .sidemenu-item:hover {
-    background-color: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
     color: rgb(var(--accent-color)) !important;
     border-image: none;
     border-color: rgb(var(--accent-color));
@@ -279,7 +281,7 @@ p {
 .dropdown-menu--menu>li>a:hover,
 .dropdown-menu--navbar>li>a:hover,
 .dropdown-menu--sidemenu>li>a:hover {
-    background: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
     color: var(--text-hover) !important;
 }
 
@@ -296,7 +298,7 @@ p {
 }
 
 .dropdown-submenu:hover>a {
-    Background-color: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 .icon-circle:hover .fa:hover,
@@ -356,21 +358,21 @@ p {
 
 /* Dashboard row  */
 .dashboard-row--collapsed {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25)
 }
 
 .search-section {
-    background: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
     border: none;
 }
 
 .search-item {
-    background: rgba(0, 0, 0, 0.15);
+    background: var(--transparency-dark-15)
 }
 
 .search-item.selected,
 .search-item:hover {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25)
 }
 
 .search-section__header {
@@ -393,7 +395,7 @@ p {
 
 /* Dashboard settings menu */
 .dashboard-settings__aside {
-    background: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 .dashboard-page--settings-open .navbar {
@@ -421,15 +423,15 @@ p {
 }
 
 .gf-form-select-wrapper {
-    background-color: hsla(0, 0%, 100%, .08) !important;
+    background: var(--transparency-dark-10) !important;
 }
 
 .dashboard-settings__nav-item.active {
-    background: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 .gf-form-checkbox {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border: none;
 }
 
@@ -468,7 +470,7 @@ p {
 
 /* Variable label box */
 .gf-form-label {
-    background: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
     border: none !important;
 }
 
@@ -477,7 +479,7 @@ p {
 }
 
 .gf-form-label--btn:hover {
-    background: rgba(0, 0, 0, 0.45) !important;
+    background: var(--transparency-dark-45) !important;
 }
 
 .variable-option.highlighted,
@@ -488,7 +490,7 @@ p {
 /* Variable dashboard dropdown */
 .variable-value-link {
     padding: 7.4px 10px !important;
-    background-color: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
     border: none !important;
     color: var(--text-hover) !important;
 }
@@ -521,7 +523,7 @@ p {
 /* NAVBAR BUTTONS */
 .navbar-button {
     color: var(--text-hover) !important;
-    background-color: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)) !important;
     border: none !important;
 }
@@ -533,7 +535,7 @@ p {
 
 /* PANEL BACKGROUND COLOR*/
 .panel-container {
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     border: transparent;
     box-shadow: none !important;
 }
@@ -545,7 +547,7 @@ p {
 }
 
 .panel-header:hover {
-    background-color: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 .panel-title-text:hover {
@@ -577,7 +579,7 @@ div.flot-text {
 
 /* table panel background color */
 .table-panel-container {
-    background-color: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 /* table panel border size */
@@ -588,7 +590,7 @@ div.flot-text {
 }
 
 .table-panel-header-bg {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border-top: 2px solid transparent;
     border-bottom: 2px solid transparent;
 
@@ -596,7 +598,7 @@ div.flot-text {
 
 /* Panel tables */
 .css-58bavm-thead {
-    background: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
 }
 
 .css-sq6g4h-row {
@@ -608,15 +610,15 @@ div.flot-text {
 }
 
 .css-2n373z {
-    border-right: 1px solid rgb(255 255 255 / 25%);
+    border-right: 1px solid var(--transparency-light-25);
 }
 
 .css-sq6g4h-row:hover {
-    background-color: rgb(255 255 255 / 0.08);
+    background-color: var(--transparency-light-10);
 }
 
 .css-3o5ryu {
-    background: rgb(0 0 0 / 45%);
+    background: var(--transparency-dark-45);
 }
 
 .css-1n8kpcb-activeTabStyle,
@@ -638,12 +640,12 @@ div>.scrollbar-view>div>[class*="css-"],
 #reactRoot>div>div.main-view>div.css-1mwktlb>div[class*="css-"]>div[class*="css-"]>div>div.Pane.vertical.Pane1>div>div.Pane.horizontal.Pane2>div>div>div[class*="css-"],
 .css-v2fjpc,
 .css-ld7ft6 {
-    background: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 .tabbed-view-header {
     box-shadow: none;
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border-bottom: none;
 }
 
@@ -654,28 +656,28 @@ div>.scrollbar-view>div>[class*="css-"],
 /* panel query settings  */
 .panel-editor__right,
 .toolbar {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 .query-editor-row__header {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 .query-editor-row__body {
-    background: rgba(0, 0, 0, 0.15);
+    background: var(--transparency-dark-15);
 }
 
 .panel-options-group {
-    background: rgba(0, 0, 0, 0.15);
+    background: var(--transparency-dark-15);
 }
 
 .gf-form-switch {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border: transparent;
 }
 
 .viz-picker__item {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border: transparent;
 }
 
@@ -687,12 +689,12 @@ div>.scrollbar-view>div>[class*="css-"],
 
 .viz-picker__item:hover {
     box-shadow: 0 0 6px #eb7b18 !important;
-    background: rgba(0, 0, 0, 0.4);
+    background: var(--transparency-dark-40);
     border: 1px solid #eb7b18 !important;
 }
 
 .panel-options-group__header {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 .custom-scrollbar .thumb-vertical,
@@ -706,7 +708,7 @@ div>.scrollbar-view>div>[class*="css-"],
 
 .toolbar__main {
     color: var(--text-hover);
-    background-color: rgba(0, 0, 0, 0.15);
+    background: var(--transparency-dark-15);
     border: transparent;
 }
 
@@ -743,15 +745,15 @@ border-color: #b56d16 !important;
 }*/
 
 .btn-inverse {
-    background: rgba(0, 0, 0, 0.25);
-    -webkit-box-shadow: 0px 0px 5px 1px hsla(0, 0%, 0%, 0.45), 1px 1px 0 0 rgba(0, 0, 0, .3);
-    box-shadow: 0px 0px 5px 1px hsla(0, 0%, 0%, 0.45), 1px 1px 0 0 rgba(0, 0, 0, .3);
+    background: var(--transparency-dark-25);
+    -webkit-box-shadow: 0px 0px 5px 1px var(--transparency-dark-45), 1px 1px 0 0 rgba(0, 0, 0, .3);
+    box-shadow: 0px 0px 5px 1px var(--transparency-dark-45), 1px 1px 0 0 rgba(0, 0, 0, .3);
 }
 
 .btn-primary,
 .btn-success {
-    -webkit-box-shadow: 0px 0px 5px 1px hsla(0, 0%, 0%, 0.45), 1px 1px 0 0 rgba(0, 0, 0, .3);
-    box-shadow: 0px 0px 5px 1px hsla(0, 0%, 0%, 0.45), 1px 1px 0 0 rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 0px 0px 5px 1px var(--transparency-dark-45), 1px 1px 0 0 rgba(0, 0, 0, .3);
+    box-shadow: 0px 0px 5px 1px var(--transparency-dark-45), 1px 1px 0 0 rgba(0, 0, 0, .3);
 }
 
 .btn-inverse.active,
@@ -760,7 +762,7 @@ border-color: #b56d16 !important;
 .btn-inverse:focus,
 .btn-inverse:hover,
 .btn-inverse[disabled] {
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 /* New Dashboard */
@@ -775,7 +777,7 @@ border-color: #b56d16 !important;
 }
 
 .add-panel__header {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     box-shadow: none;
     border-bottom: 0px;
 }
@@ -786,13 +788,13 @@ border-color: #b56d16 !important;
 }
 
 .query-type-toggle .btn.active {
-    background-color: rgba(0, 0, 0, 0.45);
+    background: var(--transparency-dark-45);
     border: none;
     border-radius: 3px;
 }
 
 .toggle-button-group .btn {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     background-image: none;
     border-color: #00000000;
     border-radius: 3px !important;
@@ -800,7 +802,7 @@ border-color: #b56d16 !important;
 }
 
 .toggle-button-group .btn:hover {
-    background-color: rgba(0, 0, 0, 0.45);
+    background: var(--transparency-dark-45);
 }
 
 .logs-panel-options {
@@ -810,7 +812,7 @@ border-color: #b56d16 !important;
 
 /* JSON Model */
 .gf-code-dark {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     color: #e0e0e0;
 }
 
@@ -929,7 +931,7 @@ input:focus {
 }
 
 .css-1bjepp-input-input {
-    background-color: hsla(0, 0%, 100%, .25);
+    background: var(--transparency-dark-25);
     border-radius: 3px;
     border-color: transparent;
     -webkit-transition: background-color .15s ease-in-out, box-shadow .15s ease-in-out !important;
@@ -956,7 +958,7 @@ input:focus {
 
 /*Disabled input*/
 .css-1bjepp-input-input:disabled {
-    background-color: rgba(0, 0, 0, .5);
+    background: var(--transparency-dark-50);
     color: rgb(159, 167, 179);
 }
 
@@ -1013,7 +1015,7 @@ body>grafana-app>div>div>react-container>div>div>div.view>div>div.page-container
 }
 
 .css-y0yg3l {
-    background: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
     border-color: transparent;
 }
 
@@ -1024,18 +1026,18 @@ body>grafana-app>div>div>react-container>div>div>div.view>div>div.page-container
 
 /*Folder bars*/
 .css-1umfglk {
-    background: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25)
 }
 
 .css-1umfglk:hover {
-    background: rgba(0, 0, 0, .35);
+    background: var(--transparency-dark-35)
 }
 
 /* Login Error message*/
 .css-1ow9mne-input-input {
     line-height: 1.5;
     height: 38px;
-    background-color: hsla(0, 0%, 100%, .25);
+    background: var(--transparency-dark-25);
     border-radius: 3px;
     border-color: transparent;
     -webkit-transition: background-color .15s ease-in-out, box-shadow .15s ease-in-out !important;
@@ -1059,12 +1061,12 @@ body>grafana-app>div>div>react-container>div>div>div.view>div>div.page-container
 /*Welcome to Grafana*/
 .css-15xxblz,
 .css-1ld19yb {
-    background: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25)
 }
 
 .css-1as70ku,
 .css-u5zjuh {
-    background: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25)
 }
 
 .css-17abkeq,
@@ -1088,7 +1090,7 @@ body>grafana-app>div>div>react-container>div>div>div.view>div>div.page-container
 
 .css-10pj50r,
 .css-15rfc12 {
-    background: rgb(0 0 0 / 50%);
+    background: var(--transparency-dark-50);
 }
 
 /*Header*/
@@ -1115,7 +1117,7 @@ body>grafana-app>div>div>react-container>div>div>div.view>div>div.page-container
 
 /*Query box*/
 .css-hz0utb {
-    background: rgba(0, 0, 0, .35);
+    background: var(--transparency-dark-35);
     border-right: 1px solid rgba(0, 0, 0, 0);
 }
 
@@ -1127,7 +1129,7 @@ body>grafana-app>div>div>react-container>div>div>div.view>div>div.page-container
 }
 
 .css-lvafs5 {
-    background: rgba(0, 0, 0, .5);
+    background: var(--transparency-dark-50);
 }
 
 .css-ui3sz4-activeTabStyle {
@@ -1143,31 +1145,31 @@ body>grafana-app>div>div>react-container>div>div>div.view>div>div.page-container
     border-width: 0px 1px 1px;
     border-radius: 3px 3px 0px 0px;
     border-color: transparent !important;
-    background: rgba(0, 0, 0, .5);
+    background: var(--transparency-dark-50);
     overflow: hidden;
 }
 
 .css-1awj6q7-counter {
-    background-color: rgba(0, 0, 0, .5);
+    background: var(--transparency-dark-50);
     color: rgb(255, 255, 255);
 }
 
 /*Transform tab*/
 .css-y2f54e {
-    background: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
 }
 
 .css-y2f54e:hover {
-    background: rgba(0, 0, 0, .35);
+    background: var(--transparency-dark-35);
 }
 
 .css-1e8invk::before {
-    background: rgba(0, 0, 0, .35) !important;
+    background: var(--transparency-dark-35) !important;
 }
 
 /* Right side menu*/
 .css-1xj5tuf {
-    background: rgba(0, 0, 0, .35);
+    background: var(--transparency-dark-35);
     border-left: 1px solid transparent;
 }
 
@@ -1192,7 +1194,7 @@ body>grafana-app>div>div>react-container>div>div>div.view>div>div.page-container
 
 /*Visualization*/
 .css-1lemfi9 {
-    background: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     border-color: transparent;
 }
 
@@ -1235,7 +1237,7 @@ body>grafana-app>div>div>react-container>div>div.css-azp59k>div.css-1bd2u9>div>d
     border-style: solid;
     border-color: rgba(255, 255, 255, 0);
     border-image: initial;
-    background: rgba(255, 255, 255, .08)
+    background: var(--transparency-light-10)
 }
 
 input:checked+.gf-form-switch__slider {
@@ -1258,7 +1260,7 @@ input:checked+.gf-form-switch__slider {
 /*SETTINGS*/
 /*Teams*/
 .css-1w9m9al-call-to-action-card {
-    background: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
 }
 
 /*DASHBOARD SETINGS*/
@@ -1275,14 +1277,14 @@ input:checked+.gf-form-switch__slider {
 }
 
 .navbar--edit {
-    background: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     border-bottom: 1px solid transparent;
     -webkit-box-shadow: 0 0 10px transparent;
     box-shadow: 0 0 10px transparent;
 }
 
 .grafana-info-box {
-    background-color: rgba(0, 0, 0, .5);
+    background: var(--transparency-dark-50);
     border-top: 3px solid rgb(var(--accent-color));
 }
 

@@ -11,6 +11,7 @@
 /* 			      https://github.com/gilbN/theme.park			 */
 
 @import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
 
 body {
     background: var(--main-bg-color);
@@ -166,7 +167,7 @@ a:hover {
 }
 
 [class*="SelectInput-select-"] {
-    background-color: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 [class*="SelectInput-select-"]:active,
@@ -183,7 +184,7 @@ a:hover {
 }
 
 [class*="AutoSuggestInput-suggestionHighlighted-"] {
-    background-color: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
 }
 
 [class*="CheckInput-primaryIsChecked-"] {
@@ -200,7 +201,7 @@ a:hover {
 /* HEADER */
 
 [class*="PageHeader-header-"] {
-    background-color: rgba(0, 0, 0, .35);
+    background: var(--transparency-dark-35);
     box-shadow: none;
     color: var(--text);
 }
@@ -231,16 +232,16 @@ a:hover {
 }
 
 [class*="IndexerSearchInput-highlighted-"] {
-    background-color: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
 }
 
 [class*="IndexerSearchInput-movieContainer-"]::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.25);
+    background: var(--transparency-light-25);
 }
 
 /* SIDE MENU */
 [class*="PageSidebar-sidebarContainer-"] {
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
 }
 
 [class*="PageSidebar-sidebar-"] {
@@ -263,7 +264,7 @@ a:hover {
 }
 
 [class*="PageSidebarItem-isActiveParentLink-"] {
-    background-color: rgba(0, 0, 0, 0.15);
+    background: var(--transparency-dark-15);
 }
 
 @media only screen and (max-width: 768px) {
@@ -310,15 +311,15 @@ a:hover {
 }
 
 [class*="AddListMovieOverview-container-"]:hover [class*="AddListMovieOverview-content-"] {
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 [class*="AddListMoviePoster-title-"] {
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 [class*="MovieIndexOverview-content-"]:hover {
-    background-color: hsla(0, 0%, 100%, .08) !important;
+    background: var(--transparency-dark-10) !important;
 }
 
 [class*="MovieIndexOverview-link-"]:hover {
@@ -326,7 +327,7 @@ a:hover {
 }
 
 [class*="ProgressBar-container-"] {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 [class*=".ProgressBar-purple-"] {
@@ -337,7 +338,7 @@ a:hover {
 [class*="MovieDetailsSeason-season-"],
 [class*="MovieDetailsSeason-collapseButtonContainer-"] {
     border: none !important;
-    background-color: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 [class*="MovieDetailsSeason-actionButton-"],
@@ -376,17 +377,17 @@ a:hover {
 
 [class*="MovieDetailsSeason-collapseButtonContainer-"] {
     border: none !important;
-    background-color: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 [class*="MovieFileEditorTable-container-"] {
     border: 1px solid transparent;
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 [class*="ExtraFileTable-container-"] {
     border: 1px solid transparent;
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
 }
 
 .Table-table-2C3O8 {
@@ -498,7 +499,7 @@ a:hover {
 
 /* Table options*/
 [class*="TableOptionsColumn-column-"] {
-    background: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     color: var(--text-hover);
     border: none;
 }
@@ -512,17 +513,17 @@ a:hover {
 }
 
 [class*="TableRow-row-"]:hover {
-    background-color: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
     color: var(--text-hover);
 }
 
 [class*="TableRowCell-cell-"] {
-    border-top: 1px solid rgb(255 255 255 / 25%);
+    border-top: 1px solid var(--transparency-light-25);
 }
 
 /* TOP MENU SERIES */
 [class*="PageToolbar-toolbar-"] {
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     color: var(--text);
 }
 
@@ -558,7 +559,7 @@ a:hover {
 [class*="MovieIndexPosterInfo-info-"],
 [class*="MovieIndexPosterInfo-info-"],
 [class*="MovieCreditPoster-title-"] {
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
     color: var(--text-hover);
 }
 
@@ -585,13 +586,13 @@ a:hover {
 
 [class*="MenuItem-menuItem-"]:hover,
 [class*="MenuItem-menuItem-"]:focus {
-    background: hsla(0, 0%, 100%, .08) !important;
+    background: var(--transparency-dark-10) !important;
     color: var(--text-hover);
     text-decoration: none;
 }
 
 [class*="MenuItemSeparator-separator-"] {
-    background-color: hsla(0, 0%, 100%, .08) !important;
+    background: var(--transparency-dark-10) !important;
 }
 
 /* ALPHABET JUMP BAR */
@@ -602,12 +603,12 @@ a:hover {
 /* MINI RIGHT SCROLL BAR */
 [class*="OverlayScroller-thumb-"],
 [class*="Scroller-scroller-"]::-webkit-scrollbar-thumb {
-    background-color: hsla(0, 0%, 100%, .08) !important;
+    background: var(--transparency-dark-10) !important;
 }
 
 [class*="OverlayScroller-thumb-"]:hover,
 [class*="Scroller-scroller-"]::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(255, 255, 255, 0.25) !important;
+    background: var(--transparency-light-25) !important;
 }
 
 /* ADD NEW */
@@ -631,12 +632,12 @@ a:hover {
 
 [class*="EnhancedSelectInputOption-isSelected-"],
 [class*="EnhancedSelectInputOption-isSelected-"]:hover {
-    background-color: rgba(255, 255, 255, 0.20) !important;
+    background: var(--transparency-light-20) !important;
     color: var(--text-hover);
 }
 
 [class*="EnhancedSelectInputOption-option-"]:hover {
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 [class*="HintedSelectInputOption-hintText-"] {
@@ -674,7 +675,7 @@ a:hover {
 [class*="AddNewMovie-searchIconContainer-"],
 [class*="CheckInput-isIndeterminate-"] {
     border: none;
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
     color: var(--text-hover);
 }
 
@@ -701,7 +702,7 @@ a:hover {
     outline: 0;
     border-color: var(--text-hover);
     box-shadow: none;
-    background-color: rgba(255, 255, 255, 0.25);
+    background: var(--transparency-light-25);
 }
 
 [class*="TagInput-input-"][class*="TagInput-isFocused-"] {
@@ -724,7 +725,7 @@ a:hover {
 
 [class*="AddNewMovieSearchResult-searchResult-"]:hover,
 [class*="AddNewMovieSearchResult-underlay-"]:hover {
-    background-color: hsla(0, 0%, 100%, .08) !important;
+    background: var(--transparency-dark-10) !important;
 }
 
 [class*="AddNewmovieModalContent-year-"] {
@@ -749,13 +750,13 @@ a:hover {
 }
 
 [class*="VirtualTableRow-row-"]:hover {
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 /* Drop down menu/button*/
 [class*="ImportMovieSelectMovie-button-"] {
     border: none !important;
-    background-color: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 [class*="ImportMovieSelectMovie-content-"],
@@ -773,7 +774,7 @@ a:hover {
 }
 
 [class*="ImportMovieSearchResult-movie-"]:hover {
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 [class*="ImportMovieTitle-year-"] {
@@ -800,17 +801,17 @@ a:hover {
 }
 
 [class*="AddListMovieOverview-content-"]:hover {
-    background-color: hsla(0, 0%, 100%, .08) !important;
+    background: var(--transparency-dark-10) !important;
 }
 
 [class*="PageJumpBarItem-jumpBarItem-"]:hover {
     color: var(--text-hover);
-    background: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
 }
 
 /*Posters*/
 [class*="AddListMoviePoster-title-"] {
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
     color: var(--text-hover);
 }
 
@@ -818,7 +819,7 @@ a:hover {
 /* FOOTER */
 [class*="PageContentFooter-contentFooter-"] {
     border: none;
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     color: var(--text-hover);
 }
 
@@ -874,17 +875,17 @@ a:hover {
 }
 
 [class*="DayOfWeek-dayOfWeek-"] {
-    background-color: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
     color: var(--text-hover);
 }
 
 [class*="CalendarDay-dayOfMonth-"] {
     border-bottom: 1px solid hsla(0, 0%, 100%, .08);
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
 }
 
 [class*="CalendarDay-isToday-"] {
-    background-color: hsla(0, 0%, 100%, .08) !important;
+    background: var(--transparency-dark-10) !important;
 }
 
 [class*="CalendarDay-day-"],
@@ -932,7 +933,7 @@ a:hover {
 
 /* calendar agenda */
 [class*="AgendaEvent-event-"]:hover {
-    background-color: hsla(0, 0%, 100%, .08) !important;
+    background: var(--transparency-dark-10) !important;
 }
 
 /* SETTINGS */
@@ -959,15 +960,15 @@ a:hover {
 }
 
 [class*="NamingOption-token-"] {
-    background-color: rgba(255, 255, 255, 0.15);
+    background: var(--transparency-light-15);
 }
 
 [class*="NamingOption-token-"] {
-    background-color: rgba(255, 255, 255, 0.15);
+    background: var(--transparency-light-15);
 }
 
 [class*="NamingOption-example-"] {
-    background-color: rgba(255, 255, 255, 0.25);
+    background: var(--transparency-light-25);
 }
 
 [class*="NamingOption-option-"] {
@@ -975,17 +976,17 @@ a:hover {
 }
 
 [class*="NamingOption-option-"]:hover [class*="NamingOption-token-"] {
-    background-color: rgba(255, 255, 2550, 0.25);
+    background: var(--transparency-light-25);
 }
 
 [class*="NamingOption-option-"]:hover [class*="NamingOption-example-"] {
-    background-color: rgba(255, 255, 2550, 0.35);
+    background: var(--transparency-light-35);
 }
 
 /* PROFILES */
 [class*="Card-card-"],
 [class*="QualityProfiles-addQualityProfile-"] {
-    background-color: rgba(0, 0, 0, .45);
+    background: var(--transparency-dark-45);
     box-shadow: 0 0 10px 1px #000000;
     color: var(--text);
 }
@@ -1018,12 +1019,12 @@ a:hover {
 [class*="QualityProfileItemGroup-qualityProfileItemGroup-"],
 [class*="LanguageProfileItem-languageProfileItem-"] {
     border: none;
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     color: var(--text-hover);
 }
 
 [class*="QualityProfileItemGroup-qualityProfileItemGroup-"][class*="QualityProfileItemGroup-editGroups-"] {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25)
 }
 
 [class*="QualityDefinitions-sizeLimitHelpText-"] {
@@ -1039,7 +1040,7 @@ a:hover {
 
 [class*="QualityProfileFormatItem-qualityProfileFormatItem-"] {
     border: 1px solid transparent;
-    background: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25)
 }
 
 /* Indexers */
@@ -1076,7 +1077,7 @@ a:hover {
 /* LOG */
 [class*="Alert-info-"] {
     border-color: transparent;
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     color: #FFC107;
 }
 
@@ -1102,12 +1103,12 @@ a:hover {
 /* Login Page */
 
 .panel-body {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     color: var(--text);
 }
 
 .panel-header {
-    background-color: rgba(0, 0, 0, 0.45);
+    background: var(--transparency-dark-45);
 }
 
 .forgot-password {
@@ -1117,7 +1118,7 @@ a:hover {
 input[type=email],
 input[type=password] {
     border: none;
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
     color: var(--text-hover);
 }
 
@@ -1138,7 +1139,7 @@ input[type=password] {
     outline: 0;
     border-color: var(--text-hover);
     box-shadow: none;
-    background-color: rgba(255, 255, 255, 0.25);
+    background: var(--transparency-light-25);
 }
 
 /* Custom filter */
@@ -1147,7 +1148,7 @@ input[type=password] {
 }
 
 [class*="CustomFilter-customFilter-"]:hover {
-    background-color: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
 }
 
 [class*="SelectMovieModalContent-path-"] {
@@ -1157,7 +1158,7 @@ input[type=password] {
 /* ChartJS */
 [class*="Stats-fullWidthChart-"],
 [class*="Stats-halfWidthChart-"] {
-    background: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 canvas {
@@ -1170,20 +1171,20 @@ canvas {
 }
 
 [class*="QueryParameterOption-token-"] {
-    background-color: rgba(255, 255, 255, 0.15);
+    background: var(--transparency-light-15);
 }
 
 [class*="QueryParameterOption-example-"] {
-    background-color: rgba(255, 255, 255, 0.25);
+    background: var(--transparency-light-25);
 }
 
 
 [class*="QueryParameterOption-option-"]:hover [class*="QueryParameterOption-token-"] {
-    background-color: rgba(255, 255, 2550, 0.25);
+    background: var(--transparency-light-25);
 }
 
 [class*="QueryParameterOption-option-"]:hover [class*="QueryParameterOption-example-"] {
-    background-color: rgba(255, 255, 2550, 0.35);
+    background: var(--transparency-light-35);
 }
 
 /* HISTORY */
@@ -1195,7 +1196,7 @@ canvas {
 }
 
 [class*="HistoryRowParameter-value-"] {
-    background-color: rgb(255 255 255 / 50%);
+    background: var(--transparency-light-50);
     color: #1f1f1f;
 }
 

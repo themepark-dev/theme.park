@@ -10,6 +10,8 @@
 /*		   		        Made by @gilbN					 */
 /* 			      https://github.com/gilbN/theme.park			 */
 
+@import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
 
 body {
     background: var(--main-bg-color);
@@ -64,7 +66,7 @@ a.disabled-link {
     min-height: 50px;
     border: 3px solid transparent;
     border-radius: 8px;
-    background-color: hsla(0, 0%, 100%, .2);
+    background: var(--transparency-dark-20);
     background-clip: padding-box;
 }
 
@@ -76,7 +78,7 @@ a.disabled-link {
     min-height: 50px;
     border: 3px solid transparent;
     border-radius: 8px;
-    background-color: hsla(0, 0%, 100%, .5);
+    background: var(--transparency-light-50);
     background-clip: padding-box;
 }
 
@@ -146,27 +148,6 @@ label {
     color: var(--accent-color-hover);
 }
 
-/* PLACEHOLDER TEXT */
-::placeholder {
-    color: var(--text) !important;
-    opacity: .5 !important;
-}
-
-:-moz-placeholder {
-    color: var(--text) !important;
-    opacity: .5 !important;
-}
-
-:-ms-input-placeholder {
-    color: var(--text) !important;
-    opacity: .5 !important;
-}
-
-::-webkit-input-placeholder {
-    color: var(--text) !important;
-    opacity: .5;
-}
-
 /* CARDS */
 .card {
     background: transparent;
@@ -181,7 +162,7 @@ label {
 .col-xs-4 .card,
 .col-xs-12 .card,
 .col-xs-8 .card {
-    background: rgb(0 0 0 / 8%) !important;
+    background: var(--transparency-dark-10) !important;
 }
 
 #schedule-0,
@@ -206,7 +187,7 @@ label {
 #schedule-19,
 #schedule-20,
 [id*="#schedule-"] {
-    background-color: rgb(0 0 0 / 8%);
+    background: var(--transparency-dark-10);
 }
 
 /* TIMELINE */
@@ -238,7 +219,7 @@ label {
 .card .nav-tabs>li.active>a:hover {
     color: var(--text);
     cursor: default;
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     border: 1px solid rgba(255, 255, 255, .25);
     border-bottom-color: var(--text);
     border-radius: 6px 6px 0 0;
@@ -246,7 +227,7 @@ label {
 
 .card .nav>li>a:hover,
 .card .nav>li>a:focus {
-    background-color: rgba(255, 255, 255, .07);
+    background: var(--transparency-light-10);
     border: 1px solid transparent;
 }
 
@@ -256,8 +237,8 @@ label {
 }
 
 .navbar-default {
-    background-color: rgb(0 0 0 / 26%);
-    border-bottom: 1px solid rgb(255 255 255 / 25%);
+    background: var(--transparency-dark-25);
+    border-bottom: 1px solid var(--transparency-light-25);
 }
 
 /* SIDEBAR */
@@ -265,7 +246,7 @@ label {
 .sidebar[data-background-color="black"]:before,
 .off-canvas-sidebar[data-background-color="black"]:after,
 .off-canvas-sidebar[data-background-color="black"]:before {
-    background: rgb(0 0 0 / 10%);
+    background: var(--transparency-dark-10);
 }
 
 .sidebar[data-background-color="black"] .logo,
@@ -341,7 +322,7 @@ label {
 .nav-tabs>li.active>a:hover {
     color: var(--text);
     cursor: default;
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     border: 1px solid transparent;
     border-bottom-color: transparent;
 }
@@ -352,7 +333,7 @@ label {
 }
 
 .modal-body .nav-tabs>li.active>a:hover {
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     border: 1px solid transparent;
 }
 
@@ -372,7 +353,7 @@ label {
 .modal-body .nav .open>a,
 .nav .open>a:focus,
 .nav .open>a:hover {
-    background-color: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
     border-color: transparent;
 }
 
@@ -403,18 +384,18 @@ label {
 
 .form-control,
 textarea {
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     color: var(--text);
 }
 
 .form-control:focus {
-    background-color: rgb(0 0 0 / 50%);
+    background: var(--transparency-dark-50);
 }
 
 .form-control[disabled],
 .form-control[readonly],
 fieldset[disabled] .form-control {
-    background-color: rgba(0, 0, 0, .15);
+    background: var(--transparency-dark-15);
 }
 
 #input_s3_provider:focus,
@@ -448,7 +429,7 @@ fieldset[disabled] .form-control {
 
 .timepicker-spinner .btn:hover,
 .timepicker-spinner .btn:focus {
-    background-color: rgba(255, 255, 255, .08);
+    background-color: var(--transparency-light-10);
     color: var(--text-hover);
     border: 1px solid transparent;
 }
@@ -541,7 +522,7 @@ div.bootbox.modal.fade.bootbox-confirm.in>div>div>div.modal-footer>button.btn.bt
 }
 
 .close {
-    var(--text-hover);
+    color: var(--text-hover);
 }
 
 .navbar .navbar-nav>li>a.btn-success,
@@ -608,7 +589,7 @@ div.bootbox.modal.fade.bootbox-confirm.in>div>div>div.modal-footer>button.btn.bt
 .table>thead>tr>td.active,
 .table>thead>tr>th.active,
 .row-clickable.active {
-    background-color: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
     color: var(--text-hover);
 }
 
@@ -649,7 +630,7 @@ hr {
 
 /* PROGRESS BARS */
 .progress {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 .progress-bar {
@@ -662,7 +643,7 @@ hr {
 
 /* FOOTER */
 .main-panel>.footer {
-    background: rgb(0 0 0 / 0.25);
+    background: var(--transparency-dark-25);
 }
 
 /* MOBILE */
