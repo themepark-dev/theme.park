@@ -240,6 +240,18 @@ body,[class*="FullPageBackground-backgroundContainer-"] {
 
 /* ACCENTS */
 
+[class*="TabButton-selected-"] {
+  color: rgb(var(--accent-color));
+}
+
+[class*="TabButton-selected-"]:after {
+  background-color: rgb(var(--accent-color));
+}
+
+[class*="TabButton-selected-"]:hover:after {
+  background-color: rgb(var(--accent-color),.8);
+}
+
 .heart-rating.user-rating, .star-rating.user-rating {
   color: rgb(var(--accent-color));
   opacity: 1;
@@ -537,6 +549,7 @@ circle {
 }
 
 /* BUTTONS */
+
 .btn-primary {
   border-color: var(--button-color);
   color: var(--button-text);
@@ -549,6 +562,13 @@ circle {
 .btn-primary:hover {
   color: var(--button-text-hover);
   background-color: var(--button-color-hover);
+}
+
+.selectize-control.plugin-remove_button [data-value] .remove {
+  color: var(--button-text);
+}
+.selectize-control.plugin-remove_button [data-value] .remove:hover {
+  color: var(--button-text-hover);
 }
 
 [class*="Button-primary"].isDisabled {

@@ -778,6 +778,10 @@
      color: var(--button-text);
  }
 
+ #deluge-statusbar .x-btn button {
+    color: var(--text)
+}
+
  .x-btn em {
      font-style: normal;
      font-weight: normal;
