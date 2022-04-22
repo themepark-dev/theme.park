@@ -13,6 +13,7 @@
 @import url(https://use.fontawesome.com/releases/v5.0.7/css/all.css);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,600,700,300);
 @import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
 
 @font-face {
     font-family: 'Roboto' !important
@@ -49,7 +50,7 @@ div#preload {
 }
 
 hr {
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
     height: 1px;
     border-width: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -67,7 +68,7 @@ div#cover {
 }
 
 div#msg {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border-top: 1px solid #3330;
     border-bottom: 1px solid #0000;
     font-size: 11px;
@@ -154,7 +155,7 @@ ul.CMenu li a.dis:hover {
 }
 
 ul.CMenu li hr {
-    background-color: rgba(255, 255, 255, .08);
+    background-color: var(--transparency-light-10);
     height: 1px;
     border-width: 0;
     border-bottom: 1px solid rgba(255, 255, 255, .08);
@@ -168,13 +169,13 @@ ul.CMenu li a.exp {
 }
 
 ul.CMenu li a.exp:hover {
-    background: rgba(255, 255, 255, .08);
+    background: var(--transparency-light-10)
     ;
 }
 
 ul.CMenu li a.sel {
     color: var(--text-hover);
-    background: rgba(0, 0, 0, 0.15);
+    background: var(--transparency-dark-15)
 }
 
 ul.CMenu li ul li a.sel {
@@ -182,7 +183,7 @@ ul.CMenu li ul li a.sel {
 }
 
 ul.CMenu li a:hover {
-    background-color: rgba(255, 255, 255, 0.08) !important;
+    background: var(--transparency-light-10) !important;
     color: var(--text-hover);
     text-shadow: 0 -1px 0 #000;
 }
@@ -207,7 +208,7 @@ ul.CMenu li ul li a.dis:hover {
 }
 
 div.stable-body table tbody tr.even:nth-child(2n+1) td {
-    background: rgba(255, 255, 255, 0.08) !important
+    background: var(--transparency-light-10) !important
 }
 
 .stable-body td {
@@ -233,7 +234,7 @@ div.stable-body table tbody tr.even:nth-child(2n+1) td {
 }
 
 div#t {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     background-image: none;
     border-bottom: none;
     padding: 4px 0 2px 0;
@@ -418,7 +419,7 @@ div#stg-header {
 
 div#CatList {
     border: none;
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border-right: 1px solid transparent;
     border-left: none
 }
@@ -537,7 +538,7 @@ div.tab {
 }
 
 div#lcont {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     font-family: 'Roboto'
 }
 
@@ -549,13 +550,13 @@ div#gcont table td.Header {
 }
 
 div#gcont table tr {
-    background: rgba(0, 0, 0, 0.45);
+    background: var(--transparency-dark-45);
     font-family: 'Roboto';
     color: var(--text);
 }
 
 div#gcont table tr td {
-    background: rgba(0, 0, 0, 0.15);
+    background: var(--transparency-dark-15);
 }
 
 div#gcont table {
@@ -565,11 +566,11 @@ div#gcont table {
 div.graph_tab {
     color: var(--text-hover);
     border-color: transparent;
-    background-color: rgba(0, 0, 0, 0.25)
+    background: var(--transparency-dark-25);
 }
 
 div.table_tab {
-    background-color: rgba(0, 0, 0, 0.45);
+    background: var(--transparency-dark-45);
     font-family: 'Roboto'
 }
 
@@ -580,14 +581,14 @@ div#modalbg {
 div#List {
     margin-right: 6px;
     border: none;
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 div#FileList,
 div#TrackerList,
 div#PeerList,
 div#Speed {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 .dlg-window {
@@ -614,7 +615,7 @@ a.dlg-close:visited {
 }
 
 div.dlg-header {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border-bottom: none;
     font-family: 'Roboto';
     text-transform: uppercase;
@@ -626,7 +627,7 @@ div.dlg-header {
     font-size: 11px;
     font-family: monospace;
     line-height: 11px;
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     white-space: pre;
     overflow: scroll;
     height: 198px;
@@ -725,7 +726,7 @@ div#tdcont {
 }
 
 div#HDivider {
-    background: rgba(0, 0, 0, 0.45);
+    background: var(--transparency-dark-45);
     cursor: e-resize;
     height: 0;
     margin: 0;
@@ -735,7 +736,7 @@ div#HDivider {
 
 div#RSSList {
     border: none !important;
-    background-color: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
     overflow: hidden;
     display: block;
     -moz-user-select: none;
@@ -745,13 +746,13 @@ div#RSSList {
 
 div#HDivider:hover,
 div#VDivider:hover {
-    background: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 div#tcreate textarea#trackers {
     color: var(--text-hover);
     border: none !important;
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border-radius: 2px;
     cursor: text;
 }
@@ -761,7 +762,7 @@ input[type="password"],
 select {
     color: var(--text-hover);
     border: none;
-    background: rgba(0, 0, 0, 0.25) url(/resources/rutorrent/headers.png) repeat-x scroll 0 -138px;
+    background: var(--transparency-dark-25) url(/resources/rutorrent/headers.png) repeat-x scroll 0 -138px;
     border-radius: 2px;
     outline: none;
 }
@@ -772,7 +773,7 @@ input[type="file"][disabled],
 select[disabled] {
     color: var(--text-hover);
     border: none;
-    background: rgba(0, 0, 0, 0.08) url(/resources/rutorrent/headers.png) repeat scroll 0 0 !important;
+    background: var(--transparency-dark-10) url(/resources/rutorrent/headers.png) repeat scroll 0 0 !important;
     border-radius: 2px;
     opacity: .2
 }
@@ -792,7 +793,7 @@ textarea {
 #FS_downlink {
     color: var(--text-hover);
     border: none !important;
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border-radius: 2px
 }
 
@@ -818,7 +819,7 @@ input.Button:focus {
 }
 
 ul#tabbar {
-    background: rgba(0, 0, 0, 0.45);
+    background: var(--transparency-dark-45);
     border: none;
     color: #606060;
     height: 24px;
@@ -957,19 +958,19 @@ div.dlg-window {
 }
 
 div#yesnoDlg div.dlg-header {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     text-shadow: 0 -1px 0 #000
 }
 
 div#stg-header {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     text-shadow: 0 -1px 0 #000;
     color: var(--text-hover);
 }
 
 div#dlgHelp-header,
 div#dlgHelp div.dlg-header {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     text-shadow: 0 -1px 0 #000
 }
 
@@ -980,7 +981,7 @@ div#tadd {
 }
 
 div#tadd-header {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border-bottom: 1px solid #3330;
     text-shadow: 0 -1px 0 #000;
 }
@@ -1024,7 +1025,7 @@ Input.TextboxLarge {
 }
 
 div.tab {
-    background-color: rgba(0, 0, 0, 0.25)
+    background: var(--transparency-dark-25)
 }
 
 div#t div#ind {
@@ -1063,7 +1064,7 @@ span#loadimg {
     min-height: 50px;
     border: 3px solid transparent;
     border-radius: 8px;
-    background-color: hsla(0, 0%, 100%, .2);
+    background: var(--transparency-dark-20);
     background-clip: padding-box;
 }
 
@@ -1075,7 +1076,7 @@ span#loadimg {
     min-height: 50px;
     border: 3px solid transparent;
     border-radius: 8px;
-    background-color: hsla(0, 0%, 100%, .5);
+    background: var(--transparency-light-50);
     background-clip: padding-box;
 }
 
@@ -1086,19 +1087,19 @@ input#add_button {
 }
 
 div#lcont div.std {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     height: 17px;
     line-height: 17px;
     border-bottom: 1px solid transparent;
 }
 
 div#lcont div.std:nth-child(2n+1) {
-    background: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 #StatusBar {
     border-top: 1px solid transparent;
-    background: rgba(0, 0, 0, 0.45);
+    background: var(--transparency-dark-45);
     color: #ccc;
     font-family: Roboto
 }
@@ -1232,7 +1233,7 @@ span.det {
 
 .stable-head {
     color: var(--text-hover);
-    background: rgba(0, 0, 0, 0.45);
+    background: var(--transparency-dark-45);
     border: none;
     text-shadow: 0px 1px 0px rgba(0, 0, 0, 0);
     font-family: Ubuntu;
@@ -1296,13 +1297,13 @@ div#tdcont .stable {
 }
 
 .stable-body tr.selected td {
-    background: rgba(255, 255, 255, 0.25);
+    background: var(--transparency-light-25);
     color: var(--text-hover);
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0);
 }
 
 div.stable-body table tbody tr.even td {
-    background: rgba(0, 0, 0, 0.08);
+    background: var(--transparency-dark-10);
 }
 
 div.stable-body table tbody tr.even td:nth-child(2n+1) {
@@ -1478,7 +1479,7 @@ div.graph_tab {
 }
 
 div#tcreate div.dlg-header {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border-bottom: 1px solid transparent;
     text-shadow: 0px -1px 0px #000;
     background-image: none !important;
@@ -1494,7 +1495,7 @@ div#dlgAddRSS {
 
 div#dlgAddRSS-header,
 div#dlgAddRSS div.dlg-header {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border-bottom: 1px solid transparent;
     text-shadow: 0px -1px 0px #000;
     background-image: none !important;
@@ -1746,7 +1747,7 @@ div#logoffDlg div.dlg-header {
     font-size: 11px;
     font-family: Tahoma, Arial, Helvetica, sans-serif;
     cursor: text;
-    background: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
     color: var(--text-hover) !important;
     outline: none !important;
 }
@@ -1760,13 +1761,13 @@ div#logoffDlg div.dlg-header {
 
 #dlgEditRatioRules .lf_rru li input.TextboxFocus,
 #dlgEditRules .lf_rur li input.TextboxFocus {
-    background-color: rgb(255 255 255 / 25%);
+    background-color: var(--transparency-light-25);
     color: var(--text-hover);
 }
 
 #dlgEditRatioRules .lf_rru li input.TextboxNormal,
 #dlgEditRules .lf_rur li input.TextboxNormal {
-    background-color: rgb(255 255 255 / .08) !important;
+    background: var(--transparency-light-10) !important;
     color: var(--text-hover);
 }
 
@@ -1782,5 +1783,5 @@ div#logoffDlg div.dlg-header {
 div#dlgEditRules-header,
 #dlgEditRatioRules-header,
 div#dlgEditRules div.dlg-header {
-    background: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
 }

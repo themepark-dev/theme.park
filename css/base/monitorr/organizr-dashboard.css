@@ -20,7 +20,7 @@ body {
 }
 
 #stats {
-    background-color: rgba(0, 0, 0, .15) !important;
+    background: var(--transparency-dark-15) !important;
     padding-left: .0rem !important;
     padding-right: 1.11rem !important;
     box-shadow: none;
@@ -60,13 +60,13 @@ body {
 }
 
 #time {
-    background-color: rgba(0, 0, 0, .15) !important;
+    background: var(--transparency-dark-15) !important;
     color: var(--text-hover) !important;
     box-shadow: none;
 }
 
 #slidertable {
-    background-color: rgba(0, 0, 0, .15) !important;
+    background: var(--transparency-dark-15) !important;
     box-shadow: none;
 }
 
@@ -89,14 +89,14 @@ body {
 
 /*Service tile*/
 .col-lg-4 {
-    background-color: rgba(0, 0, 0, .15) !important;
+    background: var(--transparency-dark-15) !important;
     margin: 1rem .1rem 1.5rem 1rem !important;
     width: 9rem !important;
     box-shadow: none;
 }
 
 .col-lg-4:hover {
-    background-color: hsla(0, 0%, 100%, .08) !important;
+    background: var(--transparency-dark-10) !important;
     margin: 1rem .1rem 1.5rem 1rem !important;
     width: 9rem !important;
     box-shadow: none;
@@ -137,7 +137,7 @@ body {
 }
 
 #clock {
-    background-color: rgba(0, 0, 0, .15) !important;
+    background: var(--transparency-dark-15) !important;
     color: var(--text-hover) !important;
     box-shadow: none;
 }
@@ -154,7 +154,7 @@ body {
 
 .pace,
 .pace-progress {
-    background: rgba(0, 0, 0, .15) !important;
+    background: var(--transparency-dark-15) !important;
 }
 
 .pace,

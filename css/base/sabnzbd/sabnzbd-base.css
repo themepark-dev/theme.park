@@ -10,6 +10,7 @@
 /*			      https://github.com/gilbN/theme.park			 */
 
 @import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
 
 body {
   background: var(--main-bg-color) !important;
@@ -106,7 +107,7 @@ a:focus {
   min-height: 50px;
   border: 3px solid transparent;
   border-radius: 8px;
-  background-color: hsla(0, 0%, 100%, .2);
+  background: var(--transparency-dark-20);
   background-clip: padding-box;
 }
 
@@ -118,7 +119,7 @@ a:focus {
   min-height: 50px;
   border: 3px solid transparent;
   border-radius: 8px;
-  background-color: hsla(0, 0%, 100%, .5);
+  background: var(--transparency-light-50);
   background-clip: padding-box;
 }
 
@@ -133,7 +134,7 @@ hr {
 }
 
 .navbar-inverse {
-  background-color: rgba(0, 0, 0, .25);
+  background: var(--transparency-dark-25);
   border-color: transparent !important;
 }
 
@@ -169,7 +170,7 @@ hr {
 .navbar-inverse .navbar-nav>.open>a,
 .navbar-inverse .navbar-nav>.open>a:hover,
 .navbar-inverse .navbar-nav>.open>a:focus {
-  background-color: hsla(0, 0%, 100%, .08);
+  background: var(--transparency-dark-10);
 }
 
 .ui-slider-horizontal,
@@ -183,7 +184,7 @@ hr {
 }
 
 .main-content {
-  background-color: rgba(0, 0, 0, 0.15);
+  background: var(--transparency-dark-15);
   border: none;
 }
 
@@ -214,7 +215,7 @@ hr {
 }
 
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
-  background-color: rgba(255, 255, 255, 0.25);
+  background: var(--transparency-light-25);
 }
 
 .navbar-inverse .navbar-toggle {
@@ -224,7 +225,7 @@ hr {
 .dropdown-menu>li>a:hover,
 .dropdown-menu>li>a:focus {
   color: var(--text-hover);
-  background-color: rgba(255, 255, 255, 0.08);
+  background: var(--transparency-light-10);
 }
 
 .dropdown-header {
@@ -504,7 +505,7 @@ td.delete .dropdown>a .caret {
 }
 
 .table-striped>tbody>tr:nth-of-type(odd) {
-  background-color: rgba(0, 0, 0, 0.25);
+  background: var(--transparency-dark-25);
 }
 
 tbody.no-downloads tr td {
@@ -524,15 +525,15 @@ tbody>tr>td:first-child {
 }
 
 table {
-  background-color: rgba(0, 0, 0, 0.25) !important
+  background: var(--transparency-dark-25) !important
 }
 
 table:hover {
-  background-color: rgba(0, 0, 0, 0.25) !important;
+  background: var(--transparency-dark-25) !important;
 }
 
 .table-hover>tbody>tr:hover {
-  background-color: rgba(255, 255, 255, 0.07) !important;
+  background-color: var(--transparency-dark-10) !important;
   color: var(--text-hover);
 }
 
@@ -555,7 +556,7 @@ tr td.row-extra-text,
 
 .table-messages .table-messages-remove {
   border-bottom: 1px solid transparent !important;
-  background: rgba(255, 255, 255, 0.25);
+  background: var(--transparency-light-25);
 }
 
 .progress .progress-bar .fileDetails {
@@ -601,7 +602,7 @@ tr td.row-extra-text,
 
 .multioperations-selector {
   border: 1px solid transparent !important;
-  background-color: rgba(0, 0, 0, 0.25) !important;
+  background: var(--transparency-dark-25) !important;
 }
 
 #history-options .hover-button {
@@ -610,7 +611,7 @@ tr td.row-extra-text,
 
 #history-tab .table>tbody>tr:nth-of-type(2n+1),
 .table-striped>tbody>tr:nth-of-type(2n+1) {
-  background-color: rgba(255, 255, 255, 0.05);
+  background: var(--transparency-light-05);
 }
 
 .pagination>li>a,
@@ -653,7 +654,7 @@ tr td.row-extra-text,
 .pagination>.disabled>a:hover,
 .pagination>.disabled>a:focus {
   color: var(--text-muted);
-  background-color: rgba(0, 0, 0, .25);
+  background: var(--transparency-dark-25);
   border: 1px solid transparent;
 }
 
@@ -664,7 +665,7 @@ tr td.row-extra-text,
 
 .form-control {
   color: var(--text-hover);
-  background-color: rgb(0 0 0 / 25%);
+  background: var(--transparency-dark-25);
 }
 
 .form-control:focus {
@@ -691,13 +692,13 @@ tr td.row-extra-text,
 .nav-tabs>li.active>a:hover,
 .nav-tabs>li.active>a:focus {
   color: #555;
-  background-color: rgba(255, 255, 255, 0.15);
+  background: var(--transparency-light-15);
 }
 
 .nav>li>a:hover,
 .nav>li>a:focus {
   text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.08);
+  background: var(--transparency-light-10);
 }
 
 .badge {
@@ -723,7 +724,7 @@ tr td.row-extra-text,
 }
 
 .navbar-default .navbar-nav>.open>a {
-  background-color: hsla(0, 0%, 0%, .15);
+  background: var(--transparency-dark-15);
 }
 
 .navbar-default .navbar-nav>li>a:hover,
@@ -732,12 +733,12 @@ tr td.row-extra-text,
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-  background-color: hsla(0, 0%, 100%, .08) !important;
+  background: var(--transparency-dark-10) !important;
   color: var(--text-hover) !important;
 }
 
 .navbar-default .navbar-nav>li>a.active {
-  background-color: hsla(0, 0%, 0%, .15) !important;
+  background: var(--transparency-dark-15) !important;
   color: rgb(var(--accent-color)) !important;
 }
 
@@ -747,7 +748,7 @@ tr td.row-extra-text,
 
 .colmask {
   border: none;
-  background-color: rgba(0, 0, 0, .25);
+  background: var(--transparency-dark-25);
 }
 
 .padTable:not(.ui-sortable) {
@@ -775,7 +776,7 @@ table {
 
 .alt,
 .infoTableSeperator.alt {
-  background-color: rgba(0, 0, 0, .25);
+  background: var(--transparency-dark-25);
 }
 
 .info-container {
@@ -807,14 +808,14 @@ table {
 
 .form-control.advanced-button.config-hover {
   color: var(--text-hover);
-  background-color: rgba(255, 255, 255, 0.25);
+  background: var(--transparency-light-25);
   border-color: rgba(255, 255, 255, 0.25);
   border-radius: 3px !important;
 }
 
 .form-control.advanced-button.config-hover:hover {
   color: var(--text-hover);
-  background-color: rgba(255, 255, 255, 0.3);
+  background: var(--transparency-light-30);
   border-color: rgba(255, 255, 255, 0.3);
   border-radius: 3px !important;
 }
@@ -834,7 +835,7 @@ input[type="date"],
 textarea,
 select {
   border: none;
-  background-color: rgba(0, 0, 0, 0.15);
+  background: var(--transparency-dark-15);
   border-radius: 3px !important;
   color: var(--text-hover) !important;
   outline: none;
@@ -882,7 +883,7 @@ input[type="text"]:focus,
 input[type="time"]:focus,
 input[type="url"]:focus,
 input[type="week"]:focus {
-  background-color: rgba(255, 255, 255, 0.1);
+  background: var(--transparency-light-10);
   border: none;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
@@ -979,12 +980,12 @@ select[disabled]:hover {
 
 /*Folder modal*/
 .list-group-item {
-  background-color: rgba(0, 0, 0, 0.25);
+  background: var(--transparency-dark-25);
   border: none;
 }
 
 .example {
-  background-color: rgba(255, 255, 255, 0.15);
+  background: var(--transparency-light-15);
 }
 
 /*modal*/
@@ -1032,7 +1033,7 @@ select[disabled]:hover {
 .modal-body>.nav-tabs>li.active>a:hover,
 .modal-body>.nav-tabs>li.active>a:focus {
   color: rgb(var(--accent-color)) !important;
-  background-color: hsla(0, 0%, 100%, .08) !important;
+  background: var(--transparency-dark-10) !important;
   border: transparent;
   border-bottom-color: transparent;
   cursor: default;
@@ -1044,7 +1045,7 @@ select[disabled]:hover {
 
 .modal-body>.nav>li>a:hover,
 .modal-body>.nav>li>a:focus {
-  background-color: hsla(0, 0%, 100%, .08) !important;
+  background: var(--transparency-dark-10) !important;
   color: var(--text-hover) !important;
 }
 
@@ -1080,11 +1081,11 @@ select[disabled]:hover {
 
 #modal-options .table-server-connections thead {
 
-  background-color: rgba(0, 0, 0, .25);
+  background: var(--transparency-dark-25);
 }
 
 #modal-options .table-server-connections thead {
-  background-color: rgba(0, 0, 0, .25);
+  background: var(--transparency-dark-25);
 }
 
 #modal-item-files .item-files-table .progress small {
@@ -1102,7 +1103,7 @@ a.list-group-item:focus,
 button.list-group-item:focus {
   text-decoration: none;
   color: var(--text-hover);
-  background-color: rgba(255, 255, 255, 0.08);
+  background: var(--transparency-light-10);
 }
 
 .form-control {
@@ -1110,7 +1111,7 @@ button.list-group-item:focus {
 }
 
 .fade.in {
-  background: rgba(0, 0, 0, 0.6);
+  background: var(--transparency-dark-60)
 }
 
 .fade {
@@ -1143,11 +1144,11 @@ fieldset[disabled] .form-control {
 }
 
 .language:hover {
-  background-color: rgb(255 255 255 / 10%);
+  background: var(--transparency-light-10);
 }
 
 .container .quoteBlock {
-  background-color: rgb(0 0 0 / 25%);
+  background: var(--transparency-dark-25);
 }
 
 #content a,

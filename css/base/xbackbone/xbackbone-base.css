@@ -11,6 +11,7 @@
 /* 			      https://github.com/gilbN/theme.park			 */
 
 @import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
 
 .bg-light {
     background: var(--main-bg-color) !important;
@@ -31,7 +32,7 @@
     min-height: 50px;
     border: 3px solid transparent;
     border-radius: 8px;
-    background-color: hsla(0, 0%, 100%, .2);
+    background: var(--transparency-dark-20);
     background-clip: padding-box;
 }
 
@@ -43,7 +44,7 @@
     min-height: 50px;
     border: 3px solid transparent;
     border-radius: 8px;
-    background-color: hsla(0, 0%, 100%, .5);
+    background: var(--transparency-light-50);
     background-clip: padding-box;
 }
 
@@ -79,7 +80,7 @@ code {
     font-size: .875em;
     color: #d63384;
     word-wrap: break-word;
-    background: rgb(0 0 0 / 50%);
+    background: var(--transparency-dark-50);
     padding: 2px 6px;
     border-radius: 5px;
 }
@@ -99,7 +100,7 @@ a:hover {
 
 /* TOP NAV */
 .bg-primary {
-    background: rgba(0, 0, 0, .15) !important;
+    background: var(--transparency-dark-15) !important;
 }
 
 .navbar-dark .navbar-brand {
@@ -130,7 +131,7 @@ a:hover {
 .dropdown-item:focus,
 .dropdown-item:hover {
     color: var(--text-hover);
-    background-color: rgba(255, 255, 255, .1);
+    background: var(--transparency-light-10);
 }
 
 .dropdown-item.disabled,
@@ -162,13 +163,13 @@ a:hover {
 
 .btn-light {
     color: var(--button-text);
-    background-color: rgba(255, 255, 255, .08);
+    background-color: var(--transparency-light-10);
     border-color: rgba(255, 255, 255, .08);
 }
 
 .btn-light:hover {
     color: var(--button-text-hover);
-    background-color: rgba(255, 255, 255, .08);
+    background-color: var(--transparency-light-10);
     border-color: rgba(255, 255, 255, .08);
 }
 
@@ -333,7 +334,7 @@ a:hover {
 /* FORMS */
 .form-control {
     color: var(--text-hover);
-    background-color: rgba(0, 0, 0, .15);
+    background: var(--transparency-dark-15);
     border: 1px solid rgba(0, 0, 0, .15);
 }
 
@@ -347,7 +348,7 @@ a:hover {
 
 textarea.form-control:focus {
     color: var(--text-hover);
-    background: rgba(0, 0, 0, .35);
+    background: var(--transparency-dark-35);
     border-color: rgba(255, 255, 255, .15);
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgb(255 255 255 / 0%);
@@ -355,7 +356,7 @@ textarea.form-control:focus {
 
 .form-control:disabled,
 .form-control[readonly] {
-    background-color: rgba(255, 255, 255, .15);
+    background: var(--transparency-light-15);
     opacity: 1;
 }
 
@@ -397,13 +398,13 @@ textarea.form-control:focus {
 .page-item.disabled .page-link {
     color: var(--text-muted);
     pointer-events: none;
-    background-color: rgba(255, 255, 255, .08);
+    background-color: var(--transparency-light-10);
     border-color: rgba(255, 255, 255, .08);
 }
 
 /* CARDS */
 .card {
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
 }
 
 .image-card:hover .overlay {
@@ -411,7 +412,7 @@ textarea.form-control:focus {
     transition: opacity .3s ease-in-out;
     -moz-transition: opacity .3s ease-in-out;
     -webkit-transition: opacity .3s ease-in-out;
-    background: rgba(0, 0, 0, .5);
+    background: var(--transparency-dark-50);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
 }

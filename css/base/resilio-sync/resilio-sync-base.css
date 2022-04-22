@@ -12,6 +12,7 @@
 
 @import url(https://use.fontawesome.com/releases/v5.15.1/css/all.css);
 @import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
 
 body,
 .tableScrollContainer,
@@ -78,7 +79,7 @@ a:hover {
     min-height: 50px;
     border: 3px solid transparent;
     border-radius: 8px;
-    background-color: hsla(0, 0%, 100%, .2);
+    background: var(--transparency-dark-20);
     background-clip: padding-box;
 }
 
@@ -90,7 +91,7 @@ a:hover {
     min-height: 50px;
     border: 3px solid transparent;
     border-radius: 8px;
-    background-color: hsla(0, 0%, 100%, .5);
+    background: var(--transparency-light-50);
     background-clip: padding-box;
 }
 
@@ -142,34 +143,34 @@ UL.jqueryFileTree A,
 
 /* NAVBAR */
 .bt-navbar {
-    background-color: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
 }
 
 .bt-navbar .btn.dropdown-toggle {
-    background-color: rgb(255 255 255 / 8%);
+    background: var(--transparency-light-10);
 }
 
 .bt-navbar .btn.dropdown-toggle:hover {
-    background-color: rgb(255 255 255 / 16%);
+    background: var(--transparency-light-15);
 }
 
 .bt-navbar .btn.btn-tab.active,
 .bt-navbar .btn.btn-tab:active {
-    background-color: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
     border-bottom-color: rgb(var(--accent-color));
 }
 
 .bt-navbar .btn:hover {
-    background-color: rgb(255 255 255 / 8%) !important;
+    background: var(--transparency-light-10) !important;
 }
 
 .bt-navbar .btn#try-pro-button {
-    background-color: rgb(0 0 0 / 50%);
+    background: var(--transparency-dark-50);
     color: var(--button-text);
 }
 
 .bt-navbar .btn#try-pro-button:hover {
-    background-color: rgb(255 255 255 / 8%);
+    background: var(--transparency-light-10);
 }
 
 .bt-navbar .btn.btn-tab {
@@ -206,12 +207,12 @@ UL.jqueryFileTree A,
 
 .dropdown-menu li a:focus,
 .dropdown-menu li a:hover {
-    background-color: rgb(255 255 255 / 8%);
+    background: var(--transparency-light-10);
     color: var(--text-hover);
 }
 
 #columns-context .bt-checkbox:hover {
-    background-color: rgba(255, 255, 255, .1);
+    background: var(--transparency-light-10);
 }
 
 .context-menu .bt-checkbox label,
@@ -229,12 +230,12 @@ UL.jqueryFileTree A,
 }
 
 .sync-level .add-folder-mode li.selected a {
-    background-color: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
 }
 
 .sync-level .add-folder-mode li:not(.selected) a:focus,
 .sync-level .add-folder-mode li:not(.selected) a:hover {
-    background-color: rgb(255 255 255 / .08);
+    background: var(--transparency-light-10);
 }
 
 .sync-level .add-folder-mode .btn-group {
@@ -244,14 +245,14 @@ UL.jqueryFileTree A,
 button.selectpicker.btn-default {
     border-color: #ccc0 !important;
     color: var(--text) !important;
-    background-color: rgb(0 0 0 / 25%) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 .btn-group.open .dropdown-toggle {
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
     border: none;
-    background: rgb(0 0 0 / 50%) !important;
+    background: var(--transparency-dark-50) !important;
 }
 
 .animating {
@@ -331,7 +332,7 @@ button.selectpicker.btn-default {
 .bt-navbar #choose-share-type-menu .container-fluid .menu-item:hover,
 .bt-navbar .choose-dropdown-menu .container-fluid .menu-item:focus,
 .bt-navbar .choose-dropdown-menu .container-fluid .menu-item:hover {
-    background-color: rgb(255 255 255 / 8%);
+    background: var(--transparency-light-10);
 
 }
 
@@ -367,7 +368,7 @@ button.selectpicker.btn-default {
 
 .context-menu li a:focus,
 .context-menu li a:hover {
-    background-color: rgb(255 255 255 / 8%);
+    background: var(--transparency-light-10);
     color: var(--text-hover) !important;
 }
 
@@ -387,7 +388,7 @@ button.selectpicker.btn-default {
 }
 
 #general-settings #languagedrop {
-    background-color: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
     border: transparent;
 }
 
@@ -454,17 +455,17 @@ button.selectpicker.btn-default {
 }
 
 #choose-product-dialog .product-container .product {
-    background-color: rgb(255 255 255 / 0.08);
+    background-color: var(--transparency-light-10);
     border: 1px solid transparent;
 }
 
 .modal-header .close:hover {
-    background: rgb(255 255 255 / 8%);
+    background: var(--transparency-light-10);
 }
 
 ul.jqueryFileTree a.active,
 ul.jqueryFileTree a:hover {
-    background-color: rgb(255 255 255 / 8%);
+    background: var(--transparency-light-10);
     color: var(--text-hover);
 }
 
@@ -506,7 +507,7 @@ ul.jqueryFileTree a:hover {
 #file-sharing-content .shareOptionsContainer .shareOption:hover,
 #sharing-content .shareOptionsContainer .shareOption:hover,
 .sharing-dialog-content .shareOptionsContainer .shareOption:hover {
-    background-color: rgb(255 255 255 / 8%);
+    background: var(--transparency-light-10);
     color: var(--text-hover);
 }
 
@@ -561,7 +562,7 @@ ul.jqueryFileTree a:hover {
 .modal-filter .btn:hover,
 .modal-input .btn:focus,
 .modal-filter animating {
-    background: rgb(255 255 255 / .08) !important;
+    background: var(--transparency-light-10) !important;
 }
 
 /* PAGES */
@@ -582,7 +583,7 @@ ul.jqueryFileTree a:hover {
 #historyContainer .table-filter-panel,
 .resizableTableContainer .table-filter-panel,
 .tableContainerWithFilterPanel .table-filter-panel {
-    background-color: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
     border-bottom: 1px solid rgb(255 255 255 / 10%);
 }
 
@@ -592,7 +593,7 @@ ul.jqueryFileTree a:hover {
 
 /* FOOTER */
 #sync-core-state {
-    background-color: rgb(0 0 0 / 50%);
+    background: var(--transparency-dark-50);
     border-top: 1px solid rgb(255 255 255 / 10%);
 }
 
@@ -624,7 +625,7 @@ ul.jqueryFileTree a:hover {
 #statusPanel .nav-pills a.tab-button:focus,
 #statusPanel .nav-pills a.tab-button:hover,
 #statusPanel .nav-pills .active>a {
-    background-color: rgb(255 255 255 / 8%);
+    background: var(--transparency-light-10);
 }
 
 #statusPanel .tab-content {
@@ -632,7 +633,7 @@ ul.jqueryFileTree a:hover {
 }
 
 #statusPanel .chart-wrapper {
-    background-color: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
     border-right: 1px solid rgba(255, 255, 255, .1);
 }
 
@@ -666,12 +667,12 @@ ul.jqueryFileTree a:hover {
 
 /* SETTINGS */
 .settings-tabs-wrapper .settings-tabs-buttons .left-nav-button.active {
-    background-color: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
     color: rgb(var(--accent-color));
 }
 
 .settings-tabs-wrapper .settings-tabs-buttons .left-nav-button:hover:not(.active) {
-    background-color: rgb(255 255 255 / 8%);
+    background: var(--transparency-light-10);
 }
 
 .settings-tabs-wrapper .settings-tabs-buttons .left-nav-button:hover:not(.active) .txt-button {
@@ -692,12 +693,12 @@ ul.jqueryFileTree a:hover {
 
 .settings-tabs-wrapper .settings-tabs-buttons {
     border-right: 1px solid rgb(255 255 255 / 10%);
-    background: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
 }
 
 /* IDENTITY */
 #my-devices .my-devices .single-my-device:hover:not(.disabled) {
-    background-color: rgb(255 255 255 / 8%);
+    background: var(--transparency-light-10);
 }
 
 #my-devices .my-devices .link-device-block #device-to-qr .device-link {
@@ -745,20 +746,20 @@ ul.jqueryFileTree a:hover {
 
 .transfer-table .transfer-row .optionsColumn .options-button.active,
 .transfer-table .transfer-row .optionsColumn .options-button:hover {
-    background-color: rgb(255 255 255 / 8%);
+    background: var(--transparency-light-10);
 }
 
 /* FORMS */
 .form-control {
     color: var(--text) !important;
-    background-color: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
     border: 1px solid transparent !important;
     box-shadow: none !important;
     transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .form-control:focus {
-    background-color: rgba(0, 0, 0, .5) !important;
+    background: var(--transparency-dark-50) !important;
     color: var(--text-hover) !important;
 }
 
@@ -766,13 +767,13 @@ ul.jqueryFileTree a:hover {
 #advanced-settings-dialog .verticalScrollContainer tr:active,
 #advanced-settings-dialog .verticalScrollContainer tr:focus,
 #advanced-settings-dialog .verticalScrollContainer tr:hover {
-    background-color: rgb(255 255 255 / 8%);
+    background: var(--transparency-light-10);
     color: var(--text-hover);
 }
 
 .table-hover>tbody>tr.active,
 .table-hover>tbody>tr:hover:not(.no-hover) {
-    background-color: rgb(255 255 255 / 8%);
+    background: var(--transparency-light-10);
     color: var(--text-hover);
 }
 

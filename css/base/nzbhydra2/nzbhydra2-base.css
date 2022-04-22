@@ -11,6 +11,7 @@
 /*			      https://github.com/gilbN/theme.park			 */
 
 @import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
 
 body,
 html {
@@ -40,7 +41,7 @@ a:hover {
 }
 
 .navbar-default {
-    background-color: rgba(0, 0, 0, 0.6);
+    background: var(--transparency-dark-60);
     border-color: transparent;
 }
 
@@ -48,13 +49,13 @@ a:hover {
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
     color: rgb(var(--accent-color));
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover {
     color: var(--text-hover);
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -87,7 +88,7 @@ a:hover {
 .nav-tabs>li.active>a:focus,
 .nav-tabs>li.active>a:hover {
     color: rgb(var(--accent-color));
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border: 1px solid #1a1f2000;
     border-bottom-color: transparent;
 }
@@ -99,7 +100,7 @@ a:hover {
 
 .nav>li>a:focus,
 .nav>li>a:hover {
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 .nav-tabs>li>a {
@@ -284,7 +285,7 @@ h6 {
 .dropdown-menu>li>a:hover {
     text-decoration: none;
     color: var(--text-hover);
-    background-color: rgba(255, 255, 255, 0.1);
+    background: var(--transparency-light-10);
 }
 
 .history-title {
@@ -299,7 +300,7 @@ h6 {
 .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default,
 .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default {
     color: var(--text-muted);
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25)
 }
 
 .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary {
@@ -334,13 +335,13 @@ h6 {
 
 .form-control {
     border: 1px solid transparent;
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 
 }
 
 .form-control:focus {
     border-color: rgba(255, 255, 255, 0);
-    background: rgba(0, 0, 0, 0.35);
+    background: var(--transparency-dark-35);
     outline: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -353,19 +354,19 @@ select.form-control:focus {
 
 /* .input-group-addon {
     outline: none;
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border: 1px solid transparent;
 
 } */
 
 /* Categories */
 .panel {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border: 1px solid transparent;
 }
 
 .repeatsection {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     box-shadow: 0 0 4px 1px transparent;
 }
 
@@ -416,19 +417,19 @@ hr {
 }
 
 .well {
-    background-color: hsla(0, 0%, 0%, 0.45);
+    background-color: var(--transparency-dark-45);
     border: 1px solid #00000000;
 }
 
 /* Updates */
 .alert-warning {
-    background: rgba(255, 255, 255, 0.25);
+    background: var(--transparency-light-25);
     border-color: transparent;
     color: var(--text-hover);
 }
 
 .panel-default>.panel-heading {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 .panel-default>.panel-heading {
@@ -437,13 +438,13 @@ hr {
 }
 
 .list-group-item {
-    background-color: rgba(0, 0, 0, 0.08);
+    background: var(--transparency-dark-10);
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Table */
 table {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 .table>thead>tr>th {
@@ -461,7 +462,7 @@ table {
 }
 
 .table-hover>tbody>tr:hover {
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 .search-result-tbody {
@@ -469,7 +470,7 @@ table {
 }
 
 pre {
-    background-color: rgba(0, 0, 0, 0.45);
+    background: var(--transparency-dark-45);
     border: 1px solid transparent;
 }
 
@@ -492,7 +493,7 @@ body>div>div.center-form.panel.col-md-8>div>form>button:active {
 
 /* SEARCH */
 .search-results-table {
-    background-color: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -547,7 +548,7 @@ body>div>div.center-form.panel.col-md-8>div>form>button:active {
 .pagination>.disabled>span:focus,
 .pagination>.disabled>span:hover {
     color: var(--text-muted);
-    background-color: rgba(255, 255, 255, .1);
+    background: var(--transparency-light-10);
     border-color: rgba(255, 255, 255, .1);
     cursor: not-allowed
 }

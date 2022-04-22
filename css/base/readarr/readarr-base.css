@@ -11,6 +11,7 @@
 /* 			      https://github.com/gilbN/theme.park			 */
 
 @import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
 
 :root {
     --calendar-downloaded: 39 194 76;
@@ -168,7 +169,7 @@ a:hover {
 }
 
 [class*="SelectInput-select-"] {
-    background-color: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 [class*="SelectInput-select-"]:active,
@@ -185,7 +186,7 @@ a:hover {
 }
 
 [class*="AutoSuggestInput-suggestionHighlighted-"] {
-    background-color: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
 }
 
 [class*="CheckInput-primaryIsChecked-"] {
@@ -201,7 +202,7 @@ a:hover {
 /* HEADER */
 
 [class*="PageHeader-header-"] {
-    background-color: rgba(0, 0, 0, .35);
+    background: var(--transparency-dark-35);
     color: var(--text);
 }
 
@@ -231,25 +232,25 @@ a:hover {
 }
 
 [class*="AuthorSearchInput-highlighted-"] {
-    background-color: hsla(0, 0%, 100%, .08)
+    background: var(--transparency-dark-10)
 }
 
 [class*"=AuthorSearchInput-authorContainer-"]::-webkit-scrollbar-thumb,
 [class*="ImportAuthorSelectAuthor-results-"]::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.25);
+    background: var(--transparency-light-25);
 }
 
 /* MINI RIGHT SCROLL BAR */
 [class*="OverlayScroller-thumb-"],
 [class*="ImportAuthorSelectAuthor-results-"]::-webkit-scrollbar-thumb,
 [class*="Scroller-scroller-"]::-webkit-scrollbar-thumb {
-    background-color: hsla(0, 0%, 100%, .08) !important;
+    background: var(--transparency-dark-10) !important;
 }
 
 [class*="OverlayScroller-thumb-"]:hover,
 [class*="ImportAuthorSelectAuthor-results-"]::-webkit-scrollbar-thumb:hover,
 [class*="Scroller-scroller-"]::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(255, 255, 255, 0.25) !important;
+    background: var(--transparency-light-25) !important;
 }
 
 /* ADD NEW */
@@ -272,12 +273,12 @@ a:hover {
 
 [class*="EnhancedSelectInputOption-isSelected-"],
 [class*="EnhancedSelectInputOption-isSelected-"]:hover {
-    background-color: rgba(255, 255, 255, 0.20) !important;
+    background: var(--transparency-light-20) !important;
     color: var(--text-hover);
 }
 
 [class*="EnhancedSelectInputOption-option-"]:hover {
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 [class*="HintedSelectInputOption-hintText-"] {
@@ -313,7 +314,7 @@ a:hover {
 
 /* SIDE MENU */
 [class*="PageSidebar-sidebarContainer-"] {
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
 }
 
 [class*="PageSidebar-sidebar-"] {
@@ -336,7 +337,7 @@ a:hover {
 }
 
 [class*="PageSidebarItem-isActiveParentLink-"] {
-    background-color: rgba(0, 0, 0, 0.15);
+    background: var(--transparency-dark-15);
 }
 
 @media only screen and (max-width: 768px) {
@@ -384,7 +385,7 @@ a:hover {
 }
 
 [class*="AuthorIndexOverview-content-"]:hover {
-    background-color: hsla(0, 0%, 100%, .08) !important;
+    background: var(--transparency-dark-10) !important;
 }
 
 [class*="AuthorIndexOverview-link-"]:hover {
@@ -392,7 +393,7 @@ a:hover {
 }
 
 [class*="ProgressBar-container-"] {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 [class*=".ProgressBar-purple-"] {
@@ -404,7 +405,7 @@ a:hover {
 [class*="AuthorDetailsSeason-albumType-"],
 [class*="AuthorDetailsSeason-collapseButtonContainer-"] {
     border: none !important;
-    background-color: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 [class*="AuthorDetailsSeason-header-"],
@@ -451,12 +452,12 @@ a:hover {
 
 [class*="AlbumDetailsMedium-medium-"] {
     border: none;
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
 }
 
 [class*="ExtraFileTable-container-"] {
     border: 1px solid transparent;
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
 }
 
 [class*="AlbumDetails-selectedTab-"] {
@@ -465,16 +466,16 @@ a:hover {
 
 [class*="AlbumDetailsMedium-collapseButtonContainer-"] {
     border: none;
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
 }
 
 [class*="AuthorIndexProgressBar-progress-"] {
-    background-color: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
 }
 
 [class*="AuthorIndexBanner-title-"],
 [class*="AuthorIndexBannerInfo-info-"] {
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     color: var(--text-hover);
 }
 
@@ -583,7 +584,7 @@ a:hover {
 
 /* Table options*/
 [class*="TableOptionsColumn-column-"] {
-    background: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     color: var(--text-hover);
     border: none;
 }
@@ -597,17 +598,17 @@ a:hover {
 }
 
 [class*="TableRow-row-"]:hover {
-    background-color: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
     color: var(--text-hover);
 }
 
 [class*="TableRowCell-cell-"] {
-    border-top: 1px solid rgb(255 255 255 / 25%);
+    border-top: 1px solid var(--transparency-light-25);
 }
 
 /* TOP MENU SERIES */
 [class*="PageToolbar-toolbar-"] {
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     color: var(--text);
 }
 
@@ -642,7 +643,7 @@ a:hover {
 [class*="AuthorIndexPosterInfo-info-"],
 [class*="BookIndexPoster-title-"],
 [class*="BookIndexPosterInfo-info-"] {
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
     color: var(--text-hover);
 }
 
@@ -670,13 +671,13 @@ a:hover {
 
 [class*="MenuItem-menuItem-"]:hover,
 [class*="MenuItem-menuItem-"]:focus {
-    background: hsla(0, 0%, 100%, .08) !important;
+    background: var(--transparency-dark-10) !important;
     color: var(--text-hover);
     text-decoration: none;
 }
 
 [class*="MenuItemSeparator-separator-"] {
-    background-color: hsla(0, 0%, 100%, .08) !important;
+    background: var(--transparency-dark-10) !important;
 }
 
 /* ALPHABET JUMP BAR */
@@ -689,7 +690,7 @@ a:hover {
 [class*="AddNewItem-searchIconContainer-"],
 [class*="CheckInput-isIndeterminate-"] {
     border: none;
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
     color: var(--text-hover);
 }
 
@@ -712,7 +713,7 @@ a:hover {
     outline: 0;
     border-color: var(--text-hover);
     box-shadow: none;
-    background-color: rgba(255, 255, 255, 0.25);
+    background: var(--transparency-light-25);
 }
 
 [class*="TagInput-input-"][class*="TagInput-isFocused-"] {
@@ -745,7 +746,7 @@ a:hover {
 [class*="AddNewAuthorSearchResult-searchResult-"]:hover,
 [class*="AddNewAuthorSearchResult-underlay-"]:hover,
 [class*="AddNewAlbumSearchResult-underlay-"]:hover {
-    background-color: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
     color: inherit;
     text-decoration: none;
 }
@@ -778,7 +779,7 @@ a:hover {
 }
 
 [class*="ImportAuthorSearchResult-author-"]:hover {
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 /* IMPORT */
@@ -789,14 +790,14 @@ a:hover {
 
 [class*="ExpandingFileDetails-fileDetails-"] {
     border: 1px solid rgb(255 255 255 / .1);
-    background-color: rgb(255 255 255 / 8%);
+    background: var(--transparency-light-10);
 }
 
 /* IMPORT NEW ARTIST */
 /* Drop down menu/button*/
 [class*="ImportAuthorSelectAuthor-button-"] {
     border: none;
-    background-color: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
     color: var(--text-hover);
 }
 
@@ -809,14 +810,14 @@ a:hover {
 }
 
 [class*="VirtualTableRow-row-"]:hover {
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 /*Title*/
 
 [class*="PageJumpBarItem-jumpBarItem-"]:hover {
     color: var(--text-hover);
-    background: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
 }
 
 /*Posters*/
@@ -827,7 +828,7 @@ a:hover {
 /* FOOTER */
 [class*="PageContentFooter-contentFooter-"] {
     border: none;
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     color: var(--text-hover);
 }
 
@@ -889,18 +890,18 @@ a:hover {
 }
 
 [class*="DayOfWeek-dayOfWeek-"] {
-    background-color: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
     color: var(--text-hover);
 }
 
 [class*="CalendarDay-dayOfMonth-"] {
     border-bottom: 1px solid hsla(0, 0%, 100%, .08);
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
 }
 
 [class*="CalendarDay-isToday-"],
 [class*="DayOfWeek-isToday-"] {
-    background-color: hsla(0, 0%, 100%, .25) !important;
+    background: var(--transparency-dark-25) !important;
     color: var(--text-hover);
 }
 
@@ -943,7 +944,7 @@ color: var(--text-hover) !important;
 
 /* calendar agenda */
 [class*="AgendaEvent-event-"]:hover {
-    background-color: hsla(0, 0%, 100%, .08) !important;
+    background: var(--transparency-dark-10) !important;
 }
 
 /* SETTINGS */
@@ -970,15 +971,15 @@ color: var(--text-hover) !important;
 }
 
 [class*="NamingOption-token-"] {
-    background-color: rgba(255, 255, 255, 0.15);
+    background: var(--transparency-light-15);
 }
 
 [class*="NamingOption-token-"] {
-    background-color: rgba(255, 255, 255, 0.15);
+    background: var(--transparency-light-15);
 }
 
 [class*="NamingOption-example-"] {
-    background-color: rgba(255, 255, 255, 0.25);
+    background: var(--transparency-light-25);
 }
 
 [class*="NamingOption-option-"] {
@@ -986,17 +987,17 @@ color: var(--text-hover) !important;
 }
 
 [class*="NamingOption-option-"]:hover [class*="NamingOption-token-"] {
-    background-color: rgba(255, 255, 2550, 0.25);
+    background: var(--transparency-light-25);
 }
 
 [class*="NamingOption-option-"]:hover [class*="NamingOption-example-"] {
-    background-color: rgba(255, 255, 2550, 0.35);
+    background: var(--transparency-light-35);
 }
 
 /* PROFILES */
 [class*="Card-card-"],
 [class*="QualityProfiles-addQualityProfile-"] {
-    background-color: rgba(0, 0, 0, .45);
+    background: var(--transparency-dark-45);
     box-shadow: 0 0 10px 1px #000000;
     color: var(--text);
 }
@@ -1021,12 +1022,12 @@ color: var(--text-hover) !important;
 [class*="QualityProfileItemGroup-qualityProfileItemGroup-"],
 [class*="LanguageProfileItem-languageProfileItem-"] {
     border: none;
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     color: var(--text-hover);
 }
 
 [class*="QualityProfileItemGroup-qualityProfileItemGroup-"][class*="QualityProfileItemGroup-editGroups-"] {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25)
 }
 
 [class*="KeyValueListInputItem-keyInput-"],
@@ -1038,7 +1039,7 @@ color: var(--text-hover) !important;
 
 [class*="QualityProfileFormatItem-qualityProfileFormatItem-"] {
     border: 1px solid transparent;
-    background: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25)
 }
 
 [class*="QualityDefinitions-sizeLimitHelpText-"] {
@@ -1053,7 +1054,7 @@ color: var(--text-hover) !important;
 
 [class*="Card-card-"],
 [class*="QualityProfiles-addQualityProfile-"] {
-    background-color: rgba(0, 0, 0, .45);
+    background: var(--transparency-dark-45);
     box-shadow: 0 0 10px 1px #000000;
     color: var(--text);
 }
@@ -1101,7 +1102,7 @@ color: var(--text-hover) !important;
 /* LOG */
 [class*="Alert-info-"] {
     border-color: transparent;
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     color: #FFC107;
 }
 
@@ -1127,12 +1128,12 @@ color: var(--text-hover) !important;
 /* Login Page */
 
 .panel-body {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     color: var(--text);
 }
 
 .panel-header {
-    background-color: rgba(0, 0, 0, 0.45);
+    background: var(--transparency-dark-45);
 }
 
 .forgot-password {
@@ -1142,7 +1143,7 @@ color: var(--text-hover) !important;
 input[type=email],
 input[type=password] {
     border: none;
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
     color: var(--text-hover);
 }
 
@@ -1163,7 +1164,7 @@ input[type=password] {
     outline: 0;
     border-color: var(--text-hover);
     box-shadow: none;
-    background-color: rgba(255, 255, 255, 0.25);
+    background: var(--transparency-light-25);
 }
 
 /* Custom filter */
@@ -1172,7 +1173,7 @@ input[type=password] {
 }
 
 [class*="CustomFilter-customFilter-"]:hover {
-    background-color: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
 }
 
 /* Readarr */
@@ -1181,7 +1182,7 @@ input[type=password] {
 
 [class*="AuthorIndexPoster-link-"],
 [class*="AuthorIndexPoster-title-"] {
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 /* Add New*/
@@ -1192,7 +1193,7 @@ input[type=password] {
 
 [class*="AddNewAuthorSearchResult-underlay-"]:hover,
 [class*="AddNewBookSearchResult-underlay-"]:hover {
-    background-color: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
     color: inherit;
     text-decoration: none;
 }
@@ -1203,17 +1204,17 @@ input[type=password] {
 }
 
 [class*="AuthorIndexBanner-title-"] {
-    background-color: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
 }
 
 [class*="AuthorIndexOverview-container-"]:hover [class*="AuthorIndexOverview-content-"] {
-    background-color: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
 }
 
 /*Books Tab*/
 [class*="AuthorDetailsSeason-bookType-"] {
     border: none;
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
 }
 
 [class*="AuthorDetailsSeason-books-"] {
@@ -1231,7 +1232,7 @@ input[type=password] {
 
 [class*="BookshelfBook-book-"] {
     border: 1px solid transparent;
-    background-color: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
     ;
 }
 
@@ -1244,18 +1245,18 @@ input[type=password] {
 [class*="BookFileEditorTableContent-filesTable-"] {
     border: 1px solid rgb(255 255 255 / 10%);
     border-top: 1px solid rgb(255 255 255 / 50%);
-    background-color: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
 }
 
 /*Series Tab*/
 [class*="AuthorDetailsSeries-bookType-"] {
     border: none;
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
 }
 
 [class*="AuthorDetailsSeries-collapseButtonContainer-"] {
     border: none;
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
 }
 
 [class*="AuthorDetailsSeries-bookTypeLabel-"] {

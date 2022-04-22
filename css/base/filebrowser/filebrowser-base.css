@@ -11,6 +11,7 @@
 /*			      https://github.com/gilbN/theme.park			 */
 
 @import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
 
 .message {
     color: var(--text-hover);
@@ -48,7 +49,7 @@ th {
 #login input[type=password],
 #login input[type=text] {
     color: var(--text-hover) !important;
-    background-color: rgba(0, 0, 0, 0.15) !important;
+    background: var(--transparency-dark-15) !important;
     border: none;
 }
 
@@ -103,7 +104,7 @@ body {
 }
 
 nav {
-    background: rgba(0, 0, 0, .45);
+    background: var(--transparency-dark-45);
     height: 100%;
     top: 64px;
     width: 240px;
@@ -124,7 +125,7 @@ nav .action {
 }
 
 nav .action:hover {
-    background-color: rgba(255, 255, 255, 0.05);
+    background: var(--transparency-light-05);
     color: rgb(var(--accent-color));
 }
 
@@ -133,7 +134,7 @@ nav>div {
 }
 
 header {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -174,20 +175,20 @@ body {
 }
 
 #listing.list .item {
-    background-color: rgba(0, 0, 0, .15);
+    background: var(--transparency-dark-15);
     color: var(--text);
     border: none;
 }
 
 #listing.list .item:hover {
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
     color: var(--text-hover);
     border: none;
     transition: .4s;
 }
 
 #listing.list .item.header {
-    background-color: rgba(0, 0, 0, .45);
+    background: var(--transparency-dark-45);
     color: var(--text-hover);
     border-bottom: none;
     right: auto;
@@ -213,7 +214,7 @@ body {
 }
 
 .share__box__info {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 .share__box__download {
@@ -271,13 +272,13 @@ svg {
 }
 
 #listing .item {
-    background-color: rgba(0, 0, 0, .15);
+    background: var(--transparency-dark-15);
     color: var(--text);
     border: none;
 }
 
 .input {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     color: var(--text-hover);
 }
 
@@ -304,7 +305,7 @@ select>option {
 }
 
 #search .boxes {
-    background-color: rgba(0, 0, 0, .15);
+    background: var(--transparency-dark-15);
     padding: 15px;
 }
 
@@ -313,11 +314,11 @@ select>option {
 }
 
 #search .boxes>div>div {
-    background-color: rgba(0, 0, 0, .10);
+    background: var(--transparency-dark-10);
 }
 
 #search .boxes>div>div:hover {
-    background-color: rgba(255, 255, 255, .08);
+    background-color: var(--transparency-light-10);
 }
 
 #search.active #input {
@@ -343,7 +344,7 @@ select>option {
 }
 
 .card {
-    background-color: rgba(0, 0, 0, .15);
+    background: var(--transparency-dark-15);
 }
 
 .card h3 {
@@ -404,7 +405,7 @@ table th {
 }
 
 #search #input {
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 #listing.mosaic .item {
@@ -413,7 +414,7 @@ table th {
 
 #listing.mosaic .item:hover {
     box-shadow: none !important;
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 .dashboard p label {

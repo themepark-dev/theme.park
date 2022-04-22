@@ -11,11 +11,12 @@
 /*			      https://github.com/gilbN/theme.park			 */
 
 @import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
 
 :root {
     --scheme-main-ter: var(--main-bg-color);
     --text-strong-color: var(--button-text-hover);
-    --border-color: rgb(255 255 255 / 25%);
+    --border-color: var(--transparency-light-25);
     --logo-color: rgb(var(--accent-color));
     --body-background-color: var(--main-bg-color);
     --border-hover-color: rgb(var(--accent-color));
@@ -53,14 +54,14 @@ section header,
 /* Scrollbar */
 
 html.has-custom-scrollbars ::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, .25);
+    background: var(--transparency-light-25);
     outline: 1px solid #0000;
     border-radius: 4px;
 }
 
 html.has-custom-scrollbars ::-webkit-scrollbar-thumb:active,
 html.has-custom-scrollbars ::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(255, 255, 255, .45);
+    background: var(--transparency-light-45);
 
 }
 
@@ -110,13 +111,13 @@ p,
 
 a.panel-block:hover,
 label.panel-block:hover {
-    background-color: rgba(255, 255, 255, .08);
+    background-color: var(--transparency-light-10);
     color: var(--text-strong-color);
 }
 
 /* Side Menu*/
 .menu-list a:hover {
-    background-color: rgba(255, 255, 255, .08);
+    background-color: var(--transparency-light-10);
     color: var(--text-hover) !important;
 }
 
@@ -154,7 +155,7 @@ li.exited a {
 .autocomplete .dropdown-item.is-hovered,
 a.dropdown-item:hover,
 button.dropdown-item:hover {
-    background: rgba(255, 255, 255, .25);
+    background: var(--transparency-light-25);
     color: var(--text-strong-color);
 }
 
@@ -234,7 +235,7 @@ section .is-scrollbar-notification button {
 }
 
 code {
-    background: rgba(0, 0, 0, .35) !important;
+    background: var(--transparency-dark-35) !important;
 }
 
 .switch input[type=checkbox]:checked+.check {
@@ -253,7 +254,7 @@ code {
 /* Events */
 
 .events {
-    background: rgba(0, 0, 0, .35);
+    background: var(--transparency-dark-35);
 }
 
 .scroll-progress svg circle {
@@ -270,10 +271,10 @@ code {
 }
 
 .events.medium {
-    background: rgba(0, 0, 0, .45);
+    background: var(--transparency-dark-45);
 }
 
 .date {
     color: rgb(var(--accent-color)) !important;
-    background: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
 }

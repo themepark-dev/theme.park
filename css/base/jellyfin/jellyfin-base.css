@@ -1,4 +1,5 @@
 @import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
 
 :root {
     --theme-primary-color: var(--accent-color);
@@ -11,15 +12,15 @@
     --theme-background: var(--main-bg-color);
     --header-blur-background: rgba(20, 20, 20, 0.66);
     --drawer-background: #2C2C2E;
-    --docked-drawer-background: rgba(0, 0, 0, 0.25);
+    --docked-drawer-background: var(--transparency-dark-25);
     --button-background: var(--button-color);
-    --card-background: rgba(0, 0, 0, 0.15);
+    --card-background: var(--transparency-dark-15);
     --footer-background: var(--modal-footer-color);
     --footer-blur-background: rgba(29, 29, 31, 0.66);
 
     --header-background: var(--theme-background);
     --theme-body-secondary-text-color: rgba(255, 255, 255, .6);
-    --line-background: rgba(255, 255, 255, .08);
+    --line-background: var(--transparency-light-10);
     --line-size: .08em;
     --scrollbar-thumb-background: rgba(255, 255, 255, .3);
 }
@@ -29,9 +30,9 @@
         --theme-background: var(--main-bg-color);
         --header-blur-background: rgba(20, 20, 20, 0.66);
         --drawer-background: #2C2C2E;
-        --docked-drawer-background: rgba(0, 0, 0, 0.25);
+        --docked-drawer-background: var(--transparency-dark-25);
         --button-background: #1f1f1f;
-        --card-background: rgba(0, 0, 0, 0.15);
+        --card-background: var(--transparency-dark-15);
         --footer-background: var(--modal-footer-color);
         --footer-blur-background: rgba(29, 29, 31, 0.66);
     }
@@ -41,9 +42,9 @@
     --theme-background: var(--main-bg-color);
     --header-blur-background: rgba(20, 20, 20, 0.66);
     --drawer-background: #2C2C2E;
-    --docked-drawer-background: rgba(0, 0, 0, 0.25);
+    --docked-drawer-background: var(--transparency-dark-25);
     --button-background: #1f1f1f;
-    --card-background: rgba(0, 0, 0, 0.15);
+    --card-background: var(--transparency-dark-15);
     --footer-background: var(--modal-footer-color);
     --footer-blur-background: rgba(29, 29, 31, 0.66);
 }
@@ -173,7 +174,7 @@ html {
 }
 
 .backgroundContainer.withBackdrop {
-    background-color: rgba(0, 0, 0, .83)
+    background: var(--transparency-dark-80)
 }
 
 @media not all and (min-width: 50em) {
@@ -215,7 +216,7 @@ html {
 
 .emby-select-withcolor {
     color: inherit;
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border: var(--line-size) solid transparent
 }
 
@@ -341,7 +342,7 @@ html {
 
 @media(hover: hover) and (pointer:fine) {
     .actionSheetMenuItem:hover {
-        background-color: rgba(255, 255, 255, .2);
+        background: var(--transparency-light-20);
         color: var(--text-hover);
     }
 }
@@ -376,7 +377,7 @@ html {
 
 .detailTableBodyRow-shaded:nth-child(even) {
     background: #1c1c1c;
-    background: rgba(30, 30, 30, .9)
+    background: var(--transparency-dark-90)
 }
 
 .listItem-border {
@@ -384,7 +385,7 @@ html {
 }
 
 .listItem-focusscale:focus {
-    background: rgba(54, 54, 54, .8)
+    background: var(--transparency-dark-80)
 }
 
 .listItemIcon:not(.listItemIcon-transparent) {
@@ -411,7 +412,7 @@ html {
 .emby-input,
 .emby-textarea {
     color: inherit;
-    background: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
     border: var(--line-size) solid rgba(255, 255, 255, 0.1)
 }
 
@@ -705,7 +706,7 @@ html {
 
 .scrollbuttoncontainer {
     color: var(--text-hover);
-    background: rgba(20, 20, 20, .5)
+    background: var(--transparency-dark-50)
 }
 
 .recordingIcon-active {

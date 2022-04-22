@@ -11,6 +11,7 @@
 /*			      https://github.com/gilbN/theme.park			 */
 
 @import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
 
 * {
     outline: none !important;
@@ -88,7 +89,7 @@ a:hover,
     min-height: 50px;
     border: 3px solid transparent;
     border-radius: 8px;
-    background-color: hsla(0, 0%, 100%, .2);
+    background: var(--transparency-dark-20);
     background-clip: padding-box;
 }
 
@@ -100,7 +101,7 @@ a:hover,
     min-height: 50px;
     border: 3px solid transparent;
     border-radius: 8px;
-    background-color: hsla(0, 0%, 100%, .5);
+    background: var(--transparency-light-50);
     background-clip: padding-box;
 }
 
@@ -135,7 +136,7 @@ a:hover,
 .navbar-default .navbar-nav>li>a:focus {
     color: var(--text-hover);
     background-image: none;
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
 }
 
 /* BUTTONS */
@@ -307,7 +308,7 @@ button.close {
 
 .form-control {
     color: var(--text);
-    background-color: rgba(255, 255, 255, 0.1);
+    background: var(--transparency-light-10);
     background-image: none;
     border: 1px solid transparent;
 }
@@ -326,7 +327,7 @@ select.form-control:active,
 .configtable .input-group .form-control:active,
 .configtable .input-group .form-control:focus {
     color: var(--text-hover);
-    background-color: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
     background-image: none;
     border: 1px solid transparent;
 }
@@ -335,7 +336,7 @@ select.form-control:active,
 /* TABLE */
 
 table {
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 thead {
@@ -343,11 +344,11 @@ thead {
 }
 
 .table-striped>tbody>tr:nth-of-type(odd) {
-    background-color: rgba(0, 0, 0, 0.08);
+    background: var(--transparency-dark-10);
 }
 
 .table-hover>tbody>tr:hover {
-    background-color: rgba(255, 255, 255, 0.08) !important;
+    background: var(--transparency-light-10) !important;
 }
 
 .table-bordered {
@@ -366,7 +367,7 @@ thead {
 /* BOOKWALL */
 
 .table-responsive>.table {
-    background-color: rgba(255, 255, 255, .08);
+    background-color: var(--transparency-light-10)
 }
 
 /* SETTINGS */
@@ -375,7 +376,7 @@ thead {
 .nav-tabs>li.active>a:hover,
 .nav-tabs>li.active>a:focus {
     color: rgb(var(--accent-color));
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
     border: 1px solid TRANSPARENT;
     border-bottom-color: transparent;
     cursor: default;
@@ -392,7 +393,7 @@ thead {
 .nav>li>a:hover,
 .nav>li>a:focus {
     text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.15);
+    background: var(--transparency-light-15);
 }
 
 .input-group-addon {
@@ -451,6 +452,6 @@ legend {
 
 pre {
     color: var(--text);
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border: 1px solid transparent;
 }

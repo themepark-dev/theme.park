@@ -11,6 +11,7 @@
 /* 			      https://github.com/gilbN/theme.park			 */
 
 @import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
 
 :root {
     --calendar-tv-unaired-premiere: 53 197 244;
@@ -178,7 +179,7 @@ a:hover {
 }
 
 [class*="SelectInput-select-"] {
-    background-color: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 [class*="SelectInput-select-"]:active,
@@ -195,7 +196,7 @@ a:hover {
 }
 
 [class*="AutoSuggestInput-suggestionHighlighted-"] {
-    background-color: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
 }
 
 [class*="CheckInput-primaryIsChecked-"] {
@@ -211,7 +212,7 @@ a:hover {
 /* HEADER */
 
 [class*="PageHeader-header-"] {
-    background-color: rgba(0, 0, 0, .35);
+    background: var(--transparency-dark-35);
     color: var(--text);
 }
 
@@ -225,7 +226,7 @@ a:hover {
 
 [class*="EpisodeDetailsModalContent-selectedTab-"] {
     border-color: var(--accent-color-hover);
-    background-color: rgb(0 0 0 / 40%);
+    background: var(--transparency-dark-40);
 }
 
 [class*="SeriesSearchInput-sectionTitle-"] {
@@ -247,24 +248,24 @@ a:hover {
 }
 
 [class*="SeriesSearchInput-highlighted-"] {
-    background-color: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
 }
 
 [class*="SeriesSearchInput-seriesContainer-"]::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.25) !important;
+    background: var(--transparency-light-25) !important;
 }
 
 [class*="Scroller-scroller-"]::-webkit-scrollbar-thumb {
-    background-color: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
 }
 
 [class*="Scroller-scroller-"]::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(255, 255, 255, 0.25);
+    background: var(--transparency-light-25);
 }
 
 /* SIDE MENU */
 [class*="PageSidebar-sidebarContainer-"] {
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
 }
 
 [class*="PageSidebar-sidebar-"] {
@@ -287,7 +288,7 @@ a:hover {
 }
 
 [class*="PageSidebarItem-isActiveParentLink-"] {
-    background-color: rgba(0, 0, 0, 0.15);
+    background: var(--transparency-dark-15);
 }
 
 @media only screen and (max-width: 768px) {
@@ -328,7 +329,7 @@ a:hover {
 }
 
 [class*="SeriesIndexOverview-content-"]:hover {
-    background-color: hsla(0, 0%, 100%, .08) !important;
+    background: var(--transparency-dark-10) !important;
 }
 
 [class*="SeriesIndexOverview-link-"]:hover {
@@ -336,7 +337,7 @@ a:hover {
 }
 
 [class*="ProgressBar-container-"] {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 
@@ -348,7 +349,7 @@ a:hover {
 [class*="SeriesDetailsSeason-season-"],
 [class*="SeriesDetailsSeason-collapseButtonContainer-"] {
     border: none !important;
-    background-color: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 [class*="SeriesDetailsSeason-episodes-"] {
@@ -403,7 +404,7 @@ a:hover {
 
 [class*="SeriesDetailsSeason-collapseButtonContainer-"] {
     border: none !important;
-    background-color: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 [class*="Tooltip-tooltip-"][class*="Tooltip-inverse-"],
@@ -520,7 +521,7 @@ a:hover {
 
 /* Table options*/
 [class*="TableOptionsColumn-column-"] {
-    background: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     color: var(--text-hover);
     border: none;
 }
@@ -534,17 +535,17 @@ a:hover {
 }
 
 [class*="TableRow-row-"]:hover {
-    background-color: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
     color: var(--text-hover);
 }
 
 [class*="TableRowCell-cell-"] {
-    border-top: 1px solid rgb(255 255 255 / 25%);
+    border-top: 1px solid var(--transparency-light-25);
 }
 
 /* TOP MENU SERIES */
 [class*="PageToolbar-toolbar-"] {
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     color: var(--text);
 }
 
@@ -574,7 +575,7 @@ a:hover {
 [class*="SeriesIndexPoster-title-"],
 [class*="SeriesIndexPoster-nextAiring-"],
 [class*="SeriesIndexPosterInfo-info-"] {
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
     color: var(--text-hover);
 }
 
@@ -601,13 +602,13 @@ a:hover {
 
 [class*="MenuItem-menuItem-"]:hover,
 [class*="MenuItem-menuItem-"]:focus {
-    background: hsla(0, 0%, 100%, .08) !important;
+    background: var(--transparency-dark-10) !important;
     color: var(--text-hover);
     text-decoration: none;
 }
 
 [class*="MenuItemSeparator-separator-"] {
-    background-color: hsla(0, 0%, 100%, .08) !important;
+    background: var(--transparency-dark-10) !important;
 }
 
 /* ALPHABET JUMP BAR */
@@ -618,12 +619,12 @@ a:hover {
 /* MINI RIGHT SCROLL BAR */
 [class*="OverlayScroller-thumb-"],
 [class*="ImportSeriesSelectSeries-results-"]::-webkit-scrollbar-thumb {
-    background-color: hsla(0, 0%, 100%, .08) !important;
+    background: var(--transparency-dark-10) !important;
 }
 
 [class*="OverlayScroller-thumb-"]:hover,
 [class*="ImportSeriesSelectSeries-results-"]::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(255, 255, 255, 0.25) !important;
+    background: var(--transparency-light-25) !important;
 }
 
 /* ADD NEW */
@@ -647,12 +648,12 @@ a:hover {
 
 [class*="EnhancedSelectInputOption-isSelected-"],
 [class*="EnhancedSelectInputOption-isSelected-"]:hover {
-    background-color: rgba(255, 255, 255, 0.20) !important;
+    background: var(--transparency-light-20) !important;
     color: var(--text-hover);
 }
 
 [class*="EnhancedSelectInputOption-option-"]:hover {
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 [class*="HintedSelectInputOption-hintText-"] {
@@ -689,7 +690,7 @@ a:hover {
 [class*="AddNewSeries-searchIconContainer-"],
 [class*="CheckInput-isIndeterminate-"] {
     border: none;
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
     color: var(--text-hover);
 }
 
@@ -712,7 +713,7 @@ a:hover {
     outline: 0;
     border-color: var(--text-hover);
     box-shadow: none;
-    background-color: rgba(255, 255, 255, 0.25);
+    background: var(--transparency-light-25);
 }
 
 [class*="TagInput-input-"][class*="TagInput-isFocused-"] {
@@ -736,7 +737,7 @@ a:hover {
 }
 
 [class*="AddNewSeriesSearchResult-underlay-"]:hover {
-    background-color: hsla(0, 0%, 100%, .08) !important;
+    background: var(--transparency-dark-10) !important;
 }
 
 [class*="AddNewSeriesSearchResult-year-"] {
@@ -761,17 +762,17 @@ a:hover {
 }
 
 [class*="VirtualTableRow-row-"]:hover {
-    background-color: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
 }
 
 /* Drop down menu/button*/
 [class*="ImportSeriesSelectSeries-button-"] {
     border: none !important;
-    background-color: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 [class*="ImportSeriesSearchResult-series-"]:hover {
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 [class*="ImportSeriesSelectSeries-content-"],
@@ -796,7 +797,7 @@ a:hover {
 /* FOOTER */
 [class*="PageContentFooter-contentFooter-"] {
     border: none;
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     color: var(--text-hover);
 }
 
@@ -804,7 +805,7 @@ a:hover {
 
 [class*="SeasonPassSeason-season-"] {
     border: none;
-    background-color: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 [class*="SeasonPassSeason-allEpisodes-"] {
@@ -883,18 +884,18 @@ a:hover {
 }
 
 [class*="DayOfWeek-dayOfWeek-"] {
-    background-color: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
     color: var(--text-hover);
 }
 
 [class*="CalendarDay-dayOfMonth-"] {
     border-bottom: 1px solid hsla(0, 0%, 100%, .08);
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
 }
 
 [class*="CalendarDay-isToday-"],
 [class*="DayOfWeek-isToday-"] {
-    background-color: hsla(0, 0%, 100%, .25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 [class*="CalendarDay-day-"],
@@ -939,7 +940,7 @@ a:hover {
 
 /* calendar agenda */
 [class*="AgendaEvent-event-"]:hover {
-    background-color: hsla(0, 0%, 100%, .08) !important;
+    background: var(--transparency-dark-10) !important;
 }
 
 /*QUEUE PAGE */
@@ -972,25 +973,25 @@ a:hover {
 }
 
 [class*="NamingOption-token-"] {
-    background-color: rgba(255, 255, 255, 0.15);
+    background: var(--transparency-light-15);
 }
 
 [class*="NamingOption-example-"] {
-    background-color: rgba(255, 255, 255, 0.25);
+    background: var(--transparency-light-25);
 }
 
 [class*="NamingOption-option-"]:hover [class*="NamingOption-token-"] {
-    background-color: rgba(255, 255, 2550, 0.25);
+    background: var(--transparency-light-25);
 }
 
 [class*="NamingOption-option-"]:hover [class*="NamingOption-example-"] {
-    background-color: rgba(255, 255, 2550, 0.35);
+    background: var(--transparency-light-35);
 }
 
 /* PROFILES */
 [class*="Card-card-"],
 [class*="QualityProfiles-addQualityProfile-"] {
-    background-color: rgba(0, 0, 0, .45);
+    background: var(--transparency-dark-45);
     box-shadow: 0 0 10px 1px #000000;
     color: var(--text);
 }
@@ -1014,12 +1015,12 @@ a:hover {
 [class*="QualityProfileItemGroup-qualityProfileItemGroup-"],
 [class*="LanguageProfileItem-languageProfileItem-"] {
     border: none;
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     color: var(--text-hover);
 }
 
 [class*="QualityProfileItemGroup-qualityProfileItemGroup-"][class*="QualityProfileItemGroup-editGroups-"] {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25)
 }
 
 [class*="KeyValueListInputItem-keyInput-"],
@@ -1062,19 +1063,19 @@ a:hover {
 /* LOG */
 [class*="Alert-info-"] {
     border-color: transparent;
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     color: #FFC107;
 }
 
 /* Login Page */
 
 .panel-body {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     color: var(--text);
 }
 
 .panel-header {
-    background-color: rgba(0, 0, 0, 0.45);
+    background: var(--transparency-dark-45);
 }
 
 .forgot-password {
@@ -1084,7 +1085,7 @@ a:hover {
 input[type=email],
 input[type=password] {
     border: none;
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
     color: var(--text-hover);
 }
 
@@ -1105,7 +1106,7 @@ input[type=password] {
     outline: 0;
     border-color: var(--text-hover);
     box-shadow: none;
-    background-color: rgba(255, 255, 255, 0.25);
+    background: var(--transparency-light-25);
 }
 
 /* Custom filter */
@@ -1114,7 +1115,7 @@ input[type=password] {
 }
 
 [class*="CustomFilter-customFilter-"]:hover {
-    background-color: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
 }
 
 /* Scene information */

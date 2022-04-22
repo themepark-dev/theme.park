@@ -13,6 +13,7 @@
 /* MOBILE */
 
 @import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
 
 @media (max-width: 720px) {
 
@@ -87,7 +88,7 @@ p,
 
 
 .panel--light {
-    background: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
 }
 
 .panel {
@@ -101,7 +102,7 @@ p,
 
 .input,
 .inverse .input {
-    background: rgba(255, 255, 255, .05);
+    background: var(--transparency-light-05);
     color: var(--text-hover);
     border: 1px solid #0000;
     box-shadow: 0 1px 1px rgba(210, 216, 222, 0), 0 1px 3px 1px rgba(210, 216, 222, 0);
@@ -125,7 +126,7 @@ p,
 
 .button--quaternary,
 .inverse .button--quaternary {
-    background: rgba(255, 255, 255, .05);
+    background: var(--transparency-light-05);
     border-color: transparent;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0), 0 1px 3px 1px rgba(0, 0, 0, 0);
     color: var(--text);
@@ -150,7 +151,7 @@ p,
 
 .context-menu__items .select__item:focus-visible,
 .context-menu__items .select__item:hover {
-    background: rgba(255, 255, 255, .15);
+    background: var(--transparency-light-15);
 }
 
 .inverse .form__element__addon {
@@ -177,7 +178,7 @@ p,
 }
 
 .sortable-list__item {
-    background: rgb(255 255 255 / 10%);
+    background: var(--transparency-light-10);
     border: 1px solid rgb(255 255 255 / 10%);
 
 }
@@ -188,7 +189,7 @@ p,
 
 .css-q5wzhq:hover {
     color: var(--text-hover);
-    background: rgba(255, 255, 255, .1);
+    background: var(--transparency-light-10);
 }
 
 .css-m5tpeq:hover {
@@ -210,14 +211,14 @@ p,
 
 .inverse .button--tertiary:focus,
 .inverse .button--tertiary:hover {
-    background: rgba(255, 255, 255, .35);
+    background: var(--transparency-light-35);
     border-color: #0000;
     box-shadow: 0 1px 1px rgb(136 153 168 / 0%), 0 1px 3px 1px rgb(0 0 0 / 0%);
     text-shadow: 0 1px 0 #00000000, 0 1px 2px rgb(0 0 0 / 0%);
 }
 
 .inverse .button--tertiary:active {
-    background: rgba(255, 255, 255, .35);
+    background: var(--transparency-light-35);
     border-color: #0000;
     box-shadow: 0 1px 1px rgb(136 153 168 / 0%), 0 1px 3px 1px rgb(0 0 0 / 0%);
     text-shadow: 0 1px 0 #00000000, 0 1px 2px rgb(0 0 0 / 0%);
@@ -225,7 +226,7 @@ p,
 
 .inverse .button--tertiary:focus,
 .inverse .button--tertiary:hover {
-    background: rgba(255, 255, 255, .35);
+    background: var(--transparency-light-35);
     border-color: #0000;
     box-shadow: 0 1px 1px rgb(136 153 168 / 0%), 0 1px 3px 1px rgb(0 0 0 / 0%);
     text-shadow: 0 1px 0 #00000000, 0 1px 2px rgb(0 0 0 / 0%);
@@ -264,7 +265,7 @@ p,
 
 .menu__item.is-selectable:focus-within,
 .menu__item.is-selectable:hover {
-    background: rgba(255, 255, 255, .1);
+    background: var(--transparency-light-10);
     color: var(--text-hover);
 }
 
@@ -315,7 +316,7 @@ p,
 
 .dark .table__row--heading,
 .table__row--heading {
-    background: rgba(255, 255, 255, .15);
+    background: var(--transparency-light-15);
     box-shadow: 0 1px 0 hsl(0deg 0% 100% / 12%);
     color: var(--text-hover);
 }
@@ -455,7 +456,7 @@ p,
 .dark .action:hover,
 .action:focus-visible,
 .action:hover {
-    background: rgba(255, 255, 255, .1);
+    background: var(--transparency-light-10);
     box-shadow: none;
 }
 
@@ -474,7 +475,7 @@ p,
 /* SIDE MENU */
 .dark .application__sidebar,
 .application__sidebar {
-    background: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     box-shadow: 1px 0 hsl(0deg 0% 100% / 12%);
     color: var(--text);
 }
@@ -625,7 +626,7 @@ p,
 .modal--vertical.modal--tabs-in-header .modal__header,
 .modal--vertical.modal--tabs-in-body .modal__tabs {
     /* Modal side menu*/
-    background: rgb(0 0 0 / 45%) !important;
+    background: var(--transparency-dark-45) !important;
     color: var(--text-hover);
 }
 
@@ -644,7 +645,7 @@ p,
 
 .modal__tabs .modal__tab.is-active {
     color: var(--text-hover);
-    background: rgb(255 255 255 / 15%);
+    background: var(--transparency-light-15);
     border-radius: 3px 3px 0px 0px;
 }
 
@@ -693,7 +694,7 @@ p,
 }
 
 .interactive-list {
-    background: rgb(255 255 255 / 10%);
+    background: var(--transparency-light-10);
     border: 1px solid rgb(255 255 255 / 10%);
     box-shadow: 0 1px 1px rgb(0 0 0 / 15%), 0 1px 3px 1px rgb(0 0 0 / 20%);
     color: var(--text);

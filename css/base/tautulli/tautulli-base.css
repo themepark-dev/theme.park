@@ -11,6 +11,7 @@
 /*			      https://github.com/gilbN/theme.park			 */
 
 @import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
 
 body {
     background: var(--main-bg-color);
@@ -131,7 +132,7 @@ a.no-highlight:hover,
 .nav>li.active>a:hover,
 .nav>li.active>a:focus {
     color: #f9be03;
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 .nav>li>a {
@@ -140,14 +141,14 @@ a.no-highlight:hover,
 
 .nav>li>a:hover,
 .nav>li>a:focus {
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
     color: var(--text-hover);
 }
 
 .nav .open>a,
 .nav .open>a:hover,
 .nav .open>a:focus {
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
     color: rgb(var(--accent-color));
 }
 
@@ -169,12 +170,12 @@ a.no-highlight:hover,
 
 .dropdown-menu>li>a:hover,
 .dropdown-menu>li>a:focus {
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
     color: var(--text-hover);
 }
 
 .dropdown-menu .divider {
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 select,
@@ -205,15 +206,15 @@ select,
 .dashboard-stats-background,
 .dashboard-activity-background,
 .dashboard-activity-poster-container {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 .dashboard-activity-progress-bar {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 .dashboard-activity-progress .buffer-bar {
-    background-color: rgba(255, 255, 255, 0.25);
+    background: var(--transparency-light-25);
 }
 
 .dashboard-activity-metadata-user a {
@@ -275,7 +276,7 @@ select,
 }
 
 .btn-danger.btn-edit {
-    background-color: rgba(255, 255, 255, 0.25);
+    background: var(--transparency-light-25);
 }
 
 .btn-form {
@@ -303,18 +304,18 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 .uneditable-input {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 .react-selectize.root-node .react-selectize-control,
 .selectize-control.form-control .selectize-input {
-    background: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 /*Formcontrol */
 select.form-control,
 div.form-control .selectize-input {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 @media (min-width: 768px) {
@@ -326,11 +327,11 @@ div.form-control .selectize-input {
 .form-control[disabled],
 .form-control[readonly],
 fieldset[disabled] .form-control {
-    background-color: rgba(236, 236, 236, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 textarea.form-control {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 textarea:focus,
@@ -350,7 +351,7 @@ input[type="tel"]:focus,
 input[type="color"]:focus,
 .uneditable-input:focus {
     color: var(--text-hover);
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25)
 }
 
 .form-control:focus {
@@ -362,22 +363,22 @@ input[type="color"]:focus,
 
 /* Settings table cards */
 .table-card-header {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border-bottom: 1px solid rgba(255, 255, 255, 0.25);
     border-top: 1px solid #00000000;
 }
 
 .table-card-back {
-    background-color: rgba(0, 0, 0, 0.15);
+    background: var(--transparency-dark-15);
 }
 
 table.display thead th {
     color: var(--text-hover);
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 table.display thead tr:hover {
-    background-color: rgba(0, 0, 0, 0.45);
+    background: var(--transparency-dark-45);
 }
 
 /*Settings menu */
@@ -391,24 +392,24 @@ table.display thead tr:hover {
 }
 
 .nav-settings>li {
-    background-color: rgba(0, 0, 0, 0.45);
+    background: var(--transparency-dark-45);
     border-top: 1px solid transparent;
 }
 
 .nav-settings>.active>a,
 .nav-settings>.active>a:hover,
 .nav-settings>.active>a:focus {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 .nav-settings>li>a:hover,
 .nav-settings>li>a:focus {
     color: var(--text-hover);
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 .card {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border-top: 1px solid #00000000;
 }
 
@@ -418,12 +419,12 @@ table.display thead tr:hover {
 
 .card-handle {
     color: var(--text-hover);
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 /*Notification agents menu */
 .stacked-configs>li {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 .stacked-configs>li>span {
@@ -435,7 +436,7 @@ table.display thead tr:hover {
 .stacked-configs>li>span:hover,
 .stacked-configs>li>span:focus {
     color: var(--text-hover);
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 .stacked-configs>li>span>a.toggle-left,
@@ -449,17 +450,17 @@ span>a.active,
 }
 
 .inline-pre {
-    background-color: rgba(255, 255, 255, 0.25);
+    background: var(--transparency-light-25);
 }
 
 /* Summary containers */
 .summary-container .table-card-header,
 .summary-container .table-card-back {
-    background: rgba(0, 0, 0, 0.45);
+    background: var(--transparency-dark-45)
 }
 
 .summary-navbar {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 /* pagination */
@@ -469,7 +470,7 @@ span>a.active,
 .pagination>.disabled>a,
 .pagination>.disabled>a:hover,
 .pagination>.disabled>a:focus {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border-color: #00000000;
 }
 
@@ -491,7 +492,7 @@ span>a.active,
 
 /* Graphs */
 .graphs-instance {
-    background-color: rgba(0, 0, 0, 0.45);
+    background: var(--transparency-dark-45);
 }
 
 /* Modal */
@@ -558,7 +559,7 @@ span>a.active,
 #newsletter-config-modal .nav-tabs>li.active>a:hover,
 #newsletter-config-modal .nav-tabs>li.active>a:focus {
     color: var(--text-hover);
-    background: rgba(0, 0, 0, 0.45);
+    background: var(--transparency-dark-45)
 }
 
 #notifier-config-modal .nav-tabs>li.active>a,
@@ -574,7 +575,7 @@ span>a.active,
 #notifier-config-modal .nav-tabs>li>a:hover,
 #newsletter-config-modal .nav-tabs>li>a:hover {
     border-color: #0000;
-    background: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
     color: var(--text-hover);
 }
 
@@ -584,7 +585,7 @@ span>a.active,
 }
 
 .accordion {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25)
 }
 
 .accordion li .link {
@@ -594,21 +595,21 @@ span>a.active,
 
 .accordion li .link:hover,
 .accordion li .link:hover i.fa {
-    background: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 .submenu {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25)
 }
 
 /* Stream info */
 .stream-info {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 /* Edit metadata */
 .item-children-section-title {
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
     border-bottom: 1px solid #00000000;
     border-top: 1px solid #00000000;
 }
@@ -616,11 +617,11 @@ span>a.active,
 /* Mobile */
 .navbar-toggle:hover,
 .navbar-toggle:focus {
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 .navbar-toggle {
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 @media (max-width: 768px) {

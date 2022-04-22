@@ -11,6 +11,7 @@
 /* 			      https://github.com/gilbN/theme.park			 */
 
 @import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
 
 :root {
     --text-json-tree-branch-preview-color: var(--text);
@@ -47,7 +48,7 @@
     min-height: 50px;
     border: 3px solid transparent;
     border-radius: 8px;
-    background-color: hsla(0, 0%, 100%, .2);
+    background: var(--transparency-dark-20);
     background-clip: padding-box;
 }
 
@@ -59,7 +60,7 @@
     min-height: 50px;
     border: 3px solid transparent;
     border-radius: 8px;
-    background-color: hsla(0, 0%, 100%, .5);
+    background: var(--transparency-light-50);
     background-clip: padding-box;
 }
 
@@ -127,7 +128,7 @@ ul.sidebar .sidebar-list a {
 
 /* NEWS */
 .motd-body {
-    background-color: rgba(255, 255, 255, 0.15) !important;
+    background: var(--transparency-light-15) !important;
 }
 
 /* LOGIN */
@@ -148,16 +149,16 @@ ul.sidebar .sidebar-list a {
 
 /* SIDEBAR */
 #sidebar-wrapper {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25)
 }
 
 .sidebar-header {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25)
 }
 
 ul.sidebar .sidebar-list a.active {
     color: rgb(var(--accent-color));
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--transparency-light-10);
     border-left: 3px solid rgb(var(--accent-color));
 }
 
@@ -165,7 +166,7 @@ ul.sidebar .sidebar-list a.active {
 .sidebar-footer,
 ul.sidebar .sidebar-list a:hover:not(ul.sidebar .sidebar-list a.active),
 ul.sidebar .sidebar-main a {
-    background: rgba(255, 255, 255, 0.15);
+    background: var(--transparency-light-15);
     color: var(--text-hover);
 }
 
@@ -180,7 +181,7 @@ ul.sidebar .sidebar-title {
 
 ul.sidebar .sidebar-list .sidebar-sublist a.active {
     border-left: 3px solid rgb(var(--accent-color));
-    background: rgba(255, 255, 255, .08);
+    background: var(--transparency-light-10)
 }
 
 ul.sidebar .sidebar-title {
@@ -201,33 +202,33 @@ ul.sidebar .sidebar-title {
 
 /* WIDGETS */
 .widget {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border-color: transparent;
 }
 
 .widget .widget-body table thead {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 .widget .widget-header {
     color: var(--text-hover);
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     border-bottom: 1px solid transparent;
 }
 
 /* DATATABLES */
 .datatable .toolBar {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 .datatable .footer {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     color: var(--text);
 }
 
 .blocklist-item--selected,
 .blocklist-item:hover {
-    background-color: rgba(255, 255, 255, 0.15);
+    background: var(--transparency-light-15);
     color: var(--text);
 }
 
@@ -244,11 +245,11 @@ ul.sidebar .sidebar-title {
     border-top: 1px solid rgba(255, 255, 255, .1);
     border-bottom: 1px solid rgba(255, 255, 255, .1);
     padding: 8px;
-    background: rgba(255, 255, 255, .15);
+    background: var(--transparency-light-15)
 }
 
 .datatable .searchBar:focus-within {
-    background:rgba(255, 255, 255, .25);
+    background: var(--transparency-light-25);
     color: var(--text-hover);
 }
 
@@ -267,7 +268,7 @@ ul.sidebar .sidebar-title {
 .table>thead>tr.active>th,
 .table>thead>tr>td.active,
 .table>thead>tr>th.active {
-    background-color: rgba(255, 255, 255, 0.1);
+    background: var(--transparency-light-10);
 }
 
 .table-hover>tbody>tr.active:hover>td,
@@ -275,11 +276,11 @@ ul.sidebar .sidebar-title {
 .table-hover>tbody>tr:hover>.active,
 .table-hover>tbody>tr>td.active:hover,
 .table-hover>tbody>tr>th.active:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background: var(--transparency-light-10);
 }
 
 .table .table {
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 .label-default {
@@ -356,7 +357,7 @@ fieldset[disabled] .btn-primary:hover {
 
 .bootbox-form .checkbox i,
 .switch i {
-    background: rgba(255, 255, 255, 0.15);
+    background: var(--transparency-light-15);
 }
 
 .btn.focus,
@@ -392,7 +393,7 @@ fieldset[disabled] .btn-primary:hover {
 .ui-select-bootstrap>.ui-select-match>.btn:focus {
     text-align: left !important;
     color: var(--button-text-hover);
-    background-color: rgba(255, 255, 255, 0.25);
+    background: var(--transparency-light-25);
     border-color: #00000000;
 }
 
@@ -405,7 +406,7 @@ fieldset[disabled] .btn-primary:hover {
 .pagination>.disabled>span:hover {
     color: var(--text-muted);
     cursor: not-allowed;
-    background-color: rgba(255, 255, 255, 0.1);
+    background: var(--transparency-light-10);
     border-color: transparent;
 }
 
@@ -446,7 +447,7 @@ select:focus, select.form-control:focus {
 }
 
 .form-control {
-    background-color: rgba(255, 255, 255, 0.15) !important;
+    background: var(--transparency-light-15) !important;
     border: 1px solid transparent;
     color: var(--text);
 }
@@ -492,14 +493,14 @@ output {
 .dropdown-menu>.active>a:focus,
 .dropdown-menu>.active>a:hover,
 .ui-select-bootstrap .ui-select-choices-row.active>span {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 .ui-select-bootstrap .ui-select-choices-row>span:focus,
 .ui-select-bootstrap .ui-select-choices-row>span:hover,
 .ui-select-choices-row:hover {
     color: var(--text-hover);
-    background-color: rgba(255, 255, 255, 0.15);
+    background: var(--transparency-light-15);
 }
 
 /* APP TEMPLATES */
@@ -513,7 +514,7 @@ output {
 /* ADD NETWORK */
 
 .boxselector_wrapper input[type=radio]:checked+label {
-    background: rgba(255, 255, 255, .15);
+    background: var(--transparency-light-15);
     color: var(--text-hover);
     border-color: transparent;
 }
@@ -521,7 +522,7 @@ output {
 .boxselector_wrapper label {
     -webkit-box-shadow: none;
     box-shadow: none;
-    background: rgba(0, 0, 0, 0.15);
+    background: var(--transparency-dark-15);
     border: 1px solid transparent;
 }
 
@@ -554,13 +555,13 @@ output {
 
 /* STACKS */
 .CodeMirror {
-    background: rgba(255, 255, 255, 0.10);
+    background: var(--transparency-light-10);
     color: var(--text-hover);
 }
 
 .CodeMirror-gutters {
     border-right: 1px solid rgba(255, 255, 255, 0.25);
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     caret-color: var(--text-hover);
 }
 
@@ -584,7 +585,7 @@ output {
 .nav-tabs>li.active>a:hover {
     color: var(--text-hover);
     cursor: default;
-    background-color: rgba(255, 255, 255, 0.15);
+    background: var(--transparency-light-15);
     border: 1px solid #ddd0;
     border-bottom-color: transparent;
 }
@@ -596,18 +597,18 @@ output {
 .nav>li>a:focus,
 .nav>li>a:hover {
     text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 .nav-tabs>li>a {
     border: 1px solid rgba(0, 0, 0, 0);
-    background: rgba(0, 0, 0, 0.15);
+    background: var(--transparency-dark-15)
 }
 
 /* LOGS */
 .log_viewer {
     color: var(--text-hover);
-    background-color: rgba(255, 255, 255, 0.1);
+    background: var(--transparency-light-10);
     border: 1px solid transparent;
 }
 
@@ -623,7 +624,7 @@ json-tree .key {
 
 pre {
     color: var(--text-hover);
-    background-color: rgba(255, 255, 255, .1);
+    background: var(--transparency-light-10);
     border: 1px solid transparent;
 }
 
@@ -690,17 +691,17 @@ pre {
 }
 
 .widget .widget-body table .ng-scope tr {
-    background: rgba(0, 0, 0, .25) !important;
-    background-color: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 .widget .widget-body table thead {
-    background-color: rgba(0, 0, 0, .25) !important;
-    background: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 .widget .widget-body table tbody .ng-isolate-scope div {
-    background-color: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
     background: rgba(0, 0, 0, 0) !important;
 }
 
@@ -710,6 +711,6 @@ pre {
 }
 
 .widget .widget-body table thead tr:hover {
-    background-color: rgba(0, 0, 0, .35) !important;
-    background: rgba(0, 0, 0, .35) !important;
+    background: var(--transparency-dark-35) !important;
+    background: var(--transparency-dark-35) !important;
 }

@@ -11,6 +11,7 @@
 /*			      https://github.com/gilbN/theme.park			 */
 
 @import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
 
 * {
   outline: none;
@@ -141,7 +142,7 @@ body,[class*="FullPageBackground-backgroundContainer-"] {
 }
 
 [class*="BottomBar-bottomBar-"] {
-  background-color: rgb(0 0 0 / 70%);
+  background: var(--transparency-dark-70);
   box-shadow: 0 0 4px 0 rgb(0 0 0 / 50%);
 }
 
@@ -157,7 +158,7 @@ body,[class*="FullPageBackground-backgroundContainer-"] {
 
 [class*="SourceSidebar-openSidebar-"][class*="SourceSidebar-sidebar-"],
 [class*="SourceSidebar-sidebar-"] {
-  background: rgba(0, 0, 0, .25);
+  background: var(--transparency-dark-25)
 }
 
 [class*="SourceSidebar-expandedSidebar-"][class*="SourceSidebar-sidebar-"] {
@@ -176,7 +177,7 @@ body,[class*="FullPageBackground-backgroundContainer-"] {
       background: var(--header-blur-background);
       -webkit-backdrop-filter: saturate(1.8) blur(1.5em);
       backdrop-filter: saturate(1.8) blur(1.5em);
-      background-color: rgba(0, 0, 0, .5);
+      background: var(--transparency-dark-50);
   }
 }
 
@@ -204,7 +205,7 @@ body,[class*="FullPageBackground-backgroundContainer-"] {
 
 /* NAVBAR */
 [class*="NavBar-container-"] {
-  background: rgba(0, 0, 0, .25) !important;
+  background: var(--transparency-dark-25) !important;
 }
 
 [class*="NavBarActivityButton-isHighlighted-"] [class*="NavBarActivityButton-activityIcon-"] {
@@ -520,13 +521,13 @@ circle {
 
 .modal-body-with-panes .modal-nav-pane {
   background-image: none;
-  background: rgba(0, 0, 0, .25);
+  background: var(--transparency-dark-25)
 }
 
 .well,
 .files ul li {
   color: var(--text);
-  background-color: rgb(0 0 0 / 10%);
+  background: var(--transparency-dark-10);
   border: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 5%);
   box-shadow: inset 0 1px 1px rgb(0 0 0 / 5%);
@@ -534,7 +535,7 @@ circle {
 
 .edit-section-modal .wizard-blocks-group>.wizard-block.selectable:hover {
   color: var(--text-hover);
-  background-color: rgba(255, 255, 255, .05);
+  background: var(--transparency-light-05);
 }
 
 .edit-section-modal .wizard-blocks-group>.wizard-block.selectable {
@@ -611,7 +612,7 @@ fieldset[disabled] .btn-primary:hover {
 
 .edit-lock-addon {
   color: var(--button-color-hover);
-  background-color: rgba(0, 0, 0, .5);
+  background: var(--transparency-dark-50);
   border-color: transparent;
   -webkit-box-shadow: 0 0 2px rgb(0 0 0 / 30%), inset -2px 2px 2px rgb(0 0 0 / 10%);
   box-shadow: 0 0 2px rgb(0 0 0 / 30%), inset -2px 2px 2px rgb(0 0 0 / 10%);
@@ -712,11 +713,11 @@ hr {
 
 [class*="DirectoryListTableHeader-tableHeaderCell-"],
 [class*="DirectoryListTableHeader-columnMenuButton-"] {
-  background-color: rgb(0 0 0 / 25%);
+  background: var(--transparency-dark-25);
 }
 
 a>[class*="DirectoryListTableHeader-tableHeaderCell-"]:hover,
 button>[class*="DirectoryListTableHeader-tableHeaderCell-"]:hover,
 [class*="DirectoryListTableHeader-columnMenuButton-"]:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background: var(--transparency-light-10);
 }
