@@ -12,6 +12,8 @@
 
 /* MOBILE */
 
+@import url("/css/defaults/placeholders.css");
+
 @media (max-width: 720px) {
 
     .modal__body,

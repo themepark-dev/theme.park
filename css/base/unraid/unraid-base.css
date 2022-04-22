@@ -10,6 +10,8 @@
 /*		   		        Made by @gilbN					 */
 /* 			      https://github.com/gilbN/theme.park			 */
 
+@import url("/css/defaults/placeholders.css");
+
 * {
     outline: none;
 }
@@ -649,18 +651,6 @@ div.tabs {
 /*VM MANAGER*/
 div.shade-black {
     background-color: rgb(0 0 0 / 15%) !important;
-}
-
-::placeholder {
-    color: var(--text-muted) !important;
-}
-
-:-ms-input-placeholder {
-    color: var(--text-muted) !important;
-}
-
-::-webkit-input-placeholder {
-    color: var(--text-muted) !important;
 }
 
 /* MODAL */

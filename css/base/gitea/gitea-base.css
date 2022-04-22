@@ -12,6 +12,8 @@
 
 @import url("/css/base/gitea/chroma.css");
 @import url("/css/base/gitea/monaco_vs_dark.css");
+@import url("/css/defaults/placeholders.css");
+
 :root {
     --color-text: var(--text);
     --color-caret: white;
@@ -1551,28 +1553,6 @@ textarea:hover {
 .markdown:not(code) code,
 .markdown:not(code) tt {
     background-color: rgb(0 0 0 / 0.25);
-}
-
-
-/* PLACEHOLDER TEXT */
-::placeholder {
-    color: var(--text) !important;
-    opacity: .5;
-}
-
-:-moz-placeholder {
-    color: var(--text) !important;
-    opacity: .5;
-}
-
-:-ms-input-placeholder {
-    color: var(--text) !important;
-    opacity: .5;
-}
-
-::-webkit-input-placeholder {
-    color: var(--text) !important;
-    opacity: .5;
 }
 
 /* HIGHLIGHTING */

@@ -504,7 +504,7 @@ hr {
 }
 
 .close:hover {
-    var(--text) !important;
+    color: var(--text-hover) !important;
     text-decoration: none;
 }
 

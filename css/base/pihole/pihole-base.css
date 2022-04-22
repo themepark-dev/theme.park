@@ -10,7 +10,7 @@
   /*		   		        Made by @gilbN					 */
   /* 			      https://github.com/gilbN/theme.park			 */
 
-  @import url(/css/defaults/placeholders.css);
+  @import url("/css/defaults/placeholders.css");
 
   body {
       background: var(--main-bg-color) !important;

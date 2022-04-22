@@ -10,6 +10,8 @@
 /*		   		        Made by @gilbN					 */
 /* 			      https://github.com/gilbN/theme.park			 */
 
+@import url("/css/defaults/placeholders.css");
+
 .bg-light {
     background: var(--main-bg-color) !important;
     background-repeat: repeat, no-repeat;
@@ -412,25 +414,4 @@ textarea.form-control:focus {
     background: rgba(0, 0, 0, .5);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-}
-
-/* PLACEHOLDER TEXT */
-::placeholder {
-    color: var(--text) !important;
-    opacity: .5 !important;
-}
-
-:-moz-placeholder {
-    color: var(--text) !important;
-    opacity: .5 !important;
-}
-
-:-ms-input-placeholder {
-    color: var(--text) !important;
-    opacity: .5 !important;
-}
-
-::-webkit-input-placeholder {
-    color: var(--text) !important;
-    opacity: .5;
 }

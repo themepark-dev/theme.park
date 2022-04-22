@@ -12,6 +12,7 @@
 /* Based on https://github.com/themightykitten/ruTorrent-MaterialDesign */
 @import url(https://use.fontawesome.com/releases/v5.0.7/css/all.css);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,600,700,300);
+@import url("/css/defaults/placeholders.css");
 
 @font-face {
     font-family: 'Roboto' !important

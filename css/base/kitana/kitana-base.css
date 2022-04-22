@@ -10,6 +10,8 @@
 /*		   		        Made by @gilbN					 */
 /* 			      https://github.com/gilbN/theme.park			 */
 
+@import url("/css/defaults/placeholders.css");
+
 body {
     background: var(--main-bg-color);
     background-repeat: repeat, no-repeat;
@@ -228,26 +230,4 @@ ul li:hover {
     color: var(--text-hover);
     background-color: #97b3d2;
     border-color: #97b3d2
-}
-
-
-/* PLACEHOLDER TEXT */
-::placeholder {
-    color: var(--text) !important;
-    opacity: .5 !important;
-}
-
-:-moz-placeholder {
-    color: var(--text) !important;
-    opacity: .5 !important;
-}
-
-:-ms-input-placeholder {
-    color: var(--text) !important;
-    opacity: .5 !important;
-}
-
-::-webkit-input-placeholder {
-    color: var(--text) !important;
-    opacity: .5;
 }

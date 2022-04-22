@@ -13,6 +13,7 @@
  /* Based on https://github.com/HalianElf/Deluge-Dark/blob/master/deluge.css */
 
  @import url('https://fonts.googleapis.com/css?family=Roboto');
+ @import url("/css/defaults/placeholders.css");
 
  html {
      background: var(--main-bg-color);

@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900);
+@import url("/css/defaults/placeholders.css");
 /*Theme Colors*/
 /*bootstrap Color*/
 /*Normal Color*/
@@ -398,42 +399,6 @@ pre {
 
 .dataTables_wrapper .dataTables_paginate .paginate_button:active {
     box-shadow: inset 0 0 3px rgba(0, 0, 0, 0);
-}
-
-/* PLACEHOLDERS */
-input::-webkit-input-placeholder {
-    color: var(--text) !important;
-}
-
-input:focus::-webkit-input-placeholder {
-    color: var(--text-hover) !important;
-}
-
-/* Firefox < 19 */
-input:-moz-placeholder {
-    color: var(--text) !important;
-}
-
-input:focus:-moz-placeholder {
-    color: var(--text-hover) !important;
-}
-
-/* Firefox > 19 */
-input::-moz-placeholder {
-    color: var(--text) !important;
-}
-
-input:focus::-moz-placeholder {
-    color: var(--text-hover) !important;
-}
-
-/* Internet Explorer 10 */
-input:-ms-input-placeholder {
-    color: var(--text) !important;
-}
-
-input:focus:-ms-input-placeholder {
-    color: var(--text-hover) !important;
 }
 
 /* Scrollbar */

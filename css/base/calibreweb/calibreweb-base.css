@@ -13,6 +13,9 @@
  /* "Re-skin" of CaliBlur https://github.com/leram84/layer.Cake/tree/master/caliBlur */
  /* Set theme to CaliBlur in UI Configuration -> View Configuration -> Theme -> CaliBlur -> Submit */
  /* APP VARS*/
+
+@import url("/css/defaults/placeholders.css");
+
  :root {
     --color-background: var(--main-bg-color);
     --color-primary: rgb(var(--accent-color));

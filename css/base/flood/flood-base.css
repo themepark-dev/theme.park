@@ -12,6 +12,8 @@
 
 /* MOBILE */
 
+@import url("/css/defaults/placeholders.css");
+
 @media (max-width: 720px) {
 
     .modal__body,
@@ -285,20 +287,6 @@ p,
 .button--primary:active {
     background: var(--button-color-hover);
     border-color: var(--button-color-hover);
-}
-
-
-
-::placeholder {
-    color: var(--text) !important;
-}
-
-:-ms-input-placeholder {
-    color: var(--text) !important;
-}
-
-::-webkit-input-placeholder {
-    color: var(--text) !important;
 }
 
 .error {

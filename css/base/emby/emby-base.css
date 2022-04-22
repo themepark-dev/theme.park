@@ -1,3 +1,5 @@
+@import url("/css/defaults/placeholders.css");
+
 :root {
     --theme-primary-color: var(--accent-color);
     --theme-text-color: var(--text);

@@ -10,6 +10,8 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
+@import url("/css/defaults/placeholders.css");
+
 :root {
     --scheme-main-ter: var(--main-bg-color);
     --text-strong-color: var(--button-text-hover);

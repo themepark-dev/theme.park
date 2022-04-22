@@ -10,6 +10,8 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 @import url(https://use.fontawesome.com/releases/v5.0.7/css/all.css);
+@import url("/css/defaults/placeholders.css");
+
 
 * {
     outline: none !important;

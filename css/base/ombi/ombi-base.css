@@ -10,6 +10,7 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
+@import url("/css/defaults/placeholders.css");
 
 * {
     outline: none !important;

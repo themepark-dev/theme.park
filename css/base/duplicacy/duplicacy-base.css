@@ -10,6 +10,7 @@
 /*		   		        Made by @gilbN					 */
 /* 			      https://github.com/gilbN/theme.park			 */
 
+@import url("/css/defaults/placeholders.css");
 
 body {
     background: var(--main-bg-color);
@@ -144,27 +145,6 @@ label {
 
 .text-primary:hover {
     color: var(--accent-color-hover);
-}
-
-/* PLACEHOLDER TEXT */
-::placeholder {
-    color: var(--text) !important;
-    opacity: .5 !important;
-}
-
-:-moz-placeholder {
-    color: var(--text) !important;
-    opacity: .5 !important;
-}
-
-:-ms-input-placeholder {
-    color: var(--text) !important;
-    opacity: .5 !important;
-}
-
-::-webkit-input-placeholder {
-    color: var(--text) !important;
-    opacity: .5;
 }
 
 /* CARDS */

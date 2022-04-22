@@ -9,6 +9,9 @@
 
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
+
+@import url("/css/defaults/placeholders.css");
+
 * {
     outline: none !important;
 }
@@ -53,42 +56,6 @@ a,
 a:hover,
 .btn-link:hover {
     color: var(--link-color-hover);
-}
-
-input::-webkit-input-placeholder {
-    color: var(--text-muted) !important;
-}
-
-input:focus::-webkit-input-placeholder {
-    color: var(--text-hover) !important;
-}
-
-/* Placeholders */
-/* Firefox < 19 */
-input:-moz-placeholder {
-    color: var(--text-muted) !important;
-}
-
-input:focus:-moz-placeholder {
-    color: var(--text-hover) !important;
-}
-
-/* Firefox > 19 */
-input::-moz-placeholder {
-    color: var(--text-muted) !important;
-}
-
-input:focus::-moz-placeholder {
-    color: var(--text-hover) !important;
-}
-
-/* Internet Explorer 10 */
-input:-ms-input-placeholder {
-    color: var(--text-muted) !important;
-}
-
-input:focus:-ms-input-placeholder {
-    color: var(--text-hover) !important;
 }
 
 /* SCROLLBAR */

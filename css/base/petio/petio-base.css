@@ -10,6 +10,8 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
+@import url("/css/defaults/placeholders.css");
+
 * {
     outline: none;
 }
@@ -478,25 +480,4 @@ a.rbc-show-more {
 
 .calendar--event p {
     color: var(--text-hover) !important;
-}
-
-/* PLACEHOLDER TEXT */
-::placeholder {
-    color: var(--text) !important;
-    opacity: .5;
-}
-
-:-moz-placeholder {
-    color: var(--text) !important;
-    opacity: .5;
-}
-
-:-ms-input-placeholder {
-    color: var(--text) !important;
-    opacity: .5;
-}
-
-::-webkit-input-placeholder {
-    color: var(--text) !important;
-    opacity: .5;
 }
