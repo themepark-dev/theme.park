@@ -901,7 +901,7 @@ a:hover {
 
 [class*="CalendarDay-isToday-"],
 [class*="DayOfWeek-isToday-"] {
-    background: var(--transparency-dark-25) !important;
+    background: var(--transparency-light-25) !important;
     color: var(--text-hover);
 }
 
