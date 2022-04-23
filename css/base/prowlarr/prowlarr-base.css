@@ -885,7 +885,7 @@ a:hover {
 }
 
 [class*="CalendarDay-isToday-"] {
-    background: var(--transparency-dark-10) !important;
+    background: var(--transparency-light-10) !important;
 }
 
 [class*="CalendarDay-day-"],
