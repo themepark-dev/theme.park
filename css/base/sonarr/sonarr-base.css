@@ -66,10 +66,6 @@
     background: var(--transparency-dark-10);
 }
 
-[class*="SeriesSearchInput-seriesContainer-"]::-webkit-scrollbar-thumb {
-    background: var(--transparency-light-25) !important;
-}
-
 /* SERIES PAGE */
 [class*="SeriesIndexPoster-controls-"] {
     background-color: rgb(var(--accent-color)) !important;
@@ -152,15 +148,6 @@
 [class*="SeriesIndexPosterInfo-info-"] {
     background: var(--transparency-light-10);
     color: var(--text-hover);
-}
-
-/* MINI RIGHT SCROLL BAR */
-[class*="ImportSeriesSelectSeries-results-"]::-webkit-scrollbar-thumb {
-    background: var(--transparency-dark-10) !important;
-}
-
-[class*="ImportSeriesSelectSeries-results-"]::-webkit-scrollbar-thumb:hover {
-    background: var(--transparency-light-25) !important;
 }
 
 /* SEARCH BAR */

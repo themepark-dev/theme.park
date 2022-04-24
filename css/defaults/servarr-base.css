@@ -26,6 +26,15 @@ body {
     color: var(--text);
 }
 
+*::-webkit-scrollbar-thumb,
+[class*="-thumb-"] {
+    background-color: var(--transparency-light-25) !important;
+}
+*::-webkit-scrollbar-thumb:hover,
+[class*="-thumb-"]:hover {
+    background-color: var(--transparency-light-35) !important;
+}
+
 /* Froms */
 
 [class*="FormInputHelpText-helpText-"] {
@@ -497,17 +506,6 @@ a:hover {
     color: var(--text-hover);
 }
 
-/* MINI RIGHT SCROLL BAR */
-[class*="OverlayScroller-thumb-"],
-[class*="Scroller-scroller-"]::-webkit-scrollbar-thumb {
-    background: var(--transparency-dark-10) !important;
-}
-
-[class*="OverlayScroller-thumb-"]:hover,
-[class*="Scroller-scroller-"]::-webkit-scrollbar-thumb:hover {
-    background: var(--transparency-light-25) !important;
-}
-
 /* ADD NEW */
 
 [class*="EnhancedSelectInput-options-"],
@@ -624,9 +622,8 @@ a:hover {
 }
 
 [class*="VirtualTableRow-row-"]:hover {
-    background: var(--transparency-light-10);
+    background: var(--transparency-dark-05);
 }
-
 
 /*Title*/
 [class*="PageJumpBarItem-jumpBarItem-"]:hover {

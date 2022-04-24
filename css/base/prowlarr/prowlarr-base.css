@@ -36,10 +36,6 @@
     background: var(--transparency-dark-10);
 }
 
-[class*="IndexerSearchInput-movieContainer-"]::-webkit-scrollbar-thumb {
-    background: var(--transparency-light-25);
-}
-
 [class*="IndexerSearchInput-container-"] [class*="Input-input-"] {
     background: transparent;
     border-bottom: solid 1px var(--text);

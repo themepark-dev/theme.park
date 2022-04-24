@@ -46,10 +46,6 @@
     background: var(--transparency-dark-10);
 }
 
-[class*="MovieSearchInput-movieContainer-"]::-webkit-scrollbar-thumb {
-    background: var(--transparency-light-25);
-}
-
 /* MOVIES PAGE */
 [class*="MovieIndexPoster-controls-"] {
     background-color: rgb(var(--accent-color)) !important;

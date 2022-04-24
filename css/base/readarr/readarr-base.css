@@ -44,20 +44,6 @@
     background: var(--transparency-dark-10)
 }
 
-[class*"=AuthorSearchInput-authorContainer-"]::-webkit-scrollbar-thumb,
-[class*="ImportAuthorSelectAuthor-results-"]::-webkit-scrollbar-thumb {
-    background: var(--transparency-light-25);
-}
-
-/* MINI RIGHT SCROLL BAR */
-[class*="ImportAuthorSelectAuthor-results-"]::-webkit-scrollbar-thumb {
-    background: var(--transparency-dark-10) !important;
-}
-
-[class*="ImportAuthorSelectAuthor-results-"]::-webkit-scrollbar-thumb:hover {
-    background: var(--transparency-light-25) !important;
-}
-
 /* LIBRARY PAGE */
 [class*="AuthorIndexPoster-controls-"] {
     background-color: rgb(var(--accent-color)) !important;

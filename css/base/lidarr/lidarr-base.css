@@ -46,19 +46,6 @@
     background: var(--transparency-dark-10)
 }
 
-[class*"=ArtistSearchInput-artistContainer-"]::-webkit-scrollbar-thumb,
-[class*="ImportArtistSelectArtist-results-"]::-webkit-scrollbar-thumb {
-    background: var(--transparency-light-25);
-}
-
-/* MINI RIGHT SCROLL BAR */
-[class*="ImportArtistSelectArtist-results-"]::-webkit-scrollbar-thumb {
-    background: var(--transparency-dark-10) !important;
-}
-[class*="ImportArtistSelectArtist-results-"]::-webkit-scrollbar-thumb:hover {
-    background: var(--transparency-light-25) !important;
-}
-
 /* LIBRARY PAGE */
 [class*="ArtistIndexPoster-controls-"] {
     background-color: rgb(var(--accent-color)) !important;
@@ -312,8 +299,10 @@
 
 [class*="AlbumStudioAlbum-missingWanted-"] {
     background-color: #f05050;
+    color: #fff;
 }
 
 [class*="AlbumStudioAlbum-allTracks-"] {
     background-color: #0b8750;
+    color: #fff;
 }
