@@ -157,9 +157,8 @@ app-vault-groupings .card li.active>div>.fa {
     color: rgb(var(--accent-color));
 }
 
-body>app-root>app-user-layout>app-tools>div>div>div.col-9>app-password-generator>div.card.card-password.bg-light.my-4,
-body>app-root>app-user-layout>app-tools>div>div>div.col-9>app-password-generator>div.card.card-password.bg-light.my-4>div {
-    background-color: var(--transparency-dark-15) !important;
+html[class*="theme_"] app-password-generator .card-password .card-body {
+    background: var(--transparency-dark-15);
 }
 
 html[class*="theme_"] .password-number {
@@ -385,7 +384,7 @@ html[class*="theme_"] .callout {
 }
 
 html[class*="theme_"] .list-group-item {
-    background: var(--transparency-dark-35);
+    background: var(--transparency-dark-25);
     border: 1px solid rgb(255 255 255 / 8%);
     color: var(--text);
 }
@@ -581,11 +580,13 @@ app-org-vault-groupings .card li.active>div a:first-of-type {
 html[class*="theme_"] .table td [class*="fa-"] {
     color: rgb(var(--accent-color));
 }
-
+html[class*="theme_"] .btn-outline-secondary i {
+    color: var(--button-text) !important;
+}
 /* ADMIN PAGE */
 
 .bg-light {
-    background: var(--main-bg-color) !important;
+    background: var(--main-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -596,7 +597,7 @@ html[class*="theme_"] .table td [class*="fa-"] {
 }
 
 .bg-light .navbar {
-    background: var(--main-bg-color) !important;
+    background: var(--main-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
