@@ -1783,3 +1783,18 @@ div#dlgEditRules-header,
 div#dlgEditRules div.dlg-header {
     background: rgba(0, 0, 0, 0.25) !important;
 }
+
+#filterList, #filterProps, #ruleList{
+    background: var(--modal-bg-color);
+}
+
+.lf li input.TextboxFocus{
+    background: rgba(255, 255, 255, 0.25);
+    color: var(--text-hover);
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0);
+}
+
+.lf li input.TextboxNormal{
+    background: rgba(0, 0, 0, 0.08);
+    color: var(--text);
+}
