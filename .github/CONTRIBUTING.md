@@ -3,6 +3,10 @@
 - If you want to discuss changes, you can also bring it up in our Discord server
 - PR's are done against the develop branch.
 
+## Bug fixes
+
+- When submitting bugfixes please show a before and after screenshot of the fix, and a description of what the fix does.
+
 ## New theme option
 
 - The current variables in use can be found in any of the CSS files in `/css/theme-options/` and `/css/community-theme-options/`
@@ -24,7 +28,3 @@ Remember to also to change the variables in the the `Specials` section even if y
 - When creating a new theme for an application please test multiple theme options to make sure it looks good on all options not just your favorite.
 
 - The PR must contain a screenshot of all the different theme options. Optionally you can also include screenshots with the community theme options.
-
-## Bug fixes
-
-- When submitting bugfixes please show a before and after screenshot of the fix, and a description of what the fix does.
