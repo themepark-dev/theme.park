@@ -37,12 +37,20 @@ body {
 }
 
 /* LINKS */
-[class*="Link-to-"]:not([class*="PageSidebarItem-link-"]):not([class*="Button-"]):not([class*="AgendaEvent"]) {
+[class*="Link-to-"]:not([class*="PageSidebarItem-link-"]):not([class*="Button-"]):not([class*="AgendaEvent"]):not([class*="PageHeader-"]) {
     color: var(--link-color);   
    }
    
-[class*="Link-to-"]:not([class*="PageSidebarItem-link-"]):hover:not([class*="Button-"]):hover {
+[class*="Link-to-"]:not([class*="PageSidebarItem-link-"]):hover:not([class*="Button-"]):hover{
 color: var(--link-color-hover);   
+}
+
+[class*="PageHeader-donate-"]:hover {
+    color: #9c1f30 !important;
+}
+
+[class*="PageHeaderActionsMenu-menuButton-"]:hover {
+    color: var(--link-color-hover);
 }
 
 a {
@@ -195,6 +203,7 @@ a:hover {
 [class*="PageHeader-header-"] {
     background: var(--transparency-dark-35);
     color: var(--text);
+    box-shadow: none;
 }
 
 /* SEARCH DROPDOWN HEADER */
@@ -273,6 +282,11 @@ a:hover {
     color: var(--text);
 }
 
+[class*="ExtraFileTable-container-"] {
+    border: 1px solid transparent;
+    background: var(--transparency-dark-25);
+}
+
 .fa-search:hover {
     color: var(--text-hover) !important;
 }
@@ -298,10 +312,6 @@ a:hover {
     color: #fff !important;
 }
 
-[class*="ExtraFileTable-container-"] {
-    border: 1px solid transparent;
-    background: var(--transparency-dark-25);
-}
 
 [class*="Tooltip-tooltip-"][class*="Tooltip-inverse-"],
 [class*="Popover-title-"],
@@ -339,11 +349,6 @@ a:hover {
 
 [class*="Tooltip-right-"][class*="Tooltip-default-"] {
     border-right-color: var(--text);
-}
-
-[class*="EpisodeTitleLink-link-"]:hover {
-    color: var(--text-hover);
-    text-decoration: none;
 }
 
 [class*="IconButton-button-"] {
@@ -748,15 +753,24 @@ a:hover {
     color: var(--text-hover);
 }
 
-[class*="Card-card-"]:hover {
+[class*="Card-card-"]:hover,
+[class*="Applications-center-"]:hover {
     color: var(--text-hover);
 }
 
 [class*="QualityProfiles-center-"],
 [class*="LanguageProfiles-center-"],
-[class*="ReleaseProfiles-center-"] {
+[class*="ReleaseProfiles-center-"],
+[class*="MetadataProfiles-center-"],
+[class*="RootFolders-center-"],
+[class*="Applications-center-"],
+[class*="AppProfiles-center-"] {
     background-color: transparent;
     border: none;
+}
+
+[class*="RootFolders-center-"] {
+    border: 1px solid transparent;
 }
 
 [class*="QualityProfileItem-qualityProfileItem-"],
@@ -787,10 +801,14 @@ a:hover {
     color: var(--text);
 }
 
-/* PROFILES */
+/* INDEXSERS */
 [class*="Indexers-center-"] {
     background-color: transparent;
     border: none;
+}
+[class*="Restrictions-center-"] {
+    border: 1px solid transparent;
+    background-color: transparent;
 }
 
 /* DOWNLOAD CLIENTS */
@@ -816,12 +834,6 @@ a:hover {
     border-color: transparent;
     background: var(--transparency-dark-25);
     color: #FFC107;
-}
-
-/* INDEXER */
-[class*="Restrictions-center-"] {
-    border: 1px solid transparent;
-    background-color: transparent;
 }
 
 /* LISTS */

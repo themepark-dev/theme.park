@@ -258,7 +258,7 @@
       "addons": {
         "lidarr-darker": "https://develop.theme-park.dev/css/addons/lidarr/lidarr-darker/lidarr-darker.css?sha=fc479d221c05b5232d720f1c32d9cb1717f7b60b"
       },
-      "base_css": "https://develop.theme-park.dev/css/base/lidarr/lidarr-base.css?sha=eea4bad54142f4cda1359cd2797323e38263b0a3"
+      "base_css": "https://develop.theme-park.dev/css/base/lidarr/lidarr-base.css?sha=009169cf49f510249f1ef828761e81015d6c0d2e"
     },
     "moviematch": {
       "addons": {},
@@ -323,7 +323,7 @@
       "addons": {
         "prowlarr-darker": "https://develop.theme-park.dev/css/addons/prowlarr/prowlarr-darker/prowlarr-darker.css?sha=b84c55b85b8396a03cb63e7b6e7deff7a1cfd037"
       },
-      "base_css": "https://develop.theme-park.dev/css/base/prowlarr/prowlarr-base.css?sha=b99ebfa05ccf91890f5dc1b5d8d359feb0759846"
+      "base_css": "https://develop.theme-park.dev/css/base/prowlarr/prowlarr-base.css?sha=ff0df3e391de6b1e47e5c365135aafb8d55b90f7"
     },
     "qbittorrent": {
       "addons": {},
@@ -341,7 +341,7 @@
         "readarr-alt-logo": "https://develop.theme-park.dev/css/addons/readarr/readarr-alt-logo/readarr-alt-logo.css?sha=f1f3b6fd804d76c2d6851f945446a1693b42c8ab",
         "readarr-darker": "https://develop.theme-park.dev/css/addons/readarr/readarr-darker/readarr-darker.css?sha=415a258cc9d1e40bf094f6f20350225c06120825"
       },
-      "base_css": "https://develop.theme-park.dev/css/base/readarr/readarr-base.css?sha=e8688cbcb1656c53d38559ae0fc1443837dcd1c2"
+      "base_css": "https://develop.theme-park.dev/css/base/readarr/readarr-base.css?sha=d5ae60d0cd37a51411cfefbc87e374bf0441f9f5"
     },
     "requestrr": {
       "addons": {},
@@ -431,7 +431,7 @@
     },
     "whisparr": {
       "addons": {},
-      "base_css": "https://develop.theme-park.dev/css/base/whisparr/whisparr-base.css?sha=be1c1b0e036c3d4bcb271a472f4448f2350e7359"
+      "base_css": "https://develop.theme-park.dev/css/base/whisparr/whisparr-base.css?sha=0353e1165e85c038a196cdcbe1d86cb106cfdf6f"
     },
     "xbackbone": {
       "addons": {},
