@@ -10,6 +10,9 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
+@import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
+
 * {
     outline: none;
 }
@@ -79,7 +82,7 @@ h6,
 
 /* MENU */
 .menu {
-    background: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
 }
 
 @media (max-width: 1099.98px) {
@@ -99,7 +102,7 @@ h6,
 
 @media (min-width: 1100px) {
     .page .sidebar {
-        background: rgb(0 0 0 / 25%);
+        background: var(--transparency-dark-25);
     }
 }
 
@@ -203,12 +206,12 @@ p a:hover,
 
 /* OTHER */
 .widget--item hr {
-    background: rgb(255 255 255 / 50%);
+    background: var(--transparency-light-50);
 }
 
 .widget--item--inner,
 .sr--instance--inner {
-    background: hsl(0deg 0% 0% / 15%);
+    background: var(--transparency-dark-15);
 }
 
 .filter--add:hover {
@@ -222,7 +225,7 @@ p a:hover,
 }
 
 .filter--item {
-    background: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
 }
 
 .spinner svg {
@@ -255,7 +258,7 @@ code {
 .color-blue,
 .color-red {
     /* Ratings */
-    background: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
     border-radius: 5px;
     padding: 0px 7px;
 }
@@ -404,7 +407,7 @@ code {
 
 thead {
     color: var(--text-hover);
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25)
 }
 
 .generic-table tr:not(.child):not(.sub) th:nth-child(odd),
@@ -446,7 +449,7 @@ input[type=checkbox]:checked:after {
 
 input:not([type=checkbox]):not(.styled-input--input):not([type=file]):focus {
     border-bottom: 2px solid rgb(var(--accent-color));
-    background: rgba(255, 255, 255, .2);
+    background: var(--transparency-light-20);
     color: var(--text-hover)
 }
 
@@ -454,18 +457,18 @@ input:not([type=checkbox]):not(.styled-input--input):not([type=file]),
 .login-wrap input {
     border-bottom: 2px solid rgba(0, 0, 0, 0);
     color: var(--text);
-    background: rgb(255 255 255 / 10%);
+    background: var(--transparency-light-10);
 }
 
 .search-form input:focus {
-    background: hsla(0, 0%, 100%, .1) !important;
+    background: var(--transparency-dark-10) !important;
     color: var(--text-hover) !important;
     border-bottom: 2px solid rgba(0, 0, 0, 0) !important;
 }
 
 /* CALENDAR */
 .rbc-show-more {
-    background-color: hsl(0deg 0% 0% / 25%);
+    background: var(--transparency-dark-25);
 }
 
 .rbc-day-bg.rbc-today {
@@ -478,25 +481,4 @@ a.rbc-show-more {
 
 .calendar--event p {
     color: var(--text-hover) !important;
-}
-
-/* PLACEHOLDER TEXT */
-::placeholder {
-    color: var(--text) !important;
-    opacity: .5;
-}
-
-:-moz-placeholder {
-    color: var(--text) !important;
-    opacity: .5;
-}
-
-:-ms-input-placeholder {
-    color: var(--text) !important;
-    opacity: .5;
-}
-
-::-webkit-input-placeholder {
-    color: var(--text) !important;
-    opacity: .5;
 }

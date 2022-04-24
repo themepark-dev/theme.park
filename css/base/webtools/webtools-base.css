@@ -10,6 +10,9 @@
 /*		   		        Made by @gilbN					 */
 /* 			      https://github.com/gilbN/theme.park			 */
 
+@import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
+
 body {
     background: var(--main-bg-color);
     background-repeat: repeat, no-repeat;
@@ -70,7 +73,7 @@ content-loading .contentLoading {
 
 /* NAVBAR */
 .head {
-    background-color: rgb(0 0 0 / 0.25);
+    background: var(--transparency-dark-25);
     box-shadow: 0 0 0 0px rgb(0 0 0 / 0%);
 }
 
@@ -80,23 +83,23 @@ content-loading .contentLoading {
 
 /* SIDE MENU */
 .menu .toggle {
-    background: rgb(0 0 0 / .25);
+    background: var(--transparency-dark-25);
     color: var(--accent-color);
 }
 
 .menu {
-    background-color: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
     box-shadow: 0 0 0 0px rgba(0, 0, 0, 0);
 }
 
 .menu .item {
-    background: rgb(255 255 255 / 8%);
+    background: var(--transparency-light-10);
     color: var(--button-text);
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .0);
 }
 
 .menu .item:hover {
-    background: rgb(255 255 255 / .16);
+    background: var(--transparency-light-15);
     color: var(--text-hover);
 }
 
@@ -134,7 +137,7 @@ content-loading .contentLoading {
 
 /* PAGES */
 .sub .settings {
-    background: rgb(255 255 255 / 25%);
+    background: var(--transparency-light-25);
 }
 
 label {
@@ -148,30 +151,30 @@ label {
 .fm .sections .section,
 .playlists .userContainer .fileContainer,
 .playlists .playlistContainer {
-    background: rgb(255 255 255 / .08);
+    background: var(--transparency-light-10);
     box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, .0);
     border: transparent;
 }
 
 .uas .type:hover {
-    background: rgb(255 255 255 / 8%);
+    background: var(--transparency-light-10);
     color: var(--text-hover);
 }
 
 .sub .rowShow:hover,
 .uas .repoContainer .repo:hover,
 .fm .sections .section:hover {
-    background: rgb(255 255 255 / .16);
+    background: var(--transparency-light-15);
     box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, .0);
 }
 
 .expanded:hover {
-    background: rgb(255 255 255 / .08) !important;
+    background: var(--transparency-light-10) !important;
     box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, .0);
 }
 
 .sub .rowShow .lineShow .contentShow .detail {
-    background: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
     color: var(--text) !important;
 }
 
@@ -181,11 +184,11 @@ label {
 }
 
 .sub .rowShow .lineShow .contentShow .detail .subItem.selected {
-    background: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
 }
 
 .sub .rowShow .lineShow .contentShow .detail .subItem.checked {
-    background: rgba(255, 255, 255, 0.5);
+    background: var(--transparency-light-50);
     color: var(--text-hover);
 }
 
@@ -194,12 +197,12 @@ label {
 }
 
 .sub .rowShow .lineShow .contentShow .tvshow {
-    background-color: rgb(255 255 255 / 8%);
+    background: var(--transparency-light-10);
     color: var(--button-text);
 }
 
 .sub .rowShow .lineShow .contentShow .tvshow:hover {
-    background-color: rgb(255 255 255 / 16%);
+    background: var(--transparency-light-15);
 
 }
 
@@ -227,11 +230,11 @@ label {
 }
 
 .logs .logDetails {
-    background-color: rgb(255 255 255 / 14%);
+    background: var(--transparency-light-15);
 }
 
 .logs .search {
-    background-color: rgb(255 255 255 / 8%);
+    background: var(--transparency-light-10);
 }
 
 .logs .logDetails table tr.danger {
@@ -241,7 +244,7 @@ label {
 
 .uas .repoContainer .repo .details .row,
 .uas .repoContainer .repo .details .row:nth-child(2n) {
-    background: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
     color: var(--text);
 }
 
@@ -346,7 +349,7 @@ body>div.content.ng-scope>div>div.pushTopMinor.ng-scope>div:nth-child(2)>div.pla
 .uas .typesMenu .search .searchInput,
 .logs .search .searchInput {
     color: var(--text) !important;
-    background-color: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
     border: 1px solid transparent !important;
     box-shadow: none !important;
     transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -357,36 +360,15 @@ body>div.content.ng-scope>div>div.pushTopMinor.ng-scope>div:nth-child(2)>div.pla
 .uas .manualInstall:focus,
 .uas .typesMenu .search .searchInput:focus,
 .logs .search .searchInput:focus {
-    background-color: rgba(0, 0, 0, .5) !important;
+    background: var(--transparency-dark-50) !important;
     color: var(--text-hover) !important;
 }
 
 /* TABLE */
 .info tr:nth-child(2n+1) {
-    background-color: rgb(255 255 255 / 0.08);
+    background-color: var(--transparency-light-10);
 }
 
 .logs .logDetails table tr:nth-child(even) {
-    background-color: rgb(255 255 255 / 8%);
-}
-
-/* PLACEHOLDER TEXT */
-::placeholder {
-    color: var(--text) !important;
-    opacity: .5 !important;
-}
-
-:-moz-placeholder {
-    color: var(--text) !important;
-    opacity: .5 !important;
-}
-
-:-ms-input-placeholder {
-    color: var(--text) !important;
-    opacity: .5 !important;
-}
-
-::-webkit-input-placeholder {
-    color: var(--text) !important;
-    opacity: .5;
+    background: var(--transparency-light-10);
 }

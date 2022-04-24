@@ -12,6 +12,9 @@
 
 /* MOBILE */
 
+@import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
+
 @media (max-width: 720px) {
 
     .modal__body,
@@ -47,12 +50,12 @@ html {
 
 /* SCROLL BAR */
 #app>div>nav>nav>div.v-navigation-drawer__content::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, .1);
+    background: var(--transparency-light-10);
     border-radius: 20px
 }
 
 #app>div>nav>nav>div.v-navigation-drawer__content::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, .25);
+    background: var(--transparency-light-25);
     border-radius: 20px
 }
 
@@ -100,7 +103,7 @@ p,
 
 /* CARDS */
 [class*="theme--"].v-card {
-    background-color: rgba(0, 0, 0, .5);
+    background: var(--transparency-dark-50);
     color: var(--text);
 }
 
@@ -110,7 +113,7 @@ p,
 }
 
 .v-app-bar.v-app-bar--hide-shadow {
-    background-color: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 .v-app-bar.v-app-bar--is-scrolled {
@@ -130,18 +133,18 @@ p,
 
 /* SIDE MENU */
 .v-application .primary {
-    background: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
     color: var(--text) !important;
 }
 
 .v-application .secondary {
-    background-color: rgba(255, 255, 255, .15) !important;
+    background: var(--transparency-light-15) !important;
     border-color: rgba(255, 255, 255, .15) !important;
 
 }
 
 [class*="theme--"].v-navigation-drawer:not(.v-navigation-drawer--floating) .v-navigation-drawer__border {
-    background-color: rgba(0, 0, 0, .12);
+    background: var(--transparency-dark-10);
 }
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
@@ -162,7 +165,7 @@ p,
     .v-navigation-drawer--temporary:not(.v-navigation-drawer--close),
     .v-navigation-drawer--is-mobile:not(.v-navigation-drawer--close),
     .v-navigation-drawer--temporary:not(.v-navigation-drawer--close) {
-        background-color: rgba(0, 0, 0, 0.9);
+        background: var(--transparency-dark-10);
     }
 }
 
@@ -197,7 +200,7 @@ p,
 }
 
 [class*="theme--"].v-tabs>.v-tabs-bar {
-    background-color: rgba(0, 0, 0, .15);
+    background: var(--transparency-dark-15);
 }
 
 .v-application .white,
@@ -404,12 +407,12 @@ p,
 
 /* TABLE */
 [class*="theme--"].v-data-table {
-    background-color: rgba(0, 0, 0, .65);
+    background: var(--transparency-dark-65);
     color: var(--text);
 }
 
 [class*="theme--"].v-data-table>.v-data-table__wrapper>table>tbody>tr:hover:not(.v-data-table__expanded__content):not(.v-data-table__empty-wrapper) {
-    background: rgb(255 255 255 / 15%);
+    background: var(--transparency-light-15);
 }
 
 [class*="theme--"].v-data-table>.v-data-table__wrapper>table>tbody>tr:not(:last-child)>td:last-child,
@@ -433,7 +436,7 @@ p,
 /* TOOLTIP */
 .apexcharts-tooltip.apexcharts-theme-dark .apexcharts-tooltip-title,
 .apexcharts-tooltip.apexcharts-theme-light .apexcharts-tooltip-title {
-    background: rgba(0, 0, 0, 0.7);
+    background: var(--transparency-dark-70);
     border-bottom: 1px solid rgba(255, 255, 255, .1);
 }
 

@@ -34,13 +34,13 @@ div.flot-text {
 
 /* sidemenu */
 .sidemenu-open .sidemenu {
-    background: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 .sidemenu__logo:hover {
-    background: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 .sidemenu-item.active, .sidemenu-item:hover {
-    background-color: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 @media (max-width: 768px) {
 .sidemenu .sidemenu__logo_small_breakpoint {
@@ -71,15 +71,15 @@ div.flot-text {
 }
 .search-field-wrapper>input {
 	height: 55px !important;
-    background-color: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 .search-field-icon {
-    background-color: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 /* Dashboard settings menu */
 .dashboard-settings__aside {
-    background: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 .dashboard-page--settings-open .navbar {
     background: linear-gradient(90deg,rgba(0, 0, 0, .15),rgba(0, 0, 0, 0.25)) !important;
@@ -103,14 +103,14 @@ div.flot-text {
 /*Datasources Menu*/
 
 .add-data-source-item {
-    background: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
     -webkit-box-shadow: none;
     box-shadow: none;
 }
 .add-data-source-item:hover {
     -webkit-box-shadow: none;
     box-shadow: none;
-    background: rgba(255, 255, 255, 0.15);
+    background: var(--transparency-light-15);
     border: 1px solid #00000000;
     color: var(--text-hover);
 }
@@ -121,7 +121,7 @@ div.flot-text {
 
 /* Variable label box */
 .gf-form-label {
-    background-color: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
 	   border: none !important;
      color: var(--text-hover);
 }
@@ -138,7 +138,7 @@ div.flot-text {
 /* Variable dashboard dropdown */
 .variable-value-link {
     padding: 7.4px 10px !important;
-    background-color: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
     border: none !important;
     color: #FFFFFF !important;
 }
@@ -146,7 +146,7 @@ div.flot-text {
 /* Variable input box */
 .gf-form-input {
 	color: #FFFFFF !important;
-    background-color: rgba(255, 255, 255, 0.15) !important;
+    background: var(--transparency-light-15) !important;
     border: 0px solid #262628 !important;
 
 }
@@ -154,7 +154,7 @@ div.flot-text {
 /* NAVBAR BUTTONS */
 .navbar-button {
     color: var(--text-hover) !important;
-    background-color: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
     background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)) !important;
     border: none !important;
 }
@@ -166,7 +166,7 @@ div.flot-text {
 
 /* PANEL BACKGROUND COLOR*/
 .panel-container {
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     border: transparent;
     box-shadow: none !important;
 }
@@ -175,7 +175,7 @@ background-color: transparent;
   border: transparent;
 }
 .panel-header:hover {
-    background-color: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 .panel-loading {
     color: transparent;
@@ -204,7 +204,7 @@ div.flot-text {
 
 /* table panel background color */
 .table-panel-container {
-    background-color: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 /* table panel border size */
 .table-panel-table td {
@@ -215,7 +215,7 @@ div.flot-text {
 /* Edit panel tabs  */
 .tabbed-view-header {
     box-shadow: none;
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border-bottom: none;
 }
 .tabbed-view-panel-title {
@@ -242,7 +242,7 @@ div.flot-text {
     background: linear-gradient(135deg,rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25));
 }
 .add-panel__header {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     box-shadow: none;
     border-bottom: 0px;
 }
@@ -351,7 +351,7 @@ box-shadow: none !important;
 }
 /*Disabled input*/
 .css-1bjepp-input-input:disabled {
-    background-color: rgba(0, 0, 0, .5);
+    background: var(--transparency-dark-50);
     color: rgb(159, 167, 179);
 }
 .css-1bjepp-input-input:hover {border-color: transparent;}
@@ -372,7 +372,7 @@ transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1) 0s;
 .css-1m6pigl:checked + label {
 color: var(--accent-color) !important;
 border-color: rgba(255, 255, 255, .1);
-background: rgba(0, 0, 0, .5);
+background: var(--transparency-dark-50)
 }
 .css-b40tk8:focus + label {
 box-shadow: rgba(20, 22, 25, 0) 0px 0px 0px 2px, rgba(31, 97, 196, 0) 0px 0px 0px 4px !important;
@@ -383,7 +383,7 @@ background: var(--main-bg-color);
 border-color: transparent;
 }
 .css-y0yg3l {
-background: rgba(0, 0, 0, .25) !important;
+background: var(--transparency-dark-25) !important;
 border-color: transparent;
 }
 
@@ -394,10 +394,10 @@ border-bottom: 1px solid rgba(0, 0, 0, 0);
 
 /*Folder bars*/
 .css-1umfglk {
-background: rgba(0, 0, 0, .25);
+background: var(--transparency-dark-25)
 }
 .css-1umfglk:hover {
-background: rgba(0, 0, 0, .35);
+background: var(--transparency-dark-35)
 }
 
 /* Login Error message*/
@@ -424,10 +424,10 @@ margin: 10px 0px 0px;
 }
 
 /*Welcome to Grafana*/
-.css-15xxblz,.css-1ld19yb {background: rgba(0, 0, 0, .25);}
+.css-15xxblz,.css-1ld19yb {background: var(--transparency-dark-25)}
 
 .css-1as70ku, .css-u5zjuh {
-background: rgba(0, 0, 0, .25);}
+background: var(--transparency-dark-25)}
 .css-17abkeq, .css-5ak73y  {
 color: var(--text-hover);
 }
@@ -454,7 +454,7 @@ background: var(--main-bg-color);
 }
 /*Query box*/
 .css-hz0utb {
-background: rgba(0, 0, 0, .35);
+background: var(--transparency-dark-35);
 border-right: 1px solid rgba(0, 0, 0, 0);
 }
 .query-keyword, .css-wvxxxy, .css-fpnw35   {
@@ -462,7 +462,7 @@ border-right: 1px solid rgba(0, 0, 0, 0);
     color: var(--accent-color);
 }
 .css-lvafs5 {
-    background: rgba(0, 0, 0, .5);
+    background: var(--transparency-dark-50);
 }
 
 .css-ui3sz4-activeTabStyle {
@@ -478,19 +478,19 @@ border-image: initial;
 border-width: 0px 1px 1px;
 border-radius: 3px 3px 0px 0px;
 border-color: transparent !important;
-background: rgba(0, 0, 0, .5);
+background: var(--transparency-dark-50);
 overflow: hidden;
 }
 .css-1awj6q7-counter {
-background-color: rgba(0, 0, 0, .5);
+background: var(--transparency-dark-50);
 color: rgb(255, 255, 255);
 }
 /*Transform tab*/
 .css-y2f54e {
-background: rgba(0, 0, 0, .25);
+background: var(--transparency-dark-25);
 }
 .css-y2f54e:hover {
-background: rgba(0, 0, 0, .35);
+background: var(--transparency-dark-35);
 }
 .css-1e8invk::before {
 background:rgba(0, 0, 0, .35) !important;
@@ -498,7 +498,7 @@ background:rgba(0, 0, 0, .35) !important;
 
 /* Right side menu*/
 .css-1xj5tuf {
-background: rgba(0, 0, 0, .35);
+background: var(--transparency-dark-35);
 border-left: 1px solid transparent;
 }
 /*Dropdown bottom borders*/
@@ -517,7 +517,7 @@ background: var(--accent-color);
 }
 /*Visualization*/
 .css-1lemfi9 {
-    background: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     border-color: transparent;
 }
 .css-1fsv7gr:hover > div:first-child {
@@ -548,7 +548,7 @@ height: 100%;
     border-style: solid;
     border-color: rgba(255, 255, 255, 0);
     border-image: initial;
-    background: rgba(255, 255, 255, .08)
+    background: var(--transparency-light-10)
 }
 input:checked+.gf-form-switch__slider {
 background: var(--accent-color);
@@ -568,7 +568,7 @@ border-color: rgba(255, 255, 255, .09);
 /*SETTINGS*/
 /*Teams*/
 .css-1w9m9al-call-to-action-card {
-    background: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25)
     }
 
 
@@ -577,13 +577,13 @@ border-color: rgba(255, 255, 255, .09);
     background: var(--main-bg-color);
 }
 .navbar--edit {
-    background: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     border-bottom: 1px solid transparent;
     -webkit-box-shadow: 0 0 10px transparent;
     box-shadow: 0 0 10px transparent;
 }
 .grafana-info-box {
-background-color: rgba(0, 0, 0, .5);
+background: var(--transparency-dark-50);
 border-top: 3px solid var(--accent-color);
 }
 /* Variables*/

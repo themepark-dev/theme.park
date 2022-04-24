@@ -10,7 +10,8 @@
 /*		   		        Made by @gilbN					 */
 /* 			      https://github.com/gilbN/theme.park			 */
 
-@import url(/css/defaults/placeholders.css);
+@import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
 
 :root {
     --v-primary-base: rgb(var(--accent-color));
@@ -40,7 +41,7 @@ h4 {
 
 .v-toolbar__content,
 .v-toolbar__extension {
-    background-color: rgba(0, 0, 0, 0.6) !important;
+    background: var(--transparency-dark-60) !important;
 }
 
 p a {
@@ -146,7 +147,7 @@ p a {
 
 .flex.md3 .application .theme--dark.v-card,
 .theme--dark .v-card {
-    background: rgba(255, 255, 255, 0.10) !important;
+    background: var(--transparency-light-10) !important;
     color: var(--text-hover);
 }
 
@@ -156,7 +157,7 @@ p a {
 }
 
 .theme--dark.v-text-field--solo>.v-input__control>.v-input__slot {
-    background: rgb(0 0 0 / 0.50);
+    background: var(--transparency-dark-50);
 }
 
 .v-navigation-drawer {

@@ -1,4 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900);
+@import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
 /*Theme Colors*/
 /*bootstrap Color*/
 /*Normal Color*/
@@ -257,10 +259,10 @@ h6 {
 /* settings */
 /* header*/
 [id*="settings-"]>div>div.panel-heading:not(form > div > div.panel-heading) {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25)
 }
 [id*="settings-"]>div>div.panel-heading .bg-org:not(form > div > div.panel-heading) {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25)
 }
 
 #account-area > div > div > div > div,
@@ -278,7 +280,7 @@ h6 {
 
 
 #homepage-Deluge-form > fieldset > div > div.panel-wrapper.collapse.in > div > div > div > div.tab-pane.fade.in.active > div > div > div > div > div > div > div {
-    background: rgba(0, 0, 0, .1);
+    background: var(--transparency-dark-10)
 }
 
 /* Homepage Item Modals*/
@@ -288,15 +290,15 @@ h6 {
 [id$="FYI"] > div > div > div > div > div > div > div,
 #\39 w59f92rirFYI > div > div > div > div > div > div > div,
 [id$="Setup"] > div > div > div > div > div {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25)
 }
 
 [id*="settings-"] .panel {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25)
 }
 
 #customize-appearance-form>ul>li.active>a {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25)
 }
 
 #settings-main-system-settings {
@@ -319,33 +321,33 @@ select.form-control:focus {
 
 .form-material .form-control:focus,
 .form-control:focus {
-    background: rgba(0, 0, 0, 0.45);
+    background: var(--transparency-dark-45);
     border: 1px solid rgba(255, 255, 255, 0.1);
 
 }
 
 .form-material .form-control,
 .form-control {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border-radius: 3px;
 }
 
 #githubVersions .bg-org {
-    background: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 /* Ace editor stuff */
 .ace-idle-fingers {
-    background-color: rgb(0 0 0 / 25%) !important;
+    background: var(--transparency-dark-25) !important;
     color: var(--text-hover) !important;
 }
 
 .ace-idle-fingers .ace_marker-layer .ace_active-line {
-    background: rgba(255, 255, 255, 0.15) !important;
+    background: var(--transparency-light-15) !important;
 }
 
 .ace-idle-fingers .ace_gutter {
-    background: rgb(255 255 255 / 10%) !important;
+    background: var(--transparency-light-10) !important;
     color: var(--text-hover) !important;
 }
 
@@ -380,7 +382,7 @@ pre {
 
 #loginLogTable>tbody>.even,
 #organizrLogTable>tbody>.even {
-    background: rgba(255, 255, 255, 0.10);
+    background: var(--transparency-light-10);
 }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button.current,
@@ -398,42 +400,6 @@ pre {
 
 .dataTables_wrapper .dataTables_paginate .paginate_button:active {
     box-shadow: inset 0 0 3px rgba(0, 0, 0, 0);
-}
-
-/* PLACEHOLDERS */
-input::-webkit-input-placeholder {
-    color: var(--text) !important;
-}
-
-input:focus::-webkit-input-placeholder {
-    color: var(--text-hover) !important;
-}
-
-/* Firefox < 19 */
-input:-moz-placeholder {
-    color: var(--text) !important;
-}
-
-input:focus:-moz-placeholder {
-    color: var(--text-hover) !important;
-}
-
-/* Firefox > 19 */
-input::-moz-placeholder {
-    color: var(--text) !important;
-}
-
-input:focus::-moz-placeholder {
-    color: var(--text-hover) !important;
-}
-
-/* Internet Explorer 10 */
-input:-ms-input-placeholder {
-    color: var(--text) !important;
-}
-
-input:focus:-ms-input-placeholder {
-    color: var(--text-hover) !important;
 }
 
 /* Scrollbar */
@@ -466,7 +432,7 @@ input:focus:-ms-input-placeholder {
     min-height: 50px;
     border: 3px solid transparent;
     border-radius: 8px;
-    background-color: hsla(0, 0%, 100%, .2);
+    background: var(--transparency-dark-20);
     background-clip: padding-box;
 }
 
@@ -478,7 +444,7 @@ input:focus:-ms-input-placeholder {
     min-height: 50px;
     border: 3px solid transparent;
     border-radius: 8px;
-    background-color: hsla(0, 0%, 100%, .5);
+    background: var(--transparency-light-50);
     background-clip: padding-box;
 }
 
@@ -513,7 +479,7 @@ th.jsgrid-control-field.jsgrid-align-center {
 .jsGrid-Users,
 .jsgrid-header-sort-desc,
 .jsgrid-header-sort-asc {
-    background: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 tr.jsgrid-header-row th {
@@ -529,14 +495,14 @@ tr.jsgrid-header-row th {
 
 .jsgrid-filter-row>td,
 .jsgrid-header-sortable:hover {
-    background: rgba(0, 0, 0, 0.45) !important;
+    background: var(--transparency-dark-45) !important;
     color: var(--text-hover) !important;
 }
 
 /* Calendar */
 
 #calendar .fc-content-skeleton>table>thead>tr {
-    background: rgba(0, 0, 0, 0.15);
+    background: var(--transparency-dark-15)
 }
 
 .fc-event:not(.homepage-drag),
@@ -561,12 +527,12 @@ tr.jsgrid-header-row th {
 .fc-unthemed .fc-row,
 .fc-unthemed .fc-popover {
     border-color: transparent;
-    background: rgba(0, 0, 0, 0.05);
+    background: var(--transparency-dark-05)
 }
 
 .bg-theme,
 .fc-day-header {
-    background: rgba(0, 0, 0, .3) !important;
+    background: var(--transparency-dark-30) !important;
 }
 
 .bg-theme,
@@ -578,15 +544,15 @@ tr.jsgrid-header-row th {
 .fc th.fc-wed,
 .fc th.fc-fri,
 .fc-button {
-    background-color: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 th.fc-day-header.fc-widget-header.fc-today {
-    background-color: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 .fc-widget-content.fc-today {
-    background-color: rgba(255, 255, 255, 0.25) !important;
+    background: var(--transparency-light-25) !important;
 }
 
 .fc-popover {
@@ -644,7 +610,7 @@ th.fc-day-header.fc-widget-header.fc-today {
     #lockScreen .white-box {
         width: 100% !important;
         height: 100% !important;
-        background: rgb(0 0 0 / 45%) !important;
+        background: var(--transparency-dark-45) !important;
         margin-top: auto !important;
         border-radius: 0px !important;
     }
@@ -686,7 +652,7 @@ th.fc-day-header.fc-widget-header.fc-today {
 }
 
 .blockMsg {
-    background: rgba(0, 0, 0, 0.9) !important;
+    background: var(--transparency-dark-90) !important;
     border: none !important;
 }
 
@@ -717,7 +683,7 @@ label[for="checkbox-login"]:hover {
 #recoverform>div:nth-child(3)>div>button,
 #leave-recover,
 #form-lockscreen>div.form-group.text-center>div>button {
-    background: rgb(255 255 255 / 15%) !important;
+    background: var(--transparency-light-15) !important;
     color: var(--text)  !important;
     border-radius: 25px;
     border: none;
@@ -728,7 +694,7 @@ label[for="checkbox-login"]:hover {
         -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
         border-radius: 15px;
-        background-color: rgba(0, 0, 0, 0.45) !important;
+        background: var(--transparency-dark-45) !important;
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
         color: var(--text-hover)  !important;
@@ -764,7 +730,7 @@ label[for="checkbox-login"]:hover {
 /*2FA login button*/
 .panel-wrapper .panel-body>.btn-warning,
 .btn-warning.disabled {
-    background: hsla(0, 0%, 0%, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
     border: 1px solid #ffc36d00 !important;
 }
 
@@ -773,7 +739,7 @@ label[for="checkbox-login"]:hover {
 .panel-yellow .panel-heading {
     color: var(--text-hover);
     border-radius: 3px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background: var(--transparency-dark-30);
     border-color: #00000000;
 }
 
@@ -825,7 +791,7 @@ label[for="checkbox-login"]:hover {
         -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
         border-radius: 15px;
-        background-color: rgba(0, 0, 0, 0.45);
+        background: var(--transparency-dark-45);
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
     }
@@ -848,7 +814,7 @@ label[for="checkbox-login"]:hover {
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
     #splashScreen {
         overflow-y: scroll;
-        background: rgb(0 0 0 / 80%) !important;
+        background: var(--transparency-dark-80) !important;
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
     }
@@ -859,7 +825,7 @@ label[for="checkbox-login"]:hover {
 @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
     #splashScreen {
         overflow-y: scroll;
-        background: rgb(0 0 0 / 90%) !important;
+        background: var(--transparency-dark-90) !important;
     }
 }
 
@@ -1014,7 +980,7 @@ label[for="checkbox-login"]:hover {
 }
 
 .bg-success.text-inverse {
-    background-color: rgba(255, 255, 255, 0.15) !important;
+    background: var(--transparency-light-15) !important;
     color: var(--text-hover);
 }
 
@@ -1097,7 +1063,7 @@ label[for="checkbox-login"]:hover {
 
 /* Homepage Now playing card */
 .nowPlayingItem>.white-box>.el-card-item {
-    background: rgba(0, 0, 0, 0.15) !important;
+    background: var(--transparency-dark-15) !important;
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
@@ -1191,7 +1157,7 @@ label[for="checkbox-login"]:hover {
 
 #homepageOrderdownloader .nav-tabs>li.active>a:hover,
 #homepageOrderdownloader .nav-tabs>li.active:hover {
-    background: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
     opacity: 1;
 }
 
@@ -1226,7 +1192,7 @@ label[for="checkbox-login"]:hover {
 }
 
 .fc-button:hover {
-    background: rgba(255, 255, 255, .08) !important;
+    background: var(--transparency-light-10) !important;
 }
 
 .fc-button {
@@ -1448,13 +1414,13 @@ a:hover,
 
 .progress-bar-inverse,
 .progress {
-    background: rgba(255, 255, 255, 0.25) !important;
+    background: var(--transparency-light-25) !important;
 }
 
 /* Homepage health checks */
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
     .bg-inverse .healthPosition {
-        background: rgba(255, 255, 255, 0.2) !important;
+        background: var(--transparency-light-20) !important;
         -webkit-backdrop-filter: saturate(180%) blur(30px);
         backdrop-filter: saturate(180%) blur(30px);
         border-radius: 3px;
@@ -1482,7 +1448,7 @@ a:hover,
 }
 
 #homepageOrderhealthchecks .card-body {
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--transparency-light-20);
 }
 
 .card,
@@ -1501,7 +1467,7 @@ a:hover,
 /* Homepage Tautulli Cards*/
 #homepageOrdertautulli .library-card .card-body,
 #homepageOrdertautulli div:nth-child(8) .card-body {
-    background: rgba(255, 255, 255, .2);
+    background: var(--transparency-light-20)
 }
 
 .homepage-tautulli-card .cardCountType {
@@ -1528,12 +1494,12 @@ a:hover,
 }
 
 .unifiCards .panel-wrapper.collapse.in {
-    background: rgba(0, 0, 0, 0.15);
+    background: var(--transparency-dark-15)
 }
 
 /* Homepage Monitor Cards */
 #homepageOrderMonitorr .card-body {
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--transparency-light-20);
 }
 
 #homepageOrderMonitorr .col-lg-2 {
@@ -1554,11 +1520,11 @@ a:hover,
 
 /*Homepage WeatherAndAir Cards*/
 #homepageOrderWeatherAndAir .tabs-style-iconbox nav ul li.tab-current a {
-    background: rgba(0, 0, 0, .2);
+    background: var(--transparency-dark-20);
 }
 
 .health-and-pollutant-section .content-current {
-    background: rgba(255, 255, 255, .2);
+    background: var(--transparency-light-20)
 }
 
 #homepageOrderWeatherAndAir .tabs-style-iconbox nav ul li.tab-current a::after {
@@ -1574,13 +1540,13 @@ a:hover,
 }
 
 #homepageOrderWeatherAndAir .white-box {
-    background: rgba(255, 255, 255, .1);
+    background: var(--transparency-light-10);
     border-radius: 3px;
 }
 
 /*Homepage Speedtest Cards*/
 #allSpeedtest .speedtest-card {
-    background-color: rgba(255, 255, 255, .1);
+    background: var(--transparency-light-10);
 }
 
 #allSpeedtest .speedtest-card .text-muted,
@@ -1632,7 +1598,7 @@ body > div.swal-overlay.swal-overlay--show-modal > div {
 
 #user-list-div .ms-container .ms-selectable,
 #user-list-div .ms-container .ms-selection {
-    background: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
     color: var(--text);
 }
 
@@ -1749,7 +1715,7 @@ body {
 .nav .open>a,
 .nav .open>a:focus,
 .nav .open>a:hover {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25)
 }
 
 /*Right panel*/
@@ -1782,7 +1748,7 @@ background: rgb(0 0 0 / 0%) !important;
 } 
 
 .sidebar  {
-    background: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
     box-shadow: 1px 0px 20px rgb(0 0 0 / 20%);
 
 }
@@ -2306,7 +2272,7 @@ fieldset[disabled] .form-control {
 .table>thead>tr.active>th,
 .table>thead>tr>td.active,
 .table>thead>tr>th.active {
-    background-color: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 .asColorPicker-dropdown,
@@ -2452,14 +2418,14 @@ pre,
 select,
 table.dataTable.display tbody tr.odd,
 table.dataTable.stripe tbody tr.odd {
-    background: rgba(0, 0, 0, 0.15);
+    background: var(--transparency-dark-15)
 }
 
 input:focus:not(select),
 input:active:not(select),
 .form-control:focus:not(select),
 .form-control:active:not(select) {
-    background: rgba(0, 0, 0, 0.445);
+    background: var(--transparency-dark-45);
     border: 1px solid rgba(120, 130, 140, 0.4);
 }
 
@@ -2540,7 +2506,7 @@ span.select2-results {
 } */
 
 .panel-blue .panel-heading, .panel-info .panel-heading, #help-modal-body > div > div {
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
 }
 #account-area > div > div > div > div > div.panel-wrapper.collapse.in.main-email-panel > div > div > div  > div > div,
 #plexRecent > div.col-lg-12 > div,
