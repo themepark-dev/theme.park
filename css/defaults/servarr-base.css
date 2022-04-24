@@ -186,8 +186,7 @@ a:hover {
 }
 
 [class*="AutoSuggestInput-suggestionsList-"],
-[class*="AutoSuggestInput-suggestionsContainerOpen-"],
-[class*="AutoSuggestInput-suggestionsContainer-"] {
+[class*="AutoSuggestInput-suggestionsContainerOpen-"] [class*="AutoSuggestInput-suggestionsContainer-"] {
     background-color: #323232 !important;
     color: white;
     border: none !important;
@@ -572,11 +571,11 @@ a:hover {
     border-bottom: 1px solid var(--transparency-light-10) !important;
 }
 
-/* SEARCH BAR */
+/* INPUT */
 [class*="Input-input-"],
 [class*="CheckInput-isIndeterminate-"] {
     border: none;
-    background: var(--transparency-light-10);
+    background: var(--transparency-light-05);
     color: var(--text-hover);
 }
 
@@ -584,7 +583,7 @@ a:hover {
     outline: 0;
     border-color: var(--text-hover);
     box-shadow: none;
-    background: var(--transparency-light-25);
+    background: var(--transparency-light-10);
 }
 
 [class*="TagInput-input-"][class*="TagInput-isFocused-"] {
