@@ -10,6 +10,9 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
+@import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
+
 body {
     background: var(--main-bg-color);
     background-repeat: repeat, no-repeat;
@@ -24,7 +27,7 @@ body {
 
 /* scroller */
 ::-webkit-scrollbar-corner {
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
 }
 
 ::-webkit-scrollbar {
@@ -37,7 +40,7 @@ body {
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 2px;
     border-radius: 2px;
-    background-color: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
 }
 
 .modal-header {
@@ -99,7 +102,7 @@ h6 {
 }
 
 .table-striped tbody tr:nth-child(odd) {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 .table-striped tbody tr:nth-child(odd) td,
@@ -108,40 +111,40 @@ h6 {
 }
 
 .table-striped tbody tr:nth-child(even) {
-    background-color: rgba(0, 0, 0, 0.08);
+    background: var(--transparency-dark-10);
 }
 
 .table tbody tr:hover,
 .table tbody tr:hover td,
 .table tbody tr:hover a {
     color: var(--text-hover);
-    background-color: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
 }
 
 .table-striped tbody tr.checked:nth-child(2n+1) td,
 .checked .progress {
-    background-color: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
 }
 
 tr.checked,
 tr.checked td,
 tr.checked:nth-child(odd) .progress {
-    background-color: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
 }
 
 .table tbody tr.checked:hover,
 .table tbody tr.checked:hover td {
-    background-color: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
 }
 
 .table tbody tr.checked:hover,
 .table tbody tr.checked:hover td {
-    background-color: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
 }
 
 .table.check-simple tbody tr.checked:hover,
 .table.check-simple tbody tr.checked:hover td {
-    background-color: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
 }
 
 .table th,
@@ -156,12 +159,12 @@ tr.checked:nth-child(odd) .progress {
 
 .pagination a {
     border: none;
-    background: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25)
 }
 
 .pagination a:hover,
 .pagination .active a {
-    background-color: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
 }
 
 .pagination .active a {
@@ -170,7 +173,7 @@ tr.checked:nth-child(odd) .progress {
 
 /* PROGRESS BAR */
 .progress {
-    background: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
 }
 
 .progress-warning.progress-striped .bar {
@@ -183,7 +186,7 @@ tr.checked:nth-child(odd) .progress {
 
 .bar-text-left,
 .bar-text-right {
-    var(--text-hover);
+    color: var(--text-hover);
 }
 
 /* NAVBAR */
@@ -209,16 +212,16 @@ tr.checked:nth-child(odd) .progress {
 
 .navbar .nav>li>a:hover {
     color: rgb(var(--accent-color)) !important;
-    background: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
 }
 
 .navbar .nav .active>a {
-    background: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
     color: rgb(var(--accent-color));
 }
 
 .navbar .nav .active>a:hover {
-    background: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
     color: var(--accent-color-hover) !important;
 }
 
@@ -239,7 +242,7 @@ div.check:hover {
 
 .navbar-search .search-query {
     color: var(--text);
-    background-color: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
 
 
 }
@@ -248,7 +251,7 @@ div.check:hover {
 .navbar-search .search-query.focused {
     color: var(--text-hover) !important;
     text-shadow: none;
-    background-color: rgba(0, 0, 0, 0.45) !important;
+    background: var(--transparency-dark-45) !important;
 }
 
 .focused .search-caret-button .caret {
@@ -285,7 +288,7 @@ div.check:hover {
 .dropdown-menu .active>a,
 .dropdown-menu .active>a:hover {
     color: var(--text-hover);
-    background-color: hsla(0, 0%, 100%, .05);
+    background: var(--transparency-dark-05);
 }
 
 .dropdown-menu .divider {
@@ -381,7 +384,7 @@ div.check:hover {
 #ConfigData>div:nth-child(4)>div>button,
 #ConfigData>div:nth-child(5)>div>button {
     text-shadow: unset;
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     color: var(--text-hover);
 }
 
@@ -389,7 +392,7 @@ div.check:hover {
 #ConfigData>div:nth-child(4)>div>button:hover,
 #ConfigData>div:nth-child(5)>div>button:hover {
     text-shadow: unset;
-    background: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
     color: var(--text-hover);
 }
 
@@ -401,18 +404,18 @@ div.check:hover {
 }
 
 #ConfigData input.btn {
-    background: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
     text-shadow: unset;
     color: #a8a8a8;
 }
 
 #Config_ViewButton {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     color: var(--text-hover);
 }
 
 #Config_ViewButton:hover {
-    background: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
     color: var(--text-hover);
 }
 
@@ -448,7 +451,7 @@ div.check:hover {
 }
 
 .config-header .btn {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 .btn-group.open .btn.dropdown-toggle {
@@ -470,7 +473,7 @@ div.check:hover {
 input,
 textarea,
 .uneditable-input {
-    background: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
     color: var(--text) !important;
     border: transparent;
 }
@@ -478,13 +481,13 @@ textarea,
 input:focus:not(.btn),
 textarea:focus,
 .uneditable-input:focus {
-    background: rgba(255, 255, 255, 0.10) !important;
+    background: var(--transparency-light-10) !important;
     color: var(--text-hover) !important;
     border: transparent;
 }
 
 select {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border: 1px solid #00000000;
     color: var(--text)
 }
@@ -519,7 +522,7 @@ textarea:focus {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     border: 0px;
-    background-color: hsla(0, 0%, 100%, .05);
+    background: var(--transparency-dark-05);
     text-shadow: unset;
     color: var(--text-hover);
     text-transform: capitalize;
@@ -564,12 +567,12 @@ label {
     text-shadow: 0 -1px 0 rgb(0 0 0 / 25%);
     white-space: nowrap;
     vertical-align: baseline;
-    background-color: rgb(255 255 255 / 25%);
+    background-color: var(--transparency-light-25);
 }
 
 #ConfigNav {
     border: 1px solid rgba(0, 0, 0, .25);
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
 }
 
 #ConfigNav.nav-list a {
@@ -596,7 +599,7 @@ label {
 }
 
 .nav>li>a:hover {
-    background-color: hsla(0, 0%, 100%, .08);
+    background: var(--transparency-dark-10);
     color: var(--text-hover) !important;
 }
 
@@ -623,7 +626,7 @@ span.help-option-title {
 
 .input-prepend .add-on,
 .input-append .add-on {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     background-image: var(--main-bg-color) !important;
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
@@ -638,7 +641,7 @@ span.help-option-title {
 }
 
 .config-settitle {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border-bottom: none;
 }
 

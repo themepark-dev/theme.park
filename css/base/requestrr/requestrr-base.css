@@ -10,7 +10,8 @@
 /*		   		        Made by @gilbN					 */
 /* 			      https://github.com/gilbN/theme.park			 */
 
-@import url(/css/defaults/placeholders.css);
+@import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
 
 body {
     color: var(--text);
@@ -70,20 +71,20 @@ h6,
 
 .nav-link.active:hover,
 .nav-link.active:focus {
-    background: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 .navbar-light .navbar-nav .nav-link:focus:not(.nav-link.active),
 .navbar-light .navbar-nav .nav-link:hover:not(.nav-link.active) {
     color: var(--text-hover);
-    background: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 @media (min-width: 768px) {
     .navbar-vertical.navbar-expand-md.fixed-left {
         left: 0;
         border-width: 0 1px 0 0;
-        background: rgba(0, 0, 0, 0.25) !important;
+        background: var(--transparency-dark-25) !important;
     }
 }
 
@@ -122,7 +123,7 @@ h6,
 .fade {
     -webkit-transition: opacity .15s linear;
     transition: opacity .15s linear;
-    background: rgba(0, 0, 0, 0.15) !important;
+    background: var(--transparency-dark-15) !important;
 }
 
 .bg-secondary {
@@ -140,7 +141,7 @@ h6,
 
 .bg-white,
 .footer {
-    background-color: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 .footer {
@@ -182,7 +183,7 @@ h6,
 /* FORMS */
 .form-control:disabled,
 .form-control[readonly] {
-    background-color: rgba(255, 255, 255, 0.1);
+    background: var(--transparency-light-10);
     opacity: 1;
     border: 1px solid transparent;
     color: gray;
@@ -190,12 +191,12 @@ h6,
 
 .form-control-alternative,
 .has-danger .form-control {
-    background: rgba(0, 0, 0, 0.25);
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
+    background: var(--transparency-dark-25);
 }
 
 .form-control-alternative:focus {
-    background: rgba(0, 0, 0, 0.5);
+    background: var(--transparency-dark-50);
 }
 
 .form-control:focus {
@@ -203,7 +204,7 @@ h6,
 }
 
 .has-success .form-control {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--transparency-dark-50);
 }
 
 .form-control {
@@ -236,7 +237,7 @@ h6,
 
 .react-dropdown-select.dropdown {
     color: var(--text);
-    background-color: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
 }
 
 .react-dropdown-select.dropdown .react-dropdown-select-item-selected {
@@ -279,7 +280,7 @@ h6,
 .btn-default,
 .btn-default:hover {
     color: var(--text-hover);
-    background-color: rgba(255, 255, 255, 0.25);
+    background: var(--transparency-light-25);
     border-color: transparent;
 }
 
@@ -287,14 +288,14 @@ h6,
 .btn-default:not(:disabled):not(.disabled):active,
 .show>.btn-default.dropdown-toggle {
     color: var(--text-hover);
-    background-color: rgba(0, 0, 0, 0.26);
+    background-color: var(--transparency-dark-25);
     border-color: transparent;
 }
 
 .btn-default.disabled,
 .btn-default:disabled {
     color: var(--text-hover);
-    background-color: rgba(255, 255, 255, 0.15);
+    background: var(--transparency-light-15);
     border-color: transparent;
     opacity: .5;
 }
@@ -327,19 +328,19 @@ h6,
 }
 
 #root>div>div.mt--8.pb-5.container>div>div>div {
-    background: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 #root>div>div.mt--8.pb-5.container>div>div>div>div>form>div:nth-child(1)>div>input,
 #root>div>div.mt--8.pb-5.container>div>div>div>div>form>div:nth-child(2)>div>input,
 #root>div>div.mt--8.pb-5.container>div>div>div>div>form>div:nth-child(3)>div>input {
-    background: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
     border: 10px solid transparent;
 }
 
 .input-group-text {
     color: var(--text);
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border: 1px solid transparent !important;
 }
 
@@ -381,7 +382,7 @@ h6,
     min-height: 50px;
     border: 3px solid transparent;
     border-radius: 8px;
-    background-color: hsla(0, 0%, 100%, .2);
+    background: var(--transparency-dark-20);
     background-clip: padding-box;
 }
 
@@ -393,6 +394,6 @@ h6,
     min-height: 50px;
     border: 3px solid transparent;
     border-radius: 8px;
-    background-color: hsla(0, 0%, 100%, .5);
+    background: var(--transparency-light-50);
     background-clip: padding-box;
 }

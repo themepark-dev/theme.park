@@ -13,6 +13,10 @@
  /* "Re-skin" of CaliBlur https://github.com/leram84/layer.Cake/tree/master/caliBlur */
  /* Set theme to CaliBlur in UI Configuration -> View Configuration -> Theme -> CaliBlur -> Submit */
  /* APP VARS*/
+
+@import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
+
  :root {
     --color-background: var(--main-bg-color);
     --color-primary: rgb(var(--accent-color));
@@ -200,7 +204,7 @@
  .dropdown-menu>li>a:focus,
  .dropdown-menu>li>a:hover {
      color: var(--text-hover);
-     background: hsla(0, 0%, 100%, .08);
+     background: var(--transparency-dark-10);
  }
 
  /* SIDEMENU */
@@ -222,7 +226,7 @@
      -webkit-transition: color .2s;
      -o-transition: color .2s;
      transition: color .2s;
-     background-color: rgba(0, 0, 0, .55) !important;
+     background: var(--transparency-dark-55) !important;
  }
 
  /* NAVBAR */

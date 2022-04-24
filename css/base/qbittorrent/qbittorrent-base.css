@@ -11,6 +11,8 @@
 /*			      https://github.com/gilbN/theme.park			 */
 
 @import url(https://use.fontawesome.com/releases/v5.0.7/css/all.css);
+@import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -18,13 +20,13 @@
 }
 
 ::-webkit-scrollbar-corner {
-  background-color: hsla(0, 0%, 100%, .08);
+  background: var(--transparency-dark-10);
 }
 
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  background-color: hsla(0, 0%, 100%, .08);
+  background: var(--transparency-dark-10);
 }
 
 html,
@@ -59,13 +61,13 @@ body {
 input:disabled {
   color: rgb(84, 84, 84);
   cursor: default;
-  background-color: rgb(255, 255, 255, .05) !important;
+  background: var(--transparency-light-05) !important;
   border: none !important;
 }
 
 input[type="text"i] {
   color: var(--text-hover);
-  background-color: rgba(0, 0, 0, .25);
+  background: var(--transparency-dark-25);
   border-width: 0px;
   outline: none;
   border: none;
@@ -74,7 +76,7 @@ input[type="text"i] {
 
 input[type="password"i] {
   color: var(--text-hover);
-  background-color: rgba(0, 0, 0, .25);
+  background: var(--transparency-dark-25);
   border-width: 0px;
   outline: none;
   border: none;
@@ -83,7 +85,7 @@ input[type="password"i] {
 
 input[type="number"i] {
   color: var(--text-hover);
-  background-color: rgba(0, 0, 0, .25);
+  background: var(--transparency-dark-25);
   border-width: 0px;
   outline: none;
   border: none;
@@ -91,7 +93,7 @@ input[type="number"i] {
 
 input[type="file"i] {
   color: var(--text-hover);
-  background-color: rgba(0, 0, 0, .25);
+  background: var(--transparency-dark-25);
   border-width: 0px;
   outline: none;
   border: none;
@@ -161,7 +163,7 @@ h4,
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   padding-top: 0;
-  /* background: rgba(0, 0, 0, 0.25); */
+  /* background: var(--transparency-dark-25) */
   width: 400px;
   height: 460px;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
@@ -209,7 +211,7 @@ label {
 }
 
 #desktopNavbar {
-  background: rgba(0, 0, 0, 0.25);
+  background: var(--transparency-dark-25);
   height: 20px;
   border-bottom: 1px solid transparent;
 }
@@ -220,11 +222,11 @@ label {
 
 #desktopNavbar ul li a:hover {
   color: var(--text-hover);
-  background-color: rgba(255, 255, 255, 0.08);
+  background: var(--transparency-light-10);
 }
 
 #desktopNavbar li ul li a:hover {
-  background: rgba(255, 255, 255, .08);
+  background: var(--transparency-light-10);
   color: var(--text-hover);
 }
 
@@ -269,7 +271,7 @@ label {
 }
 
 .dynamicTable th {
-  background-color: rgba(0, 0, 0, 0.25) !important;
+  background: var(--transparency-dark-25) !important;
   border-right-color: rgba(255, 255, 255, .08) !important;
   color: var(--text-hover);
 }
@@ -283,20 +285,20 @@ label {
 }
 
 .dynamicTable {
-  background: rgba(0, 0, 0, 0.25);
+  background: var(--transparency-dark-25)
 }
 
 .dynamicTable tbody tr {
-  background-color: rgba(0, 0, 0, 0.08) !important;
+  background: var(--transparency-dark-10) !important;
 }
 
 .dynamicTable tbody tr:nth-child(even),
 .dynamicTable tbody tr.alt {
-  background-color: rgba(255, 255, 255, 0.08) !important;
+  background: var(--transparency-light-10) !important;
 }
 
 .dynamicTable tbody tr:hover {
-  background-color: rgba(255, 255, 255, 0.15) !important;
+  background: var(--transparency-light-15) !important;
   color: var(--text-hover);
 }
 
@@ -341,7 +343,7 @@ li.divider {
 
 #main input[type="text"i] {
   color: var(--text-hover);
-  background-color: rgba(0, 0, 0, .25);
+  background: var(--transparency-dark-25);
   border-width: 0px;
   outline: none;
   border: none;
@@ -352,12 +354,12 @@ li.divider {
 }
 
 #main input[type="text"i]:focus {
-  background-color: rgba(0, 0, 0, .45);
+  background: var(--transparency-dark-45);
 }
 
 #main input[type="password"i] {
   color: var(--text-hover);
-  background-color: rgba(0, 0, 0, .25);
+  background: var(--transparency-dark-25);
   border-width: 0px;
   outline: none;
   border: none;
@@ -368,7 +370,7 @@ li.divider {
 }
 
 #main input[type="password"i] {
-  background-color: rgba(0, 0, 0, .45);
+  background: var(--transparency-dark-45);
 }
 
 #loginform #login {
@@ -457,13 +459,13 @@ ul.filterList li:hover:before {
 }
 
 .columnHandle {
-  background: rgba(0, 0, 0, 0.45);
+  background: var(--transparency-dark-45);
   border: 1px solid transparent;
 }
 
 /*Sidemenu - Bottom menu*/
 .bottomPanel {
-  background: rgba(0, 0, 0, 0.25) !important;
+  background: var(--transparency-dark-25) !important;
 }
 
 /* Bottom menu */
@@ -472,7 +474,7 @@ ul.filterList li:hover:before {
 }
 
 .panel-header {
-  background: rgba(0, 0, 0, 0.25) !important;
+  background: var(--transparency-dark-25) !important;
   border-bottom: 1px solid transparent !important;
 }
 
@@ -500,11 +502,11 @@ ul.filterList li:hover:before {
 }
 
 .tab-menu li a:hover {
-  background: rgba(255, 255, 255, 0.08) !important;
+  background: var(--transparency-light-10) !important;
 }
 
 .toolbarTabs {
-  background: rgba(0, 0, 0, 0.25) !important;
+  background: var(--transparency-dark-25) !important;
 }
 
 .progressbar_dark {
@@ -513,7 +515,7 @@ ul.filterList li:hover:before {
 }
 
 .progressbar_light {
-  background: rgba(0, 0, 0, 0.25) !important;
+  background: var(--transparency-dark-25) !important;
   color: var(--text-hover) !important;
 }
 
@@ -549,13 +551,13 @@ fieldset {
 
 .mochaToolButton {
   margin-right: 10px;
-  background: rgba(0, 0, 0, .25);
+  background: var(--transparency-dark-25);
   border-radius: 5px;
 }
 
 .mochaToolButton:hover {
   margin-right: 10px;
-  background: rgba(255, 255, 255, .25);
+  background: var(--transparency-light-25);
   border-radius: 5px;
 }
 
@@ -577,7 +579,7 @@ fieldset {
   width: 100%;
   position: relative;
   height: 29px;
-  background: rgba(0, 0, 0, 0.25) !important;
+  background: var(--transparency-dark-25) !important;
   overflow: hidden;
   border-top: none !important;
 }
@@ -617,14 +619,14 @@ fieldset.settings {
 textarea:disabled {
   color: rgb(84, 84, 84);
   cursor: default;
-  background-color: rgb(255, 255, 255, .05) !important;
+  background: var(--transparency-light-05) !important;
   border: none !important;
 }
 
 textarea {
   color: var(--text-hover) !important;
   cursor: default;
-  background-color: rgb(0, 0, 0, .25) !important;
+  background: var(--transparency-dark-25) !important;
   border: none !important;
 }
 

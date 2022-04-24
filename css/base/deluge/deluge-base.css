@@ -13,6 +13,8 @@
  /* Based on https://github.com/HalianElf/Deluge-Dark/blob/master/deluge.css */
 
  @import url('https://fonts.googleapis.com/css?family=Roboto');
+ @import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
 
  html {
      background: var(--main-bg-color);
@@ -33,20 +35,20 @@
 
  /* scroller */
  ::-webkit-scrollbar-corner {
-     background-color: hsla(0, 0%, 100%, .08);
+     background: var(--transparency-dark-10);
  }
 
  ::-webkit-scrollbar {
      width: 10px;
      height: 10px;
-     background: rgba(0, 0, 0, .25);
+     background: var(--transparency-dark-25);
 
  }
 
  ::-webkit-scrollbar-thumb {
      -webkit-border-radius: 2px;
      border-radius: 2px;
-     background-color: hsla(0, 0%, 100%, .08);
+     background: var(--transparency-dark-10);
  }
 
  .x-grid3-header table,
@@ -55,7 +57,7 @@
  }
 
  .ext-el-mask {
-     background-color: rgba(0, 0, 0, 0.25);
+     background: var(--transparency-dark-25);
  }
 
  .ext-el-mask-msg {
@@ -303,13 +305,13 @@
  }
 
  ul.x-tab-strip-top {
-     background-color: rgba(0, 0, 0, 0.25);
+     background: var(--transparency-dark-25);
      background-image: none;
      border-bottom-color: transparent;
  }
 
  ul.x-tab-strip-bottom {
-     background-color: rgba(0, 0, 0, 0.25);
+     background: var(--transparency-dark-25);
      //background-image: url(../images/gray/tabs/tab-strip-btm-bg.gif);
      border-top-color: transparent;
  }
@@ -348,7 +350,7 @@
  ul.x-tab-strip li {
      float: left;
      margin-left: 2px;
-     background: rgba(0, 0, 0, 0.25);
+     background: var(--transparency-dark-25)
  }
 
  #torrentDetails dl dt,
@@ -434,7 +436,7 @@
 
  .x-form-text,
  textarea.x-form-field {
-     background-color: rgba(255, 255, 255, 0.08);
+     background: var(--transparency-light-10);
      background-image: none;
      border-color: transparent;
  }
@@ -778,6 +780,10 @@
      color: var(--button-text);
  }
 
+ #deluge-statusbar .x-btn button {
+    color: var(--text)
+}
+
  .x-btn em {
      font-style: normal;
      font-weight: normal;
@@ -1029,7 +1035,7 @@
  }
 
  .x-grid3 {
-     background: rgba(0, 0, 0, 0.25);
+     background: var(--transparency-dark-25);
  }
 
  .x-grid-panel .x-panel-mc .x-panel-body {
@@ -1061,12 +1067,12 @@
  }
 
  .x-grid3-row-alt {
-     background-color: rgba(0, 0, 0, 0.25);
+     background: var(--transparency-dark-25);
  }
 
  .x-grid3-row-over {
      border-color: transparent;
-     background-color: rgba(255, 255, 255, 0.08);
+     background: var(--transparency-light-10);
      background-image: none;
  }
 
@@ -1079,7 +1085,7 @@
  }
 
  .x-grid3-header {
-     background-color: rgba(0, 0, 0, 0.25);
+     background: var(--transparency-dark-25);
      background-image: none;
      color: var(--text-hover) !important;
  }
@@ -1105,7 +1111,7 @@
  td.sort-desc .x-grid3-hd-inner,
  td.sort-asc .x-grid3-hd-inner,
  td.x-grid3-hd-menu-open .x-grid3-hd-inner {
-     background-color: rgba(0, 0, 0, 0.25);
+     background: var(--transparency-dark-25);
      background-image: none;
 
  }
@@ -1146,7 +1152,7 @@
  }
 
  .x-grid3-row-selected {
-     background-color: rgba(255, 255, 255, 0.08) !important;
+     background: var(--transparency-light-10) !important;
      background-image: none;
      border-color: transparent;
      color: var(--text-hover) !important;
@@ -1507,11 +1513,11 @@
  }
 
  .x-tree-node .x-tree-node-over {
-     background-color: rgba(255, 255, 255, 0.08);
+     background: var(--transparency-light-10);
  }
 
  .x-tree-node .x-tree-selected {
-     background-color: rgba(0, 0, 0, 0.45);
+     background: var(--transparency-dark-45);
  }
 
  .x-tree-drop-ok-append .x-dd-drop-icon {
@@ -1773,7 +1779,7 @@
 
  .x-menu-item-active {
      background-image: none;
-     background-color: rgba(255, 255, 255, 0.08);
+     background: var(--transparency-light-10);
      border-color: transparent;
      color: var(--text-hover) !important;
  }
@@ -1951,7 +1957,7 @@
      font-family: 'Roboto', tahoma, arial, verdana, sans-serif;
      border-color: transparent;
      background-image: none;
-     background-color: rgba(0, 0, 0, 0.25);
+     background: var(--transparency-dark-25);
  }
 
  .x-panel-body {
@@ -2299,12 +2305,12 @@
  }
 
  .x-layout-collapsed {
-     background-color: rgba(0, 0, 0, 0.25);
+     background: var(--transparency-dark-25);
      border-color: transparent;
  }
 
  .x-layout-collapsed-over {
-     background-color: rgba(0, 0, 0, 0.45);
+     background: var(--transparency-dark-45);
  }
 
  .x-layout-split-west .x-layout-mini {
@@ -2369,7 +2375,7 @@
  }
 
  .x-list-header {
-     background-color: rgba(0, 0, 0, 0.25);
+     background: var(--transparency-dark-25);
      background-image: none;
      color: var(--text-hover) !important;
  }
@@ -2384,11 +2390,11 @@
  }
 
  .x-list-over {
-     background-color: rgba(255, 255, 255, 0.08);
+     background: var(--transparency-light-10);
  }
 
  .x-list-selected {
-     background-color: rgba(255, 255, 255, 0.08);
+     background: var(--transparency-light-10);
      color: var(--text-hover) !important;
  }
 

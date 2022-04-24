@@ -1,3 +1,6 @@
+@import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
+
 /* TEXT */
 [class*="text-gray-"]:not(button:disabled):not(button) {
     color: var(--text);
@@ -123,7 +126,7 @@ input[type=text],
 select,
 textarea {
     border-color: rgba(255, 255, 255, .1);
-    background-color: rgba(7, 7, 7, .25);
+    background: var(--transparency-dark-25);
     color: var(--text);
 }
 
@@ -155,7 +158,7 @@ span.bg-indigo-500 {
 
 .react-select-container .react-select__control {
     border-color: rgba(255, 255, 255, 0.1) !important;
-    background-color: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
     color: var(--text) !important;
 }
 
@@ -165,7 +168,7 @@ span.bg-indigo-500 {
 }
 
 .react-select-container .react-select__option--is-focused {
-    background-color: rgba(255, 255, 255, 0.1);
+    background: var(--transparency-light-10);
     color: var(--text-hover)
 }
 
@@ -216,7 +219,7 @@ body {
 }
 
 #search_field {
-    background-color: rgba(0, 0, 0, 0.45);
+    background: var(--transparency-dark-45);
 }
 
 
@@ -299,11 +302,11 @@ body>div.z-50.fixed.inset-0.overflow-hidden.bg-opacity-70.bg-gray-800.enter-done
 }
 
 body>div.z-50.fixed.inset-0.overflow-hidden.bg-opacity-70.bg-gray-800.enter-done>div>section>div>div>div>div.overflow-hidden.bg-gray-600.rounded-md.shadow {
-    background: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 #__next>div>div.fixed.top-0.bottom-0.left-0.z-30.hidden.lg\:flex.lg\:flex-shrink-0>div>div>div>div.px-2>a {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25)
 }
 
 /* LOADER */
@@ -370,7 +373,7 @@ a.slider-title:hover {
 
 .media-facts {
     border-color: rgba(255, 255, 255, 0.1);
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     color: var(--text-hover) !important;
     --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -422,7 +425,7 @@ a.slider-title:hover {
 /* SETTINGS */
 
 code {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 #__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div.mt-6>div.hidden.overflow-x-scroll.border-b.border-gray-600.sm\:block.hide-scrollbar>nav>a.px-1.py-4.ml-8.text-sm.font-medium.leading-5.transition.duration-300.border-b-2.border-transparent.whitespace-nowrap.first\:ml-0.text-indigo-500.border-indigo-600 {
@@ -430,7 +433,7 @@ code {
 }
 
 #__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div.mt-10.text-white>div>ul>li>div {
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--transparency-light-10);
     border-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -482,7 +485,7 @@ code {
 table>thead>tr>th,
 #__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div.mt-10.text-white>div>div.flex.flex-col>div>div>div>table>tbody>tr.bg-gray-700,
 #__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div>div>div>div>table>tbody>tr.bg-gray-700 {
-    background: rgb(0 0 0 / 25%) !important;
+    background: var(--transparency-dark-25) !important;
     border-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -514,7 +517,7 @@ body>div.fixed.top-0.bottom-0.left-0.right-0.z-50.flex.items-center.justify-cent
 }
 
 body>div.fixed.top-0.bottom-0.left-0.right-0.z-50.flex.items-center.justify-center.w-full.h-full.bg-gray-800.bg-opacity-70>div>div.relative.mt-4.text-sm.leading-5.text-gray-300>div.flex.flex-col>div>div>div>table>tbody {
-    background: rgb(255, 255, 255, .1);
+    background: var(--transparency-light-10);
 }
 
 
@@ -527,7 +530,7 @@ body>div.fixed.top-0.bottom-0.left-0.right-0.z-50.flex.items-center.justify-cent
 }
 
 #__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div>div.media-header>div.media-actions>span>span>div>div>div>a:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--transparency-light-10);
 }
 
 
@@ -535,13 +538,13 @@ body>div.fixed.top-0.bottom-0.left-0.right-0.z-50.flex.items-center.justify-cent
     background: var(--drop-down-menu-bg);
 }
 [aria-labelledby="user-menu"] a:hover{
-    background-color: rgba(255, 255, 255, 0.05);
+    background: var(--transparency-light-05);
 }
 
 /* LOGIN */
 #__next>div>div.relative.z-50.mt-8.sm\:mx-auto.sm\:w-full.sm\:max-w-md>div>button,
 #__next>div>div.relative.z-50.mt-8.sm\:mx-auto.sm\:w-full.sm\:max-w-md>div>div:nth-child(3)>button {
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--transparency-light-10);
 }
 
 /* TOAST */

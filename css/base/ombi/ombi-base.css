@@ -10,6 +10,8 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
+@import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
 
 * {
     outline: none !important;
@@ -38,7 +40,7 @@ html, body, .wizard-background, .content-container, #main-container\ dark > mat-
 
 .container-alert {
     color: var(--text-hover);
-    background-color: rgb(0 0 0 / 50%) !important;
+    background: var(--transparency-dark-50) !important;
     border-color: rgb(var(--accent-color)) !important;
 }
 
@@ -82,7 +84,7 @@ a:hover {
 /* TOP NAV */
 .top-search-bar .mat-form-field-flex {
     border: 1px solid rgba(255, 255, 255, 0.10);
-    background-color: rgba(0, 0, 0, 0.45);
+    background: var(--transparency-dark-45);
 }
 
 /* Drop down menu */
@@ -103,7 +105,7 @@ a:hover {
 }
 
 .mat-select-panel .mat-option.mat-selected:not(.mat-option-multiple) {
-    background: hsl(0deg 0% 0% / 25%);
+    background: var(--transparency-dark-25);
 }
 #main-container\ dark > mat-sidenav-container > mat-sidenav-content > mat-toolbar > button {
     color: rgb(var(--accent-color));
@@ -124,7 +126,7 @@ a:hover {
 
 @media (min-width: 768px) {
     .sidenav-container .sidenav {
-        background: hsla(0, 0%, 0%, 0.438) !important;
+        background: var(--transparency-dark-45) !important;
     }
 }
 
@@ -142,7 +144,7 @@ a:hover {
 }
 
 .mat-drawer-backdrop.mat-drawer-shown {
-    background-color: hsl(0deg 0% 0% / 50%);
+    background: var(--transparency-dark-50);
     backdrop-filter: blur(10px) !important;
     -webkit-backdrop-filter: blur(10px) !important;
 }
@@ -162,7 +164,7 @@ a:hover {
 .sidenav-container .sidenav .active-list-item,
 .sidenav-container .sidenav .active-list-item:hover {
     color: rgb(var(--accent-color)) !important;
-    background: rgb(255 255 255 / 15%) !important;
+    background: var(--transparency-light-15) !important;
     border-radius: .375rem !important;
     padding: 10px 20px;
     height: auto;
@@ -228,7 +230,7 @@ a:hover {
 
 /* DISCOVER PAGE */
 .discover-filter-buttons-group {
-    background: rgb(255 255 255 / 8%) !important;
+    background: var(--transparency-light-10) !important;
     border: 1px solid rgb(255 255 255 / 10%) !important;
     border-radius: 30px;
     color: var(--text-hover);
@@ -237,7 +239,7 @@ a:hover {
 }
 
 .discover-filter-buttons-group .button-active {
-    background: rgba(0, 0, 0, 0.45) !important;
+    background: var(--transparency-dark-45) !important;
 }
 
 #search-filter{
@@ -272,7 +274,7 @@ a:hover {
 /* MOBILE */
 @media (min-width: 768px) {
     .sidenav-container .sidenav {
-        background: hsla(0, 0%, 0%, 0.438) !important;
+        background: var(--transparency-dark-45) !important;
     }
 }
 
@@ -338,7 +340,7 @@ a:hover {
     top: -1px !important;
     position: absolute;
     border-radius: .75rem .75rem 0 0 !important;
-    background-color: rgba(0, 0, 0, 0.7) !important;
+    background-color: var(--transparency-dark-70) !important;
     backdrop-filter: blur(10px) !important;
     -webkit-backdrop-filter: blur(10px) !important;
     transition: 0s -webkit-filter linear;
@@ -377,7 +379,7 @@ a:hover {
 }
 
 .btn-ombi {
-    background-color: rgba(0, 0, 0, 0.85) !important;
+    background-color: var(--transparency-dark-85) !important;
     /* backdrop-filter: blur(10px) !important;
     -webkit-backdrop-filter: blur(10px) !important; */
     border-radius: .375rem !important;
@@ -438,7 +440,7 @@ a:hover {
 
 small.important {
     color: red;
-    background: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     border-radius: 5px;
     padding: 5px;
 }
@@ -478,14 +480,16 @@ small.important {
     background-color: var(--button-color) !important;
 }
 
-.mat-raised-button:not([class*=mat-elevation-z]):not(.mat-raised-button.mat-warn):not(.viewon-btn.plex) {
+.mat-raised-button:not([class*=mat-elevation-z]):not(.mat-raised-button.mat-warn):not(.viewon-btn.plex):not(.mat-raised-button.mat-error) {
     box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
     background: var(--button-color);
+    border: 1px solid var(--button-color);
 }
 
-.mat-raised-button:not([class*=mat-elevation-z]):not(.mat-raised-button.mat-warn):not(.viewon-btn.plex):hover {
+.mat-raised-button:not([class*=mat-elevation-z]):not(.mat-raised-button.mat-warn):not(.viewon-btn.plex):not(.mat-raised-button.mat-error):hover {
     box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
     background: var(--button-color-hover) !important;
+    border: 1px solid var(--button-color-hover) !important;
 }
 
 .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
@@ -642,17 +646,17 @@ mat-row {
 
 .mat-paginator,
 .mat-table {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25)
 }
 
 tr.mat-header-row {
-    background: rgba(0, 0, 0, 0.45);
+    background: var(--transparency-dark-45)
 }
 
 .table thead th {
     vertical-align: bottom;
-    border-bottom: 2px solid rgb(255 255 255 / 25%);
-    border-top: 1px solid rgb(255 255 255 / 25%);
+    border-bottom: 2px solid var(--transparency-light-25);
+    border-top: 1px solid var(--transparency-light-25);
 }
 
 /* Details page */
@@ -732,7 +736,7 @@ hr {
 
 /* ADVANCED SEARCH MODAL */
 .alert-info {
-    background: rgba(255, 255, 255, .25) !important;
+    background: var(--transparency-light-25) !important;
     border-color: rgba(255, 255, 255, .1) !important;
     color: var(--text-hover) !important;
 }

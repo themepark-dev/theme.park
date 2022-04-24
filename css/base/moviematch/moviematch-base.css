@@ -10,6 +10,9 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
+@import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
+
 * {
     outline: none;
 
@@ -57,7 +60,7 @@ footer,
 .login-form input,
 input,
 .TextInput {
-    background: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     border: 1px solid transparent;
     color: var(--text)
 }
@@ -137,11 +140,11 @@ input:focus {
 }
 
 .RoomInfoBar {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 /* MENUS POPOVER */
 .PopoverMenuButton:hover {
-    background: rgb(255 255 255 / 15%) !important;
+    background: var(--transparency-light-15) !important;
     color: var(--mm-white);
 }

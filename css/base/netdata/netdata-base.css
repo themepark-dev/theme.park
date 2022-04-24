@@ -10,6 +10,8 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
+@import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
 
 body,
 [class*="styled__SocialMediaContainer-"] {
@@ -81,14 +83,14 @@ a:hover,
 
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
-    background-color: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
     color: var(--text-hover) !important;
 }
 
 .navbar-default .navbar-nav>.open>a,
 .navbar-default .navbar-nav>.open>a:hover,
 .navbar-default .navbar-nav>.open>a:focus {
-    background-color: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 .navbar-default,
@@ -104,7 +106,7 @@ a:hover,
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
     color: var(--text-hover) !important;
-    background-color: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 .navbar-default .navbar-nav>li>a,
@@ -117,7 +119,7 @@ a:hover,
 .nav-tabs>li.active>a,
 .nav-tabs>li.active>a:hover,
 .nav-tabs>li.active>a:focus {
-    background-color: rgba(0, 0, 0, 0.15) !important;
+    background: var(--transparency-dark-15) !important;
     border: 1px solid #00000000 !important;
     color: rgb(var(--accent-color));
 }
@@ -130,7 +132,7 @@ a:hover,
 
 .nav>li>a:hover,
 .nav>li>a:focus {
-    background-color: rgba(255, 255, 255, 0.08) !important;
+    background: var(--transparency-light-10) !important;
 }
 
 .nav-tabs>li>a:hover {
@@ -142,7 +144,7 @@ a:hover,
 }
 
 #my-netdata-dropdown-content .agent-item:hover {
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 .sign-in-btn {
@@ -199,14 +201,14 @@ a:hover,
 }
 
 [class*="item__PanelRowContainer-"]:hover {
-    background: rgba(255, 255, 255, 0.15);
+    background: var(--transparency-light-15);
 }
 
 
 
 .dropdown-menu>li>a:hover,
 .dropdown-menu>li>a:focus {
-    background-color: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 .modal-content {
@@ -249,7 +251,7 @@ a:hover,
 }
 
 .panel {
-    background: rgba(0, 0, 0, 0.45) !important;
+    background: var(--transparency-dark-45) !important;
 }
 
 .panel-default>.panel-heading {
@@ -261,7 +263,7 @@ table {
 }
 
 .table-hover>tbody>tr:hover {
-    background-color: rgba(255, 255, 255, 0.08) !important;
+    background: var(--transparency-light-10) !important;
 }
 
 .table>thead>tr>th {
@@ -315,7 +317,7 @@ table {
 }
 
 [class*="sidebar__Wrapper-"] {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 [class*="sidebar__Wrapper-"] [class*="flex-sc-"]:not([class*="collapsible__Animated-"]) {
@@ -402,12 +404,12 @@ hr {
 
 .pagination>li>a,
 .pagination>li>span {
-    background-color: rgba(0, 0, 0, 0.25) !important;
+    background: var(--transparency-dark-25) !important;
     border: 1px solid transparent !important;
 }
 
 .pagination>li>a:hover {
-    background-color: rgba(255, 255, 255, 0.08) !important;
+    background: var(--transparency-light-10) !important;
 }
 
 /* Buttons */

@@ -10,6 +10,9 @@
 /*		   		        Made by @gilbN					 */
 /* 			      https://github.com/gilbN/theme.park			 */
 
+@import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
+
 * {
     outline: none;
 }
@@ -91,7 +94,7 @@ html[class*="theme_"] .navbar .nav-item>.nav-link {
 
 .table-hover tbody tr:hover {
     color: var(--text-hover);
-    background-color: rgba(255, 255, 255, .08);
+    background-color: var(--transparency-light-10);
 }
 
 h1,
@@ -116,7 +119,7 @@ html[class*="theme_"] .card-header,
 
 /* NAVBAR */
 .navbar {
-    background-color: rgb(0 0 0 / 25%) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 .navbar-dark .navbar-nav .show>.nav-link,
@@ -129,12 +132,12 @@ html[class*="theme_"] .card-header,
 /* CARDS */
 
 html[class*="theme_"] .card-header {
-    background-color: rgb(0 0 0 / 45%);
+    background-color: var(--transparency-dark-45);
     color: var(--text-hover);
 }
 
 .card {
-    background-color: rgba(255, 255, 255, 0.07) !important;
+    background-color: var(--transparency-dark-10) !important;
     border-color: rgba(255, 255, 255, 0.1) !important;
     color: var(--text) !important;
 }
@@ -154,9 +157,8 @@ app-vault-groupings .card li.active>div>.fa {
     color: rgb(var(--accent-color));
 }
 
-body>app-root>app-user-layout>app-tools>div>div>div.col-9>app-password-generator>div.card.card-password.bg-light.my-4,
-body>app-root>app-user-layout>app-tools>div>div>div.col-9>app-password-generator>div.card.card-password.bg-light.my-4>div {
-    background-color: rgb(0 0 0 / 15%) !important;
+html[class*="theme_"] app-password-generator .card-password .card-body {
+    background: var(--transparency-dark-15);
 }
 
 html[class*="theme_"] .password-number {
@@ -277,19 +279,19 @@ html[class*="theme_"] .form-control-file {
 html[class*="theme_"] .form-control:focus {
     box-shadow: none;
     border-color: transparent;
-    background: rgb(253 253 253 / 15%);
+    background: var(--transparency-light-15);
 }
 
 html[class*="theme_"] .form-control {
     color: var(--text);
-    background-color: rgb(0 0 0 / 0.25);
+    background: var(--transparency-dark-25);
     border: 1px solid transparent;
 
 }
 
 html[class*="theme_"] .form-control:disabled,
 .form-control[readonly] {
-    background-color: rgb(255 255 255 / 25%);
+    background-color: var(--transparency-light-25);
     opacity: 1;
 }
 
@@ -330,13 +332,13 @@ html[class*="theme_"] .dropdown-item:hover,
 html[class*="theme_"] .dropdown-item:focus {
     color: var(--text-hover);
     text-decoration: none;
-    background-color: rgb(255 255 255 / 0.08);
+    background-color: var(--transparency-light-10);
 }
 
 a.text-danger:hover,
 a.text-danger:focus {
     color: #dd4b39 !important;
-    background-color: rgb(255 255 255 / 0.08) !important;
+    background-color: var(--transparency-light-10) !important;
 }
 
 .dropdown-menu .text-danger {
@@ -371,24 +373,24 @@ html[class*="theme_"] .footer {
 html[class*="theme_"] .list-group-item.active {
     border-color: rgba(255, 255, 255, 0.15);
     color: rgb(var(--accent-color));
-    background-color: rgb(255 255 255 / 10%);
+    background: var(--transparency-light-10);
     border-left: 3px solid rgb(var(--accent-color));
 }
 
 html[class*="theme_"] .callout {
-    background-color: rgb(255 255 255 / 15%);
+    background: var(--transparency-light-15);
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: var(--text);
 }
 
 html[class*="theme_"] .list-group-item {
-    background-color: rgb(0 0 0 / 35%);
+    background: var(--transparency-dark-25);
     border: 1px solid rgb(255 255 255 / 8%);
     color: var(--text);
 }
 
 html[class*="theme_"] .progress {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 /* BUTTONS */
@@ -528,7 +530,7 @@ html[class*="theme_"] .org-nav .nav-tabs a.active {
 }
 
 html[class*="theme_"] .nav-tabs .nav-link.active {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border-color: rgba(255, 255, 255, 0.15);
 }
 
@@ -556,7 +558,7 @@ html[class*="theme_"] .org-nav .nav-tabs a:not(.active) {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
     color: var(--text);
-    background-color: rgb(255 255 255 / 25%);
+    background-color: var(--transparency-light-25);
     border-color: transparent;
 }
 
@@ -578,47 +580,13 @@ app-org-vault-groupings .card li.active>div a:first-of-type {
 html[class*="theme_"] .table td [class*="fa-"] {
     color: rgb(var(--accent-color));
 }
-
-/* PLACEHOLDER TEXT */
-input::-webkit-input-placeholder {
-    color: var(--text);
+html[class*="theme_"] .btn-outline-secondary i {
+    color: var(--button-text) !important;
 }
-
-input:focus::-webkit-input-placeholder {
-    color: #000;
-}
-
-/* Firefox < 19 */
-input:-moz-placeholder {
-    color: var(--text);
-}
-
-input:focus:-moz-placeholder {
-    color: #000;
-}
-
-/* Firefox > 19 */
-input::-moz-placeholder {
-    color: var(--text);
-}
-
-input:focus::-moz-placeholder {
-    color: #000;
-}
-
-/* Internet Explorer 10 */
-input:-ms-input-placeholder {
-    color: var(--text);
-}
-
-input:focus:-ms-input-placeholder {
-    color: #000;
-}
-
 /* ADMIN PAGE */
 
 .bg-light {
-    background: var(--main-bg-color) !important;
+    background: var(--main-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -629,7 +597,7 @@ input:focus:-ms-input-placeholder {
 }
 
 .bg-light .navbar {
-    background: var(--main-bg-color) !important;
+    background: var(--main-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -641,11 +609,11 @@ input:focus:-ms-input-placeholder {
 
 /* Cards */
 .bg-secondary {
-    background-color: rgb(255 255 255 / 10%) !important;
+    background: var(--transparency-light-10) !important;
 }
 
 .bg-white {
-    background-color: rgba(255, 255, 255, 0.1) !important;
+    background: var(--transparency-light-10) !important;
 }
 
 html[class*="theme_"] .groupings .card .card-body a {
@@ -665,7 +633,7 @@ html[class*="theme_"] .groupings .card .card-body a {
     color: var(--text);
     pointer-events: none;
     cursor: auto;
-    background-color: rgb(0 0 0 / 10%);
+    background: var(--transparency-dark-10);
     border-color: rgb(0 0 0 / 10%);
 }
 
