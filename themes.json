@@ -232,7 +232,7 @@
     },
     "guacamole": {
       "addons": {},
-      "base_css": "https://develop.theme-park.dev/css/base/guacamole/guacamole-base.css?sha=bbc356d54905e70b9c7e25bfe555ec4a8c8b0af8"
+      "base_css": "https://develop.theme-park.dev/css/base/guacamole/guacamole-base.css?sha=85f07a45bc862fa08d13f044146d6075f8d49002"
     },
     "jackett": {
       "addons": {},

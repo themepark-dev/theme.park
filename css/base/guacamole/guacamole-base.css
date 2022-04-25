@@ -60,9 +60,6 @@ div.login-ui {
     border: none;
 }
 
-.login-ui .login-fields .labeled-field .field-header:focus {
-    color: transparent !important;
-}
 
 input[type="submit"],
 button,
@@ -79,30 +76,31 @@ a.button:hover {
     border: none;
     cursor: pointer;
 }
-
+select {
+    background: var(--transparency-dark-10);
+    color: var(--text);
+    border-color: transparent;
+}
 select:focus {
     background-color: var(--drop-down-menu-bg);
     color: var(--text);
 }
 
 .login-ui .login-fields .labeled-field input:focus {
-    background: var(--transparency-dark-45) !important;
     outline: none;
 }
 
 .login-ui .login-fields .labeled-field.empty input {
-    background: var(--transparency-dark-25) !important;
     outline: none;
+    background: rgba(0, 0, 0, 0.15);
+    caret-color: var(--text);
 }
 
 .login-ui .login-fields .labeled-field.empty input:focus {
-    background: var(--transparency-dark-45) !important;
     outline: none;
+    color: black;
 }
 
-.login-ui .login-dialog .login-fields input {
-    background: var(--transparency-dark-45) !important;
-}
 
 div.location,
 input[type=text],
@@ -111,7 +109,7 @@ input[type=number],
 input[type=password],
 textarea {
     color: var(--text-hover) !important;
-    background: var(--transparency-dark-25) !important;
+    background: var(--transparency-dark-25);
 }
 
 input[type=checkbox],
@@ -120,8 +118,12 @@ input[type=text],
 input[type=email],
 input[type=radio],
 textarea {
-    color: var(--text-hover) !important;
-    background: transparent;
+    color: var(--text-hover);
+}
+
+.login-ui .login-dialog .login-fields input {
+    background: white;
+    color: black !important;
 }
 
 /* HOME MENU */
@@ -627,4 +629,8 @@ input[type=radio] {
 
 .attributes .form h3, .header {
     background: var(--transparency-dark-25)
+}
+
+.connection-parameters .form .fields {
+    border-left: 3px solid rgb(var(--accent-color));
 }
