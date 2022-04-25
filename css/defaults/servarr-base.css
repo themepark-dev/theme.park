@@ -182,12 +182,12 @@ a:hover {
 
 [class*="SelectInput-select-"]:active,
 [class*="SelectInput-select-"]:focus {
-    background: #1e1e1e !important;
+    background: var(--drop-down-menu-bg) !important;
 }
 
 [class*="AutoSuggestInput-suggestionsList-"],
 [class*="AutoSuggestInput-suggestionsContainerOpen-"] [class*="AutoSuggestInput-suggestionsContainer-"] {
-    background-color: #323232 !important;
+    background-color: var(--drop-down-menu-bg) !important;
     color: white;
     border: none !important;
 }
