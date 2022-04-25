@@ -78,6 +78,10 @@ p,
     color: var(--text-hover);
 }
 
+.v-select__slot>label {
+    color: var(--text-hover) !important;
+}
+
 .v-application .grey--text {
     color: var(--text-muted) !important;
     caret-color: var(--text-muted) !important;
@@ -86,7 +90,8 @@ p,
 [class*="theme--"].v-tabs>.v-tabs-bar .v-tab--disabled,
 [class*="theme--"].v-tabs>.v-tabs-bar .v-tab:not(.v-tab--active),
 [class*="theme--"].v-tabs>.v-tabs-bar .v-tab:not(.v-tab--active)>.v-btn,
-[class*="theme--"].v-tabs>.v-tabs-bar .v-tab:not(.v-tab--active)>.v-icon {
+[class*="theme--"].v-tabs>.v-tabs-bar .v-tab:not(.v-tab--active)>.v-icon,
+[class*="theme--"].v-messages {
     color: var(--text);
 }
 
@@ -456,8 +461,14 @@ p,
 
 /* MOBILE */
 
+
+
 [class*="theme--"].v-btn.v-btn--has-bg {
     background-color: rgb(var(--accent-color));
+}
+
+.v-speed-dial--is-active svg {
+    fill: var(--label-text-color) !important;
 }
 
 .v-speed-dial__list .v-icon__svg {
