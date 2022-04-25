@@ -344,6 +344,10 @@ button>.v-btn--is-elevated .v-btn--has-bg.v-icon__svg {
     color: #FFF;
 }
 
+.v-list-item__content .caption.grey--text {
+    color: #b1b1b1 !important;
+}
+
 .v-application .torrent-paused-color .caption,
 .v-application .torrent-seeding-color .caption,
 .v-application .torrent-done-color .caption {
@@ -438,7 +442,7 @@ button>.v-btn--is-elevated .v-btn--has-bg.v-icon__svg {
 
 /* TABLE */
 [class*="theme--"].v-data-table {
-    background: var(--transparency-dark-65);
+    background: transparent;
     color: var(--text);
 }
 
