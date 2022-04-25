@@ -1800,3 +1800,7 @@ div#dlgEditRules div.dlg-header {
     background: var(--transparency-dark-10);
     color: var(--text);
 }
+
+div#dlgEditFilters div.dlg-header{
+    background-image:none;
+}
