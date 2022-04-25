@@ -1403,8 +1403,8 @@ a:hover,
 
 .el-element-overlay .el-card-item .el-overlay-1 .el-info>li a:hover {
     background: transparent;
-    color: var(--text-hover)  !important;
-    border: var(--text-hover)  !important;
+    color: var(--text-hover);
+    border: var(--text-hover);
 }
 
 .progress-bar-info {

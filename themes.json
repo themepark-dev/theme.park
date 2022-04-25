@@ -294,7 +294,7 @@
           ]
         }
       },
-      "base_css": "https://develop.theme-park.dev/css/base/organizr/organizr-base.css?sha=40449ba22dab09b96772b12416bc9029bf5953d4"
+      "base_css": "https://develop.theme-park.dev/css/base/organizr/organizr-base.css?sha=93f240a2f9bf6b538109ab8bc17d5484a958b98c"
     },
     "overseerr": {
       "addons": {},
