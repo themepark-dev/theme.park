@@ -265,6 +265,10 @@ button>.v-btn--is-elevated .v-btn--has-bg.v-icon__svg {
     color: var(--label-text-color);
 }
 
+.v-btn--is-elevated.v-btn--has-bg .v-icon__svg:not(.v-btn--round>span>span>svg) {
+    fill: var(--button-text) !important;
+}
+
 .v-application .deep-purple--text.text--accent-4{
     color: rgb(var(--accent-color)) !important;
     caret-color: rgb(var(--accent-color)) !important;
