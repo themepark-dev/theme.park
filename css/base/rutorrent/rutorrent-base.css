@@ -1791,12 +1791,12 @@ div#dlgEditRules div.dlg-header {
 }
 
 .lf li input.TextboxFocus{
-    background: rgba(255, 255, 255, 0.25);
+    background: var(--transparency-light-25);
     color: var(--text-hover);
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0);
 }
 
 .lf li input.TextboxNormal{
-    background: rgba(0, 0, 0, 0.08);
+    background: var(--transparency-dark-10);
     color: var(--text);
 }
