@@ -26,7 +26,8 @@ h6 {
     color: var(--text-hover);
 }
 
-body {
+body,
+.logged-out-modal guac-modal {
     background: var(--main-bg-color) !important;
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
@@ -49,52 +50,6 @@ div.displayMiddle {
     -o-background-size: auto, cover;
 }
 
-/* Scrollbar */
-@media only screen and (min-width: 768px) {
-    html {
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-    }
-
-    body {
-        overflow-y: auto;
-        height: 100%;
-        background: var(--main-bg-color);
-        background-repeat: repeat, no-repeat;
-        background-attachment: fixed, fixed;
-        background-position: center center, center center;
-        background-size: auto, cover;
-        -webkit-background-size: auto, cover;
-        -moz-background-size: auto, cover;
-        -o-background-size: auto, cover;
-    }
-}
-
-::-webkit-scrollbar {
-    width: 14px;
-}
-
-::-webkit-scrollbar-thumb {
-    min-height: 50px;
-    border: 3px solid transparent;
-    border-radius: 8px;
-    background: var(--transparency-dark-20);
-    background-clip: padding-box;
-}
-
-::-webkit-scrollbar-track {
-    background-color: transparent;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    min-height: 50px;
-    border: 3px solid transparent;
-    border-radius: 8px;
-    background: var(--transparency-light-50);
-    background-clip: padding-box;
-}
-
 /* LOGIN MENU */
 div.login-ui {
     background: inherit;
@@ -103,6 +58,10 @@ div.login-ui {
 .login-ui div.login-dialog {
     background: var(--transparency-dark-25);
     border: none;
+}
+
+.login-ui .login-fields .labeled-field .field-header:focus {
+    color: transparent !important;
 }
 
 input[type="submit"],
@@ -119,6 +78,11 @@ a.button:hover {
     background-color: var(--button-color-hover);
     border: none;
     cursor: pointer;
+}
+
+select:focus {
+    background-color: var(--drop-down-menu-bg);
+    color: var(--text);
 }
 
 .login-ui .login-fields .labeled-field input:focus {
@@ -162,27 +126,42 @@ textarea {
 
 /* HOME MENU */
 .header h2 {
-    color: var(--text-hover);
-    background: var(--transparency-dark-25);
+    color: rgb(var(--accent-color));
 }
 
 .connection .icon.vnc,
 .connection .icon.rdp {
     background-image: url(/resources/guacamole/guac-monitor.png);
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: 0.75em;
+    padding-left: 2.5em;
 }
 
 .connection .icon.ssh,
 .connection .icon.telnet {
     background-image: url(/resources/guacamole/guac-text.png);
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: 0.75em;
+    padding-left: 2.5em;
 }
 
 .user-menu .menu-dropdown .menu-title {
     background-image: url(/resources/guacamole/guac-user.png);
     background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: 0.75em;
+    padding-left: 2.5em;
 }
 
 .user-menu .menu-dropdown .menu-contents li a[href="#/"] {
     background-image: url(/resources/guacamole/guac-home-dark.png);
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: 0.75em;
+    padding-left: 2.5em;
 }
 
 .user-menu .menu-dropdown .menu-contents li a[href="#/settings/users"],
@@ -190,30 +169,58 @@ textarea {
 .user-menu .menu-dropdown .menu-contents li a[href="#/settings/sessions"],
 .user-menu .menu-dropdown .menu-contents li a[href="#/settings/preferences"] {
     background-image: url(/resources/guacamole/guac-config-dark.png);
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: 0.75em;
+    padding-left: 2.5em;
 }
 
 .user-menu .menu-dropdown .menu-contents li a.logout {
     background-image: url(/resources/guacamole/guac-logout-dark.png);
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: 0.75em;
+    padding-left: 2.5em;
 }
 
 .icon.user {
     background-image: url(/resources/guacamole/guac-user.png);
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: 0.75em;
+    padding-left: 2.5em;
 }
 
 .pager .icon.first-page {
     background-image: url(/resources/guacamole/guac-first-page.png);
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: 0.75em;
+    padding-left: 2.5em;
 }
 
 .pager .icon.prev-page {
     background-image: url(/resources/guacamole/guac-prev-page.png);
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: 0.75em;
+    padding-left: 2.5em;
 }
 
 .pager .icon.next-page {
     background-image: url(/resources/guacamole/guac-next-page.png);
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: 0.75em;
+    padding-left: 2.5em;
 }
 
 .pager .icon.last-page {
     background-image: url(/resources/guacamole/guac-last-page.png);
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: 0.75em;
+    padding-left: 2.5em;
 }
 
 .loading::before {
@@ -222,19 +229,39 @@ textarea {
 
 table.sorted th.sort-primary.sort-descending:after {
     background-image: url(/resources/guacamole/up.png);
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: 0.75em;
+    padding-left: 2.5em;
 }
 
 .menu-dropdown .menu-indicator {
     background-image: url(/resources/guacamole/down.png);
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: 0.75em;
+    padding-left: 2.5em;
 }
 
 .menu-dropdown .menu-indicator:hover {
     background-image: url(/resources/guacamole/down.png);
     color: #f9be03;
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: 0.75em;
+    padding-left: 2.5em;
 }
 
 table.sorted th.sort-primary:after {
     background-image: url(/resources/guacamole/down.png);
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: 0.75em;
+    padding-left: 2.5em;
+}
+
+.form-field .password-field input[type=password]~.icon.toggle-password {
+    filter: invert(1);
 }
 
 thead {
@@ -255,11 +282,6 @@ table.sorted td {
     background: var(--transparency-dark-25)
 }
 
-.menu-dropdown {
-    border-left: none;
-    background: var(--transparency-dark-25)
-}
-
 .menu-dropdown .menu-contents li a {
     display: block;
     cursor: pointer;
@@ -270,7 +292,6 @@ table.sorted td {
 
 .menu-dropdown .menu-contents li a.current,
 .menu-dropdown .menu-contents li a.current:hover {
-    background: var(--transparency-dark-25);
     color: var(--text-hover)
 }
 
@@ -298,10 +319,6 @@ table.sorted td {
     border-left: 1px solid rgba(0, 0, 0, 0.125);
     background-color: transparent;
     color: var(--text-hover);
-}
-
-.header .filter {
-    background: var(--transparency-dark-25);
 }
 
 .filter .search-string {
@@ -606,4 +623,8 @@ input[type=radio] {
 
 .related-objects .abbreviated-related-objects ul li label span {
     color: var(--label-text-color) !important;
+}
+
+.attributes .form h3, .header {
+    background: var(--transparency-dark-25)
 }
