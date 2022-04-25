@@ -204,6 +204,28 @@ p,
     caret-color: var(--button-color) !important;
 }
 
+.v-btn.v-application.primary {
+    background-color: var(--button-color) !important;
+    border-color: var(--button-color) !important;
+    color: var(--button-text) !important;
+}
+
+[class*="theme--"].v-btn.v-btn--disabled.v-btn--has-bg {
+    background-color: var(--button-color) !important;
+    color: var(--button-text) !important;
+    opacity: .5;
+}
+[class*="theme--"].v-btn.v-btn--has-bg:not(.v-btn--round) {
+    background-color: var(--button-color) !important;
+    color: var(--button-text) !important;
+}
+
+button>.v-btn--is-elevated .v-btn--has-bg.v-icon__svg {
+    fill: var(--button-text);
+}
+.v-icon__svg{
+    fill: rgb(var(--accent-color)) !important; 
+}
 [class*="theme--"].v-tabs>.v-tabs-bar {
     background: var(--transparency-dark-15);
 }
@@ -234,8 +256,8 @@ p,
 }
 
 .v-application .accent .v-icon__svg {
-    color: var(--text-hover) !important;
-    fill: var(--text-hover) !important;
+    color: var(--button-text) !important;
+    fill: var(--button-text) !important;
 }
 .v-application .deep-purple.accent-4 {
     background-color: rgb(var(--accent-color))!important;
