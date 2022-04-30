@@ -328,7 +328,7 @@ a:hover {
 [class*="Tooltip-body-"],
 [class*="Tooltip-tooltipContainer-"],
 [class*="Tooltip-tooltip-"][class*="Tooltip-default-"] {
-    background: #1f1f1f;
+    background: var(--drop-down-menu-bg);
     color: #eee;
 }
 

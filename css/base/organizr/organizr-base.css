@@ -315,7 +315,7 @@ h6 {
 /* forms */
 select.form-control:focus {
     box-shadow: none;
-    background: #1f1f1f;
+    background: var(--drop-down-menu-bg);
     border: 1px solid rgba(120, 130, 140, 0.4);
 }
 
@@ -2255,7 +2255,7 @@ fieldset[disabled] .form-control {
 
 .fc-unthemed .fc-divider,
 .fc-unthemed .fc-popover .fc-header {
-    background: #1f1f1f;
+    background: var(--drop-down-menu-bg);
 }
 
 .table-hover>tbody>tr:hover,

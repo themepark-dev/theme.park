@@ -374,9 +374,9 @@ div#t div#go:hover {
 
 div select {
     -webkit-appearance: none !important;
-    background: #1f1f1f url(/resources/rutorrent/dropdown.png) no-repeat 0 0;
+    background: var(--drop-down-menu-bg) url(/resources/rutorrent/dropdown.png) no-repeat 0 0;
     background-position: right;
-    border: 1px solid #1f1f1f;
+    border: 1px solid var(--drop-down-menu-bg);
     padding-right: 15px !important;
 }
 
