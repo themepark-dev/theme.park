@@ -329,7 +329,7 @@ a:hover {
 [class*="Tooltip-tooltipContainer-"],
 [class*="Tooltip-tooltip-"][class*="Tooltip-default-"] {
     background: var(--drop-down-menu-bg);
-    color: #eee;
+    color: var(--text-hover);
 }
 
 /* @supports (backdrop-filter: blur(1em)) or (-webkit-backdrop-filter:blur(1em)) {
@@ -348,7 +348,11 @@ a:hover {
 } */
 
 [class*="Tooltip-top-"][class*="Tooltip-inverse-"] {
-    border-top-color: var(--text);
+    border-top-color: var(--drop-down-menu-bg);
+}
+
+[class*="Tooltip-bottom-"][class*="Tooltip-inverse-"] {
+    border-bottom-color: var(--drop-down-menu-bg);
 }
 
 [class*="Tooltip-bottom-"][class*="Tooltip-default-"] {
