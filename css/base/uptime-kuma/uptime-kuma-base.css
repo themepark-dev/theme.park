@@ -278,7 +278,7 @@ td {
 .dark .form-control:focus,
 .form-select:focus,
 .form-control:focus {
-    background: #1f1f1f;
+    background: var(--drop-down-menu-bg);
     box-shadow: 0 0 0 0.25rem rgba(var(--accent-color), 0.25);
     border-color: rgba(var(--accent-color), 0.25);
 }

@@ -532,7 +532,7 @@ h6,
 
 .custom-select:focus {
     color: var(--text-hover);
-    background: #1f1f1f url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxMCA1Jz48cGF0aCBmaWxsPScjOTk5JyBkPSdNMCAwTDEwIDBMNSA1TDAgMCcvPjwvc3ZnPg==") no-repeat right 0.75rem center;
+    background: var(--drop-down-menu-bg) url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxMCA1Jz48cGF0aCBmaWxsPScjOTk5JyBkPSdNMCAwTDEwIDBMNSA1TDAgMCcvPjwvc3ZnPg==") no-repeat right 0.75rem center;
     background-size: 8px 10px;
     border: 1px solid rgba(255, 255, 255, 0.2);
 
@@ -541,7 +541,7 @@ h6,
 select.form-control.select:focus,
 select:focus {
     color: var(--text-hover);
-    background: #1f1f1f !important;
+    background: var(--drop-down-menu-bg) !important;
 }
 
 .icon--selected {
@@ -634,7 +634,7 @@ select:focus {
     }
 
     .dropdown-menu {
-        background: #1f1f1f !important;
+        background: var(--drop-down-menu-bg) !important;
     }
 
     .ReactModal__Content {
@@ -656,6 +656,6 @@ select:focus {
     }
 
     .dropdown-menu {
-        background: #1f1f1f !important;
+        background: var(--drop-down-menu-bg) !important;
     }
 }

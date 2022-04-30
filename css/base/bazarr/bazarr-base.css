@@ -421,7 +421,7 @@ hr {
 }
 
 .popover {
-    background-color: #1f1f1f;
+    background-color: var(--drop-down-menu-bg);
     border: 1px solid var(--transparency-light-20);
 }
 
@@ -431,7 +431,7 @@ hr {
 }
 
 .popover-header {
-    background-color: #1f1f1f;
+    background-color: var(--drop-down-menu-bg);
     border-bottom: 1px solid var(--transparency-light-10);
 
 }
@@ -797,7 +797,7 @@ input {
 
 /* RECHARTS */
 .recharts-default-tooltip {
-    background: #1f1f1f !important;
+    background: var(--drop-down-menu-bg) !important;
     border: transparent !important;
 }
 

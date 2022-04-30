@@ -296,7 +296,7 @@ html[class*="theme_"] .form-control:disabled,
 }
 
 select:focus {
-    background: #1f1f1f !important;
+    background: var(--drop-down-menu-bg) !important;
 }
 
 /* DROPDOWN MENU */
@@ -319,7 +319,7 @@ html[class*="theme_"] .navbar .dropdown-menu .dropdown-item-text {
 
 html[class*="theme_"] .dropdown-menu,
 html[class*="theme_"] .dropdown-item {
-    background: #1f1f1f;
+    background: var(--drop-down-menu-bg);
     color: var(--text-hover);
 }
 
