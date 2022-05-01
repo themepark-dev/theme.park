@@ -315,7 +315,7 @@ h6 {
 /* forms */
 select.form-control:focus {
     box-shadow: none;
-    background: #1f1f1f;
+    background: var(--drop-down-menu-bg);
     border: 1px solid rgba(120, 130, 140, 0.4);
 }
 
@@ -1403,8 +1403,8 @@ a:hover,
 
 .el-element-overlay .el-card-item .el-overlay-1 .el-info>li a:hover {
     background: transparent;
-    color: var(--text-hover)  !important;
-    border: var(--text-hover)  !important;
+    color: var(--text-hover);
+    border: var(--text-hover);
 }
 
 .progress-bar-info {
@@ -2255,7 +2255,7 @@ fieldset[disabled] .form-control {
 
 .fc-unthemed .fc-divider,
 .fc-unthemed .fc-popover .fc-header {
-    background: #1f1f1f;
+    background: var(--drop-down-menu-bg);
 }
 
 .table-hover>tbody>tr:hover,

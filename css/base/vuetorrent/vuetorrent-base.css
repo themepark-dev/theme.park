@@ -45,7 +45,7 @@ body,
 
 html {
     color: var(--text);
-    background: #1f1f1f !important;
+    background: var(--drop-down-menu-bg) !important;
 }
 
 /* SCROLL BAR */
@@ -78,6 +78,10 @@ p,
     color: var(--text-hover);
 }
 
+.v-select__slot>label {
+    color: var(--text-hover) !important;
+}
+
 .v-application .grey--text {
     color: var(--text-muted) !important;
     caret-color: var(--text-muted) !important;
@@ -86,7 +90,8 @@ p,
 [class*="theme--"].v-tabs>.v-tabs-bar .v-tab--disabled,
 [class*="theme--"].v-tabs>.v-tabs-bar .v-tab:not(.v-tab--active),
 [class*="theme--"].v-tabs>.v-tabs-bar .v-tab:not(.v-tab--active)>.v-btn,
-[class*="theme--"].v-tabs>.v-tabs-bar .v-tab:not(.v-tab--active)>.v-icon {
+[class*="theme--"].v-tabs>.v-tabs-bar .v-tab:not(.v-tab--active)>.v-icon,
+[class*="theme--"].v-messages {
     color: var(--text);
 }
 
@@ -199,6 +204,28 @@ p,
     caret-color: var(--button-color) !important;
 }
 
+.v-btn.v-application.primary {
+    background-color: var(--button-color) !important;
+    border-color: var(--button-color) !important;
+    color: var(--button-text) !important;
+}
+
+[class*="theme--"].v-btn.v-btn--disabled.v-btn--has-bg {
+    background-color: var(--button-color) !important;
+    color: var(--button-text) !important;
+    opacity: .5;
+}
+[class*="theme--"].v-btn.v-btn--has-bg:not(.v-btn--round) {
+    background-color: var(--button-color) !important;
+    color: var(--button-text) !important;
+}
+
+button>.v-btn--is-elevated .v-btn--has-bg.v-icon__svg {
+    fill: var(--button-text);
+}
+.v-icon__svg{
+    fill: rgb(var(--accent-color)) !important; 
+}
 [class*="theme--"].v-tabs>.v-tabs-bar {
     background: var(--transparency-dark-15);
 }
@@ -229,13 +256,17 @@ p,
 }
 
 .v-application .accent .v-icon__svg {
-    color: var(--text-hover) !important;
-    fill: var(--text-hover) !important;
+    color: var(--button-text) !important;
+    fill: var(--button-text) !important;
 }
 .v-application .deep-purple.accent-4 {
     background-color: rgb(var(--accent-color))!important;
     border-color: rgb(var(--accent-color))!important;
     color: var(--label-text-color);
+}
+
+.v-btn--is-elevated.v-btn--has-bg .v-icon__svg:not(.v-btn--round>span>span>svg) {
+    fill: var(--button-text) !important;
 }
 
 .v-application .deep-purple--text.text--accent-4{
@@ -313,6 +344,10 @@ p,
     color: #FFF;
 }
 
+.v-list-item__content .caption.grey--text {
+    color: #b1b1b1 !important;
+}
+
 .v-application .torrent-paused-color .caption,
 .v-application .torrent-seeding-color .caption,
 .v-application .torrent-done-color .caption {
@@ -387,14 +422,7 @@ p,
 }
 
 .v-menu__content [class*="theme--"][class*="theme--"].v-list {
-    background: var(--modal-bg-color) !important;
-    background-repeat: repeat, no-repeat;
-    background-attachment: fixed, fixed;
-    background-position: center center, center center;
-    background-size: auto, cover;
-    -webkit-background-size: auto, cover;
-    -moz-background-size: auto, cover;
-    -o-background-size: auto, cover;
+    background: var(--drop-down-menu-bg)
 }
 
 [class*="theme--"].v-icon {
@@ -407,7 +435,7 @@ p,
 
 /* TABLE */
 [class*="theme--"].v-data-table {
-    background: var(--transparency-dark-65);
+    background: transparent;
     color: var(--text);
 }
 
@@ -456,8 +484,14 @@ p,
 
 /* MOBILE */
 
+
+
 [class*="theme--"].v-btn.v-btn--has-bg {
     background-color: rgb(var(--accent-color));
+}
+
+.v-speed-dial--is-active svg {
+    fill: var(--label-text-color) !important;
 }
 
 .v-speed-dial__list .v-icon__svg {

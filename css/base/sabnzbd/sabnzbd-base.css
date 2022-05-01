@@ -509,7 +509,7 @@ td.delete .dropdown>a .caret {
 }
 
 tbody.no-downloads tr td {
-  border-bottom: 1px solid #1f1f1f !important;
+  border-bottom: 1px solid var(--drop-down-menu-bg) !important;
 }
 
 tbody>tr>td:last-child {
@@ -967,13 +967,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 input[disabled],
 select[disabled] {
-  background-color: #1f1f1f;
+  background-color: var(--drop-down-menu-bg);
   opacity: .5;
 }
 
 input[disabled]:hover,
 select[disabled]:hover {
-  background-color: #1f1f1f;
+  background-color: var(--drop-down-menu-bg);
   opacity: .5;
 }
 

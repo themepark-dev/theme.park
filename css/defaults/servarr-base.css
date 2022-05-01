@@ -182,12 +182,12 @@ a:hover {
 
 [class*="SelectInput-select-"]:active,
 [class*="SelectInput-select-"]:focus {
-    background: #1e1e1e !important;
+    background: var(--drop-down-menu-bg) !important;
 }
 
 [class*="AutoSuggestInput-suggestionsList-"],
 [class*="AutoSuggestInput-suggestionsContainerOpen-"] [class*="AutoSuggestInput-suggestionsContainer-"] {
-    background-color: #323232 !important;
+    background-color: var(--drop-down-menu-bg) !important;
     color: white;
     border: none !important;
 }
@@ -328,8 +328,8 @@ a:hover {
 [class*="Tooltip-body-"],
 [class*="Tooltip-tooltipContainer-"],
 [class*="Tooltip-tooltip-"][class*="Tooltip-default-"] {
-    background: #1f1f1f;
-    color: #eee;
+    background: var(--drop-down-menu-bg);
+    color: var(--text-hover);
 }
 
 /* @supports (backdrop-filter: blur(1em)) or (-webkit-backdrop-filter:blur(1em)) {
@@ -348,7 +348,11 @@ a:hover {
 } */
 
 [class*="Tooltip-top-"][class*="Tooltip-inverse-"] {
-    border-top-color: var(--text);
+    border-top-color: var(--drop-down-menu-bg);
+}
+
+[class*="Tooltip-bottom-"][class*="Tooltip-inverse-"] {
+    border-bottom-color: var(--drop-down-menu-bg);
 }
 
 [class*="Tooltip-bottom-"][class*="Tooltip-default-"] {

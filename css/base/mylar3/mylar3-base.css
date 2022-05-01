@@ -551,7 +551,7 @@ select {
 }
 
 select:focus {
-    background: #1f1f1f;
+    background: var(--drop-down-menu-bg);
     color: var(--text);
 }
 

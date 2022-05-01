@@ -374,9 +374,9 @@ div#t div#go:hover {
 
 div select {
     -webkit-appearance: none !important;
-    background: #1f1f1f url(/resources/rutorrent/dropdown.png) no-repeat 0 0;
+    background: var(--drop-down-menu-bg) url(/resources/rutorrent/dropdown.png) no-repeat 0 0;
     background-position: right;
-    border: 1px solid #1f1f1f;
+    border: 1px solid var(--drop-down-menu-bg);
     padding-right: 15px !important;
 }
 
@@ -1784,4 +1784,23 @@ div#dlgEditRules-header,
 #dlgEditRatioRules-header,
 div#dlgEditRules div.dlg-header {
     background: var(--transparency-dark-25) !important;
+}
+
+#filterList, #filterProps, #ruleList{
+    background: var(--modal-bg-color);
+}
+
+.lf li input.TextboxFocus{
+    background: var(--transparency-light-25);
+    color: var(--text-hover);
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0);
+}
+
+.lf li input.TextboxNormal{
+    background: var(--transparency-dark-10);
+    color: var(--text);
+}
+
+div#dlgEditFilters div.dlg-header{
+    background-image:none;
 }

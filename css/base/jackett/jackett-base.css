@@ -222,9 +222,9 @@ select {
 }
 
 select:focus {
-    background: #1f1f1f !important;
+    background: var(--drop-down-menu-bg) !important;
     color: var(--text) !important;
-    border: 1px solid #1f1f1f !important;
+    border: 1px solid var(--drop-down-menu-bg) !important;
     -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
 }
 
