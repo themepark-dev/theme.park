@@ -50,6 +50,7 @@ div.displayMiddle {
     -o-background-size: auto, cover;
 }
 
+
 /* LOGIN MENU */
 div.login-ui {
     background: inherit;
@@ -101,6 +102,10 @@ select:focus {
     color: black;
 }
 
+.login-ui .login-dialog .login-fields input {
+    background: white;
+    color: black !important;
+}
 
 div.location,
 input[type=text],
@@ -108,8 +113,7 @@ input[type=email],
 input[type=number],
 input[type=password],
 textarea {
-    color: var(--text-hover) !important;
-    background: var(--transparency-dark-25);
+    color: var(--text-hover);
 }
 
 input[type=checkbox],
@@ -322,6 +326,7 @@ table.sorted td {
     background-color: transparent;
     color: var(--text-hover);
 }
+
 
 .filter .search-string {
     background-image: url(/resources/guacamole/magnifier.png) !important;
