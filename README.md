@@ -266,6 +266,10 @@
 
 <tr>
 <td>
+<p><a href="https://docs.theme-park.dev/themes/nginx-proxy-manager"><img src="https://docs.theme-park.dev/site_assets/nginx-proxy-manager/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/nginx-proxy-manager">Nginx Proxy Manager</a></p>
+</td>
+<td>
 <p><a href="https://docs.theme-park.dev/themes/grafana"><img src="https://docs.theme-park.dev/site_assets/grafana/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/grafana">Grafana (Deprecated)</a></p>
 </td>
@@ -288,10 +292,6 @@
 <td>
 <p><a href="https://docs.theme-park.dev/themes/thelounge"><img src="https://docs.theme-park.dev/site_assets/thelounge/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/thelounge">The Lounge (Deprecated)</a></p>
-</td>
-<td>
-<!-- <p><a href=""><img src="" alt="" width="48" height="48" /></a></p>
-<p><a href=""></a></p> -->
 </td>
 </tr>
 </tbody>
