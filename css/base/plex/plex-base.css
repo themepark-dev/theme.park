@@ -305,7 +305,8 @@ button:hover [class*="DisclosureArrow-disclosureArrow-"] {
 }
 
 [class*="PivotTab-selectedButton-"]:after,
-[class*="TabButton-selectedButton-"]:after {
+[class*="TabButton-selectedButton-"]:after,
+[class*="PageHeaderTabButton-isSelected-"]:after {
   background-color: rgb(var(--accent-color)) !important;
 }
 
