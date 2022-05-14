@@ -230,7 +230,7 @@ textarea {
 }
 
 .loading::before {
-    background-image: url('/resources/guacamole/cog.png');
+    background-image: url(/resources/guacamole/cog.png);
 }
 
 table.sorted th.sort-primary.sort-descending:after {

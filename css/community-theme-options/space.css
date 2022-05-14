@@ -1,6 +1,6 @@
 :root {
   --main-bg-color: radial-gradient(ellipse at center bottom, rgba(0, 98, 255, .7) 0%, #020013 80%, rgb(0, 0, 0) 100%) center center/cover no-repeat fixed,
-    url("/resources/space.jpg") center center/cover no-repeat fixed;
+    url(/resources/space.jpg) center center/cover no-repeat fixed;
   --modal-bg-color: linear-gradient(180deg, rgb(0, 57, 148) 0%, #10003c 100%) center center/cover no-repeat fixed;
   --modal-headercolor: linear-gradient(180deg, rgb(0, 57, 148) 0%, #10003c 100%) center center/cover no-repeat fixed;
   --modal-footer-color: linear-gradient(180deg, rgb(0, 57, 148) 0%, #10003c 100%) center center/cover no-repeat fixed;
