@@ -1625,7 +1625,7 @@ div#dlgEditRatioRules {
 }
 
 #autodl-multiselect-header {
-    background-image: url("/resources/rutorrent/dlg-autodl-irc.gif");
+    background-image: url(/resources/rutorrent/dlg-autodl-irc.gif");
 }
 
 .shieven {

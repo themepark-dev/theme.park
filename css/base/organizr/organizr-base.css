@@ -150,16 +150,16 @@ h6 {
     color: var(--text-hover);
 }
 
-.btn:not(.btn-danger):not(.bg-plex):not(.btn-youtube):not(.btn-info.btn-circle):not(.btn-success),
+.btn:not(.btn-danger):not(.bg-plex):not(.btn-youtube):not(.btn-info.btn-circle):not(.btn-success):not(.log-label):not(.log-details),
 .cbutton {
     background: var(--button-color);
     border-color: var(--button-color);
     color: var(--button-text);
 }
 
-.btn:hover:not(.btn-danger):not(.bg-plex):not(.btn-youtube):not(.btn-info.btn-circle):not(.btn-success),
-.btn:active:not(.btn-danger):not(.bg-plex):not(.btn-youtube):not(.btn-info.btn-circle):not(.btn-success),
-.btn:focus:not(.btn-danger):not(.bg-plex):not(.btn-youtube):not(.btn-info.btn-circle):not(.btn-success),
+.btn:hover:not(.btn-danger):not(.bg-plex):not(.btn-youtube):not(.btn-info.btn-circle):not(.btn-success):not(.log-label):not(.log-details),
+.btn:active:not(.btn-danger):not(.bg-plex):not(.btn-youtube):not(.btn-info.btn-circle):not(.btn-success):not(.log-label):not(.log-details),
+.btn:focus:not(.btn-danger):not(.bg-plex):not(.btn-youtube):not(.btn-info.btn-circle):not(.btn-success):not(.log-label):not(.log-details),
 .cbutton:hover {
     background: var(--button-color-hover);
     border-color: var(--button-color-hover);
@@ -2429,6 +2429,10 @@ input:active:not(select),
     border: 1px solid rgba(120, 130, 140, 0.4);
 }
 
+select:focus {
+    background: var(--drop-down-menu-bg);
+    color: var(--text);
+}
 
 .cp-container .cp-pills li a {
     padding: 5px;

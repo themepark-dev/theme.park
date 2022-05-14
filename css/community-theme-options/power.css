@@ -1,6 +1,6 @@
 :root {
   --main-bg-color: radial-gradient(ellipse at center bottom, rgba(166, 40, 140, .7) 0%, rgba(11,8,51,1) 80%, rgba(0,0,0,1) 100%) center center/cover no-repeat fixed,
-    url("/resources/power.jpg") center center/cover no-repeat fixed;
+    url(/resources/power.jpg) center center/cover no-repeat fixed;
   --modal-bg-color: linear-gradient(180deg, rgba(35, 0, 57, 1) 0%, #000 100%) center center/cover no-repeat fixed;
   --modal-header-color: linear-gradient(180deg, rgba(35, 0, 57, 1) 0%, #000 100%) center center/cover no-repeat fixed;
   --modal-footer-color: linear-gradient(180deg, rgba(35, 0, 57, 1) 0%, #000 100%) center center/cover no-repeat fixed;

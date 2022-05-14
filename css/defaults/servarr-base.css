@@ -444,6 +444,14 @@ a:hover {
     border-top: 1px solid var(--transparency-light-25);
 }
 
+[class*="TablePager-records-"] {
+    color: var(--text);
+}
+
+[class*="TablePager-disabledPageButton-"] {
+    color: var(--text-muted);
+}
+
 /* TOP MENU */
 [class*="PageToolbar-toolbar-"] {
     background: var(--transparency-dark-25);
