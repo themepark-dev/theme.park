@@ -45,7 +45,7 @@ if [[ -z ${TP_THEME} ]]; then
 fi
 
 # Adding stylesheets     
-if ! grep -q "${TP_DOMAIN}/css/base" "${APP_FILEPATH}"; then
+if ! grep -q "${TP_DOMAIN}/css/base" "${APP_FILEPATH}"/usr/lib/plexmediaserver/Resources/Plug-ins-*/WebClient.bundle/Contents/Resources/index.html; then
     echo '---------------------------'
     echo '|  Adding the stylesheet  |'
     echo '---------------------------'

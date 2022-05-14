@@ -20,6 +20,7 @@ server {
         alias /config/www/;
         sub_filter_types *;
         sub_filter 'url("/css/' 'url("/themepark/css/';
+        sub_filter 'url(/resources/' 'url(/themepark/resources/';
         sub_filter_once off;
         try_files $uri $uri/ /index.html;
     }
