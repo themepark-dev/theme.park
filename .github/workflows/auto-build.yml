@@ -113,5 +113,5 @@ jobs:
       - name: manually build
         if: ${{ github.event.inputs.app }}
         run: |
-          docker build docker-mods/${{ github.event.inputs.app }} --tag ghcr.io/gilbn/theme.park:${{ github.event.inputs.app }}
-          docker push ghcr.io/gilbn/theme.park:${{ github.event.inputs.app }}
+          docker build docker-mods/${{ github.event.inputs.app }} --tag gilbn/theme.park:${{ github.event.inputs.app }}
+          docker push gilbn/theme.park:${{ github.event.inputs.app }}
