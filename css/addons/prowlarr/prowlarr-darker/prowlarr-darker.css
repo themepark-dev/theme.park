@@ -1,11 +1,11 @@
 :root {
-    --main-bg-color: #454545;
+    --main-bg-color: #202020;
 
-    --modal-bg-color: #454545;
-    --modal-header-color: #454545;
-    --modal-footer-color: #454545;
+    --modal-bg-color: #2a2a2a;
+    --modal-header-color: #2a2a2a;
+    --modal-footer-color: #2a2a2a;
 
-    --drop-down-menu-bg: #606060;
+    --drop-down-menu-bg: #414141;
 
     --button-color: #5899eb;
     --button-color-hover: #4b91ea;
@@ -30,8 +30,9 @@
     --border-color: #606060;
     --label-color: #707070;
     --label-info: #5d9cec;
-    --header-color: #e66000;
-    --side-menu-color: #595959;
+    --header-color: #2a2a2a;
+    --toolbar-background: #262626;
+    --side-menu-color: #2a2a2a;
     --side-menu-link-color: #e66000;
 }
 
@@ -43,7 +44,7 @@
 }
 
 [class*="PageToolbar-toolbar-"] {
-    background-color: #707070;
+    background-color: var(--toolbar-background);
     color: var(--text);
 }
 
@@ -130,4 +131,11 @@
     color: #e1e2e3;
 }
 
-/* BUTTONS */
+
+canvas {
+    filter: none !important
+}
+
+[class*="Stats-fullWidthChart-"], [class*="Stats-halfWidthChart-"] {
+    background: transparent !important;
+}
