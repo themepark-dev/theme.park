@@ -398,7 +398,7 @@ a:hover {
     color: var(--label-text-color);
 }
 
-[class*="PageSidebarItem-status-"][class*="Label-info-"] {
+[class*="PageSidebarItem-status-"] [class*="Label-info-"] {
     border-color: var(--arr-queue-color);
     background-color: var(--arr-queue-color);
     color: var(--label-text-color);
