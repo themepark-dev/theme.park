@@ -1,11 +1,12 @@
+@import url("/css/defaults/servarr-darker-base.css");
 :root {
-    --main-bg-color: #454545;
+    --main-bg-color: #202020;
 
-    --modal-bg-color: #595959;
-    --modal-header-color: #595959;
-    --modal-footer-color: #595959;
+    --modal-bg-color: #2a2a2a;
+    --modal-header-color: #2a2a2a;
+    --modal-footer-color: #2a2a2a;
 
-    --drop-down-menu-bg: #606060;
+    --drop-down-menu-bg: #333;
 
     --button-color: #5899eb;
     --button-color-hover: #4b91ea;
@@ -13,10 +14,10 @@
     --button-text-hover: #fff;
 
     --accent-color: 255, 194, 48;
-    --accent-color-hover: rgb(255, 194, 48, .8);
-    --link-color: rgb(255, 194, 48);
+    --accent-color-hover: rgba(255, 194, 48, 0.8);
+    --link-color: #ffc230;
     --link-color-hover: rgb(255, 194, 48, .8);
-    --label-text-color: #eee;
+    --label-text-color: #2f2f2f;
 
     --text: #ccc;
     --text-hover: #fff;
@@ -28,83 +29,12 @@
     --scroller-hover: #606060;
     --scroller: #707070;
     --border-color: #606060;
-    --label-color: #707070;
+    --label-color: #ffc230;
     --label-info: #5d9cec;
-    --header-color: #464b51;
-    --side-menu-color: #595959;
-}
-
-/* HEADER */
-
-[class*="PageHeader-header-"] {
-    background-color: var(--header-color);
-    color: #fff;
-}
-
-[class*="PageToolbar-toolbar-"] {
-    background-color: #707070;
-    color: var(--text);
-}
-
-/* SIDE MENU */
-
-[class*="PageSidebar-sidebar-"] {
-    background-color: var(--side-menu-color);
-    color: #fff;
-}
-
-[class*=PageSidebarItem-link-]:focus {
-    color: rgb(var(--accent-color)) !important;
-}
-
-[class*=PageSidebarItem-isActiveLink-] {
-    color: var(--link-color) !important;
-}
-
-[class*=PageSidebarItem-isActiveParentLink-] {
-    background-color: var(--side-menu-active);
-}
-
-/* SCROLLER */
-[class*=ImportSeriesSelectSeries-results-]::-webkit-scrollbar-thumb:hover,
-[class*=OverlayScroller-thumb-]:hover {
-    background-color: var(--scroller-hover) !important;
-}
-
-[class*="OverlayScroller-thumb-"],
-[class*=Scroller-scroller-]::-webkit-scrollbar-thumb {
-    background-color: var(--scroller) !important;
-}
-
-/* MODALS */
-
-[class*=ModalHeader-modalHeader-],
-[class*=FieldSet-legend-] {
-    border-bottom: 1px solid var(--border-color);
-}
-
-[class*=ModalFooter-modalFooter-] {
-    border-top: 1px solid var(--border-color);
-}
-
-/* LABLES */
-
-[class*="Label-default-"] {
-    border-color: var(--label-color);
-    background-color: var(--label-color);
-    color: white;
-}
-
-[class*="Label-info-"]:not([class*="PageSidebarItem-status-"] [class*="Label-info-"]) {
-    border-color: var(--label-info);
-    background-color: var(--label-info);
-    color: #fff;
-}
-
-/* SETTINGS */
-
-[class*=Settings-link-] {
-    border-bottom: 1px solid var(--border-color);
+    --header-color: #2a2a2a;
+    --toolbar-background: #262626;
+    --side-menu-color: #2a2a2a;
+    --side-menu-link-color: #ffc230;
 }
 
 /* SEARCH DROP DOWN */
@@ -120,5 +50,5 @@
 
 [class*="MovieIndexPoster-controls-"] {
     background-color: var(--label-color) !important;
-    color: #fff !important;
+    color: var(--label-text-color) !important;
 }
