@@ -1,11 +1,12 @@
+@import url("/css/defaults/servarr-darker-base.css");
 :root {
-    --main-bg-color: #4f566f;
+    --main-bg-color: #202020;
 
-    --modal-bg-color: #3a3f51;
-    --modal-header-color: #3a3f51;
-    --modal-footer-color: #3a3f51;
+    --modal-bg-color: #2a2a2a;
+    --modal-header-color: #2a2a2a;
+    --modal-footer-color: #2a2a2a;
 
-    --drop-down-menu-bg: #3a3f51;
+    --drop-down-menu-bg: #333;
 
     --button-color: #5899eb;
     --button-color-hover: #3483e7;
@@ -16,50 +17,25 @@
     --accent-color-hover: rgb(33, 147, 181);
     --link-color: #35c5f4;
     --link-color-hover: rgb(53, 197, 244, .8);
-    --label-text-color: #4f566f;
+    --label-text-color: #272a36;
 
     --text: #ccc;
     --text-hover: #fff;
-    --text-muted: #999;
+    --text-muted: #bebebe;
 
     /*Specials*/
     --arr-queue-color: #35c5f4;
-    --side-menu-active: #252833;
-    --scroller-hover: #656d8c;
-    --scroller: #9ea4b9;
-    --border-color: #4f566f;
-    --label-color: #4f566f;
+    --side-menu-active: #333333;
+    --scroller-hover: #606060;
+    --scroller: #707070;
+    --border-color: #606060;
+    --label-color: #35c5f4;
     --label-info: #5d9cec;
-    --header-color: #2193b5;
-    --side-menu-color: #3a3f51;
+    --header-color: #2a2a2a;
+    --toolbar-background: #262626;
+    --side-menu-color: #2a2a2a;
+    --side-menu-link-color: #35c5f4;
 }
-
-/* HEADER */
-
-[class*="PageHeader-header-"] {
-    background-color: var(--header-color);
-    color: #fff;
-}
-
-/* SIDE MENU */
-
-[class*="PageSidebar-sidebar-"] {
-    background-color: var(--side-menu-color);
-    color: #fff;
-}
-
-[class*=PageSidebarItem-link-]:focus {
-    color: rgb(var(--accent-color)) !important;
-}
-
-[class*=PageSidebarItem-isActiveLink-] {
-    color: var(--link-color) !important;
-}
-
-[class*=PageSidebarItem-isActiveParentLink-] {
-    background-color: var(--side-menu-active);
-}
-
 /* SCROLLER */
 [class*=ImportSeriesSelectSeries-results-]::-webkit-scrollbar-thumb:hover,
 [class*=OverlayScroller-thumb-]:hover {
@@ -69,35 +45,6 @@
 [class*="OverlayScroller-thumb-"],
 [class*=Scroller-scroller-]::-webkit-scrollbar-thumb {
     background-color: var(--scroller) !important;
-}
-
-/* MODALS */
-[class*=ModalHeader-modalHeader-],
-[class*=FieldSet-legend-] {
-    border-bottom: 1px solid var(--border-color);
-}
-
-[class*=ModalFooter-modalFooter-] {
-    border-top: 1px solid var(--border-color);
-}
-
-/* LABLES */
-[class*=Label-default-] {
-    border-color: var(--label-color);
-    background-color: var(--label-color);
-    color: white;
-}
-
-[class*="Label-info-"]:not([class*="PageSidebarItem-status-"] [class*="Label-info-"]) {
-    border-color: var(--label-info);
-    background-color: var(--label-info);
-    color: white;
-}
-
-/* SETTINGS */
-
-[class*=Settings-link-] {
-    border-bottom: 1px solid var(--border-color);
 }
 
 /* SEARCH DROP DOWN */
