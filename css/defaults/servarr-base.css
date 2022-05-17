@@ -322,7 +322,6 @@ a:hover {
 
 
 [class*="Tooltip-tooltip-"][class*="Tooltip-inverse-"],
-[class*="Popover-title-"],
 [class*="SeasonInfo-title-"],
 [class*="Popover-body-"],
 [class*="Tooltip-body-"],
@@ -330,6 +329,11 @@ a:hover {
 [class*="Tooltip-tooltip-"][class*="Tooltip-default-"] {
     background: var(--drop-down-menu-bg);
     color: var(--text-hover);
+}
+
+[class*="Popover-title-"] {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-bottom: rgba(255, 255, 255, 0.2) 1px solid;
 }
 
 /* @supports (backdrop-filter: blur(1em)) or (-webkit-backdrop-filter:blur(1em)) {
