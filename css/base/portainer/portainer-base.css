@@ -16,7 +16,7 @@
 :root {
     --text-json-tree-branch-preview-color: var(--text);
     --text-json-tree-leaf-color: var(--text);
-    }
+}
 
 /* Scrollbar */
 @media only screen and (min-width: 768px) {
@@ -271,6 +271,19 @@ ul.sidebar .sidebar-title {
     background: var(--transparency-light-10);
 }
 
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+    border-top: 1px solid var(--transparency-light-10);
+}
+
+.table>thead>tr>th {
+    border-bottom: 2px solid var(--transparency-light-10);
+}
+
 .table-hover>tbody>tr.active:hover>td,
 .table-hover>tbody>tr.active:hover>th,
 .table-hover>tbody>tr:hover>.active,
@@ -297,7 +310,8 @@ ul.sidebar .sidebar-title {
 }
 
 .btn-primary,
-.btn-default {
+.btn-default,
+button {
     color: var(--button-text);
     background-color: var(--button-color);
     border-color: var(--button-color);
@@ -398,51 +412,71 @@ fieldset[disabled] .btn-primary:hover {
 }
 
 /* PAGINATION */
-.pagination>.disabled>a,
-.pagination>.disabled>a:focus,
-.pagination>.disabled>a:hover,
+
 .pagination>.disabled>span,
+.pagination>.disabled>span:hover,
 .pagination>.disabled>span:focus,
-.pagination>.disabled>span:hover {
+.pagination>.disabled>button,
+.pagination>.disabled>button:hover,
+.pagination>.disabled>button:focus,
+.pagination>.disabled>a,
+.pagination>.disabled>a:hover,
+.pagination>.disabled>a:focus {
     color: var(--text-muted);
-    cursor: not-allowed;
-    background: var(--transparency-light-10);
-    border-color: transparent;
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+}
+
+.pagination>li>button {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px !important;
+    line-height: 1.42857143;
+    text-decoration: none;
+    border: 1px solid #ddd;
+}
+
+.pagination>li>a,
+.pagination>li>button,
+.pagination>li>span {
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+    color: var(--button-text);
+}
+
+.pagination>li>a:hover,
+.pagination>li>button:hover,
+.pagination>li>span:hover,
+.pagination>li>a:focus,
+.pagination>li>button:focus,
+.pagination>li>span:focus {
+    background-color: var(--button-color-hover);
+    border-color: var(--button-color-hover);
+    color: var(--button-text-hover);
 }
 
 .pagination>.active>a,
-.pagination>.active>a:focus,
-.pagination>.active>a:hover,
 .pagination>.active>span,
+.pagination>.active>button,
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>.active>button:hover,
+.pagination>.active>a:focus,
 .pagination>.active>span:focus,
-.pagination>.active>span:hover {
-    z-index: 2;
-    color: var(--button-text);
+.pagination>.active>button:focus {
+    z-index: 3;
+    color: #fff;
     cursor: default;
     background-color: var(--button-color-hover);
     border-color: var(--button-color-hover);
 }
 
-.pagination>li>a,
-.pagination>li>span {
-    text-decoration: none;
-    color: var(--button-text);
-    background-color: var(--button-color);
-    border-color: var(--button-color);
-}
-
-.pagination>li>a:focus,
-.pagination>li>a:hover,
-.pagination>li>span:focus,
-.pagination>li>span:hover {
-    color: var(--button-text-hover);
-    background-color: var(--button-color-hover);
-    border-color: var(--button-color-hover);
-}
 
 /* FORM CONTROL */
 
-select:focus, select.form-control:focus {
+select:focus,
+select.form-control:focus {
     background: var(--drop-down-menu-bg) !important;
 }
 
@@ -713,4 +747,58 @@ pre {
 .widget .widget-body table thead tr:hover {
     background: var(--transparency-dark-35) !important;
     background: var(--transparency-dark-35) !important;
+}
+
+
+/* HOME PAGE */
+
+.app-portainer-home-EnvironmentList-EnvironmentItem-EnvironmentItem-module__wrapperButton {
+    background: rgba(0, 0, 0, 0.2);
+    color: var(--text);
+}
+
+.app-portainer-components-datatables-components-FilterSearchBar-module__searchBar {
+    border: 1px solid var(--transparency-light-15);
+}
+
+.app-portainer-components-form-components-ReactSelect-module__root .selector__control {
+    border: 1px solid var(--transparency-light-25);
+    background-color: var(--transparency-dark-25);
+}
+
+input,
+select,
+textarea {
+    background: var(--transparency-dark-25);
+}
+
+.selector__menu {
+    background-color: var(--drop-down-menu-bg) !important;
+    border: 1px solid var(--drop-down-menu-bg) !important;
+}
+
+.selector__option {
+    background-color: var(--transparency-light-05) !important;
+    border: 1px solid var(--transparency-light-05) !important;
+}
+
+:root[theme=dark] .app-portainer-components-form-components-ReactSelect-module__root .selector__multi-value,
+:root[theme=highcontrast] .app-portainer-components-form-components-ReactSelect-module__root .selector__multi-value {
+    background-color: rgb(var(--accent-color));
+    color: var(--label-text-color);
+}
+
+:root[theme=dark] .app-portainer-components-form-components-ReactSelect-module__root .selector__multi-value__label,
+:root[theme=highcontrast] .app-portainer-components-form-components-ReactSelect-module__root .selector__multi-value__label {
+    color: var(--label-text-color);
+}
+
+
+
+/* ACCENTS */
+
+.label-info,
+.label-primary {
+    background-color: rgb(var(--accent-color));
+    color: var(--label-text-color);
 }
