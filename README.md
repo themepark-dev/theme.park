@@ -31,6 +31,7 @@
 <a href="https://docs.theme-park.dev/theme-options/dark"><img src="https://docs.theme-park.dev/theme-options/dark_banner_small.png" alt="Dark"  width="49.49%"/></a>
 <a href="https://docs.theme-park.dev/theme-options/plex"><img src="https://docs.theme-park.dev/theme-options/plex_banner_small.png" alt="Plex"  width="49.49%"/></a>
 <a href="https://docs.theme-park.dev/theme-options/nord"><img src="https://docs.theme-park.dev/theme-options/nord_banner_small.png" alt="Nord"  width="49.49%"/></a>
+<a href="https://docs.theme-park.dev/theme-options/maroon"><img src="https://docs.theme-park.dev/theme-options/maroon_banner_small.png" alt="Maroon"  width="49.49%"/></a>
 
 <h2><a href="https://docs.theme-park.dev/setup">Installation</a></h2>
 
