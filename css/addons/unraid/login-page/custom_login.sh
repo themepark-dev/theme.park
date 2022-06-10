@@ -75,7 +75,7 @@ else
 fi
 
 # Changing stylesheet
-if ! grep -q ${TYPE}/${THEME} ${LOGIN_PAGE}; then
+if ! grep -q ${TYPE}"/"${THEME} ${LOGIN_PAGE}; then
   echo "Changing existing custom stylesheet.." 
   sed -i "/<link data-tp='theme' rel='stylesheet' href='${SCHEME}:\/\/${DOMAIN}\/css\/addons\/unraid\/login-page/c <link data-tp='theme' rel='stylesheet' href='${SCHEME}://${DOMAIN}/css/addons/unraid/login-page/${TYPE}/${THEME}'>" ${LOGIN_PAGE}
   sed -i "/<link data-tp='base' rel='stylesheet' href='${SCHEME}:\/\/${DOMAIN}\/css\/addons\/unraid\/login-page/c <link data-tp='base' rel='stylesheet' href='${SCHEME}://${DOMAIN}/css/addons/unraid/login-page/${TYPE}/${TYPE}-base.css'>" ${LOGIN_PAGE}
