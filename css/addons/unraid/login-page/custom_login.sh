@@ -1,7 +1,7 @@
 #!/bin/bash
 TYPE="retro-terminal"
 THEME="green.css"
-DOMAIN="theme-park.dev" # If you update the domain after the script has been run, You must disable and re enable JS or the whole theme.
+DOMAIN="theme-park.dev" # If you update the domain after the script has been run, You must disable and re the whole theme with the DISABLE_THEME env.
 SCHEME="https"
 ADD_JS="true"
 JS="custom_text_header.js"
