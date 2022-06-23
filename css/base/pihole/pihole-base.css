@@ -499,6 +499,11 @@
       border-color: var(--button-color) !important;
   }
 
+  [class*=icheck-]>input:first-child:checked+input[type=hidden]+label::after,
+  [class*=icheck-]>input:first-child:checked+label::after {
+      border-color: var(--button-text);
+  }
+
   /* Input */
   input,
   .form-control,
