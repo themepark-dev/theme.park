@@ -487,6 +487,18 @@ textarea {
     background: #666;
 }
 
+img.collapse {
+    filter: invert(1);
+}
+
+img.expand {
+    filter: invert(1);
+}
+
+.icon.user-group {
+    filter: invert(1);
+}
+
 /* USER SETTINGS */
 .page-tabs .page-list li a[href],
 .section-tabs li a {
