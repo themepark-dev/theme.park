@@ -352,6 +352,7 @@ textarea {
 
 
 .user a:visited,
+.user-group a:visited,
 .connection a:visited,
 .connection-group a:visited {
     text-decoration: none;
@@ -448,6 +449,7 @@ textarea {
 }
 
 .user a:visited,
+.user-group a:visited,
 .connection a:visited,
 .connection-group a:visited {
     text-decoration: none;
@@ -463,6 +465,7 @@ a.ng-binding:hover:not(.add-user):not(.button) {
 }
 
 .user a,
+.user-group a,
 .connection a,
 .connection-group a,
 a.ng-binding:not(.add-user):not(.button) {
@@ -482,6 +485,18 @@ textarea {
 
 .location-chooser .dropdown {
     background: #666;
+}
+
+img.collapse {
+    filter: invert(1);
+}
+
+img.expand {
+    filter: invert(1);
+}
+
+.icon.user-group {
+    filter: invert(1);
 }
 
 /* USER SETTINGS */
