@@ -311,10 +311,24 @@ ul.sidebar .sidebar-title {
 
 .btn-primary,
 .btn-default,
-button {
+button,
+button h3,
+button h5 {
     color: var(--button-text);
     background-color: var(--button-color);
     border-color: var(--button-color);
+}
+
+.app-react-portainer-environments-wizard-components-Option-Option-module__feature {
+    --selected-item-color: var(--button-color);
+    border: 1px solid var(--button-color);
+    color: var(--button-text) !important;
+}
+.app-react-portainer-environments-wizard-components-Option-Option-module__feature:hover {
+    border: 1px var(--button-color);
+    -webkit-box-shadow: 0 3px 10px -2px rgba(var(--accent-color), 0.8);
+    box-shadow: 0 3px 10px -2px rgba(var(--accent-color), 0.8);
+    color: var(--button-text-hover);
 }
 
 .btn-default.active,
@@ -506,7 +520,8 @@ output {
 
 /* DROPDOWN MENU */
 
-.dropdown-menu {
+.dropdown-menu,
+.tableMenu {
     background: var(--drop-down-menu-bg);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
@@ -515,6 +530,27 @@ output {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
+    color: var(--text);
+}
+
+.tableMenu {
+    background-color: var(--drop-down-menu-bg) !important;
+}
+.tableMenu .menuContent {
+    border-bottom: 1px solid var(--transparency-light-15);
+}
+.widget .widget-body table thead th .table-filter {
+    color: var(--text-muted);
+}
+.widget .widget-body table thead th .filter-active {
+    color: #f0ad4e;
+    font-size: 12px!important;
+}
+.table th button.sortable {
+    color: var(--link-color);
+}
+.small-select {
+    background-color: var(--drop-down-menu-bg);
     color: var(--text);
 }
 
