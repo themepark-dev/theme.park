@@ -202,7 +202,7 @@
     },
     "deluge": {
       "addons": {},
-      "base_css": "https://develop.theme-park.dev/css/base/deluge/deluge-base.css?sha=78cfde84e1abc6ef1adc053127a521aaca6c708e"
+      "base_css": "https://develop.theme-park.dev/css/base/deluge/deluge-base.css?sha=83fee3a30a566aab067f80df7bb1250380323fbe"
     },
     "dozzle": {
       "addons": {},
