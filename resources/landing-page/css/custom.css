@@ -289,7 +289,7 @@ header.masthead {
     background: rgba(0, 0, 0, 0.2);
     color: rgba(255, 255, 255, 0.7);
     border-radius: 5px;
-    max-width: 120px;
+    max-width: 130px;
     min-width: 130px;
 }
 
@@ -438,4 +438,10 @@ body {
     /* Safari and Chrome */
     -o-animation: fadein 2s;
     /* Opera */
+}
+
+ @media only screen and (min-width: 200px) and (max-width: 767px)   {
+    .app-container {
+        min-width: 120px;
+    }
 }
