@@ -444,4 +444,7 @@ body {
     .app-container {
         min-width: 120px;
     }
+    #services, #themes {
+        padding: 0rem 0 3rem 0;
+    }
 }
