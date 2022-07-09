@@ -194,7 +194,7 @@
     },
     "bitwarden": {
       "addons": {},
-      "base_css": "https://theme-park.dev/css/base/bitwarden/bitwarden-base.css?sha=d64b1e998ef9d676153d3a97957e7e7b3eff5acb"
+      "base_css": "https://theme-park.dev/css/base/bitwarden/bitwarden-base.css?sha=42d84af1c71f67cac5f6e8fc9a2b4e193501afb0"
     },
     "calibreweb": {
       "addons": {},
@@ -202,7 +202,7 @@
     },
     "deluge": {
       "addons": {},
-      "base_css": "https://theme-park.dev/css/base/deluge/deluge-base.css?sha=09e9de181d167da3f18a8a90e133884cd2dd8157"
+      "base_css": "https://theme-park.dev/css/base/deluge/deluge-base.css?sha=83fee3a30a566aab067f80df7bb1250380323fbe"
     },
     "dozzle": {
       "addons": {},
