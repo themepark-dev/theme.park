@@ -109,17 +109,27 @@ h6,
 .h4,
 .h5,
 .h6,
-label:not(#g_advanced > div:nth-child(13) > label):not(#g_advanced > div:nth-child(12) > div.col-sm-8 > div > label),
-label:not(.form-check-label):not(.btn):not(#g_advanced > div:nth-child(13) > label),
-label.bold .card-header:first-child,
 html[class*="theme_"] .card-header,
 .modal-header {
     color: var(--text-hover) !important;
 }
+body,b,span, p,
+html.theme_light label:not(.form-check-label):not(.btn), html.theme_light label.bold {
+    color: var(--text);
+}
 
 /* NAVBAR */
-.navbar {
-    background: var(--transparency-dark-25) !important;
+.navbar,
+.navbar .bg-dark {
+    background: var(--main-bg-color) !important;
+    background-repeat: repeat, no-repeat !important;
+    background-attachment: fixed, fixed !important;
+    background-position: center center, center center !important;
+    background-size: auto, cover !important;
+    -webkit-background-size: auto, cover !important;
+    -moz-background-size: auto, cover !important;
+    -o-background-size: auto, cover !important;
+    --bs-bg-opacity: 0 !important;
 }
 
 .navbar-dark .navbar-nav .show>.nav-link,
@@ -299,6 +309,33 @@ select:focus {
     background: var(--drop-down-menu-bg) !important;
 }
 
+.form-control:focus {
+    color: var(--text);
+    background-color: var(--transparency-dark-15);
+    border-color: rgb(var(--accent-color));
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(var(--accent-color) / 25%);
+}
+
+.form-control {
+    color: var(--text-hover);
+    background-color: var(--transparency-dark-25);
+    background-clip: padding-box;
+    border: 1px solid var(--transparency-light-10);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-select:focus {
+    border-color: var(--transparency-light-20);
+    color: var(--text-hover);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0);
+}
+
 /* DROPDOWN MENU */
 /* html[class*="theme_"] .dropdown-menu {
     background: var(--modal-bg-color);
@@ -395,13 +432,11 @@ html[class*="theme_"] .progress {
 
 /* BUTTONS */
 .btn-link {
-    color: var(--button-color);
-    color: var(--button-text);
+    color: var(--link-color);
 }
 
 .btn-link:hover {
-    color: var(--button-color-hover);
-    color: var(--button-text-hover);
+    color: var(--link-color-hover);
     transition: 0.15s;
 }
 
@@ -522,6 +557,18 @@ html[class*="theme_"] .badge-info {
     color: var(--label-text-color);
 }
 
+[id*="b_"]{
+    background: var(--transparency-dark-25);
+    border-color: var(--transparency-light-10);
+    color: var(--text);
+}
+
+[id*="b_"]:hover{
+    background: var(--transparency-dark-35);
+    border-color: var(--transparency-light-10);
+    color: var(--text-hover);
+}
+
 /* Org */
 
 html[class*="theme_"] .org-nav .nav-tabs a.active {
@@ -594,6 +641,7 @@ html[class*="theme_"] .btn-outline-secondary i {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
+    --bs-bg-opacity: 0;
 }
 
 .bg-light .navbar {
@@ -605,6 +653,14 @@ html[class*="theme_"] .btn-outline-secondary i {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
+}
+
+.border-bottom {
+    border-bottom: 1px solid var(--transparency-light-15) !important;
+}
+
+div.dataTables_wrapper div.dataTables_info {
+    color: var(--text);
 }
 
 /* Cards */
@@ -659,4 +715,10 @@ html[class*="theme_"] hr,
 html[class*="theme_"] .dropdown-divider,
 html[class*="theme_"] .footer {
     border-top: 1px solid rgb(255 255 255 / 30%);
+}
+
+thead, tbody, tfoot, tr, td, th {
+    border-color:var(--transparency-light-25);
+    border-style: solid;
+    border-width: 0;
 }
