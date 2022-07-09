@@ -16,7 +16,7 @@
  @import url("/css/defaults/placeholders.css");
 @import url("/css/defaults/transparent.css");
 
- html {
+ html,body {
      background: var(--main-bg-color);
      background-repeat: repeat, no-repeat;
      background-attachment: fixed, fixed;
@@ -812,11 +812,11 @@
  }
 
  .x-btn-mc em.x-btn-arrow {
-     //background-image: url(../images/default/button/arrow.gif);
+     background-image: url(/resources/deluge/arrow.png);
  }
 
  .x-btn-mc em.x-btn-split {
-     //background-image: url(../images/default/button/s-arrow.gif);
+     background-image: url(/resources/deluge/s-arrow.png);
  }
 
  .x-btn-over .x-btn-mc em.x-btn-split,
@@ -1798,7 +1798,7 @@
  }
 
  .x-menu-item-checked .x-menu-group-item .x-menu-item-icon {
-     //background-image: url(../images/gray/menu/group-checked.gif);
+     background-image: url(/resources/deluge/group-checked.png);
  }
 
  .x-menu-group-item .x-menu-item-icon {
