@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-MODS=$(curl https://develop.theme-park.dev/themes.json | jq -r '.["docker-mods"]')
+MODS=$(curl https://theme-park.dev/themes.json | jq -r '.["docker-mods"]')
 if [[ "$0" == "bash" ]]; then
     DIR="/tmp/theme-park-mods"
 else
