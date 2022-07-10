@@ -14,4 +14,4 @@ jq -r 'to_entries | map(.key + "|" + (.value | tostring)) | .[]' <<< "$MODS" | \
     curl "$value" --create-dirs --output "$DIR/$key" --silent
     echo "Fetched $key script"
   done
-sudo chmod go+rx $DIR
+chmod go+rx $DIR
