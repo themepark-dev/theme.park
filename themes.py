@@ -61,7 +61,7 @@ def create_addons_json():
     return dumps(ADDONS, sort_keys=True)
 
 
-def create_json(app_folders: list = None, themes: list = None, community_themes: list = None, no_sub_folders=False):
+def create_json(app_folders: list = None, themes: list = None, community_themes: list = None ,docker_mods: list = None, no_sub_folders=False) -> str:
     if no_sub_folders:
         THEMES_DICT = {}
         theme_shas = subprocess.check_output(["git", "ls-files", "-s", "./css/theme-options/*.css"]) if isdir(".git") else []
@@ -71,12 +71,12 @@ def create_json(app_folders: list = None, themes: list = None, community_themes:
         THEMES = {
                 theme.split(".")[0].capitalize(): {
                     "url": f"{scheme}://{DOMAIN}/css/theme-options/{theme}?sha={THEME_SHAS.get(theme)}"
-                }for theme in themes
+                }for theme in themes if themes
             }
         COMMUNITY_THEMES = {
                 theme.split(".")[0].capitalize(): {
                     "url": f"{scheme}://{DOMAIN}/css/community-theme-options/{theme}?sha={COMMUNITY_THEME_SHAS.get(theme)}"
-                }for theme in community_themes
+                }for theme in community_themes if community_themes
             }
         THEMES_DICT.update(dict(sorted({
             "themes": {
@@ -111,12 +111,17 @@ def create_json(app_folders: list = None, themes: list = None, community_themes:
                 } for app in app_folders if isfile(f'./css/base/{app}/.deprecated')
             }
         }.items())))
+        APPS.update(dict(sorted({
+            "docker-mods": {
+                mod: f"{scheme}://{DOMAIN}/docker-mods/{mod}/root/etc/cont-init.d/98-themepark" for mod in docker_mods if docker_mods
+                 }
+        }.items())))
         THEMES = loads(create_json(themes=themes, community_themes=community_themes, no_sub_folders=True))
         APPS.update(ADDONS)
         APPS.update(THEMES)
         return dumps(APPS)
 
-def create_theme_options():
+def create_theme_options() -> None:
     app_shas = subprocess.check_output(["git", "ls-files", "-s", "./css/base/*base.css"]) if isdir(".git") else []
     theme_shas = subprocess.check_output(["git", "ls-files", "-s", "./css/theme-options/*.css"]) if isdir(".git") else []
     community_theme_shas = subprocess.check_output(["git", "ls-files", "-s", "./css/community-theme-options/*.css"]) if isdir(".git") else []
@@ -145,6 +150,7 @@ scheme = env.get('TP_SCHEME','https') if env.get('TP_SCHEME') else 'https'
 if __name__ == "__main__":
     app_folders = [name for name in listdir('./css/base') if isdir(join('./css/base', name))]
     themes = [name for name in listdir('./css/theme-options') if isfile(join('./css/theme-options', name))]
+    docker_mods = [name for name in listdir('./docker-mods') if isdir(join('./docker-mods', name))]
     community_themes = [name for name in listdir('./css/community-theme-options') if isfile(join('./css/community-theme-options', name))]
     develop = True if isdir(".git") and subprocess.check_output(["git", "symbolic-ref", "--short", "HEAD"]).decode('ascii').strip() == "develop" else False
     if env_domain:
@@ -153,7 +159,7 @@ if __name__ == "__main__":
         with open("CNAME", "rt", closefd=True) as cname:
             CNAME = cname.readline()
         DOMAIN = CNAME if not develop else f"develop.{CNAME}"
-    apps = loads(create_json(app_folders=app_folders, themes=themes, community_themes=community_themes))
+    apps = loads(create_json(app_folders=app_folders, themes=themes, community_themes=community_themes, docker_mods=docker_mods))
     with open("themes.json", "w") as outfile:
         dump(apps, outfile, indent=2, sort_keys=True)
     create_theme_options()

@@ -544,6 +544,35 @@
       "base_css": "https://theme-park.dev/css/base/webtools/webtools-base.css?sha=b7eaa31bf1cd7215460b844e7985f3bf8c55689f"
     }
   },
+  "docker-mods": {
+    "bazarr": "https://theme-park.dev/docker-mods/bazarr/root/etc/cont-init.d/98-themepark",
+    "calibre-web": "https://theme-park.dev/docker-mods/calibre-web/root/etc/cont-init.d/98-themepark",
+    "deluge": "https://theme-park.dev/docker-mods/deluge/root/etc/cont-init.d/98-themepark",
+    "duplicati": "https://theme-park.dev/docker-mods/duplicati/root/etc/cont-init.d/98-themepark",
+    "emby": "https://theme-park.dev/docker-mods/emby/root/etc/cont-init.d/98-themepark",
+    "jackett": "https://theme-park.dev/docker-mods/jackett/root/etc/cont-init.d/98-themepark",
+    "jellyfin": "https://theme-park.dev/docker-mods/jellyfin/root/etc/cont-init.d/98-themepark",
+    "lazylibrarian": "https://theme-park.dev/docker-mods/lazylibrarian/root/etc/cont-init.d/98-themepark",
+    "librespeed": "https://theme-park.dev/docker-mods/librespeed/root/etc/cont-init.d/98-themepark",
+    "lidarr": "https://theme-park.dev/docker-mods/lidarr/root/etc/cont-init.d/98-themepark",
+    "mylar3": "https://theme-park.dev/docker-mods/mylar3/root/etc/cont-init.d/98-themepark",
+    "nzbget": "https://theme-park.dev/docker-mods/nzbget/root/etc/cont-init.d/98-themepark",
+    "plex": "https://theme-park.dev/docker-mods/plex/root/etc/cont-init.d/98-themepark",
+    "prowlarr": "https://theme-park.dev/docker-mods/prowlarr/root/etc/cont-init.d/98-themepark",
+    "qbittorrent": "https://theme-park.dev/docker-mods/qbittorrent/root/etc/cont-init.d/98-themepark",
+    "radarr": "https://theme-park.dev/docker-mods/radarr/root/etc/cont-init.d/98-themepark",
+    "readarr": "https://theme-park.dev/docker-mods/readarr/root/etc/cont-init.d/98-themepark",
+    "rutorrent": "https://theme-park.dev/docker-mods/rutorrent/root/etc/cont-init.d/98-themepark",
+    "sabnzbd": "https://theme-park.dev/docker-mods/sabnzbd/root/etc/cont-init.d/98-themepark",
+    "sonarr": "https://theme-park.dev/docker-mods/sonarr/root/etc/cont-init.d/98-themepark",
+    "swag": "https://theme-park.dev/docker-mods/swag/root/etc/cont-init.d/98-themepark",
+    "synclounge": "https://theme-park.dev/docker-mods/synclounge/root/etc/cont-init.d/98-themepark",
+    "tautulli": "https://theme-park.dev/docker-mods/tautulli/root/etc/cont-init.d/98-themepark",
+    "thelounge": "https://theme-park.dev/docker-mods/thelounge/root/etc/cont-init.d/98-themepark",
+    "transmission": "https://theme-park.dev/docker-mods/transmission/root/etc/cont-init.d/98-themepark",
+    "vuetorrent": "https://theme-park.dev/docker-mods/vuetorrent/root/etc/cont-init.d/98-themepark",
+    "whisparr": "https://theme-park.dev/docker-mods/whisparr/root/etc/cont-init.d/98-themepark"
+  },
   "themes": {
     "Aquamarine": {
       "url": "https://theme-park.dev/css/theme-options/aquamarine.css?sha=7f02500167b598d1a64c86198ed3c9af9dec5466"
