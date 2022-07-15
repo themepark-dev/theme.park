@@ -37,30 +37,19 @@
 }
 
 /* HEADER */
-.header-container .bg-primary {
+.mantine-Header-root[class*="bazarr-"] {
     background-color: var(--header-color) !important;
+    border-bottom: 1px solid var(--transparency-light-15);
 }
 
 /* SIDE MENU */
-.sidebar-container {
+.mantine-Navbar-root[class*="bazarr-"] {
     background-color: var(--side-menu-color) !important;
     color: white !important;
 }
 
-.sidebar-container .sidebar-button {
-    color: var(--side-menu-link-color) !important;
-}
-
-.sidebar-container .sidebar-button {
-    background-color: var(--side-menu-color) !important;
-}
-.sidebar-container .sidebar-button.sb-active, .sidebar-container .sidebar-button.sb-active:hover {
-    color: var(--side-menu-link-color) !important;
-    background-color: var(--side-menu-active) !important;
-}
-
-
-.sidebar-container .sidebar-button:hover {
-    background-color: var(--side-menu-active) !important;
-    color: var(--side-menu-link-color) !important;
+#root>div>div>main>div>div.mantine-Group-root[class*="bazarr-"],
+#root>div>div>main>div>div>div.mantine-Group-root[class*="bazarr-"],
+#root>div>div>main>form>div.mantine-Group-root[class*="bazarr-"] {
+    background: #262626 !important;
 }
