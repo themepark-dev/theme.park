@@ -56,7 +56,7 @@ h6 {
 
 /* .mantine-Container-root[class*="bazarr-"] .mantine-Group-root[class*="bazarr-"]:not(td>*):not(.mantine-Card-root div), */
 #root>div>div>main>div>div.mantine-Group-root[class*="bazarr-"],
-#root>div>div>main>div>div>div.mantine-Group-root[class*="bazarr-"],
+#root>div>div>main>div>div>div.mantine-Group-root[class*="bazarr-"]:not([role="navigation"]),
 #root>div>div>main>form>div.mantine-Group-root[class*="bazarr-"] {
     background: var(--transparency-dark-25);
 }
@@ -130,6 +130,25 @@ h6 {
 .mantine-Skeleton-root.mantine-Skeleton-visible[class*="bazarr-"]::before {
     background: var(--transparency-dark-25);
 }
+
+/* PAGINATION */
+
+.mantine-Group-child.mantine-Pagination-item {
+    border: 1px solid var(--transparency-light-10);
+    background: var(--transparency-dark-15);
+    color: var(--text);
+}
+
+.mantine-Group-child.mantine-Pagination-item[class*="bazarr-"]:disabled {
+    background: var(--transparency-light-15);
+    color: var(--text-muted);
+}
+
+.mantine-Group-child.mantine-Pagination-item.mantine-Pagination-active[class*="bazarr-"] {
+    background: rgb(var(--accent-color));
+    color: var(--label-text-color);
+}
+
 
 /* BUTTONS */
 
