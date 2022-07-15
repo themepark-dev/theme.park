@@ -69,7 +69,7 @@ h6,
 
 /* SIDEMENU */
 
-.mantine-Navbar-root.mantine-Navbar-hidden[class*="bazarr-"] {
+.mantine-Navbar-root[class*="bazarr-"] {
     background: var(--transparency-dark-25);
     border-right: 1px solid var(--transparency-light-15);
 }
@@ -78,17 +78,17 @@ h6,
     border-top-color: var(--transparency-light-10);
 }
 
-.mantine-Navbar-root.mantine-Navbar-hidden[class*="bazarr-"] .mantine-Stack-root[class*="bazarr-"] a[aria-current="page"] {
+.mantine-Navbar-root[class*="bazarr-"] .mantine-Stack-root[class*="bazarr-"] a[aria-current="page"] {
     background: var(--transparency-dark-15) !important;
     border-left: 2px solid rgb(var(--accent-color));
 }
 
-.mantine-Navbar-root.mantine-Navbar-hidden[class*="bazarr-"] .mantine-Stack-root[class*="bazarr-"] a {
+.mantine-Navbar-root[class*="bazarr-"] .mantine-Stack-root[class*="bazarr-"] a {
     border-left: 2px solid var(--transparency-light-10);
 }
 
-.mantine-Navbar-root.mantine-Navbar-hidden[class*="bazarr-"] .mantine-Stack-root a [class*="bazarr-"]:hover:not(.mantine-Badge-light):not(.mantine-Badge-inner),
-.mantine-Navbar-root.mantine-Navbar-hidden[class*="bazarr-"] .mantine-Stack-root [class*="bazarr-"]:hover:not(.mantine-Badge-light):not(.mantine-Badge-inner) {
+.mantine-Navbar-root[class*="bazarr-"] .mantine-Stack-root a [class*="bazarr-"]:hover:not(.mantine-Badge-light):not(.mantine-Badge-inner),
+.mantine-Navbar-root[class*="bazarr-"] .mantine-Stack-root [class*="bazarr-"]:hover:not(.mantine-Badge-light):not(.mantine-Badge-inner) {
     color: rgb(var(--accent-color));
     background: transparent;
 }
