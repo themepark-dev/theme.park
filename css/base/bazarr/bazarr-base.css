@@ -1,7 +1,7 @@
 @import url("/css/defaults/placeholders.css");
 @import url("/css/defaults/transparent.css");
 
-body,#root {
+body,#root,html {
     background: var(--main-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
@@ -348,6 +348,19 @@ textarea:focus-within, [class*="mantine-Textarea-"].mantine-Textarea-input[class
     color: var(--text-hover);
 }
 
+.mantine-ScrollArea-root.mantine-Paper-root.mantine-Select-dropdown[class*="bazarr-"] {
+    background: var(--drop-down-menu-bg);
+     border: 1px solid var(--drop-down-menu-bg);
+}
+
+.mantine-Select-item.mantine-Select-selected[class*="bazarr-"] {
+ background: var(--transparency-light-10);   
+}
+
+[class*="bazarr-"].mantine-Select-item:hover {
+    background: var(--transparency-dark-15)
+    }
+
 /* MODAL */
 
 .mantine-Paper-root.mantine-Modal-modal[class*="bazarr-"] {
@@ -429,4 +442,14 @@ code, .mantine-Code-root[class*="bazarr-"] {
 
 .mantine-Notification-root.mantine-Notification-withIcon[class*="bazarr-"] svg {
     stroke: rgb(var(--accent-color));
+}
+
+/* PROGRESSBAR */
+
+[class*="bazarr-"].mantine-Progress-bar[style="width: 100%;"] {
+    background: rgb(var(--accent-color));
+}
+    
+[class*="bazarr-"].mantine-Progress-bar[style="width: 100%;"] .mantine-Text-root.mantine-Progress-label[class*="bazarr-"] {
+    color: var(--label-text-color);
 }
