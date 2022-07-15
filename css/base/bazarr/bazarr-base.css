@@ -226,7 +226,8 @@ h6,
 }
 
 .mantine-UnstyledButton-root[class*="bazarr-"] {
-    color: var(--text)
+    color: var(--text);
+    border: 1px solid var(--transparency-light-10);
 }
 
 .mantine-UnstyledButton-root[class*="bazarr-"]:hover {
@@ -421,6 +422,14 @@ textarea:focus-within,
     border: 1px solid var(--drop-down-menu-bg);
 }
 
+.mantine-Autocomplete-item.mantine-Autocomplete-hovered[class*="bazarr-"] {
+    background: var(--transparency-dark-15);
+}
+
+[class*="bazarr-"].mantine-Autocomplete-item {
+    color: var(--text);
+}
+
 /* MODAL */
 
 .mantine-Paper-root.mantine-Modal-modal[class*="bazarr-"] {
@@ -501,6 +510,11 @@ code,
 .mantine-Code-root[class*="bazarr-"] {
     background: rgb(var(--accent-color));
     color: var(--label-text-color);
+}
+
+.mantine-Code-root.mantine-Code-block[class*="bazarr-"] {
+    background: var(--transparency-dark-15);
+    color: var(text);
 }
 
 /* SPINNER  */
