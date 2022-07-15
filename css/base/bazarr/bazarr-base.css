@@ -226,7 +226,8 @@ h6,
 }
 
 .mantine-UnstyledButton-root[class*="bazarr-"] {
-    color: var(--text)
+    color: var(--text);
+    border: 1px solid var(--transparency-light-10);
 }
 
 .mantine-UnstyledButton-root[class*="bazarr-"]:hover {
