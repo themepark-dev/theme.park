@@ -108,7 +108,7 @@ p,
 
 /* CARDS */
 [class*="theme--"].v-card {
-    background: var(--transparency-dark-50);
+    background: var(--transparency-dark-35);
     color: var(--text);
 }
 
@@ -222,6 +222,10 @@ p,
 
 button>.v-btn--is-elevated .v-btn--has-bg.v-icon__svg {
     fill: var(--button-text);
+}
+
+[class*="theme--"].v-btn.v-btn--has-bg .v-icon__svg {
+    fill: var(--button-text) !important;
 }
 .v-icon__svg{
     fill: rgb(var(--accent-color)) !important; 
@@ -461,6 +465,13 @@ button>.v-btn--is-elevated .v-btn--has-bg.v-icon__svg {
     color: var(--text-hover);
 }
 
+[class*="theme--"].v-data-table .v-data-table__empty-wrapper {
+    color: var(--text);
+}
+
+[class*="theme--"].v-tabs-items {
+    background-color: transparent;
+}
 /* TOOLTIP */
 .apexcharts-tooltip.apexcharts-theme-dark .apexcharts-tooltip-title,
 .apexcharts-tooltip.apexcharts-theme-light .apexcharts-tooltip-title {
@@ -496,4 +507,11 @@ button>.v-btn--is-elevated .v-btn--has-bg.v-icon__svg {
 
 .v-speed-dial__list .v-icon__svg {
     fill: var(--text-hover);
+}
+
+/* SETTING */
+
+[class*="theme--"].v-list {
+    background: var(--transparency-light-05);
+    color: rgba(0,0,0,.87);
 }
