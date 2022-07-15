@@ -1,35 +1,19 @@
-/* Desktop */ 
-@media (min-width: 752px) {
-    .header-icon.px-3.m-0.d-none.d-md-block img  {
+    .mantine-Avatar-root[class*="bazarr-"] img {
         display: none !important;
     }
-    .header-icon.px-3.m-0.d-none.d-md-block:before {
-        background-image: url("/css/addons/bazarr/bazarr-4k-logo/bazarr4k.png");
-        display: inline-block;
-        width: 32px; 
-        height: 32px;
-        content:"";
-        background-size:  cover;
-        -webkit-background-size:  cover;
-        -moz-background-size:  cover;
-        -o-background-size: cover;
-    }    
-} 
 
-/* Mobile */
-@media (max-width: 767px) {
-   .sidebar-title.d-flex.align-items-center.d-md-none.container img  {
-        display: none !important;
-    }   
-   .sidebar-title.d-flex.align-items-center.d-md-none.container:before {
+    .mantine-Avatar-root[class*="bazarr-"]:before {
         background-image: url("/css/addons/bazarr/bazarr-4k-logo/bazarr4k.png");
         display: inline-block;
-        width: 32px; 
+        width: 32px;
         height: 32px;
-        content:"";
-        background-size:  cover;
-        -webkit-background-size:  cover;
-        -moz-background-size:  cover;
+        content: "";
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
         -o-background-size: cover;
-    } 
-}
+    }
+
+    #root>div>nav>div>div.mantine-Group-root.mantine-Group-child[class*="bazarr-"]>div>span:after {
+        content: " 4K";
+    }
