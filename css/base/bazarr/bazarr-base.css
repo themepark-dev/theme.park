@@ -421,6 +421,10 @@ textarea:focus-within,
     border: 1px solid var(--drop-down-menu-bg);
 }
 
+.mantine-Autocomplete-item.mantine-Autocomplete-hovered[class*="bazarr-"] {
+    background: var(--transparency-dark-15);
+}
+
 /* MODAL */
 
 .mantine-Paper-root.mantine-Modal-modal[class*="bazarr-"] {
