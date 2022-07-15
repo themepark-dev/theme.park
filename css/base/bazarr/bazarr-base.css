@@ -1,7 +1,9 @@
 @import url("/css/defaults/placeholders.css");
 @import url("/css/defaults/transparent.css");
 
-body,#root,html {
+body,
+#root,
+html {
     background: var(--main-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
@@ -53,11 +55,12 @@ h6 {
 /* SUBHEADER */
 
 /* .mantine-Container-root[class*="bazarr-"] .mantine-Group-root[class*="bazarr-"]:not(td>*):not(.mantine-Card-root div), */
-#root > div > div > main > div > div.mantine-Group-root[class*="bazarr-"],
-#root > div > div > main > div > div > div.mantine-Group-root[class*="bazarr-"],
-#root > div > div > main > form > div.mantine-Group-root[class*="bazarr-"] {
+#root>div>div>main>div>div.mantine-Group-root[class*="bazarr-"],
+#root>div>div>main>div>div>div.mantine-Group-root[class*="bazarr-"],
+#root>div>div>main>form>div.mantine-Group-root[class*="bazarr-"] {
     background: var(--transparency-dark-25);
 }
+
 .mantine-Button-icon.mantine-Button-leftIcon[class*="bazarr-"] {
     color: var(--text)
 }
@@ -69,21 +72,24 @@ h6 {
     background: var(--transparency-dark-25);
     border-right: 1px solid var(--transparency-light-15);
 }
+
 .mantine-Divider-root .mantine-Divider-horizontal[class*="bazarr-"] {
     border-top-color: var(--transparency-light-10);
 }
+
 .mantine-Navbar-root.mantine-Navbar-hidden[class*="bazarr-"] .mantine-Stack-root[class*="bazarr-"] a[aria-current="page"] {
     background: var(--transparency-dark-15) !important;
     border-left: 2px solid rgb(var(--accent-color));
 }
 
-.mantine-Navbar-root.mantine-Navbar-hidden[class*="bazarr-"] .mantine-Stack-root[class*="bazarr-"] a{
+.mantine-Navbar-root.mantine-Navbar-hidden[class*="bazarr-"] .mantine-Stack-root[class*="bazarr-"] a {
     border-left: 2px solid var(--transparency-light-10);
 }
+
 .mantine-Navbar-root.mantine-Navbar-hidden[class*="bazarr-"] .mantine-Stack-root a [class*="bazarr-"]:hover:not(.mantine-Badge-light):not(.mantine-Badge-inner),
 .mantine-Navbar-root.mantine-Navbar-hidden[class*="bazarr-"] .mantine-Stack-root [class*="bazarr-"]:hover:not(.mantine-Badge-light):not(.mantine-Badge-inner) {
-   color: rgb(var(--accent-color));
-   background: transparent;
+    color: rgb(var(--accent-color));
+    background: transparent;
 }
 
 .mantine-Navbar-root[class*="bazarr-"] {
@@ -95,24 +101,32 @@ h6 {
 [class*="bazarr-"] tbody tr {
     color: var(--text);
 }
+
 [class*="bazarr-"] tbody tr td {
     border-bottom: 1px solid var(--transparency-light-10) !important;
 }
+
 [class*="bazarr-"] thead tr th {
     border-bottom: 1px solid var(--transparency-light-20) !important;
 }
+
 [class*="bazarr-"].__mantine-ref-striped tbody tr:nth-of-type(2n+1) {
     background: var(--transparency-dark-15) !important;
 }
+
 .mantine-Table-root .__mantine-ref-striped .mantine-Table-striped[class*="bazarr-"] {
     color: var(--text)
 }
-[class*="bazarr-"] thead tr th, [class*="bazarr-"] tfoot tr th {
+
+[class*="bazarr-"] thead tr th,
+[class*="bazarr-"] tfoot tr th {
     color: var(--text-hover) !important;
 }
+
 .mantine-Skeleton-root.mantine-Skeleton-visible[class*="bazarr-"]::after {
     background: var(--transparency-light-10);
 }
+
 .mantine-Skeleton-root.mantine-Skeleton-visible[class*="bazarr-"]::before {
     background: var(--transparency-dark-25);
 }
@@ -123,6 +137,7 @@ h6 {
     color: var(--button-text);
     background: var(--button-color);
 }
+
 .mantine-Button-filled.mantine-Button-root.mantine-Group-child[class*="bazarr-"]:hover {
     color: var(--button-text-hover);
     background: var(--button-color-hover);
@@ -145,6 +160,7 @@ h6 {
     color: var(--button-text);
     background: var(--button-color);
 }
+
 .mantine-Button-filled.mantine-Button-root[class*="bazarr-"]:hover {
     color: var(--button-text-hover);
     background: var(--button-color-hover);
@@ -176,9 +192,11 @@ h6 {
 .mantine-UnstyledButton-root.__mantine-ref-control.mantine-Accordion-control[class*="bazarr-"]:hover {
     background: var(--transparency-dark-15);
 }
+
 .mantine-Accordion-item[class*="bazarr-"] {
     border-bottom: var(--transparency-light-10) 1px solid;
 }
+
 .__mantine-ref-icon.mantine-Accordion-icon[class*="bazarr-"] {
     color: rgb(var(--accent-color))
 }
@@ -186,9 +204,11 @@ h6 {
 .mantine-ActionIcon-transparent.mantine-ActionIcon-root[class*="bazarr-"] {
     color: rgb(var(--accent-color))
 }
+
 .mantine-UnstyledButton-root[class*="bazarr-"] {
     color: var(--text)
 }
+
 .mantine-UnstyledButton-root[class*="bazarr-"]:hover {
     box-shadow: rgb(0 0 0 / 5%) 0px 1px 3px, rgb(0 0 0 / 5%) 0px 20px 25px -5px, rgb(0 0 0 / 4%) 0px 10px 10px -5px;
     border: 1px solid rgb(var(--accent-color));
@@ -197,53 +217,59 @@ h6 {
 .mantine-Slider-bar[class*="bazarr-"] {
     background: rgb(var(--accent-color));
 }
+
 .mantine-Slider-thumb[class*="bazarr-"] {
     border: 4px solid rgb(var(--accent-color));
     color: var(--label-text-color);
     background: var(--label-text-color);
 }
+
 .mantine-Slider-mark.mantine-Slider-markFilled[class*="bazarr-"] {
     border: 2px solid var(--label-text-color);
     background: var(--label-text-color);
 }
+
 [class*="bazarr-"].mantine-Slider-track::before {
     background: var(--transparency-dark-15);
 }
+
 [class*="bazarr-"].mantine-Slider-mark {
     border: 2px solid rgb(var(--accent-color));
     background-color: rgb(var(--accent-color))
 }
 
-    /* ACTION BUTTON */
-    .mantine-ActionIcon-light.mantine-ActionIcon-root[class*="bazarr-"] {
-        background: var(--button-color);
-        color: var(--button-text);
-        border: 1px solid var(--button-color)
-    }
-    .mantine-ActionIcon-light.mantine-ActionIcon-root[class*="bazarr-"]:hover {
-        background: var(--button-color-hover);
-        color: var(--button-text-hover);
-        border: 1px solid var(--button-color-hover)
-    }
+/* ACTION BUTTON */
+.mantine-ActionIcon-light.mantine-ActionIcon-root[class*="bazarr-"] {
+    background: var(--button-color);
+    color: var(--button-text);
+    border: 1px solid var(--button-color)
+}
 
-    .mantine-ActionIcon-hover.mantine-ActionIcon-root.mantine-Group-child[class*="bazarr-"] {
-        color: var(--text);
-    }
+.mantine-ActionIcon-light.mantine-ActionIcon-root[class*="bazarr-"]:hover {
+    background: var(--button-color-hover);
+    color: var(--button-text-hover);
+    border: 1px solid var(--button-color-hover)
+}
 
-    /* BADGES/PROGRESSBARS */
-    .mantine-Progress-root[class*="bazarr-"] {
-        background: var(--transparency-dark-15);
-    }
-    .mantine-Badge-light.mantine-Badge-root[class*="bazarr-"] {
-        background-color: rgb(var(--accent-color));
-        color: var(--label-text-color)
-    }
+.mantine-ActionIcon-hover.mantine-ActionIcon-root.mantine-Group-child[class*="bazarr-"] {
+    color: var(--text);
+}
 
-    [class*="mantine-MultiSelect-"].mantine-MultiSelect-value[class*="bazarr-"],
-    .mantine-ActionIcon-transparent.mantine-ActionIcon-root.mantine-MultiSelect-defaultValueRemove[class*="bazarr-"] {
-        background: rgb(var(--accent-color));
-        color: var(--label-text-color)
-    }
+/* BADGES/PROGRESSBARS */
+.mantine-Progress-root[class*="bazarr-"] {
+    background: var(--transparency-dark-15);
+}
+
+.mantine-Badge-light.mantine-Badge-root[class*="bazarr-"] {
+    background-color: rgb(var(--accent-color));
+    color: var(--label-text-color)
+}
+
+[class*="mantine-MultiSelect-"].mantine-MultiSelect-value[class*="bazarr-"],
+.mantine-ActionIcon-transparent.mantine-ActionIcon-root.mantine-MultiSelect-defaultValueRemove[class*="bazarr-"] {
+    background: rgb(var(--accent-color));
+    color: var(--label-text-color)
+}
 
 /* INPUT */
 
@@ -261,8 +287,8 @@ h6 {
 [class*="mantine-TextInput-"].mantine-TextInput-input[class*="bazarr-"]:focus,
 [class*="mantine-TextInput-"].mantine-TextInput-input[class*="bazarr-"]:focus-within,
 [class*="mantine-NumberInput-"].mantine-NumberInput-input[class*="bazarr-"]:focus,
-[class*="mantine-NumberInput-"].mantine-NumberInput-input[class*="bazarr-"]:focus-within,¨
-[class*="mantine-PasswordInput-"].mantine-PasswordInput-input.mantine-PasswordInput-input[class*="bazarr-"]:focus,
+[class*="mantine-NumberInput-"].mantine-NumberInput-input[class*="bazarr-"]:focus-within,
+¨ [class*="mantine-PasswordInput-"].mantine-PasswordInput-input.mantine-PasswordInput-input[class*="bazarr-"]:focus,
 [class*="mantine-PasswordInput-"].mantine-PasswordInput-input.mantine-PasswordInput-input[class*="bazarr-"]:focus-within {
     outline: none;
     border-color: rgb(var(--accent-color)) !important;
@@ -273,6 +299,7 @@ h6 {
     border-bottom-color: var(--transparency-light-10);
     border-left-color: var(--transparency-light-10);
 }
+
 .mantine-NumberInput-control.mantine-NumberInput-controlDown[class*="bazarr-"] {
     border-left-color: var(--transparency-light-10);
 }
@@ -280,6 +307,7 @@ h6 {
 .mantine-NumberInput-control.mantine-NumberInput-controlUp[class*="bazarr-"]::after {
     border-color: transparent transparent var(--text);
 }
+
 .mantine-NumberInput-control.mantine-NumberInput-controlDown[class*="bazarr-"]::after {
     border-color: var(--text) transparent transparent;
 }
@@ -288,10 +316,12 @@ h6 {
     background: var(--transparency-dark-15);
     border: 1px solid var(--transparency-light-10);
 }
+
 [class*="bazarr-"].mantine-Checkbox-input:checked {
     background-color: rgb(var(--accent-color));
     border-color: rgb(var(--accent-color));
 }
+
 .__mantine-ref-icon[class*="bazarr-"].mantine-Checkbox-icon {
     color: var(--label-text-color)
 }
@@ -301,12 +331,15 @@ h6 {
     color: var(--text);
 }
 
-textarea, [class*="mantine-Textarea-"].mantine-Textarea-input[class*="bazarr-"] {
+textarea,
+[class*="mantine-Textarea-"].mantine-Textarea-input[class*="bazarr-"] {
     background: var(--transparency-dark-15);
 }
 
-textarea:focus, [class*="mantine-Textarea-"].mantine-Textarea-input[class*="bazarr-"]:focus,
-textarea:focus-within, [class*="mantine-Textarea-"].mantine-Textarea-input[class*="bazarr-"]:focus-within {
+textarea:focus,
+[class*="mantine-Textarea-"].mantine-Textarea-input[class*="bazarr-"]:focus,
+textarea:focus-within,
+[class*="mantine-Textarea-"].mantine-Textarea-input[class*="bazarr-"]:focus-within {
     border-color: rgb(var(--accent-color)) !important;
 }
 
@@ -344,22 +377,23 @@ textarea:focus-within, [class*="mantine-Textarea-"].mantine-Textarea-input[class
     background-color: var(--transparency-light-10);
     color: var(--text-hover);
 }
+
 .mantine-Menu-item[class*="bazarr-"]:hover {
     color: var(--text-hover);
 }
 
 .mantine-ScrollArea-root.mantine-Paper-root.mantine-Select-dropdown[class*="bazarr-"] {
     background: var(--drop-down-menu-bg);
-     border: 1px solid var(--drop-down-menu-bg);
+    border: 1px solid var(--drop-down-menu-bg);
 }
 
 .mantine-Select-item.mantine-Select-selected[class*="bazarr-"] {
- background: var(--transparency-light-10);   
+    background: var(--transparency-light-10);
 }
 
 [class*="bazarr-"].mantine-Select-item:hover {
     background: var(--transparency-dark-15)
-    }
+}
 
 /* MODAL */
 
@@ -400,9 +434,11 @@ textarea:focus-within, [class*="mantine-Textarea-"].mantine-Textarea-input[class
 .mantine-Alert-root.mantine-Alert-light[class*="bazarr-"] {
     background: var(--transparency-dark-15);
 }
+
 [class*="bazarr-"].mantine-Alert-message {
     color: var(--text);
 }
+
 [class*="bazarr-"].mantine-Alert-label {
     color: var(--text-hover)
 }
@@ -433,7 +469,8 @@ line {
     background: var(--drop-down-menu-bg);
 }
 
-code, .mantine-Code-root[class*="bazarr-"] {
+code,
+.mantine-Code-root[class*="bazarr-"] {
     background: rgb(var(--accent-color));
     color: var(--label-text-color);
 }
@@ -449,7 +486,7 @@ code, .mantine-Code-root[class*="bazarr-"] {
 [class*="bazarr-"].mantine-Progress-bar[style="width: 100%;"] {
     background: rgb(var(--accent-color));
 }
-    
+
 [class*="bazarr-"].mantine-Progress-bar[style="width: 100%;"] .mantine-Text-root.mantine-Progress-label[class*="bazarr-"] {
     color: var(--label-text-color);
 }
