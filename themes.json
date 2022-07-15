@@ -190,7 +190,7 @@
         "bazarr-4k-logo": "https://develop.theme-park.dev/css/addons/bazarr/bazarr-4k-logo/bazarr-4k-logo.css?sha=009d20105d6aae7ae2f1b9f5c76be9c19452fb42",
         "bazarr-darker": "https://develop.theme-park.dev/css/addons/bazarr/bazarr-darker/bazarr-darker.css?sha=3422e0fc533aabd876102d44e4c6d915345d1771"
       },
-      "base_css": "https://develop.theme-park.dev/css/base/bazarr/bazarr-base.css?sha=cd3ac19db02b344a2bc911417ff867a2ea448397"
+      "base_css": "https://develop.theme-park.dev/css/base/bazarr/bazarr-base.css?sha=b44c9746a7e322c99d7ccbbbded040b09c61c5eb"
     },
     "bitwarden": {
       "addons": {},

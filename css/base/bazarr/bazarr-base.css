@@ -395,6 +395,12 @@ textarea:focus-within,
     background: var(--transparency-dark-15)
 }
 
+.mantine-ScrollArea-root.mantine-Paper-root.mantine-Autocomplete-dropdown[class*="bazarr-"] {
+    background: var(--drop-down-menu-bg);
+    color: var(--text);
+    border: 1px solid var(--drop-down-menu-bg);
+}
+
 /* MODAL */
 
 .mantine-Paper-root.mantine-Modal-modal[class*="bazarr-"] {
