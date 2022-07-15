@@ -471,8 +471,10 @@ line {
 }
 
 /* NOTIFICATIONS */
-.mantine-Notification-root.mantine-Notification-withIcon[class*="bazarr-"] {
+.mantine-Notification-root.mantine-Notification-withIcon[class*="bazarr-"],
+.mantine-Notification-root[class*="bazarr-"] {
     background: var(--drop-down-menu-bg);
+    border: 1px solid var(--drop-down-menu-bg);
 }
 
 code,
@@ -495,4 +497,10 @@ code,
 
 [class*="bazarr-"].mantine-Progress-bar[style="width: 100%;"] .mantine-Text-root.mantine-Progress-label[class*="bazarr-"] {
     color: var(--label-text-color);
+}
+
+/* LOADER */
+
+.mantine-LoadingOverlay-root[class*="bazarr-"] svg {
+    stroke: rgb(var(--accent-color));
 }
