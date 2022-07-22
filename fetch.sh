@@ -14,4 +14,4 @@ jq -r 'to_entries | map(.key + "|" + (.value | tostring)) | .[]' <<< "$MODS" | \
     curl "$value" --create-dirs --output "$DIR/98-themepark-$key" --silent
     echo "Fetched $key script"
   done
-chmod go+rx $DIR
+chmod -R +x $DIR
