@@ -1,11 +1,23 @@
 #!/usr/bin/with-contenv bash
 
-echo '------------------'
-echo '|   theme.park   |'
-echo '------------------'
+echo '
+----------------------------------------------------------------------------------------
+     dP   dP                                                                  dP        
+     88   88                                                                  88        
+   d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   
+     88   88   `88 88ooood8 88  88  88 88ooood8    88.  `88 88   `88 88   `88 88888.    
+     88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88    88 88       88  `8b.  
+     dP   dP    dP `88888P  dP  dP  dP `88888P  88 88Y888P  `88888P8 dP       dP   `YP  
+                                                   88                                   
+                                                   dP                                   
+                                                                                        
+                                       Made by @gilbN                                   
+                                    https://theme-park.dev                              
+----------------------------------------------------------------------------------------'
+
 
 # Display variables for troubleshooting 
-echo -e "Variables set:\\n\
+echo -e "[theme.park-init] Variables set:\\n\
 PUID=${PUID}\\n\
 PGID=${PGID}\\n\
 TZ=${TZ}\\n\
@@ -29,8 +41,10 @@ cp /defaults/default /config/nginx/site-confs
 
 # make our folders and links
 mkdir -p \
-    /config/www/{css,resources}
+    /config/www/{css,resources} \
+    /config/docker-mods
 
+echo '[theme.park-init] Copying theme files'
 # copy theme files
 cp -R /app/themepark/css /config/www
 cp -R /app/themepark/resources /config/www
@@ -38,7 +52,13 @@ cp /app/themepark/index.html /config/www
 cp /app/themepark/themes.py /config/www
 cp /app/themepark/CNAME /config/www
 
-echo 'Creating CSS files'
+echo '[theme.park-init] Copying mods into /config/docker-mods'
+# copy mods
+  for folder in /app/themepark/docker-mods/*; do \
+    cp /app/themepark/docker-mods/"${folder##*/}"/root/etc/cont-init.d/98-themepark /config/docker-mods/98-themepark-"${folder##*/}"; \
+  done
+
+echo '[theme.park-init] Running themes.py and creating CSS files'
 python3 /config/www/themes.py
 
 # permissions
