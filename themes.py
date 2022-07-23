@@ -150,7 +150,7 @@ scheme = env.get('TP_SCHEME','https') if env.get('TP_SCHEME') else 'https'
 if __name__ == "__main__":
     app_folders = [name for name in listdir('./css/base') if isdir(join('./css/base', name))]
     themes = [name for name in listdir('./css/theme-options') if isfile(join('./css/theme-options', name))]
-    docker_mods = [name for name in listdir('./docker-mods') if isdir(join('./docker-mods', name))]
+    docker_mods = [name for name in listdir('./docker-mods')] if isdir('./docker-mods') else []
     community_themes = [name for name in listdir('./css/community-theme-options') if isfile(join('./css/community-theme-options', name))]
     develop = True if isdir(".git") and subprocess.check_output(["git", "symbolic-ref", "--short", "HEAD"]).decode('ascii').strip() == "develop" else False
     if env_domain:
