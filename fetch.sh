@@ -11,7 +11,7 @@ mkdir -p "$DIR"
 printf "\nSaving mods into $DIR\n\n"
 jq -r 'to_entries | map(.key + "|" + (.value | tostring)) | .[]' <<< "$MODS" | \
   while IFS='|' read key value; do
-    curl "$value" --create-dirs --output "$DIR/$key" --silent
+    curl "$value" --create-dirs --output "$DIR/98-themepark-$key" --silent
     echo "Fetched $key script"
   done
-chmod go+rx $DIR
+chmod -R +x $DIR

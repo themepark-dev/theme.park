@@ -18,6 +18,7 @@ apk add --no-cache --virtual=runtime-dependencies \
 WORKDIR /app
 COPY css/ /app/themepark/css/
 COPY resources/ /app/themepark/resources/
+COPY docker-mods/ /app/themepark/docker-mods/
 COPY themes.py index.html CNAME /app/themepark/
 
 COPY docker/root/ /
