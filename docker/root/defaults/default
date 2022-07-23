@@ -13,7 +13,7 @@ server {
 
     location / {
         alias /config/www/;
-        try_files $uri $uri/;
+        try_files $uri $uri/ =404;
     }
     location  /themepark {return 302  $scheme://$http_host/themepark/;}
     location /themepark/ {
@@ -22,7 +22,7 @@ server {
         sub_filter 'url("/css/' 'url("/themepark/css/';
         sub_filter 'url(/resources/' 'url(/themepark/resources/';
         sub_filter_once off;
-        try_files $uri $uri/;
+        try_files $uri $uri/ =404;
     }
 
     # Don't cache
