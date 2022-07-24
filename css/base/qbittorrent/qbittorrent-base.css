@@ -306,7 +306,7 @@ label {
 }
 
 li.divider {
-  border-top: 1px solid rgba(255, 255, 255, .25) !important;
+  border-top: 1px solid var(--transparency-light-25) !important;
 }
 
 
@@ -403,13 +403,13 @@ li.divider {
 }
 
 .contextMenu .separator {
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid var(--transparency-light-10);
 }
 
 /* Sidemenu */
 .selectedFilter {
-  background-color: rgba(var(--accent-color), 0.6);
-  color: #eee;
+  background-color: var(--button-color);
+  color: var(--button-text);
 }
 
 .selectedFilter:before {
@@ -417,8 +417,13 @@ li.divider {
 }
 
 ul.filterList li:hover {
-  background-color: rgba(var(--accent-color), 0.6);
-  color: var(--button-color-hover) !important;
+  background-color: var(--transparency-light-15);
+  color: var(--text-hover) !important;
+}
+
+ul.filterList .selectedFilter:hover {
+  background-color: var(--button-color-hover);
+  color: var(--button-text-hover);
 }
 
 ul.filterList li:hover:before {
@@ -436,6 +441,16 @@ ul.filterList li:hover:before {
 }
 
 /* Bottom menu */
+
+#progress {
+  border: 1px solid var(--transparency-light-25);
+}
+
+hr {
+  background-color: var(--transparency-light-25);
+  color: var(--text);
+}
+
 .panel-headerContent.tabs {
   background: none !important;
 }
@@ -469,7 +484,7 @@ ul.filterList li:hover:before {
 }
 
 .tab-menu li a:hover {
-  background: var(--transparency-light-10) !important;
+  color: rgb(var(--accent-color)) !important;
 }
 
 .toolbarTabs {
@@ -497,7 +512,7 @@ ul.filterList li:hover:before {
 fieldset {
   border-width: 1px !important;
   border-style: solid !important;
-  border-color: rgba(255, 255, 255, 0.25) !important;
+  border-color: var(--transparency-light-25) !important;
 }
 
 /*Modal */
@@ -531,8 +546,8 @@ fieldset {
 }
 
 .mochaContentBorder {
-  border-top: 1px solid rgba(255, 255, 255, .25) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, .25) !important;
+  border-top: 1px solid var(--transparency-light-25) !important;
+  border-bottom: 1px solid var(--transparency-light-25) !important;
 }
 
 .mocha.isFocused .mochaTitlebar h3 {
@@ -550,7 +565,7 @@ fieldset.settings legend {
 }
 
 fieldset.settings {
-  border: solid 1px rgba(255, 255, 255, 0.25) !important;
+  border: solid 1px var(--transparency-light-25) !important;
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -558,7 +573,7 @@ fieldset.settings {
 }
 
 textarea:disabled {
-  color: rgb(84, 84, 84);
+  color: var(--text-muted);
   cursor: default;
   background: var(--transparency-light-05) !important;
   border: none !important;
@@ -574,7 +589,7 @@ textarea {
 #watched_folders_tab td,
 #watched_folders_tab th {
   padding: 2px 4px;
-  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  border: 1px solid var(--transparency-light-25) !important;
 }
 
 input[type="button"i]:hover {
@@ -642,4 +657,9 @@ select {
 select:focus {
   background: var(--drop-down-menu-bg);
   color: var(--text)
+}
+
+.select-watched-folder-editable {
+  background-color: var(--transparency-dark-05);
+  border: solid var(--transparency-light-10) 1px;
 }
