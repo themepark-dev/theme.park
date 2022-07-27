@@ -280,7 +280,7 @@ a:hover {
     background: var(--transparency-dark-25);
 }
 
-[class*=".ProgressBar-purple-"] {
+[class*="ProgressBar-purple-"] {
     background-color: rgb(var(--accent-color));
 }
 
