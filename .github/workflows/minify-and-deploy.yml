@@ -86,3 +86,8 @@ jobs:
           publish_branch: live_testing
           github_token: ${{ secrets.GITHUB_TOKEN }}
           exclude_assets: ''
+      - name: Clear CF Cache
+        run: |
+          curl -X GET "https://api.cloudflare.com/client/v4/user/tokens/verify" \
+          -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_CACHE_PURGE }}" \
+          -H "Content-Type:application/json"
