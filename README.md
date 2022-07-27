@@ -23,7 +23,7 @@
 
 <a href="https://docs.theme-park.dev/theme-options/dracula"><img src="https://docs.theme-park.dev/theme-options/dracula_banner_small.png" alt="Dracula" width="49.49%"/></a>
 <a href="https://docs.theme-park.dev/theme-options/overseerr"><img src="https://docs.theme-park.dev/theme-options/overseerr_banner_small.png" alt="Overseerr" width="49.49%"/></a>
-<a href="https://docs.theme-park.dev/theme-options/organizr"><img src="https://docs.theme-park.dev/theme-options/organizr_banner_small.png" alt="Organizr"  width="49.49%"/></a>
+<a href="https://docs.theme-park.dev/theme-options/organizr"><img src="https://docs.theme-park.dev/theme-options/organizr_banner_small.png?1" alt="Organizr"  width="49.49%" /></a>
 <a href="https://docs.theme-park.dev/theme-options/aquamarine"><img src="https://docs.theme-park.dev/theme-options/aquamarine_banner_small.png" alt="Aquamarine"  width="49.49%"/></a>
 <a href="https://docs.theme-park.dev/theme-options/hotline"><img src="https://docs.theme-park.dev/theme-options/hotline_banner_small.png" alt="Hotline"  width="49.49%"/></a>
 <a href="https://docs.theme-park.dev/theme-options/hotpink"><img src="https://docs.theme-park.dev/theme-options/hotpink_banner_small.png" alt="Hotpink"  width="49.49%"/></a>
