@@ -1,4 +1,4 @@
-@import url("/css/addons/unraid/login-page/fallout/fallout_base.css");
+@import url("/css/addons/unraid/login-page/fallout/fallout-base.css");
 :root {
     --main-bg-color: url(/css/addons/unraid/login-page/fallout/wallpaper/rocky-wall.png),
     url(/css/addons/unraid/login-page/fallout/wallpaper/terminal.jpg) center center/cover no-repeat fixed;
