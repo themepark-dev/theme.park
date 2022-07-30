@@ -1,11 +1,20 @@
 #!/bin/bash
 TYPE="retro-terminal"
 THEME="green.css"
-DOMAIN="theme-park.dev" # If you update the domain after the script has been run, You must disable and re the whole theme with the DISABLE_THEME env.
+DOMAIN="theme-park.dev"
 SCHEME="https"
 ADD_JS="true"
 JS="custom_text_header.js"
 DISABLE_THEME="false"
+
+## FAQ
+
+  # If you update the DOMAIN variable after the script has been run,
+  # you must disable the whole theme with the DISABLE_THEME="true" env first and re-run it again after with "false".
+
+  # Your domain can be your custom domain or a github pages (user.github.io) etc. Don't add the whole URL with scheme, you only need to add the domain.
+
+  # If your custom domain uses a subfolder you must escape the forward slash. (custom.com\/subfolder)
 
 echo -e "Variables set:\\n\
 TYPE          = ${TYPE}\\n\
