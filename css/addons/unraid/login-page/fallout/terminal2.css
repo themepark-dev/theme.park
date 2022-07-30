@@ -1,4 +1,4 @@
-@import url("/css/addons/unraid/login-page/fallout/fallout_base.css");
+@import url("/css/addons/unraid/login-page/fallout/fallout-base.css");
 :root {
     --main-bg-color: url(/css/addons/unraid/login-page/fallout/wallpaper/terminal2.jpg) center center/cover no-repeat fixed;
     --logo: url(/css/addons/unraid/login-page/fallout/logo/vault-tec_green.png) center no-repeat;
