@@ -4,7 +4,11 @@ echo '--------------------------------------'
 echo '| Nginx Proxy Manager theme.park Mod |' 
 echo '--------------------------------------'
 
-APP_FILEPATH='/opt/nginx-proxy-manager/frontend/'
+if [ -d "/app/frontend" ] then
+    APP_FILEPATH='/app/frontend/' # jc21/nginx-proxy-manager
+else
+    APP_FILEPATH='/opt/nginx-proxy-manager/frontend/' # jlesage/nginx-proxy-manager
+fi
 
 # Display variables for troubleshooting 
 echo -e "Variables set:\\n\
