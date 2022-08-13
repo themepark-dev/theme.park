@@ -83,7 +83,7 @@ a:hover {
 
 /* TOP NAV */
 .top-search-bar .mat-form-field-flex {
-    border: 1px solid rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.10) !important;
     background: var(--transparency-dark-45);
 }
 
@@ -271,55 +271,20 @@ a:hover {
     }
 } */
 
-/* MOBILE */
-@media (min-width: 768px) {
-    .sidenav-container .sidenav {
-        background: var(--transparency-dark-45) !important;
-    }
+.detailed-container {
+    border: none !important;
+    background-color: var(--transparency-dark-25) !important;
 }
-
-
-@media (max-width: 768px) {
-    .p-carousel-item {
-        min-height: 230px !important;
-        max-width: 11.7rem !important
-    }
-
-    .p-carousel .p-carousel-content .p-carousel-next,
-    .p-carousel .p-carousel-content .p-carousel-prev {
-        display: none;
-    }
-
-    .right {
-        text-align: right !important;
-        margin-top: -61px;
-    }
-}
-
-.p-carousel-item {
-    min-height: 290px;
-    max-height: 290px;
-    max-width: 12rem;
-}
-
-@media (max-width: 768px) {
-    .section h2 {
-        margin-left: 5px !important;
-    }
-}
-
-@media (min-width: 768px) {
-    .section h2 {
-        margin-left: 63px !important;
-    }
+.detailed-container .poster {
+    border: 1px solid transparent !important;
 }
 
 /* CARDS */
-.ombi-card {
+ .ombi-card {
     padding: 0px !important;
     margin: 5px !important;
 }
-
+/*
 #cardImage,
 .ombi-card {
     border-radius: .75rem !important;
@@ -328,7 +293,7 @@ a:hover {
 #cardImage {
     min-height: 225px;
 }
-
+*/
 .p-carousel-indicators,
 .p-carousel-items-container {
     display: flex;
@@ -339,11 +304,8 @@ a:hover {
 .c .card-top-info {
     top: -1px !important;
     position: absolute;
-    border-radius: .75rem .75rem 0 0 !important;
-    background-color: var(--transparency-dark-70) !important;
-    backdrop-filter: blur(10px) !important;
-    -webkit-backdrop-filter: blur(10px) !important;
-    transition: 0s -webkit-filter linear;
+    border-radius:10px 10px 0 0 !important;
+    background-color: var(--transparency-dark-90) !important;
 }
 
 .ombi-card .button-request-container .button-request {

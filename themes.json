@@ -292,7 +292,7 @@
     },
     "ombi": {
       "addons": {},
-      "base_css": "https://develop.theme-park.dev/css/base/ombi/ombi-base.css?sha=2a3be2404cca0424593af4b983840e6ca58aba41"
+      "base_css": "https://develop.theme-park.dev/css/base/ombi/ombi-base.css?sha=b901fa084b32f6480a67dd1ed5d937bc2372d5ab"
     },
     "organizr": {
       "addons": {
@@ -556,6 +556,7 @@
     "librespeed": "https://develop.theme-park.dev/docker-mods/librespeed/root/etc/cont-init.d/98-themepark",
     "lidarr": "https://develop.theme-park.dev/docker-mods/lidarr/root/etc/cont-init.d/98-themepark",
     "mylar3": "https://develop.theme-park.dev/docker-mods/mylar3/root/etc/cont-init.d/98-themepark",
+    "nginx-proxy-manager": "https://develop.theme-park.dev/docker-mods/nginx-proxy-manager/root/etc/cont-init.d/98-themepark",
     "nzbget": "https://develop.theme-park.dev/docker-mods/nzbget/root/etc/cont-init.d/98-themepark",
     "plex": "https://develop.theme-park.dev/docker-mods/plex/root/etc/cont-init.d/98-themepark",
     "prowlarr": "https://develop.theme-park.dev/docker-mods/prowlarr/root/etc/cont-init.d/98-themepark",
