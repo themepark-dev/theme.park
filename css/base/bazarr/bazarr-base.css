@@ -281,7 +281,7 @@ h6,
     background: var(--transparency-dark-15);
 }
 
-.mantine-Badge-light.mantine-Badge-root[class*="bazarr-"] {
+.mantine-Badge-light.mantine-Badge-root[class*="bazarr-"]:not(#root > div > div > main > div > div > div.mantine-Stack-root[class*="bazarr-"] > div[class*="bazarr-"] > table > tbody > tr > td > div > div > div > div) {
     background-color: rgb(var(--accent-color));
     color: var(--label-text-color)
 }
@@ -392,6 +392,10 @@ textarea:focus-within,
 
 [class*="bazarr-"].mantine-Menu-itemInner {
     color: var(--text);
+}
+
+.mantine-Menu-item[class*="bazarr-"]:disabled [class*="bazarr-"].mantine-Menu-itemInner {
+    color: var(--text-muted) !important;
 }
 
 .mantine-Menu-item.mantine-Menu-itemHovered[class*="bazarr-"] {
