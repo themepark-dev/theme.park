@@ -1,0 +1,55 @@
+@media (min-width: 752px) {
+    [class*="PageHeader-logo-"]  {
+        display: none !important;
+    }
+    [class*="PageHeader-logoContainer-"]:before {
+        background-image: url("/css/addons/sonarr/sonarr-text-logo/sonarr-text.png");
+        display: inline-block;
+		margin-left: 15px;
+        width: 120px; 
+        height: 40px;
+        content:"";
+        background-size:  cover;
+        -webkit-background-size:  cover;
+        -moz-background-size:  cover;
+        -o-background-size: cover;
+    }    
+} 
+
+@media (max-width: 767px) {
+    [class*="PageHeader-logo-"]   {
+        display: none !important;
+    }   
+    [class*="PageHeader-logoContainer-"]:before {
+        background-image: url("/css/addons/sonarr/sonarr-text-logo/sonarr-text.png");
+        display: inline-block;
+		margin-left: 15px;
+        width: 120px; 
+        height: 40px;
+        content:"";
+        background-size:  cover;
+        -webkit-background-size:  cover;
+        -moz-background-size:  cover;
+        -o-background-size: cover;
+    } 
+}
+
+[class*="LoadingPage-logoFull-"] {
+    display: none !important;
+}
+
+[class*="LoadingPage-page-"]:before {
+        background-image: url("/css/addons/sonarr/sonarr-text-logo/sonarr-text.png");
+        display: inline-block;
+        width: 120px; 
+        height: 40px;
+        content:"";
+        background-size:  cover;
+        -webkit-background-size:  cover;
+        -moz-background-size:  cover;
+        -o-background-size: cover;
+        margin-top: 50px;
+        margin-right: auto;
+        margin-left: auto;
+
+}
