@@ -32,10 +32,19 @@
      outline: none !important;
  }
 
- body:not(.read-frame) {
+ body:not(.blur):not(.login):not(.me):not(.author):not(.editbook):not(.upload):not(.shelfedit):not(.langlist):not(.authorlist):not(.serieslist):not(.catlist):not(.shelforder):not(.admin):not(.modal-open) > div.container-fluid > div.row-fluid > div.col-sm-10:after {
      background: var(--main-bg-color) !important;
-     background-image: none;
- }
+     background-image: none !important;
+    }
+
+    body:not(.read-frame) {
+        background: var(--main-bg-color) !important;
+        background-image: none;
+    }
+
+    body.advsearch:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.col-sm-8:before, body.book:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.single:before, body.stat:not(.blur) > div.container-fluid > div.row-fluid > div.col-sm-10:before, body:not(.blur):not(.me):not(.author):not(.editbook):not(.upload):not(.shelfedit):not(.admin):not(.modal-open) > div.container-fluid > div.row-fluid > div.col-sm-10 > div.discover:first-of-type:before {
+        background: var(--main-bg-color) !important;
+    }
 
  .blur-wrapper:after {
      background: var(--main-bg-color) !important;
@@ -122,6 +131,11 @@
      color: var(--text-hover)
  }
 
+
+.hr {
+    background-color: var(--transparency-light-15) !important;
+}
+
  /* LINKS */
  a,
  body.admin,
@@ -152,6 +166,14 @@
      color: var(--text-hover) !important;
  }
 
+ .table-hover>tbody>tr:hover {
+    background-color: var(--transparency-light-10);
+}
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    border-top: 1px solid var(--transparency-light-05);
+    background: rgba(0, 0, 0, .15);
+}
 
  /* MODAL */
  .modal-content {
