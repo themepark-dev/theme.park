@@ -67,7 +67,9 @@ a,
 .nav-link,
 .dark a,
 .dark .nav-link,
-.dark a:not(.btn), .dark .table, .dark .nav-link {
+.dark a:not(.btn),
+.dark .table,
+.dark .nav-link {
     color: var(--link-color);
 }
 
@@ -76,7 +78,8 @@ a,
     text-decoration: underline;
 }
 
-mark, .mark {
+mark,
+.mark {
     padding: 0 0.3em;
     background-color: rgb(var(--accent-color));
     color: var(--label-text-color);
@@ -93,6 +96,7 @@ mark, .mark {
 .dark .settings-content .settings-content-header {
     background: transparent !important;
 }
+
 .dark .list-header {
     background: transparent !important;
 }
@@ -244,7 +248,7 @@ td {
 
 .btn-outline-primary,
 .btn-outline-secondary {
-    color:  var(--button-color);
+    color: var(--button-color);
     border-color: var(--button-color);
 }
 
@@ -470,7 +474,8 @@ td {
     background: var(--transparency-light-10) !important;
 }
 
-h5.settings-subheading:after, .settings-subheading.h5:after {
+h5.settings-subheading:after,
+.settings-subheading.h5:after {
     border-bottom: 1px solid var(--transparency-light-10);
 }
 
