@@ -395,7 +395,11 @@ td {
 .dark .multiselect__option--selected {
     background: var(--transparency-dark-45);
     color: var(--text-hover) !important;
-    font-weight: 700;
+}
+
+.dark .multiselect__option--selected::after,
+.multiselect__option--selected::after {
+    color: var(--text-hover) !important;
 }
 
 .multiselect__tag,

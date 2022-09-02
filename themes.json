@@ -219,7 +219,7 @@
     },
     "emby": {
       "addons": {},
-      "base_css": "https://develop.theme-park.dev/css/base/emby/emby-base.css?sha=9463def3af99604b62f34e99b0663a198d48e478"
+      "base_css": "https://develop.theme-park.dev/css/base/emby/emby-base.css?sha=622ec3d5e5ffa3dba69820ee0476412732558d2a"
     },
     "filebrowser": {
       "addons": {},
@@ -435,7 +435,7 @@
     },
     "uptime-kuma": {
       "addons": {},
-      "base_css": "https://develop.theme-park.dev/css/base/uptime-kuma/uptime-kuma-base.css?sha=51a66269e5b550b9676bdbfa0fb0230806aaeb82"
+      "base_css": "https://develop.theme-park.dev/css/base/uptime-kuma/uptime-kuma-base.css?sha=5f074b6c88d3c48e1fc060e5a2798002b39cd465"
     },
     "vuetorrent": {
       "addons": {},
