@@ -235,7 +235,8 @@ html {
     .raised:not(.nobackdropfilter) {
         background: rgba(85, 85, 85, .3);
         -webkit-backdrop-filter: saturate(1.8) blur(1.5em);
-        backdrop-filter: saturate(1.8) blur(1.5em)
+        backdrop-filter: saturate(1.8) blur(1.5em);
+        color: var(--transparency-light-95);
     }
 
     .dialog-blur,
