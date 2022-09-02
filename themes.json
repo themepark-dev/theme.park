@@ -435,7 +435,7 @@
     },
     "uptime-kuma": {
       "addons": {},
-      "base_css": "https://develop.theme-park.dev/css/base/uptime-kuma/uptime-kuma-base.css?sha=c65bae93a0439cef3c0a6ff3dcb6b17c5bfc4c66"
+      "base_css": "https://develop.theme-park.dev/css/base/uptime-kuma/uptime-kuma-base.css?sha=51a66269e5b550b9676bdbfa0fb0230806aaeb82"
     },
     "vuetorrent": {
       "addons": {},

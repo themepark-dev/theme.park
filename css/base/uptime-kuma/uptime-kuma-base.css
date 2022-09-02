@@ -185,6 +185,11 @@ td {
     border-top: 1px solid var(--transparency-light-25) !important;
 }
 
+.dark .dropdown-profile-pic.dropdown-menu.dropdown-item.active {
+    color: var(--text-hover);
+    background-color: var(--transparency-dark-15) !important;
+}
+
 /* HEADER */
 .dark header,
 #app>div>header {
@@ -362,7 +367,7 @@ td {
 .dark .multiselect__content-wrapper,
 .multiselect__content-wrapper {
     background: var(--drop-down-menu-bg) !important;
-    border-color: transparent !important;
+    border-color: var(--transparency-light-15) !important;
 }
 
 .multiselect {
@@ -372,19 +377,24 @@ td {
 .multiselect__option--highlight {
     background: rgb(var(--accent-color)) !important;
     outline: none;
-    color: #fff
+    color: var(--label-text-color) !important;
 }
 
 .multiselect__option--highlight:after {
     content: attr(data-select);
     background: rgb(var(--accent-color)) !important;
-    color: #fff
+    color: var(--label-text-color);
+}
+
+.multiselect__option--selected:after {
+    content: attr(data-selected);
+    color: var(--label-text-color) !important;
 }
 
 .multiselect__option--selected,
 .dark .multiselect__option--selected {
     background: var(--transparency-dark-45);
-    color: var(--text-hover);
+    color: var(--text-hover) !important;
     font-weight: 700;
 }
 
@@ -503,5 +513,33 @@ h5.settings-subheading:after,
 }
 
 .item:hover {
-    background-color: var(--transparency-light-10) !important;
+    background-color: rgb(var(--accent-color), .10) !important;
+}
+
+@media (max-width: 550px) {
+    .dark .table-shadow-box tbody .shadow-box {
+        background-color: transparent !important;
+    }
+
+    .dark .table-hover>tbody>tr:hover>* {
+        --bs-table-accent-bg: transparent color: var(--text-hover);
+    }
+
+    .dark .table-shadow-box tbody .shadow-box td {
+        border-bottom: 1px solid var(--transparency-light-10);
+    }
+}
+
+.dark .monitor-list .item:hover,
+.dark .monitor-list .item.active,
+.monitor-list .item.active,
+.monitor-list .item:hover {
+    background-color: rgb(var(--accent-color), .10);
+}
+
+.active.dropdown-item.active,
+.dark .dropdown-profile-pic .dropdown-menu .dropdown-item.active,
+#app>div>header>ul>li>div>ul>li>a.active {
+    background: var(--transparency-dark-25) !important;
+    background-color: var(--transparency-dark-25) !important;
 }
