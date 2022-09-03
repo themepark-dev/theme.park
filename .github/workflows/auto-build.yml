@@ -78,11 +78,11 @@ jobs:
               docker push ghcr.io/gilbn/theme.park:$directory
             done
       - name: manually build
-        if: ${{ github.event.inputs.app != "build-all-the-mods"}}
+        if: ${{ github.event.inputs.app != 'build-all-the-mods' }}
         run: |
           docker build docker-mods/${{ github.event.inputs.app }} --tag ghcr.io/gilbn/theme.park:${{ github.event.inputs.app }}${{ github.event.inputs.append-tag }}
           docker push ghcr.io/gilbn/theme.park:${{ github.event.inputs.app }}${{ github.event.inputs.append-tag }}
-        if: ${{ github.event.inputs.app == "build-all-the-mods"}}
+        if: ${{ github.event.inputs.app == 'build-all-the-mods' }}
         run: |
           for app in ${{ github.event.inputs.app.options }}
             do
@@ -122,11 +122,11 @@ jobs:
               docker push gilbn/theme.park:$directory
             done
       - name: manually build
-        if: ${{ github.event.inputs.app != "build-all-the-mods"}}
+        if: ${{ github.event.inputs.app != 'build-all-the-mods' }}
         run: |
           docker build docker-mods/${{ github.event.inputs.app }} --tag gilbn/theme.park:${{ github.event.inputs.app }}${{ github.event.inputs.append-tag }}
           docker push gilbn/theme.park:${{ github.event.inputs.app }}${{ github.event.inputs.append-tag }}
-        if: ${{ github.event.inputs.app == "build-all-the-mods"}}
+        if: ${{ github.event.inputs.app == 'build-all-the-mods' }}
         run: |
           for app in ${{ github.event.inputs.app.options }}
             do
