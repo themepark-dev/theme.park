@@ -1,11 +1,11 @@
 :root {
-    --main-bg-color: #313544;
+    --main-bg-color: #202020;
 
-    --modal-bg-color: #252833;
-    --modal-header-color: #252833;
-    --modal-footer-color: #252833;
+    --modal-bg-color: #2a2a2a;
+    --modal-header-color: #2a2a2a;
+    --modal-footer-color: #2a2a2a;
 
-    --drop-down-menu-bg: #252833;
+    --drop-down-menu-bg: #333;
 
     --button-color: #911f93;
     --button-color-hover: #721873;
@@ -24,42 +24,32 @@
 
     /*Specials*/
     --arr-queue-color: #6c757d;
-    --side-menu-active: #252833;
-    --side-menu-color: #3a3f51;
+    --side-menu-active: #333333;
     --side-menu-link-color: #fff;
     --scroller-hover: #606060;
     --scroller: #707070;
     --border-color: #606060;
     --label-color: #911f93;
     --label-info: #5d9cec;
-    --header-color: #911f93;
+    --header-color: #2a2a2a;
+    --toolbar-background: #262626;
+    --side-menu-color: #2a2a2a;
 }
 
 /* HEADER */
-.header-container .bg-primary {
+.mantine-Header-root[class*="bazarr-"] {
     background-color: var(--header-color) !important;
+    border-bottom: 1px solid var(--transparency-light-15);
 }
 
 /* SIDE MENU */
-.sidebar-container {
+.mantine-Navbar-root[class*="bazarr-"] {
     background-color: var(--side-menu-color) !important;
     color: white !important;
 }
 
-.sidebar-container .sidebar-button {
-    color: var(--side-menu-link-color) !important;
-}
-
-.sidebar-container .sidebar-button {
-    background-color: var(--side-menu-color) !important;
-}
-.sidebar-container .sidebar-button.sb-active, .sidebar-container .sidebar-button.sb-active:hover {
-    color: var(--side-menu-link-color) !important;
-    background-color: var(--side-menu-active) !important;
-}
-
-
-.sidebar-container .sidebar-button:hover {
-    background-color: var(--side-menu-active) !important;
-    color: var(--side-menu-link-color) !important;
+#root>div>div>main>div>div.mantine-Group-root[class*="bazarr-"],
+#root>div>div>main>div>div>div.mantine-Group-root[class*="bazarr-"],
+#root>div>div>main>form>div.mantine-Group-root[class*="bazarr-"] {
+    background: #262626 !important;
 }

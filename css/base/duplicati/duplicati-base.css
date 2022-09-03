@@ -1,4 +1,5 @@
 @import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
 
 * {
     outline: none !important;
@@ -153,20 +154,20 @@ form.styled select,
 form.styled .input.select select {
     color: var(--text);
     border: none;
-    background: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
 }
 
 form.styled input:focus,
 form.styled textarea:focus {
     color: var(--text-hover);
     border: none;
-    background: rgba(0, 0, 0, .45);
+    background: var(--transparency-dark-45);
 }
 
 select:focus,
 form.styled select:focus,
 form.styled .input.select select:focus {
-    background: #1f1f1f;
+    background: var(--drop-down-menu-bg);
     color: var(--text-hover);
     border: none;
 
@@ -204,7 +205,7 @@ body .container .body .contextmenu {
 }
 
 body .container .body .contextmenu li a:hover {
-    background: rgba(255, 255, 255, 0.25);
+    background: var(--transparency-light-25);
     color: var(--text-hover);
 }
 
@@ -310,7 +311,7 @@ ul.tabs>li {
 /* FOLDER TREE*/
 .tree-view li div.selected {
     border-color: rgba(255, 255, 255, .1);
-    background-color: rgba(252, 252, 252, .25);
+    background: var(--transparency-light-25);
 }
 
 
@@ -321,7 +322,7 @@ body .container .header .state .progress-bar {
 
 /* LOGIN */
 #login h2 {
-    background: rgba(255, 255, 255, .15);
+    background: var(--transparency-light-15);
     color: var(--text);
 }
 
@@ -330,7 +331,7 @@ body .container .header .state .progress-bar {
 }
 
 #login fieldset {
-    background-color: rgba(255, 255, 255, .15);
+    background: var(--transparency-light-15);
 }
 
 #login fieldset input[type="submit"] {
@@ -345,6 +346,6 @@ body .container .header .state .progress-bar {
 
 #login fieldset input[type="email"],
 #login fieldset input[type="password"] {
-    background: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     color: var(--text);
 }

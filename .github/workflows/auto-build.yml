@@ -5,6 +5,43 @@ on:
       - master
     paths:
     - 'docker-mods/**'
+  workflow_dispatch:
+    inputs:
+      app:
+        description: 'Select an app'
+        required: true
+        type: choice
+        options:
+        - radarr
+        - sonarr
+        - readarr
+        - lidarr
+        - bazarr
+        - whisparr
+        - prowlarr
+        - plex
+        - jellyfin
+        - emby
+        - sabnzbd
+        - synclounge
+        - transmission
+        - calibre-web
+        - lazylibrarian
+        - mylar3
+        - duplicati
+        - tautulli
+        - vuetorrent
+        - deluge
+        - jackett
+        - librespeed
+        - nzbget
+        - qbittorrent
+        - rutorrent
+        - swag
+        - thelounge
+      append-tag:
+        required: false
+        description: 'Append a the tag  with "-custom" e.g :radarr-custom'
 jobs:
   push_to_ghcr_io:
     runs-on: ubuntu-latest
@@ -24,6 +61,7 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GH_PAT }}
       - name: find correct directory then build&push
+        if: ${{ github.event_name == 'push' }}
         run: |
           for i in ${{ steps.getfile.outputs.files }}
             do
@@ -38,6 +76,11 @@ jobs:
               docker build docker-mods/$directory --tag ghcr.io/gilbn/theme.park:$directory
               docker push ghcr.io/gilbn/theme.park:$directory
             done
+      - name: manually build
+        if: ${{ github.event.inputs.app }}
+        run: |
+          docker build docker-mods/${{ github.event.inputs.app }} --tag ghcr.io/gilbn/theme.park:${{ github.event.inputs.app }}${{ github.event.inputs.append-tag }}
+          docker push ghcr.io/gilbn/theme.park:${{ github.event.inputs.app }}${{ github.event.inputs.append-tag }}
   push_to_dockerhub:
     runs-on: ubuntu-latest
     steps:
@@ -55,6 +98,7 @@ jobs:
           username: ${{ secrets.DH_USER }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: find correct directory then build&push
+        if: ${{ github.event_name == 'push' }}
         run: |
           for i in ${{ steps.getfile.outputs.files }}
             do
@@ -69,3 +113,8 @@ jobs:
               docker build docker-mods/$directory --tag gilbn/theme.park:$directory
               docker push gilbn/theme.park:$directory
             done
+      - name: manually build
+        if: ${{ github.event.inputs.app }}
+        run: |
+          docker build docker-mods/${{ github.event.inputs.app }} --tag gilbn/theme.park:${{ github.event.inputs.app }}${{ github.event.inputs.append-tag }}
+          docker push gilbn/theme.park:${{ github.event.inputs.app }}${{ github.event.inputs.append-tag }}

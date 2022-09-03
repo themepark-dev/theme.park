@@ -13,13 +13,18 @@
  /* "Re-skin" of CaliBlur https://github.com/leram84/layer.Cake/tree/master/caliBlur */
  /* Set theme to CaliBlur in UI Configuration -> View Configuration -> Theme -> CaliBlur -> Submit */
  /* APP VARS*/
+
+ @import url("/css/defaults/placeholders.css");
+ @import url("/css/defaults/transparent.css");
+
  :root {
-    --color-background: var(--main-bg-color);
-    --color-primary: rgb(var(--accent-color));
-    --color-secondary: var(--button-color);
-    --color-secondary-hover: var(--button-color-hover);
-    --color-background-mobile: var(--main-bg-color);
-  }
+     --color-background: var(--main-bg-color);
+     --color-primary: rgb(var(--accent-color));
+     --color-secondary: var(--button-color);
+     --color-secondary-hover: var(--button-color-hover);
+     --color-background-mobile: var(--main-bg-color);
+ }
+
  *,
  *:focus,
  *:active,
@@ -28,9 +33,21 @@
      outline: none !important;
  }
 
+ body:not(.blur):not(.login):not(.me):not(.author):not(.editbook):not(.upload):not(.shelfedit):not(.langlist):not(.authorlist):not(.serieslist):not(.catlist):not(.shelforder):not(.admin):not(.modal-open)>div.container-fluid>div.row-fluid>div.col-sm-10:after {
+     background: var(--main-bg-color) !important;
+     background-image: none !important;
+ }
+
  body:not(.read-frame) {
      background: var(--main-bg-color) !important;
      background-image: none;
+ }
+
+ body.advsearch:not(.blur)>div.container-fluid>div.row-fluid>div.col-sm-10>div.col-sm-8:before,
+ body.book:not(.blur)>div.container-fluid>div.row-fluid>div.col-sm-10>div.single:before,
+ body.stat:not(.blur)>div.container-fluid>div.row-fluid>div.col-sm-10:before,
+ body:not(.blur):not(.me):not(.author):not(.editbook):not(.upload):not(.shelfedit):not(.admin):not(.modal-open)>div.container-fluid>div.row-fluid>div.col-sm-10>div.discover:first-of-type:before {
+     background: var(--main-bg-color) !important;
  }
 
  .blur-wrapper:after {
@@ -118,6 +135,11 @@
      color: var(--text-hover)
  }
 
+
+ .hr {
+     background-color: var(--transparency-light-15) !important;
+ }
+
  /* LINKS */
  a,
  body.admin,
@@ -148,6 +170,19 @@
      color: var(--text-hover) !important;
  }
 
+ .table-hover>tbody>tr:hover {
+     background-color: var(--transparency-light-10);
+ }
+
+ .table>tbody>tr>td,
+ .table>tbody>tr>th,
+ .table>tfoot>tr>td,
+ .table>tfoot>tr>th,
+ .table>thead>tr>td,
+ .table>thead>tr>th {
+     border-top: 1px solid var(--transparency-light-05);
+     background: rgba(0, 0, 0, .15);
+ }
 
  /* MODAL */
  .modal-content {
@@ -200,7 +235,7 @@
  .dropdown-menu>li>a:focus,
  .dropdown-menu>li>a:hover {
      color: var(--text-hover);
-     background: hsla(0, 0%, 100%, .08);
+     background: var(--transparency-dark-10);
  }
 
  /* SIDEMENU */
@@ -222,7 +257,7 @@
      -webkit-transition: color .2s;
      -o-transition: color .2s;
      transition: color .2s;
-     background-color: rgba(0, 0, 0, .55) !important;
+     background: var(--transparency-dark-55) !important;
  }
 
  /* NAVBAR */
@@ -324,14 +359,16 @@
      box-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
      line-height: 24px;
  }
+
  .cover {
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
-  }
-  
-  .cover .read {
-    padding: 0 0;
-    line-height: 15px;
-  }
-  body.serieslist.grid-view div.container-fluid > div > div.col-sm-10::before {
-    display: none;
-  }
+     box-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
+ }
+
+ .cover .read {
+     padding: 0 0;
+     line-height: 15px;
+ }
+
+ body.serieslist.grid-view div.container-fluid>div>div.col-sm-10::before {
+     display: none;
+ }

@@ -10,6 +10,9 @@
 /*		   		        Made by @gilbN					 */
 /* 			      https://github.com/gilbN/theme.park			 */
 
+@import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
+
 * {
     outline: none;
 }
@@ -91,7 +94,7 @@ html[class*="theme_"] .navbar .nav-item>.nav-link {
 
 .table-hover tbody tr:hover {
     color: var(--text-hover);
-    background-color: rgba(255, 255, 255, .08);
+    background-color: var(--transparency-light-10);
 }
 
 h1,
@@ -106,17 +109,27 @@ h6,
 .h4,
 .h5,
 .h6,
-label:not(#g_advanced > div:nth-child(13) > label):not(#g_advanced > div:nth-child(12) > div.col-sm-8 > div > label),
-label:not(.form-check-label):not(.btn):not(#g_advanced > div:nth-child(13) > label),
-label.bold .card-header:first-child,
 html[class*="theme_"] .card-header,
 .modal-header {
     color: var(--text-hover) !important;
 }
+body,b,span, p,
+html.theme_light label:not(.form-check-label):not(.btn), html.theme_light label.bold {
+    color: var(--text);
+}
 
 /* NAVBAR */
-.navbar {
-    background-color: rgb(0 0 0 / 25%) !important;
+.navbar,
+.navbar .bg-dark {
+    background: var(--main-bg-color) !important;
+    background-repeat: repeat, no-repeat !important;
+    background-attachment: fixed, fixed !important;
+    background-position: center center, center center !important;
+    background-size: auto, cover !important;
+    -webkit-background-size: auto, cover !important;
+    -moz-background-size: auto, cover !important;
+    -o-background-size: auto, cover !important;
+    --bs-bg-opacity: 0 !important;
 }
 
 .navbar-dark .navbar-nav .show>.nav-link,
@@ -129,12 +142,12 @@ html[class*="theme_"] .card-header,
 /* CARDS */
 
 html[class*="theme_"] .card-header {
-    background-color: rgb(0 0 0 / 45%);
+    background-color: var(--transparency-dark-45);
     color: var(--text-hover);
 }
 
 .card {
-    background-color: rgba(255, 255, 255, 0.07) !important;
+    background-color: var(--transparency-dark-10) !important;
     border-color: rgba(255, 255, 255, 0.1) !important;
     color: var(--text) !important;
 }
@@ -154,9 +167,8 @@ app-vault-groupings .card li.active>div>.fa {
     color: rgb(var(--accent-color));
 }
 
-body>app-root>app-user-layout>app-tools>div>div>div.col-9>app-password-generator>div.card.card-password.bg-light.my-4,
-body>app-root>app-user-layout>app-tools>div>div>div.col-9>app-password-generator>div.card.card-password.bg-light.my-4>div {
-    background-color: rgb(0 0 0 / 15%) !important;
+html[class*="theme_"] app-password-generator .card-password .card-body {
+    background: var(--transparency-dark-15);
 }
 
 html[class*="theme_"] .password-number {
@@ -277,24 +289,51 @@ html[class*="theme_"] .form-control-file {
 html[class*="theme_"] .form-control:focus {
     box-shadow: none;
     border-color: transparent;
-    background: rgb(253 253 253 / 15%);
+    background: var(--transparency-light-15);
 }
 
 html[class*="theme_"] .form-control {
     color: var(--text);
-    background-color: rgb(0 0 0 / 0.25);
+    background: var(--transparency-dark-25);
     border: 1px solid transparent;
 
 }
 
 html[class*="theme_"] .form-control:disabled,
 .form-control[readonly] {
-    background-color: rgb(255 255 255 / 25%);
+    background-color: var(--transparency-light-25);
     opacity: 1;
 }
 
 select:focus {
-    background: #1f1f1f !important;
+    background: var(--drop-down-menu-bg) !important;
+}
+
+.form-control:focus {
+    color: var(--text);
+    background-color: var(--transparency-dark-15);
+    border-color: rgb(var(--accent-color));
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(var(--accent-color) / 25%);
+}
+
+.form-control {
+    color: var(--text-hover);
+    background-color: var(--transparency-dark-25);
+    background-clip: padding-box;
+    border: 1px solid var(--transparency-light-10);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-select:focus {
+    border-color: var(--transparency-light-20);
+    color: var(--text-hover);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0);
 }
 
 /* DROPDOWN MENU */
@@ -317,7 +356,7 @@ html[class*="theme_"] .navbar .dropdown-menu .dropdown-item-text {
 
 html[class*="theme_"] .dropdown-menu,
 html[class*="theme_"] .dropdown-item {
-    background: #1f1f1f;
+    background: var(--drop-down-menu-bg);
     color: var(--text-hover);
 }
 
@@ -330,13 +369,13 @@ html[class*="theme_"] .dropdown-item:hover,
 html[class*="theme_"] .dropdown-item:focus {
     color: var(--text-hover);
     text-decoration: none;
-    background-color: rgb(255 255 255 / 0.08);
+    background-color: var(--transparency-light-10);
 }
 
 a.text-danger:hover,
 a.text-danger:focus {
     color: #dd4b39 !important;
-    background-color: rgb(255 255 255 / 0.08) !important;
+    background-color: var(--transparency-light-10) !important;
 }
 
 .dropdown-menu .text-danger {
@@ -371,35 +410,33 @@ html[class*="theme_"] .footer {
 html[class*="theme_"] .list-group-item.active {
     border-color: rgba(255, 255, 255, 0.15);
     color: rgb(var(--accent-color));
-    background-color: rgb(255 255 255 / 10%);
+    background: var(--transparency-light-10);
     border-left: 3px solid rgb(var(--accent-color));
 }
 
 html[class*="theme_"] .callout {
-    background-color: rgb(255 255 255 / 15%);
+    background: var(--transparency-light-15);
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: var(--text);
 }
 
 html[class*="theme_"] .list-group-item {
-    background-color: rgb(0 0 0 / 35%);
+    background: var(--transparency-dark-25);
     border: 1px solid rgb(255 255 255 / 8%);
     color: var(--text);
 }
 
 html[class*="theme_"] .progress {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 /* BUTTONS */
 .btn-link {
-    color: var(--button-color);
-    color: var(--button-text);
+    color: var(--link-color);
 }
 
 .btn-link:hover {
-    color: var(--button-color-hover);
-    color: var(--button-text-hover);
+    color: var(--link-color-hover);
     transition: 0.15s;
 }
 
@@ -520,6 +557,18 @@ html[class*="theme_"] .badge-info {
     color: var(--label-text-color);
 }
 
+[id*="b_"]{
+    background: var(--transparency-dark-25);
+    border-color: var(--transparency-light-10);
+    color: var(--text);
+}
+
+[id*="b_"]:hover{
+    background: var(--transparency-dark-35);
+    border-color: var(--transparency-light-10);
+    color: var(--text-hover);
+}
+
 /* Org */
 
 html[class*="theme_"] .org-nav .nav-tabs a.active {
@@ -528,7 +577,7 @@ html[class*="theme_"] .org-nav .nav-tabs a.active {
 }
 
 html[class*="theme_"] .nav-tabs .nav-link.active {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border-color: rgba(255, 255, 255, 0.15);
 }
 
@@ -556,7 +605,7 @@ html[class*="theme_"] .org-nav .nav-tabs a:not(.active) {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
     color: var(--text);
-    background-color: rgb(255 255 255 / 25%);
+    background-color: var(--transparency-light-25);
     border-color: transparent;
 }
 
@@ -578,47 +627,25 @@ app-org-vault-groupings .card li.active>div a:first-of-type {
 html[class*="theme_"] .table td [class*="fa-"] {
     color: rgb(var(--accent-color));
 }
-
-/* PLACEHOLDER TEXT */
-input::-webkit-input-placeholder {
-    color: var(--text);
+html[class*="theme_"] .btn-outline-secondary i {
+    color: var(--button-text) !important;
 }
-
-input:focus::-webkit-input-placeholder {
-    color: #000;
-}
-
-/* Firefox < 19 */
-input:-moz-placeholder {
-    color: var(--text);
-}
-
-input:focus:-moz-placeholder {
-    color: #000;
-}
-
-/* Firefox > 19 */
-input::-moz-placeholder {
-    color: var(--text);
-}
-
-input:focus::-moz-placeholder {
-    color: #000;
-}
-
-/* Internet Explorer 10 */
-input:-ms-input-placeholder {
-    color: var(--text);
-}
-
-input:focus:-ms-input-placeholder {
-    color: #000;
-}
-
 /* ADMIN PAGE */
 
 .bg-light {
-    background: var(--main-bg-color) !important;
+    background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    --bs-bg-opacity: 0;
+}
+
+.bg-light .navbar {
+    background: var(--main-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -628,24 +655,21 @@ input:focus:-ms-input-placeholder {
     -o-background-size: auto, cover;
 }
 
-.bg-light .navbar {
-    background: var(--main-bg-color) !important;
-    background-repeat: repeat, no-repeat;
-    background-attachment: fixed, fixed;
-    background-position: center center, center center;
-    background-size: auto, cover;
-    -webkit-background-size: auto, cover;
-    -moz-background-size: auto, cover;
-    -o-background-size: auto, cover;
+.border-bottom {
+    border-bottom: 1px solid var(--transparency-light-15) !important;
+}
+
+div.dataTables_wrapper div.dataTables_info {
+    color: var(--text);
 }
 
 /* Cards */
 .bg-secondary {
-    background-color: rgb(255 255 255 / 10%) !important;
+    background: var(--transparency-light-10) !important;
 }
 
 .bg-white {
-    background-color: rgba(255, 255, 255, 0.1) !important;
+    background: var(--transparency-light-10) !important;
 }
 
 html[class*="theme_"] .groupings .card .card-body a {
@@ -665,7 +689,7 @@ html[class*="theme_"] .groupings .card .card-body a {
     color: var(--text);
     pointer-events: none;
     cursor: auto;
-    background-color: rgb(0 0 0 / 10%);
+    background: var(--transparency-dark-10);
     border-color: rgb(0 0 0 / 10%);
 }
 
@@ -691,4 +715,10 @@ html[class*="theme_"] hr,
 html[class*="theme_"] .dropdown-divider,
 html[class*="theme_"] .footer {
     border-top: 1px solid rgb(255 255 255 / 30%);
+}
+
+thead, tbody, tfoot, tr, td, th {
+    border-color:var(--transparency-light-25);
+    border-style: solid;
+    border-width: 0;
 }

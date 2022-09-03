@@ -15,9 +15,14 @@
 
  - [ ] I have read the [contributing](https://github.com/GilbN/theme.park/blob/master/.github/CONTRIBUTING.md) guideline and understand that I have made the correct modifications
 
+- PR's are done against the develop branch.
 ------------------------------
 
 <!--- We welcome all PR’s though this doesn’t guarantee it will be accepted. -->
+
+## Bug fixes
+
+- When submitting bugfixes please show a before and after screenshot of the fix, and a description of what the fix does.
 
 ## Description:
 <!--- Describe your changes in detail -->

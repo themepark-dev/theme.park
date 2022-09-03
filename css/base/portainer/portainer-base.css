@@ -11,11 +11,12 @@
 /* 			      https://github.com/gilbN/theme.park			 */
 
 @import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
 
 :root {
     --text-json-tree-branch-preview-color: var(--text);
     --text-json-tree-leaf-color: var(--text);
-    }
+}
 
 /* Scrollbar */
 @media only screen and (min-width: 768px) {
@@ -47,7 +48,7 @@
     min-height: 50px;
     border: 3px solid transparent;
     border-radius: 8px;
-    background-color: hsla(0, 0%, 100%, .2);
+    background: var(--transparency-dark-20);
     background-clip: padding-box;
 }
 
@@ -59,7 +60,7 @@
     min-height: 50px;
     border: 3px solid transparent;
     border-radius: 8px;
-    background-color: hsla(0, 0%, 100%, .5);
+    background: var(--transparency-light-50);
     background-clip: padding-box;
 }
 
@@ -127,7 +128,7 @@ ul.sidebar .sidebar-list a {
 
 /* NEWS */
 .motd-body {
-    background-color: rgba(255, 255, 255, 0.15) !important;
+    background: var(--transparency-light-15) !important;
 }
 
 /* LOGIN */
@@ -148,16 +149,16 @@ ul.sidebar .sidebar-list a {
 
 /* SIDEBAR */
 #sidebar-wrapper {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25)
 }
 
 .sidebar-header {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25)
 }
 
 ul.sidebar .sidebar-list a.active {
     color: rgb(var(--accent-color));
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--transparency-light-10);
     border-left: 3px solid rgb(var(--accent-color));
 }
 
@@ -165,7 +166,7 @@ ul.sidebar .sidebar-list a.active {
 .sidebar-footer,
 ul.sidebar .sidebar-list a:hover:not(ul.sidebar .sidebar-list a.active),
 ul.sidebar .sidebar-main a {
-    background: rgba(255, 255, 255, 0.15);
+    background: var(--transparency-light-15);
     color: var(--text-hover);
 }
 
@@ -180,7 +181,7 @@ ul.sidebar .sidebar-title {
 
 ul.sidebar .sidebar-list .sidebar-sublist a.active {
     border-left: 3px solid rgb(var(--accent-color));
-    background: rgba(255, 255, 255, .08);
+    background: var(--transparency-light-10)
 }
 
 ul.sidebar .sidebar-title {
@@ -201,33 +202,33 @@ ul.sidebar .sidebar-title {
 
 /* WIDGETS */
 .widget {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border-color: transparent;
 }
 
 .widget .widget-body table thead {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 .widget .widget-header {
     color: var(--text-hover);
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     border-bottom: 1px solid transparent;
 }
 
 /* DATATABLES */
 .datatable .toolBar {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 .datatable .footer {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     color: var(--text);
 }
 
 .blocklist-item--selected,
 .blocklist-item:hover {
-    background-color: rgba(255, 255, 255, 0.15);
+    background: var(--transparency-light-15);
     color: var(--text);
 }
 
@@ -244,11 +245,11 @@ ul.sidebar .sidebar-title {
     border-top: 1px solid rgba(255, 255, 255, .1);
     border-bottom: 1px solid rgba(255, 255, 255, .1);
     padding: 8px;
-    background: rgba(255, 255, 255, .15);
+    background: var(--transparency-light-15)
 }
 
 .datatable .searchBar:focus-within {
-    background:rgba(255, 255, 255, .25);
+    background: var(--transparency-light-25);
     color: var(--text-hover);
 }
 
@@ -267,7 +268,20 @@ ul.sidebar .sidebar-title {
 .table>thead>tr.active>th,
 .table>thead>tr>td.active,
 .table>thead>tr>th.active {
-    background-color: rgba(255, 255, 255, 0.1);
+    background: var(--transparency-light-10);
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+    border-top: 1px solid var(--transparency-light-10);
+}
+
+.table>thead>tr>th {
+    border-bottom: 2px solid var(--transparency-light-10);
 }
 
 .table-hover>tbody>tr.active:hover>td,
@@ -275,11 +289,11 @@ ul.sidebar .sidebar-title {
 .table-hover>tbody>tr:hover>.active,
 .table-hover>tbody>tr>td.active:hover,
 .table-hover>tbody>tr>th.active:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background: var(--transparency-light-10);
 }
 
 .table .table {
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 .label-default {
@@ -296,10 +310,25 @@ ul.sidebar .sidebar-title {
 }
 
 .btn-primary,
-.btn-default {
+.btn-default,
+button,
+button h3,
+button h5 {
     color: var(--button-text);
     background-color: var(--button-color);
     border-color: var(--button-color);
+}
+
+.app-react-portainer-environments-wizard-components-Option-Option-module__feature {
+    --selected-item-color: var(--button-color);
+    border: 1px solid var(--button-color);
+    color: var(--button-text) !important;
+}
+.app-react-portainer-environments-wizard-components-Option-Option-module__feature:hover {
+    border: 1px var(--button-color);
+    -webkit-box-shadow: 0 3px 10px -2px rgba(var(--accent-color), 0.8);
+    box-shadow: 0 3px 10px -2px rgba(var(--accent-color), 0.8);
+    color: var(--button-text-hover);
 }
 
 .btn-default.active,
@@ -356,7 +385,7 @@ fieldset[disabled] .btn-primary:hover {
 
 .bootbox-form .checkbox i,
 .switch i {
-    background: rgba(255, 255, 255, 0.15);
+    background: var(--transparency-light-15);
 }
 
 .btn.focus,
@@ -392,61 +421,81 @@ fieldset[disabled] .btn-primary:hover {
 .ui-select-bootstrap>.ui-select-match>.btn:focus {
     text-align: left !important;
     color: var(--button-text-hover);
-    background-color: rgba(255, 255, 255, 0.25);
+    background: var(--transparency-light-25);
     border-color: #00000000;
 }
 
 /* PAGINATION */
-.pagination>.disabled>a,
-.pagination>.disabled>a:focus,
-.pagination>.disabled>a:hover,
+
 .pagination>.disabled>span,
+.pagination>.disabled>span:hover,
 .pagination>.disabled>span:focus,
-.pagination>.disabled>span:hover {
+.pagination>.disabled>button,
+.pagination>.disabled>button:hover,
+.pagination>.disabled>button:focus,
+.pagination>.disabled>a,
+.pagination>.disabled>a:hover,
+.pagination>.disabled>a:focus {
     color: var(--text-muted);
-    cursor: not-allowed;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-color: transparent;
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+}
+
+.pagination>li>button {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px !important;
+    line-height: 1.42857143;
+    text-decoration: none;
+    border: 1px solid #ddd;
+}
+
+.pagination>li>a,
+.pagination>li>button,
+.pagination>li>span {
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+    color: var(--button-text);
+}
+
+.pagination>li>a:hover,
+.pagination>li>button:hover,
+.pagination>li>span:hover,
+.pagination>li>a:focus,
+.pagination>li>button:focus,
+.pagination>li>span:focus {
+    background-color: var(--button-color-hover);
+    border-color: var(--button-color-hover);
+    color: var(--button-text-hover);
 }
 
 .pagination>.active>a,
-.pagination>.active>a:focus,
-.pagination>.active>a:hover,
 .pagination>.active>span,
+.pagination>.active>button,
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>.active>button:hover,
+.pagination>.active>a:focus,
 .pagination>.active>span:focus,
-.pagination>.active>span:hover {
-    z-index: 2;
-    color: var(--button-text);
+.pagination>.active>button:focus {
+    z-index: 3;
+    color: #fff;
     cursor: default;
     background-color: var(--button-color-hover);
     border-color: var(--button-color-hover);
 }
 
-.pagination>li>a,
-.pagination>li>span {
-    text-decoration: none;
-    color: var(--button-text);
-    background-color: var(--button-color);
-    border-color: var(--button-color);
-}
-
-.pagination>li>a:focus,
-.pagination>li>a:hover,
-.pagination>li>span:focus,
-.pagination>li>span:hover {
-    color: var(--button-text-hover);
-    background-color: var(--button-color-hover);
-    border-color: var(--button-color-hover);
-}
 
 /* FORM CONTROL */
 
-select:focus, select.form-control:focus {
-    background: #1f1f1f !important;
+select:focus,
+select.form-control:focus {
+    background: var(--drop-down-menu-bg) !important;
 }
 
 .form-control {
-    background-color: rgba(255, 255, 255, 0.15) !important;
+    background: var(--transparency-light-15) !important;
     border: 1px solid transparent;
     color: var(--text);
 }
@@ -471,7 +520,8 @@ output {
 
 /* DROPDOWN MENU */
 
-.dropdown-menu {
+.dropdown-menu,
+.tableMenu {
     background: var(--drop-down-menu-bg);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
@@ -480,6 +530,27 @@ output {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
+    color: var(--text);
+}
+
+.tableMenu {
+    background-color: var(--drop-down-menu-bg) !important;
+}
+.tableMenu .menuContent {
+    border-bottom: 1px solid var(--transparency-light-15);
+}
+.widget .widget-body table thead th .table-filter {
+    color: var(--text-muted);
+}
+.widget .widget-body table thead th .filter-active {
+    color: #f0ad4e;
+    font-size: 12px!important;
+}
+.table th button.sortable {
+    color: var(--link-color);
+}
+.small-select {
+    background-color: var(--drop-down-menu-bg);
     color: var(--text);
 }
 
@@ -492,14 +563,14 @@ output {
 .dropdown-menu>.active>a:focus,
 .dropdown-menu>.active>a:hover,
 .ui-select-bootstrap .ui-select-choices-row.active>span {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 .ui-select-bootstrap .ui-select-choices-row>span:focus,
 .ui-select-bootstrap .ui-select-choices-row>span:hover,
 .ui-select-choices-row:hover {
     color: var(--text-hover);
-    background-color: rgba(255, 255, 255, 0.15);
+    background: var(--transparency-light-15);
 }
 
 /* APP TEMPLATES */
@@ -513,7 +584,7 @@ output {
 /* ADD NETWORK */
 
 .boxselector_wrapper input[type=radio]:checked+label {
-    background: rgba(255, 255, 255, .15);
+    background: var(--transparency-light-15);
     color: var(--text-hover);
     border-color: transparent;
 }
@@ -521,7 +592,7 @@ output {
 .boxselector_wrapper label {
     -webkit-box-shadow: none;
     box-shadow: none;
-    background: rgba(0, 0, 0, 0.15);
+    background: var(--transparency-dark-15);
     border: 1px solid transparent;
 }
 
@@ -554,13 +625,13 @@ output {
 
 /* STACKS */
 .CodeMirror {
-    background: rgba(255, 255, 255, 0.10);
+    background: var(--transparency-light-10);
     color: var(--text-hover);
 }
 
 .CodeMirror-gutters {
     border-right: 1px solid rgba(255, 255, 255, 0.25);
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     caret-color: var(--text-hover);
 }
 
@@ -584,7 +655,7 @@ output {
 .nav-tabs>li.active>a:hover {
     color: var(--text-hover);
     cursor: default;
-    background-color: rgba(255, 255, 255, 0.15);
+    background: var(--transparency-light-15);
     border: 1px solid #ddd0;
     border-bottom-color: transparent;
 }
@@ -596,18 +667,18 @@ output {
 .nav>li>a:focus,
 .nav>li>a:hover {
     text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 .nav-tabs>li>a {
     border: 1px solid rgba(0, 0, 0, 0);
-    background: rgba(0, 0, 0, 0.15);
+    background: var(--transparency-dark-15)
 }
 
 /* LOGS */
 .log_viewer {
     color: var(--text-hover);
-    background-color: rgba(255, 255, 255, 0.1);
+    background: var(--transparency-light-10);
     border: 1px solid transparent;
 }
 
@@ -623,7 +694,7 @@ json-tree .key {
 
 pre {
     color: var(--text-hover);
-    background-color: rgba(255, 255, 255, .1);
+    background: var(--transparency-light-10);
     border: 1px solid transparent;
 }
 
@@ -690,17 +761,17 @@ pre {
 }
 
 .widget .widget-body table .ng-scope tr {
-    background: rgba(0, 0, 0, .25) !important;
-    background-color: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 .widget .widget-body table thead {
-    background-color: rgba(0, 0, 0, .25) !important;
-    background: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
+    background: var(--transparency-dark-25) !important;
 }
 
 .widget .widget-body table tbody .ng-isolate-scope div {
-    background-color: rgba(0, 0, 0, .25) !important;
+    background: var(--transparency-dark-25) !important;
     background: rgba(0, 0, 0, 0) !important;
 }
 
@@ -710,6 +781,60 @@ pre {
 }
 
 .widget .widget-body table thead tr:hover {
-    background-color: rgba(0, 0, 0, .35) !important;
-    background: rgba(0, 0, 0, .35) !important;
+    background: var(--transparency-dark-35) !important;
+    background: var(--transparency-dark-35) !important;
+}
+
+
+/* HOME PAGE */
+
+.app-portainer-home-EnvironmentList-EnvironmentItem-EnvironmentItem-module__wrapperButton {
+    background: rgba(0, 0, 0, 0.2);
+    color: var(--text);
+}
+
+.app-portainer-components-datatables-components-FilterSearchBar-module__searchBar {
+    border: 1px solid var(--transparency-light-15);
+}
+
+.app-portainer-components-form-components-ReactSelect-module__root .selector__control {
+    border: 1px solid var(--transparency-light-25);
+    background-color: var(--transparency-dark-25);
+}
+
+input,
+select,
+textarea {
+    background: var(--transparency-dark-25);
+}
+
+.selector__menu {
+    background-color: var(--drop-down-menu-bg) !important;
+    border: 1px solid var(--drop-down-menu-bg) !important;
+}
+
+.selector__option {
+    background-color: var(--transparency-light-05) !important;
+    border: 1px solid var(--transparency-light-05) !important;
+}
+
+:root[theme=dark] .app-portainer-components-form-components-ReactSelect-module__root .selector__multi-value,
+:root[theme=highcontrast] .app-portainer-components-form-components-ReactSelect-module__root .selector__multi-value {
+    background-color: rgb(var(--accent-color));
+    color: var(--label-text-color);
+}
+
+:root[theme=dark] .app-portainer-components-form-components-ReactSelect-module__root .selector__multi-value__label,
+:root[theme=highcontrast] .app-portainer-components-form-components-ReactSelect-module__root .selector__multi-value__label {
+    color: var(--label-text-color);
+}
+
+
+
+/* ACCENTS */
+
+.label-info,
+.label-primary {
+    background-color: rgb(var(--accent-color));
+    color: var(--label-text-color);
 }

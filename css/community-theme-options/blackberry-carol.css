@@ -1,5 +1,5 @@
 :root {
-  --main-bg-color: url("/resources/blur-noise.png"),
+  --main-bg-color: url(/resources/blur-noise.png),
   radial-gradient(at center center, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9) 120%) center center/cover no-repeat fixed, 
   radial-gradient(at bottom center, rgba(0, 0, 0, 0.15), hsla(0, 14%, 18%, 0.45), hsla(0, 18%, 5%, 0.6)) center center/cover no-repeat fixed, 
   radial-gradient(at bottom center, rgba(167, 6, 6, 0.15), hsla(0, 14%, 18%, 0), hsla(0, 18%, 5%, 0)) center center/cover no-repeat fixed, 
@@ -34,7 +34,7 @@
   --plex-poster-unwatched: rgb(100, 15, 15);
   --petio-spinner: invert(68%) sepia(13%) saturate(766%) hue-rotate(170deg) brightness(90%) contrast(79%); /* Made with https://codepen.io/jsm91/embed/ZEEawyZ */
   --gitea-color-primary-dark-4: 100, 15, 15;
-  --overseerr-gradient: url("/resources/blur-noise.png"),
+  --overseerr-gradient: url(/resources/blur-noise.png),
   radial-gradient(at center center, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9) 120%) center center/cover no-repeat fixed, 
   radial-gradient(at bottom center, rgba(0, 0, 0, 0.15), hsla(0, 14%, 18%, 0.45), hsla(0, 18%, 5%, 0.6)) center center/cover no-repeat fixed, 
   radial-gradient(at bottom center, rgba(167, 6, 6, 0.15), hsla(0, 14%, 18%, 0), hsla(0, 18%, 5%, 0)) center center/cover no-repeat fixed, 

@@ -111,7 +111,7 @@ function createApps(apps,themeOptions) {
             <a class="portfolio-box" href="resources/landing-page/assets/img/${sortedThemes[option].toLowerCase()}.png">
                 <img class="img-fluid" src="resources/landing-page/assets/img/${sortedThemes[option].toLowerCase()}-small.jpg" alt="..." />
                 <div class="portfolio-box-caption p-3 ${sortedThemes[option].toLowerCase()}-hover">
-                    <div class="project-category text-white-50">Theme</div>
+                    <div class="project-category text-light">Theme</div>
                     <div class="project-name">${sortedThemes[option][0].toUpperCase() + sortedThemes[option].slice(1)}</div>
                 </div>
             </a>

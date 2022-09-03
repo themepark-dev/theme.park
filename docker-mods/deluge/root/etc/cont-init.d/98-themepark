@@ -39,7 +39,7 @@ if [[ -z ${TP_THEME} ]]; then
 fi
 
 # Adding stylesheets
-DELUGE_INDEX_PATH=$(find -name index.html)
+DELUGE_INDEX_PATH=$(find /usr -name index.html)
 if ! grep -q "${TP_DOMAIN}/css/base" ${DELUGE_INDEX_PATH}; then
     echo '---------------------------'
     echo '|  Adding the stylesheet  |'

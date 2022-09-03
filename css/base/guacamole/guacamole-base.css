@@ -10,6 +10,8 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
+@import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
 
 * {
     outline: none !important;
@@ -24,7 +26,8 @@ h6 {
     color: var(--text-hover);
 }
 
-body {
+body,
+.logged-out-modal guac-modal {
     background: var(--main-bg-color) !important;
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
@@ -47,86 +50,6 @@ div.displayMiddle {
     -o-background-size: auto, cover;
 }
 
-input::-webkit-input-placeholder {
-    color: var(--text) !important;
-}
-
-input:focus::-webkit-input-placeholder {
-    color: var(--text-hover) !important;
-}
-
-/* Firefox < 19 */
-input:-moz-placeholder {
-    color: var(--text) !important;
-}
-
-input:focus:-moz-placeholder {
-    color: var(--text-hover) !important;
-}
-
-/* Firefox > 19 */
-input::-moz-placeholder {
-    color: var(--text) !important;
-}
-
-input:focus::-moz-placeholder {
-    color: var(--text-hover) !important;
-}
-
-/* Internet Explorer 10 */
-input:-ms-input-placeholder {
-    color: var(--text) !important;
-}
-
-input:focus:-ms-input-placeholder {
-    color: var(--text-hover) !important;
-}
-
-/* Scrollbar */
-@media only screen and (min-width: 768px) {
-    html {
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-    }
-
-    body {
-        overflow-y: auto;
-        height: 100%;
-        background: var(--main-bg-color);
-        background-repeat: repeat, no-repeat;
-        background-attachment: fixed, fixed;
-        background-position: center center, center center;
-        background-size: auto, cover;
-        -webkit-background-size: auto, cover;
-        -moz-background-size: auto, cover;
-        -o-background-size: auto, cover;
-    }
-}
-
-::-webkit-scrollbar {
-    width: 14px;
-}
-
-::-webkit-scrollbar-thumb {
-    min-height: 50px;
-    border: 3px solid transparent;
-    border-radius: 8px;
-    background-color: hsla(0, 0%, 100%, .2);
-    background-clip: padding-box;
-}
-
-::-webkit-scrollbar-track {
-    background-color: transparent;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    min-height: 50px;
-    border: 3px solid transparent;
-    border-radius: 8px;
-    background-color: hsla(0, 0%, 100%, .5);
-    background-clip: padding-box;
-}
 
 /* LOGIN MENU */
 div.login-ui {
@@ -134,9 +57,10 @@ div.login-ui {
 }
 
 .login-ui div.login-dialog {
-    background: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     border: none;
 }
+
 
 input[type="submit"],
 button,
@@ -153,24 +77,34 @@ a.button:hover {
     border: none;
     cursor: pointer;
 }
+select {
+    background: var(--transparency-dark-10);
+    color: var(--text);
+    border-color: transparent;
+}
+select:focus {
+    background-color: var(--drop-down-menu-bg);
+    color: var(--text);
+}
 
 .login-ui .login-fields .labeled-field input:focus {
-    background: rgba(0, 0, 0, 0.45) !important;
     outline: none;
 }
 
 .login-ui .login-fields .labeled-field.empty input {
-    background: rgba(0, 0, 0, 0.25) !important;
     outline: none;
+    background: rgba(0, 0, 0, 0.15);
+    caret-color: var(--text);
 }
 
 .login-ui .login-fields .labeled-field.empty input:focus {
-    background: rgba(0, 0, 0, 0.45) !important;
     outline: none;
+    color: black;
 }
 
 .login-ui .login-dialog .login-fields input {
-    background-color: rgba(0, 0, 0, 0.45) !important;
+    background: white;
+    color: black !important;
 }
 
 div.location,
@@ -179,8 +113,7 @@ input[type=email],
 input[type=number],
 input[type=password],
 textarea {
-    color: var(--text-hover) !important;
-    background: rgba(0, 0, 0, 0.25) !important;
+    color: var(--text-hover);
 }
 
 input[type=checkbox],
@@ -189,33 +122,52 @@ input[type=text],
 input[type=email],
 input[type=radio],
 textarea {
-    color: var(--text-hover) !important;
-    background: transparent;
+    color: var(--text-hover);
+}
+
+.login-ui .login-dialog .login-fields input {
+    background: white;
+    color: black !important;
 }
 
 /* HOME MENU */
 .header h2 {
-    color: var(--text-hover);
-    background-color: rgba(0, 0, 0, 0.25);
+    color: rgb(var(--accent-color));
 }
 
 .connection .icon.vnc,
 .connection .icon.rdp {
     background-image: url(/resources/guacamole/guac-monitor.png);
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: 0.75em;
+    padding-left: 2.5em;
 }
 
 .connection .icon.ssh,
 .connection .icon.telnet {
     background-image: url(/resources/guacamole/guac-text.png);
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: 0.75em;
+    padding-left: 2.5em;
 }
 
 .user-menu .menu-dropdown .menu-title {
     background-image: url(/resources/guacamole/guac-user.png);
     background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: 0.75em;
+    padding-left: 2.5em;
 }
 
 .user-menu .menu-dropdown .menu-contents li a[href="#/"] {
     background-image: url(/resources/guacamole/guac-home-dark.png);
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: 0.75em;
+    padding-left: 2.5em;
 }
 
 .user-menu .menu-dropdown .menu-contents li a[href="#/settings/users"],
@@ -223,51 +175,99 @@ textarea {
 .user-menu .menu-dropdown .menu-contents li a[href="#/settings/sessions"],
 .user-menu .menu-dropdown .menu-contents li a[href="#/settings/preferences"] {
     background-image: url(/resources/guacamole/guac-config-dark.png);
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: 0.75em;
+    padding-left: 2.5em;
 }
 
 .user-menu .menu-dropdown .menu-contents li a.logout {
     background-image: url(/resources/guacamole/guac-logout-dark.png);
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: 0.75em;
+    padding-left: 2.5em;
 }
 
 .icon.user {
     background-image: url(/resources/guacamole/guac-user.png);
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: 0.75em;
+    padding-left: 2.5em;
 }
 
 .pager .icon.first-page {
     background-image: url(/resources/guacamole/guac-first-page.png);
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: 0.75em;
+    padding-left: 2.5em;
 }
 
 .pager .icon.prev-page {
     background-image: url(/resources/guacamole/guac-prev-page.png);
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: 0.75em;
+    padding-left: 2.5em;
 }
 
 .pager .icon.next-page {
     background-image: url(/resources/guacamole/guac-next-page.png);
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: 0.75em;
+    padding-left: 2.5em;
 }
 
 .pager .icon.last-page {
     background-image: url(/resources/guacamole/guac-last-page.png);
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: 0.75em;
+    padding-left: 2.5em;
 }
 
 .loading::before {
-    background-image: url('/resources/guacamole/cog.png');
+    background-image: url(/resources/guacamole/cog.png);
 }
 
 table.sorted th.sort-primary.sort-descending:after {
     background-image: url(/resources/guacamole/up.png);
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: 0.75em;
+    padding-left: 2.5em;
 }
 
 .menu-dropdown .menu-indicator {
     background-image: url(/resources/guacamole/down.png);
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: 0.75em;
+    padding-left: 2.5em;
 }
 
 .menu-dropdown .menu-indicator:hover {
     background-image: url(/resources/guacamole/down.png);
     color: #f9be03;
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: 0.75em;
+    padding-left: 2.5em;
 }
 
 table.sorted th.sort-primary:after {
     background-image: url(/resources/guacamole/down.png);
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: 0.75em;
+    padding-left: 2.5em;
+}
+
+.form-field .password-field input[type=password]~.icon.toggle-password {
+    filter: invert(1);
 }
 
 thead {
@@ -280,17 +280,12 @@ table.sorted td {
 }
 
 .settings table.session-list tr.session:hover {
-    background: rgba(255, 255, 255, 0.15);
+    background: var(--transparency-light-15);
 }
 
 .menu-dropdown.open,
 .menu-dropdown.open:hover {
-    background: rgba(0, 0, 0, 0.25);
-}
-
-.menu-dropdown {
-    border-left: none;
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25)
 }
 
 .menu-dropdown .menu-contents li a {
@@ -303,17 +298,16 @@ table.sorted td {
 
 .menu-dropdown .menu-contents li a.current,
 .menu-dropdown .menu-contents li a.current:hover {
-    background-color: rgba(0, 0, 0, .25);
     color: var(--text-hover)
 }
 
 .menu-dropdown .menu-contents li a:hover {
-    background-color: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25);
     color: var(--text-hover);
 }
 
 .menu-dropdown:hover {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     color: var(--text-hover);
 }
 
@@ -333,9 +327,6 @@ table.sorted td {
     color: var(--text-hover);
 }
 
-.header .filter {
-    background-color: rgba(0, 0, 0, 0.25);
-}
 
 .filter .search-string {
     background-image: url(/resources/guacamole/magnifier.png) !important;
@@ -346,7 +337,7 @@ table.sorted td {
     padding-left: 2.25em !important;
     width: 100%;
     max-width: none;
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border: 0;
 }
 
@@ -361,6 +352,7 @@ textarea {
 
 
 .user a:visited,
+.user-group a:visited,
 .connection a:visited,
 .connection-group a:visited {
     text-decoration: none;
@@ -368,12 +360,12 @@ textarea {
 }
 
 .recent-connections .connection:hover {
-    background: hsla(0, 0%, 100%, 0.08);
+    background: var(--transparency-dark-10);
     color: var(--link-color-hover);
 }
 
 .list-item:not(.selected) .caption:hover {
-    background: hsla(0, 0%, 100%, 0.07);
+    background: var(--transparency-dark-10);
     color: var(--link-color-hover);
 }
 
@@ -414,7 +406,7 @@ textarea {
 
 .clipboard,
 .clipboard-service-target {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     color: var(--text-hover);
 }
 
@@ -453,10 +445,11 @@ textarea {
 }
 
 .page-tabs .page-list li a[href]:hover {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 .user a:visited,
+.user-group a:visited,
 .connection a:visited,
 .connection-group a:visited {
     text-decoration: none;
@@ -472,6 +465,7 @@ a.ng-binding:hover:not(.add-user):not(.button) {
 }
 
 .user a,
+.user-group a,
 .connection a,
 .connection-group a,
 a.ng-binding:not(.add-user):not(.button) {
@@ -486,11 +480,23 @@ input[type=number],
 input[type=password],
 textarea {
     border: 0;
-    background: rgba(0, 0, 0, .25);
+    background: var(--transparency-dark-25)
 }
 
 .location-chooser .dropdown {
     background: #666;
+}
+
+img.collapse {
+    filter: invert(1);
+}
+
+img.expand {
+    filter: invert(1);
+}
+
+.icon.user-group {
+    filter: invert(1);
 }
 
 /* USER SETTINGS */
@@ -503,14 +509,14 @@ textarea {
 .page-tabs .page-list li a[href].current:hover,
 .section-tabs li a.current,
 .section-tabs li a.current:hover {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     cursor: default;
     color: rgb(var(--accent-color)) !important;
 }
 
 .page-tabs .page-list li a[href]:hover,
 .section-tabs li a:hover {
-    background-color: hsla(0, 0%, 100%, 0.07);
+    background: var(--transparency-dark-10);
     color: var(--text-hover) !important;
 }
 
@@ -523,7 +529,7 @@ textarea {
 }
 
 .manage-user .notice.read-only {
-    background: hsla(0, 0%, 100%, 0.07);
+    background: var(--transparency-dark-10);
 }
 
 /* DUA 2FA PAGE */
@@ -639,4 +645,12 @@ input[type=radio] {
 
 .related-objects .abbreviated-related-objects ul li label span {
     color: var(--label-text-color) !important;
+}
+
+.attributes .form h3, .header {
+    background: var(--transparency-dark-25)
+}
+
+.connection-parameters .form .fields {
+    border-left: 3px solid rgb(var(--accent-color));
 }

@@ -1,0 +1,347 @@
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+
+/*		   		        Made by @gilbN					 */
+/* 			      https://github.com/gilbN/theme.park			 */
+
+@import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
+
+body {
+    background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    color: var(--text);
+}
+
+.header, .footer {
+    background: var(--transparency-dark-25);
+    color: var(--text);
+}
+
+.modal-content {
+    background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    color: var(--text);
+    border: none;
+}
+
+.modal-header {
+    background: var(--modal-header-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    border-bottom: 1px solid var(--transparency-light-10);
+    color: var(--text-hover)
+}
+
+.modal-footer {
+    background: var(--modal-footer-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    border-top: 1px solid var(--transparency-light-10);
+}
+/* NAVIGATION */
+
+.navbar-light .navbar-brand {
+    color: rgb(var(--accent-color))
+}
+
+.navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
+    color: var(--accent-color-hover);
+}
+
+.nav-tabs {
+    color: var(--link-color);
+}
+.nav-tabs .nav-link:hover:not(.disabled) {
+    border-color: var(--accent-color-hover);
+    color: var(--accent-color-hover);
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: var(--accent-color-hover);
+    background-color: transparent;
+    border-color: var(--accent-color-hover) var(--accent-color-hover) var(--accent-color-hover);
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-light .navbar-toggler {
+   color: rgba(0,0,0,0.5);
+   border-color: var(--transparency-light-10);
+}
+
+.nav-tabs {
+    border-bottom: 1px solid var(--transparency-light-10);
+}
+
+
+/* DROPDOWNS AND SELECTS */
+.dropdown-menu {
+    background: var(--drop-down-menu-bg);
+    color: var(--text);
+    border: 1px solid var(--transparency-light-10);
+}
+.dropdown-item,
+.card-options a {
+    color: var(--text);
+}
+.dropdown-item:hover, .dropdown-item:focus,
+.card-options a:hover {
+    color: var(--text-hover);
+    text-decoration: none;
+    background-color: var(--transparency-dark-10);
+}
+
+.dropdown-header {
+    color: var(--text-hover);
+}
+
+.dropdown-icon {
+    color: rgb(var(--accent-color));
+}
+
+.dropdown-divider {
+    border-top: 1px solid var(--transparency-light-10);
+}
+
+/* TEXT */
+p {
+    color: var(--text);
+}
+.text-default {
+    color: var(--text) !important; 
+}
+
+.text-muted,
+.custom-switch-description,
+.text-gray,
+.text-secondary {
+    color: var(--text-muted) !important;
+}
+
+.text-blue {
+    color: rgb(var(--accent-color)) !important;
+}
+
+/* LINKS */
+a,.footer a:not(.btn) {
+    color: var(--link-color);
+}
+a:hover, a:focus, .footer a:not(.btn):hover {
+    color: var(--link-color-hover);
+}
+
+/* CARDS */
+.card {
+    background: var(--transparency-dark-25);
+}
+
+.card-status[class*="bg-"] {
+    background: rgb(var(--accent-color)) !important;
+}
+
+
+/* FORMS AND INPUTS */
+
+.form-control,
+.selectize-input, .selectize-control.single .selectize-input.input-active,
+.selectize-control.single {
+    color: var(--text);
+    background-color: var(--transparency-dark-15);
+    border: 1px solid rgba(0,40,100,0.12);
+}
+.form-control:focus,
+.selectize-input:focus,
+.selectize-input.focus,
+.selectize-input.full {
+    color: var(--text-hover);
+    background-color: var(--transparency-dark-25);
+    border-color: rgb(var(--accent-color));
+    outline: 0;
+    box-shadow: 0 0 0 2px rgb(var(--accent-color),.25);
+}
+
+.form-control:disabled, .form-control[readonly] {
+    background-color: var(--transparency-light-35);
+    opacity: 1;
+}
+
+select:focus {
+    background: var(--drop-down-menu-bg) !important;
+    color: var(--text) !important;
+}
+
+.selectize-dropdown {
+    background: var(--drop-down-menu-bg);
+    border: 1px solid var(--transparency-light-10);
+}
+
+.selectize-dropdown .active {
+    color: var(--text);
+    background-color: var(--transparency-light-10);
+}
+
+.selectize-control.single .selectize-input:after {
+    background: none;
+}
+
+.selectize-dropdown, .selectize-input, .selectize-input input {
+    color: var(--text);
+}
+
+.selectize-control.multi .selectize-input>div {
+    background: rgb(var(--accent-color));
+    color: var(--label-text-color);
+}
+
+.selectize-dropdown .create {
+    color: var(--text);
+}
+.selectize-dropdown .active.create {
+    color: var(--text-hover);
+}
+
+.custom-file-label {
+    color: var(--text-muted);
+    background: var(--transparency-dark-15);
+    border: 1px solid var(--transparency-light-10);
+}
+
+.custom-file-label::after {
+    color: var(--button-text);
+    background-color: var(--button-color);
+    border-left: 1px solid var(--transparency-light-10);
+}
+
+.form-fieldset {
+    background: var(--transparency-dark-25);
+    border: 1px solid var(--transparency-light-10);
+}
+
+/* BUTTONS */
+
+[class*="btn-"]:not(.btn-list),
+.card-options a:not(.dropdown-item.add-item),
+.input-group-text {
+    color: var(--button-text);
+    background-color: var(--button-color);
+    border-color: var(--button-color); 
+}
+
+[class*="btn-"]:hover:not(.btn-list),
+.card-options a:hover:not(.dropdown-item.add-item),
+[class*="btn-"]:not(:disabled):not(.disabled):not(.btn-list):active, [class*="btn-"]:not(:disabled):not(.disabled):not(.btn-list).active, .show>[class*="btn-"].dropdown-toggle,
+[class*="btn-"].disabled,[class*="btn-"]:disabled {
+    color: var(--button-text-hover);
+    background-color: var(--button-color-hover);
+    border-color: var(--button-color-hover);
+}
+
+[class*="btn-"]:focus, [class*="btn-"].focus {
+    box-shadow: 0 0 0 2px rgb(var(--accent-color), .5);
+}
+.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .show>.btn-secondary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 2px rgb(var(--accent-color), .5);
+}
+
+.custom-switch-input:checked ~ .custom-switch-indicator {
+    background: var(--button-color);
+}
+
+.custom-switch-input:focus ~ .custom-switch-indicator {
+    box-shadow: 0 0 0 2px rgba(var(--accent-color),0.25);
+    border-color: var(--button-color)
+}
+
+.custom-switch-description {
+    margin-left: .5rem;
+    color: #6e7687;
+    transition: .3s color
+}
+
+.custom-switch-input:checked ~ .custom-switch-description {
+    color: #495057
+}
+
+/* TABLES */
+.table th, .text-wrap table th {
+    color: var(--text-hover);
+}
+
+.table th, .text-wrap table th, .table td, .text-wrap table td {
+    border-top: 1px solid var(--transparency-light-10);
+}
+
+.table thead th, .text-wrap table thead th {
+    border-bottom: 1px solid rgb(var(--accent-color));
+}
+
+/* OTHER */
+
+.loader {
+    color: rgb(var(--accent-color));
+}
+
+.tag {
+    color: var(--label-text-color);
+    background-color: rgb(var(--accent-color));
+}
+
+.tag[class*="hover-"]:hover, [class*="hover-"]:active, [class*="hover-"]:focus {
+    background-color: var(--accent-color-hover);
+    color: var(--label-text-color);
+}
+
+[class*="tag-"] {
+    background-color: var(--accent-color-hover);
+    color: var(--label-text-color);
+}
+
+.icon {
+    color: var(--text) !important;
+}
+
+.close {
+    color: var(--text);
+    text-shadow: 0 1px 0 var(--text);
+}
+.close:hover, .close:focus {
+    color: var(--text-hover);
+}
+
+pre {
+    color: var(--text);
+    background-color: var(--transparency-dark-15);
+
+    text-shadow: 0 1px transparent;
+}

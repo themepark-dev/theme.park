@@ -1,4 +1,4 @@
-<img src="banners/tp_banner.png"/>
+<a href="https://theme-park.dev"><img src="banners/tp_banner.png"/></a> 
 
 [![Docs](https://img.shields.io/static/v1.svg?color=009688&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=theme-park.dev&message=Docs)](https://docs.theme-park.dev "Documentation for all the themes in this repository.")
 [![Discord](https://img.shields.io/discord/591352397830553601.svg?color=009688&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=Discord&logo=discord)](https://discord.gg/HM5uUKU "Discord for theme installation support")
@@ -23,7 +23,7 @@
 
 <a href="https://docs.theme-park.dev/theme-options/dracula"><img src="https://docs.theme-park.dev/theme-options/dracula_banner_small.png" alt="Dracula" width="49.49%"/></a>
 <a href="https://docs.theme-park.dev/theme-options/overseerr"><img src="https://docs.theme-park.dev/theme-options/overseerr_banner_small.png" alt="Overseerr" width="49.49%"/></a>
-<a href="https://docs.theme-park.dev/theme-options/organizr"><img src="https://docs.theme-park.dev/theme-options/organizr_banner_small.png" alt="Organizr"  width="49.49%"/></a>
+<a href="https://docs.theme-park.dev/theme-options/organizr"><img src="https://docs.theme-park.dev/theme-options/organizr_banner_small.png?1" alt="Organizr"  width="49.49%" /></a>
 <a href="https://docs.theme-park.dev/theme-options/aquamarine"><img src="https://docs.theme-park.dev/theme-options/aquamarine_banner_small.png" alt="Aquamarine"  width="49.49%"/></a>
 <a href="https://docs.theme-park.dev/theme-options/hotline"><img src="https://docs.theme-park.dev/theme-options/hotline_banner_small.png" alt="Hotline"  width="49.49%"/></a>
 <a href="https://docs.theme-park.dev/theme-options/hotpink"><img src="https://docs.theme-park.dev/theme-options/hotpink_banner_small.png" alt="Hotpink"  width="49.49%"/></a>
@@ -31,8 +31,11 @@
 <a href="https://docs.theme-park.dev/theme-options/dark"><img src="https://docs.theme-park.dev/theme-options/dark_banner_small.png" alt="Dark"  width="49.49%"/></a>
 <a href="https://docs.theme-park.dev/theme-options/plex"><img src="https://docs.theme-park.dev/theme-options/plex_banner_small.png" alt="Plex"  width="49.49%"/></a>
 <a href="https://docs.theme-park.dev/theme-options/nord"><img src="https://docs.theme-park.dev/theme-options/nord_banner_small.png" alt="Nord"  width="49.49%"/></a>
+<a href="https://docs.theme-park.dev/theme-options/maroon"><img src="https://docs.theme-park.dev/theme-options/maroon_banner_small.png" alt="Maroon"  width="49.49%"/></a>
 
 <h2><a href="https://docs.theme-park.dev/setup">Installation</a></h2>
+
+- <h3><a href="https://docs.theme-park.dev/setup/#docker">Docker image</a></h3>
 
 <h2><a href="https://docs.theme-park.dev/themes/addons">Addons</a></h2>
 
@@ -67,15 +70,20 @@
 <p><a href="https://docs.theme-park.dev/themes/prowlarr">Prowlarr</a></p>
 </td>
 <td>
+<p><a href="https://docs.theme-park.dev/themes/whisparr"><img src="https://docs.theme-park.dev/site_assets/whisparr/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/whisparr">Whisparr</a></p>
+</td>
+<td>
 <p><a href="https://docs.theme-park.dev/themes/bazarr"><img src="https://docs.theme-park.dev/site_assets/bazarr/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/bazarr">Bazarr</a></p>
 </td>
+</tr>
+
+<tr>
 <td>
 <p><a href="https://docs.theme-park.dev/themes/plex"><img src="https://docs.theme-park.dev/site_assets/plex/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/plex">Plex</a></p>
 </td>
-</tr>
-<tr>
 <td>
 <p><a href="https://docs.theme-park.dev/themes/jellyfin"><img src="https://docs.theme-park.dev/site_assets/jellyfin/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/jellyfin">Jellyfin</a></p>
@@ -100,12 +108,13 @@
 <p><a href="https://docs.theme-park.dev/themes/overseerr"><img src="https://docs.theme-park.dev/site_assets/overseerr/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/overseerr">Overseerr</a></p>
 </td>
+</tr>
+
+<tr>
 <td>
 <p><a href="https://docs.theme-park.dev/themes/deluge"><img src="https://docs.theme-park.dev/site_assets/deluge/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/deluge">Deluge</a></p>
 </td>
-</tr>
-<tr>
 <td>
 <p><a href="https://docs.theme-park.dev/themes/qbittorrent"><img src="https://docs.theme-park.dev/site_assets/qbittorrent/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/qbittorrent">qBittorrent</a></p>
@@ -130,12 +139,13 @@
 <p><a href="https://docs.theme-park.dev/themes/nzbhydra2"><img src="https://docs.theme-park.dev/site_assets/nzbhydra2/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/nzbhydra2">NZBHydra 2</a></p>
 </td>
+</tr>
+
+<tr>
 <td>
 <p><a href="https://docs.theme-park.dev/themes/jackett"><img src="https://docs.theme-park.dev/site_assets/jackett/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/jackett">Jackett</a></p>
 </td>
-</tr>
-<tr>
 <td>
 <p><a href="https://docs.theme-park.dev/themes/netdata"><img src="https://docs.theme-park.dev/site_assets/netdata/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/netdata">Netdata</a></p>
@@ -161,21 +171,20 @@
 <p><a href="https://docs.theme-park.dev/themes/calibreweb"><img src="https://docs.theme-park.dev/site_assets/calibreweb/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/calibreweb">Calibre-web</a></p>
 </td>
+</tr>
+
+<tr>
 <td>
 <p><a href="https://docs.theme-park.dev/themes/xbackbone"><img src="https://docs.theme-park.dev/site_assets/xbackbone/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/xbackbone">Xbackbone</a></p>
 </td>
-</tr>
-<tr>
 <td>
 <p><a href="https://docs.theme-park.dev/themes/filebrowser"><img src="https://docs.theme-park.dev/site_assets/filebrowser/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/filebrowser">Filebrowser</a></p>
-
 <td>
 <p><a href="https://docs.theme-park.dev/themes/librespeed"><img src="https://docs.theme-park.dev/site_assets/librespeed/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/librespeed">librespeed</a></p>
 </td>
-
 <td>
 <p><a href="https://docs.theme-park.dev/themes/lazylibrarian"><img src="https://docs.theme-park.dev/site_assets/lazylibrarian/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/lazylibrarian">Lazylibrarian</a></p>
@@ -192,12 +201,13 @@
 <p><a href="https://docs.theme-park.dev/themes/uptime-kuma"><img src="https://docs.theme-park.dev/site_assets/uptime-kuma/logo.png" alt="" width="48" height="45" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/uptime-kuma">Uptime Kuma</a></p>
 </td>
+</tr>
+
+<tr>
 <td>
 <p><a href="https://docs.theme-park.dev/themes/mylar3"><img src="https://docs.theme-park.dev/site_assets/mylar3/logo.png" alt="" width="48" height="45" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/mylar3">Mylar 3</a></p>
 </td>
-</tr>
-<tr>
 <td>
 <p><a href="https://docs.theme-park.dev/themes/bitwarden"><img src="https://docs.theme-park.dev/site_assets/bitwarden/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/bitwarden">Bitwarden</a></p>
@@ -222,12 +232,13 @@
 <p><a href="https://docs.theme-park.dev/themes/unraid"><img src="https://docs.theme-park.dev/site_assets/unraid/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/unraid">Unraid</a></p>
 </td>
+</tr>
+
+<tr>
 <td>
 <p><a href="https://docs.theme-park.dev/themes/moviematch"><img src="https://docs.theme-park.dev/site_assets/moviematch/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/moviematch">Moviematch</a></p>
 </td>
-</tr>
-<tr>
 <td>
 <p><a href="https://docs.theme-park.dev/themes/petio"><img src="https://docs.theme-park.dev/site_assets/petio/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/petio">Petio</a></p>
@@ -252,12 +263,13 @@
 <p><a href="https://docs.theme-park.dev/themes/synclounge"><img src="https://docs.theme-park.dev/site_assets/synclounge/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/synclounge">Synclounge</a></p>
 </td>
-<td>
-<p><a href="https://docs.theme-park.dev/themes/thelounge"><img src="https://docs.theme-park.dev/site_assets/thelounge/logo.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://docs.theme-park.dev/themes/thelounge">The Lounge (Deprecated)</a></p>
-</td>
 </tr>
+
 <tr>
+<td>
+<p><a href="https://docs.theme-park.dev/themes/nginx-proxy-manager"><img src="https://docs.theme-park.dev/site_assets/nginx-proxy-manager/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/nginx-proxy-manager">Nginx Proxy Manager</a></p>
+</td>
 <td>
 <p><a href="https://docs.theme-park.dev/themes/grafana"><img src="https://docs.theme-park.dev/site_assets/grafana/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/grafana">Grafana (Deprecated)</a></p>
@@ -279,20 +291,11 @@
 <p><a href="https://docs.theme-park.dev/themes/plpp">PLPP (Deprecated)</a></p>
 </td>
 <td>
-<!-- <p><a href=""><img src="" alt="" width="48" height="48" /></a></p>
-<p><a href=""></a></p> -->
-</td>
-<td>
-<!-- <p><a href=""><img src="" alt="" width="48" height="48" /></a></p>
-<p><a href=""></a></p> -->
+<p><a href="https://docs.theme-park.dev/themes/thelounge"><img src="https://docs.theme-park.dev/site_assets/thelounge/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/thelounge">The Lounge (Deprecated)</a></p>
 </td>
 </tr>
 </tbody>
 </table>
 </div>
-
 <br>
-
-<h3>Honourable mentions</h3>
-
-<p><a href="https://github.com/Archmonger/Blackberry-Themes">Archmonger/Blackberry-Themes</a></p>

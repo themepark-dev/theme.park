@@ -9,6 +9,10 @@
 
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
+
+@import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
+
 * {
     outline: none !important;
 }
@@ -70,7 +74,7 @@ hr {
     min-height: 50px;
     border: 3px solid transparent;
     border-radius: 8px;
-    background-color: hsla(0, 0%, 100%, .2);
+    background: var(--transparency-dark-20);
     background-clip: padding-box;
 }
 
@@ -82,7 +86,7 @@ hr {
     min-height: 50px;
     border: 3px solid transparent;
     border-radius: 8px;
-    background-color: hsla(0, 0%, 100%, .5);
+    background: var(--transparency-light-50);
     background-clip: padding-box;
 }
 
@@ -101,7 +105,7 @@ hr {
 .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover,
 .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
     color: var(--text-hover) !important;
-    background-color: rgba(255, 255, 255, 0.15);
+    background: var(--transparency-light-15);
 }
 
 
@@ -119,7 +123,7 @@ hr {
 .dataTables_wrapper .dataTables_paginate .paginate_button {
     color: var(--button-text) !important;
     border: 1px solid transparent;
-    background: rgba(255, 255, 255, 0.15);
+    background: var(--transparency-light-15);
 }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
@@ -140,7 +144,7 @@ a:hover {
 }
 
 .dataTables_wrapper .dataTables_filter input {
-    background: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
     border: none;
     outline: none;
     color: var(--text-hover);
@@ -165,14 +169,14 @@ table.dataTable.cell-border tbody td {
 button,
 input,
 textarea {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border: none;
     outline: none;
 }
 
 
 #page {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 table.dataTable.stripe tbody tr.odd,
@@ -182,7 +186,7 @@ table.dataTable.display tbody tr.odd {
 
 table.dataTable.hover tbody tr:hover,
 table.dataTable.display tbody tr:hover {
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 table.dataTable tbody tr {
@@ -201,13 +205,13 @@ table.dataTable thead td {
 
 .form-control {
     color: var(--text-hover);
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border: 1px solid #ccc0;
 
 }
 
 select {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     color: var(--text) !important;
     border: 1px solid rgba(0, 0, 0, 0) !important;
     -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
@@ -218,9 +222,9 @@ select {
 }
 
 select:focus {
-    background: #1f1f1f !important;
+    background: var(--drop-down-menu-bg) !important;
     color: var(--text) !important;
-    border: 1px solid #1f1f1f !important;
+    border: 1px solid var(--drop-down-menu-bg) !important;
     -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
 }
 
@@ -234,13 +238,13 @@ select:focus {
 .form-control[disabled],
 .form-control[readonly],
 fieldset[disabled] .form-control {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 .dataTables_length select,
 .dataTables_filter input,
 .dataTable.compact tfoot td select {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border: 1px solid rgba(204, 204, 204, 0);
 }
 
@@ -301,7 +305,7 @@ fieldset[disabled] .form-control {
 .dropdown-menu>li>a:focus,
 .dropdown-menu>li>a:hover {
     color: var(--text-hover);
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 .dropdown-menu>.active>a,
@@ -309,7 +313,7 @@ fieldset[disabled] .form-control {
 .dropdown-menu>.active>a:hover {
     color: var(--text-hover);
     text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.15);
+    background: var(--transparency-light-15);
     outline: 0;
 }
 
@@ -375,7 +379,7 @@ fieldset[disabled] .btn-primary.focus,
 fieldset[disabled] .btn-primary:active,
 fieldset[disabled] .btn-primary:focus,
 fieldset[disabled] .btn-primary:hover {
-    background-color: hsla(0, 0%, 100%, 0.35);
+    background: var(--transparency-light-35);
     border-color: hsla(0, 0%, 100%, 0.35);
 }
 
@@ -403,7 +407,7 @@ fieldset[disabled] .btn-primary:hover {
 
 .input-group-addon {
     color: var(--text-hover);
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
     border: 1px solid #0000;
 
 }

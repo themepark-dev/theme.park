@@ -10,12 +10,14 @@
 /*		   		        Made by @gilbN					 */
 /* 			      https://github.com/gilbN/theme.park			 */
 
+@import url("/css/defaults/transparent.css");
+
 #chat .userlist .names {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25)
 }
 
 #chat .user-mode:before {
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25)
 }
 
 @media (max-width: 768px) {
@@ -37,7 +39,7 @@
     #viewport.menu-dragging #sidebar,
     #viewport.menu-open #sidebar {
         box-shadow: 0 0 25px 0 rgba(0, 0, 0, .5);
-        background: rgba(0, 0, 0, 0.85);
+        background: var(--transparency-dark-85)
     }
 }
 
@@ -53,20 +55,20 @@
 }
 
 #form {
-    background-color: rgba(0, 0, 0, 0.45);
+    background: var(--transparency-dark-45);
     border-color: #0086ff00;
     color: var(--body-color);
 }
 
 #sidebar .active,
 #sidebar .active:hover {
-    background-color: rgba(0, 0, 0, 0.25);
+    background: var(--transparency-dark-25);
 }
 
 #chat .msg.motd .text,
 code,
 .irc-monospace {
-    background: rgba(0, 0, 0, 0.45);
+    background: var(--transparency-dark-45);
     color: #f3f3f3;
 }
 
@@ -78,7 +80,7 @@ code,
 }
 
 #chat .msg[data-type=motd] .text {
-    background: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 /* Dropdown menu */
@@ -106,7 +108,7 @@ code,
 .textcomplete-item:focus,
 .textcomplete-item:hover,
 .textcomplete-menu .active {
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
     transition: none;
     outline: 0;
 }
@@ -125,12 +127,12 @@ code,
 }
 
 #chat .userlist .count {
-    background-color: rgba(0, 0, 0, 0.6);
+    background: var(--transparency-dark-60);
 }
 
 #footer button:hover,
 #sidebar .chan:hover {
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
 }
 
 #settings .extra-help:before {

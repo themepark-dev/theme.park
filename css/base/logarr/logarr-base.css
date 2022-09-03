@@ -10,6 +10,8 @@
 /*		   		        Made by @gilbN					 */
 /*			      https://github.com/gilbN/theme.park			 */
 
+@import url("/css/defaults/transparent.css");
+
 body {
     font-family: Open Sans Bold, Helvetica Neue, Helvetica, Arial, sans-serif;
     background: var(--main-bg-color) !important;
@@ -56,13 +58,13 @@ body {
 }
 
 .expand::-webkit-scrollbar-thumb {
-    background-color: hsla(0, 0%, 100%, .2) !important;
+    background: var(--transparency-dark-20) !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
 }
 
 .expand::-webkit-scrollbar-thumb:hover {
-    background-color: hsla(0, 0%, 100%, .5) !important;
+    background: var(--transparency-light-50) !important;
 }
 
 body::-webkit-scrollbar-track {
@@ -76,18 +78,18 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: hsla(0, 0%, 100%, .2) !important;
+    background: var(--transparency-dark-20) !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-    background-color: hsla(0, 0%, 100%, .5) !important;
+    background: var(--transparency-light-50) !important;
 }
 
 .flex-child {
     border-radius: 0px;
-    background-color: rgba(255, 255, 255, 0.08);
+    background: var(--transparency-light-10);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -158,7 +160,7 @@ body.fade-out {
 }
 
 .expandtoggle:hover {
-    background-color: rgba(255, 255, 255, 0.08) !important;
+    background: var(--transparency-light-10) !important;
 }
 
 .expandtoggle:checked~.expandtoggle::before {
@@ -190,7 +192,7 @@ body.fade-out {
     overflow: auto;
     transition: height 0.5s;
     color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.3);
+    background: var(--transparency-dark-30);
     word-wrap: break-word;
     padding: 0 10px 0 10px;
 }
@@ -263,55 +265,55 @@ input:valid {
 /* Sidebar */
 #sidebar-wrapper {
     box-shadow: none !important;
-    background-color: rgba(0, 0, 0, 0.07);
+    background: var(--transparency-dark-10);
 }
 
 .sidebar-nav li:hover:before {
     -webkit-transition: none !important;
     transition: none !important;
-    background-color: rgba(0, 0, 0, 0.07);
+    background: var(--transparency-dark-10);
 }
 
 .sidebar-nav li:before {
-    background-color: rgba(0, 0, 0, 0.07);
+    background: var(--transparency-dark-10);
     transition: none !important;
     -webkit-transition: none !important;
 }
 
 .sidebar-nav li:first-child a {
-    background-color: rgba(0, 0, 0, 0.07);
+    background: var(--transparency-dark-10);
 }
 
 .sidebar-nav li:nth-child(2):before {
-    background-color: rgba(0, 0, 0, 0.07);
+    background: var(--transparency-dark-10);
 }
 
 .sidebar-nav li:nth-child(3):before {
-    background-color: rgba(0, 0, 0, 0.07);
+    background: var(--transparency-dark-10);
 }
 
 .sidebar-nav li:nth-child(4):before {
-    background-color: rgba(0, 0, 0, 0.07);
+    background: var(--transparency-dark-10);
 }
 
 .sidebar-nav li:nth-child(5):before {
-    background-color: rgba(0, 0, 0, 0.07);
+    background: var(--transparency-dark-10);
 }
 
 .sidebar-nav li:nth-child(6):before {
-    background-color: rgba(0, 0, 0, 0.07);
+    background: var(--transparency-dark-10);
 }
 
 .sidebar-nav li:nth-child(7):before {
-    background-color: rgba(0, 0, 0, 0.07);
+    background: var(--transparency-dark-10);
 }
 
 .sidebar-nav li:nth-child(8):before {
-    background-color: rgba(0, 0, 0, 0.07);
+    background: var(--transparency-dark-10);
 }
 
 .sidebar-nav li:nth-child(9):before {
-    background-color: rgba(0, 0, 0, 0.07);
+    background: var(--transparency-dark-10);
 }
 
 #modalloading {
@@ -339,7 +341,7 @@ input:valid {
 }
 
 #stats {
-    background-color: rgba(0, 0, 0, .15) !important;
+    background: var(--transparency-dark-15) !important;
     padding-left: .0rem !important;
     padding-right: 1.11rem !important;
     box-shadow: none;
@@ -403,13 +405,13 @@ input:valid {
 }
 
 #time {
-    background-color: rgba(0, 0, 0, .15) !important;
+    background: var(--transparency-dark-15) !important;
     color: var(--text-hover) !important;
     box-shadow: none;
 }
 
 #slidertable {
-    background-color: rgba(0, 0, 0, .15) !important;
+    background: var(--transparency-dark-15) !important;
     box-shadow: none;
 }
 
@@ -432,14 +434,14 @@ input:valid {
 
 /*Service tile*/
 .col-lg-4 {
-    background-color: rgba(0, 0, 0, .15) !important;
+    background: var(--transparency-dark-15) !important;
     margin: 1rem .1rem 1.5rem 1rem !important;
     width: 9rem !important;
     box-shadow: none;
 }
 
 .col-lg-4:hover {
-    background-color: hsla(0, 0%, 100%, .08) !important;
+    background: var(--transparency-dark-10) !important;
     margin: 1rem .1rem 1.5rem 1rem !important;
     width: 9rem !important;
     box-shadow: none;
@@ -480,7 +482,7 @@ input:valid {
 }
 
 #clock {
-    background-color: rgba(0, 0, 0, .15) !important;
+    background: var(--transparency-dark-15) !important;
     color: var(--text-hover) !important;
     box-shadow: none;
 }
@@ -497,7 +499,7 @@ input:valid {
 
 .pace,
 .pace-progress {
-    background: rgba(0, 0, 0, .15) !important;
+    background: var(--transparency-dark-15) !important;
 }
 
 .pace,
@@ -574,7 +576,7 @@ input:valid {
 
 @media only screen and (max-width: 768px) {
     #dateRight {
-        background-color: rgba(0, 0, 0, .15) !important;
+        background: var(--transparency-dark-15) !important;
         color: var(--text-hover) !important;
         box-shadow: none;
     }

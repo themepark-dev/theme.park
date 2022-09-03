@@ -11,6 +11,7 @@
 /* 			      https://github.com/gilbN/theme.park			 */
 
 @import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
 
 body {
     background: var(--main-bg-color);
@@ -61,7 +62,7 @@ body *:hover::-webkit-scrollbar-thumb {
     min-height: 50px;
     border: 3px solid transparent;
     border-radius: 8px;
-    background-color: hsla(0, 0%, 100%, .2);
+    background: var(--transparency-dark-20);
     background-clip: padding-box;
 }
 
@@ -73,7 +74,7 @@ body *:hover::-webkit-scrollbar-thumb {
     min-height: 50px;
     border: 3px solid transparent;
     border-radius: 8px;
-    background-color: hsla(0, 0%, 100%, .5);
+    background: var(--transparency-light-50);
     background-clip: padding-box;
 }
 
@@ -113,7 +114,7 @@ h6,
 }
 
 .login__form .card {
-    background: rgba(0, 0, 0, 0.08);
+    background: var(--transparency-dark-10);
     border: 1px solid rgb(0 0 0 / 0.08);
 }
 
@@ -183,7 +184,7 @@ h6,
 
 /* FOOTER */
 .footer {
-    background: rgba(0, 0, 0, 0.08);
+    background: var(--transparency-dark-10);
     border-top: 1px solid rgba(255, 255, 255, 0.03);
     color: var(--text);
 }
@@ -235,7 +236,7 @@ h6,
 
 .tooltip-custom__container .button-action--arrow-option:not(:disabled):hover {
     cursor: pointer;
-    background: rgb(0 0 0 / 0.15);
+    background: var(--transparency-dark-15);
     overflow: hidden;
 }
 
@@ -245,7 +246,7 @@ h6,
 
 /* CARDS*/
 .card {
-    background-color: rgb(0 0 0 / 8%);
+    background-color: var(--transparency-dark-10);
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: var(--text);
 }
@@ -331,7 +332,7 @@ h6,
 .dropdown-item:focus {
     color: var(--text-hover);
     text-decoration: none;
-    background-color: rgb(255 255 255 / 0.08);
+    background-color: var(--transparency-dark-10);
 }
 
 .select__menu {
@@ -347,7 +348,7 @@ h6,
 }
 
 .select__option:hover {
-    background: rgba(255, 255, 255, .08) !important;
+    background: var(--transparency-dark-10) !important;
 }
 
 .select__option {
@@ -366,11 +367,11 @@ h6,
 
 /* INSTALL */
 .setup__container {
-    background-color: rgb(0 0 0 / 8%);
+    background-color: var(--transparency-dark-10);
 }
 
 .setup__progress-wrap {
-    background-color: rgb(0 0 0 / 50%);
+    background-color: var(--transparency-dark-50);
 }
 
 .setup__logo {
@@ -388,7 +389,7 @@ h6,
 
 .dropdown-item.active,
 .dropdown-item:active {
-    background-color: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
 }
 
 .service__icon {
@@ -397,7 +398,7 @@ h6,
 
 /* LOGS */
 .logs__table {
-    background-color: rgb(0 0 0 / 8%);
+    background-color: var(--transparency-dark-10);
 }
 
 .logs__text,
@@ -447,7 +448,7 @@ h6,
 
 .ReactTable .-loading,
 .ReactTable .-loading>div {
-    background: rgba(255, 255, 255, 0.5);
+    background: var(--transparency-light-50);
 }
 
 .ReactTable .rt-thead .rt-th,
@@ -461,7 +462,7 @@ h6,
 }
 
 .ReactTable .rt-thead.-header {
-    background: rgb(0 0 0 / 25%);
+    background: var(--transparency-dark-25);
 }
 
 .ReactTable .rt-thead .rt-th.-sort-asc, .ReactTable .rt-thead .rt-td.-sort-asc {
@@ -495,7 +496,7 @@ h6,
 /* FORMS */
 .form-control {
     color: var(--text);
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--transparency-light-10);
     border: 1px solid rgba(255, 255, 255, .1)
 }
 
@@ -511,7 +512,7 @@ h6,
     border-color: transparent;
     -webkit-box-shadow: none;
     box-shadow: none;
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--transparency-light-20);
     color: var(--text-hover);
 }
 
@@ -523,7 +524,7 @@ h6,
 
 .custom-select {
     color: var(--text);
-    background: rgba(255, 255, 255, 0.1) url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxMCA1Jz48cGF0aCBmaWxsPScjOTk5JyBkPSdNMCAwTDEwIDBMNSA1TDAgMCcvPjwvc3ZnPg==") no-repeat right 0.75rem center;
+    background: var(--transparency-light-10) url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxMCA1Jz48cGF0aCBmaWxsPScjOTk5JyBkPSdNMCAwTDEwIDBMNSA1TDAgMCcvPjwvc3ZnPg==") no-repeat right 0.75rem center;
     background-size: 8px 10px;
     border: 1px solid rgba(255, 255, 255, 0.1);
 
@@ -531,7 +532,7 @@ h6,
 
 .custom-select:focus {
     color: var(--text-hover);
-    background: #1f1f1f url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxMCA1Jz48cGF0aCBmaWxsPScjOTk5JyBkPSdNMCAwTDEwIDBMNSA1TDAgMCcvPjwvc3ZnPg==") no-repeat right 0.75rem center;
+    background: var(--drop-down-menu-bg) url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxMCA1Jz48cGF0aCBmaWxsPScjOTk5JyBkPSdNMCAwTDEwIDBMNSA1TDAgMCcvPjwvc3ZnPg==") no-repeat right 0.75rem center;
     background-size: 8px 10px;
     border: 1px solid rgba(255, 255, 255, 0.2);
 
@@ -540,11 +541,11 @@ h6,
 select.form-control.select:focus,
 select:focus {
     color: var(--text-hover);
-    background: #1f1f1f !important;
+    background: var(--drop-down-menu-bg) !important;
 }
 
 .icon--selected {
-    background-color: rgb(0 0 0 / 15%);
+    background-color: var(--transparency-dark-15);
     border: solid 1px transparent;
 }
 
@@ -581,7 +582,7 @@ select:focus {
 
 .btn-secondary {
     color: var(--button-text);
-    background-color: rgb(255 255 255 / 25%);
+    background-color: var(--transparency-light-25);
     border-color: rgb(255 255 255 / 0%);
     -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
@@ -623,7 +624,7 @@ select:focus {
 }
 
 .ReactModal__Overlay--after-open {
-    background-color: rgb(0 0 0 / 0.7) !important;
+    background-color: var(--transparency-dark-70) !important;
 }
 
 /* MOBILE */
@@ -633,7 +634,7 @@ select:focus {
     }
 
     .dropdown-menu {
-        background: #1f1f1f !important;
+        background: var(--drop-down-menu-bg) !important;
     }
 
     .ReactModal__Content {
@@ -655,23 +656,6 @@ select:focus {
     }
 
     .dropdown-menu {
-        background: #1f1f1f !important;
+        background: var(--drop-down-menu-bg) !important;
     }
-}
-
-/* PLACEHOLDER TEXT */
-::placeholder {
-    color: var(--text);
-}
-
-:-moz-placeholder {
-    color: var(--text);
-}
-
-:-ms-input-placeholder {
-    color: var(--text);
-}
-
-::-webkit-input-placeholder {
-    color: var(--text);
 }

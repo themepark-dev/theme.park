@@ -1,0 +1,29 @@
+:root {
+    --transparency-dark-05: rgba(0, 0, 0, .05);
+    --transparency-dark-10: rgba(0, 0, 0, .10);
+    --transparency-dark-15: rgba(0, 0, 0, .15);
+    --transparency-dark-25: rgba(0, 0, 0, .25);
+    --transparency-dark-35: rgba(0, 0, 0, .35);
+    --transparency-dark-40: rgba(0, 0, 0, .40);
+    --transparency-dark-45: rgba(0, 0, 0, .45);
+    --transparency-dark-50: rgba(0, 0, 0, .50); 
+    --transparency-dark-55: rgba(0, 0, 0, .55);
+    --transparency-dark-60: rgba(0, 0, 0, .60);
+    --transparency-dark-65: rgba(0, 0, 0, .65);
+    --transparency-dark-70: rgba(0, 0, 0, .70);
+    --transparency-dark-75: rgba(0, 0, 0, .75);
+    --transparency-dark-80: rgba(0, 0, 0, .80);
+    --transparency-dark-85: rgba(0, 0, 0, .85);
+    --transparency-dark-90: rgba(0, 0, 0, .90);
+    --transparency-light-05: rgba(255, 255, 255, .05);
+    --transparency-light-10: rgba(255, 255, 255, .10);
+    --transparency-light-15: rgba(255, 255, 255, .15);
+    --transparency-light-20: rgba(255, 255, 255, .20);
+    --transparency-light-25: rgba(255, 255, 255, .25);
+    --transparency-light-30: rgba(255, 255, 255, .30);
+    --transparency-light-35: rgba(255, 255, 255, .35);
+    --transparency-light-45: rgba(255, 255, 255, .45);
+    --transparency-light-50: rgba(255, 255, 255, .50);
+    --transparency-light-55: rgba(255, 255, 255, .55);
+    --transparency-light-95: rgba(255, 255, 255, .95);
+    }
