@@ -39,6 +39,9 @@ on:
         - rutorrent
         - swag
         - thelounge
+      append-tag:
+        required: false
+        description: 'Append a the tag with "-custom" e.g :radarr-testing'
 jobs:
   push_to_ghcr_io:
     runs-on: ubuntu-latest
@@ -76,8 +79,8 @@ jobs:
       - name: manually build
         if: ${{ github.event.inputs.app }}
         run: |
-          docker build docker-mods/${{ github.event.inputs.app }} --tag ghcr.io/gilbn/theme.park:${{ github.event.inputs.app }}
-          docker push ghcr.io/gilbn/theme.park:${{ github.event.inputs.app }}
+          docker build docker-mods/${{ github.event.inputs.app }} --tag ghcr.io/gilbn/theme.park:${{ github.event.inputs.app }}${{ github.event.inputs.append-tag }}
+          docker push ghcr.io/gilbn/theme.park:${{ github.event.inputs.app }}${{ github.event.inputs.append-tag }}
   push_to_dockerhub:
     runs-on: ubuntu-latest
     steps:
@@ -113,5 +116,5 @@ jobs:
       - name: manually build
         if: ${{ github.event.inputs.app }}
         run: |
-          docker build docker-mods/${{ github.event.inputs.app }} --tag gilbn/theme.park:${{ github.event.inputs.app }}
-          docker push gilbn/theme.park:${{ github.event.inputs.app }}
+          docker build docker-mods/${{ github.event.inputs.app }} --tag gilbn/theme.park:${{ github.event.inputs.app }}${{ github.event.inputs.append-tag }}
+          docker push gilbn/theme.park:${{ github.event.inputs.app }}${{ github.event.inputs.append-tag }}
