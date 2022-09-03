@@ -85,11 +85,12 @@ jobs:
       - name: manually build all mods
         if: ${{ github.event.inputs.app == 'build-all-the-mods' }}
         run: |
-          for app in ${{ github.event.inputs.app.options }}
-            do
-              docker build docker-mods/$app --tag ghcr.io/gilbn/theme.park:$app${{ github.event.inputs.append-tag }}
-              docker push ghcr.io/gilbn/theme.park:$app${{ github.event.inputs.append-tag }}
-            done
+          for dir in docker-mods/*; 
+          do 
+            app="$( echo "$dir" | cut -d'/' -f2 -s )"
+            docker build docker-mods/$app --tag ghcr.io/gilbn/theme.park:$app${{ github.event.inputs.append-tag }}
+            docker push ghcr.io/gilbn/theme.park:$app${{ github.event.inputs.append-tag }}
+          done
   push_to_dockerhub:
     runs-on: ubuntu-latest
     steps:
@@ -130,8 +131,9 @@ jobs:
       - name: manually build all mods
         if: ${{ github.event.inputs.app == 'build-all-the-mods' }}
         run: |
-          for app in ${{ github.event.inputs.app.options }}
-            do
-              docker build docker-mods/$app --tag gilbn/theme.park:$app${{ github.event.inputs.append-tag }}
-              docker push gilbn/theme.park:$app${{ github.event.inputs.append-tag }}
-            done
+          for dir in docker-mods/*; 
+          do 
+            app="$( echo "$dir" | cut -d'/' -f2 -s )"
+            docker build docker-mods/$app --tag gilbn/theme.park:$app${{ github.event.inputs.append-tag }}
+            docker push gilbn/theme.park:$app${{ github.event.inputs.append-tag }}
+          done
