@@ -66,6 +66,9 @@ a:hover:not(.btn),
 a,
 .nav-link,
 .dark a,
+.dark .nav-link,
+.dark a:not(.btn),
+.dark .table,
 .dark .nav-link {
     color: var(--link-color);
 }
@@ -75,17 +78,39 @@ a,
     text-decoration: underline;
 }
 
-
+mark,
+.mark {
+    padding: 0 0.3em;
+    background-color: rgb(var(--accent-color));
+    color: var(--label-text-color);
+}
 
 /* CARDS */
 .shadow-box,
-.dark .shadow-box {
+.dark .shadow-box,
+.dark .shadow-box:not(.alert) {
     box-shadow: 0px 0px 20px 10px #0000001a;
-    background: var(--transparency-light-10);
+    background: var(--transparency-dark-25);
+}
+
+.dark .settings-content .settings-content-header {
+    background: transparent !important;
+}
+
+.dark .list-header {
+    background: transparent !important;
+}
+
+.settings-content .settings-content-header {
+    border-bottom: 1px solid var(--transparency-light-10) !important;
 }
 
 .list .item:hover {
     background: var(--transparency-light-15) !important;
+}
+
+.list-header {
+    border-bottom: 1px solid var(--transparency-light-15) !important;
 }
 
 .dark .list .item.active,
@@ -119,6 +144,16 @@ td {
     color: var(--text);
 }
 
+.table {
+    --bs-table-hover-bg: var(--transparency-dark-15) !important;
+    --bs-table-hover-color: var(--text-hover) !important;
+}
+
+.dark .table-hover>tbody>tr:hover>* {
+    --bs-table-accent-bg: var(--transparency-dark-15);
+    color: var(--text-hover);
+}
+
 
 /* MENUS */
 .dropdown-menu {
@@ -142,6 +177,19 @@ td {
     background: var(--drop-down-menu-bg) !important;
 }
 
+.dropdown-item-text {
+    color: var(--text);
+}
+
+.dropdown-profile-pic .dropdown-menu .dropdown-divider {
+    border-top: 1px solid var(--transparency-light-25) !important;
+}
+
+.dark .dropdown-profile-pic.dropdown-menu.dropdown-item.active {
+    color: var(--text-hover);
+    background-color: var(--transparency-dark-15) !important;
+}
+
 /* HEADER */
 .dark header,
 #app>div>header {
@@ -155,13 +203,15 @@ td {
     color: var(--button-text);
 }
 
-.btn-primary {
+.btn-primary,
+.btn-info {
     color: var(--button-text);
     background-color: var(--button-color);
     border-color: var(--button-color);
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-info:hover {
     color: var(--button-text-hover);
     background-color: var(--button-color-hover);
     border-color: var(--button-color-hover);
@@ -203,7 +253,7 @@ td {
 
 .btn-outline-primary,
 .btn-outline-secondary {
-    color: var(--button-text);
+    color: var(--button-color);
     border-color: var(--button-color);
 }
 
@@ -270,15 +320,21 @@ td {
 .form-control {
     color: var(--text);
     background: var(--transparency-dark-25);
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='#ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
     background-repeat: no-repeat;
 }
 
 .dark .form-select:focus,
-.dark .form-control:focus,
-.form-select:focus,
-.form-control:focus {
+.form-select:focus {
+    color: var(--text-color);
     background: var(--drop-down-menu-bg);
+    box-shadow: 0 0 0 0.25rem rgba(var(--accent-color), 0.25);
+    border-color: rgba(var(--accent-color), 0.25);
+}
+
+.dark .form-control:focus,
+.form-control:focus {
+    color: var(--text-color);
+    background: var(--transparency-dark-35);
     box-shadow: 0 0 0 0.25rem rgba(var(--accent-color), 0.25);
     border-color: rgba(var(--accent-color), 0.25);
 }
@@ -290,7 +346,11 @@ td {
     border-color: #0000;
 }
 
-
+.input-group-text {
+    color: var(--button-text);
+    background-color: var(--button-color);
+    border: 1px solid var(--button-color);
+}
 
 .form-check-input:checked {
     background-color: var(--button-color);
@@ -300,13 +360,12 @@ td {
 .form-check-input[type=checkbox]:indeterminate {
     background-color: var(--button-color);
     border-color: var(--button-color);
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e")
 }
 
 .dark .multiselect__content-wrapper,
 .multiselect__content-wrapper {
     background: var(--drop-down-menu-bg) !important;
-    border-color: transparent !important;
+    border-color: var(--transparency-light-15) !important;
 }
 
 .multiselect {
@@ -316,20 +375,29 @@ td {
 .multiselect__option--highlight {
     background: rgb(var(--accent-color)) !important;
     outline: none;
-    color: #fff
+    color: var(--label-text-color) !important;
 }
 
 .multiselect__option--highlight:after {
     content: attr(data-select);
     background: rgb(var(--accent-color)) !important;
-    color: #fff
+    color: var(--label-text-color);
+}
+
+.multiselect__option--selected:after {
+    content: attr(data-selected);
+    color: var(--label-text-color) !important;
 }
 
 .multiselect__option--selected,
 .dark .multiselect__option--selected {
     background: var(--transparency-dark-45);
-    color: var(--text-hover);
-    font-weight: 700;
+    color: var(--text-hover) !important;
+}
+
+.dark .multiselect__option--selected::after,
+.multiselect__option--selected::after {
+    color: var(--text-hover) !important;
 }
 
 .multiselect__tag,
@@ -393,4 +461,87 @@ td {
     -webkit-background-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
+}
+
+.vue-image-crop-upload .vicp-wrap {
+    -webkit-box-shadow: 0 1px 3px 0 rgb(0 0 0 / 23%);
+    box-shadow: 0 1px 3px rgb(0 0 0 / 23%);
+    background-color: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+
+/* SETTINGS */
+
+.settings-menu .active .menu-item {
+    background: var(--transparency-dark-15) !important;
+}
+
+.settings-menu .menu-item:hover {
+    background: var(--transparency-light-10) !important;
+}
+
+h5.settings-subheading:after,
+.settings-subheading.h5:after {
+    border-bottom: 1px solid var(--transparency-light-10);
+}
+
+.dark .cert-exp-days .cert-exp-day-row,
+.cert-exp-days .cert-exp-day-row {
+    border-bottom: 1px solid var(--transparency-light-10) !important;
+}
+
+[contenteditable=true] {
+    background-color: var(--transparency-dark-25);
+}
+
+[contenteditable=true]:hover {
+    background-color: var(--transparency-dark-35);
+}
+
+[dir=ltr] .sidebar .sidebar-footer {
+    border-right: 1px solid var(--transparency-light-10) !important;
+    left: 0;
+}
+
+.sidebar .sidebar-footer {
+    border-top: 1px solid var(--transparency-light-10) !important;
+    background-color: var(--transparency-light-10) !important;
+}
+
+.item:hover {
+    background-color: rgb(var(--accent-color), .10) !important;
+}
+
+@media (max-width: 550px) {
+    .dark .table-shadow-box tbody .shadow-box {
+        background-color: transparent !important;
+    }
+
+    .dark .table-hover>tbody>tr:hover>* {
+        --bs-table-accent-bg: transparent color: var(--text-hover);
+    }
+
+    .dark .table-shadow-box tbody .shadow-box td {
+        border-bottom: 1px solid var(--transparency-light-10);
+    }
+}
+
+.dark .monitor-list .item:hover,
+.dark .monitor-list .item.active,
+.monitor-list .item.active,
+.monitor-list .item:hover {
+    background-color: rgb(var(--accent-color), .10);
+}
+
+.active.dropdown-item.active,
+.dark .dropdown-profile-pic .dropdown-menu .dropdown-item.active,
+#app>div>header>ul>li>div>ul>li>a.active {
+    background: var(--transparency-dark-25) !important;
+    background-color: var(--transparency-dark-25) !important;
 }
