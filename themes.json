@@ -33,7 +33,8 @@
     },
     "sonarr": {
       "sonarr-4k-logo": "https://theme-park.dev/css/addons/sonarr/sonarr-4k-logo/sonarr-4k-logo.css?sha=0b109c74f56f92465dc01bf9ea10a877ed87213c",
-      "sonarr-darker": "https://theme-park.dev/css/addons/sonarr/sonarr-darker/sonarr-darker.css?sha=7c3c2ddcd71525229b0dcc186326003677908b7c"
+      "sonarr-darker": "https://theme-park.dev/css/addons/sonarr/sonarr-darker/sonarr-darker.css?sha=7c3c2ddcd71525229b0dcc186326003677908b7c",
+      "sonarr-text-logo": "https://theme-park.dev/css/addons/sonarr/sonarr-text-logo/sonarr-text-logo.css?sha=0979cbe5aaabb148fd15f4122690685e7ae4a4f3"
     },
     "unraid": {
       "login-page": {
@@ -198,7 +199,7 @@
     },
     "calibreweb": {
       "addons": {},
-      "base_css": "https://theme-park.dev/css/base/calibreweb/calibreweb-base.css?sha=cf8f95b2466d327a7013d8d666263a3549cc11de"
+      "base_css": "https://theme-park.dev/css/base/calibreweb/calibreweb-base.css?sha=30a1bc56f1c18150a5bf7e1a9e002f6b3aaa3fdb"
     },
     "deluge": {
       "addons": {},
@@ -218,7 +219,7 @@
     },
     "emby": {
       "addons": {},
-      "base_css": "https://theme-park.dev/css/base/emby/emby-base.css?sha=9463def3af99604b62f34e99b0663a198d48e478"
+      "base_css": "https://theme-park.dev/css/base/emby/emby-base.css?sha=622ec3d5e5ffa3dba69820ee0476412732558d2a"
     },
     "filebrowser": {
       "addons": {},
@@ -372,7 +373,8 @@
     "sonarr": {
       "addons": {
         "sonarr-4k-logo": "https://theme-park.dev/css/addons/sonarr/sonarr-4k-logo/sonarr-4k-logo.css?sha=0b109c74f56f92465dc01bf9ea10a877ed87213c",
-        "sonarr-darker": "https://theme-park.dev/css/addons/sonarr/sonarr-darker/sonarr-darker.css?sha=7c3c2ddcd71525229b0dcc186326003677908b7c"
+        "sonarr-darker": "https://theme-park.dev/css/addons/sonarr/sonarr-darker/sonarr-darker.css?sha=7c3c2ddcd71525229b0dcc186326003677908b7c",
+        "sonarr-text-logo": "https://theme-park.dev/css/addons/sonarr/sonarr-text-logo/sonarr-text-logo.css?sha=0979cbe5aaabb148fd15f4122690685e7ae4a4f3"
       },
       "base_css": "https://theme-park.dev/css/base/sonarr/sonarr-base.css?sha=0a2deaf29f7be08073cde4f2ac0f4dc7c8b74304"
     },
@@ -433,7 +435,7 @@
     },
     "uptime-kuma": {
       "addons": {},
-      "base_css": "https://theme-park.dev/css/base/uptime-kuma/uptime-kuma-base.css?sha=bd158e2904a520c0faad1e79b9235c5f371b5371"
+      "base_css": "https://theme-park.dev/css/base/uptime-kuma/uptime-kuma-base.css?sha=0fb36df6632e1c3c61c053dff9be46c93db90684"
     },
     "vuetorrent": {
       "addons": {},
