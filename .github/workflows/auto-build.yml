@@ -41,7 +41,7 @@ on:
         - thelounge
       append-tag:
         required: false
-        description: 'Append a the tag  with "-custom" e.g :radarr-custom'
+        description: 'Append a the tag with "-custom" e.g :radarr-testing'
 jobs:
   push_to_ghcr_io:
     runs-on: ubuntu-latest

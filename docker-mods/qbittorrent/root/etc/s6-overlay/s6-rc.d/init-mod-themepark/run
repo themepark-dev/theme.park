@@ -1,0 +1,122 @@
+#!/usr/bin/with-contenv bash
+
+echo '------------------------------'
+echo '| qBittorrent theme.park Mod |'
+echo '------------------------------'
+
+APP_FILEPATH='/config/qBittorrent/qBittorrent.conf'
+if [ "${TP_HOTIO}" = true ]; then
+    echo 'Changing to Hotio file path!'
+    APP_FILEPATH='/config/config/qBittorrent.conf'
+fi
+
+# Backup config
+if [[ ! -f "${APP_FILEPATH}.bak" ]]; then
+    echo "Creating qBittorrent.conf backup in /config."
+	cp -p ${APP_FILEPATH} "${APP_FILEPATH}.bak"
+fi
+
+# Restore qBittorrent.conf
+if [ "${TP_DISABLE_THEME}" = true ]; then
+  echo "Restoring backup of qBittorrent.conf" 
+  sed -i "s/WebUI\\\AlternativeUIEnabled=.*$/WebUI\\\AlternativeUIEnabled=false/g" "${APP_FILEPATH}";
+  exit 0
+fi
+
+# Display variables for troubleshooting 
+echo -e "Variables set:\\n\
+'APP_FILEPATH'=${APP_FILEPATH}\\n\
+'TP_DISABLE_THEME'=${TP_DISABLE_THEME}\\n\
+'TP_HOTIO'=${TP_HOTIO}\\n\
+'TP_DOMAIN'=${TP_DOMAIN}\\n\
+'TP_COMMUNITY_THEME'=${TP_COMMUNITY_THEME}\\n\
+'TP_SCHEME'=${TP_SCHEME}\\n\
+'TP_THEME'=${TP_THEME}\\n"
+
+# Set default
+if [[ -z ${TP_DOMAIN} ]]; then
+    echo 'No domain set, defaulting to theme-park.dev'
+    TP_DOMAIN='theme-park.dev'
+fi
+if [[ -z ${TP_SCHEME} ]]; then
+    echo 'No scheme set, defaulting to https'
+    TP_SCHEME='https'
+fi
+
+THEME_TYPE='theme-options'
+if [ "${TP_COMMUNITY_THEME}" = true ]; then
+    THEME_TYPE='community-theme-options'
+fi
+
+case ${TP_DOMAIN} in
+  *"github.io"*)
+  echo "Switching to github.io URL style"
+    TP_DOMAIN="${TP_DOMAIN}\/theme.park"
+    ;;
+esac
+
+if [[ -z ${TP_THEME} ]]; then
+    echo 'No theme set, defaulting to organizr'
+    TP_THEME='organizr'
+fi
+
+# Downloading fresh webui files from source.
+if [[ ! -d /themepark ]]; then
+    echo '---------------------------------------'
+    echo '| Downloading WebUI files from github |'
+    echo '---------------------------------------'
+    printf '\nDownloading qBittorrent webui to "/themepark"..please wait\n'
+    svn export --quiet https://github.com/qbittorrent/qBittorrent/trunk/src/webui/www /themepark
+    printf '\nDownload finished\n\n'
+    printf '\nDownloading qBittorrent webui icons to "/themepark/xxx"..please wait\n'
+    svn export --force --quiet https://github.com/qbittorrent/qBittorrent/trunk/src/icons /temp
+    cp -a /temp/. /themepark/public/icons
+    cp -a /temp/. /themepark/private/icons
+    rm -rf /temp
+    printf '\nDownload finished\n\n'
+fi
+
+sed_file(){
+    sed -i "s/<\/body>/<link rel='stylesheet' href='${TP_SCHEME}:\/\/${TP_DOMAIN}\/css\/base\/qbittorrent\/qbittorrent-base.css'><\/body> /g" $1
+    sed -i "s/<\/body>/<link rel='stylesheet' href='${TP_SCHEME}:\/\/${TP_DOMAIN}\/css\/${THEME_TYPE}\/${TP_THEME}.css'><\/body> /g" $1
+    sed -i "s/<\/head>/<link rel='stylesheet' href='${TP_SCHEME}:\/\/${TP_DOMAIN}\/css\/base\/qbittorrent\/qbittorrent-base.css'><\/head> /g" $1
+    sed -i "s/<\/head>/<link rel='stylesheet' href='${TP_SCHEME}:\/\/${TP_DOMAIN}\/css\/${THEME_TYPE}\/${TP_THEME}.css'><\/head> /g" $1
+    printf 'Stylesheet set to %s on %s\n\n' "${TP_THEME}" "$1"
+}
+
+# Adding stylesheets
+echo '---------------------------------------'
+echo '| Adding the stylesheet to html files |'
+echo '---------------------------------------'
+if ! grep -q "${TP_DOMAIN}/css/base" /themepark/public/index.html; then
+    sed_file /themepark/public/index.html
+fi
+
+if ! grep -q "${TP_DOMAIN}/css/base" /themepark/private/index.html; then
+    find /themepark/private -type f -iname *.html | while read fname
+    do
+        sed_file $fname
+    done
+fi
+
+if ! grep -q "WebUI\\\RootFolder" "${APP_FILEPATH}"; then
+    echo '--------------------------------------'
+    echo '| Adding WebUI\RootFolder=/themepark |'
+    echo '--------------------------------------'
+    sed -i -e '$aWebUI\\RootFolder=/themepark' "${APP_FILEPATH}";
+fi
+
+if ! grep -q "WebUI\\\AlternativeUIEnabled" "${APP_FILEPATH}"; then
+    echo '------------------------------------------'
+    echo '| Adding WebUI\AlternativeUIEnabled=true |'
+    echo '------------------------------------------'
+    sed -i -e '$aWebUI\\AlternativeUIEnabled=true' "${APP_FILEPATH}";
+fi
+
+if  ! grep -q "WebUI\\\RootFolder=/themepark" "${APP_FILEPATH}" || ! grep -q "WebUI\\\AlternativeUIEnabled=true" "${APP_FILEPATH}"; then
+    echo '-------------------------------------------------------'
+    echo '| Updating RootFolder and AlternativeUIEnabled values |'
+    echo '-------------------------------------------------------'
+    sed -i "s/WebUI\\\AlternativeUIEnabled=.*$/WebUI\\\AlternativeUIEnabled=true/g" "${APP_FILEPATH}";
+    sed -i "s/WebUI\\\RootFolder=.*$/WebUI\\\RootFolder=\/themepark/g" "${APP_FILEPATH}";
+fi
