@@ -1,0 +1,43 @@
+#!/usr/bin/with-contenv bash
+
+echo '-------------------------'
+echo '|  Emby theme.park Mod  |'
+echo '-------------------------'
+
+# Display variables for troubleshooting 
+echo -e "Variables set:\\n\
+'TP_DOMAIN'=${TP_DOMAIN}\\n\
+'TP_COMMUNITY_THEME'=${TP_COMMUNITY_THEME}\\n\
+'TP_SCHEME'=${TP_SCHEME}\\n\
+'TP_THEME'=${TP_THEME}\\n"
+
+# Set default
+if [[ -z ${TP_DOMAIN} ]]; then
+    echo 'No domain set, defaulting to theme-park.dev'
+    TP_DOMAIN='theme-park.dev'
+fi
+if [[ -z ${TP_SCHEME} ]]; then
+    echo 'No scheme set, defaulting to https'
+    TP_SCHEME='https'
+fi
+
+THEME_TYPE='theme-options'
+if [ "${TP_COMMUNITY_THEME}" = true ]; then
+    THEME_TYPE='community-theme-options'
+fi
+
+case ${TP_DOMAIN} in
+  *"github.io"*)
+  echo "Switching to github.io URL style"
+    TP_DOMAIN="${TP_DOMAIN}\/theme.park"
+    ;;
+esac
+
+if [[ -z ${TP_THEME} ]]; then
+    echo 'No theme set, defaulting to organizr'
+    TP_THEME='organizr'
+fi
+
+# Adding stylesheets
+printf '%s\n' "@import url('${TP_SCHEME}://${TP_DOMAIN}/css/${THEME_TYPE}/${TP_THEME}.css');" "@import url('${TP_SCHEME}://${TP_DOMAIN}/css/base/emby/emby-base.css');" > /app/emby/dashboard-ui/modules/themes/light/theme.css
+printf 'Stylesheet set to %s\n' "${TP_THEME}"
