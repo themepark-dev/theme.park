@@ -39,6 +39,10 @@ on:
         - rutorrent
         - swag
         - thelounge
+        - build-all-the-mods
+      append-tag:
+        required: false
+        description: 'Append a the tag with "-custom" e.g :radarr-testing'
 jobs:
   push_to_ghcr_io:
     runs-on: ubuntu-latest
@@ -74,10 +78,19 @@ jobs:
               docker push ghcr.io/gilbn/theme.park:$directory
             done
       - name: manually build
-        if: ${{ github.event.inputs.app }}
+        if: ${{ github.event.inputs.app && github.event.inputs.app != 'build-all-the-mods' }}
         run: |
-          docker build docker-mods/${{ github.event.inputs.app }} --tag ghcr.io/gilbn/theme.park:${{ github.event.inputs.app }}
-          docker push ghcr.io/gilbn/theme.park:${{ github.event.inputs.app }}
+          docker build docker-mods/${{ github.event.inputs.app }} --tag ghcr.io/gilbn/theme.park:${{ github.event.inputs.app }}${{ github.event.inputs.append-tag }}
+          docker push ghcr.io/gilbn/theme.park:${{ github.event.inputs.app }}${{ github.event.inputs.append-tag }}
+      - name: manually build all mods
+        if: ${{ github.event.inputs.app == 'build-all-the-mods' }}
+        run: |
+          for dir in docker-mods/*; 
+          do 
+            app="$( echo "$dir" | cut -d'/' -f2 -s )"
+            docker build docker-mods/$app --tag ghcr.io/gilbn/theme.park:$app${{ github.event.inputs.append-tag }}
+            docker push ghcr.io/gilbn/theme.park:$app${{ github.event.inputs.append-tag }}
+          done
   push_to_dockerhub:
     runs-on: ubuntu-latest
     steps:
@@ -111,7 +124,16 @@ jobs:
               docker push gilbn/theme.park:$directory
             done
       - name: manually build
-        if: ${{ github.event.inputs.app }}
+        if: ${{ github.event.inputs.app && github.event.inputs.app != 'build-all-the-mods' }}
         run: |
-          docker build docker-mods/${{ github.event.inputs.app }} --tag gilbn/theme.park:${{ github.event.inputs.app }}
-          docker push gilbn/theme.park:${{ github.event.inputs.app }}
+          docker build docker-mods/${{ github.event.inputs.app }} --tag gilbn/theme.park:${{ github.event.inputs.app }}${{ github.event.inputs.append-tag }}
+          docker push gilbn/theme.park:${{ github.event.inputs.app }}${{ github.event.inputs.append-tag }}
+      - name: manually build all mods
+        if: ${{ github.event.inputs.app == 'build-all-the-mods' }}
+        run: |
+          for dir in docker-mods/*; 
+          do 
+            app="$( echo "$dir" | cut -d'/' -f2 -s )"
+            docker build docker-mods/$app --tag gilbn/theme.park:$app${{ github.event.inputs.append-tag }}
+            docker push gilbn/theme.park:$app${{ github.event.inputs.append-tag }}
+          done

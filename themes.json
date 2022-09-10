@@ -33,6 +33,7 @@
     },
     "sonarr": {
       "sonarr-4k-logo": "https://theme-park.dev/css/addons/sonarr/sonarr-4k-logo/sonarr-4k-logo.css?sha=0b109c74f56f92465dc01bf9ea10a877ed87213c",
+      "sonarr-4k-text-logo": "https://theme-park.dev/css/addons/sonarr/sonarr-4k-text-logo/sonarr-4k-text-logo.css?sha=9dc5b9037aa6ea1041229ecbea3d6469e3b975a7",
       "sonarr-darker": "https://theme-park.dev/css/addons/sonarr/sonarr-darker/sonarr-darker.css?sha=7c3c2ddcd71525229b0dcc186326003677908b7c",
       "sonarr-text-logo": "https://theme-park.dev/css/addons/sonarr/sonarr-text-logo/sonarr-text-logo.css?sha=0979cbe5aaabb148fd15f4122690685e7ae4a4f3"
     },
@@ -373,6 +374,7 @@
     "sonarr": {
       "addons": {
         "sonarr-4k-logo": "https://theme-park.dev/css/addons/sonarr/sonarr-4k-logo/sonarr-4k-logo.css?sha=0b109c74f56f92465dc01bf9ea10a877ed87213c",
+        "sonarr-4k-text-logo": "https://theme-park.dev/css/addons/sonarr/sonarr-4k-text-logo/sonarr-4k-text-logo.css?sha=9dc5b9037aa6ea1041229ecbea3d6469e3b975a7",
         "sonarr-darker": "https://theme-park.dev/css/addons/sonarr/sonarr-darker/sonarr-darker.css?sha=7c3c2ddcd71525229b0dcc186326003677908b7c",
         "sonarr-text-logo": "https://theme-park.dev/css/addons/sonarr/sonarr-text-logo/sonarr-text-logo.css?sha=0979cbe5aaabb148fd15f4122690685e7ae4a4f3"
       },
