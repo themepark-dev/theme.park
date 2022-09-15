@@ -136,6 +136,9 @@
     "Hotpink": {
       "url": "https://develop.theme-park.dev/css/theme-options/hotpink.css?sha=18ffb7ff0cf9d4ae97f09c2ccb980d8bb0fd9d3e"
     },
+    "Ibracorp": {
+      "url": "https://develop.theme-park.dev/css/community-theme-options/ibracorp.css?sha=0757f163ac0c650f194555b7e0869213ff85f4e9"
+    },
     "Maroon": {
       "url": "https://develop.theme-park.dev/css/theme-options/maroon.css?sha=2260540a1a97c69eadd787b998113b892e4124da"
     },
@@ -493,6 +496,9 @@
     },
     "Hotline-old": {
       "url": "https://develop.theme-park.dev/css/community-theme-options/hotline-old.css?sha=4befb6edb8a0b329baa4319e3c6fec9856f1d76f"
+    },
+    "Ibracorp": {
+      "url": "https://develop.theme-park.dev/css/community-theme-options/ibracorp.css?sha=0757f163ac0c650f194555b7e0869213ff85f4e9"
     },
     "Mind": {
       "url": "https://develop.theme-park.dev/css/community-theme-options/mind.css?sha=bd65d1ae6f686873d9ef0d04100ae358deca1844"
