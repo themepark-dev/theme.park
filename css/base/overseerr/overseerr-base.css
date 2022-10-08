@@ -2,16 +2,22 @@
 @import url("/css/defaults/transparent.css");
 
 /* TEXT */
-[class*="text-gray-"]:not(button:disabled):not(button) {
+[class*="text-gray-"]:not(button:disabled):not(button):not(.text-gray-100) {
     color: var(--text);
 }
 
-[class*="text-indigo-"]:not(.text-indigo-100) {
-    color: rgb(var(--accent-color))
+[class*="text-indigo-"]:not(.text-indigo-100),
+.text-overseerr {
+    color: rgb(var(--accent-color));
 }
 
 .text-indigo-100 {
     color: var(--label-text-color);
+}
+
+.text-gray-400,
+.text-gray-200 {
+    color: var(--transparency-light-95) !important;
 }
 
 h1,
@@ -68,11 +74,19 @@ button[class*="bg-indigo-"],
 button[class*="bg-gray-"],
 button[class*="border-indigo-"],
 button[class*="border-gray-"],
-#__next > div > div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64 > main > div > div > div.relative.z-40.mt-6.mb-12.lg\:flex.lg\:items-end.lg\:justify-between.lg\:space-x-5 > div.flex.flex-col-reverse.mt-6.space-y-4.space-y-reverse.justify-stretch.lg\:flex-row.lg\:justify-end.lg\:space-x-reverse.lg\:space-y-0.lg\:space-x-3 > a,
+#__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div.relative.z-40.mt-6.mb-12.lg\:flex.lg\:items-end.lg\:justify-between.lg\:space-x-5>div.flex.flex-col-reverse.mt-6.space-y-4.space-y-reverse.justify-stretch.lg\:flex-row.lg\:justify-end.lg\:space-x-reverse.lg\:space-y-0.lg\:space-x-3>a,
 button.input-action {
-    background-color: var(--button-color);
-    border-color: var(--button-color);
+    background-color: rgb(var(--accent-color), .5);
+    border-color: rgb(var(--accent-color), .5);
     color: var(--button-text);
+}
+
+#headlessui-listbox-button-\:r5\:>span:nth-child(1)>span.ml-1.truncate.text-gray-400 {
+    color: var(--button-text);
+}
+
+.focus\:border-blue-300:focus {
+    border-color: rgb(var(--accent-color)) !important;
 }
 
 button[type="submit"],
@@ -86,10 +100,10 @@ button[class*="border-indigo-"]:hover,
 button[class*="border-gray-"]:hover,
 button.input-action:hover,
 button[class="input-action"]:hover,
-#__next > div > div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64 > main > div > div > div.relative.z-40.mt-6.mb-12.lg\:flex.lg\:items-end.lg\:justify-between.lg\:space-x-5 > div.flex.flex-col-reverse.mt-6.space-y-4.space-y-reverse.justify-stretch.lg\:flex-row.lg\:justify-end.lg\:space-x-reverse.lg\:space-y-0.lg\:space-x-3 > a:hover {
-    background-color: var(--button-color-hover);
-    border-color: var(--button-color-hover);
-    color: var(--button-text-hover);
+#__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div.relative.z-40.mt-6.mb-12.lg\:flex.lg\:items-end.lg\:justify-between.lg\:space-x-5>div.flex.flex-col-reverse.mt-6.space-y-4.space-y-reverse.justify-stretch.lg\:flex-row.lg\:justify-end.lg\:space-x-reverse.lg\:space-y-0.lg\:space-x-3>a:hover {
+    background-color: rgb(var(--accent-color), .8);
+    border-color: rgb(var(--accent-color), .8);
+    color: var(--button-text-hover) !important;
 }
 
 button[type="submit"]:hover,
@@ -123,11 +137,34 @@ textarea:focus {
 
 input[type=password],
 input[type=text],
-select,
 textarea {
     border-color: rgba(255, 255, 255, .1);
     background: var(--transparency-dark-25);
     color: var(--text);
+}
+
+select:focus {
+    border-color: rgba(255, 255, 255, .1) !important;
+    background: var(--drop-down-menu-bg) !important;
+    color: var(--text) !important;
+}
+
+select,
+#__next>div>div.relative.mb-16.flex.w-0.min-w-0.flex-1.flex-col.lg\:ml-64>main>div>div>div.mb-4.flex.flex-col.justify-between.lg\:flex-row.lg\:items-end>div.mt-2.flex.flex-grow.flex-col.sm\:flex-row.lg\:flex-grow-0>div>span {
+    border-color: rgba(255, 255, 255, .1) !important;
+    background: var(--transparency-dark-25) !important;
+    color: var(--text) !important;
+}
+
+select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e") !important;
+    background-position: right .5rem center !important;
+    background-repeat: no-repeat !important;
+    background-size: 1.5em 1.5em !important;
+    padding-right: 2.5rem !important;
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
+    print-color-adjust: exact !important;
 }
 
 input[type=checkbox] {
@@ -154,6 +191,7 @@ body>div.fixed.top-0.bottom-0.left-0.right-0.z-50.flex.items-center.justify-cent
 span.bg-indigo-500 {
     background-color: rgb(var(--accent-color));
     color: var(--label-text-color) !important;
+    border-color: rgb(var(--accent-color));
 }
 
 .react-select-container .react-select__control {
@@ -197,9 +235,9 @@ body {
     color: var(--text);
 }
 
-.bg-gray-800 {
-    --tw-bg-opacity: 0.05;
-    background-color: rgb(255, 255, 255, var(--tw-bg-opacity));
+[data-popper-placement] {
+    background: rgb(var(--accent-color)) !important;
+    color: var(--label-text-color) !important;
 }
 
 .hover\:bg-gray-700:hover {
@@ -274,14 +312,30 @@ body {
     --tw-gradient-to: rgb(var(--accent-color), .8);
 }
 
-#__next>div>div.fixed.top-0.bottom-0.left-0.z-30.hidden.lg\:flex.lg\:flex-shrink-0>div>div>div>nav>a.flex.group.items-center.px-2.py-2.text-lg.leading-6.font-medium.rounded-md.text-white.focus\:outline-none.transition.ease-in-out.duration-150.bg-gradient-to-br.from-indigo-600.to-purple-600.hover\:from-indigo-500.hover\:to-purple-500,
-#__next>div>div.lg\:hidden>div>div.relative.flex.flex-col.flex-1.w-full.max-w-xs.bg-gray-800.sidebar.appear-done.enter-done>div.flex.flex-col.flex-1.h-0.pt-8.pb-8.overflow-y-auto.sm\:pb-4>nav>a.flex.items-center.px-2.py-2.text-base.leading-6.font-medium.rounded-md.text-white.focus\:outline-none.transition.ease-in-out.duration-150.bg-gradient-to-br.from-indigo-600.to-purple-600.hover\:from-indigo-500.hover\:to-purple-500 {
-    --tw-gradient-from: rgb(var(--accent-color), .5);
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(var(--accent-color), .5));
+[role="menuitem"]:hover {
+    background: rgb(var(--accent-color), .3);
 }
 
 #__next>div>div.fixed.top-0.bottom-0.left-0.z-30.hidden.lg\:flex.lg\:flex-shrink-0>div>div>div>nav>a.flex.group.items-center.px-2.py-2.text-lg.leading-6.font-medium.rounded-md.text-white.focus\:outline-none.transition.ease-in-out.duration-150.bg-gradient-to-br.from-indigo-600.to-purple-600.hover\:from-indigo-500.hover\:to-purple-500,
-#__next > div > div.fixed.top-0.bottom-0.left-0.z-30.hidden.lg\:flex.lg\:flex-shrink-0 > div > div > div > nav > a.flex.group.items-center.px-2.py-2.text-lg.leading-6.font-medium.rounded-md.text-white.focus\:outline-none.transition.ease-in-out.duration-150.bg-gradient-to-br.from-indigo-600.to-purple-600.hover\:from-indigo-500.hover\:to-purple-500 > svg {
+#__next>div>div.lg\:hidden>div>div.relative.flex.flex-col.flex-1.w-full.max-w-xs.bg-gray-800.sidebar.appear-done.enter-done>div.flex.flex-col.flex-1.h-0.pt-8.pb-8.overflow-y-auto.sm\:pb-4>nav>a.flex.items-center.px-2.py-2.text-base.leading-6.font-medium.rounded-md.text-white.focus\:outline-none.transition.ease-in-out.duration-150.bg-gradient-to-br.from-indigo-600.to-purple-600.hover\:from-indigo-500.hover\:to-purple-500 {
+    --tw-gradient-from: rgb(var(--accent-color), .3);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(var(--accent-color), .3));
+}
+
+.from-indigo-600 {
+    --tw-gradient-from: rgb(var(--accent-color), .3);
+    --tw-gradient-to: rgba(var(--accent-color), .3);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-indigo-600:hover {
+    --tw-gradient-from: rgb(var(--accent-color), .7);
+    --tw-gradient-to: rgba(var(--accent-color), .7);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+#__next>div>div.fixed.top-0.bottom-0.left-0.z-30.hidden.lg\:flex.lg\:flex-shrink-0>div>div>div>nav>a.flex.group.items-center.px-2.py-2.text-lg.leading-6.font-medium.rounded-md.text-white.focus\:outline-none.transition.ease-in-out.duration-150.bg-gradient-to-br.from-indigo-600.to-purple-600.hover\:from-indigo-500.hover\:to-purple-500,
+#__next>div>div.fixed.top-0.bottom-0.left-0.z-30.hidden.lg\:flex.lg\:flex-shrink-0>div>div>div>nav>a.flex.group.items-center.px-2.py-2.text-lg.leading-6.font-medium.rounded-md.text-white.focus\:outline-none.transition.ease-in-out.duration-150.bg-gradient-to-br.from-indigo-600.to-purple-600.hover\:from-indigo-500.hover\:to-purple-500>svg {
     color: rgb(var(--accent-color)) !important;
 }
 
@@ -315,9 +369,9 @@ body>div.fixed.top-0.left-0.z-50.w-full.transition-opacity.ease-out.duration-400
     background-color: rgb(var(--accent-color));
 }
 
-body>div.fixed.top-0.left-0.z-50.w-full .bg-indigo-400 {
+/* body>div.fixed.top-0.left-0.z-50.w-full .bg-indigo-400 {
     background-color: rgb(var(--accent-color));
-}
+} */
 
 /* DISCOVER PAGE */
 
@@ -330,9 +384,15 @@ a.slider-title:hover {
     color: var(--accent-color-hover);
 }
 
+/* CARDS */
+#__next>div>div.relative.mb-16.flex.w-0.min-w-0.flex-1.flex-col.lg\:ml-64>main>div>div>div>div.hide-scrollbar.relative.-my-2.-ml-4.-mr-4.overflow-y-auto.overflow-x-scroll.overscroll-x-contain.whitespace-nowrap.px-2.py-2>div>a,
+#__next>div>div.relative.mb-16.flex.w-0.min-w-0.flex-1.flex-col.lg\:ml-64>main>div>div>div>div>div.hide-scrollbar.relative.-my-2.-ml-4.-mr-4.overflow-y-auto.overflow-x-scroll.overscroll-x-contain.whitespace-nowrap.px-2.py-2>div>a>div {
+    background: var(--transparency-light-15)
+}
+
 /* CARD HOVER */
 #__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div>div.relative.px-2.py-2.-my-2.-ml-4.-mr-4.overflow-x-scroll.overflow-y-auto.whitespace-nowrap.hide-scrollbar.overscroll-x-contain>div>div>div>div>div:hover a {
-    background: linear-gradient(rgba(var(--accent-color), 0.3) 0%, rgba(0,0,0,.7) 100%) !important;
+    background: linear-gradient(rgba(var(--accent-color), 0.3) 0%, rgba(0, 0, 0, .7) 100%) !important;
 }
 
 #__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div>div.relative.px-2.py-2.-my-2.-ml-4.-mr-4.overflow-x-scroll.overflow-y-auto.whitespace-nowrap.hide-scrollbar.overscroll-x-contain>div>div>div.absolute.inset-0.z-0>div.absolute.inset-0 {
@@ -340,13 +400,13 @@ a.slider-title:hover {
 }
 
 #__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div>div.relative.px-2.py-2.-my-2.-ml-4.-mr-4.overflow-x-scroll.overflow-y-auto.whitespace-nowrap.hide-scrollbar.overscroll-x-contain>div>a:hover {
-    background: linear-gradient(rgba(var(--accent-color), .04) 0%, rgba(var(--accent-color), 0.3) 100%);
+    background: linear-gradient(rgba(var(--accent-color), .4) 0%, rgba(var(--accent-color), 0.3) 100%);
 }
 
 
 /* SHOW PAGE */
 #__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div>div.media-page-bg-image>div.absolute.inset-0,
-#__next > div > div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64 > main > div > div > div.absolute.left-0.right-0.z-0.-top-16.h-96 > div > div > div.absolute.inset-0 {
+#__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div.absolute.left-0.right-0.z-0.-top-16.h-96>div>div>div.absolute.inset-0 {
     background: var(--overseerr-gradient) !important;
 }
 
@@ -511,9 +571,17 @@ body>div.fixed.top-0.bottom-0.left-0.right-0.z-50.flex.items-center.justify-cent
     display: none !important;
 }
 
+body>div.fixed.top-0.bottom-0.left-0.right-0.z-50.flex.h-full.w-full.items-center.justify-center.bg-gray-800.bg-opacity-70.opacity-100>div>div.absolute.top-0.left-0.right-0.z-0.h-64.max-h-full.w-full>span>img {
+    display: none !important;
+}
+
 body>div.fixed.top-0.bottom-0.left-0.right-0.z-50.flex.items-center.justify-center.w-full.h-full.bg-gray-800.bg-opacity-70.enter-done>div>div.absolute.top-0.left-0.right-0.z-0.w-full.h-64>div.absolute.inset-0,
 body>div.fixed.top-0.bottom-0.left-0.right-0.z-50.flex.items-center.justify-center.w-full.h-full.bg-gray-800.bg-opacity-70>div>div.absolute.top-0.left-0.right-0.z-0.w-full.h-64>div.absolute.inset-0 {
     background: transparent !important;
+}
+
+body>div.fixed.top-0.bottom-0.left-0.right-0.z-50.flex.h-full.w-full.items-center.justify-center.bg-gray-800.bg-opacity-70.opacity-100>div[aria-modal="true"] {
+    background: var(--main-bg-color);
 }
 
 body>div.fixed.top-0.bottom-0.left-0.right-0.z-50.flex.items-center.justify-center.w-full.h-full.bg-gray-800.bg-opacity-70>div>div.relative.mt-4.text-sm.leading-5.text-gray-300>div.flex.flex-col>div>div>div>table>tbody {
@@ -523,11 +591,11 @@ body>div.fixed.top-0.bottom-0.left-0.right-0.z-50.flex.items-center.justify-cent
 
 /* DROPDOWN */
 
-#__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div>div.media-header>div.media-actions>span>span>div>div.bg-gray-700,
+/* #__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div>div.media-header>div.media-actions>span>span>div>div.bg-gray-700,
 #__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div>div.media-header>div.media-actions>span>span>div>div>div>a,
 #__next > div > div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64 > main > div > div > div.mt-10.text-white > form > div:nth-child(5) > div > div > div > div > div > div {
     background: var(--drop-down-menu-bg);
-}
+} */
 
 #__next>div>div.relative.flex.flex-col.flex-1.w-0.min-w-0.mb-16.lg\:ml-64>main>div>div>div>div.media-header>div.media-actions>span>span>div>div>div>a:hover {
     background: var(--transparency-light-10);
@@ -537,7 +605,8 @@ body>div.fixed.top-0.bottom-0.left-0.right-0.z-50.flex.items-center.justify-cent
 [aria-labelledby="user-menu"] {
     background: var(--drop-down-menu-bg);
 }
-[aria-labelledby="user-menu"] a:hover{
+
+[aria-labelledby="user-menu"] a:hover {
     background: var(--transparency-light-05);
 }
 
@@ -556,4 +625,20 @@ body>div.fixed.top-0.bottom-0.left-0.right-0.z-50.flex.items-center.justify-cent
 #toast-container .text-gray-400,
 #toast-container .text-white {
     color: var(--label-text-color);
+}
+
+/* BLURSTUFF */
+
+.backdrop-blur:not(.bg-yellow-500) {
+    background: rgb(var(--accent-color), 0.3);
+    --tw-backdrop-blur: blur(8px);
+    -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+    backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+    border-color: rgb(var(--accent-color), 0.3);
+}
+
+
+[aria-labelledby*="headlessui-label"][data-headlessui-state*="checked"] {
+    background: rgb(var(--accent-color), 0.3);
+    border-color: rgb(var(--accent-color), 0.3);
 }
