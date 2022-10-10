@@ -5,6 +5,7 @@
       "bazarr-darker": "https://develop.theme-park.dev/css/addons/bazarr/bazarr-darker/bazarr-darker.css?sha=e4514d9870b04b4990bb5b477dcee577551e290e"
     },
     "lidarr": {
+      "lidarr-alt-calendar": "https://develop.theme-park.dev/css/addons/lidarr/lidarr-alt-calendar/lidarr-alt-calendar.css?sha=4789dc3531dd036ae4a3035214dc9785b8e94202",
       "lidarr-darker": "https://develop.theme-park.dev/css/addons/lidarr/lidarr-darker/lidarr-darker.css?sha=d68dfdc7f43596478f1597bc541e94039d69e667"
     },
     "organizr": {
@@ -25,9 +26,11 @@
     },
     "radarr": {
       "radarr-4k-logo": "https://develop.theme-park.dev/css/addons/radarr/radarr-4k-logo/radarr-4k-logo.css?sha=0e7d257aa76caf8d9630ba95e8d499476e5c1baf",
+      "radarr-alt-calendar": "https://develop.theme-park.dev/css/addons/radarr/radarr-alt-calendar/radarr-alt-calendar.css?sha=ee66372dca0fab73fedd103effb51751d40843ff",
       "radarr-darker": "https://develop.theme-park.dev/css/addons/radarr/radarr-darker/radarr-darker.css?sha=29e6bb7eb550375061d326e363a15ea2d6f59e32"
     },
     "readarr": {
+      "readarr-alt-calendar": "https://develop.theme-park.dev/css/addons/readarr/readarr-alt-calendar/readarr-alt-calendar.css?sha=3cdff79e43e36da75a40c2ba980e3da9ff540585",
       "readarr-alt-logo": "https://develop.theme-park.dev/css/addons/readarr/readarr-alt-logo/readarr-alt-logo.css?sha=f1f3b6fd804d76c2d6851f945446a1693b42c8ab",
       "readarr-darker": "https://develop.theme-park.dev/css/addons/readarr/readarr-darker/readarr-darker.css?sha=6800b40d5e3799457d916a509d8f35703b326fc3"
     },
@@ -78,6 +81,7 @@
       }
     },
     "whisparr": {
+      "whisparr-alt-calendar": "https://develop.theme-park.dev/css/addons/whisparr/whisparr-alt-calendar/whisparr-alt-calendar.css?sha=827f6533509ff3c2b73709ae5fd23c3b1de9239f",
       "whisparr-darker": "https://develop.theme-park.dev/css/addons/whisparr/whisparr-darker/whisparr-darker.css?sha=454a5ef593922ba74c4d13315e8c4687de182a57"
     }
   },
@@ -267,9 +271,10 @@
     },
     "lidarr": {
       "addons": {
+        "lidarr-alt-calendar": "https://develop.theme-park.dev/css/addons/lidarr/lidarr-alt-calendar/lidarr-alt-calendar.css?sha=4789dc3531dd036ae4a3035214dc9785b8e94202",
         "lidarr-darker": "https://develop.theme-park.dev/css/addons/lidarr/lidarr-darker/lidarr-darker.css?sha=d68dfdc7f43596478f1597bc541e94039d69e667"
       },
-      "base_css": "https://develop.theme-park.dev/css/base/lidarr/lidarr-base.css?sha=f934a224ce06490e911181b083ffa67ddd70d5be"
+      "base_css": "https://develop.theme-park.dev/css/base/lidarr/lidarr-base.css?sha=9efcb2e267bf1f80443182ab26cde79f23d33d65"
     },
     "moviematch": {
       "addons": {},
@@ -347,16 +352,18 @@
     "radarr": {
       "addons": {
         "radarr-4k-logo": "https://develop.theme-park.dev/css/addons/radarr/radarr-4k-logo/radarr-4k-logo.css?sha=0e7d257aa76caf8d9630ba95e8d499476e5c1baf",
+        "radarr-alt-calendar": "https://develop.theme-park.dev/css/addons/radarr/radarr-alt-calendar/radarr-alt-calendar.css?sha=ee66372dca0fab73fedd103effb51751d40843ff",
         "radarr-darker": "https://develop.theme-park.dev/css/addons/radarr/radarr-darker/radarr-darker.css?sha=29e6bb7eb550375061d326e363a15ea2d6f59e32"
       },
-      "base_css": "https://develop.theme-park.dev/css/base/radarr/radarr-base.css?sha=ca316ca49bf758e5a610110e0140bcdf2a263176"
+      "base_css": "https://develop.theme-park.dev/css/base/radarr/radarr-base.css?sha=be4cb2ac5fb3b5735c0596305d618878926ed448"
     },
     "readarr": {
       "addons": {
+        "readarr-alt-calendar": "https://develop.theme-park.dev/css/addons/readarr/readarr-alt-calendar/readarr-alt-calendar.css?sha=3cdff79e43e36da75a40c2ba980e3da9ff540585",
         "readarr-alt-logo": "https://develop.theme-park.dev/css/addons/readarr/readarr-alt-logo/readarr-alt-logo.css?sha=f1f3b6fd804d76c2d6851f945446a1693b42c8ab",
         "readarr-darker": "https://develop.theme-park.dev/css/addons/readarr/readarr-darker/readarr-darker.css?sha=6800b40d5e3799457d916a509d8f35703b326fc3"
       },
-      "base_css": "https://develop.theme-park.dev/css/base/readarr/readarr-base.css?sha=4d165ec910256450c05924804db606f55db15979"
+      "base_css": "https://develop.theme-park.dev/css/base/readarr/readarr-base.css?sha=58b999c5f1e53257ff992959003cf67b1f4b6fab"
     },
     "requestrr": {
       "addons": {},
@@ -381,7 +388,7 @@
         "sonarr-darker": "https://develop.theme-park.dev/css/addons/sonarr/sonarr-darker/sonarr-darker.css?sha=7c3c2ddcd71525229b0dcc186326003677908b7c",
         "sonarr-text-logo": "https://develop.theme-park.dev/css/addons/sonarr/sonarr-text-logo/sonarr-text-logo.css?sha=0979cbe5aaabb148fd15f4122690685e7ae4a4f3"
       },
-      "base_css": "https://develop.theme-park.dev/css/base/sonarr/sonarr-base.css?sha=0a2deaf29f7be08073cde4f2ac0f4dc7c8b74304"
+      "base_css": "https://develop.theme-park.dev/css/base/sonarr/sonarr-base.css?sha=a48674b3dc50ef91f320817968a60575db50bf2b"
     },
     "synclounge": {
       "addons": {},
@@ -448,6 +455,7 @@
     },
     "whisparr": {
       "addons": {
+        "whisparr-alt-calendar": "https://develop.theme-park.dev/css/addons/whisparr/whisparr-alt-calendar/whisparr-alt-calendar.css?sha=827f6533509ff3c2b73709ae5fd23c3b1de9239f",
         "whisparr-darker": "https://develop.theme-park.dev/css/addons/whisparr/whisparr-darker/whisparr-darker.css?sha=454a5ef593922ba74c4d13315e8c4687de182a57"
       },
       "base_css": "https://develop.theme-park.dev/css/base/whisparr/whisparr-base.css?sha=0353e1165e85c038a196cdcbe1d86cb106cfdf6f"
