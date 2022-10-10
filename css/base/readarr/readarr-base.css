@@ -14,14 +14,6 @@
 @import url("/css/defaults/transparent.css");
 @import url("/css/defaults/servarr-base.css");
 
-:root {
-    --calendar-downloaded: 39 194 76;
-    --calendar-downloading: 122 67 182;
-    --calendar-unmonitored: 173 173 173;
-    --calendar-missing: 240 80 80;
-    --calendar-unreleased: 93 156 236; 
-  }
-
 [class*="AuthorSearchInput-sectionTitle-"] {
     color: var(--text-hover);
 }
@@ -207,57 +199,6 @@
 }
 
 /* CALENDAR */
-[class*="CalendarEvent-downloaded-"]:not([class*="AgendaEvent-"]) {
-    background: rgb(var(--calendar-downloaded) / .7) !important;
-    border-left-color: transparent !important;
-}
-
-[class*="Calendar-calendar-"] [class*="CalendarEvent-downloaded-"]:hover:not([class*="AgendaEvent-"]) {
-    background: rgb(var(--calendar-downloaded) / .5) !important;
-    border-left-color: transparent !important;
-}
-
-[class*="CalendarEvent-missing-"]:not([class*="AgendaEvent-"]) {
-    background: rgb(var(--calendar-missing) / .7) !important;
-    border-left-color: transparent !important;
-}
-
-[class*="Calendar-calendar-"] [class*="CalendarEvent-missing-"]:hover:not([class*="AgendaEvent-"]) {
-    background: rgba(var(--calendar-missing) / .5) !important;
-    border-left-color: transparent !important;
-}
-
-[class*="CalendarEvent-unreleased-"]:not([class*="AgendaEvent-"]) {
-    background: rgb(var(--calendar-unreleased) / .7) !important;
-    border-left-color: transparent !important;
-}
-
-[class*="Calendar-calendar-"] [class*="CalendarEvent-unreleased-"]:hover:not([class*="AgendaEvent-"]) {
-    background: rgb(var(--calendar-unreleased) / .5) !important;
-    border-left-color: transparent !important;
-}
-
-[class*="CalendarEvent-unmonitored-"]:not([class*="AgendaEvent-"]) {
-    background: rgb(var(--calendar-unmonitored) / .7) !important;
-    border-left-color: transparent !important;
-}
-
-[class*="Calendar-calendar-"] [class*="CalendarEvent-unmonitored-"]:hover:not([class*="AgendaEvent-"]) {
-    background: rgb(var(--calendar-unmonitored) / .5) !important;
-    border-left-color: transparent !important;
-}
-
-[class*="CalendarEvent-downloading-"]:not([class*="AgendaEvent-"]),
-[class*="CalendarEvent-queue-"]:not([class*="AgendaEvent-"]) {
-    background: rgb(var(--calendar-downloading) / .7) !important;
-    border-left-color: transparent !important;
-}
-
-[class*="Calendar-calendar-"] [class*="CalendarEvent-downloading-"]:hover:not([class*="AgendaEvent-"]),
-[class*="Calendar-calendar-"] [class*="CalendarEvent-queue-"]:hover:not([class*="AgendaEvent-"])  {
-    background: rgb(var(--calendar-downloading) / .5) !important;
-    border-left-color: transparent !important;
-}
 
 [class*="CalendarEvent-authorName-"] a,
 [class*="CalendarEvent-authorName-"],

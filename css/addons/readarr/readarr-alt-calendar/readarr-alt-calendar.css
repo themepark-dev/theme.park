@@ -1,0 +1,42 @@
+:root {
+    --calendar-downloaded: 39 194 76;
+    --calendar-downloading: 122 67 182;
+    --calendar-unmonitored: 173 173 173;
+    --calendar-missing: 240 80 80;
+    --calendar-unreleased: 93 156 236; 
+  }
+
+  [class*="CalendarEvent-downloaded-"]:not([class*="AgendaEvent-"]) {
+    background: rgb(var(--calendar-downloaded) / .4) !important;
+  }
+
+[class*="CalendarEvent-missing-"]:not([class*="AgendaEvent-"]) {
+    background: rgb(var(--calendar-missing) / .4) !important;
+}
+
+[class*="CalendarEvent-unreleased-"]:not([class*="AgendaEvent-"]) {
+    background: rgb(var(--calendar-unreleased) / .4) !important;
+}
+
+[class*="CalendarEvent-unmonitored-"]:not([class*="AgendaEvent-"]) {
+    background: rgb(var(--calendar-unmonitored) / .4) !important;
+}
+
+[class*="CalendarEvent-downloading-"]:not([class*="AgendaEvent-"]),
+[class*="CalendarEvent-queue-"]:not([class*="AgendaEvent-"]) {
+    background: rgb(var(--calendar-downloading) / .4) !important;
+
+}
+
+/* Color Impaired Mode */
+[class*="CalendarEvent-unmonitored-"].colorImpaired {
+  background: repeating-linear-gradient(90deg, rgb(var(--calendar-unmonitored) / .2), rgb(var(--calendar-unmonitored) / .2) 5px, rgb(var(--calendar-unmonitored) / .4) 5px, rgb(var(--calendar-unmonitored) / .4) 10px) !important;
+}
+
+[class*="CalendarEvent-missing-"].colorImpaired{
+  background: repeating-linear-gradient(90deg, rgb(var(--calendar-missing) / .2), rgb(var(--calendar-missing) / .2) 5px, rgb(var(--calendar-missing) / .4) 5px, rgb(var(--calendar-missing) / .4) 10px) !important;
+}
+
+[class*="CalendarEvent-unreleased-"].colorImpaired{
+  background: repeating-linear-gradient(90deg, rgb(var(--calendar-unreleased) / .2), rgb(var(--calendar-unreleased) / .2) 5px, rgb(var(--calendar-unreleased) / .4) 5px, rgb(var(--calendar-unreleased) / .4) 10px) !important;
+}
