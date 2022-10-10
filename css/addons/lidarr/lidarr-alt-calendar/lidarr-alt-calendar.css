@@ -1,0 +1,19 @@
+[class*="CalendarEvent-downloaded-"] {
+    background: rgb(var(--calendar-downloaded) / .4) !important;
+}
+
+[class*="CalendarEvent-downloading-"] {
+    background: rgb(var(--calendar-downloading) / .4) !important; 
+}
+
+[class*="CalendarEvent-unmonitored-"] {
+    background: rgb(var(--calendar-unmonitored) / .4) !important;
+}
+
+[class*="CalendarEvent-missing-"] {
+    background: rgb(var(--calendar-missing) / .4) !important;
+}
+
+[class*="CalendarEvent-unreleased-"] {
+    background: rgb(var(--calendar-unreleased) / .4) !important;
+}

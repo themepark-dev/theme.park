@@ -1,0 +1,20 @@
+[class*="CalendarEvent-downloaded-"]:not([class*="AgendaEvent-"]) {
+    background: rgb(var(--calendar-downloaded) / .4) !important;
+}
+
+[class*="CalendarEvent-missing-"]:not([class*="AgendaEvent-"]) {
+    background: rgb(var(--calendar-missing) / .4) !important;
+}
+
+[class*="CalendarEvent-unreleased-"]:not([class*="AgendaEvent-"]) {
+    background: rgb(var(--calendar-unreleased) / .4) !important;
+}
+
+[class*="CalendarEvent-unmonitored-"]:not([class*="AgendaEvent-"]) {
+    background: rgb(var(--calendar-unmonitored) / .4) !important;
+}
+
+[class*="CalendarEvent-downloading-"]:not([class*="AgendaEvent-"]),
+[class*="CalendarEvent-queue-"]:not([class*="AgendaEvent-"]) {
+    background: rgb(var(--calendar-downloading) / .4) !important;
+}
