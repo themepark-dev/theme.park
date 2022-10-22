@@ -1,8 +1,8 @@
 {
   "addons": {
     "bazarr": {
-      "bazarr-4k-logo": "https://develop.theme-park.dev/css/addons/bazarr/bazarr-4k-logo/bazarr-4k-logo.css?sha=7b31e2254883edee45ab195309149966da34521c",
-      "bazarr-darker": "https://develop.theme-park.dev/css/addons/bazarr/bazarr-darker/bazarr-darker.css?sha=e4514d9870b04b4990bb5b477dcee577551e290e"
+      "bazarr-4k-logo": "https://develop.theme-park.dev/css/addons/bazarr/bazarr-4k-logo/bazarr-4k-logo.css?sha=c8338ec07dea32d8ffc1228f49a05dc8f0b85e57",
+      "bazarr-darker": "https://develop.theme-park.dev/css/addons/bazarr/bazarr-darker/bazarr-darker.css?sha=d06c841424beb35e074ee880f692cff273f83f55"
     },
     "lidarr": {
       "lidarr-alt-calendar": "https://develop.theme-park.dev/css/addons/lidarr/lidarr-alt-calendar/lidarr-alt-calendar.css?sha=4789dc3531dd036ae4a3035214dc9785b8e94202",
@@ -196,8 +196,8 @@
     },
     "bazarr": {
       "addons": {
-        "bazarr-4k-logo": "https://develop.theme-park.dev/css/addons/bazarr/bazarr-4k-logo/bazarr-4k-logo.css?sha=7b31e2254883edee45ab195309149966da34521c",
-        "bazarr-darker": "https://develop.theme-park.dev/css/addons/bazarr/bazarr-darker/bazarr-darker.css?sha=e4514d9870b04b4990bb5b477dcee577551e290e"
+        "bazarr-4k-logo": "https://develop.theme-park.dev/css/addons/bazarr/bazarr-4k-logo/bazarr-4k-logo.css?sha=c8338ec07dea32d8ffc1228f49a05dc8f0b85e57",
+        "bazarr-darker": "https://develop.theme-park.dev/css/addons/bazarr/bazarr-darker/bazarr-darker.css?sha=d06c841424beb35e074ee880f692cff273f83f55"
       },
       "base_css": "https://develop.theme-park.dev/css/base/bazarr/bazarr-base.css?sha=633080181176bbddbcd577c927d7c04861370985"
     },
