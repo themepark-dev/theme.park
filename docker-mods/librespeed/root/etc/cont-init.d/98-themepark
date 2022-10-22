@@ -1,4 +1,4 @@
-#!/usr/bin/with-contenv bash
+#!/command/with-contenv bash
 
 echo '-------------------------------'
 echo '|  Librespeed theme.park Mod  |'
@@ -43,8 +43,8 @@ if ! grep -q "${TP_DOMAIN}/css/base" /app/www/public/index.html; then
     echo '---------------------------'
     echo '|  Adding the stylesheet  |'
     echo '---------------------------'
-    sed -i "s/<\/head>/<link rel='stylesheet' href='${TP_SCHEME}:\/\/${TP_DOMAIN}\/css\/base\/librespeed\/librespeed-base.css'><\/head> /g" /usr/share/webapps/librespeed/index.html
-    sed -i "s/<\/head>/<link rel='stylesheet' href='${TP_SCHEME}:\/\/${TP_DOMAIN}\/css\/${THEME_TYPE}\/${TP_THEME}.css'><\/head> /g" /usr/share/webapps/librespeed/index.html
+    sed -i "s/<\/head>/<link rel='stylesheet' href='${TP_SCHEME}:\/\/${TP_DOMAIN}\/css\/base\/librespeed\/librespeed-base.css'><\/head> /g" /app/www/public/index.html
+    sed -i "s/<\/head>/<link rel='stylesheet' href='${TP_SCHEME}:\/\/${TP_DOMAIN}\/css\/${THEME_TYPE}\/${TP_THEME}.css'><\/head> /g" /app/www/public/index.html
     printf 'Stylesheet set to %s\n' "${TP_THEME}
     "
 fi
