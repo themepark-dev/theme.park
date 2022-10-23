@@ -123,15 +123,18 @@ jobs:
           DOCKER_CLI_EXPERIMENTAL: enabled
         run: |
           IMAGE=${{ matrix.registry }}/${GITHUB_REPOSITORY,,}
-          SOURCE=${GITHUB_REPOSITORY,,}:${{ github.ref_name }}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}-${{ env.ARCHITECTURE }}${{ github.event.inputs.tag }}
-          TAG=${{ github.ref_name }}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}-${{ env.ARCHITECTURE }}${{ github.event.inputs.tag }}
-          [[ -f ${{ env.ARCHITECTURE }}.Dockerfile ]]  && ARCH=${SOURCE}
-          
-          docker manifest create ${IMAGE}:${TAG} ${ARCH}
-          docker manifest push ${IMAGE}:${TAG}
+          TAG=${{ github.ref_name }}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}
+          SOURCE=${IMAGE}:${TAG}
+          [[ -f linux-amd64.Dockerfile ]]  && AMD64=${SOURCE}-linux-amd64
+          [[ -f linux-arm64.Dockerfile ]]  && ARM64=${SOURCE}-linux-arm64
+          [[ -f linux-arm-v7.Dockerfile ]] && ARMV7=${SOURCE}-linux-arm-v7
+
+          docker manifest create ${IMAGE}:${TAG}${{ github.event.inputs.tag }} ${AMD64} ${ARM64} ${ARMV7}
+          docker manifest push ${IMAGE}:${TAG}${{ github.event.inputs.tag }}
+
           TAG=${{ github.ref_name }}${{ github.event.inputs.tag }}
-          docker manifest create ${IMAGE}:${TAG} ${ARCH}
-          docker manifest push ${IMAGE}:${TAG}
+          docker manifest create ${IMAGE}:${TAG} ${AMD64} ${ARM64} ${ARMV7}
+          docker manifest push ${IMAGE}:${TAG}${{ github.event.inputs.tag }}
       - name: Latest manifest
         if: ${{ github.event.release.target_commitish == 'master' }}
         env:
