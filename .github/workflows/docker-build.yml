@@ -135,7 +135,7 @@ jobs:
 
           TAG=${{ github.ref_name }}${{ github.event.inputs.tag }}
           docker manifest create ${IMAGE}:${TAG} ${AMD64} ${ARM64} ${ARMV7}
-          docker manifest push ${IMAGE}:${TAG}${{ github.event.inputs.tag }}
+          docker manifest push ${IMAGE}:${TAG}
       - name: Latest manifest
         if: ${{ github.event.release.target_commitish == 'master' }}
         env:
