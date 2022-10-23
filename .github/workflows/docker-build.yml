@@ -35,7 +35,7 @@ jobs:
       - name: Prepare
         id: prep
         run: |
-          ARCHITECTURE=${{ matrix.architecture }}
+          echo "ARCHITECTURE=${{ matrix.architecture }}" >> $GITHUB_ENV
           echo "created=$(date -u +'%Y-%m-%dT%H:%M:%SZ')" >> $GITHUB_ENV
           echo "title=${GITHUB_REPOSITORY,,}:${{ github.ref_name }}" >> $GITHUB_ENV
           echo "revision=${GITHUB_SHA}" >> $GITHUB_ENV
@@ -89,7 +89,7 @@ jobs:
             org.opencontainers.image.version=${{ env.VERSION }}
           build-args: |
             TP_RELEASE=${{ env.VERSION }}
-            BUILD_DATE=${{ steps.date_time.outputs.created }}
+            BUILD_DATE=${{ env.created }}
             BUILD_ARCHITECTURE=${{ matrix.architecture }}
 
   publish:
@@ -123,9 +123,10 @@ jobs:
           DOCKER_CLI_EXPERIMENTAL: enabled
         run: |
           IMAGE=${{ matrix.registry }}/${GITHUB_REPOSITORY,,}
-          SOURCE=${GITHUB_REPOSITORY,,}:${{ github.ref_name }}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}-${{ matrix.architecture }}${{ github.event.inputs.tag }}
-          TAG=${{ github.ref_name }}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}-${{ matrix.architecture }}${{ github.event.inputs.tag }}
-          [[ -f ${{ matrix.architecture }}.Dockerfile ]]  && ARCH=${SOURCE}
+          SOURCE=${GITHUB_REPOSITORY,,}:${{ github.ref_name }}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}-${{ env.ARCHITECTURE }}${{ github.event.inputs.tag }}
+          TAG=${{ github.ref_name }}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}-${{ env.ARCHITECTURE }}${{ github.event.inputs.tag }}
+          [[ -f ${{ env.ARCHITECTURE }}.Dockerfile ]]  && ARCH=${SOURCE}
+          
           docker manifest create ${IMAGE}:${TAG} ${ARCH}
           docker manifest push ${IMAGE}:${TAG}
           TAG=${{ github.ref_name }}
