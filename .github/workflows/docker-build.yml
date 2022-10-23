@@ -129,7 +129,7 @@ jobs:
           
           docker manifest create ${IMAGE}:${TAG} ${ARCH}
           docker manifest push ${IMAGE}:${TAG}
-          TAG=${{ github.ref_name }}
+          TAG=${{ github.ref_name }}${{ github.event.inputs.tag }}
           docker manifest create ${IMAGE}:${TAG} ${ARCH}
           docker manifest push ${IMAGE}:${TAG}
       - name: Latest manifest
