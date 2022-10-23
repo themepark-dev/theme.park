@@ -1,0 +1,31 @@
+
+[class*="CalendarEvent-event-"] {
+    background: rgb(var(--calendar-unmonitored) / .4);
+}
+
+[class*="CalendarEvent-downloaded-"] {
+    background: rgb(var(--calendar-available) / .4) !important;
+}
+
+[class*="CalendarEvent-missing-"],
+[class*="CalendarEvent-missingMonitored"] {
+    background-color: rgb(var(--calendar-missing) / .4);
+}
+
+[class*="CalendarEvent-missingUnmonitored-"] {
+    background: rgb(var(--calendar-missing-unmonitored) / .4) !important;
+}
+
+[class*="CalendarEvent-unreleased-"],
+[class*="CalendarEvent-continuing-"] {
+    background: rgb(var(--calendar-unaired) / .4) !important;
+}
+
+[class*="CalendarEvent-unmonitored-"] {
+    background: rgb(var(--calendar-unmonitored) / .4) !important;
+}
+
+[class*="CalendarEvent-downloading-"],
+[class*="CalendarEvent-queue-"] {
+    background: rgb(var(--calendar-downloading) / .4) !important;
+}
