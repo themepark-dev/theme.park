@@ -36,59 +36,59 @@ jobs:
         id: prep
         run: |
           ARCHITECTURE=${{ matrix.architecture }}
-          echo ::set-output name=created::$(date -u +'%Y-%m-%dT%H:%M:%SZ')
-          echo ::set-output name=title::${GITHUB_REPOSITORY,,}:${{ github.ref_name }}
-          echo ::set-output name=revision::${GITHUB_SHA}
-          echo ::set-output name=source::${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY,,}/tree/${{ github.ref_name }}
-          echo ::set-output name=vendor::${{ github.repository_owner }}
-          echo ::set-output name=url::${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY,,}/blob/master/README.md
-          echo ::set-output name=VERSION::${{ github.event.release.tag_name }}
-          echo ::set-output name=platform::${ARCHITECTURE//-/\/}
-          echo ::set-output name=cache::${GITHUB_REPOSITORY,,}:${{ github.ref_name }}-cache-${{ matrix.architecture }}
-          echo ::set-output name=tag::${GITHUB_REPOSITORY,,}:${{ github.ref_name }}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}-${{ matrix.architecture }}
-          echo ::set-output name=release::${{ github.event.release.target_commitish }}
+          echo "created=$(date -u +'%Y-%m-%dT%H:%M:%SZ')" >> $GITHUB_ENV
+          echo "title=${GITHUB_REPOSITORY,,}:${{ github.ref_name }}" >> $GITHUB_ENV
+          echo "revision=${GITHUB_SHA}" >> $GITHUB_ENV
+          echo "source=${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY,,}/tree/${{ github.ref_name }}" >> $GITHUB_ENV
+          echo "vendor=${{ github.repository_owner }}" >> $GITHUB_ENV
+          echo "url=${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY,,}/blob/master/README.md" >> $GITHUB_ENV
+          echo "VERSION=${{ github.event.release.tag_name }}" >> $GITHUB_ENV
+          echo "platform=${ARCHITECTURE//-/\/}" >> $GITHUB_ENV
+          echo "cache=${GITHUB_REPOSITORY,,}:${{ github.ref_name }}-cache-${{ matrix.architecture }}" >> $GITHUB_ENV
+          echo "tag=${GITHUB_REPOSITORY,,}:${{ github.ref_name }}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}-${{ matrix.architecture }}" >> $GITHUB_ENV
+          echo "release=${{ github.event.release.target_commitish }}" >> $GITHUB_ENV
 
       - name: Set up QEMU
-        uses: docker/setup-qemu-action@v1
+        uses: docker/setup-qemu-action@v2.1.0
 
       - name: Set up Docker Buildx
         id: buildx
-        uses: docker/setup-buildx-action@v1
+        uses: docker/setup-buildx-action@v2.2.1
 
       - name: Login to GitHub Container Registry
-        uses: docker/login-action@v1
+        uses: docker/login-action@v2.1.0
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GH_PAT }}
 
       - name: Login to Docker Hub
-        uses: docker/login-action@v1
+        uses: docker/login-action@v2.1.0
         with:
           username: ${{ secrets.DH_USER }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: build&push
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v3.2.0
         with:
           push: ${{ github.event_name != 'pull_request' }}
-          platforms: ${{ steps.prep.outputs.platform }}
+          platforms: ${{ env.platform }}
           file: ./${{ matrix.architecture }}.Dockerfile
-          cache-from: docker.io/${{ steps.prep.outputs.cache }}
-          cache-to: docker.io/${{ steps.prep.outputs.cache }}
+          cache-from: docker.io/${{ env.cache }}
+          cache-to: docker.io/${{ env.cache }}
           tags: |
-            docker.io/${{ steps.prep.outputs.tag }}
-            ghcr.io/${{ steps.prep.outputs.tag }}
+            docker.io/${{ env.tag }}
+            ghcr.io/${{ env.tag }}
           labels: |
-            org.opencontainers.image.created=${{ steps.prep.outputs.created }}
-            org.opencontainers.image.title=${{ steps.prep.outputs.title }}
-            org.opencontainers.image.revision=${{ steps.prep.outputs.revision }}
-            org.opencontainers.image.source=${{ steps.prep.outputs.source }}
-            org.opencontainers.image.vendor=${{ steps.prep.outputs.vendor }}
-            org.opencontainers.image.url=${{ steps.prep.outputs.url }}
-            org.opencontainers.image.version=${{ steps.prep.outputs.VERSION }}
+            org.opencontainers.image.created=${{ env.created }}
+            org.opencontainers.image.title=${{ env.title }}
+            org.opencontainers.image.revision=${{ env.revision }}
+            org.opencontainers.image.source=${{ env.source }}
+            org.opencontainers.image.vendor=${{ env.vendor }}
+            org.opencontainers.image.url=${{ env.url }}
+            org.opencontainers.image.version=${{ env.VERSION }}
           build-args: |
-            TP_RELEASE=${{ steps.prep.outputs.VERSION }}
+            TP_RELEASE=${{ env.VERSION }}
             BUILD_DATE=${{ steps.date_time.outputs.created }}
             BUILD_ARCHITECTURE=${{ matrix.architecture }}
 
@@ -100,11 +100,11 @@ jobs:
     needs: [build-and-push-it-to-the-limit]
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.5.0
 
       - name: Login to DockerHub
         if: matrix.registry == 'docker.io'
-        uses: docker/login-action@v1
+        uses: docker/login-action@v2.1.0
         with:
           registry: docker.io
           username: ${{ secrets.DH_USER }}
@@ -112,7 +112,7 @@ jobs:
 
       - name: Login to GitHub Container Registry
         if: matrix.registry == 'ghcr.io'
-        uses: docker/login-action@v1
+        uses: docker/login-action@v2.1.0
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
@@ -125,7 +125,7 @@ jobs:
           IMAGE=${{ matrix.registry }}/${GITHUB_REPOSITORY,,}
           TAG=${{ github.ref_name }}
           SOURCE=${IMAGE}:${TAG}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}
-          VERSION=${{ steps.prep.outputs.VERSION }}
+          VERSION=${{ env.VERSION }}
           [[ -f linux-amd64.Dockerfile ]]  && AMD64=${SOURCE}-linux-amd64
           [[ -f linux-arm64.Dockerfile ]]  && ARM64=${SOURCE}-linux-arm64
           [[ -f linux-arm-v7.Dockerfile ]] && ARMV7=${SOURCE}-linux-arm-v7
