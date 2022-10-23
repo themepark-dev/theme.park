@@ -45,7 +45,7 @@ jobs:
           echo "VERSION=${{ github.event.release.tag_name }}" >> $GITHUB_ENV
           echo "platform=${ARCHITECTURE//-/\/}" >> $GITHUB_ENV
           echo "cache=${GITHUB_REPOSITORY,,}:${{ github.ref_name }}-cache-${{ matrix.architecture }}" >> $GITHUB_ENV
-          echo "tag=${GITHUB_REPOSITORY,,}:${{ github.ref_name }}${{ github.event.inputs.tag }}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}-${{ matrix.architecture }}" >> $GITHUB_ENV
+          echo "tag=${GITHUB_REPOSITORY,,}:${{ github.ref_name }}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}-${{ matrix.architecture }}${{ github.event.inputs.tag }}" >> $GITHUB_ENV
           echo "release=${{ github.event.release.target_commitish }}" >> $GITHUB_ENV
 
       - name: Set up QEMU
@@ -128,6 +128,7 @@ jobs:
           [[ -f ${{ matrix.architecture }}.Dockerfile ]]  && ARCH=${TAG}
           docker manifest create ${IMAGE}:${TAG} ${ARCH}
           docker manifest push ${IMAGE}:${TAG}
+          TAG=${{ github.ref_name }}
           docker manifest create ${IMAGE}:${TAG} ${ARCH}
           docker manifest push ${IMAGE}:${TAG}
       - name: Latest manifest
