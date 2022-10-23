@@ -124,7 +124,7 @@ jobs:
         run: |
           IMAGE=${{ matrix.registry }}/${GITHUB_REPOSITORY,,}
           TAG=${{ github.ref_name }}
-          SOURCE=${IMAGE}:${TAG}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}
+          SOURCE=${IMAGE}:${TAG}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}${{ github.event.inputs.tag }}
           VERSION=${{ env.VERSION }}
           [[ -f linux-amd64.Dockerfile ]]  && AMD64=${SOURCE}-linux-amd64
           [[ -f linux-arm64.Dockerfile ]]  && ARM64=${SOURCE}-linux-arm64
