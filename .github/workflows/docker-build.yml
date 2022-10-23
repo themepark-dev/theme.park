@@ -14,7 +14,7 @@ on:
         - develop
         - testing
       tag:
-        description: 'Add a tag'
+        description: 'Append a the tag with "-custom" e.g :develop-custom'
   push:
     branches:
       - develop
@@ -29,7 +29,7 @@ jobs:
         architecture: [linux-arm-v7,linux-arm64,linux-amd64]
     steps:
       - name: checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3.1.0
         with:
           fetch-depth: 0
       - name: Prepare
@@ -77,8 +77,8 @@ jobs:
           cache-from: docker.io/${{ env.cache }}
           cache-to: docker.io/${{ env.cache }}
           tags: |
-            docker.io/${{ env.tag }}
-            ghcr.io/${{ env.tag }}
+            docker.io/${{ env.tag }}${{ github.event.inputs.tag }}
+            ghcr.io/${{ env.tag }}${{ github.event.inputs.tag }}
           labels: |
             org.opencontainers.image.created=${{ env.created }}
             org.opencontainers.image.title=${{ env.title }}
@@ -100,7 +100,7 @@ jobs:
     needs: [build-and-push-it-to-the-limit]
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.5.0
+        uses: actions/checkout@v3.1.0
 
       - name: Login to DockerHub
         if: matrix.registry == 'docker.io'
