@@ -123,9 +123,9 @@ jobs:
           DOCKER_CLI_EXPERIMENTAL: enabled
         run: |
           IMAGE=${{ matrix.registry }}/${GITHUB_REPOSITORY,,}
-          TAG=${{ env.tag }}
-          VERSION=${{ env.VERSION }}
-          [[ -f ${{ matrix.architecture }}.Dockerfile ]]  && ARCH=${TAG}
+          SOURCE=${GITHUB_REPOSITORY,,}:${{ github.ref_name }}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}-${{ matrix.architecture }}${{ github.event.inputs.tag }}
+          TAG=${{ github.ref_name }}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}-${{ matrix.architecture }}${{ github.event.inputs.tag }}
+          [[ -f ${{ matrix.architecture }}.Dockerfile ]]  && ARCH=${SOURCE}
           docker manifest create ${IMAGE}:${TAG} ${ARCH}
           docker manifest push ${IMAGE}:${TAG}
           TAG=${{ github.ref_name }}
