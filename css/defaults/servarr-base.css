@@ -127,6 +127,17 @@ a:hover {
     border: 2px solid var(--text-hover);
 }
 
+[class*="LoadingPage-page-"] {
+    background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+
 /* MODAL */
 [class*="ModalHeader-modalHeader-"] {
     background: var(--modal-header-color);

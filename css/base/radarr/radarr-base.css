@@ -107,7 +107,8 @@
     background: var(--transparency-dark-25) !important;
 }
 
-[class*="MovieFileEditorTable-container-"] {
+[class*="MovieFileEditorTable-container-"],
+[class*="MovieHistoryTable-container-"] {
     border: 1px solid transparent;
     background: var(--transparency-dark-25);
 }
