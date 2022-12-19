@@ -48,15 +48,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3.1.0
         with:
           fetch-depth: 0
       - name: get changed files
         id: getfile
         run: |
-          echo "::set-output name=files::$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} docker-mods/| xargs)"
+          echo "files=$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} docker-mods/| xargs)" >> $GITHUB_ENV
       - name: Login to GitHub Container Registry
-        uses: docker/login-action@v1
+        uses: docker/login-action@v2.1.0
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
@@ -64,7 +64,7 @@ jobs:
       - name: find correct directory then build&push
         if: ${{ github.event_name == 'push' }}
         run: |
-          for i in ${{ steps.getfile.outputs.files }}
+          for i in ${{ env.files }}
             do
               directory="$( echo $i | cut -d'/' -f2 -s )"
               if [ -z "$directory" ]; then
@@ -95,22 +95,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3.1.0
         with:
           fetch-depth: 0
       - name: get changed files
         id: getfile
         run: |
-          echo "::set-output name=files::$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} docker-mods/| xargs)"
+          echo "files=$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} docker-mods/| xargs)" >> $GITHUB_ENV
       - name: Login to Docker Hub
-        uses: docker/login-action@v1
+        uses: docker/login-action@v2.1.0
         with:
           username: ${{ secrets.DH_USER }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: find correct directory then build&push
         if: ${{ github.event_name == 'push' }}
         run: |
-          for i in ${{ steps.getfile.outputs.files }}
+          for i in ${{ env.files }}
             do
               directory="$( echo $i | cut -d'/' -f2 -s )"
               if [ -z "$directory" ]; then
