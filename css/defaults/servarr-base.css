@@ -728,6 +728,10 @@ a:hover {
     background: var(--transparency-dark-10) !important;
 }
 
+[class*="AgendaEvent-event-"] {
+    border-bottom: 1px solid var(--transparency-light-25);
+}
+
 /* SETTINGS */
 [class*="Settings-link-"] {
     color: var(--text-hover);
