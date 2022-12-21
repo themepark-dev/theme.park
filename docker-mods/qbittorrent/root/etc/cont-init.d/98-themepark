@@ -30,9 +30,11 @@ echo '--------------------------'
     if [ -x "$(command -v apk)" ]; then 
       apk update && \
       apk add --no-cache subversion
+      apk add --no-cache perl
     elif [ -x "$(command -v apt-get)" ]; then
       apt-get update && \
       apt-get install -y subversion
+      apt-get install -y perl
     fi
 fi
 
@@ -95,20 +97,34 @@ sed_file(){
     printf 'Stylesheet set to %s on %s\n\n' "${TP_THEME}" "$1"
 }
 
-# Adding stylesheets
-echo '---------------------------------------'
-echo '| Adding the stylesheet to html files |'
-echo '---------------------------------------'
-if ! grep -q "${TP_DOMAIN}/css/base" /themepark/public/index.html; then
-    sed_file /themepark/public/index.html
-fi
+clean_file() {
+    perl -i -pe 's/QBT_TR?\(//' "$1"
+    perl -i -pe 's/\)QBT_TR\[CONTEXT=.*?\]//' "$1"
+}
 
-if ! grep -q "${TP_DOMAIN}/css/base" /themepark/private/index.html; then
-    find /themepark/private -type f -iname *.html | while read fname
+if ! grep -q "${TP_DOMAIN}/css/base" /themepark/public/index.html; then
+    # Adding stylesheets
+    echo '---------------------------------------'
+    echo '| Adding the stylesheet to html files |'
+    echo '---------------------------------------'
+    sed_file /themepark/public/index.html
+    clean_file /themepark/public/index.html
+
+    find /themepark/private -type f -iname "*.html" | while read fname
     do
         sed_file $fname
     done
 fi
+
+# Clean all files
+printf 'Cleaning files in /themepark for any translation text...\n\n
+--------------------------------------------------------------------------
+| !!! RESTART THE CONTAINER IF THIS IS THE FIRST TIME CLEANING FILES !!! |
+--------------------------------------------------------------------------\n\n'
+find /themepark -type f \( ! -iname "*.svg" \) | while read fname
+do
+    clean_file $fname
+done
 
 if ! grep -q "WebUI\\\RootFolder" "${APP_FILEPATH}"; then
     echo '--------------------------------------'

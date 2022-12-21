@@ -2,4 +2,5 @@
 
 if ! [[ -x "$(command -v svn)" ]]; then
     echo "subversion" >> /mod-repo-packages-to-install.list
+    echo "perl" >> /mod-repo-packages-to-install.list
 fi
