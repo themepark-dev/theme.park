@@ -38,7 +38,7 @@
       "sonarr-4k-logo": "https://develop.theme-park.dev/css/addons/sonarr/sonarr-4k-logo/sonarr-4k-logo.css?sha=9bcc5ab73f0c2bfa8b8b6fc219ed5bd1133be1ff",
       "sonarr-4k-text-logo": "https://develop.theme-park.dev/css/addons/sonarr/sonarr-4k-text-logo/sonarr-4k-text-logo.css?sha=0805aae0b588c147a24f8eccf08db6c2d4b242e8",
       "sonarr-darker": "https://develop.theme-park.dev/css/addons/sonarr/sonarr-darker/sonarr-darker.css?sha=7c3c2ddcd71525229b0dcc186326003677908b7c",
-      "sonarr-text-logo": "https://develop.theme-park.dev/css/addons/sonarr/sonarr-text-logo/sonarr-text-logo.css?sha=b037386c06f38403b1270a52ef83654d0573f9b3"
+      "sonarr-text-logo": "https://develop.theme-park.dev/css/addons/sonarr/sonarr-text-logo/sonarr-text-logo.css?sha=f38b37a2dcadf61d135dd555e459eeff4977c0d0"
     },
     "unraid": {
       "login-page": {
@@ -386,7 +386,7 @@
         "sonarr-4k-logo": "https://develop.theme-park.dev/css/addons/sonarr/sonarr-4k-logo/sonarr-4k-logo.css?sha=9bcc5ab73f0c2bfa8b8b6fc219ed5bd1133be1ff",
         "sonarr-4k-text-logo": "https://develop.theme-park.dev/css/addons/sonarr/sonarr-4k-text-logo/sonarr-4k-text-logo.css?sha=0805aae0b588c147a24f8eccf08db6c2d4b242e8",
         "sonarr-darker": "https://develop.theme-park.dev/css/addons/sonarr/sonarr-darker/sonarr-darker.css?sha=7c3c2ddcd71525229b0dcc186326003677908b7c",
-        "sonarr-text-logo": "https://develop.theme-park.dev/css/addons/sonarr/sonarr-text-logo/sonarr-text-logo.css?sha=b037386c06f38403b1270a52ef83654d0573f9b3"
+        "sonarr-text-logo": "https://develop.theme-park.dev/css/addons/sonarr/sonarr-text-logo/sonarr-text-logo.css?sha=f38b37a2dcadf61d135dd555e459eeff4977c0d0"
       },
       "base_css": "https://develop.theme-park.dev/css/base/sonarr/sonarr-base.css?sha=a48674b3dc50ef91f320817968a60575db50bf2b"
     },
