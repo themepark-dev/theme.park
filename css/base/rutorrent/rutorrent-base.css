@@ -1804,3 +1804,7 @@ div#dlgEditRules div.dlg-header {
 div#dlgEditFilters div.dlg-header{
     background-image:none;
 }
+
+div.label-count{
+    background-color: var(--modal-bg-color);
+}
