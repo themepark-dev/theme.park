@@ -434,7 +434,7 @@ div#CatList ul li.sel span {
 
 div#CatList ul li {
     border: none;
-    margin: 5px;
+    margin: 0px 5px;
     font-family: 'Roboto'
 }
 
