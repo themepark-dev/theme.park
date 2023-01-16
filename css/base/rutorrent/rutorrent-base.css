@@ -499,7 +499,7 @@ div#CatList ul li.sel {
 }
 
 div#CatList ul li.RSS {
-    background-image: url(/resources/rutorrent/status_icons.png);
+    background-image: none;
     background-position: 4px -207px
 }
 
@@ -528,7 +528,7 @@ div#CatList ul li.sel span {
 }
 
 div#flabel_cont ul li {
-    background-image: url(/resources/rutorrent/status_icons.png);
+    background-image: none;
     background-position: 4px -352px
 }
 
