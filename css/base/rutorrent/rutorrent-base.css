@@ -1805,6 +1805,6 @@ div#dlgEditFilters div.dlg-header{
     background-image:none;
 }
 
-div.label-count{
+div.label-count, div.label-size{
     background-color: var(--modal-bg-color);
 }
