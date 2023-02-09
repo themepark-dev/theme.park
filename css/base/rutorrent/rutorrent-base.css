@@ -1806,5 +1806,6 @@ div#dlgEditFilters div.dlg-header{
 }
 
 div.label-count, div.label-size{
-    background-color: var(--modal-bg-color);
+    background-color: rgb(var(--accent-color));
+    color: var(--label-text-color);
 }
