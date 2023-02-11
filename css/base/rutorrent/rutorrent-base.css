@@ -434,7 +434,7 @@ div#CatList ul li.sel span {
 
 div#CatList ul li {
     border: none;
-    margin: 5px;
+    margin: 0px 5px;
     font-family: 'Roboto'
 }
 
@@ -1803,4 +1803,10 @@ div#dlgEditRules div.dlg-header {
 
 div#dlgEditFilters div.dlg-header{
     background-image:none;
+}
+
+div.label-count, div.label-size{
+    background-color: rgb(var(--accent-color));
+    color: var(--label-text-color);
+    text-shadow: none;
 }
