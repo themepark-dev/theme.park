@@ -424,18 +424,24 @@ div#CatList {
     border-left: none
 }
 
-div#CatList ul li span {
+/* div#CatList ul li span {
     color: var(--text)
 }
 
 div#CatList ul li.sel span {
     color: #AACF27
-}
+} */
 
 div#CatList ul li {
+    color: var(--text);
     border: none;
-    margin: 0px 5px;
-    font-family: 'Roboto'
+    font-family: 'Roboto';
+    padding: 4px;
+}
+
+div#CatList .label-prefix
+{
+    font-size: 21px;
 }
 
 div#CatList ul li.sel {
@@ -445,13 +451,21 @@ div#CatList ul li.sel {
     border: none
 }
 
-#-_-_-all-_-_-,
-#-_-_-dls-_-_-,
-#-_-_-com-_-_-,
-#-_-_-act-_-_-,
-#-_-_-iac-_-_-,
-#-_-_-err-_-_- {
-    background-image: url(/resources/rutorrent/status_icons.png)
+div#CatList li.sel .label-prefix{
+    color: var(--text)
+}
+
+.label-count,.label-size {
+	color: #D4D6C9;
+	background-color: #273238;
+}
+
+li.sel .label-count, li.sel .label-size {
+	color:#009DDD;
+}
+
+.label-icon {
+	background-image: url(/resources/rutorrent/status_icons.png);
 }
 
 .catpanel {
@@ -474,41 +488,8 @@ div#CatList ul li.sel {
     transition: all .3s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0
 }
 
-#-_-_-all-_-_- {
-    background-position: 4px -175px
-}
-
-#-_-_-dls-_-_- {
-    background-position: 4px 2px
-}
-
-#-_-_-com-_-_- {
-    background-position: 4px -15px
-}
-
-#-_-_-act-_-_- {
-    background-position: 4px -159px
-}
-
-#-_-_-iac-_-_- {
-    background-position: 4px -31px
-}
-
-#-_-_-err-_-_- {
-    background-position: 4px -95px
-}
-
-div#CatList ul li.RSS {
-    background-image: url(/resources/rutorrent/status_icons.png);
-    background-position: 4px -207px
-}
-
-div#CatList ul li.disRSS {
-    background-image: url(/resources/rutorrent/status_icons.png)
-}
-
 .stable-icon {
-    background-image: url(/resources/rutorrent/status_icons.png)
+    background-image: url(/resources/rutorrent/status_icons.png);
 }
 
 .Icon_File {
@@ -523,11 +504,11 @@ div#CatList ul li.disRSS {
     background: transparent url(/resources/rutorrent/dir.gif) no-repeat left center
 }
 
-div#CatList ul li.sel span {
+div#CatList .sel .label-size, div#CatList .sel .label-size {
     color: rgb(var(--accent-color));
 }
 
-div#flabel_cont ul li {
+#flabel_cont li:not(.-_-_-all-_-_-) .label-icon {
     background-image: url(/resources/rutorrent/status_icons.png);
     background-position: 4px -352px
 }
@@ -567,6 +548,21 @@ div.graph_tab {
     color: var(--text-hover);
     border-color: transparent;
     background: var(--transparency-dark-25);
+}
+
+.graph_tab_grid {
+	border: 2px solid #606060;
+}
+
+.graph_tab_legend {
+	color: #FFF;
+	background-color: #181818;
+}
+
+.graph_tab_tooltip {
+	color: #FFF;
+	background-color: #606060;
+	border: 1px solid #606060;
 }
 
 div.table_tab {
@@ -757,9 +753,7 @@ div#tcreate textarea#trackers {
     cursor: text;
 }
 
-input[type="text"],
-input[type="password"],
-select {
+input[type="number"],input[type="text"],input[type="password"],select {
     color: var(--text-hover);
     border: none;
     background: var(--transparency-dark-25) url(/resources/rutorrent/headers.png) repeat-x scroll 0 -138px;
@@ -767,10 +761,7 @@ select {
     outline: none;
 }
 
-input[type="text"][disabled],
-input[type="password"][disabled],
-input[type="file"][disabled],
-select[disabled] {
+input[type="number"][disabled],input[type="text"][disabled],input[type="password"][disabled],input[type="file"][disabled],select[disabled] {
     color: var(--text-hover);
     border: none;
     background: var(--transparency-dark-10) url(/resources/rutorrent/headers.png) repeat scroll 0 0 !important;
@@ -1625,7 +1616,7 @@ div#dlgEditRatioRules {
 }
 
 #autodl-multiselect-header {
-    background-image: url(/resources/rutorrent/dlg-autodl-irc.gif");
+    background-image: url(/resources/rutorrent/dlg-autodl-irc.gif);
 }
 
 .shieven {
@@ -1809,4 +1800,9 @@ div.label-count, div.label-size{
     background-color: rgb(var(--accent-color));
     color: var(--label-text-color);
     text-shadow: none;
+}
+
+li.sel .label-count, li.sel .label-size {
+    color: var(--label-text-color);
+    background-color: rgb(var(--accent-color), .75);
 }
