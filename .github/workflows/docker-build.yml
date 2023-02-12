@@ -79,6 +79,8 @@ jobs:
           tags: |
             docker.io/${{ env.tag }}
             ghcr.io/${{ env.tag }}
+            docker.io/${GITHUB_REPOSITORY,,}:${{ github.ref_name }}${{ github.event.inputs.tag }}
+            ghcr.io/${GITHUB_REPOSITORY,,}:${{ github.ref_name }}${{ github.event.inputs.tag }}
           labels: |
             org.opencontainers.image.created=${{ env.created }}
             org.opencontainers.image.title=${{ env.title }}
