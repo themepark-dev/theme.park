@@ -1810,3 +1810,7 @@ div.label-count, div.label-size{
     color: var(--label-text-color);
     text-shadow: none;
 }
+
+div#CatList .sel .label-size, div#CatList .sel .label-count {
+  color: rgb(var(--accent-color));
+}
