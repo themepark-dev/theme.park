@@ -11,9 +11,9 @@
     "organizr": {
       "glass": {
         "css": [
+          "https://theme-park.dev/css/addons/organizr/glass/organizr-base-old.css?sha=e48f350f07564f9a83e886d10bfbd6038aec99d0",
           "https://theme-park.dev/css/addons/organizr/glass/glass-base.css?sha=2a9c46b4f939049c416caede0226ee57528e0bb6",
-          "https://theme-park.dev/css/addons/organizr/glass/glass-login.css?sha=0200383709509139874da6540d8a7fc07030f172",
-          "https://theme-park.dev/css/addons/organizr/glass/organizr-base-old.css?sha=e48f350f07564f9a83e886d10bfbd6038aec99d0"
+          "https://theme-park.dev/css/addons/organizr/glass/glass-login.css?sha=0200383709509139874da6540d8a7fc07030f172"
         ]
       }
     },
@@ -38,44 +38,44 @@
       "sonarr-4k-logo": "https://theme-park.dev/css/addons/sonarr/sonarr-4k-logo/sonarr-4k-logo.css?sha=9bcc5ab73f0c2bfa8b8b6fc219ed5bd1133be1ff",
       "sonarr-4k-text-logo": "https://theme-park.dev/css/addons/sonarr/sonarr-4k-text-logo/sonarr-4k-text-logo.css?sha=0805aae0b588c147a24f8eccf08db6c2d4b242e8",
       "sonarr-darker": "https://theme-park.dev/css/addons/sonarr/sonarr-darker/sonarr-darker.css?sha=7c3c2ddcd71525229b0dcc186326003677908b7c",
-      "sonarr-text-logo": "https://theme-park.dev/css/addons/sonarr/sonarr-text-logo/sonarr-text-logo.css?sha=b037386c06f38403b1270a52ef83654d0573f9b3"
+      "sonarr-text-logo": "https://theme-park.dev/css/addons/sonarr/sonarr-text-logo/sonarr-text-logo.css?sha=f38b37a2dcadf61d135dd555e459eeff4977c0d0"
     },
     "unraid": {
       "login-page": {
         "alien": {
           "css": [
             "https://theme-park.dev/css/addons/unraid/login-page/alien/hallway4.css?sha=aeb86d487947468a5238ca51fb25bc1a6caf21fa",
-            "https://theme-park.dev/css/addons/unraid/login-page/alien/isolation.css?sha=8a65e839eb0c5840a02f0b46615612884a0796ef",
-            "https://theme-park.dev/css/addons/unraid/login-page/alien/scanner.css?sha=27cc81f7bfe30ed24a464590567cb07f6b9ff8a0",
             "https://theme-park.dev/css/addons/unraid/login-page/alien/hallway3.css?sha=eaa87edda46b08a1946fb4f3bbaa1f86b3269a46",
-            "https://theme-park.dev/css/addons/unraid/login-page/alien/alien-base.css?sha=7e310e223692a1169d19ad0eec747488ece7ca4e",
-            "https://theme-park.dev/css/addons/unraid/login-page/alien/isolation_video.css?sha=76e9a924194d67d5af10e707f3438fed5b920c1a",
             "https://theme-park.dev/css/addons/unraid/login-page/alien/custom.css?sha=89e360c6b3cbe9a9a31774839e325760c7195f82",
-            "https://theme-park.dev/css/addons/unraid/login-page/alien/hallway.css?sha=72232d4cb2029dd42b27968aa8ce4dd32aae1d69",
+            "https://theme-park.dev/css/addons/unraid/login-page/alien/isolation_video.css?sha=76e9a924194d67d5af10e707f3438fed5b920c1a",
+            "https://theme-park.dev/css/addons/unraid/login-page/alien/alien-base.css?sha=7e310e223692a1169d19ad0eec747488ece7ca4e",
             "https://theme-park.dev/css/addons/unraid/login-page/alien/nightmare.css?sha=a3f1d315bf864a84a5cdf5269f5ef9ef6648ee8c",
-            "https://theme-park.dev/css/addons/unraid/login-page/alien/hallway2.css?sha=a1fdba5d1dfa66ca694da89f0e687b46eb2cb64e"
+            "https://theme-park.dev/css/addons/unraid/login-page/alien/hallway2.css?sha=a1fdba5d1dfa66ca694da89f0e687b46eb2cb64e",
+            "https://theme-park.dev/css/addons/unraid/login-page/alien/hallway.css?sha=72232d4cb2029dd42b27968aa8ce4dd32aae1d69",
+            "https://theme-park.dev/css/addons/unraid/login-page/alien/scanner.css?sha=27cc81f7bfe30ed24a464590567cb07f6b9ff8a0",
+            "https://theme-park.dev/css/addons/unraid/login-page/alien/isolation.css?sha=8a65e839eb0c5840a02f0b46615612884a0796ef"
           ]
         },
         "fallout": {
           "css": [
-            "https://theme-park.dev/css/addons/unraid/login-page/fallout/terminal.css?sha=0b3d14ad638f201dd8b8705eed6c6824848d887d",
-            "https://theme-park.dev/css/addons/unraid/login-page/fallout/fallout-base.css?sha=3a79171bff7252461e4ff5e76b507640bffcf5e1",
-            "https://theme-park.dev/css/addons/unraid/login-page/fallout/dirty_terminal2.css?sha=670b921a85dfdfd942199c1988995f2c9a651d9f",
             "https://theme-park.dev/css/addons/unraid/login-page/fallout/terminal2.css?sha=3c8f53f270a9fb66b9163277411a8b9a0c614d5e",
-            "https://theme-park.dev/css/addons/unraid/login-page/fallout/fallout_video.css?sha=5875d1bd4d5f93224579ea0f526ce21d9bf98f10",
+            "https://theme-park.dev/css/addons/unraid/login-page/fallout/dirty_terminal2.css?sha=670b921a85dfdfd942199c1988995f2c9a651d9f",
             "https://theme-park.dev/css/addons/unraid/login-page/fallout/custom.css?sha=89e360c6b3cbe9a9a31774839e325760c7195f82",
-            "https://theme-park.dev/css/addons/unraid/login-page/fallout/dirty_terminal.css?sha=3896f0bace6582ad2cef3c8d38dc4f7aba4549bd"
+            "https://theme-park.dev/css/addons/unraid/login-page/fallout/terminal.css?sha=0b3d14ad638f201dd8b8705eed6c6824848d887d",
+            "https://theme-park.dev/css/addons/unraid/login-page/fallout/dirty_terminal.css?sha=3896f0bace6582ad2cef3c8d38dc4f7aba4549bd",
+            "https://theme-park.dev/css/addons/unraid/login-page/fallout/fallout_video.css?sha=5875d1bd4d5f93224579ea0f526ce21d9bf98f10",
+            "https://theme-park.dev/css/addons/unraid/login-page/fallout/fallout-base.css?sha=3a79171bff7252461e4ff5e76b507640bffcf5e1"
           ]
         },
         "retro-terminal": {
           "css": [
+            "https://theme-park.dev/css/addons/unraid/login-page/retro-terminal/custom.css?sha=89e360c6b3cbe9a9a31774839e325760c7195f82",
             "https://theme-park.dev/css/addons/unraid/login-page/retro-terminal/green.css?sha=ecc3fb8c7fb720609886208e0c4de2a870fd2cda",
             "https://theme-park.dev/css/addons/unraid/login-page/retro-terminal/white.css?sha=3bc8cfd778af2f41deb8a7d7b25bbcdad186f2ed",
             "https://theme-park.dev/css/addons/unraid/login-page/retro-terminal/red.css?sha=e3964fb51632bc2edf2db563918576852db8d8e3",
-            "https://theme-park.dev/css/addons/unraid/login-page/retro-terminal/custom.css?sha=89e360c6b3cbe9a9a31774839e325760c7195f82",
             "https://theme-park.dev/css/addons/unraid/login-page/retro-terminal/amber.css?sha=7ec771cb909172528b1905e26e4e8faaa0645fda",
-            "https://theme-park.dev/css/addons/unraid/login-page/retro-terminal/blue.css?sha=129b982f0fb99e29d36a7f507bde0f07b57caa48",
-            "https://theme-park.dev/css/addons/unraid/login-page/retro-terminal/retro-terminal-base.css?sha=860f370f1b8e25b26ab9bc45a73632de58c799ce"
+            "https://theme-park.dev/css/addons/unraid/login-page/retro-terminal/retro-terminal-base.css?sha=860f370f1b8e25b26ab9bc45a73632de58c799ce",
+            "https://theme-park.dev/css/addons/unraid/login-page/retro-terminal/blue.css?sha=129b982f0fb99e29d36a7f507bde0f07b57caa48"
           ]
         }
       }
@@ -203,7 +203,7 @@
     },
     "bitwarden": {
       "addons": {},
-      "base_css": "https://theme-park.dev/css/base/bitwarden/bitwarden-base.css?sha=42d84af1c71f67cac5f6e8fc9a2b4e193501afb0"
+      "base_css": "https://theme-park.dev/css/base/bitwarden/bitwarden-base.css?sha=6e2039ecec9d2ef152f0aa8a40d26ec186be1ddc"
     },
     "calibreweb": {
       "addons": {},
@@ -308,9 +308,9 @@
       "addons": {
         "glass": {
           "css": [
+            "https://theme-park.dev/css/addons/organizr/glass/organizr-base-old.css?sha=e48f350f07564f9a83e886d10bfbd6038aec99d0",
             "https://theme-park.dev/css/addons/organizr/glass/glass-base.css?sha=2a9c46b4f939049c416caede0226ee57528e0bb6",
-            "https://theme-park.dev/css/addons/organizr/glass/glass-login.css?sha=0200383709509139874da6540d8a7fc07030f172",
-            "https://theme-park.dev/css/addons/organizr/glass/organizr-base-old.css?sha=e48f350f07564f9a83e886d10bfbd6038aec99d0"
+            "https://theme-park.dev/css/addons/organizr/glass/glass-login.css?sha=0200383709509139874da6540d8a7fc07030f172"
           ]
         }
       },
@@ -375,7 +375,7 @@
     },
     "rutorrent": {
       "addons": {},
-      "base_css": "https://theme-park.dev/css/base/rutorrent/rutorrent-base.css?sha=aab2104532d93b4af6894a68125870d599cea7c2"
+      "base_css": "https://theme-park.dev/css/base/rutorrent/rutorrent-base.css?sha=8d5faa3034388a0f1ee7b80a5ab71c631220e4e7"
     },
     "sabnzbd": {
       "addons": {},
@@ -386,7 +386,7 @@
         "sonarr-4k-logo": "https://theme-park.dev/css/addons/sonarr/sonarr-4k-logo/sonarr-4k-logo.css?sha=9bcc5ab73f0c2bfa8b8b6fc219ed5bd1133be1ff",
         "sonarr-4k-text-logo": "https://theme-park.dev/css/addons/sonarr/sonarr-4k-text-logo/sonarr-4k-text-logo.css?sha=0805aae0b588c147a24f8eccf08db6c2d4b242e8",
         "sonarr-darker": "https://theme-park.dev/css/addons/sonarr/sonarr-darker/sonarr-darker.css?sha=7c3c2ddcd71525229b0dcc186326003677908b7c",
-        "sonarr-text-logo": "https://theme-park.dev/css/addons/sonarr/sonarr-text-logo/sonarr-text-logo.css?sha=b037386c06f38403b1270a52ef83654d0573f9b3"
+        "sonarr-text-logo": "https://theme-park.dev/css/addons/sonarr/sonarr-text-logo/sonarr-text-logo.css?sha=f38b37a2dcadf61d135dd555e459eeff4977c0d0"
       },
       "base_css": "https://theme-park.dev/css/base/sonarr/sonarr-base.css?sha=a48674b3dc50ef91f320817968a60575db50bf2b"
     },
@@ -408,37 +408,37 @@
           "alien": {
             "css": [
               "https://theme-park.dev/css/addons/unraid/login-page/alien/hallway4.css?sha=aeb86d487947468a5238ca51fb25bc1a6caf21fa",
-              "https://theme-park.dev/css/addons/unraid/login-page/alien/isolation.css?sha=8a65e839eb0c5840a02f0b46615612884a0796ef",
-              "https://theme-park.dev/css/addons/unraid/login-page/alien/scanner.css?sha=27cc81f7bfe30ed24a464590567cb07f6b9ff8a0",
               "https://theme-park.dev/css/addons/unraid/login-page/alien/hallway3.css?sha=eaa87edda46b08a1946fb4f3bbaa1f86b3269a46",
-              "https://theme-park.dev/css/addons/unraid/login-page/alien/alien-base.css?sha=7e310e223692a1169d19ad0eec747488ece7ca4e",
-              "https://theme-park.dev/css/addons/unraid/login-page/alien/isolation_video.css?sha=76e9a924194d67d5af10e707f3438fed5b920c1a",
               "https://theme-park.dev/css/addons/unraid/login-page/alien/custom.css?sha=89e360c6b3cbe9a9a31774839e325760c7195f82",
-              "https://theme-park.dev/css/addons/unraid/login-page/alien/hallway.css?sha=72232d4cb2029dd42b27968aa8ce4dd32aae1d69",
+              "https://theme-park.dev/css/addons/unraid/login-page/alien/isolation_video.css?sha=76e9a924194d67d5af10e707f3438fed5b920c1a",
+              "https://theme-park.dev/css/addons/unraid/login-page/alien/alien-base.css?sha=7e310e223692a1169d19ad0eec747488ece7ca4e",
               "https://theme-park.dev/css/addons/unraid/login-page/alien/nightmare.css?sha=a3f1d315bf864a84a5cdf5269f5ef9ef6648ee8c",
-              "https://theme-park.dev/css/addons/unraid/login-page/alien/hallway2.css?sha=a1fdba5d1dfa66ca694da89f0e687b46eb2cb64e"
+              "https://theme-park.dev/css/addons/unraid/login-page/alien/hallway2.css?sha=a1fdba5d1dfa66ca694da89f0e687b46eb2cb64e",
+              "https://theme-park.dev/css/addons/unraid/login-page/alien/hallway.css?sha=72232d4cb2029dd42b27968aa8ce4dd32aae1d69",
+              "https://theme-park.dev/css/addons/unraid/login-page/alien/scanner.css?sha=27cc81f7bfe30ed24a464590567cb07f6b9ff8a0",
+              "https://theme-park.dev/css/addons/unraid/login-page/alien/isolation.css?sha=8a65e839eb0c5840a02f0b46615612884a0796ef"
             ]
           },
           "fallout": {
             "css": [
-              "https://theme-park.dev/css/addons/unraid/login-page/fallout/terminal.css?sha=0b3d14ad638f201dd8b8705eed6c6824848d887d",
-              "https://theme-park.dev/css/addons/unraid/login-page/fallout/fallout-base.css?sha=3a79171bff7252461e4ff5e76b507640bffcf5e1",
-              "https://theme-park.dev/css/addons/unraid/login-page/fallout/dirty_terminal2.css?sha=670b921a85dfdfd942199c1988995f2c9a651d9f",
               "https://theme-park.dev/css/addons/unraid/login-page/fallout/terminal2.css?sha=3c8f53f270a9fb66b9163277411a8b9a0c614d5e",
-              "https://theme-park.dev/css/addons/unraid/login-page/fallout/fallout_video.css?sha=5875d1bd4d5f93224579ea0f526ce21d9bf98f10",
+              "https://theme-park.dev/css/addons/unraid/login-page/fallout/dirty_terminal2.css?sha=670b921a85dfdfd942199c1988995f2c9a651d9f",
               "https://theme-park.dev/css/addons/unraid/login-page/fallout/custom.css?sha=89e360c6b3cbe9a9a31774839e325760c7195f82",
-              "https://theme-park.dev/css/addons/unraid/login-page/fallout/dirty_terminal.css?sha=3896f0bace6582ad2cef3c8d38dc4f7aba4549bd"
+              "https://theme-park.dev/css/addons/unraid/login-page/fallout/terminal.css?sha=0b3d14ad638f201dd8b8705eed6c6824848d887d",
+              "https://theme-park.dev/css/addons/unraid/login-page/fallout/dirty_terminal.css?sha=3896f0bace6582ad2cef3c8d38dc4f7aba4549bd",
+              "https://theme-park.dev/css/addons/unraid/login-page/fallout/fallout_video.css?sha=5875d1bd4d5f93224579ea0f526ce21d9bf98f10",
+              "https://theme-park.dev/css/addons/unraid/login-page/fallout/fallout-base.css?sha=3a79171bff7252461e4ff5e76b507640bffcf5e1"
             ]
           },
           "retro-terminal": {
             "css": [
+              "https://theme-park.dev/css/addons/unraid/login-page/retro-terminal/custom.css?sha=89e360c6b3cbe9a9a31774839e325760c7195f82",
               "https://theme-park.dev/css/addons/unraid/login-page/retro-terminal/green.css?sha=ecc3fb8c7fb720609886208e0c4de2a870fd2cda",
               "https://theme-park.dev/css/addons/unraid/login-page/retro-terminal/white.css?sha=3bc8cfd778af2f41deb8a7d7b25bbcdad186f2ed",
               "https://theme-park.dev/css/addons/unraid/login-page/retro-terminal/red.css?sha=e3964fb51632bc2edf2db563918576852db8d8e3",
-              "https://theme-park.dev/css/addons/unraid/login-page/retro-terminal/custom.css?sha=89e360c6b3cbe9a9a31774839e325760c7195f82",
               "https://theme-park.dev/css/addons/unraid/login-page/retro-terminal/amber.css?sha=7ec771cb909172528b1905e26e4e8faaa0645fda",
-              "https://theme-park.dev/css/addons/unraid/login-page/retro-terminal/blue.css?sha=129b982f0fb99e29d36a7f507bde0f07b57caa48",
-              "https://theme-park.dev/css/addons/unraid/login-page/retro-terminal/retro-terminal-base.css?sha=860f370f1b8e25b26ab9bc45a73632de58c799ce"
+              "https://theme-park.dev/css/addons/unraid/login-page/retro-terminal/retro-terminal-base.css?sha=860f370f1b8e25b26ab9bc45a73632de58c799ce",
+              "https://theme-park.dev/css/addons/unraid/login-page/retro-terminal/blue.css?sha=129b982f0fb99e29d36a7f507bde0f07b57caa48"
             ]
           }
         }

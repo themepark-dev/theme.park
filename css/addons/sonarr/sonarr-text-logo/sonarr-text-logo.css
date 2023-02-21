@@ -7,14 +7,6 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
-    [class*="PageHeader-logo-"] {
-        width: 32px;
-        height: 32px;
-        margin-left: 0px;
-        content: url("sonarr/Content/Images/logo.svg");
-    }
-}
 
 [class*="LoadingPage-logoFull-"] {
     content: url("/css/addons/sonarr/sonarr-text-logo/sonarr-text.png");
