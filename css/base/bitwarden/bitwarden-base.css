@@ -21,6 +21,15 @@ img.logo {
     filter: invert(100);
 }
 
+html.theme_light .filter-option.active>.filter-buttons .filter-button,
+html.theme_light .btn-link:not(.text-danger):not(.cursor-move) {
+    color: rgb(var(--accent-color)) !important;
+}
+
+html.theme_light .filter-buttons .filter-button:hover, html.theme_light .filter-buttons .filter-button:focus, html.theme_light .filter-buttons .filter-button:active {
+    color: rgb(var(--accent-color) ,.85) !important;
+}
+
 body.layout_frontend,
 html[class*="theme_"] body,
 html[class*="theme_"] body.layout_frontend,
@@ -234,7 +243,9 @@ html[class*="theme_"] .close {
     outline: none;
 }
 
-.swal2-popup {
+.swal2-popup,
+html.theme_light [class*=swal2-]:not(.swal2-container,.swal2-confirm,.swal2-cancel,.swal2-deny),
+html.theme_light .swal2-popup .swal2-actions {
     background: var(--modal-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
@@ -281,6 +292,25 @@ html[class*="theme_"] .close {
 }
 
 /* FORMS */
+
+app-login .tw-bg-background {
+    background: var(--transparency-dark-25);
+}
+
+app-login .tw-border-secondary-300 {
+    border-color: var(--transparency-light-10)
+}
+
+app-login button {
+    background: var(--button-color) !important;
+    border-color: var(--button-color) !important;
+}
+
+input {
+    background: var(--transparency-dark-10) !important;
+    color: var(--text) !important;
+}
+
 html[class*="theme_"] label.form-check-label,
 html[class*="theme_"] .form-control-file {
     color: var(--text);
@@ -305,7 +335,20 @@ html[class*="theme_"] .form-control:disabled,
     opacity: 1;
 }
 
+html[class*="theme_"] app-generator .card-generated .card-body {
+    background: var(--transparency-dark-15);
+}
+
+a[bitmenuitem], button[bitmenuitem] {
+    background: var(--drop-down-menu-bg) !important;
+    color: var(--text) !important;
+}
+
 select:focus {
+    background-color: #191a1c !important;
+}
+
+.bit-menu-panel div {
     background: var(--drop-down-menu-bg) !important;
 }
 
@@ -444,6 +487,12 @@ html[class*="theme_"] .progress {
     background-color: var(--button-color);
     border-color: var(--button-color);
     color: var(--button-text);
+}
+
+app-register-form button {
+    background-color: var(--button-color) !important;
+    border-color: var(--button-color) !important;
+    color: var(--button-text) !important;
 }
 
 .btn-primary:hover,
