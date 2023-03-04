@@ -18,9 +18,9 @@
   --link-color-hover: #8be9fd;
   --label-text-color: #282a36;
     
-  --text:#6272a4;
-  --text-hover: #95adfa;
-  --text-muted: #999;
+  --text:#f8f8f2;
+  --text-hover: #fff;
+  --text-muted: #6272a4;
 
   /*Specials*/
   --arr-queue-color: #50fa7b; /* Servarr apps + Bazarr*/

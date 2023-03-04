@@ -13,8 +13,11 @@ DISABLE_THEME="false"
   # you must disable the whole theme with the DISABLE_THEME="true" env first and re-run it again after with "false".
 
   # Your domain can be your custom domain or a github pages (user.github.io) etc. Don't add the whole URL with scheme, you only need to add the domain.
+    # If you are using your own github.io domain you must prepend /theme.park on all @imports/URLs in the css files. e.g. @import url(/theme.park/css/addons/unraid/login-page/retro-terminal/retro-terminal-base.css);
 
   # If your custom domain uses a subfolder you must escape the forward slash. (custom.com\/subfolder)
+
+  # If you are on an Unraid version older than 6.10 you need to update the LOGIN_PAGE variable to "/usr/local/emhttp/login.php"
 
 echo -e "Variables set:\\n\
 TYPE          = ${TYPE}\\n\
@@ -25,16 +28,15 @@ ADD_JS        = ${ADD_JS}\\n\
 JS            = ${JS}\\n\
 DISABLE_THEME = ${DISABLE_THEME}\\n"
 
+echo "NOTE: Change the LOGIN_PAGE variable to /usr/local/emhttp/login.php if you are on a version older than 6.10"
+LOGIN_PAGE="/usr/local/emhttp/webGui/include/.login.php"
+
+
 IFS='"'
 set $(cat /etc/unraid-version)
 UNRAID_VERSION="$2"
 IFS=$' \t\n'
-LOGIN_PAGE="/usr/local/emhttp/login.php"
-# Changing file path to login.php if version >= 6.10
-if [[ "${UNRAID_VERSION}" =~ ^6.10.* ]]; then
-echo "Unraid version: ${UNRAID_VERSION}, changing path to login page"
-LOGIN_PAGE="/usr/local/emhttp/webGui/include/.login.php"
-fi
+echo "Unraid version: ${UNRAID_VERSION}"
 
 # Restore login.php
 if [ ${DISABLE_THEME} = "true" ]; then

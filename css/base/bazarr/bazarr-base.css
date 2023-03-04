@@ -17,12 +17,9 @@ html {
 
 /* TEXT */
 
-[class$="-label"]:not([class$="-Button-label"]) {
+[class$="-label"]:not([class$="-Button-label"]),
+label {
     color: var(--text-hover) !important;
-}
-
-.bazarr-Text-root[class*="bazarr-"]:not(.bazarr-Badge-light span div):not(.bazarr-Progress-bar div):not(a) {
-    color: var(--text);
 }
 
 a,
@@ -59,11 +56,6 @@ h6,
 #root>div>div>main>form>div.bazarr-Group-root[class*="bazarr-"] {
     background: var(--transparency-dark-25);
 }
-
-.bazarr-Button-icon.bazarr-Button-leftIcon[class*="bazarr-"] {
-    color: var(--text)
-}
-
 
 /* SIDEMENU */
 
