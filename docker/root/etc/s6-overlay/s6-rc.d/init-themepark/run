@@ -1,21 +1,5 @@
 #!/usr/bin/with-contenv bash
 
-echo '
-----------------------------------------------------------------------------------------
-     dP   dP                                                                  dP        
-     88   88                                                                  88        
-   d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   
-     88   88   `88 88ooood8 88  88  88 88ooood8    88.  `88 88   `88 88   `88 88888.    
-     88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88    88 88       88  `8b.  
-     dP   dP    dP `88888P  dP  dP  dP `88888P  88 88Y888P  `88888P8 dP       dP   `YP  
-                                                   88                                   
-                                                   dP                                   
-                                                                                        
-                                       Made by @gilbN                                   
-                                    https://theme-park.dev                              
-----------------------------------------------------------------------------------------'
-
-
 # Display variables for troubleshooting 
 echo -e "[theme.park-init] Variables set:\\n\
 PUID=${PUID}\\n\
@@ -31,13 +15,13 @@ case ${TP_URLBASE} in
     ;;
 esac
 
-DEFAULT='/defaults/default'
+DEFAULT='/defaults/default.conf'
 if [[ ${TP_URLBASE} ]]; then
     if ! grep -q "${TP_URLBASE}" "${DEFAULT}"; then
         sed -i "s/themepark/${TP_URLBASE}/g" ${DEFAULT}
     fi
 fi
-cp /defaults/default /config/nginx/site-confs
+cp /defaults/default.conf /config/nginx/site-confs
 
 # make our folders and links
 mkdir -p \
@@ -60,7 +44,7 @@ echo '[theme.park-init] Copying mods into /config/docker-mods'
 
 echo '[theme.park-init] Running themes.py and creating CSS files'
 python3 /config/www/themes.py
-
+echo '[theme.park-init] done.'
 # permissions
 chown -R abc:abc \
     /config
