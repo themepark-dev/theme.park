@@ -355,7 +355,7 @@
         "radarr-alt-calendar": "https://theme-park.dev/css/addons/radarr/radarr-alt-calendar/radarr-alt-calendar.css?sha=ee66372dca0fab73fedd103effb51751d40843ff",
         "radarr-darker": "https://theme-park.dev/css/addons/radarr/radarr-darker/radarr-darker.css?sha=29e6bb7eb550375061d326e363a15ea2d6f59e32"
       },
-      "base_css": "https://theme-park.dev/css/base/radarr/radarr-base.css?sha=d141860c23f2ab9587b59c86f529330fe5c81ce8"
+      "base_css": "https://theme-park.dev/css/base/radarr/radarr-base.css?sha=e3f8de8e13d3feafbf21f9f455f7a5903508f2fe"
     },
     "readarr": {
       "addons": {
