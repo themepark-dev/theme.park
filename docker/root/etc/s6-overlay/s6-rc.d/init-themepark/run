@@ -23,6 +23,11 @@ if [[ ${TP_URLBASE} ]]; then
 fi
 cp /defaults/default.conf /config/nginx/site-confs
 
+# Remove old config
+if [[ -f /config/nginx/site-confs/default ]]; then
+    rm /config/nginx/site-confs/default
+fi
+
 # make our folders and links
 mkdir -p \
     /config/www/{css,resources} \
