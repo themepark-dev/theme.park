@@ -15,16 +15,19 @@ case ${TP_URLBASE} in
     ;;
 esac
 
-DEFAULT='/defaults/default.conf'
+DEFAULT='/defaults/nginx/site-confs/default.conf'
 if [[ ${TP_URLBASE} ]]; then
     if ! grep -q "${TP_URLBASE}" "${DEFAULT}"; then
         sed -i "s/themepark/${TP_URLBASE}/g" ${DEFAULT}
     fi
 fi
-cp /defaults/default.conf /config/nginx/site-confs
+
+echo '[theme.park-init] Copying nginx files'
+cp -TR /defaults /config
 
 # Remove old config
 if [[ -f /config/nginx/site-confs/default ]]; then
+    echo '[theme.park-init] Removing old default file'
     rm /config/nginx/site-confs/default
 fi
 
@@ -41,7 +44,7 @@ cp /app/themepark/index.html /config/www
 cp /app/themepark/themes.py /config/www
 cp /app/themepark/CNAME /config/www
 
-echo '[theme.park-init] Copying mods into /config/docker-mods'
+echo '[theme.park-init] Copying mods'
 # copy mods
   for folder in /app/themepark/docker-mods/*; do \
     cp /app/themepark/docker-mods/"${folder##*/}"/root/etc/cont-init.d/98-themepark /config/docker-mods/98-themepark-"${folder##*/}"; \
