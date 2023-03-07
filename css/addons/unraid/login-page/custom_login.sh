@@ -13,6 +13,7 @@ DISABLE_THEME="false"
   # you must disable the whole theme with the DISABLE_THEME="true" env first and re-run it again after with "false".
 
   # Your domain can be your custom domain or a github pages (user.github.io) etc. Don't add the whole URL with scheme, you only need to add the domain.
+    # If you are using your own github.io domain you must prepend /theme.park on all @imports/URLs in the css files. e.g. @import url(/theme.park/css/addons/unraid/login-page/retro-terminal/retro-terminal-base.css);
 
   # If your custom domain uses a subfolder you must escape the forward slash. (custom.com\/subfolder)
 

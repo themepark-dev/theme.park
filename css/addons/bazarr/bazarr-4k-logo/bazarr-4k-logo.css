@@ -1,17 +1,5 @@
-    .bazarr-Avatar-root[class*="bazarr-"] img {
-        display: none !important;
-    }
-
-    .bazarr-Avatar-root[class*="bazarr-"]:before {
-        background-image: url("/css/addons/bazarr/bazarr-4k-logo/bazarr4k.png");
-        display: inline-block;
-        width: 32px;
-        height: 32px;
-        content: "";
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
+    [class*="bazarr-"].bazarr-Avatar-image {
+        content: url("/css/addons/bazarr/bazarr-4k-logo/bazarr4k.png");
     }
 
     #root>div>header>div>div.bazarr-Group-root[class*="bazarr-"]>div>span:after {
