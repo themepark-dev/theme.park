@@ -12,7 +12,7 @@ A clear and concise description of what the bug is.
 
 **Theme Install Method** (Don't skip)
 - Docker run / Compose Config
-  - If using docker mods share your container logs..
+  - If using docker mods share your COMPLETE container logs..
 - Webserver subfilter Config
 - Stylus Config
 
