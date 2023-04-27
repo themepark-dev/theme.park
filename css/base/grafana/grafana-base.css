@@ -58,7 +58,8 @@ p {
 }
 
 .page-header-canvas,
-.page-toolbar[class*="css-"] {
+.page-toolbar[class*="css-"],
+.css-278jzv {
     background: var(--transparency-dark-25) !important;
     box-shadow: none !important;
     border-bottom: none !important;
@@ -534,7 +535,8 @@ p {
 }
 
 /* PANEL BACKGROUND COLOR*/
-.panel-container {
+.panel-container,
+.css-85us1i-panel-container {
     background: var(--transparency-dark-25);
     border: transparent;
     box-shadow: none !important;
