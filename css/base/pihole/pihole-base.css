@@ -411,11 +411,11 @@
   }
 
   /* Network */
-  .table-striped>tbody>tr:nth-of-type(odd) {
+  .table-striped>tbody>tr:nth-of-type(odd):not(#network-details .table-striped>tbody>tr:nth-of-type(odd)) {
       background: var(--transparency-dark-25) !important;
   }
 
-  .table-striped>tbody>tr:nth-of-type(even) {
+  .table-striped>tbody>tr:nth-of-type(even):not(#network-details .table-striped>tbody>tr:nth-of-type(even)) {
       background: var(--transparency-dark-50) !important;
   }
 
