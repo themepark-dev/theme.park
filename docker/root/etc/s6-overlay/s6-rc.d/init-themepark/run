@@ -1,0 +1,58 @@
+#!/usr/bin/with-contenv bash
+
+# Display variables for troubleshooting 
+echo -e "[theme.park-init] Variables set:\\n\
+PUID=${PUID}\\n\
+PGID=${PGID}\\n\
+TZ=${TZ}\\n\
+TP_DOMAIN=${TP_DOMAIN}\\n\
+TP_URLBASE=${TP_URLBASE}\\n"
+
+# Remove forward slash
+case ${TP_URLBASE} in
+  *"/"*)
+  TP_URLBASE=$(echo "${TP_URLBASE}" | sed 's/\///g')
+    ;;
+esac
+
+DEFAULT='/defaults/nginx/site-confs/default.conf'
+if [[ ${TP_URLBASE} ]]; then
+    if ! grep -q "${TP_URLBASE}" "${DEFAULT}"; then
+        sed -i "s/themepark/${TP_URLBASE}/g" ${DEFAULT}
+    fi
+fi
+
+echo '[theme.park-init] Copying nginx files'
+cp -TR /defaults /config
+
+# Remove old config
+if [[ -f /config/nginx/site-confs/default ]]; then
+    echo '[theme.park-init] Removing old default file'
+    rm /config/nginx/site-confs/default
+fi
+
+# make our folders and links
+mkdir -p \
+    /config/www/{css,resources} \
+    /config/docker-mods
+
+echo '[theme.park-init] Copying theme files'
+# copy theme files
+cp -R /app/themepark/css /config/www
+cp -R /app/themepark/resources /config/www
+cp /app/themepark/index.html /config/www
+cp /app/themepark/themes.py /config/www
+cp /app/themepark/CNAME /config/www
+
+echo '[theme.park-init] Copying mods'
+# copy mods
+  for folder in /app/themepark/docker-mods/*; do \
+    cp /app/themepark/docker-mods/"${folder##*/}"/root/etc/cont-init.d/98-themepark /config/docker-mods/98-themepark-"${folder##*/}"; \
+  done
+
+echo '[theme.park-init] Running themes.py and creating CSS files'
+python3 /config/www/themes.py
+echo '[theme.park-init] done.'
+# permissions
+chown -R abc:abc \
+    /config
