@@ -136,7 +136,7 @@ jobs:
           docker manifest create ${IMAGE}:${TAG} ${AMD64} ${ARM64} ${ARMV7}
           docker manifest push ${IMAGE}:${TAG}
       - name: Latest manifest
-        if: ${{ github.event.release.target_commitish == 'master' }}  || ${{ github.event.inputs.branch == 'master' }}
+        if: github.event.release.target_commitish == 'master' || github.event.inputs.branch == 'master'
         env:
           DOCKER_CLI_EXPERIMENTAL: enabled
         run: |
