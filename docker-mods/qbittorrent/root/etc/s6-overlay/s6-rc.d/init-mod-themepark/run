@@ -83,8 +83,8 @@ sed_file(){
 }
 
 clean_file() {
-    perl -i -pe 's/QBT_TR?\(//' "$1"
-    perl -i -pe 's/\)QBT_TR\[CONTEXT=.*?\]//' "$1"
+    perl -i -pe 's/QBT_TR?\(//g' "$1"
+    perl -i -pe 's/\)QBT_TR\[CONTEXT=.*?\]//g' "$1"
 }
 
 if ! grep -q "${TP_DOMAIN}/css/base" /themepark/public/index.html; then
@@ -102,10 +102,9 @@ if ! grep -q "${TP_DOMAIN}/css/base" /themepark/public/index.html; then
 fi
 
 # Clean all files
-printf 'Cleaning files in /themepark for any translation text...\n\n
---------------------------------------------------------------------------
-| !!! RESTART THE CONTAINER IF THIS IS THE FIRST TIME CLEANING FILES !!! |
---------------------------------------------------------------------------\n\n'
+echo '------------------------------------------------------------'
+echo '| Cleaning files in /themepark for any translation text... |'
+echo '------------------------------------------------------------'
 find /themepark -type f \( ! -iname "*.svg" \) | while read fname
 do
     clean_file $fname
