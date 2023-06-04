@@ -102,8 +102,9 @@ if ! grep -q "${TP_DOMAIN}/css/base" /themepark/public/index.html; then
 fi
 
 # Clean all files
-printf 'Cleaning files in /themepark for any translation text...\n\n
-----------------------------------------------------------------\n\n'
+echo '------------------------------------------------------------'
+echo '| Cleaning files in /themepark for any translation text... |'
+echo '------------------------------------------------------------'
 find /themepark -type f \( ! -iname "*.svg" \) | while read fname
 do
     clean_file $fname
