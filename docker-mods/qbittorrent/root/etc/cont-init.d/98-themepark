@@ -118,9 +118,7 @@ fi
 
 # Clean all files
 printf 'Cleaning files in /themepark for any translation text...\n\n
---------------------------------------------------------------------------
-| !!! RESTART THE CONTAINER IF THIS IS THE FIRST TIME CLEANING FILES !!! |
---------------------------------------------------------------------------\n\n'
+----------------------------------------------------------------\n\n'
 find /themepark -type f \( ! -iname "*.svg" \) | while read fname
 do
     clean_file $fname
