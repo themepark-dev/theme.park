@@ -10,7 +10,7 @@
 --body-before: #ff00001a;
 --body-after: #ff000033;
 --body-animation: flicker;
---logo: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/NERV_logo.png/600px-NERV_logo.png?20221109214250) center no-repeat;
+--logo: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/NERV_logo.png/600px-NERV_logo.png) center no-repeat;
 --text-color: #e22828;
 --input-color: #e22828;
 --link-color: #e22828;
