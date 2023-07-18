@@ -206,7 +206,7 @@ select,
 .dashboard-stats-background,
 .dashboard-activity-background,
 .dashboard-activity-poster-container {
-    background: var(--transparency-dark-25);
+    background-color: var(--transparency-dark-25);
 }
 
 .dashboard-activity-progress-bar {
