@@ -52,15 +52,15 @@ if ! grep -q "${TP_DOMAIN}/css/base" "${APP_FILEPATH}"; then
     echo '---------------------------'
     echo '|  Adding the stylesheet  |'
     echo '---------------------------'
-    sed -i "s/<\/head>/<link rel='stylesheet' href='${TP_SCHEME}:\/\/${TP_DOMAIN}\/css\/base\/readarr\/readarr-base.css'><\/head> /g" "${APP_FILEPATH}"
-    sed -i "s/<\/head>/<link rel='stylesheet' href='${TP_SCHEME}:\/\/${TP_DOMAIN}\/css\/${THEME_TYPE}\/${TP_THEME}.css'><\/head> /g" "${APP_FILEPATH}"
-    sed -i "s/<\/head>/<link rel='stylesheet' href='${TP_SCHEME}:\/\/${TP_DOMAIN}\/css\/base\/readarr\/readarr-base.css'><\/head> /g" "${LOGIN_FILEPATH}"
-    sed -i "s/<\/head>/<link rel='stylesheet' href='${TP_SCHEME}:\/\/${TP_DOMAIN}\/css\/${THEME_TYPE}\/${TP_THEME}.css'><\/head> /g" "${LOGIN_FILEPATH}"
+    sed -i "s/<body>/<body>/<link rel='stylesheet' href='${TP_SCHEME}:\/\/${TP_DOMAIN}\/css\/base\/readarr\/readarr-base.css'> /g" "${APP_FILEPATH}"
+    sed -i "s/<body>/<body><link rel='stylesheet' href='${TP_SCHEME}:\/\/${TP_DOMAIN}\/css\/${THEME_TYPE}\/${TP_THEME}.css'> /g" "${APP_FILEPATH}"
+    sed -i "s/<body>/<body><link rel='stylesheet' href='${TP_SCHEME}:\/\/${TP_DOMAIN}\/css\/base\/readarr\/readarr-base.css'> /g" "${LOGIN_FILEPATH}"
+    sed -i "s/<body>/<body><link rel='stylesheet' href='${TP_SCHEME}:\/\/${TP_DOMAIN}\/css\/${THEME_TYPE}\/${TP_THEME}.css'> /g" "${LOGIN_FILEPATH}"
     printf 'Stylesheet set to %s\n' "${TP_THEME}"
     if [[ -n ${TP_ADDON} ]]; then
         for addon in $(echo "$TP_ADDON" | tr "|" " "); do
-        sed -i "s/<\/head>/<link rel='stylesheet' href='${TP_SCHEME}:\/\/${TP_DOMAIN}\/css\/addons\/readarr\/${addon}\/${addon}.css'><\/head> /g" "${APP_FILEPATH}"
-        sed -i "s/<\/head>/<link rel='stylesheet' href='${TP_SCHEME}:\/\/${TP_DOMAIN}\/css\/addons\/readarr\/${addon}\/${addon}.css'><\/head> /g" "${LOGIN_FILEPATH}"
+        sed -i "s/<body>/<body><link rel='stylesheet' href='${TP_SCHEME}:\/\/${TP_DOMAIN}\/css\/addons\/readarr\/${addon}\/${addon}.css'> /g" "${APP_FILEPATH}"
+        sed -i "s/<body>/<body><link rel='stylesheet' href='${TP_SCHEME}:\/\/${TP_DOMAIN}\/css\/addons\/readarr\/${addon}\/${addon}.css'> /g" "${LOGIN_FILEPATH}"
         printf 'Added custom addon: %s\n\n' "${addon}"
         done
     fi
