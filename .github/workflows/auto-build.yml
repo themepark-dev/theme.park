@@ -6,7 +6,7 @@ on:
       - develop
       - testing
     paths:
-    - 'docker-mods/**'
+    - '**/docker-mods/**'
   workflow_dispatch:
     inputs:
       app:
@@ -45,6 +45,7 @@ on:
       append-tag:
         required: false
         description: 'Append a the tag with "-custom" e.g :radarr-testing'
+
 jobs:
   push_to_ghcr_io:
     runs-on: ubuntu-latest
@@ -59,23 +60,25 @@ jobs:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GH_PAT }}
-      - name: build all on ${GITHUB_REF##*/}
-        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
+      - name: Extract branch name
+        shell: bash
+        run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
+        id: extract_branch
+      - name: build all on push
+        if: ${{ github.event_name == 'push' }}
         run: |
+          branch=${{ steps.extract_branch.outputs.branch }}
+
+          if [ "$branch" = "master" ]; then
+            branch=""
+          else
+            branch="-$branch"
+          fi
           for dir in docker-mods/*; 
           do 
             app="$( echo "$dir" | cut -d'/' -f2 -s )"
-            docker build docker-mods/$app --tag ghcr.io/gilbn/theme.park:$app
-            docker push ghcr.io/gilbn/theme.park:$app
-          done
-      - name: build all on ${GITHUB_REF##*/} with tag
-        if: ${{ github.event_name == 'push' && github.ref != 'refs/heads/develop' }}
-        run: |
-          for dir in docker-mods/*; 
-          do 
-            app="$( echo "$dir" | cut -d'/' -f2 -s )"
-            docker build docker-mods/$app --tag ghcr.io/gilbn/theme.park:$app-${GITHUB_REF##*/}
-            docker push ghcr.io/gilbn/theme.park:$app-${GITHUB_REF##*/}
+            docker build docker-mods/$app --tag ghcr.io/gilbn/theme.park:$app$branch
+            docker push ghcr.io/gilbn/theme.park:$app$branch
           done
       - name: manually build
         if: ${{ github.event.inputs.app && github.event.inputs.app != 'build-all-the-mods' }}
@@ -104,23 +107,25 @@ jobs:
         with:
           username: ${{ secrets.DH_USER }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-      - name: build all on ${GITHUB_REF##*/}
-        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
+      - name: Extract branch name
+        shell: bash
+        run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
+        id: extract_branch
+      - name: build all on push
+        if: ${{ github.event_name == 'push' }}
         run: |
+          branch=${{ steps.extract_branch.outputs.branch }}
+
+          if [ "$branch" = "master" ]; then
+            branch=""
+          else
+            branch="-$branch"
+          fi
           for dir in docker-mods/*; 
           do 
             app="$( echo "$dir" | cut -d'/' -f2 -s )"
-            docker build docker-mods/$app --tag ghcr.io/gilbn/theme.park:$app
-            docker push ghcr.io/gilbn/theme.park:$app
-          done
-      - name: build all on ${GITHUB_REF##*/} with tag
-        if: ${{ github.event_name == 'push' && github.ref != 'refs/heads/develop' }}
-        run: |
-          for dir in docker-mods/*; 
-          do 
-            app="$( echo "$dir" | cut -d'/' -f2 -s )"
-            docker build docker-mods/$app --tag ghcr.io/gilbn/theme.park:$app-${GITHUB_REF##*/}
-            docker push ghcr.io/gilbn/theme.park:$app-${GITHUB_REF##*/}
+            docker build docker-mods/$app --tag ghcr.io/gilbn/theme.park:$app$branch
+            docker push ghcr.io/gilbn/theme.park:$app$branch
           done
       - name: manually build
         if: ${{ github.event.inputs.app && github.event.inputs.app != 'build-all-the-mods' }}
