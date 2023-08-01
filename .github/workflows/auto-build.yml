@@ -77,22 +77,22 @@ jobs:
           for dir in docker-mods/*; 
           do 
             app="$( echo "$dir" | cut -d'/' -f2 -s )"
-            docker build docker-mods/$app --tag ghcr.io/gilbn/theme.park:$app$branch
-            docker push ghcr.io/gilbn/theme.park:$app$branch
+            docker build docker-mods/$app --tag ghcr.io/${{ github.repository_owner }}/theme.park:$app$branch
+            docker push ghcr.io/${{ github.repository_owner }}/theme.park:$app$branch
           done
       - name: manually build
         if: ${{ github.event.inputs.app && github.event.inputs.app != 'build-all-the-mods' }}
         run: |
-          docker build docker-mods/${{ github.event.inputs.app }} --tag ghcr.io/gilbn/theme.park:${{ github.event.inputs.app }}${{ github.event.inputs.append-tag }}
-          docker push ghcr.io/gilbn/theme.park:${{ github.event.inputs.app }}${{ github.event.inputs.append-tag }}
+          docker build docker-mods/${{ github.event.inputs.app }} --tag ghcr.io/${{ github.repository_owner }}/theme.park:${{ github.event.inputs.app }}${{ github.event.inputs.append-tag }}
+          docker push ghcr.io/${{ github.repository_owner }}/theme.park:${{ github.event.inputs.app }}${{ github.event.inputs.append-tag }}
       - name: manually build all mods
         if: ${{ github.event.inputs.app == 'build-all-the-mods' }}
         run: |
           for dir in docker-mods/*; 
           do 
             app="$( echo "$dir" | cut -d'/' -f2 -s )"
-            docker build docker-mods/$app --tag ghcr.io/gilbn/theme.park:$app${{ github.event.inputs.append-tag }}
-            docker push ghcr.io/gilbn/theme.park:$app${{ github.event.inputs.append-tag }}
+            docker build docker-mods/$app --tag ghcr.io/${{ github.repository_owner }}/theme.park:$app${{ github.event.inputs.append-tag }}
+            docker push ghcr.io/${{ github.repository_owner }}/theme.park:$app${{ github.event.inputs.append-tag }}
           done
 
   push_to_dockerhub:
@@ -124,20 +124,20 @@ jobs:
           for dir in docker-mods/*; 
           do 
             app="$( echo "$dir" | cut -d'/' -f2 -s )"
-            docker build docker-mods/$app --tag ghcr.io/gilbn/theme.park:$app$branch
-            docker push ghcr.io/gilbn/theme.park:$app$branch
+            docker build docker-mods/$app --tag ${{ secrets.DH_USER }}/theme.park:$app$branch
+            docker push ${{ secrets.DH_USER }}/theme.park:$app$branch
           done
       - name: manually build
         if: ${{ github.event.inputs.app && github.event.inputs.app != 'build-all-the-mods' }}
         run: |
-          docker build docker-mods/${{ github.event.inputs.app }} --tag gilbn/theme.park:${{ github.event.inputs.app }}${{ github.event.inputs.append-tag }}
-          docker push gilbn/theme.park:${{ github.event.inputs.app }}${{ github.event.inputs.append-tag }}
+          docker build docker-mods/${{ github.event.inputs.app }} --tag ${{ secrets.DH_USER }}/theme.park:${{ github.event.inputs.app }}${{ github.event.inputs.append-tag }}
+          docker push ${{ secrets.DH_USER }}/theme.park:${{ github.event.inputs.app }}${{ github.event.inputs.append-tag }}
       - name: manually build all mods
         if: ${{ github.event.inputs.app == 'build-all-the-mods' }}
         run: |
           for dir in docker-mods/*; 
           do 
             app="$( echo "$dir" | cut -d'/' -f2 -s )"
-            docker build docker-mods/$app --tag gilbn/theme.park:$app${{ github.event.inputs.append-tag }}
-            docker push gilbn/theme.park:$app${{ github.event.inputs.append-tag }}
+            docker build docker-mods/$app --tag ${{ secrets.DH_USER }}/theme.park:$app${{ github.event.inputs.append-tag }}
+            docker push ${{ secrets.DH_USER }}/theme.park:$app${{ github.event.inputs.append-tag }}
           done
