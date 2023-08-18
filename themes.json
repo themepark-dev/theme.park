@@ -400,7 +400,7 @@
     },
     "transmission": {
       "addons": {},
-      "base_css": "https://develop.theme-park.dev/css/base/transmission/transmission-base.css?sha=63dd7677e406901d67610b51848959a3"
+      "base_css": "https://develop.theme-park.dev/css/base/transmission/transmission-base.css?sha=1222c07aa2b4993a9e5bb83246adab90"
     },
     "unraid": {
       "addons": {
