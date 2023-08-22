@@ -24,7 +24,11 @@
     --color-primary: rgb(var(--gitea-color-primary-dark-4),.6);
     --color-primary-dark-2: rgb(var(--gitea-color-primary-dark-4),.8);
     --color-primary-dark-4: rgb(var(--gitea-color-primary-dark-4));
-  }
+    --color-nav-bg: var(--main-bg-color);
+    --color-button: transparent;
+    --color-menu: transparent;
+    --color-footer: transparent;
+}
 
 body {
     background: var(--main-bg-color);

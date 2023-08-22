@@ -43,8 +43,13 @@ if ! grep -q "${TP_DOMAIN}/css/base" /usr/share/transmission/web/index.html; the
     echo '---------------------------'
     echo '|  Adding the stylesheet  |'
     echo '---------------------------'
+    echo 'There may be 2 missing file errors right now. If there''s only 2 you may safely'
+    echo 'ignore them as they''re there for backwards compatability. If there are more'
+    echo 'errors than that, something went wrong.'
     sed -i "s/<\/head>/<link rel='stylesheet' href='${TP_SCHEME}:\/\/${TP_DOMAIN}\/css\/base\/transmission\/transmission-base.css'><\/head> /g" /usr/share/transmission/web/index.html
     sed -i "s/<\/head>/<link rel='stylesheet' href='${TP_SCHEME}:\/\/${TP_DOMAIN}\/css\/${THEME_TYPE}\/${TP_THEME}.css'><\/head> /g" /usr/share/transmission/web/index.html
+    sed -i "s/<\/head>/<link rel='stylesheet' href='${TP_SCHEME}:\/\/${TP_DOMAIN}\/css\/base\/transmission\/transmission-base.css'><\/head> /g" /usr/share/transmission/public_html/index.html
+    sed -i "s/<\/head>/<link rel='stylesheet' href='${TP_SCHEME}:\/\/${TP_DOMAIN}\/css\/${THEME_TYPE}\/${TP_THEME}.css'><\/head> /g" /usr/share/transmission/public_html/index.html
     printf 'Stylesheet set to %s\n' "${TP_THEME}
     "
 fi
