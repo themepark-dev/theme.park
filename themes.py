@@ -36,7 +36,7 @@ def create_addons_json() -> str:
     addon_folders = [name for name in listdir(
         addon_root) if isdir(join(addon_root, name))]
     for app in addon_folders:
-        app_addons = [addon for addon in listdir(f"{addon_root}/{app}")]
+        app_addons = [addon for addon in listdir(f"{addon_root}/{app}") if isdir(f"{addon_root}/{app}/{addon}")]
         ADDONS["addons"].update({
             app: {
                 addon: {} for addon in app_addons
