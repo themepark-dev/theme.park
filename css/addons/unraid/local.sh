@@ -5,18 +5,17 @@
 # This script synchronizes the CSS files needed for the theme-park.dev Unraid theme
 # into the Dynamix CSS styles folder. The script creates destination subfolders if
 # they don't exist and performs rsync for each subfolder. It then updates the @import references 
-# in CSS files so the the files get correctly loaded on the client.
+# in the CSS files so the files get correctly loaded by the client.
 #
 # This script is intended for users of the "Theme Engine" plugin, allowing custom
 # styling to be added into the HTML head that references the copied CSS files.
 #
 # After running this script, you can use the following code snippet as an example
-# in your HTML head to include the copied CSS files using the "Theme Engine" plugin:
+# in your HTML head (Custom styling (advanced)) to include the copied CSS files using the "Theme Engine" plugin:
 #
 # <!-- Example for Theme Engine plugin -->
-# <style>
-#   <link type="text/css" rel="stylesheet" href="/webGui/styles/theme-park/css/base/unraid/nord.css" />
 # </style>
+#   <link type="text/css" rel="stylesheet" href="/webGui/styles/theme-park/css/base/unraid/nord.css"/>
 #
 # Tip: You can use the "User Scripts" plugin in Unraid to schedule this script to run
 # automatically when the Unraid array starts.
