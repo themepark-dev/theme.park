@@ -100,9 +100,22 @@ pre {
     border-radius: 0px 0px 0px 25px;
 }
 
+.nav-tile {
+    background-color: var(--transparency-dark-50);
+}
+
+div.title {
+    border-bottom: 1px solid var(--transparency-light-15);
+    background-color: var(--transparency-dark-45);
+}
+
 #nav-block #nav-item:focus:after,
 #nav-block #nav-item:hover:after,
-#nav-block #nav-item.active:after {
+#nav-block #nav-item.active:after,
+.nav-item:focus:after,
+.nav-item:hover:after,
+.nav-user.show:hover:after {
+    background-color: var(--accent-color-hover);
     background: var(--accent-color-hover);
 }
 
@@ -129,12 +142,16 @@ textarea {
 /*DASHBOARD*/
 table.share_status.dashboard {
     background: var(--transparency-dark-15);
-    border: 1px solid rgba(255, 255, 255, .25);
+    border: 1px solid var(--transparency-light-25);
 }
 
 table.share_status.dashboard tr>td.next {
-    border-top: 1px solid rgba(255, 255, 255, .25);
+    border-top: 1px solid var(--transparency-light-25);
     color: var(--text-hover);
+}
+
+table.share_status.dashboard tbody {
+    border: 1px solid var(--transparency-light-15);
 }
 
 span.outer.solid {
@@ -177,7 +194,7 @@ table.tablesorter thead tr th {
 
 /*MAIN*/
 #title {
-    border-bottom: 1px solid rgba(255, 255, 255, .25);
+    border-bottom: 1px solid var(--transparency-light-25);
     background: var(--transparency-dark-50);
     color: var(--text-hover);
 }
@@ -202,15 +219,15 @@ table.disk_status tbody tr:nth-child(even) {
 }
 
 table.disk_status thead tr:last-child {
-    border-bottom: 1px solid rgb(160, 160, 160);
+    border-bottom: 1px solid var(--transparency-light-25);
 }
 
 table.tablesorter thead tr {
-    border-bottom: rgba(255, 255, 255, .25) 1px solid;
+    border-bottom: var(--transparency-light-25) 1px solid;
 }
 
 table tbody tr.tr_last {
-    border-top: 1px solid rgba(255, 255, 255, .25);
+    border-top: 1px solid var(--transparency-light-25);
 }
 
 table.share_status tbody tr.warn {
@@ -286,7 +303,7 @@ a.button:hover,
 
 /* USERS */
 div.user-list {
-    border: 1px solid rgba(255, 255, 255, .15);
+    border: 1px solid var(--transparency-light-15);
     background: var(--transparency-light-05);
 }
 
@@ -458,7 +475,7 @@ li.caMenuItem:hover {
 
 .ca_holder {
     background: var(--transparency-dark-25) !important;
-    border-color: rgba(255, 255, 255, 0.1) !important;
+    border-color: var(--transparency-light-10) !important;
 }
 
 .ca_holder:hover {
@@ -656,9 +673,13 @@ div.shade-black {
 
 /* MODAL */
 
-/* .sweet-alert {
-    background: var(--modal-bg-color) !important;
-} */
+.sweet-alert, .sweet-alert .sa-icon.sa-success .sa-fix {
+    background-color: var(--modal-bg-color);
+}
+
+.sweet-alert.nchan h2 {
+    background-color: var(--transparency-light-15);
+}
 
 .showSweetAlert:not([data-has-cancel-button="false"]),
 .swal-overlay--show-modal .swal-modal {
