@@ -1,4 +1,5 @@
 name: Minify CSS and deploy to live branch
+permissions: write-all
 on:
   push:
     branches:
