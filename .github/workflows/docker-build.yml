@@ -64,22 +64,15 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GH_PAT }}
 
-      - name: Login to Docker Hub
-        uses: docker/login-action@v2.1.0
-        with:
-          username: ${{ secrets.DH_USER }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
-
       - name: build&push
         uses: docker/build-push-action@v3.2.0
         with:
           push: ${{ github.event_name != 'pull_request' }}
           platforms: ${{ env.platform }}
           file: ./${{ matrix.architecture }}.Dockerfile
-          cache-from: docker.io/${{ env.cache }}
-          cache-to: docker.io/${{ env.cache }}
+          cache-from: ghcr.io/${{ env.cache }}
+          cache-to: ghcr.io/${{ env.cache }}
           tags: |
-            docker.io/${{ env.tag }}
             ghcr.io/${{ env.tag }}
           labels: |
             org.opencontainers.image.created=${{ env.created }}
@@ -98,19 +91,11 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        registry: [docker.io, ghcr.io]
+        registry: [ghcr.io]
     needs: [build-and-push-it-to-the-limit]
     steps:
       - name: Checkout
         uses: actions/checkout@v3.1.0
-
-      - name: Login to DockerHub
-        if: matrix.registry == 'docker.io'
-        uses: docker/login-action@v2.1.0
-        with:
-          registry: docker.io
-          username: ${{ secrets.DH_USER }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Login to GitHub Container Registry
         if: matrix.registry == 'ghcr.io'
