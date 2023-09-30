@@ -70,7 +70,7 @@ jobs:
         with:
           publish_dir: ./
           publish_branch: live
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GH_PAT }}
           exclude_assets: ''
       - name: Deploy Develop
         uses: peaceiris/actions-gh-pages@v3.8.0
@@ -78,7 +78,7 @@ jobs:
         with:
           publish_dir: ./
           publish_branch: live_develop
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GH_PAT }}
           exclude_assets: ''
       - name: Deploy Testing
         uses: peaceiris/actions-gh-pages@v3.8.0
@@ -86,7 +86,7 @@ jobs:
         with:
           publish_dir: ./
           publish_branch: live_testing
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GH_PAT }}
           exclude_assets: ''
       - name: Clear CF Cache
         run: |
