@@ -1,4 +1,4 @@
-#!/command/with-contenv bash
+#!/command/with-contenv bash 
 
 echo '---------------------------'
 echo '|  Lidarr theme.park Mod  |'
