@@ -1,0 +1,34 @@
+:root {
+  --main-bg-color: #1e1e2e;
+
+  --modal-bg-color: #181825;
+  --modal-header-color: #11111b;
+  --modal-footer-color: #11111b;
+
+  --drop-down-menu-bg: #313244;
+
+  --button-color: #313244;
+  --button-color-hover: #45475a;
+  --button-text: var(--text);
+  --button-text-hover: var(--text-hover);
+
+  --accent-color: 137, 180, 250; /* Mocha Blue */
+  --accent-color-hover: rgb(var(--accent-color), 0.8);
+  --link-color: var(--text);
+  --link-color-hover: #89b4fa;
+  --label-text-color: #fff; /* have to break convention here */
+
+  --text: #cdd6f4;
+  --text-hover: var(--text);
+  --text-muted: a6adc8;
+
+  /* Specials */
+  --arr-queue-color: #a6e3a1; /* Servarr apps + Bazarr */
+  --plex-poster-unwatched: #fab387;
+  --petio-spinner: invert(66%) sepia(15%) saturate(1451%) hue-rotate(185deg) brightness(105%) contrast(96%); /* Made with https://codepen.io/jsm91/embed/ZEEawyZ */ /* Blue */
+  --gitea-color-primary-dark-4: var(--accent-color);
+  --overseerr-gradient: linear-gradient(
+    var(--main-bg-color),
+    var(--main-bg-color)
+  ); /* Make sure this is compatible with whatever takes in the gradient */
+}
