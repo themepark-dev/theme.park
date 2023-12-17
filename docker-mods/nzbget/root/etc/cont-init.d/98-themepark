@@ -1,4 +1,4 @@
-#!/command/with-contenv bash
+#!/command/with-contenv bash 
 
 echo '---------------------------'
 echo '|  NZBGet theme.park Mod  |'

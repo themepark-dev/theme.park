@@ -1,4 +1,4 @@
-#!/command/with-contenv bash
+#!/command/with-contenv bash 
 APP_FILEPATH='/config/qBittorrent/qBittorrent.conf'
 INDEX_FILEPATH='/vuetorrent/public/index.html'
 if [ "${TP_HOTIO}" = true ]; then

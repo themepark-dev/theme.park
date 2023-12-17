@@ -1,4 +1,4 @@
-#!/usr/bin/with-contenv bash
+#!/usr/bin/with-contenv bash 
 
 if ! [[ -x "$(command -v jq)" ]]; then
     echo "jq" >> /mod-repo-packages-to-install.list
