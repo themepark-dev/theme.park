@@ -359,7 +359,7 @@
     },
     "qbittorrent": {
       "addons": {},
-      "base_css": "https://develop.theme-park.dev/css/base/qbittorrent/qbittorrent-base.css?sha=8506f5c4bdc860f374d0f2096f5a8aea"
+      "base_css": "https://develop.theme-park.dev/css/base/qbittorrent/qbittorrent-base.css?sha=11987f244ab5551dcb71293d3a2e8c3b"
     },
     "radarr": {
       "addons": {
