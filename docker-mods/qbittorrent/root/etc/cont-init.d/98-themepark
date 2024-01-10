@@ -86,8 +86,9 @@ if [[ ! -d /themepark ]]; then
     cp -a /temp/src/webui/www /themepark
     cp -a /temp/src/icons/. /themepark/public/icons
     cp -a /temp/src/icons/. /themepark/private/icons
+    printf '\nCopy finished\n\n'
     rm -rf /temp
-    printf '\nDownload finished\n\n'
+    printf '\nCleanup finished\n\n'
 fi
 
 sed_file(){
