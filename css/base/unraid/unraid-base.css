@@ -102,6 +102,7 @@ pre {
 
 .nav-tile {
     background-color: var(--transparency-dark-50);
+    overflow-x: auto;
 }
 
 div.title {

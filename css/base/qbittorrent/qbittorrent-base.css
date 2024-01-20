@@ -489,6 +489,7 @@ hr {
 
 .toolbarTabs {
   background: var(--transparency-dark-25) !important;
+  margin: 0px 5px 0 0 !important;
 }
 
 .progressbar_dark {
@@ -662,4 +663,9 @@ select:focus {
 .select-watched-folder-editable {
   background-color: var(--transparency-dark-05);
   border: solid var(--transparency-light-10) 1px;
+}
+
+#torrentsFilterToolbar {
+  float: right;
+  margin-right: .5rem;
 }
