@@ -23,17 +23,17 @@ if [ "${TP_DISABLE_THEME}" = true ]; then
   exit 0
 fi
 
-if ! [[ -x "$(command -v svn)" ]]; then
+if ! [[ -x "$(command -v git)" ]]; then
 echo '--------------------------'
-echo '| Installing svn package |'
+echo '| Installing git package |'
 echo '--------------------------'
     if [ -x "$(command -v apk)" ]; then 
       apk update && \
-      apk add --no-cache subversion
+      apk add --no-cache git
       apk add --no-cache perl
     elif [ -x "$(command -v apt-get)" ]; then
       apt-get update && \
-      apt-get install -y subversion
+      apt-get install -y git
       apt-get install -y perl
     fi
 fi
@@ -80,15 +80,15 @@ if [[ ! -d /themepark ]]; then
     echo '---------------------------------------'
     echo '| Downloading WebUI files from github |'
     echo '---------------------------------------'
-    printf '\nDownloading qBittorrent webui to "/themepark"..please wait\n'
-    svn export --quiet https://github.com/qbittorrent/qBittorrent/trunk/src/webui/www /themepark
+    printf '\nDownloading qBittorrent to /temp\n'
+    git clone --depth 1 https://github.com/qbittorrent/qBittorrent /temp
     printf '\nDownload finished\n\n'
-    printf '\nDownloading qBittorrent webui icons to "/themepark/xxx"..please wait\n'
-    svn export --force --quiet https://github.com/qbittorrent/qBittorrent/trunk/src/icons /temp
-    cp -a /temp/. /themepark/public/icons
-    cp -a /temp/. /themepark/private/icons
+    cp -a /temp/src/webui/www /themepark
+    cp -a /temp/src/icons/. /themepark/public/icons
+    cp -a /temp/src/icons/. /themepark/private/icons
+    printf '\nCopy finished\n\n'
     rm -rf /temp
-    printf '\nDownload finished\n\n'
+    printf '\nCleanup finished\n\n'
 fi
 
 sed_file(){

@@ -55,7 +55,7 @@ if [[ -z ${TP_THEME} ]]; then
 fi
 RELEASE_FILEPATH='/vuetorrent/release.json'
 NEEDS_UPDATE=false
-CURRENT_RELEASE=$(curl -s https://api.github.com/repos/WDaan/VueTorrent/releases/latest | jq -r ".assets[]")
+CURRENT_RELEASE=$(curl -Ls https://api.github.com/repos/WDaan/VueTorrent/releases/latest | jq -r ".assets[]")
 
 # ===============================================
 install_deps() {
