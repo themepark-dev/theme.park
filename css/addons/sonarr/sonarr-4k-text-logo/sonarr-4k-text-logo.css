@@ -25,3 +25,8 @@
     height: 40px;
     opacity: 1;
 }
+
+.panel-header > img.logo {
+    content: url("/css/addons/sonarr/sonarr-4k-text-logo/sonarr-4k-text.png");
+    width: auto;
+}

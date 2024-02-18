@@ -25,3 +25,8 @@
     height: 40px;
     opacity: 1;
 }
+
+.panel-header > img.logo {
+    content: url("/css/addons/sonarr/sonarr-anime-text-logo/sonarr-anime-text.png");
+    width: auto;
+}
