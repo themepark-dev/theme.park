@@ -1,0 +1,20 @@
+@media (min-width: 752px) {
+    [class*="PageHeader-logo-"] {
+        content: url("/css/addons/sonarr/sonarr-anime-logo/sonarr-anime.png");
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    [class*="PageHeader-logo-"] {
+        content: url("/css/addons/sonarr/sonarr-anime-logo/sonarr-anime.png");
+    }
+}
+
+[class*="LoadingPage-logoFull-"] {
+    content: url("/css/addons/sonarr/sonarr-anime-logo/sonarr-anime.png");
+    opacity: 1;
+}
+
+.panel-header > img.logo {
+    content: url("/css/addons/sonarr/sonarr-anime-logo/sonarr-anime.png");
+}

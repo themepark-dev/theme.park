@@ -14,3 +14,7 @@
     content: url("/css/addons/sonarr/sonarr-4k-logo/sonarr-4k.png");
     opacity: 1;
 }
+
+.panel-header > img.logo {
+    content: url("/css/addons/sonarr/sonarr-4k-logo/sonarr-4k.png");
+}
