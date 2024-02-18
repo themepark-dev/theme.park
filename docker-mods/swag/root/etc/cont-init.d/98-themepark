@@ -44,10 +44,10 @@ if [[ $SHA != $SHA_RELEASE ]]; then
     echo "-----------------------------------------------------"
     echo "| Copying files to /config/www/themepark |"
     echo "-----------------------------------------------------"
-    cp -a /tmp/themepark/css /config/www/themepark/css
-    cp -a /tmp/themepark/resources /config/www/themepark/resources
-    cp -a /tmp/themepark/themes.json /config/www/themepark
-    cp -a /tmp/themepark/index.html /config/www/themepark
+    cp -a /tmp/themepark/css /config/www/themepark/
+    cp -a /tmp/themepark/resources /config/www/themepark/
+    cp -a /tmp/themepark/themes.json /config/www/themepark/
+    cp -a /tmp/themepark/index.html /config/www/themepark/
     rm -rf /tmp/themepark
     echo "-----------------------------------------------------"
     echo '| Clone and copy finished |'
