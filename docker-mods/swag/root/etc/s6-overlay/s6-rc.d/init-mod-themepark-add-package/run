@@ -1,5 +1,0 @@
-#!/usr/bin/with-contenv bash 
-
-if ! [[ -x "$(command -v svn)" ]]; then
-    echo "subversion" >> /mod-repo-packages-to-install.list
-fi
