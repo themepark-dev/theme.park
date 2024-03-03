@@ -409,8 +409,8 @@ li.divider {
 
 /* Sidemenu */
 .selectedFilter {
-  background-color: var(--button-color);
-  color: var(--button-text);
+  background-color: var(--button-color) !important;
+  color: var(--button-text) !important;
 }
 
 .selectedFilter:before {
