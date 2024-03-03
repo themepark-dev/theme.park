@@ -208,6 +208,7 @@ label {
 
 #desktopNavbar ul li a {
   color: var(--text);
+  padding: 1px 10px;
 }
 
 #desktopNavbar ul li a:hover {
