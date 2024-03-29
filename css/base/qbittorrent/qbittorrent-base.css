@@ -208,6 +208,7 @@ label {
 
 #desktopNavbar ul li a {
   color: var(--text);
+  padding: 1px 10px;
 }
 
 #desktopNavbar ul li a:hover {
@@ -408,8 +409,8 @@ li.divider {
 
 /* Sidemenu */
 .selectedFilter {
-  background-color: var(--button-color);
-  color: var(--button-text);
+  background-color: var(--button-color) !important;
+  color: var(--button-text) !important;
 }
 
 .selectedFilter:before {

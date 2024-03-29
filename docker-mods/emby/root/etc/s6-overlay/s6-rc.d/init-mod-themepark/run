@@ -39,5 +39,5 @@ if [[ -z ${TP_THEME} ]]; then
 fi
 
 # Adding stylesheets
-printf '%s\n' "@import url('${TP_SCHEME}://${TP_DOMAIN}/css/${THEME_TYPE}/${TP_THEME}.css');" "@import url('${TP_SCHEME}://${TP_DOMAIN}/css/base/emby/emby-base.css');" > /app/emby/dashboard-ui/modules/themes/light/theme.css
+printf '%s\n' "@import url('${TP_SCHEME}://${TP_DOMAIN}/css/${THEME_TYPE}/${TP_THEME}.css');" "@import url('${TP_SCHEME}://${TP_DOMAIN}/css/base/emby/emby-base.css');" > /app/emby/system/dashboard-ui/modules/themes/light/theme.css
 printf 'Stylesheet set to %s\n' "${TP_THEME}"
