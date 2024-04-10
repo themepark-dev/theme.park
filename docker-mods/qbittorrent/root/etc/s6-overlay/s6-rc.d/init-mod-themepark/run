@@ -68,7 +68,7 @@ if [[ ! -d /themepark ]]; then
     echo '---------------------------------------'
     printf '\nDownloading qBittorrent to /temp\n'
     if [[ -n ${QBITTORRENT_VERSION} ]]; then
-        git clone --depth 1 release-${QBITTORRENT_VERSION} https://github.com/qbittorrent/qBittorrent /temp
+        git clone --depth 1 -b release-${QBITTORRENT_VERSION} https://github.com/qbittorrent/qBittorrent /temp
     else
         git clone --depth 1 https://github.com/qbittorrent/qBittorrent /temp
     fi
