@@ -31,6 +31,7 @@ echo -e "Variables set:\\n\
 'TP_DOMAIN'=${TP_DOMAIN}\\n\
 'TP_COMMUNITY_THEME'=${TP_COMMUNITY_THEME}\\n\
 'TP_SCHEME'=${TP_SCHEME}\\n\
+'QBITTORRENT_VERSION'=${QBITTORRENT_VERSION}\\n\
 'TP_THEME'=${TP_THEME}\\n"
 
 # Set default
@@ -66,7 +67,11 @@ if [[ ! -d /themepark ]]; then
     echo '| Downloading WebUI files from github |'
     echo '---------------------------------------'
     printf '\nDownloading qBittorrent to /temp\n'
-    git clone --depth 1 https://github.com/qbittorrent/qBittorrent /temp
+    if [[ -n ${QBITTORRENT_VERSION} ]]; then
+        git clone --depth 1 release-${QBITTORRENT_VERSION} https://github.com/qbittorrent/qBittorrent /temp
+    else
+        git clone --depth 1 https://github.com/qbittorrent/qBittorrent /temp
+    fi
     printf '\nDownload finished\n\n'
     cp -a /temp/src/webui/www /themepark
     cp -a /temp/src/icons/. /themepark/public/icons
