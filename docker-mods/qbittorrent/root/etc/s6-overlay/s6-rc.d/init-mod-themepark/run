@@ -24,7 +24,7 @@ if [ "${TP_DISABLE_THEME}" = true ]; then
 fi
 
 if [ -z ${QBITTORRENT_VERSION+x} ]; then \
-    echo 'QBITTORRENT_VERSION not set. Using the latest stable.' \
+    echo 'QBITTORRENT_VERSION not set. Using the latest stable.'
     QBITTORRENT_VERSION=$(curl -sL "http://dl-cdn.alpinelinux.org/alpine/edge/community/x86_64/APKINDEX.tar.gz" | tar -xz -C /tmp \
     && awk '/^P:qbittorrent-nox$/,/V:/' /tmp/APKINDEX | sed -n 2p | sed 's/^V://' | sed 's/-.*//'); \
 fi
