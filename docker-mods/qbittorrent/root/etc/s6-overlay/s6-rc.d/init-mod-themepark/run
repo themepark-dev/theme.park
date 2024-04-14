@@ -23,6 +23,12 @@ if [ "${TP_DISABLE_THEME}" = true ]; then
   exit 0
 fi
 
+if [ -z ${QBITTORRENT_VERSION+x} ]; then \
+    echo 'QBITTORRENT_VERSION not set. Using the latest stable.' \
+    QBITTORRENT_VERSION=$(curl -sL "http://dl-cdn.alpinelinux.org/alpine/edge/community/x86_64/APKINDEX.tar.gz" | tar -xz -C /temp \
+    && awk '/^P:qbittorrent-nox$/,/V:/' /temp/APKINDEX | sed -n 2p | sed 's/^V://'); \
+fi
+
 # Display variables for troubleshooting 
 echo -e "Variables set:\\n\
 'APP_FILEPATH'=${APP_FILEPATH}\\n\
@@ -67,11 +73,9 @@ if [[ ! -d /themepark ]]; then
     echo '| Downloading WebUI files from github |'
     echo '---------------------------------------'
     printf '\nDownloading qBittorrent to /temp\n'
-    if [[ -n ${QBITTORRENT_VERSION} ]]; then
-        git clone --depth 1 -b release-${QBITTORRENT_VERSION} https://github.com/qbittorrent/qBittorrent /temp
-    else
-        git clone --depth 1 https://github.com/qbittorrent/qBittorrent /temp
-    fi
+    echo 'Downloading WebUI for version:' "${QBITTORRENT_VERSION}"
+    git clone --depth 1 -b release-${QBITTORRENT_VERSION} https://github.com/qbittorrent/qBittorrent /temp
+
     printf '\nDownload finished\n\n'
     cp -a /temp/src/webui/www /themepark
     cp -a /temp/src/icons/. /themepark/public/icons
