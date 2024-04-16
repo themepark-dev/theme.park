@@ -1,4 +1,4 @@
-#!/command/with-contenv bash 
+#!/bin/sh
 
 echo '--------------------------------------'
 echo '| Nginx Proxy Manager theme.park Mod |' 
