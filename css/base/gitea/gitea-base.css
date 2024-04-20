@@ -95,6 +95,10 @@ a:hover,
 }
 
 /* SCROLLBAR */
+* {
+    scrollbar-color: rgb(var(--accent-color),.5) transparent;
+    caret-color: var(--color-caret);
+}
 @media only screen and (min-width: 768px) {
     html {
         height: 100%;
@@ -172,7 +176,8 @@ footer,
 .repository .diff-box .header .file,
 .CodeMirror,
 .EasyMDEContainer .CodeMirror,
-.feeds .list ul li a .svg {
+.feeds .list ul li a .svg,
+.flex-item .flex-item-body {
     color: var(--text);
 }
 
@@ -216,6 +221,14 @@ b:hover,
 }
 
 /* NAVBAR */
+
+#navbar {
+    border-bottom: 1px solid var(--transparency-light-35) !important;
+}
+#navbar a.item:hover, #navbar button.item:hover {
+    background: rgba(var(--accent-color), .5);
+}
+
 .following.bar.light {
     background-color: transparent;
     border-bottom: 1px solid transparent;
@@ -243,8 +256,8 @@ b:hover,
 .ui.secondary.menu .active.item,
 .ui.secondary.menu .active.item:hover {
     box-shadow: none;
-    background: var(--transparency-dark-05);
-    color: var(--text-hover);
+    background: rgb(var(--accent-color));
+    color: var(--label-text-color) !important;
 }
 
 /* UI */
@@ -257,6 +270,10 @@ b:hover,
     background: var(--transparency-dark-10);
     border: 1px solid rgba(255, 255, 255, .1);
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1);
+}
+
+.ui.menu .item:before, .ui.vertical.menu .item:before {
+    background: var(--transparency-light-35);
 }
 
 .organization.settings .ui.vertical.menu {
@@ -461,8 +478,8 @@ b:hover,
 
 .ui.secondary.pointing.menu .active.item,
 .ui.secondary.pointing.menu .active.item:hover {
-    border-color: currentColor;
-    color: rgb(var(--accent-color));
+    border-color: currentColor !important;
+    color: rgb(var(--accent-color)) !important;
 }
 
 .ui.tabular.menu .item {
@@ -662,8 +679,8 @@ svg.vch__wrapper .vch__months__labels__wrapper text.vch__month__label[data-v-a9c
 
 .ui.menu .active.item:hover,
 .ui.vertical.menu .active.item:hover {
-    background: var(--transparency-dark-25);
-    color: var(--text-hover);
+    background: rgb(var(--accent-color),.5) !important;
+    color: var(--label-text-color) !important;
 }
 
 .ui.menu a.item:hover {
@@ -870,6 +887,7 @@ td.blob-excerpt {
 .ui.cards>.card {
     background: var(--transparency-dark-15);
     box-shadow: none;
+    border: 1px solid var(--transparency-light-35);
 }
 
 .ui.cards a.card:hover,
@@ -891,7 +909,10 @@ a.ui.card:hover {
 
 .ui.card>.content,
 .ui.cards>.card>.content {
-    border-color: rgb(255 255 255 / 10%);
+    border-color: var(--transparency-light-35) !important;
+}
+.user.profile .ui.card .extra.content>ul>li:not(:last-child) {
+    border-bottom: 1px solid var(--transparency-light-35);
 }
 
 .ui.ui.menu .item.disabled {
@@ -1194,7 +1215,7 @@ footer {
 .ui.toggle.checkbox input:focus:checked~label,
 .ui.checkbox input:focus~label,
 .ui.checkbox input:focus~label:after {
-    color: var(--label-text-color) !important;
+    color: var(--text) !important;
 }
 
 .ui.blue.button,
@@ -1203,6 +1224,7 @@ footer {
 .ui.primary.buttons .button {
     background-color: var(--button-color) !important;
     color: var(--button-text) !important;
+    border-color: var(--button-color) !important;
 }
 
 .ui.primary.button:hover,
@@ -1216,6 +1238,7 @@ footer {
     background-color: var(--button-color-hover) !important;
     color: var(--button-text) !important;
     box-shadow: inset 0 0 0 1px transparent !important;
+    border-color: var(--button-color-hover) !important;
 }
 
 .ui.teal.button,
@@ -1280,12 +1303,13 @@ footer {
 .ui.button {
     background: var(--button-color);
     color: var(--button-text);
-    border: 1px solid rgb(255 255 255 / 10%);
+    border: 1px solid var(--button-color) !important;
 }
 
 .ui.button:hover {
     background: var(--button-color-hover);
     color: var(--button-text);
+    border: 1px solid var(--button-color-hover) !important;
 }
 
 .ui.basic.blue.button,
@@ -1388,6 +1412,10 @@ a.ui.basic.label:hover,
     color: var(--button-text);
 }
 */
+.ui.green.labels .label, .ui.ui.ui.green.label, .ui.green.button, .ui.green.buttons .button, .ui.green.button:focus, .ui.green.buttons .button:focus {
+    background-color: rgb(var(--accent-color));
+    color: var(--label-text-color);
+}
 .ui.label,
 .ui.menu .item>.label {
     background-color: rgb(var(--accent-color));
@@ -1418,7 +1446,7 @@ a.ui.labels .label:hover {
     border: 1px solid transparent;
 }
 
-.repository #commits-table td.sha .sha.label .detail.icon,
+/* .repository #commits-table td.sha .sha.label .detail.icon,
 .repository #repo-files-table .sha.label .detail.icon,
 .repository .timeline-item.commits-list .singular-commit .sha.label .detail.icon {
     background: var(--transparency-dark-25);
@@ -1428,7 +1456,7 @@ a.ui.labels .label:hover {
     border-left: 1px solid var(--text-hover);
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-}
+} */
 
 .repository.file.list #repo-files-table tbody .svg.octicon-file-directory,
 .repository.file.list #repo-files-table tbody .svg.octicon-file-submodule {
@@ -1651,4 +1679,18 @@ input::selection {
 
 .ui.link.list.list a.item:hover, .ui.link.list.list .item a:not(.ui):hover, .ui.link.list.list a.item:active, .ui.link.list.list .item a:not(.ui):active {
     color: var(--button-text-hover);
+}
+
+
+/* OTHER */
+
+.divider:not(.divider-text),.ui.dropdown .menu>.divider {
+    border-top: 1px solid var(--transparency-light-35);
+}
+
+
+#notification_table {
+    background: var(--transparency-dark-15);
+    border: 1px solid var(--transparency-light-15);
+    border-radius: var(--border-radius);
 }
