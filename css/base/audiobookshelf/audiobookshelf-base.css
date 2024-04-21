@@ -163,6 +163,7 @@ table tr svg.text-green-500{
 /* DROPDOWNS */
 button[aria-haspopup="listbox"]{
     background: var(--transparency-dark-25) !important;
+    color: var(--text) !important;
 }
 ul[role="listbox"]{
     background: var(--modal-bg-color) !important;
