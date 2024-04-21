@@ -210,6 +210,10 @@
       "addons": {},
       "base_css": "https://develop.theme-park.dev/css/base/adguard/adguard-base.css?sha=9bef040a51d40439e2ff447ab67c0f0d"
     },
+    "audiobookshelf": {
+      "addons": {},
+      "base_css": "https://develop.theme-park.dev/css/base/audiobookshelf/audiobookshelf-base.css?sha=8ebd62751f1ebd8b25e1cfc38d8a9cb1"
+    },
     "bazarr": {
       "addons": {
         "bazarr-4k-logo": "https://develop.theme-park.dev/css/addons/bazarr/bazarr-4k-logo/bazarr-4k-logo.css?sha=03c214d2ddd0871e9d824927df9eff42",
