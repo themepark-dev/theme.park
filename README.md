@@ -298,7 +298,7 @@
 <tr>
 <td>
 <p><a href="https://docs.theme-park.dev/themes/audiobookshelf"><img src="https://docs.theme-park.dev/site_assets/audiobookshelf/logo.png" alt="" width="48" height="48" /></a></p>
-<p><a href="https://docs.theme-park.dev/themes/audiobookshelf">The Lounge (Deprecated)</a></p>
+<p><a href="https://docs.theme-park.dev/themes/audiobookshelf">Audiobookshelf</a></p>
 </td>
 </tr>
 </tbody>
