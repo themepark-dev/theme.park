@@ -33,8 +33,15 @@ a:hover{
     background: var(--transparency-dark-40) !important;
 }
 body, .bg-bg, #bookshelf, #app-content, #page-wrapper{
-    background: var(--main-bg-color) !important;
-    background-image: var(--main-bg-color) !important;
+    background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    color: var(--text);
 }
 .bg-bg{
     background: var(--modal-header-color) !important;
