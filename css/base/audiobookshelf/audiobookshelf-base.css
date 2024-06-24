@@ -33,6 +33,7 @@ a:hover{
     background: var(--transparency-dark-40) !important;
 }
 body, .bg-bg, #bookshelf, #app-content, #page-wrapper{
+    background-image:none !important;
     background: var(--main-bg-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
