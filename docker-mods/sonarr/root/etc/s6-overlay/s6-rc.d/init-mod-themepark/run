@@ -14,6 +14,8 @@ echo -e "Variables set:\\n\
 
 APP_FILEPATH='/app/sonarr/bin/UI/index.html'
 LOGIN_FILEPATH='/app/sonarr/bin/UI/login.html'
+APP_ICON_FILEPATH='/app/sonarr/bin/UI/Content/Images/Icons'
+
 if [ "${TP_HOTIO}" = true ]; then
     echo 'Changing to Hotio file path!'
     APP_FILEPATH='/app/bin/UI/index.html'
@@ -61,6 +63,16 @@ if ! grep -q "${TP_DOMAIN}/css/base" "${APP_FILEPATH}"; then
     if [[ -n ${TP_ADDON} ]]; then
         for addon in $(echo "$TP_ADDON" | tr "|" " "); do
         sheets="${sheets} <link rel='stylesheet' href='${url_base}/css/addons/sonarr/${addon}/${addon}.css'>"
+
+        #if TP_ADDON is one that changes the logo, add the corresponding favicon
+        #find favicon folder name based on addon name
+        favicon_dir="${url_base}/css/addons/sonarr/favicon/$(echo "${addon}" | sed 's/-blue//g; s/-logo//g; s/-text//g')"
+        #if favicon folder exists, copy content to the app favicon folder
+        if [ -d "$favicon_dir" ]; then
+            cp "${favicon_dir}/." "${APP_ICON_FILEPATH}"
+            echo "Added favicon."
+        fi
+
         printf 'Added custom addon: %s\n\n' "${addon}"
         done
     fi
