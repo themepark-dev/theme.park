@@ -66,7 +66,7 @@ if ! grep -q "${TP_DOMAIN}/css/base" "${APP_FILEPATH}"; then
 
         #if TP_ADDON is one that changes the logo, add the corresponding favicon
         #find favicon folder name based on addon name
-        favicon_dir="${url_base}/css/addons/sonarr/favicon/$(echo "${addon}" | sed 's/-blue//g; s/-logo//g; s/-text//g')"
+        favicon_dir="${url_base}/css/addons/sonarr/favicon/$(echo "${addon}" | sed 's/-logo//g; s/-text//g')"
         #if favicon folder exists, copy content to the app favicon folder
         if [ -d "$favicon_dir" ]; then
             cp "${favicon_dir}/." "${APP_ICON_FILEPATH}"
