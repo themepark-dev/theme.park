@@ -52,7 +52,7 @@ fi
 # Function to download files for a given addon
 download_favicon_files() {
     local addon=$1
-    local urls=$(echo "${TP_SCHEME}://${TP_DOMAIN}/themes.json" | jq -r ".addons.sonarr[\"$addon\"].files[]")
+    local urls=$(curl -s "${TP_SCHEME}://${TP_DOMAIN}/themes.json" | jq -r ".addons.sonarr[\"$addon\"].files[]?")
     for url in $urls; do
         wget -P "${APP_ICON_FILEPATH}" "$url"
         printf 'Downloaded favicon: %s\n' "$url"
