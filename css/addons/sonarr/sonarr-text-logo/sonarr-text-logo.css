@@ -17,3 +17,8 @@
     height: 40px;
     opacity: 1;
 }
+
+.panel-header > img.logo {
+    content: url("/css/addons/sonarr/sonarr-text-logo/sonarr-text.png");
+    width: auto;
+}

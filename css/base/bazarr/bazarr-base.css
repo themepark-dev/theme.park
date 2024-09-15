@@ -17,6 +17,10 @@ html {
 
 /* TEXT */
 
+.bazarr-Text-root {
+    color: var(--text);
+}
+
 [class$="-label"]:not([class$="-Button-label"]),
 label {
     color: var(--text-hover) !important;

@@ -1,4 +1,4 @@
-#!/usr/bin/with-contenv bash
+#!/usr/bin/with-contenv bash 
 
 echo '-------------------------'
 echo '|  SWAG theme.park Mod  |'
@@ -28,7 +28,7 @@ fi
 
 mkdir -p /config/www/themepark
 
-SHA_RELEASE=$(curl -sL "https://api.github.com/repos/gilbn/theme.park/commits/${TP_BRANCH}" | jq -r '.sha');
+SHA_RELEASE=$(curl -sL "https://api.github.com/repos/themepark-dev/theme.park/commits/${TP_BRANCH}" | jq -r '.sha');
 if [[ ! -f "/config/www/themepark/sha.txt" ]]; then 
     SHA=""
 else
@@ -37,13 +37,21 @@ fi
 # Downloading fresh webui files from source.
 if [[ $SHA != $SHA_RELEASE ]]; then
     echo "-----------------------------------------------------"
-    echo "| Downloading latest files from ${TP_BRANCH} branch |"
+    echo "| Cloning latest files from ${TP_BRANCH} branch |"
     echo "-----------------------------------------------------"
-    svn export --quiet --force "https://github.com/GilbN/theme.park/branches/${TP_BRANCH}/css" /config/www/themepark/css
-    svn export --quiet --force "https://github.com/GilbN/theme.park/branches/${TP_BRANCH}/resources" /config/www/themepark/resources
-    svn export --quiet --force "https://github.com/GilbN/theme.park/branches/${TP_BRANCH}/themes.json" /config/www/themepark
-    svn export --quiet --force "https://github.com/GilbN/theme.park/branches/${TP_BRANCH}/index.html" /config/www/themepark
-    printf '\nDownload finished\n\n'
+    rm -rf /tmp/themepark
+    git clone --depth 1 --quiet --branch ${TP_BRANCH} https://github.com/themepark-dev/theme.park.git /tmp/themepark
+    echo "-----------------------------------------------------"
+    echo "| Copying files to /config/www/themepark |"
+    echo "-----------------------------------------------------"
+    cp -a /tmp/themepark/css /config/www/themepark/
+    cp -a /tmp/themepark/resources /config/www/themepark/
+    cp -a /tmp/themepark/themes.json /config/www/themepark/
+    cp -a /tmp/themepark/index.html /config/www/themepark/
+    rm -rf /tmp/themepark
+    echo "-----------------------------------------------------"
+    echo '| Clone and copy finished |'
+    echo "-----------------------------------------------------"
 fi
 
 cat <<< "$SHA_RELEASE" > "/config/www/themepark/sha.txt"

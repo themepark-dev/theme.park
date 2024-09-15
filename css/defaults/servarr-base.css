@@ -13,6 +13,12 @@
 @import url("/css/defaults/placeholders.css");
 @import url("/css/defaults/transparent.css");
 
+:root {
+    --scrollbarBackgroundColor: var(--transparency-light-25) !important;
+    --scrollbarHoverBackgroundColor: var(--transparency-light-35) !important;
+    --linkColor: var(--link-color) !important;
+    --linkHoverColor: var(--link-color-hover) !important;
+    }
 
 body {
     background: var(--main-bg-color);

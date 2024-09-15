@@ -1,4 +1,4 @@
-#!/usr/bin/with-contenv bash
+#!/usr/bin/with-contenv bash 
 
 # Display variables for troubleshooting 
 echo -e "[theme.park-init] Variables set:\\n\

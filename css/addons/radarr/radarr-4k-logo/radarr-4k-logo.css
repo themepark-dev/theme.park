@@ -25,3 +25,8 @@
     height: 40px;
     opacity: 1;
 }
+
+.panel-header > img.logo {
+    content: url("/css/addons/radarr/radarr-4k-logo/radarr4k-v3.png");
+    width: auto;
+}
