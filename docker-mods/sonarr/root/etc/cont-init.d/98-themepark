@@ -49,6 +49,16 @@ if [[ -z ${TP_THEME} ]]; then
     TP_THEME='organizr'
 fi
 
+# Function to download files for a given addon
+download_favicon_files() {
+    local addon=$1
+    local urls=$(echo "${TP_SCHEME}://${TP_DOMAIN}/themes.json" | jq -r ".addons.sonarr[\"$addon\"].files[]")
+    for url in $urls; do
+        wget -P "${APP_ICON_FILEPATH}" "$url"
+        printf 'Downloaded favicon: %s\n' "$url"
+    done
+}
+
 # Adding stylesheets
 if ! grep -q "${TP_DOMAIN}/css/base" "${APP_FILEPATH}"; then
     echo '---------------------------'
@@ -63,16 +73,11 @@ if ! grep -q "${TP_DOMAIN}/css/base" "${APP_FILEPATH}"; then
     if [[ -n ${TP_ADDON} ]]; then
         for addon in $(echo "$TP_ADDON" | tr "|" " "); do
         sheets="${sheets} <link rel='stylesheet' href='${url_base}/css/addons/sonarr/${addon}/${addon}.css'>"
-
-        #if TP_ADDON is one that changes the logo, add the corresponding favicon
-        #find favicon folder name based on addon name
-        favicon_dir="${url_base}/css/addons/sonarr/favicon/$(echo "${addon}" | sed 's/-logo//g; s/-text//g')"
-        #if favicon folder exists, copy content to the app favicon folder
-        if [ -d "$favicon_dir" ]; then
-            cp "${favicon_dir}/." "${APP_ICON_FILEPATH}"
-            echo "Added favicon."
+        # If the addon variable has "favicon" in it, download all the favicon files from the themes.json file.
+        if [[ ${addon} == *"favicon"* ]]; then
+            echo 'Downloading favicon files...'
+            download_favicon_files "$addon"
         fi
-
         printf 'Added custom addon: %s\n\n' "${addon}"
         done
     fi
