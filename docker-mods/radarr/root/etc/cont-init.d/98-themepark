@@ -1,4 +1,4 @@
-#!/command/with-contenv bash
+#!/command/with-contenv bash 
 
 echo '---------------------------'
 echo '|  Radarr theme.park Mod  |'
@@ -65,7 +65,7 @@ if ! grep -q "${TP_DOMAIN}/css/base" "${APP_FILEPATH}"; then
         done
     fi
 
-    sed -i "s!<body>!<body>${sheets}!g" "${APP_FILEPATH}"
-    sed -i "s!<body>!<body>${sheets}!g" "${LOGIN_FILEPATH}"
+    sed -i "s!</body>!${sheets}</body>!g" "${APP_FILEPATH}"
+    sed -i "s!</body>!${sheets}</body>!g" "${LOGIN_FILEPATH}"
     printf 'Stylesheets inserted.'
 fi

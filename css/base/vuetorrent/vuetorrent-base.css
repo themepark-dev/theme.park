@@ -15,6 +15,10 @@
 @import url("/css/defaults/placeholders.css");
 @import url("/css/defaults/transparent.css");
 
+:root {
+    --v-theme-accent: var(--accent-color):
+}
+
 @media (max-width: 720px) {
 
     .modal__body,
@@ -59,6 +63,11 @@ html {
     border-radius: 20px
 }
 
+/* OVERLAY */
+.v-overlay__scrim {
+    background: rgb(var(--accent-color));
+}
+
 /* TEXT */
 .h1,
 .h2,
@@ -76,6 +85,10 @@ p,
 [class*="theme--"].v-label,
 [class*="theme--"].v-counter {
     color: var(--text-hover);
+}
+
+.text-accent {
+    color: rgb(var(--accent-color)) !important;
 }
 
 .v-select__slot>label {
@@ -113,11 +126,11 @@ p,
 }
 
 /* TOP NAVBAR */
-[class*="theme--"].v-app-bar.v-toolbar.v-sheet {
+[class*="theme--"].v-app-bar.v-toolbar {
     color: var(--text) !important;
 }
 
-.v-app-bar.v-app-bar--hide-shadow {
+.v-toolbar[class*="theme--"] {
     background: var(--transparency-dark-25) !important;
 }
 
@@ -137,7 +150,7 @@ p,
 }
 
 /* SIDE MENU */
-.v-application .primary {
+.v-application .primary,.v-navigation-drawer  {
     background: var(--transparency-dark-25) !important;
     color: var(--text) !important;
 }
@@ -157,10 +170,23 @@ p,
     .v-navigation-drawer--is-mobile:not(.v-navigation-drawer--close),
     .v-navigation-drawer--temporary:not(.v-navigation-drawer--close),
     .v-navigation-drawer--is-mobile:not(.v-navigation-drawer--close),
-    .v-navigation-drawer--temporary:not(.v-navigation-drawer--close) {
+    .v-navigation-drawer--temporary:not(.v-navigation-drawer--close),
+    [class*="theme--"].v-app-bar.v-toolbar {
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
     }
+}
+
+/* STATS */
+[class*="v-theme--"] .bg-secondary {
+    background-color: var(--transparency-light-15) !important;
+    border-color: rgba(255, 255, 255, .15) !important;
+}
+
+/* CURRENT SPEED */
+.v-navigation-drawer__content .v-sheet[class*="theme--"].bg-primary {
+    background-color: transparent !important;
+    border-color: rgba(255, 255, 255, .15) !important;
 }
 
 /* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
@@ -182,6 +208,31 @@ p,
 .v-navigation-drawer__content .download--text {
     color: var(--v-download-base) !important;
     caret-color: var(--v-download-base) !important;
+}
+
+/* TABS */
+
+.v-slide-group.v-tabs.v-tabs--horizontal.bg-primary{
+    background: var(--transparency-dark-25) !important;
+}
+
+.v-btn.v-slide-group-item--active.v-tab--selected {
+    background: var(--transparency-dark-35) !important;
+}
+
+/* BUTTON */
+.v-btn--variant-elevated, .v-btn--variant-flat {
+    background: var(--button-color) !important;
+    color: var(--button-text) !important;
+}
+.bg-red {
+    --v-theme-overlay-multiplier: var(--v-theme-red-overlay-multiplier);
+    background-color: rgb(var(--v-theme-red)) !important;
+    color: rgb(var(--v-theme-on-red)) !important;
+}
+
+.v-btn--icon.v-btn--density-compact {
+    background: transparent !important;
 }
 
 /* MODAL */
@@ -294,6 +345,15 @@ button>.v-btn--is-elevated .v-btn--has-bg.v-icon__svg {
 .v-input__slot:hover fieldset,
 .v-text-field--outlined fieldset {
     border-color: rgba(255, 255, 255, .1) !important;
+}
+.v-field.v-field--variant-solo.v-theme--darkTheme {
+    background: var(--transparency-dark-25) !important;
+}
+.v-field--variant-solo, .v-field--variant-solo-filled, .v-field--variant-solo-inverted {
+    background: var(--transparency-dark-25) !important;
+    border-color: transparent;
+    color: rgba(var(--v-theme-on-surface), var(--v-high-emphasis-opacity));
+    box-shadow: 0 3px 1px -2px var(--v-shadow-key-umbra-opacity, rgba(0, 0, 0, .2)), 0 2px 2px 0 var(--v-shadow-key-penumbra-opacity, rgba(0, 0, 0, .14)), 0 1px 5px 0 var(--v-shadow-key-ambient-opacity, rgba(0, 0, 0, .12));
 }
 
 /* DASHBOARD */
@@ -425,8 +485,21 @@ button>.v-btn--is-elevated .v-btn--has-bg.v-icon__svg {
     color: var(--text) !important;
 }
 
-.v-menu__content [class*="theme--"][class*="theme--"].v-list {
+.v-menu__content [class*="theme--"][class*="theme--"].v-list,.v-menu [class*="theme--"][class*="theme--"].v-list {
     background: var(--drop-down-menu-bg)
+}
+
+.v-expansion-panel {
+    background-color: var(--drop-down-menu-bg) !important;
+    color: var(--text);
+}
+.v-expansion-panel-title__overlay {
+    background-color: var(--drop-down-menu-bg) !important;
+}
+
+.v-bottom-navigation {
+    background: var(--drop-down-menu-bg);
+    color: var(--text);
 }
 
 [class*="theme--"].v-icon {
@@ -437,8 +510,21 @@ button>.v-btn--is-elevated .v-btn--has-bg.v-icon__svg {
     border-color: rgba(255, 255, 255, .2) !important;
 }
 
+.v-menu>.v-overlay__content>.v-card, .v-menu>.v-overlay__content>.v-sheet, .v-menu>.v-overlay__content>.v-list {
+    background: rgb(var(--drop-down-menu-bg));
+    border-radius: inherit;
+    overflow: auto;
+    height: 100%;
+    box-shadow: 0 5px 5px -3px var(--transparency-light-10) !important;
+}
+
+.v-list-item--variant-plain, .v-list-item--variant-outlined, .v-list-item--variant-text, .v-list-item--variant-tonal {
+    background: transparent;
+    color: var(--link-color);
+}
+
 /* TABLE */
-[class*="theme--"].v-data-table {
+[class*="theme--"].v-data-table,.v-table {
     background: transparent;
     color: var(--text);
 }
@@ -512,6 +598,7 @@ button>.v-btn--is-elevated .v-btn--has-bg.v-icon__svg {
 /* SETTING */
 
 [class*="theme--"].v-list {
-    background: var(--transparency-light-05);
+    background: var(--transparency-dark-10);
     color: rgba(0,0,0,.87);
 }
+

@@ -1,4 +1,4 @@
-#!/command/with-contenv bash
+#!/command/with-contenv bash 
 
 echo '-------------------------'
 echo '|  Plex theme.park Mod  |'
@@ -11,10 +11,9 @@ echo -e "Variables set:\\n\
 'TP_SCHEME'=${TP_SCHEME}\\n\
 'TP_THEME'=${TP_THEME}\\n"
 
-APP_FILEPATH=''
-if [ "${TP_HOTIO}" = true ]; then
+if [[ "${TP_HOTIO}" = true ]]; then
     echo 'Changing to Hotio file path!'
-    APP_FILEPATH='/app'
+    APP_FILEPATH='/app/bin'
 fi
 
 # Set default
@@ -44,7 +43,7 @@ if [[ -z ${TP_THEME} ]]; then
     TP_THEME='organizr'
 fi
 
-# Adding stylesheets     
+# Adding stylesheets
 if ! grep -q "${TP_DOMAIN}/css/base" "${APP_FILEPATH}"/usr/lib/plexmediaserver/Resources/Plug-ins-*/WebClient.bundle/Contents/Resources/index.html; then
     echo '---------------------------'
     echo '|  Adding the stylesheet  |'

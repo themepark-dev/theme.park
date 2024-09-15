@@ -1,6 +1,6 @@
-#!/usr/bin/with-contenv bash
+#!/usr/bin/with-contenv bash 
 
-if ! [[ -x "$(command -v svn)" ]]; then
-    echo "subversion" >> /mod-repo-packages-to-install.list
+if ! [[ -x "$(command -v git)" ]]; then
+    echo "git" >> /mod-repo-packages-to-install.list
     echo "perl" >> /mod-repo-packages-to-install.list
 fi

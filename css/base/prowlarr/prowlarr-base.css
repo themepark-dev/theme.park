@@ -14,6 +14,10 @@
 @import url("/css/defaults/transparent.css");
 @import url("/css/defaults/servarr-base.css");
 
+:root {
+    --chartBackgroundColor: var(--transparency-dark-35) !important;
+    }
+
 [class*="IndexerSearchInput-sectionTitle-"] {
     color: var(--text-hover);
 }
@@ -62,14 +66,13 @@
     color: var(--text-hover);
 }
 
-/* ChartJS */
-[class*="Stats-fullWidthChart-"],
-[class*="Stats-halfWidthChart-"] {
-    background: var(--transparency-dark-25) !important;
+[class*="IndexerIndexTable-row-"]:hover {
+    background: var(--transparency-dark-10);
+    color: var(--text-hover);
 }
 
 canvas {
-    filter: invert(1)
+    text: white !important;
 }
 
 /* QUERY OPTIONS */

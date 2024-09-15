@@ -285,23 +285,27 @@ div#toolbar>div#toolbar-inspector:before {
 }
 
 ul.torrent_list,
-ul.torrent_list li.torrent.even {
-    background: var(--transparency-dark-25)
+ul.torrent_list li.torrent.even,
+ul.torrent-list,
+ul.torrent-list li.torrent.even {
+    background: var(--transparency-dark-25) !important;
 }
 
 ul.torrent_list li.torrent div.torrent_name {
     color: var(--text-hover);
 }
 
-ul.torrent_list li.torrent.selected {
-    background: var(--transparency-dark-25);
+ul.torrent_list li.torrent.selected,
+ul.torrent-list li.torrent.selected {
+    background: var(--transparency-dark-50) !important;
 }
 
-ul.torrent_list li.torrent {
+ul.torrent_list li.torrent,
+ul.torrent-list li.torrent {
     border-bottom: 1px solid rgba(204, 204, 204, 0.1);
     padding: 4px 30px 5px 14px;
     color: var(--text);
-    background: var(--transparency-light-10);
+    background: var(--transparency-light-10) !important;
 }
 
 /* Modal */
@@ -961,7 +965,9 @@ div.torrent_footer #compact-button.selected:before {
 
 /*Compact mode*/
 ul.torrent_list li.torrent div.torrent_name.paused,
-ul.torrent_list li.torrent.compact div.torrent_name {
+ul.torrent_list li.torrent.compact div.torrent_name,
+ul.torrent-list li.torrent div.torrent_name.paused,
+ul.torrent-list li.torrent.compact div.torrent_name {
     color: var(--text);
 }
 

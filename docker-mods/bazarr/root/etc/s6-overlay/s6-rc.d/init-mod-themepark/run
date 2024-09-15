@@ -1,4 +1,4 @@
-#!/usr/bin/with-contenv bash
+#!/usr/bin/with-contenv bash 
 
 echo '---------------------------'
 echo '|  Bazarr theme.park Mod  |'

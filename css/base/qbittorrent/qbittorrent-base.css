@@ -208,6 +208,7 @@ label {
 
 #desktopNavbar ul li a {
   color: var(--text);
+  padding: 1px 10px;
 }
 
 #desktopNavbar ul li a:hover {
@@ -408,8 +409,8 @@ li.divider {
 
 /* Sidemenu */
 .selectedFilter {
-  background-color: var(--button-color);
-  color: var(--button-text);
+  background-color: var(--button-color) !important;
+  color: var(--button-text) !important;
 }
 
 .selectedFilter:before {
@@ -489,6 +490,7 @@ hr {
 
 .toolbarTabs {
   background: var(--transparency-dark-25) !important;
+  margin: 0px 5px 0 0 !important;
 }
 
 .progressbar_dark {
@@ -662,4 +664,9 @@ select:focus {
 .select-watched-folder-editable {
   background-color: var(--transparency-dark-05);
   border: solid var(--transparency-light-10) 1px;
+}
+
+#torrentsFilterToolbar {
+  float: right;
+  margin-right: .5rem;
 }
