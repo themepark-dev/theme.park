@@ -22,7 +22,8 @@
       "plex-alt-logo": "https://develop.theme-park.dev/css/addons/plex/plex-alt-logo/plex-alt-logo.css?sha=d95db9549cea417a481e5af828fc2801"
     },
     "prowlarr": {
-      "prowlarr-darker": "https://develop.theme-park.dev/css/addons/prowlarr/prowlarr-darker/prowlarr-darker.css?sha=c7aa9c3221ae3e77beccc3e6c2c4b729"
+      "prowlarr-darker": "https://develop.theme-park.dev/css/addons/prowlarr/prowlarr-darker/prowlarr-darker.css?sha=c7aa9c3221ae3e77beccc3e6c2c4b729",
+      "prowlarr-text-logo": "https://develop.theme-park.dev/css/addons/prowlarr/prowlarr-text-logo/prowlarr-text-logo.css?sha=e02e8db4501605c12c7fda610dd88b08"
     },
     "radarr": {
       "radarr-4k-logo": "https://develop.theme-park.dev/css/addons/radarr/radarr-4k-logo/radarr-4k-logo.css?sha=049d5b05c28e55431ab2b424720d4ea4",
@@ -362,7 +363,8 @@
     },
     "prowlarr": {
       "addons": {
-        "prowlarr-darker": "https://develop.theme-park.dev/css/addons/prowlarr/prowlarr-darker/prowlarr-darker.css?sha=c7aa9c3221ae3e77beccc3e6c2c4b729"
+        "prowlarr-darker": "https://develop.theme-park.dev/css/addons/prowlarr/prowlarr-darker/prowlarr-darker.css?sha=c7aa9c3221ae3e77beccc3e6c2c4b729",
+        "prowlarr-text-logo": "https://develop.theme-park.dev/css/addons/prowlarr/prowlarr-text-logo/prowlarr-text-logo.css?sha=e02e8db4501605c12c7fda610dd88b08"
       },
       "base_css": "https://develop.theme-park.dev/css/base/prowlarr/prowlarr-base.css?sha=0b077d21e39d54b15eb310ae98f0a123"
     },
