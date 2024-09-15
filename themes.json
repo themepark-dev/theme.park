@@ -26,17 +26,41 @@
       "prowlarr-text-logo": "https://theme-park.dev/css/addons/prowlarr/prowlarr-text-logo/prowlarr-text-logo.css?sha=e02e8db4501605c12c7fda610dd88b08"
     },
     "radarr": {
+      "favicon": {
+        "radarr-4k": {
+          "css": []
+        },
+        "radarr-anime": {
+          "css": []
+        }
+      },
       "radarr-4k-logo": "https://theme-park.dev/css/addons/radarr/radarr-4k-logo/radarr-4k-logo.css?sha=049d5b05c28e55431ab2b424720d4ea4",
       "radarr-alt-calendar": "https://theme-park.dev/css/addons/radarr/radarr-alt-calendar/radarr-alt-calendar.css?sha=1e84b48a6bf4d24c236392e15bb167be",
       "radarr-darker": "https://theme-park.dev/css/addons/radarr/radarr-darker/radarr-darker.css?sha=2a30971854d495f7c56405bd4e73d34f"
     },
     "readarr": {
+      "favicon": {
+        "readarr-alt": {
+          "css": []
+        }
+      },
       "readarr-alt-calendar": "https://theme-park.dev/css/addons/readarr/readarr-alt-calendar/readarr-alt-calendar.css?sha=73c0809f9a113737111a64e419c7452b",
       "readarr-alt-logo": "https://theme-park.dev/css/addons/readarr/readarr-alt-logo/readarr-alt-logo.css?sha=d00cca34b817447663059201c1113cd2",
       "readarr-darker": "https://theme-park.dev/css/addons/readarr/readarr-darker/readarr-darker.css?sha=45c9c626754240f84e58caf2f5f3a969",
       "readarr-text-logo": "https://theme-park.dev/css/addons/readarr/readarr-text-logo/readarr-text-logo.css?sha=bc35ad9622761838051c4c93a64295ca"
     },
     "sonarr": {
+      "favicon": {
+        "sonarr-4k": {
+          "css": []
+        },
+        "sonarr-anime": {
+          "css": []
+        },
+        "sonarr-anime-blue": {
+          "css": []
+        }
+      },
       "sonarr-4k-logo": "https://theme-park.dev/css/addons/sonarr/sonarr-4k-logo/sonarr-4k-logo.css?sha=0ddaba0f1bc2251865847b818b1b97db",
       "sonarr-4k-text-logo": "https://theme-park.dev/css/addons/sonarr/sonarr-4k-text-logo/sonarr-4k-text-logo.css?sha=7f395b22cef125a12546e16c1f0b8696",
       "sonarr-anime-blue-logo": "https://theme-park.dev/css/addons/sonarr/sonarr-anime-blue-logo/sonarr-anime-blue-logo.css?sha=77546c9357bca233ce72b0bbc1e2faf6",
@@ -374,6 +398,14 @@
     },
     "radarr": {
       "addons": {
+        "favicon": {
+          "radarr-4k": {
+            "css": []
+          },
+          "radarr-anime": {
+            "css": []
+          }
+        },
         "radarr-4k-logo": "https://theme-park.dev/css/addons/radarr/radarr-4k-logo/radarr-4k-logo.css?sha=049d5b05c28e55431ab2b424720d4ea4",
         "radarr-alt-calendar": "https://theme-park.dev/css/addons/radarr/radarr-alt-calendar/radarr-alt-calendar.css?sha=1e84b48a6bf4d24c236392e15bb167be",
         "radarr-darker": "https://theme-park.dev/css/addons/radarr/radarr-darker/radarr-darker.css?sha=2a30971854d495f7c56405bd4e73d34f"
@@ -382,6 +414,11 @@
     },
     "readarr": {
       "addons": {
+        "favicon": {
+          "readarr-alt": {
+            "css": []
+          }
+        },
         "readarr-alt-calendar": "https://theme-park.dev/css/addons/readarr/readarr-alt-calendar/readarr-alt-calendar.css?sha=73c0809f9a113737111a64e419c7452b",
         "readarr-alt-logo": "https://theme-park.dev/css/addons/readarr/readarr-alt-logo/readarr-alt-logo.css?sha=d00cca34b817447663059201c1113cd2",
         "readarr-darker": "https://theme-park.dev/css/addons/readarr/readarr-darker/readarr-darker.css?sha=45c9c626754240f84e58caf2f5f3a969",
@@ -407,6 +444,17 @@
     },
     "sonarr": {
       "addons": {
+        "favicon": {
+          "sonarr-4k": {
+            "css": []
+          },
+          "sonarr-anime": {
+            "css": []
+          },
+          "sonarr-anime-blue": {
+            "css": []
+          }
+        },
         "sonarr-4k-logo": "https://theme-park.dev/css/addons/sonarr/sonarr-4k-logo/sonarr-4k-logo.css?sha=0ddaba0f1bc2251865847b818b1b97db",
         "sonarr-4k-text-logo": "https://theme-park.dev/css/addons/sonarr/sonarr-4k-text-logo/sonarr-4k-text-logo.css?sha=7f395b22cef125a12546e16c1f0b8696",
         "sonarr-anime-blue-logo": "https://theme-park.dev/css/addons/sonarr/sonarr-anime-blue-logo/sonarr-anime-blue-logo.css?sha=77546c9357bca233ce72b0bbc1e2faf6",
