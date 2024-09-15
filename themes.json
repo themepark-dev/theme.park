@@ -28,6 +28,7 @@
     "radarr": {
       "radarr-4k-logo": "https://develop.theme-park.dev/css/addons/radarr/radarr-4k-logo/radarr-4k-logo.css?sha=049d5b05c28e55431ab2b424720d4ea4",
       "radarr-alt-calendar": "https://develop.theme-park.dev/css/addons/radarr/radarr-alt-calendar/radarr-alt-calendar.css?sha=1e84b48a6bf4d24c236392e15bb167be",
+      "radarr-anime-logo": "https://develop.theme-park.dev/css/addons/radarr/radarr-anime-logo/radarr-anime-logo.css?sha=b3cb4e5553c0b88db7886feea69fec69",
       "radarr-darker": "https://develop.theme-park.dev/css/addons/radarr/radarr-darker/radarr-darker.css?sha=2a30971854d495f7c56405bd4e73d34f"
     },
     "readarr": {
@@ -376,6 +377,7 @@
       "addons": {
         "radarr-4k-logo": "https://develop.theme-park.dev/css/addons/radarr/radarr-4k-logo/radarr-4k-logo.css?sha=049d5b05c28e55431ab2b424720d4ea4",
         "radarr-alt-calendar": "https://develop.theme-park.dev/css/addons/radarr/radarr-alt-calendar/radarr-alt-calendar.css?sha=1e84b48a6bf4d24c236392e15bb167be",
+        "radarr-anime-logo": "https://develop.theme-park.dev/css/addons/radarr/radarr-anime-logo/radarr-anime-logo.css?sha=b3cb4e5553c0b88db7886feea69fec69",
         "radarr-darker": "https://develop.theme-park.dev/css/addons/radarr/radarr-darker/radarr-darker.css?sha=2a30971854d495f7c56405bd4e73d34f"
       },
       "base_css": "https://develop.theme-park.dev/css/base/radarr/radarr-base.css?sha=e26a6e8964effc2da2e673de85b7ac7c"
