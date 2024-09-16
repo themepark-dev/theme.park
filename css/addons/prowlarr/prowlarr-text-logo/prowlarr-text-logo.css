@@ -1,0 +1,23 @@
+@media (min-width: 752px) {
+  [class*="PageHeader-logo-"] {
+    content: url("/css/addons/prowlarr/prowlarr-text-logo/prowlarr-text-logo.png");
+    margin-left: 15px;
+    width: auto;
+    height: 30px;
+  }
+}
+
+[class*="LoadingPage-logoFull-"] {
+  content: url("/css/addons/prowlarr/prowlarr-text-logo/prowlarr-text-logo.png");
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  width: auto;
+  height: 30px;
+  opacity: 1;
+}
+
+.panel-header > img.logo {
+  content: url("/css/addons/prowlarr/prowlarr-text-logo/prowlarr-text-logo.png");
+  width: auto;
+}
