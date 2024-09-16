@@ -215,7 +215,7 @@
     },
     "audiobookshelf": {
       "addons": {},
-      "base_css": "https://develop.theme-park.dev/css/base/audiobookshelf/audiobookshelf-base.css?sha=eb62d7541d377db7f54ca28afa7da16a"
+      "base_css": "https://develop.theme-park.dev/css/base/audiobookshelf/audiobookshelf-base.css?sha=ff56fda05b7dae338a5f509c6347c612"
     },
     "bazarr": {
       "addons": {
