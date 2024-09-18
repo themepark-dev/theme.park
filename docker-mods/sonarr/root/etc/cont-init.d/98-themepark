@@ -1,10 +1,10 @@
-#!/command/with-contenv bash 
+#!/command/with-contenv bash
 
 echo '---------------------------'
 echo '|  Sonarr theme.park Mod  |'
 echo '---------------------------'
 
-# Display variables for troubleshooting 
+# Display variables for troubleshooting
 echo -e "Variables set:\\n\
 'TP_DOMAIN'=${TP_DOMAIN}\\n\
 'TP_COMMUNITY_THEME'=${TP_COMMUNITY_THEME}\\n\
@@ -14,12 +14,13 @@ echo -e "Variables set:\\n\
 
 APP_FILEPATH='/app/sonarr/bin/UI/index.html'
 LOGIN_FILEPATH='/app/sonarr/bin/UI/login.html'
-APP_ICON_FILEPATH='/app/sonarr/bin/UI/Content/Images/Icons'
+ICONS_PATH='/app/sonarr/bin/UI/Content/Images/Icons'
 
 if [ "${TP_HOTIO}" = true ]; then
     echo 'Changing to Hotio file path!'
     APP_FILEPATH='/app/bin/UI/index.html'
     LOGIN_FILEPATH='/app/bin/UI/login.html'
+    ICONS_PATH='/app/bin/UI/Content/Images/Icons'
 fi
 
 # Set default
@@ -49,16 +50,6 @@ if [[ -z ${TP_THEME} ]]; then
     TP_THEME='organizr'
 fi
 
-# Function to download files for a given addon
-download_favicon_files() {
-    local addon=$1
-    local urls=$(echo "${TP_SCHEME}://${TP_DOMAIN}/themes.json" | jq -r ".addons.sonarr[\"$addon\"].files[]")
-    for url in $urls; do
-        wget -P "${APP_ICON_FILEPATH}" "$url"
-        printf 'Downloaded favicon: %s\n' "$url"
-    done
-}
-
 # Adding stylesheets
 if ! grep -q "${TP_DOMAIN}/css/base" "${APP_FILEPATH}"; then
     echo '---------------------------'
@@ -73,11 +64,6 @@ if ! grep -q "${TP_DOMAIN}/css/base" "${APP_FILEPATH}"; then
     if [[ -n ${TP_ADDON} ]]; then
         for addon in $(echo "$TP_ADDON" | tr "|" " "); do
         sheets="${sheets} <link rel='stylesheet' href='${url_base}/css/addons/sonarr/${addon}/${addon}.css'>"
-        # If the addon variable has "favicon" in it, download all the favicon files from the themes.json file.
-        if [[ ${addon} == *"favicon"* ]]; then
-            echo 'Downloading favicon files...'
-            download_favicon_files "$addon"
-        fi
         printf 'Added custom addon: %s\n\n' "${addon}"
         done
     fi
@@ -85,4 +71,50 @@ if ! grep -q "${TP_DOMAIN}/css/base" "${APP_FILEPATH}"; then
     sed -i "s!</body>!${sheets}</body>!g" "${APP_FILEPATH}"
     sed -i "s!</body>!${sheets}</body>!g" "${LOGIN_FILEPATH}"
     printf 'Stylesheets inserted.'
+fi
+
+# Changing favicon
+if [[ -n ${TP_ADDON} ]]; then
+  declare -A addons_with_favicon=(
+    ["sonarr-4k-favicon"]="sonarr-4k-favicon"
+    ["sonarr-4k-logo"]="sonarr-4k-favicon"
+    ["sonarr-4k-text-logo"]="sonarr-4k-favicon"
+    ["sonarr-anime-favicon"]="sonarr-anime-favicon"
+    ["sonarr-anime-logo"]="sonarr-anime-favicon"
+    ["sonarr-anime-text-logo"]="sonarr-anime-favicon"
+    ["sonarr-anime-blue-favicon"]="sonarr-anime-blue-favicon"
+    ["sonarr-anime-blue-logo"]="sonarr-anime-blue-favicon"
+    ["sonarr-anime-blue-text-logo"]="sonarr-anime-blue-favicon"
+  )
+
+  # Looking for an addon that has a corresponding favicon.
+  # If there are more than one, the last one is used.
+  favicon_path=""
+  for addon in $(echo "$TP_ADDON" | tr "|" " "); do
+      if [[ -n "${addons_with_favicon[$addon]}" ]]; then
+        favicon_path="${url_base}/css/addons/sonarr/${addons_with_favicon[$addon]}"
+      fi
+  done
+
+  # Download files
+  if [[ -n ${favicon_path} ]]; then
+
+    curl -o "${ICONS_PATH}/android-chrome-192x192.png" "${favicon_path}/android-chrome-512x512.png"
+    curl -o "${ICONS_PATH}/android-chrome-512x512.png" "${favicon_path}/android-chrome-512x512.png"
+
+    curl -o "${ICONS_PATH}/favicon.ico"                "${favicon_path}/favicon.ico"
+    curl -o "${ICONS_PATH}/favicon-16x16.png"          "${favicon_path}/favicon-16x16.png"
+    curl -o "${ICONS_PATH}/favicon-32x32.png"          "${favicon_path}/favicon-32x32.png"
+
+    curl -o "${ICONS_PATH}/safari-pinned-tab.svg"      "${favicon_path}/safari-pinned-tab.svg"
+    curl -o "${ICONS_PATH}/apple-touch-icon.png"       "${favicon_path}/apple-touch-icon.png"
+
+    curl -o "${ICONS_PATH}/mstile-70x70.png"           "${favicon_path}/mstile-70x70.png"
+    curl -o "${ICONS_PATH}/mstile-144x144.png"         "${favicon_path}/mstile-144x144.png"
+    curl -o "${ICONS_PATH}/mstile-150x150.png"         "${favicon_path}/mstile-150x150.png"
+    curl -o "${ICONS_PATH}/mstile-310x150.png"         "${favicon_path}/mstile-310x150.png"
+    curl -o "${ICONS_PATH}/mstile-310x310.png"         "${favicon_path}/mstile-310x310.png"
+
+    printf 'Added custom favicon from: %s\n\n' "${favicon_path}"
+  fi
 fi

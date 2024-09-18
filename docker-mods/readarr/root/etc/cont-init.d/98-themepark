@@ -14,12 +14,13 @@ echo -e "Variables set:\\n\
 
 APP_FILEPATH='/app/readarr/bin/UI/index.html'
 LOGIN_FILEPATH='/app/readarr/bin/UI/login.html'
-APP_ICON_FILEPATH='/app/readarr/bin/UI/Content/Images/Icons'
+ICONS_PATH='/app/readarr/bin/UI/Content/Images/Icons'
 
 if [ "${TP_HOTIO}" = true ]; then
     echo 'Changing to Hotio file path!'
     APP_FILEPATH='/app/bin/UI/index.html'
     LOGIN_FILEPATH='/app/bin/UI/login.html'
+    ICONS_PATH='/app/bin/UI/Content/Images/Icons'
 fi
 
 # Set default
@@ -63,16 +64,6 @@ if ! grep -q "${TP_DOMAIN}/css/base" "${APP_FILEPATH}"; then
     if [[ -n ${TP_ADDON} ]]; then
         for addon in $(echo "$TP_ADDON" | tr "|" " "); do
         sheets="${sheets} <link rel='stylesheet' href='${url_base}/css/addons/readarr/${addon}/${addon}.css'>"
-
-        #if TP_ADDON is one that changes the logo, add the corresponding favicon
-        #find favicon folder name based on addon name
-        favicon_dir="${url_base}/css/addons/readarr/favicon/$(echo "${addon}" | sed 's/-logo//g; s/-text//g')"
-        #if favicon folder exists, copy content to the app favicon folder
-        if [ -d "$favicon_dir" ]; then
-            cp "${favicon_dir}/." "${APP_ICON_FILEPATH}"
-            echo "Added favicon."
-        fi
-
         printf 'Added custom addon: %s\n\n' "${addon}"
         done
     fi
@@ -80,4 +71,43 @@ if ! grep -q "${TP_DOMAIN}/css/base" "${APP_FILEPATH}"; then
     sed -i "s!</body>!${sheets}</body>!g" "${APP_FILEPATH}"
     sed -i "s!</body>!${sheets}</body>!g" "${LOGIN_FILEPATH}"
     printf 'Stylesheets inserted.'
+fi
+
+# Changing favicon
+if [[ -n ${TP_ADDON} ]]; then
+  declare -A addons_with_favicon=(
+    ["readarr-alt-favicon"]="readarr-alt-favicon"
+    ["readarr-alt-logo"]="readarr-alt-favicon"
+  )
+
+  # Looking for an addon that has a corresponding favicon.
+  # If there are more than one, the last one is used.
+  favicon_path=""
+  for addon in $(echo "$TP_ADDON" | tr "|" " "); do
+      if [[ -n "${addons_with_favicon[$addon]}" ]]; then
+        favicon_path="${url_base}/css/addons/readarr/${addons_with_favicon[$addon]}"
+      fi
+  done
+
+  # Download files
+  if [[ -n ${favicon_path} ]]; then
+
+    curl -o "${ICONS_PATH}/android-chrome-192x192.png" "${favicon_path}/android-chrome-512x512.png"
+    curl -o "${ICONS_PATH}/android-chrome-512x512.png" "${favicon_path}/android-chrome-512x512.png"
+
+    curl -o "${ICONS_PATH}/favicon.ico"                "${favicon_path}/favicon.ico"
+    curl -o "${ICONS_PATH}/favicon-16x16.png"          "${favicon_path}/favicon-16x16.png"
+    curl -o "${ICONS_PATH}/favicon-32x32.png"          "${favicon_path}/favicon-32x32.png"
+
+    curl -o "${ICONS_PATH}/safari-pinned-tab.svg"      "${favicon_path}/safari-pinned-tab.svg"
+    curl -o "${ICONS_PATH}/apple-touch-icon.png"       "${favicon_path}/apple-touch-icon.png"
+
+    curl -o "${ICONS_PATH}/mstile-70x70.png"           "${favicon_path}/mstile-70x70.png"
+    curl -o "${ICONS_PATH}/mstile-144x144.png"         "${favicon_path}/mstile-144x144.png"
+    curl -o "${ICONS_PATH}/mstile-150x150.png"         "${favicon_path}/mstile-150x150.png"
+    curl -o "${ICONS_PATH}/mstile-310x150.png"         "${favicon_path}/mstile-310x150.png"
+    curl -o "${ICONS_PATH}/mstile-310x310.png"         "${favicon_path}/mstile-310x310.png"
+
+    printf 'Added custom favicon from: %s\n\n' "${favicon_path}"
+  fi
 fi
