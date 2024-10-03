@@ -177,4 +177,4 @@ if __name__ == "__main__":
     apps = loads(create_json(app_folders=app_folders, themes=themes, community_themes=community_themes, docker_mods=docker_mods))
     with open("themes.json", "w") as outfile:
         dump(apps, outfile, indent=2, sort_keys=True)
-    #create_theme_options()
+    create_theme_options()
