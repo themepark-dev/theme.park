@@ -53,7 +53,7 @@ fi
 # Function to download files for a given addon
 download_favicon_files() {
     local addon=$1
-    local urls=$(curl -s "${TP_SCHEME}://${TP_DOMAIN}/themes.json" | jq -r ".addons.sonarr[\"$addon\"].files[]?")
+    local urls=$(curl -s "${TP_SCHEME}://${TP_DOMAIN}/themes.json" | jq -r ".addons.readarr[\"$addon\"].files[]?")
     for url in $urls; do
         # Remove the query parameters from the URL
         clean_url="${url%%\?*}"
