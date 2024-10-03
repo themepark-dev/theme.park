@@ -55,7 +55,7 @@ download_favicon_files() {
     local urls=$(curl -s "${TP_SCHEME}://${TP_DOMAIN}/themes.json" | jq -r ".addons.sonarr[\"$addon\"].files[]?")
     for url in $urls; do
         # Remove the query parameters from the URL
-        clean_url=$(echo "$url" | sed 's/\?.*$//')
+        clean_url="${url%%\?*}"
         wget -P "${APP_ICON_FILEPATH}" "${clean_url}"
         printf 'Downloaded favicon: %s\n' "${clean_url}"
     done
