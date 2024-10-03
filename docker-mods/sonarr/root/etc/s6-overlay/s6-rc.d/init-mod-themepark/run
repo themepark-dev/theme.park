@@ -56,7 +56,7 @@ download_favicon_files() {
     for url in $urls; do
         # Remove the query parameters from the URL
         clean_url="${url%%\?*}"
-        wget -P "${APP_ICON_FILEPATH}" "${clean_url}"
+        wget -O "${APP_ICON_FILEPATH}/$(basename "${clean_url}")" "${clean_url}"
         printf 'Downloaded favicon: %s\n' "${clean_url}"
     done
 }
