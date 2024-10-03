@@ -640,7 +640,7 @@
         "sonarr-darker": "https://develop.theme-park.dev/css/addons/sonarr/sonarr-darker/sonarr-darker.css?sha=4298cf0cd42ffc7ec6899ed1d4b96a8e",
         "sonarr-text-logo": "https://develop.theme-park.dev/css/addons/sonarr/sonarr-text-logo/sonarr-text-logo.css?sha=38aa6593f7df81c5e78c4d322593f594"
       },
-      "base_css": "https://develop.theme-park.dev/css/base/sonarr/sonarr-base.css?sha=16c0cd7a4cd857bc011d7b673646e50e"
+      "base_css": "https://develop.theme-park.dev/css/base/sonarr/sonarr-base.css?sha=19b6fa2d8b65988aa7e44eb8ed5ecc4c"
     },
     "synclounge": {
       "addons": {},
