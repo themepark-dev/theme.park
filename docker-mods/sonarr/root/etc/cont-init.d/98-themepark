@@ -20,6 +20,7 @@ if [ "${TP_HOTIO}" = true ]; then
     echo 'Changing to Hotio file path!'
     APP_FILEPATH='/app/bin/UI/index.html'
     LOGIN_FILEPATH='/app/bin/UI/login.html'
+    APP_ICON_FILEPATH='/app/bin/UI/Content/Images/Icons'
 fi
 
 # Set default
@@ -52,10 +53,12 @@ fi
 # Function to download files for a given addon
 download_favicon_files() {
     local addon=$1
-    local urls=$(echo "${TP_SCHEME}://${TP_DOMAIN}/themes.json" | jq -r ".addons.sonarr[\"$addon\"].files[]")
+    local urls=$(curl -s "${TP_SCHEME}://${TP_DOMAIN}/themes.json" | jq -r ".addons.sonarr[\"$addon\"].files[]?")
     for url in $urls; do
-        wget -P "${APP_ICON_FILEPATH}" "$url"
-        printf 'Downloaded favicon: %s\n' "$url"
+        # Remove the query parameters from the URL
+        clean_url="${url%%\?*}"
+        wget -O "${APP_ICON_FILEPATH}/$(basename "${clean_url}")" "${clean_url}"
+        printf 'Downloaded favicon: %s\n' "${clean_url}"
     done
 }
 

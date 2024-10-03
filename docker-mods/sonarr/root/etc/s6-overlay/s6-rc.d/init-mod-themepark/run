@@ -20,6 +20,7 @@ if [ "${TP_HOTIO}" = true ]; then
     echo 'Changing to Hotio file path!'
     APP_FILEPATH='/app/bin/UI/index.html'
     LOGIN_FILEPATH='/app/bin/UI/login.html'
+    APP_ICON_FILEPATH='/app/bin/UI/Content/Images/Icons'
 fi
 
 # Set default
