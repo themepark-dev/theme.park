@@ -756,6 +756,13 @@ a:hover {
     color: #ff902b;
 }
 
+/* SETTINGS - Tags */
+
+[class*="AutoTaggings-center-"], [class*="EditAutoTaggingModalContent-center-"] {
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+
 /* MEDIA MANAGEMENT - FILE NAME TOKENS */
 [class*="NamingOption-small-"] {
     border: 1px solid transparent;

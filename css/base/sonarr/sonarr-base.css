@@ -71,6 +71,11 @@
     background-color: rgb(var(--accent-color)) !important;
 }
 
+/* SERIES Table View */
+[class*="SeriesIndexTable-row-"]:hover {
+    background-color: var(--transparency-light-10);
+}
+
 /* OVERVIEW PAGE */
 [class*="SeriesIndexOverviews-container-"],
 [class*="SeriesIndexOverviews-container-"]:hover {

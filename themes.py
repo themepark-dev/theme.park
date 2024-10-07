@@ -51,6 +51,11 @@ def create_addons_json() -> str:
                 }
                 )
             else:
+                if len([f for f in files if not f.endswith('.css')]) >= 1:
+                    ADDONS["addons"][app][addon].update({
+                        "files":  [f"{scheme}://{DOMAIN}/css/addons/{app}/{addon}/{file}?sha={get_md5_hash(join(getcwd(),'css','addons',app,addon,file))}" for file in files]
+                    }
+                    )
                 ADDONS["addons"][app].update({
                     addon:  f"{scheme}://{DOMAIN}/css/addons/{app}/{addon}/{file}?sha={get_md5_hash(join(getcwd(),'css','addons',app,addon,file))}" for file in files if file.split(".")[1] == "css"
                 }
@@ -63,8 +68,9 @@ def create_addons_json() -> str:
                         f"{addon_root}/{app}/{addon}/{dir}") if isfile(join(f"{addon_root}/{app}/{addon}/{dir}", file))]
                     ADDONS["addons"][app][addon].update({
                         dir: {
-                            "css": [f"{scheme}://{DOMAIN}/css/addons/{app}/{addon}/{dir}/{extra_file}?sha={get_md5_hash(join(getcwd(),'css','addons',app,addon,dir,extra_file))}" for extra_file in extra_dir_files if extra_file.split(".")[1] == "css"]
-                        }
+                            "css": [f"{scheme}://{DOMAIN}/css/addons/{app}/{addon}/{dir}/{extra_file}?sha={get_md5_hash(join(getcwd(),'css','addons',app,addon,dir,extra_file))}" for extra_file in extra_dir_files if extra_file.split(".")[1] == "css"],
+                            "files": [f"{scheme}://{DOMAIN}/css/addons/{app}/{addon}/{dir}/{extra_file}?sha={get_md5_hash(join(getcwd(),'css','addons',app,addon,dir,extra_file))}" for extra_file in extra_dir_files if extra_file.split(".")[1] != "css"]
+                        },
                     }
                     )
     return dumps(ADDONS, sort_keys=True)
@@ -153,7 +159,6 @@ def create_theme_options() -> None:
         for theme in community_themes:
             create_css(theme,theme_type="community")
 
-env_domain = env.get('TP_DOMAIN')
 scheme = env.get('TP_SCHEME','https') if env.get('TP_SCHEME') else 'https'
 
 if __name__ == "__main__":
@@ -161,13 +166,14 @@ if __name__ == "__main__":
     themes = [name for name in listdir('./css/theme-options') if isfile(join('./css/theme-options', name))]
     docker_mods = [name for name in listdir('./docker-mods')] if isdir('./docker-mods') else []
     community_themes = [name for name in listdir('./css/community-theme-options') if isfile(join('./css/community-theme-options', name))]
-    develop = True if isdir(".git") and subprocess.check_output(["git", "symbolic-ref", "--short", "HEAD"]).decode('ascii').strip() == "develop" else False
-    if env_domain:
-        DOMAIN = env_domain
+    branch: str | None = subprocess.check_output(["git", "symbolic-ref", "--short", "HEAD"]).decode('ascii').strip() if isdir(".git") else None
+    
+    if env.get('TP_DOMAIN'):
+        DOMAIN = env.get('TP_DOMAIN')
     else:
         with open("CNAME", "rt", closefd=True) as cname:
             CNAME = cname.readline()
-        DOMAIN = CNAME if not develop else f"develop.{CNAME}"
+        DOMAIN = f"{branch}.{CNAME}" if branch else CNAME
     apps = loads(create_json(app_folders=app_folders, themes=themes, community_themes=community_themes, docker_mods=docker_mods))
     with open("themes.json", "w") as outfile:
         dump(apps, outfile, indent=2, sort_keys=True)
