@@ -14,10 +14,13 @@ echo -e "Variables set:\\n\
 
 APP_FILEPATH='/app/readarr/bin/UI/index.html'
 LOGIN_FILEPATH='/app/readarr/bin/UI/login.html'
+APP_ICON_FILEPATH='/app/readarr/bin/UI/Content/Images/Icons'
+
 if [ "${TP_HOTIO}" = true ]; then
     echo 'Changing to Hotio file path!'
     APP_FILEPATH='/app/bin/UI/index.html'
     LOGIN_FILEPATH='/app/bin/UI/login.html'
+    APP_ICON_FILEPATH='/app/bin/UI/Content/Images/Icons'
 fi
 
 # Set default
@@ -47,6 +50,18 @@ if [[ -z ${TP_THEME} ]]; then
     TP_THEME='organizr'
 fi
 
+# Function to download files for a given addon
+download_favicon_files() {
+    local addon=$1
+    local urls=$(curl -s "${TP_SCHEME}://${TP_DOMAIN}/themes.json" | jq -r ".addons.readarr[\"$addon\"].files[]?")
+    for url in $urls; do
+        # Remove the query parameters from the URL
+        clean_url="${url%%\?*}"
+        wget -O "${APP_ICON_FILEPATH}/$(basename "${clean_url}")" "${clean_url}"
+        printf 'Downloaded favicon: %s\n' "${clean_url}"
+    done
+}
+
 # Adding stylesheets
 if ! grep -q "${TP_DOMAIN}/css/base" "${APP_FILEPATH}"; then
     echo '---------------------------'
@@ -61,6 +76,11 @@ if ! grep -q "${TP_DOMAIN}/css/base" "${APP_FILEPATH}"; then
     if [[ -n ${TP_ADDON} ]]; then
         for addon in $(echo "$TP_ADDON" | tr "|" " "); do
         sheets="${sheets} <link rel='stylesheet' href='${url_base}/css/addons/readarr/${addon}/${addon}.css'>"
+        # If the addon variable has "favicon" in it, download all the favicon files from the themes.json file.
+        if [[ ${addon} == *"favicon"* ]]; then
+            echo 'Downloading favicon files...'
+            download_favicon_files "$addon"
+        fi
         printf 'Added custom addon: %s\n\n' "${addon}"
         done
     fi
