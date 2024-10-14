@@ -173,7 +173,8 @@ if __name__ == "__main__":
     else:
         with open("CNAME", "rt", closefd=True) as cname:
             CNAME = cname.readline()
-        DOMAIN = f"{branch}.{CNAME}" if branch else CNAME
+
+        DOMAIN = f"{branch}.{CNAME}" if branch not in ["master","main"] else CNAME
     apps = loads(create_json(app_folders=app_folders, themes=themes, community_themes=community_themes, docker_mods=docker_mods))
     with open("themes.json", "w") as outfile:
         dump(apps, outfile, indent=2, sort_keys=True)
