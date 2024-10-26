@@ -519,6 +519,10 @@ fieldset {
 
 /*Modal */
 
+.mocha {
+    background: var(--drop-down-menu-bg);
+}
+
 .mochaOverlay {
   position: absolute;
   top: 0;
@@ -669,4 +673,13 @@ select:focus {
 #torrentsFilterToolbar {
   float: right;
   margin-right: .5rem;
+}
+
+#torrentsFilterInput {
+    background: var(--transparency-dark-25);
+    border: none;
+}
+
+label[for="torrentsFilterRegexBox"] {
+      border: none !important;
 }
