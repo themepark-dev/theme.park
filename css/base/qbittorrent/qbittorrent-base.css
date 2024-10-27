@@ -99,8 +99,8 @@ input[type="file"i] {
 }
 
 input[name="category"i] {
-  color: #000;
-  background-color: #fff;
+  color: var(--text-hover);
+  background: var(--transparency-dark-25);
   border-width: 0px;
   outline: none;
   border: none;
