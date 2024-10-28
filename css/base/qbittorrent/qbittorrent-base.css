@@ -99,8 +99,8 @@ input[type="file"i] {
 }
 
 input[name="category"i] {
-  color: #000;
-  background-color: #fff;
+  color: var(--text-hover);
+  background: var(--transparency-dark-25);
   border-width: 0px;
   outline: none;
   border: none;
@@ -519,6 +519,10 @@ fieldset {
 
 /*Modal */
 
+.mocha {
+    background: var(--drop-down-menu-bg);
+}
+
 .mochaOverlay {
   position: absolute;
   top: 0;
@@ -531,6 +535,7 @@ fieldset {
   -webkit-background-size: auto, cover;
   -moz-background-size: auto, cover;
   -o-background-size: auto, cover;
+  border-radius: 0px;
 }
 
 .mochaToolbarWrapper {
@@ -669,4 +674,13 @@ select:focus {
 #torrentsFilterToolbar {
   float: right;
   margin-right: .5rem;
+}
+
+#torrentsFilterInput {
+    background: var(--transparency-dark-25);
+    border: none;
+}
+
+label[for="torrentsFilterRegexBox"] {
+      border: none !important;
 }

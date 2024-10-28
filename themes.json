@@ -485,7 +485,7 @@
     },
     "qbittorrent": {
       "addons": {},
-      "base_css": "https://develop.theme-park.dev/css/base/qbittorrent/qbittorrent-base.css?sha=e27e3063128920efa03c9a3a1085dbd4"
+      "base_css": "https://develop.theme-park.dev/css/base/qbittorrent/qbittorrent-base.css?sha=f677611989c86093ef609205ff85d0ae"
     },
     "radarr": {
       "addons": {
