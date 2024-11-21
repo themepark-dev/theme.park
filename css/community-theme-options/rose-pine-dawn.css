@@ -1,0 +1,34 @@
+:root {
+  --main-bg-color: #fffaf3;
+
+  --modal-bg-color: #f2e9de;
+  --modal-header-color: #faf4ed;
+  --modal-footer-color: #faf4ed;
+
+  --drop-down-menu-bg: #f4ede8;
+
+  --button-color: #dfdad9;
+  --button-color-hover: #cecacd;
+  --button-text: var(--text);
+  --button-text-hover: var(--text-hover);
+
+  --accent-color: 180, 99, 122;
+  --accent-color-hover: rgb(180, 99, 122, 0.8);
+  --link-color: #286983;
+  --link-color-hover: rgb(86, 148, 159, 0.8);
+  --label-text-color: #575279;
+
+  --text: #575279;
+  --text-hover: var(--text);
+  --text-muted: 9893a5;
+
+  /* Specials */
+  --arr-queue-color: #286983; /* Servarr apps + Bazarr */
+  --plex-poster-unwatched: #d7827e;
+  --petio-spinner: invert(40%) sepia(20%) saturate(1206%) hue-rotate(152deg) brightness(96%) contrast(94%); /* Made with https://codepen.io/jsm91/embed/ZEEawyZ */ /* Pine */
+  --gitea-color-primary-dark-4: var(--accent-color);
+  --overseerr-gradient: linear-gradient(
+    var(--main-bg-color),
+    var(--main-bg-color)
+  );
+}
