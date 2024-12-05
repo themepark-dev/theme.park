@@ -306,6 +306,15 @@
     "Reality": {
       "url": "https://develop.theme-park.dev/css/community-theme-options/reality.css?sha=b9eb97b4ab22d5ad559ff1a7d3cd0ea8"
     },
+    "Rose-pine": {
+      "url": "https://develop.theme-park.dev/css/community-theme-options/rose-pine.css?sha=607a2a97d50bd947692fdc0a5b28a15e"
+    },
+    "Rose-pine-dawn": {
+      "url": "https://develop.theme-park.dev/css/community-theme-options/rose-pine-dawn.css?sha=fecf422f13f8d6a40e826d955ba82e70"
+    },
+    "Rose-pine-moon": {
+      "url": "https://develop.theme-park.dev/css/community-theme-options/rose-pine-moon.css?sha=3918c5d6cd8fc33a720aaf30d12243cc"
+    },
     "Soul": {
       "url": "https://develop.theme-park.dev/css/community-theme-options/soul.css?sha=300d25523a00f5086cea11988de1da1c"
     },
@@ -792,6 +801,15 @@
     },
     "Reality": {
       "url": "https://develop.theme-park.dev/css/community-theme-options/reality.css?sha=b9eb97b4ab22d5ad559ff1a7d3cd0ea8"
+    },
+    "Rose-pine": {
+      "url": "https://develop.theme-park.dev/css/community-theme-options/rose-pine.css?sha=607a2a97d50bd947692fdc0a5b28a15e"
+    },
+    "Rose-pine-dawn": {
+      "url": "https://develop.theme-park.dev/css/community-theme-options/rose-pine-dawn.css?sha=fecf422f13f8d6a40e826d955ba82e70"
+    },
+    "Rose-pine-moon": {
+      "url": "https://develop.theme-park.dev/css/community-theme-options/rose-pine-moon.css?sha=3918c5d6cd8fc33a720aaf30d12243cc"
     },
     "Soul": {
       "url": "https://develop.theme-park.dev/css/community-theme-options/soul.css?sha=300d25523a00f5086cea11988de1da1c"
