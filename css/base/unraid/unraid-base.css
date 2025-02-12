@@ -140,6 +140,10 @@ textarea {
     background: var(--transparency-dark-25);
 }
 
+textarea:focus {
+    background: var(--transparency-dark-35);
+}
+
 /*DASHBOARD*/
 table.share_status.dashboard {
     background: var(--transparency-dark-15);
@@ -201,7 +205,7 @@ table.tablesorter thead tr th {
 }
 
 table {
-    background: var(--transparency-dark-25);
+    background: var(--transparency-dark-25) !important;
 }
 
 table.disk_status thead tr:first-child td,
@@ -236,6 +240,22 @@ table.share_status tbody tr.warn {
     background-color: #feefb3 !important;
 }
 
+table td.stopgap {
+    display: none;
+}
+
+table.dashboard i.fa {
+    background-color: unset;
+}
+
+table.dashboard tbody {
+    border: var(--transparency-light-25) 1px solid;
+}
+
+div.pie::after {
+    background: var(--transparency-dark-25) !important;
+}
+
 /*BUTTON*/
 input[type=button],
 input[type=reset],
@@ -248,8 +268,8 @@ a.button,
 #template button {
     color: var(--text);
     text-shadow: var(--text-shadow) var(--text-shadow-color);
-    background: linear-gradient(90deg, var(--button-color) 0, var(--button-color)) 0 0 no-repeat, linear-gradient(90deg, var(--button-color) 0, var(--button-color)) 0 100% no-repeat, linear-gradient(0deg, var(--button-color) 0, var(--button-color)) 0 100% no-repeat, linear-gradient(0deg, var(--button-color) 0, var(--button-color)) 100% 100% no-repeat;
-    background: -webkit-gradient(linear, left top, right top, from(var(--button-color)), to(var(--button-color))) 0 0 no-repeat, -webkit-gradient(linear, left top, right top, from(var(--button-color)), to(var(--button-color))) 0 100% no-repeat, -webkit-gradient(linear, left bottom, left top, from(var(--button-color)), to(var(--button-color))) 0 100% no-repeat, -webkit-gradient(linear, left bottom, left top, from(var(--button-color)), to(var(--button-color))) 100% 100% no-repeat;
+    background: linear-gradient(90deg, var(--button-color) 0, var(--button-color)) 0 0 no-repeat, linear-gradient(90deg, var(--button-color) 0, var(--button-color)) 0 100% no-repeat, linear-gradient(0deg, var(--button-color) 0, var(--button-color)) 0 100% no-repeat, linear-gradient(0deg, var(--button-color) 0, var(--button-color)) 100% 100% no-repeat !important;
+    background: -webkit-gradient(linear, left top, right top, from(var(--button-color)), to(var(--button-color))) 0 0 no-repeat, -webkit-gradient(linear, left top, right top, from(var(--button-color)), to(var(--button-color))) 0 100% no-repeat, -webkit-gradient(linear, left bottom, left top, from(var(--button-color)), to(var(--button-color))) 0 100% no-repeat, -webkit-gradient(linear, left bottom, left top, from(var(--button-color)), to(var(--button-color))) 100% 100% no-repeat !important;
     background-size: 100% 2px, 100% 2px, 2px 100%, 2px 100%;
     border: 1px solid transparent;
 }
@@ -365,6 +385,10 @@ iframe {
 
 div.Panel i.PanelIcon {
     color: var(--text-hover);
+}
+
+.content #title {
+    background: unset;
 }
 
 /* PLUGINS */
