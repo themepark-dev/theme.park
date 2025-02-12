@@ -252,10 +252,6 @@ table.dashboard tbody {
     border: var(--transparency-light-25) 1px solid;
 }
 
-div.pie::after {
-    background: var(--transparency-dark-25) !important;
-}
-
 /*BUTTON*/
 input[type=button],
 input[type=reset],
