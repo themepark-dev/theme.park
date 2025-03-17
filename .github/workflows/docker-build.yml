@@ -24,7 +24,6 @@ on:
 jobs:
   build-and-push-it-to-the-limit:
     runs-on: ubuntu-latest
-    fail-fast: false
     strategy:
       matrix:
         architecture: [linux-arm-v7,linux-arm64v8,linux-amd64]
