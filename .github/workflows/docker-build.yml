@@ -26,7 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        architecture: [linux-arm-v7,linux-arm64v8,linux-amd64]
+        architecture: [linux-arm-v7,linux-arm64,linux-amd64]
     steps:
       - name: checkout
         uses: actions/checkout@v3.1.0
@@ -43,7 +43,7 @@ jobs:
           echo "vendor=${{ github.repository_owner }}" >> $GITHUB_ENV
           echo "url=${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY,,}/blob/master/README.md" >> $GITHUB_ENV
           echo "VERSION=${{ github.event.release.tag_name }}" >> $GITHUB_ENV
-          echo "platform=${ARCHITECTURE//-/\/}" >> $GITHUB_ENV
+          echo "platform=${{matrix.architecture//-/\/}}" >> $GITHUB_ENV
           echo "cache=${GITHUB_REPOSITORY,,}:${{ github.ref_name }}-cache-${{ matrix.architecture }}${{ github.event.inputs.tag }}" >> $GITHUB_ENV
           echo "tag=${GITHUB_REPOSITORY,,}:${{ github.ref_name }}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}-${{ matrix.architecture }}${{ github.event.inputs.tag }}" >> $GITHUB_ENV
           echo "release=${{ github.event.release.target_commitish }}" >> $GITHUB_ENV
