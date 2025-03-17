@@ -50,6 +50,12 @@
     background-color: rgb(var(--accent-color)) !important;
 }
 
+[class*="ArtistIndexPoster-title-"],
+[class*="ArtistIndexBanner-title-"] {
+    background: var(--transparency-light-10);
+    color: var(--text-hover);
+}
+
 /* OVERVIEW PAGE */
 [class*="ArtistIndexOverview-container-"],
 [class*="ArtistIndexOverview-container-"]:hover {
