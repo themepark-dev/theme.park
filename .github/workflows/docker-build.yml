@@ -26,7 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        architecture: [linux-arm-v7,linux-arm64,linux-amd64]
+        architecture: [linux-amd64,linux-arm64]
     steps:
       - name: checkout
         uses: actions/checkout@v3.1.0
@@ -106,21 +106,27 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GH_PAT }}
 
-      - name: Create manifests
+      - name: Set Image and Tag Env
         env:
           DOCKER_CLI_EXPERIMENTAL: enabled
         run: |
           IMAGE=${{ matrix.registry }}/${GITHUB_REPOSITORY,,}
           TAG=${{ github.ref_name }}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}
+      - name: Set Source Env
+        run: |
           SOURCE=${IMAGE}:${TAG}
+      - name: Create manifests
+        env:
+          DOCKER_CLI_EXPERIMENTAL: enabled
+        run: |
           [[ -f linux-amd64.Dockerfile ]]  && AMD64=${SOURCE}-linux-amd64${{ github.event.inputs.tag }}
           [[ -f linux-arm64.Dockerfile ]]  && ARM64=${SOURCE}-linux-arm64${{ github.event.inputs.tag }}
-          [[ -f linux-arm-v7.Dockerfile ]] && ARMV7=${SOURCE}-linux-arm-v7${{ github.event.inputs.tag }}
-          docker manifest create ${IMAGE}:${TAG}${{ github.event.inputs.tag }} ${AMD64} ${ARM64} ${ARMV7}
+          docker manifest create ${IMAGE}:${TAG}${{ github.event.inputs.tag }} ${AMD64} ${ARM64}
           docker manifest push ${IMAGE}:${TAG}${{ github.event.inputs.tag }}
           TAG=${{ github.ref_name }}${{ github.event.inputs.tag }}
-          docker manifest create ${IMAGE}:${TAG} ${AMD64} ${ARM64} ${ARMV7}
+          docker manifest create ${IMAGE}:${TAG} ${AMD64} ${ARM64}
           docker manifest push ${IMAGE}:${TAG}
+
       - name: Latest manifest
         if: github.event.release.target_commitish == 'master' || github.event.inputs.branch == 'master'
         env:
@@ -131,6 +137,5 @@ jobs:
           SOURCE=${IMAGE}:${TAG}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}
           [[ -f linux-amd64.Dockerfile ]] && AMD64=${SOURCE}-linux-amd64
           [[ -f linux-arm64.Dockerfile ]] && ARM64=${SOURCE}-linux-arm64
-          [[ -f linux-arm-v7.Dockerfile ]] && ARMV7=${SOURCE}-linux-arm-v7
-          docker manifest create ${IMAGE}:latest ${AMD64} ${ARM64} ${ARMV7}
+          docker manifest create ${IMAGE}:latest ${AMD64} ${ARM64}
           docker manifest push ${IMAGE}:latest
