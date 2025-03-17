@@ -110,11 +110,11 @@ jobs:
         env:
           DOCKER_CLI_EXPERIMENTAL: enabled
         run: |
-          IMAGE=${{ matrix.registry }}/${GITHUB_REPOSITORY,,}
-          TAG=${{ github.ref_name }}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}
+          echo "IMAGE=${{ matrix.registry }}/${GITHUB_REPOSITORY,,}" >> $GITHUB_ENV
+          echo "TAG=${{ github.ref_name }}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}" >> $GITHUB_ENV
       - name: Set Source Env
         run: |
-          SOURCE=${IMAGE}:${TAG}
+          echo "SOURCE=${IMAGE}:${TAG}" >> $GITHUB_ENV
       - name: Create manifests
         env:
           DOCKER_CLI_EXPERIMENTAL: enabled
