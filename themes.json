@@ -12,8 +12,8 @@
       "glass": {
         "css": [
           "https://testing.theme-park.dev/css/addons/organizr/glass/organizr-base-old.css?sha=7ca2b0e71ab22a2e00ed59acb3415c4e",
-          "https://testing.theme-park.dev/css/addons/organizr/glass/glass-login.css?sha=43f3ae9656a7c727355116dad0988e1a",
-          "https://testing.theme-park.dev/css/addons/organizr/glass/glass-base.css?sha=f3d7eff1bfcc09b167c274a810d3b297"
+          "https://testing.theme-park.dev/css/addons/organizr/glass/glass-base.css?sha=f3d7eff1bfcc09b167c274a810d3b297",
+          "https://testing.theme-park.dev/css/addons/organizr/glass/glass-login.css?sha=43f3ae9656a7c727355116dad0988e1a"
         ]
       }
     },
@@ -28,40 +28,40 @@
     "radarr": {
       "radarr-4k-favicon": {
         "files": [
-          "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/favicon-16x16.png?sha=abbe5520d486765a2180f4af97aabdad",
           "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/site.webmanifest?sha=7535bb0b5cbccbccff041bb117f9cfe9",
-          "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/safari-pinned-tab.svg?sha=fb3a2d4362a466a282c73f7318812d50",
-          "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/mstile-70x70.png?sha=d9250ae35d766dff3d9a46ba08520969",
-          "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/android-chrome-192x192.png?sha=56faa5e150f979cb9bfddcdb4640ba8a",
-          "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/mstile-144x144.png?sha=0348b0e73f2d6ebf70c026cebea076ac",
-          "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/browserconfig.xml?sha=877c532bc5e11b01391e51b4fd9240e8",
-          "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/mstile-310x310.png?sha=2a4fc25dda9f8c9f83ddad39b22b5f5b",
-          "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/favicon.ico?sha=b97ef3b9875810468977652f32c8df72",
           "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/mstile-310x150.png?sha=987baf2fd094bec4696b9d42efe94d6d",
-          "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/apple-touch-icon.png?sha=5daf22ce335010ea7f4b515d34608fbe",
-          "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/mstile-150x150.png?sha=1d42c2ad3a76c623a068ad382a390fe0",
+          "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/mstile-144x144.png?sha=0348b0e73f2d6ebf70c026cebea076ac",
+          "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/favicon.ico?sha=b97ef3b9875810468977652f32c8df72",
+          "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/mstile-70x70.png?sha=d9250ae35d766dff3d9a46ba08520969",
           "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/android-chrome-512x512.png?sha=02dd5749778235b1cdea95a170f7a5ad",
-          "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/favicon-32x32.png?sha=2647702a80e346700e4eacbb7818c574"
+          "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/browserconfig.xml?sha=877c532bc5e11b01391e51b4fd9240e8",
+          "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/apple-touch-icon.png?sha=5daf22ce335010ea7f4b515d34608fbe",
+          "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/favicon-32x32.png?sha=2647702a80e346700e4eacbb7818c574",
+          "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/safari-pinned-tab.svg?sha=fb3a2d4362a466a282c73f7318812d50",
+          "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/mstile-150x150.png?sha=1d42c2ad3a76c623a068ad382a390fe0",
+          "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/favicon-16x16.png?sha=abbe5520d486765a2180f4af97aabdad",
+          "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/mstile-310x310.png?sha=2a4fc25dda9f8c9f83ddad39b22b5f5b",
+          "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/android-chrome-192x192.png?sha=56faa5e150f979cb9bfddcdb4640ba8a"
         ]
       },
       "radarr-4k-logo": "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-logo/radarr-4k-logo.css?sha=049d5b05c28e55431ab2b424720d4ea4",
       "radarr-alt-calendar": "https://testing.theme-park.dev/css/addons/radarr/radarr-alt-calendar/radarr-alt-calendar.css?sha=1e84b48a6bf4d24c236392e15bb167be",
       "radarr-anime-favicon": {
         "files": [
-          "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/favicon-16x16.png?sha=a1acaa77c80ac2b38e2900bcc94fe037",
           "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/site.webmanifest?sha=7535bb0b5cbccbccff041bb117f9cfe9",
-          "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/safari-pinned-tab.svg?sha=2435be0885fa16202744cd3a27b8db7a",
-          "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/mstile-70x70.png?sha=56c51bf94407f397f350e8fd3c4979f4",
-          "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/android-chrome-192x192.png?sha=8125062f86994ced07cc5f7085679b86",
-          "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/mstile-144x144.png?sha=81b8db00e225e45ee35a91d0e409d62a",
-          "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/browserconfig.xml?sha=877c532bc5e11b01391e51b4fd9240e8",
-          "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/mstile-310x310.png?sha=761cd134ecf3a14ded757317ebf70cf9",
-          "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/favicon.ico?sha=b7a60803ee5cb87387959f780bbf22ae",
           "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/mstile-310x150.png?sha=66d0913b95f2944c5bce4822bedbab9a",
-          "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/apple-touch-icon.png?sha=022ba774b52cac9c011759a7e825c3d9",
-          "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/mstile-150x150.png?sha=7b2975de51daf269a56fd707690fabb2",
+          "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/mstile-144x144.png?sha=81b8db00e225e45ee35a91d0e409d62a",
+          "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/favicon.ico?sha=b7a60803ee5cb87387959f780bbf22ae",
+          "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/mstile-70x70.png?sha=56c51bf94407f397f350e8fd3c4979f4",
           "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/android-chrome-512x512.png?sha=1720d5fcae3d928606c5f17c61604432",
-          "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/favicon-32x32.png?sha=a5f7e554fde4da9eb21e053b0912bf5f"
+          "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/browserconfig.xml?sha=877c532bc5e11b01391e51b4fd9240e8",
+          "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/apple-touch-icon.png?sha=022ba774b52cac9c011759a7e825c3d9",
+          "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/favicon-32x32.png?sha=a5f7e554fde4da9eb21e053b0912bf5f",
+          "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/safari-pinned-tab.svg?sha=2435be0885fa16202744cd3a27b8db7a",
+          "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/mstile-150x150.png?sha=7b2975de51daf269a56fd707690fabb2",
+          "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/favicon-16x16.png?sha=a1acaa77c80ac2b38e2900bcc94fe037",
+          "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/mstile-310x310.png?sha=761cd134ecf3a14ded757317ebf70cf9",
+          "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/android-chrome-192x192.png?sha=8125062f86994ced07cc5f7085679b86"
         ]
       },
       "radarr-darker": "https://testing.theme-park.dev/css/addons/radarr/radarr-darker/radarr-darker.css?sha=2a30971854d495f7c56405bd4e73d34f"
@@ -70,20 +70,20 @@
       "readarr-alt-calendar": "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-calendar/readarr-alt-calendar.css?sha=73c0809f9a113737111a64e419c7452b",
       "readarr-alt-favicon": {
         "files": [
-          "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/favicon-16x16.png?sha=2d4c0bac57194db1960a2564743dedf7",
           "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/site.webmanifest?sha=7535bb0b5cbccbccff041bb117f9cfe9",
-          "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/safari-pinned-tab.svg?sha=fb5c4dc56fe02aa5c4c8438b78be9402",
-          "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/mstile-70x70.png?sha=84b0fb0a6628be72227ad1d0a5af577c",
-          "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/android-chrome-192x192.png?sha=11d66e4bbe7c6da125ddc5dd63307ebf",
-          "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/mstile-144x144.png?sha=d048f794ba26069b4344cecbe9cda923",
-          "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/browserconfig.xml?sha=877c532bc5e11b01391e51b4fd9240e8",
-          "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/mstile-310x310.png?sha=4c492637d72a2c92e8da23b761faba9e",
-          "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/favicon.ico?sha=9a03066d0acc4a31786e8b65d882e71e",
           "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/mstile-310x150.png?sha=a1b8d78963b7112f880a4d66268a7a04",
-          "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/apple-touch-icon.png?sha=86cc86825d359ddf50d65d4373ddbca0",
-          "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/mstile-150x150.png?sha=ac7e3f31e80d577ed89b0d12da8d0c44",
+          "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/mstile-144x144.png?sha=d048f794ba26069b4344cecbe9cda923",
+          "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/favicon.ico?sha=9a03066d0acc4a31786e8b65d882e71e",
+          "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/mstile-70x70.png?sha=84b0fb0a6628be72227ad1d0a5af577c",
           "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/android-chrome-512x512.png?sha=0c6bbfb86b1fb1a5a8f8a4693e99b409",
-          "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/favicon-32x32.png?sha=0764360d4d54c5e7020100d399792ce5"
+          "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/browserconfig.xml?sha=877c532bc5e11b01391e51b4fd9240e8",
+          "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/apple-touch-icon.png?sha=86cc86825d359ddf50d65d4373ddbca0",
+          "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/favicon-32x32.png?sha=0764360d4d54c5e7020100d399792ce5",
+          "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/safari-pinned-tab.svg?sha=fb5c4dc56fe02aa5c4c8438b78be9402",
+          "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/mstile-150x150.png?sha=ac7e3f31e80d577ed89b0d12da8d0c44",
+          "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/favicon-16x16.png?sha=2d4c0bac57194db1960a2564743dedf7",
+          "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/mstile-310x310.png?sha=4c492637d72a2c92e8da23b761faba9e",
+          "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/android-chrome-192x192.png?sha=11d66e4bbe7c6da125ddc5dd63307ebf"
         ]
       },
       "readarr-alt-logo": "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-logo/readarr-alt-logo.css?sha=d00cca34b817447663059201c1113cd2",
@@ -93,60 +93,60 @@
     "sonarr": {
       "sonarr-4k-favicon": {
         "files": [
-          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/favicon-16x16.png?sha=1f2dc622d0b024c32c6d74caa2e2f962",
           "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/site.webmanifest?sha=7535bb0b5cbccbccff041bb117f9cfe9",
-          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/safari-pinned-tab.svg?sha=8c2733c8d3c15cb42b874960caa4e12f",
-          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/mstile-70x70.png?sha=a48f902fcfca59457fca571882891d4e",
-          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/android-chrome-192x192.png?sha=0cf23797ffd6311d560513c913c39dc0",
-          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/mstile-144x144.png?sha=c2431daf7d8a0edac270a65649d5ce2b",
-          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/browserconfig.xml?sha=877c532bc5e11b01391e51b4fd9240e8",
-          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/mstile-310x310.png?sha=b96e53bf93405aa812e9a67bf79af1c8",
-          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/favicon.ico?sha=d986d85829057bce3dd905c6c676ea21",
           "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/mstile-310x150.png?sha=1a6b8fc2f40c87231c64e904ba8bb699",
-          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/apple-touch-icon.png?sha=e1b31dc827c7c4dd43d9506f7366fce3",
-          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/mstile-150x150.png?sha=923292f837d10590e26b0671fec60c75",
+          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/mstile-144x144.png?sha=c2431daf7d8a0edac270a65649d5ce2b",
+          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/favicon.ico?sha=d986d85829057bce3dd905c6c676ea21",
+          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/mstile-70x70.png?sha=a48f902fcfca59457fca571882891d4e",
           "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/android-chrome-512x512.png?sha=8495302021f726f0f6b541ac9b8c7ee2",
-          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/favicon-32x32.png?sha=a6b31ff58b7d1dcc42dfae24dde6a1f7"
+          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/browserconfig.xml?sha=877c532bc5e11b01391e51b4fd9240e8",
+          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/apple-touch-icon.png?sha=e1b31dc827c7c4dd43d9506f7366fce3",
+          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/favicon-32x32.png?sha=a6b31ff58b7d1dcc42dfae24dde6a1f7",
+          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/safari-pinned-tab.svg?sha=8c2733c8d3c15cb42b874960caa4e12f",
+          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/mstile-150x150.png?sha=923292f837d10590e26b0671fec60c75",
+          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/favicon-16x16.png?sha=1f2dc622d0b024c32c6d74caa2e2f962",
+          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/mstile-310x310.png?sha=b96e53bf93405aa812e9a67bf79af1c8",
+          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/android-chrome-192x192.png?sha=0cf23797ffd6311d560513c913c39dc0"
         ]
       },
       "sonarr-4k-logo": "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-logo/sonarr-4k-logo.css?sha=0ddaba0f1bc2251865847b818b1b97db",
       "sonarr-4k-text-logo": "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-text-logo/sonarr-4k-text-logo.css?sha=7f395b22cef125a12546e16c1f0b8696",
       "sonarr-anime-blue-favicon": {
         "files": [
-          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/favicon-16x16.png?sha=e13930e1359aa9fbc7e4a24fb68b1c0d",
           "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/site.webmanifest?sha=7535bb0b5cbccbccff041bb117f9cfe9",
-          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/safari-pinned-tab.svg?sha=b95c74a70df6ad6729d5990b418c16f1",
-          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/mstile-70x70.png?sha=93eedf302661fd8f281e4a38b60cbce7",
-          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/android-chrome-192x192.png?sha=f9b005606f2fe83a997079538b4b2372",
-          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/mstile-144x144.png?sha=eca17409f4617d5b25d3a046cfbafb1c",
-          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/browserconfig.xml?sha=877c532bc5e11b01391e51b4fd9240e8",
-          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/mstile-310x310.png?sha=15224e7eb185c1e8b5d44495b659b880",
-          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/favicon.ico?sha=26c100dbeadec2114eef5e2ccdaf7c08",
           "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/mstile-310x150.png?sha=ba7efbc97526cf39948533d655297db2",
-          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/apple-touch-icon.png?sha=003b6175e94b39b3f56abbd10c025e4c",
-          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/mstile-150x150.png?sha=1bcabeb653e8b02da39ebafc4c701a66",
+          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/mstile-144x144.png?sha=eca17409f4617d5b25d3a046cfbafb1c",
+          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/favicon.ico?sha=26c100dbeadec2114eef5e2ccdaf7c08",
+          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/mstile-70x70.png?sha=93eedf302661fd8f281e4a38b60cbce7",
           "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/android-chrome-512x512.png?sha=76f0cd525ababc83824a0c291676de0b",
-          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/favicon-32x32.png?sha=0753a10fff777350679b320dbf46ad66"
+          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/browserconfig.xml?sha=877c532bc5e11b01391e51b4fd9240e8",
+          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/apple-touch-icon.png?sha=003b6175e94b39b3f56abbd10c025e4c",
+          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/favicon-32x32.png?sha=0753a10fff777350679b320dbf46ad66",
+          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/safari-pinned-tab.svg?sha=b95c74a70df6ad6729d5990b418c16f1",
+          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/mstile-150x150.png?sha=1bcabeb653e8b02da39ebafc4c701a66",
+          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/favicon-16x16.png?sha=e13930e1359aa9fbc7e4a24fb68b1c0d",
+          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/mstile-310x310.png?sha=15224e7eb185c1e8b5d44495b659b880",
+          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/android-chrome-192x192.png?sha=f9b005606f2fe83a997079538b4b2372"
         ]
       },
       "sonarr-anime-blue-logo": "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-logo/sonarr-anime-blue-logo.css?sha=77546c9357bca233ce72b0bbc1e2faf6",
       "sonarr-anime-blue-text-logo": "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-text-logo/sonarr-anime-blue-text-logo.css?sha=ace9f9553c106aff893d28cf9f13225a",
       "sonarr-anime-favicon": {
         "files": [
-          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/favicon-16x16.png?sha=602c6d8749048df0fa90e66aaf382dd8",
           "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/site.webmanifest?sha=7535bb0b5cbccbccff041bb117f9cfe9",
-          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/safari-pinned-tab.svg?sha=869c600d2478e70cecd1dc015aa41601",
-          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/mstile-70x70.png?sha=e41bcd7b9221bb38dfa57d03f213c339",
-          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/android-chrome-192x192.png?sha=4b8cd42018cf12fb353b646c57b35840",
-          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/mstile-144x144.png?sha=dfe3a6a40a6cabdcbc02a622d62ed537",
-          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/browserconfig.xml?sha=877c532bc5e11b01391e51b4fd9240e8",
-          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/mstile-310x310.png?sha=3036e09b0b3db8c7a8ba9464e2243640",
-          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/favicon.ico?sha=fdf24af80330b5183d19220c21d9f3fe",
           "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/mstile-310x150.png?sha=84bf3e9af766087148136e62beec8a40",
-          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/apple-touch-icon.png?sha=eba789cd7705d91c2cf402e576d2cf6c",
-          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/mstile-150x150.png?sha=5432d1017ec16e4ebfd2287fca3929a7",
+          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/mstile-144x144.png?sha=dfe3a6a40a6cabdcbc02a622d62ed537",
+          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/favicon.ico?sha=fdf24af80330b5183d19220c21d9f3fe",
+          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/mstile-70x70.png?sha=e41bcd7b9221bb38dfa57d03f213c339",
           "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/android-chrome-512x512.png?sha=beb288bc11ba955820abbd4911638401",
-          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/favicon-32x32.png?sha=3f9fa58b43676d2ea07c9bbe6d67ed65"
+          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/browserconfig.xml?sha=877c532bc5e11b01391e51b4fd9240e8",
+          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/apple-touch-icon.png?sha=eba789cd7705d91c2cf402e576d2cf6c",
+          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/favicon-32x32.png?sha=3f9fa58b43676d2ea07c9bbe6d67ed65",
+          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/safari-pinned-tab.svg?sha=869c600d2478e70cecd1dc015aa41601",
+          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/mstile-150x150.png?sha=5432d1017ec16e4ebfd2287fca3929a7",
+          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/favicon-16x16.png?sha=602c6d8749048df0fa90e66aaf382dd8",
+          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/mstile-310x310.png?sha=3036e09b0b3db8c7a8ba9464e2243640",
+          "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/android-chrome-192x192.png?sha=4b8cd42018cf12fb353b646c57b35840"
         ]
       },
       "sonarr-anime-logo": "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-logo/sonarr-anime-logo.css?sha=40860b829628df4efee4a29f6cdf1505",
@@ -158,28 +158,28 @@
       "login-page": {
         "alien": {
           "css": [
-            "https://testing.theme-park.dev/css/addons/unraid/login-page/alien/hallway2.css?sha=68e19c319c2f1e096ed29bc49e41d06f",
-            "https://testing.theme-park.dev/css/addons/unraid/login-page/alien/isolation_video.css?sha=0403e2565a528489653f8f901ed5dc61",
-            "https://testing.theme-park.dev/css/addons/unraid/login-page/alien/alien-base.css?sha=fc4a6738a5170c4f73f136f276d6ac17",
-            "https://testing.theme-park.dev/css/addons/unraid/login-page/alien/isolation.css?sha=75e3199d3233e2e0feb001db425b39f3",
-            "https://testing.theme-park.dev/css/addons/unraid/login-page/alien/hallway4.css?sha=7ea974528d00c066f57f615c24047f5e",
             "https://testing.theme-park.dev/css/addons/unraid/login-page/alien/hallway3.css?sha=9597783a03df80232c8368fb5dc6f8b9",
+            "https://testing.theme-park.dev/css/addons/unraid/login-page/alien/alien-base.css?sha=fc4a6738a5170c4f73f136f276d6ac17",
             "https://testing.theme-park.dev/css/addons/unraid/login-page/alien/scanner.css?sha=ca02d6ab12c26ea115dd11a9e0558534",
-            "https://testing.theme-park.dev/css/addons/unraid/login-page/alien/hallway.css?sha=b57cf1d1d07c0a233c64063d18ca4144",
             "https://testing.theme-park.dev/css/addons/unraid/login-page/alien/custom.css?sha=0370ea32d95c8a84914495813270657b",
+            "https://testing.theme-park.dev/css/addons/unraid/login-page/alien/isolation.css?sha=75e3199d3233e2e0feb001db425b39f3",
+            "https://testing.theme-park.dev/css/addons/unraid/login-page/alien/isolation_video.css?sha=0403e2565a528489653f8f901ed5dc61",
+            "https://testing.theme-park.dev/css/addons/unraid/login-page/alien/hallway4.css?sha=7ea974528d00c066f57f615c24047f5e",
+            "https://testing.theme-park.dev/css/addons/unraid/login-page/alien/hallway.css?sha=b57cf1d1d07c0a233c64063d18ca4144",
+            "https://testing.theme-park.dev/css/addons/unraid/login-page/alien/hallway2.css?sha=68e19c319c2f1e096ed29bc49e41d06f",
             "https://testing.theme-park.dev/css/addons/unraid/login-page/alien/nightmare.css?sha=2cb4228929cd925c2c8cb4ca2b19c027"
           ],
           "files": []
         },
         "fallout": {
           "css": [
-            "https://testing.theme-park.dev/css/addons/unraid/login-page/fallout/terminal2.css?sha=42a605d8ee62c0aa2acce4b533db02a2",
-            "https://testing.theme-park.dev/css/addons/unraid/login-page/fallout/dirty_terminal.css?sha=582b56370855f8130a590d5fe886f554",
-            "https://testing.theme-park.dev/css/addons/unraid/login-page/fallout/terminal.css?sha=789f42770eef041174ced544bab84c67",
-            "https://testing.theme-park.dev/css/addons/unraid/login-page/fallout/fallout-base.css?sha=41c2ac16dd7cef7e51cc9348d61becb2",
             "https://testing.theme-park.dev/css/addons/unraid/login-page/fallout/fallout_video.css?sha=1fc7edb76308267a2f676f4877d9886e",
+            "https://testing.theme-park.dev/css/addons/unraid/login-page/fallout/terminal.css?sha=789f42770eef041174ced544bab84c67",
             "https://testing.theme-park.dev/css/addons/unraid/login-page/fallout/dirty_terminal2.css?sha=0c7d7dd298198199fd72bdf2344f116c",
-            "https://testing.theme-park.dev/css/addons/unraid/login-page/fallout/custom.css?sha=861291eb0b3ae0a7d2caa7a0d1a49719"
+            "https://testing.theme-park.dev/css/addons/unraid/login-page/fallout/dirty_terminal.css?sha=582b56370855f8130a590d5fe886f554",
+            "https://testing.theme-park.dev/css/addons/unraid/login-page/fallout/fallout-base.css?sha=41c2ac16dd7cef7e51cc9348d61becb2",
+            "https://testing.theme-park.dev/css/addons/unraid/login-page/fallout/custom.css?sha=861291eb0b3ae0a7d2caa7a0d1a49719",
+            "https://testing.theme-park.dev/css/addons/unraid/login-page/fallout/terminal2.css?sha=42a605d8ee62c0aa2acce4b533db02a2"
           ],
           "files": []
         },
@@ -188,13 +188,13 @@
         ],
         "retro-terminal": {
           "css": [
+            "https://testing.theme-park.dev/css/addons/unraid/login-page/retro-terminal/red.css?sha=b2ea498ff13040bc4594ddeb1ef3e445",
             "https://testing.theme-park.dev/css/addons/unraid/login-page/retro-terminal/blue.css?sha=395aed61d19745e19d9f9d1e602e08e8",
+            "https://testing.theme-park.dev/css/addons/unraid/login-page/retro-terminal/amber.css?sha=051bbc07b5b26db06074d87a25fe8ddf",
             "https://testing.theme-park.dev/css/addons/unraid/login-page/retro-terminal/green.css?sha=02b52541ad43826cbae2de3bf15c6b0c",
             "https://testing.theme-park.dev/css/addons/unraid/login-page/retro-terminal/white.css?sha=d735c2c32bdc72ff306fe83dd20c6375",
-            "https://testing.theme-park.dev/css/addons/unraid/login-page/retro-terminal/amber.css?sha=051bbc07b5b26db06074d87a25fe8ddf",
-            "https://testing.theme-park.dev/css/addons/unraid/login-page/retro-terminal/retro-terminal-base.css?sha=6280d1ac659ed9285be1af4029922bdf",
             "https://testing.theme-park.dev/css/addons/unraid/login-page/retro-terminal/custom.css?sha=5b8031420e620a084427a82a44687240",
-            "https://testing.theme-park.dev/css/addons/unraid/login-page/retro-terminal/red.css?sha=b2ea498ff13040bc4594ddeb1ef3e445"
+            "https://testing.theme-park.dev/css/addons/unraid/login-page/retro-terminal/retro-terminal-base.css?sha=6280d1ac659ed9285be1af4029922bdf"
           ],
           "files": []
         }
@@ -445,8 +445,8 @@
         "glass": {
           "css": [
             "https://testing.theme-park.dev/css/addons/organizr/glass/organizr-base-old.css?sha=7ca2b0e71ab22a2e00ed59acb3415c4e",
-            "https://testing.theme-park.dev/css/addons/organizr/glass/glass-login.css?sha=43f3ae9656a7c727355116dad0988e1a",
-            "https://testing.theme-park.dev/css/addons/organizr/glass/glass-base.css?sha=f3d7eff1bfcc09b167c274a810d3b297"
+            "https://testing.theme-park.dev/css/addons/organizr/glass/glass-base.css?sha=f3d7eff1bfcc09b167c274a810d3b297",
+            "https://testing.theme-park.dev/css/addons/organizr/glass/glass-login.css?sha=43f3ae9656a7c727355116dad0988e1a"
           ]
         }
       },
@@ -490,40 +490,40 @@
       "addons": {
         "radarr-4k-favicon": {
           "files": [
-            "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/favicon-16x16.png?sha=abbe5520d486765a2180f4af97aabdad",
             "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/site.webmanifest?sha=7535bb0b5cbccbccff041bb117f9cfe9",
-            "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/safari-pinned-tab.svg?sha=fb3a2d4362a466a282c73f7318812d50",
-            "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/mstile-70x70.png?sha=d9250ae35d766dff3d9a46ba08520969",
-            "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/android-chrome-192x192.png?sha=56faa5e150f979cb9bfddcdb4640ba8a",
-            "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/mstile-144x144.png?sha=0348b0e73f2d6ebf70c026cebea076ac",
-            "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/browserconfig.xml?sha=877c532bc5e11b01391e51b4fd9240e8",
-            "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/mstile-310x310.png?sha=2a4fc25dda9f8c9f83ddad39b22b5f5b",
-            "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/favicon.ico?sha=b97ef3b9875810468977652f32c8df72",
             "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/mstile-310x150.png?sha=987baf2fd094bec4696b9d42efe94d6d",
-            "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/apple-touch-icon.png?sha=5daf22ce335010ea7f4b515d34608fbe",
-            "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/mstile-150x150.png?sha=1d42c2ad3a76c623a068ad382a390fe0",
+            "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/mstile-144x144.png?sha=0348b0e73f2d6ebf70c026cebea076ac",
+            "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/favicon.ico?sha=b97ef3b9875810468977652f32c8df72",
+            "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/mstile-70x70.png?sha=d9250ae35d766dff3d9a46ba08520969",
             "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/android-chrome-512x512.png?sha=02dd5749778235b1cdea95a170f7a5ad",
-            "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/favicon-32x32.png?sha=2647702a80e346700e4eacbb7818c574"
+            "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/browserconfig.xml?sha=877c532bc5e11b01391e51b4fd9240e8",
+            "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/apple-touch-icon.png?sha=5daf22ce335010ea7f4b515d34608fbe",
+            "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/favicon-32x32.png?sha=2647702a80e346700e4eacbb7818c574",
+            "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/safari-pinned-tab.svg?sha=fb3a2d4362a466a282c73f7318812d50",
+            "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/mstile-150x150.png?sha=1d42c2ad3a76c623a068ad382a390fe0",
+            "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/favicon-16x16.png?sha=abbe5520d486765a2180f4af97aabdad",
+            "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/mstile-310x310.png?sha=2a4fc25dda9f8c9f83ddad39b22b5f5b",
+            "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-favicon/android-chrome-192x192.png?sha=56faa5e150f979cb9bfddcdb4640ba8a"
           ]
         },
         "radarr-4k-logo": "https://testing.theme-park.dev/css/addons/radarr/radarr-4k-logo/radarr-4k-logo.css?sha=049d5b05c28e55431ab2b424720d4ea4",
         "radarr-alt-calendar": "https://testing.theme-park.dev/css/addons/radarr/radarr-alt-calendar/radarr-alt-calendar.css?sha=1e84b48a6bf4d24c236392e15bb167be",
         "radarr-anime-favicon": {
           "files": [
-            "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/favicon-16x16.png?sha=a1acaa77c80ac2b38e2900bcc94fe037",
             "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/site.webmanifest?sha=7535bb0b5cbccbccff041bb117f9cfe9",
-            "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/safari-pinned-tab.svg?sha=2435be0885fa16202744cd3a27b8db7a",
-            "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/mstile-70x70.png?sha=56c51bf94407f397f350e8fd3c4979f4",
-            "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/android-chrome-192x192.png?sha=8125062f86994ced07cc5f7085679b86",
-            "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/mstile-144x144.png?sha=81b8db00e225e45ee35a91d0e409d62a",
-            "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/browserconfig.xml?sha=877c532bc5e11b01391e51b4fd9240e8",
-            "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/mstile-310x310.png?sha=761cd134ecf3a14ded757317ebf70cf9",
-            "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/favicon.ico?sha=b7a60803ee5cb87387959f780bbf22ae",
             "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/mstile-310x150.png?sha=66d0913b95f2944c5bce4822bedbab9a",
-            "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/apple-touch-icon.png?sha=022ba774b52cac9c011759a7e825c3d9",
-            "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/mstile-150x150.png?sha=7b2975de51daf269a56fd707690fabb2",
+            "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/mstile-144x144.png?sha=81b8db00e225e45ee35a91d0e409d62a",
+            "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/favicon.ico?sha=b7a60803ee5cb87387959f780bbf22ae",
+            "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/mstile-70x70.png?sha=56c51bf94407f397f350e8fd3c4979f4",
             "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/android-chrome-512x512.png?sha=1720d5fcae3d928606c5f17c61604432",
-            "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/favicon-32x32.png?sha=a5f7e554fde4da9eb21e053b0912bf5f"
+            "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/browserconfig.xml?sha=877c532bc5e11b01391e51b4fd9240e8",
+            "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/apple-touch-icon.png?sha=022ba774b52cac9c011759a7e825c3d9",
+            "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/favicon-32x32.png?sha=a5f7e554fde4da9eb21e053b0912bf5f",
+            "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/safari-pinned-tab.svg?sha=2435be0885fa16202744cd3a27b8db7a",
+            "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/mstile-150x150.png?sha=7b2975de51daf269a56fd707690fabb2",
+            "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/favicon-16x16.png?sha=a1acaa77c80ac2b38e2900bcc94fe037",
+            "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/mstile-310x310.png?sha=761cd134ecf3a14ded757317ebf70cf9",
+            "https://testing.theme-park.dev/css/addons/radarr/radarr-anime-favicon/android-chrome-192x192.png?sha=8125062f86994ced07cc5f7085679b86"
           ]
         },
         "radarr-darker": "https://testing.theme-park.dev/css/addons/radarr/radarr-darker/radarr-darker.css?sha=2a30971854d495f7c56405bd4e73d34f"
@@ -535,20 +535,20 @@
         "readarr-alt-calendar": "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-calendar/readarr-alt-calendar.css?sha=73c0809f9a113737111a64e419c7452b",
         "readarr-alt-favicon": {
           "files": [
-            "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/favicon-16x16.png?sha=2d4c0bac57194db1960a2564743dedf7",
             "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/site.webmanifest?sha=7535bb0b5cbccbccff041bb117f9cfe9",
-            "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/safari-pinned-tab.svg?sha=fb5c4dc56fe02aa5c4c8438b78be9402",
-            "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/mstile-70x70.png?sha=84b0fb0a6628be72227ad1d0a5af577c",
-            "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/android-chrome-192x192.png?sha=11d66e4bbe7c6da125ddc5dd63307ebf",
-            "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/mstile-144x144.png?sha=d048f794ba26069b4344cecbe9cda923",
-            "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/browserconfig.xml?sha=877c532bc5e11b01391e51b4fd9240e8",
-            "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/mstile-310x310.png?sha=4c492637d72a2c92e8da23b761faba9e",
-            "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/favicon.ico?sha=9a03066d0acc4a31786e8b65d882e71e",
             "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/mstile-310x150.png?sha=a1b8d78963b7112f880a4d66268a7a04",
-            "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/apple-touch-icon.png?sha=86cc86825d359ddf50d65d4373ddbca0",
-            "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/mstile-150x150.png?sha=ac7e3f31e80d577ed89b0d12da8d0c44",
+            "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/mstile-144x144.png?sha=d048f794ba26069b4344cecbe9cda923",
+            "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/favicon.ico?sha=9a03066d0acc4a31786e8b65d882e71e",
+            "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/mstile-70x70.png?sha=84b0fb0a6628be72227ad1d0a5af577c",
             "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/android-chrome-512x512.png?sha=0c6bbfb86b1fb1a5a8f8a4693e99b409",
-            "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/favicon-32x32.png?sha=0764360d4d54c5e7020100d399792ce5"
+            "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/browserconfig.xml?sha=877c532bc5e11b01391e51b4fd9240e8",
+            "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/apple-touch-icon.png?sha=86cc86825d359ddf50d65d4373ddbca0",
+            "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/favicon-32x32.png?sha=0764360d4d54c5e7020100d399792ce5",
+            "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/safari-pinned-tab.svg?sha=fb5c4dc56fe02aa5c4c8438b78be9402",
+            "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/mstile-150x150.png?sha=ac7e3f31e80d577ed89b0d12da8d0c44",
+            "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/favicon-16x16.png?sha=2d4c0bac57194db1960a2564743dedf7",
+            "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/mstile-310x310.png?sha=4c492637d72a2c92e8da23b761faba9e",
+            "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-favicon/android-chrome-192x192.png?sha=11d66e4bbe7c6da125ddc5dd63307ebf"
           ]
         },
         "readarr-alt-logo": "https://testing.theme-park.dev/css/addons/readarr/readarr-alt-logo/readarr-alt-logo.css?sha=d00cca34b817447663059201c1113cd2",
@@ -577,60 +577,60 @@
       "addons": {
         "sonarr-4k-favicon": {
           "files": [
-            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/favicon-16x16.png?sha=1f2dc622d0b024c32c6d74caa2e2f962",
             "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/site.webmanifest?sha=7535bb0b5cbccbccff041bb117f9cfe9",
-            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/safari-pinned-tab.svg?sha=8c2733c8d3c15cb42b874960caa4e12f",
-            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/mstile-70x70.png?sha=a48f902fcfca59457fca571882891d4e",
-            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/android-chrome-192x192.png?sha=0cf23797ffd6311d560513c913c39dc0",
-            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/mstile-144x144.png?sha=c2431daf7d8a0edac270a65649d5ce2b",
-            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/browserconfig.xml?sha=877c532bc5e11b01391e51b4fd9240e8",
-            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/mstile-310x310.png?sha=b96e53bf93405aa812e9a67bf79af1c8",
-            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/favicon.ico?sha=d986d85829057bce3dd905c6c676ea21",
             "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/mstile-310x150.png?sha=1a6b8fc2f40c87231c64e904ba8bb699",
-            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/apple-touch-icon.png?sha=e1b31dc827c7c4dd43d9506f7366fce3",
-            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/mstile-150x150.png?sha=923292f837d10590e26b0671fec60c75",
+            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/mstile-144x144.png?sha=c2431daf7d8a0edac270a65649d5ce2b",
+            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/favicon.ico?sha=d986d85829057bce3dd905c6c676ea21",
+            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/mstile-70x70.png?sha=a48f902fcfca59457fca571882891d4e",
             "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/android-chrome-512x512.png?sha=8495302021f726f0f6b541ac9b8c7ee2",
-            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/favicon-32x32.png?sha=a6b31ff58b7d1dcc42dfae24dde6a1f7"
+            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/browserconfig.xml?sha=877c532bc5e11b01391e51b4fd9240e8",
+            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/apple-touch-icon.png?sha=e1b31dc827c7c4dd43d9506f7366fce3",
+            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/favicon-32x32.png?sha=a6b31ff58b7d1dcc42dfae24dde6a1f7",
+            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/safari-pinned-tab.svg?sha=8c2733c8d3c15cb42b874960caa4e12f",
+            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/mstile-150x150.png?sha=923292f837d10590e26b0671fec60c75",
+            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/favicon-16x16.png?sha=1f2dc622d0b024c32c6d74caa2e2f962",
+            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/mstile-310x310.png?sha=b96e53bf93405aa812e9a67bf79af1c8",
+            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-favicon/android-chrome-192x192.png?sha=0cf23797ffd6311d560513c913c39dc0"
           ]
         },
         "sonarr-4k-logo": "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-logo/sonarr-4k-logo.css?sha=0ddaba0f1bc2251865847b818b1b97db",
         "sonarr-4k-text-logo": "https://testing.theme-park.dev/css/addons/sonarr/sonarr-4k-text-logo/sonarr-4k-text-logo.css?sha=7f395b22cef125a12546e16c1f0b8696",
         "sonarr-anime-blue-favicon": {
           "files": [
-            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/favicon-16x16.png?sha=e13930e1359aa9fbc7e4a24fb68b1c0d",
             "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/site.webmanifest?sha=7535bb0b5cbccbccff041bb117f9cfe9",
-            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/safari-pinned-tab.svg?sha=b95c74a70df6ad6729d5990b418c16f1",
-            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/mstile-70x70.png?sha=93eedf302661fd8f281e4a38b60cbce7",
-            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/android-chrome-192x192.png?sha=f9b005606f2fe83a997079538b4b2372",
-            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/mstile-144x144.png?sha=eca17409f4617d5b25d3a046cfbafb1c",
-            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/browserconfig.xml?sha=877c532bc5e11b01391e51b4fd9240e8",
-            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/mstile-310x310.png?sha=15224e7eb185c1e8b5d44495b659b880",
-            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/favicon.ico?sha=26c100dbeadec2114eef5e2ccdaf7c08",
             "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/mstile-310x150.png?sha=ba7efbc97526cf39948533d655297db2",
-            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/apple-touch-icon.png?sha=003b6175e94b39b3f56abbd10c025e4c",
-            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/mstile-150x150.png?sha=1bcabeb653e8b02da39ebafc4c701a66",
+            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/mstile-144x144.png?sha=eca17409f4617d5b25d3a046cfbafb1c",
+            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/favicon.ico?sha=26c100dbeadec2114eef5e2ccdaf7c08",
+            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/mstile-70x70.png?sha=93eedf302661fd8f281e4a38b60cbce7",
             "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/android-chrome-512x512.png?sha=76f0cd525ababc83824a0c291676de0b",
-            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/favicon-32x32.png?sha=0753a10fff777350679b320dbf46ad66"
+            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/browserconfig.xml?sha=877c532bc5e11b01391e51b4fd9240e8",
+            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/apple-touch-icon.png?sha=003b6175e94b39b3f56abbd10c025e4c",
+            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/favicon-32x32.png?sha=0753a10fff777350679b320dbf46ad66",
+            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/safari-pinned-tab.svg?sha=b95c74a70df6ad6729d5990b418c16f1",
+            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/mstile-150x150.png?sha=1bcabeb653e8b02da39ebafc4c701a66",
+            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/favicon-16x16.png?sha=e13930e1359aa9fbc7e4a24fb68b1c0d",
+            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/mstile-310x310.png?sha=15224e7eb185c1e8b5d44495b659b880",
+            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-favicon/android-chrome-192x192.png?sha=f9b005606f2fe83a997079538b4b2372"
           ]
         },
         "sonarr-anime-blue-logo": "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-logo/sonarr-anime-blue-logo.css?sha=77546c9357bca233ce72b0bbc1e2faf6",
         "sonarr-anime-blue-text-logo": "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-blue-text-logo/sonarr-anime-blue-text-logo.css?sha=ace9f9553c106aff893d28cf9f13225a",
         "sonarr-anime-favicon": {
           "files": [
-            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/favicon-16x16.png?sha=602c6d8749048df0fa90e66aaf382dd8",
             "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/site.webmanifest?sha=7535bb0b5cbccbccff041bb117f9cfe9",
-            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/safari-pinned-tab.svg?sha=869c600d2478e70cecd1dc015aa41601",
-            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/mstile-70x70.png?sha=e41bcd7b9221bb38dfa57d03f213c339",
-            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/android-chrome-192x192.png?sha=4b8cd42018cf12fb353b646c57b35840",
-            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/mstile-144x144.png?sha=dfe3a6a40a6cabdcbc02a622d62ed537",
-            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/browserconfig.xml?sha=877c532bc5e11b01391e51b4fd9240e8",
-            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/mstile-310x310.png?sha=3036e09b0b3db8c7a8ba9464e2243640",
-            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/favicon.ico?sha=fdf24af80330b5183d19220c21d9f3fe",
             "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/mstile-310x150.png?sha=84bf3e9af766087148136e62beec8a40",
-            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/apple-touch-icon.png?sha=eba789cd7705d91c2cf402e576d2cf6c",
-            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/mstile-150x150.png?sha=5432d1017ec16e4ebfd2287fca3929a7",
+            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/mstile-144x144.png?sha=dfe3a6a40a6cabdcbc02a622d62ed537",
+            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/favicon.ico?sha=fdf24af80330b5183d19220c21d9f3fe",
+            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/mstile-70x70.png?sha=e41bcd7b9221bb38dfa57d03f213c339",
             "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/android-chrome-512x512.png?sha=beb288bc11ba955820abbd4911638401",
-            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/favicon-32x32.png?sha=3f9fa58b43676d2ea07c9bbe6d67ed65"
+            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/browserconfig.xml?sha=877c532bc5e11b01391e51b4fd9240e8",
+            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/apple-touch-icon.png?sha=eba789cd7705d91c2cf402e576d2cf6c",
+            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/favicon-32x32.png?sha=3f9fa58b43676d2ea07c9bbe6d67ed65",
+            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/safari-pinned-tab.svg?sha=869c600d2478e70cecd1dc015aa41601",
+            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/mstile-150x150.png?sha=5432d1017ec16e4ebfd2287fca3929a7",
+            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/favicon-16x16.png?sha=602c6d8749048df0fa90e66aaf382dd8",
+            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/mstile-310x310.png?sha=3036e09b0b3db8c7a8ba9464e2243640",
+            "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-favicon/android-chrome-192x192.png?sha=4b8cd42018cf12fb353b646c57b35840"
           ]
         },
         "sonarr-anime-logo": "https://testing.theme-park.dev/css/addons/sonarr/sonarr-anime-logo/sonarr-anime-logo.css?sha=40860b829628df4efee4a29f6cdf1505",
@@ -657,28 +657,28 @@
         "login-page": {
           "alien": {
             "css": [
-              "https://testing.theme-park.dev/css/addons/unraid/login-page/alien/hallway2.css?sha=68e19c319c2f1e096ed29bc49e41d06f",
-              "https://testing.theme-park.dev/css/addons/unraid/login-page/alien/isolation_video.css?sha=0403e2565a528489653f8f901ed5dc61",
-              "https://testing.theme-park.dev/css/addons/unraid/login-page/alien/alien-base.css?sha=fc4a6738a5170c4f73f136f276d6ac17",
-              "https://testing.theme-park.dev/css/addons/unraid/login-page/alien/isolation.css?sha=75e3199d3233e2e0feb001db425b39f3",
-              "https://testing.theme-park.dev/css/addons/unraid/login-page/alien/hallway4.css?sha=7ea974528d00c066f57f615c24047f5e",
               "https://testing.theme-park.dev/css/addons/unraid/login-page/alien/hallway3.css?sha=9597783a03df80232c8368fb5dc6f8b9",
+              "https://testing.theme-park.dev/css/addons/unraid/login-page/alien/alien-base.css?sha=fc4a6738a5170c4f73f136f276d6ac17",
               "https://testing.theme-park.dev/css/addons/unraid/login-page/alien/scanner.css?sha=ca02d6ab12c26ea115dd11a9e0558534",
-              "https://testing.theme-park.dev/css/addons/unraid/login-page/alien/hallway.css?sha=b57cf1d1d07c0a233c64063d18ca4144",
               "https://testing.theme-park.dev/css/addons/unraid/login-page/alien/custom.css?sha=0370ea32d95c8a84914495813270657b",
+              "https://testing.theme-park.dev/css/addons/unraid/login-page/alien/isolation.css?sha=75e3199d3233e2e0feb001db425b39f3",
+              "https://testing.theme-park.dev/css/addons/unraid/login-page/alien/isolation_video.css?sha=0403e2565a528489653f8f901ed5dc61",
+              "https://testing.theme-park.dev/css/addons/unraid/login-page/alien/hallway4.css?sha=7ea974528d00c066f57f615c24047f5e",
+              "https://testing.theme-park.dev/css/addons/unraid/login-page/alien/hallway.css?sha=b57cf1d1d07c0a233c64063d18ca4144",
+              "https://testing.theme-park.dev/css/addons/unraid/login-page/alien/hallway2.css?sha=68e19c319c2f1e096ed29bc49e41d06f",
               "https://testing.theme-park.dev/css/addons/unraid/login-page/alien/nightmare.css?sha=2cb4228929cd925c2c8cb4ca2b19c027"
             ],
             "files": []
           },
           "fallout": {
             "css": [
-              "https://testing.theme-park.dev/css/addons/unraid/login-page/fallout/terminal2.css?sha=42a605d8ee62c0aa2acce4b533db02a2",
-              "https://testing.theme-park.dev/css/addons/unraid/login-page/fallout/dirty_terminal.css?sha=582b56370855f8130a590d5fe886f554",
-              "https://testing.theme-park.dev/css/addons/unraid/login-page/fallout/terminal.css?sha=789f42770eef041174ced544bab84c67",
-              "https://testing.theme-park.dev/css/addons/unraid/login-page/fallout/fallout-base.css?sha=41c2ac16dd7cef7e51cc9348d61becb2",
               "https://testing.theme-park.dev/css/addons/unraid/login-page/fallout/fallout_video.css?sha=1fc7edb76308267a2f676f4877d9886e",
+              "https://testing.theme-park.dev/css/addons/unraid/login-page/fallout/terminal.css?sha=789f42770eef041174ced544bab84c67",
               "https://testing.theme-park.dev/css/addons/unraid/login-page/fallout/dirty_terminal2.css?sha=0c7d7dd298198199fd72bdf2344f116c",
-              "https://testing.theme-park.dev/css/addons/unraid/login-page/fallout/custom.css?sha=861291eb0b3ae0a7d2caa7a0d1a49719"
+              "https://testing.theme-park.dev/css/addons/unraid/login-page/fallout/dirty_terminal.css?sha=582b56370855f8130a590d5fe886f554",
+              "https://testing.theme-park.dev/css/addons/unraid/login-page/fallout/fallout-base.css?sha=41c2ac16dd7cef7e51cc9348d61becb2",
+              "https://testing.theme-park.dev/css/addons/unraid/login-page/fallout/custom.css?sha=861291eb0b3ae0a7d2caa7a0d1a49719",
+              "https://testing.theme-park.dev/css/addons/unraid/login-page/fallout/terminal2.css?sha=42a605d8ee62c0aa2acce4b533db02a2"
             ],
             "files": []
           },
@@ -687,13 +687,13 @@
           ],
           "retro-terminal": {
             "css": [
+              "https://testing.theme-park.dev/css/addons/unraid/login-page/retro-terminal/red.css?sha=b2ea498ff13040bc4594ddeb1ef3e445",
               "https://testing.theme-park.dev/css/addons/unraid/login-page/retro-terminal/blue.css?sha=395aed61d19745e19d9f9d1e602e08e8",
+              "https://testing.theme-park.dev/css/addons/unraid/login-page/retro-terminal/amber.css?sha=051bbc07b5b26db06074d87a25fe8ddf",
               "https://testing.theme-park.dev/css/addons/unraid/login-page/retro-terminal/green.css?sha=02b52541ad43826cbae2de3bf15c6b0c",
               "https://testing.theme-park.dev/css/addons/unraid/login-page/retro-terminal/white.css?sha=d735c2c32bdc72ff306fe83dd20c6375",
-              "https://testing.theme-park.dev/css/addons/unraid/login-page/retro-terminal/amber.css?sha=051bbc07b5b26db06074d87a25fe8ddf",
-              "https://testing.theme-park.dev/css/addons/unraid/login-page/retro-terminal/retro-terminal-base.css?sha=6280d1ac659ed9285be1af4029922bdf",
               "https://testing.theme-park.dev/css/addons/unraid/login-page/retro-terminal/custom.css?sha=5b8031420e620a084427a82a44687240",
-              "https://testing.theme-park.dev/css/addons/unraid/login-page/retro-terminal/red.css?sha=b2ea498ff13040bc4594ddeb1ef3e445"
+              "https://testing.theme-park.dev/css/addons/unraid/login-page/retro-terminal/retro-terminal-base.css?sha=6280d1ac659ed9285be1af4029922bdf"
             ],
             "files": []
           }
