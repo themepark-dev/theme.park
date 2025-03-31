@@ -1,10 +1,9 @@
 @import url("/css/defaults/placeholders.css");
 @import url("/css/defaults/transparent.css");
 
-
 /* TEXT */
 body,
-p{
+p {
   color: var(--text) !important;
 }
 
@@ -13,227 +12,304 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
   color: var(--text-hover) !important;
 }
 
-
 /* LINKS */
-a{
+a {
   color: var(--link-color) !important;
 }
 
-a:hover{
+a:hover {
   color: var(--link-color-hover) !important;
 }
 
-
-/* BODY */
-.bg-primary{
-    background: var(--transparency-dark-40) !important;
-}
-body, .bg-bg, #bookshelf, #app-content, #page-wrapper{
-    background-image:none !important;
-    background: var(--main-bg-color);
-    background-repeat: repeat, no-repeat;
-    background-attachment: fixed, fixed;
-    background-position: center center, center center;
-    background-size: auto, cover;
-    -webkit-background-size: auto, cover;
-    -moz-background-size: auto, cover;
-    -o-background-size: auto, cover;
-    color: var(--text);
-}
-.bg-bg{
-    background: var(--modal-header-color) !important;
+/* MAIN BACKGROUNDS */
+body {
+  background: var(--main-bg-color) !important;
 }
 
+.bg-primary {
+  background: var(--transparency-dark-40) !important;
+}
 
-/* HEADER */
+div.bg-primary {
+  background: var(--main-bg-color) !important;
+}
+
+#app-content div.bg-primary {
+  background: var(--transparency-dark-40) !important;
+}
+
+.hover\:bg-primary:hover {
+  color: var(--accent-color-hover) !important;
+}
+
+#bookshelf,
+#page-wrapper {
+  background: revert !important;
+  background-color: revert !important;
+  background-image: revert !important;
+}
+
+body .bg-bg,
+button.bg-bg {
+  background: var(--modal-bg-color) !important;
+  background-color: var(--modal-bg-color) !important;
+}
+
+/* De-Yellow */
+[class*="text-yellow"],
+[class*="hover:text-yellow"]:hover {
+    color: var(--button-color) !important;
+}
+[class*="bg-yellow"],
+[class*="hover:bg-yellow"]:hover {
+    background-color: var(--button-color) !important;
+}
+
+/* Borders */
+body #appbar *,
+body #app-content *,
+body .modal *{
+  border-color: rgba(var(--accent-color),0.15) !important
+}
+
+/* Header */
 #appbar,
-#appbar > div{
-    background: var(--modal-header-color) !important;
+#toolbar,
+.box-shadow-side {
+  box-shadow: 0 5px 5px var(--transparency-dark-25);
 }
 
+#toolbar {
+  background-color: var(--transparency-dark-40);
+}
+
+#appbar {
+  background-color: var(--button-color);
+}
+
+#appbar form[role="search"] .bg-primary {
+  background-color: var(--button-text) !important;
+}
+
+#appbar form[role="search"] [class*="text-"] {
+  color: var(--label-text-color) !important;
+}
+
+#appbar a .material-symbols,
+#appbar a .abs-icons {
+  color: var(--button-text) !important;
+}
+
+#appbar a .material-symbols:hover,
+#appbar a .abs-icons:hover {
+  color: var(--button-text-hover) !important;
+}
+
+/* Header Dropdowns */
+#appbar>div>div>button,
+#appbar>div a[aria-haspopup="listbox"] {
+  background-color: var(--drop-down-menu-bg) !important;
+}
+
+#appbar>div>div>button *,
+#appbar>div a[aria-haspopup="listbox"] * {
+  color: var(--button-text) !important;
+}
+
+/* Sidebar */
+[role="toolbar"] {
+  background: var(--transparency-dark-40) !important;
+  background-color: var(--transparency-dark-40) !important;
+}
+
+#toolbar[role="toolbar"],
+[role="toolbar"] [role="navigation"] {
+  background: initial !important;
+  background-color: initial !important;
+}
+
+#siderail-buttons-container a .material-symbols {
+  color: rgb(var(--link-color)) !important;
+}
+
+#siderail-buttons-container a .material-symbols:hover {
+  color: var(--link-color-hover) !important;
+}
+
+#siderail-buttons-container>a:hover .material-symbols,
+#siderail-buttons-container>a:hover svg {
+  color: var(--link-color-hover) !important;
+}
+
+#siderail-buttons-container>a[aria-current="page"] {
+  color: var(--button-text-color) !important;
+}
+
+#siderail-buttons-container>a[aria-current="page"]:hover .material-symbols,
+#siderail-buttons-container>a[aria-current="page"]:hover svg {
+  color: var(--button-text-color-hover) !important;
+}
 
 /* BUTTONS */
 button.bg-success,
-button.bg-success *, 
-.abs-btn,
-button.bg-primary, a.bg-primary{
-    background: var(--button-color) !important;
-    color: var(--button-text) !important;
-    border:none !important;
+button.bg-primary,
+a.bg-primary,
+button.abs-btn,
+.abs-btn.bg-primary {
+  background: var(--button-color) !important;
+  color: var(--button-text) !important;
+  border: none !important;
 }
-button.bg-success:hover,
-button.bg-success:hover *,
-.abs-btn:hover,
-button.bg-primary:hover, a.bg-primary:hover{
-    background: var(--button-color-hover) !important;
-    color: var(--button-text-hover) !important;
-}
-button .material-icons{
-    color: var(--button-text-color) !important;
-}
-button:hover .material-icons{
-    color: var(--button-text-color-hover) !important;
-}
-
-
-/* CARDS */
-[id*="book-card-"] .border-yellow-400{
-    border-color:var(--button-color) !important;
-}
-
 
 /* Icons */
-.material-icons,
-.abs-icons{
-    color: rgb(var(--accent-color)) !important;
-}
-.material-icons:hover,
-.abs-icons:hover{
-    color: var(--accent-color-hover) !important;
+.material-symbols,
+.abs-icons {
+  color: rgb(var(--button-color)) !important;
 }
 
-
-/* TOOLBAR */
-#toolbar{
-    background: var(--transparency-dark-25) !important;
+.material-symbols:hover,
+.abs-icons:hover {
+  color: var(--button-color-hover) !important;
 }
-
-
-/* SIDEBAR */
-.box-shadow-side{
-    background: var(--transparency-dark-25) !important;
-}
-#siderail-buttons-container [class*="bg-yellow-"]{
-    background: rgb(var(--accent-color)) !important;
-}
-#siderail-buttons-container > a{
-    background: var(--modal-header-color) !important;
-}
-#siderail-buttons-container > a [class*="material-icons-"],
-#siderail-buttons-container > a svg{
-    color: rgb(var(--accent-color)) !important;
-}
-#siderail-buttons-container > a:hover [class*="material-icons-"],
-#siderail-buttons-container > a:hover svg{
-    color: var(--accent-color-hover) !important;
-}
-#siderail-buttons-container > a[aria-current="page"] [class*="material-icons-"],
-#siderail-buttons-container > a[aria-current="page"] svg{
-    color: var(--button-text-color) !important;
-}
-#siderail-buttons-container > a[aria-current="page"]:hover [class*="material-icons-"],
-#siderail-buttons-container > a[aria-current="page"]:hover svg{
-    color: var(--button-text-color-hover) !important;
-}
-
-
-/* SCROLLBAR */
-::-webkit-scrollbar-thumb{
-    background: rgb(var(--accent-color)) !important;
-}
-#bookshelf{
-    scrollbar-color: rgb(var(--accent-color)) transparent !important;
-}
-
 
 /* INPUTS */
-input.bg-primary{
-    background:none !important;
+input.bg-primary {
+  background: none !important;
 }
 
+ul.bg-primary {
+  background-color: var(--drop-down-menu-bg) !important;
+}
+
+input.bg-primary {
+  background: var(--drop-down-menu-bg) !important;
+}
+
+/* Cards */
+[id*="book-card"] .material-symbols {
+  color: var(--button-text) !important;
+  background-color: var(--button-color) !important;
+  border-radius: 99px;
+  padding: 0.15em;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--accent-color)) !important;
+}
+
+body,
+#bookshelf {
+  scrollbar-color: rgb(var(--accent-color)) transparent !important;
+}
+
+/* Modals */
+.modal div.bg-primary {
+  background: var(--transparency-dark-40) !important;
+}
+
+.modal.modal-bg {
+  background: var(--overseerr-gradient) !important;
+}
+
+.modal-bg .bg-bg {
+  background-color: var(--modal-bg-color);
+}
+
+.modal #formWrapper .bg-primary {
+  background-color: var(--transparency-dark-0) !important;
+}
+
+.modal [role="tablist"] .tab {
+  background-color: var(--button-color) !important;
+  color: var(--button-text) !important;
+}
+
+.modal [role="tablist"] .tab:hover {
+  background-color: var(--button-color-hover) !important;
+  color: var(--button-text-hover) !important;
+}
+
+.modal [role="tablist"] .tab-selected {
+  background: var(--button-color-hover) !important;
+  color: var(--button-text-hover) !important;
+}
+
+.modal [role="tablist"] .tab-selected:hover {
+  background-color: var(--button-color-hover) !important;
+  color: var(--button-text-hover) !important;
+}
 
 /* TABLES */
 table * {
-    background: transparent !important;
-}
-table tr:nth-child(2n){
-    background: var(--transparency-dark-30) !important;
-}
-table tr:nth-child(odd){
-    background: var(--transparency-dark-15) !important;
-}
-table tr:hover{
-    background: rgb(var(--accent-color),0.25) !important;
-}
-table tr:nth-child(1), table tr:nth-child(1):hover {
-    background: var(--transparency-dark-25) !important;
-}
-table tr svg.text-green-500{
-    color: rgb(var(--accent-color)) !important;
+  background: transparent !important;
 }
 
-
-
-/* DROPDOWNS */
-button[aria-haspopup="listbox"]{
-    background: var(--transparency-dark-25) !important;
-    color: var(--text) !important;
-}
-ul[role="listbox"]{
-    background: var(--modal-bg-color) !important;
-}
-ul[role="listbox"] li:hover{
-    background: var(--transparency-dark-25) !important;
-}
-ul[role="listbox"] li.text-yellow-400{
-    color: rgb(var(--accent-color)) !important;
-}
-ul[role="listbox"] li.text-yellow-400:hover{
-    color: var(--accent-color-hover) !important;
+table tr:nth-child(2n) {
+  background: var(--transparency-dark-30) !important;
 }
 
-/* CONFIGPAGE */
-.configContent button[role="checkbox"].bg-primary{
-    background: var(--transparency-dark-35) !important;
-}
-.configContent button[role="checkbox"].bg-success{
-    background: var(--button-color) !important;
-}
-.configContent button[role="checkbox"] > span{
-    background: var(--text-hover) !important;
-    border: var(--text-hover) !important;
+table tr:nth-child(odd) {
+  background: var(--transparency-dark-15) !important;
 }
 
-/* CONFIGPAGE - SETTINGS */
-.configContent .userAudiobooksTable tr:nth-child(1){
-    background: var(--transparency-dark-40) !important;
+table tr:hover {
+  background: rgb(var(--accent-color), 0.25) !important;
 }
-.configContent .userAudiobooksTable tr.isFinished{
-    background:rgb(var(--accent-color),0.15) !important;
+
+table tr:nth-child(1),
+table tr:nth-child(1):hover {
+  background: var(--transparency-dark-25) !important;
+}
+
+table tr svg.text-green-500 {
+  color: rgb(var(--accent-color)) !important;
+}
+
+/* CONFIGPAGE - MAIN */
+.configContent button[role="checkbox"].bg-primary {
+  background: var(--transparency-dark-35) !important;
+}
+
+.configContent button[role="checkbox"].bg-success {
+  background: var(--button-color) !important;
+}
+
+.configContent button[role="checkbox"]>span {
+  background: var(--text-hover) !important;
+  border: var(--text-hover) !important;
 }
 
 /* CONFIGPAGE - LIBRARIES */
-.configContent.page-Libraries .list-group .bg-warning{
-    background: rgb(var(--accent-color)) !important;
+.configContent.page-Libraries .list-group .bg-warning {
+  background: rgb(var(--accent-color)) !important;
 }
 
 /* CONFIGPAGE - LOGS */
-.configContent.page-Logs #log-container .bg-info{
-    background: var(--transparency-dark-40) !important;
+.configContent.page-Logs #log-container .bg-info {
+  background: var(--transparency-dark-40) !important;
 }
 
 /* CONFIGPAGE - AUTHENTICATION */
-.configContent.page-Authentication svg.text-green-500{
-    color: rgb(var(--accent-color)) !important;
+.configContent.page-Authentication svg.text-green-500 {
+  color: rgb(var(--accent-color)) !important;
 }
 
-/* CONFIGPAGE - STATS */
-.configContent.Stats .bg-yellow-400{
-    background: rgb(var(--accent-color)) !important;
+/* Code */
+code {
+  background: var(--transparency-dark-40) !important;
+  color: rgb(var(--accent-color)) !important;
 }
 
-
-/* MISC */
-code{
-    background: var(--transparency-dark-40) !important;
-    color: rgb(var(--accent-color)) !important;
+/* Series Page */
+div[id*="series-card"] div[cy-id="seriesLengthMarker"] {
+  background-color: var(--button-color) !important;
 }
-
-/* WTF? */
-#__layout > .bg-bg > .hidden > .absolute.bg-bg{
-    background: none !important;
+[cy-id="seriesSequence"] {
+  background-color: var(--button-color) !important;
+  color: var(--button-text) !important;
 }
