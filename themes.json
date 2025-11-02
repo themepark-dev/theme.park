@@ -1,5 +1,23 @@
 {
   "addons": {
+    "authelia": {
+      "authelia-bazarr-logo": "https://develop.theme-park.dev/css/addons/authelia/authelia-bazarr-logo/authelia-bazarr-logo.css?sha=7fd424890dc6818b0fdae026d3440ed8",
+      "authelia-jellyfin-logo": "https://develop.theme-park.dev/css/addons/authelia/authelia-jellyfin-logo/authelia-jellyfin-logo.css?sha=944969aeea1a7df5731ff286c7eab6f0",
+      "authelia-jellyseerr-logo": "https://develop.theme-park.dev/css/addons/authelia/authelia-jellyseerr-logo/authelia-jellyseerr-logo.css?sha=5fed04e0cf7ccc063ebdb30fdd4baeba",
+      "authelia-komga-logo": "https://develop.theme-park.dev/css/addons/authelia/authelia-komga-logo/authelia-komga-logo.css?sha=7426409bc76c0b811e1a788b3f8b0430",
+      "authelia-lidarr-logo": "https://develop.theme-park.dev/css/addons/authelia/authelia-lidarr-logo/authelia-lidarr-logo.css?sha=75cf0d726f7eaa0e8a45943b33586bc8",
+      "authelia-lldap-logo": "https://develop.theme-park.dev/css/addons/authelia/authelia-lldap-logo/authelia-lldap-logo.css?sha=3dffcaf7a7b647d0982791d2b0d7ffad",
+      "authelia-mylar-logo": "https://develop.theme-park.dev/css/addons/authelia/authelia-mylar-logo/authelia-mylar-logo.css?sha=c1a67ae8988f92089b57728b51dbd090",
+      "authelia-photoprism-logo": "https://develop.theme-park.dev/css/addons/authelia/authelia-photoprism-logo/authelia-photoprism-logo.css?sha=c3b73fe042e890e7c3ac244c9f6cac2a",
+      "authelia-pihole-logo": "https://develop.theme-park.dev/css/addons/authelia/authelia-pihole-logo/authelia-pihole-logo.css?sha=2d61879117067762e314713b08e3e639",
+      "authelia-prowlarr-logo": "https://develop.theme-park.dev/css/addons/authelia/authelia-prowlarr-logo/authelia-prowlarr-logo.css?sha=b1275c5c036954fdd3827b5c00d0ff31",
+      "authelia-qbittorrent-logo": "https://develop.theme-park.dev/css/addons/authelia/authelia-qbittorrent-logo/authelia-qbittorrent-logo.css?sha=58bca1e5e2ab272f0ef751d7cc71f67f",
+      "authelia-radarr-logo": "https://develop.theme-park.dev/css/addons/authelia/authelia-radarr-logo/authelia-radarr-logo.css?sha=81ab2fa8bdb94eaab199418ceafe33b8",
+      "authelia-romm-logo": "https://develop.theme-park.dev/css/addons/authelia/authelia-romm-logo/authelia-romm-logo.css?sha=eab02fef3c82d115e32fe35f31d5de29",
+      "authelia-sabnzbd-logo": "https://develop.theme-park.dev/css/addons/authelia/authelia-sabnzbd-logo/authelia-sabnzbd-logo.css?sha=456c9f0f86442093d26576e6f3643aec",
+      "authelia-sonarr-logo": "https://develop.theme-park.dev/css/addons/authelia/authelia-sonarr-logo/authelia-sonarr-logo.css?sha=e0a3caf5cac76ae728180fcae832448c",
+      "authelia-traefik-logo": "https://develop.theme-park.dev/css/addons/authelia/authelia-traefik-logo/authelia-traefik-logo.css?sha=1631bb574d92a53bf88a364fe9eee6f5"
+    },
     "bazarr": {
       "bazarr-4k-logo": "https://develop.theme-park.dev/css/addons/bazarr/bazarr-4k-logo/bazarr-4k-logo.css?sha=03c214d2ddd0871e9d824927df9eff42",
       "bazarr-darker": "https://develop.theme-park.dev/css/addons/bazarr/bazarr-darker/bazarr-darker.css?sha=8cc27a7ef567d383dc0227bcf94e8c08"
@@ -339,6 +357,27 @@
     "audiobookshelf": {
       "addons": {},
       "base_css": "https://develop.theme-park.dev/css/base/audiobookshelf/audiobookshelf-base.css?sha=ab5d4185b36f2bc47221ec69ae95a79a"
+    },
+    "authelia": {
+      "addons": {
+        "authelia-bazarr-logo": "https://develop.theme-park.dev/css/addons/authelia/authelia-bazarr-logo/authelia-bazarr-logo.css?sha=7fd424890dc6818b0fdae026d3440ed8",
+        "authelia-jellyfin-logo": "https://develop.theme-park.dev/css/addons/authelia/authelia-jellyfin-logo/authelia-jellyfin-logo.css?sha=944969aeea1a7df5731ff286c7eab6f0",
+        "authelia-jellyseerr-logo": "https://develop.theme-park.dev/css/addons/authelia/authelia-jellyseerr-logo/authelia-jellyseerr-logo.css?sha=5fed04e0cf7ccc063ebdb30fdd4baeba",
+        "authelia-komga-logo": "https://develop.theme-park.dev/css/addons/authelia/authelia-komga-logo/authelia-komga-logo.css?sha=7426409bc76c0b811e1a788b3f8b0430",
+        "authelia-lidarr-logo": "https://develop.theme-park.dev/css/addons/authelia/authelia-lidarr-logo/authelia-lidarr-logo.css?sha=75cf0d726f7eaa0e8a45943b33586bc8",
+        "authelia-lldap-logo": "https://develop.theme-park.dev/css/addons/authelia/authelia-lldap-logo/authelia-lldap-logo.css?sha=3dffcaf7a7b647d0982791d2b0d7ffad",
+        "authelia-mylar-logo": "https://develop.theme-park.dev/css/addons/authelia/authelia-mylar-logo/authelia-mylar-logo.css?sha=c1a67ae8988f92089b57728b51dbd090",
+        "authelia-photoprism-logo": "https://develop.theme-park.dev/css/addons/authelia/authelia-photoprism-logo/authelia-photoprism-logo.css?sha=c3b73fe042e890e7c3ac244c9f6cac2a",
+        "authelia-pihole-logo": "https://develop.theme-park.dev/css/addons/authelia/authelia-pihole-logo/authelia-pihole-logo.css?sha=2d61879117067762e314713b08e3e639",
+        "authelia-prowlarr-logo": "https://develop.theme-park.dev/css/addons/authelia/authelia-prowlarr-logo/authelia-prowlarr-logo.css?sha=b1275c5c036954fdd3827b5c00d0ff31",
+        "authelia-qbittorrent-logo": "https://develop.theme-park.dev/css/addons/authelia/authelia-qbittorrent-logo/authelia-qbittorrent-logo.css?sha=58bca1e5e2ab272f0ef751d7cc71f67f",
+        "authelia-radarr-logo": "https://develop.theme-park.dev/css/addons/authelia/authelia-radarr-logo/authelia-radarr-logo.css?sha=81ab2fa8bdb94eaab199418ceafe33b8",
+        "authelia-romm-logo": "https://develop.theme-park.dev/css/addons/authelia/authelia-romm-logo/authelia-romm-logo.css?sha=eab02fef3c82d115e32fe35f31d5de29",
+        "authelia-sabnzbd-logo": "https://develop.theme-park.dev/css/addons/authelia/authelia-sabnzbd-logo/authelia-sabnzbd-logo.css?sha=456c9f0f86442093d26576e6f3643aec",
+        "authelia-sonarr-logo": "https://develop.theme-park.dev/css/addons/authelia/authelia-sonarr-logo/authelia-sonarr-logo.css?sha=e0a3caf5cac76ae728180fcae832448c",
+        "authelia-traefik-logo": "https://develop.theme-park.dev/css/addons/authelia/authelia-traefik-logo/authelia-traefik-logo.css?sha=1631bb574d92a53bf88a364fe9eee6f5"
+      },
+      "base_css": "https://develop.theme-park.dev/css/base/authelia/authelia-base.css?sha=1a85ba1ba5481269658750da4dbf7a73"
     },
     "bazarr": {
       "addons": {

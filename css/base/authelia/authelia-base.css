@@ -1,0 +1,535 @@
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+
+/*		   		        Made by @gilbN - Authelia base by @emilyy3k					 */
+/* 			      https://github.com/gilbN/theme.park			 */
+
+@import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
+
+:root body {
+    background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    color: var(--text);
+}
+
+.MuiTypography-root {
+    color: var(--text);
+}
+
+/* Login Page Styles */
+button[aria-label="toggle password visibility"] {
+    color: var(--text);
+}
+
+button[aria-label="toggle password visibility"]:hover {
+    --IconButton-hoverBg: rgba(from var(--accent-color-hover) r g b / 0.08);
+}
+
+[class*="-rememberMe"] .MuiFormControlLabel-label.Mui-disabled {
+    color: rgba(from var(--text) r g b / 0.5);
+}
+
+svg#UserSvg[class*="-icon"] {
+    fill: var(--text-hover)
+}
+
+/* Button styles */
+.MuiButton-colorPrimary, .MuiButton-colorInfo {
+    --variant-containedBg: var(--button-color);
+    --variant-containedColor: var(--button-text);
+    --variant-textColor: rgb(var(--accent-color));
+    --variant-outlinedColor: rgb(var(--accent-color));
+}
+
+.MuiButton-colorPrimary:hover, .MuiButton-colorInfo:hover {
+    --variant-containedBg: var(--button-color-hover);
+    --variant-containedColor: var(--button-text-hover);
+    --variant-textColor: var(--accent-color-hover);
+    --variant-outlinedColor: var(--accent-color-hover);
+    --variant-textBg: rgba(from var(--accent-color-hover) r g b / 0.08);
+    --variant-outlinedBg: rgba(from var(--accent-color-hover) r g b / 0.08);
+}
+
+.MuiButton-colorPrimary .MuiTypography-root {
+    color: var(--variant-containedColor);
+}
+
+.MuiButton-textSecondary {
+    --variant-textColor: rgb(var(--accent-color));
+}
+
+.MuiButton-textSecondary:hover {
+    --variant-textColor: var(--accent-color-hover);
+}
+
+.MuiButton-textSuccess {
+    --variant-textColor: var(--arr-queue-color);
+}
+
+.MuiButton-colorSuccess {
+    --variant-textBg: transparent;
+    --variant-containedBg: var(--arr-queue-color);
+}
+
+.MuiDialogActions-root button[id="dialog-next"] {
+    --variant-textBg: transparent;
+}
+
+.MuiDialogActions-root button[id="dialog-next"]:hover {
+    --variant-textBg: rgba(from var(--button-color) r g b / 0.08);
+}
+
+.MuiButton-colorSuccess:hover {
+    --variant-textBg: rgba(from var(--arr-queue-color) r g b / 0.08);
+    --variant-containedBg: rgba(from var(--arr-queue-color) r g b / 0.8);
+}
+
+.MuiButton-colorError {
+    --variant-textBg: transparent;
+    --variant-containedBg: var(--plex-poster-unwatched);
+    --variant-outlinedColor: var(--plex-poster-unwatched);
+    --variant-outlinedBorder: rgba(from var(--plex-poster-unwatched) r g b / 0.5);
+}
+
+.MuiButton-colorError:hover {
+    --variant-textBg: rgba(from var(--plex-poster-unwatched) r g b / 0.08);
+    --variant-containedBg: rgba(from var(--plex-poster-unwatched) r g b / 0.8);
+    --variant-outlinedBg: rgba(from var(--plex-poster-unwatched) r g b / 0.08);
+    --variant-outlinedBorder: rgba(from var(--plex-poster-unwatched) r g b / 0.8);
+}
+
+.MuiButton-colorSecondary {
+    --variant-containedBg: rgba(from var(--button-color) r g b / 0.50);
+    --variant-containedColor: var(--button-text);
+    --variant-outlinedBorder: rgba(from var(--button-color) r g b / 0.15);
+}
+
+.MuiButton-colorSecondary:hover {
+    --variant-containedBg: rgba(from var(--button-color-hover) r g b / 0.50);
+    --variant-containedColor: var(--button-text-hover);
+    --variant-outlinedBorder: rgba(from var(--button-color-hover) r g b / 0.15);
+    --variant-textBg: rgba(from var(--button-color-hover) r g b / 0.08);
+}
+
+.MuiButton-outlinedPrimary  {
+    --variant-outlinedBorder: rgba(from rgb(var(--accent-color)) r g b / 0.7);
+    --variant-outlinedColor: rgb(var(--accent-color));
+}
+
+.MuiButton-outlinedPrimary:hover  {
+    --variant-outlinedBorder: rgba(from var(--accent-color-hover) r g b / 0.7);
+    --variant-outlinedColor: var(--accent-color-hover);
+    --variant-textBg: rgba(from var(--accent-color-hover) r g b / 0.08);
+    --variant-outlinedBg: rgba(from var(--accent-color-hover) r g b / 0.08);
+}
+
+.MuiButtonBase-root.Mui-disabled {
+    color: rgba(from var(--text) r g b / 0.3) !important;
+}
+
+.MuiButton-colorPrimary .MuiButton-icon svg {
+    fill: var(--button-text) !important;
+}
+
+.MuiButton-colorPrimary:hover .MuiButton-icon svg {
+    fill: var(--button-text-hover) !important;
+}
+
+/* Progress Bar styles */
+.MuiLinearProgress-colorPrimary {
+    background-color: var(--button-color);
+}
+
+.MuiLinearProgress-barColorPrimary {
+    background-color: var(--button-color-hover);
+}
+
+/* Link styles */
+.MuiLink-root {
+    color: var(--link-color);
+}
+
+.MuiLink-root:hover {
+    color: var(--link-color-hover);
+}
+
+.MuiLink-underlineHover[href*="authelia.com"] {
+    color: var(--text-muted);
+}
+
+.MuiLink-button {
+    color: var(--link-color);
+}
+
+/* OAuth Styles */
+[class*="scopesListContainer"] .MuiList-root[class*="-scopesList"] {
+    -webkit-backdrop-filter: saturate(1) blur(1.5em);
+    backdrop-filter: saturate(1) blur(1.5em);
+    background: var(--transparency-dark-25);
+}
+
+/* Settings Styles */
+.MuiAppBar-colorPrimary, [class*="MuiDrawer-paper"] {
+    background: var(--transparency-dark-25);
+}
+
+.MuiPaper-rounded:not([class*="Alert"]) {
+    background: var(--transparency-dark-35);
+}
+
+.MuiPaper-outlined {
+    border-color: var(--transparency-dark-10) !important;
+}
+
+.MuiDivider-root {
+    border-color: var(--transparency-light-10) !important;
+}
+
+.MuiSvgIcon-colorPrimary {
+    color: rgb(var(--accent-color)) !important;
+}
+
+.success-icon {
+    color: var(--arr-queue-color) !important;
+}
+
+.failure-icon {
+    color: var(--plex-poster-unwatched) !important;
+}
+
+.MuiStack-root .MuiBox-root .MuiBox-root {
+    border-color: rgba(from var(--text) r g b / 0.45)
+}
+
+#language-button {
+    color: var(--text);
+}
+
+#language-button:hover {
+    --IconButton-hoverBg: rgba(from var(--text) r g b / 0.08);
+}
+
+/* Alert Styles */
+.MuiAlert-filled {
+    -webkit-backdrop-filter: saturate(1) blur(0.5em);
+    backdrop-filter: saturate(1) blur(0.5em);
+    --ath-alert-opacity: 0.7;
+}
+
+.MuiAlert-filledError {
+    background-color: rgba(211, 47, 47, var(--ath-alert-opacity));
+}
+
+.MuiAlert-filledWarning {
+    background-color: rgba(237, 108, 2, var(--ath-alert-opacity));
+}
+
+.MuiAlert-filledSuccess {
+    background-color: rgba(46, 125, 50, var(--ath-alert-opacity));
+}
+
+.MuiAlert-filledInfo {
+    background-color: rgba(2, 136, 209, var(--ath-alert-opacity));
+}
+
+/* Button List Menu Styles */
+.MuiListItemButton-root.Mui-selected {
+    background-color: rgba(from var(--button-color) r g b / 0.16) !important;
+}
+.MuiListItemButton-root.Mui-selected:hover {
+    background-color: rgb(from var(--button-color) r g b / 0.24) !important;
+}
+
+.MuiListItemButton-root:hover:not(.Mui-selected) {
+    background-color: rgba(from var(--text) r g b / 0.08) !important;
+}
+
+#settings-menu .MuiSvgIcon-root {
+    color: var(--text) !important;
+    --IconButton-hoverBg: rgba(from var(--text) r g b / 0.08);
+}
+
+.MuiFormLabel-colorPrimary {
+    color: rgb(from var(--text) r g b / 0.7);
+}
+
+.MuiFormControlLabel-label {
+    color: var(--text);
+}
+
+/* WebAuthn Registration Styles */
+.information-icon {
+    color: rgb(var(--accent-color));
+}
+
+.MuiStepConnector-line {
+    border-color: rgba(from var(--text) r g b / 0.45) !important;
+}
+
+.MuiStepIcon-root.Mui-active {
+    color: rgb(var(--accent-color));
+}
+
+.MuiStepIcon-root.Mui-completed {
+    color: rgb(var(--accent-color));
+}
+
+.MuiStepLabel-label:not(.Mui-active) {
+    color: rgba(from var(--text) r g b / 0.7) !important;
+}
+
+.MuiStepLabel-iconContainer.Mui-active .MuiStepIcon-text, .MuiStepLabel-label.Mui-active {
+    fill: var(--text);
+}
+
+.MuiStepLabel-label.Mui-active {
+    color: var(--text);
+}
+
+.MuiStepLabel-iconContainer.Mui-disabled .MuiStepIcon-text {
+    fill: rgba(from var(--text) r g b / 0.9);
+}
+
+.MuiStepLabel-iconContainer.Mui-disabled .MuiStepIcon-root {
+    color: rgba(from var(--text) r g b / 0.5);
+}
+
+.tss-1nomc0u-icon svg circle[stroke-width="10"] {
+    stroke: rgb(var(--accent-color));
+}
+.tss-1nomc0u-icon svg circle[stroke="transparent"] {
+    fill: var(--text);
+}
+.tss-1nomc0u-icon svg circle[stroke-width="2"] {
+    stroke: var(--text);
+}
+
+/* Icon Button Styles */
+.MuiIconButton-colorPrimary {
+    color: rgb(var(--accent-color));
+    fill: rgb(var(--accent-color));
+}
+
+.MuiIconButton-colorPrimary:hover {
+   background-color: rgba(from rgb(var(--accent-color)) r g b / 0.055) !important;
+}
+
+/* Avatar Styles */
+.MuiAvatar-colorDefault { 
+    color: var(--button-color);
+    background-color: var(--button-color-hover);
+}
+
+.MuiPopover-paper, .MuiPopover-paper::before {
+    background-color: var(--transparency-dark-25);
+}
+
+/* Logged In Page, 2FA and MFA Styles */
+[id="authenticated-stage"] [class*="-mainContainer"], [id*="second-factor-stage"] [class*="-methodContainer"] {
+    border-color: var(--transparency-light-20) !important;
+}
+
+[id="one-time-password-method"] [class*="-iconContainer"] svg circle[stroke-width="2"] {
+    stroke: rgba(from var(--text) r g b / 0.8);
+}
+
+[id="one-time-password-method"] [class*="-iconContainer"] svg circle[stroke="transparent"] {
+    fill: rgba(from var(--text) r g b / 0.8);
+}
+
+[id="one-time-password-method"] [class*="-iconContainer"] svg circle[stroke-width="10"] {
+    stroke: rgb(var(--accent-color));
+}
+
+[id="2fa-container"] .information-icon, [id="2fa-container"] [class*="-infoTypography"] {
+    color: var(--accent-color-hover);
+}
+
+[id="one-time-password-option"] button svg circle[stroke-width="10"] {
+    stroke: rgb(var(--accent-color));
+}
+[id="one-time-password-option"] button svg circle[stroke="transparent"] {
+    fill: var(--button-text);
+}
+[id="one-time-password-option"] button svg circle[stroke-width="2"] {
+    stroke: var(--button-text);
+}
+
+[id="one-time-password-option"] button:hover svg circle[stroke-width="10"] {
+    stroke: rgb(var(--accent-color));
+}
+[id="one-time-password-option"] button:hover svg circle[stroke="transparent"] {
+    fill: var(--button-text-hover);
+}
+[id="one-time-password-option"] button:hover svg circle[stroke-width="2"] {
+    stroke: var(--button-text-hover);
+}
+
+/* Language Selector Styles */
+[id*="language-"].MuiMenuItem-root.Mui-selected {
+    background-color: rgba(from var(--button-color) r g b / 0.30) !important;
+}
+
+[id*="language-"].MuiMenuItem-root.Mui-selected:hover {
+    background-color: rgba(from var(--button-color-hover) r g b / 0.30) !important;
+}
+
+[id*="language-"] div.MuiPaper-root.MuiPaper-elevation.MuiMenu-paper {
+    background: var(--transparency-dark-25);
+}
+
+/* Account Menu Settings Styles */
+[id*="account-menu"] div.MuiPaper-root.MuiPaper-elevation.MuiMenu-paper {
+    background: var(--transparency-dark-25);
+}
+
+.MuiMenuItem-root, .MuiMenuItem-root svg {
+    color: var(--text) !important;
+}
+
+.MuiMenuItem-root:hover {
+    background-color: rgba(from var(--text) r g b / 0.08);
+}
+
+/* Tooltip Style */
+div.MuiPopper-root > div.MuiTooltip-tooltip {
+    -webkit-backdrop-filter: saturate(1) blur(1.5em);
+    backdrop-filter: saturate(1) blur(1.5em);
+    background: rgb(var(--accent-color),0.2);
+    color: var(--text);
+}
+
+/* Dialogue box styles */
+[class*="MuiDialog-paper"] {
+    background: var(--modal-bg-color);
+    -webkit-backdrop-filter: saturate(1) blur(1.5em);
+    backdrop-filter: saturate(1) blur(1.5em);
+}
+
+[class*="MuiDialogContentText"] {
+    color: rgba(from var(--text) r g b / 0.7);
+}
+
+/* Loading Bar Styles */
+.mui-19midj6 span span {
+    background-color: var(--text) !important;
+}
+
+/* INPUT FIELDS */
+
+/* Text Input styles */
+.MuiTextField-root, .MuiTextField-root .MuiInputBase-root {
+    color: var(--text);
+}
+
+.MuiTextField-root .MuiInputLabel-root {
+    color: rgba(from var(--text) r g b / 0.7);
+}
+
+.MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(from var(--text) r g b / 0.23);
+}
+
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: rgb(var(--text));
+}
+
+.MuiInputBase-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: rgb(var(--accent-color)) !important;
+}
+.MuiFormLabel-root.Mui-focused {
+    color: rgb(var(--accent-color)) !important;
+}
+
+.MuiInputBase-colorPrimary.MuiInput-underline::before {
+    border-color: rgba(from var(--text) r g b / 0.7);
+}
+
+.MuiInputBase-colorPrimary.MuiInput-underline:hover:not(.Mui-disabled, .Mui-error)::before {
+    border-color: var(--text);
+}
+
+.MuiInputBase-colorPrimary.MuiInput-underline::after {
+    border-color: rgb(var(--accent-color));
+}
+
+/* Text Digit Input styles */
+input[class*="-otpDigitInput"] {
+    background-color: var(--transparency-dark-10);
+    border-color: rgba(from var(--text) r g b / 0.3) !important;
+    color: var(--text);
+}
+
+input[class*="-otpDigitInput"]:focus {
+    border-color: rgb(var(--accent-color)) !important;
+    outline: none;
+    box-shadow: 0 0 0.2em 0 rgba(from rgb(var(--accent-color)) r g b / 0.3);
+}
+
+/* Checkbox styles */
+.MuiCheckbox-root .MuiTouchRipple-root {
+    color: rgb(var(--accent-color)) !important;
+}
+
+.MuiCheckbox-colorPrimary {
+    color: rgb(from var(--text) r g b / 0.7);
+}
+
+.MuiCheckbox-root.MuiCheckbox-colorPrimary.Mui-checked, .Mui-checked {
+    color: rgb(var(--accent-color));
+}
+
+.MuiCheckbox-root.MuiCheckbox-colorPrimary:hover {
+    background-color: rgba(from rgb(var(--accent-color)) r g b / 0.08) !important;
+}
+
+/* Radio Button Styles */
+.MuiRadio-colorPrimary:not(.Mui-checked) {
+    color: rgb(from var(--text) r g b / 0.7);
+}
+.MuiRadio-colorPrimary:hover {
+    background-color: rgba(from rgb(var(--accent-color)) r g b / 0.055) !important;
+}
+
+.MuiRadio-colorPrimary.Mui-checked {
+    color: rgb(var(--accent-color));
+    fill: rgb(var(--accent-color));
+}
+
+.MuiRadio-colorPrimary.Mui-checked:hover {
+    background-color: rgba(from rgb(var(--accent-color)) r g b / 0.055) !important;
+}
+
+/* Switch Styles */
+.MuiSwitch-colorPrimary:not(.Mui-checked), .MuiSwitch-colorPrimary:not(.Mui-checked) + .MuiSwitch-track {
+    color: var(--text);
+}
+
+.MuiSwitch-colorPrimary.Mui-checked {
+    color: rgb(var(--accent-color));
+}
+
+.MuiSwitch-colorPrimary.Mui-checked:hover {
+    background-color: rgba(from rgb(var(--accent-color)) r g b / 0.08) !important;
+}
+
+.MuiSwitch-colorPrimary:hover:not(.Mui-checked) {
+    background-color: rgba(from var(--text) r g b / 0.08) !important;
+}
+
+.MuiSwitch-colorPrimary.Mui-checked + .MuiSwitch-track {
+    background-color: rgb(var(--accent-color));
+}

@@ -304,6 +304,10 @@
 <p><a href="https://docs.theme-park.dev/themes/docmost"><img src="https://docs.theme-park.dev/site_assets/docmost/logo.png" alt="" width="48" height="48" /></a></p>
 <p><a href="https://docs.theme-park.dev/themes/docmost">Docmost</a></p>
 </td>
+<td>
+<p><a href="https://docs.theme-park.dev/themes/authelia"><img src="https://docs.theme-park.dev/site_assets/authelia/logo.png" alt="" width="48" height="48" /></a></p>
+<p><a href="https://docs.theme-park.dev/themes/authelia">Authelia</a></p>
+</td>
 </tr>
 </tbody>
 </table>
