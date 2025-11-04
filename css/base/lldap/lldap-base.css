@@ -1,0 +1,303 @@
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+
+/*		   		        Made by @gilbN - LLDAP base by emilyy3k					 */
+/* 			      https://github.com/gilbN/theme.park			 */
+
+@import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
+
+body {
+    /* Base Colors */
+    --bs-body-color: var(--text);
+    --bs-body-bg: var(--main-bg-color);
+    --bs-body-color-alt: var(--text);
+    --bs-body-bg-alt: var(--main-bg-color);
+    background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    /* --text: greenyellow;
+    --button-text: red;
+    --button-text-hover: yellow; */
+    color: var(--text);
+}
+
+/* Header/NavBar Styles */
+html[class][lang] .nav-link {
+    color: var(--text);
+}
+
+html[class][lang] .nav-link:hover, html[class][lang] .nav-link:focus {
+    color: var(--link-color-hover);
+}
+
+header a.d-flex.mt-2 h2 {
+    color: var(--text);
+}
+
+header a.d-flex.mt-2 h2:hover, header a.d-flex.mt-2 h2:focus {
+    color: var(--link-color-hover);
+}
+
+html[class][lang] header.border-bottom {
+	border-color: var(--transparency-dark-10) !important;
+}
+
+/* User Dropdown Menu */
+html[class][lang] .dropdown-menu {
+    -webkit-backdrop-filter: saturate(1) blur(1.0em);
+    backdrop-filter: saturate(1) blur(1.0em);
+    color: var(--text);
+    border-color: rgba(from var(--text) r g b / 0.15);
+    border-radius: .25rem;
+	background: var(--drop-down-menu-bg);
+	background-repeat: repeat, no-repeat;
+	background-attachment: fixed, fixed;
+	background-position: center center, center center;
+	background-size: auto, cover;
+	-webkit-background-size: auto, cover;
+	-moz-background-size: auto, cover;
+	-o-background-size: auto, cover;
+}
+
+html[class][lang] .dropdown-menu .dropdown-divider {
+    color: var(--transparency-light-15);
+}
+
+html[class][lang] .dropdown-item {
+    color: var(--text);
+}
+
+html[class][lang] .dropdown-item:hover {
+    color: var(--text-hover);
+    background-color: var(--transparency-light-15);
+}
+
+/* Button Styles */
+html[class][lang] .btn.btn-primary {
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+    color: var(--button-text);
+}
+
+html[class][lang] .btn.btn-primary:hover {
+    background-color: var(--button-color-hover);
+    border-color: var(--button-color-hover);
+    color: var(--button-text-hover);
+}
+
+
+html[class][lang] .btn.btn-secondary, html[class][lang] .btn-danger {
+    background-color: rgba(from var(--button-color) r g b / 0.5);
+    border-color: rgba(from var(--button-color) r g b / 0.15);
+    color: var(--button-text);
+}
+
+html[class][lang] .btn.btn-secondary:hover, html[class][lang] .btn-danger:hover {
+    background-color: rgba(from var(--button-color-hover) r g b / 0.75);
+    border-color: rgba(from var(--button-color-hover) r g b / 0.4);
+    color: var(--button-text-hover);
+}
+
+/* table elements */
+thead, tbody {
+    --bs-table-hover-color: var(--text);
+    --bs-table-active-color: var(--text);
+    --bs-table-striped-color: var(--text);
+    color: var(--text);
+    border-color: var(--accent-color);
+}
+
+/* Link Styles */
+
+html[class][lang] a {
+    color: var(--text);
+}
+
+html[class][lang] a:hover {
+    color: var(--link-color-hover);
+}
+
+html[class][lang] a.link-secondary {
+    color: rgb(var(--accent-color));
+}
+
+html[class][lang] a.link-secondary:hover {
+    color: var(--accent-color-hover);
+}
+
+/* Muted Text */
+html[class][lang] .text-muted {
+    color: var(--text-muted) !important;
+}
+
+/* Info Circle Styles */
+html[class][lang] .btn-link {
+    color: var(--accent-color-hover);
+}
+
+html[class][lang] .btn-link:hover {
+    color: rgb(var(--accent-color));
+}
+
+/* Tooltip Styles */
+html[class][lang] div.tooltip {
+    opacity: 1 !important;
+}
+
+html[class][lang] .bs-tooltip-end .tooltip-arrow::before {
+    -webkit-backdrop-filter: saturate(1) blur(1.5em);
+    backdrop-filter: saturate(1) blur(1.5em);
+    border-right-color: rgb(var(--accent-color),0.2);
+    fill: rgb(var(--accent-color),0.2);
+}
+
+html[class][lang] div.tooltip .tooltip-inner {
+    -webkit-backdrop-filter: saturate(1) blur(1.5em);
+    backdrop-filter: saturate(1) blur(1.5em);
+    background: rgb(var(--accent-color),0.2);
+    color: var(--text);
+}
+
+/* Dropdown Selector Styles */
+html[class][lang] select {
+  &, &::picker(select) {
+    appearance: base-select; 
+  }
+}
+
+html[class][lang] select {
+    background-color: var(--transparency-dark-25);
+    color: var(--text);
+    border-color: rgba(from var(--text) r g b / 0.25);
+    background-image: none;
+    padding: .375rem .75rem;
+}
+
+html[class][lang] select:focus {
+    border-color: rgb(var(--accent-color));
+    box-shadow: 0 0 0.25em .25rem rgba(from rgb(var(--accent-color)) r g b / 0.25) !important;
+}
+
+html[class][lang] select:hover {
+    border-color: var(--accent-color-hover);
+}
+
+html[class][lang] select::picker(select) {
+    -webkit-backdrop-filter: saturate(1) blur(1.0em);
+    backdrop-filter: saturate(1) blur(1.0em);
+    color: var(--text);
+    border-color: rgba(from var(--text) r g b / 0.15);
+    border-radius: .25rem;
+	background: var(--drop-down-menu-bg);
+	background-repeat: repeat, no-repeat;
+	background-attachment: fixed, fixed;
+	background-position: center center, center center;
+	background-size: auto, cover;
+	-webkit-background-size: auto, cover;
+	-moz-background-size: auto, cover;
+	-o-background-size: auto, cover;
+}
+
+html[class][lang] select option {
+    padding: .375rem .75rem;
+}
+
+html[class][lang] select.option:hover {
+    background: var(--transparency-light-10);
+}
+
+/* Switch Styles */
+html[class][lang] input#darkModeToggle.form-check-input:checked {
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+}
+
+html[class][lang] input#darkModeToggle.form-check-input:focus {
+    border-color: var(--button-color-hover);
+    box-shadow: 0 0 0 .25rem rgba(from var(--button-color-hover) r g b / 0.25);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+}
+
+/* Checkbox Styles */
+html[class][lang] .form-check-input {
+    background-color: var(--transparency-dark-25);
+    border-color: rgba(from var(--text) r g b / 0.25);
+}
+
+html[class][lang] .form-check-input:hover {
+    border-color: var(--accent-color-hover);
+}
+
+html[class][lang] .form-check-input:checked {
+    background-color: rgba(var(--accent-color));
+    border-color: transparent;
+}
+
+html[class][lang] .form-check-input:focus {
+    border-color: var(--accent-color-hover);
+    box-shadow: 0 0 0.25em .25rem rgba(from rgb(var(--accent-color)) r g b / 0.25) !important;
+}
+
+/* Text Input Styles */
+html[class][lang] input.form-control {
+    background-color: var(--transparency-dark-25);
+    color: var(--text-muted);
+    border-color: rgba(from var(--text) r g b / 0.25);
+}
+
+html[class][lang] input.form-control[type="text"]:hover {
+    border-color: var(--accent-color-hover)
+}
+
+html[class][lang] .form-control:focus {
+    background-color: var(--transparency-dark-50);
+    border-color: var(--accent-color-hover) !important;
+    box-shadow: 0 0 0.25em .25rem rgba(from rgb(var(--accent-color)) r g b / 0.25) !important;
+    color: var(--text);
+}
+
+/* File Input Styles */
+html[class][lang] input.form-control[type="file"]::file-selector-button {
+    background-color: var(--button-color);
+    color: var(--button-text);
+    border-color: inherit;
+}
+
+html.dark .form-control[type="file"]:hover:not(:disabled):not([readonly])::file-selector-button {
+    background-color: var(--button-color-hover);
+    color: var(--button-text-hover);
+}
+
+/* Footer Stuff */
+html[class][lang] footer.bg-light {
+    background: none;
+    background-color: transparent !important;
+    position: relative;
+}
+
+body > div > div.container.py-3 > div.row.justify-content-center {
+    padding-bottom: 2em !important;
+}
+
+/* Login Page */
+html[class][lang] .input-group-text {
+    background-color: var(--transparency-light-15);
+    color: var(--text);
+    border-color: rgba(from var(--text) r g b / 0.15);
+}
+
+span#uuid.form-control-static, span#creation_date.form-control-static {
+    color: var(--text-muted);
+}
