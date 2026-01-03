@@ -1,0 +1,21 @@
+/* replace a user configured logo */
+.MuiBox-root[alt*="Logo"] {
+    content: url("/css/addons/authelia/authelia-jellyfin-logo/jellyfin.webp");
+}
+
+/* Replace the default svg icon */
+svg#UserSvg[class*="-icon"] {
+    fill: none;
+    background-image: url("/css/addons/authelia/authelia-jellyfin-logo/jellyfin.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h5.MuiTypography-root::after {
+    content: " - Jellyfin";
+}
+
+#sign-in-button::after {
+    content: " - Jellyfin";
+}

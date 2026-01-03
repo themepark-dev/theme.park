@@ -1,0 +1,21 @@
+/* replace a user configured logo */
+.MuiBox-root[alt*="Logo"] {
+    content: url("/css/addons/authelia/authelia-lldap-logo/lldap.webp");
+}
+
+/* Replace the default svg icon */
+svg#UserSvg[class*="-icon"] {
+    fill: none;
+    background-image: url("/css/addons/authelia/authelia-lldap-logo/lldap.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h5.MuiTypography-root::after {
+    content: " - LLDAP";
+}
+
+#sign-in-button::after {
+    content: " - LLDAP";
+}

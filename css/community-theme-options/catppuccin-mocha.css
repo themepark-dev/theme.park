@@ -20,7 +20,7 @@
 
   --text: #cdd6f4;
   --text-hover: var(--text);
-  --text-muted: a6adc8;
+  --text-muted: #a6adc8;
 
   /* Specials */
   --arr-queue-color: #a6e3a1; /* Servarr apps + Bazarr */
