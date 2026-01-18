@@ -629,7 +629,7 @@
     },
     "sabnzbd": {
       "addons": {},
-      "base_css": "https://develop.theme-park.dev/css/base/sabnzbd/sabnzbd-base.css?sha=ac4e880a1d010f14ef61ea0a0daf6ec4"
+      "base_css": "https://develop.theme-park.dev/css/base/sabnzbd/sabnzbd-base.css?sha=4fe48a72759792553f982675ac6e559e"
     },
     "sonarr": {
       "addons": {

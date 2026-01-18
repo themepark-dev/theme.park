@@ -262,11 +262,11 @@ hr {
 }
 
 svg.peity polygon {
-  fill: var(--button-color) !important;
+  fill: rgb(var(--accent-color)) !important;
 }
 
 svg.peity polyline {
-  stroke: var(--button-color) !important;
+  stroke: rgb(var(--accent-color)) !important;
 }
 
 .rss-icon-svg {
