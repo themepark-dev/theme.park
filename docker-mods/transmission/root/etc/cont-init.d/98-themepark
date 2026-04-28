@@ -39,12 +39,12 @@ if [[ -z ${TP_THEME} ]]; then
 fi
 
 # Adding stylesheets
-if ! grep -q "${TP_DOMAIN}/css/base" /usr/share/transmission/web/index.html; then
+if ! grep -q "${TP_DOMAIN}/css/base" /usr/share/transmission/public_html/index.html; then
     echo '---------------------------'
     echo '|  Adding the stylesheet  |'
     echo '---------------------------'
-    sed -i "s/<\/head>/<link rel='stylesheet' href='${TP_SCHEME}:\/\/${TP_DOMAIN}\/css\/base\/transmission\/transmission-base.css'><\/head> /g" /usr/share/transmission/web/index.html
-    sed -i "s/<\/head>/<link rel='stylesheet' href='${TP_SCHEME}:\/\/${TP_DOMAIN}\/css\/${THEME_TYPE}\/${TP_THEME}.css'><\/head> /g" /usr/share/transmission/web/index.html
+    sed -i "s/<\/head>/<link rel='stylesheet' href='${TP_SCHEME}:\/\/${TP_DOMAIN}\/css\/base\/transmission\/transmission-base.css'><\/head> /g" /usr/share/transmission/public_html/index.html
+    sed -i "s/<\/head>/<link rel='stylesheet' href='${TP_SCHEME}:\/\/${TP_DOMAIN}\/css\/${THEME_TYPE}\/${TP_THEME}.css'><\/head> /g" /usr/share/transmission/public_html/index.html
     printf 'Stylesheet set to %s\n' "${TP_THEME}
     "
 fi
