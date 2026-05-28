@@ -702,3 +702,897 @@ hr {
     border-color: rgba(255, 255, 255, .1) !important;
     color: var(--text-hover) !important;
 }
+
+/* =================================================================
+   OMBI v5 REDESIGN OVERRIDES
+   Added to keep theme.park styling working after the Ombi UI rework
+   (login page, requests list, tv request grid, hero banner, media
+   details, discover/detailed cards, cast carousel).
+   ================================================================= */
+
+/* ---- Login page (new glassmorphism layout) ---- */
+.login-wrapper,
+.login-container {
+    background: transparent !important;
+}
+
+.login-panel {
+    background: var(--modal-bg-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    border: 1px solid var(--transparency-light-10) !important;
+    color: var(--text) !important;
+}
+
+.login-header,
+.login-body,
+.brand-section {
+    background: transparent !important;
+}
+
+.brand-title,
+.brand-title--long,
+.brand-title--xlong {
+    color: rgb(var(--accent-color)) !important;
+}
+
+.login-subtitle,
+.divider-text {
+    color: var(--text-muted) !important;
+}
+
+.divider-line {
+    background: var(--transparency-light-15) !important;
+}
+
+.input-wrapper {
+    background: var(--transparency-dark-25) !important;
+    border: 1px solid var(--transparency-light-10) !important;
+    color: var(--text) !important;
+}
+
+.input-wrapper:hover {
+    border-color: var(--transparency-light-25) !important;
+}
+
+.input-wrapper--focused {
+    border-color: rgb(var(--accent-color)) !important;
+    background: var(--transparency-dark-45) !important;
+}
+
+.input-wrapper--filled {
+    background: var(--transparency-dark-45) !important;
+}
+
+.input-wrapper--error {
+    border-color: #ef4444 !important;
+}
+
+.input-icon {
+    color: var(--text-muted) !important;
+}
+
+.input-wrapper--focused .input-icon {
+    color: rgb(var(--accent-color)) !important;
+}
+
+.login-input {
+    color: var(--text) !important;
+    background: transparent !important;
+    caret-color: rgb(var(--accent-color)) !important;
+}
+
+.toggle-password {
+    color: var(--text-muted) !important;
+    background: transparent !important;
+}
+
+.toggle-password:hover {
+    color: var(--text-hover) !important;
+}
+
+.checkbox-label {
+    color: var(--text) !important;
+}
+
+.custom-checkbox .checkmark {
+    border-color: var(--transparency-light-25) !important;
+}
+
+.custom-checkbox .checkmark::after {
+    background: rgb(var(--accent-color)) !important;
+}
+
+.custom-checkbox input:checked + .checkmark {
+    border-color: rgb(var(--accent-color)) !important;
+}
+
+.forgot-link,
+.btn-back {
+    color: var(--link-color) !important;
+    background: transparent !important;
+}
+
+.forgot-link:hover,
+.btn-back:hover {
+    color: var(--link-color-hover) !important;
+}
+
+/* Only style the themed CTAs; OAuth brand buttons (.btn-login--plex,
+   --emby, --jellyfin) keep their own brand colors */
+.btn-login--primary,
+.btn-submit {
+    background-color: var(--button-color) !important;
+    color: var(--button-text) !important;
+    border: 1px solid var(--button-color) !important;
+}
+
+.btn-login--primary:hover,
+.btn-submit:hover {
+    background-color: var(--button-color-hover) !important;
+    color: var(--button-text-hover) !important;
+    border-color: var(--button-color-hover) !important;
+}
+
+.btn-arrow {
+    color: inherit !important;
+}
+
+/* ---- Hero banner (discover page) ---- */
+.hero-banner {
+    border-radius: 12px;
+}
+
+.hero-overlay {
+    background: linear-gradient(
+        to right,
+        var(--transparency-dark-90) 0%,
+        var(--transparency-dark-50) 40%,
+        rgba(0, 0, 0, 0.1) 100%
+    ) !important;
+}
+
+@media (max-width: 768px) {
+    .hero-overlay {
+        background: linear-gradient(
+            to top,
+            var(--transparency-dark-90) 0%,
+            var(--transparency-dark-50) 50%,
+            rgba(0, 0, 0, 0.1) 100%
+        ) !important;
+    }
+}
+
+.hero-title {
+    color: var(--text-hover) !important;
+}
+
+.hero-year,
+.hero-overview {
+    color: var(--text) !important;
+}
+
+.hero-rating {
+    color: #ffd740 !important;
+}
+
+.hero-cta {
+    background: var(--button-color) !important;
+    color: var(--button-text) !important;
+    border: 1px solid var(--button-color) !important;
+}
+
+.hero-cta:hover {
+    background: var(--button-color-hover) !important;
+    color: var(--button-text-hover) !important;
+    border-color: var(--button-color-hover) !important;
+}
+
+.hero-indicator {
+    background: var(--transparency-light-25) !important;
+}
+
+.hero-indicator.active {
+    background: rgb(var(--accent-color)) !important;
+}
+
+/* ---- Media details hero (movie/tv details pages) ---- */
+.details-hero {
+    color: var(--text) !important;
+}
+
+.hero-backdrop-overlay {
+    background: linear-gradient(
+        to right,
+        var(--transparency-dark-90) 0%,
+        var(--transparency-dark-50) 50%,
+        var(--transparency-dark-25) 100%
+    ) !important;
+}
+
+.hero-tagline {
+    color: var(--text-muted) !important;
+}
+
+.meta-badge {
+    background: var(--transparency-light-15) !important;
+    color: var(--text) !important;
+    border: 1px solid var(--transparency-light-10) !important;
+}
+
+.meta-badge--accent {
+    background: rgba(var(--accent-color), 0.15) !important;
+    color: rgb(var(--accent-color)) !important;
+    border-color: rgba(var(--accent-color), 0.3) !important;
+}
+
+.action-btn {
+    border-radius: 8px;
+}
+
+.action-btn--primary {
+    background: rgb(var(--accent-color)) !important;
+    color: var(--button-text) !important;
+}
+
+.action-btn--secondary {
+    background: var(--transparency-light-15) !important;
+    color: var(--text-hover) !important;
+}
+
+/* keep semantic action button colors recognisable (success/warn/danger/admin) */
+
+/* ---- Movie information panel ---- */
+.info-panel-modern {
+    color: var(--text) !important;
+}
+
+.streaming-label,
+.info-label {
+    color: var(--text-muted) !important;
+}
+
+.info-value {
+    color: var(--text-hover) !important;
+}
+
+.info-sub {
+    color: var(--text-muted) !important;
+}
+
+.info-item {
+    background: var(--transparency-dark-25) !important;
+    border: 1px solid var(--transparency-light-10) !important;
+    border-radius: 8px;
+}
+
+.streaming-logo {
+    background: var(--transparency-light-10) !important;
+    border-radius: 8px;
+}
+
+.genre-tag,
+.hero-genres .genre-tag {
+    background: var(--transparency-light-10) !important;
+    border: 1px solid var(--transparency-light-25) !important;
+    color: var(--text-hover) !important;
+}
+
+/* ---- Cast carousel ---- */
+.cast-card {
+    color: var(--text) !important;
+}
+
+.cast-profile-img {
+    border: 3px solid var(--transparency-light-10) !important;
+}
+
+.cast-card:hover .cast-profile-img {
+    border-color: rgb(var(--accent-color)) !important;
+}
+
+.cast-placeholder-icon {
+    background: var(--transparency-light-10) !important;
+    color: var(--text-muted) !important;
+}
+
+.cast-name {
+    color: var(--text-hover) !important;
+}
+
+.cast-character {
+    color: var(--text-muted) !important;
+}
+
+/* ---- Social icons ---- */
+.social-link {
+    color: var(--text-muted) !important;
+}
+
+.social-link:hover {
+    color: rgb(var(--accent-color)) !important;
+}
+
+.social-divider {
+    background: var(--transparency-light-15) !important;
+}
+
+.admin-cog-btn {
+    color: rgb(var(--accent-color)) !important;
+    background: transparent !important;
+}
+
+/* ---- Discover cards ---- */
+.detailed-card,
+.card-inner {
+    background: var(--transparency-dark-25) !important;
+    border: 1px solid var(--transparency-light-10) !important;
+    border-radius: 12px;
+}
+
+.detailed-card:hover,
+.card-inner:hover {
+    border-color: var(--transparency-light-25) !important;
+}
+
+.card-title {
+    color: var(--text-hover) !important;
+}
+
+.card-meta,
+.card-year,
+.card-user,
+.card-date {
+    color: var(--text-muted) !important;
+}
+
+.card-backdrop {
+    background-size: cover;
+    background-position: center;
+}
+
+.card-status-badge {
+    background: var(--transparency-dark-50) !important;
+    color: var(--text-hover) !important;
+}
+
+.approve-btn {
+    background: rgba(29, 233, 182, 0.9) !important;
+    color: #0f171f !important;
+}
+
+.approve-btn:hover {
+    background: #1de9b6 !important;
+}
+
+.deny-btn {
+    background: rgba(211, 47, 47, 0.95) !important;
+    color: #fff !important;
+}
+
+.deny-btn:hover {
+    background: #c62828 !important;
+}
+
+.request-btn {
+    background: var(--button-color) !important;
+    color: var(--button-text) !important;
+}
+
+.request-btn:hover {
+    background: var(--button-color-hover) !important;
+    color: var(--button-text-hover) !important;
+}
+
+/* ---- Discover filter / carousel toggles ---- */
+.filter-toggle-group {
+    background: var(--transparency-light-10) !important;
+    border: 1px solid var(--transparency-light-15) !important;
+    border-radius: 30px;
+}
+
+.filter-toggle {
+    background: transparent !important;
+    color: var(--text-muted) !important;
+}
+
+.filter-toggle:hover {
+    color: var(--text-hover) !important;
+}
+
+.filter-active {
+    background: var(--transparency-dark-45) !important;
+    color: var(--text-hover) !important;
+}
+
+.genre-chip {
+    background: var(--transparency-light-10) !important;
+    border: 1px solid var(--transparency-light-15) !important;
+    color: var(--text) !important;
+}
+
+.genre-chip:hover {
+    background: var(--transparency-light-25) !important;
+    border-color: var(--transparency-light-25) !important;
+    color: var(--text-hover) !important;
+}
+
+/* ---- Requests list page (movies/tv/albums grids) ---- */
+.requests-page {
+    color: var(--text) !important;
+}
+
+.page-title {
+    color: var(--text-hover) !important;
+}
+
+.page-subtitle {
+    color: var(--text-muted) !important;
+}
+
+.tab-bar {
+    background: var(--transparency-dark-25) !important;
+    border-radius: 12px;
+}
+
+.tab-item {
+    background: transparent !important;
+    color: var(--text-muted) !important;
+}
+
+.tab-item:hover {
+    background: var(--transparency-light-10) !important;
+    color: var(--text-hover) !important;
+}
+
+.tab-item.active {
+    background: rgb(var(--accent-color)) !important;
+    color: var(--button-text) !important;
+}
+
+.filter-bar,
+.filter-actions,
+.filter-chips {
+    color: var(--text) !important;
+}
+
+.chip {
+    background: var(--transparency-dark-25) !important;
+    border: 1px solid var(--transparency-light-10) !important;
+    color: var(--text-muted) !important;
+    border-radius: 20px;
+}
+
+.chip:hover {
+    background: var(--transparency-light-10) !important;
+    border-color: var(--transparency-light-25) !important;
+    color: var(--text-hover) !important;
+}
+
+.chip.active {
+    background: rgb(var(--accent-color)) !important;
+    border-color: rgb(var(--accent-color)) !important;
+    color: var(--button-text) !important;
+}
+
+.request-card {
+    background: var(--transparency-dark-25) !important;
+    border: 1px solid var(--transparency-light-10) !important;
+    border-radius: 12px;
+}
+
+.request-card:hover {
+    background: var(--transparency-dark-45) !important;
+    border-color: var(--transparency-light-25) !important;
+}
+
+.request-card.selected {
+    background: var(--transparency-dark-45) !important;
+    border-color: rgb(var(--accent-color)) !important;
+}
+
+.card-poster,
+.no-poster {
+    background: var(--transparency-dark-50) !important;
+}
+
+.no-poster i,
+.empty-icon {
+    color: var(--text-muted) !important;
+}
+
+.poster-overlay {
+    background: linear-gradient(
+        to top,
+        var(--transparency-dark-90) 0%,
+        var(--transparency-dark-50) 60%,
+        transparent 100%
+    ) !important;
+}
+
+.view-details {
+    color: rgb(var(--accent-color)) !important;
+}
+
+.btn-detail {
+    background: var(--button-color) !important;
+    color: var(--button-text) !important;
+    border-radius: 8px;
+}
+
+.btn-detail:hover {
+    background: var(--button-color-hover) !important;
+    color: var(--button-text-hover) !important;
+}
+
+.btn-options {
+    background: var(--transparency-dark-25) !important;
+    border: 1px solid var(--transparency-light-10) !important;
+    color: var(--text-muted) !important;
+    border-radius: 8px;
+}
+
+.btn-options:hover {
+    background: var(--transparency-light-10) !important;
+    border-color: var(--transparency-light-25) !important;
+    color: var(--text-hover) !important;
+}
+
+.empty-state,
+.empty-state h3 {
+    color: var(--text-muted) !important;
+}
+
+.fab-button {
+    background: rgb(var(--accent-color)) !important;
+    color: var(--button-text) !important;
+}
+
+.select-label,
+.meta-item {
+    color: var(--text-muted) !important;
+}
+
+.card-select {
+    background: var(--transparency-dark-50) !important;
+    border-radius: 6px;
+}
+
+/* The new requests grid uses :host ::ng-deep .mat-paginator !important
+   (specificity 0,2,0). Match it with a 2-class selector + !important. */
+.requests-page .mat-paginator,
+.request-card .mat-paginator {
+    background: var(--transparency-dark-25) !important;
+    color: var(--text) !important;
+}
+
+/* ---- TV requests panel (request management drawer) ---- */
+.no-requests {
+    color: var(--text-muted) !important;
+    background: transparent !important;
+}
+
+.requests-list {
+    color: var(--text) !important;
+}
+
+.request-header:hover {
+    background: var(--transparency-light-10) !important;
+}
+
+.request-status-indicator {
+    background: var(--transparency-light-25);
+}
+
+.request-meta,
+.request-status-text {
+    color: var(--text) !important;
+}
+
+.request-by,
+.request-source,
+.req-ep-date {
+    color: var(--text-muted) !important;
+}
+
+.req-ep-number,
+.req-ep-title {
+    color: var(--text-hover) !important;
+}
+
+.expand-icon {
+    color: var(--text-muted) !important;
+}
+
+.request-body,
+.request-season-selector,
+.request-episode-list {
+    background: transparent !important;
+    color: var(--text) !important;
+}
+
+.request-season-chip {
+    background: transparent !important;
+    border: 1px solid var(--transparency-light-15) !important;
+    color: var(--text-muted) !important;
+}
+
+.request-season-chip:hover {
+    background: var(--transparency-light-10) !important;
+    color: var(--text-hover) !important;
+    border-color: var(--transparency-light-25) !important;
+}
+
+.request-season-chip.active {
+    background: rgba(var(--accent-color), 0.2) !important;
+    border-color: rgb(var(--accent-color)) !important;
+    color: rgb(var(--accent-color)) !important;
+}
+
+.request-episode-row {
+    border-bottom: 1px solid var(--transparency-light-10);
+}
+
+/* ---- TV request grid (season/episode picker) ---- */
+.request-section {
+    color: var(--text) !important;
+}
+
+.quick-actions .quick-action-btn {
+    background: var(--button-color) !important;
+    color: var(--button-text) !important;
+    border-radius: 8px;
+}
+
+.quick-actions .quick-action-btn:hover {
+    background: var(--button-color-hover) !important;
+    color: var(--button-text-hover) !important;
+}
+
+.quick-actions .primary-action {
+    background: rgb(var(--accent-color)) !important;
+    color: var(--button-text) !important;
+}
+
+.section-divider {
+    color: var(--text-muted) !important;
+}
+
+.section-divider::before,
+.section-divider::after {
+    background: var(--transparency-light-15) !important;
+}
+
+.season-chip {
+    background: var(--transparency-light-10) !important;
+    border: 1px solid var(--transparency-light-15) !important;
+    color: var(--text) !important;
+}
+
+.season-chip:hover {
+    background: var(--transparency-light-15) !important;
+    border-color: var(--transparency-light-25) !important;
+    color: var(--text-hover) !important;
+}
+
+.season-chip.active {
+    background: rgba(var(--accent-color), 0.2) !important;
+    border-color: rgb(var(--accent-color)) !important;
+    color: rgb(var(--accent-color)) !important;
+}
+
+.season-chip-label,
+.season-chip-count {
+    color: inherit !important;
+}
+
+.season-panel {
+    background: var(--transparency-dark-25) !important;
+    border: 1px solid var(--transparency-light-10) !important;
+    border-radius: 12px;
+}
+
+.season-header {
+    color: var(--text-hover) !important;
+}
+
+.season-title {
+    color: var(--text-hover) !important;
+}
+
+.episode-count-badge {
+    background: var(--transparency-light-10) !important;
+    color: var(--text-muted) !important;
+    border-radius: 12px;
+}
+
+.season-overview {
+    color: var(--text-muted) !important;
+}
+
+.season-progress-container,
+.season-progress-bar {
+    background: var(--transparency-dark-50) !important;
+}
+
+.episode-list,
+.episode-header-row {
+    color: var(--text-muted) !important;
+    border-bottom: 1px solid var(--transparency-light-10);
+}
+
+.episode-row {
+    color: var(--text) !important;
+}
+
+.episode-row:not(.disabled):hover {
+    background: var(--transparency-light-10) !important;
+}
+
+.episode-row.selected {
+    background: var(--transparency-light-15) !important;
+}
+
+.sticky-bar {
+    background: var(--modal-bg-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    border-top: 1px solid var(--transparency-light-15) !important;
+    color: var(--text) !important;
+}
+
+.selection-count {
+    color: var(--text-hover) !important;
+}
+
+.request-selected-btn {
+    background: rgb(var(--accent-color)) !important;
+    color: var(--button-text) !important;
+    border-radius: 8px;
+}
+
+/* ---- Redesigned sidebar + top bar (my-nav.component) ----
+   The whole nav was rebuilt: .application-name → .sidebar-brand .brand-link,
+   .active-list-item → .nav-item--active, plus brand-new .nav-item, .nav-icon,
+   .nav-indicator, .top-bar, .hamburger-btn, .profile-* classes. */
+
+.sidebar-brand .brand-link {
+    color: rgb(var(--accent-color)) !important;
+}
+
+.sidebar-brand .brand-link:hover,
+.sidebar-brand .brand-link:focus,
+.sidebar-brand .brand-link:active {
+    color: rgb(var(--accent-color)) !important;
+}
+
+.sidebar-nav {
+    color: var(--text) !important;
+}
+
+.nav-section-label {
+    color: var(--text-muted) !important;
+}
+
+.nav-item {
+    color: var(--text) !important;
+    background: transparent !important;
+}
+
+.nav-item:hover {
+    background: var(--transparency-light-10) !important;
+    color: var(--text-hover) !important;
+}
+
+.nav-item .nav-indicator {
+    background: rgb(var(--accent-color)) !important;
+}
+
+.nav-item--active,
+.nav-item.nav-item--active {
+    background: var(--transparency-light-15) !important;
+    color: rgb(var(--accent-color)) !important;
+}
+
+.nav-item--active:hover {
+    background: var(--transparency-light-25) !important;
+    color: rgb(var(--accent-color)) !important;
+}
+
+.nav-item--active .nav-icon {
+    color: rgb(var(--accent-color)) !important;
+}
+
+.nav-icon,
+.nav-label,
+.nav-external-icon {
+    color: inherit !important;
+}
+
+.nav-action {
+    color: inherit !important;
+    background: transparent !important;
+}
+
+.nav-action:hover {
+    background: var(--transparency-light-10) !important;
+}
+
+.nav-divider {
+    background: var(--transparency-light-10) !important;
+}
+
+.sidebar-footer {
+    color: var(--text-muted) !important;
+    border-top: 1px solid var(--transparency-light-10) !important;
+}
+
+/* Top bar (above main content) */
+.top-bar {
+    background: var(--transparency-dark-45) !important;
+    border-bottom: 1px solid var(--transparency-light-10) !important;
+}
+
+.hamburger-btn {
+    color: var(--text-hover) !important;
+    background: transparent !important;
+}
+
+.hamburger-btn:hover {
+    background: var(--transparency-light-10) !important;
+    color: var(--text-hover) !important;
+}
+
+/* Top-bar filter chips (Movies / TV Shows). Distinct from the requests-list
+   .chip — the top-bar version sits inside .top-bar and uses an accent-tinted
+   active state. Scope via .top-bar to avoid clashing with requests-list .chip. */
+.top-bar .chip {
+    background: transparent !important;
+    border: 1px solid var(--transparency-light-15) !important;
+    color: var(--text) !important;
+}
+
+.top-bar .chip:hover {
+    background: var(--transparency-light-10) !important;
+    border-color: var(--transparency-light-25) !important;
+    color: var(--text-hover) !important;
+}
+
+.top-bar .chip.active,
+.top-bar .chip--active {
+    background: rgba(var(--accent-color), 0.2) !important;
+    border-color: rgb(var(--accent-color)) !important;
+    color: rgb(var(--accent-color)) !important;
+}
+
+/* Profile pill */
+.profile-link {
+    color: var(--text) !important;
+}
+
+.profile-link:hover {
+    background: var(--transparency-light-10) !important;
+    color: var(--text-hover) !important;
+}
+
+.profile-username {
+    color: inherit !important;
+}
+
+.profile-avatar {
+    border: 2px solid var(--transparency-light-15) !important;
+}
+
+.profile-link:hover .profile-avatar {
+    box-shadow: 0 0 0 2px rgba(var(--accent-color), 0.4) !important;
+}
