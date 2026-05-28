@@ -495,7 +495,7 @@
     },
     "ombi": {
       "addons": {},
-      "base_css": "https://develop.theme-park.dev/css/base/ombi/ombi-base.css?sha=0bd907a3ab9b3b9ca3e8e979df10b98f"
+      "base_css": "https://develop.theme-park.dev/css/base/ombi/ombi-base.css?sha=cebef430bb198fb704b5f6b9d11db076"
     },
     "organizr": {
       "addons": {

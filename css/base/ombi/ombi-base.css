@@ -340,13 +340,6 @@ a:hover {
     color: var(--text);
 }
 
-.btn-ombi {
-    background-color: var(--transparency-dark-85) !important;
-    /* backdrop-filter: blur(10px) !important;
-    -webkit-backdrop-filter: blur(10px) !important; */
-    border-radius: .375rem !important;
-    padding: 0 .375rem !important;
-}
 
 .btn-ombi.mat-raised-button {
     line-height: 29.4px !important;
