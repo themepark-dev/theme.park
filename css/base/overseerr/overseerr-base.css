@@ -222,7 +222,7 @@ select:focus {
 
 
 /* BG STUFF */
-#__next>div,
+#__next>div:first-of-type,
 body {
     background: var(--main-bg-color);
     background-repeat: repeat, no-repeat;
