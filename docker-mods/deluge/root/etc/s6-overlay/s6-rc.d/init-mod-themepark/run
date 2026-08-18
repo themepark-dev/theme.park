@@ -39,13 +39,17 @@ if [[ -z ${TP_THEME} ]]; then
 fi
 
 # Adding stylesheets
-DELUGE_INDEX_PATH=$(find /usr -name index.html)
-if ! grep -q "${TP_DOMAIN}/css/base" ${DELUGE_INDEX_PATH}; then
+DELUGE_INDEX_PATH=$(find /lsiopy/lib -type f -path '/lsiopy/lib/python*/site-packages/deluge/ui/web/index.html' | head -n 1)
+if [[ -z ${DELUGE_INDEX_PATH} ]]; then
+    echo 'Could not find Deluge web index at /lsiopy/lib/python*/site-packages/deluge/ui/web/index.html'
+    exit 1
+fi
+
+if ! grep -q "${TP_DOMAIN}/css/base" "${DELUGE_INDEX_PATH}"; then
     echo '---------------------------'
     echo '|  Adding the stylesheet  |'
     echo '---------------------------'
-    sed -i "s/<\/head>/<link rel='stylesheet' href='${TP_SCHEME}:\/\/${TP_DOMAIN}\/css\/base\/deluge\/deluge-base.css'><\/head> /g" ${DELUGE_INDEX_PATH}
-    sed -i "s/<\/head>/<link rel='stylesheet' href='${TP_SCHEME}:\/\/${TP_DOMAIN}\/css\/${THEME_TYPE}\/${TP_THEME}.css'><\/head> /g" ${DELUGE_INDEX_PATH}
-    printf 'Stylesheet set to %s\n' "${TP_THEME}
-    "
+    sed -i "s/<\/head>/<link rel='stylesheet' href='${TP_SCHEME}:\/\/${TP_DOMAIN}\/css\/base\/deluge\/deluge-base.css'><\/head> /g" "${DELUGE_INDEX_PATH}"
+    sed -i "s/<\/head>/<link rel='stylesheet' href='${TP_SCHEME}:\/\/${TP_DOMAIN}\/css\/${THEME_TYPE}\/${TP_THEME}.css'><\/head> /g" "${DELUGE_INDEX_PATH}"
+    printf 'Stylesheet set to %s\n' "${TP_THEME}"
 fi
