@@ -21,10 +21,9 @@
     --clr-input-border:  var(--transparency-dark-15);
     --clr-input-bg: var(--transparency-dark-15);
     --clr-modal-bg: var(--modal-bg-color);
-    --clr-surface-hover: var(--transparency-dark-35);
+    /* --clr-surface-hover: var(--transparency-dark-35); */
     --clr-border-subtle: var(--transparency-light-20);
     --clr-dropdown-bg: var(--drop-down-menu-bg);
-    --clr-toggle-active: rgb(var(--accent-color));
 }
 
 body {
