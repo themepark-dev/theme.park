@@ -565,3 +565,391 @@ code,
 .bazarr-LoadingOverlay-root[class*="bazarr-"] svg {
     stroke: rgb(var(--accent-color));
 }
+/* Bazarr 1.4.4+ uses Mantine's public component classes. Keep the legacy
+   bazarr-* rules above for installations on the older frontend. */
+html[data-mantine-color-scheme] {
+    /* Mantine also defines --button-color on each button. Resolve the theme
+       value here before that local variable can shadow it. */
+    --bazarr-button-background: var(--button-color);
+    --mantine-color-text: var(--text);
+    --mantine-color-dimmed: var(--text-muted);
+    --mantine-color-anchor: var(--link-color);
+    --mantine-color-placeholder: var(--text-muted);
+    --mantine-color-default: var(--transparency-dark-25);
+    --mantine-color-default-hover: var(--transparency-light-10);
+    --mantine-color-default-color: var(--text);
+    --mantine-color-default-border: var(--transparency-light-15);
+    --mantine-color-disabled: var(--transparency-light-10);
+    --mantine-color-disabled-color: var(--text-muted);
+    --mantine-color-disabled-border: var(--transparency-light-10);
+    --mantine-primary-color-filled: rgb(var(--accent-color));
+    --mantine-primary-color-filled-hover: var(--accent-color-hover);
+    --mantine-primary-color-light: rgba(var(--accent-color), .2);
+    --mantine-primary-color-light-hover: rgba(var(--accent-color), .3);
+    --mantine-primary-color-light-color: var(--text-hover);
+    --mantine-color-brand-filled: rgb(var(--accent-color));
+    --mantine-color-brand-filled-hover: var(--accent-color-hover);
+    --mantine-color-brand-light: rgba(var(--accent-color), .2);
+    --mantine-color-brand-light-hover: rgba(var(--accent-color), .3);
+    --mantine-color-brand-light-color: var(--text-hover);
+    --mantine-color-brand-text: var(--link-color);
+}
+
+/* Background variables may contain complete gradient background shorthands. */
+.mantine-AppShell-header,
+.mantine-AppShell-navbar {
+    background: var(--main-bg-color);
+    border-color: var(--transparency-light-15);
+    color: var(--text);
+}
+
+.mantine-AppShell-main {
+    background: transparent;
+}
+
+.mantine-AppShell-navbar a[href] {
+    color: var(--text);
+    border-left: 2px solid transparent;
+}
+
+.mantine-AppShell-navbar a[href] > .mantine-Text-root {
+    color: inherit;
+}
+
+html[data-mantine-color-scheme] .mantine-AppShell-navbar a[href]:hover {
+    background: var(--transparency-light-10);
+    color: var(--text-hover);
+}
+
+html[data-mantine-color-scheme] .mantine-AppShell-navbar a[aria-current="page"] {
+    background: var(--transparency-dark-25);
+    border-left-color: rgb(var(--accent-color));
+    color: var(--text-hover);
+}
+
+/* Toolbox has no public class; scope its module name to the main area. */
+.mantine-AppShell-main .mantine-Group-root[class*="_group_"] {
+    background: var(--transparency-dark-25);
+}
+
+.mantine-Divider-root {
+    --divider-color: var(--transparency-light-15);
+}
+
+.mantine-Input-input {
+    background: var(--transparency-dark-25);
+    color: var(--text);
+    border-color: var(--transparency-light-15);
+}
+
+.mantine-Input-input:focus,
+.mantine-Input-input:focus-within {
+    border-color: rgb(var(--accent-color));
+}
+
+.mantine-Input-input[data-error] {
+    border-color: var(--mantine-color-error);
+    color: var(--mantine-color-error);
+}
+
+.mantine-Input-input:disabled,
+.mantine-Input-input[data-disabled] {
+    background: var(--transparency-light-10);
+    color: var(--text-muted);
+}
+
+.mantine-Input-section,
+.mantine-ComboboxChevron-chevron {
+    color: var(--text-muted);
+}
+
+.mantine-NumberInput-control {
+    color: var(--text);
+    border-color: var(--transparency-light-15);
+}
+
+.mantine-NumberInput-control:hover,
+.mantine-CloseButton-root:hover {
+    background: var(--transparency-light-15);
+    color: var(--text-hover);
+}
+
+.mantine-Button-root:not(:disabled):not([data-disabled]):not([data-variant="danger"]):not([style*="--mantine-color-red-"]) {
+    background: var(--bazarr-button-background);
+    color: var(--button-text);
+    border-color: transparent;
+}
+
+.mantine-Button-root:not([data-variant="danger"]):not([style*="--mantine-color-red-"]):hover:not(:disabled):not([data-disabled]) {
+    background: var(--button-color-hover);
+    color: var(--button-text-hover);
+}
+
+.mantine-Button-root:disabled,
+.mantine-Button-root[data-disabled] {
+    background: var(--transparency-light-10);
+    color: var(--text-muted);
+    border-color: transparent;
+}
+
+.mantine-Button-label,
+.mantine-Button-label .mantine-Text-root {
+    color: inherit !important;
+}
+
+/* Action icons can carry red/yellow status colors; retain those inline colors. */
+.mantine-ActionIcon-root {
+    background: transparent;
+    color: var(--text);
+}
+
+.mantine-ActionIcon-root:hover:not(:disabled):not([data-disabled]) {
+    background: var(--transparency-light-15);
+}
+
+.mantine-ActionIcon-root:disabled,
+.mantine-ActionIcon-root[data-disabled] {
+    color: var(--text-muted);
+    opacity: .5;
+}
+
+.mantine-Pagination-control {
+    background: var(--transparency-dark-25);
+    color: var(--text);
+    border-color: var(--transparency-light-15);
+}
+
+.mantine-Pagination-control:hover:not(:disabled):not([data-disabled]),
+.mantine-Pagination-control[data-active] {
+    background: var(--bazarr-button-background);
+    color: var(--button-text);
+}
+
+.mantine-Pagination-control:disabled,
+.mantine-Pagination-control[data-disabled] {
+    color: var(--text-muted);
+}
+
+.mantine-Checkbox-input,
+.mantine-Radio-radio,
+.mantine-Switch-track {
+    background: var(--transparency-dark-25);
+    border-color: var(--transparency-light-25);
+}
+
+.mantine-Checkbox-input:checked,
+.mantine-Radio-radio:checked,
+.mantine-Switch-input:checked + .mantine-Switch-track {
+    background: rgb(var(--accent-color));
+    border-color: rgb(var(--accent-color));
+}
+
+.mantine-Checkbox-icon,
+.mantine-Radio-icon {
+    color: var(--label-text-color);
+}
+
+.mantine-Switch-thumb {
+    background: var(--text-hover);
+    border-color: transparent;
+}
+
+.mantine-Checkbox-input:disabled,
+.mantine-Radio-radio:disabled,
+.mantine-Switch-input:disabled + .mantine-Switch-track {
+    opacity: .5;
+}
+
+.mantine-Popover-dropdown,
+.mantine-Menu-dropdown,
+.mantine-Tooltip-tooltip {
+    background: var(--drop-down-menu-bg);
+    border-color: var(--transparency-light-15);
+    color: var(--text);
+}
+
+.mantine-Menu-item {
+    color: var(--menu-item-color, var(--text));
+}
+
+.mantine-Combobox-option[data-combobox-selected],
+.mantine-Select-option[data-combobox-selected],
+.mantine-MultiSelect-option[data-combobox-selected],
+.mantine-Autocomplete-option[data-combobox-selected] {
+    background: var(--transparency-light-15);
+    color: var(--text-hover);
+}
+
+.mantine-Menu-divider {
+    border-color: var(--transparency-light-15);
+}
+
+.mantine-Modal-content,
+.mantine-Drawer-content {
+    background: var(--modal-bg-color);
+    color: var(--text);
+}
+
+.mantine-Modal-header,
+.mantine-Drawer-header {
+    background: var(--modal-header-color);
+    color: var(--text-hover);
+    border-bottom: 1px solid var(--transparency-light-10);
+}
+
+.mantine-Modal-title,
+.mantine-Drawer-title,
+.mantine-CloseButton-root {
+    color: var(--text-hover);
+}
+
+.mantine-Table-table {
+    --table-border-color: var(--transparency-light-10);
+    --table-striped-color: var(--transparency-dark-10);
+    --table-highlight-on-hover-color: var(--transparency-light-10);
+    color: var(--text);
+}
+
+.mantine-Table-th {
+    color: var(--text-hover);
+}
+
+.mantine-Paper-root:not(.mantine-Modal-content):not(.mantine-Drawer-content):not(.mantine-Popover-dropdown):not(.mantine-Menu-dropdown) {
+    background: var(--transparency-dark-25);
+    color: var(--text);
+    border-color: var(--transparency-light-15);
+}
+
+.mantine-Card-root,
+.mantine-AppShell-main [class*="_card_"] {
+    background: var(--transparency-dark-25);
+    border-color: var(--transparency-light-15);
+}
+
+.mantine-AppShell-main [class*="_card_"]:hover {
+    border-color: rgb(var(--accent-color));
+}
+
+/* Keep warning, highlight and disabled subtitle badges distinguishable. */
+.mantine-Badge-root:not([data-variant]),
+.mantine-Badge-root[data-variant="brand"] {
+    background: rgba(var(--accent-color), .25);
+    color: var(--text-hover);
+}
+
+.mantine-Badge-label {
+    color: inherit !important;
+}
+
+.mantine-Pill-root,
+.mantine-Code-root {
+    background: var(--transparency-light-10);
+    color: var(--text);
+}
+
+.mantine-Notification-root {
+    background: var(--drop-down-menu-bg);
+    border-color: var(--transparency-light-15);
+}
+
+.mantine-Notification-title {
+    color: var(--text-hover);
+}
+
+.mantine-Notification-description {
+    color: var(--text);
+}
+
+.mantine-ScrollArea-thumb {
+    background: var(--transparency-light-25);
+}
+
+/* These dialogs place their action row at the end of the body stack. */
+.mantine-Modal-body > .mantine-Stack-root > .mantine-Group-root:last-child,
+.mantine-Modal-body > form > .mantine-Stack-root > .mantine-Group-root:last-child,
+.mantine-Modal-body > .mantine-Group-root:last-child {
+    background: var(--modal-footer-color);
+    padding: var(--mantine-spacing-md);
+    margin: 0 calc(-1 * var(--mantine-spacing-md)) calc(-1 * var(--mantine-spacing-md));
+}
+
+.mantine-Accordion-item {
+    border-color: var(--transparency-light-15);
+}
+
+.mantine-Accordion-control {
+    color: var(--text);
+}
+
+.mantine-Accordion-control:hover {
+    background: var(--transparency-light-10);
+}
+
+.mantine-Progress-root {
+    background: var(--transparency-light-15);
+}
+
+.mantine-Table-table a {
+    color: var(--text);
+}
+
+.mantine-Table-table a:hover {
+    color: var(--text-hover);
+    text-decoration: underline;
+}
+
+.mantine-Tabs-list::before {
+    border-color: var(--transparency-light-15);
+}
+
+.mantine-Tabs-tab {
+    color: var(--text);
+}
+
+.mantine-Tabs-tab:hover {
+    background: var(--transparency-light-10);
+}
+
+.mantine-Tabs-tab[data-active] {
+    border-color: rgb(var(--accent-color));
+    color: var(--text-hover);
+}
+
+.mantine-Slider-track::before {
+    background: var(--transparency-light-15);
+}
+
+.mantine-Slider-bar {
+    background: rgb(var(--accent-color));
+}
+
+.mantine-Slider-thumb {
+    border-color: rgb(var(--accent-color));
+}
+
+.mantine-Dropzone-root {
+    background: var(--transparency-dark-25);
+    color: var(--text);
+    border-color: var(--transparency-light-25);
+}
+
+.mantine-Dropzone-root:hover {
+    background: var(--transparency-light-10);
+}
+
+/* Mantine's display rules otherwise expose controls Bazarr marks hidden. */
+.mantine-UnstyledButton-root[hidden],
+.mantine-Badge-root[hidden] {
+    display: none;
+}
+
+.mantine-Menu-item:hover:not([data-disabled]) {
+    background: var(--transparency-light-15);
+    color: var(--menu-item-color, var(--text-hover));
+}
+
+/* Movie language badges use explicit Mantine colors rather than variants. */
+.mantine-Badge-root[style*="--badge-bg: var(--mantine-color-"]:not([style*="--mantine-color-brand-"]) {
+    background: var(--badge-bg);
+    color: var(--badge-color);
+}

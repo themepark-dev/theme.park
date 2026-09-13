@@ -53,3 +53,15 @@
 #root>div>div>main>form>div.bazarr-Group-root[class*="bazarr-"] {
     background: #262626 !important;
 }
+/* Current Mantine frontend. */
+.mantine-AppShell-header {
+    background: var(--header-color);
+}
+
+.mantine-AppShell-navbar {
+    background: var(--side-menu-color);
+}
+
+.mantine-AppShell-main .mantine-Group-root[class*="_group_"] {
+    background: var(--toolbar-background);
+}
