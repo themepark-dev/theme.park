@@ -215,3 +215,17 @@ artifacts nested under `dev`. Keep those exclusions when changing deployment
 steps; Git ignore rules alone do not control the published files.
 The application Dockerfiles copy specific asset paths, which exclude these
 development files. Keep tooling changes separate from CSS fixes for review.
+
+## Component libraries and CSS modules
+
+Bazarr's Mantine update replaced the old `bazarr-*` classes, but retained public
+classes such as `mantine-Button-root`. Check the app's theme provider and rendered
+DOM before treating generated CSS-module names as a support blocker. Prefer
+public component classes, state attributes and semantic containers. Document any
+module-name prefix you still need in the app README.
+
+Check for collisions between theme variables and the component library's local
+variables. Bazarr's `--button-color` means text color in Mantine and background
+color in theme.park. A theme alias resolved at the document root avoids the
+component's local override. Test normal, hover and disabled states after changing
+variable mappings, and preserve explicit status colors.

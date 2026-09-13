@@ -1,0 +1,37 @@
+name: themepark-bazarr-dev
+services:
+  css:
+    image: python:3.12-alpine
+    working_dir: /site
+    command: ["python", "/serve.py"]
+    ports: ["127.0.0.1:18965:8000"]
+    volumes:
+      - ../../css:/site/css:ro
+      - ../../resources:/site/resources:ro
+      - ../serve.py:/serve.py:ro
+  bazarr:
+    image: lscr.io/linuxserver/bazarr:${BAZARR_TAG:-latest}
+    depends_on: [css]
+    environment:
+      PUID: "1000"
+      PGID: "1000"
+      TZ: UTC
+      DOCKER_MODS: ghcr.io/themepark-dev/theme.park:bazarr
+      TP_DOMAIN: localhost:18965
+      TP_SCHEME: http
+      TP_THEME: ${TP_THEME:-maroon}
+      TP_ADDON: ${TP_ADDON:-}
+      TP_COMMUNITY_THEME: ${TP_COMMUNITY_THEME:-false}
+    ports: ["127.0.0.1:16767:6767"]
+    volumes:
+      - config:/config
+  seed:
+    image: python:3.12-alpine
+    profiles: [tools]
+    user: "1000:1000"
+    command: ["python", "/seed.py"]
+    volumes:
+      - config:/config
+      - ./seed.py:/seed.py:ro
+volumes:
+  config:
