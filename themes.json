@@ -19,8 +19,8 @@
       "authelia-traefik-logo": "https://develop.theme-park.dev/css/addons/authelia/authelia-traefik-logo/authelia-traefik-logo.css?sha=1631bb574d92a53bf88a364fe9eee6f5"
     },
     "bazarr": {
-      "bazarr-4k-logo": "https://develop.theme-park.dev/css/addons/bazarr/bazarr-4k-logo/bazarr-4k-logo.css?sha=03c214d2ddd0871e9d824927df9eff42",
-      "bazarr-darker": "https://develop.theme-park.dev/css/addons/bazarr/bazarr-darker/bazarr-darker.css?sha=8cc27a7ef567d383dc0227bcf94e8c08"
+      "bazarr-4k-logo": "https://develop.theme-park.dev/css/addons/bazarr/bazarr-4k-logo/bazarr-4k-logo.css?sha=50094fcbbfb742915e854c081842dfc0",
+      "bazarr-darker": "https://develop.theme-park.dev/css/addons/bazarr/bazarr-darker/bazarr-darker.css?sha=ca30fd62ed9ac845a03b0198d297e5b0"
     },
     "lidarr": {
       "lidarr-alt-calendar": "https://develop.theme-park.dev/css/addons/lidarr/lidarr-alt-calendar/lidarr-alt-calendar.css?sha=0d66ea96a1e8551e7167d8c1509e94c1",
@@ -381,10 +381,10 @@
     },
     "bazarr": {
       "addons": {
-        "bazarr-4k-logo": "https://develop.theme-park.dev/css/addons/bazarr/bazarr-4k-logo/bazarr-4k-logo.css?sha=03c214d2ddd0871e9d824927df9eff42",
-        "bazarr-darker": "https://develop.theme-park.dev/css/addons/bazarr/bazarr-darker/bazarr-darker.css?sha=8cc27a7ef567d383dc0227bcf94e8c08"
+        "bazarr-4k-logo": "https://develop.theme-park.dev/css/addons/bazarr/bazarr-4k-logo/bazarr-4k-logo.css?sha=50094fcbbfb742915e854c081842dfc0",
+        "bazarr-darker": "https://develop.theme-park.dev/css/addons/bazarr/bazarr-darker/bazarr-darker.css?sha=ca30fd62ed9ac845a03b0198d297e5b0"
       },
-      "base_css": "https://develop.theme-park.dev/css/base/bazarr/bazarr-base.css?sha=75b90779b6e60fbcbabf372f21cc369b"
+      "base_css": "https://develop.theme-park.dev/css/base/bazarr/bazarr-base.css?sha=249c5a8a8d609c63bab184b1a0873f4c"
     },
     "bitwarden": {
       "addons": {},
