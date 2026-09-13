@@ -72,7 +72,7 @@ jobs:
           publish_dir: ./
           publish_branch: live
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          exclude_assets: ''
+          exclude_assets: 'dev,AGENTS.md'
       - name: Deploy Develop
         uses: peaceiris/actions-gh-pages@v3.9.3
         if: ${{ github.ref == 'refs/heads/develop' || github.event.inputs.branch == 'develop' }}
@@ -80,7 +80,7 @@ jobs:
           publish_dir: ./
           publish_branch: live_develop
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          exclude_assets: ''
+          exclude_assets: 'dev,AGENTS.md'
       - name: Deploy Testing
         uses: peaceiris/actions-gh-pages@v3.9.3
         if: ${{ github.ref == 'refs/heads/testing' || github.event.inputs.branch == 'testing' }}
@@ -88,7 +88,7 @@ jobs:
           publish_dir: ./
           publish_branch: live_testing
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          exclude_assets: ''
+          exclude_assets: 'dev,AGENTS.md'
       - name: Clear CF Cache
         run: |
           curl -X GET "https://api.cloudflare.com/client/v4/user/tokens/verify" \

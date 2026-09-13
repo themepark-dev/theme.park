@@ -1,0 +1,33 @@
+name: themepark-nzbget-dev
+
+services:
+  css:
+    image: python:3.12-alpine
+    working_dir: /site
+    command: ["python", "/serve.py"]
+    ports:
+      - "127.0.0.1:18765:8000"
+    volumes:
+      - ../../css:/site/css:ro
+      - ../../resources:/site/resources:ro
+      - ../serve.py:/serve.py:ro
+
+  nzbget:
+    image: lscr.io/linuxserver/nzbget:${NZBGET_TAG:-version-v25.2}
+    depends_on:
+      - css
+    environment:
+      PUID: "1000"
+      PGID: "1000"
+      DOCKER_MODS: ghcr.io/themepark-dev/theme.park:nzbget
+      TP_DOMAIN: localhost:18765
+      TP_SCHEME: http
+      TP_THEME: ${TP_THEME:-dark}
+      TP_COMMUNITY_THEME: ${TP_COMMUNITY_THEME:-false}
+    ports:
+      - "127.0.0.1:16789:6789"
+    volumes:
+      - config:/config
+
+volumes:
+  config:
