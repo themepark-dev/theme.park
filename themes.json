@@ -484,7 +484,7 @@
     },
     "nginx-proxy-manager": {
       "addons": {},
-      "base_css": "https://develop.theme-park.dev/css/base/nginx-proxy-manager/nginx-proxy-manager-base.css?sha=3e8fcaa400cc7eb2d3e40828d7491faf"
+      "base_css": "https://develop.theme-park.dev/css/base/nginx-proxy-manager/nginx-proxy-manager-base.css?sha=e1b59db6f976c08d6308b752dfb71f1d"
     },
     "nzbget": {
       "addons": {},
