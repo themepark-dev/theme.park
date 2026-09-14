@@ -13,268 +13,249 @@
 @import url("/css/defaults/placeholders.css");
 @import url("/css/defaults/transparent.css");
 
-:root {
-    --scheme-main-ter: var(--main-bg-color);
-    --text-strong-color: var(--button-text-hover);
-    --border-color: var(--transparency-light-25);
-    --logo-color: rgb(var(--accent-color));
-    --body-background-color: var(--main-bg-color);
-    --border-hover-color: rgb(var(--accent-color));
-}
-
-* {
-    outline: none;
-}
-
+/* Dozzle 11. DaisyUI variables are colors, while theme.park background
+   variables can include gradients, positioning and attachment. */
 html,
 body {
-    background: var(--main-bg-color) !important;
-    background-repeat: repeat, no-repeat;
-    background-attachment: fixed, fixed;
-    background-position: center center, center center;
-    background-size: auto, cover;
-    -webkit-background-size: auto, cover;
-    -moz-background-size: auto, cover;
-    -o-background-size: auto, cover;
+    background: var(--main-bg-color);
     color: var(--text);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-section header,
-.menu-label {
-    color: var(--text-hover) !important;
+html[data-theme] {
+    --color-base-100: transparent;
+    --color-base-200: var(--transparency-dark-15);
+    --color-base-300: var(--transparency-dark-25);
+    --color-base-content: var(--text);
+    --color-primary: rgb(var(--accent-color));
+    --color-primary-content: var(--label-text-color);
+    --color-secondary: var(--button-color);
+    --color-secondary-content: var(--button-text);
+    --color-neutral: var(--transparency-dark-25);
+    --color-neutral-content: var(--text);
+    /* Mix ANSI hues with theme text so native light mode cannot leave dark
+       terminal colors on a dark theme. Keep each severity's original hue. */
+    --ansi-black: var(--text-muted);
+    --ansi-red: color-mix(in srgb, var(--text) 55%, #ff0000);
+    --ansi-green: color-mix(in srgb, var(--text) 55%, #00a000);
+    --ansi-yellow: color-mix(in srgb, var(--text) 55%, #c09000);
+    --ansi-blue: color-mix(in srgb, var(--text) 55%, #0066ff);
+    --ansi-magenta: color-mix(in srgb, var(--text) 55%, #cc00cc);
+    --ansi-cyan: color-mix(in srgb, var(--text) 55%, #009999);
+    --ansi-white: var(--text);
+    --ansi-bright-black: var(--text-muted);
+    --ansi-bright-red: var(--ansi-red);
+    --ansi-bright-green: var(--ansi-green);
+    --ansi-bright-yellow: var(--ansi-yellow);
+    --ansi-bright-blue: var(--ansi-blue);
+    --ansi-bright-magenta: var(--ansi-magenta);
+    --ansi-bright-cyan: var(--ansi-cyan);
+    --ansi-bright-white: var(--text-hover);
 }
 
-
-/* Scrollbar */
-
-html.has-custom-scrollbars ::-webkit-scrollbar-thumb {
-    background: var(--transparency-light-25);
-    outline: 1px solid #0000;
-    border-radius: 4px;
+/* Keep focus visible on custom controls as well as form fields. */
+html[data-theme] :focus-visible {
+    outline: 2px solid rgb(var(--accent-color)) !important;
+    outline-offset: 2px;
 }
 
-html.has-custom-scrollbars ::-webkit-scrollbar-thumb:active,
-html.has-custom-scrollbars ::-webkit-scrollbar-thumb:hover {
-    background: var(--transparency-light-45);
-
-}
-
-html.has-custom-scrollbars ::-webkit-scrollbar-track {
-    background: #1f1f1f;
-}
-
-html.has-custom-scrollbars ::-webkit-scrollbar-track:hover {
-    background: #1f1f1f;
-}
-
-html.has-custom-scrollbars section main {
-    scrollbar-color: #353535 transparent;
-    scrollbar-width: thin
-}
-
-/* Text important */
-p,
-.menu-list a {
-    color: var(--text) !important;
-
-}
-
-.panel-heading {
-    background-color: rgb(var(--accent-color));
-    color: var(--label-text-color) !important;
-}
-
-.panel-block {
+html[data-theme] .nav-group-toggle {
     color: var(--text);
 }
 
-.panel-tabs a.is-active {
-    border-bottom-color: rgb(var(--accent-color));
-    color: rgb(var(--accent-color));
+html[data-theme] .nav-group-toggle:hover {
+    color: var(--text-hover);
 }
 
-.panel-tabs a {
-    border-bottom: 1px solid var(--border-color);
+html[data-theme] .nav-item {
     color: var(--text);
 }
 
-.panel-tabs a:hover {
-    border-bottom: 1px solid var(--border-color);
-    color: var(--text-strong-color);
+html[data-theme] .nav-item:hover {
+    color: var(--text-hover);
+    background: var(--transparency-light-10);
 }
 
-a.panel-block:hover,
-label.panel-block:hover {
-    background-color: var(--transparency-light-10);
-    color: var(--text-strong-color);
+html[data-theme] .nav-item.is-active,
+html[data-theme] .nav-item.is-merged {
+    color: var(--text-hover);
+    background: rgba(var(--accent-color), .15);
+    box-shadow: inset 2px 0 rgb(var(--accent-color));
 }
 
-/* Side Menu*/
-.menu-list a:hover {
-    background-color: var(--transparency-light-10);
-    color: var(--text-hover) !important;
+html[data-theme] .nav-item.is-muted {
+    color: var(--text-muted);
 }
 
-.menu-list a.is-active,
-.menu-list a.is-active:hover {
-    background-color: rgb(var(--accent-color));
-    color: var(--label-text-color) !important;
+html[data-theme] .btn:not(.btn-error, .btn-warning, .btn-success, .btn-info, .btn-ghost, .btn-link) {
+    background: var(--button-color);
+    color: var(--button-text);
+    border-color: transparent;
 }
 
-.menu-list li:hover .column-icon:hover {
-    color: black !important;
+html[data-theme] .btn:is(.btn-ghost, .btn-link) {
+    background: transparent;
+    color: var(--text);
 }
 
-li.exited a {
-    color: var(--text-muted) !important;
+html[data-theme] .btn:not(.btn-error, .btn-warning, .btn-success, .btn-info):not(:disabled, .btn-disabled, [aria-disabled="true"]):hover {
+    background: var(--button-color-hover);
+    color: var(--button-text-hover);
 }
 
-.select select,
-.textarea,
-.input,
-.dropdown-content {
-    background: var(--modal-bg-color);
-    background-repeat: repeat, no-repeat;
-    background-attachment: fixed, fixed;
-    background-position: center center, center center;
-    background-size: auto, cover;
-    -webkit-background-size: auto, cover;
-    -moz-background-size: auto, cover;
-    -o-background-size: auto, cover;
-    border-color: rgba(255, 255, 255, .1);
-    border-radius: 4px;
-    color: var(--text-strong-color);
+html[data-theme] .btn:is(.btn-error, .btn-warning, .btn-success, .btn-info):not(:disabled, .btn-disabled, [aria-disabled="true"]):hover {
+    background: var(--btn-color);
+    color: var(--btn-fg);
+    filter: brightness(1.1);
 }
 
-.autocomplete .dropdown-item.is-hovered,
-a.dropdown-item:hover,
-button.dropdown-item:hover {
-    background: var(--transparency-light-25);
-    color: var(--text-strong-color);
+html[data-theme] .btn:is(:disabled, .btn-disabled, [aria-disabled="true"]) {
+    background: var(--transparency-dark-15);
+    color: var(--text-muted);
+    border-color: transparent;
 }
 
-.column-icon[data-v-35775614]:hover {
-    color: rgb(var(--accent-color));
+html[data-theme] :is(.input, .select, .textarea) {
+    background: var(--transparency-dark-25);
+    color: var(--text);
+    border-color: color-mix(in srgb, var(--text) 25%, transparent);
 }
 
-.select select:focus,
-.textarea:focus,
-.input:focus,
-.select select.is-focused,
-.is-focused.textarea,
-.is-focused.input,
-.select select:active,
-.textarea:active,
-.input:active,
-.select select.is-active,
-.is-active.textarea,
-.is-active.input {
+html[data-theme] :is(.input, .select, .textarea):focus-within {
     border-color: rgb(var(--accent-color));
-    box-shadow: 0 0 0 0.125em rgba(var(--accent-color), .25);
 }
 
-/* Settings buttons */
-.button {
-    background: var(--button-color);
+html[data-theme] :is(.input-error, .input-error\!, .select-error, .textarea-error),
+html[data-theme] :is(.input-error, .input-error\!, .select-error, .textarea-error):focus-within {
+    border-color: var(--color-error);
+}
+
+html[data-theme] .cm-editor {
+    --color-success: var(--ansi-green);
+    --color-info: var(--ansi-blue);
+    --color-warning: var(--ansi-yellow);
+    --color-secondary: var(--ansi-magenta);
+}
+
+html[data-theme] :is(.cm-placeholder, .cm-gutters) {
+    color: var(--text-muted);
+}
+
+html[data-theme] select option {
+    background: var(--drop-down-menu-bg);
+    color: var(--text);
+}
+
+html[data-theme] :is(.popover-panel, .nav-menu-panel, .cm-tooltip) {
+    background: var(--drop-down-menu-bg) !important;
+    color: var(--text);
+}
+
+html[data-theme] .toast > div,
+html[data-theme] [data-testid="scrollable-header"] + .pointer-events-none > div {
+    background: var(--drop-down-menu-bg);
+}
+
+html[data-theme] .nav-menu-item:hover {
+    background: var(--transparency-light-10);
+}
+
+html[data-theme] .modal-box,
+html[data-theme] .modal-box.bg-transparent > div {
+    background: var(--modal-bg-color);
+    color: var(--text);
+}
+
+html[data-theme] .modal-box.bg-transparent {
+    background: transparent;
+}
+
+html[data-theme] .modal-right .modal-box header {
+    /* The inset drawer heading shares the body's background. Painting a
+       separate gradient here creates a rectangle inside the modal padding. */
+    background: transparent;
+}
+
+html[data-theme] .modal-right .modal-box .sticky.bottom-0 {
+    background: var(--modal-footer-color);
+}
+
+/* The search dialog wraps its content in a transparent, padded modal-box. */
+html[data-theme] .modal-box.bg-transparent > div > :first-child {
+    background: var(--modal-header-color);
+}
+
+html[data-theme] .modal-box.bg-transparent > div > :last-child {
+    background: var(--modal-footer-color);
+}
+
+/* Fixed navigation and sticky toolbars must cover logs scrolling behind them. */
+html[data-theme] nav[data-testid="navigation"],
+html[data-theme] [data-testid="scrollable-header"] {
+    background: var(--main-bg-color);
+}
+
+html[data-theme] .splitpanes__splitter {
+    background: var(--transparency-dark-25);
+}
+
+html[data-theme] mark {
     color: var(--button-text);
-    border-color: var(--button-color);
 }
 
-section .is-scrollbar-notification button {
-    background: var(--button-color) !important;
-    color: var(--button-text) !important;
-    border-color: var(--button-color) !important;
+html[data-theme] .json-boolean {
+    color: var(--ansi-magenta);
 }
 
-.b-radio.radio.button.is-selected {
-    background-color: var(--button-color-hover);
-    border-color: transparent;
-    color: var(--text-strong-color);
+html[data-theme] .json-key {
+    color: var(--ansi-blue);
 }
 
-.button:hover {
-    background: var(--button-color-hover) !important;
-    border-color: var(--button-color-hover) !important;
-    color: var(--button-text-hover) !important;
+html[data-theme] .json-string {
+    color: var(--ansi-green);
 }
 
-.button:active,
-.button.is-active {
-    background: var(--button-color-hover);
-    border-color: var(--button-color-hover);
-    color: var(--text-strong-color);
+html[data-theme] .json-number {
+    color: var(--ansi-yellow);
 }
 
-.is-settings-control {
-    background: var(--button-color);
-    color: var(--button-text);
-    border-color: transparent;
+html[data-theme] .json-null {
+    color: var(--ansi-red);
 }
 
-.is-settings-control:hover {
-    border-color: var(--button-color-hover) !important;
-    background: var(--button-color-hover) !important;
-    color: var(--button-text-hover) !important;
+html[data-theme] :is(.text-primary, .text-secondary) {
+    color: var(--text);
 }
 
-#hide-nav {
-    background: var(--button-color) !important;
-    color: var(--button-text) !important;
+html[data-theme] :is(.text-base-content\/40, .text-base-content\/45, .text-base-content\/50, .text-base-content\/55, .text-base-content\/60) {
+    color: var(--text-muted);
 }
 
-#hide-nav:hover {
-    border-color: var(--button-color-hover) !important;
-    background: var(--button-color-hover) !important;
-    color: var(--button-text-hover) !important;
+html[data-theme] code {
+    color: inherit;
+    background: var(--transparency-dark-15) !important;
 }
 
-code {
-    background: var(--transparency-dark-35) !important;
+html[data-theme] .modal-right .field-row code {
+    background: transparent !important;
 }
 
-.switch input[type=checkbox]:checked+.check {
-    background: var(--button-color);
-}
-
-.switch:hover input[type=checkbox]:checked+.check {
-    background: var(--button-color-hover);
-}
-
-.switch input[type=checkbox]:focus:checked+.check,
-.switch input[type=checkbox]:active:checked+.check {
-    box-shadow: 0 0 0.5em rgb(var(--accent-color), .8);
-}
-
-/* Events */
-
-.events {
+/* data-logs identifies the list even when error highlighting is disabled. */
+html[data-theme] [data-logs] {
     background: var(--transparency-dark-35);
 }
 
-.scroll-progress svg circle {
-    fill: rgba(255, 255, 255, .45) !important;
-    stroke: rgb(var(--accent-color)) !important;
+html[data-theme] :is(.link, .link-primary, a[rel~="external"]) {
+    color: var(--link-color);
 }
 
-.scroll-progress span {
-    color: var(--text-strong-color) !important;
+html[data-theme] :is(.link, .link-primary, a[rel~="external"]):hover {
+    color: var(--link-color-hover);
 }
 
-.splitpanes--vertical>.splitpanes__splitter:hover {
-    background: rgb(var(--accent-color)) !important;
+html[data-theme].has-custom-scrollbars * {
+    scrollbar-color: var(--transparency-light-25) transparent;
 }
 
-.events.medium {
-    background: var(--transparency-dark-45);
-}
-
-.date {
-    color: rgb(var(--accent-color)) !important;
-    background: var(--transparency-dark-25) !important;
+html[data-theme].has-custom-scrollbars ::-webkit-scrollbar-track {
+    background: transparent;
 }
