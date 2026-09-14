@@ -1,0 +1,61 @@
+name: themepark-dozzle-dev
+services:
+  css:
+    image: python:3.12-alpine
+    working_dir: /site
+    command: ["python", "/serve.py"]
+    ports: ["127.0.0.1:18865:8000"]
+    volumes:
+      - ../../css:/site/css:ro
+      - ../../resources:/site/resources:ro
+      - ../serve.py:/serve.py:ro
+  dozzle:
+    image: amir20/dozzle:${DOZZLE_TAG:-v11.0.1}
+    environment:
+      DOZZLE_FILTER: label=dev.themepark.sample=dozzle
+      DOZZLE_NO_ANALYTICS: "true"
+      DOZZLE_ENABLE_ACTIONS: "false"
+      DOZZLE_ENABLE_SHELL: "false"
+    ports: ["127.0.0.1:18080:8080"]
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - data:/data
+  proxy:
+    image: nginx:stable-alpine
+    depends_on: [css, dozzle]
+    environment:
+      TP_THEME: ${TP_THEME:-dracula}
+      TP_THEME_FOLDER: ${TP_THEME_FOLDER:-theme-options}
+    ports: ["127.0.0.1:18081:8080"]
+    volumes:
+      - ./default.conf.template:/etc/nginx/templates/default.conf.template:ro
+  sample-web:
+    image: python:3.12-alpine
+    command: ["python", "-u", "/sample-logs.py"]
+    environment:
+      SAMPLE_NAME: web
+    labels:
+      dev.themepark.sample: dozzle
+      dev.dozzle.name: sample-web
+    volumes: ["./sample-logs.py:/sample-logs.py:ro"]
+  sample-worker:
+    image: python:3.12-alpine
+    command: ["python", "-u", "/sample-logs.py"]
+    environment:
+      SAMPLE_NAME: worker
+    labels:
+      dev.themepark.sample: dozzle
+      dev.dozzle.name: sample-worker
+    volumes: ["./sample-logs.py:/sample-logs.py:ro"]
+  sample-stopped:
+    image: python:3.12-alpine
+    command: ["python", "-u", "/sample-logs.py"]
+    environment:
+      SAMPLE_NAME: stopped
+      SAMPLE_EXIT: "true"
+    labels:
+      dev.themepark.sample: dozzle
+      dev.dozzle.name: sample-stopped
+    volumes: ["./sample-logs.py:/sample-logs.py:ro"]
+volumes:
+  data:
