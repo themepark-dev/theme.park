@@ -1,0 +1,27 @@
+name: themepark-ombi-dev
+
+services:
+  css:
+    image: python:3.12-alpine
+    working_dir: /site
+    command: ["python", "/serve.py"]
+    ports:
+      - "127.0.0.1:18868:8000"
+    volumes:
+      - ../../css:/site/css:ro
+      - ../../resources:/site/resources:ro
+      - ../serve.py:/serve.py:ro
+
+  ombi:
+    image: lscr.io/linuxserver/ombi:${OMBI_TAG:-version-v4.53.4}
+    environment:
+      PUID: "1000"
+      PGID: "1000"
+      TZ: Etc/UTC
+    ports:
+      - "127.0.0.1:18085:3579"
+    volumes:
+      - config:/config
+
+volumes:
+  config:
