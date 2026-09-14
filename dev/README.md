@@ -132,8 +132,10 @@ publishing changes.
    and run-specific results under ignored `dev/artifacts/<app>/<issue>/`.
    Document reusable discoveries using the guidance below before finishing.
 9. Keep PR descriptions short and apply the `unslop` skill. State the fixes and
-   relevant validation. Before/after screenshots can be attached but are not
-   mandatory for bug-fix PRs; keep local visual evidence for verification.
+   relevant validation. Include before/after screenshots in PR descriptions for visual
+   changes, including bug fixes and theme rewrites. Use the same app version,
+   theme, viewport and interaction state where possible. Keep the full local
+   evidence set for verification.
 10. Leave changes local for review. Report which test services remain running
    and how to stop them. Stop only services created for the task. Delete saved
    configuration only when resetting the test instance. Never push or deploy without
@@ -253,6 +255,20 @@ Check Compose defaults before recreating services. A theme selected with an
 inline environment variable applies to that command only. Repeat the override
 when recreating the proxy to avoid reverting the review instance to its default
 theme. Record the selected theme and startup command in the task artifacts.
+
+### Screenshots in pull requests
+
+Before/after screenshots are required for visual changes. Embed the images in
+the PR description so reviewers can compare them without downloading files.
+Use GitHub attachments or existing repository assets where suitable. If an
+attachment is unavailable, commit only the selected review images under
+`dev/<app>/screenshots/` and embed their immutable raw GitHub URLs. Keep full test
+runs and intermediate captures under ignored `dev/artifacts/`.
+
+For a documentation gallery refresh, show the previous and updated gallery
+images in the docs PR and label their app versions when known. Link the related
+theme PR. Changes with no visible result, such as workflow instructions, do not
+need screenshots.
 
 ### Refresh documentation screenshots
 

@@ -29,7 +29,8 @@ affected app and inspect the result in a browser.
   untested ideas. Keep run-specific evidence under ignored `dev/artifacts/`.
 - Always apply the `unslop` skill to writing. Keep PR titles and descriptions
   short, stating the user-visible fixes and relevant validation. Before/after
-  screenshot attachments are optional for bug-fix PRs, per the maintainer.
+  screenshots are required in PR descriptions for visual changes, including
+  bug fixes and theme rewrites. Show the affected UI in comparable states.
   The skill source is
   [cursor/plugins unslop](https://raw.githubusercontent.com/cursor/plugins/refs/heads/main/pstack/skills/unslop/SKILL.md).
 
