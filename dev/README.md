@@ -28,6 +28,10 @@ colors and how to reproduce a native stylesheet replacement.
 The [Nginx Proxy Manager setup](nginx-proxy-manager/README.md) uses the official
 startup script and includes browser checks for theme variables and UI states.
 
+The [Jellyfin setup](jellyfin/README.md) uses synthetic movies, built-in Custom CSS,
+and nginx subfiltering for the dashboard. Its notes cover the Jellyfin 12 palette
+and table backgrounds that do not follow the app's CSS variables.
+
 ## Development logins
 
 Use `admin` / `admin` for disposable app logins, as requested by the maintainer.
