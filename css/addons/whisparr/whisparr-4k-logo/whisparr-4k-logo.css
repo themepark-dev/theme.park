@@ -1,0 +1,22 @@
+/* Whisparr v2 and the compact Whisparr v3 header. */
+img[class*="PageHeader-logo-"],
+img[class*="PageSidebar-logo-"],
+.panel-header > img.logo {
+    content: url("whisparr-4k.svg");
+    width: 32px;
+    height: 32px;
+}
+
+/* Whisparr v3 desktop header. */
+img[class*="PageHeader-logoFull-"] {
+    content: url("whisparr-4k.svg");
+    width: 40px;
+    height: 40px;
+}
+
+img[class*="LoadingPage-logoFull-"] {
+    content: url("whisparr-4k.svg");
+    width: 48px;
+    height: 48px;
+    opacity: 1;
+}

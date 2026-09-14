@@ -220,6 +220,7 @@
       }
     },
     "whisparr": {
+      "whisparr-4k-logo": "https://develop.theme-park.dev/css/addons/whisparr/whisparr-4k-logo/whisparr-4k-logo.css?sha=eec8c08bb53e6cb3c6138d8ea00e6ede",
       "whisparr-alt-calendar": "https://develop.theme-park.dev/css/addons/whisparr/whisparr-alt-calendar/whisparr-alt-calendar.css?sha=629d1ee4e317a191c1019495734835e0",
       "whisparr-darker": "https://develop.theme-park.dev/css/addons/whisparr/whisparr-darker/whisparr-darker.css?sha=063f4e583a6eb0dab9ed64eec5e2e09f"
     }
@@ -769,6 +770,7 @@
     },
     "whisparr": {
       "addons": {
+        "whisparr-4k-logo": "https://develop.theme-park.dev/css/addons/whisparr/whisparr-4k-logo/whisparr-4k-logo.css?sha=eec8c08bb53e6cb3c6138d8ea00e6ede",
         "whisparr-alt-calendar": "https://develop.theme-park.dev/css/addons/whisparr/whisparr-alt-calendar/whisparr-alt-calendar.css?sha=629d1ee4e317a191c1019495734835e0",
         "whisparr-darker": "https://develop.theme-park.dev/css/addons/whisparr/whisparr-darker/whisparr-darker.css?sha=063f4e583a6eb0dab9ed64eec5e2e09f"
       },
