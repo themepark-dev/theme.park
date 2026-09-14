@@ -5,7 +5,9 @@
 
 ## Bug fixes
 
-- When submitting bugfixes please show a before and after screenshot of the fix, and a description of what the fix does.
+- PR descriptions for visual changes must include before/after screenshots and a short description of the fix. This applies to bug fixes, theme rewrites, and documentation gallery updates.
+- Use comparable app states, theme options, and viewport sizes. Embed the images in the description; local-only screenshots do not meet this requirement.
+- Changes with no visible result, such as workflow instructions, do not need screenshots.
 
 ## New theme option
 
