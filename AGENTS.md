@@ -5,6 +5,8 @@ affected app and inspect the result in a browser.
 
 ## Maintainer instructions
 
+- Use `admin` / `admin` for disposable development app logins. If an app enforces an email address or a longer password, use `admin@example.com` and `adminadmin` as needed, and document the exception and login beside its startup URL.
+
 - Do not push, publish, deploy, or trigger deployment workflows without an
   explicit instruction from the maintainer. Describing their usual release
   workflow does not authorize a push. Keep trial-run work local and reviewable.

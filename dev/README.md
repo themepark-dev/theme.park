@@ -25,6 +25,17 @@ The [Pi-hole setup](pihole/README.md) seeds synthetic network devices and uses
 nginx injection. Its notes explain the Network page's dependency on opaque CSS
 colors and how to reproduce a native stylesheet replacement.
 
+The [Nginx Proxy Manager setup](nginx-proxy-manager/README.md) uses the official
+startup script and includes browser checks for theme variables and UI states.
+
+## Development logins
+
+Use `admin` / `admin` for disposable app logins, as requested by the maintainer.
+If the app enforces an email address, use `admin@example.com`. If it rejects the
+short password, use `adminadmin` when accepted. Document any exception beside the
+app URL so the maintainer does not have to ask for credentials. These defaults
+apply to local test instances, not existing user accounts outside that setup.
+
 ## Choose hosting and injection separately
 
 The CSS host serves stylesheets. The injection method makes the app load them.
