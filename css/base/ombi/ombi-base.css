@@ -38,6 +38,14 @@ html, body, .wizard-background, .content-container, #main-container\ dark > mat-
     background: transparent !important;
 }
 
+.top-bar-container .profile-block a {
+    color: var(--text) !important;
+}
+
+.top-bar-container .profile-block a:hover {
+    color: var(--text-hover) !important;
+}
+
 .container-alert {
     color: var(--text-hover);
     background: var(--transparency-dark-50) !important;
@@ -233,13 +241,14 @@ a:hover {
     background: var(--transparency-light-10) !important;
     border: 1px solid rgb(255 255 255 / 10%) !important;
     border-radius: 30px;
-    color: var(--text-hover);
+    color: var(--text-hover) !important;
     margin-bottom: 10px;
     margin-right: 30px;
 }
 
 .discover-filter-buttons-group .button-active {
-    background: var(--transparency-dark-45) !important;
+    background: var(--button-color) !important;
+    color: var(--button-text) !important;
 }
 
 #search-filter{
@@ -491,6 +500,22 @@ button.admin-cog {
 }
 
 /* FORMS */
+.mat-hint {
+    color: var(--text-muted) !important;
+}
+
+.mat-form-field-appearance-outline:not(.mat-form-field-invalid):not(.mat-form-field-disabled) .mat-form-field-label {
+    color: var(--text-muted) !important;
+}
+
+.mat-form-field-appearance-outline.mat-focused:not(.mat-form-field-invalid) .mat-form-field-label {
+    color: var(--text-hover) !important;
+}
+
+.mat-form-field-appearance-outline:not(.mat-focused):not(.mat-form-field-invalid):not(.mat-form-field-disabled) .mat-form-field-outline {
+    color: var(--text-muted);
+}
+
 ::ng-deep .dark .mat-form-field.mat-focused .mat-form-field-label,
 ::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
     color: rgb(var(--accent-color)) !important;
