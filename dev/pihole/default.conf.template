@@ -1,0 +1,17 @@
+server {
+    listen 8080;
+    server_name localhost;
+    location / {
+        proxy_pass http://pihole:80;
+        proxy_set_header Host $http_host;
+        proxy_set_header Accept-Encoding "";
+        proxy_hide_header Content-Security-Policy;
+        add_header Content-Security-Policy "default-src 'none'; base-uri 'none'; form-action 'self'; frame-src 'self'; font-src 'self'; connect-src 'self'; img-src 'self' data:; manifest-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' http://localhost:18866 'unsafe-inline'";
+        sub_filter_once on;
+        sub_filter '</head>' '<link rel="stylesheet" href="http://localhost:18866/css/base/pihole/pihole-base.css"><link rel="stylesheet" href="http://localhost:18866/css/theme-options/${TP_THEME}.css"></head>';
+    }
+    location /api {
+        proxy_pass http://pihole:80;
+        proxy_set_header Host $http_host;
+    }
+}

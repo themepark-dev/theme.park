@@ -21,6 +21,10 @@ The [Dozzle setup](dozzle/README.md) runs synthetic container logs and injects
 CSS through a local nginx proxy. It includes Dozzle's CSP and streaming API
 exceptions, with a direct port for native comparisons.
 
+The [Pi-hole setup](pihole/README.md) seeds synthetic network devices and uses
+nginx injection. Its notes explain the Network page's dependency on opaque CSS
+colors and how to reproduce a native stylesheet replacement.
+
 ## Choose hosting and injection separately
 
 The CSS host serves stylesheets. The injection method makes the app load them.
