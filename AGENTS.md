@@ -17,6 +17,9 @@ affected app and inspect the result in a browser.
 - Reserve `testing` for potentially breaking changes that need isolation from
   users of `develop`. It is not a required step for ordinary fixes. Users of
   `testing` accept disruption; protecting them is not a release constraint.
+- App UI rewrites do not need backward compatibility unless the rewrite targets
+  the themed app's development branch. In that case, preserve support for its
+  stable release.
 - Add development tools when an app needs them. Record setup steps in
   `dev/<app>/README.md` so the next session can reuse them.
 - Document discoveries that would help another session before finishing a task.

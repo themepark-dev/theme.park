@@ -150,6 +150,10 @@ continued support. Do not silently deprecate the app or present a partial
 sidebar patch as restored support. Keep the working local setup and findings
 available for that decision.
 
+The maintainer does not require backward compatibility for app UI rewrites,
+unless the rewrite targets the app's development branch. Preserve stable-release
+support in that case. Record the target version and branch in the app notes.
+
 ## Background checks
 
 Test background types as well as colors. Use at least these cases when changing
