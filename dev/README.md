@@ -17,6 +17,10 @@ resources read-only. File edits appear on refresh without a build.
 There is no shared nginx proxy or theme.park image setup yet. Add and test one
 when an app task needs it, using the guidance below.
 
+The [Dozzle setup](dozzle/README.md) runs synthetic container logs and injects
+CSS through a local nginx proxy. It includes Dozzle's CSP and streaming API
+exceptions, with a direct port for native comparisons.
+
 ## Choose hosting and injection separately
 
 The CSS host serves stylesheets. The injection method makes the app load them.
