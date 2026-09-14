@@ -259,6 +259,15 @@
       box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   }
 
+  .box,
+  .box-solid,
+  .box-header.with-border,
+  .box-footer,
+  .content .page-header,
+  .content hr {
+      border-color: var(--transparency-light-15);
+  }
+
   .box-solid>.box-header,
   .box>.box-header {
       color: var(--text);
@@ -291,7 +300,8 @@
   }
 
   .table-bordered {
-      background: var(--transparency-dark-10)
+      background: var(--transparency-dark-10);
+      border-color: var(--transparency-light-15);
   }
 
   .table-bordered>thead>tr>th,
@@ -411,6 +421,27 @@
   }
 
   /* Network */
+  /* Pi-hole's row renderer parses these as opaque rgb() colors. */
+  .network-never {
+      background-color: #661b02;
+  }
+
+  .network-recent {
+      background-color: #114100;
+  }
+
+  .network-old {
+      background-color: #525200;
+  }
+
+  .network-older {
+      background-color: #502b00;
+  }
+
+  .network-gradient {
+      background-image: linear-gradient(to right, #114100 0%, #525200 100%);
+  }
+
   .table-striped>tbody>tr:nth-of-type(odd):not(#network-details .table-striped>tbody>tr:nth-of-type(odd)) {
       background: var(--transparency-dark-25) !important;
   }
