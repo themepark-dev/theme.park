@@ -411,6 +411,27 @@
   }
 
   /* Network */
+  /* Pi-hole's row renderer parses these as opaque rgb() colors. */
+  .network-never {
+      background-color: #661b02;
+  }
+
+  .network-recent {
+      background-color: #114100;
+  }
+
+  .network-old {
+      background-color: #525200;
+  }
+
+  .network-older {
+      background-color: #502b00;
+  }
+
+  .network-gradient {
+      background-image: linear-gradient(to right, #114100 0%, #525200 100%);
+  }
+
   .table-striped>tbody>tr:nth-of-type(odd):not(#network-details .table-striped>tbody>tr:nth-of-type(odd)) {
       background: var(--transparency-dark-25) !important;
   }
