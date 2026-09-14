@@ -83,6 +83,22 @@ replacement test uses the documented native dark mode on the current release.
 This is a Network page fix, not a full Pi-hole theme refresh. Authentication,
 other browsers, and community light palettes remain outside this check.
 
+## Shared borders in Web v6.6
+
+The native dark stylesheet adds an opaque gray border to `.box` panels and
+separate colors to `.box-header.with-border` and `.table-bordered`. The old
+theme only overrode table cells, leaving the outer border and heading divider
+in the native palette. Page titles also retain Bootstrap's bright divider.
+The theme now uses `--transparency-light-15` for these shared borders.
+
+The follow-up pass inspected Network, Groups, Dashboard, Query Log, and System
+Settings. Use `/admin/settings-system`; `/admin/settings` returns a native 404.
+Network was checked with Aquamarine, Nord, and Hotline after the border change.
+Status-colored panel headers and device activity colors retain their meaning.
+The query log was empty, so populated query rows and their details dialogs were
+not covered by this pass. No additional defects were confirmed in the inspected
+views.
+
 ## Stop
 
 ```sh
