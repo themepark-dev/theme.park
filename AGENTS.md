@@ -19,6 +19,12 @@ affected app and inspect the result in a browser.
   `testing` accept disruption; protecting them is not a release constraint.
 - Add development tools when an app needs them. Record setup steps in
   `dev/<app>/README.md` so the next session can reuse them.
+- Document discoveries that would help another session before finishing a task.
+  Put shared workflow lessons in `dev/README.md` and app-specific lessons in
+  `dev/<app>/README.md`. Apply the `unslop` skill to these notes. Explain what
+  happened, why it matters, and how to reproduce or avoid it. Update existing
+  guidance instead of duplicating it, and distinguish verified findings from
+  untested ideas. Keep run-specific evidence under ignored `dev/artifacts/`.
 - Always apply the `unslop` skill to writing. Keep PR titles and descriptions
   short, stating the user-visible fixes and relevant validation. Before/after
   screenshot attachments are optional for bug-fix PRs, per the maintainer.

@@ -115,7 +115,7 @@ publishing changes.
 8. Record the cause, patch, image tag, app version, browser,
    theme, viewport, reproduction steps, evidence, and gaps. Store screenshots
    and run-specific results under ignored `dev/artifacts/<app>/<issue>/`.
-   Put reusable setup instructions in `dev/<app>/README.md`.
+   Document reusable discoveries using the guidance below before finishing.
 9. Keep PR descriptions short and apply the `unslop` skill. State the fixes and
    relevant validation. Before/after screenshots can be attached but are not
    mandatory for bug-fix PRs; keep local visual evidence for verification.
@@ -210,6 +210,51 @@ than treating them as covered by the original issue.
 Save reusable navigation and debugging notes in the app README. Keep screenshots
 and detailed results in the ignored artifact directory. A useful note names the
 element, the rule that caused the problem, and the checks that exposed it.
+
+## Keep lessons for the next session
+
+Document discoveries that would save another session time or prevent a repeated
+mistake. Apply the `unslop` skill to every note. Put shared workflow lessons here
+and app-specific setup, navigation, selectors, and exceptions in
+`dev/<app>/README.md`. Keep `AGENTS.md` focused on instructions for doing the work.
+Update an existing note when it covers the same subject.
+
+A useful note explains the observed problem, its cause, and the command or
+interaction that resolves it. Include the app version when behavior may change
+between releases. State what was verified and label untested ideas. Record
+maintainer-approved exceptions with their reason and scope so another session
+does not undo them. Keep temporary paths, full logs, and individual run results
+under ignored `dev/artifacts/<app>/<issue>/`. Do not copy a session transcript
+into the README or include credentials and private data.
+
+### Preserve the review instance
+
+When the maintainer is checking a running instance, preserve its selected theme
+and profile settings. Separate browser contexts may still share settings stored
+by the app on its server. Dozzle shares its profile between the native and proxy
+URLs, so automated appearance changes can affect the maintainer's tabs.
+
+Check Compose defaults before recreating services. A theme selected with an
+inline environment variable applies to that command only. Repeat the override
+when recreating the proxy to avoid reverting the review instance to its default
+theme. Record the selected theme and startup command in the task artifacts.
+
+### Refresh documentation screenshots
+
+For a theme refresh, check the app's page in the separate `tp-docs` repository
+for screenshots that still show the old UI. Reuse verified captures of the final
+CSS, with synthetic data and consistent viewport sizes.
+
+Inspect the page template and `mkdocs.yml` before replacing assets. Dozzle's
+gallery loops over `config.extra.themes` and expects
+`docs/site_assets/dozzle/<theme>.png`. Existing files can be missing options
+that the gallery already references. Compare the configured list with the
+captures instead of replacing only the images already present.
+
+Build MkDocs, open the rendered app page, and check that every gallery image
+loads and shows the intended theme. A successful build alone does not establish
+that image URLs work. Keep the docs change in a separate branch and PR targeting
+`develop`; publishing still requires the maintainer's instruction.
 
 ## Publishing development files
 
