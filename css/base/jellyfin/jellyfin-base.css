@@ -60,13 +60,13 @@ h6,
     color: var(--text-hover);
 }
 
-a:not(.emby-button),
+a:not(.emby-button):not(.MuiButtonBase-root),
 .cardText.cardTextCentered.cardText-first>button,
 .emby-linkbutton>a {
     color: var(--link-color) !important;
 }
 
-a:hover:not(.emby-button),
+a:hover:not(.emby-button):not(.MuiButtonBase-root),
 .cardText.cardTextCentered.cardText-first>button:hover,
 .emby-linkbutton>a:hover {
     color: var(--link-color-hover) !important;
@@ -936,4 +936,157 @@ html {
 .layout-tv .emby-button.detailFloatingButton:focus {
     background-color: #f2f2f2;
     color: rgb(var(--theme-accent-text-color));
+}
+/* Jellyfin 12 uses the jf palette for both Material UI and legacy components. */
+:root[data-theme] {
+    --jf-palette-primary-main: rgb(var(--accent-color));
+    --jf-palette-primary-light: var(--link-color-hover);
+    --jf-palette-primary-dark: var(--button-color);
+    --jf-palette-primary-contrastText: var(--button-text);
+    --jf-palette-secondary-main: rgb(var(--accent-color));
+    --jf-palette-secondary-light: var(--link-color-hover);
+    --jf-palette-secondary-dark: var(--button-color);
+    --jf-palette-secondary-contrastText: var(--button-text);
+    /* MUI inserts these channels into rgba(channel / opacity). */
+    --jf-palette-primary-mainChannel: from rgb(var(--accent-color)) r g b;
+    --jf-palette-secondary-mainChannel: from rgb(var(--accent-color)) r g b;
+    --jf-palette-text-primary: var(--text);
+    --jf-palette-text-secondary: var(--text-muted);
+    --jf-palette-text-disabled: var(--text-muted);
+    --jf-palette-text-primaryChannel: from var(--text) r g b;
+    --jf-palette-text-secondaryChannel: from var(--text-muted) r g b;
+    --jf-palette-background-default: transparent;
+    --jf-palette-background-defaultImage: none;
+    --jf-palette-background-paper: var(--drop-down-menu-bg);
+    --jf-palette-surface-overlay: var(--transparency-dark-25);
+    --jf-palette-divider: var(--transparency-light-15);
+    --jf-palette-action-active: var(--text);
+    --jf-palette-action-hover: var(--transparency-light-10);
+    --jf-palette-action-selected: rgba(var(--accent-color), .2);
+    --jf-palette-action-focus: rgba(var(--accent-color), .2);
+    --jf-palette-action-disabled: var(--text-muted);
+    --jf-palette-action-disabledBackground: var(--transparency-dark-15);
+    --jf-palette-action-activeChannel: from var(--text) r g b;
+    --jf-palette-AppBar-defaultBg: var(--drop-down-menu-bg);
+    --jf-palette-AppBar-darkBg: var(--drop-down-menu-bg);
+    --jf-palette-AppBar-darkColor: var(--text);
+    --jf-palette-FilledInput-bg: var(--transparency-dark-25);
+    --jf-palette-FilledInput-hoverBg: var(--transparency-dark-35);
+    --jf-palette-FilledInput-disabledBg: var(--transparency-dark-15);
+    --jf-palette-TableCell-border: var(--transparency-light-15);
+    --jf-palette-Tooltip-bg: var(--drop-down-menu-bg);
+    --jf-palette-SnackbarContent-bg: var(--drop-down-menu-bg);
+    --jf-palette-SnackbarContent-color: var(--text);
+    --jf-palette-Button-inheritContainedBg: var(--button-color);
+    --jf-palette-Button-inheritContainedHoverBg: var(--button-color-hover);
+}
+
+html[data-theme] {
+    background: var(--main-bg-color);
+    color: var(--text);
+}
+
+html .MuiPaper-root {
+    color: var(--text);
+    background-image: none;
+}
+
+html .MuiDrawer-paper {
+    background: var(--main-bg-color);
+    border-color: var(--transparency-light-15);
+}
+
+html .MuiDrawer-docked .MuiDrawer-paper {
+    background: var(--transparency-dark-25);
+}
+
+html .MuiAppBar-root {
+    background: var(--main-bg-color);
+    color: var(--text);
+}
+
+html .MuiDialog-paper {
+    background: var(--modal-bg-color);
+}
+
+html .MuiDialogTitle-root {
+    background: var(--modal-header-color);
+    color: var(--text-hover);
+}
+
+html .MuiDialogActions-root {
+    background: var(--modal-footer-color);
+}
+
+html .MuiMenu-paper,
+html .MuiPopover-paper {
+    background: var(--drop-down-menu-bg);
+}
+
+html .MuiButton-containedPrimary,
+html .MuiButton-containedSecondary,
+html .MuiButton-containedInherit {
+    --variant-containedBg: var(--button-color);
+    --variant-containedColor: var(--button-text);
+    background: var(--button-color);
+    color: var(--button-text);
+}
+
+html .MuiButton-containedPrimary:hover,
+html .MuiButton-containedSecondary:hover,
+html .MuiButton-containedInherit:hover {
+    background: var(--button-color-hover);
+    color: var(--button-text-hover);
+}
+
+html .MuiButton-root.Mui-disabled {
+    color: var(--text-muted);
+    background: var(--transparency-dark-15);
+}
+
+html .MuiButton-root:focus-visible,
+html .MuiIconButton-root:focus-visible,
+html .MuiListItemButton-root:focus-visible {
+    outline: 2px solid rgb(var(--accent-color));
+    outline-offset: 2px;
+}
+
+html .MuiInputBase-root,
+html .MuiInputLabel-root,
+html .MuiFormLabel-root,
+html .MuiListItemIcon-root {
+    color: var(--text);
+}
+
+html .MuiInputLabel-root.Mui-focused,
+html .MuiFormLabel-root.Mui-focused {
+    color: rgb(var(--accent-color));
+}
+
+html .MuiInputLabel-root.Mui-error,
+html .MuiFormLabel-root.Mui-error {
+    color: var(--jf-palette-error-main);
+}
+
+html .detailRibbon {
+    background: var(--transparency-dark-25);
+}
+
+/* Late-loaded legacy styles use compiled colors rather than the jf palette. */
+.userProfilesPage .visualCardBox,
+.dashboardDocument .paperList {
+    background-color: var(--card-background);
+}
+
+/* Dashboard tables calculate their backgrounds outside the jf CSS palette. */
+.dashboardDocument .MuiPaper-root:has(> .MuiTableContainer-root),
+.dashboardDocument .MuiPaper-root:has(> .MuiTableContainer-root) > .MuiBox-root,
+.dashboardDocument .MuiTableRow-root,
+.dashboardDocument .MuiTableCell-root,
+.dashboardDocument .MuiMenu-list {
+    background-color: var(--drop-down-menu-bg);
+}
+
+.dashboardDocument .MuiTableRow-root:hover .MuiTableCell-body {
+    background-image: linear-gradient(var(--transparency-light-10), var(--transparency-light-10));
 }
