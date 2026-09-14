@@ -1,347 +1,375 @@
-/*    dP   dP                                                                  dP        */
-/*    88   88                                                                  88        */
-/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
-/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
-/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
-/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
-/*                                                  88                                   */
-/*                                                  dP					 */
-
-/*		   		        Made by @gilbN					 */
-/* 			      https://github.com/gilbN/theme.park			 */
-
+/* Nginx Proxy Manager's React / Tabler UI. */
 @import url("/css/defaults/placeholders.css");
 @import url("/css/defaults/transparent.css");
 
+/* NPM changes its native palette on the root and body. Both modes use the
+   selected theme.park palette; status colors retain their Tabler meanings. */
+:root,
+:root[data-bs-theme],
+body[data-theme] {
+    --tblr-body-color: var(--text);
+    --tblr-heading-color: var(--text-hover);
+    --tblr-emphasis-color: var(--text-hover);
+    --tblr-secondary: var(--text-muted);
+    --tblr-secondary-color: var(--text-muted);
+    --tblr-secondary-bg: var(--transparency-dark-15);
+    --tblr-tertiary-bg: var(--transparency-dark-10);
+    --tblr-tertiary-color: var(--text-muted);
+    --tblr-muted: var(--text-muted);
+    --tblr-icon-color: var(--text-muted);
+    --tblr-primary: rgb(var(--accent-color));
+    --tblr-primary-rgb: var(--accent-color);
+    --tblr-primary-fg: var(--button-text);
+    --tblr-primary-darken: var(--button-color-hover);
+    --tblr-link-color: var(--link-color);
+    --tblr-link-hover-color: var(--link-color-hover);
+    --tblr-bg-surface: var(--transparency-dark-25);
+    --tblr-bg-surface-primary: var(--transparency-dark-25);
+    --tblr-bg-surface-secondary: var(--transparency-dark-15);
+    --tblr-bg-surface-tertiary: var(--transparency-dark-10);
+    --tblr-bg-forms: var(--transparency-dark-15);
+    --tblr-bg-surface-dark: var(--transparency-dark-25);
+    --tblr-border-color: color-mix(in srgb, var(--text) 22%, transparent);
+    --tblr-border-color-translucent: var(--tblr-border-color);
+    --tblr-border-dark-color: var(--tblr-border-color);
+    --tblr-border-active-color: rgb(var(--accent-color));
+    --tblr-active-bg: rgba(var(--accent-color), .15);
+    --tblr-disabled-bg: var(--transparency-dark-10);
+    --tblr-disabled-color: color-mix(in srgb, var(--text) 45%, transparent);
+    --tblr-code-color: var(--text);
+    --tblr-code-bg: var(--transparency-dark-25);
+}
+
 body {
     background: var(--main-bg-color);
-    background-repeat: repeat, no-repeat;
-    background-attachment: fixed, fixed;
-    background-position: center center, center center;
-    background-size: auto, cover;
-    -webkit-background-size: auto, cover;
-    -moz-background-size: auto, cover;
-    -o-background-size: auto, cover;
+    background-attachment: fixed;
     color: var(--text);
 }
 
-.header, .footer {
+::selection {
+    background: rgb(var(--accent-color));
+    color: var(--label-text-color);
+}
+
+a:not(.btn, .badge, .dropdown-item),
+.navbar .nav-link {
+    color: var(--link-color);
+}
+
+a:not(.btn, .badge, .dropdown-item):is(:hover, :focus-visible),
+.navbar .nav-link:is(:hover, :focus-visible) {
+    color: var(--link-color-hover);
+}
+
+/* Tabler marks link-secondary colors !important, including on hover. */
+.footer a.link-secondary {
+    color: var(--link-color) !important;
+}
+
+.footer a.link-secondary:is(:hover, :focus-visible) {
+    color: var(--link-color-hover) !important;
+}
+
+.navbar,
+.footer {
     background: var(--transparency-dark-25);
+    color: var(--text);
+}
+
+.navbar {
+    --tblr-navbar-color: var(--link-color);
+    --tblr-navbar-hover-color: var(--link-color-hover);
+    --tblr-navbar-active-color: var(--text-hover);
+    --tblr-navbar-brand-color: var(--text-hover);
+    --tblr-navbar-brand-hover-color: var(--link-color-hover);
+}
+
+.navbar-toggler-icon {
+    background-image: linear-gradient(var(--text), var(--text)),
+        linear-gradient(var(--text), var(--text)), linear-gradient(var(--text), var(--text));
+    background-size: 75% 2px;
+    background-position: center 25%, center 50%, center 75%;
+    background-repeat: no-repeat;
+}
+
+.nav-tabs {
+    --tblr-nav-tabs-link-active-bg: var(--transparency-dark-15);
+    --tblr-nav-tabs-link-active-color: var(--text-hover);
+    --tblr-nav-tabs-link-active-border-color: rgb(var(--accent-color));
+    background: transparent;
+}
+
+.nav-link {
+    color: var(--text-muted);
+}
+
+.nav-tabs .nav-link:is(:hover, :focus-visible) {
+    color: var(--link-color-hover);
+    border-color: var(--accent-color-hover);
+}
+
+.card,
+.table {
+    color: var(--text);
+}
+
+.table {
+    --tblr-table-hover-bg: var(--transparency-dark-10);
+    --tblr-table-hover-color: var(--text-hover);
+    --tblr-table-striped-bg: var(--transparency-dark-10);
+}
+
+.table thead th {
+    background: var(--transparency-dark-15);
+    color: var(--text-muted);
+}
+
+/* An opaque menu must cover the table or dialog behind it. */
+.dropdown-menu {
+    --tblr-dropdown-link-hover-bg: var(--transparency-dark-15);
+    --tblr-dropdown-link-hover-color: var(--text-hover);
+    --tblr-dropdown-header-color: var(--text-muted);
+    background: var(--drop-down-menu-bg);
     color: var(--text);
 }
 
 .modal-content {
     background: var(--modal-bg-color);
-    background-repeat: repeat, no-repeat;
-    background-attachment: fixed, fixed;
-    background-position: center center, center center;
-    background-size: auto, cover;
-    -webkit-background-size: auto, cover;
-    -moz-background-size: auto, cover;
-    -o-background-size: auto, cover;
     color: var(--text);
-    border: none;
+    border-color: var(--tblr-border-color);
 }
 
 .modal-header {
     background: var(--modal-header-color);
-    background-repeat: repeat, no-repeat;
-    background-attachment: fixed, fixed;
-    background-position: center center, center center;
-    background-size: auto, cover;
-    -webkit-background-size: auto, cover;
-    -moz-background-size: auto, cover;
-    -o-background-size: auto, cover;
-    border-bottom: 1px solid var(--transparency-light-10);
-    color: var(--text-hover)
+    color: var(--text-hover);
 }
 
 .modal-footer {
     background: var(--modal-footer-color);
-    background-repeat: repeat, no-repeat;
-    background-attachment: fixed, fixed;
-    background-position: center center, center center;
-    background-size: auto, cover;
-    -webkit-background-size: auto, cover;
-    -moz-background-size: auto, cover;
-    -o-background-size: auto, cover;
-    border-top: 1px solid var(--transparency-light-10);
-}
-/* NAVIGATION */
-
-.navbar-light .navbar-brand {
-    color: rgb(var(--accent-color))
 }
 
-.navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
-    color: var(--accent-color-hover);
+.modal-header,
+.modal-footer,
+.modal-content {
+    background-attachment: fixed;
 }
 
-.nav-tabs {
-    color: var(--link-color);
-}
-.nav-tabs .nav-link:hover:not(.disabled) {
-    border-color: var(--accent-color-hover);
-    color: var(--accent-color-hover);
+/* The editor's nested card must not darken or hide the modal body palette. */
+.modal-body > .card,
+.modal-body > form > .card {
+    background: transparent;
 }
 
-.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
-    color: var(--accent-color-hover);
-    background-color: transparent;
-    border-color: var(--accent-color-hover) var(--accent-color-hover) var(--accent-color-hover);
-}
-
-.navbar-light .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-.navbar-light .navbar-toggler {
-   color: rgba(0,0,0,0.5);
-   border-color: var(--transparency-light-10);
-}
-
-.nav-tabs {
-    border-bottom: 1px solid var(--transparency-light-10);
-}
-
-
-/* DROPDOWNS AND SELECTS */
-.dropdown-menu {
-    background: var(--drop-down-menu-bg);
+.btn-close {
     color: var(--text);
-    border: 1px solid var(--transparency-light-10);
+    filter: none;
+    opacity: .8;
 }
-.dropdown-item,
-.card-options a {
-    color: var(--text);
-}
-.dropdown-item:hover, .dropdown-item:focus,
-.card-options a:hover {
+
+.btn-close:hover {
     color: var(--text-hover);
-    text-decoration: none;
-    background-color: var(--transparency-dark-10);
-}
-
-.dropdown-header {
-    color: var(--text-hover);
-}
-
-.dropdown-icon {
-    color: rgb(var(--accent-color));
-}
-
-.dropdown-divider {
-    border-top: 1px solid var(--transparency-light-10);
-}
-
-/* TEXT */
-p {
-    color: var(--text);
-}
-.text-default {
-    color: var(--text) !important; 
-}
-
-.text-muted,
-.custom-switch-description,
-.text-gray,
-.text-secondary {
-    color: var(--text-muted) !important;
-}
-
-.text-blue {
-    color: rgb(var(--accent-color)) !important;
-}
-
-/* LINKS */
-a,.footer a:not(.btn) {
-    color: var(--link-color);
-}
-a:hover, a:focus, .footer a:not(.btn):hover {
-    color: var(--link-color-hover);
-}
-
-/* CARDS */
-.card {
-    background: var(--transparency-dark-25);
-}
-
-.card-status[class*="bg-"] {
-    background: rgb(var(--accent-color)) !important;
-}
-
-
-/* FORMS AND INPUTS */
-
-.form-control,
-.selectize-input, .selectize-control.single .selectize-input.input-active,
-.selectize-control.single {
-    color: var(--text);
-    background-color: var(--transparency-dark-15);
-    border: 1px solid rgba(0,40,100,0.12);
-}
-.form-control:focus,
-.selectize-input:focus,
-.selectize-input.focus,
-.selectize-input.full {
-    color: var(--text-hover);
-    background-color: var(--transparency-dark-25);
-    border-color: rgb(var(--accent-color));
-    outline: 0;
-    box-shadow: 0 0 0 2px rgb(var(--accent-color),.25);
-}
-
-.form-control:disabled, .form-control[readonly] {
-    background-color: var(--transparency-light-35);
     opacity: 1;
 }
 
-select:focus {
-    background: var(--drop-down-menu-bg) !important;
-    color: var(--text) !important;
+.btn {
+    --tblr-btn-focus-shadow-rgb: var(--accent-color);
 }
 
-.selectize-dropdown {
+/* Save/Add are lime in NPM, while danger/warning/success actions keep theirs. */
+.btn-primary:not(:where(.btn-red, .btn-orange, .btn-danger, .btn-warning, .btn-success, .btn-info)),
+.btn-lime,
+.btn.bg-lime {
+    --tblr-btn-bg: var(--button-color);
+    --tblr-btn-color: var(--button-text);
+    --tblr-btn-hover-bg: var(--button-color-hover);
+    --tblr-btn-hover-color: var(--button-text-hover);
+    --tblr-btn-active-bg: var(--button-color-hover);
+    --tblr-btn-active-color: var(--button-text-hover);
+    --tblr-btn-disabled-bg: var(--button-color);
+    --tblr-btn-disabled-color: var(--button-text);
+    background-color: var(--tblr-btn-bg) !important;
+    color: var(--tblr-btn-color);
+}
+
+.btn-primary:not(:where(.btn-red, .btn-orange, .btn-danger, .btn-warning, .btn-success, .btn-info)):hover,
+.btn-lime:hover,
+.btn.bg-lime:hover,
+.btn-primary:not(:where(.btn-red, .btn-orange, .btn-danger, .btn-warning, .btn-success, .btn-info)):active,
+.btn-lime:active,
+.btn.bg-lime:active {
+    background-color: var(--button-color-hover) !important;
+    color: var(--button-text-hover);
+}
+
+.btn.btn-ghost-dark,
+.btn.btn-ghost-light,
+.btn.btn-action {
+    --tblr-btn-bg: transparent;
+    --tblr-btn-color: var(--text-muted);
+    --tblr-btn-hover-color: var(--text-hover);
+    --tblr-btn-hover-bg: var(--transparency-dark-15);
+    /* NPM's locale and appearance modules set their icon colors !important. */
+    color: var(--text-muted) !important;
+}
+
+.btn.btn-ghost-dark:hover,
+.btn.btn-ghost-light:hover,
+.btn.btn-action:hover {
+    color: var(--text-hover) !important;
+}
+
+:where(a, button, input, select, textarea):focus-visible {
+    outline: 2px solid rgb(var(--accent-color));
+    outline-offset: 2px;
+}
+
+.form-control:focus:not(.is-invalid):not(.is-valid),
+.form-select:focus:not(.is-invalid):not(.is-valid) {
+    color: var(--text-hover);
+    background-color: var(--transparency-dark-25);
+    border-color: rgb(var(--accent-color));
+    box-shadow: 0 0 0 .2rem rgba(var(--accent-color), .2);
+}
+
+select option {
     background: var(--drop-down-menu-bg);
-    border: 1px solid var(--transparency-light-10);
-}
-
-.selectize-dropdown .active {
-    color: var(--text);
-    background-color: var(--transparency-light-10);
-}
-
-.selectize-control.single .selectize-input:after {
-    background: none;
-}
-
-.selectize-dropdown, .selectize-input, .selectize-input input {
     color: var(--text);
 }
 
-.selectize-control.multi .selectize-input>div {
+.form-control:disabled,
+.form-control[readonly],
+.form-select:disabled {
+    color: var(--text-muted);
+    background-color: var(--tblr-disabled-bg);
+}
+
+.form-check-input {
+    border-color: color-mix(in srgb, var(--text) 45%, transparent);
+}
+
+.form-check-input:checked {
+    background-color: var(--button-color);
+}
+
+.form-switch .form-check-input {
+    background-image: radial-gradient(circle, var(--text) 0 40%, transparent 45%);
+}
+
+.form-switch .form-check-input:checked {
+    background-image: radial-gradient(circle, var(--button-text) 0 40%, transparent 45%);
+}
+
+.react-select-container .react-select__control {
+    background: var(--tblr-bg-forms);
+    color: var(--text);
+    border-color: var(--tblr-border-color);
+}
+
+.react-select-container .react-select__control.react-select__control--is-focused,
+.react-select-container .react-select__control:hover {
+    border-color: rgb(var(--accent-color));
+    box-shadow: 0 0 0 1px rgb(var(--accent-color));
+}
+
+.react-select-container .react-select__menu {
+    background: var(--drop-down-menu-bg);
+    color: var(--text);
+    border: 1px solid var(--tblr-border-color);
+}
+
+.react-select-container .react-select__placeholder,
+.react-select-container .react-select__indicator {
+    color: var(--text-muted);
+}
+
+.react-select-container .react-select__indicator:hover {
+    color: var(--text-hover);
+}
+
+.react-select-container .react-select__indicator-separator {
+    background: var(--tblr-border-color);
+}
+
+.react-select-container .react-select__control .react-select__multi-value {
     background: rgb(var(--accent-color));
     color: var(--label-text-color);
 }
 
-.selectize-dropdown .create {
+.react-select-container .react-select__control .react-select__multi-value .react-select__multi-value__label {
+    color: var(--label-text-color) !important;
+}
+
+.react-select-container .react-select__multi-value__remove {
+    color: var(--label-text-color);
+}
+
+.react-select-container .react-select__multi-value__remove:hover {
+    color: var(--label-text-color);
+    background: var(--accent-color-hover);
+}
+
+/* The editor supplies a dark syntax palette even in NPM's light mode. */
+.w-tc-editor[data-color-mode] {
+    --color-fg-default: var(--text);
+    --color-canvas-subtle: var(--transparency-dark-25);
+    --color-prettylights-syntax-comment: var(--text-muted);
+    --color-prettylights-syntax-entity-tag: var(--link-color-hover);
+    --color-prettylights-syntax-entity: var(--text-hover);
+    --color-prettylights-syntax-sublimelinter-gutter-mark: var(--text);
+    --color-prettylights-syntax-constant: var(--link-color-hover);
+    --color-prettylights-syntax-string: var(--link-color-hover);
+    --color-prettylights-syntax-string-regexp: var(--link-color-hover);
+    --color-prettylights-syntax-keyword: var(--text-hover);
+    --color-prettylights-syntax-markup-bold: var(--text-hover);
+    color: var(--text);
+    border: 1px solid var(--tblr-border-color);
+}
+
+.Toastify__toast {
+    background: var(--drop-down-menu-bg);
     color: var(--text);
 }
-.selectize-dropdown .active.create {
-    color: var(--text-hover);
+
+.Toastify__close-button {
+    color: var(--text);
 }
 
-.custom-file-label {
-    color: var(--text-muted);
-    background: var(--transparency-dark-15);
-    border: 1px solid var(--transparency-light-10);
+/* Floating labels replace placeholders; the shared placeholder import must
+   not paint a second label beneath them. */
+.form-floating > .form-control::placeholder,
+.form-floating > .form-control:focus::placeholder {
+    color: transparent !important;
 }
 
-.custom-file-label::after {
+.form-check-input.bg-lime:checked {
+    background-color: var(--button-color) !important;
+}
+
+.w-tc-editor pre,
+.w-tc-editor code {
+    color: var(--text);
+    background: transparent;
+}
+
+.form-control::file-selector-button {
     color: var(--button-text);
-    background-color: var(--button-color);
-    border-left: 1px solid var(--transparency-light-10);
-}
-
-.form-fieldset {
-    background: var(--transparency-dark-25);
-    border: 1px solid var(--transparency-light-10);
-}
-
-/* BUTTONS */
-
-[class*="btn-"]:not(.btn-list),
-.card-options a:not(.dropdown-item.add-item),
-.input-group-text {
-    color: var(--button-text);
-    background-color: var(--button-color);
-    border-color: var(--button-color); 
-}
-
-[class*="btn-"]:hover:not(.btn-list),
-.card-options a:hover:not(.dropdown-item.add-item),
-[class*="btn-"]:not(:disabled):not(.disabled):not(.btn-list):active, [class*="btn-"]:not(:disabled):not(.disabled):not(.btn-list).active, .show>[class*="btn-"].dropdown-toggle,
-[class*="btn-"].disabled,[class*="btn-"]:disabled {
-    color: var(--button-text-hover);
-    background-color: var(--button-color-hover);
-    border-color: var(--button-color-hover);
-}
-
-[class*="btn-"]:focus, [class*="btn-"].focus {
-    box-shadow: 0 0 0 2px rgb(var(--accent-color), .5);
-}
-.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .show>.btn-secondary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 2px rgb(var(--accent-color), .5);
-}
-
-.custom-switch-input:checked ~ .custom-switch-indicator {
     background: var(--button-color);
 }
 
-.custom-switch-input:focus ~ .custom-switch-indicator {
-    box-shadow: 0 0 0 2px rgba(var(--accent-color),0.25);
-    border-color: var(--button-color)
+.form-control:hover:not(:disabled):not([readonly])::file-selector-button {
+    color: var(--button-text-hover);
+    background: var(--button-color-hover);
 }
 
-.custom-switch-description {
-    margin-left: .5rem;
-    color: #6e7687;
-    transition: .3s color
+.form-floating > label,
+.form-floating > :disabled ~ label {
+    color: var(--text-muted);
 }
 
-.custom-switch-input:checked ~ .custom-switch-description {
-    color: #495057
-}
-
-/* TABLES */
-.table th, .text-wrap table th {
-    color: var(--text-hover);
-}
-
-.table th, .text-wrap table th, .table td, .text-wrap table td {
-    border-top: 1px solid var(--transparency-light-10);
-}
-
-.table thead th, .text-wrap table thead th {
-    border-bottom: 1px solid rgb(var(--accent-color));
-}
-
-/* OTHER */
-
-.loader {
-    color: rgb(var(--accent-color));
-}
-
-.tag {
-    color: var(--label-text-color);
-    background-color: rgb(var(--accent-color));
-}
-
-.tag[class*="hover-"]:hover, [class*="hover-"]:active, [class*="hover-"]:focus {
-    background-color: var(--accent-color-hover);
-    color: var(--label-text-color);
-}
-
-[class*="tag-"] {
-    background-color: var(--accent-color-hover);
-    color: var(--label-text-color);
-}
-
-.icon {
-    color: var(--text) !important;
-}
-
-.close {
-    color: var(--text);
-    text-shadow: 0 1px 0 var(--text);
-}
-.close:hover, .close:focus {
-    color: var(--text-hover);
-}
-
-pre {
-    color: var(--text);
-    background-color: var(--transparency-dark-15);
-
-    text-shadow: 0 1px transparent;
+/* NPM renders a Tabler toast inside React Toastify's transparent wrapper. */
+.Toastify__toast .toast {
+    --tblr-toast-color: var(--text);
+    --tblr-toast-header-color: var(--text-hover);
+    --tblr-toast-header-bg: var(--transparency-dark-15);
+    background: var(--drop-down-menu-bg);
 }
