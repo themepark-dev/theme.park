@@ -1,0 +1,28 @@
+name: themepark-npm-dev
+services:
+  css:
+    image: python:3.12-alpine
+    working_dir: /site
+    command: ["python", "/serve.py"]
+    ports: ["127.0.0.1:18867:8000"]
+    volumes:
+      - ../../css:/site/css:ro
+      - ../../resources:/site/resources:ro
+      - ../serve.py:/serve.py:ro
+  npm:
+    image: jc21/nginx-proxy-manager:2.15.1
+    environment:
+      INITIAL_ADMIN_EMAIL: admin@example.com
+      INITIAL_ADMIN_PASSWORD: ${NPM_DEV_PASSWORD:-adminadmin}
+      TP_DOMAIN: 127.0.0.1:18867
+      TP_SCHEME: http
+      TP_THEME: ${TP_THEME:-aquamarine}
+      TP_COMMUNITY_THEME: ${TP_COMMUNITY_THEME:-false}
+    ports: ["127.0.0.1:18084:81"]
+    volumes:
+      - data:/data
+      - certificates:/etc/letsencrypt
+      - ../../docker-mods/nginx-proxy-manager/root/etc/cont-init.d/98-themepark:/etc/cont-init.d/99-themepark:ro
+volumes:
+  data:
+  certificates:

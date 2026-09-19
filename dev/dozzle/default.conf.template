@@ -1,0 +1,25 @@
+server {
+    listen 8080;
+    server_name localhost;
+
+    location / {
+        proxy_pass http://dozzle:8080;
+        proxy_http_version 1.1;
+        proxy_set_header Host $http_host;
+        proxy_set_header Accept-Encoding "";
+        proxy_hide_header Content-Security-Policy;
+        proxy_hide_header X-WebKit-CSP;
+        sub_filter_once on;
+        sub_filter '</head>' '<link rel="stylesheet" href="http://localhost:18865/css/base/dozzle/dozzle-base.css"><link rel="stylesheet" href="http://localhost:18865/css/${TP_THEME_FOLDER}/${TP_THEME}.css"></head>';
+    }
+
+    location /api {
+        proxy_pass http://dozzle:8080;
+        proxy_http_version 1.1;
+        proxy_set_header Host $http_host;
+        proxy_set_header Connection "";
+        proxy_buffering off;
+        proxy_cache off;
+        proxy_read_timeout 1h;
+    }
+}

@@ -5,3 +5,11 @@
     #root>div>header>div>div.bazarr-Group-root[class*="bazarr-"]>div>span:after {
         content: " 4K";
     }
+/* Current Mantine frontend. */
+.mantine-AppShell-header .mantine-Avatar-image {
+    content: url("/css/addons/bazarr/bazarr-4k-logo/bazarr4k.png");
+}
+
+.mantine-AppShell-header .mantine-Badge-root[data-variant="brand"] .mantine-Badge-label::after {
+    content: " 4K";
+}

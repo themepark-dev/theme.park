@@ -46,7 +46,7 @@ body {
 .modal-header {
     padding: 9px 15px;
     border-bottom: 1px solid rgb(var(--accent-color));
-    background: var(--modal-footer-color);
+    background: var(--modal-header-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -68,8 +68,13 @@ body {
     color: var(--text) !important;
 }
 
+/* Let the modal background show through the native theme's body panel. */
+.modal-body {
+    background: transparent;
+}
+
 .modal-footer {
-    background-color: var(--modal-footer-color);
+    background: var(--modal-footer-color);
     background-repeat: repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: center center, center center;
@@ -238,6 +243,24 @@ div.check:hover {
 [class^="img-"],
 [class*=" img-"] {
     background-image: url(/resources/nzbget/icons.png);
+}
+
+/* Keep checkbox positions aligned with the theme.park sprite in native dark mode. */
+table.table-cancheck tr.checked div.img-check {
+    background-position: -434px -18px;
+}
+
+table.table-cancheck tr.checkremove div.img-check {
+    background-position: -402px -18px;
+}
+
+/* The theme.park sprite has no separate hover row for the play/pause icons. */
+.PlayBlockInner:hover .img-download-btn-active {
+    background-position: -113px -80px;
+}
+
+.PlayBlockInner:hover .img-download-btn-pause {
+    background-position: -177px -80px;
 }
 
 .navbar-search .search-query {
@@ -444,7 +467,9 @@ div.check:hover {
     border-color: transparent;
 }
 
-.btn:hover {
+/* Match native dark mode's specificity for unselected default buttons. */
+.btn:hover,
+.btn-default:hover:not(.btn-active) {
     color: var(--button-text-hover);
     background-color: var(--button-color-hover);
 

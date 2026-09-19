@@ -1,0 +1,29 @@
+name: themepark-pihole-dev
+services:
+  pihole:
+    image: pihole/pihole:2026.07.2
+    environment:
+      FTLCONF_webserver_api_password: ""
+      FTLCONF_webserver_interface_theme: default-dark
+      FTLCONF_dns_listeningMode: all
+    ports: ["127.0.0.1:18082:80"]
+    volumes: ["data:/etc/pihole"]
+  css:
+    image: python:3.12-alpine
+    working_dir: /site
+    command: ["python", "/serve.py"]
+    ports: ["127.0.0.1:18866:8000"]
+    volumes:
+      - ../../css:/site/css:ro
+      - ../../resources:/site/resources:ro
+      - ../serve.py:/serve.py:ro
+  proxy:
+    image: nginx:stable-alpine
+    depends_on: [pihole, css]
+    environment:
+      TP_THEME: ${TP_THEME:-aquamarine}
+    ports: ["127.0.0.1:18083:8080"]
+    volumes:
+      - ./default.conf.template:/etc/nginx/templates/default.conf.template:ro
+volumes:
+  data:

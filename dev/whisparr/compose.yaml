@@ -1,0 +1,46 @@
+name: themepark-whisparr-dev
+
+x-whisparr: &whisparr
+  environment:
+    PUID: "1000"
+    PGID: "1000"
+    TZ: Etc/UTC
+    TP_HOTIO: "true"
+    TP_DOMAIN: 127.0.0.1:18875
+    TP_SCHEME: http
+    TP_THEME: ${TP_THEME:-nord}
+    TP_ADDON: ${TP_ADDON:-}
+  depends_on:
+    - css
+
+services:
+  css:
+    image: python:3.12-alpine
+    working_dir: /site
+    command: [python, /serve.py]
+    ports:
+      - "127.0.0.1:18875:8000"
+    volumes:
+      - ../../css:/site/css:ro
+      - ../../resources:/site/resources:ro
+      - ../serve.py:/serve.py:ro
+  v2:
+    <<: *whisparr
+    image: ghcr.io/hotio/whisparr:latest@sha256:01d52209b9e24fd8145b2e794f13d75e20cc60254bb57e2a98e0d2dc4a16544d
+    ports:
+      - "127.0.0.1:16969:6969"
+    volumes:
+      - v2-config:/config
+      - ../../docker-mods/whisparr/root/etc/cont-init.d/98-themepark:/etc/cont-init.d/98-themepark:ro
+  v3:
+    <<: *whisparr
+    image: ghcr.io/hotio/whisparr:v3@sha256:b18ba2049123f1480a557b23954f1055b86f2625436f0bc51ccaa012030d9ba3
+    ports:
+      - "127.0.0.1:16970:6969"
+    volumes:
+      - v3-config:/config
+      - ../../docker-mods/whisparr/root/etc/cont-init.d/98-themepark:/etc/cont-init.d/98-themepark:ro
+
+volumes:
+  v2-config:
+  v3-config:
