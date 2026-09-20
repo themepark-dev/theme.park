@@ -1,0 +1,119 @@
+/* Franchisarr base stylesheet for theme.park.
+ *
+ * Drop this in as css/base/franchisarr/franchisarr-base.css and load it alongside a
+ * theme-options file, the same as any other app:
+ *
+ *   <link rel="stylesheet" href="https://<your-theme-park>/css/base/franchisarr/franchisarr-base.css">
+ *   <link rel="stylesheet" href="https://<your-theme-park>/css/theme-options/nord.css">
+ *
+ * It is short because Franchisarr paints entirely from CSS custom properties rather than
+ * hardcoded colours, so theming it is a matter of setting those properties. There is nothing to
+ * override and therefore no need for !important or deep structural selectors, which is why base
+ * sheets for other apps run to tens of kilobytes of `#__next>div>div.relative.flex...`.
+ *
+ * Franchisarr also ships this mapping internally, so a theme-options file alone will style it
+ * even without this file. This exists so it can be themed through the standard theme.park
+ * mechanism like everything else in a stack, without depending on the app's own version.
+ */
+
+:root,
+:root[data-theme="dark"],
+:root[data-theme="light"] {
+  /* Page and surfaces */
+  --pico-background-color: var(--main-bg-color);
+  --pico-card-background-color: var(--modal-bg-color, var(--main-bg-color));
+  --pico-card-sectioning-background-color: var(--modal-header-color, var(--modal-bg-color));
+  --pico-dropdown-background-color: var(--drop-down-menu-bg, var(--modal-bg-color));
+
+  /* Text */
+  --pico-color: var(--text);
+  --pico-h1-color: var(--text-hover, var(--text));
+  --pico-h2-color: var(--text-hover, var(--text));
+  --pico-h3-color: var(--text-hover, var(--text));
+  --pico-h4-color: var(--text-hover, var(--text));
+  --pico-h5-color: var(--text-hover, var(--text));
+  --pico-h6-color: var(--text-hover, var(--text));
+  --pico-muted-color: var(--text-muted, var(--text));
+  --pico-blockquote-color: var(--text-muted, var(--text));
+
+  /* Links */
+  --pico-primary: var(--link-color, var(--button-color));
+  --pico-primary-hover: var(--link-color-hover, var(--button-color-hover));
+  --pico-primary-focus: rgba(var(--accent-color), 0.25);
+  --pico-primary-underline: rgba(var(--accent-color), 0.5);
+
+  /* Buttons */
+  --pico-primary-background: var(--button-color);
+  --pico-primary-hover-background: var(--button-color-hover, var(--button-color));
+  --pico-primary-inverse: var(--button-text, var(--main-bg-color));
+  --pico-primary-border: var(--button-color);
+  --pico-primary-hover-border: var(--button-color-hover, var(--button-color));
+
+  /* Form controls */
+  --pico-form-element-background-color: var(--modal-bg-color, var(--main-bg-color));
+  --pico-form-element-color: var(--text);
+  --pico-form-element-placeholder-color: var(--text-muted, var(--text));
+  --pico-form-element-border-color: rgba(var(--accent-color), 0.35);
+  --pico-form-element-active-background-color: var(--modal-bg-color, var(--main-bg-color));
+  --pico-form-element-active-border-color: rgb(var(--accent-color));
+  --pico-form-element-focus-color: rgb(var(--accent-color));
+
+  /* Borders, rules and tables */
+  --pico-border-color: rgba(var(--accent-color), 0.25);
+  --pico-muted-border-color: rgba(var(--accent-color), 0.18);
+  --pico-table-border-color: rgba(var(--accent-color), 0.18);
+  --pico-table-row-stripped-background-color: rgba(var(--accent-color), 0.05);
+
+  /* Code and marks */
+  --pico-code-background-color: var(--modal-header-color, var(--modal-bg-color));
+  --pico-code-color: var(--text-muted, var(--text));
+  --pico-mark-background-color: rgba(var(--accent-color), 0.3);
+  --pico-mark-color: var(--text);
+
+  /* The "missing" colour: the dashed part of the app's icon and the count of missing films. */
+  --franchisarr-accent: rgb(var(--accent-color));
+}
+
+/* --main-bg-color and --modal-bg-color may be a gradient or image shorthand (hotline,
+ * space-gray), so the surfaces are painted with `background`, not `background-color`. */
+body {
+  background: var(--main-bg-color);
+  background-attachment: fixed;
+  color: var(--text);
+}
+
+article,
+.collection-card,
+dialog > article {
+  background: var(--modal-bg-color, var(--main-bg-color));
+}
+
+/* theme.park themes are dark designs; pin the scheme so a viewer whose OS prefers light doesn't
+ * get a light palette fighting the theme's colours. */
+:root {
+  color-scheme: dark;
+}
+
+/* --- Franchisarr's own components ---------------------------------------------------------
+ * These have semantic class names and inherit from the variables above, so they need only the
+ * few accents that aren't expressible as a Pico variable.
+ */
+
+/* The count of films missing from a collection is the number the page exists to show. */
+.count-missing {
+  color: rgb(var(--accent-color));
+}
+
+/* Owned entries carry a tick; make it read as "have it" rather than as a link colour. */
+.owned .film-title::before {
+  color: var(--arr-queue-color, rgb(var(--accent-color)));
+}
+
+/* Success and failure notices. */
+.notice-good { color: var(--arr-queue-color, rgb(var(--accent-color))); }
+.notice-bad { color: var(--text-hover, var(--text)); }
+
+/* Rows separating films within a collection. */
+.film-row {
+  border-bottom-color: rgba(var(--accent-color), 0.18);
+}
