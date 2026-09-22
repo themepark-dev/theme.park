@@ -427,6 +427,10 @@
       "addons": {},
       "base_css": "https://develop.theme-park.dev/css/base/flood/flood-base.css?sha=899d671cc4c61ccaf8951a4bc74e3903"
     },
+    "franchisarr": {
+      "addons": {},
+      "base_css": "https://develop.theme-park.dev/css/base/franchisarr/franchisarr-base.css?sha=3def4491bf4fb1d4f76e592ae9629950"
+    },
     "gaps": {
       "addons": {},
       "base_css": "https://develop.theme-park.dev/css/base/gaps/gaps-base.css?sha=37a882a21eff073ea77aa4dbf3812886"
