@@ -33,6 +33,13 @@ if [[ -z ${TP_SCHEME} ]]; then
     TP_SCHEME='https'
 fi
 
+# Sonarr v5 ships its UI build in an assets folder and needs its own base CSS.
+BASE_CSS='sonarr-base.css'
+if [ -d "$(dirname "${APP_FILEPATH}")/assets" ]; then
+    echo 'Sonarr v5 UI detected, using sonarr-v5-base.css'
+    BASE_CSS='sonarr-v5-base.css'
+fi
+
 THEME_TYPE='theme-options'
 if [ "${TP_COMMUNITY_THEME}" = true ]; then
     THEME_TYPE='community-theme-options'
@@ -69,7 +76,7 @@ if ! grep -q "${TP_DOMAIN}/css/base" "${APP_FILEPATH}"; then
     echo '---------------------------'
 
     url_base="${TP_SCHEME}://${TP_DOMAIN}"
-    sheets="<link rel='stylesheet' href='${url_base}/css/base/sonarr/sonarr-base.css'>"
+    sheets="<link rel='stylesheet' href='${url_base}/css/base/sonarr/${BASE_CSS}'>"
     sheets="${sheets} <link rel='stylesheet' href='${url_base}/css/${THEME_TYPE}/${TP_THEME}.css'>"
     printf 'Stylesheet set to %s\n' "${TP_THEME}"
 

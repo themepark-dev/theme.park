@@ -1,0 +1,260 @@
+/*    dP   dP                                                                  dP        */
+/*    88   88                                                                  88        */
+/*  d8888P 88d888b. .d8888b. 88d8b.d8b. .d8888b.    88d888b. .d8888b. 88d888b. 88  .dP   */
+/*    88   88'  `88 88ooood8 88'`88'`88 88ooood8    88'  `88 88'  `88 88'  `88 88888"    */
+/*    88   88    88 88.  ... 88  88  88 88.  ...    88.  .88 88.  .88 88       88  `8b.  */
+/*    dP   dP    dP `88888P' dP  dP  dP `88888P' 88 88Y888P' `88888P8 dP       dP   `YP  */
+/*                                                  88                                   */
+/*                                                  dP					 */
+
+/*		   		        Made by @gilbN					 */
+/* 			      https://github.com/gilbN/theme.park			 */
+
+/* Sonarr v5. v5 builds its UI with Vite and names CSS module classes
+   "Component-module_name_hash", so the v4 selectors in sonarr-base.css and
+   servarr-base.css do not match. This file maps theme.park colors onto the
+   variables v5 defines. It styles elements directly only where a surface needs
+   a full background for gradients, or must stay opaque, such as menus and
+   sticky bars. */
+
+@import url("/css/defaults/placeholders.css");
+@import url("/css/defaults/transparent.css");
+
+/* :root:root outranks v5's [data-theme=dark] and [data-header-color=gradient]
+   blocks, which set the same variables with the specificity of :root. */
+:root:root {
+    /* Text. Secondary text is a dimmed --text, as the v4 theme used --text for
+       help text. --text-muted is kept for faint and disabled text. */
+    --ink: var(--text-hover);
+    --inkSoft: var(--text);
+    --inkMuted: color-mix(in srgb, var(--text) 75%, transparent);
+    --inkFaint: var(--text-muted);
+    --textColor: var(--text);
+    --defaultColor: var(--text);
+    --sidebarColor: var(--text-hover);
+    --toolbarColor: var(--text);
+    --toolbarLabelColor: var(--inkMuted);
+    --helpTextColor: var(--text);
+    --dimColor: var(--inkMuted);
+    --darkGray: var(--inkMuted);
+    --gray: var(--inkMuted);
+    --mediumGray: var(--inkMuted);
+    --disabledColor: var(--text-muted);
+    --disabledInputColor: var(--text-muted);
+    --iconButtonDisabledColor: var(--text-muted);
+    --iconButtonHoverColor: var(--text-hover);
+    --iconButtonHoverLightColor: var(--text-hover);
+    --modalCloseButtonHoverColor: var(--text-hover);
+    --defaultLinkHoverColor: var(--text-hover);
+    --menuItemColor: var(--text);
+    --menuItemHoverColor: var(--text-hover);
+    --linkColor: var(--link-color);
+    --linkHoverColor: var(--link-color-hover);
+    --alertDangerColor: var(--text);
+    --alertInfoColor: var(--text);
+    --alertSuccessColor: var(--text);
+    --alertWarningColor: var(--text);
+    --progressBarBackTextColor: var(--text);
+
+    /* Accent */
+    --accent: rgb(var(--accent-color));
+    --accentDeep: rgb(var(--accent-color));
+    --accentGlow: rgb(var(--accent-color));
+    --sonarrBlue: rgb(var(--accent-color));
+    --themeBlue: rgb(var(--accent-color));
+    --themeAlternateBlue: rgb(var(--accent-color));
+    --selectedColor: rgb(var(--accent-color));
+    --primaryColor: rgb(var(--accent-color));
+    --infoColor: rgb(var(--accent-color));
+    --calendarTodayColor: rgb(var(--accent-color));
+    --sliderAccentColor: rgb(var(--accent-color));
+    --inputFocusBorderColor: rgb(var(--accent-color));
+    --defaultHoverBorderColor: transparent;
+    --toolbarButtonHoverColor: rgb(var(--accent-color));
+    --progressBarPrimaryColor: rgb(var(--accent-color));
+    --alertInfoBorderColor: rgb(var(--accent-color));
+
+    /* Tints mixed from --text. They stay visible on light and dark palettes,
+       where white transparency disappears on a light background. */
+    --tp-tint-05: color-mix(in srgb, var(--text) 5%, transparent);
+    --tp-tint-10: color-mix(in srgb, var(--text) 10%, transparent);
+    --tp-line: color-mix(in srgb, var(--text) 12%, transparent);
+    --tp-line-strong: color-mix(in srgb, var(--text) 25%, transparent);
+
+    /* Surfaces. Translucent layers over --main-bg-color, as in the v4 theme.
+       Surfaces that must hide what is behind them get element rules below. */
+    --paper: var(--drop-down-menu-bg);
+    --pageBackground: transparent;
+    --paperCard: var(--transparency-dark-25);
+    --paperWarm: var(--tp-tint-05);
+    --hairline: var(--tp-line);
+    --hairlineStrong: var(--tp-line-strong);
+    --borderColor: var(--tp-line);
+    --lightGray: var(--tp-line);
+
+    --pageFooterBackground: var(--transparency-dark-25);
+    --toolbarBackgroundColor: var(--transparency-dark-25);
+    --sidebarBackgroundColor: transparent;
+    --sidebarActiveBackgroundColor: var(--tp-tint-10);
+    --menuItemHoverBackgroundColor: var(--tp-tint-10);
+    --tableRowHoverBackgroundColor: var(--tp-tint-05);
+    --cardBackgroundColor: var(--transparency-dark-25);
+    --cardAlternateBackgroundColor: var(--transparency-dark-15);
+    --cardCenterBackgroundColor: var(--transparency-dark-15);
+    --seasonBackgroundColor: var(--transparency-dark-25);
+    --episodesBackgroundColor: var(--transparency-dark-15);
+    --seriesBackgroundColor: var(--transparency-dark-25);
+    --addSeriesBackgroundColor: var(--transparency-dark-25);
+    --logEventsBackgroundColor: var(--transparency-dark-25);
+    --calendarBackgroundColor: var(--transparency-dark-15);
+    --calendarBorderColor: var(--tp-line);
+    --calendarTodayBackgroundColor: var(--tp-tint-10);
+    --progressBarBackgroundColor: var(--transparency-dark-25);
+    --scrollbarBackgroundColor: var(--tp-line-strong);
+    --scrollbarHoverBackgroundColor: color-mix(in srgb, var(--text) 40%, transparent);
+    --modalBackgroundColor: var(--drop-down-menu-bg);
+
+    /* Inputs */
+    --inputBackgroundColor: var(--tp-tint-05);
+    --inputHoverBackgroundColor: var(--tp-tint-10);
+    --inputReadOnlyBackgroundColor: var(--transparency-dark-15);
+    --inputBorderColor: var(--tp-line-strong);
+    --inputIconContainerBackgroundColor: var(--tp-tint-05);
+    --disabledCheckInputColor: var(--tp-line);
+    --searchInputBackgroundColor: var(--tp-tint-05);
+    --searchInputFocusBackgroundColor: var(--drop-down-menu-bg);
+
+    /* Header. The gradient header option fades the accent into the bar. */
+    --pageHeaderAccentColor: rgba(var(--accent-color), .35);
+    --pageHeaderBackgroundColor: var(--transparency-dark-35);
+    --pageHeaderBorderColor: transparent;
+    --pageHeaderColor: var(--text-hover);
+    --pageHeaderBrandColor: var(--text-hover);
+    --pageHeaderMutedColor: var(--text);
+    --pageHeaderHoverBackgroundColor: var(--tp-tint-10);
+    --pageHeaderSearchBorderColor: transparent;
+    --pageHeaderSearchBackgroundColor: var(--tp-tint-05);
+    --pageHeaderSearchHoverBackgroundColor: var(--tp-tint-10);
+    --pageHeaderSearchFocusBackgroundColor: var(--drop-down-menu-bg);
+    --pageHeaderSearchFocusBorderColor: rgb(var(--accent-color));
+    --pageHeaderSearchFocusPlaceholderColor: var(--text-muted);
+
+    /* Buttons. Status buttons keep the app's success, warning and danger colors. */
+    --defaultBackgroundColor: var(--button-color);
+    --defaultBorderColor: transparent;
+    --defaultHoverBackgroundColor: var(--button-color-hover);
+    --primaryBackgroundColor: var(--button-color);
+    --primaryBorderColor: transparent;
+    --primaryHoverBackgroundColor: var(--button-color-hover);
+    --primaryHoverBorderColor: transparent;
+    --primaryButtonColor: var(--button-text);
+}
+
+/* Page background. The login page gives <html> its own background, which stops
+   a body background from covering the window, so paint it on <html>. */
+html {
+    background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    min-height: 100%;
+}
+
+body {
+    background: transparent;
+}
+
+/* Surfaces that cover scrolling content or sit on top of the page. A fixed
+   main background lines up with the page behind it, so gradients stay seamless. */
+[class*="LoadingPage-module_page_"],
+[class*="Calendar-module_sticky_"],
+[class*="AddNewSeries-module_searchSticky_"],
+[class*="SeriesDetails-module_overviewLabel_"] {
+    background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+}
+
+/* The sidebar container has a transform, which turns a fixed background into
+   one sized to the sidebar, so it would not line up with the page. On wide
+   screens the sidebar never covers content and can show the page through it. */
+[class*="PageSidebar-module_sidebar_"] {
+    background: var(--transparency-dark-25);
+}
+
+@media (max-width: 768px) {
+    [class*="PageSidebar-module_sidebarContainer_"] {
+        background: var(--main-bg-color);
+        background-repeat: repeat, no-repeat;
+        background-position: center center, center center;
+        background-size: auto, cover;
+    }
+}
+
+/* Default and primary buttons use the theme's button colors. --defaultColor
+   also colors plain text, so set the button text here. FormInputButton is a
+   button with its own background and colors, so leave it alone. */
+[class*="Button-module_default_"]:not([class*="Button-module_outline_"], [class*="FormInputButton-module_button_"]),
+[class*="Button-module_primary_"]:not([class*="Button-module_outline_"], [class*="FormInputButton-module_button_"]) {
+    color: var(--button-text);
+}
+
+[class*="Button-module_default_"]:not([class*="Button-module_outline_"], [class*="FormInputButton-module_button_"]):hover,
+[class*="Button-module_primary_"]:not([class*="Button-module_outline_"], [class*="FormInputButton-module_button_"]):hover {
+    color: var(--button-text-hover);
+}
+
+/* Modals */
+[class*="ModalContent-module_modalContent_"] {
+    background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+}
+
+[class*="ModalHeader-module_modalHeader_"] {
+    background: var(--modal-header-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+}
+
+[class*="ModalFooter-module_modalFooter_"] {
+    background: var(--modal-footer-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+}
+
+/* Sticky bars inside modals */
+[class*="EpisodeDetailsModalContent-module_tabBar_"],
+[class*="EpisodeDetailsModalContent-module_tabFilters_"],
+[class*="SeasonInteractiveSearchModalContent-module_filterRow_"],
+[class*="InteractiveSearch-module_scrollbar_"] {
+    background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+}
+
+/* Menus, dropdowns and popovers float over content and must be opaque. */
+[class*="MenuContent-module_menuContent_"],
+[class*="SeriesSearchInput-module_dropdown_"],
+[class*="EnhancedSelectInput-module_options_"],
+[class*="EnhancedSelectInput-module_optionsModalScroller_"],
+[class*="AutoSuggestInput-module_suggestionsContainerOpen_"] [class*="AutoSuggestInput-module_suggestionsContainer_"],
+[class*="Popover-module_body_"],
+[class*="Tooltip-module_tooltip_"][class*="Tooltip-module_default_"] {
+    background: var(--drop-down-menu-bg);
+}
+
+[class*="Popover-module_title_"] {
+    background: var(--transparency-dark-15);
+}
