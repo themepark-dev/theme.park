@@ -28,6 +28,11 @@ colors and how to reproduce a native stylesheet replacement.
 The [Nginx Proxy Manager setup](nginx-proxy-manager/README.md) uses the official
 startup script and includes browser checks for theme variables and UI states.
 
+The [Sonarr setup](sonarr/README.md) runs v4 and the v5 beta side by side through
+the checkout's Docker mod. It has a seed script, a screenshot script that can swap
+theme options per request, and a selector audit that checks theme.park's class
+selectors against an app's UI build. Its notes explain the separate v5 base file.
+
 The [Jellyfin setup](jellyfin/README.md) uses synthetic movies, built-in Custom CSS,
 and nginx subfiltering for the dashboard. Its notes cover the Jellyfin 12 palette
 and table backgrounds that do not follow the app's CSS variables.
@@ -212,6 +217,18 @@ or transparent areas that reveal the page instead of the dialog.
 Check which element actually scrolls. A phone layout may scroll the document
 instead of the modal body. Confirm that the scroll position changed.
 
+A fixed background lines up with the page only while no ancestor has a
+`transform`, `filter` or `will-change: transform`. If one does, Chromium sizes
+the background to the element instead of the viewport, and a gradient shows a seam.
+Sonarr v5's sidebar has an identity transform. Check the element's ancestors
+before relying on `background-attachment: fixed` for a seamless surface.
+
+`--transparency-light-*` values vanish on light palettes such as Catppuccin Latte,
+and borders or checkboxes built from them disappear. Mixing lines and hover fills
+from `--text` with `color-mix(in srgb, var(--text) 12%, transparent)` keeps them
+visible on light and dark palettes. Check at least one light community palette
+when you add translucent borders.
+
 Wait for stylesheet loads, fonts, and modal animations before taking screenshots.
 When switching themes in the browser, reload the final setup through its normal
 injection method as well. Inspect the screenshots after the computed-style checks.
@@ -326,6 +343,14 @@ classes such as `mantine-Button-root`. Check the app's theme provider and render
 DOM before treating generated CSS-module names as a support blocker. Prefer
 public component classes, state attributes and semantic containers. Document any
 module-name prefix you still need in the app README.
+
+A build tool change can rename every CSS module class without changing the
+component names. Sonarr v5 moved from webpack to Vite, and `PageHeader-logo-a1b2c`
+became `PageHeader-module_logo_a1b2c`. The base CSS still loaded, but almost no
+`[class*="Component-name-"]` selector matched. If an app update ships a new asset
+layout, such as `/assets/index-<hash>.css`, run
+[selector-audit.py](sonarr/selector-audit.py) against the old and new UI builds
+before debugging individual screens.
 
 Check for collisions between theme variables and the component library's local
 variables. Bazarr's `--button-color` means text color in Mantine and background
