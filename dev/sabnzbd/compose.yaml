@@ -1,0 +1,55 @@
+name: themepark-sabnzbd-dev
+
+services:
+  css:
+    image: python:3.12-alpine
+    working_dir: /site
+    command: ["python", "/serve.py"]
+    ports:
+      - "127.0.0.1:18766:8000"
+    volumes:
+      - ../../css:/site/css:ro
+      - ../../resources:/site/resources:ro
+      - ../serve.py:/serve.py:ro
+
+  # Answers every NNTP connection with a 502 so SABnzbd logs warnings.
+  fake-nntp:
+    image: python:3.12-alpine
+    command: ["python", "/fake_nntp.py"]
+    environment:
+      MODE: reject
+    volumes:
+      - ./fake_nntp.py:/fake_nntp.py:ro
+
+  # Serves yEnc articles so jobs complete, or 430 for IDs containing "missing".
+  fake-nntp-serve:
+    image: python:3.12-alpine
+    command: ["python", "/fake_nntp.py"]
+    environment:
+      MODE: serve
+    volumes:
+      - ./fake_nntp.py:/fake_nntp.py:ro
+
+  sabnzbd:
+    image: lscr.io/linuxserver/sabnzbd:${SABNZBD_TAG:-latest}
+    depends_on:
+      - css
+      - fake-nntp
+      - fake-nntp-serve
+    environment:
+      PUID: "1000"
+      PGID: "1000"
+      DOCKER_MODS: ghcr.io/themepark-dev/theme.park:sabnzbd
+      TP_DOMAIN: localhost:18766
+      TP_SCHEME: http
+      TP_THEME: ${TP_THEME:-aquamarine}
+      TP_COMMUNITY_THEME: ${TP_COMMUNITY_THEME:-false}
+    ports:
+      - "127.0.0.1:18080:8080"
+    volumes:
+      - config:/config
+      - ./sabnzbd.ini:/defaults-dev/sabnzbd.ini:ro
+      - ./init-config.sh:/custom-cont-init.d/10-dev-config:ro
+
+volumes:
+  config:

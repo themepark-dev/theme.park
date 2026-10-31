@@ -32,6 +32,12 @@ The [Jellyfin setup](jellyfin/README.md) uses synthetic movies, built-in Custom 
 and nginx subfiltering for the dashboard. Its notes cover the Jellyfin 12 palette
 and table backgrounds that do not follow the app's CSS variables.
 
+The [SABnzbd setup](sabnzbd/README.md) uses the Docker mod and fake news
+servers, so the queue, History and Warnings fill without a Usenet account.
+Its sweep script screenshots every main view, modal and Config page. Its notes
+cover the Glitter 5 `--clr-*` variables, which keep Glitter Light's colors
+wherever the base CSS leaves them unmapped.
+
 ## Development logins
 
 Use `admin` / `admin` for disposable app logins, as requested by the maintainer.
@@ -120,7 +126,7 @@ publishing changes.
    credentials and private data out of tracked files. If an app needs an
    existing instance or user-provided access, record that requirement.
 4. Confirm local CSS and assets load, reproduce the bug, and capture the
-   original appearance before editing. Record unrelated existing defects.
+   original appearance before editing. Note any other defects you see.
 5. Inspect DOM and computed styles, compare upstream changes when useful, and
    make the smallest appropriate source change using theme variables.
 6. Reload through the real injection method. Exercise relevant states such as
@@ -222,11 +228,24 @@ the image URL and the rectangle selected by each state's background position.
 
 ## Defects found while investigating
 
-App updates often affect more than the component named in an issue. Inspect
-nearby controls and at least one other use of a shared component. Keep a short
-record of each additional defect, its reproduction steps, and whether it is
-part of the current fix. Tell the maintainer about remaining defects rather
-than treating them as covered by the original issue.
+Fix the theme bugs you find along the way, not only the one in the report.
+The maintainer asked for this. App updates often break more than the
+component named in an issue, and the setup is already running.
+
+Inspect nearby controls and at least one other use of a shared component.
+For an app with a sweep script, run it over the main views, modals and
+settings pages before and after the fix. A theme bug is something theme.park
+causes or fails to cover, such as an unmapped app color variable, a hardcoded
+light color under light theme text, or a control that becomes hard to see.
+Leave native app behavior alone, such as an empty placeholder option, even if
+it looks odd.
+
+Each fix still needs the same checks as the reported bug, including the
+background checks and before/after screenshots. Keep a short record of each
+defect, its cause, and whether the patch fixes it. List them separately from
+the reported bug in the summary and PR description. If a fix is risky, needs
+a design decision, or belongs in another app's CSS, report it to the
+maintainer instead of guessing.
 
 Save reusable navigation and debugging notes in the app README. Keep screenshots
 and detailed results in the ignored artifact directory. A useful note names the

@@ -72,6 +72,7 @@ affected app and inspect the result in a browser.
 - Report app and browser versions, installation method, evidence, and untested
   areas. Do not claim an issue fixed from a screenshot or source inspection alone.
 - Add any setup requirements you discover to the app's development notes.
-  Record other UI defects found during inspection separately from the reported
-  bug. Explain which ones the patch fixes and which remain.
+  Fix other theme bugs you find along the way, as described in
+  `dev/README.md`. List them separately from the reported bug and say
+  which ones remain.
   Target `develop` for contributions. Push only when the maintainer instructs you.
