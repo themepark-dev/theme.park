@@ -1,0 +1,56 @@
+name: themepark-sonarr-dev
+
+x-sonarr: &sonarr
+  environment:
+    PUID: "1000"
+    PGID: "1000"
+    TZ: Etc/UTC
+    TP_DOMAIN: ${DEV_HOST:-localhost}:18877
+    TP_SCHEME: http
+    TP_THEME: ${TP_THEME:-nord}
+    TP_COMMUNITY_THEME: ${TP_COMMUNITY_THEME:-false}
+    TP_ADDON: ${TP_ADDON:-}
+  depends_on:
+    - css
+
+services:
+  css:
+    image: python:3.12-alpine
+    working_dir: /site
+    command: [python, /serve.py]
+    ports:
+      - "${DEV_BIND_ADDRESS:-127.0.0.1}:18877:8000"
+    volumes:
+      - ../../css:/site/css:ro
+      - ../../resources:/site/resources:ro
+      - ../serve.py:/serve.py:ro
+  v4:
+    <<: *sonarr
+    image: lscr.io/linuxserver/sonarr:4.0.20.3014-ls2@sha256:386c962ee6e260e3a5656b25df2ed056bcc9b6410e197d075f9547fd14c23bca
+    ports:
+      - "${DEV_BIND_ADDRESS:-127.0.0.1}:18989:8989"
+    volumes:
+      - v4-config:/config
+      - v4-tv:/tv
+      # The checkout's Docker mod, mounted where the published mod installs it.
+      - ../../docker-mods/sonarr/root/etc/s6-overlay/s6-rc.d/init-mod-themepark:/etc/s6-overlay/s6-rc.d/init-mod-themepark:ro
+      - ../../docker-mods/sonarr/root/etc/s6-overlay/s6-rc.d/user/contents.d/init-mod-themepark:/etc/s6-overlay/s6-rc.d/user/contents.d/init-mod-themepark:ro
+      - ../../docker-mods/sonarr/root/etc/s6-overlay/s6-rc.d/init-mods-end/dependencies.d/init-mod-themepark:/etc/s6-overlay/s6-rc.d/init-mods-end/dependencies.d/init-mod-themepark:ro
+  v5:
+    <<: *sonarr
+    image: lscr.io/linuxserver/sonarr:develop-5.0.0.2870-ls205@sha256:7c365bc209ee4c0975665fc8ad3ba8f7acd93ef3508a4b7104ee917a5ad7ee51
+    ports:
+      - "${DEV_BIND_ADDRESS:-127.0.0.1}:18990:8989"
+    volumes:
+      - v5-config:/config
+      - v5-tv:/tv
+      # The checkout's Docker mod, mounted where the published mod installs it.
+      - ../../docker-mods/sonarr/root/etc/s6-overlay/s6-rc.d/init-mod-themepark:/etc/s6-overlay/s6-rc.d/init-mod-themepark:ro
+      - ../../docker-mods/sonarr/root/etc/s6-overlay/s6-rc.d/user/contents.d/init-mod-themepark:/etc/s6-overlay/s6-rc.d/user/contents.d/init-mod-themepark:ro
+      - ../../docker-mods/sonarr/root/etc/s6-overlay/s6-rc.d/init-mods-end/dependencies.d/init-mod-themepark:/etc/s6-overlay/s6-rc.d/init-mods-end/dependencies.d/init-mod-themepark:ro
+
+volumes:
+  v4-config:
+  v5-config:
+  v4-tv:
+  v5-tv:
