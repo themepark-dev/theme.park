@@ -14,9 +14,11 @@
 
 :root {
     --clr-text: var(--text);
+    --clr-text-muted: var(--text-muted);
     --clr-border: var(--transparency-light-20);
     --clr-surface: var(--transparency-dark-15);
     --clr-surface-alt: rgb(var(--accent-color));
+    --clr-table-bg: transparent;
     --clr-table-row-alt: var(--transparency-light-20);
     --clr-input-border:  var(--transparency-dark-15);
     --clr-input-bg: var(--transparency-dark-15);
@@ -142,6 +144,11 @@ a:focus {
 .nav-tabs,
 hr {
   border-bottom: 1px solid rgb(var(--accent-color));
+}
+
+/* Bootstrap draws a light top border above the accent line. */
+hr {
+  border-top-color: transparent;
 }
 
 #modal-options #options-status hr {
@@ -582,7 +589,17 @@ tr td.row-extra-text,
 
 .table-messages .table-messages-remove {
   border-bottom: 1px solid transparent !important;
-  background: var(--transparency-light-25);
+  background: var(--transparency-dark-15);
+}
+
+.table-messages .table-messages-remove .hover-button {
+  color: var(--text);
+  opacity: .8;
+}
+
+.table-messages .table-messages-remove:hover .hover-button {
+  color: rgb(var(--accent-color));
+  opacity: 1;
 }
 
 .addRssTable td {
@@ -1134,6 +1151,20 @@ select[disabled]:hover {
   color: var(--text-muted) !important;
 }
 
+/* Glitter separates file rows with a white border. */
+#modal-item-files .item-files-table td {
+  border-bottom-color: transparent;
+}
+
+#modal-help table,
+#modal-help table td {
+  background: transparent !important;
+}
+
+.modal-footer {
+  border-top-color: var(--transparency-light-20);
+}
+
 a.list-group-item,
 button.list-group-item {
   color: var(--text-hover);
@@ -1165,8 +1196,13 @@ button.list-group-item:focus {
 .form-control[disabled],
 .form-control[readonly],
 fieldset[disabled] .form-control {
-  background-color: #919191;
+  background-color: var(--transparency-dark-25);
   opacity: 1;
+}
+
+.form-control[disabled],
+fieldset[disabled] .form-control {
+  opacity: .5;
 }
 
 /* Scheduling */
