@@ -188,9 +188,18 @@ Decisions made while testing:
 - The page background is painted on `<html>`. v5's `login.html` gives `<html>`
   its own background, which stops a body background from covering the window.
 - The sidebar container has an identity `transform`, which turns a fixed
-  background into one sized to the sidebar. On wide screens the sidebar is
-  transparent over the page. At 768 pixels or less it covers the content and
-  gets the page background.
+  background into one sized to the sidebar. Where the sidebar sits beside the
+  content, it stays transparent over the page. v5 turns it into a drawer over
+  the content at 768 pixels wide or less, and also on touch screens 500 pixels
+  tall or less, which covers a phone in landscape. The drawer gets the page
+  background under the same media query as v5's PageSidebar CSS,
+  `(max-width: 768px), (pointer: coarse) and (max-height: 500px)`. The JS
+  makes the same choice in `isSidebarOverlay`. The first version of the theme
+  only checked the width, so the drawer was see-through in phone landscape.
+- To test phone landscape in Playwright, create the context with
+  `has_touch=True` and `is_mobile=True`. Chromium then matches
+  `(pointer: coarse)`. Without them, a short window wider than 768 pixels,
+  such as 1280 by 480, keeps the desktop sidebar and never opens the drawer.
 - Success, warning and danger buttons and labels keep the app's status colors.
 
 ### Verified
