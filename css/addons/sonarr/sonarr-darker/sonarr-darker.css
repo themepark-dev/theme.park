@@ -70,3 +70,22 @@
 [class*=SeriesIndexPoster-action-] .fa-search:hover {
     color: #ccc !important;
 }
+
+/* Sonarr v5 */
+:root:root {
+    --pageHeaderBackgroundColor: var(--header-color);
+    --toolbarBackgroundColor: var(--toolbar-background);
+    --sidebarActiveBackgroundColor: var(--side-menu-active);
+    --scrollbarBackgroundColor: var(--scroller);
+    --scrollbarHoverBackgroundColor: var(--scroller-hover);
+}
+
+[class*="PageSidebar-module_sidebarContainer_"],
+[class*="PageSidebar-module_sidebar_"] {
+    background: var(--side-menu-color);
+}
+
+[class*="PageSidebarItem-module_isActiveLink_"],
+[class*="PageSidebarItem-module_isActiveLink_"]:hover {
+    color: var(--side-menu-link-color);
+}

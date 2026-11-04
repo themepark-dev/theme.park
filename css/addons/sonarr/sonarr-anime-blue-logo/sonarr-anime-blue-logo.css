@@ -18,3 +18,14 @@
 .panel-header > img.logo {
     content: url("/css/addons/sonarr/sonarr-anime-blue-logo/sonarr-anime-blue.png");
 }
+
+/* Sonarr v5 */
+[class*="PageHeader-module_logo_"],
+[class*="PageSidebar-module_logo_"],
+[class*="LoadingPage-module_logoFull_"] {
+    content: url("/css/addons/sonarr/sonarr-anime-blue-logo/sonarr-anime-blue.png");
+}
+
+[class*="LoadingPage-module_logoFull_"] {
+    opacity: 1;
+}
