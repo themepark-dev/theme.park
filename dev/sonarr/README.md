@@ -297,11 +297,8 @@ uptime.
 Not tested:
 
 - Firefox and Safari.
-- Phones in landscape. v5 also opens the sidebar as a drawer when the pointer
-  is coarse and the height is 500 pixels or less. The v5 base theme only makes
-  the drawer opaque at 768 pixels or less, so the drawer is see-through there.
-  `sonarr-darker` paints the drawer at every width, so it hides the problem
-  for users of that addon.
+- The logo addons on a phone in landscape. `sonarr-darker` was checked there
+  at 844 by 390.
 
 ## Stop and reset
 
