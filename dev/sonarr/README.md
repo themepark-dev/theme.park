@@ -240,6 +240,59 @@ runs are the checks through the mod.
 - Community themes other than Catppuccin Latte, and theme options other than the
   five above.
 
+## Addons
+
+Each addon CSS file keeps its v4 rules and adds a block for v5's class names,
+so the same `TP_ADDON` value works on both versions. The v4 class selectors
+never match a v5 build and the v5 ones never match v4. `selector-audit.py`
+confirms this when given an addon file in place of a base file. The login
+page rule, `.panel-header > img.logo`, is one exception. Both versions use
+that markup, so it covers v4 and v5. The other is the `:root:root` block in
+`sonarr-darker.css`, which also reaches v4 but changes nothing there, because
+v4 sets those variables inline on `<html>`.
+
+- The v5 header shows "Sonarr" next to the logo, and the phone sidebar has its
+  own logo and name. The logo addons replace both images. The text logo
+  addons also hide the name, because the image already contains it. At 768
+  pixels or less v5 hides the header name. The 4K and anime text logo addons
+  then show their icon in the header, as they do on v4. `sonarr-text-logo`
+  has no icon of its own and leaves the stock logo there.
+- `sonarr-darker` sets its header, toolbar, active link and scrollbar colors
+  through v5's variables. Element rules paint the sidebar and the phone
+  drawer behind it, and keep the active sidebar link in its link color on
+  hover. Its `servarr-darker-base.css` import is shared with the other
+  Servarr apps and matches nothing in v5, so the v5 rules live in
+  `sonarr-darker.css`. The base's header shadow, modal borders, labels and
+  cards, and the blue poster hover bar from `sonarr-darker.css`, have no v5
+  rules, so they keep their v5 styling.
+- The favicon addons need no change. v5 serves the same files from
+  `Content/Images/Icons`, where the mod downloads them.
+
+To test addons through the mod, set `TP_ADDON` when you recreate the
+containers. Separate several addons with `|`.
+
+```sh
+TP_ADDON='sonarr-4k-text-logo|sonarr-darker' \
+  docker compose -f dev/sonarr/compose.yaml up -d --force-recreate v4 v5
+```
+
+Verified on 2026-11-04 with the images in the table above and Chromium
+156.0.8078.4, at 1440 by 900 and 390 by 844. The checks covered the header,
+phone sidebar, loading screen and login page for all seven logo addons, the
+header at 768 and 769 pixels, `sonarr-darker` under Nord, Hotline, Catppuccin
+Latte, native light mode and the gradient header, and the favicon files served
+by v5. The final check ran `sonarr-4k-text-logo|sonarr-darker` through the mod
+on v4 and v5.
+
+Not tested:
+
+- Firefox and Safari.
+- Phones in landscape. v5 also opens the sidebar as a drawer when the pointer
+  is coarse and the height is 500 pixels or less. The v5 base theme only makes
+  the drawer opaque at 768 pixels or less, so the drawer is see-through there.
+  `sonarr-darker` paints the drawer at every width, so it hides the problem
+  for users of that addon.
+
 ## Stop and reset
 
 ```sh
