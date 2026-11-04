@@ -247,9 +247,11 @@ so the same `TP_ADDON` value works on both versions. The v4 class selectors
 never match a v5 build and the v5 ones never match v4. `selector-audit.py`
 confirms this when given an addon file in place of a base file. The login
 page rule, `.panel-header > img.logo`, is one exception. Both versions use
-that markup, so it covers v4 and v5. The other is the `:root:root` block in
-`sonarr-darker.css`, which also reaches v4 but changes nothing there, because
-v4 sets those variables inline on `<html>`.
+that markup, so it covers v4 and v5. Variables need care too: v4 reads many
+of v5's variable names, such as `--pageHeaderBackgroundColor` and
+`--sidebarBackgroundColor`. The v5 variable block in `sonarr-darker.css` is
+scoped to `:root:root[data-theme]`, because v5 sets `data-theme` on `<html>`
+and v4 does not.
 
 - The v5 header shows "Sonarr" next to the logo, and the phone sidebar has its
   own logo and name. The logo addons replace both images. The text logo
@@ -257,10 +259,14 @@ v4 sets those variables inline on `<html>`.
   pixels or less v5 hides the header name. The 4K and anime text logo addons
   then show their icon in the header, as they do on v4. `sonarr-text-logo`
   has no icon of its own and leaves the stock logo there.
-- `sonarr-darker` sets its header, toolbar, active link and scrollbar colors
-  through v5's variables. Element rules paint the sidebar and the phone
-  drawer behind it, and keep the active sidebar link in its link color on
-  hover. Its `servarr-darker-base.css` import is shared with the other
+- `sonarr-darker` sets the header, sidebar, toolbar, active link and
+  scrollbar colors through v5's variables. On v5 the header (`#151515`),
+  sidebar and toolbar (`#181818`) are darker than the `#202020` page, to set
+  them apart from the content. On v4 they are lighter (`#2a2a2a`), and the
+  difference is intended. An element rule paints the sidebar and the phone
+  drawer behind it with the sidebar color, in place of the base theme's
+  translucent layer. Another keeps the active sidebar link in its link color
+  on hover. Its `servarr-darker-base.css` import is shared with the other
   Servarr apps and matches nothing in v5, so the v5 rules live in
   `sonarr-darker.css`. The base's header shadow, modal borders, labels and
   cards, and the blue poster hover bar from `sonarr-darker.css`, have no v5
@@ -282,7 +288,11 @@ phone sidebar, loading screen and login page for all seven logo addons, the
 header at 768 and 769 pixels, `sonarr-darker` under Nord, Hotline, Catppuccin
 Latte, native light mode and the gradient header, and the favicon files served
 by v5. The final check ran `sonarr-4k-text-logo|sonarr-darker` through the mod
-on v4 and v5.
+on v4 and v5. When the v5 `sonarr-darker` colors changed, v4 screenshots of the
+login, series, phone drawer, settings and calendar pages came out byte-identical
+before and after. Repeat runs of the same page give identical PNGs, so `cmp`
+works as a regression check. System Status is the exception, because it shows
+uptime.
 
 Not tested:
 
