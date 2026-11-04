@@ -71,18 +71,23 @@
     color: #ccc !important;
 }
 
-/* Sonarr v5 */
-:root:root {
-    --pageHeaderBackgroundColor: var(--header-color);
-    --toolbarBackgroundColor: var(--toolbar-background);
+/* Sonarr v5. v5 sets data-theme on <html> and v4 does not, so these
+   variables only reach v5. The header, sidebar and toolbar sit darker than
+   the page, unlike v4, where they are lighter. */
+:root:root[data-theme] {
+    --pageHeaderBackgroundColor: #151515;
+    --sidebarBackgroundColor: #181818;
+    --toolbarBackgroundColor: #181818;
     --sidebarActiveBackgroundColor: var(--side-menu-active);
     --scrollbarBackgroundColor: var(--scroller);
     --scrollbarHoverBackgroundColor: var(--scroller-hover);
 }
 
+/* The base theme lays a translucent background on the sidebar and paints the
+   phone drawer with the page background. Use the sidebar color for both. */
 [class*="PageSidebar-module_sidebarContainer_"],
 [class*="PageSidebar-module_sidebar_"] {
-    background: var(--side-menu-color);
+    background: var(--sidebarBackgroundColor);
 }
 
 [class*="PageSidebarItem-module_isActiveLink_"],
