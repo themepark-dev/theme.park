@@ -22,3 +22,34 @@
     content: url("/css/addons/sonarr/sonarr-text-logo/sonarr-text.png");
     width: auto;
 }
+
+/* Sonarr v5 shows the name beside the logo, so hide it where the text logo
+   replaces the icon. v5 hides the name in the header at 768 pixels or less. */
+@media (width > 768px) {
+    [class*="PageHeader-module_logo_"] {
+        content: url("/css/addons/sonarr/sonarr-text-logo/sonarr-text.png");
+        width: auto;
+        height: 32px;
+    }
+
+    [class*="PageHeader-module_brandName_"] {
+        display: none;
+    }
+}
+
+[class*="PageSidebar-module_logo_"] {
+    content: url("/css/addons/sonarr/sonarr-text-logo/sonarr-text.png");
+    width: auto;
+    height: 32px;
+}
+
+[class*="PageSidebar-module_brandName_"] {
+    display: none;
+}
+
+[class*="LoadingPage-module_logoFull_"] {
+    content: url("/css/addons/sonarr/sonarr-text-logo/sonarr-text.png");
+    width: auto;
+    height: 40px;
+    opacity: 1;
+}
