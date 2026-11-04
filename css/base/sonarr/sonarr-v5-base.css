@@ -179,13 +179,16 @@ body {
 }
 
 /* The sidebar container has a transform, which turns a fixed background into
-   one sized to the sidebar, so it would not line up with the page. On wide
-   screens the sidebar never covers content and can show the page through it. */
+   one sized to the sidebar, so it would not line up with the page. Where the
+   sidebar sits beside the content, it can show the page through it. v5 turns
+   it into a drawer over the content at 768px wide or less, and on touch
+   screens 500px tall or less, such as a phone in landscape. The drawer needs
+   the page background. This query matches the one in v5's PageSidebar CSS. */
 [class*="PageSidebar-module_sidebar_"] {
     background: var(--transparency-dark-25);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px), (pointer: coarse) and (max-height: 500px) {
     [class*="PageSidebar-module_sidebarContainer_"] {
         background: var(--main-bg-color);
         background-repeat: repeat, no-repeat;
