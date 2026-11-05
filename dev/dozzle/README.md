@@ -48,8 +48,9 @@ TP_THEME=catppuccin-latte TP_THEME_FOLDER=community-theme-options docker compose
 ```
 
 `DOZZLE_TAG` can select another release. Record the exact version tested; this
-setup has only been verified with v11.0.1. Recreate the proxy after replacing
-Dozzle because nginx resolves the upstream service at startup:
+setup has been verified with v11.0.1 and, for the phone Browse tab, v11.3.5.
+Recreate the proxy after replacing Dozzle because nginx resolves the upstream
+service at startup:
 
 ```sh
 DOZZLE_TAG=v11.0.1 docker compose -f dev/dozzle/compose.yaml up -d dozzle
@@ -90,8 +91,14 @@ Kubernetes, or remote agents.
    profile settings on the server, shared by the direct and proxy URLs. A
    native mode switch can affect other open tabs. Automated comparisons should
    set the profile before opening a fresh page to avoid reload races.
-5. At phone width, use `[data-testid="hamburger"]` to open the sidebar. The
+5. At phone width on v11.0.1, use `[data-testid="hamburger"]` to open the
+   sidebar. v11.2.0 replaced the hamburger with a bottom tab bar. Its Browse tab
+   opens the sidebar as a full-screen `div[data-testid="navigation"]` over the
+   current page, so that overlay needs an opaque background (issue #738). The
    desktop and mobile layouts use the same SideMenu component.
+6. A fresh v11.3.5 profile opens a setup wizard that blocks the page. Choose
+   Continue without login, Not now twice, then Done. The answers are stored in
+   the profile volume.
 
 Useful v11 selectors are `[data-testid="side-menu"]`, `.nav-group-toggle`,
 `.nav-item`, `.nav-item.is-active`, and `.btn`. The historical `.menu-list`
