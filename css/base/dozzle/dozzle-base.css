@@ -189,7 +189,7 @@ html[data-theme] .modal-box.bg-transparent > div > :last-child {
 }
 
 /* Fixed navigation and sticky toolbars must cover logs scrolling behind them. */
-html[data-theme] nav[data-testid="navigation"],
+html[data-theme] :is(nav, div)[data-testid="navigation"],
 html[data-theme] [data-testid="scrollable-header"] {
     background: var(--main-bg-color);
 }
